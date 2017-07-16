@@ -122,24 +122,6 @@ Description: shared libraries for terminal handling
  compiled with ncurses.
 Homepage: http://invisible-island.net/ncurses/
 
-Package: libapr1
-Status: install ok installed
-Priority: optional
-Section: libs
-Installed-Size: 269
-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
-Architecture: i386
-Multi-Arch: same
-Source: apr
-Version: 1.5.2-5
-Depends: libc6 (>= 2.15), libuuid1 (>= 2.16)
-Conflicts: libapr1.0
-Description: Apache Portable Runtime Library
- APR is Apache's Portable Runtime Library, designed to be a support library
- that provides a predictable and consistent interface to underlying
- platform-specific implementations.
-Homepage: http://apr.apache.org/
-
 Package: libapt-pkg5.0
 Status: install ok installed
 Priority: important
@@ -639,7 +621,7 @@ Description: XZ-format compression library
 Homepage: http://tukaani.org/xz/
 
 Package: php7.0-readline
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: php
 Installed-Size: 54
@@ -758,7 +740,7 @@ Description: GNU grep, egrep and fgrep
 Homepage: http://www.gnu.org/software/grep/
 
 Package: php7.0-opcache
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: php
 Installed-Size: 226
@@ -804,185 +786,8 @@ Description: high level tools to configure network interfaces
  configure (or, respectively, deconfigure) network interfaces based on
  interface definitions in the file /etc/network/interfaces.
 
-Package: apache2
-Status: install ok installed
-Priority: optional
-Section: httpd
-Installed-Size: 577
-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
-Architecture: i386
-Version: 2.4.25-3
-Replaces: apache2.2-bin, apache2.2-common
-Provides: httpd, httpd-cgi
-Depends: init-system-helpers (>= 1.18~), lsb-base, procps, perl, mime-support, apache2-bin (= 2.4.25-3), apache2-utils (= 2.4.25-3), apache2-data (= 2.4.25-3), perl:any
-Pre-Depends: dpkg (>= 1.17.14)
-Recommends: ssl-cert
-Suggests: www-browser, apache2-doc, apache2-suexec-pristine | apache2-suexec-custom
-Conflicts: apache2.2-bin, apache2.2-common
-Conffiles:
- /etc/apache2/apache2.conf 20589b50379161ebc8cb35f761af2646
- /etc/apache2/conf-available/charset.conf 46ea15bcd82c11ea0973aa8842b1dc56
- /etc/apache2/conf-available/localized-error-pages.conf cfd0ae5e448102514efe8b97181d19c9
- /etc/apache2/conf-available/other-vhosts-access-log.conf 60d5d57995317aedb02bd2a20b366717
- /etc/apache2/conf-available/security.conf f2e736bb593323988d1ebdabee67729f
- /etc/apache2/conf-available/serve-cgi-bin.conf 21abde7dadc1020140b9ab796d06fd29
- /etc/apache2/envvars e4431a53c868ae0dfcde68564f3ce6a7
- /etc/apache2/magic a6d370833a02f53db6a0a30800704994
- /etc/apache2/mods-available/access_compat.load f7f77b3eb4005749b583ff14b49f8bf1
- /etc/apache2/mods-available/actions.conf 8736884dbc596bcfdbb392409c96fde5
- /etc/apache2/mods-available/actions.load 95dcfd2efdd41666de5f31dd72e01e41
- /etc/apache2/mods-available/alias.conf c6e9f26152898c38e58211c8b362d5c3
- /etc/apache2/mods-available/alias.load 7742296502ce1d2f970cc87322d8ffba
- /etc/apache2/mods-available/allowmethods.load b377b96eb4dddd88f9428d9cc2fd87ea
- /etc/apache2/mods-available/asis.load d1003c9fa12b4d3ed35ea3827a689492
- /etc/apache2/mods-available/auth_basic.load a92c34a3ce5e67e2ecbd272155ebe072
- /etc/apache2/mods-available/auth_digest.load f29d047cd59013e2fa6724d677c7970b
- /etc/apache2/mods-available/auth_form.load 731420a769dd8ad537d68bfdbdd6a506
- /etc/apache2/mods-available/authn_anon.load 03cbe85c698911a3d3235b4855726481
- /etc/apache2/mods-available/authn_core.load c6420ed74b0095f8408aba3e11db4907
- /etc/apache2/mods-available/authn_dbd.load 86e21a672a4f245715a788f9873174ed
- /etc/apache2/mods-available/authn_dbm.load 4e37546871dbcba8550a0d781f6fbfa8
- /etc/apache2/mods-available/authn_file.load ecdeeab8cfec4a9dd0c065a4d6948c31
- /etc/apache2/mods-available/authn_socache.load 260e21e1eb5caa7bcabe8a2fae11445f
- /etc/apache2/mods-available/authnz_fcgi.load b12a39427b0b3a8d2ffb03cfc029da18
- /etc/apache2/mods-available/authnz_ldap.load d65845f053d08b82da239c73c9094c35
- /etc/apache2/mods-available/authz_core.load 90ad8f57655bcd98b7b07864736ab954
- /etc/apache2/mods-available/authz_dbd.load c746b8c3bf3fca950ca41fcd553328b4
- /etc/apache2/mods-available/authz_dbm.load 8cd42e62d8ca0701f9aad080ec968493
- /etc/apache2/mods-available/authz_groupfile.load 97a3e14926ce7bf5f2d2a7b93ece648d
- /etc/apache2/mods-available/authz_host.load f529587409471e3feb62256bccaf538a
- /etc/apache2/mods-available/authz_owner.load 9ed1ea15654bb594453438154b642539
- /etc/apache2/mods-available/authz_user.load bcf988f105564ec1e14b78df56a01cd8
- /etc/apache2/mods-available/autoindex.conf bfba7d77669e02b869b92e98215d58fc
- /etc/apache2/mods-available/autoindex.load b9f9d364f1b4c96c45b6db353180aa15
- /etc/apache2/mods-available/buffer.load ae1e21b4fd2c2e8236ec641cae9814bd
- /etc/apache2/mods-available/cache.load ea99aba14e9aa25c27653b9958239a6e
- /etc/apache2/mods-available/cache_disk.conf b716cf836c9f00dae0366a39f511b76d
- /etc/apache2/mods-available/cache_disk.load 56ebd9819aa70a7ff8ac04e4922049f2
- /etc/apache2/mods-available/cache_socache.load 4b548216cee2e910e9059e426f81e60c
- /etc/apache2/mods-available/cern_meta.load 2c2d9adcb273f934304e7dfb5775f7b9
- /etc/apache2/mods-available/cgi.load 32a1c48f0e29feb415c9460378728d82
- /etc/apache2/mods-available/cgid.conf e8a2836392051bde889cf9c137058273
- /etc/apache2/mods-available/cgid.load c3ee2eac02c248b5a39fb1a7afee4cb9
- /etc/apache2/mods-available/charset_lite.load 1585fcd1b631c2e9b166e170cb162c54
- /etc/apache2/mods-available/data.load b6cc5b9e815f551335596cd1e25ffc34
- /etc/apache2/mods-available/dav.load ed469867552a1145b8c3ffa5780ff83e
- /etc/apache2/mods-available/dav_fs.conf 162db96239f13b5416f369b6306d9db6
- /etc/apache2/mods-available/dav_fs.load 17f662fd023dbaaab9d89f9a11ae58c1
- /etc/apache2/mods-available/dav_lock.load faad09687e64ebb9670aa0b8095d6642
- /etc/apache2/mods-available/dbd.load f03fe275174a5ed97b0f5f5726ccea60
- /etc/apache2/mods-available/deflate.conf 6649a32153b9afdc53f6898b5a10a2d6
- /etc/apache2/mods-available/deflate.load 6a7a23153796456ee919abdf728fd972
- /etc/apache2/mods-available/dialup.load dbc3535a9e5dfd799cf16b5c0d58f137
- /etc/apache2/mods-available/dir.conf fe4bc5fa3b3cc7a241fe57f8fabc55a1
- /etc/apache2/mods-available/dir.load 397aadae1b8b18e3a7a233cf7c297f99
- /etc/apache2/mods-available/dump_io.load 8231c51ef692e0766625ece087484fe4
- /etc/apache2/mods-available/echo.load 226a145f19c43d9f921c35eacfd61cb2
- /etc/apache2/mods-available/env.load 3e8963a7df7c047be50a552d80a4f853
- /etc/apache2/mods-available/expires.load dac64edc06fe538c2edd7b3f1f3b03f1
- /etc/apache2/mods-available/ext_filter.load d3c4acfca1322274a9a8504e8cef27e9
- /etc/apache2/mods-available/file_cache.load f097659127628ec6f9c6a558d0baf566
- /etc/apache2/mods-available/filter.load 8df0170e37a8925238860657d6c60fe5
- /etc/apache2/mods-available/headers.load ba7d09162b65d09397bd58be33138e4d
- /etc/apache2/mods-available/heartbeat.load b78970d35346bfe5eb5817d228cb209c
- /etc/apache2/mods-available/heartmonitor.load b4da13d1c05a7dd1bdeb272300c1fc83
- /etc/apache2/mods-available/http2.load e18e0c7e38196e7d7580ecedaaa72e3b
- /etc/apache2/mods-available/ident.load 51ba623a8a2bd71c512f847d02e0934f
- /etc/apache2/mods-available/imagemap.load 51d5109d8bc2bafc17af03beace4d8a4
- /etc/apache2/mods-available/include.load 9cf2fa9ceb6571b5fab4603daad44c83
- /etc/apache2/mods-available/info.conf 4a4aa21e0bb474d420c9a3e1c3320677
- /etc/apache2/mods-available/info.load c1faffe40b8bed9f2b817b9dc0503bb6
- /etc/apache2/mods-available/lbmethod_bybusyness.load 094b7c1d424cc4a1dee6f77d301e1888
- /etc/apache2/mods-available/lbmethod_byrequests.load f33d55ab5bbf907340426e31f99f6701
- /etc/apache2/mods-available/lbmethod_bytraffic.load e656d80b48c020b7d77ece23368e04f1
- /etc/apache2/mods-available/lbmethod_heartbeat.load 944703ff299a25cf068de7f6a2374465
- /etc/apache2/mods-available/ldap.conf 344968a263507c1991a160427e51ed9c
- /etc/apache2/mods-available/ldap.load 735ac5f246738e11a53f6c515b8dfc48
- /etc/apache2/mods-available/log_debug.load d062328e5987fa686615394768339abe
- /etc/apache2/mods-available/log_forensic.load 7177e2427eb7c78f1ab10c034a809793
- /etc/apache2/mods-available/lua.load 5e445ce688a49e0a1fcfcaa414fe21f9
- /etc/apache2/mods-available/macro.load 40e0509b4b2d307cdfe4de75fa89dc91
- /etc/apache2/mods-available/mime.conf 7369c2fd5edf2192edbd6d865b632ae5
- /etc/apache2/mods-available/mime.load 9c858dc2ad2825dc3f862ecba90cf6ec
- /etc/apache2/mods-available/mime_magic.conf ebeaf79afde03c805e795bb51eec155f
- /etc/apache2/mods-available/mime_magic.load ab5c69aa0c91f11157e9bfc4972f8cce
- /etc/apache2/mods-available/mpm_event.conf d868a76835101a66be2863362ef9f81a
- /etc/apache2/mods-available/mpm_event.load 08816d280ebbd94b8c5961fc6f7168b5
- /etc/apache2/mods-available/mpm_prefork.conf 26e539a16e51c4feddd2eedc568692e6
- /etc/apache2/mods-available/mpm_prefork.load 9bcdffe5055526e0929ecd49ee311c9e
- /etc/apache2/mods-available/mpm_worker.conf 2673a5a3f030bfb704bee034ce3a183c
- /etc/apache2/mods-available/mpm_worker.load 0c6640977f0f046a55fdaf76eb54adef
- /etc/apache2/mods-available/negotiation.conf 443398efdd41085bc1a70047f6e61c95
- /etc/apache2/mods-available/negotiation.load fd7bf44d833446a35f0199d7cbcc9793
- /etc/apache2/mods-available/proxy.conf b516d96935974214588d525edd7aed6d
- /etc/apache2/mods-available/proxy.load 3d3719c88d01152e817f74fc2fd6ce9e
- /etc/apache2/mods-available/proxy_ajp.load e058e03c1d4f9e4d8e2c439ed75cc501
- /etc/apache2/mods-available/proxy_balancer.conf 5e9113f9556e17c0fec6c81232651791
- /etc/apache2/mods-available/proxy_balancer.load 9c6e6ff2195159c8af97f7673e8d2ada
- /etc/apache2/mods-available/proxy_connect.load 6bc4b5de977f70a0b6ae98ab04383c0c
- /etc/apache2/mods-available/proxy_express.load f2ad6e7e80d2750cdca5986657e7835e
- /etc/apache2/mods-available/proxy_fcgi.load 09cbda44eecbf1cbab48b30045217e3c
- /etc/apache2/mods-available/proxy_fdpass.load 9e5584db5f748a2fb71b582a255a976e
- /etc/apache2/mods-available/proxy_ftp.conf dd9beba82c2838bcfd51a05dfb540929
- /etc/apache2/mods-available/proxy_ftp.load c05db1b229a7957f0032c0d79ed7e3c9
- /etc/apache2/mods-available/proxy_hcheck.load 92898c1ef9124193fa5d9e13408e0372
- /etc/apache2/mods-available/proxy_html.conf 5b60af3b1796f2db4b5f7a8a7941f1bc
- /etc/apache2/mods-available/proxy_html.load dac7646a0a7242de76f788b4da14390b
- /etc/apache2/mods-available/proxy_http.load 161b514c355c6daa95f11371fb9c184c
- /etc/apache2/mods-available/proxy_http2.load 8a2cdbe25537eb8cb9007e351274f852
- /etc/apache2/mods-available/proxy_scgi.load cb11d685e60db26bbdad456263bf63b7
- /etc/apache2/mods-available/proxy_wstunnel.load d2e5c21b886333f1662fe74591260d5d
- /etc/apache2/mods-available/ratelimit.load fb40aa030d5458dd99a0c9d1141bcde4
- /etc/apache2/mods-available/reflector.load 306c71fae73733506db9099d106ba642
- /etc/apache2/mods-available/remoteip.load 81a6511c79ab338aef51a6c185152231
- /etc/apache2/mods-available/reqtimeout.conf 40b45155afb3d14263d12e6fc4a98513
- /etc/apache2/mods-available/reqtimeout.load 7fd814775dc3f3c9e6753ef874978f96
- /etc/apache2/mods-available/request.load 36c1b324cd545e3e29b50b5e2a8357e8
- /etc/apache2/mods-available/rewrite.load 55e18fb7df64c8f390904b972637c17d
- /etc/apache2/mods-available/sed.load 8ba3c7ff4243e6a45b6e3c372fc0de1b
- /etc/apache2/mods-available/session.load b552f1e184865c597ae397876fb3a0a6
- /etc/apache2/mods-available/session_cookie.load 89aff7a7f8b4347965d4cf6ea3c5beb9
- /etc/apache2/mods-available/session_crypto.load 066002be7d8c6c381553dbded41db1b6
- /etc/apache2/mods-available/session_dbd.load cf86e56f8ee26f5dccc39c2f690d7f79
- /etc/apache2/mods-available/setenvif.conf 533f5f92761c2c24d6820f1d7d1c45ad
- /etc/apache2/mods-available/setenvif.load 6f670fad5b6f6b14fa72c9cd3058469b
- /etc/apache2/mods-available/slotmem_plain.load fd33fcd86c77d4d5044ad904e7f38360
- /etc/apache2/mods-available/slotmem_shm.load 127df94eaf6987ad67b964f01eec3251
- /etc/apache2/mods-available/socache_dbm.load 9f11810517a6bf2eba31b336ebbfad70
- /etc/apache2/mods-available/socache_memcache.load c0101bc50501b12e7c8c74014560404b
- /etc/apache2/mods-available/socache_shmcb.load 9efb84889b8e1683ce104033bf30973d
- /etc/apache2/mods-available/speling.load 095570b0cb18ebdfc357a2241c6932ea
- /etc/apache2/mods-available/ssl.conf 6c30f44f4e2ad6bc51c917294aa8e34b
- /etc/apache2/mods-available/ssl.load 838b292226d2da6ceb3f1c793696ca12
- /etc/apache2/mods-available/status.conf 5d3689f109baf304af4f145249ca6326
- /etc/apache2/mods-available/status.load 00976ea5115f286bbc21357581d0b65e
- /etc/apache2/mods-available/substitute.load 50e63dc17612e22484a88f537e8aec8e
- /etc/apache2/mods-available/suexec.load 335169c85f4afc14524846789d46af06
- /etc/apache2/mods-available/unique_id.load 6c13959015fb35276572070b44e63380
- /etc/apache2/mods-available/userdir.conf 3a3142e84136336db8b940553a076983
- /etc/apache2/mods-available/userdir.load c034025405561ea48fbcb67fd1998f4d
- /etc/apache2/mods-available/usertrack.load 8400042dd4374fad5eedf33ffb3c68f0
- /etc/apache2/mods-available/vhost_alias.load fdd42d34966c329cdee2435dfe72ee24
- /etc/apache2/mods-available/xml2enc.load 1f7ab653ed3601bd265871cdf252a224
- /etc/apache2/ports.conf a961f23471d985c2b819b652b7f64321
- /etc/apache2/sites-available/000-default.conf f3066f67070ab9b1ad9bab81ca05330a
- /etc/apache2/sites-available/default-ssl.conf 801f4c746a88b4228596cb260a4220c4
- /etc/cron.daily/apache2 c788ffaa4c682c91e6a1cd7f53840d62
- /etc/default/apache-htcacheclean ae8721a0bc5b4e2ef7a5258b1e9db5c5
- /etc/init.d/apache-htcacheclean 48c965b3a037d8ce3e0cfad5b68eaed6
- /etc/init.d/apache2 9d22fb30358e61a6f190a0d09c5120bf
- /etc/logrotate.d/apache2 7322a4f050c1e2454249695236a3472c
-Description: Apache HTTP Server
- The Apache HTTP Server Project's goal is to build a secure, efficient and
- extensible HTTP server as standards-compliant open source software. The
- result has long been the number one web server on the Internet.
- .
- Installing this package results in a full installation, including the
- configuration files, init scripts and support scripts.
-Homepage: http://httpd.apache.org/
-
 Package: psmisc
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: admin
 Installed-Size: 584
@@ -1168,7 +973,7 @@ Description: Miscellaneous utilities specific to Debian
  tempfile which
 
 Package: mime-support
-Status: install ok installed
+Status: install ok unpacked
 Priority: standard
 Section: net
 Installed-Size: 110
@@ -1178,8 +983,8 @@ Multi-Arch: foreign
 Version: 3.60
 Recommends: bzip2, file, xz-utils
 Conffiles:
- /etc/mime.types 4561fade4c4fc48e526e72871c470eec
- /etc/mailcap.order ba07e08a7fe3741d0b8339127963190e
+ /etc/mime.types newconffile
+ /etc/mailcap.order newconffile
 Description: MIME files 'mime.types' & 'mailcap', and support programs
  As these files can be used by all MIME compliant programs, they
  have been moved into their own package that others can depend upon.
@@ -1231,27 +1036,6 @@ Description: tool to make (or reverse) a hex dump
  xxd creates a hex dump of a given file or standard input.  It can also convert
  a hex dump back to its original binary form.
 Homepage: http://www.vim.org/
-
-Package: php7.0
-Status: install ok installed
-Priority: optional
-Section: php
-Installed-Size: 73
-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
-Architecture: all
-Version: 7.0.19-1
-Provides: php
-Depends: libapache2-mod-php7.0 | php7.0-fpm | php7.0-cgi, php7.0-common
-Description: server-side, HTML-embedded scripting language (metapackage)
- This package is a metapackage that, when installed, guarantees that you
- have at least one of the four server-side versions of the PHP interpreter
- installed. Removing this package won't remove PHP from your system, however
- it may remove other packages that depend on this one.
- .
- PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
- open source general-purpose scripting language that is especially suited
- for web development and can be embedded into HTML.
-Homepage: http://www.php.net/
 
 Package: libfastjson4
 Status: install ok installed
@@ -1317,28 +1101,6 @@ Description: Perl module for error/exception handling in an OO-ish way
  Error::Exception (not packaged), TryCatch (libtrycatch-perl), and Try::Tiny
  (libtry-tiny-perl).
 Homepage: https://metacpan.org/release/Error
-
-Package: libaprutil1-dbd-sqlite3
-Status: install ok installed
-Priority: optional
-Section: libs
-Installed-Size: 47
-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
-Architecture: i386
-Multi-Arch: same
-Source: apr-util
-Version: 1.5.4-3
-Depends: libaprutil1 (= 1.5.4-3), libc6 (>= 2.4), libsqlite3-0 (>= 3.5.9)
-Description: Apache Portable Runtime Utility Library - SQLite3 Driver
- APR is Apache's Portable Runtime Library, designed to be a support library
- that provides a predictable and consistent interface to underlying
- platform-specific implementations.
- .
- APR Util is a utilities library implemented on top of apr, providing database
- access, xml parsing, and other useful functionality.
- .
- This package contains the SQLite3 database driver.
-Homepage: http://apr.apache.org/
 
 Package: bash
 Essential: yes
@@ -1528,35 +1290,6 @@ Description: GNU readline and history libraries, run-time libraries
  The GNU history library provides a consistent user interface for
  recalling lines of previously typed input.
 
-Package: libapache2-mod-php7.0
-Status: install ok installed
-Priority: optional
-Section: httpd
-Installed-Size: 3952
-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
-Architecture: i386
-Source: php7.0
-Version: 7.0.19-1
-Provides: libapache2-mod-php, phpapi-20151012
-Depends: libmagic1, libpcre3 (>= 1:8.20), mime-support, php7.0-cli, php7.0-common (= 7.0.19-1), php7.0-json, php7.0-opcache, tzdata, ucf, apache2-api-20120211, apache2-bin (>= 2.4.16), libc6 (>= 2.15), libssl1.1 (>= 1.1.0), libxml2 (>= 2.8.0), zlib1g (>= 1:1.2.3.4)
-Recommends: apache2
-Suggests: php-pear
-Conffiles:
- /etc/apache2/mods-available/php7.0.conf 7b91f8ac555faba6042a634ac4749a31
- /etc/apache2/mods-available/php7.0.load 3a30e46c1300df8988da3a825bc276aa
-Description: server-side, HTML-embedded scripting language (Apache 2 module)
- This package provides the PHP module for the Apache 2 webserver (as
- found in the apache2-mpm-prefork package).  Please note that this package
- ONLY works with Apache's prefork MPM, as it is not compiled thread-safe.
- .
- The following extensions are built in: Core date filter hash libxml openssl
- pcre Reflection session SPL standard zlib.
- .
- PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
- open source general-purpose scripting language that is especially suited
- for web development and can be embedded into HTML.
-Homepage: http://www.php.net/
-
 Package: debconf
 Status: install ok installed
 Priority: required
@@ -1615,33 +1348,6 @@ Description: compression library - runtime
  zlib is a library implementing the deflate compression method found
  in gzip and PKZIP.  This package includes the shared library.
 Homepage: http://zlib.net/
-
-Package: apache2-utils
-Status: install ok installed
-Priority: optional
-Section: httpd
-Installed-Size: 383
-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
-Architecture: i386
-Multi-Arch: foreign
-Source: apache2
-Version: 2.4.25-3
-Depends: libapr1 (>= 1.4.8-2~), libaprutil1 (>= 1.5.0), libc6 (>= 2.4), libssl1.0.2 (>= 1.0.2d)
-Description: Apache HTTP Server (utility programs for web servers)
- Provides some add-on programs useful for any web server.  These include:
-  - ab (Apache benchmark tool)
-  - fcgistarter (Start a FastCGI program)
-  - logresolve (Resolve IP addresses to hostnames in logfiles)
-  - htpasswd (Manipulate basic authentication files)
-  - htdigest (Manipulate digest authentication files)
-  - htdbm (Manipulate basic authentication files in DBM format, using APR)
-  - htcacheclean (Clean up the disk cache)
-  - rotatelogs (Periodically stop writing to a logfile and open a new one)
-  - split-logfile (Split a single log including multiple vhosts)
-  - checkgid (Checks whether the caller can setgid to the specified group)
-  - check_forensic (Extract mod_log_forensic output from Apache log files)
-  - httxt2dbm (Generate dbm files for use with RewriteMap)
-Homepage: http://httpd.apache.org/
 
 Package: libcurl3-gnutls
 Status: install ok installed
@@ -2143,28 +1849,6 @@ Description: Cyrus SASL - authentication abstraction library
  Kerberos 5), NTLM, OTP, PLAIN, or LOGIN can be used.
 Homepage: https://www.cyrusimap.org/
 
-Package: apache2-bin
-Status: install ok installed
-Priority: optional
-Section: httpd
-Installed-Size: 3914
-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
-Architecture: i386
-Source: apache2
-Version: 2.4.25-3
-Provides: apache2-api-20120211
-Depends: libapr1 (>= 1.5.0), libaprutil1 (>= 1.5.0), libaprutil1-dbd-sqlite3 | libaprutil1-dbd-mysql | libaprutil1-dbd-odbc | libaprutil1-dbd-pgsql | libaprutil1-dbd-freetds, libaprutil1-ldap, libc6 (>= 2.4), libldap-2.4-2 (>= 2.4.7), liblua5.2-0, libnghttp2-14 (>= 1.14.0), libpcre3, libssl1.0.2 (>= 1.0.2d), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), perl:any
-Suggests: www-browser, apache2-doc, apache2-suexec-pristine | apache2-suexec-custom
-Description: Apache HTTP Server (modules and other binary files)
- The Apache HTTP Server Project's goal is to build a secure, efficient and
- extensible HTTP server as standards-compliant open source software. The
- result has long been the number one web server on the Internet.
- .
- This package contains the binaries only and does not set up a working
- web-server instance. Install the "apache2" package to get a fully working
- instance.
-Homepage: http://httpd.apache.org/
-
 Package: libsystemd0
 Status: install ok installed
 Priority: optional
@@ -2240,25 +1924,6 @@ Description: netfilter libiptc library
  sense of changing symbols and backward compatibility not guaranteed.
 Homepage: http://www.netfilter.org/
 
-Package: apache2-data
-Status: install ok installed
-Priority: optional
-Section: httpd
-Installed-Size: 865
-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
-Architecture: all
-Multi-Arch: foreign
-Source: apache2
-Version: 2.4.25-3
-Description: Apache HTTP Server (common files)
- The Apache HTTP Server Project's goal is to build a secure, efficient and
- extensible HTTP server as standards-compliant open source software. The
- result has long been the number one web server on the Internet.
- .
- This package contains architecture-independent common files such as icons,
- error pages and static index files.
-Homepage: http://httpd.apache.org/
-
 Package: libfdisk1
 Status: install ok installed
 Priority: required
@@ -2273,24 +1938,6 @@ Depends: libblkid1 (>= 2.24.2), libc6 (>= 2.17), libuuid1 (>= 2.16)
 Description: fdisk partitioning library
  The libfdisk library is used for manipulating partition tables. It is
  the core of the fdisk, cfdisk, and sfdisk tools.
-
-Package: ssl-cert
-Status: install ok half-configured
-Priority: optional
-Section: utils
-Installed-Size: 63
-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
-Architecture: all
-Multi-Arch: foreign
-Version: 1.0.39
-Depends: debconf (>= 0.5) | debconf-2.0, openssl (>= 0.9.8g-9), adduser
-Suggests: openssl-blacklist
-Description: simple debconf wrapper for OpenSSL
- This package enables unattended installs of packages that
- need to create SSL certificates.
- .
- It is a simple wrapper for OpenSSL's certificate request utility that
- feeds it with the correct user variables.
 
 Package: libpipeline1
 Status: install ok installed
@@ -2400,7 +2047,7 @@ Description: Linux Kernel Device Mapper userspace library
 Homepage: http://sources.redhat.com/lvm2/
 
 Package: php7.0-cli
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: php
 Installed-Size: 4046
@@ -2424,7 +2071,7 @@ Description: command-line interpreter for the PHP scripting language
 Homepage: http://www.php.net/
 
 Package: sgml-base
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: text
 Installed-Size: 69
@@ -2476,7 +2123,7 @@ Description: GNU core utilities
 Homepage: http://gnu.org/software/coreutils
 
 Package: file
-Status: install ok installed
+Status: install ok unpacked
 Priority: standard
 Section: utils
 Installed-Size: 91
@@ -2493,7 +2140,7 @@ Description: Recognize the type of data in a file using "magic" numbers
 Homepage: http://www.darwinsys.com/file/
 
 Package: libicu57
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 30192
@@ -2687,7 +2334,7 @@ Description: high-quality block-sorting file compressor library - runtime
 Homepage: http://www.bzip.org/
 
 Package: ucf
-Status: install ok installed
+Status: install ok unpacked
 Priority: standard
 Section: utils
 Installed-Size: 191
@@ -2697,7 +2344,7 @@ Multi-Arch: foreign
 Version: 3.0036
 Depends: debconf (>= 1.5.19), coreutils (>= 5.91)
 Conffiles:
- /etc/ucf.conf 5565b8b26108c49ba575ba452cd69b3e
+ /etc/ucf.conf newconffile
 Description: Update Configuration File(s): preserve user changes to config files
  Debian policy mandates that user changes to configuration files must be
  preserved during package upgrades. The easy way to achieve this behavior
@@ -2764,7 +2411,7 @@ Description: X11 miscellaneous micro-utility library
  git://anongit.freedesktop.org/git/xorg/lib/libXmu
 
 Package: libxml2
-Status: install ok installed
+Status: install ok unpacked
 Priority: standard
 Section: libs
 Installed-Size: 2279
@@ -2846,7 +2493,7 @@ Description: Manage ASN.1 structures (runtime)
 Homepage: http://www.gnu.org/software/libtasn1/
 
 Package: libmagic-mgc
-Status: install ok installed
+Status: install ok unpacked
 Priority: standard
 Section: libs
 Installed-Size: 4832
@@ -2896,7 +2543,7 @@ Description: DHCP client for automatically obtaining an IP address
 Homepage: http://www.isc.org
 
 Package: bzip2
-Status: install ok installed
+Status: install ok unpacked
 Priority: standard
 Section: utils
 Installed-Size: 180
@@ -2924,7 +2571,7 @@ Description: high-quality block-sorting file compressor - utilities
 Homepage: http://www.bzip.org/
 
 Package: libmagic1
-Status: install ok installed
+Status: install ok unpacked
 Priority: standard
 Section: libs
 Installed-Size: 229
@@ -2936,8 +2583,8 @@ Version: 1:5.30-1
 Depends: libc6 (>= 2.15), zlib1g (>= 1:1.1.4), libmagic-mgc (= 1:5.30-1)
 Suggests: file
 Conffiles:
- /etc/magic 272913026300e7ae9b5e2d51f138e674
- /etc/magic.mime 272913026300e7ae9b5e2d51f138e674
+ /etc/magic newconffile
+ /etc/magic.mime newconffile
 Description: Recognize the type of data in a file using "magic" numbers - library
  This library can be used to classify files according to magic number
  tests. It implements the core functionality of the file command.
@@ -3395,7 +3042,7 @@ Homepage: http://web.mit.edu/kerberos/
 
 Package: libc-bin
 Essential: yes
-Status: install ok installed
+Status: install ok triggers-pending
 Priority: required
 Section: libs
 Installed-Size: 3342
@@ -3422,6 +3069,7 @@ Description: GNU C Library: Binaries
   * ldd, ldconfig: print/configure shared library dependencies
   * locale, localedef: show/generate locale definitions
   * tzselect, zdump, zic: select/dump/compile time zones
+Triggers-Pending: ldconfig
 Homepage: http://www.gnu.org/software/libc/libc.html
 
 Package: libsemanage1
@@ -3635,7 +3283,7 @@ Description: System-V-like utilities
 Homepage: http://savannah.nongnu.org/projects/sysvinit
 
 Package: xz-utils
-Status: install ok installed
+Status: install ok unpacked
 Priority: required
 Section: utils
 Installed-Size: 522
@@ -3714,29 +3362,8 @@ Description: converts between character sets in Perl
  package.
 Homepage: http://search.cpan.org/search?module=Text::Iconv
 
-Package: libaprutil1
-Status: install ok installed
-Priority: optional
-Section: libs
-Installed-Size: 250
-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
-Architecture: i386
-Multi-Arch: same
-Source: apr-util
-Version: 1.5.4-3
-Depends: libapr1 (>= 1.4.8-2~), libc6 (>= 2.4), libdb5.3, libexpat1 (>= 2.0.1), libgdbm3 (>= 1.8.3), libssl1.1 (>= 1.1.0), libuuid1 (>= 2.16)
-Breaks: libapr1 (<< 1.4.8-2~)
-Description: Apache Portable Runtime Utility Library
- APR is Apache's Portable Runtime Library, designed to be a support library
- that provides a predictable and consistent interface to underlying
- platform-specific implementations.
- .
- APR Util is a utilities library implemented on top of apr, providing database
- access, xml parsing, and other useful functionality.
-Homepage: http://apr.apache.org/
-
 Package: php7.0-json
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: php
 Installed-Size: 62
@@ -3820,7 +3447,7 @@ Description: Common files for SELinux policy management libraries
 Homepage: http://userspace.selinuxproject.org/
 
 Package: php-common
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: php
 Installed-Size: 70
@@ -3831,7 +3458,7 @@ Version: 1:49
 Depends: psmisc (>= 22.15-1~), sed (>= 4.1.1-1), init-system-helpers (>= 1.18~)
 Breaks: php-amqp (<< 1.7.0~alpha2-4~), php-apcu (<< 5.1.3+4.0.10-2~), php-apcu-bc (<< 1.0.3-2~), php-ast (<< 0.1.1-2~), php-geoip (<< 1.1.0-4~), php-gmagick (<< 2.0.1~rc3+1.1.7~rc3-2~), php-igbinary (<< 1.2.1-10-ge0e66b9+1.2.1-2~), php-imagick (<< 3.4.0~rc6-2~), php-memcache (<< 3.0.9~20151130.fdbd46b-2~), php-memcached (<< 2.2.0-95-g6ace07d+2.2.0-2~), php-mongodb (<< 1.1.2-3~), php-msgpack (<< 2.0.0+0.5.7-2~), php-radius (<< 1.4.0~b1-2~), php-redis (<< 2.2.7-355-g799e0bc+2.2.7-4~), php-rrd (<< 2.0.0+1.1.3-4~), php-smbclient (<< 0.8.0~rc1-2~), php-ssh2 (<< 0.12-39-g3dfe336+0.12-2~), php-uploadprogress (<< 1.0.3.1-4-g95d8a0f-2~), php-uuid (<< 1.0.4-2~), php-xdebug (<< 2.4.0~rc4-2~), php-zmq (<< 1.1.3-3~), php5.6-common (<< 5.6.18+dfsg-10~), php5.6-json (<< 1.3.9-2~), php7.0-common (<< 7.0.3-11~)
 Conffiles:
- /etc/cron.d/php e6fa2d74078ac0ac6fd730decf3b3736
+ /etc/cron.d/php newconffile
 Description: Common files for PHP packages
  This package contains common utilities shared among all packaged PHP
  versions.
@@ -4392,28 +4019,6 @@ Description: get display widths of characters on the terminal
  It provides mbwidth(), mbswidth(), and mblen().
 Homepage: http://search.cpan.org/search?module=Text::CharWidth
 
-Package: liblua5.2-0
-Status: install ok installed
-Priority: optional
-Section: libs
-Installed-Size: 455
-Maintainer: Enrico Tassi <gareuselesinge@debian.org>
-Architecture: i386
-Multi-Arch: same
-Source: lua5.2 (5.2.4-1.1)
-Version: 5.2.4-1.1+b2
-Depends: libc6 (>= 2.7), libgcc1 (>= 1:3.0), libstdc++6 (>= 4.1.1)
-Description: Shared library for the Lua interpreter version 5.2
- Lua is a powerful, light-weight programming language designed for extending
- applications.  The language engine is accessible as a library, having a C
- API which allows the application to exchange data with Lua programs and also
- to extend Lua with C functions.  Lua is also used as a general-purpose,
- stand-alone language through the simple command line interpreter provided.
- .
- This package contains runtime libraries.  You shouldn't need to install it
- explicitly.
-Homepage: http://www.lua.org
-
 Package: libcomerr2
 Status: install ok installed
 Priority: required
@@ -4498,7 +4103,7 @@ Description: X11 Display Manager Control Protocol library
  git://anongit.freedesktop.org/git/xorg/lib/libXdmcp
 
 Package: xml-core
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: text
 Installed-Size: 117
@@ -4509,7 +4114,7 @@ Version: 0.17
 Depends: sgml-base (>= 1.28), sed (>= 4.1.2-8)
 Suggests: debhelper (>= 9.20120909)
 Conffiles:
- /etc/sgml/xml-core.cat 055ba0bd3154c0a58b9bf8a0c9ecf2fa
+ /etc/sgml/xml-core.cat newconffile
 Description: XML infrastructure and XML catalog file support
  This package creates the XML infrastructure directories and provides
  XML catalog file support in compliance with the current Debian XML
@@ -4568,7 +4173,7 @@ Description: device mounting library
  This device mounting library is used by mount and umount helpers.
 
 Package: php7.0-common
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: php
 Installed-Size: 4569
@@ -5410,28 +5015,6 @@ Description: disk encryption support - shared library
  .
  This package provides the libcryptsetup shared library.
 Homepage: https://gitlab.com/cryptsetup/cryptsetup
-
-Package: libaprutil1-ldap
-Status: install ok installed
-Priority: optional
-Section: libs
-Installed-Size: 39
-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
-Architecture: i386
-Multi-Arch: same
-Source: apr-util
-Version: 1.5.4-3
-Depends: libaprutil1 (= 1.5.4-3), libc6 (>= 2.4), libldap-2.4-2 (>= 2.4.7)
-Description: Apache Portable Runtime Utility Library - LDAP Driver
- APR is Apache's Portable Runtime Library, designed to be a support library
- that provides a predictable and consistent interface to underlying
- platform-specific implementations.
- .
- APR Util is a utilities library implemented on top of apr, providing database
- access, xml parsing, and other useful functionality.
- .
- This package contains the LDAP driver.
-Homepage: http://apr.apache.org/
 
 Package: netbase
 Status: install ok installed

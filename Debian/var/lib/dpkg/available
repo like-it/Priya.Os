@@ -872,6 +872,25 @@ Size: 772630
 MD5sum: 937db11ac478efb20abff341453b341e
 SHA256: 7e1995de791034c4d7ad95f6b08c17581d67d69afdf6103e3dfc3df93d1a4520
 
+Package: libc-l10n
+Source: glibc
+Version: 2.24-11
+Installed-Size: 4210
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Architecture: all
+Replaces: locales (<< 2.21-1)
+Breaks: locales (<< 2.21-1)
+Description: GNU C Library: localization files
+Multi-Arch: foreign
+Homepage: http://www.gnu.org/software/libc/libc.html
+Description-md5: 53ecaa40591ab16906ffe57e37f97283
+Section: localization
+Priority: standard
+Filename: pool/main/g/glibc/libc-l10n_2.24-11_all.deb
+Size: 819136
+MD5sum: 2c0fa959b69c572b97c6ce61e4b3a90a
+SHA256: 7cacb4fd7b8c69536ae4a2575c79dd040673ad07e9925f58aed81c311c5fd1d4
+
 Package: libc6
 Source: glibc
 Version: 2.24-11
@@ -894,6 +913,26 @@ Filename: pool/main/g/glibc/libc6_2.24-11_i386.deb
 Size: 2467178
 MD5sum: abdf6fc2dd3cc72e2f34cce5b7f8f9c4
 SHA256: 059830203dd30e68e617ac404587e2dc6e4404f3e7b168e0bb3756e1ec2746d8
+
+Package: locales
+Source: glibc
+Version: 2.24-11
+Installed-Size: 9244
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Architecture: all
+Replaces: manpages-fr-extra (<< 20141022)
+Depends: libc-bin (>> 2.24), libc-l10n (>> 2.24), debconf (>= 0.5) | debconf-2.0
+Description: GNU C Library: National Language (locale) data [support]
+Homepage: http://www.gnu.org/software/libc/libc.html
+Description-md5: 68ccf846a4935e541c4a717fc0a1f3e3
+Tag: admin::configuring, devel::i18n, implemented-in::c, role::app-data,
+ role::program, scope::utility, suite::gnu
+Section: localization
+Priority: standard
+Filename: pool/main/g/glibc/locales_2.24-11_all.deb
+Size: 3290342
+MD5sum: d38f9a59ab9daf56144f8714e17d0cbf
+SHA256: 967fd670f4afd25a557b96dc14df27221a0fc9c8a333310ecec2fe83a253d85a
 
 Package: multiarch-support
 Source: glibc

@@ -6,11 +6,11 @@ killall5 -9
 # PS1='${debian_chroot:+($debian_chroot)}\h:\w\$ '
 # umask 022
 
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-export LANGUAGE=en_US.UTF-8
+#export LC_ALL=en_US.UTF-8
+#export LANG=en_US.UTF-8
+#export LANGUAGE=en_US.UTF-8
 export LS_OPTIONS='--color=auto'
-export LANG=C 
+#export LANG=C 
 
 eval "`dircolors`"
 alias ls='ls $LS_OPTIONS'
@@ -27,20 +27,20 @@ alias l='ls $LS_OPTIONS -lA'
 
 # locales
 
-mkdir -p /dev/pts
+#mkdir -p /dev/pts
 
-if ! locale -a | grep -q 'en_US.utf8'; then  
-  echo "I Setup default locale"  
-  apt-get install -y debconf locales
-  dpkg-reconfigure locales  
-  echo "I Done setting up locale."  
-else
-  echo "I en_US.utf8 is already available"
-fi
+#if ! locale -a | grep -q 'en_US.utf8'; then  
+#  echo "I Setup default locale"  
+#  apt-get install -y debconf locales
+#  dpkg-reconfigure locales  
+  #echo "I Done setting up locale."  
+#else
+#  echo "I en_US.utf8 is already available"
+#fi
 
 # install stuff
 apt-get install git-core -y
-apt-get	install php7.0 -y
+#apt-get	install php7.0 -y
 apt-get	install php7.0-cli -y
 #apt-get	install php7.0-common -y
 apt-get	install php7.0-json -y
@@ -52,8 +52,17 @@ apt-get clean
 
 # start (install)
 
-git clone https://github.com/like-it/Priya.Start.git /Vendor/Priya.Start
-git clone https://github.com/like-it/Priya.Os.git /Vendor/Priya.Os
+git clone https://github.com/like-it/Priya /Vendor/Priya
+
+mkdir -p /run/Vendor
+
+cp -R /Vendor/Priya /run/Vendor
+
+#priya
+
+# save os
+
+git clone https://github.com/like-it/Priya.Os.git /Vendor/Priya.Os	# only once
 
 mkdir /Vendor/Priya.Os/Debian
 rsync -av --progress / /Vendor/Priya.Os/Debian --exclude /proc --exclude /sys --exclude /Vendor/Priya.Os/Debian --exclude /run
