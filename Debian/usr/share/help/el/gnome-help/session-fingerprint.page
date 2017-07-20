@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="hardware-auth"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
+
+    <credit type="author">
+      <name>Έργο Τεκμηρίωσης GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Μπορείτε να συνδεθείτε στο σύστημά σας χρησιμοποιώντας έναν σαρωτή που υποστηρίζει δακτυλικό αποτύπωμα αντί να πληκτρολογήσετε τον κωδικό πρόσβασής σας.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Είσοδος με δακτυλικό αποτύπωμα</title>
+
+  <p>Εάν το σύστημά σας έχει έναν σαρωτή που υποστηρίζει δακτυλικό αποτύπωμα, μπορείτε να γράψετε το δακτυλικό σας αποτύπωμα και να το χρησιμοποιήσετε για σύνδεση.</p>
+
+<section id="record">
+  <title>Εγγραφή δακτυλικού αποτυπώματος</title>
+
+  <p>Πριν να μπορείτε να συνδεθείτε με το δακτυλικό αποτύπωμά σας, χρειάζεται να το καταγράψετε έτσι ώστε το σύστημα να μπορεί να το χρησιμοποιήσει για να σας αναγνωρίσει.</p>
+
+  <note style="tip">
+    <p>Εάν το δάκτυλό σας είναι υπερβολικά ξηρό, μπορεί να έχετε δυσκολία καταχωρίζοντας το δακτυλικό σας αποτύπωμα. Εάν συμβεί αυτό, υγράνετε το δάκτυλό σας ελαφρά, ξηράνετε το με ένα καθαρό ύφασμα και ξαναδοκιμάστε.</p>
+  </note>
+
+  <p>Χρειάζεστε <link xref="user-admin-explain">δικαιώματα διαχειριστή</link> για να επεξεργαστείτε λογαριασμούς χρήστη άλλους εκτός από τον δικό σας.</p>
+
+  <steps>
+    <item>
+      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Χρήστες</gui>.</p>
+    </item>
+    <item>
+      <p>Κάντε κλικ στο <gui>Χρήστες</gui> για να ανοίξετε τον πίνακα.</p>
+    </item>
+    <item>
+      <p>Πατήστε στο <gui>Απενεργοποιημένο</gui>, δίπλα στο <gui>Σύνδεση με δακτυλικό αποτύπωμα</gui> για να προσθέσετε ένα δακτυλικό αποτύπωμα για τον επιλεγμένο λογαριασμό. Αν προσθέτετε το δακτυλικό αποτύπωμα για έναν διαφορετικό χρήστη, θα χρειαστείτε πρώτα να <gui>Ξεκλειδώσετε</gui> τον πίνακα.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε το δάκτυλο που θέλετε να χρησιμοποιήσετε για το δακτυλικό αποτύπωμα, έπειτα <gui style="button">Επόμενο</gui>.</p>
+    </item>
+    <item>
+      <p>Ακολουθήστε τις οδηγίες στον διάλογο και περάστε το δάκτυλό σας με <em>μέτρια ταχύτητα</em> πάνω από τον αναγνώστη δακτυλικού αποτυπώματος. Αφού ο υπολογιστής έχει μια καλή εγγραφή του δακτυλικού σας αποτυπώματος, θα δείτε ένα μήνυμα <gui>Έτοιμο!</gui>.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε <gui>Συνέχεια</gui>. Θα δείτε ένα μήνυμα επιβεβαίωσης ότι το δακτυλικό αποτύπωμά σας αποθηκεύτηκε με επιτυχία. Επιλέξτε <gui>Κλείσιμο</gui> για τερματισμό.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="verify">
+  <title>Ελέγξετε ότι το δακτυλικό αποτύπωμα δουλεύει</title>
+
+  <p>Τώρα ελέγξετε ότι η νέα σύνδεσή σας με δακτυλικό αποτύπωμα δουλεύει. Εάν καταχωρίσατε ένα δακτυλικό αποτύπωμα, έχετε ακόμα την επιλογή να συνδεθείτε με τον κωδικό πρόσβασής  σας.</p>
+
+  <steps>
+    <item>
+      <p>Αποθηκεύστε οποιαδήποτε ανοικτή δουλειά και έπειτα <link xref="shell-exit#logout">αποσύνδεση</link>.</p>
+    </item>
+    <item>
+      <p>Στην οθόνη σύνδεσης, επιλέξτε το όνομα χρήστη από τη λίστα. Η μορφή καταχώρισης του κωδικού πρόσβασης θα εμφανιστεί.</p>
+    </item>
+    <item>
+      <p>Αντί να πληκτρολογείτε τον κωδικό πρόσβασής σας, θα πρέπει να μπορείτε να περνάτε το δάκτυλό σας από τον αναγνώστη δακτυλικού αποτυπώματος.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

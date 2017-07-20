@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-userid-add" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="pgp-userid#add-remove"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-27" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Το να έχετε πολλά αναγνωριστικά χρήστη σας βοηθά να χρησιμοποιείτε το ίδιο κλειδί για να επικοινωνείτε με διαφορετικά άτομα.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα του GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Προσθέστε πρόσθετα αναγνωριστικά χρήστη σε ένα κλειδί</title>
+
+  <p>Ένα κλειδί μπορεί να έχει πολλά αναγνωριστικά χρήστη. Αυτό βοηθά όταν θέλετε να χρησιμοποιήσετε το ίδιο κλειδί, ενώ επικοινωνείτε με πολλά άτομα και ένα από αυτά δεν αναγνωρίζει, ας πούμε, τη διεύθυνση αλληλογραφίας του αναγνωριστικού σας ως χρήστη. Αυτό το άτομο μπορεί να μη θέλει να εισάγει το δημόσιο κλειδί σας, αφού περιέχει πληροφορίες που δεν ξέρουν. Σε τέτοια σενάρια, αν δεν θέλετε να δημιουργήσετε ένα νέο κλειδί με ένα διαφορετικό αναγνωριστικό χρήστη, μπορείτε να επισυνάψετε ένα νέο αναγνωριστικό χρήστη στο υπάρχον κλειδί σας.</p>
+
+  <steps>
+    <title>Για να προσθέσετε ένα πρόσθετο αναγνωριστικό χρήστη:</title>
+    <item>
+      <p>Επιλέξτε την κλειδοθήκη <gui>Κλειδιά GnuPG</gui> από το αριστερό πλευρικό παράθυρο.</p>
+    </item>
+    <item>
+      <p>Από τον κατάλογο, επιλέξτε το <gui>Προσωπικό κλειδί PGP</gui> της επιλογής σας.</p>
+    </item>
+    <item>
+      <p>Κάντε δεξί κλικ το κλειδί και επιλέξτε <guiseq><gui>Ιδιότητες</gui> <gui>Ονόματα και υπογραφές</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Πατήστε το πλήκτρο <gui style="button">Προσθήκη ονόματος</gui> για να προσθέσετε ένα νέο αναγνωριστικό χρήστη.</p>
+    </item>
+    <item>
+      <p>Στον νέο διάλογο, συμπληρώστε τις λεπτομέρειες όπως <gui>Πλήρες όνομα</gui>, <gui>Διεύθυνση αλληλογραφίας</gui> και <gui>Σχόλιο κλειδιού</gui> για το νέο αναγνωριστικό χρήστη.</p>
+    </item>
+    <item>
+      <p>Εισάγετε το σωστό συνθηματικό και πατήστε <gui style="button">Εντάξει</gui> για να ολοκληρώσετε.</p>
+    </item>
+  </steps>
+
+  <p>Το νέο αναγνωριστικό χρήστη θα καταχωριστεί τώρα στο παράθυρο <gui>Ονόματα και υπογραφές</gui>.</p>
+
+  <note style="tip">
+    <p>Αν το κλειδί σας έχει δημοσιευτεί σε ένα διακομιστή κλειδιών, <link xref="pgp-sync">συγχρονίστε</link> τον μετά την προσθήκη νέων αναγνωριστικών χρήστη για να ενημερώσετε το απομακρυσμένο αντίγραφο του κλειδιού.</p>
+  </note>
+
+</page>

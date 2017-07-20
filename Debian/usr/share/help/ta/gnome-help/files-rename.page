@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-rename" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>ஷான் மெக்கேன்ஸ்</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>ஜிம் காம்ப்பெல்</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>மைக்கேல் ஹில்</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>கோப்பு அல்லது கோப்புறை பெயரை மாற்றுதல்.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>ஒரு கோப்பு அல்லது கோப்புறையை மறுபெயரிடுதல்</title>
+
+  <p>As with other file managers, you can use <app>Files</app> to change the
+  name of a file or folder.</p>
+
+  <steps>
+    <title>ஒரு கோப்பு அல்லது கோப்புறையை மறுபெயரிட:</title>
+    <item><p>உருப்படியை வலது சொடுக்கி <gui>மறுபெயரிடு</gui> என்பதைத் தேர்வு செய்யவும் அல்லது கோப்பைத் தேர்ந்தெடுத்து <key>F2</key> ஐ அழுத்தவும்.</p></item>
+    <item><p>Type the new name and press <key>Enter</key> or click
+    <gui>Rename</gui>.</p></item>
+  </steps>
+
+  <p>நீங்கள் <link xref="nautilus-file-properties-basic">பண்புகள்</link> சாளரத்தில் இருந்தும் ஒரு கோப்பை மறுபெயரிட முடியும்.</p>
+
+  <p>When you rename a file, only the first part of the name of the file is
+  selected, not the file extension (the part after the last <file>.</file>).
+  The extension normally denotes what type of file it is (for example,
+  <file>file.pdf</file> is a PDF document), and you usually do not want to
+  change that. If you need to change the extension as well, select the entire
+  file name and change it.</p>
+
+  <note style="tip">
+    <p>If you renamed the wrong file, or named your file improperly, you can
+    undo the rename. To revert the action, immediately click the menu button in
+    the toolbar and select <gui>Undo Rename</gui>, or press
+    <keyseq><key>Ctrl</key><key>Z</key></keyseq>, to restore the former
+    name.</p>
+  </note>
+
+  <section id="valid-chars">
+    <title>கோப்பு பெயர்களுக்கான செல்லுபடியான எழுத்துக்கள்</title>
+
+    <p>நீங்கள் கோப்பு பெயர்களுக்கு <file>/</file> (சாய் கோடு) தவிர எந்த எழுத்தையும் பயன்படுத்தலாம். எனினும் சில சாதனங்களில் கோப்பு பெயர்களில் இன்னும் கூடுதல் கட்டுப்பாடுகளை விதிக்கின்ற <em>கோப்பு முறைமையைப்</em> பயன்படுத்தலாம். எனவே, இது உங்கள் கோப்பு பெயர்களில் பின்வரும் எழுத்துக்களைத் தவிர்ப்பது சிறப்பு: <file>|</file>, <file>\</file>, <file>?</file>, <file>*</file>, <file>&lt;</file>, <file>"</file>, <file>:</file>, <file>&gt;</file>, <file>/</file>.</p>
+
+    <note style="warning">
+    <p>நீங்கள் ஒரு கோப்புக்கு <file>.</file> ஐ முதல் எழுத்தாகக் கொண்டு பெயரிட்டால், கோப்பு மேலாளர் மூலம் பார்க்க முயற்சிக்கும் போது அக்கோப்பு <link xref="files-hidden">மறைந்துள்ள</link> கோப்பாக இருக்கும்.</p>
+    </note>
+
+  </section>
+
+  <section id="common-probs">
+    <title>பொதுவான பிரச்சினைகள்</title>
+
+    <terms>
+      <item>
+        <title>கோப்பு பெயர் ஏற்கனவே பயன்பாட்டில் உள்ளது</title>
+        <p>You cannot have two files or folders with the same name in the same
+        folder. If you try to rename a file to a name that already exists in
+        the folder you are working in, the file manager will not allow it.</p>
+        <p>கோப்பு மற்றும் கோப்புறை பெயர்கள் பேரெழுத்து வித்தியாசம் உள்ளவை, ஆகவே <file>File.txt</file> மற்றும் <file>FILE.txt</file> ஆகிய இரண்டும் ஒன்றல்ல. இப்படி ஒரே மாதிரி உள்ள வெவ்வேறு பெயர்களைப் பயன்படுத்த அனுமதிக்கப்படும் எனினும் அது பரிந்துரைக்கப்படுவதில்லை.</p>
+      </item>
+      <item>
+        <title>கோப்பு பெயர் மிக நீளமாக உள்ளது</title>
+        <p>On some file systems, file names can have no more than 255
+        characters in their names.  This 255 character limit includes both the
+        file name and the path to the file (for example,
+        <file>/home/wanda/Documents/work/business-proposals/…</file>), so you
+        should avoid long file and folder names where possible.</p>
+      </item>
+      <item>
+        <title>மறுபெயரிடுவதற்கான விருப்பம் செயலில் இல்லை</title>
+        <p><gui>மறுபெயரிடு</gui> விருப்பம் செயலில் இல்லாவிட்டால், கோப்பு மறுபெயரிட உங்களுக்கு அனுமதி இல்லை என்று பொருள். பாதுகாக்கப்பட்ட சில கோப்புகளை மறுபெயரிட்டால் உங்கள் கணினி நிலைத்தன்மையை இழக்கலாம், ஆகவே அத்தகைய கோப்புகளை மறுபெயரிடுவதில் எச்சரிக்கையுடன் செயல்பட வேண்டும். மேலும் தகவலுக்கு <link xref="nautilus-file-properties-permissions"/> ஐப் பார்க்கவும்.</p>
+      </item>
+    </terms>
+
+  </section>
+
+</page>

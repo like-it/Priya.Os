@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-wireless-noconnection" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" version="0.2" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Double-check the password, and other things to try.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Olen kirjoittanut salasanan oikein, mutta yhteydenmuodostus ei onnistu</title>
+
+<p>Jos olet varma, että kirjoitit <link xref="net-wireless-wepwpa">langattoman verkon salasanan</link> oikein, mutta et siltikään pysty yhdistämään langattomaan verkkoon, kokeile jotain seuraavista:</p>
+
+<list>
+ <item>
+  <p>Double-check that you have the correct password</p>
+  <p>Salasanoissa välitetään Ubuntussa <em>aina</em> isoista ja pienistä kirjaimista, joten tarkista aivan ensimmäisenä näiden merkkien oikeinkirjoitus.</p>
+ </item>
+
+ <item>
+  <p>Yritä käyttää hex- tai ASCII-salausavainta</p>
+  <p>Salasana on mahdollista esittää myös eri tavalla - niin sanottuna salausavaimena, eli numeroiden 0-9 ja merkkien a-f yhdistelmänä. Jokaisella salasanalla on oma salausavain. Jos tiedät sekä salasanan että salausavaimen, yritä syöttää salausavain salasanan sijaan.  Varmista, että valitset oikeanlaisen <gui>langattoman tietoturvan</gui> salasanaa kysyttäessä (valitse <gui>WEP 40/128-bit-avain (hexa tai ASCII)</gui>, jos syötät WEP-salauksen 40-merkkistä salausavainta).</p>
+ </item>
+
+ <item>
+  <p>Kytke langaton verkkoyhteys pois päältä ja sitten takaisin päälle</p>
+  <p>Joskus langattomat verkkokortit jumiutuvat tai kohtaavat ongelman, josta ne eivät voi enää palautua. Kokeile kytkeä langaton verkkolaite tietokoneestasi ensin pois päältä ja sitten nollaamalla se (jos se ei ole mahdollista, käynnistä se). Lisätietoja saat ohjeesta <link xref="net-wireless-troubleshooting"/>.</p>
+ </item>
+
+ <item>
+  <p>Check that you're using the correct type of wireless security</p>
+  <p>Kun Ubuntu kysyy sinulta verkon salasanaa, voit valita myös verkon salaustyypin. Varmista että valitsemasi salaustyyppi on langattoman tukiaseman tukema. Tämän asetuksen pitäisi olla oletuksena oikea, mutta joskus se ei ole jostakin syystä. Jos et tiedä verkkosi salaustyyppiä, kannattaa kokeilla eri vaihtoehtoja ja testata niiden toimivuutta.</p>
+ </item>
+
+ <item>
+  <p>Varmista, että langaton verkkokorttisi on kunnolla tuettu</p>
+  <p>Joitain langattomia verkkokortteja ei tueta kovin hyvin. Ne näkyvät langattomien verkkojen listalla, mutta niillä verkkoyhteyden muodostaminen epäonnistuu yleensä ajureiden puutteiden vuoksi. Tarkista vaihtoehtoisten ajureiden saatavuus tai halutessasi voit tehdä joitain ylimääräisiä ja teknisempiä tehtäviä (kuten eri <em>laiteohjelmistojen</em> asennusta). Saat lisätietoja ohjeaiheesta <link xref="net-wireless-troubleshooting"/>.</p>
+ </item>
+
+</list>
+
+</page>

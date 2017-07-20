@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="power"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name>Alexandre Franke</name>
+      <email>afranke@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Μάθετε πώς να αφήσετε τον λογαριασμό χρήστη, αποσυνδέοντας, αλλάζοντας χρήστες κ.ο.κ.</desc>
+    <!-- Should this be a guide which links to other topics? -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Αποσύνδεση, τερματισμός ή αλλαγή χρηστών</title>
+
+  <p>Όταν έχετε τελειώσει τη χρήση του υπολογιστή σας, μπορείτε να τον σβήσετε, να τον αναστείλετε (για εξοικονόμηση ισχύος) ή να τον αφήσετε αναμμένο και να αποσυνδεθείτε.</p>
+
+<section id="logout">
+  <title>Αποσύνδεση ή αλλαγή χρηστών</title>
+
+  <p>Για να επιτρέψετε σε άλλους χρήστες να χρησιμοποιήσουν τον υπολογιστή σας, μπορείτε είτε να αποσυνδεθείτε, ή να αφήσετε τον εαυτό σας συνδεμένο και να αλλάξετε απλά χρήστες. Εάν αλλάξετε χρήστες, όλες οι εφαρμογές σας θα συνεχίσουν να εκτελούνται και καθετί θα είναι εκεί που το αφήσατε όταν επανασυνδεθείτε.</p>
+
+  <p>Για <gui>Αποσύνδεση</gui> ή <gui>Αλλαγή χρήστη</gui>, πατήστε το <link xref="shell-terminology">μενού συστήματος</link> στα δεξιά της πάνω γραμμής, κάντε κλικ στο όνομά σας και επιλέξτε έπειτα την κατάλληλη επιλογή.</p>
+
+  <note if:test="!platform:gnome-classic">
+    <p>Οι καταχωρίσεις <gui>Αποσύνδεση</gui> και <gui>Αλλαγή χρήστη</gui> εμφανίζονται μόνο στο μενού εάν έχετε περισσότερους από έναν λογαριασμούς χρήστη στο σύστημά σας.</p>
+  </note>
+
+  <note if:test="platform:gnome-classic">
+    <p>Η καταχώριση <gui>Αλλαγή χρήστη</gui> εμφανίζεται μόνο στο μενού, αν έχετε περισσότερους από έναν λογαριασμούς χρήστη στο σύστημά σας.</p>
+  </note>
+
+</section>
+
+<section id="lock-screen">
+  <info>
+    <link type="seealso" xref="session-screenlocks"/>
+  </info>
+
+  <title>Κλείδωμα της οθόνης</title>
+
+  <p>Εάν αφήνετε τον υπολογιστή σας για λίγο, θα πρέπει να κλειδώσετε την οθόνη σας για να αποτρέψετε άλλα άτομα να προσπελάσουν τα αρχεία σας ή να εκτελέσουν εφαρμογές. Όταν επιστρέψετε, αναιρέστε το <link xref="shell-lockscreen">κλείδωμα οθόνης</link> και εισάγετε τον κωδικό πρόσβασής σας για να επανασυνδεθείτε. Εάν δεν κλειδώσετε την οθόνη σας, θα κλειδώσει αυτόματα μετά από συγκεκριμένο χρόνο.</p>
+
+  <p>Για να κλειδώσετε την οθόνη σας, κάντε κλικ στο μενού συστήματος στα δεξιά της πάνω γραμμής και πατήστε το κουμπί κλείδωμα οθόνης στο κάτω μέρος του μενού.</p>
+
+  <p>Όταν η οθόνη σας κλειδώσει, άλλοι χρήστες μπορούν να συνδεθούν στους δικούς τους λογαριασμούς κάνοντας κλικ στο <gui>Σύνδεση ως άλλος χρήστης</gui> στην οθόνη του κωδικού πρόσβασης. Μπορείτε να επιστρέψετε στην επιφάνεια εργασίας σας όταν τελειώσετε.</p>
+
+</section>
+
+<section id="suspend">
+  <info>
+    <link type="seealso" xref="power-suspend"/>
+  </info>
+
+  <title>Αναστολή</title>
+
+  <p>Για να εξοικονομήσετε ενέργεια, αναστείλετε τον υπολογιστή σας όταν δεν τον χρησιμοποιείτε. Αν χρησιμοποιείτε έναν φορητό υπολογιστή, το GNOME αναστέλλει τον υπολογιστή σας αυτόματα όταν κλείσετε το καπάκι. Ένα μικρό ποσοστό ισχύος χρησιμοποιείται ακόμα κατά την αναστολή.</p>
+
+  <p>Για να αναστείλετε χειροκίνητα τον υπολογιστή σας, κάντε κλικ στο μενού συστήματος στα δεξιά της πάνω γραμμής και κρατήστε πατημένο το πλήκτρο <key>Alt</key>. Το κουμπί τερματισμού θα αλλάξει σε αναστολή. Πατήστε το κουμπί.</p>
+
+</section>
+
+<section id="shutdown">
+<!--<info>
+  <link type="seealso" xref="power-off"/>
+</info>-->
+
+  <title>Τερματισμός και επανεκκίνηση</title>
+
+  <p>Εάν θέλετε να τερματίσετε πλήρως τον υπολογιστή σας, ή να κάνετε μια πλήρη επανεκκίνηση, κάντε κλικ στο μενού συστήματος στα δεξιά της πάνω γραμμής και πατήστε το κουμπί τερματισμού στο κάτω μέρος του μενού. Ένας διάλογος θα ανοίξει προσφέροντας σας τις επιλογές <gui>Επανεκκίνηση</gui> ή <gui>Τερματισμός</gui>.</p>
+
+  <p>Εάν υπάρχουν άλλοι συνδεδεμένοι χρήστες, μπορεί να μην επιτραπεί ο τερματισμός ή η επανεκκίνηση του υπολογιστή, επειδή αυτό θα τερματίσει τις συνεδρίες τους. Εάν είσαστε διαχειριστής, μπορεί να σας ζητηθεί ο κωδικός πρόσβασής σας για τον τερματισμό.</p>
+
+  <note style="tip">
+    <p>Μπορεί να θελήσετε να κλείσετε τον υπολογιστή σας, εάν επιθυμείτε να τον μετακινήσετε και δεν έχετε μπαταρία, εάν η μπαταρία σας είναι χαμηλή ή δεν κρατά φορτίο καλά. Επίσης ένας απενεργοποιημένος υπολογιστής χρησιμοποιεί <link xref="power-batterylife">λιγότερη ενέργεια</link> από έναν που είναι σε αναστολή.</p>
+  </note>
+
+</section>
+
+</page>

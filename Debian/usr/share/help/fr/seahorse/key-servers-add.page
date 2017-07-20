@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="key-servers-add" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+    <link type="seealso" xref="pgp-sync"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-08-18" status="draft"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Faire des ajouts à la liste des serveurs de clés dans <app>Mots de passe et clés</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ajout d'un serveur de clés</title>
+    <p><app>Mots de passe et clés</app> dispose des serveurs de clés suivants par défaut :</p>
+
+    <list>
+      <item>
+        <p>hkp://pool.sks-keyservers.net</p>
+      </item>
+      <item>
+        <p>ldap://keyserver.pgp.com</p>
+      </item>
+    </list>
+
+  <steps>
+    <title>Ajout d'un serveur de clés</title>
+    <item>
+      <p>Sélectionnez <guiseq><gui style="menu">Édition</gui> <gui style="menuitem">Préférences</gui></guiseq></p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton <gui style="button">Ajouter</gui>.</p>
+    </item>
+    <item>
+      <p>Dans la nouvelle boîte de dialogue, sélectionnez le <gui>Type de serveur de clé</gui> qui convient. Les serveurs de clés sont identifiés par le protocole qu'ils utilisent pour communiquer. Cherchez les premières lettres de l'URL Internet de votre serveur de clé pour identifier son type.</p>
+    </item>
+    <item>
+      <p>Dans le champ <gui style="input">Hôte</gui>, collez l'URL de votre serveur de clés. Consultez la documentation du serveur de clés que vous ajoutez pour voir s'il fonctionne sur un port non-standard. Si c'est le cas, saisissez le port après les « : ». Si vous avez un doute, laissez en blanc la boîte de texte après les « : ».</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui style="button">Valider</gui> pour terminer.</p>
+    </item>
+  </steps>
+
+</page>

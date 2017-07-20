@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Projeto de documentação do GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Notebooks dormem quando você fecha a tampa, para economizar energia.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Por que meu computador desliga quando fecho a tampa?</title>
+
+  <p>Quando você fecha a tampa de seu notebook, seu computador será <link xref="power-suspend"><em>suspenso</em></link> de forma a economizar energia. Isso significa que o computador não está exatamente desligado - ele está apenas dormindo. Você pode resumi-lo ("acordá-lo") abrindo a tampa. Se ele não resumir, tente clicar com o mouse ou pressionar uma tecla. Se isso ainda não funcionar, pressione o botão de liga/desliga.</p>
+
+  <p>Alguns computadores não conseguem serem suspensos adequadamente, normalmente porque seu hardware não haver suporte completo no sistema operacional (por exemplo, os drivers do Linux estão incompletos). Neste caso, você pode descobrir que você não consegue resumir seu computador após ter fechado a tampa. Você pode tentar <link xref="power-suspendfail">corrigir o problema da suspensão</link> ou você pode fazer com que o computador não tente suspender quando você fecha a tampa.</p>
+
+<section id="nosuspend">
+  <title>Impedir o computador de suspender quando a tampa é fechada</title>
+
+  <note style="important">
+    <p>Essas instruções vão apenas funcionar se você está usando <app>systemd</app>. Contate sua distribuição para mais informação.</p>
+  </note>
+
+  <note style="important">
+    <p>Você precisa ter a <app>Ferramenta de ajustes</app> instalada em seu computador para alterar essa configuração.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">Instalar <app>Ferramenta de ajustes</app></link></p>
+    </if:if>
+  </note>
+
+  <p>Se você não deseja que o computador seja suspendido ao fechar a tampa, você pode alterar a configuração para este comportamento.</p>
+
+  <note style="warning">
+    <p>Tenha muito cuidado se você alterar essa configuração. Alguns notebooks podem sobreaquecer se estiverem ligados com tampa fechada, especialmente se estiverem confinados em lugares fechados, como uma mochila.</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Ferramentas de ajustes</gui>.</p>
+    </item>
+    <item>
+      <p>Clique em <gui>Ferramentas de ajustes</gui> para abrir o aplicativo.</p>
+    </item>
+    <item>
+      <p>Clique na aba <gui>Energia</gui>.</p>
+    </item>
+    <item>
+      <p>Alterne <gui>Não suspender ao fechar o notebook</gui> para <gui>ON</gui>.</p>
+    </item>
+    <item>
+      <p>Feche a janela do <gui>Ferramentas de ajustes</gui>.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

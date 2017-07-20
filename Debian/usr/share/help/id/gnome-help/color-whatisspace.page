@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>Ruang warna adalah suatu jangkauan warna yang didefinisikan.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Apa itu ruang warna?</title>
+
+  <p>Ruang warna adalah suatu jangkauan warna yang didefinisikan. Ruang warna yang dikenal baik termasuk sRGB, AdobeRGB, dan ProPhotoRGB.</p>
+
+  <p>Sistem visual orang bukanlan sensor RGB sederhana, tapi kita dapat mendekati bagaimana mata merespon dengan diagram kromatisitas CIE 1931 yang menunjukkan respon visual orang sebagai bentuk tapal kuda. Anda dapat melihat bahwa pada pandangan manusia ada lebih banyak tingkatan hijau yang terdeteksi daripada biru atau merah. Dengan ruang warna trikromatik seperti RGB kita merepresentasikan warna pada komputer memakai tiga nilai, yang membatasi sampai dengan pengkodean <em>segi tiga</em> warna.</p>
+
+  <note>
+    <p>Memakai model seperti diagram kromatisitas CIE 1931 adalah penyederhanaan luar bias dari sistem visual orang, dan gamut nyata diekspresikan sebagai lambung 3D, bukan projeksi 2D. Suatu projeksi 2D dari bentuk 3D kadang bisa menyesatkan, sehingga bila ANda ingin melihat lambung 3D, gunakan aplikasi <code>gcm-viewer</code>.</p>
+  </note>
+
+  <figure>
+    <desc>sRGB, AdobeRGB, dan ProPhotoRGB direpresentasikan oleh segi tiga putih</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>Pertama, melihat pada sRGB, yang merupakan ruang paling kecil dan dapat mengenkode sejumlah warna paling sedikit. Ini adalah aproksimase dari tampilan CRT berumur 10 tahun, sehingga kebanyakan monitor modern dapat menampilkan lebih banyak warna daripada ini dengan mudah. sRGB adalah standar <em>kelipatan terkecil</em> dan dipakai pada sejumlah besar aplikasi (termasuk Internet).</p>
+  <p>AdobeRGB sering dipakai sebagai <em>ruang penyuntingan</em>. Ini dapat mengenkode lebih banyak warna daripada sRGB, yang berarti Anda dapat mengubah warna dalam foto tanpa perlu khawatir bahwa warna paling menyala terpotong atau warna hitam terredam.</p>
+  <p>ProPhoto adalah ruang terbesar yang tersedia dan sering dipakai untuk pengarsipan dokumen. Ini dapat mengenkode hampir seluruh jangkauan warna yang terdeteksi oleh mata manusia, dan bahkan mengenkode warna yang tak dapat dideteksi mata!</p>
+
+  <p>Kini, bila ProPhoto jelas lebih baik, mengapa kita tidak memakainya untuk semua hal? Jawabannya tentang <em>kuantisasi</em>. Bila Anda hanya memiliki 8 bit (256 tingkat) untuk mengenkode setiap kanal, maka suatu jangkauan yang lebih lebar akan memiliki jangkah lebih besar antar tiap nilai.</p>
+  <p>Jangkah lebih lebar berarti kesalahan lebih besar antara warna yang ditangkap dan warna yang disimpan, dan bagi beberapa warna ini adalah masalah besar. Ternyata bahwa warna-warna kunci, seperti warna kulit sangat penting, dan bahkan kesalahan kecil akan membuat pemirsa tak terlatih menyadari bahwa sesuatu dalam foto terlihat salah.</p>
+  <p>Tentu saja, memakai gambar 16 bit akan meninggalkan lebih banyak langkah dan kesalahan kuantisasi yang jauh lebih kecil, tapi ini melipatduakan ukuran setiap berkas gambar. Kebanyakan isi yang ada sekarang adalah 8bpp, yaitu 8 bit-per-piksel.</p>
+  <p>Manajemen warna adalah suatu proses untuk mengonversi dari satu ruang warna ke lainnya, dimana suatu ruang warna bisa berupa ruang terdefinisi yang dikenal baik seperti sRGB, atau ruang ubahan seperti profil pencetak atau monitor Anda.</p>
+
+</page>

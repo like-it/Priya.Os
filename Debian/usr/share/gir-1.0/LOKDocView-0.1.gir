@@ -1,0 +1,788 @@
+<?xml version="1.0"?>
+<!-- This file was automatically generated from C sources - DO NOT EDIT!
+To affect the contents of this file, edit the original C definitions,
+and/or use gtk-doc annotations.  -->
+<repository version="1.2"
+            xmlns="http://www.gtk.org/introspection/core/1.0"
+            xmlns:c="http://www.gtk.org/introspection/c/1.0"
+            xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
+  <include name="GLib" version="2.0"/>
+  <include name="GObject" version="2.0"/>
+  <include name="Gdk" version="3.0"/>
+  <include name="GdkPixbuf" version="2.0"/>
+  <include name="Gio" version="2.0"/>
+  <include name="Gtk" version="3.0"/>
+  <namespace name="LOKDocView"
+             version="0.1"
+             shared-library="liblibreofficekitgtk.so"
+             c:identifier-prefixes="LOKDoc"
+             c:symbol-prefixes="lok_doc">
+    <class name="View"
+           c:symbol-prefix="view"
+           c:type="LOKDocView"
+           parent="Gtk.DrawingArea"
+           glib:type-name="LOKDocView"
+           glib:get-type="lok_doc_view_get_type"
+           glib:type-struct="ViewClass">
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gio.Initable"/>
+      <implements name="Gtk.Buildable"/>
+      <constructor name="new" c:identifier="lok_doc_view_new" throws="1">
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">The #LOKDocView widget instance.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <parameter name="pPath"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">LibreOffice install path. Pass null to set it to default
+path which in most cases would be $libdir/libreoffice/program</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="cancellable"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">The cancellable object that you can use to cancel this
+operation.</doc>
+            <type name="Gio.Cancellable" c:type="GCancellable*"/>
+          </parameter>
+        </parameters>
+      </constructor>
+      <constructor name="new_from_user_profile"
+                   c:identifier="lok_doc_view_new_from_user_profile"
+                   throws="1">
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">The #LOKDocView widget instance.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <parameter name="pPath"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">LibreOffice install path. Pass null to set it to default
+path which in most cases would be $libdir/libreoffice/program</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="pUserProfile"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">User profile URL. Must be either a file URL or a
+special vnd.sun.star.pathname URL. Pass non-null to be able to use this
+widget and LibreOffice itself in parallel.</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="cancellable"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">The cancellable object that you can use to cancel this
+operation.</doc>
+            <type name="Gio.Cancellable" c:type="GCancellable*"/>
+          </parameter>
+        </parameters>
+      </constructor>
+      <method name="copy_selection" c:identifier="lok_doc_view_copy_selection">
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve">Selected text. The caller must free the returned buffer after
+use. Returns null if no document is set.</doc>
+          <type name="utf8" c:type="gchar*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="pMimeType" transfer-ownership="none">
+            <doc xml:space="preserve">suggests the return format, for example text/plain;charset=utf-8</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="pUsedMimeType"
+                     direction="out"
+                     caller-allocates="0"
+                     transfer-ownership="full">
+            <doc xml:space="preserve">output parameter to inform about the determined format
+(suggested or plain text).</doc>
+            <type name="utf8" c:type="gchar**"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="find_next" c:identifier="lok_doc_view_find_next">
+        <doc xml:space="preserve">Highlights the next matching text in the view. `search-not-found` signal will
+be emitted when no search is found</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="pText" transfer-ownership="none">
+            <doc xml:space="preserve">text to search for</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="bHighlightAll" transfer-ownership="none">
+            <doc xml:space="preserve">Whether all the matches should be highlighted or not</doc>
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="find_prev" c:identifier="lok_doc_view_find_prev">
+        <doc xml:space="preserve">Highlights the previous matching text in the view. `search-not-found` signal
+will be emitted when no search is found</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="pText" transfer-ownership="none">
+            <doc xml:space="preserve">text to search for</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="bHighlightAll" transfer-ownership="none">
+            <doc xml:space="preserve">Whether all the matches should be highlighted or not</doc>
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="get_document"
+              c:identifier="lok_doc_view_get_document"
+              introspectable="0">
+        <doc xml:space="preserve">Gets the document the viewer displays.</doc>
+        <return-value>
+          <doc xml:space="preserve">The #LibreOfficeKitDocument instance the widget is currently showing</doc>
+          <type c:type="LibreOfficeKitDocument*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_edit" c:identifier="lok_doc_view_get_edit">
+        <doc xml:space="preserve">Gets if the viewer is actually an editor or not.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">%TRUE if the given pDocView is in edit mode.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_part" c:identifier="lok_doc_view_get_part">
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">Current part number of the document. Returns -1 if no document is set currently.</doc>
+          <type name="gint" c:type="gint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_part_name" c:identifier="lok_doc_view_get_part_name">
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve">Get current part name of loaded document. Returns null if no
+document is set, or document has been destroyed using lok_doc_view_destroy_document.</doc>
+          <type name="utf8" c:type="gchar*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="nPart" transfer-ownership="none">
+            <type name="gint" c:type="int"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="get_parts" c:identifier="lok_doc_view_get_parts">
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">Part refers to either individual sheets in a Calc, or slides in Impress,
+and has no relevance for Writer. Returns -1 if no document is set currently.</doc>
+          <type name="gint" c:type="gint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_zoom" c:identifier="lok_doc_view_get_zoom">
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">The current zoom factor value in float for pDocView</doc>
+          <type name="gfloat" c:type="gfloat"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="highlight_all" c:identifier="lok_doc_view_highlight_all">
+        <doc xml:space="preserve">Highlights all matching texts in the view. `search-not-found` signal
+will be emitted when no search is found</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="pText" transfer-ownership="none">
+            <doc xml:space="preserve">text to search for</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="new_from_widget"
+              c:identifier="lok_doc_view_new_from_widget">
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">The #LOKDocView widget instance.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="open_document" c:identifier="lok_doc_view_open_document">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="pPath" transfer-ownership="full">
+            <doc xml:space="preserve">The path of the document that #LOKDocView widget should try to open</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="pRenderingArguments"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">lok::Document::initializeForRendering() arguments.</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="cancellable"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <type name="Gio.Cancellable" c:type="GCancellable*"/>
+          </parameter>
+          <parameter name="callback"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1"
+                     scope="async"
+                     closure="4">
+            <type name="Gio.AsyncReadyCallback" c:type="GAsyncReadyCallback"/>
+          </parameter>
+          <parameter name="userdata"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <type name="gpointer" c:type="gpointer"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="open_document_finish"
+              c:identifier="lok_doc_view_open_document_finish"
+              throws="1">
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">%TRUE if the document is loaded successfully, %FALSE otherwise</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="res" transfer-ownership="none">
+            <type name="Gio.AsyncResult" c:type="GAsyncResult*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="paste" c:identifier="lok_doc_view_paste">
+        <doc xml:space="preserve">Pastes the content at the current cursor position</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">if pData was pasted successfully.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="pMimeType" transfer-ownership="none">
+            <doc xml:space="preserve">format of pData, for example text/plain;charset=utf-8</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="pData" transfer-ownership="none">
+            <doc xml:space="preserve">the data to be pasted</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="nSize" transfer-ownership="none">
+            <doc xml:space="preserve">length of data to be pasted</doc>
+            <type name="gsize" c:type="gsize"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="pixel_to_twip" c:identifier="lok_doc_view_pixel_to_twip">
+        <doc xml:space="preserve">Converts the value in pixels to twips according to zoom level.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">The corresponding value in twips</doc>
+          <type name="gfloat" c:type="gfloat"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="fInput" transfer-ownership="none">
+            <doc xml:space="preserve">The value in pixels to convert to twips</doc>
+            <type name="gfloat" c:type="float"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="post_command" c:identifier="lok_doc_view_post_command">
+        <doc xml:space="preserve">Posts the .uno: command to the LibreOfficeKit.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">the #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="pCommand" transfer-ownership="none">
+            <doc xml:space="preserve">the command to issue to LO core</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="pArguments" transfer-ownership="none">
+            <doc xml:space="preserve">the arguments to the given command</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="bNotifyWhenFinished" transfer-ownership="none">
+            <doc xml:space="preserve">normally false, but it may be useful for eg. .uno:Save</doc>
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="reset_view" c:identifier="lok_doc_view_reset_view">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="set_document_password"
+              c:identifier="lok_doc_view_set_document_password">
+        <doc xml:space="preserve">Set the password for password protected documents</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="pURL" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="pPassword"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">the password, NULL for no password</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_edit" c:identifier="lok_doc_view_set_edit">
+        <doc xml:space="preserve">Sets if the viewer is actually an editor or not.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="bEdit" transfer-ownership="none">
+            <doc xml:space="preserve">%TRUE if the pDocView should go in edit mode, %FALSE otherwise</doc>
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_part" c:identifier="lok_doc_view_set_part">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="nPart" transfer-ownership="none">
+            <type name="gint" c:type="int"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_partmode" c:identifier="lok_doc_view_set_partmode">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="nPartMode" transfer-ownership="none">
+            <type name="gint" c:type="int"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_visible_area"
+              c:identifier="lok_doc_view_set_visible_area">
+        <doc xml:space="preserve">Sets the new visible area of the widget. This helps e.g. the page down key
+to jump the correct length, which depends on the amount of visible height of
+the document.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="pVisibleArea" transfer-ownership="none">
+            <type name="Gdk.Rectangle" c:type="GdkRectangle*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_zoom" c:identifier="lok_doc_view_set_zoom">
+        <doc xml:space="preserve">Sets the new zoom level for the widget. Does nothing if fZoom is equal to
+existing zoom level. Values outside the range [0.25, 5.0] are clamped into
+the nearest allowed value in the interval.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="fZoom" transfer-ownership="none">
+            <doc xml:space="preserve">The new zoom level that pDocView must set it into.</doc>
+            <type name="gfloat" c:type="float"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="twip_to_pixel" c:identifier="lok_doc_view_twip_to_pixel">
+        <doc xml:space="preserve">Converts the value in twips to pixels according to zoom level.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">The corresponding value in pixels</doc>
+          <type name="gfloat" c:type="gfloat"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="pDocView" transfer-ownership="none">
+            <doc xml:space="preserve">The #LOKDocView instance</doc>
+            <type name="View" c:type="LOKDocView*"/>
+          </instance-parameter>
+          <parameter name="fInput" transfer-ownership="none">
+            <doc xml:space="preserve">The value in twips to convert to pixels</doc>
+            <type name="gfloat" c:type="float"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="can-zoom-in" transfer-ownership="none">
+        <doc xml:space="preserve">It tells whether the view can further be zoomed in or not.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="can-zoom-out" transfer-ownership="none">
+        <doc xml:space="preserve">It tells whether the view can further be zoomed out or not.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="doc-height" writable="1" transfer-ownership="none">
+        <doc xml:space="preserve">The height of the currently loaded document in #LOKDocView in twips.</doc>
+        <type name="glong" c:type="glong"/>
+      </property>
+      <property name="doc-password" writable="1" transfer-ownership="none">
+        <doc xml:space="preserve">Set it to true if client supports providing password for viewing
+password protected documents</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="doc-password-to-modify"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">Set it to true if client supports providing password for edit-protected documents</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="doc-width" writable="1" transfer-ownership="none">
+        <doc xml:space="preserve">The width of the currently loaded document in #LOKDocView in twips.</doc>
+        <type name="glong" c:type="glong"/>
+      </property>
+      <property name="docpath" writable="1" transfer-ownership="none">
+        <doc xml:space="preserve">The path of the document that is currently being viewed.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="docpointer" writable="1" transfer-ownership="none">
+        <doc xml:space="preserve">A LibreOfficeKitDocument* in case documentLoad() is already called
+previously.</doc>
+        <type name="gpointer" c:type="gpointer"/>
+      </property>
+      <property name="editable" writable="1" transfer-ownership="none">
+        <doc xml:space="preserve">Whether the document loaded inside of #LOKDocView is editable or not.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="is-loading" transfer-ownership="none">
+        <doc xml:space="preserve">Whether the requested document is being loaded or not. %TRUE if it is
+being loaded, otherwise %FALSE.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="load-progress" transfer-ownership="none">
+        <doc xml:space="preserve">The percent completion of the current loading operation of the
+document. This can be used for progress bars. Note that this is not a
+very accurate progress indicator, and its value might reset it couple of
+times to 0 and start again. You should not rely on its numbers.</doc>
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <property name="lopath"
+                writable="1"
+                construct-only="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The absolute path of the LibreOffice install.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="lopointer"
+                writable="1"
+                construct-only="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">A LibreOfficeKit* in case lok_init() is already called
+previously.</doc>
+        <type name="gpointer" c:type="gpointer"/>
+      </property>
+      <property name="userprofileurl"
+                writable="1"
+                construct-only="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The absolute path of the LibreOffice user profile.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="zoom-level" writable="1" transfer-ownership="none">
+        <doc xml:space="preserve">The current zoom level of the document loaded inside #LOKDocView. The
+default value is 1.0.</doc>
+        <type name="gfloat" c:type="gfloat"/>
+      </property>
+      <field name="aDrawingArea">
+        <type name="Gtk.DrawingArea" c:type="GtkDrawingArea"/>
+      </field>
+      <glib:signal name="command-changed" when="first">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="aCommand" transfer-ownership="none">
+            <doc xml:space="preserve">the command that was changed</doc>
+            <type name="utf8" c:type="gchar*"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="command-result" when="first">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="aCommand" transfer-ownership="none">
+            <doc xml:space="preserve">JSON containing the info about the command that finished,
+and its success status.</doc>
+            <type name="utf8" c:type="gchar*"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="cursor-changed" when="first">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="nX" transfer-ownership="none">
+            <doc xml:space="preserve">The new cursor position (X coordinate) in pixels</doc>
+            <type name="gint" c:type="gint"/>
+          </parameter>
+          <parameter name="nY" transfer-ownership="none">
+            <doc xml:space="preserve">The new cursor position (Y coordinate) in pixels</doc>
+            <type name="gint" c:type="gint"/>
+          </parameter>
+          <parameter name="nWidth" transfer-ownership="none">
+            <doc xml:space="preserve">The width of new cursor</doc>
+            <type name="gint" c:type="gint"/>
+          </parameter>
+          <parameter name="nHeight" transfer-ownership="none">
+            <doc xml:space="preserve">The height of new cursor</doc>
+            <type name="gint" c:type="gint"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="edit-changed" when="first">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="bEdit" transfer-ownership="none">
+            <doc xml:space="preserve">the new edit value of the view</doc>
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="formula-changed" when="first">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="aCommand" transfer-ownership="none">
+            <doc xml:space="preserve">formula text content</doc>
+            <type name="utf8" c:type="gchar*"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="hyperlink-clicked" when="first">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="object" transfer-ownership="none">
+            <type name="utf8" c:type="gchar*"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="load-changed" when="first">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="fLoadProgress" transfer-ownership="none">
+            <doc xml:space="preserve">the new progress value</doc>
+            <type name="gdouble" c:type="gdouble"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="part-changed" when="first">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="aCommand" transfer-ownership="none">
+            <doc xml:space="preserve">the part number which the view changed to</doc>
+            <type name="gint" c:type="gint"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="password-required" when="first">
+        <doc xml:space="preserve">Password must be provided by calling lok_doc_view_set_document_password
+function with pUrl as provided by the callback.
+
+Upon entering a invalid password, another `password-required` signal is
+emitted.
+Upon entering a valid password, document starts to load.
+Upon entering a NULL password: if bModify is %TRUE, document starts to
+open in view-only mode, else loading of document is aborted.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="pUrl" transfer-ownership="none">
+            <doc xml:space="preserve">URL of the document for which password is required</doc>
+            <type name="utf8" c:type="gchar*"/>
+          </parameter>
+          <parameter name="bModify" transfer-ownership="none">
+            <doc xml:space="preserve">whether password id required to modify the document
+This is true when password is required to edit the document,
+while it can still be viewed without password. In such cases, provide a NULL
+password for read-only access to the document.
+If false, password is required for opening the document, and document
+cannot be opened without providing a valid password.</doc>
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="search-not-found" when="first">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="aCommand" transfer-ownership="none">
+            <doc xml:space="preserve">the string for which the search was not found.</doc>
+            <type name="utf8" c:type="gchar*"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="search-result-count" when="first">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="aCommand" transfer-ownership="none">
+            <doc xml:space="preserve">number of matches.</doc>
+            <type name="utf8" c:type="gchar*"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="size-changed" when="first">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="aCommand" transfer-ownership="none">
+            <doc xml:space="preserve">NULL, we just notify that want to notify the UI elements that are interested.</doc>
+            <type name="gint" c:type="gint"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="text-selection" when="first">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="bIsTextSelected" transfer-ownership="none">
+            <doc xml:space="preserve">whether text selected is non-null</doc>
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+    </class>
+    <record name="ViewClass"
+            c:type="LOKDocViewClass"
+            glib:is-gtype-struct-for="View">
+      <field name="parent_class">
+        <type name="Gtk.DrawingAreaClass" c:type="GtkDrawingAreaClass"/>
+      </field>
+    </record>
+    <record name="ViewPrivate" c:type="LOKDocViewPrivate" disguised="1">
+    </record>
+  </namespace>
+</repository>

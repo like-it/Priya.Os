@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <title type="sort">1</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Conecte-se a outro computador na sua rede local.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Estabelecendo uma conexão</title>
+
+  <p>Usando o aplicativo <app>Visualizador de área de trabalho remota</app> você pode conectar-se a outro computador da sua rede local.</p>
+
+  <steps>
+    <item>
+      <p>Selecione <guiseq><gui style="menu">Remota</gui> <gui style="menuitem">Conectar</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Escolha o <gui>Protocolo</gui> e a <gui>Máquina</gui> para a conexão.</p>
+      <note>
+        <p>Alguns protocolos permitem que você veja todos os computadores disponíveis na sua rede local, ao clicar no botão <gui style="button">Localizar</gui>. Este botão não será exibido se sua máquina não  tiver compatibilidade com <app>Avahi</app>.</p>
+      </note>
+    </item>
+    <item>
+      <p>Selecione as opções que você deseja estarem habilitadas quando a conexão for estabelecida. As opções irão variar dependendo do protocolo que você usar.</p>
+    </item>
+    <item>
+      <p>Clique no botão <gui style="button">Conectar</gui>.</p>
+      <p>A partir deste ponto, a área de trabalho remota poderá precisar confirmar a conexão. Se este for o caso, o visualizador ficará preto até que ocorra a confirmação da conexão.</p>
+      <note>
+        <p>Alguns computadores podem solicitar uma conexão segura: será exibido um diálogo de autenticação, solicitando as credenciais. O tipo da credencial depende da máquina remota, esta pode ser uma senha e um nome de usuário. Caso selecione <gui>Lembrar esta credencial</gui>, o aplicativo <app>Visualizador de área de trabalho remota</app> armazenará as informações usando o <app>Chaveiro do GNOME</app>.</p>
+      </note>
+    </item>
+  </steps>
+
+  <p>Se a conexão já foi anteriormente usada, você também pode acessá-la através da opção <guiseq><gui style="menu">Remota</gui> <gui style="menuitem">Conexões recentes</gui></guiseq>.</p>
+
+  <p>Para fechar uma conexão, selecione <guiseq><gui style="menu">Remota</gui><gui style="menuitem">Fechar</gui></guiseq> ou clique no botão <gui style="button">Fechar</gui>.</p>
+
+</page>

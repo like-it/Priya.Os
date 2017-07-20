@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-slow" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="net-problem"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-21" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Other things might be downloading, you could have a poor connection,
+    or it could be a busy time of day.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>インターネットが遅い</title>
+
+  <p>インターネットを使用中に遅いと感じられる場合、その原因がいくつか考えられます。</p>
+
+  <p>web ブラウザーを一度閉じてから開きなおす、またインターネットを一度切断してから再接続してみてください。(インターネットを遅くしている可能性がある原因がリセットされます。)</p>
+
+  <list>
+    <item>
+      <p><em style="strong">Busy time of day</em></p>
+      <p>インターネットサービスプロバイダーは複数世帯でインターネット共有されるよう接続の設定を行うのが一般的です。専用の電話回線やケーブル接続を使用している場合であっても、電話交換器から先の接続は実際には共有されている可能性があります。このような場合、インターネットが近隣世帯で同時に使用されると、インターネットが遅くなったと感じることがあります。たとえば、隣の人が夕方などの同時刻にインターネットを使用していると遅くなったと感じることもあるでしょう。</p>
+    </item>
+    <item>
+      <p><em style="strong">多くのものを同時にダウンロードする</em></p>
+      <p>インターネット接続していて複数のファイルを同時にダウンロードしたり、ビデオ見ていたりすると、期待しているインターネット速度が維持されないことがあります。このような場合、遅くなったと感じます。</p>
+    </item>
+    <item>
+      <p><em style="strong">信頼できない接続</em></p>
+      <p>インターネット接続、特に需要の高いエリアでの接続や一時的な接続では、まったくできないものがあります。混雑しているカフェやカンファレンスセンターなどでは、インターネット接続が混雑しすぎていたり、または接続自体がまったく信頼できないことがあります。</p>
+    </item>
+    <item>
+      <p><em style="strong">ワイヤレス接続信号が弱い</em></p>
+      <p>無線 (wifi) でインターネット接続している場合はトップバーのネットワークアイコンで十分なワイヤレス信号を受信しているか確認します。十分な信号を受信していない場合、受け取っている信号に十分な強度がないためインターネット通信が遅くなる場合があります。</p>
+    </item>
+    <item>
+      <p><em style="strong">使用しているモバイルインターネット接続が遅い</em></p>
+      <p>モバイルインターネット接続を使用していて遅いと感じた場合、信号の受信状態が悪い地域に移動したことが原因の場合があります。こうした状況の場合には、接続が 3G のような高速な「モバイルブロードバンド」から GPRS のような低速ながら安定した接続に自動的に切り替わります。</p>
+    </item>
+    <item>
+      <p><em style="strong">Web ブラウザーに問題がある</em></p>
+      <p>web ブラウザーの動作速度が低下するような問題に遭遇する場合があります。読み込みが困難な web サイトに移動したり、ブラウザーを長時間開いたままにしていた場合など、原因は多々考えられます。まずブラウザーのウィンドウをすべて閉じてから再度開きなおし、動作速度に違いが見られるかどうか試してみてください。</p>
+    </item>
+  </list>
+
+</page>

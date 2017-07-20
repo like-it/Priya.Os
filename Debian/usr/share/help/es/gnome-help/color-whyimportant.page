@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whyimportant" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="color"/>
+    <desc>La gestión de color es importante para diseñadores, fotógrafos y artistas.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>¿Por qué es importante la gestión del color?</title>
+  <p>La gestión de color es el proceso de capturar un color usando un dispositivo de entrada, mostrándolo en una pantalla e imprimiéndolo a la vez que se mantienen exactamente los colores y el rango de colores en cada uno de los medios.</p>
+
+  <p>La mejor manera de explicar la necesidad de gestión de color es con una fotografía de un pájaro en un frío día de invierno.</p>
+
+  <figure>
+    <desc>Un pájaro en una pared helada tal y como se ve en el visor de la cámara</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-camera.png"/>
+  </figure>
+
+  <p>Generalmente las pantallas sobresaturan el canal azul, haciendo que las imágenes parezcan frías.</p>
+
+  <figure>
+    <desc>Esto es lo que un usuario ve en una pantalla de portátil de negocios típica</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-display.png"/>
+  </figure>
+
+  <p>Note cómo el blanco no es «blanco puro» y que el negro del ojo es un marrón sucio.</p>
+
+  <figure>
+    <desc>Esto es lo que el usuario ve al imprimir en una típica impresora de inyección de tinta</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-printer.png"/>
+  </figure>
+
+  <p>El problema básico es que cada dispositivo es capaz de manejar un rango diferente de colores. Así que, aunque pueda tomar una fotografía en azul eléctrico, la mayoría de las impresoras no podrán reproducirla.</p>
+  <p>La mayoría de los dispositivos captura en RGB (rojo, verde, azul) y lo convierte a CMYK (cian, magenta, amarillo y negro) para imprimir. Otro problema es que no tiene tinta <em>blanca</em> de tal forma que los blancos sólo pueden ser tan buenos como lo sea el papel.</p>
+
+  <p>Otro problema son las unidades. Sin especificar la escala en la que un color está medido, no se sabe si 100% rojo está cerca del infrarrojo o es el color más rojo de la tinta de la impresora. Lo que en una pantalla es 50% rojo, probablemente sea 62% en otra. Es como contar a una persona que acaba de conducir 7 unidades de distancia, sin saber la unidad no puede saber si son 7 kilómetros o 7 metros.</p>
+
+  <p>En el color, se refiere a las unidades como gama («gamut»). La gama es esenciamente el rango de colores que se puede reproducir. Un dispositivo como una cámara réflex (DSLR) puede tener un rango muy grande, siendo capaz de capturar todos los colores de una puesta de sol, pero un proyector tiene una gama muy reducida y parecerá que los colores están «lavados».</p>
+
+  <p>En algunos casos se puede <em>corregir</em> la respuesta del dispositivo alterando los datos enviados al dispositivo, pero en otros casos donde esto no es posible (no puede imprimir un azul eléctrico) se necesita mostrar al usuario cómo será el resultado.</p>
+
+  <p>Para las fotografías, tiene sentido usar toda la gama tonal de un dispositivo de color, para poder hacer cambios suaves en el color. Para otros gráficos, es posible que quiera hacer coincidir el color exactamente, lo cual es importante si está tratando de imprimir una taza personalizada con el logo de Red Hat que <em>tiene</em> que ser el rojo exacto de Red Hat.</p>
+
+</page>

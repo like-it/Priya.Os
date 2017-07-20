@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="lv">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="files#faq"/>
+    <link type="seealso" xref="nautilus-file-properties-basic"/>
+
+    <desc>Kontrolējiet, kas var skatīt un rediģēt jūsu datnes un mapes.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  <title>Iestatīt atļaujas datnēm</title>
+
+  <p>Jūs varat iestatīt atļaujas datnēm, lai kontrolētu, kas var skatīt un rediģēt jūsu datnes. Lai apskatītu un iestatītu atļaujas datnēm, nospiediet labo peles pogu un izvēlieties <gui>Īpašības</gui>, izvēlieties <gui>Atļaujas</gui> cilni.</p>
+
+  <p>Skatiet <link xref="#files"/> un <link xref="#folders"/>, lai redzētu atļauju veidus, kurs varat iestatīt.</p>
+
+  <section id="files">
+    <title>Datnes</title>
+
+    <p>Jūs varat iestatīt atļaujas datnes īpašniekam, īpašnieku grupai vai citiem sistēmas lietotājiem. Savām datnēm jūs varat iestatīt tikai lasāmas datnes vai lasāmas un rediģējamas datnes atļauju. Iestatot datnei tikai lasāmas datnes atļauju, jūs nevarēsiet nejauši tajā veikt izmaiņās.</p>
+
+    <p>Katrs jūsu datora lietotājs pieder kādai grupai. Mājas datoros bieži vien katram lietotājam ir sava grupa un grupu atļaujas netiek bieži lietotas.  Korporatīvajā vidē dažreiz grupas tiek izmantotas nodaļās vai projektos. Līdzīgi kā katra datne pieder īpašniekam, tā pieder arī grupai. Jūs varat iestatīt datnēm grupas un kontroles atļaujas visiem grupas lietotājiem. Jūs varat iestatīt datņu grupas tikai grupām, kurām piederat.</p>
+
+    <p>Jūs varat arī iestatīt atļaujas citiem lietotājiem datņu grupā.</p>
+
+    <p>Ja datne ir programma, piemēram, skripts, jums jāizvēlas <gui>Ļaut izpildīt datni kā programmu</gui>, lai to palaistu. Pat ja šī opcija ir izvēlēta, datņu pārvaldnieks var joprojām atvērt to lietotnē vai prasīt jums, kas jādara. Skatiet <link xref="nautilus-behavior#executable"/>, lai uzzinātu vairāk.</p>
+  </section>
+
+  <section id="folders">
+    <title>Mapes</title>
+    <p>Mapēm var iestatīt atļaujas īpašniekam, grupai vai citiem lietotājiem. Skatīt informāciju augstāk par datņu atļaujām par īpašniekiem, grupām un citiem lietotājiem.</p>
+    <p>Atļaujas, kuras var iestatīt mapei, ir atšķirīgas no tām, kuras var iestatīt datnēm.</p>
+    <terms>
+      <item>
+        <title><gui itst:context="permission">Nekas</gui></title>
+        <p>Lietotāji nevarēs pat redzēt, kādas datnes ir mapē</p>
+      </item>
+      <item>
+        <title><gui>Tikai rādīt datņu sarakstu</gui></title>
+        <p>Lietotājs redzēs datnes, kas ir mapē, bet nevarēs tās atvērt, izveidot vai izdzēst.</p>
+      </item>
+      <item>
+        <title><gui>Piekļūt datnēm</gui></title>
+        <p>Lietotāji varēs atvērt mapē esošās datnes (ar nosacījumu, ka tiem ir atļauja darīt to ar dotajām datnēm), bet nevarēs izveidot vai izdzēst datnes.</p>
+      </item>
+      <item>
+        <title><gui>Izveidot un dzēst datnes</gui></title>
+        <p>Lietotājam būs pilnīga piekļuve mapei, ieskaitot datņu atvēršanu, izveidošanu uz dzēšanu.</p>
+      </item>
+    </terms>
+
+    <p>Jūs varat arī ātri iestatīt datņu atļaujas visām datnēm mapē, spiežot <gui>Mainīt atļaujas uz iekļautajām datnēm</gui>. Izmantojiet nolaižamo sarakstu, lai mainītu atļaujas iekļautajām datnēm un mapēm, tad spiediet <gui>Mainīt</gui>. Atļaujas tiek attiecinātas arī uz datnēm un mapēm, kas atrodas apakšmapēs jebkurā dziļumā.</p>
+  </section>
+
+</page>

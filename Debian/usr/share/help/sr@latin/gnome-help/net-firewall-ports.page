@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Pol V. Frilds</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Morate da odredite pravi mrežni priključak da uključite/isključite mrežni pristup za program sa vašom mrežnom barijerom.</desc>
+  </info>
+
+  <title>Uopšteno korišćeni mrežni priključci</title>
+
+  <p>Ovo je spisak mrežnih priključaka uopšteno korišćenih programima koji obezbeđuju mrežne usluge, kao deljenje datoteka ili udaljeni pregled radne površi. Možete da izmenite mrežnu barijeru vašeg sistema da <link xref="net-firewall-on-off">blokira ili dozvoli pristup</link> ovim programima. Postoji na hiljade priključaka u upotrebi, tako da ova tabela nije potpuna.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>Priključak</p>
+	</td>
+	<td>
+	  <p>Naziv</p>
+	</td>
+	<td>
+	  <p>Opis</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>Omogućava sistemima da se pronađu, i opisuje koje usluge nude, a da vi ne morate ručno da određujete pojedinosti.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>Štampanje</p>
+	</td>
+	<td>
+	  <p>Omogućava vam da šaljete poslove štampanja štampačima na mreži.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>Štampanje</p>
+	</td>
+	<td>
+	  <p>Omogućava vam da delite štampač sa drugima na mreži.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>Prisutnost</p>
+	</td>
+	<td>
+	  <p>Omogućava vam da obavestite druge na mreži o vašem stanju trenutnih poruka, kao što je „na vezu“ ili „zauzet“.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>Udaljena radna površ</p>
+	</td>
+	<td>
+	  <p>Omogućava vam da delite vašu radnu površ tako da je drugi mogu pregledati ili obezbediti udaljenu podršku.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>Deljenje muzike (DAAP)</p>
+	</td>
+	<td>
+	  <p>Omogućava vam da delite vašu muzičku biblioteku sa drugima na vašoj mreži.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

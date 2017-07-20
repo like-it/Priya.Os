@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Шон МакКенс (Shaun McCance)</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Дэвид Кинг (David King)</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Просмотр информации о файле, установка прав доступа и выбор приложения по умолчанию.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Свойства файла</title>
+
+  <p>Чтобы просмотреть информацию о файле или папке, нажмите на них правой кнопкой и выберите <gui>Свойства</gui>. Можно также выбрать файл и нажать <keyseq><key>Alt</key><key>Enter</key></keyseq>.</p>
+
+  <p>Окно свойств файла показывает такую информацию, как тип файла, его размер и время последнего изменения. Если вам часто бывает необходима эта информация, можно сделать так, чтобы она отображалась в <link xref="nautilus-list">столбцах при просмотре в режиме списка</link> или в <link xref="nautilus-display#icon-captions">подписях к значкам</link>.</p>
+
+  <p>Ниже описана информация, отображаемая на вкладке <gui>Основные</gui>. Кроме неё, имеются вкладки <gui><link xref="nautilus-file-properties-permissions">Права</link></gui> и <gui><link xref="files-open#default">Открыть в</link></gui>. Для некоторых типов файлов, таких как изображения и видео, будет присутствовать дополнительная вкладка, содержащая информацию, например, о размерах, длительности и кодеке.</p>
+
+<section id="basic">
+ <title>Основные свойства</title>
+ <terms>
+  <item>
+    <title><gui>Name</gui></title>
+    <p>Изменив это поле, можно переименовать файл. Существует и другой способ переименования файла: смотрите <link xref="files-rename"/>.</p>
+  </item>
+  <item>
+    <title><gui>Type</gui></title>
+    <p>Позволяет определить тип файла, например: документ PDF, текст OpenDocument или изображение в формате JPEG. От типа файла, кроме того, зависит то, в каком приложении его можно открыть. Например, нельзя открыть изображение в музыкальном проигрывателе. Подробнее об этом смотрите <link xref="files-open"/>.</p>
+    <p><em>Тип MIME</em> файла показывается в скобках; тип MIME — это стандартный способ, который используют компьютеры для определения типа файла.</p>
+  </item>
+
+  <item>
+    <title>Содержание</title>
+    <p>Это поле отображается при просмотре свойств папок, а не файлов. С его помощью можно узнать количество объектов в папке. Если папка включает в себя другие папки, каждая вложенная папка считается за один объект, даже если она сама содержит какие-то объекты. Каждый файл тоже считается одним объектом. Если папка пуста, в этом поле отображается <gui>«ничего»</gui>.</p>
+  </item>
+
+  <item>
+    <title>Размер</title>
+    <p>Это поле отображается для файлов (но не для папок). Размер файла сообщает, сколько места на диске занимает этот файл. Он также может быть индикатором того, сколько времени займёт скачивание файла или отправка его по электронной почте (чем больше размер, тем дольше он будет скачиваться или отправляться).</p>
+    <p>Размеры могут отображаться в байтах, КБ, МБ или ГБ; в последних трёх случаях в скобках также указывается размер в байтах. Технически, 1 КБ = 1024 байта, 1 МБ = 1024 КБ и так далее.</p>
+  </item>
+
+  <item>
+    <title>Parent Folder</title>
+    <p>The location of each file on your computer is given by its <em>absolute
+    path</em>. This is a unique "address" of the file on your computer, made up
+    of a list of the folders that you would need to go into to find the file.
+    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
+    folder, its parent folder would be <file>/home/jim</file> and its location
+    would be <file>/home/jim/Resume.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Свободное место</title>
+    <p>Отображается только для папок. Показывает, сколько свободного места доступно на диске, на котором находится эта папка. Это полезно, если нужно проверить, не заполнен ли диск.</p>
+  </item>
+
+  <item>
+    <title>Последнее обращение</title>
+    <p>Дата и время последнего открытия файла.</p>
+  </item>
+
+  <item>
+    <title>Последнее изменение</title>
+    <p>Дата и время последнего изменения и сохранения файла.</p>
+  </item>
+ </terms>
+</section>
+
+</page>

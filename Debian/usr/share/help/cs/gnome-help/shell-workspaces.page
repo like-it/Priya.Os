@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" version="1.0 if/1.0" id="shell-workspaces" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces" group="#first"/>
+
+    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10.3" date="2014-01-26" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Pracovní plochy jsou způsob seskupování oken.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Co je to pracovní plocha a co mi přinese?</title>
+
+    <media type="image" src="figures/shell-workspaces.png" width="162" height="434" style="floatend floatright">
+        <p>Výběr pracovní plochy</p>
+    </media>
+
+  <p if:test="!platform:gnome-classic">Pracovní plocha představuje skupinu oken na vaší ploše. Můžete vytvořit více pracovních ploch, které budou fungovat jako virtuální plochy. Pracovní plochy zvětšují přehlednost a usnadňují orientaci.</p>
+
+  <p if:test="platform:gnome-classic">Pracovní plocha představuje skupinu oken na vaší ploše. Můžete používat více pracovních ploch, které budou fungovat jako virtuální plochy. Pracovní plochy zvětšují přehlednost a usnadňují orientaci.</p>
+
+  <p>Pracovní plochy můžete používat k zorganizování své práce. Například můžete mít všechna své aplikace pro komunikaci, jako je e-mail nebo rychlá komunikace, na jedné ploše a práci, na které zrovna děláte, na další ploše. Aplikace přehrávající hudbu může být na třetí ploše.</p>
+
+<p>Používání pracovních ploch:</p>
+
+<list>
+  <item>
+    <p if:test="!platform:gnome-classic">V přehledu <gui xref="shell-introduction#activities">Činností</gui> najeďte ukazatelem myši k úplně pravému okraji obrazovky.</p>
+    <p if:test="platform:gnome-classic">Zmáčkněte <key xref="keyboard-key-super">Super</key>, aby se otevřel přehled <gui>Činností</gui>, a přesuňte ukazatel k úplně pravému okraji obrazovky.</p>
+  </item>
+  <item>
+    <p if:test="!platform:gnome-classic">Objeví se svislý panel zobrazující používané pracovní plochy plus jednu prázdnou pracovní plochu. Jedná se o volič pracovních ploch.</p>
+    <p if:test="platform:gnome-classic">Objeví se svislý panel zobrazující dostupné pracovní plochy. Jedná se o volič pracovních ploch.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>Když chcete přidat další pracovní plochu, přetáhněte okno ze stávající pracovní plochy na prázdnou ve voliči pracovních ploch. Tato pracovní plocha nyní bude obsahovat okno, které jste přetáhli, a pod ní se objeví nová pracovní plocha.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>Když chcete odebrat pracovní plochu, jednoduše zavřete všechna okna na ní nebo je přesuňte na jinou pracovní plochu.</p>
+  </item>
+</list>
+
+<p if:test="!platform:gnome-classic">Vždy existuje aspoň jedna pracovní plocha.</p>
+
+</page>

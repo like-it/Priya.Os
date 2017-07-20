@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-userid-remove" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="pgp-userid#add-remove"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-06-27" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Quitar ID de usuario adicionales</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Desasociar un ID de usuario de una clave</title>
+
+  <p>Aunque es esencial que todas las claves tengan al menos un ID de usuario, puede quitar cualquier ID de usuario adicional que haya asociado a la clave.</p>
+
+  <steps>
+    <title>Para quitar un ID de usuario de una clave PGP:</title>
+    <item>
+      <p>Seleccione el depósito <gui>claves GnuPG</gui> en el panel lateral izquierdo.</p>
+    </item>
+    <item>
+      <p>Seleccione la lista <gui>clave PGP personal</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse con el botón derecho sobre la clave que quiera y elija <guiseq><gui>Propiedades</gui> <gui>Nombres y firmas</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Seleccione el ID de usuario que quiere quitar y pulse <gui style="button">Eliminar</gui>.</p>
+    </item>
+  </steps>
+
+   <note style="tip">
+     <p><link xref="pgp-sync">Sincronice</link> sus claves después de desasociar el ID de usuario para actualizar los cambios en la copia remota de la clave.</p>
+   </note>
+
+</page>

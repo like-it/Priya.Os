@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-desktop" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.14" date="2015-01-25" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Låt andra personer se och interagera med ditt skrivbord via VNC.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dela ditt skrivbord</title>
+
+  <p>Du kan låta andra personer se och styra ditt skrivbord från en annan dator med ett skrivbordsvisningsprogram. Konfigurera <gui>Skärmdelning</gui> till att låta andra personer få åtkomst till ditt skrivbord och ställ in säkerhetsinställningarna.</p>
+
+  <note style="info package">
+    <p>Du måste ha paketet <app>Vino</app> installerat för att <gui>Skärmdelning</gui> ska visas.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:vino" style="button">Installera Vino</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Dela</gui>.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Dela</gui> för att öppna panelen.</p>
+    </item>
+    <item>
+      <p>Om <gui>Dela</gui> är <gui>AV</gui>, slå om den till <gui>PÅ</gui>.</p>
+
+      <note style="info"><p>Om texten nedanför <gui>Datornamn</gui> låter dig redigera den, kan du <link xref="sharing-displayname">ändra</link> namnet din dator visar på nätverket.</p></note>
+    </item>
+    <item>
+      <p>Välj <gui>Skärmdelning</gui>.</p>
+    </item>
+    <item>
+      <p>För att låta andra se ditt skrivbord, slå om <gui>Skärmdelning</gui> till <gui>PÅ</gui>. Detta innebär att andra personer kan försöka att ansluta till din dator och se vad som finns på din skärm.</p>
+    </item>
+    <item>
+      <p>För att låta andra interagera med ditt skrivbord, slå om <gui>Tillåt fjärrkontroll</gui> till <gui>PÅ</gui>. Detta låter den andra personen att flytta din mus, köra program och bläddra bland filer på din dator, beroende på säkerhetsinställningarna som du använder för närvarande.</p>
+
+      <note style="tip">
+        <p>Detta alternativ är aktiverat som standard när <gui>Skärmdelning</gui> är <gui>PÅ</gui>.</p>
+      </note>
+
+    </item>
+  </steps>
+
+  <section id="security">
+  <title>Säkerhet</title>
+
+  <p>Det är viktigt att du funderar på den fulla vidden av vad varje säkerhetsalternativ innebär innan du ändrar det.</p>
+
+  <terms>
+    <item>
+      <title>Nya anslutningar måste be om åtkomst</title>
+      <p>Om du vill kunna välja huruvida någon ska beviljas åtkomst till ditt skrivbord, aktivera <gui>Nya anslutningar måste fråga efter åtkomst</gui>. Om du inaktiverar detta alternativ kommer du inte att blir tillfrågad huruvida du vill tillåta någon att ansluta till din dator.</p>
+      <note style="tip">
+        <p>Detta alternativ är aktiverat som standard.</p>
+      </note>
+    </item>
+    <item>
+      <title>Kräv ett lösenord</title>
+      <p>För att kräva att andra personer använder ett lösenord när de ansluter till ditt skrivbord, aktivera <gui>Begär lösenord</gui>. Om du inte använder detta alternativ kan vem som helst försöka se ditt skrivbord.</p>
+      <note style="tip">
+        <p>Detta alternativ är inaktiverat som standard, men du bör aktivera det och ställa in ett säkert lösenord.</p>
+      </note>
+    </item>
+<!-- TODO: check whether this option exists.
+    <item>
+      <title>Allow access to your desktop over the Internet</title>
+      <p>If your router supports UPnP Internet Gateway Device Protocol and it
+      is enabled, you can allow other people who are not on your local network
+      to view your desktop. To allow this, select <gui>Automatically configure
+      UPnP router to open and forward ports</gui>. Alternatively, you can
+      configure your router manually.</p>
+      <note style="tip">
+        <p>This option is disabled by default.</p>
+      </note>
+    </item>
+-->
+  </terms>
+  </section>
+
+  <section id="networks">
+  <title>Nätverk</title>
+
+  <p>Sektionslistan <gui>Nätverk</gui> listar nätverken som du för närvarande är ansluten till. Använd <gui>ON | OFF</gui>-knappen intill respektive för att välja var ditt skrivbord kan delas.</p>
+  </section>
+
+  <section id="notification-icon">
+  <title>Sluta dela ditt skrivbord</title>
+
+  <p>Du kan koppla från någon som ser ditt skrivbord via <gui>aviseringsikonen</gui> i meddelandefältet. För att göra detta:</p>
+    <steps>
+      <item><p>Öppna meddelandefältet genom att trycka <keyseq><key>Super</key><key>M</key></keyseq>, eller genom att flytta din musmarkör längst ner på skärmen.</p></item>
+      <item><p>Klicka på ikonen <gui>Skrivbord</gui> i <gui>meddelandefältet</gui>. Detta öppnar panelen <app>Dela</app>.</p>
+      </item>
+      <item><p>Välj <gui>Skärmdelning</gui>.</p></item>
+      <item><p>Slå om skjutreglaget <gui>Skärmdelning</gui> till <gui>AV</gui>.</p></item>
+    </steps>
+
+  </section>
+
+
+</page>

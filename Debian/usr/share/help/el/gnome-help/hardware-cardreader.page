@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="hardware-cardreader" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="media#photos"/>
+    <link type="guide" xref="hardware#problems"/>
+
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Έργο Τεκμηρίωσης GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ανιχνεύστε και διορθώστε προβλήματα σχετικά με αναγνώστες καρτών πολυμέσων</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Προβλήματα αναγνώστη κάρτας μέσων</title>
+
+<p>Πολλοί υπολογιστές περιέχουν αναγνώστες για SD, MMC, SM, MS, CF και άλλες κάρτες μέσων αποθήκευσης. Αυτές πρέπει να ανιχνευτούν αυτόματα και να <link xref="disk-partitions">προσαρτηθούν</link>. Εδώ είναι μερικά βήματα ανίχνευσης προβλημάτων:</p>
+
+<steps>
+<item>
+<p>Βεβαιωθείτε ότι η κάρτα έχει μπει σωστά. Πολλές κάρτες φαίνονται σαν να είναι ανάποδα όταν εισαχθούν σωστά. Επίσης βεβαιωθείτε ότι η κάρτα μπήκε σταθερά στην σχισμή· μερικές κάρτες, ειδικά CF, απαιτούν κάποια δύναμη για να μπουν σωστά. (Να είστε προσεκτικοί να μην το παρακάνετε! Εάν συναντήσετε κάτι συμπαγές, μην το σπρώξετε.)</p>
+</item>
+
+<item>
+  <p>Ανοίξτε <app>Αρχεία</app> από την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui>. Εμφανίζεται η κάρτα που βάλατε στη λίστα <gui>Συσκευές</gui> στην αριστερή πλευρική στήλη; Μερικές φορές η κάρτα εμφανίζεται στη λίστα αλλά δεν είναι προσαρτημένη· πατήστε την μια φορά για προσάρτηση. (Αν η πλευρική στήλη δεν είναι ορατή, πατήστε <key>F9</key> ή κάντε κλικ στο <gui style="menu">Αρχεία</gui> στην πάνω γραμμή επιλέγοντας <gui>Πλευρική στήλη</gui>.)</p>
+</item>
+
+<item>
+  <p>Αν η κάρτα σας δεν εμφανίζεται στην πλευρική στήλη, πατήστε <keyseq><key>Ctrl</key><key>L</key></keyseq>, έπειτα πληκτρολογήστε <input>computer:///</input> και πατήστε το πλήκτρο <key>Enter</key>. Αν ο αναγνώστης της κάρτα σας είναι σωστά ρυθμισμένος, τότε θα πρέπει να εμφανίζεται ως συσκευή όταν δεν υπάρχει κάρτα και ως η ίδια η κάρτα όταν η κάρτα έχει προσαρτηθεί σε αυτόν.</p>
+</item>
+
+<item>
+<p>Εάν βλέπετε τον αναγνώστη κάρτας αλλά όχι την κάρτα, το πρόβλημα μπορεί να είναι με την ίδια την κάρτα. Δοκιμάστε μια διαφορετική κάρτα ή ελέγξτε την κάρτα σε έναν διαφορετικό αναγνώστη εάν είναι δυνατό.</p>
+</item>
+</steps>
+
+<p>Αν δεν εμφανίζονται διαθέσιμες κάρτες ή συσκευές κατά την περιήγηση στη θέση <gui>Υπολογιστής</gui>, είναι πιθανό ο αναγνώστης κάρτας να μην δουλεύει με Linux λόγω προβλημάτων του οδηγού λογισμικού. Αν ο αναγνώστης κάρτας είναι εσωτερικός (ενσωματωμένος στον υπολογιστή) αυτό είναι πιο πιθανό. Η καλύτερη λύση είναι να συνδέσετε άμεσα τη συσκευή σας (κάμερα, κινητό τηλέφωνο, κλπ.) σε μια θύρα USB του υπολογιστή σας. Οι αναγνώστες εξωτερικών καρτών USB είναι επίσης διαθέσιμοι και υποστηρίζονται πολύ καλύτερα από το Linux.</p>
+
+</page>

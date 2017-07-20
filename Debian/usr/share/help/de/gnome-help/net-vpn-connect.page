@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+    <link type="guide" xref="net-wired"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Richten Sie eine VPN-Verbindung zu einem lokalen Netzwerk über das Internet ein.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Mit einem VPN verbinden</title>
+
+<p>Ein VPN (oder <em>virtuelles privates Netzwerk</em>) ist eine Möglichkeit, sich mit einem lokalen Netzwerk über das Internet zu verbinden. Angenommen, Sie möchten sich mit dem lokalen Netzwerk an Ihrem Arbeitsplatz verbinden, während Sie auf einer Geschäftsreise sind. Dazu suchen Sie sich irgendwo eine Internetverbindung (etwa in einem Hotel) und verbinden sich mit dem VPN Ihres Arbeitsplatzes. Das ist so, als wären Sie mit dem Netzwerk in Ihrem Büro verbunden, tatsächlich geht der Netzwerkzugang aber über die Internetverbindung des Hotels. VPN-Verbindungen sind normalerweise <em>verschlüsselt</em>, um zu verhindern, dass nicht angemeldete Personen Zugriff auf das lokale Netzwerk erlangen, mit dem Sie gerade verbunden sind.</p>
+
+<p>Es gibt eine Reihe unterschiedlicher VPNs. Je nachdem, mit welcher Art von VPN Sie sich verbinden wollen, müssen Sie möglicherweise eine eigene Software installieren. Fragen Sie den für das VPN Verantwortlichen nach den Verbindungsdaten und welchen <em>VPN-Client</em> Sie verwenden müssen. Suchen Sie dann in Ihrer Softwareverwaltung nach dem <app>NetworkManager</app>-Paket, das auf Ihr VPN abgestimmt ist (falls vorhanden), und installieren Sie es </p>
+
+<note>
+ <p>Wenn es kein NetworkManager-Paket für Ihr VPN gibt, müssen Sie wahrscheinlich von der Firma, die die VPN-Software zur Verfügung stellt, eine Client-Software herunterladen und installieren. Folgen Sie den entsprechenden Anleitungen, um sie zum Laufen zu bringen.</p>
+</note>
+
+<p>So richten Sie die VPN-Verbindung ein:</p>
+
+  <steps>
+    <item>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Netzwerk</gui>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Netzwerk</gui>, um das Panel zu öffnen.</p>
+    </item>
+    <item>
+      <p>Klicken Sie unten in der Liste links auf den <key>+</key>-Knopf, um eine neue Verbindung hinzuzufügen.</p>
+    </item>
+    <item>
+      <p>Wählen Sie <gui>VPN</gui> in der Liste der Schnittstellen aus.</p>
+    </item>
+    <item>
+      <p>Wählen Sie, welche Art von VPN-Verbindung Sie haben.</p>
+    </item>
+    <item>
+      <p>Geben Sie die VPN-Verbindungsparameter ein und klicken Sie anschließend auf <gui>Hinzufügen</gui>.</p>
+    </item>
+    <item>
+      <p>Wenn Sie mit dem Einrichten des VPN fertig sind, öffnen Sie das <gui xref="shell-introduction#yourname">Systemmenü</gui> auf der rechten Seite der oberen Leiste, klicken Sie auf <gui>VPN aus</gui> und wählen Sie <gui>Verbinden</gui>. Eventuell müssen Sie ein Passwort eingeben, um die Verbindung herzustellen. Es wird das Symbol eines Schlosses in der oberen Leiste angezeigt sobald die Verbindung hergestellt wurde.</p>
+    </item>
+    <item>
+      <p>Sie haben sich nun hoffentlich erfolgreich mit dem VPN verbunden. Wenn nicht, sollten Sie die VPN-Einstellungen, die Sie eingegeben haben, noch einmal überprüfen. Sie können das im <gui>Netzwerk</gui>-Panel tun, wo Sie die Verbindung erstellt haben. Wählen Sie die VPN-Verbindung in der Liste und drücken Sie anschließend den Knopf <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">Einstellungen</span></media>, um die Einstellungen zu prüfen.</p>
+    </item>
+    <item>
+      <p>Um die Verbindung zum VPN zu trennen, öffnen Sie das Systemmenü in der oberen Leiste und klicken Sie dann auf <gui>Ausschalten</gui> unter dem Namen der VPN-Verbindung.</p>
+    </item>
+  </steps>
+
+</page>

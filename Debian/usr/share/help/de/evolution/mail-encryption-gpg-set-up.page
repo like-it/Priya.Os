@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-gpg-set-up" xml:lang="de">
+
+  <info>
+    <desc>GPG für Ihr E-Mail-Konto einrichten zum Signieren und/oder Verschlüsseln und Entschlüsseln von Nachrichten.</desc>
+
+    <link type="guide" xref="mail-encryption#gpg"/>
+
+    <revision pkgversion="3.13.90" version="0.4" date="2015-03-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#encrypt-evo-integ -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>GPG-Verschlüsselung für Ihr E-Mail-Konto einrichten</title>
+<!-- TODO:POST-3-8: Update and rewrite using Seahorse. Needs a rewrite once https://bugzilla.gnome.org/show_bug.cgi?id=745872 and https://bugzilla.gnome.org/show_bug.cgi?id=508744 is fixed. -->
+
+<note style="tip"><p>Sie benötigen dazu einen GPG-Schlüssel. Wenn Sie noch keinen haben, so lesen Sie bitte <link xref="mail-encryption-gpg-create-key">Einen GPG-Schlüssel erzeugen</link>.</p></note>
+
+<steps>
+<item><p>Wählen Sie <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui><gui>E-Mail-Konten</gui></guiseq>.</p></item>
+<item><p>Wählen Sie das Konto aus, das Sie sicher verwenden wollen, und klicken Sie auf <gui style="button">Bearbeiten</gui>.</p></item>
+<item><p>Klicken Sie auf den Reiter <gui>Sicherheit</gui>.</p></item>
+<item><p>Geben Sie Ihre Schlüsselkennung im Feld <gui>OpenPGP-Schlüsselkennung</gui> ein.</p>
+<note style="tip"><p>Unter dem Feld wählen Sie, ob ausgehende Nachrichten dieses Kontos immer signiert werden sollen, sowie weitere Optionen.</p></note>
+</item>
+<item><p>Klicken Sie auf <gui style="button">OK</gui>.</p></item>
+<item><p>Klicken Sie auf <gui style="button">Schließen</gui>.</p></item>
+</steps>
+<p><gui>Evolution</gui> benötigt Ihre Schlüsselkennung. Falls Sie diese nicht mehr wissen, so starten Sie <app>Passwörter und Verschlüsselung</app>, öffnen Sie <gui>GnuPG-Schlüssel</gui> und wählen Sie den gewünschten PGP-Schlüssel mit der rechten Maustaste. Wählen Sie dann <gui>Eigenschaften</gui> und kopieren Sie die <gui>Schlüsselkennung</gui>. Ihre Schlüsselkennung besteht aus zufälligen Buchstaben und Zahlen mit insgesamt 8 Stellen.</p>
+
+</page>

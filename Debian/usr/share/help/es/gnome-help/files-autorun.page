@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-autorun" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="media#photos"/>
+    <link type="guide" xref="media#videos"/>
+    <link type="guide" xref="media#music"/>
+    <link type="guide" xref="files#removable"/>
+
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
+    <revision pkgversion="3.9.92" date="2013-10-04" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ejecutar aplicaciones automáticamente para CD y DVD, cámaras, reproductores de sonido y otros dispositivos y soportes.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <!-- TODO: fix bad UI strings, then update help -->
+  <title>Abrir aplicaciones para dispositivos o discos</title>
+
+  <p>Puede hacer que se inicie una aplicación automáticamente cuando conecte un dispositivo, cuando se introduzca un disco o una tarjeta de memoria. Por ejemplo, puede que quiera que se inicie su gestor de fotografías cuando conecte una cámara digital. También puede desactivar esta opción, para que no ocurra nada cuando conecte algo.</p>
+
+  <p>Para decidir qué aplicaciones deberían iniciarse cuando se conecte a varios dispositivos:</p>
+
+<steps>
+  <item>
+    <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Detalles</gui>.</p>
+  </item>
+  <item>
+    <p>Pulse en <gui>Detalles</gui> para abrir el panel.</p>
+  </item>
+  <item>
+    <p>Pulse en <gui>Soportes extraíbles</gui>.</p>
+  </item>
+  <item>
+    <p>Elija una aplicación o acción para el dispositivo multimedia que quiere. Consulte a continuación para obtener una descripción de los diferentes tipos de dispositivos multimedia.</p>
+    <p>En lugar de iniciar una aplicación, también puede configurarla para que el dispositivo se muestre en el gestor de archivos con la opción <gui>Abrir carpeta</gui>. Cuando esto pase, se le preguntará qué hacer o no sucederá nada automáticamente.</p>
+  </item>
+  <item>
+    <p>Si no encuentra en la lista el tipo de dispositivo o soporte que quiere cambiar (como discos Blu-ray o lectores de libros electrónicos), pulse en <gui>Otros medios…</gui> para obtener una lista de dispositivos más detallada. Seleccione el tipo de dispositivo o soporte de la lista desplegable <gui>Tipo</gui> y la aplicación o acción de la lista desplegable <gui>Acción</gui>.</p>
+  </item>
+</steps>
+
+  <note style="tip">
+    <p>Si no quiere que se abra automáticamente ninguna aplicación, independientemente de lo que conecte, seleccione <gui>Nunca preguntar ni iniciar programas al introducir soportes</gui> en la parte inferior de la ventana de <gui>Detalles</gui>.</p>
+  </note>
+
+<section id="files-types-of-devices">
+  <title>Tipos de dispositivos y de medios</title>
+<terms>
+  <item>
+    <title>Discos de sonido</title>
+    <p>Elija su aplicación de música favorita o extractor de sonido de CD para gestionar CD de sonido. Si usa DVD de sonido (DVD-A), seleccione cómo abrirlos bajo <gui>Otros medios…</gui>. Si abre un disco de sonido con el gestor de archivos, las pistas aparecerán como archivos WAV que puede reproducir en cualquier aplicación de reproducción de sonido.</p>
+  </item>
+  <item>
+    <title>Discos de vídeo</title>
+    <p>Elija su aplicación de vídeo preferida para gestionar DVD de vídeo. Use el botón <gui>Otros medios…</gui> para configurar una aplicación para Blu-ray, HD DVD, Vídeo CD (VCD) y Super Vídeo CD (SVCD). Consulte la <link xref="video-dvd"/> si los DVD u otros discos de vídeo no funcionan correctamente al insertarlos.</p>
+  </item>
+  <item>
+    <title>Discos vírgenes</title>
+    <p>Use el botón <gui>Otros medios…</gui> para seleccionar una aplicación de grabación de discos para borrar discos de CD, DVD, Blu-ray y HD DVD.</p>
+  </item>
+  <item>
+    <title>Cámaras y fotos</title>
+    <p>Use el desplegable <gui>Fotos</gui> para elegir una aplicación de gestión de fotos para ejecutar al conectar su cámara digital o al insertar una tarjeta multimedia de una cámara, tales como tarjetas CF, SD, MMC o MS. También puede simplemente examinar sus fotos usando el gestor de archivos.</p>
+    <p>En <gui>Otros medios…</gui> puede seleccionar una aplicación para abrir CD de fotos Kodak, tales como aquellos que haya pedido hacer a una tienda. Son CD normales con imágenes JPEG en una carpeta llamada <file>Pictures</file>.</p>
+  </item>
+  <item>
+    <title>Reproductores de música</title>
+    <p>Elija una aplicación para gestionar la biblioteca de música para su reproductor de música portátil o gestione los archivos usted mismo usando el gestor de archivos.</p>
+    </item>
+    <item>
+      <title>Lectores de libros electrónicos</title>
+      <p>Use el botón <gui>Otros medios…</gui> para elegir una aplicación para gestionar los libros en su lector de libros electrónicos o gestione los archivos usted mismo usando el gestor de archivos.</p>
+    </item>
+    <item>
+      <title>Software</title>
+      <p>Algunos discos extraíbles contienen software que se supone se debe ejecutar automáticamente al introducir el soporte. Use la opción <gui>Software</gui> para controlar lo que hacer al introducir un soporte con un software de ejecución automática. Siempre se le pedirá confirmación antes de ejecutar el software.</p>
+      <note style="warning">
+        <p>No ejecute nunca software procedente de soportes en los que no confía.</p>
+      </note>
+   </item>
+</terms>
+
+</section>
+
+</page>

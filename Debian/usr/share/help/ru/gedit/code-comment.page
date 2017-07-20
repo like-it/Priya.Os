@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-code-comment" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>  
+    <revision version="3.4" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Comment-out or uncomment a block of code.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Комментирование кода</title>
+
+  <p>Комментарии кода – части текста, которые помогают проще понять код программы, но не влияют на её работу. Комментарии отделяются от других частей программы специальными символами.</p>
+  
+  <p>Модуль <app>Комментирование кода</app> делает комментирование и раскомментирование кода проще и быстрее. Чтобы включить модуль, выберите <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Параметры</gui> <gui>Модули</gui><gui>Комментирование кода</gui></guiseq>.</p>
+  
+  <steps>
+    <title>Чтобы создать или удалить комментарий:</title>
+    <item>
+      <p>Выделите часть текста, который нужно закомментировать или раскомментировать.</p>
+    </item>
+    <item>
+      <p>Чтобы создать комментарий, выберите <guiseq><gui style="menu">gedit</gui> <gui>Комментировать код</gui></guiseq>, или нажмите <keyseq><key>Ctrl</key> <key>M</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Чтобы удалить комментарий, выберите <guiseq><gui style="menu">gedit</gui> <gui>Раскомментировать код</gui></guiseq>, или нажмите <keyseq><key>Shift</key> <key>Ctrl</key><key>M</key></keyseq>.</p>
+    </item>
+  </steps>
+  
+  <note style="tip">
+    <p><app>gedit</app> будет автоматически использовать правильный стиль комментария основываясь на языке или синтаксисе файла. Если <app>gedit</app> не идентифицирует ​язык или синтаксис, можно вручную выбрать их из списка в <gui>Строке состояния</gui> внизу.</p>
+  </note>
+
+</page>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-notifications" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="shell-overview#desktop"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
+
+    <credit type="author">
+      <name>Marina Zhurakhinskaya</name>
+      <email>marinaz@redhat.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013, 2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Meddelanden visas längst upp på skärmen för att berätta för dig när vissa händelser inträffar.</desc> 
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Aviseringar och meddelandefältet</title>
+
+<section id="what">
+  <title>Vad är en avisering?</title>
+
+  <p>Om ett program eller en systemkomponent vill få tag i din uppmärksamhet, kommer en avisering att visas längst upp på skärmen.</p>
+
+  <p>Om du till exempel får ett nytt chattmeddelande eller ett nytt e-postmeddelande kommer du att få en avisering som informerar dig om detta.</p>
+
+<!--  <p>To minimize distraction, some notifications first appear as a single line.
+  You can move your mouse over them to see their full content.</p>-->
+
+  <p>Andra aviseringar har valbara knappar. För att stänga en avisering av denna typ utan att välja en av dess alternativ, klicka på stängknappen.</p>
+
+<!--  <media type="image" width="500" src="figures/notification-buttons.png"/>-->
+
+  <p>Att klicka på stängknappen på vissa avisering förkastar dem. Andra, som Rhythmbox eller ditt chattprogram kommer att förbli gömt i meddelandefältet.</p>
+
+</section>
+
+<section id="messagetray">
+
+  <title>Meddelandefältet</title>
+
+  <p if:test="!platform:gnome-classic">Meddelandefältet ger dig ett sätt att få tillbaka dina aviseringar när det är bekvämt för dig. Den visas när du klickar på klockan eller trycker <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. Meddelandefältet innehåller alla aviseringar som du inte har agerat på eller som finns där permanent.</p>
+
+  <p if:test="platform:gnome-classic">Meddelandefältet ger dig ett sätt att få tillbaka dina aviseringar när det är bekvämt för dig. Den visas när du flyttar din mus till nedre högra hörnet av skärmen eller trycker <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. Du kan också visa meddelandefältet genom att klicka på den blå sifferikonen till höger i fönsterlisten. Meddelandefältet innehåller alla aviseringar som du inte har agerat på eller som finns där permanent.</p>
+
+  <p>Du kan titta på aviseringarna genom att klicka på meddelandefältets objekt. Dessa är vanligtvis meddelanden som sänts av program. Chattaviseringar ges dock specialbehandling och representeras som de individuella kontakterna som skickade chattmeddelande till dig.</p>
+
+  <p>Du kan stänga meddelandefältet genom att trycka <keyseq><key>Super</key><key>M</key></keyseq> igen eller <key>Esc</key>.</p>
+
+</section>
+
+<section id="hidenotifications">
+
+  <title>Dölja aviseringar</title>
+
+  <p>Om du arbetar med något och inte vill bli störd kan du stänga av aviseringar.</p>
+
+  <steps>
+    <item>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Aviseringar</gui>.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Aviseringar</gui> för att öppna panelen.</p>
+    </item>
+    <item>
+      <p>Växla <gui>Aviseringsbanderoller</gui> till <gui>AV</gui>.</p>
+    </item>
+  </steps>
+
+  <p if:test="!platform:gnome-classic">När de är avstängda kommer de flesta aviseringar inte att poppa upp längst upp på skärmen. Aviseringar kommer fortfarande att finnas tillgängliga i meddelandefältet när du visar det (genom att klicka på klockan, eller trycka på <keyseq><key>Super</key><key>M</key></keyseq>) och de kommer att börja poppa upp igen när du växlar inställningen till <gui>PÅ</gui> igen.</p>
+
+  <p>Du kan också inaktivera eller återaktivera aviseringar för individuella program från panelen <gui>Aviseringar</gui>.</p>
+
+  <p if:test="platform:gnome-classic">När de är avstängda kommer de flesta aviseringar inte att poppa upp längst ner på skärmen. Väldigt viktiga aviseringar som att batteriet är kritiskt lågt kommer fortfarande att poppa upp. Aviseringar kommer fortfarande att finnas tillgängliga i meddelandefältet när du visar det (genom att flytta musen till längst ner till höger på skärmen, eller trycka på <keyseq><key>Super</key><key>M</key></keyseq>) och de kommer att börja poppa upp igen när du växlar inställningen till <gui>PÅ</gui> igen.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-notspecifiededid" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="guide" xref="color-gettingprofiles"/>
+    <link type="guide" xref="color-why-calibrate"/>
+    <desc>Osnovni profili monitora nemaju datum kalibracije.</desc>
+    <credit type="author">
+      <name>Ričards Hjudžiz</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Zašto osnovni profili monitora nemaju istek kalibracije?</title>
+  <p>Osnovni profil boje korišćen za svaki monitor je stvoren samostalno na osnovu <link href="https://en.wikipedia.org/wiki/Extended_Display_Identification_Data">EDID</link>-a ekrana koji se čuva u memorijskom čipu u monitoru. EDID nam daje samo snimak dostupnih boja koje je monitor mogao da prikaže kada je proizveden, i ne sadrži više drugih podataka za popravku boje.</p>
+
+  <figure>
+    <desc>Pošto EDID ne može biti osvežen, zato nema datum isteka.</desc>
+    <media type="image" mime="image/png" src="figures/color-profile-default.png"/>
+  </figure>
+
+  <note style="tip">
+    <p>Ako dobavite profil od prodavca monitora ili sami stvorite profil to će dovesti do preciznije popravke boje.</p>
+  </note>
+
+</page>

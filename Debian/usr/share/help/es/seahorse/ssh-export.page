@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="ssh-export" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys"/>
+
+    <revision pkgversion="3.14" date="2014-10-03" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Exportar sus claves SSH pública y privada para guardarlas en archivos de claves.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Exportar claves SSH</title>
+
+  <p>Exportar el contenido de sus claves SSH y guardarlas en archivos de claves, para tener una copia de respaldo de sus claves o para compartir su clave pública con alguien.</p>
+
+  <section id="public">
+    <title>Para exportar su clave SSH pública:</title>
+
+    <steps>
+      <item>
+	<p>Seleccione el depósito de <gui>claves OpenSSH</gui> en el panel de la izquierda.</p>
+      </item>
+      <item>
+	<p>En la lista, seleccione la <gui>clave SSH personal</gui> que exportar.</p>
+      </item>
+      <item>
+	<p>Seleccione <guiseq><gui>Archivo</gui><gui>Exportar…</gui></guiseq>.</p>
+      </item>
+      <item>
+	<p>Pulse el botón <gui style="button">Exportar</gui> para guardar la clave pública exportada en su equipo.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="private">
+    <title>Para exportar su clave SSH privada:</title>
+
+    <steps>
+      <item>
+	<p>Seleccione el depósito de <gui>claves OpenSSH</gui> en el panel de la izquierda.</p>
+      </item>
+      <item>
+	<p>En la lista, seleccione la <gui>clave SSH personal</gui> que exportar.</p>
+      </item>
+      <item>
+	<p>Pulse con el botón derecho sobre la clave seleccionada y elija <guiseq><gui>Propiedades</gui><gui>Detalles</gui></guiseq>.</p>
+      </item>
+      <item>
+	<p>Pulse el botón <gui style="button">Exportar clave privada</gui> para guardar la clave privada exportada en su equipo.</p>
+      </item>
+    </steps>
+
+    <note style="warning">
+      <p>Mantenga la clave privada exportada en un lugar seguro, ya que el contenido del archivo debe ser privado, para evitar un mal uso de la clave.</p>
+    </note>
+
+  </section>
+
+</page>

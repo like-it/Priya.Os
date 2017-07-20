@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="fr">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>Étalonner et caractériser sont deux choses complètement différentes.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Différence entre étalonnage et caractérisation</title>
+  <p>Beaucoup de gens ne connaissent pas la différence entre étalonnage et caractérisation. L'étalonnage est le processus qui conduit à modifier le comportement au niveau des couleurs d'un périphérique. Vous pouvez le faire typiquement de deux façons :</p>
+  <list>
+    <item><p>en modifier ses réglages et ses paramètres internes,</p></item>
+    <item><p>en appliquant des courbes à ses canaux de couleurs.</p></item>
+  </list>
+  <p>L'idée de l'étalonnage est de régler un périphérique de façon à ce que son rendu en couleurs corresponde à un état défini. On le fait souvent au jour le jour pour maintenir un comportement identique. L'étalonnage est typiquement enregistrée dans la mémoire du périphérique ou dans un format de fichier spécifique au système qui enregistre les réglages ou les courbes d'étalonnage par canal.</p>
+  <p>La caractérisation (ou profil) est l'<em>enregistrement</em> de la manière dont un périphérique reproduit ou réagit aux couleurs. Le résultat est typiquement enregistré dans un profil ICC du périphérique. Un tel profil ne modifie en rien la couleur. Il permet à un système, comme un CMM (module de gestion des couleurs) ou à une application adaptée à la gestion des couleurs, de modifier la couleur quand il est combiné au profil d'un autre périphérique. La connaissance des caractéristiques de deux périphériques permet de transférer les couleurs de l'un à l'autre.</p>
+  <note>
+    <p>Notez que la caractérisation (ou profil) d'un périphérique n'est valide que si ce dernier se trouve exactement dans le même état que quand il a été caractérisé.</p>
+  </note>
+  <p>Si vous affichez les profils, il y a un risque de confusion supplémentaire car les informations d'étalonnage y sont aussi habituellement enregistrées par commodité. Par convention, elles sont stockées sous une étiquette nommée <em>vcgt</em>. Bien qu'elles soient stockées avec le profil, aucun outil ni application classique basée sur l'ICC n'en tient compte. De la même manière, aucun outil ni application d'étalonnage ne tient compte des informations ICC de caractérisation (profil).</p>
+
+</page>

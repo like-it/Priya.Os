@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-wireless-noconnection" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" version="0.2" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Sorgfältiges Überprüfen des Passworts und anderes versuchswertes.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Ich habe das richtige Passwort eingegeben, aber die Verbindung kann nicht aufgebaut werden</title>
+
+<p>Wenn Sie sicher sind, dass Sie das richtige <link xref="net-wireless-wepwpa">Funknetzwerk-Passwort</link> eingegeben haben, sich aber trotzdem nicht mit dem Funknetzwerk verbinden können, versuchen Sie Folgendes:</p>
+
+<list>
+ <item>
+  <p>Überprüfen Sie sorgfältig, ob Sie das richtige Passwort eingegeben haben</p>
+  <p>Für Passwörter wird Groß-/Kleinschreibung unterschieden. Überprüfen Sie daher, ob Sie nicht einzelne Buchstaben falsch geschrieben haben.</p>
+ </item>
+
+ <item>
+  <p>Versuchen Sie den hexadezimalen oder ASCII-Schlüssel</p>
+  <p>Das Passwort, das Sie eingeben, kann auch auf eine andere Weise dargestellt werden, nämlich als eine hexadezimale Zeichenkette (Ziffern von 0 bis 9 und Buchstaben von a bis f), auch Passschlüssel genannt. Jedes Passwort hat einen äquivalenten Passschlüssel. Wenn Sie sowohl zum Passschlüssel als auch zum Passwort/zur Passphrase Zugriff haben, versuchen Sie stattdessen den Passschlüssel einzugeben. Achten Sie darauf, die richtige <gui>Sicherheit des Funknetzwerks</gui>-Option zu wählen, wenn Sie nach dem Passwort gefragt werden (wählen Sie zum Beispiel <gui>WEP 40/128-bit-Schlüssel (Hexadezimal oder ASCII)</gui>, wenn Sie den 40 Zeichen langen Passschlüssel für eine WEP-verschlüsselte Verbindung eingeben).</p>
+ </item>
+
+ <item>
+  <p>Versuchen Sie, die Netzwerkkarte aus- und wieder einzuschalten</p>
+  <p>Manchmal haben Netzwerkkarten Aussetzer oder stoßen auf kleinere Probleme, durch die sie nicht verbinden können. Versuchen Sie die Karte auszuschalten und dann wieder einzuschalten, um sie wieder in den Normalzustand zurückzusetzen – siehe <link xref="net-wireless-troubleshooting"/> für weitere Informationen.</p>
+ </item>
+
+ <item>
+  <p>Prüfen Sie, ob Sie den richtigen Funknetzwerk-Sicherheitsstandard verwenden</p>
+  <p>Wenn Sie nach Ihrem Funknetzwerkpasswort gefragt werden, können Sie entscheiden, welche Art der Verschlüsselung Sie verwenden wollen. Achten Sie darauf, dass Sie die Methode verwenden, die auch vom Router oder der WLAN-Basisstation verwendet wird. Normalerweise sollte diese Methode bereits vorgegeben sein, aber manchmal ist sie es aus verschiedenen Gründen nicht. Wenn Sie nicht wissen, welche es ist, versuchen Sie nacheinander alle Möglichkeiten, bis Sie die richtige gefunden haben.</p>
+ </item>
+
+ <item>
+  <p>Überprüfen Sie, ob Ihre Funknetzwerk-Karte vollständig unterstützt wird</p>
+  <p>Manche Funknetzwerkkarten sind nicht besonders gut unterstützt. Sie zeigen zwar eine Funknetzwerkverbindung an, können sich aber mit dem Netzwerk nicht verbinden, weil ihre Treiber das nicht unterstützen. Überprüfen Sie, ob Sie einen anderen Funknetzwerktreiber verwenden können oder ob Sie etwa zusätzliche Konfigurationsschritte vornehmen müssen (wie eine andere <em>Firmware</em> installieren). Siehe <link xref="net-wireless-troubleshooting"/> für weitere Informationen.</p>
+ </item>
+
+</list>
+
+</page>

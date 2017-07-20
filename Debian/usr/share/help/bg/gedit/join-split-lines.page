@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-join-split-lines" xml:lang="bg">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision version="3.8" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Джим Къмпбел</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Join several lines of text or split long lines.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Join/Split Lines</title>
+
+  <p>Приставката <app>Съединяване/Разделяне на линии</app> може да обедини по-къси редове в дълъг или да раздели дълъг ред на няколко по-къси.</p>
+  
+  <p>To enable this plugin, select <guiseq><gui style="menu">gedit</gui>
+  <gui style="menuitem">Preferences</gui><gui>Plugins</gui>
+  <gui>Join/Split Lines</gui></guiseq>.</p>
+
+  <steps>
+    <title>За съединяване на множество линии в една дълга:</title>
+    <item>
+      <p>Изберете линиите, които искате да се съединят. Можете да ги изберете с мишката или да натиснете <keyseq><key>Shift</key><key>Нагоре</key></keyseq> или <keyseq><key>Shift</key><key>Надолу</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Натиснете <keyseq><key>Ctrl</key><key>J</key></keyseq>.</p>
+      <p>Линиите, които сте избрали ще бъдат съединени в една дълга.</p>
+    </item>
+  </steps>
+
+  <steps>
+    <title>За разделяне на линия на няколко линии:</title>
+    <item>
+      <p>Изберете линията, която искате да се раздели като поставите курсора на нея.</p>
+    </item>
+    <item>
+      <p>Press <keyseq><key>Ctrl</key><key>Shift</key>
+      <key>J</key></keyseq>.</p>
+      <p>Линията ще се раздели на няколко линии. Дължината на всяка линия ще е по-малка от 80 знака като разделянето ще стане при срещане на знак шпация в края на линията.</p>
+    </item>
+  </steps>
+
+</page>

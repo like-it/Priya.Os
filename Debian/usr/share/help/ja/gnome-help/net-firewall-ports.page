@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>ファイアウォールでプログラムのネットワークアクセスを有効または無効にするには、正しいネットワークポートを指定する必要があります。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>よく使用されるネットワークポート</title>
+
+  <p>ファイル共有や遠隔からのデスクトップ表示など、ネットワークサービスを提供するアプリケーションでよく使用されるネットワークポートの一覧を示します。システムのファイアウォールを変更すると、こうしたアプリケーションへのアクセスを<link xref="net-firewall-on-off">ブロックしたり許可したりする</link>ことができるようになります。使用されているポートは数千に及ぶます。この一覧はその一部に過ぎません。</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>ポート</p>
+	</td>
+	<td>
+	  <p>名前</p>
+	</td>
+	<td>
+	  <p>詳細</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>システム同士に互いに検索させあうことで、相手のシステムが提供するサービスを認識させることができます。手作業で詳細を指定する必要がありません。</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>印刷</p>
+	</td>
+	<td>
+	  <p>プリンターにネットワーク経由で印刷ジョブを送信することができます。</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>印刷</p>
+	</td>
+	<td>
+	  <p>ネットワーク経由でプリンターを他のユーザーと共有することができます。</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>プレゼンス</p>
+	</td>
+	<td>
+	  <p>ネットワーク上の他のユーザーに対して、「オンライン」、「取り込み中」などインスタントメッセージ状態を提示することができます。</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>リモートデスクトップ</p>
+	</td>
+	<td>
+	  <p>デスクトップを共有することができるため、他のユーザーによるデスクトップへのアクセスやリモートアシスタンスの提供が可能になります。</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>音楽の共有 (DAAP)</p>
+	</td>
+	<td>
+	  <p>ネットワーク上で他のユーザーとミュージックライブラリを共有することができます。</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

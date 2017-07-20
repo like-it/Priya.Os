@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<!-- This file was automatically generated from C sources - DO NOT EDIT!
+To affect the contents of this file, edit the original C definitions,
+and/or use gtk-doc annotations.  -->
+<repository version="1.2"
+            xmlns="http://www.gtk.org/introspection/core/1.0"
+            xmlns:c="http://www.gtk.org/introspection/c/1.0"
+            xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
+  <include name="Gio" version="2.0"/>
+  <include name="Gtk" version="3.0"/>
+  <include name="TelepathyGLib" version="0.12"/>
+  <namespace name="Polari"
+             version="1.0"
+             shared-library="libpolari-1.0.so"
+             c:identifier-prefixes="Polari"
+             c:symbol-prefixes="polari">
+    <class name="Room"
+           c:symbol-prefix="room"
+           c:type="PolariRoom"
+           parent="GObject.Object"
+           glib:type-name="PolariRoom"
+           glib:get-type="polari_room_get_type"
+           glib:type-struct="RoomClass">
+      <method name="add_member" c:identifier="polari_room_add_member">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="room" transfer-ownership="none">
+            <type name="Room" c:type="PolariRoom*"/>
+          </instance-parameter>
+          <parameter name="member" transfer-ownership="none">
+            <type name="TelepathyGLib.Contact" c:type="TpContact*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="remove_member" c:identifier="polari_room_remove_member">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="room" transfer-ownership="none">
+            <type name="Room" c:type="PolariRoom*"/>
+          </instance-parameter>
+          <parameter name="member" transfer-ownership="none">
+            <type name="TelepathyGLib.Contact" c:type="TpContact*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="send_identify_message_async"
+              c:identifier="polari_room_send_identify_message_async">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="room" transfer-ownership="none">
+            <type name="Room" c:type="PolariRoom*"/>
+          </instance-parameter>
+          <parameter name="username" transfer-ownership="none">
+            <type name="utf8" c:type="const char*"/>
+          </parameter>
+          <parameter name="password" transfer-ownership="none">
+            <type name="utf8" c:type="const char*"/>
+          </parameter>
+          <parameter name="callback"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1"
+                     scope="async"
+                     closure="3">
+            <type name="Gio.AsyncReadyCallback" c:type="GAsyncReadyCallback"/>
+          </parameter>
+          <parameter name="user_data"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <type name="gpointer" c:type="gpointer"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="send_identify_message_finish"
+              c:identifier="polari_room_send_identify_message_finish"
+              throws="1">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="room" transfer-ownership="none">
+            <type name="Room" c:type="PolariRoom*"/>
+          </instance-parameter>
+          <parameter name="res" transfer-ownership="none">
+            <type name="Gio.AsyncResult" c:type="GAsyncResult*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_topic" c:identifier="polari_room_set_topic">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="room" transfer-ownership="none">
+            <type name="Room" c:type="PolariRoom*"/>
+          </instance-parameter>
+          <parameter name="topic" transfer-ownership="none">
+            <type name="utf8" c:type="const char*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="should_highlight_message"
+              c:identifier="polari_room_should_highlight_message">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="room" transfer-ownership="none">
+            <type name="Room" c:type="PolariRoom*"/>
+          </instance-parameter>
+          <parameter name="sender" transfer-ownership="none">
+            <type name="utf8" c:type="const char*"/>
+          </parameter>
+          <parameter name="message" transfer-ownership="none">
+            <type name="utf8" c:type="const char*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="account"
+                writable="1"
+                construct-only="1"
+                transfer-ownership="none">
+        <type name="TelepathyGLib.Account"/>
+      </property>
+      <property name="channel" writable="1" transfer-ownership="none">
+        <type name="TelepathyGLib.Channel"/>
+      </property>
+      <property name="channel-name"
+                writable="1"
+                construct-only="1"
+                transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="display-name" transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="icon" transfer-ownership="none">
+        <type name="Gio.Icon"/>
+      </property>
+      <property name="id" transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="topic" transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="type"
+                writable="1"
+                construct-only="1"
+                transfer-ownership="none">
+        <type name="guint" c:type="guint"/>
+      </property>
+      <glib:signal name="identify-sent" when="last">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="object" transfer-ownership="none">
+            <type name="utf8" c:type="gchar*"/>
+          </parameter>
+          <parameter name="p0" transfer-ownership="none">
+            <type name="utf8" c:type="gchar*"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="member-banned" when="last">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="object" transfer-ownership="none">
+            <type name="TelepathyGLib.Contact"/>
+          </parameter>
+          <parameter name="p0" transfer-ownership="none">
+            <type name="TelepathyGLib.Contact"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="member-disconnected" when="last">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="object" transfer-ownership="none">
+            <type name="TelepathyGLib.Contact"/>
+          </parameter>
+          <parameter name="p0" transfer-ownership="none">
+            <type name="utf8" c:type="gchar*"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="member-joined" when="last">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="object" transfer-ownership="none">
+            <type name="TelepathyGLib.Contact"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="member-kicked" when="last">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="object" transfer-ownership="none">
+            <type name="TelepathyGLib.Contact"/>
+          </parameter>
+          <parameter name="p0" transfer-ownership="none">
+            <type name="TelepathyGLib.Contact"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="member-left" when="last">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="object" transfer-ownership="none">
+            <type name="TelepathyGLib.Contact"/>
+          </parameter>
+          <parameter name="p0" transfer-ownership="none">
+            <type name="utf8" c:type="gchar*"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="member-renamed" when="last">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="object" transfer-ownership="none">
+            <type name="TelepathyGLib.Contact"/>
+          </parameter>
+          <parameter name="p0" transfer-ownership="none">
+            <type name="TelepathyGLib.Contact"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="members-changed" when="last">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+    </class>
+    <record name="RoomClass"
+            c:type="PolariRoomClass"
+            glib:is-gtype-struct-for="Room">
+      <field name="parent_class">
+        <type name="GObject.ObjectClass" c:type="GObjectClass"/>
+      </field>
+    </record>
+    <function name="create_room_id" c:identifier="polari_create_room_id">
+      <return-value transfer-ownership="full">
+        <type name="utf8" c:type="char*"/>
+      </return-value>
+      <parameters>
+        <parameter name="account" transfer-ownership="none">
+          <type name="TelepathyGLib.Account" c:type="TpAccount*"/>
+        </parameter>
+        <parameter name="name" transfer-ownership="none">
+          <type name="utf8" c:type="const char*"/>
+        </parameter>
+        <parameter name="type" transfer-ownership="none">
+          <type name="TelepathyGLib.HandleType" c:type="TpHandleType"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="drag_dest_find_target"
+              c:identifier="polari_drag_dest_find_target">
+      <return-value transfer-ownership="none">
+        <type name="guint" c:type="guint"/>
+      </return-value>
+      <parameters>
+        <parameter name="widget" transfer-ownership="none">
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </parameter>
+        <parameter name="context" transfer-ownership="none">
+          <type name="Gdk.DragContext" c:type="GdkDragContext*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="drag_dest_request_data"
+              c:identifier="polari_drag_dest_request_data">
+      <return-value transfer-ownership="none">
+        <type name="none" c:type="void"/>
+      </return-value>
+      <parameters>
+        <parameter name="widget" transfer-ownership="none">
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </parameter>
+        <parameter name="context" transfer-ownership="none">
+          <type name="Gdk.DragContext" c:type="GdkDragContext*"/>
+        </parameter>
+        <parameter name="time_" transfer-ownership="none">
+          <type name="guint32" c:type="guint32"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="drag_dest_supports_target"
+              c:identifier="polari_drag_dest_supports_target">
+      <return-value transfer-ownership="none">
+        <type name="gboolean" c:type="gboolean"/>
+      </return-value>
+      <parameters>
+        <parameter name="widget" transfer-ownership="none">
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </parameter>
+        <parameter name="context" transfer-ownership="none">
+          <type name="Gdk.DragContext" c:type="GdkDragContext*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="util_get_basenick" c:identifier="polari_util_get_basenick">
+      <return-value transfer-ownership="full">
+        <doc xml:space="preserve">the "base nick" of @nick, which can be used to
+  group nicks that likely belong to the same person (e.g. "nick-away" or
+  "nick|bbl")</doc>
+        <type name="utf8" c:type="char*"/>
+      </return-value>
+      <parameters>
+        <parameter name="nick" transfer-ownership="none">
+          <doc xml:space="preserve">the original nick</doc>
+          <type name="utf8" c:type="const char*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="util_match_identify_message"
+              c:identifier="polari_util_match_identify_message">
+      <return-value transfer-ownership="none">
+        <doc xml:space="preserve">%TRUE if @message is an identify command</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </return-value>
+      <parameters>
+        <parameter name="message" transfer-ownership="none">
+          <doc xml:space="preserve">a text message</doc>
+          <type name="utf8" c:type="const char*"/>
+        </parameter>
+        <parameter name="username"
+                   direction="out"
+                   caller-allocates="0"
+                   transfer-ownership="full"
+                   optional="1"
+                   allow-none="1">
+          <doc xml:space="preserve">the parsed name if the @message is an
+                             identify command</doc>
+          <type name="utf8" c:type="char**"/>
+        </parameter>
+        <parameter name="password"
+                   direction="out"
+                   caller-allocates="0"
+                   transfer-ownership="full"
+                   optional="1"
+                   allow-none="1">
+          <doc xml:space="preserve">the parsed password if the @message is an
+                             identify command</doc>
+          <type name="utf8" c:type="char**"/>
+        </parameter>
+      </parameters>
+    </function>
+  </namespace>
+</repository>

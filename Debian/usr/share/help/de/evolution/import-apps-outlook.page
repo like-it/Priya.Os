@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-apps-outlook" xml:lang="de">
+
+  <info>
+    <desc>Daten aus Microsoft Outlook importieren.</desc>
+    
+    <link type="guide" xref="import-data#import-from-apps"/>
+
+    <revision pkgversion="3.0.2" version="0.5" date="2011-09-02" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/outlook-migration-mail.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Outlook</title>
+<!-- "Import data and settings from older programs" cannot recognize Outlook, as there obviously is no default storage location for Outlook *under Linux* -->
+
+<p>Diese Schritte beziehen sich auf lokal gespeicherte Daten, wie z.B. bei POP-Konten. Für entfernt abgelegte Daten (wie z.B. bei IMAP) ist dies nicht notwendig, weil sich die Daten noch auf dem Server befinden und nicht händisch übertragen werden müssen. Sie können das entsprechende Konto in <app>Evolution</app> einrichten, woraufhin die Daten herunter geladen werden.</p>
+
+<section id="prerequisites">
+<title>Voraussetzungen unter Windows</title>
+<p>Bereiten Sie zunächst Ihre Nachrichten unter Microsoft Windows für das Importieren vor:</p>
+<steps>
+<item><p>Suchen Sie Ihre Outlook-Dateien (sie haben normalerweise die Dateiendung <file>.pst</file> oder <file>.ost</file>):</p>
+<table frame="all" rules="all">
+  <tr>
+    <td/><td><p>Windows 7, Windows Vista</p></td><td><p>Windows XP</p></td>
+  </tr>
+  <tr>
+    <td><p>Outlook 2010</p></td><td><p>C:\Dokumente und Einstellungen\Benutzername\Lokale Einstellungen\Anwendungsdaten\Microsoft\Outlook</p></td><td><p><file>C:\Dokumente und Einstellungen\Benutzername\Lokale Einstellungen\Anwendungsdaten\Microsoft\Outlook</file></p></td>
+  </tr>
+  <tr>
+    <td><p>Outlook 2007 und früher</p></td><td><p><file>C:\Dokumente und Einstellungen\Benutzername\Lokale Einstellungen\Anwendungsdaten\Microsoft\Outlook</file></p></td><td><p><file>C:\Dokumente und Einstellungen\Benutzername\Lokale Einstellungen\Anwendungsdaten\Microsoft\Outlook</file></p></td>
+  </tr>
+</table>
+<p>(Ersetzen Sie »Benutzername« durch Ihren Benutzernamen)</p>
+</item>
+<!-- File locations taken from http://support.microsoft.com/kb/2291280 and http://answers.microsoft.com/en-us/windows/forum/windows_7-files/where-is-location-of-outlookpst-file-in-windows-7/3a4c03c3-e8ad-4912-9e37-f1c62057d1f9 -->
+<item><p>Kopieren Sie die Outlook-Dateien auf das System oder die Partition, auf der <app>Evolution</app> installiert ist.</p>
+<p>Falls Ihre Windows-Festplatte mit NTFS formatiert ist, können einige Linux-Systeme dies nicht ohne zusätzliche Software lesen. In diesem Fall kann es einfacher sein, die E-Mail-Ordner auf ein anderes Laufwerk zu kopieren, oder eine CD zu brennen.</p></item>
+</steps>
+</section>
+
+<section id="importing">
+<title>In <app>Evolution</app> importieren</title>
+<steps>
+<item><p>Legen Sie - abhängig von Ihrem letzten Schritt - entweder den Datenträger ein oder verbinden Sie das USB-Laufwerk und warten Sie, bis sich die Dateiverwaltung öffnet. Oder Sie binden Ihr Windows-Laufwerk ein.</p></item>
+<item><p>Kopieren Sie alle E-Mail-Dateien in Ihren persönlichen Ordner oder an einen anderen gewünschten Ort.</p></item>
+<item><p>Starten Sie <app>Evolution</app>.</p></item>
+<item><p>Wählen Sie optional <guiseq><gui>Datei</gui><gui>Neu</gui><gui>E-Mail-Ordner</gui></guiseq>, um die gewünschten <link xref="mail-folders">Ordner</link> zu erstellen.</p></item>
+
+<item><p>Klicken Sie auf <guiseq><gui>Datei</gui><gui>Importieren</gui></guiseq>.</p></item>
+<item><p>Klicken Sie im Reiter <gui>Importeurtyp</gui> auf <gui>Eine einzelne Datei importieren</gui>.</p></item>
+<item><p>Bitte wählen Sie die persönliche Outlook-Ordnerdatei (.pst), die Sie importieren wollen.</p><p>Der Dateityp wird automatisch bestimmt.</p>
+<note style="tip"><p>Wenn die Option zum Importieren von persönlichen Outlook-Ordnern (.pst-Dateien) nicht unter <guiseq><gui>Datei</gui><gui>Importieren</gui><gui>Einzelne Datei importieren</gui><gui>Dateityp</gui></guiseq> verfügbar ist, so hat Ihre Distribution diese Funktion eventuell nicht freigeschaltet.</p></note>
+</item>
+<item><p>Wählen Sie das Ziel dieses Imports, also den Ordner in <app>Evolution</app>.</p></item>
+<item><p>Wiederholen Sie diese Schritte, bis alle Ihre Daten importiert sind.</p></item>
+</steps>
+
+</section>
+
+</page>

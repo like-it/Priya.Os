@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="user-admin-explain" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Oprávnění správce jsou zapotřebí ke změnám důležitých částí systému.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Jak fungují oprávnění správce?</title>
+
+  <p>Mimo souborů, které si vytváříte <em>vy</em>, je v počítači i řada souborů, které jsou potřebné pro operační systém, aby správně fungoval. Pokud by došlo u těchto <em>systémových souborů</em> k nesprávným změnám, mohlo by to způsobit různé problémy, takže jsou tyto soubory standardně proti změnám chráněny. Rovněž některé aplikace mění důležité části systému, takže jsou také chráněné.</p>
+
+  <p>Princip, jakým jsou chráněny, je v tom, že jen uživatelé se <em>správcovskými oprávněními</em> mají dovoleno měnit soubory nebo používat aplikace. Při každodenním používání nepotřebujete měnit žádné systémové soubory nebo používat tyto aplikace, takže standardně oprávnění správce nemáte.</p>
+
+  <p>Občas ale tyto aplikace použít potřebujete, takže se vám může hodit dočasně získat správcovská oprávnění, abyste mohli provést nějaké změny. Když některá aplikace potřebuje oprávnění správce, dotáže se vás na heslo. Například, když chcete nainstalovat nový software, instalátor softwaru (správce balíčků) se váš dotáže na heslo správce a pak můžete do systému přidat novou aplikaci. Po té, co instalaci dokončíte, správcovská oprávnění vám jsou opět odebrána.</p>
+
+  <p>Oprávnění správce jsou přiřazena k vašemu uživatelskému účtu. Uživatel, který je <gui>správce</gui> může mít tato oprávnění, zatímco <gui>normální</gui> uživatel ne. Bez správcovských oprávnění nebudete moci instalovat nový software. Některé uživatelské účty (například účet „root“) mají správcovská oprávnění trvale. Vy byste ale správcovská oprávnění po celou dobou používat neměli, protože můžete nechtěně změnit něco, co jste nechtěli (třeba smazat důležitý systémový soubor).</p>
+
+  <p>Shrnuto, oprávnění správce vám umožňují v případě potřeby provádět změny důležitých částí vašeho systému, ale zabraňují tomu, abyste to udělali nechtěně.</p>
+
+  <note>
+    <title>Co znamená „superuživatel“?</title>
+    <p>Uživatel s oprávněními správce bývá někdy nazýván <em>superuživatel</em>. Je to jednoduše proto, že má více oprávnění, než normální uživatel. Někdy se na toto téma můžete setkat s věcmi, jako <cmd>su</cmd> a <cmd>sudo</cmd>, což jsou programy, které právě dočasně přidělí „superuživatelská“ (správcovská) oprávnění.</p>
+  </note>
+
+<section id="advantages">
+  <title>Proč jsou oprávnění správce užitečná?</title>
+
+  <p>Požadování správcovských oprávnění po uživateli až těsně před důležitými změnami je vhodnější, protože pomáhá předcházet změnám, ať už chtěným či nechtěným, vedoucím k poškození systému.</p>
+
+  <p>Když máte oprávnění správce po celou dobu, můžete nechtěně změnit důležitý soubor nebo spustit aplikaci, která chybně změní něco důležitého. Tím, že se správcovská oprávnění přidělí jen dočasně, ve chvíli, kdy je to potřeba, sníží se riziko vzniku nehody.</p>
+
+  <p>Mít správcovská oprávnění by mělo být umožněno jen konkrétním důvěryhodným uživatelům. Tím se předejde tomu, aby ostatní uživatelé dělali v počítači nepořádek, odinstalovávali aplikace, které potřebují ostatní, instalovali aplikace, které v počítači být nemají, a měnili důležité soubory. Důležité je to i z bezpečnostního hlediska.</p>
+
+</section>
+
+</page>

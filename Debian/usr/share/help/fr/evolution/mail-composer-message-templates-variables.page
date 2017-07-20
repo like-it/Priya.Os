@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-composer-message-templates-variables" xml:lang="fr">
+
+  <info>
+   <desc>Configuration de variables dans les modèles et réutilisation d'éléments des messages auxquels vous répondez</desc>
+   
+   <link type="guide" xref="mail-composer-message-templates#options"/>
+
+ <revision pkgversion="3.5.90" version="0.3" date="2012-08-17" status="draft"/>
+ <credit type="author">
+   <name its:translate="no">Andre Klapper</name>
+   <email its:translate="no">ak-47@gmx.net</email>
+ </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/b1dlaazl.html.en -->
+ </credit>
+ 
+ <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+     
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Utilisation de variables dans les modèles</title>
+
+<section id="configure">	
+<title>Configuration de variables dans les  modèles de message</title>
+<steps>
+<item><p>Sélectionnez <guiseq><gui>Édition</gui><gui>Greffons</gui></guiseq>.</p></item>
+<item><p>Cliquez sur <gui>Modèles</gui>.</p></item>
+<item><p>Cliquez sur l'onglet <gui>Configuration</gui>.</p></item>
+<item><p>Vous pouvez ajouter, modifier ou supprimer des paires mot-clé - valeur. Vous pouvez définir autant de paires mot-clé - valeur que souhaitées.</p></item>
+</steps>
+ <p>Dans tout modèle, chaque occurrence de « $clé » est remplacée par la valeur indiquée dans la configuration. Par exemple, si vous définissez une clé à « Directeur » et la valeur à « Jean », chaque occurrence de $Directeur est remplacée par Jean dans le message.</p>
+ <p>Supposons que vous ayez 1000 modèles de message qui référencent le nom de votre directeur actuel. Si votre directeur est remplacé, il est fastidieux de devoir modifier manuellement le nom du directeur dans les 1000 messages. Si les messages contiennent une clé $Directeur, vous pouvez facilement modifier la valeur correspondante dans l'onglet Configuration de ce greffon.</p>
+ <p>Par défaut, toutes les variables d'environnement existantes sont utilisées comme paires clé-valeur. Chaque apparition de $VARIABLE_D'ENVIRONNEMENT est remplacée par sa valeur. Par exemple, si un de vos modèles contient « $PATH », c'est la valeur de cette variable qui apparaîtra dans le modèle lorsqu'il sera utilisé.</p>
+ <p>L'algorithme de substitution utilise l'ordre de priorités suivant :</p>
+ <steps>
+  <item>
+<p>$clé est remplacée par la valeur correspondante dans l'onglet Configuration du greffon Modèles.</p>
+  </item>
+  <item>
+<p>Si la clé n'est pas trouvée, elle est alors remplacée par la valeur correspondant à la variable d'environnement éponyme.</p>
+  </item>
+  <item>
+<p>Si la clé n'est ni une option de configuration, ni une variable d'environnement, aucune substitution n'est effectuée.</p>
+  </item>
+ </steps>
+</section>
+
+<!-- as per https://bugzilla.gnome.org/show_bug.cgi?id=641845 - available since 3.2-->
+<section id="reply-variables">
+<title>Utilisation d'éléments de message dans un modèle lors d'une réponse</title>
+<p>Les modèles peuvent contenir plus que seulement l'ensemble prédéfini des <link xref="#configure">paires clé-valeur</link>. Vous pouvez aussi obtenir n'importe quelles valeurs d'en-tête de message à partir du courriel auquel vous appliquez le modèle, en plus du corps complet du message.</p>
+
+<!-- TRANSLATORS: Do NOT translate "$ORIG[subject]" and "$ORIG[body]" in this sentence. -->
+<p its:locNote="TO TRANSLATORS: Do NOT translate $ORIG[subject] and $ORIG[body] in this sentence!">Pour faire cela, utilisez le format <code>$ORIG[nom_entête]</code> et remplacez la variable <code>nom_entête</code> par l'en-tête correct. Par exemple, si vous voulez insérer la ligne de sujet du message auquel vous répondez, utilisez <code>$ORIG[subject]</code>. Pour insérer le corps complet, utilisez <code>$ORIG[body]</code>.</p>
+
+<!-- TRANSLATORS: Do NOT translate "$ORIG[body]" and "$ORIG[reply-to]" in this sentence. -->
+<p its:locNote="TO TRANSLATORS: Do NOT translate $ORIG[body] and $ORIG[reply-to] in this sentence!">Si aucune substitution n'est trouvée pour une variable, la variable n'est pas supprimée (sauf pour <code>$ORIG[body]</code>) mais laissée en place afin que vous voyez que quelque chose n'est pas correct. Cela peut arriver lorsque vous utilisez des en-têtes qui ne sont pas toujours nécessairement disponibles dans le message d'origine (par exemple <code>$ORIG[reply-to]</code>).</p>
+</section>
+
+</page>

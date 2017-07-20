@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-folders" xml:lang="cs">
+
+  <info>
+    <desc>Jak využít složky k roztřídění pošty.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.0.2" version="0.2" date="2011-07-30" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-folders.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Používaní složek</title>
+  
+<p><app>Evolution</app>, podobně jako většina ostatních poštovních programů, uchovává poštu ve složkách. Na začátku máte pár složek jako Příchozí, K odeslání nebo Koncepty, ale můžete si jich vytvořit tolik, kolik chcete.</p>
+
+<section id="create-folder">
+<title>Vytváření složek</title>
+<p>Když chcete vytvořit složku:</p>
+<steps>
+<item><p>Klikněte na <gui>Složka</gui> a vyberte <gui>Nová</gui>. Můžete také kdekoliv v seznamu složek kliknout pravým tlačítkem a vybrat položku <gui>Nová složka</gui>.</p></item>
+<item><p>Zadejte název a umístění složky.</p></item>
+<item><p>Klikněte na tlačítko <gui>Vytvořit</gui>.</p></item>
+</steps>
+<p>V zobrazení složek se objeví nová složka. Do ní pak můžete přesunout zprávy.</p>
+
+<note style="warning">
+<p>Složka <gui>Příchozí</gui> na většině serverů IMAP nemůže obsahovat zároveň podsložky a zprávy. Když vytváříte další složky na serveru IMAP, větvěte je od kořene stromu účtů, a ne od složky Příchozí. Pokud vytvoříte podsložky ve složce <gui>Příchozí</gui>, může vám to zabránit ve čtení zpráv, které s v ní nacházejí. Pokud se taková věc stane, přesuňte vytvořené složky do kořene účtu IMAP.</p>
+</note>
+
+</section>
+
+<section id="use-folder">
+<title>Přesun zpráv do nové složky</title>
+<p>Zprávy můžete přesunout do složek jedním z následujích způsobů:</p>
+<list>
+<item><p>Přetáhněte a upusťte zprávu do složky.</p></item>
+<item><p>Klikněte na zprávu pravým tlačítkem a vyberte možnost <gui>Přesunout do složky</gui>.</p></item>
+<item><p>Vyberte zprávu a zmáčkněte <keyseq><key>Shift</key><key>Ctrl</key><key>V</key></keyseq>.</p></item>
+<item><p>Vyberte zprávu a klikněte na <guiseq><gui>Zpráva</gui> <gui>Přesunout do složky</gui></guiseq>.</p></item>
+</list>
+
+<p>Postup kopírování je podobný.</p>
+
+<note style="tip"><p>Přesouvání zpráv je možné zautomatizovat nastavením <link xref="mail-filters">filtrů</link>.</p></note>
+
+</section>
+
+<!--Reuse http://library.gnome.org/users/evolution/2.32/usage-mail-organize-folders.html.en and add "Novell, Inc" as an author to this page. Mention the combination with filters (see seealso link)-->
+	
+</page>

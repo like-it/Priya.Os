@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-retrieve-remote" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-18" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Αν θέλετε να στείλετε ένα επείγον κρυπτογραφημένο μήνυμα σε κάποιον, αλλά δεν έχετε το κλειδί του, μπορείτε να ανακτήσετε το κλειδί του από έναν απομακρυσμένο διακομιστή κλειδιών.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα του GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ανάκτηση απομακρυσμένων κλειδιών</title>
+
+  <p>Μπορείτε να ανακτήσετε το δημόσιο κλειδί GnuPG κάποιου από το διαδίκτυο και να το αποθηκεύσετε στο <app>Κωδικοί πρόσβασης και κλειδιά</app>.</p>
+
+  <steps>
+    <title>Για να ανακτήσετε ένα απομακρυσμένο κλειδί:</title>
+    <item>
+      <p>Επιλέξτε <guiseq><gui style="menu">Απομακρυσμένο</gui> <gui style="menuitem">Εύρεση απομακρυσμένων κλειδιών…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Εισάγετε πληροφορίες για το κλειδί που θέλετε να ανακτήσετε στο παρεχόμενο πεδίο. Λεπτομέρειες όπως αναγνωριστικό κλειδιού ή η διεύθυνση αλληλογραφίας του κατόχου του κλειδιού δίνουν πιο ακριβή αποτελέσματα από το όνομα του κατόχου του κλειδιού.</p>
+    </item>
+    <item>
+      <p>Πατήστε το πλήκτρο <gui style="button">Αναζήτηση</gui>.</p>
+    </item>
+    <item>
+      <p>Από τον κατάλογο των αποτελεσμάτων αναζήτησης, επιλέξτε το κλειδί που θέλετε να εισάγετε, κάντε δεξί κλικ το και επιλέξτε <gui style="menuitem">Εισαγωγή</gui>. Εναλλακτικά, μπορείτε να πατήσετε επίσης το πλήκτρο <gui style="button">Εισαγωγή</gui> που εμφανίζεται στην κορυφή του διαλόγου μετά την επιλογή του κλειδιού.</p>
+    </item>
+  </steps>
+
+  <p>Το εισαγόμενο κλειδί θα καταχωριστεί στην κλειδοθήκη <gui>Κλειδιά GnuPG</gui>.</p>
+
+  <note style="tip">
+  <p>Αν δεν μπορείτε να δείτε το ανακτημένο κλειδί, παρακαλούμε να επιλέξετε <guiseq><gui>Προβολή</gui><gui>Εμφάνιση όλων</gui></guiseq>.</p>
+  </note>
+
+  <note style="tip">
+    <p>Αν θέλετε περισσότερες πληροφορίες για ένα κλειδί, πριν να το εισάγετε, επιλέξτε το και πατήστε το πλήκτρο ιδιότητες που βρίσκεται στην κορυφή του διαλόγου. Εναλλακτικά, μπορείτε να κάνετε δεξί κλικ επίσης στο κλειδί και να επιλέξετε <gui style="menuitem">Ιδιότητες</gui>. Αυτό ανοίγει ένα νέο παράθυρο που εμφανίζει πληροφορίες όπως το αναγνωριστικό κλειδιού, το δακτυλικό αποτύπωμα του κλειδιού, το επίπεδο εμπιστοσύνης, το όνομα του κατόχου, κλπ.</p>
+  </note>
+
+</page>

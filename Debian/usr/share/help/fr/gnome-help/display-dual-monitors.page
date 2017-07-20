@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="display-dual-monitors" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="prefs-display"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="outdated"/>
+    <revision pkgversion="3.9.92" date="2013-09-23" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Configurer un écran externe.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Connexion d'un autre écran à votre ordinateur</title>
+
+<!-- TODO: update video
+<section id="video-demo">
+  <title>Video Demo</title>
+  <media its:translate="no" type="video" width="500" mime="video/webm" src="figures/display-dual-monitors.webm">
+    <p its:translate="yes">Demo</p>
+    <tt:tt its:translate="yes" xmlns:tt="http://www.w3.org/ns/ttml">
+      <tt:body>
+        <tt:div begin="1s" end="3s">
+          <tt:p>Type <input>displays</input> in the <gui>Activities</gui>
+          overview to open the <gui>Displays</gui> settings.</tt:p>
+        </tt:div>
+        <tt:div begin="3s" end="9s">
+          <tt:p>Click on the image of the monitor you would like to activate or
+          deactivate, then switch it <gui>ON/OFF</gui>.</tt:p>
+        </tt:div>
+        <tt:div begin="9s" end="16s">
+          <tt:p>The monitor with the top bar is the main monitor. To change
+          which monitor is "main", click on the top bar and drag it over to
+          the monitor you want to set as the "main" monitor.</tt:p>
+        </tt:div>
+        <tt:div begin="16s" end="25s">
+          <tt:p>To change the "position" of a monitor, click on it and drag it
+          to the desired position.</tt:p>
+        </tt:div>
+        <tt:div begin="25s" end="29s">
+          <tt:p>If you would like both monitors to display the same content,
+          check the <gui>Mirror displays</gui> box.</tt:p>
+        </tt:div>
+        <tt:div begin="29s" end="33s">
+          <tt:p>When you are happy with your settings, click <gui>Apply</gui>
+          and then click <gui>Keep This Configuration</gui>.</tt:p>
+        </tt:div>
+        <tt:div begin="33s" end="37s">
+          <tt:p>To close the <gui>Displays Settings</gui> click on the
+          <gui>x</gui> in the top corner.</tt:p>
+        </tt:div>
+      </tt:body>
+    </tt:tt>
+  </media>
+</section>
+-->
+
+<section id="steps">
+  <title>Configuration d'un écran externe</title>
+  <p>Pour configurer un écran externe avec votre ordinateur, connectez l'écran à votre portable. Si le système ne le reconnaît pas immédiatement, ou si vous préférez ajuster les paramètres :</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Displays</gui>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Displays</gui> pour ouvrir le panneau.</p>
+    </item>
+    <item>
+      <p>Sélectionnez l'écran que vous souhaitez activer ou désactiver, puis dans sa liste de configuration cliquez sur <gui>Éteindre</gui> pour le désactiver, ou sur l'une des options <gui>Secondaire</gui> ou <gui>Mirroir</gui> pour l'activer.</p>
+      <note>
+        <p>L'écran principal est celui contenant la <link xref="shell-introduction">barre supérieure</link> et affichant la vue d'ensemble des <gui>Activités</gui>.</p>
+      </note>
+    </item>
+    <item>
+      <p>Pour modifier l'orientation de l'écran, utilisez les boutons fléchés pour le faire tourner jusqu'à la bonne position.</p>
+    </item>
+    <item>
+      <p>Quand vous êtes satisfait de vos réglages, cliquez sur <gui>Appliquer</gui>, puis sur <gui>Garder ces modifications</gui>.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

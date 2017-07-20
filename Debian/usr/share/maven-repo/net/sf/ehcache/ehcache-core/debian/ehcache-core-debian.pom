@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.sf.ehcache</groupId>
+	<artifactId>ehcache-core</artifactId>
+	<version>debian</version>
+	<packaging>jar</packaging>
+	<name>Ehcache Core</name>
+	<description>This is the ehcache core module. Pair it with other modules for added functionality.</description>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>src/assemble/EHCACHE-CORE-LICENSE.txt</url>
+		</license>
+	</licenses>
+	<url>http://ehcache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<net.sf.ehcache.speedAdjustmentFactor>5</net.sf.ehcache.speedAdjustmentFactor>
+		<testDir>src/test/java</testDir>
+		<testResources>src/test/resources</testResources>
+		<name>ehcache</name>
+		<skipCheckstyle>false</skipCheckstyle>
+		<skipJavadoc>false</skipJavadoc>
+		<build.timestamp>${maven.build.timestamp}</build.timestamp>
+		<tests.supplemental.args>
+		</tests.supplemental.args>
+		<surefire.version>2.10</surefire.version>
+		
+			<debian.com.sun.xsom.xsom.originalVersion>20100725</debian.com.sun.xsom.xsom.originalVersion>
+		
+			<debian.commons-logging.commons-logging.originalVersion>1.1.1</debian.commons-logging.commons-logging.originalVersion>
+		
+			<debian.dom4j.dom4j.originalVersion>1.6.1</debian.dom4j.dom4j.originalVersion>
+		
+			<debian.javassist.javassist.originalVersion>3.4.GA</debian.javassist.javassist.originalVersion>
+		
+			<debian.javax.servlet.servlet-api.originalVersion>2.4</debian.javax.servlet.servlet-api.originalVersion>
+		
+			<debian.javax.transaction.jta.originalVersion>1.1</debian.javax.transaction.jta.originalVersion>
+		
+			<debian.junit.junit.originalVersion>4.10</debian.junit.junit.originalVersion>
+		
+			<debian.net.sf.ehcache.sizeof-agent.originalVersion>1.0.1</debian.net.sf.ehcache.sizeof-agent.originalVersion>
+		
+			<debian.net.sf.hibernate.hibernate.originalVersion>2.1.8</debian.net.sf.hibernate.hibernate.originalVersion>
+		
+			<debian.org.apache.derby.derby.originalVersion>10.5.3.0_1</debian.org.apache.derby.derby.originalVersion>
+		
+			<debian.org.beanshell.bsh.originalVersion>1.3.0</debian.org.beanshell.bsh.originalVersion>
+		
+			<debian.org.codehaus.btm.btm.originalVersion>2.0.1</debian.org.codehaus.btm.btm.originalVersion>
+		
+			<debian.org.hamcrest.hamcrest-core.originalVersion>1.2</debian.org.hamcrest.hamcrest-core.originalVersion>
+		
+			<debian.org.hamcrest.hamcrest-library.originalVersion>1.2</debian.org.hamcrest.hamcrest-library.originalVersion>
+		
+			<debian.org.hibernate.hibernate-core.originalVersion>3.5.1-Final</debian.org.hibernate.hibernate-core.originalVersion>
+		
+			<debian.org.hibernate.hibernate-ehcache.originalVersion>3.3.2.GA</debian.org.hibernate.hibernate-ehcache.originalVersion>
+		
+			<debian.org.mockito.mockito-core.originalVersion>1.8.2</debian.org.mockito.mockito-core.originalVersion>
+		
+			<debian.org.slf4j.slf4j-api.originalVersion>1.6.1</debian.org.slf4j.slf4j-api.originalVersion>
+		
+			<debian.org.slf4j.slf4j-jdk14.originalVersion>1.6.1</debian.org.slf4j.slf4j-jdk14.originalVersion>
+		
+			<debian.originalVersion>2.6.11</debian.originalVersion>
+		
+			<debian.package>libehcache-java</debian.package>
+	</properties>
+	<dependencies>
+		<!--Required scope -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>debian</version>
+			<scope>compile</scope>
+		</dependency>
+		<!-- packaged into the main jar using shade plugin. Its dependency is removed in the final pom 
+    <dependency>
+      <groupId>net.sf.ehcache</groupId>
+      <artifactId>ehcache-rest-agent</artifactId>
+      <version>${project.version}</version>
+    </dependency-->
+		<!-- With slf4j, users must choose a concrete logging implementation
+      at deploy time, which they provide The maven dependency declarations are
+      reproduced here for convenience.
+
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-jdk14</artifactId>
+        <version>1.6.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>1.6.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
+        <version>1.6.1</version>
+      </dependency>
+    -->
+		<!-- Provided scope. This one, or another concrete logging implementation
+      must be provided. -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-jdk14</artifactId>
+			<version>debian</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>debian</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>debian</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.transaction</groupId>
+			<artifactId>jta</artifactId>
+			<version>debian</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>sizeof-agent</artifactId>
+			<version>debian</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- Test scope -->
+		<dependency>
+			<groupId>net.sf.hibernate</groupId>
+			<artifactId>hibernate</artifactId>
+			<version>debian</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.transaction</groupId>
+					<artifactId>jta</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>javax.security</groupId>
+					<artifactId>jacc</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>net.sf.ehcache</groupId>
+					<artifactId>ehcache</artifactId>
+				</exclusion>
+			</exclusions>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	<!-- The JBoss repository is only here to satisfy the 'provided' dependency
+    on hibernate-core -->
+	<scm>
+		<connection>scm:svn:http://svn.terracotta.org/svn/ehcache/trunk</connection>
+		<developerConnection>scm:svn:https://svn.terracotta.org/repo/ehcache/trunk</developerConnection>
+		<tag>
+		</tag>
+		<url>http://svn.terracotta.org/svn/ehcache/trunk</url>
+	</scm>
+	<issueManagement>
+		<system>JIRA</system>
+		<url>https://jira.terracotta.org/jira/browse/EHC</url>
+	</issueManagement>
+</project>

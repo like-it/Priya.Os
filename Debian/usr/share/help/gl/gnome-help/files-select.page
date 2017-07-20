@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-select" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Prema <keyseq><key>Alt</key><key>Tab</key></keyseq> para trocar entre as xanelas.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Seleccionar ficheiros por patróns</title>
+
+  <p>Pode seleccionar ficheiros dun cartafol en base a un patrón sobre o nome do ficheiro. Prema <keyseq><key>Ctrl</key><key>S</key></keyseq> para abrir a xanela <gui>Seleccionar elementos que coincidan con</gui>. Escriba un patrón que teña partes comúns dos nomes de ficheiros e caracteres comodín. Existen dous caracteres comodín dispoñíbeis:</p>
+
+  <list style="compact">
+    <item><p><file>*</file> coincide con calquera número de calquera caracter, aínda que non en todos.</p></item>
+    <item><p><file>?</file> coincide exactamente con un de calquera dos caracter.</p></item>
+  </list>
+
+  <p>Por exemplo:</p>
+
+  <list>
+    <item><p>Se ten un ficheiro de texto OpenDocument, un ficheiro PDF e unha imaxe que ten teñen o mesmo nome base <file>Factura</file>, seleccione os tres co patrón</p>
+    <example><p><file>Factura.*</file></p></example></item>
+
+    <item><p>Se ten algunhas fotos con nomes tales como <file>Vacacións-001.jpg</file>, <file>Vacacións-002.jpg</file>, <file>Vacacións-003.jpg</file>; seleccióneas co patrón</p>
+    <example><p><file>Vacacións-???.jpg</file></p></example></item>
+
+    <item><p>If you have photos as before, but you have edited some of them and
+    added <file>-edited</file> to the end of the file name of the photos you
+    have edited, select the edited photos with</p>
+    <example><p><file>Vacacións-???-editada.jpg</file></p></example></item>
+  </list>
+
+</page>

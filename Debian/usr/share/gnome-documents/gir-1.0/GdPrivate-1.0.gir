@@ -1,0 +1,1060 @@
+<?xml version="1.0"?>
+<!-- This file was automatically generated from C sources - DO NOT EDIT!
+To affect the contents of this file, edit the original C definitions,
+and/or use gtk-doc annotations.  -->
+<repository version="1.2"
+            xmlns="http://www.gtk.org/introspection/core/1.0"
+            xmlns:c="http://www.gtk.org/introspection/c/1.0"
+            xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
+  <include name="EvinceDocument" version="3.0"/>
+  <include name="EvinceView" version="3.0"/>
+  <include name="GData" version="0.0"/>
+  <include name="GnomeDesktop" version="3.0"/>
+  <include name="Goa" version="1.0"/>
+  <include name="Gtk" version="3.0"/>
+  <include name="Zpj" version="0.0"/>
+  <namespace name="GdPrivate"
+             version="1.0"
+             shared-library="libgdprivate-1.0.so"
+             c:identifier-prefixes="Gd"
+             c:symbol-prefixes="gd">
+    <class name="Bookmark"
+           c:symbol-prefix="bookmark"
+           c:type="GdBookmark"
+           parent="GObject.Object"
+           glib:type-name="GdBookmark"
+           glib:get-type="gd_bookmark_get_type"
+           glib:type-struct="BookmarkClass">
+      <constructor name="new" c:identifier="gd_bookmark_new">
+        <return-value transfer-ownership="full">
+          <type name="Bookmark" c:type="GdBookmark*"/>
+        </return-value>
+      </constructor>
+      <method name="compare" c:identifier="gd_bookmark_compare">
+        <return-value transfer-ownership="none">
+          <type name="gint" c:type="int"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="a" transfer-ownership="none">
+            <type name="Bookmark" c:type="GdBookmark*"/>
+          </instance-parameter>
+          <parameter name="b" transfer-ownership="none">
+            <type name="Bookmark" c:type="GdBookmark*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="get_page_number"
+              c:identifier="gd_bookmark_get_page_number">
+        <return-value transfer-ownership="none">
+          <type name="guint" c:type="guint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="bookmark" transfer-ownership="none">
+            <type name="Bookmark" c:type="GdBookmark*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_title" c:identifier="gd_bookmark_get_title">
+        <return-value transfer-ownership="none">
+          <type name="utf8" c:type="const char*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="bookmark" transfer-ownership="none">
+            <type name="Bookmark" c:type="GdBookmark*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="set_page_number"
+              c:identifier="gd_bookmark_set_page_number">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="bookmark" transfer-ownership="none">
+            <type name="Bookmark" c:type="GdBookmark*"/>
+          </instance-parameter>
+          <parameter name="num" transfer-ownership="none">
+            <type name="guint" c:type="guint"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_title" c:identifier="gd_bookmark_set_title">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="bookmark" transfer-ownership="none">
+            <type name="Bookmark" c:type="GdBookmark*"/>
+          </instance-parameter>
+          <parameter name="title" transfer-ownership="none">
+            <type name="utf8" c:type="const char*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="page-number" writable="1" transfer-ownership="none">
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="title" writable="1" transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+    </class>
+    <record name="BookmarkClass"
+            c:type="GdBookmarkClass"
+            disguised="1"
+            glib:is-gtype-struct-for="Bookmark">
+    </record>
+    <class name="Bookmarks"
+           c:symbol-prefix="bookmarks"
+           c:type="GdBookmarks"
+           parent="GObject.Object"
+           glib:type-name="GdBookmarks"
+           glib:get-type="gd_bookmarks_get_type"
+           glib:type-struct="BookmarksClass">
+      <constructor name="new" c:identifier="gd_bookmarks_new">
+        <return-value transfer-ownership="full">
+          <type name="Bookmarks" c:type="GdBookmarks*"/>
+        </return-value>
+        <parameters>
+          <parameter name="metadata" transfer-ownership="none">
+            <type name="Metadata" c:type="GdMetadata*"/>
+          </parameter>
+        </parameters>
+      </constructor>
+      <method name="add" c:identifier="gd_bookmarks_add">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="bookmarks" transfer-ownership="none">
+            <type name="Bookmarks" c:type="GdBookmarks*"/>
+          </instance-parameter>
+          <parameter name="bookmark" transfer-ownership="none">
+            <type name="Bookmark" c:type="GdBookmark*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="find_bookmark" c:identifier="gd_bookmarks_find_bookmark">
+        <return-value transfer-ownership="none">
+          <type name="Bookmark" c:type="GdBookmark*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="bookmarks" transfer-ownership="none">
+            <type name="Bookmarks" c:type="GdBookmarks*"/>
+          </instance-parameter>
+          <parameter name="bookmark" transfer-ownership="none">
+            <type name="Bookmark" c:type="GdBookmark*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="get_bookmarks" c:identifier="gd_bookmarks_get_bookmarks">
+        <return-value transfer-ownership="container">
+          <doc xml:space="preserve">A list of #GdBookmark objects</doc>
+          <type name="GLib.List" c:type="GList*">
+            <type name="Bookmark"/>
+          </type>
+        </return-value>
+        <parameters>
+          <instance-parameter name="bookmarks" transfer-ownership="none">
+            <type name="Bookmarks" c:type="GdBookmarks*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_n_items" c:identifier="gd_bookmarks_get_n_items">
+        <return-value transfer-ownership="none">
+          <type name="guint" c:type="guint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="bookmarks" transfer-ownership="none">
+            <type name="Bookmarks" c:type="GdBookmarks*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="remove" c:identifier="gd_bookmarks_remove">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="bookmarks" transfer-ownership="none">
+            <type name="Bookmarks" c:type="GdBookmarks*"/>
+          </instance-parameter>
+          <parameter name="bookmark" transfer-ownership="none">
+            <type name="Bookmark" c:type="GdBookmark*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="update" c:identifier="gd_bookmarks_update">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="bookmarks" transfer-ownership="none">
+            <type name="Bookmarks" c:type="GdBookmarks*"/>
+          </instance-parameter>
+          <parameter name="bookmark" transfer-ownership="none">
+            <type name="Bookmark" c:type="GdBookmark*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="metadata"
+                readable="0"
+                writable="1"
+                construct-only="1"
+                transfer-ownership="none">
+        <type name="Metadata"/>
+      </property>
+      <property name="n-items" transfer-ownership="none">
+        <type name="guint" c:type="guint"/>
+      </property>
+      <glib:signal name="changed" when="last">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+    </class>
+    <record name="BookmarksClass"
+            c:type="GdBookmarksClass"
+            disguised="1"
+            glib:is-gtype-struct-for="Bookmarks">
+    </record>
+    <class name="DisplayPreview"
+           c:symbol-prefix="display_preview"
+           c:type="GdDisplayPreview"
+           parent="Gtk.DrawingArea"
+           glib:type-name="GdDisplayPreview"
+           glib:get-type="gd_display_preview_get_type"
+           glib:type-struct="DisplayPreviewClass">
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gtk.Buildable"/>
+      <constructor name="new" c:identifier="gd_display_preview_new">
+        <doc xml:space="preserve">Creates a new display preview widget.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">a new #GdDisplayPreview object.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <parameter name="info" transfer-ownership="none">
+            <type name="GnomeDesktop.RROutputInfo"
+                  c:type="GnomeRROutputInfo*"/>
+          </parameter>
+          <parameter name="clone" transfer-ownership="none">
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </constructor>
+      <property name="clone"
+                readable="0"
+                writable="1"
+                construct-only="1"
+                transfer-ownership="none">
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="info"
+                readable="0"
+                writable="1"
+                construct-only="1"
+                transfer-ownership="none">
+        <type name="GnomeDesktop.RROutputInfo"/>
+      </property>
+    </class>
+    <record name="DisplayPreviewClass"
+            c:type="GdDisplayPreviewClass"
+            disguised="1"
+            glib:is-gtype-struct-for="DisplayPreview">
+    </record>
+    <class name="Metadata"
+           c:symbol-prefix="metadata"
+           c:type="GdMetadata"
+           parent="GObject.Object"
+           glib:type-name="GdMetadata"
+           glib:get-type="gd_metadata_get_type"
+           glib:type-struct="MetadataClass">
+      <constructor name="new" c:identifier="gd_metadata_new">
+        <return-value transfer-ownership="full">
+          <type name="Metadata" c:type="GdMetadata*"/>
+        </return-value>
+        <parameters>
+          <parameter name="file" transfer-ownership="none">
+            <type name="Gio.File" c:type="GFile*"/>
+          </parameter>
+        </parameters>
+      </constructor>
+      <method name="get_boolean" c:identifier="gd_metadata_get_boolean">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="metadata" transfer-ownership="none">
+            <type name="Metadata" c:type="GdMetadata*"/>
+          </instance-parameter>
+          <parameter name="key" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="value"
+                     direction="out"
+                     caller-allocates="0"
+                     transfer-ownership="full">
+            <type name="gboolean" c:type="gboolean*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="get_double" c:identifier="gd_metadata_get_double">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="metadata" transfer-ownership="none">
+            <type name="Metadata" c:type="GdMetadata*"/>
+          </instance-parameter>
+          <parameter name="key" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="value"
+                     direction="out"
+                     caller-allocates="0"
+                     transfer-ownership="full">
+            <type name="gdouble" c:type="gdouble*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="get_int" c:identifier="gd_metadata_get_int">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="metadata" transfer-ownership="none">
+            <type name="Metadata" c:type="GdMetadata*"/>
+          </instance-parameter>
+          <parameter name="key" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="value"
+                     direction="out"
+                     caller-allocates="0"
+                     transfer-ownership="full">
+            <type name="gint" c:type="gint*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="get_string" c:identifier="gd_metadata_get_string">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="metadata" transfer-ownership="none">
+            <type name="Metadata" c:type="GdMetadata*"/>
+          </instance-parameter>
+          <parameter name="key" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="value"
+                     direction="out"
+                     caller-allocates="0"
+                     transfer-ownership="full">
+            <type name="utf8" c:type="const gchar**"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="has_key" c:identifier="gd_metadata_has_key">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="metadata" transfer-ownership="none">
+            <type name="Metadata" c:type="GdMetadata*"/>
+          </instance-parameter>
+          <parameter name="key"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_boolean" c:identifier="gd_metadata_set_boolean">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="metadata" transfer-ownership="none">
+            <type name="Metadata" c:type="GdMetadata*"/>
+          </instance-parameter>
+          <parameter name="key" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="value" transfer-ownership="none">
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_double" c:identifier="gd_metadata_set_double">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="metadata" transfer-ownership="none">
+            <type name="Metadata" c:type="GdMetadata*"/>
+          </instance-parameter>
+          <parameter name="key" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="value" transfer-ownership="none">
+            <type name="gdouble" c:type="gdouble"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_int" c:identifier="gd_metadata_set_int">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="metadata" transfer-ownership="none">
+            <type name="Metadata" c:type="GdMetadata*"/>
+          </instance-parameter>
+          <parameter name="key" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="value" transfer-ownership="none">
+            <type name="gint" c:type="gint"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_string" c:identifier="gd_metadata_set_string">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="metadata" transfer-ownership="none">
+            <type name="Metadata" c:type="GdMetadata*"/>
+          </instance-parameter>
+          <parameter name="key" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="value"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="file"
+                readable="0"
+                writable="1"
+                construct-only="1"
+                transfer-ownership="none">
+        <type name="Gio.File"/>
+      </property>
+    </class>
+    <record name="MetadataClass"
+            c:type="GdMetadataClass"
+            disguised="1"
+            glib:is-gtype-struct-for="Metadata">
+    </record>
+    <class name="NavBar"
+           c:symbol-prefix="nav_bar"
+           c:type="GdNavBar"
+           parent="Gtk.Box"
+           glib:type-name="GdNavBar"
+           glib:get-type="gd_nav_bar_get_type"
+           glib:type-struct="NavBarClass">
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gtk.Buildable"/>
+      <implements name="Gtk.Orientable"/>
+      <constructor name="new" c:identifier="gd_nav_bar_new">
+        <doc xml:space="preserve">Creates a new page navigation widget.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">a new #GdNavBar object.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <parameter name="model" transfer-ownership="none">
+            <doc xml:space="preserve">the #EvDocumentModel</doc>
+            <type name="EvinceView.DocumentModel" c:type="EvDocumentModel*"/>
+          </parameter>
+        </parameters>
+      </constructor>
+      <method name="get_button_area" c:identifier="gd_nav_bar_get_button_area">
+        <doc xml:space="preserve">Returns the button area of @bar.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the button area #GtkBox.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="bar" transfer-ownership="none">
+            <doc xml:space="preserve">a #GdNavBar</doc>
+            <type name="NavBar" c:type="GdNavBar*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_hover" c:identifier="gd_nav_bar_get_hover">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="bar" transfer-ownership="none">
+            <type name="NavBar" c:type="GdNavBar*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <property name="document-model"
+                writable="1"
+                construct="1"
+                transfer-ownership="none">
+        <type name="EvinceView.DocumentModel"/>
+      </property>
+      <property name="hover" transfer-ownership="none">
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <field name="base_instance">
+        <type name="Gtk.Box" c:type="GtkBox"/>
+      </field>
+      <field name="priv">
+        <type name="NavBarPrivate" c:type="GdNavBarPrivate*"/>
+      </field>
+    </class>
+    <record name="NavBarClass"
+            c:type="GdNavBarClass"
+            glib:is-gtype-struct-for="NavBar">
+      <field name="parent_class">
+        <type name="Gtk.BoxClass" c:type="GtkBoxClass"/>
+      </field>
+    </record>
+    <record name="NavBarPrivate" c:type="GdNavBarPrivate" disguised="1">
+    </record>
+    <class name="PlacesBookmarks"
+           c:symbol-prefix="places_bookmarks"
+           c:type="GdPlacesBookmarks"
+           parent="Gtk.Box"
+           glib:type-name="GdPlacesBookmarks"
+           glib:get-type="gd_places_bookmarks_get_type"
+           glib:type-struct="PlacesBookmarksClass">
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="PlacesPage"/>
+      <implements name="Gtk.Buildable"/>
+      <implements name="Gtk.Orientable"/>
+      <constructor name="new" c:identifier="gd_places_bookmarks_new">
+        <return-value transfer-ownership="none">
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+      </constructor>
+      <method name="set_bookmarks"
+              c:identifier="gd_places_bookmarks_set_bookmarks">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="places_bookmarks"
+                              transfer-ownership="none">
+            <type name="PlacesBookmarks" c:type="GdPlacesBookmarks*"/>
+          </instance-parameter>
+          <parameter name="bookmarks" transfer-ownership="none">
+            <type name="Bookmarks" c:type="GdBookmarks*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="bookmarks" writable="1" transfer-ownership="none">
+        <type name="Bookmarks"/>
+      </property>
+      <field name="base_instance">
+        <type name="Gtk.Box" c:type="GtkBox"/>
+      </field>
+      <field name="priv">
+        <type name="PlacesBookmarksPrivate"
+              c:type="GdPlacesBookmarksPrivate*"/>
+      </field>
+      <glib:signal name="bookmark-activated" when="last" action="1">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="object" transfer-ownership="none">
+            <type name="GObject.Object"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+    </class>
+    <record name="PlacesBookmarksClass"
+            c:type="GdPlacesBookmarksClass"
+            glib:is-gtype-struct-for="PlacesBookmarks">
+      <field name="base_class">
+        <type name="Gtk.BoxClass" c:type="GtkBoxClass"/>
+      </field>
+    </record>
+    <record name="PlacesBookmarksPrivate"
+            c:type="GdPlacesBookmarksPrivate"
+            disguised="1">
+    </record>
+    <class name="PlacesLinks"
+           c:symbol-prefix="places_links"
+           c:type="GdPlacesLinks"
+           parent="Gtk.Box"
+           glib:type-name="GdPlacesLinks"
+           glib:get-type="gd_places_links_get_type"
+           glib:type-struct="PlacesLinksClass">
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="PlacesPage"/>
+      <implements name="Gtk.Buildable"/>
+      <implements name="Gtk.Orientable"/>
+      <constructor name="new" c:identifier="gd_places_links_new">
+        <return-value transfer-ownership="none">
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+      </constructor>
+      <field name="base_instance">
+        <type name="Gtk.Box" c:type="GtkBox"/>
+      </field>
+      <field name="priv">
+        <type name="PlacesLinksPrivate" c:type="GdPlacesLinksPrivate*"/>
+      </field>
+      <glib:signal name="link-activated" when="last" action="1">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="object" transfer-ownership="none">
+            <type name="GObject.Object"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+    </class>
+    <record name="PlacesLinksClass"
+            c:type="GdPlacesLinksClass"
+            glib:is-gtype-struct-for="PlacesLinks">
+      <field name="base_class">
+        <type name="Gtk.BoxClass" c:type="GtkBoxClass"/>
+      </field>
+    </record>
+    <record name="PlacesLinksPrivate"
+            c:type="GdPlacesLinksPrivate"
+            disguised="1">
+    </record>
+    <interface name="PlacesPage"
+               c:symbol-prefix="places_page"
+               c:type="GdPlacesPage"
+               glib:type-name="GdPlacesPage"
+               glib:get-type="gd_places_page_get_type"
+               glib:type-struct="PlacesPageInterface">
+      <virtual-method name="get_name" invoker="get_name">
+        <return-value transfer-ownership="none">
+          <type name="utf8" c:type="const char*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="places_page" transfer-ownership="none">
+            <type name="PlacesPage" c:type="GdPlacesPage*"/>
+          </instance-parameter>
+        </parameters>
+      </virtual-method>
+      <virtual-method name="set_document_model" invoker="set_document_model">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="places_page" transfer-ownership="none">
+            <type name="PlacesPage" c:type="GdPlacesPage*"/>
+          </instance-parameter>
+          <parameter name="model" transfer-ownership="none">
+            <type name="EvinceView.DocumentModel" c:type="EvDocumentModel*"/>
+          </parameter>
+        </parameters>
+      </virtual-method>
+      <virtual-method name="supports_document" invoker="supports_document">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="places_page" transfer-ownership="none">
+            <type name="PlacesPage" c:type="GdPlacesPage*"/>
+          </instance-parameter>
+          <parameter name="document" transfer-ownership="none">
+            <type name="EvinceDocument.Document" c:type="EvDocument*"/>
+          </parameter>
+        </parameters>
+      </virtual-method>
+      <method name="get_name" c:identifier="gd_places_page_get_name">
+        <return-value transfer-ownership="none">
+          <type name="utf8" c:type="const char*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="page" transfer-ownership="none">
+            <type name="PlacesPage" c:type="GdPlacesPage*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="set_document_model"
+              c:identifier="gd_places_page_set_document_model">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="places_page" transfer-ownership="none">
+            <type name="PlacesPage" c:type="GdPlacesPage*"/>
+          </instance-parameter>
+          <parameter name="model" transfer-ownership="none">
+            <type name="EvinceView.DocumentModel" c:type="EvDocumentModel*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="supports_document"
+              c:identifier="gd_places_page_supports_document">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="places_page" transfer-ownership="none">
+            <type name="PlacesPage" c:type="GdPlacesPage*"/>
+          </instance-parameter>
+          <parameter name="document" transfer-ownership="none">
+            <type name="EvinceDocument.Document" c:type="EvDocument*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="document-model" writable="1" transfer-ownership="none">
+        <type name="EvinceView.DocumentModel"/>
+      </property>
+      <property name="name" transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+    </interface>
+    <record name="PlacesPageInterface"
+            c:type="GdPlacesPageInterface"
+            glib:is-gtype-struct-for="PlacesPage">
+      <field name="base_iface">
+        <type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+      </field>
+      <field name="supports_document">
+        <callback name="supports_document">
+          <return-value transfer-ownership="none">
+            <type name="gboolean" c:type="gboolean"/>
+          </return-value>
+          <parameters>
+            <parameter name="places_page" transfer-ownership="none">
+              <type name="PlacesPage" c:type="GdPlacesPage*"/>
+            </parameter>
+            <parameter name="document" transfer-ownership="none">
+              <type name="EvinceDocument.Document" c:type="EvDocument*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="set_document_model">
+        <callback name="set_document_model">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="places_page" transfer-ownership="none">
+              <type name="PlacesPage" c:type="GdPlacesPage*"/>
+            </parameter>
+            <parameter name="model" transfer-ownership="none">
+              <type name="EvinceView.DocumentModel" c:type="EvDocumentModel*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="get_name">
+        <callback name="get_name">
+          <return-value transfer-ownership="none">
+            <type name="utf8" c:type="const char*"/>
+          </return-value>
+          <parameters>
+            <parameter name="places_page" transfer-ownership="none">
+              <type name="PlacesPage" c:type="GdPlacesPage*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+    </record>
+    <function name="create_collection_icon"
+              c:identifier="gd_create_collection_icon">
+      <return-value transfer-ownership="full">
+        <type name="Gio.Icon" c:type="GIcon*"/>
+      </return-value>
+      <parameters>
+        <parameter name="base_size" transfer-ownership="none">
+          <type name="gint" c:type="gint"/>
+        </parameter>
+        <parameter name="pixbufs" transfer-ownership="none">
+          <type name="GLib.List" c:type="GList*">
+            <type name="GdkPixbuf.Pixbuf"/>
+          </type>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="ev_view_find_changed"
+              c:identifier="gd_ev_view_find_changed">
+      <return-value transfer-ownership="none">
+        <type name="none" c:type="void"/>
+      </return-value>
+      <parameters>
+        <parameter name="view" transfer-ownership="none">
+          <type name="EvinceView.View" c:type="EvView*"/>
+        </parameter>
+        <parameter name="job" transfer-ownership="none">
+          <type name="EvinceView.JobFind" c:type="EvJobFind*"/>
+        </parameter>
+        <parameter name="page" transfer-ownership="none">
+          <type name="gint" c:type="gint"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="filename_get_extension_offset"
+              c:identifier="gd_filename_get_extension_offset">
+      <return-value transfer-ownership="none">
+        <type name="utf8" c:type="const char*"/>
+      </return-value>
+      <parameters>
+        <parameter name="filename" transfer-ownership="none">
+          <type name="utf8" c:type="const char*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="filename_strip_extension"
+              c:identifier="gd_filename_strip_extension">
+      <return-value transfer-ownership="full">
+        <type name="utf8" c:type="char*"/>
+      </return-value>
+      <parameters>
+        <parameter name="filename_with_extension"
+                   transfer-ownership="none"
+                   nullable="1"
+                   allow-none="1">
+          <type name="utf8" c:type="const char*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="filename_to_mime_type"
+              c:identifier="gd_filename_to_mime_type">
+      <return-value transfer-ownership="none">
+        <type name="utf8" c:type="const char*"/>
+      </return-value>
+      <parameters>
+        <parameter name="filename_with_extension" transfer-ownership="none">
+          <type name="utf8" c:type="const gchar*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="filename_to_rdf_type"
+              c:identifier="gd_filename_to_rdf_type">
+      <return-value transfer-ownership="none">
+        <type name="utf8" c:type="const char*"/>
+      </return-value>
+      <parameters>
+        <parameter name="filename_with_extension" transfer-ownership="none">
+          <type name="utf8" c:type="const gchar*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="is_metadata_supported_for_file"
+              c:identifier="gd_is_metadata_supported_for_file">
+      <return-value transfer-ownership="none">
+        <type name="gboolean" c:type="gboolean"/>
+      </return-value>
+      <parameters>
+        <parameter name="file" transfer-ownership="none">
+          <type name="Gio.File" c:type="GFile*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="iso8601_from_timestamp"
+              c:identifier="gd_iso8601_from_timestamp">
+      <return-value transfer-ownership="full">
+        <type name="utf8" c:type="gchar*"/>
+      </return-value>
+      <parameters>
+        <parameter name="timestamp" transfer-ownership="none">
+          <type name="gint64" c:type="gint64"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="pdf_loader_load_gdata_entry_async"
+              c:identifier="gd_pdf_loader_load_gdata_entry_async">
+      <return-value transfer-ownership="none">
+        <type name="none" c:type="void"/>
+      </return-value>
+      <parameters>
+        <parameter name="entry" transfer-ownership="none">
+          <type name="GData.Entry" c:type="GDataEntry*"/>
+        </parameter>
+        <parameter name="service" transfer-ownership="none">
+          <type name="GData.DocumentsService" c:type="GDataDocumentsService*"/>
+        </parameter>
+        <parameter name="cancellable"
+                   transfer-ownership="none"
+                   nullable="1"
+                   allow-none="1">
+          <type name="Gio.Cancellable" c:type="GCancellable*"/>
+        </parameter>
+        <parameter name="callback"
+                   transfer-ownership="none"
+                   nullable="1"
+                   allow-none="1"
+                   scope="async"
+                   closure="4">
+          <type name="Gio.AsyncReadyCallback" c:type="GAsyncReadyCallback"/>
+        </parameter>
+        <parameter name="user_data"
+                   transfer-ownership="none"
+                   nullable="1"
+                   allow-none="1">
+          <type name="gpointer" c:type="gpointer"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="pdf_loader_load_gdata_entry_finish"
+              c:identifier="gd_pdf_loader_load_gdata_entry_finish"
+              throws="1">
+      <return-value transfer-ownership="full">
+        <type name="EvinceView.DocumentModel" c:type="EvDocumentModel*"/>
+      </return-value>
+      <parameters>
+        <parameter name="res" transfer-ownership="none">
+          <type name="Gio.AsyncResult" c:type="GAsyncResult*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="pdf_loader_load_uri_async"
+              c:identifier="gd_pdf_loader_load_uri_async">
+      <return-value transfer-ownership="none">
+        <type name="none" c:type="void"/>
+      </return-value>
+      <parameters>
+        <parameter name="uri" transfer-ownership="none">
+          <type name="utf8" c:type="const gchar*"/>
+        </parameter>
+        <parameter name="passwd"
+                   transfer-ownership="none"
+                   nullable="1"
+                   allow-none="1">
+          <type name="utf8" c:type="const gchar*"/>
+        </parameter>
+        <parameter name="cancellable"
+                   transfer-ownership="none"
+                   nullable="1"
+                   allow-none="1">
+          <type name="Gio.Cancellable" c:type="GCancellable*"/>
+        </parameter>
+        <parameter name="callback"
+                   transfer-ownership="none"
+                   nullable="1"
+                   allow-none="1"
+                   scope="async"
+                   closure="4">
+          <type name="Gio.AsyncReadyCallback" c:type="GAsyncReadyCallback"/>
+        </parameter>
+        <parameter name="user_data"
+                   transfer-ownership="none"
+                   nullable="1"
+                   allow-none="1">
+          <type name="gpointer" c:type="gpointer"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="pdf_loader_load_uri_finish"
+              c:identifier="gd_pdf_loader_load_uri_finish"
+              throws="1">
+      <return-value transfer-ownership="full">
+        <type name="EvinceView.DocumentModel" c:type="EvDocumentModel*"/>
+      </return-value>
+      <parameters>
+        <parameter name="res" transfer-ownership="none">
+          <type name="Gio.AsyncResult" c:type="GAsyncResult*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="pdf_loader_load_zpj_entry_async"
+              c:identifier="gd_pdf_loader_load_zpj_entry_async">
+      <return-value transfer-ownership="none">
+        <type name="none" c:type="void"/>
+      </return-value>
+      <parameters>
+        <parameter name="entry" transfer-ownership="none">
+          <type name="Zpj.SkydriveEntry" c:type="ZpjSkydriveEntry*"/>
+        </parameter>
+        <parameter name="service" transfer-ownership="none">
+          <type name="Zpj.Skydrive" c:type="ZpjSkydrive*"/>
+        </parameter>
+        <parameter name="cancellable"
+                   transfer-ownership="none"
+                   nullable="1"
+                   allow-none="1">
+          <type name="Gio.Cancellable" c:type="GCancellable*"/>
+        </parameter>
+        <parameter name="callback"
+                   transfer-ownership="none"
+                   nullable="1"
+                   allow-none="1"
+                   scope="async"
+                   closure="4">
+          <type name="Gio.AsyncReadyCallback" c:type="GAsyncReadyCallback"/>
+        </parameter>
+        <parameter name="user_data"
+                   transfer-ownership="none"
+                   nullable="1"
+                   allow-none="1">
+          <type name="gpointer" c:type="gpointer"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="pdf_loader_load_zpj_entry_finish"
+              c:identifier="gd_pdf_loader_load_zpj_entry_finish"
+              throws="1">
+      <return-value transfer-ownership="full">
+        <type name="EvinceView.DocumentModel" c:type="EvDocumentModel*"/>
+      </return-value>
+      <parameters>
+        <parameter name="res" transfer-ownership="none">
+          <type name="Gio.AsyncResult" c:type="GAsyncResult*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="queue_thumbnail_job_for_file_async"
+              c:identifier="gd_queue_thumbnail_job_for_file_async">
+      <return-value transfer-ownership="none">
+        <type name="none" c:type="void"/>
+      </return-value>
+      <parameters>
+        <parameter name="file" transfer-ownership="none">
+          <type name="Gio.File" c:type="GFile*"/>
+        </parameter>
+        <parameter name="callback"
+                   transfer-ownership="none"
+                   nullable="1"
+                   allow-none="1"
+                   scope="async"
+                   closure="2">
+          <type name="Gio.AsyncReadyCallback" c:type="GAsyncReadyCallback"/>
+        </parameter>
+        <parameter name="user_data"
+                   transfer-ownership="none"
+                   nullable="1"
+                   allow-none="1">
+          <type name="gpointer" c:type="gpointer"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="queue_thumbnail_job_for_file_finish"
+              c:identifier="gd_queue_thumbnail_job_for_file_finish">
+      <return-value transfer-ownership="none">
+        <type name="gboolean" c:type="gboolean"/>
+      </return-value>
+      <parameters>
+        <parameter name="res" transfer-ownership="none">
+          <type name="Gio.AsyncResult" c:type="GAsyncResult*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="show_about_dialog" c:identifier="gd_show_about_dialog">
+      <return-value transfer-ownership="none">
+        <type name="none" c:type="void"/>
+      </return-value>
+      <parameters>
+        <parameter name="parent" transfer-ownership="none">
+          <type name="Gtk.Window" c:type="GtkWindow*"/>
+        </parameter>
+        <parameter name="is_books" transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </parameter>
+      </parameters>
+    </function>
+  </namespace>
+</repository>

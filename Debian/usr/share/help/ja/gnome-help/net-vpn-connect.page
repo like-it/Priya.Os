@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+    <link type="guide" xref="net-wired"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME ドキュメンテーションプロジェクト</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Set up a VPN connection to a local network over the internet.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>VPN へ接続する</title>
+
+<p>VPN (<em>Virtual Private Network</em>) とはインターネット経由でローカルのネットワークに接続する方法です。たとえば、出張中に勤務先のローカルネットワークに接続したいとします。どこか (ホテルなど) でインターネット接続を見つけたとして、勤務先の VPN に接続します。実際にはホテルのインターネット接続を経由していながら、まるで勤務先のネットワークに直接、接続しているように接続することができます。VPN 接続は通常、ログインしていないユーザーによるローカルネットワークへのアクセスを防ぐため<em>暗号化</em>されます。</p>
+
+<p>VPN にはいくつか異なる種類があります。接続する VPN の種類によっては追加ソフトウェアを別途インストールしなければならないことがあります。VPN 担当者に接続の詳細を問い合わせ、必要な <em>VPN クライアント</em>を確認します。次に、ソフトウェアインストーラーアプリケーションを起動し、目的の VPN 用の <app>NetworkManager</app> パッケージを検索し、(見つかれば) インストールします。</p>
+
+<note>
+ <p>お使いの VPN 用の NetworkManager パッケージがない場合、VPN ソフトウェアの提供会社のクライアントソフトウェアをダウンロードしてインストールしなければならないでしょう。正しく設定するには別の手順に従ってください。</p>
+</note>
+
+<p>To set up the VPN connection:</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
+    </item>
+    <item>
+      <p><gui>ネットワーク</gui>を選択して設定パネルを開きます。</p>
+    </item>
+    <item>
+      <p>At the bottom of the list on the left, click the <gui>+</gui> button
+      to add a new connection.</p>
+    </item>
+    <item>
+      <p>インターフェース一覧で<gui>VPN</gui>を選択します。</p>
+    </item>
+    <item>
+      <p>Choose which kind of VPN connection you have.</p>
+    </item>
+    <item>
+      <p>Fill in the VPN connection details, then press <gui>Add</gui> once you
+      are finished.</p>
+    </item>
+    <item>
+      <p>When you have finished setting-up the VPN, open the
+      <gui xref="shell-introduction#yourname">system menu</gui> from the right side of
+      the top bar, click <gui>VPN off</gui> and select <gui>Connect</gui>. You
+      may need to enter a password for the connection before it is established.
+      Once the connection is made, you will see a lock shaped icon in the top
+      bar.</p>
+    </item>
+    <item>
+      <p>Hopefully you will successfully connect to the VPN. If not, you may
+      need to double-check the VPN settings you entered. You can do this from
+      the <gui>Network</gui> panel that you used to create the connection.
+      Select the VPN connection from the list, then press the
+<media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button to review the settings.</p>
+    </item>
+    <item>
+      <p>To disconnect from the VPN, click the system menu on the top bar and
+      click <gui>Turn Off</gui> under the name of your VPN connection.</p>
+    </item>
+  </steps>
+
+</page>

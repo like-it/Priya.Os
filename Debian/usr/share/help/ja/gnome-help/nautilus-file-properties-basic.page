@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>基本的なファイル情報の表示、アクセス権の設定、およびデフォルトのアプリケーションの選択を行います。</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>ファイルプロパティ</title>
+
+  <p>ファイルやフォルダーに関する情報を表示するには、アイテムを右クリックして<gui>プロパティ</gui>を選択します。アイテムを選択して <keyseq><key>Alt</key><key>Enter</key></keyseq> を押すことでも、情報を表示できます。</p>
+
+  <p>ファイルプロパティのウィンドウでは、ファイルの種類や、サイズ、更新日時などの情報を確認できます。こうした情報がよく必要になる場合は、<link xref="nautilus-list">一覧表示の列</link>や<link xref="nautilus-display#icon-captions">アイコンの見出し</link>に表示することができます。</p>
+
+  <p><gui>基本</gui>タブの情報については以下で説明します。<gui><link xref="nautilus-file-properties-permissions">アクセス権</link></gui>や<gui><link xref="files-open#default">開き方</link></gui>のタブもあります。画像や動画など、特定の種類のファイルについては追加のタブがあり、幅や高さ、再生時間、コーデックなどの情報を確認できます。</p>
+
+<section id="basic">
+ <title>基本プロパティ</title>
+ <terms>
+  <item>
+    <title><gui>Name</gui></title>
+    <p>この欄を変更することで、ファイル名の変更ができます。プロパティウィンドウ以外でも名前の変更は可能です。<link xref="files-rename"/> を参照してください。</p>
+  </item>
+  <item>
+    <title><gui>Type</gui></title>
+    <p>この情報は、PDF ドキュメント、OpenDocument テキスト、あるいは JPEG 画像など、ファイルの種類を識別するのに役立ちます。ファイルの種類によって、どのアプリケーションがそのファイルを開くのに適しているかが決まります。たとえば、音楽プレイヤーで画像は開けないなど。<link xref="files-open"/> を参照してください。</p>
+    <p>ファイルの <em>MIME 型</em>が括弧内に表示されます。MIME 型はファイルの種類を示すのにコンピューターで使用される標準的な方法です。</p>
+  </item>
+
+  <item>
+    <title>内容</title>
+    <p>この欄は、ファイルではなくフォルダーのプロパティを参照する場合に表示されます。フォルダーに含まれるアイテムの数を確認するのに便利です。フォルダーが内部に他のフォルダーを含む場合は、内部の各フォルダーは 1 件として数えられ、さらにそのフォルダーの内部にもアイテムがあればそれらも計上されます。各ファイルも 1 件として数えられます。フォルダーの中身が無い場合は、<gui>無し</gui>と表示されます。</p>
+  </item>
+
+  <item>
+    <title>サイズ</title>
+    <p>この欄は、フォルダーではなくファイルを参照する場合に表示されます。ファイルのサイズに関するこの情報は、該当のファイルがディスク領域に占める大きさを示します。この欄は、ファイルをダウンロードしたり、E-メールで送信したりするのにどれくらい時間が掛かるかの目安にもなります (大きなファイルは送受信に時間が掛かります)。</p>
+    <p>サイズの表示単位は、バイト、KB、MB、あるいは GB になります。後者 3 つのいずれかの場合は、バイト単位でのサイズも括弧内に表示されます。厳密には、1 KB は 1024 バイト、1 MB は 1024 KB (以下、同様) となります。</p>
+  </item>
+
+  <item>
+    <title>Parent Folder</title>
+    <p>The location of each file on your computer is given by its <em>absolute
+    path</em>. This is a unique "address" of the file on your computer, made up
+    of a list of the folders that you would need to go into to find the file.
+    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
+    folder, its parent folder would be <file>/home/jim</file> and its location
+    would be <file>/home/jim/Resume.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>空き容量</title>
+    <p>これはフォルダーだけに表示されます。そのフォルダーのあるディスクにおいて利用可能なディスク容量を示しています。この情報は、ハードディスクがいっぱいになっていないか確認する場合に便利です。</p>
+  </item>
+
+  <item>
+    <title>アクセス日時</title>
+    <p>最後にファイルを開いた日時です。</p>
+  </item>
+
+  <item>
+    <title>更新日時</title>
+    <p>最後にファイルの内容を変更したり、保存した日時です。</p>
+  </item>
+ </terms>
+</section>
+
+</page>

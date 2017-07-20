@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-duplicates" xml:lang="hu">
+
+  <info>
+    <desc>Többszörös e-mailek kezelése</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+
+    <revision pkgversion="3.7.4" version="0.6" date="2013-01-23" status="final"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Az e-mailek többször kerülnek letöltésre</title>
+
+<section id="remove">
+<title>Többször szereplő e-mailek eltávolítása</title>
+<p>A többször szereplő e-mailek eltávolításához egy mappából válasszon ki több üzenetet (vagy a mappa összes üzenetét a <guiseq><gui>Szerkesztés</gui><gui>Összes kijelölése</gui></guiseq> menüpont kiválasztásával vagy a <keyseq><key>Ctrl</key><key>A</key></keyseq> kombináció megnyomásával) és válassza az <guiseq><gui>Üzenetek</gui><gui>Többszörös üzenetek eltávolítása</gui></guiseq> menüpontot.</p>
+<!-- available by default since 2.91, as per http://mail.gnome.org/archives/evolution-list/2011-August/msg00000.html -->
+</section>
+
+<section id="reasons">
+<title>Okok</title>
+<p>A többször szereplő e-mailek letöltése a következő okokból történhet meg:</p>
+<list>
+<item><p>A postafiókjában ugyanaz a levél több példányban is megvan</p></item>
+<item><p>Az <app>Evolution</app> UIDL kiterjesztése hibás.</p></item>
+<item><p>A gyorsítótár-fájlok nem írhatók a <file>$HOME/.local/share/evolution/mail/local/</file> alatt.</p></item>
+</list>
+</section>
+
+</page>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" version="1.0 if/1.0" id="shell-workspaces" xml:lang="as">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces" group="#first"/>
+
+    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10.3" date="2014-01-26" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>GNOME তথ্যচিত্ৰ প্ৰকল্প</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>কাৰ্য্যস্থানসমূহ হল আপোনাৰ ডেস্কটপত উইন্ডোসমূহ দলবদ্ধ কৰাৰ এটা পদ্ধতি।</desc>
+  </info>
+
+<title>এটা কাৰ্য্যস্থান কি, আৰু ই মোক কেনেকৈ সহায় কৰিব?</title>
+
+    <media type="image" src="figures/shell-workspaces.png" width="162" height="434" style="floatend floatright">
+        <p>কাৰ্য্যস্থান নিৰ্বাচক</p>
+    </media>
+
+  <p if:test="!platform:gnome-classic">কাৰ্য্যস্থানসমূহে আপোনাৰ ডেস্কটপত উইন্ডোসমূহ দলবদ্ধ কৰা বুজায়। আপুনি একাধিক কাৰ্য্যস্থান সৃষ্টি কৰিব পাৰিব, যি ভাৰছুৱেল ডেস্কটপৰ নিচিনা ব্যৱহাৰ কৰে। কাৰ্য্যস্থানসমূহে বিশৃংখলতা কম কৰি ডেস্কটপত ভ্ৰমণ সহজ কৰে।</p>
+
+  <p if:test="platform:gnome-classic">কাৰ্য্যস্থানসমূহে আপোনাৰ ডেস্কটপত উইন্ডোসমূহ দলবদ্ধ কৰা বুজায়। আপুনি একাধিক কাৰ্য্যস্থান ব্যৱহাৰ কৰিব পাৰিব, যি ভাৰছুৱেল ডেস্কটপৰ নিচিনা ব্যৱহাৰ কৰে। কাৰ্য্যস্থানসমূহে বিশৃংখলতা কম কৰি ডেস্কটপত ভ্ৰমণ সহজ কৰে।</p>
+
+  <p>কাৰ্য্যস্থানসমূহক আপোনাৰ কাৰ্য্য সংঘটিত কৰাৰ বাবে ব্যৱহাৰ কৰিব পাৰি। উদাহৰণস্বৰূপ, আপুনি সকলো সংযোগ উইন্ডো ৰাখিব পাৰিব, এটা কাৰ্য্যস্থানত ই-মেইল আৰু আপোনাৰ চেট প্ৰগ্ৰাম, আৰু আপুনি কৰি থকা কাম অন্য এটা কাৰ্য্যস্থানত। আপোনাৰ সংগিত ব্যৱস্থাপক অন্য এটা কাৰ্য্যস্থানত থাকিব পাৰিব।</p>
+
+<p>কাৰ্য্যস্থানসমূহ ব্যৱহাৰ কৰা:</p>
+
+<list>
+  <item>
+    <p if:test="!platform:gnome-classic">In the
+    <gui xref="shell-introduction#activities">Activities</gui> overview, move your cursor
+    to the right-most side of the screen.</p>
+    <p if:test="platform:gnome-classic"><gui>কাৰ্য্যসমূহ</gui> অভাৰভিউ খোলিবলে <key xref="keyboard-key-super">Super</key> কি' টিপক আৰু তাৰ পিছত কাৰ্চাৰক পৰ্দাৰ সোঁ-ফালে লৈ যাওক।</p>
+  </item>
+  <item>
+    <p if:test="!platform:gnome-classic">A vertical panel will appear showing
+    workspaces in use, plus an empty workspace. This is the
+    workspace selector.</p>
+    <p if:test="platform:gnome-classic">A vertical panel will appear showing
+    available workspaces. This is the workspace selector.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>To add a workspace, drag and drop a window from an existing workspace
+    onto the empty workspace in the workspace selector. This workspace now
+    contains the window you have dropped,
+    and a new empty workspace will appear below it.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>এটা কাৰ্য্যস্থান আতৰাবলৈ, সকলো উইন্ডো বন্ধ কৰক অথবা অন্য কাৰ্য্যস্থানসমূহলৈ স্থানান্তৰ কৰক।</p>
+  </item>
+</list>
+
+<p if:test="!platform:gnome-classic">অন্তত এটা কাৰ্য্যস্থান আছে।</p>
+
+</page>

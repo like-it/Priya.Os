@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" version="1.0 if/1.0" id="shell-workspaces" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces" group="#first"/>
+
+    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10.3" date="2014-01-26" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A munkaterületek az asztalán lévő ablakok csoportosítására szolgálnak.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Mi az a munkaterület, és mire használható?</title>
+
+    <media type="image" src="figures/shell-workspaces.png" width="162" height="434" style="floatend floatright">
+        <p>Munkaterület-választó</p>
+    </media>
+
+  <p if:test="!platform:gnome-classic">A munkaterületek az asztalán lévő ablakok csoportosítására szolgálnak. Több munkaterületet hozhat létre, amelyek virtuális asztalokként használhatók. A munkaterületek célja a zsúfoltság csökkentése, és az ablakok közti navigáció megkönnyítése.</p>
+
+  <p if:test="platform:gnome-classic">A munkaterületek az asztalán lévő ablakok csoportosítására szolgálnak. Több munkaterületet használhat, amelyek virtuális asztalokként használhatók. A munkaterületek célja a zsúfoltság csökkentése, és az ablakok közti navigáció megkönnyítése.</p>
+
+  <p>A munkaterületeket munkája rendszerezésére használhatja. Például az egyik munkaterületre elhelyezheti a kommunikációval kapcsolatos ablakokat, mint az e-mail és csevegés, a másikra pedig a munkájával kapcsolatos ablakokat. A zenelejátszó pedig a harmadik munkaterületre kerülhet.</p>
+
+<p>Munkaterületek használata:</p>
+
+<list>
+  <item>
+    <p if:test="!platform:gnome-classic">A <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintésben vigye a kurzort a képernyő jobb szélére.</p>
+    <p if:test="platform:gnome-classic">Nyomja meg a <key xref="keyboard-key-super">Super</key> billentyűt a <gui>Tevékenységek</gui> áttekintés megnyitásához, majd vigye a kurzort a képernyő jobb szélére.</p>
+  </item>
+  <item>
+    <p if:test="!platform:gnome-classic">Megjelenik egy függőleges panel, amely megjeleníti a használatban lévő munkaterületeket, valamint egy üres munkaterületet. Ez a munkaterület-választó.</p>
+    <p if:test="platform:gnome-classic">Megjelenik egy függőleges panel, amely megjeleníti az elérhető munkaterületeket. Ez a munkaterület-választó.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>Munkaterület hozzáadásához húzzon egy ablakot az egyik meglévő munkaterületről a munkaterület-választón lévő üres munkaterületre. Ezután ez a munkaterület fogja tartalmazni a ráejtett ablakot, és alatta megjelenik egy új üres munkaterület.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>Egy munkaterület megszüntetéséhez zárja be a rajta lévő összes ablakot, vagy húzza át azokat más munkaterületekre.</p>
+  </item>
+</list>
+
+<p if:test="!platform:gnome-classic">Mindig van legalább egy munkaterület.</p>
+
+</page>

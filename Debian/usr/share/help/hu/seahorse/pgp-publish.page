@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-publish" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-06-18" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Nyilvános kulcsait közzéteheti kulcskiszolgálókon, vagy <link xref="pgp-export">exportálást</link> követően e-mailben elküldheti őket barátainak.</desc>
+  </info>
+
+  <title>Nyilvános kulcsok megosztása</title>
+
+  <p>Ha a másokkal folytatott kommunikációját titkosítani szeretné, akkor meg kell osztania velük <gui>GnuPG kulcsát</gui>. Ha csak néhány kiválasztott emberről van szó, akkor elegendő a kulcs <link xref="pgp-export">exportálása</link> és az így kapott kulcsfájl elküldése e-mailben. Ha viszont azt szeretné, hogy bárki <link xref="pgp-retrieve-remote">hozzáférhessen</link> a nyilvános kulcsához, akkor tegye azt közzé egy kulcskiszolgálón.</p>
+
+  <steps>
+    <title>Hogyan tehetem közzé a kulcsomat egy kulcskiszolgálón?</title>
+    <item>
+      <p>Válassza ki a <gui>GnuPG kulcsok</gui> bejegyzést a bal oldali sávból.</p>
+    </item>
+    <item>
+      <p>Válassza ki a listából a közzétételre szánt <gui>Személyes PGP-kulcsot</gui>.</p>
+    </item>
+    <item>
+      <p>Válassza a <guiseq><gui style="menu">Távoli</gui> <gui style="menuitem">Kulcsok szinkronizálása és közzététele…</gui></guiseq> pontját.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui style="button">Kulcskiszolgálók</gui> gombra a nyilvános kulcs közzétételére alkalmas kulcskiszolgálók megjelenítéséhez.</p>
+    </item>
+    <item>
+      <p>Kulcsa közzétételéhez válasszon egy kiszolgálót a <gui>Kulcskiszolgálók</gui> lapon.</p>
+    </item>
+    <item>
+      <p>A <gui style="button">Bezárás</gui> gombra kattintva térjen vissza az előző ablakhoz.</p>
+    </item>
+    <item>
+      <p>A befejezéshez kattintson a <gui style="button">Szinkronizálás</gui> gombra.</p>
+    </item>
+   <!-- <item>
+      <p>Tick the
+      <gui style="checkbox">Automatically retrieve keys from key servers</gui>
+      checkbox to retrieve any key that is published on the server you have
+      selected in the previous step. You can also tick the
+      <gui style="checkbox">Automatically sync modified keys with key servers</gui>
+      checkbox to ensure that any modifications to a key on the key server,
+      like a signature, are updated on your copy of the key too.</p>
+      Not sure about this - Aruna 18/08/2013
+    </item>-->
+  </steps>
+
+  <note style="important">
+    <p>Kulcsai közzétételéhez működő internetkapcsolatra van szükség.</p>
+  </note>
+
+  <note style="info">
+    <title>Mi az a kulcskiszolgáló?</title>
+    <p>A kulcskiszolgálók a beküldött nyilvános titkosítási kulcsok másolatait tároló, és más kiszolgálókkal interneten keresztül megosztó számítógépek.</p>
+  </note>
+
+</page>

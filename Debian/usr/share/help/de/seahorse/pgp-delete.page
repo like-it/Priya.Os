@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-delete" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-24" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>So löschen Sie lokale Kopien Ihrer Schlüssel oder Schlüssel von Personen, mit denen Sie kommunizieren.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Einen existierenden Schlüssel entfernen</title>
+
+  <p>Falls Sie nicht mehr mit jemandem kommunizieren, können Sie die Kopie dessen GnuPG-Schlüssel auf Ihrem Rechner mit <app>Passwörter und Schlüssel</app> löschen. Sie können einen eigenen Schlüssel auch dauerhaft löschen, solange dieser noch nie auf einem Schlüssel-Server veröffentlicht wurde. Mit dem Löschen eines GnuPG-Schlüssels werden sowohl der öffentliche als auch der geheime Schlüssel gelöscht.</p>
+
+  <steps>
+    <title>So entfernen Sie einen Schlüssel:</title>
+    <item>
+      <p>Wählen Sie den Schlüssel. (Sie müssen gegebenenfalls alle Schlüssel anzeigen lassen mit <guiseq><gui style="menu">Ansicht</gui><gui style="menuitem">Alle anzeigen</gui></guiseq>)</p>
+    </item>
+    <item>
+      <p>Klicken Sie mit der rechten Maustaste und wählen Sie <gui>Löschen</gui>. Alternativ können Sie auch zum Löschen des Schlüssels <guiseq><gui style="menu">Bearbeiten</gui><gui style="menuitem">Löschen</gui></guiseq> wählen.</p>
+      <note style="important">
+        <p>Wenn Sie einen GnuPG-Schlüssel löschen, der bereits auf einem öffentlichen Server veröffentlicht ist, so löschen Sie nur den Schlüssel in Ihrem GnuPG-Schlüsselbund, weil eine Kopie des öffentlichen Schlüssels auf einem Schlüssel-Server verbleibt.</p>
+        <p>Wenn Sie Ihren GnuPG-Schlüssel löschen, so hat dies zur Folge, dass Ihr privater Schlüssel dauerhaft gelöscht wird. Das gilt selbst dann, wenn Ihr öffentlicher Schlüssel immer noch von einem Schlüssel-Server <link xref="pgp-retrieve-remote">abgerufen</link> und zum Verschlüsseln von Nachrichten eingesetzt werden kann, die Sie dann nicht lesen können! Rufen Sie den Schlüssel ab und widerrufen Sie ihn, um eine weitere Verwendung zu verhindern. Sie sollten nach dem Widerrufen den Schlüssel mit dem Schlüssel-Server <link xref="pgp-sync">abgleichen</link>, um zu verhindern, dass andere den alten Schlüssel abrufen und einsetzen.</p>
+        <!-- or when you <link xref="misc-key-revoke">revoke</link> it.- No
+        revoking feature yet for SSH keys/PGP master keys-->
+      </note>
+    </item>
+    <item>
+      <p>Bestätigen Sie im daraufhin erscheinenden Dialog das Löschen durch Anwahl des Ankreuzfelds <gui style="checkbox">Mir ist bewusst, dass dieser geheime Schlüssel unwiderruflich gelöscht wird</gui> und klicken Sie auf den Knopf <gui style="button">Löschen</gui>, um den Vorgang abzuschließen.</p>
+    </item>
+  </steps>
+
+
+</page>

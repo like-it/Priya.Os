@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="fr">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="files#faq"/>
+    <link type="seealso" xref="nautilus-file-properties-basic"/>
+
+    <desc>Contrôler qui peut avoir accès à vos dossiers et fichiers.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+  <title>Définition des permissions d'accès</title>
+
+  <p>Vous pouvez établir des permissions pour contrôler qui a accès à vos fichiers en lecture et en écriture. Pour afficher et définir les permissions, faites un clic-droit sur un fichier, sélectionnez <gui>Propriétés</gui> puis l'onglet <gui>Permissions</gui>.</p>
+
+  <p>Consultez les sections <link xref="#files"/> et <link xref="#folders"/> ci-dessous pour connaître les détails sur les types de permissions accordables.</p>
+
+  <section id="files">
+    <title>Fichiers</title>
+
+    <p>Vous pouvez accorder des permissions au propriétaire du fichier, au groupe du fichier et à tous les autres utilisateurs du système. Vos fichiers vous appartiennent et vous seul pouvez délivrer les permissions de lecture seule ou de lecture et écriture. Mettez un fichier en lecture seule si vous ne voulez pas qu'il soit malencontreusement modifié.</p>
+
+    <p>Chaque utilisateur de votre ordinateur appartient à un groupe. Sur un ordinateur personnel, il est courant que chaque utilisateur possède son propre groupe et les permissions de groupe sont généralement peu utilisées. Dans un environnement professionnel, il est possible d'utiliser des groupes en fonction des départements ou des projets. Chaque fichier appartient donc en même temps à son propriétaire et à un groupe. Vous pouvez définir le groupe du fichier et contrôler les permissions de tous les utilisateurs de ce groupe. Vous ne pouvez définir le groupe d'un fichier qu'à un groupe auquel vous appartenez vous-même.</p>
+
+    <p>Il est aussi possible de définir des permissions pour les utilisateurs autres que le propriétaire et pour ceux qui n'appartiennent pas au groupe du fichier.</p>
+
+    <p>Si le fichier est un programme, comme par exemple un script, vous devez activer l'option <gui>Autoriser l'exécution du fichier comme un programme</gui> pour pouvoir le lancer. Mais même avec cette fonction activée, le gestionnaire de fichiers peut ouvrir le programme avec une application ou vous demander ce qu'il doit faire. Consultez <link xref="nautilus-behavior#executable"/> pour plus de détails.</p>
+  </section>
+
+  <section id="folders">
+    <title>Dossiers</title>
+    <p>Il est possible d'attribuer des permissions sur des dossiers pour le propriétaire, le groupe ou les autres utilisateurs. Veuillez vous référer aux explications ci-dessus sur les propriétaires, groupes et autres utilisateurs.</p>
+    <p>Les permissions accordées à un dossier sont différentes de celles accordées à un fichier.</p>
+    <terms>
+      <item>
+        <title><gui itst:context="permission">None</gui></title>
+        <p>L'utilisateur n'a même pas la possibilité de visualiser le contenu du dossier.</p>
+      </item>
+      <item>
+        <title><gui>Lister seulement les fichiers</gui></title>
+        <p>L'utilisateur peut voir ce que contient le dossier, mais ne peut ni ouvrir, ni créer, ni supprimer des fichiers.</p>
+      </item>
+      <item>
+        <title><gui>Accès aux fichiers</gui></title>
+        <p>L'utilisateur peut ouvrir des fichiers du dossier (à condition que les fichiers en question soient autorisés à l'ouverture), mais ne peut ni créer de nouveaux fichiers, ni supprimer des fichiers.</p>
+      </item>
+      <item>
+        <title><gui>Création et suppression des fichiers</gui></title>
+        <p>L'utilisateur a les pleins pouvoirs sur le dossier et peut ouvrir, créer et supprimer des fichiers.</p>
+      </item>
+    </terms>
+
+    <p>Il est aussi possible de définir rapidement les permissions pour tous les fichiers d'un dossier en cliquant sur <gui>Changer les permissions des fichiers inclus</gui>. Servez-vous de la liste déroulante pour ajuster les permissions des fichiers ou dossiers contenus, et cliquez sur <gui>Changer</gui>. Les permissions sont appliquées aux fichiers, aux dossiers et aussi aux sous-dossiers, quelle que soit leur profondeur.</p>
+  </section>
+
+</page>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="fi">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Gnomen dokumentointiprojekti</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>Ymmärrät, mitä taltiot ja levyosiot ovat ja käytät levytyökalua niiden hallintaan.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>Hallitse levyjä ja osioita</title>
+
+  <p>Sanaa <em>taltio</em> käytetään tallennuslaitteen, kuten kiintolevyn kuvaamiseen. Se voi viitata myös <em>osaan</em> tallennuslaitetta, koska voit jakaa levyn osiin. Tietokoneesi mahdollistaa tallennuslaitteen käytön prosessilla, jota kutsutaan <em>liittämiseksi</em>. Liitetyt taltiot voivat olla kiintolevyjä, USB-asemia, DVD-RW:tä, muistikortteja tai muita tallennuslaitteita. Jos taltio on liitetty, voit lukea (ja mahdollisesti kirjoittaa) tiedostoja.</p>
+
+  <p>Usein liitettyä taltiota kutsutaan <em>osioksi</em>, vaikka ne eivät välttämättä ole sama asia. "Osio" viittaa <em>fyysiseen</em> varastoalueeseen yhdellä levyllä. Kun osio on liitetty, sitä voidaan pitää taltiona, koska voit käyttää sen tiedostoja. Voit ajatella, että taltio on nimetty ja käytössä oleva "myyntitiski", josta on pääsy levyosioiden ja -asemien funktionaalisiin "takahuoneisiin".</p>
+
+<section id="manage">
+ <title>Tutki ja hallitse taltioita ja levyosioita käyttäen levytyökalua</title>
+
+  <p>Voit tarkistaa ja muokata tietokoneesi tallennustaltioita leyvtyökalukka.</p>
+
+<steps>
+  <item>
+    <p>Open the <gui>Activities</gui> overview and start <app>Disks</app>.</p>
+  </item>
+  <item>
+    <p>In the list of storage devices on the left, you will find hard disks,
+    CD/DVD drives, and other physical devices. Click the device you want to
+    inspect.</p>
+  </item>
+  <item>
+    <p>The right pane provides a visual breakdown of the volumes and
+    partitions present on the selected device. It also contains a variety of
+    tools used to manage these volumes.</p>
+    <p>Ole varovainen: näillä työkaluilla on mahdollista hävittää kaikki levyllä olevat tiedot.</p>
+  </item>
+</steps>
+
+  <p>Koneessasi on ainakin yksi <em>ensisijainen</em> osio ja yksi <em>swap</em>-osio. Käyttöjärjestelmä käyttää swap-osiota muistinhallintaan ja on harvoin liitetty. Ensisijainen osio sisältää käyttöjärjestelmäsi, ohjelmasi, asetukset ja henkilökohtaiset tiedostot. Nämä tiedostot voidaan myös jakaa usealle eri levyosiolle turvallisuus- tai käytettävyyssyistä.</p>
+
+  <p>One primary partition must contain information that your computer uses to
+  start up, or <em>boot</em>. For this reason it is sometimes called a boot
+  partition, or boot volume. To determine if a volume is bootable, select the
+  partition and click the menu button in the toolbar underneath the partition
+  list. Then, click <gui>Edit Partition…</gui> and look at its
+  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
+  a bootable volume.</p>
+
+</section>
+
+</page>

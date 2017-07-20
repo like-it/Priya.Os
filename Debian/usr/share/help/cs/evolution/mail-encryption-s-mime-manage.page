@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-s-mime-manage" xml:lang="cs">
+
+  <info>
+    <desc>Jak přidávat, upravovat, zobrazovat a mazat certifikáty S/MIME.</desc>
+
+    <link type="guide" xref="mail-encryption#s-mime"/>
+
+    <revision pkgversion="3.2.0" version="0.2" date="2011-10-13" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/bshoty0.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Správa certifikátů S/MIME</title>
+
+<p>Certifikáty umožňují komunikovat s ostatními bezpečně skrz nezabezpečené spojení nebo podepsat zprávu, abyste kontaktu prokázali svoji totožnost. Tato nastavení se použijí jen pro šifrování S/MIME.</p>
+<p>Certifikáty můžete importovat, zobrazovat, upravovat (vyjma svého vlastního certifikátu) a mazat pomocí <guiseq><gui>Upravit</gui> <gui>Předvolby</gui> <gui>Certifikáty</gui></guiseq>.</p>
+
+<note style="tip"><p>V případě, že po přidání svého poštovního certifikátu obdržíte chybovou hlášku „Vystavitel certifikátu protější strany byl uživatelem označen jako nedůvěryhodný. (-8172) – Nelze přidat atribut SMIMEEncKeyPrefs“, přejděte do <gui>Autority</gui> a zapněte pro tento certifikát <gui>Důvěřovat této CA ohledně identifikace uživatelů e-mailu</gui>.</p></note>
+
+<p><gui>Vaše certifikáty</gui> zobrazují seznam certifikátů, které patří vám. Když chcete přidat podepisovací certifikát, klikněte na <gui style="button">Import</gui>, vyberte soubor, který chcete importovat, a pak klikněte na <gui style="button">Otevřít</gui> a zadejte heslo.</p>
+<p><gui>Certifikáty kontaktů</gui> zobrazují seznam certifikátů, které máte pro kontakty. Tyto certifikáty vám umožňují dešifrovat zprávy a rovněž ověřovat podepsané zprávy.</p>
+<p><gui>Autority</gui> zobrazují seznam důvěryhodných certifikačních autorit, které ověřují, že je váš vlastní certifikát platný.</p>
+</page>

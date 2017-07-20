@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-receiving-options-imap-plus" xml:lang="hu">
+
+  <info>
+    <desc>Fogadás beállításai IMAP+ fiókokhoz.</desc>
+
+    <link type="guide" xref="mail-receiving-options#common-server-types"/>
+    <link type="guide" xref="mail-account-manage-imap-plus#receiving-email"/>
+    <revision pkgversion="3.12.9" version="0.3" date="2015-02-15" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mainwindow-starting.html.en#bstggh0 -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>IMAP+ fogadási beállításai</title>
+
+<section id="receiving-email-imap-plus">
+<title>Levelek fogadása</title>
+
+<p>A <gui>Levelek fogadása</gui> oldalon (<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Postafiókok</gui><gui style="button">Szerkesztés</gui><gui>Levelek fogadása</gui></guiseq>):</p>
+
+<list>
+<item><p>Adja meg az e-mail kiszolgáló nevét a <gui>Kiszolgáló</gui> mezőben, és adja meg a kiszolgálón használt felhasználónevét.</p></item>
+<item><p>Válassza ki, hogy használni kíván-e biztonságos kapcsolatot (SSL vagy TLS).</p><p>Engedélyezze ezt a beállítást, ha a kiszolgáló támogatja.</p>
+<note style="tip"><p>Az ingyenes webes levelezők általában megadják, hogy ezen beállítások közül melyek használhatók. Ha céges környezetben van, akkor a rendszergazdától kaphat további információkat.</p></note></item>
+<item><p>Válassza ki a hitelesítés típusát a Hitelesítés listából, vagy nyomja meg a <gui style="button">Támogatott típusok lekérdezése</gui> gombot, és az <app>Evolution</app> meghatározza a támogatott hitelesítési mechanizmusokat. Egyes kiszolgálók nem teszik közzé az általuk támogatott hitelesítési mechanizmusokat, így a gomb megnyomása nem garantálja, hogy az elérhető mechanizmusok ténylegesen működni fognak.</p></item>
+<item><p>Döntse el, hogy az <app>Evolution</app> megjegyezze-e a jelszavát.</p></item>
+</list>
+
+</section>
+
+<section id="receiving-options-imap-plus">
+<title>Fogadás beállításai</title>
+
+<p>A <gui>Fogadás beállításai</gui> oldalon (<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Postafiókok</gui><gui style="button">Szerkesztés</gui><gui>Fogadás beállításai</gui></guiseq>):</p>
+
+<list>
+<item><p>Ha azt szeretné, hogy az <app>Evolution</app> automatikusan keresse az új üzeneteket, akkor jelölje be az <gui>Új levelek automatikus lekérdezése … percenként</gui> négyzetet, és adja meg a gyakoriságot percben.</p></item>
+<item><p>Válassza ki a <gui>Gyors újraszinkronizálás használata</gui> négyzetet, ha az IMAP kiszolgáló támogatja az <link href="http://tools.ietf.org/html/rfc5162">IMAP4 kiterjesztéseket a gyors postafiók-újraszinkronizáláshoz</link>.</p></item>
+<!-- https://bugzilla.gnome.org/show_bug.cgi?id=730460 -->
+<item><p>Ha a levélkiszolgáló nem engedélyez több egyidejű kapcsolatot az <app>Evolutiontől</app> (például ha több fiókja van azon a kiszolgálón), akkor állítsa a <gui>Használandó egyidejű kapcsolatok számát</gui> 1-re.</p></item>
+<item><p>Megadhatja azt is, hogy az <app>Evolution</app> az új üzeneteket az összes mappában, vagy csak a feliratkozottakban keresse-e.</p></item>
+<item><p>Döntse el, hogy az <app>Evolution</app> csak a <link xref="mail-imap-subscriptions">feliratkozott mappákat</link> jelenítse-e meg.</p></item>
+<item><p>Jelölje be, hogy szeretné-e, hogy a <link xref="mail-filters">szűrők</link> automatikusan alkalmazásra kerüljenek az érkező levelekre, a <link xref="mail-spam-marking">levélszemét</link> automatikusan szűrésre kerüljön, és hogy a <link xref="mail-working-offline">kiszolgálón lévő levelek szinkronizálásra kerüljenek-e a helyi másolatokkal a kapcsolat nélküli eléréshez</link>.</p></item></list>
+
+</section>
+
+</page>

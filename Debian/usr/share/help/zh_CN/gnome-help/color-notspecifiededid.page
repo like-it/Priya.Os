@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-notspecifiededid" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="guide" xref="color-gettingprofiles"/>
+    <link type="guide" xref="color-why-calibrate"/>
+    <desc>默认的监视配置文件，没有校准日期。</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>为什么默认的监视文件会发生校准过满而停止？</title>
+  <p>
+    The default color profile used for each monitor is generated
+    automatically based on the display 
+    <link href="https://en.wikipedia.org/wiki/Extended_Display_Identification_Data">
+    EDID</link> which is stored in a memory chip inside the monitor.
+    The EDID only gives us a snapshot of the available colors the monitor
+    was capable of displaying when it was manufactured, and does not
+    contain much other information for color correction.
+  </p>
+
+  <figure>
+    <desc>因为 EDID 不能被更新，它没有截止期。</desc>
+    <media type="image" mime="image/png" src="figures/color-profile-default.png"/>
+  </figure>
+
+  <note style="tip">
+    <p>从显示器制造商那里，或者自己创建一个配置文件，会让颜色更准确。</p>
+  </note>
+
+</page>

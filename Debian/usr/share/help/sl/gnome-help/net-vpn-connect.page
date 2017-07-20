@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+    <link type="guide" xref="net-wired"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentacijski projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Set up a VPN connection to a local network over the internet.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Povezava z VPN</title>
+
+<p>VPN (ali <em>Navidezno zasebno omrežje</em>) je način povezovanja s krajevnim omrežjem preko interneta. Vzemimo primer, ko se želite povezati s krajevnim omrežjem v svoji službi medtem ko ste na poslovnem izletu. Nekje najdite internetno povezavo (na primer v hotelu) in se nato povežite z VPN-jem svojega delovnega mesta. Vse bo delovalo tako kot da ste se povezali na omrežje v službi, vendar bo dejanska omrežna povezava potekala skozi internetno povezavo hotela. Povezave VPN so običajno <em>šifrirane</em>, da ljudem preprečijo dostop do krajevnega omrežja, s katerim se povezujete, brez prijave.</p>
+
+<p>Obstajajo številne različne vrste VPN. Morda morate namestiti dodatne programe glede na vrsto VPN-ja, ki jo imate. Ugotovite podrobnosti povezave od osebe, ki je odgovorna za VPN, in si oglejte katero vrsto <em>odjemalca VPN</em> morate uporabiti. Nato pojdite v namestilnik programov in iščite paket <app>Upravljalnika omrežij</app>, ki deluje z vašim VPN-jem (če obstaja), in ga namestite.</p>
+
+<note>
+ <p>V primeru da za vašo vrsto VPN ne obstaja paket Upravljalnika omrežij, boste verjetno morali prejeti in namestiti program odjemalca podjetja, ki zagotavlja programe VPN. Verjetno boste morali za vzpostavitev delovanja slediti drugačnim navodilom.</p>
+</note>
+
+<p>To set up the VPN connection:</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Network</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>At the bottom of the list on the left, click the <gui>+</gui> button
+      to add a new connection.</p>
+    </item>
+    <item>
+      <p>Choose <gui>VPN</gui> in the interface list.</p>
+    </item>
+    <item>
+      <p>Choose which kind of VPN connection you have.</p>
+    </item>
+    <item>
+      <p>Fill in the VPN connection details, then press <gui>Add</gui> once you
+      are finished.</p>
+    </item>
+    <item>
+      <p>When you have finished setting-up the VPN, open the
+      <gui xref="shell-introduction#yourname">system menu</gui> from the right side of
+      the top bar, click <gui>VPN off</gui> and select <gui>Connect</gui>. You
+      may need to enter a password for the connection before it is established.
+      Once the connection is made, you will see a lock shaped icon in the top
+      bar.</p>
+    </item>
+    <item>
+      <p>Hopefully you will successfully connect to the VPN. If not, you may
+      need to double-check the VPN settings you entered. You can do this from
+      the <gui>Network</gui> panel that you used to create the connection.
+      Select the VPN connection from the list, then press the
+<media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button to review the settings.</p>
+    </item>
+    <item>
+      <p>To disconnect from the VPN, click the system menu on the top bar and
+      click <gui>Turn Off</gui> under the name of your VPN connection.</p>
+    </item>
+  </steps>
+
+</page>

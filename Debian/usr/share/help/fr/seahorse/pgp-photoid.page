@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-photoid" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-24" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Associer un identifiant photo à vos clés existantes de façon à ce que quiconque puisse les identifier facilement.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Une photographie en pièce-jointe à votre clé</title>
+
+  <p>Vous pouvez joindre un identifiant photo à vos clés PGP afin que tout un chacun puisse reconnaître le propriétaire des clés en regardant la photographie. Bien qu'une clé avec une photographie jointe augmente un peu le niveau de sécurité, ce n'est pas aussi sûr que de vérifier l'<link xref="misc-key-fingerprint">empreinte de la clé</link>, car n'importe qui possédant vos photos peut créer une clé avec, alors que l'empreinte de la clé ne peut pas être imitée.</p>
+
+  <note style="info">
+    <p>Contrairement aux restrictions concernant <app>GPG</app>, la photo à télécharger n'a pas besoin d'être au format <file>JPEG</file>. <app>Mots de passe et Clés</app> permet de télécharger vos photos aux formats <file>png</file>, <file>jpg</file> ainsi qu'à plusieurs autres formats d'image communs.</p>
+  </note>
+
+  <steps>
+    <title>Joindre un identifiant photo à une clé PGP :</title>
+    <item>
+      <p>Sélectionnez <gui>Clés GnuPG</gui> dans le panneau de gauche.</p>
+    </item>
+    <item>
+      <p>Sélectionnez la clé PGP.</p>
+    </item>
+    <item>
+      <p>Faites un clic droit sur la clé choisie et sélectionnez <guiseq><gui style="menuitem">Propriétés</gui> <gui>Propriétaire</gui></guiseq> </p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton porteur du signe <gui style="button">+</gui> à gauche pour ajouter une photographie.</p>
+    </item>
+    <item>
+      <p>Sélectionnez la photographie sur votre ordinateur.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui style="button">Fermer</gui> pour terminer.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Les photos sélectionnées doivent être de petite taille, environ 120 sur 150 pixels. Un identifiant photo étant lié à sa clé, une grande photo augmente la taille de la clé et ralentit les opérations qui l'utilisent. <app>Mots de passe et Clés</app> redimensionne les photos trop grandes après vous avoir demandé confirmation.</p>
+  </note>
+
+</page>

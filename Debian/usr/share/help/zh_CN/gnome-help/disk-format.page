@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME 文档项目</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>通过格式化，删除一个外接硬盘或 U 盘上的所有文件和文件夹。</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>擦除可移动磁盘上的所有数据</title>
+
+  <p>如果您有可移动磁盘，例如 U 盘或者移动硬盘，您有时可能需要彻底删除上面的所有文件和文件夹。您可以通过<em>格式化</em>该磁盘来完成删除 - 这将删除磁盘上的所有文件，将其彻底清空。</p>
+
+<steps>
+  <title>格式化可移动磁盘</title>
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to wipe from the list of storage devices on the
+    left.</p>
+
+    <note style="warning">
+      <p>一定要确保您选择正确的磁盘！如果您选错了，将会删除其他磁盘上的文件！</p>
+    </note>
+  </item>
+  <item>
+    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
+    menu button. Then click <gui>Format…</gui>.</p>
+  </item>
+  <item>
+    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
+    disk.</p>
+   <p>如果除 Linux 计算机以外，您还要在 Windows 和 Mac OS 计算机上使用该磁盘，请选择 <gui>FAT</gui> 格式。如果您仅在 Windows 中使用它，选择 <gui>NTFS</gui> 可能更好。在这里您还将看到各个<gui>文件系统类型</gui>的简单说明。</p>
+  </item>
+  <item>
+    <p>Give the disk a name and click <gui>Format…</gui> to continue and show a
+    confirmation window. Check the details carefully, and click
+    <gui>Format</gui> to wipe the disk.</p>
+  </item>
+  <item>
+    <p>Once the formatting has finished, click the eject icon to safely remove
+    the disk. It should now be blank and ready to use again.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>格式化并不能安全地删除您的文件</title>
+  <p>格式化磁盘并不是擦除所有数据的绝对完全方式。经过格式化的磁盘不会显示含有文件，但通过特殊的数据软件却可能重新恢复这些文件。如果您需要安全地删除文件，您将需要使用命令行程序，如 <app>shred</app>。</p>
+</note>
+
+</page>

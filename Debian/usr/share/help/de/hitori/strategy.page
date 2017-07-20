@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="strategy" xml:lang="de">
+	<info>
+		<link type="guide" xref="index#tips"/>
+		<include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+		<desc>Strategien zum Spielen von Hitori.</desc>
+	
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@googlemail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+	<title>Strategien des Spiels</title>
+
+	<p>Hitori ist Sudoku recht ähnlich, im Hinblick darauf, dass auf logische Weise herausgefunden werden muss, welche Zellen eingefärbt werden müssen. Eine Strategie ist, die <key>Umschalttaste</key> zu drücken, um alle mehrfach vorkommenden Ziffern in jeder <em>Spalte</em> anzuzeigen, oder die <key>Strg</key>-Taste, um die mehrfach vorkommenden Ziffern in jeder <em>Zeile</em> anzuzeigen.</p>
+	<p>Sobald dies für das gesamte Spielfeld geschehen ist, sind die durch beide Maßnahmen hervorgehobenen Zellen gute Kandidaten für das Einfärben, allerdings nicht immer. Wenn Sie eine Zelle einfärben, werden die Zellen mit der gleichen Ziffer in der gleichen Zeile und Spalte nicht mehr hervorgehoben. Auf diese Weise finden Sie am besten heraus, welche Zellen die <link xref="game">oberste Regel von Hitori</link> noch immer brechen.</p>
+	<p>Denken Sie immer an die zweite Hitori-Regel, welche besagt, dass zwei benachbarte Zellen nicht zugleich eingefärbt sein können. <app>Hitori</app> hebt die jeweils äußerst linke Zelle hervor, welche die zweite Regel übertritt. Analog werden Zellengruppen in Rot hervorgehoben, die die dritte Regel brechen, weil eine oder mehrere nicht eingefärbte Zellen von den anderen nicht eingefärbten Zellen getrennt werden.</p>
+
+	<p>Falls Sie an einem Punkt angelangt sind, an dem Sie nicht mehr weiter wissen, wählen Sie <guiseq><gui style="menu">Spiel</gui><gui style="menuitem">Hinweis</gui></guiseq>, um <app>Hitori</app> eine Zelle hervorheben zu lassen, welche eingefärbt werden oder die Einfärbung zurückgenommen werden sollte, um einer Lösung näher zu kommen.</p>
+</page>

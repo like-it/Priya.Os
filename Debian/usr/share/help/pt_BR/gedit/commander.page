@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-commander" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/> 
+    <revision version="3.4" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Use uma interface de linha de comando para edição avançada.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Comando</title>
+
+  <p>O plug-in <app>Comando</app> é um plug-in para usuários avançados do <app>gedit</app> que permite que você execute ações de linha de comando no arquivo atual. Para habilitar o plug-in comando, selecione <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferências</gui><gui>Plug-ins</gui><gui>Comando</gui></guiseq>.</p>
+
+  <p>Assim que o plug-in estiver habilitado, ative-o pressionado <keyseq><key>Ctrl</key><key>.</key></keyseq>.</p>
+  
+  <note style="tip">
+    <p>A última tecla na combinação de teclas acima é um ponto.</p>
+  </note>
+
+  <table frame="all" rules="all">
+    <thead>
+      <tr>
+        <td><p>Ação</p></td>
+	<td><p>Atalho de teclado</p></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><p>Ter uma visão geral dos comandos disponíveis</p></td>
+	<td><p><keyseq><key>Tab</key><key>Tab</key></keyseq></p></td>
+      </tr>
+      <tr>
+        <td><p>Localizar uma palavra dentro do arquivo atual</p></td>
+	<td>
+	  <p><key>/</key> <input>foo</input></p>
+          <p>Isso irá localizar a palavra <input>foo</input>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Substituir uma palavra dentro do arquivo atual</p></td>
+	<td>
+	  <p><keyseq><key>/</key><key>/</key></keyseq> <input>foo bar</input></p>
+          <p>Isso irá substituir <input>foo</input> por <input>bar</input>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Mover o cursor para uma determinado número de linha em seu arquivo</p></td>
+        <td>
+	  <p>vai para <input>[número da linha]</input> <em>ou</em> apenas <key>G</key> <input>[número da linha]</input></p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>Alterar o indicador do marcador para a linha atual</p></td>
+        <td><p>marque <em>ou</em> apenas <key>B</key></p></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <note style="tip">
+    <p>Alguns comandos, tais como o comando <app>bookmark</app> requer que o plug-in apropriado esteja instalado e ativado. Se você não tem o plug-in apropriado instalado ou ativado, receberá uma mensagem de erro.</p>
+  </note>
+
+</page>

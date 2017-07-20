@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="problem-permissions" xml:lang="cs">
+  <info>
+    <link type="guide" xref="index#problems"/>
+    <revision pkgversion="3.12" date="2014-01-25" status="review"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Při procházení vidím chybovou hlášku <gui>Nelze analyzovat složku /… nebo některé v ní obsažené složky.</gui>.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Chyba při procházení</title>
+
+  <p>Při procházení můžete spatřit v horní části okna <app>Analyzátoru využití disku</app> zprávu <gui>Nelze analyzovat složku /… nebo některé v ní obsažené složky.</gui>  Tato zpráva se objevuje, když nemáte kvůli omezením daným v cílovém systému oprávnění potřebná pro přístup k některým souborům. Soubory, ke kterým nemáte přístup, nemohou být použity pro výpočet <link xref="pref-view-chart">grafu</link> o využití disku, takže výsledná správa nemusí být pravdivá.</p>
+
+  <p>To, že nemáte přístup k úplně všem souborům a složkám, je naprosto běžný záměr a s touto chybou nemůžete nic dělat.</p>
+
+  <note style="info"><p><app>Analyzátor využití disku</app> využívá k vytvoření podrobného zobrazení o využití úložiště příkaz <cmd>du</cmd> a potřebuje, abyste měli oprávnění číst u souborů a oprávnění spustit u složek.</p>
+
+  <p>Na druhou stranu, pro údaj v hlavním okně o vyžití souborového systému (který se vztahuje k souborovému systému jako celku) se používá příkaz <cmd>df</cmd>, který žádná oprávnění k souborům nevyžaduje.</p></note>
+</page>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="net-security-tips" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="net-general"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-21" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>ஸ்டீவன் ரிச்சர்ட்ஸ்</name>
+      <email>steven.richardspc@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>இணையத்தைப் பயன்படுத்தும் போது மனதில் வைத்துக் கொள்ள வேண்டிய சில குறிப்புகள்.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>இணையத்தில் பாதுகாப்பாக இருத்தல்</title>
+
+  <p>Linux இன் உறுதியான பாதுகாப்பே நீங்கள் அதைப் பயன்படுத்த ஒரு முக்கியக் காரணமாக இருக்கலாம். Linux தீம்பொருள் மற்றும் வைரஸ்களால் அதிகம் பாதிக்காமல் இருக்க, குறைவானவர்களே அடைப் பயன்படுத்துவதும் ஒரு காரணம். வைரஸ்கள் பொதுவாக Windows போன்ற பிரபலமான இயக்க முறைமைகளைக் குறிவைத்தே உருவாக்கப்படுகின்றன. Linux மிக பாதுகாப்பானதாக இருக்க அதன் திறமூலப் பண்பும் ஒரு காரணமாகும், அது திறமூலமாக இருப்பதால், ஒவ்வொரு விநியோகத்திலும் பாதுகாப்பு அம்சங்கள் மாற்றி, மேம்படுத்தப்பட்டு வெளிவருகின்றன.</p>
+
+  <p>Linux இன் நிறுவல் பாதுகாப்பானதாக இருக்க தேவையான அனைத்து நடவடிக்கைகளும் எடுக்கப்பட்டிருந்தாலும், பாதிப்புகள் எப்போதும் வாய்ப்புகள் இருக்கவே செய்கின்றன. ஒரு சராசரி இணைய பயனராக நீங்கள் பாதிப்புக்கு உட்படக்கூடிய பாதிப்புகள் பின்வருமாறு:</p>
+
+  <list>
+    <item>
+      <p>ஃபிஷிங் மோசடி (மோசடி மூலம் முக்கிய தகவல்களை பெற முயற்சி செய்யும் வலைத்தளங்கள் மற்றும் மின்னஞ்சல்கள்)</p>
+    </item>
+    <item>
+      <p><link xref="net-email-virus">தீங்குதரும் மின்னஞ்சல்களைப் பகிர்தல்</link></p>
+    </item>
+    <item>
+      <p><link xref="net-antivirus">தீங்கு தரும் பொருள்களைக் (வைரஸ்) கொண்ட பயன்பாடுகள்</link></p>
+    </item>
+    <item>
+      <p><link xref="net-wireless-wepwpa">Unauthorized remote/local network
+      access</link></p>
+    </item>
+  </list>
+
+  <p>ஆன்லைனில் பாதுகாப்பாக இருக்க, பின்வரும் குறிப்புகளை மனதில் வைத்துக்கொள்ளவும்:</p>
+
+  <list>
+    <item>
+      <p>உங்களுக்குத் தெரியாவர்களிடமிருந்து பெறும் மின்னஞ்சல்கள், இணைப்புகள் அல்லது இணைப்புகள் போன்றவற்றில் எச்சரிக்கையாக இருங்கள்.</p>
+    </item>
+    <item>
+      <p>ஒரு வலைத்தளம் நம்ப முடியாத ஒரு சலுகையை வழங்கினால் அல்லது தேவையில்லாதது எனக் கருதக்கூடிய மிக முக்கியமான தகவல்களைக் கேட்டால், நீங்கள் என்ன தகவலை வழங்கப்போகிறீர்கள் என்பதைப் பற்றி ஒருமுறைக்கு இரு முறை சிந்தித்துக்கொள்ளவும், மேலும் அந்த தகவல்கள் அடையாளத் திருடர்கள் அல்லது பிற குற்றவாளிகளுக்குத் தெரிந்துவிட்டால், என்னென்ன நடக்கலாம் எனவும் சிந்திக்கவும்.</p>
+    </item>
+    <item>
+      <p>Be careful in providing
+      <link xref="user-admin-explain">root level permissions</link> to any
+      application, especially ones that you have not used before or which are
+      not well-known. Providing anyone or anything with root level permissions
+      puts your computer at high risk to exploitation.</p>
+    </item>
+    <item>
+      <p>உண்மையில் தேவையான தொலைநிலை அணுகல் சேவைகளை மட்டும் பயன்படுத்தவும். SSH அல்லது VNC ஐ இயக்குவது பயனுள்ளது தான், ஆனால் முறையாக பாதுகாக்கப்படாவிட்டால், உங்கள் கணினியிலான அத்துமீறலுக்கும் அது வழிவகுக்கலாம். அத்துமீறல்களில் இருந்து உங்கள் கணினியைக் காக்க <link xref="net-firewall-on-off">ஃபயர்வால்</link> ஒன்றைப் பயன்படுத்துவது நல்லது.</p>
+    </item>
+  </list>
+
+</page>

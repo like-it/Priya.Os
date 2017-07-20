@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="status-icons" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="shell-overview#apps"/>
+
+    <revision version="0.1" date="2013-02-23" status="review"/>
+
+    <credit type="author copyright">
+      <name>மோனிக்கா கொச்சோஃபார்</name>
+      <email>monicakochofar@gmail.com</email>
+      <years>2012</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>மேல் பட்டியின் வலப்புறமுள்ள சின்னங்களின் பொருளை விளக்குகிறது.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>மேல் பட்டியில் உள்ள சின்னங்களின் பொருள் என்ன?</title>
+<p>இந்தப் பிரிவு திரையின் மேல் வலது புறம் உள்ள சின்னங்களின் பொருளை விளக்குகிறது. குறிப்பாக GNOME வழங்கும் சின்னங்களின் பல்வேறு வகைகள் விவரிக்கப்படுகின்றன.</p>
+
+<if:choose>
+<if:when test="!platform:gnome-classic">
+<media type="image" src="figures/top-bar-icons.png" style="floatend">
+  <p>GNOME ஷெல் மேல் பட்டி</p>
+</media>
+</if:when>
+<if:when test="platform:gnome-classic">
+<media type="image" src="figures/top-bar-icons-classic.png" width="395" height="70" style="floatend">
+  <p>GNOME ஷெல் மேல் பட்டி</p>
+</media>
+</if:when>
+</if:choose>
+
+<links type="section"/>
+
+<section id="universalicons">
+<title>அனைவருக்குமான அணுகல் மெனு சின்னங்கள்</title>
+
+ <table shade="rows">
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/preferences-desktop-accessibility-symbolic.svg"/></td>
+      <td><p>அணுகல் தன்மை அமைவுகளை இயக்கும் மெனுவுக்குக் கொண்டு செல்கிறது.</p></td>
+    </tr>
+    
+  </table>
+</section>
+
+
+<section id="audioicons">
+<title>ஒலியளவு கட்டுப்பாடு சின்னங்கள்</title>
+
+ <table shade="rows">
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-high-symbolic.svg"/></td>
+      <td><p>ஒலியளவு மிக அதிகமாக அமைக்கப்பட்டுள்ளது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-medium-symbolic.svg"/></td>
+      <td><p>ஒலியளவு மிதமாக அமைக்கப்பட்டுள்ளது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-low-symbolic.svg"/></td>
+      <td><p>ஒலியளவு மிக குறைவாக அமைக்கப்பட்டுள்ளது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-muted-symbolic.svg"/></td>
+      <td><p>ஒலியடக்கப்பட்டுள்ளது.</p></td>
+    </tr>
+  </table>
+</section>
+
+
+<section id="bluetoothicons">
+<title>Bluetooth நிர்வாகி சின்னங்கள்</title>
+
+ <table shade="rows">
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/></td>
+      <td><p>Bluetooth செயல்படுத்தப்பட்டுள்ளது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-disabled-symbolic.svg"/></td>
+      <td><p>Bluetooth முடக்கப்பட்டுள்ளது.</p></td>
+    </tr>
+  </table>
+</section>
+
+<section id="networkicons">
+<title>பிணைய நிர்வாகி சின்னங்கள்</title>
+<p/>
+<p><app>செல்லுலார் இணைப்பு</app></p>
+ <table shade="rows">
+
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-3g-symbolic.svg"/></td>
+      <td><p>ஒரு 3G பிணையத்துடன் இணைந்துள்ளது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-4g-symbolic.svg"/></td>
+      <td><p>ஒரு 4G பிணையத்துடன் இணைந்துள்ளது.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-edge-symbolic.svg"/></td>
+      <td><p>ஒரு EDGE பிணையத்துடன் இணைந்துள்ளது.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-gprs-symbolic.svg"/></td>
+      <td><p>ஒரு GPRS பிணையத்துடன் இணைந்துள்ளது.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-umts-symbolic.svg"/></td>
+      <td><p>ஒரு UMTS பிணையத்துடன் இணைந்துள்ளது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-connected-symbolic.svg"/></td>
+      <td><p>ஒரு செல்லுலார் பிணையத்துடன் இணைந்துள்ளது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-acquiring-symbolic.svg"/></td>
+      <td><p>செல்லுலார் பிணைய இணைப்பைப் பெறுகிறது.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg"/></td>
+      <td><p>மிக அதிக சமிக்ஞை வலிமை.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-good-symbolic.svg"/></td>
+      <td><p>அதிக சமிக்ஞை வலிமை.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-ok-symbolic.svg"/></td>
+      <td><p>நடுத்தர சமிக்ஞை வலிமை.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-weak-symbolic.svg"/></td>
+      <td><p>குறைந்த சமிக்ஞை வலிமை.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-none-symbolic.svg"/></td>
+      <td><p>மிக குறைந்த சமிக்ஞை வலிமை.</p></td>
+    </tr></table>
+
+
+
+
+<p><app>உள்ளமை பகுதி பிணைய (LAN) இணைப்பு</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-error-symbolic.svg"/></td>
+      <td><p>பிணையத்தைக் கண்டுபிடிப்பதில் பிழை ஏற்பட்டது.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-idle-symbolic.svg"/></td>
+      <td><p>பிணையம் செயலற்று உள்ளது.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-no-route-symbolic.svg"/></td>
+      <td><p>பிணையத்திற்கு தடம் கண்டறியப்படவில்லை.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-offline-symbolic.svg"/></td>
+      <td><p>பிணையம் இணைப்புவிலகியுள்ளது.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-receive-symbolic.svg"/></td>
+      <td><p>பிணையம் தரவைப் பெறுகிறது.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-receive-symbolic.svg"/></td>
+      <td><p>பிணையம் தரவை அனுப்புகிறது மற்றும் பெறுகிறது.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-symbolic.svg"/></td>
+      <td><p>பிணையம் தரவை அனுப்புகிறது.</p></td>
+    </tr>
+</table>
+
+
+
+<p><app>மெய்நிகர் தனிப்பட்ட பிணைய (VPN) இணைப்பு</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-acquiring-symbolic.svg"/></td>
+      <td><p>ஒரு பிணைய இணைப்பைப் பெறுகிறது.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-symbolic.svg"/></td>
+      <td><p>ஒரு VPN பிணையத்திற்கு இணைந்துள்ளது.</p></td>
+    </tr>
+</table>
+
+
+<p><app>வயர்டு இணைப்பு</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-acquiring-symbolic.svg"/></td>
+      <td><p>ஒரு பிணைய இணைப்பைப் பெறுகிறது.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-disconnected-symbolic.svg"/></td>
+      <td><p>பிணையத்திலிருந்து துண்டிக்கப்பட்டது.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-symbolic.svg"/></td>
+      <td><p>ஒரு வயர்டு பிணையத்திற்கு இணைந்துள்ளது.</p></td>
+    </tr>
+</table>
+
+
+<p><app>வயர்லெஸ் இணைப்பு</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-acquiring-symbolic.svg"/></td>
+      <td><p>ஒரு வயர்லெஸ் இணைப்பைப் பெறுகிறது.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-encrypted-symbolic.svg"/></td>
+      <td><p>வயர்லெஸ் பிணையம் குறியாக்கம் செய்யப்பட்டுள்ளது.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-connected-symbolic.svg"/></td>
+      <td><p>ஒரு வயர்லெஸ் பிணையத்துடன் இணைந்துள்ளது.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg"/></td>
+      <td><p>மிக அதிக சமிக்ஞை வலிமை.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-good-symbolic.svg"/></td>
+      <td><p>அதிக சமிக்ஞை வலிமை.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-ok-symbolic.svg"/></td>
+      <td><p>நடுத்தர சமிக்ஞை வலிமை.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-weak-symbolic.svg"/></td>
+      <td><p>குறைந்த சமிக்ஞை வலிமை.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-none-symbolic.svg"/></td>
+      <td><p>மிக குறைந்த சமிக்ஞை வலிமை.</p></td>
+    </tr>
+
+  </table>
+</section>
+
+<section id="batteryicons">
+<title>மின்சக்தி நிர்வாக சின்னங்கள்</title>
+
+ <table shade="rows">
+   <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-symbolic.svg"/></td>
+      <td><p>பேட்டரி நிரம்பியுள்ளது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-symbolic.svg"/></td>
+      <td><p>பேட்டரி பகுதியளவு காலியாகிவிட்டது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-symbolic.svg"/></td>
+      <td><p>பேட்டரி குறைவாக உள்ளது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-symbolic.svg"/></td>
+      <td><p>எச்சரிக்கை: பேட்டரி மிகவும் குறைவாக உள்ளது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-symbolic.svg"/></td>
+      <td><p>பேட்டரி மிக மிகக் குறைவாக உள்ளது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-missing-symbolic.svg"/></td>
+      <td><p>பேட்டரி அகற்றப்பட்டுள்ளது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-charged-symbolic.svg"/></td>
+      <td><p>பேட்டரி முழுமையாக சார்ஜ் ஆகியுள்ளது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-charging-symbolic.svg"/></td>
+      <td><p>பேட்டரி நிரம்பியுள்ளது, சார்ஜ் ஆகிறது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-charging-symbolic.svg"/></td>
+      <td><p>பேட்டரி பகுதியளவு நிரம்பியுள்ளது, சார்ஜ் ஆகிறது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-charging-symbolic.svg"/></td>
+      <td><p>பேட்டரி குறைந்துள்ளது, சார்ஜ் ஆகிறது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-charging-symbolic.svg"/></td>
+      <td><p>பேட்டரி மிகவும் குறைவாக உள்ளது, சார்ஜ் ஆகிறது.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-charging-symbolic.svg"/></td>
+      <td><p>பேட்டரி காலியாக உள்ளது, சார்ஜ் ஆகிறது.</p></td>
+    </tr>
+  </table>
+</section>
+
+
+</page>

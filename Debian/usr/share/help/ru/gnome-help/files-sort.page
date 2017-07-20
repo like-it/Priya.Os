@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Фил Булл (Phil Bull)</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Расположение файлов по имени, размеру, типу или времени изменения.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Сортировка файлов и папок</title>
+
+<p>Файлы в папке можно упорядочить различными способами, например, отсортировать по дате или размеру файла. Смотрите <link xref="#ways"/> ниже, чтобы узнать о наиболее часто используемых способах сортировки файлов. О том, как изменить способ сортировки по умолчанию, смотрите <link xref="nautilus-views"/>.</p>
+
+<p>Доступные способы сортировки файлов зависят от используемого вами <em>режима просмотра папки</em>. Изменить текущий режим можно с помощью списка или значков на панели инструментов.</p>
+
+<section id="icon-view">
+  <title>Просмотр в виде значков</title>
+
+  <p>To sort files in a different order, click the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
+  Date</gui>.</p>
+
+  <p>Например, при выборе <gui>По имени</gui> файлы будут отсортированы по их именам в алфавитном порядке. О других вариантах смотрите <link xref="#ways"/>.</p>
+
+  <p>You can sort in the reverse order by selecting <gui>Reversed Order</gui>
+  from the menu.</p>
+
+</section>
+
+<section id="list-view">
+  <title>Просмотр в виде списка</title>
+
+  <p>Чтобы изменить способ сортировки файлов, нажмите на заголовок одного из столбцов в файловом менеджере. Например, нажмите <gui>Тип</gui>, чтобы отсортировать файлы по типу. Нажмите на заголовок столбца снова, чтобы отсортировать файлы в обратном порядке.</p>
+  <p>In list view, you can show columns with more attributes and sort on those
+  columns. Click the view options button in the toolbar, pick <gui>Visible
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  Columns…</gui> and select the columns that you want to be visible. You will
+  then be able to sort by those columns. See <link xref="nautilus-list"/> for
+  descriptions of available columns.</p>
+
+</section>
+
+<section id="ways">
+  <title>Способы сортировки файлов</title>
+
+  <terms>
+    <item>
+      <title>Имя</title>
+      <p>Сортировка по именам файлов в алфавитном порядке.</p>
+    </item>
+    <item>
+      <title>Размер</title>
+      <p>Сортировка по размеру файла (занимаемому месту на диске). По умолчанию файлы упорядочиваются по возрастанию размера.</p>
+    </item>
+    <item>
+      <title>Тип</title>
+      <p>Сортировка по типу файлов в алфавитном порядке. Файлы одного типа группируются вместе, затем сортируются по имени.</p>
+    </item>
+    <item>
+      <title>Last Modified</title>
+      <p>Сортировка по дате и времени последнего изменения файла (от давно изменённых к недавно изменённым).</p>
+    </item>
+  </terms>
+
+</section>
+
+</page>

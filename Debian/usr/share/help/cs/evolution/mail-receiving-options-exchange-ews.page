@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-receiving-options-exchange-ews" xml:lang="cs">
+
+  <info>
+    <desc>Volby příjmu pro účty Exchange Web Services.</desc>
+
+    <link type="guide" xref="mail-receiving-options#corporate-server-types"/>
+    <link type="guide" xref="mail-account-manage-microsoft-exchange-evo-ews#receiving-email"/>
+    <revision pkgversion="3.12.9" version="0.3" date="2015-02-15" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Možnosti příjmu u Exchange Web Services</title>
+
+<section id="receiving-email-exchange-ews">
+<title>Příjem pošty</title>
+
+<p>Na stránce <gui>Příjem pošty</gui> (najdete v <guiseq><gui>Upravit</gui><gui>Předvolby</gui><gui>Poštovní účty</gui><gui style="button">Upravit</gui><gui>Příjem pošty</gui></guiseq>):</p>
+
+<list>
+<item><p>Zadejte své uživatelské jméno pro tento server.</p></item>
+<item><p>Buď ručně zadejte adresu URL počítače nebo OAB URL nebo klikněte na <gui style="button">Získat URL</gui>, načež budete dotázání na vaše heslo a následně se zkusí automaticky vyplnit hodnoty.</p>
+<note style="tip"><p>Pokud se nacházíte v prostředí organizace, můžete kontaktovat správce systému, abyste získali více informací.</p></note></item>
+<item><p>Vyberte typ ověření totožnosti nebo klikněte na <gui style="button">Zjistit podporované typy</gui> a <app>Evolution</app> zjistí, jaké mechanismy ověření totožnosti jsou podporovány. Některé servery neoznamují, které autentizační mechanismy podporují, takže kliknutí na toto tlačítko nezaručuje, že dostupné mechanismy opravdu fungují.</p></item>
+</list>
+
+</section>
+
+<section id="receiving-options-exchange-ews">
+<title>Volby příjmu</title>
+
+<p>Na kartě <gui>Volby příjmu</gui> (přístupné přes <guiseq><gui>Upravit</gui><gui>Předvolby</gui><gui>Poštovní účty</gui><gui style="button">Upravit</gui><gui>Volby příjmu</gui></guiseq>):</p>
+
+<list>
+<item><p>Pokud chcete, aby se <app>Evolution</app> automaticky díval po nových zprávách, klikněte na <gui>Kontrolovat nové zprávy každých ‥ minut </gui> a zvolte četnost kontrol v minutách.</p></item>
+<item><p>Můžete také určit, jestli má <app>Evolution</app> kontrolovat nové zprávy ve všech složkách.</p></item>
+<item><p>Jestli chcete mít kopii adresáře ze serveru, abyste k němu měli přístup i při odpojení, zapněte <gui>Ukládat adresář do mezipaměti pro použití při odpojení</gui> a klikněte na <gui style="button">Získat seznam</gui>. Následně z dostupné nabídky vyberte adresář.</p></item>
+<item><p>Vyberte, jestli se mají na poštu, kterou obdržíte, automaticky použít <link xref="mail-filters">filtry</link>, jestli mají být automaticky filtrovány <link xref="mail-spam-marking">nevyžádané zprávy</link> a jestli se má <link xref="mail-working-offline">pošta na serveru synchronizovat s místní kopií kvůli přístupu při odpojení od sítě</link>.</p></item>
+</list>
+
+</section>
+
+</page>

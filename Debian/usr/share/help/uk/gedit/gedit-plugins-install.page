@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-install" xml:lang="uk">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <desc>How to install third-party plugins.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Максим Дзюманенко</mal:name>
+      <mal:email>dziumanenko@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Назарій Ріттер</mal:name>
+      <mal:email>nazariy.ritter@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Додаткові плагіни «gedit»</title>
+
+  <p>Встановлення сторонніх плагінів надає додаткової функціональності, яка недоступна в стандартних плагінах «<app>gedit</app>», або навіть в додаткових плагінах, які є частиною пакунку «<app>gedit-plugins</app>». Онлайн-список сторонніх плагінів <link href="https://wiki.gnome.org/Apps/Gedit">міститься тут</link>.</p>
+  
+  <p>Під встановленням стороннього плагіну мається на увазі завантаження плагіну, розміщення його в правильному каталозі та активування плагіну.</p>
+  
+  <steps>
+    <item><p>Зазвичай, можна просто завантажити плагін з інтернет-сторінки плагіну, однак може знадобитися програма для контролю версії, така як «<app>git</app>», «<app>bazaar</app>» або «<app>subversion</app>», щоб скопіювати з інтернету репозиторій програмного забезпечення плагіну. Дивіться документацію плагіну для отримання інформації про плагін.</p></item>
+    <item><p>Помістіть файли плагіну в каталог «<file>/home/<var>ім'я_користувача</var>/.local/share/gedit/plugins</file>».</p>
+    <p>Звичайно ж, замініть «<var>ім'я_користувача</var>» на своє власне ім'я.</p></item>
+    <item><p>Після розміщення файлів плагіну у відповідному каталозі, плагін з'явиться в меню «Параметри». Виберіть <guiseq><gui>«Редагувати»</gui><gui style="menuitem">«Параметри»</gui><gui>«Плагіни»</gui> <gui>[Назва плагіну]</gui></guiseq>, щоб увімкнути плагін.</p></item>
+    <item><p>Клацніть на «<gui>Закрити</gui>».</p></item>
+  </steps>
+  
+  <p>Після увімкнення плагіну, він має стати доступним для користування.</p>
+  
+  <note style="tip">
+    <p>Каталог «<file>.local</file>» є прихованим за замовчуванням. Щоб відобразити його та інші приховані файли, виберіть <guiseq><gui>«Вигляд»</gui><gui>«Показувати приховані файли»</gui></guiseq> або натисніть <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+  </note>
+
+  <note style="tip">
+    <p>Якщо каталог «<file>.local/share/gedit/plugins/</file>» відсутній у Вашій системі, його потрібно створити.</p>
+  </note>
+  
+</page>

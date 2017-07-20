@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-personal" xml:lang="sr">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.1" date="2013-09-23" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Мајкл Хил</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Допустите другима да приступе датотекама у вашој фасцикли <file>Јавно</file>.</desc>
+  </info>
+
+  <title>Делите ваше личне датотеке</title>
+
+  <p>Можете да дозволите приступ фасцикли <file>Јавно</file> у вашој фасцикли <file>Лично</file> са другог рачунара на мрежи. Подесите <gui>Дељење личних датотека</gui> да дозволите другима да приступе садржају фасцикле.</p>
+
+  <note style="info package">
+    <p>Морате имати инсталран пакет <app>gnome-user-share</app> да би <gui>Дељење личних датотека</gui> било видљиво.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:gnome-user-share" style="button">Инсталирајте „gnome-user-share“</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Отворите преглед <gui xref="shell-introduction#activities">Активности</gui> и почните да куцате <gui>Дељење</gui>.</p>
+    </item>
+    <item>
+      <p>Кликните на <gui>Дељење</gui> да отворите панел.</p>
+    </item>
+    <item>
+      <p>Ако је <gui>Дељење</gui> <gui>ИСКЉ.</gui>, пребаците га на <gui>УКЉ.</gui>.</p>
+
+      <note style="info"><p>Ако вам текст испод <gui>назива рачунара</gui> допушта да га уређујете, можете да <link xref="sharing-displayname">измените</link> назив под којим се ваш рачунар приказује на мрежи.</p></note>
+    </item>
+    <item>
+      <p>Изаберите <gui>Дељење личних датотека</gui>.</p>
+    </item>
+    <item>
+      <p>Пребаците <gui>Дељење личних датотека</gui> на <gui>УКЉ.</gui>. Ово значи да ће неко други на вашој текућој мрежи бити у могућности да покуша да се повеже на ваш рачунар и да приступи датотекама у вашој фасцикли <file>Јавно</file>.</p>
+      <note style="info">
+        <p>Биће приказана <em>путања</em> са које може бити приступљено вашој фасцикли <file>Јавно</file> са других рачунара на мрежи.</p>
+      </note>
+    </item>
+  </steps>
+
+  <section id="security">
+  <title>Безбедност</title>
+
+  <terms>
+    <item>
+      <title>Захтевајте лозинку</title>
+      <p>Да захтевате да други људи користе лозинку приликом приступа вашој фасцикли <file>Јавно</file>, пребаците <gui>Захтевај лозинку</gui> <gui>УКЉ.</gui>. Ако не користите ову опцију, свако може да покуша да види вашу фасциклу <file>Јавно</file>.</p>
+      <note style="tip">
+        <p>Ова опција је унапред искључена, али бисте требали да је укључите и да поставите безбедносну лозинку.</p>
+      </note>
+    </item>
+  </terms>
+  </section>
+
+  <section id="networks">
+  <title>Мреже</title>
+
+  <p>Одељак <gui>Мреже</gui> наводи мреже на које сте тренутно повезани. Користите прекидач <gui>УКЉ. | ИСКЉ.</gui> поред савке од њих да изаберете на којима ваше личне датотеке могу бити дељене.</p>
+
+  </section>
+
+</page>

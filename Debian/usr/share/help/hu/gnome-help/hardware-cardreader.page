@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="hardware-cardreader" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="media#photos"/>
+    <link type="guide" xref="hardware#problems"/>
+
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Médiakártyák hibáinak elhárítása</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Médiakártya-olvasó problémái</title>
+
+<p>A legtöbb számítógép tartalmaz SD, MMC, SM, MS, CF és más médiakártyák olvasására szolgáló kártyaolvasókat. Ezeket a rendszer automatikusan felismeri és <link xref="disk-partitions">csatolja</link>. Ha mégsem, az alábbi hibaelhárítási utasítások segíthetnek:</p>
+
+<steps>
+<item>
+<p>Győződjön meg róla, hogy a kártya megfelelően van behelyezve. Számos kártya megfelelően behelyezve úgy néz ki, mintha fejjel lefelé lenne. Győződjön meg róla, hogy a kártya szorosan illeszkedik a foglalatba. Egyes kártyákat, különösen a CF-kártyákat enyhén meg kell nyomni, hogy megfelelően rögzüljön. Legyen azonban óvatos, és ne nyomja túl erősen. Ha valami szilárdba ütközik, ne erőltesse.</p>
+</item>
+
+<item>
+  <p>Nyissa meg a <app>Fájlok</app> alkalmazást a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintésből. Megjelenik a behelyezett kártya a bal oldali oldalsáv <gui>Eszközök</gui> listájában? Egyes esetekben a kártya megjelenik ebben a listában, de nincs csatolva. Kattintson rá egyszer a csatolásához. Ha az oldalsáv nem látható, akkor nyomja meg az <key>F9</key> billentyűt, vagy nyomja meg a felső sáv <gui style="menu">Fájlok</gui> gombját, és válassza az <gui style="menuitem">Oldalsáv megjelenítése</gui> menüpontot.</p>
+</item>
+
+<item>
+  <p>Ha a kártya nem jelenik meg az oldalsávban, akkor nyomja meg a <keyseq><key>Ctrl</key><key>L</key></keyseq> kombinációt, majd írja be a <input>computer:///</input> kifejezést, és nyomja meg az <key>Entert</key>. Ha a kártyaolvasó megfelelően van beállítva, akkor az olvasó itt egy meghajtóként jelenik meg, ha üres; és maga a kártya jelenik meg, ha csatolva van egy kártya.</p>
+</item>
+
+<item>
+<p>Ha csak az olvasót látja, és a kártyát nem, akkor a kártya hibásodhatott meg. Próbáljon meg másik kártyát használni, vagy ha lehetséges, akkor másik kártyaolvasóval beolvastatni a kártyát.</p>
+</item>
+</steps>
+
+<p>Ha a <gui>Számítógép</gui> hely tallózásakor nem jelennek meg sem kártyák, sem meghajtók, akkor lehetséges, hogy a kártyaolvasó illesztőprogram-problémák miatt nem működik. Ha a kártyaolvasó belső (azaz a számítógépbe van építve), akkor ez valószínűbb. A legjobb megoldás a kérdéses kártyát használó eszköz (fényképezőgép, mobiltelefon stb.) közvetlen csatlakoztatása a számítógép egy USB-portjához. A külső USB-kártyaolvasók jobban támogatottak.</p>
+
+</page>

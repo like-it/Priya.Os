@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="lv">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME dokumentācijas projekts</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>Saprotiet, kādi ir apjomi un nodalījumi, un izmantojiet disku utilītprogrammas, lai tos pārvaldītu.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Pārvaldiet apjomus un nodalījumus</title>
+
+  <p>Vārds <em>sējums</em> tiek izmantots, lai aprakstītu glabāšanas ierīces, piemēram, cieto disku. Tas var arī attiekties uz <em>daļu</em> no atmiņas šajā ierīcē, jo jūs varat sadalīt atmiņu vairākos gabalos. Dators padara šo atmiņu pieejamu caur jūsu datņu sistēmu, šo procesu sauc par <em>montēšana</em>. Montēts sējums var būt cietais disks, USB ierīce, DVD-RW diski, SD atmiņas kartes un citi datu nesēji. Ja sējums pašlaik ir montēts, jūs tajā varat lasīt (un, iespējams, rakstīt) datnes.</p>
+
+  <p>Bieži montēts sējums tiek saukts par <em>nodalījumu</em>, lai gan tie ne vienmēr ir viens un tas pats. "Nodalījums" attiecas uz <em>fizisko</em> uzglabāšanas platību uz viena diska. Līdzko nodalījums ir uzmontēts, tas var tikt saukts par sējumu, jo caur to var piekļūt datnēm. Jūs varat iedomāties sējumus kā marķētus un pieejamus “veikala letes”, kas slēpj vajadzīgās “noliktavas” — nodalījumus un dziņus. </p>
+
+<section id="manage">
+ <title>Apskatiet un pārvaldiet sējumus un nodalījumus, izmantojot disku utilītprogrammas</title>
+
+  <p>Jūs varat pārbaudīt un modificēt datora krātuvju sējumus ar disku utilītprogrammām.</p>
+
+<steps>
+  <item>
+    <p>Atveriet <gui>Aktivitāšu</gui> apskatu un palaidiet <app>Disku</app> lietotni.</p>
+  </item>
+  <item>
+    <p>In the list of storage devices on the left, you will find hard disks,
+    CD/DVD drives, and other physical devices. Click the device you want to
+    inspect.</p>
+  </item>
+  <item>
+    <p>The right pane provides a visual breakdown of the volumes and
+    partitions present on the selected device. It also contains a variety of
+    tools used to manage these volumes.</p>
+    <p>Esiet uzmanīgs: ar šīm utilītprogrammām ir iespējams pilnībā izdzēst datus no diska.</p>
+  </item>
+</steps>
+
+  <p>Jūsu datorā ir vismaz viens <em>galvenais</em> nodalījums un viens <em>maiņvietas</em> nodalījums. Maiņvietas nodalījumu izmanto operētājsistēmas atmiņas pārvaldībai un tas tiek reti montēts. Primārais nodalījums satur operētājsistēmu, programmas, iestatījumus un personīgās datnes. Šīs datnes var sadalīt arī starp vairākiem nodalījumiem drošības vai ērtības nolūkos.</p>
+
+  <p>One primary partition must contain information that your computer uses to
+  start up, or <em>boot</em>. For this reason it is sometimes called a boot
+  partition, or boot volume. To determine if a volume is bootable, select the
+  partition and click the menu button in the toolbar underneath the partition
+  list. Then, click <gui>Edit Partition…</gui> and look at its
+  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
+  a bootable volume.</p>
+
+</section>
+
+</page>

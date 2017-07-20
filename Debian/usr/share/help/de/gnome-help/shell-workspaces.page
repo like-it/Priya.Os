@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" version="1.0 if/1.0" id="shell-workspaces" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces" group="#first"/>
+
+    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10.3" date="2014-01-26" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Arbeitsflächen sind eine Möglichkeit zum Gruppieren von Fenstern in Ihrer Arbeitsumgebung.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Was ist eine Arbeitsfläche, und was habe ich davon?</title>
+
+    <media type="image" src="figures/shell-workspaces.png" width="162" height="434" style="floatend floatright">
+        <p>Arbeitsflächenumschalter</p>
+    </media>
+
+  <p if:test="!platform:gnome-classic">Mit Arbeitsflächen gruppieren Sie Fenster auf Ihrem Schreibtisch. Sie können mehrere Arbeitsflächen erstellen, die wie virtuelle Arbeitsumgebungen fungieren. Arbeitsflächen sind eine Möglichkeit, um Ordnung zu schaffen und das Bewegen in der Arbeitsumgebung zu vereinfachen.</p>
+
+  <p if:test="platform:gnome-classic">Mit Arbeitsflächen gruppieren Sie Fenster auf Ihrem Schreibtisch. Sie können mehrere Arbeitsflächen verwenden, die wie virtuelle Arbeitsumgebungen fungieren. Arbeitsflächen sind eine Möglichkeit, um Ordnung zu schaffen und das Bewegen in der Arbeitsumgebung zu vereinfachen.</p>
+
+  <p>Sie können Arbeitsflächen dazu verwenden, um Ihre Arbeit besser zu organisieren. Beispielsweise könnten alle Fenster von Kommunikationsanwendungen, wie E-Mail- und Sofortnachrichten, auf einer Arbeitsfläche liegen und alle sonstigen Anwendungen auf einer anderen Arbeitsfläche. Ihre Musikverwaltung könnte dann eine weitere Arbeitsfläche belegen.</p>
+
+<p>Arbeiten mit Arbeitsflächen:</p>
+
+<list>
+  <item>
+    <p if:test="!platform:gnome-classic">Bewegen Sie in der <gui>Aktivitäten</gui>-Übersicht den Zeiger zur äußersten rechten Seite des Bildschirms.</p>
+    <p if:test="platform:gnome-classic">Drücken Sie die <key xref="keyboard-key-super">Super</key>-Taste, um die <gui>Aktivitäten</gui>-Übersicht zu öffnen, und bewegen Sie den Zeiger zur äußersten rechten Seite des Bildschirms.</p>
+  </item>
+  <item>
+    <p if:test="!platform:gnome-classic">Eine senkrechte Seitenleiste erscheint, in der alle aktuellen Arbeitsflächen sowie eine zusätzliche leere Arbeitsfläche angezeigt werden. Dies ist der Arbeitsflächenumschalter.</p>
+    <p if:test="platform:gnome-classic">Eine senkrechte Seitenleiste erscheint, in der die verfügbaren Arbeitsflächen angezeigt werden. Dies ist der Arbeitsflächenumschalter.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>Um eine Arbeitsfläche hinzuzufügen, verschieben Sie ein Fenster aus einer vorhandenen Arbeitsfläche in die leere Arbeitsfläche im Arbeitsflächenumschalter. Diese Arbeitsfläche enthält nun das abgelegte Fenster und eine weitere leere Arbeitsfläche erscheint darunter.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>Um eine Arbeitsfläche zu entfernen, schließen Sie einfach alle darin befindlichen Fenster, oder verschieben Sie die Fenster in eine andere Arbeitsfläche.</p>
+  </item>
+</list>
+
+<p if:test="!platform:gnome-classic">Es ist immer mindestens eine Arbeitsfläche vorhanden.</p>
+
+</page>

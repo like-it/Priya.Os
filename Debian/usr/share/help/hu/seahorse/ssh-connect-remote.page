@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="ssh-connect-remote" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+    </credit>
+
+    <desc>Használjon SSH-kulcsokat egy másik számítógépre való jelszó nélküli bejelentkezéshez.</desc>
+  </info>
+
+  <title>Kapcsolódás más számítógépekhez</title>
+
+  <p>A <app>Jelszavak és kulcsok</app> alkalmazással SSH-kulcsait telepítheti olyan távoli számítógépekre, amelyek SSH-kiszolgálót futtatnak. SSH-kulcsát már annak <link xref="ssh-create#ssh-create-key-and-setup">létrehozásakor is beállíthatja távoli bejelentkezéshez</link>.</p>
+
+  <steps>
+    <item>
+      <p>Kattintson a jobb egérgombbal az <gui>SSH-kulcsra</gui>, és válassza az <gui>SSH-kulcs beállítása…</gui> bejegyzést.</p>
+    </item>
+    <item>
+      <p>A megjelenő ablakban a <gui>Kiszolgáló címe</gui> mezőbe írja be a távoli gép nevét, amelyre SSH segítségével szokott bejelentkezni, a bejelentkezési nevét az arra megfelelő mezőbe, majd kattintson a <gui style="button">Beállítás</gui> gombra.</p>
+    </item>
+    <item>
+      <p>Az alkalmazás megpróbál csatlakozni a <gui>Kiszolgáló címéhez</gui>, a megadott <gui>Bejelentkezési név</gui> segítségével. Ha bármilyen gond adódik a távoli számítógép elérésével, egy felugró ablak tájékoztatja a problémáról, és újból próbálkozhat. Bizonyosodjon meg arról, hogy rendelkezik működő internetkapcsolattal, és hogy a távoli számítógép elérhető.</p>
+    </item>
+    <item>
+      <p>Ha sikerült kapcsolódni a távoli számítógéphez, egy ablak bekéri a bejelentkezéshez szükséges <gui>Jelszót</gui>. Adja meg jelszavát, majd kattintson az <gui style="button">OK</gui> gombra.</p>
+    </item>
+  </steps>
+
+  <p>Ezt követően a biztonságos parancsértelmezőt (SSH) használva jelszó nélkül is bejelentkezhet a távoli számítógépre.</p>
+
+</page>

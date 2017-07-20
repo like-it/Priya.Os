@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="rename-multiple" xml:lang="sv"> 
+ 
+  <info> 
+    <link type="guide" xref="index#edit"/>
+    <link type="seealso" xref="format-change#multiple"/> 
+    <desc>Byt automatiskt namn och numrera bilder satsvis.</desc> 
+ 
+    <revision pkgversion="3.2" version="0.1" date="2011-09-06" status="final"/> 
+    <credit type="author"> 
+      <name>Tiffany Antopolski</name> 
+      <email>tiffany@antopolski.com</email> 
+    </credit> 
+    <license> 
+      <p>Creative Commons DelaLika 3.0</p> 
+    </license> 
+ 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Henrik Löwendahl</mal:name>
+      <mal:email>henrik.lowendahl@purplescout.se</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info> 
+ 
+<title>Byt namn på flera bilder på en gång</title>
+
+<p>Om du har många bilder som du vill byta namn på, kanske så att de har ett standardiserat, numeriskt formaterat namn:</p>
+
+<steps>
+ <item>
+  <p>Öppna <link xref="view#image-gallery">bildgalleriet</link> genom att trycka på <key>F9</key>.</p>
+ </item>
+ <item>
+  <p>Markera alla bilder som du vill byta namn på i bildgalleriet genom att hålla ner <key>Ctrl</key> och klicka på dem en efter en.</p>
+ <p>Alternativt kan du trycka på <keyseq><key>Ctrl</key><key>A</key></keyseq> för att markera alla bilderna.</p>
+ </item>
+ <item>
+  <p>Klicka på <guiseq><gui>Bild</gui><gui>Spara som</gui></guiseq>. Ett fönster med några filnamnsalternativ kommer att visas (bilden nedan visar hur fönstret ser ut).</p>
+ </item>
+ <item>
+  <p>Bilderna kommer, efter att de bytt namn, att sparas i den aktuella mappen som standard. För att spara dem någon annanstans ändra <gui>Målmappen</gui>.</p>
+ </item>
+ <item>
+  <p>Använd rutan <gui>Filnamnsformat</gui> för att välja ett namngivningsformat för bilderna. <gui>Förhandsvisning av filnamn</gui> kommer att visa dig hur de nya filnamnen kommer att se ut. Se avsnittet <link xref="#filename-format"/> nedan för rekommendationer kring hur du kan byta namn på filerna.</p>
+ </item>
+ <item>
+  <p>Säkerställ att rullgardinslistan <gui>Filnamnsformat</gui> är inställd på <gui>som det är</gui> om du inte vill <link xref="format-change#multiple">konvertera bilderna till ett annat filformat</link>.</p>
+ </item>
+ <item>
+  <p>Klicka på <gui>Spara som</gui> så kommer bilderna att byta namn.</p>
+ </item>
+</steps>
+
+<media type="image" src="figures/multiple-rename-count.png" width="300"/>
+
+<section id="filename-format">
+ <title>Välj ett filnamnsformat</title>
+ <p>Filnamnen för de filer som bytt namn bestäms av vad du skriver i rutan <gui>Filnamnsformat</gui>.</p>
+ <list>
+  <item>
+   <p>Du kan behålla originalfilnamnet som en del av det nya filnamnet genom att ange <input>%f</input> i rutan.</p>
+   <p>Om du till exempel skriver <input>paris_%f</input> i rutan <gui>Filnamnsformat</gui> kommer bilder som heter <file>solros.jpg</file>, <file>hus.jpg</file> och <file>katt.jpg</file> att byta namn till <file>paris_solros.jpg</file>, <file>paris_hus.jpg</file> och <file>paris_katt.jpg</file>.</p>
+  </item>
+  <item>
+   <p>Om du lägger till <input>%n</input> kommer bilderna att numreras konsekutivt med början på det nummer du väljer under <gui>Alternativ</gui>.</p>
+  <p>Om du till exempel skriver <input>solsken_%n</input> i rutan <gui>Filnamnsformat</gui> kommer bilder som heter <file>solros.jpg</file>, <file>hus.jpg</file> och <file>katt.jpg</file> att byta namn till <file>solsken_3.jpg</file>, <file>solsken_1.jpg</file> och <file>solsken_2.jpg</file>. (De kommer att numreras enligt originalfilnamnens alfabetiska ordning.)</p>
+  </item>
+ </list>
+</section>
+
+</page>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-connect" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="net-wireless" group="#first"/>
+    <link type="seealso" xref="net-wireless-troubleshooting"/>
+    <link type="seealso" xref="net-wireless-disconnecting"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Gehen Sie ins Internet – drahtlos.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Verbinden mit Funknetzwerken</title>
+
+<p>Falls mit Ihrem Rechner Funknetzwerkverbindungen möglich sind, können Sie sich mit einem verfügbaren Funknetzwerk verbinden, um auf das Internet zugreifen zu können, im Netzwerk freigegebene Dateien zu betrachten usw.</p>
+
+<steps>
+  <item>
+    <p>Öffnen Sie das <gui xref="shell-introduction#yourname">Systemmenü</gui> auf der rechten Seite der obersten Leiste.</p>
+  </item>
+  <item>
+    <p>Wählen Sie <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/> WLAN nicht verbunden</gui>. Anschließend wird sich der WLAN-Bereich des Menüs erweitern.</p>
+  </item>
+  <item>
+    <p>Klicken Sie auf <gui>Wählen Sie ein Netzwerk aus</gui>.</p>
+  </item>
+  <item>
+    <p>Klicken Sie auf den Namen des Netzwerks, mit dem Sie eine Verbindung herstellen wollen, um klicken Sie anschließend auf <gui>Verbinden</gui>.</p>
+    <p>Wenn sich der Name des Netzwerks nicht in der Liste befindet, klicken Sie auf <gui>Mehr</gui>, um zu sehen, ob das Netzwerk weiter unten in der Liste ist. Wenn Sie es noch immer nicht sehen, könnten Sie außerhalb der Reichweite des Netzwerks sein, oder das Netzwerk <link xref="net-wireless-hidden">könnte verborgen sein</link>.</p>
+  </item>
+  <item>
+    <p>Wenn das Netzwerk passwortgeschützt ist (<link xref="net-wireless-wepwpa">Verschlüsselung</link>), geben Sie das Passwort ein, wenn es verlangt wird, und klicken Sie auf <gui>Verbinden</gui>.</p>
+    <p>Wenn Sie den Schlüssel nicht kennen, könnte er auf der Unterseite des WLAN-Routers oder der Basisstation oder in der Anleitung stehen, oder Sie müssen denjenigen fragen, der das Funknetzwerk verwaltet.</p>
+  </item>
+  <item>
+    <p>Das Netzwerksymbol ändert sein Aussehen, sobald der Rechner versucht, sich mit dem Netzwerk zu verbinden.</p>
+  </item>
+  <item>
+    <p>Wenn die Verbindung erfolgreich war, ändert sich das Symbol zu einem Punkt mit mehreren geschwungenen Balken darüber (<media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/>). Mehr Balken stehen für eine stärkere Verbindung zum Netzwerk. Wenn nur wenige Balken angezeigt werden, ist die Verbindung schwach und unter Umständen nicht besonders zuverlässig.</p>
+  </item>
+</steps>
+
+  <p>Wenn die Verbindung nicht erfolgreich war, werden Sie unter Umständen noch einmal nach Ihrem Passwort gefragt oder einfach nur darüber informiert, dass die Verbindung unterbrochen wurde. Es gibt eine Reihe von Dingen, die das verursacht haben könnten. Sie könnten zum Beispiel ein falsches Passwort eingegeben haben, das Funksignal könnte zu schwach sein oder die Funknetzwerkkarte Ihres Rechners könnte ein Problem haben. Siehe <link xref="net-wireless-troubleshooting"/> für weitere Hilfe.</p>
+
+  <p>Eine stärkere Verbindung zu einem Funknetzwerk bedeutet nicht unbedingt, dass die Internetverbindung schneller ist oder dass Sie höhere Downloadraten erreichen können. Die Funkverbindung verbindet Ihren Rechner mit einem <em>Gerät, das die Internetverbindung bereitstellt</em> (wie einem Router oder einem Modem), aber die beiden Verbindungen sind unterschiedlich und haben deswegen unterschiedliche Übertragungsgeschwindigkeiten.</p>
+
+</page>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="sv">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>Kalibrering och karakterisering är helt olika saker.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Vad är skillnaden mellan kalibrering och karakterisering?</title>
+  <p>Många människor är först förvirrade angående skillnaden mellan kalibrering och karakterisering. Kalibrering är processen då färgbeteende för en enhet modifieras. Detta görs vanligtvis via två mekanismer:</p>
+  <list>
+    <item><p>Ändra dess inställningar eller interna inställningar</p></item>
+    <item><p>Applicera färgkurvor till dess färgkanaler</p></item>
+  </list>
+  <p>Idén med kalibrering är att försätta enheten i ett känt tillstånd vad det gäller dess färgåtergivning. Ofta görs detta som ett sätt att dagligen underhålla reproducerbart beteende. Typiskt kommer kalibreringen att sparas i enhets- eller systemspecifika filformat som innehåller enhetens inställningar eller kalibreringskurvor per kanal.</p>
+  <p>Karakterisering (eller profilering) är att <em>spara</em> sättet en enhet återger eller svarar på olika färger. Vanligtvis sparas resultatet i en ICC-enhetsprofil. En sådan profil modifierar inte färg på något sätt. Den låter ett system så som en CMM (färghanteringsmodul, Color Management Module) eller ett färgmedvetet program modifiera färger när det kombineras med en enhets profil. Endast genom att känna till karakteristikerna för två enheter kan ett sätt att överföra färger från en enhetsrepresentation till en annan åstadkommas.</p>
+  <note>
+    <p>Notera att en karakterisering (profil) endast kommer att vara giltig om en enhet befinner sig i samma kalibreringstillstånd som när den karakteriserades.</p>
+  </note>
+  <p>I fallet med skärmprofiler finns det ytterligare förvirring eftersom kalibreringsinformationen för bekvämlighet sparas i profilen. Av konvention sparas den i en tagg som kallas <em>vcgt</em>. Även om den sparas i profilen så kommer inga normala ICC-baserade verktyg eller program att känna till den eller göra något med den. På samma sätt kommer vanliga färgkalibreringsverktyg och program inte att känna till eller göra något med ICC-karakteristikinformationen (profilinformationen).</p>
+
+</page>

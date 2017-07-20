@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-receiving-options-imap-plus" xml:lang="el">
+
+  <info>
+    <desc>Λήψη επιλογών για λογαριασμούς IMAP+.</desc>
+
+    <link type="guide" xref="mail-receiving-options#common-server-types"/>
+    <link type="guide" xref="mail-account-manage-imap-plus#receiving-email"/>
+    <revision pkgversion="3.12.9" version="0.3" date="2015-02-15" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mainwindow-starting.html.en#bstggh0 -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009-2010</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Επιλογές λήψης IMAP+</title>
+
+<section id="receiving-email-imap-plus">
+<title>Λήψη μηνυμάτων</title>
+
+<p>Στη σελίδα <gui>λήψη μηνυμάτων</gui> (προσβάσιμη μέσα από <guiseq><gui>επεξεργασία</gui><gui>προτιμήσεις</gui><gui>λογαρισμοί μηνυμάτων</gui><gui style="button">επεξεργασία</gui><gui>λήψη μηνυμάτων</gui></guiseq>):</p>
+
+<list>
+<item><p>Εισάγετε τη διεύθυνση του εξυπηρετητή αλληλογραφίας στο πεδίο <gui>εξυπηρετητής</gui> και εισαγωγή ονόματος χρήστη για αυτόν τον εξυπηρετητή.</p></item>
+<item><p>Επιλέξτε αν θέλετε να χρησιμοποιείτε μια ασφαλή σύνδεση (SSL ή TLS).</p><p>Θα πρέπει να ενεργοποιήσετε αυτή την επιλογή αν ο εξυπηρετητής σας την υποστηρίζει.</p>
+<note style="tip"><p>Οι παροχείς δωρεάν αλληλογραφίας ιστού συνήθως παρέχουν πληροφορίες για το ποιες από αυτές τις επιλογές μπορούν να χρησιμοποιηθούν. Αν είστε σε έναν οργανισμό, μπορεί να χρειαστεί να επικοινωνήσετε με το διαχειριστή του συστήματός σας για περισσότερες πληροφορίες.</p></note></item>
+<item><p>Select your authentication type in the Authentication list, or click <gui style="button">Check for Supported Types</gui> to have <app>Evolution</app> check for supported authentication mechanisms. Some servers do not announce the authentication mechanisms they support, so clicking this button is not a guarantee that available mechanisms actually work.</p></item>
+<item><p>Select if you want <app>Evolution</app> to remember your password.</p></item>
+</list>
+
+</section>
+
+<section id="receiving-options-imap-plus">
+<title>Επιλογές λήψης</title>
+
+<p>Στη σελίδα <gui>επιλογές λήψης</gui> (προσβάσιμη μέσα από <guiseq><gui>επεξεργασία</gui><gui>προτιμήσεις</gui><gui>λογαριασμοί μηνυμάτων</gui><gui style="button">επεξεργασία</gui><gui>επιλογές λήψης</gui></guiseq>):</p>
+
+<list>
+<item><p>If you want <app>Evolution</app> to check automatically for new messages, click the <gui>Check for new messages every … minutes</gui> option and select the frequency in minutes.</p></item>
+<item><p>Επιλέξτε <gui>Χρήση γρήγορου επανασυγχρονισμού</gui> αν ο εξυπηρετητής IMAP υποστηρίζει <link href="http://tools.ietf.org/html/rfc5162">Επεκτάσεις IMAP4 για γρήγορο επανασυγχρονισμό γραμματοκιβωτίου</link>.</p></item>
+<!-- https://bugzilla.gnome.org/show_bug.cgi?id=730460 -->
+<item><p>If the mail server does not allow multiple connections from <app>Evolution</app> to the server at the same time (for example when you have more than one account on that server), set <gui>Number of concurrent connections to use</gui> to 1.</p></item>
+<item><p>You can also define if <app>Evolution</app> checks for new messages in all folders, or only in subscribed folders.</p></item>
+<item><p>Select if you want <app>Evolution</app> to show only <link xref="mail-imap-subscriptions">subscribed folders</link>.</p></item>
+<item><p>Επιλέξτε αν Θέλετε <link xref="mail-filters">φίλτρα</link> για να εφαρμοστεί αυτόματα στην αλληλογραφία που δέχεστε, αν είναι <link xref="mail-spam-marking">όχληση</link> θα πρέπει να φιλτραριστεί αυτόματα και η <link xref="mail-working-offline">αλληλογραφία στον διακομιστή θα πρέπει να συγχρονιστεί με το τοπικό σας αντίγραφο για πρόσβαση χωρίς σύνδεση σε αυτήν</link>.</p></item></list>
+
+</section>
+
+</page>

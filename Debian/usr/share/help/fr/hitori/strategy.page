@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="strategy" xml:lang="fr">
+	<info>
+		<link type="guide" xref="index#tips"/>
+		<include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+		<desc>Stratégies de jeu pour Hitori</desc>
+	
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  </info>
+	<title>Stratégies de jeu</title>
+
+	<p>Hitori trouve une quasi analogie avec le Sudoku du fait qu'il exige des déductions logiques pour trouver quelles cases griser. Une tactique consiste à utiliser la touche <key>Maj</key> tout en cliquant pour mettre en évidence tous les chiffres répétés dans chaque <em>colonne</em>, puis la touche <key>Ctrl</key> de la même manière pour mettre en évidence les chiffres répétés dans chaque <em>ligne</em>.</p>
+	<p>Une fois ceci fait pour la totalité du plateau, les cases mises en évidence dans les deux cas sont de bonnes candidates au grisé, mais cela n'est pas toujours vrai. Quand vous grisez une case, enlever la mise en évidence des autres cases portant le même chiffre dans la même colonne et dans la même ligne est un bon moyen pour détecter les cases qui contreviennent encore à la <link xref="game">règle n° 1 du jeu Hitori</link>.</p>
+	<p>Ne perdez pas de vue que la règle n° 2 du jeu de Hitori exige que deux cases adjacentes ne peuvent pas être grisées toutes deux. <app>Hitori</app> met en surbrillance rouge les cases qui ne se conforment pas à cette règle. De la même manière, les groupes de cases qui ne respectent pas la règle n° 3 en isolant une ou plusieurs cases non grisées du reste des autres cases non grisées seront également mises en évidence en rouge.</p>
+
+	<p>Si vous êtes bloqué à une quelconque phase du jeu, sélectionnez <guiseq><gui style="menu">Jeu</gui><gui style="menuitem">Indice</gui></guiseq> : <app>Hitori</app> marque alors une cellule à griser ou à libérer pour vous approcher de la solution.</p>
+</page>

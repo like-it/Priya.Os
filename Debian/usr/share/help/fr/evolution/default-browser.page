@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="default-browser" xml:lang="fr">
+
+  <info>
+    <desc>Ouverture de liens contenus dans un courriel dans un navigateur et ouverture d'un lien sur un site web dans l'éditeur de courriel.</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+
+    <revision pkgversion="3.8.3" version="0.8" date="2013-07-19" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Ouverture de liens dans et depuis le navigateur Web</title>
+
+<!-- For GNOME2 the steps are to define the gconf keys /desktop/gnome/url-handlers/http and /https -->
+
+<section id="browser-to-use">
+<title>Changer de navigateur Web pour ouvrir les sites Web</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-shell !platform:gnome-classic !platform:unity">
+<p>In case you use <app>Evolution</app> under a different environment from GNOME,</p>
+ <steps>
+   <item>
+     <p>Ouvrez une application dans un terminal.</p>
+   </item>
+   <item>
+<p>Recherchez le nome du fichier <cmd>.desktop</cmd> de votre navigateur préféré. Selon votre navigateur et votre distribution, le fichier peut s'appeler par exemple <cmd>epiphany.desktop</cmd>, <cmd>firefox.desktop</cmd>, <cmd>google-chrome.desktop</cmd>, <cmd>konqbrowser.desktop</cmd>, ou <cmd>opera-browser.desktop</cmd>. Si vous n'êtes pas sûr, vous pouvez consulter davantage de fichiers <cmd>.desktop</cmd> dans le dossier <cmd>/usr/share/applications/</cmd>.</p>
+   </item>
+   <item>
+     <p>Saisissez cette commande, remplacez <cmd>browser.desktop</cmd> par le nom de fichier actuel et appuyez sur <key>Entrée</key> :</p>
+     <p><cmd its:translate="no">
+       xdg-settings set default-url-scheme-handler https browser.desktop
+     </cmd></p>
+   </item>
+   <item>
+     <p>Saisissez cette commande, remplacez <cmd>browser.desktop</cmd> par le nom de fichier actuel et appuyez sur <key>Entrée</key> :</p>
+     <p><cmd its:translate="no">
+       xdg-settings set default-url-scheme-handler http browser.desktop
+     </cmd></p>
+   </item>
+   <item>
+     <p><app>Evolution</app> may need to be restarted for the settings to take effect.</p>
+   </item>
+ </steps>
+<note style="tip">
+  <p>Si le message d'erreur « xdg-settings : commande non trouvée » s'affiche, vous devez installer le paquet <sys>xdg-utils</sys>.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:xdg-utils" style="button">Installer xdg-utils</link></p>
+    </if:when>
+  </if:choose>
+</note>
+  </if:when>
+<p>Reportez-vous au <link xref="help:gnome-help/net-default-browser" href="https://help.gnome.org/users/gnome-help/stable/net-default-browser">Manuel du bureau GNOME</link>.</p>
+
+<p>Si le navigateur préféré est défini comme application par défaut mais que cela ne fonctionne pas correctement, contactez votre distribution via son forum ou son système de suivi de bogues.</p>
+
+<note style="tip">
+  <p>Si le message d'erreur « impossible d'ouvrir le lien : opération non prise en charge » s'affiche, vous devez installer le paquet <sys>gvfs</sys>.</p>
+  <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+    <if:when test="action:install">
+      <p><link action="install:gvfs" href="http://ftp.gnome.org/pub/gnome/sources/gvfs/" style="button">Installer gvfs</link></p>
+    </if:when>
+  </if:choose>
+</note>
+</if:choose>
+</section>
+
+
+<section id="email-application-to-use">
+<title>Changer d'application courriel pour rédiger les courriels</title>
+
+<p>Reportez-vous au <link href="help:gnome-help/net-default-email">manuel du bureau GNOME</link>.</p>
+
+</section>
+
+<section id="advanced-options">
+<title>Options avancées</title>
+<note style="advanced"><p>Si vous avez une expérience technique, vous pouvez modifier ces paramètres en définissant des gestionnaires de schéma dans  <file>$HOME/.local/share/applications/mimeapps.list</file>.</p></note>
+</section>
+
+</page>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-switching" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-windows"/>
+    <link type="guide" xref="shell-overview#apps"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-07" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Tryck <keyseq><key>Alt</key><key>Tabb</key></keyseq>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Växla mellan fönster</title>
+
+  <p>Du kan se alla körande program som har ett grafiskt användargränssnitt i <em>fönsterväxlaren</em>. Detta gör växlande mellan uppgifter till en enstegsprocess och ger en överblick över vilka program som kör.</p>
+
+  <p>Från en arbetsyta:</p>
+
+  <steps>
+    <item>
+      <p>Tryck <keyseq><key xref="keyboard-key-super">Super</key><key>Tabb</key></keyseq> för att visa <gui>fönsterväxlaren</gui>.</p>
+    </item>
+    <item>
+      <p>Släpp <key xref="keyboard-key-super">Super</key> för att välja nästa (markerade) fönster i växlaren.</p>
+    </item>
+    <item>
+      <p>Annars, medan du fortfarande håller ner <key xref="keyboard-key-super">Super</key>-tangenten, tryck på <key>Tabb</key> för att gå igenom listan över öppna fönster eller <keyseq><key>Skift</key><key>Tabb</key></keyseq> för att gå baklänges.</p>
+    </item>
+  </steps>
+
+  <p if:test="platform:gnome-classic">Du kan också använda fönsterlisten på bottenraden för att nå alla dina öppna fönster och växla mellan dem.</p>
+
+  <note style="tip" if:test="!platform:gnome-classic">
+    <p>Fönster i fönsterväxlaren grupperas per program. Förhandsvisningar av programmen med flera fönster poppar ner när du klickar genom dem. Håll ner <key xref="keyboard-key-super">Super</key> och tryck <key>`</key> (eller tangenten ovanför <key>Tabb</key>) för att stega genom listan.</p>
+  </note>
+
+  <note if:test="!platform:gnome-classic">
+    <p>I fönsterväxlaren separeras program från olika arbetsytor med vertikala barriärer.</p>
+  </note>
+
+  <p>Du kan också flytta mellan programikonerna i fönsterväxlaren med <key>→</key>- eller <key>←</key>-tangenterna eller välja en genom att klicka på den med musen.</p>
+
+  <p>Förhandsvisningar av program med ett enda fönster kan visas med <key>↓</key>-tangenten.</p>
+
+  <p>Från översiktsvyn <gui>Aktiviteter</gui>, klicka på ett <link xref="shell-windows">fönster</link> för att växla till det och lämna översiktsvyn. Om du har flera <link xref="shell-windows#working-with-workspaces">arbetsytor</link> öppna kan du klicka på varje arbetsytor för att visa de öppna fönstren på den arbetsytan.</p>
+
+</page>

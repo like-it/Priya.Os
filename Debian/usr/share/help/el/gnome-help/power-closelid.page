@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Έργο Τεκμηρίωσης GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Οι φορητοί υπολογιστές αδρανοποιούνται όταν κλείνετε το καπάκι, για να αποθηκεύσουν ισχύ.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Γιατί ο υπολογιστής μου απενεργοποιείται όταν κλείνω το καπάκι;</title>
+
+  <p>Όταν κλείνετε το καπάκι του φορητού σας, ο υπολογιστής σας θα <link xref="power-suspend"><em>ανασταλεί</em></link> για να εξοικονομήσει ισχύ. Αυτό σημαίνει ότι ο υπολογιστής δεν είναι στην πραγματικότητα ανενεργός - έχει απλά μεταβεί σε αδρανοποίηση. Μπορείτε να συνεχίσετε ανοίγοντας το καπάκι. Εάν δεν συνεχίσει, δοκιμάστε κάνοντας κλικ στο ποντίκι ή πατώντας ένα πλήκτρο. Εάν δεν δουλεύει ακόμα, πατήστε το κουμπί ισχύος.</p>
+
+  <p>Μερικοί υπολογιστές δεν μπορούν να ανασταλούν σωστά, κανονικά επειδή το υλικό τους δεν υποστηρίζεται πλήρως από το λειτουργικό σύστημα (για παράδειγμα, οι οδηγοί Linux είναι ατελείς). Σε αυτήν την περίπτωση, μπορεί να βρείτε ότι δεν μπορείτε να συνεχίσετε τον υπολογιστή σας αφού έχετε κλείσει το καπάκι. Μπορείτε να δοκιμάσετε <link xref="power-suspendfail">να ρυθμίσετε το πρόβλημα με την αναστολή</link>, ή μπορείτε να αποτρέψετε τον υπολογιστή από την προσπάθεια αναστολής όταν κλείνετε το καπάκι.</p>
+
+<section id="nosuspend">
+  <title>Σταματήστε τον υπολογιστή από αναστολή όταν το καπάκι είναι κλειστό</title>
+
+  <note style="important">
+    <p>Αυτές οι οδηγίες θα δουλέψουν μόνο αν χρησιμοποιείτε το <app>systemd</app>. Επικοινωνήστε με τη διανομή σας για περισσότερες πληροφορίες.</p>
+  </note>
+
+  <note style="important">
+    <p>Πρέπει να έχετε εγκατεστημένο στον υπολογιστή σας το <app>Εργαλείο μικρορυθμίσεων</app> για να αλλάξετε αυτή την ρύμθιση.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">Εγκατάσταση <app>Εργαλείο μικρορυθμίσεων</app></link></p>
+    </if:if>
+  </note>
+
+  <p>Αν δεν θέλετε ο υπολογιστής σας να αναστέλλεται όταν κλείνετε το καπάκι, μπορείτε να απενεργοποιήσετε αυτή την συμπεριφορά.</p>
+
+  <note style="warning">
+    <p>Να είσαστε πολύ προσεκτικοί εάν αλλάζετε αυτήν τη ρύθμιση. Μερικοί φορητοί μπορεί να υπερθερμανθούν, εάν αφήνονται να εκτελούνται με το καπάκι κλειστό, ειδικά εάν είναι σε μια περιορισμένη θέση όπως σε ένα σακίδιο.</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Εργαλείο μικρορυθμίσεων</gui>.</p>
+    </item>
+    <item>
+      <p>Κάντε κλικ στο <gui>Εργαλείο μικρορυθμίσεων</gui> για να ανοίξει η εφαρμογή.</p>
+    </item>
+    <item>
+      <p>Κάντε κλικ στην καρτέλα <gui>Ενέργεια</gui>.</p>
+    </item>
+    <item>
+      <p>Αλλάξτε το <gui>Να μην γίνεται αναστολή όταν κλείνει το καπάκι</gui> σε <gui>ΝΑΙ</gui>.</p>
+    </item>
+    <item>
+      <p>Κλείστε το παράθυρο <gui>Εργαλείο μικρορυθμίσεων</gui>.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

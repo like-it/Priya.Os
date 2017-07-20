@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="it">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Progetto documentazione di GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Eliminare file e cartelle formattando un disco esterno oppure un'unità USB.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Eliminare tutto da un'unità rimovibile</title>
+
+  <p>Ogni tanto può essere necessario rimuovere tutti i file e le cartelle da un'unità rimovibile, per esempio un supporto USB oppure un disco fisso esterno. È possibile fare ciò <em>formattando</em> il disco: verranno eliminati tutti i file sul disco e risulterà quindi vuoto.</p>
+
+<steps>
+  <title>Formattare un'unità rimovibile</title>
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to wipe from the list of storage devices on the
+    left.</p>
+
+    <note style="warning">
+      <p>Assicurarsi di avere selezionato il disco giusto. Se è stato scelto quello sbagliato, tutti i file presenti saranno persi per sempre.</p>
+    </note>
+  </item>
+  <item>
+    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
+    menu button. Then click <gui>Format…</gui>.</p>
+  </item>
+  <item>
+    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
+    disk.</p>
+   <p>Se oltre che con Linux il disco è usato anche con Windows oppure Mac OS, selezionare <gui>FAT</gui>. Se è utilizzato solo con Windows, <gui>NTFS</gui> dovrebbe essere la scelta migliore. Verrà mostrata una breve descrizione del <gui>tipo di file system</gui>.</p>
+  </item>
+  <item>
+    <p>Give the disk a name and click <gui>Format…</gui> to continue and show a
+    confirmation window. Check the details carefully, and click
+    <gui>Format</gui> to wipe the disk.</p>
+  </item>
+  <item>
+    <p>Once the formatting has finished, click the eject icon to safely remove
+    the disk. It should now be blank and ready to use again.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Formattare un disco non elimina in modo sicuro i file</title>
+  <p>Formattare un disco non è un modo completamente sicuro per eliminare tutti i dati. Un disco formattato all'apparenza non contiene file, ma è possibile ripristinarli con software speciali. Se è necessario eliminare in modo sicuro i file, usare uno strumento a riga di comando come <app>shred</app>.</p>
+</note>
+
+</page>

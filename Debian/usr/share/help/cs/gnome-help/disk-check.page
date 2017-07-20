@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="cs">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Jak otestovat, jestli váš pevný disk nemá problémy, abyste měli jistotu, že bude fungovat.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Kontrola problémů s pevným diskem</title>
+
+<section id="disk-status">
+ <title>Kontrola pevného disku</title>
+  <p>Pevné disky mají vestavěný nástroj pro kontrolu svého technického stavu nazývaný <app>SMART</app> (Self-Monitoring, Analysis, and Reporting Technology), který průběžně kontroluje výskyt případných problémů. SMART také varuje, když se blíží selhání disku a pomáhá tak předejít ztrátě důležitých dat.</p>
+
+  <p>Ačkoliv běží SMART automaticky, můžete zkontrolovat disk také pomocí aplikace <app>Disky</app>:</p>
+
+<steps>
+ <title>Kontrola technického stavu disku pomocí aplikace Disky</title>
+
+  <item>
+    <p>Z přehledu <gui>Činnosti</gui> otevřete <app>Disky</app>.</p>
+  </item>
+  <item>
+    <p>V seznamu úložných zařízení nalevo vyberte disk, který chcete zkontrolovat. Zobrazí se informace a stav disku.</p>
+  </item>
+  <item>
+    <p>Klikněte na nabídkové tlačítko a vyberte <gui>Data SMART a autokontroly…</gui>. <gui>Souhrnné posouzení</gui> by mělo sdělovat „Disk je v pořádku“.</p>
+  </item>
+  <item>
+    <p>Podívejte se na informace v <gui>Příznacích SMART</gui> nebo klikněte na tlačítko <gui style="button">Spustit autokontrolu</gui>, aby se provedla autokontrola disku.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>Co dělat, když disk není v pořádku?</title>
+
+  <p>Když <gui>Souhrnné posouzení</gui> naznačuje, že disk <em>není</em> v pořádku, nemusí tu být nutně důvod k panice. Ale rozhodně je lepší připravit si <link xref="backup-why">zálohu</link>, abyste předešli ztrátě dat.</p>
+
+  <p>Když stav oznamuje „Předzvěst selhání“, je disk stále normálně použitelný, ale byly u něj zjištěny náznaky opotřebení, které naznačují, že v brzké době může selhat. Pokud je váš pevný disk (nebo počítač) starý několik let, dost možná se s touto zprávou setkáte při některé z kontrol stavu. V takové případě byste měli <link xref="backup-how">průběžně zálohovat důležité soubory</link> a pravidelně kontrolovat stav disku, jestli se nezhoršuje.</p>
+
+  <p>Jestliže se zhoršuje, asi byste měli vzít počítač/pevný disk k odborníkovi na podrobnější kontrolu nebo opravu.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="power"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name>Alexandre Franke</name>
+      <email>afranke@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Apprendre à quitter son compte utilisateur, en se déconnectant, en changeant d'utilisateur…</desc>
+    <!-- Should this be a guide which links to other topics? -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Déconnexion, extinction, ou changement d'utilisateur</title>
+
+  <p>Lorsque vous avez fini d'utiliser votre ordinateur, vous pouvez l'éteindre, le mettre en veille (pour économiser l'énergie) ou le laisser allumé et vous déconnecter.</p>
+
+<section id="logout">
+  <title>Déconnexion ou changement d'utilisateur</title>
+
+  <p>Pour laisser les autres utilisateurs utiliser votre ordinateur, vous pouvez soit vous déconnecter ou rester connecté et juste changer d'utilisateur. Si vous changer d'utilisateur, toutes vos applications continuent de tourner et tout sera là où vous l'avez laissé lorsque vous vous reconnecterez.</p>
+
+  <p>To <gui>Log Out</gui> or <gui>Switch User</gui>, click the
+  <link xref="shell-introduction#yourname">system menu</link> on the right side of the
+  top bar, click your name and then choose the right option.</p>
+
+  <note if:test="!platform:gnome-classic">
+    <p>Les champs <gui>fermer la session</gui> et <gui>changer d'utilisateur</gui> ne s'affichent que si vous avez plusieurs comptes utilisateur sur votre système.</p>
+  </note>
+
+  <note if:test="platform:gnome-classic">
+    <p>Le champ <gui>changer d'utilisateur</gui> ne s'affiche que si vous avez plusieurs comptes utilisateur sur votre système.</p>
+  </note>
+
+</section>
+
+<section id="lock-screen">
+  <info>
+    <link type="seealso" xref="session-screenlocks"/>
+  </info>
+
+  <title>Verrouillage de l'écran</title>
+
+  <p>Si vous quittez votre ordinateur pendant très peu de temps, vous devriez verrouiller votre écran pour empêcher les autres personnes d'accéder à vos fichiers ou de lancer des applications. Lorsque vous revenez, relevez le rideau de <link xref="shell-lockscreen">verrouillage d'écran</link> et saisissez votre mot de passe pour vous reconnecter. Si vous ne verrouillez pas votre écran, il se verrouille automatiquement après un certain délai.</p>
+
+  <p>Pour verrouiller votre écran, cliquez sur le menu système à droite dans la barre supérieure et appuyez sur le bouton de verrouillage d'écran en bas du menu.</p>
+
+  <p>Quand votre écran est verrouillé, les autres utilisateurs peuvent se connecter sur leur compte personnel en cliquant sur <gui>Changer d'utilisateur</gui> sur l'écran de mot de passe. Vous pouvez revenir sur votre ordinateur quand ils ont terminé.</p>
+
+</section>
+
+<section id="suspend">
+  <info>
+    <link type="seealso" xref="power-suspend"/>
+  </info>
+
+  <title>Mise en veille</title>
+
+  <p>To save power, suspend your computer when you are not using it. If you use
+  a laptop, GNOME, by default, suspends your computer automatically when you
+  close the lid.
+  This saves your state to your computer's memory and powers off most of the
+  computer's functions. A very small amount of power is still used during
+  suspend.</p>
+
+  <p>Pour mettre en veille votre ordinateur manuellement, cliquez sur le menu système à droite dans la barre supérieure puis gardez enfoncée la touche <key>Alt</key>. Le bouton d'extinction se transforme en bouton de mise en veille. Cliquez dessus.</p>
+
+</section>
+
+<section id="shutdown">
+<!--<info>
+  <link type="seealso" xref="power-off"/>
+</info>-->
+
+  <title>Extinction ou redémarrage</title>
+
+  <p>Si vous voulez éteindre votre ordinateur complètement ou le redémarrer entièrement, cliquez sur le menu système à droite dans la barre supérieure et cliquez sur le bouton d'extinction. Une boîte de dialogue s'ouvre et vous offre la possibilité soit de <gui>Redémarrer</gui> soit d'<gui>Éteindre</gui>.</p>
+
+  <p>Si d'autres utilisateurs sont connectés, il se peut que vous ne soyez pas autorisé à éteindre ou redémarrer l'ordinateur car cela met fin à leur session. Si vous êtes un utilisateur administrateur, votre mot de passe peut vous être demandé pour pouvoir éteindre.</p>
+
+  <note style="tip">
+    <p>Vous pourriez vouloir éteindre votre ordinateur si vous souhaitez le déplacer et que vous n'avez pas de batterie, si votre batterie est faible ou ne tient pas bien la charge. Un ordinateur utilise <link xref="power-batterylife">moins d'énergie</link> lorsqu'il est éteint que lorsqu'il est en veille.</p>
+  </note>
+
+</section>
+
+</page>

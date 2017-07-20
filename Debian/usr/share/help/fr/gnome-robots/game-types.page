@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="game-types" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+    <revision pkgversion="3.8" version="0.1" date="2013-05-21" status="draft"/>
+    <revision pkgversion="3.11.90" date="2014-03-26" status="review"/>
+    <revision pkgversion="3.14" date="2015-01-25" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">safincrazy@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Rachel Dunstan</name>
+      <email its:translate="no">dunstanrc@gmail.com</email>
+    </credit>
+
+    <desc>Modifier le niveau de difficulté dans <app>Robots</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009,2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Type de jeu</title>
+
+  <p>Il est possible de jouer à <app>Robots</app> de différentes façons en choisissant un autre type de jeu. Cela change le niveau de difficulté du jeu.</p>
+
+  <steps>
+    <title>Modification du niveau de difficulté</title>
+    <item>
+      <p>Sélectionnez <guiseq> <gui style="menu">Paramètres</gui><gui>Préférences</gui><gui>Jeu</gui> </guiseq>.</p>
+    </item>
+    <item>
+      <p>Dans le menu déroulant près de <gui>Type de jeu</gui>, choisissez l'option voulue.</p>
+      <table frame="top bottom" rules="rows">
+      <thead>
+      <tr>
+        <td><p>Type de jeu</p></td>
+        <td><p><link xref="moves#teleport">Téléportations</link> sans danger initiales</p>
+        </td>
+        <td><p><link xref="scores#high-low-risk">Robots ennemis de faible risque</link> initiaux.</p></td>
+        <td><p><link xref="scores#high-low-risk">Robots ennemis de haut risque</link> initiaux.</p></td>
+        <td><p>Augmenter les téléportations sans danger dans les niveaux successifs ?</p></td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><p><gui>cauchemar</gui></p></td>
+        <td><p>2</p></td>
+        <td><p>2</p></td>
+        <td><p>8</p></td>
+        <td><p>Oui</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>robots avec téléportation sans danger</gui></p></td>
+        <td><p>0</p></td>
+        <td><p>10</p></td>
+        <td><p>0</p></td>
+        <td><p>Oui, mais seulement si des robots sont tués pendant l'<link xref="moves#wait">attente</link></p></td>
+      </tr>
+      <tr>
+        <td><p><gui>robots2</gui></p></td>
+        <td><p>1</p></td>
+        <td><p>8</p></td>
+        <td><p>2</p></td>
+        <td><p>Oui, mais seulement si des robots sont tués pendant l'<link xref="moves#wait">attente</link></p></td>
+      </tr>
+      <tr>
+        <td><p><gui>robots2 facile</gui></p></td>
+        <td><p>3</p></td>
+        <td><p>8</p></td>
+        <td><p>2</p></td>
+        <td><p>Oui</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>robots classiques</gui></p></td>
+        <td><p>0</p></td>
+        <td><p>10</p></td>
+        <td><p>0</p></td>
+        <td><p>Non</p></td>
+      </tr>
+      </tbody>
+    </table>
+    </item>
+    <item>
+      <p>Si vous cochez la case <gui style="checkbox">Utiliser des mouvements sans danger</gui>, le jeu vous empêche de vous déplacer si cela vous conduisait à être tué par un robot, à moins vous ayez la possibilité de vous téléporter pour survivre. Si vous cochez la case <gui style="checkbox">Utiliser des mouvements vraiment sans danger</gui>, le jeu vous empêche tout déplacement, de telle sorte que vous soyez obligé de vous téléporter. Ces options diminuent le niveau de difficulté. Vous avez toujours la possibilité de les décocher si vous trouvez que le jeu est trop facile.</p>
+    </item>
+  </steps>
+
+</page>

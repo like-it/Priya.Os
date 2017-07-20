@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-composer-spellcheck" xml:lang="sv">
+
+  <info>
+    <desc>Om att stavningskontrollera ditt meddelande i meddelanderedigeraren.</desc>
+    
+    <link type="guide" xref="index#mail-composing"/>
+
+    <revision pkgversion="3.20.5" version="0.7" date="2016-11-21" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Stavningskontroll</title>
+
+<!-- Instructions are only valid from Evolution 2.24 on -->
+
+<section id="required-packages">
+<title>Krav</title>
+<p>För att använda stavningskontroll för e-postmeddelanden som du skriver måste du först säkerställa att paketet <sys>hunspell</sys> för ditt språk och att <sys>enchant</sys>-paketet är installerade via programhanteringsverktyget för din distribution.</p>
+
+<note style="info package">
+  <p>Du kanske måste installera <sys>hunspell</sys> och/eller <sys>enchant</sys> för att genomföra dessa steg.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:hunspell" href="http://hunspell.sourceforge.net/" style="button">Installera hunspell</link></p>
+      <p><link action="install:enchant" href="http://www.abisource.com/projects/enchant/" style="button">Installera enchant</link></p>
+    </if:when>
+  </if:choose>
+</note>
+</section>
+
+<section id="global-preferences">
+<title>Globala inställningar</title>
+
+<p>Under <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>Redigerarinställningar</gui><gui>Stavningskontroll</gui><gui>Alternativ</gui></guiseq> kan du definiera huruvida stavning kontrolleras medan du skriver.</p>
+
+<p>Du kan också definiera vilka installerade språk som används för stavningskontroll i listan som finns under <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>Redigerarinställningar</gui><gui>Stavningskontroll</gui><gui>Språk</gui></guiseq> eller i e-postredigeraren via <guiseq><gui>Redigera</gui><gui>Aktuella språk</gui></guiseq>.</p>
+</section>
+
+<section id="composer">
+<title>Manuell stavningskontroll i meddelanderedigeraren</title>
+<p>Om du inte har <gui>Kontrollera stavning när jag skriver</gui> aktiverad i <link xref="#global-preferences">Redigerarinställningar</link> kan du köra en stavningskontroll i e-postredigeraren genom att klicka på <guiseq><gui>Redigera</gui><gui>Kontrollera stavning…</gui></guiseq> eller genom att trycka på <key>F7</key>.</p>
+</section>
+
+</page>

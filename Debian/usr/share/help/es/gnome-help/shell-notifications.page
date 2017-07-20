@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-notifications" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="shell-overview#desktop"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
+
+    <credit type="author">
+      <name>Marina Zhurakhinskaya</name>
+      <email>marinaz@redhat.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013, 2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Mensajes emergentes en la parte superior de la pantalla que le avisan de cuando ocurren ciertos eventos.</desc> 
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Notificaciones y la bandeja de mensajes</title>
+
+<section id="what">
+  <title>¿Qué es una notificación?</title>
+
+  <p>Si una aplicación o un componente del sistema quiere llamar su atención, mostrará una notificación en la parte superior de la pantalla.</p>
+
+  <p>Por ejemplo, si recibe un nuevo mensaje de chat o un correo nuevo, recibirá una notificación informándole de ello.</p>
+
+<!--  <p>To minimize distraction, some notifications first appear as a single line.
+  You can move your mouse over them to see their full content.</p>-->
+
+  <p>Otras notificaciones tienen botones de opciones seleccionables. Para cerrar una de estas notificaciones sin seleccionar una de sus opciones, pulse en el botón de cerrar.</p>
+
+<!--  <media type="image" width="500" src="figures/notification-buttons.png"/>-->
+
+  <p>Pulsar el botón cerrar en algunas notificaciones las descartará. Otras, como Rhythmbox o su aplicación de chat, estarán escondidas en la bandeja de mensajes.</p>
+
+</section>
+
+<section id="messagetray">
+
+  <title>La bandeja de mensajes</title>
+
+  <p if:test="!platform:gnome-classic">La bandeja de mensajes le ofrece una manera de volver a sus notificaciones cuando crea conveniente. Aparece cuando mueve el ratón sobre el reloj o pulsa <keyseq> <key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. La bandeja de mensajes contiene todas las notificaciones sobre las que no ha actuado o aquellas que residen en ella permanentemente.</p>
+
+  <p if:test="platform:gnome-classic">La bandeja de mensajes le ofrece una manera de volver a sus notificaciones cuando crea conveniente. Aparece cuando mueve el ratón a la esquina inferior derecha de la pantalla o cuando pulsa <keyseq> <key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. También puede mostrar la bandeja de mensajes pulsando el icono azul con un número en la parte derecha de la lista de ventanas. La bandeja de mensajes contiene todas las notificaciones sobre las que no ha actuado o aquellas que residen permanentemente.</p>
+
+  <p>Puede ver las notificaciones pulsando en los elementos de la bandeja de mensajes. Los elementos en la bandeja de mensajes son, por lo general, aplicaciones que le envían notificaciones. Sin embargo, a las notificaciones de chat se les da un trato especial y están representadas por cada contacto individual que le envió los mensajes de chat.</p>
+
+  <p>Puede cerrar la bandeja de mensajes pulsando <keyseq><key>Super</key><key>M</key></keyseq> otra vez o <key>Esc</key>.</p>
+
+</section>
+
+<section id="hidenotifications">
+
+  <title>Ocultar notificaciones</title>
+
+  <p>Si está trabajando en algo y no quiere que le molesten, puede desactivar las notificaciones.</p>
+
+  <steps>
+    <item>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Notificaciones</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse en <gui>Notificaciones</gui> para abrir el panel.</p>
+    </item>
+    <item>
+      <p><gui>Desactive</gui> la opción <gui>Mostrar notificaciones</gui>.</p>
+    </item>
+  </steps>
+
+  <p if:test="!platform:gnome-classic">Cuando se apaga, la mayoría de las notificaciones no se mostrarán como mensajes emergentes en la parte superior de la pantalla. Las notificaciones seguirán estando disponibles en la bandeja de mensajes cuando la muestre (pulsando en el reloj, o pulsando <keyseq><key>Super</key><key>M</key></keyseq>) y luego se volverán a mostrar cuando cambie el interruptor a <gui>ENCENDIDO</gui> otra vez.</p>
+
+  <p>También puede desactivar o volver a activar las notificaciones para aplicaciones individuales desde el panel <gui>Notificaciones</gui>.</p>
+
+  <p if:test="platform:gnome-classic">Cuando se apaga, la mayoría de las notificaciones no se mostrarán como mensajes emergentes en la parte superior de la pantalla. Las notificaciones muy importantes, tales como batería críticamente baja, se seguirán mostrando. Las notificaciones seguirán estando disponibles en la bandeja de mensajes cuando la muestre (moviendo el ratón a la esquina inferior derecha de la pantalla, o pulsando <keyseq><key>Super</key><key>M</key></keyseq>) y luego se volverán a mostrar cuando cambie el interruptor a <gui>ENCENDIDO</gui> otra vez.</p>
+
+</section>
+
+</page>

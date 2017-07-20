@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="video-sending" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="media#videos"/>
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.12.1" date="2014-03-30" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.17.90" date="2015-08-30" status="final"/>
+
+    <credit type="author">
+      <name>GNOME ドキュメンテーションプロジェクト</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>正しいビデオコーデックがインストールされているか確かめます。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>私が作ったビデオを、他の人が再生できません</title>
+
+  <p>もし Linux コンピューターで作成したビデオを Windows や Mac OS のユーザーに送った場合、そのビデオの再生に問題が見つかるかもしれません。</p>
+
+  <p>ビデオを受け取った人は、ビデオを再生するために、正しい<em>コーデック</em>をインストールしておく必要があります。コーデックはソフトウェアのひとつです。コーデックを使うことでソフトウェアは、ビデオを扱い、スクリーンに表示することができます。ビデオフォーマットには様々な種類があり、それぞれ再生するのに個別のコーデックを必要とします。以下のようにして、ビデオのフォーマットを確認できます。</p>
+
+  <list>
+    <item>
+      <p>Open <app>Files</app> from the
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+    </item>
+    <item>
+      <p>Right-click on the video file and select <gui>Properties</gui>.</p>
+    </item>
+    <item>
+      <p>Go to the <gui>Audio/Video</gui> or <gui>Video</gui> tab and look at
+      which <gui>Codec</gui> are listed under <gui>Video</gui> and
+      <gui>Audio</gui> (if the video also has audio).</p>
+    </item>
+  </list>
+
+  <p>ビデオの再生に問題を見つけたら、正しいコーデックがインストールされているかどうかを質問してください。インターネットを使い、コーデックの名前とビデオ再生アプリケーションの名前をキーワードに検索してもよいでしょう。たとえば、あなたのビデオが <em>Theora</em> フォーマットを使っており、あなたの友人が Windows Media Player を使ってそのビデオを視聴している場合は、"theora windows media player" と検索します。正しいコーデックがインストールされていなければ、無料のコーデックをダウンロードしてインストールすることもできるでしょう。</p>
+
+  <p>もし正しいコーデックを見つけることができなければ、<link href="http://www.videolan.org/vlc/">VLC メディアプレイヤー</link>を試します。このプレイヤーは Linux でも、Windows や Mac OS でも動き、たくさんのビデオフォーマットをサポートしています。それでも失敗する場合は、ビデオを異なるフォーマットに変換します。たいていのビデオ編集ソフトウェアでこの作業を行うことができますし、特定のビデオ変換ソフトウェアも利用可能です。ソフトウェアインストールアプリケーションで何か利用可能か確認してください。</p>
+
+  <note>
+    <p>誰かがあなたのビデオを再生できない原因が他にもあります。ビデオ送信時に損傷した場合です。たとえば、コピーが完全ではなかったことが挙げられます。この場合そのビデオは、ビデオ再生アプリケーションに問題をもたらすか、映像を正しく生成することができないでしょう（ビデオを保存する際にもエラーを起こします）。</p>
+  </note>
+
+</page>

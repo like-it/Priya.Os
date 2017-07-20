@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Laptops werden in Bereitschaft versetzt, wenn sie zugeklappt werden, um Strom zu sparen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Warum wird mein Rechner abgeschaltet, wenn ich den Deckel schließe?</title>
+
+  <p>Wenn Sie Ihren Laptop zuklappen, wird er in <link xref="power-suspend"><em>Bereitschaft</em></link> versetzt, um Strom zu sparen. Das bedeutet, dass der Rechner nicht wirklich ausgeschaltet ist – er ist nur im Schlafmodus. Sie können ihn aufwecken, indem Sie ihn aufklappen. Wenn er nicht aufwacht, versuchen Sie es mit einem Mausklick oder einem Tastendruck. Wenn das noch immer nicht funktioniert, drücken Sie die Ein-/Ausschalttaste.</p>
+
+  <p>Manche Rechner können nicht richtig in Bereitschaft versetzt werden, normalerweise weil ihre Hardware vom Betriebssystem nicht vollständig unterstützt wird (beispielsweise sind die Linuxtreiber unvollständig). In diesem Fall kann es passieren, dass Sie Ihren Laptop nicht mehr aufwecken können, nachdem Sie ihn zugeklappt haben. Sie können versuchen, <link xref="power-suspendfail">das Problem mit der Bereitschaft</link> zu lösen oder den Rechner daran hindern, in Bereitschaft zu gehen, wenn Sie ihn zuklappen.</p>
+
+<section id="nosuspend">
+  <title>Den Laptop nicht in Bereitschaft versetzen, wenn er zugeklappt wird</title>
+
+  <note style="important">
+    <p>Diese Anweisungen funktionieren nur, wenn sie <app>systemd</app> verwenden. Kontaktieren Sie Ihre Distribution für weitere Informationen.</p>
+  </note>
+
+  <note style="important">
+    <p>Das <app>Optimierungswerkzeug</app> muss auf Ihrem Rechner installiert sein, um diese Einstellung ändern zu können.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">Installieren Sie das <app>Optimierungswerkzeug</app></link></p>
+    </if:if>
+  </note>
+
+  <p>Wenn Sie nicht wollen, dass Ihr Rechner in Bereitschaft versetzt wird, wenn Sie ihn zuklappen, können Sie die Einstellungen für dieses Verhalten ändern.</p>
+
+  <note style="warning">
+    <p>Seien Sie sehr vorsichtig mit dieser Einstellung. Einige Laptops können überhitzen, wenn Sie bei geschlossenem Deckel eingeschaltet sind, insbesondere, wenn sie sich in einer geschlossenen Umgebung befinden, z.B. in einer Tasche.</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Optimierungswerkzeug</gui> ein.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Optimierungswerkzeug</gui>, um die Anwendung zu öffnen.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf den Reiter <gui>Energie</gui>.</p>
+    </item>
+    <item>
+      <p>Stellen Sie <gui>Bei Schließen des Deckels nicht in Bereitschaft gehen</gui> auf <gui>AN</gui>.</p>
+    </item>
+    <item>
+      <p>Schließen Sie das Fenster <gui>Optimierungswerkzeug</gui>.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tips-specialchars" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="seealso" xref="keyboard-layouts"/>
+
+    <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Vnos znakov, ki jih na svoji tipkovnici ne najdete, vključno s tujimi abecedami, matematičnimi simboli in okrasnimi znaki.</desc>
+  </info>
+
+  <title>Vnos posebnih znakov</title>
+
+  <p>Vnesete in ogledate si lahko tisoče znakov iz večine svetovnih sistemov pisanja, tudi tiste, ki jih na vaši tipkovnici ni mogoče najti. Ta stran našteva nekaj različnih načinov s katerimi lahko vnesete posebne znake.</p>
+
+  <links type="section">
+    <title>Načini za vnos znakov</title>
+  </links>
+
+  <section id="charmap">
+    <title>Preglednica znakov</title>
+    <p>GNOME vsebuje program preglednice znakov, ki vam omogoča brskanje po vseh znakih v tabeli Unicode. Uporabite ga za iskanje znaka, ki ga potrebujete, in ga nato kopirajte in prilepite kamor ga potrebujete.</p>
+
+    <p><app>Preglednico znakov</app> lahko najdete v pregledu <gui>Dejavnosti</gui>. Za več podrobnosti o preglednici znakov si oglejte <link href="ghelp:gucharmap">priročnik Preglednice znakov</link>.</p>
+
+  </section>
+
+  <section id="characters">
+    <title>Characters</title>
+    <p>Another useful application shipped with GNOME is <app>Characters</app>.
+    It lets you find and insert unusual characters by browsing character
+    categories or searching for keywords.</p>
+
+    <p>You can launch Characters from the Activities overview. For more
+    information on Characters, see the <link href="help:gnome-characters">
+    Characters Manual</link>.</p>
+
+  </section>
+
+  <section id="compose">
+    <title>Sestavna tipka</title>
+    <p>Tipka sestavi je posebna tipka, ki vam omogoča pritisk več tipk hkrati za pridobivanje posebnega znaka. Na primer za vnos črke <em>é</em> lahko pritisnete <key>sestavi</key> nato <key>'</key> nato <key>e</key>.</p>
+    <p>Tipkovnice nimajo določenih tipk sestavi. Namesto tega lahko kot tipko sestavi določite eno od obstoječih tipk na svoji tipkovnici.</p>
+
+    <steps>
+      <title>Določi sestavno tipko</title>
+      <item>
+        <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+        start typing <gui>Keyboard</gui>.</p>
+      </item>
+      <item>
+        <p>Click on <gui>Keyboard</gui> to open the panel.</p>
+      </item>
+      <item><p>Select the <gui>Shortcuts</gui> tab and click
+      <gui>Typing</gui>.</p></item>
+      <item><p>Click on <gui>Compose Key</gui> in the right pane.</p></item>
+      <item><p>Click on <gui>Disabled</gui> and select the key you would like to
+      behave as a compose key from the drop-down menu. You can choose either of
+      the <key>Ctrl</key> keys, the right <key>Alt</key> key, the right
+      <key>Win</key> or <key xref="keyboard-key-super">Super</key> key if
+      you have one, the <key xref="keyboard-key-menu">Menu</key> key or
+      <key>Caps Lock</key>. Any key you select will then only work as a compose
+      key, and will no longer work for its original purpose.</p></item>
+    </steps>
+    <p>S tipko sestavi lahko vnesete veliko pogostih znakov, na primer:</p>
+    <list>
+      <item><p>Pritisnite <key>sestavi</key>, nato pritisnite <key>'</key> in zatem pritisnite črko nad katero želite postaviti ostrivec, tako kot v <em>é</em>.</p></item>
+      <item><p>Pritisnite <key>sestavi</key>, nato pritisnite <key>`</key> (krativec) in zatem pritisnite črko nad katero želite postaviti naglas, kot je <em>è</em>.</p></item>
+      <item><p>Pritisnite <key>sestavi</key>, nato pritisnite <key>"</key> in zatem pritisnite črko nad katero želite postaviti preglas, kot je <em>ë</em>.</p></item>
+      <item><p>Pritisnite <key>sestavi</key>, nato pritisnite <key>-</key> in zatem pritisnite črko nad katero želite postaviti črto, kot je <em>ē</em>.</p></item>
+    </list>
+    <p>Za več zaporedij tipke sestavi si oglejte <link href="http://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations">stran tipke sestavi na Wikipediji</link>.</p>
+  </section>
+
+<section id="ctrlshiftu">
+  <title>Točke kode</title>
+
+  <p>Katerikoli znak Unicode lahko s svojo vašo tipkovnico vnesete s številsko kodo znaka. Vsak znak je določen s kodo sestavljeno iz štirih števil. Za iskanje kode za znak najdite znak v programu preglednice znakov in poglejte v vrstico stanja na zavihku <gui>Podrobnosti znaka</gui>. Koda so štirje znaki za <gui>U+</gui>.</p>
+
+  <p>To enter a character by its code point, hold down <key>Ctrl</key> and
+  <key>Shift</key>, type <key>U</key> followed by the four-character code
+  point, then release <key>Ctrl</key> and <key>Shift</key>. If you often use
+  characters that you can't easily access with other methods, you might find
+  it useful to memorize the code point for those characters so you can enter
+  them quickly.</p>
+
+</section>
+
+  <section id="layout">
+    <title>Razporeditve tipkovnice</title>
+    <p>Vaša tipkovnica se lahko obnaša kot tipkovnica za drug jezik neodvisno od črk, ki so natisnjene na tipkah. Med različnimi razporeditvami tipkovnice lahko enostavno preklapljate z uporabo ikone v vrhnji vrstici. Za več podrobnosti o tem si oglejte <link xref="keyboard-layouts"/>.</p>
+  </section>
+
+<section id="im">
+  <title>Načini vnosa</title>
+
+  <p>An Input Method expands the previous methods by allowing to enter
+  characters not only with keyboard but also any input devices. For instance
+  you could enter characters with a mouse using a gesture method, or enter
+  Japanese characters using a Latin keyboard.</p>
+
+  <p>Za izbiro načina vnosa desno kliknite nad gradnikom besedila in v meniju <gui>Način vnosa</gui> izberite način vnosa, ki ga želite uporabiti. Privzeti način vnosa ni zagotovljen zato si oglejte dokumentacijo o načinih vnosa za ogled kako jih uporabiti.</p>
+
+</section>
+
+</page>

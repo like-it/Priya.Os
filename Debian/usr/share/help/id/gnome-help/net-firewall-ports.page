@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>You need to specify the right network port to enable/disable network
+    access for a program with your firewall.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Port jaringan yang biasa dipakai</title>
+
+  <p>This is a list of network ports commonly used by applications that provide
+  network services, like file sharing or remote desktop viewing. You can change
+  your system's firewall to <link xref="net-firewall-on-off">block or allow
+  access</link> to these applications. There are thousands of ports in use, so
+  this table isn't complete.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>Porta</p>
+	</td>
+	<td>
+	  <p>Nama</p>
+	</td>
+	<td>
+	  <p>Deskripsi</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>Memungkinkan sistem saling menemukan satu sama lain, dan menjelaskan layanan apa yang mereka tawarkan, tanpa Anda mesti menyatakan rincian secara manual.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>Pencetakan</p>
+	</td>
+	<td>
+	  <p>Memungkinkan Anda mengirim tugas pencetakan ke suatu pencetak melalui jaringan.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>Pencetakan</p>
+	</td>
+	<td>
+	  <p>Memungkinkan Anda berbagi pakai pencetak Anda dengan orang lain melalui jaringan.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>Kehadiran</p>
+	</td>
+	<td>
+	  <p>Memungkinkan Anda menyebarluaskan status perpesanan instan Anda ke orang lain di jaringan, seperti misalnya "darin" atau "sibuk".</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>Desktop jauh</p>
+	</td>
+	<td>
+	  <p>Memungkinkan Anda berbagi desktop sehingga orang lain dapat melihatnya atau menyediakan bantuan jarak jauh.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>Berbagi pakai musik (DAAP)</p>
+	</td>
+	<td>
+	  <p>Memungkinkan Anda berbagi pustaka musik Anda dengan orang lain di jaringan Anda.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

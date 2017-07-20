@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-on-server" xml:lang="uk">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="sixth"/>
+    <desc>Access files that are stored on a different computer.</desc>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Максим Дзюманенко</mal:name>
+      <mal:email>dziumanenko@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Назарій Ріттер</mal:name>
+      <mal:email>nazariy.ritter@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Відкриття файлу, що знаходиться на сервері</title>
+
+  <p>Перед відкриванням файлу, що знаходиться на сервері, з «<app>gedit</app>», потрібно знати деяку технічну інформацію про сервер. Наприклад, IP-адресу чи URL сервера, або, можливо, потрібно знати тип сервера (HTTP, FTP, тощо).</p>
+
+  <p>Також, деякі типи серверів накладають обмеження на операції з файлами, що зберігаються на цьому сервері. Наприклад, можна відкрити файл з сервера, але зберегти зміни, внесені в файл, може бути потрібно на свій комп'ютер.</p>
+
+  <p>Маючи на увазі ці застереження, виконайте наступні дії для відкриття файлу з сервера, використовуючи «<app>gedit</app>»:</p>
+
+    <steps>
+      <item><p>Виберіть <guiseq><gui>«Файл»</gui><gui>«Відкрити»</gui></guiseq>, для відображення діалогового вікна <gui>«Відкрити файли»</gui>.</p></item>
+      <item><p>Виберіть піктограму <gui>«Олівець»</gui> біля верхньої частини діалогового вікна <gui>«Відкрити файли»</gui>.</p></item>
+      <item><p>Введіть IP-адресу чи URL потрібного сервера.</p></item>
+      <item><p>Знайдіть та виберіть файл, який хочете відкрити.</p></item>
+      <item><p>Виберіть випадаючий список кодування символів, щоб вибрати відповідне кодування.</p></item>
+      <item><p>Клацніть на <guibutton>«Відкрити»</guibutton>.</p></item>
+    </steps>
+
+  <p>Допустимі типи URI включають http:, ftp:, файл: та інші методи, що підтримуються <app>gvfs</app>.</p>
+
+  <note>
+    <p>Файли з деякими типами URI відкриваються лише для читання, і будь-які зміни потрібно зберегти в іншому місці. HTTP дозволяє лише читати файли. Файли відкриті з FTPдоступні лише для читання, оскільки не всі сервери FTP можуть коректно зберігати віддалені файли.</p>
+  </note>
+
+</page>

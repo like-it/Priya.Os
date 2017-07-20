@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="about-diff-private-public" xml:lang="de">
+  <info>
+    <link type="guide" xref="concepts" group="second"/>
+    <link type="seealso" xref="about-ssh"/>
+
+    <revision pkgversion="3.8" date="2013-02-26" status="incomplete"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Ein öffentlicher Schlüssel wird zum Verschlüsseln von Kommunikationsdaten eingesetzt</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Öffentlicher und privater Schlüssel</title>
+
+  <p>Obwohl man bei <em>öffentlichen Schlüsseln</em> und <em>privaten Schlüsseln</em> in beiden Fällen von <em>Schlüsseln</em> spricht ist es nützlich, beide differenziert zu betrachten. Stellen Sie sich einen <em>öffentlichen Schlüsseln</em> als ein Metallschloss vor und den <em>privaten Schlüssel</em> als der zugehörige Schlüssel zum Entsperren.</p>
+
+  <section id="public-private-example">
+    <title>Ein Beispiel: Senden einer geheimen Botschaft in einer Kiste</title>
+
+  <p>Sehen wir uns zum besseren Verständnis ein Beispiel an. Angenommen ein Bekannter soll Ihnen eine geheime Nachricht in einer Kiste schicken. Sie könnten Ihrem Bekannten eine Kiste und ein Metallschloss geben, und nur Sie kennen den Schlüssel, um das Metallschloss zu entsperren.</p>
+
+  <p>Ihr Bekannter legt die Nachricht in die Kiste und sperrt diese mit dem Metallschloss. Die zugesperrte Kiste wird Ihnen per E-Mail zugesendet. Bei Erhalt entsperren Sie die Kiste mit Ihrem Schlüssel.</p>
+
+  <p>Das ist vergleichbar mit dem Verfahren, wie ein <em>öffentlicher Schlüssel</em> und ein <em>privater Schlüssel</em> funktionieren. Wie auch das Metallschloss dürfen Sie sorgenlos Ihren <em>öffentlichen Schlüssel</em> weitergeben. Somit ist es für jedermann einfach eine Nachricht zu verschlüsseln (zu sperren), die an Sie gesendet werden soll.</p>
+  
+  <p>Im Gegensatz dazu ist ein <em>privater Schlüssel</em> wie ein Schlüssel zum Entschlüsseln (Entsperren) des Metallschlosses. Weil Ihr <em>privater Schlüssel</em> zum Entschlüsseln gesicherter Nachrichten eingesetzt wird, halten Sie unter allen Umständen Ihren <em>privaten Schlüssel</em> geheim und sicher verwahrt.</p>
+  
+  </section>
+
+</page>

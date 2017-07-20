@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-turn-on-off" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="bluetooth" group="#first"/>
+
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-04" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-21" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak zapnout nebo vypnout zařízení Bluetooth na svém počítači.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Zapnutí nebo vypnutí Bluetooth</title>
+
+<if:choose>
+  <if:when test="platform:unity">
+    <p>Bluetooth můžete mít zapnuté, abyste se mohli připojit k jinému zařízení Bluetooth, nebo vypnuté, abyste šetřili energii. Zapnete jej tak, že kliknete na ikonu Bluetooth na horní liště a přepnete vypínač <gui>Bluetooth</gui> na <gui>Zapnuto</gui>.</p>
+  </if:when>
+
+  <p>Bluetooth můžete mít zapnuté, abyste se mohli připojit k jinému zařízení Bluetooth, nebo vypnuté, abyste šetřili energii. Zapnete jej následovně:</p>
+
+  <steps>
+    <item>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Bluetooth</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknutím na <gui>Bluetooth</gui> otevřete příslušný panel.</p>
+    </item>
+    <item>
+      <p>Vypínač nahoře přepněte na <gui>❙</gui> (zapnuto).</p>
+    </item>
+  </steps>
+</if:choose>
+
+<if:choose>
+  <if:when test="platform:unity">
+    <p>Řada notebooků má hardwarový vypínač nebo kombinaci kláves, kterými lze Bluetooth zapnout a vypnout. Když je hardware vypnutý, není ikona Bluetooth na horní liště zobrazená. V takovém případě se podívejte po hardwarovém vypínači nebo klávese na klávesnici. Klávesa je často v kombinaci s pomocnou klávesou <key>Fn</key>.</p>
+  </if:when>
+  <p>Řada notebooků má hardwarový vypínač nebo kombinaci kláves, kterým lze Bluetooth zapnout a vypnout. Podívejte se po hardwarovém vypínači nebo příslušné klávese na klávesnici. Klávesa je často v kombinaci s pomocnou klávesou <key>Fn</key>.</p>
+</if:choose>
+
+<if:choose>
+  <if:when test="platform:unity">
+    <p>Když chcete Bluetooth vypnout, klikněte na ikonu Bluetooth a přepněte <gui>Bluetooth</gui> na <gui>Vypnuto</gui>.</p>
+  </if:when>
+  <p>Když chcete Bluetooth vypnout:</p>
+  <steps>
+    <item>
+      <p>Otevřete <gui xref="shell-introduction#yourname">systémovou nabídku</gui> vpravo na horní liště.</p>
+    </item>
+    <item>
+      <p>Vyberte <gui><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/>   Nepoužívá se</gui>. Oddíl Bluetooth v nabídce se rozbalí.</p>
+    </item>
+    <item>
+      <p>Vyberte <gui>Vypnout</gui>.</p>
+    </item>
+  </steps>
+</if:choose>
+
+<if:choose>
+  <if:when test="platform:unity">
+    <note><p>Váš počítač je <link xref="bluetooth-visibility">viditelný</link>, když je vypínač <gui>Viditelný</gui> v nabídce Bluetooth přepnutý na <gui>Zapnuto</gui>.</p></note>
+  </if:when>
+  <note><p>Váš počítač je <link xref="bluetooth-visibility">viditelný</link> po celo dobu, co je otevřen panel <gui>Bluetooth</gui>.</p></note>
+</if:choose>
+
+</page>

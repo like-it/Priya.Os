@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="gu">
+
+  <info>
+    <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME દસ્તાવેજીકરણ પ્રોજેક્ટ</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author editor">
+      <name>ઍકાટેરીના ગેરાસીમોવા</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>પેટર કોવર</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>લેપટોપ નિષ્ક્રિય થઇ જાય થે જ્યારે તમે ઢાંકણુ બંધ કરો, પાવરને સંગ્રહવા ક્રમમાં.</desc>
+  </info>
+
+  <title>શા માટે મારું કમ્પ્યૂટર બંધ થાય છે જ્યારે હું ઢાંકણુ બંધ કરુ?</title>
+
+  <p>જ્યારે તમ તમારાં લેપટોપનાં ઢાંકણાને બંધ કરો ત્યારે, તમારું કમ્પ્યૂટર એ પાવરને સંગ્રહવા <link xref="power-suspend"><em>સ્થગિત</em></link> થશે. આનો મતલબ એ થાય કે કમ્પ્યૂટર એ વાસ્તવિક રીતે બંધ થતુ નથી તે ફક્ત નિષ્ક્રિય થઇ જાય છે. તમે ઢાંકણુ ખોલીને તેને પાછુ લાવી શકો છો. જો તે પાછુ ન આવે તો, કીને દબાવવાનું અથવા માઉસને ક્લિક કરવાનો પ્રયત્ન કરો. જો ત હજુ કામ ન કરતુ હોય તો, પાવર બટનને દબાવો.</p>
+
+  <p>અમુક કમ્પ્યૂટરો યોગ્ય રીતે સ્થગિત કરવા માટે સક્ષમ નથી, સામાન્ય રીતે ઓપરટીંગ સિસ્ટમ દ્દારા સંપૂર્ણપણે તેનાં હાર્ડવેર આધારભૂત નથી (ઉદાહરણ તરીકે, Linux ડ્રાઇવરો સમાપ્ત નથી). આ સ્થિતિમાં, તમે શોધી શકો છો કે તમે ઢાંકણાને બંધ કર્યા પછી તમારાં કમ્પ્યૂટરને પુન:પ્રાપ્ત કરવા માટે સક્ષમ નથી. તમે <link xref="power-suspendfail">સ્થગિત સાથે સમસ્યાને સુધારવા</link> પ્રયત્ન કરી શકો છો, અથવા સ્થગિત કરવાનો પ્રયત્ન કરવાથી કમ્પ્યૂટરને અટકાવી શકો છો જ્યારે તમે ઢાંકણાને બંધ કરો.</p>
+
+<section id="nosuspend">
+  <title>સ્થગિત થવાથી કમ્પ્યૂટરને બંધ કરો જ્યારે ઢાંકણુ બંધ થયેલ હોય</title>
+
+  <note style="important">
+    <p>These instructions will only work if you are using <app>systemd</app>.
+    Contact your distribution for more information.</p>
+  </note>
+
+  <note style="important">
+    <p>You need to have the <app>Tweak Tool</app> installed on your computer to
+    change this setting.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">Install
+      <app>Tweak Tool</app></link></p>
+    </if:if>
+  </note>
+
+  <p>If you do not want the computer to suspend when you close the lid, you can
+  change the setting for that behavior.</p>
+
+  <note style="warning">
+    <p>સાવચેતી રાખો જો તમે આ સુયોજનોને બદલો તો. અમુક લેપટોપ વધારે ગરમ થઇ શકે છે જો તેઓ બંધ થયેલ ઢાંકણા સાથે ચાલુ કરીને છોડી મૂક્યુ હોય તો, ખાસ કરીને તેઓ યોગ્ય જગ્યામાં છે જેમ ક બેકપેક.</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Tweak Tool</gui>.</p>
+    </item>
+    <item>
+      <p>Click <gui>Tweak Tool</gui> to open the application.</p>
+    </item>
+    <item>
+      <p>Click the <gui>Power</gui> tab.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Don't suspend on lid close</gui> to <gui>ON</gui>.</p>
+    </item>
+    <item>
+      <p>Close the <gui>Tweak Tool</gui> window.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

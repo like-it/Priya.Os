@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="other-files" xml:lang="sv">
+
+    <info>
+        <link type="guide" xref="index#other"/>
+        <desc>Håll Shotwell-biblioteket i synk med bildfiler på disk.</desc>
+        
+        <link type="next" xref="other-plugins"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Josef Andersson</mal:name>
+      <mal:email>josef.andersson@fripost.org</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+   <title>Bildfiler</title>
+
+    <p>Varje bild i Shotwell-biblioteket motsvaras av en fil lagrad på din hårddisk. Shotwell har flera olika funktioner som hjälper dig att hålla Shotwell-biblioteket och filerna på disk i synk.</p>
+    <links type="section"/>
+    
+    <section id="dirpattern">
+        <title>Använda ett anpassat katalogmönster</title>
+        <p>Shotwell låter dig ange hur det namnger kataloger i ditt bibliotek. Du kan göra detta genom att ändra inställningarna <gui>Katalogstruktur</gui> och <gui>Mönster</gui> i dialogen <gui>Inställningar</gui>. Du kan använda ett förvalt mönster, eller välja <gui>Anpassa</gui> och skriva in ditt eget.</p>
+
+        <p>De tillgängliga symbolerna för katalogmönstren börjar med ett % (procenttecken). Värdena dessa symboler producerar är lokal-beroende, så vad du ser på din dator kan variera jämfört med följande exempel.</p>
+
+        <table frame="all" rules="rowgroups">
+            <tbody>
+                <tr>
+                    <td><p> </p></td> <td><p><em>Symbol</em></p></td> <td><p><em>Betydelse</em></p></td> <td><p><em>Exempel</em></p></td>
+                </tr>
+            </tbody>
+            <tbody>
+            <tr>
+                <td><p> </p></td><td><p>%Y</p></td><td><p>År: hela</p></td><td><p>2015</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%y</p></td><td><p>År: tvåsiffrigt</p></td><td><p>15</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%d</p></td><td><p>Månadsdag med inledande nolla</p></td><td><p>03</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%A</p></td><td><p>Veckodag: hela</p></td><td><p>Onsdag</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%a</p></td><td><p>Veckodag: förkortad</p></td><td><p>Ons</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%m</p></td><td><p>Månadsnummer med inledande nolla</p></td><td><p>02</p></td>
+            </tr>
+            <tr><td><p> </p></td><td><p>%b</p></td><td><p>Månadsnummer: förkortat</p></td><td><p>Feb</p></td></tr><tr><td><p> </p></td><td><p>%B</p></td><td><p>Månadsnummer: helt</p></td><td><p>Februari</p></td></tr><tr><td><p> </p></td><td><p>%I</p></td><td><p>Timme: 12-timmarsformat</p></td><td><p>05</p></td></tr><tr><td><p> </p></td><td><p>%H</p></td><td><p>Timme: 24-timmarsformat</p></td><td><p>17</p></td></tr><tr><td><p> </p></td><td><p>%M</p></td><td><p>Minut</p></td><td><p>16</p></td></tr><tr><td><p> </p></td><td><p>%S</p></td><td><p>Sekund</p></td><td><p>30</p></td></tr><tr><td><p> </p></td><td><p>%p</p></td><td><p>AM eller PM</p></td><td><p>PM</p></td></tr>
+            </tbody>
+        </table>
+
+        <p>Det finns andra symboler tillgängliga, se handboken för strftime genom att köra kommandot <cmd>man strftime</cmd> om du behöver en som inte listas här.</p>
+    </section>
+
+    <section id="automatic-import">
+       <title>Importera bilder automatiskt</title>
+       
+       <p>Shotwell kan automatiskt importera nya bilder som kommer att visas i bibliotekskatalogen. (Bibliotekskatalogen är vanligtvis katalogen <file>Bilder</file> i din hemkatalog - du kan ändra dess plats i fönstret <gui>Inställningar</gui>.)</p>
+       
+       <p>För att aktivera autoimport, kryssa i rutan <gui>Bevaka bibliotekskatalogen efter nya filer</gui> i fönstret <gui>Inställningar</gui>.</p>
+       
+       <note style="advanced"><p>Shotwell kan också följa symboliska länkar inuti automatiskt importerade kataloger.</p></note>
+
+    </section>
+
+    <section id="automatic-rename">
+       <title>Automatiskt döpa om importerade bilder till gemener.</title>
+       
+       <p>Shotwell kan automatiskt ändra filnamnen för importerade bilder till gemener. För att aktivera detta, välj <guiseq><gui>Redigera</gui><gui>Inställningar</gui></guiseq> och i fönstret <gui>Inställningar</gui>, kryssa i rutan <gui>Byt namn på importerade filer till gemener</gui>.</p>
+    
+    </section>
+    
+    <section id="writing-metadata">
+       <title>Skriva metadata direkt</title>
+       
+       <p>Som standard ändrar inte Shotwell bildfiler, även om du redigerar bilder eller ändrar deras taggar och namn. Shotwell sparar endast dessa ändringar i sin databas.</p>
+       
+       <p>För att ändra detta beteende kan du aktivera kryssrutan <gui>Skriv taggar, namn och annan metadata till bildfiler</gui> i dialogen <gui>Inställningar</gui>. När detta alternativ är aktiverat kommer Shotwell att skriva följande metadata till de flesta bildfiler när du ändrar dem i Shotwell:</p>
+       
+       <list>
+       <item><p>namn</p></item>
+       <item><p>taggar</p></item>
+       <item><p>betyg</p></item>
+       <item><p>riktningsinformation</p></item>
+       <item><p>tid/datum</p></item>
+       </list>
+       
+       <p>Shotwell lagrar denna information i bildfiler i EXIF, IPTC och/eller XMP-format. Observera att Shotwell endast kan skriva till bildfiler i JPEG, PNG och TIFF-format, inte till BMP-bilder, RAW-bilder eller till videofiler.</p>
+    
+    </section>
+    
+    <section id="runtime-monitoring">
+    <title>Körtidsövervakning</title>
+    
+    <p>När Shotwell körs märker det av ändringar gjorda till bildfiler externt. När en bildfil ändras läser Shotwell om filen och uppdaterar din vy över bilder och metadata.</p>
+    
+    <p>Observera att Shotwell kontrollerar alla bildfiler vid uppstart, men att endast bildfiler i bibliotekskatalogen övervakas i realtid efter uppstart. Vi hoppas kunna ta bort denna begränsning i en framtida utgåva.</p>
+
+    </section>
+    
+</page>

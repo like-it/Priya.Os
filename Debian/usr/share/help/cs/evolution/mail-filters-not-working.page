@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters-not-working" xml:lang="cs">
+
+  <info>
+    <desc>Jak opravit problém s filtry pošty, když neřadí a netřídí poštu, jak očekáváte.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.9.3" version="0.5" date="2013-06-24" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Filtry pošty nefungují</title>
+
+<section id="order">
+<title>Pořadí filtrů</title>
+<p>Pořadí filtrů je velmi důležité. Na původní zprávu jsou použity postupně v předepsaném pořadí.</p>
+<p>Když má váš první filtr pravidlo <gui>Zastavit zpracování</gui>, pak všechny zprávy, které tomuto filtru vyhovují, budou ignorovat všechny následující filtry.</p>
+<p>Když přesouváte zprávu do jiné složky, znamená „přesun“ ve skutečnosti vytvoření kopie zprávy v cílové složce a označení původní zprávy ke smazání. Takže některá pravidla v průběhu zpracování budou použita na původní zprávu, která je teď označena ke smazání. Proto by se přesun zprávy měl v pravidlech filtru použít až jako poslední.</p>
+<p>Pomocí <link xref="mail-filters#editing">úprav filtru</link> zkontrolujte pravidla a jejich pořadí ve stávajících filtrech a ověřte činnost v části <gui>Potom</gui>.</p>
+</section>
+
+<section id="several-clients">
+<title>Používání několika poštovních klientů</title>
+<p>Další věc, kterou je třeba vzít v úvahu, je, že filtry závisí na příznaku „nová“, který je nastaven na straně serveru, když je zpráva poprvé stahována ze serveru. Pokud kromě pošťáka <app>Evolution</app> používáte i jiného poštovního klienta, nemusí filtry fungovat automaticky.</p>
+</section>
+
+<section id="filter-log">
+<title>Zaznamenávání činností filtru</title>
+<p>Pokud stále není jasné, proč filtry nefungují podle očekávání, můžete zkusit zapnout zaznamenávání činností filtrů.</p>
+<list>
+<item><p>Zavřete <app>Evolution</app>.</p></item>
+<item><p>Otevřete aplikaci <app>Terminál</app>.</p></item>
+<item><p>Spusťte příkaz <cmd>gsettings set org.gnome.evolution.mail filters-log-actions true</cmd></p></item>
+<item><p>Spusťte příkaz <cmd>gsettings set org.gnome.evolution.mail filters-log-file "/home/uživatelské_jméno/my-filter-log"</cmd>, kdy <cmd>uživatelské_jméno</cmd> nahraďte svým skutečným uživatelským jménem. Tím se vytvoří textový soubor s názvem <cmd>my-filter-log</cmd> ve vaší domovské složce. Upozorňujeme, že cesta musí být zadána jako absolutní, syntaxe typu <sys>~</sys> nebo <sys>$HOME</sys> nebude fungovat.</p></item><!-- this is explained in https://bugzilla.gnome.org/show_bug.cgi?id=669471 -->
+<item><p>Spusťte <app>Evolution</app>.</p></item>
+<item><p>Stáhněte poštu, aby se filtry použily.</p></item>
+<item><p>Otevřete soubor <file>my-filter-log</file> v textovém editoru a můžete si prohlédnout, které filtry a jak byly použity.</p></item>
+</list>
+
+<p>Zaznamenávání činnosti filtrů můžete zase vypnout pomocí příkazu <cmd>gsettings set org.gnome.evolution.mail filters-log-actions false</cmd></p>
+
+<p>Toho stejného lze dosáhnout i použitím aplikace <app>dconf-editor</app>.</p>
+</section>
+
+</page>

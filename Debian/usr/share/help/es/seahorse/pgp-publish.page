@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-publish" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-06-18" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Publique sus claves públicas en servidores de claves o <link xref="pgp-export">expórtelas</link> y envíelas por correo-e a sus amigos.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Compartir sus claves públicas</title>
+
+  <p>Si quiere que la gente le envíe comunicaciones cifradas, debe compartir su <gui>clave GnuPG</gui> con ellos. Para compartir su clave con unas pocas personas, <link xref="pgp-export">expórtela</link> y envíe por correo-e el archivo de la clave. Para permitir que cualquiera pueda <link xref="pgp-retrieve-remote">obtener</link> y usar su clave pública, publíquela en un servidor de claves.</p>
+
+  <steps>
+    <title>¿Cómo se publica una clave en un servidor de claves?</title>
+    <item>
+      <p>Seleccione <gui>claves GnuPG</gui> en el panel de la izquierda.</p>
+    </item>
+    <item>
+      <p>Seleccione en la lista la <gui>clave PGP personal</gui> que quiere publicar.</p>
+    </item>
+    <item>
+      <p>Seleccione <guiseq><gui style="menu">Remoto</gui> <gui style="menuitem">Sincronizar y publicar claves…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Pulse el botón <gui style="button">Servidores de claves</gui> para ver la lista de servidores de claves en los que puede publicar su clave pública.</p>
+    </item>
+    <item>
+      <p>Para publicar su clave en un servidor de claves, seleccione un servidor de claves en el menú <gui>Publicar claves en</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse el botón <gui style="button">Cerrar</gui> para volver al diálogo anterior.</p>
+    </item>
+    <item>
+      <p>Pulse <gui style="button">Sincronizar</gui> para terminar.</p>
+    </item>
+   <!-- <item>
+      <p>Tick the
+      <gui style="checkbox">Automatically retrieve keys from key servers</gui>
+      checkbox to retrieve any key that is published on the server you have
+      selected in the previous step. You can also tick the
+      <gui style="checkbox">Automatically sync modified keys with key servers</gui>
+      checkbox to ensure that any modifications to a key on the key server,
+      like a signature, are updated on your copy of the key too.</p>
+      Not sure about this - Aruna 18/08/2013
+    </item>-->
+  </steps>
+
+  <note style="important">
+    <p>Deberá estar conectado a Internet mientras publica sus claves.</p>
+  </note>
+
+  <note style="info">
+    <title>¿Qué es un servidor de claves?</title>
+    <p>Los servidores de claves son equipos que guardan copias de las claves públicas de cifrado que reciben, y comparten estas copias con otros servidores de claves a través de Internet.</p>
+  </note>
+
+</page>

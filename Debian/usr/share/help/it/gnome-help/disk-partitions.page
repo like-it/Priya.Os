@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="it">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Progetto documentazione di GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>Comprendere cosa sono i volumi e le partizioni e usare il gestore di dischi per gestirli.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>Gestire volumi e partizioni</title>
+
+  <p>La parola <em>volume</em> è usata per descrivere un dispositivo di archiviazione, per esempio un disco fisso. Poiché è possibile dividere lo spazio in più parti, volume può riferirsi anche a una <em>parte</em> dello spazio su quel disco. Il computer rende accessibili gli spazi di archiviazione del file system tramite un processo chiamato <em>montaggio</em>. I volumi montati posso essere dischi fissi, unità USB, DVD-RW, card SD e altri. Se un volume è montato, è possibile leggere, e probabilmente scrivere, file da esso.</p>
+
+  <p>Spesso, un volume montato è chiamato anche <em>partizione</em>, sebbene non sia necessariamente la stessa cosa. Una "partizione" si riferisce a un'area <em>fisica</em> su un singolo disco. Una volta montata la partizione, può essere intesa come un volume poiché è possibile accedere ai file.</p>
+
+<section id="manage">
+ <title>Visualizzare e gestire volumi e partizioni usando il gestore dischi.</title>
+
+  <p>È possibile controllare e modificare i volumi del computer usando il gestore dei dischi.</p>
+
+<steps>
+  <item>
+    <p>Open the <gui>Activities</gui> overview and start <app>Disks</app>.</p>
+  </item>
+  <item>
+    <p>In the list of storage devices on the left, you will find hard disks,
+    CD/DVD drives, and other physical devices. Click the device you want to
+    inspect.</p>
+  </item>
+  <item>
+    <p>The right pane provides a visual breakdown of the volumes and
+    partitions present on the selected device. It also contains a variety of
+    tools used to manage these volumes.</p>
+    <p>Attenzione: usando questi strumenti è possibile eliminare completamente tutti i dati sul disco.</p>
+  </item>
+</steps>
+
+  <p>Il computer probabilmente ha almeno una partizione <em>primaria</em> e una singola partizione di <em>swap</em>. La partizione di swap è usata dal sistema operativo per la gestione della memora, ed è montata raramente. La partizione primaria contiene il sistema operativo, le applicazioni, le impostazioni e i file personali. Questi file posso essere inoltre distribuiti, per sicurezza oppure convenienza, su più partizioni.</p>
+
+  <p>One primary partition must contain information that your computer uses to
+  start up, or <em>boot</em>. For this reason it is sometimes called a boot
+  partition, or boot volume. To determine if a volume is bootable, select the
+  partition and click the menu button in the toolbar underneath the partition
+  list. Then, click <gui>Edit Partition…</gui> and look at its
+  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
+  a bootable volume.</p>
+
+</section>
+
+</page>

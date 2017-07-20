@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="pl">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Przeglądanie WWW</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">Samouczek przeglądania WWW</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Przeglądanie WWW</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>Kliknij menu <gui>Programy</gui> w lewym górnym rogu ekranu.</p></item>
+      <item><p>Z menu wybierz <guiseq><gui>Internet</gui><gui>Firefox</gui></guiseq>.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>Przesuń kursor myszy na <gui>Podgląd</gui> w lewym górnym rogu ekranu, aby wyświetlić <gui>ekran podglądu</gui>.</p></item>
+      <item><p>Wybierz ikonę przeglądarki <app>Firefox</app> z paska po lewej stronie ekranu.</p></item>
+    </steps>
+
+    <note><p>Można także uruchomić przeglądarkę <link xref="gs-use-system-search">po prostu wpisując</link> <em>Firefox</em> na <gui>ekranie podglądu</gui>.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>Przesuń kursor myszy na <gui>Podgląd</gui> w lewym górnym rogu ekranu, aby wyświetlić <gui>ekran podglądu</gui>.</p></item>
+      <item><p>Wybierz ikonę przeglądarki <app>WWW</app> z paska po lewej stronie ekranu.</p></item>
+    </steps>
+
+    <note><p>Można także uruchomić przeglądarkę <link xref="gs-use-system-search">po prostu wpisując</link> <em>WWW</em> na <gui>ekranie podglądu</gui>.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>Kliknij pasek adresu na górze okna przeglądarki i zacznij wpisywać stronę, którą chcesz odwiedzić.</p></item>
+      <item><p>Wpisanie strony WWW rozpocznie jej wyszukiwanie w historii przeglądarki i zakładkach, więc nie trzeba pamiętać jej dokładnego adresu.</p>
+        <p>Jeśli strona zostanie odnaleziona w historii lub zakładkach, to poniżej paska adresu zostanie wyświetlona rozwijana lista.</p></item>
+      <item><p>Z tej listy można szybko wybrać stronę WWW za pomocą klawiszy strzałek.</p>
+      </item>
+      <item><p>Po wybraniu strony należy nacisnąć klawisz <key>Enter</key>, aby ją odwiedzić.</p>
+      </item>
+    </steps>
+
+</page>

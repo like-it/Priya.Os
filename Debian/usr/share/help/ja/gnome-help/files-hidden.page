@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-hidden" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-29" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Make a file invisible, so you cannot see it in the file
+    manager.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>ファイルを隠す</title>
+
+  <p>The <app>Files</app> file manager gives you the ability to hide and unhide
+  files at your discretion. When a file is hidden, it is not displayed by the
+  file manager, but it is still there in its folder.</p>
+
+  <p>ファイルを隠すには、そのファイル名を <file>.</file> で始まる名前に<link xref="files-rename">変更します</link>。たとえば、<file>example.txt</file> という名前のファイルを隠しファイルにするには、<file>.example.txt</file> という名前に変更してください。</p>
+
+<note>
+  <p>ファイルと同じ方法でフォルダーを隠すことができます。フォルダーの名前の先頭に、<file>.</file> を配置します。</p>
+</note>
+
+<section id="show-hidden">
+ <title>すべての隠しファイルを表示する</title>
+
+  <p>If you want to see all hidden files in a folder, go to that folder and
+  either click the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  view options button in the toolbar and pick <gui>Show Hidden Files</gui>, or press
+  <keyseq><key>Ctrl</key><key>H</key></keyseq>. You will see all hidden files,
+  along with regular files that are not hidden.</p>
+
+  <p>To hide these files again, either click the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  view options button in the toolbar and pick <gui>Show Hidden Files</gui>, or press
+  <keyseq><key>Ctrl</key><key>H</key></keyseq> again.</p>
+
+</section>
+
+<section id="unhide">
+ <title>隠しファイルを解除する</title>
+
+  <p>To unhide a file, go to the folder containing the hidden file and click
+  the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  view options button in the toolbar and pick <gui>Show Hidden Files</gui>.
+  Then, find the hidden file and rename it so that it does not have a
+  <file>.</file> in front of its name. For example, to unhide a file called
+  <file>.example.txt</file>, you should rename it to
+  <file>example.txt</file>.</p>
+
+  <p>Once you have renamed the file, you can either click the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  view options button in the toolbar and pick <gui>Show Hidden Files</gui>, or
+  press <keyseq><key>Ctrl</key><key>H</key></keyseq> to hide any other hidden
+  files again.</p>
+
+  <note><p>デフォルトでは、ファイルマネージャーを閉じるまでの間、隠しファイルを表示することができるだけです。この設定を変更してファイルマネージャーで常に隠しファイルを表示するには、<link xref="nautilus-views"/> を参照してください。</p></note>
+
+  <note><p>Most hidden files will have a <file>.</file> at the
+  beginning of their name, but others might have a <file>~</file> at the end of
+  their name instead. These files are backup files. See
+  <link xref="files-tilde"/> for more information.</p></note>
+
+</section>
+
+</page>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="contacts-ldap" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="contacts-using-several-addressbooks"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2015-03-09" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/usage-contact-sharing.html.en
+	   and
+	   http://library.gnome.org/users/evolution/2.32/config-prefs-contact.html.en#bxmw6w5
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Die freigegebenen Adressbücher im Netzwerk verwenden.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>LDAP-Zugriff ermöglichen</title>
+
+  <p>Das LDAP-Protokoll wurde entworfen, damit Benutzer Kontaktinformationen zentral über ein Netzwerk teilen können. LDAP ermöglicht einem Unternehmen, eine Reihe von freigegebenen Kontaktinformationen zu verwalten. Viele Firmen nutzen ein LDAP-Adressbuch für alle Ihre Mitarbeiter oder für Kundenkontakte.</p>
+
+<section id="add-ldap-addressbook">
+  <title>Ein LDAP-Adressbuch hinzufügen</title>
+
+  <steps>
+    <item>
+      <p>Klicken Sie auf <guiseq><gui>Datei</gui><gui>Neu</gui><gui>Adressbuch</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Wählen Sie im Reiter <gui>Allgemein</gui> den Typ <gui>Auf LDAP-Servern</gui>.</p>
+    </item>
+    <item>
+      <p>Geben Sie den gewünschten Namen ein.</p>
+    </item>
+    <item>
+      <p>Geben Sie die Adresse des Servers ein, die Port-Nummer (Vorgabe ist 389) und geben Sie an, ob die Verbindung gesichert sein soll.</p>
+    </item>
+    <item>
+      <p>Legen Sie die Anmeldemethode und Ihren Benutzernamen fest.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui style="button">Anwenden</gui>.</p>
+    </item>
+    <item>
+      <p>Im Reiter <gui>Details</gui> können Sie Folgendes einstellen:</p>
+      <list>
+        <item>
+	  <p>Suchbasis: Die Suchbasis ist der Punkt, an dem eine Ordnersuche beginnt. Fragen Sie Ihren Systemverwalter nach weiteren Informationen über die richtigen Einstellungen.</p>
+        </item>
+        <item>
+	  <p>Suchbereich: Der Suchbereich legt fest, wie tief bei der Suche in den Ordnerbaum abgestiegen werden soll.</p>
+	  <p>Es gibt die folgenden Einstellmöglichkeiten:</p>
+          <list>
+            <item>
+	      <p>Durchsucht lediglich die Ebene unterhalb des Ausgangspunktes der Suche.</p>
+	    </item>
+            <item>
+	      <p>Die Suchbasis und alle Einträge darunter durchsuchen.</p>
+            </item>
+          </list>
+        </item>
+        <item>
+	  <p>Suchfilter: Hier kann der Suchfilter für alle LDAP-Anfragen bestimmt werden. Zum Beispiel:</p>
+          <list>
+            <item>
+              <p><code>ObjectClass=*</code>: Listet alle Objekte des Servers auf.</p>
+	    </item>
+            <item>
+	      <p><code>ObjectClass=User</code>: Listet nur die Benutzer auf.</p>
+	    </item>
+            <item>
+	      <p><code>Filter (|(ObjectClass=User)(ObjectClass=groupOfNames))</code>: Holt die Benutzer- und Kontaktlistenobjekte.</p>
+	    </item>
+            <item>
+	      <p><code>(&amp;(mail=*)(ObjectClass=*))</code>: Listet den E-Mail-Adressen zugeordnete Objekte auf.</p>
+	    </item>
+          </list>
+        </item>
+        <item>
+	  <p>Zeitablauf (in Minuten): Die maximale Zeit in Minuten, die <app>Evolution</app> versuchen soll, Daten vom Server herunterzuladen, bevor <app>Evolution</app> aufgibt.</p>
+        </item>
+        <item>
+	  <p>Download-Grenze: Die maximale Anzahl Resultate für eine bestimmte Suche. Die meisten Server geben nicht mehr als 500 Resultate aus, aber Sie können diese Anzahl heruntersetzen, falls Sie bei sehr allgemeinen Suchen weniger Daten herunterladen möchten.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Falls Sie sich bei einigen Einstellungen nicht sicher sind, so fragen Sie Ihren Administrator.</p>
+  </note>
+
+</section>
+
+<section id="ldap-vs-local-addressbooks">
+  <title>unterschiede zu lokalen Adressbüchern</title>
+
+  <p>LDAP-Adressbücher verhalten sich wie lokale Adressbücher auf Ihrem Rechner, mit folgenden Ausnahmen:</p>
+
+  <list>
+    <item>
+      <p>Netzwerkordner sind nur verfügbar, wenn Sie mit dem Netzwerk verbunden sind. Falls Sie einen Laptop oder eine Modem-Verbindung benutzen, möchten Sie gegebenenfalls eine lokale Kopie des Netzwerkordners haben. Ziehen Sie hierzu die gewünschten Kontakte mit der Maus in eines Ihrer lokalen Adressbücher.</p>
+    </item>
+    <item>
+      <p>Sie können einen Netzwerkordner auch für die Offline-Nutzung markieren. Klicken Sie hierzu mit der rechten Maustaste auf den Ordner, wählen Sie <gui>Eigenschaften</gui>, und wählen Sie <gui>Ordnerinhalt lokal zum Arbeiten im Offline-Modus kopieren</gui>.</p>
+    </item>
+    <item>
+      <p>Um erhöhten Netzwerkverkehr zu vermeiden, lädt <app>Evolution</app> beim Start normalerweise nicht automatisch Daten vom LDAP-Server.</p>
+    </item>
+    <item>
+      <p>Abhängig von Ihren Server-Einstellungen kann es sein, dass Sie nicht alle Felder eines Kontakts bearbeiten können, der auf einem LDAP-Server gespeichert ist. Einige Server verbieten das Ändern einiger oder aller Angaben, und einige benutzen weniger Informationsfelder als all diejenigen, die von <app>Evolution</app> unterstützt werden. Reden Sie mit Ihrem Systemverwalter, falls Sie andere Einstellungen benötigen.</p>
+    </item>
+  </list>
+
+</section>
+
+</page>

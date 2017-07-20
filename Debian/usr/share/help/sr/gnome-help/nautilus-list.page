@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-list" xml:lang="sr">
+
+  <info>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="nautilus-prefs" group="nautilus-list"/>
+
+    <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
+
+    <credit type="author">
+      <name>Фил Бул</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Мајкл Хил</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Екатерина Герасимова</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Дејвид Кинг</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Одредите који подаци ће бити приказани у колонама у прегледу списком.</desc>
+  </info>
+
+  <title>Поставке колона списка датотека</title>
+
+  <p>Постоји 11 колона података које можете да прикажете у прегледу списком у програму <gui>Датотеке</gui>. Кликните <gui>Датотеке</gui> на горњој траци, изаберите <gui>Поставке</gui> а затим језичак <gui>Колоне списка</gui> да одаберете које колоне ће бити видљиве.</p>
+
+  <note style="tip">
+    <p>Користите дугмад <gui>Премести горе</gui> и <gui>Премести доле</gui> да одаберете поредак у коме ће бити приказане изабране колоне. Кликните <gui>Врати на основно</gui> да поништите измене и да се вратите на основне колоне.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Назив</gui></title>
+      <p>Назив фасцикли и датотека.</p>
+      <note style="tip">
+        <p>Колона <gui>назива</gui> не може бити скривена.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Величина</gui></title>
+      <p>Величина фасцикле је дата као број ставки које се налазе у фасцикли. Величина датотеке је дата у бајтима, килобајтима (KB), или мегабајтима (MB).</p>
+    </item>
+    <item>
+      <title><gui>Врста</gui></title>
+      <p>Приказује фасциклу, или врсту датотеке као што је ПДФ документ, ЈПЕГ слика, МП3 звук, и још тога.</p>
+    </item>
+    <item>
+      <title><gui>Измењено</gui></title>
+      <p>Приказује датум када је последњи пут измењена датотека.</p>
+    </item>
+    <item>
+      <title><gui>Власник</gui></title>
+      <p>Име корисника који поседује фасциклу или датотеку.</p>
+    </item>
+    <item>
+      <title><gui>Група</gui></title>
+      <p>Група у чијем је власништву датотека. Сваки корисник је обично у сопственој групи, али је могуће имати више корисника у једној групи. На пример, одељење може имати своју сопствену групу у радном окружењу.</p>
+    </item>
+    <item>
+      <title><gui>Овлашћења</gui></title>
+      <p>Приказује овлашћења за приступ датотеци. На пример, <gui>drwxrw-r--</gui></p>
+      <list>
+        <item>
+          <p>Први знак је врста датотеке. <gui>-</gui> значи обична датотека, а <gui>d</gui> значи директоријум (фасцикла). У ретким случајевима, остали знаци такође могу бити приказани.</p>
+        </item>
+        <item>
+          <p>Следећа три знака <gui>rwx</gui> одређују овлашћења за корисника који поседује датотеку.</p>
+        </item>
+        <item>
+          <p>Следећа три <gui>rw-</gui> одређују овлашћења за све чланове групе која поседује датотеку.</p>
+        </item>
+        <item>
+          <p>Последња три знака у колони <gui>r--</gui> одређују овлашћења за све остале кориснике на систему.</p>
+        </item>
+      </list>
+      <p>Свако овлашћење има следећа значења:</p>
+      <list>
+        <item>
+          <p><gui>r</gui>: читљиво, значи да можете отворити датотеку или фасциклу</p>
+        </item>
+        <item>
+          <p><gui>w</gui>: уписиво, значи да можете сачувати измене</p>
+        </item>
+        <item>
+          <p><gui>x</gui>: извршиво, значи да је можете покренути ако је у питању датотека програма или скрипте, или да можете приступити подфасциклама и датотекама ако је то фасцикла</p>
+        </item>
+        <item>
+          <p><gui>-</gui>: овлашћење није подешено</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title><gui>МИМЕ врста</gui></title>
+      <p>Приказује МИМЕ врсту ставке.</p>
+    </item>
+    <item>
+      <title><gui>Путања</gui></title>
+      <p>Путања до места на коме се налази датотека.</p>
+    </item>
+    <item>
+      <title><gui>Измењено — Време</gui></title>
+      <p>Приказује датум и време када је последњи пут измењена датотека.</p>
+    </item>
+    <item>
+      <title><gui>Приступљен</gui></title>
+      <p>Приказује датум или време када је последњи пут измењена датотека.</p>
+    </item>
+  </terms>
+
+</page>

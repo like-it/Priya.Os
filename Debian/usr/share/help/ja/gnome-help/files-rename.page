@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-rename" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>GNOME ドキュメンテーションプロジェクト</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>ファイルやフォルダーの名前を変更します。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>ファイル、フォルダーの名前を変更する</title>
+
+  <p>As with other file managers, you can use <app>Files</app> to change the
+  name of a file or folder.</p>
+
+  <steps>
+    <title>ファイル、フォルダーの名前を変更する</title>
+    <item><p>アイテムを右クリックし、<gui>名前の変更</gui>を選択するか、あるいはファイルを選択して <key>F2</key> キーを押します。</p></item>
+    <item><p>Type the new name and press <key>Enter</key> or click
+    <gui>Rename</gui>.</p></item>
+  </steps>
+
+  <p><link xref="nautilus-file-properties-basic">プロパティ</link>ウィンドウからファイルの名前を変更することもできます。</p>
+
+  <p>When you rename a file, only the first part of the name of the file is
+  selected, not the file extension (the part after the last <file>.</file>).
+  The extension normally denotes what type of file it is (for example,
+  <file>file.pdf</file> is a PDF document), and you usually do not want to
+  change that. If you need to change the extension as well, select the entire
+  file name and change it.</p>
+
+  <note style="tip">
+    <p>If you renamed the wrong file, or named your file improperly, you can
+    undo the rename. To revert the action, immediately click the menu button in
+    the toolbar and select <gui>Undo Rename</gui>, or press
+    <keyseq><key>Ctrl</key><key>Z</key></keyseq>, to restore the former
+    name.</p>
+  </note>
+
+  <section id="valid-chars">
+    <title>ファイル名として有効な文字</title>
+
+    <p>ファイル名には、<file>/</file> (スラッシュ) を除いて、任意の文字を使用できます。しかしながら、ファイル名の条件としてより厳しい制限のある<em>ファイルシステム</em>を使用するデバイスもあります。そのため、ファイル名として次の文字を避けることが最善とされています。<file>|</file>, <file>\</file>, <file>?</file>, <file>*</file>, <file>&lt;</file>, <file>"</file>, <file>:</file>, <file>&gt;</file>, <file>/</file>.</p>
+
+    <note style="warning">
+    <p><file>.</file> で始まる名前を付けると、そのファイルをファイルマネージャーで表示しようとしても、<link xref="files-hidden">表示されません</link>。</p>
+    </note>
+
+  </section>
+
+  <section id="common-probs">
+    <title>よくある問題</title>
+
+    <terms>
+      <item>
+        <title>ファイル名がすでに使われている</title>
+        <p>You cannot have two files or folders with the same name in the same
+        folder. If you try to rename a file to a name that already exists in
+        the folder you are working in, the file manager will not allow it.</p>
+        <p>ファイルおよびフォルダーの名前は、大文字/小文字を区別します。たとえば、<file>File.txt</file> と <file>FILE.txt</file> とは、異なる名前として扱われます。このような名前付けは可能ですが、推奨されません。</p>
+      </item>
+      <item>
+        <title>ファイル名が長すぎる</title>
+        <p>On some file systems, file names can have no more than 255
+        characters in their names.  This 255 character limit includes both the
+        file name and the path to the file (for example,
+        <file>/home/wanda/Documents/work/business-proposals/…</file>), so you
+        should avoid long file and folder names where possible.</p>
+      </item>
+      <item>
+        <title>名前変更のオプションがグレーアウトされている</title>
+        <p><gui>名前の変更</gui>のオプションがグレーアウトされている場合は、そのファイル名を変更する権限が無いということです。保護されたファイルの名前を変更すると、お使いのシステムが不安定になるおそれがあるため、そのようなファイルの名前変更には注意してください。より詳細な情報については、<link xref="nautilus-file-properties-permissions"/> を参照してください。</p>
+      </item>
+    </terms>
+
+  </section>
+
+</page>

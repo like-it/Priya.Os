@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="video-dvd" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="media#videos"/>
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.12.1" date="2014-03-30" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Lehet, hogy nincsenek telepítve a megfelelő kodekek, vagy a DVD rossz régiójú.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Miért nem tudom a DVD-t lejátszani?</title>
+
+  <p>Ha behelyez egy DVD-t a számítógépbe, és nem tudja lejátszani, akkor lehet, hogy nincsenek telepítve a megfelelő DVD <em>kodekek</em>, vagy a DVD más <em>régióból</em> származik.</p>
+
+<section id="codecs">
+  <title>A DVD-lejátszáshoz szükséges kodekek telepítése</title>
+
+  <p>A DVD lejátszása érdekében telepítenie kell a megfelelő <em>kodekeket</em>. A kodek az a szoftver, amely lehetővé teszi az alkalmazásoknak az egyes videó- vagy zeneformátumok olvasását. Ha médialejátszó szoftvere nem találja a megfelelő kodekeket, akkor felajánlhatja azok telepítését. Ha ez nem történik meg, akkor saját kezűleg kell telepítenie a kodekeket – ehhez kérjen segítséget, például a Linux disztribúciója támogatói fórumán.</p>
+
+  <p>A DVD-k <em>másolásvédelemmel</em> is rendelkeznek, egy CSS nevű rendszert használnak. Ez megakadályozza a DVD-k másolását, de a másolásvédelem kezeléséhez szükséges extra szoftverek nélkül azok lejátszását is. Ez a szoftver számos Linux disztribúcióban elérhető, de nem minden országban használható legálisan. A másolásvédelem kezelését például a <link href="http://fluendo.com/shop/product/oneplay-dvd-player/">Fluendo</link> kereskedelmi DVD dekódolójával oldhatja meg. Ez Linuxon is működik, és minden országban legális használni.</p>
+
+  </section>
+
+<section id="region">
+  <title>A DVD régiójának ellenőrzése</title>
+
+  <p>A DVD-knek van egy <em>régiókódjuk</em>, amely megadja, hogy a világ melyik régiójában lehet lejátszani a DVD-t. Ha a számítógépének DVD-lejátszója eltérő régiójú, mint a DVD, akkor nem fogja tudni azt lejátszani. Egy régió 2-es DVD-lejátszó például csak az Európából, Közép-Keletről, Japánból és Dél-Afrikából származó DVD-ket tudja lejátszani.</p>
+
+  <p>A DVD-lejátszó régiója gyakran megváltoztatható, de csak néhány alkalommal, mielőtt véglegesen beállna egy régióra. A DVD-lejátszó régiójának megváltoztatásához használja a <link href="http://linvdr.org/projects/regionset/">regionset</link> programot.</p>
+
+  <p>További kombináló billentyűkombinációkért lásd a <link href="https://hu.wikipedia.org/wiki/DVD_r%C3%A9gi%C3%B3k%C3%B3d">DVD régiókódokról szóló lapot a Wikipédiában</link>.</p>
+
+</section>
+
+</page>

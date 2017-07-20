@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-dwellclick" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="mouse"/>
+    <link type="guide" xref="a11y#mobility" group="clicking"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
+    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>A <gui>Rámutatási (elidőzési) kattintás</gui> segítségével az egeret egy helyben tartva kattinthat.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Kattintás szimulálása rámutatással</title>
+
+  <p>Akkor is végezhet kattintást vagy húzást a vezérlőelemeken vagy képernyő-objektumokon, ha rájuk mutat az egérmutatóval. Ez akkor hasznos, ha nehézséget okoz az egér mozgatása és az ezzel egyidejű kattintás. Ezt a funkciót <gui>rámutatási</gui> vagy elidőzési kattintásnak nevezzük.</p>
+
+  <p>Ha a <gui>rámutatási kattintás</gui> be van kapcsolva, akkor mozgassa az egérmutatót egy vezérlőelem fölé, engedje el az egeret, és rövid idő múlva a gomb lenyomásra kerül.</p>
+
+  <steps>
+    <item>
+      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni az <gui>Akadálymentesítés</gui> szót.</p>
+    </item>
+    <item>
+      <p>Kattintson az <gui>Akadálymentesítés</gui> ikonra a panel megnyitásához.</p>
+    </item>
+    <item>
+      <p>Nyomja meg a <gui>Kattintássegéd</gui> gombot a <gui>Mutatás és kattintás</gui> szakaszban.</p>
+    </item>
+    <item>
+      <p>Kapcsolja <gui>BE</gui> a <gui>Rámutatási kattintást</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Megnyílik az <gui>Elidőzési kattintás</gui> ablak, és a többi ablak felett marad. Ennek segítségével kiválaszthatja, milyen kattintás történjen egy vezérlőelemre mutatáskor. Ha például a <gui>Másodlagos kattintást</gui> választja, akkor az egér jobb kattintást végez, amikor az egérmutatót pár másodpercig egy gomb fölött tartja. A dupla kattintás, jobb kattintás vagy húzás után automatikusan visszaáll a kattintásra.</p>
+
+  <p>Amikor az egérmutatója egy gombra mutat, és nem mozgatja, akkor a színe fokozatosan megváltozik. A szín megváltozásának befejeződésekor megtörténik a gombra kattintás.</p>
+
+  <p>A <gui>Késleltetés</gui> segítségével beállíthatja, hogy meddig kell az egérmutatót adott helyen tartani a kattintás előtt.</p>
+
+  <p>Nem kell teljesen álló helyzetben tartania az egeret, hogy a kattintás bekövetkezzen. A mutató elmozdulhat egy kicsit, és kis idő elteltével ekkor is megtörténik a kattintás. Ha azonban túl sokat mozdul, a kattintás nem következik be.</p>
+
+  <p>Módosítsa a <gui>Mozgás küszöbszintje</gui> beállítást a mutató elmozdulásának megadásához, amelyen belül azt még egy helyben állónak tekinti a rendszer.</p>
+
+</page>

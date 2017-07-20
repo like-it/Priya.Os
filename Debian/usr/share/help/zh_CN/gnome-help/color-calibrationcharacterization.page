@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="zh-CN">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>校准和特征分析是完全不同的两件事。</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>校准和特征分析有何不同？</title>
+  <p>很多人起初都不清楚校准和特征分析之间的不同。校准是修改设备颜色行为的过程。这一般使用两种机制来完成：</p>
+  <list>
+    <item><p>更改它所具有的控制或内部设置</p></item>
+    <item><p>对其颜色通道应用曲线</p></item>
+  </list>
+  <p>校准的概念是根据一个设备的颜色响应把它置于一个已定义状态。通常将其作为保持可重复行为的常用方式。典型的校准会以设备或系统指定的文件格式存储，用以记录设备设置情况或各个频道的校准曲线。</p>
+  <p>特征分析(或获取配置文件)是一个设备复原或者颜色响应的<em>记录</em>过程。一般结果存储在设备 ICC 配置文件中。此类配置文件本身不能以任何方式修改颜色。它允许像 CMM (色彩管理模块)系统或颜色感知应用程序在与其他设备配置文件组合时修改颜色。只有知道两个设备的特征分析曲线，才能顺利地从一个设备传输颜色到另一个设备。</p>
+  <note>
+    <p>注意一个特征分析(配置文件)仅在和特征分析时相同的使用条件下有效。</p>
+  </note>
+  <p>就显示配置文件而言，由于为方便起见校准信息常常存储于配置文件中，因此会存在其它一些混淆。为了方便，它存储在名为 <em>vcgt</em> 的标签内。虽然它存储在配置文件内，但正常的基于 ICC 的工具或应用程序都不能识别它，或利用它做任何事。同样地，一般显示校准工具和应用程序也不能识别或利用 ICC 特征分析(配置文件)信息做任何事。</p>
+
+</page>

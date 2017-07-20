@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="game-types" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+    <revision pkgversion="3.8" version="0.1" date="2013-05-21" status="draft"/>
+    <revision pkgversion="3.11.90" date="2014-03-26" status="review"/>
+    <revision pkgversion="3.14" date="2015-01-25" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">safincrazy@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Rachel Dunstan</name>
+      <email its:translate="no">dunstanrc@gmail.com</email>
+    </credit>
+
+    <desc>A nehézségi szint módosítása a <app>Robotok</app> játékban.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Játék típusa</title>
+
+  <p>A <app>Robotok</app> játékot különbözőképpen játszhatja az eltérő játéktípusok kiválasztásával. Ez megváltoztatja a <app>Robotok</app> játék nehézségi szintjét.</p>
+
+  <steps>
+    <title>A nehézségi szint módosításához:</title>
+    <item>
+      <p>Válassza a <guiseq><gui style="menu">Beállítások</gui><gui>Beállítások</gui><gui>Játék</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>A <gui>Játéktípus</gui> melletti legördülő menüből válassza ki a megfelelő lehetőséget.</p>
+      <table frame="top bottom" rules="rows">
+      <thead>
+      <tr>
+        <td><p>Játéktípus</p></td>
+        <td><p>Kezdeti biztonságos <link xref="moves#teleport">teleportok</link></p>
+        </td>
+        <td><p>Kezdeti <link xref="scores#high-low-risk">alacsony kockázatú ellenséges robotok</link></p></td>
+        <td><p>Kezdeti <link xref="scores#high-low-risk">magas kockázatú ellenséges robotok</link></p></td>
+        <td><p>A biztonságos teleportok növekednek az egymást követő szinteken?</p></td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><p><gui>rémálom</gui></p></td>
+        <td><p>2</p></td>
+        <td><p>2</p></td>
+        <td><p>8</p></td>
+        <td><p>Igen</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>robotok biztonságos teleporttal</gui></p></td>
+        <td><p>0</p></td>
+        <td><p>10</p></td>
+        <td><p>0</p></td>
+        <td><p>Igen, de csak ha a robotok <link xref="moves#wait">várakozás</link> közben haltak meg</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>robotok2</gui></p></td>
+        <td><p>1</p></td>
+        <td><p>8</p></td>
+        <td><p>2</p></td>
+        <td><p>Igen, de csak ha a robotok <link xref="moves#wait">várakozás</link> közben haltak meg</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>könnyű robotok2</gui></p></td>
+        <td><p>3</p></td>
+        <td><p>8</p></td>
+        <td><p>2</p></td>
+        <td><p>Igen</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>klasszikus robotok</gui></p></td>
+        <td><p>0</p></td>
+        <td><p>10</p></td>
+        <td><p>0</p></td>
+        <td><p>Nem</p></td>
+      </tr>
+      </tbody>
+    </table>
+    </item>
+    <item>
+      <p>Ha bejelöli a <gui style="checkbox">Biztonságos lépések használata</gui> jelölőnégyzetet, akkor a játék meg fogja akadályozni a lépést, ha a lépés azt okozná, hogy egy robot megölné Önt, hacsak nem a teleportálás az egyetlen módja a túlélésnek. Ha bejelöli a <gui style="checkbox">Tutibiztos lépések használata</gui> jelölőnégyzetet, akkor ebben az esetben a játék meg fog akadályozni mindenféle lépést, így rá lesz kényszerítve a teleportálásra. Ez csökkenti a nehézségi szintet. Bármikor kiveheti a pipát ezekből, ha a játékot túl könnyűnek találja.</p>
+    </item>
+  </steps>
+
+</page>

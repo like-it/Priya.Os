@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect-reverse" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <link type="seealso" xref="connect"/>
+    <title type="sort">3</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>连接到不在您本地网络的计算机：绕过远程主机上的防火墙限制。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title><gui>反向连接...</gui></title>
+
+  <p>反向连接通常用来绕过防火墙对公开端口的限制。防火墙通常阻断公开端口，但不会阻断向外的流量。在一般的正向连接中，客户端会通过服务器的开放端口连接到服务器，但是在反向连接中，客户端会打开一个端口让服务器连接。</p>
+
+  <section id="enable-reverse-connections">
+    <title>启用反向连接</title>
+
+    <steps>
+      <item>
+        <p>选择 <guiseq><gui style="menu">远程</gui> <gui style="menuitem">反向连接...</gui></guiseq>。</p>
+      </item>
+      <item>
+        <p>选择<gui>启用反向连接</gui>。</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="accessing-behind-firewall">
+    <title>访问防火墙后边的计算机</title>
+
+    <p>远程计算机需要使用您的 <em>IP 地址</em> 和端口号连接到您的计算机，这可在<gui>连接</gui>下的<gui>反向连接...</gui>对话框中找到。</p>
+
+    <note>
+      <p>目前，<app>Vino</app> 这款 GNOME VNC 服务器不支持反向连接(也叫“监听模式”)。其他应用程序，例如<app>UltraVNC</app>、<app>RealVNC</app>和<app>TightVNC</app>支持反向连接。</p>
+    </note>
+
+    <p>Once the remote computer connects to your machine, <app>Remote Desktop
+    Viewer</app> will establish the reverse connection.</p>
+
+    <p>当连接到不在您本地网络的一台计算机时，您需要提供您相对远程服务器而言的外部可见的 IP 地址和端口号。</p>
+
+  </section>
+
+</page>

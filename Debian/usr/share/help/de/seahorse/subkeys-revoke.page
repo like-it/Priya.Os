@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="subkeys-revoke" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="pgp-subkeys#more"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-08-25" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Einen unsicheren oder nicht mehr verwendeten Unterschlüssel widerrufen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ihre Unterschlüssel zurückziehen</title>
+
+  <p>Wenn Ihr Unterschlüssel unsicher wurde oder nicht mehr eingesetzt wird, ist es sinnvoll diesen zu widerrufen. So beugen Sie einem Missbrauch des Schlüssels vor.</p>
+
+  <steps>
+    <title>So ziehen Sie einen Unterschlüssel zurück:</title>
+    <item>
+      <p><link xref="subkeys-examine">Wechseln</link> Sie in die Seitenleiste <gui>Unterschlüssel</gui>.</p>
+    </item>
+    <!--The above step can be replaced with the following, if it's too vague:
+    <item>
+      <p>Select <gui>GnuPG keys</gui> from the panel on the left.</p>
+    </item>
+    <item>
+      <p>Right click on the PGP key and select
+      <guiseq><gui>Properties</gui><gui>Details</gui>.</p>
+    </item>
+    <item>
+      <p>Expand the subkeys panel if required.</p>
+    </item>-->
+    <item>
+      <p>Wählen Sie den Unterschlüssel aus der Liste und klicken Sie auf den Knopf <gui style="button">Widerrufen</gui>.</p>
+    </item>
+    <item>
+      <p>Wählen Sie im neuen Dialog den Grund für den Widerruf des Schlüssels aus. Beschreiben Sie gegebenenfalls den Grund detaillierter im Feld <gui>Beschreibung</gui>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf den Knopf <gui style="button">Widerrufen</gui>.</p>
+    </item>
+    <item>
+      <p>Sie müssen den Schlüssel mit dem zugehörigen Passwort entsperren.</p>
+    </item>
+    <item>
+      <p>Der <gui>Status</gui> der Unterschlüssel ändert sich zu <gui>Zurückgerufen</gui> in der Leiste <gui>Unterschlüssel</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Wenn Sie Ihren Unterschlüssel <link xref="pgp-publish">veröffentlicht</link> haben, so müssen Sie nach dem Rückrufen diesen mit den Schlüssel-Servern <link xref="pgp-sync">abgleichen</link>, um den Rückruf für alle Kopien des Schlüssels umzusetzen.</p>
+  </note>
+
+</page>

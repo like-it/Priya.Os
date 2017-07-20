@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="es">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>Calibración y caracterización son dos conceptos completamente distintos.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>¿Cuál es la diferencia entre calibración y caracterización?</title>
+  <p>Al principio mucha gente está confundida con la diferencia entre calibración y caracterización. La calibración es el proceso de modificar el comportamiento de color de un dispositivo. Generalmente se realiza a través de dos mecanismos:</p>
+  <list>
+    <item><p>Cambiar los controles o configuraciones internas que tiene</p></item>
+    <item><p>Aplicar curvas a sus canales de color</p></item>
+  </list>
+  <p>La idea de calibración es la de poner un dispositivo en un estado definido dependiendo de su respuesta de color. Generalmente se usa como un instrumento del día a día para mantener un comportamiento reproducible. Típicamente, la calibración se almacena en formatos de archivo específicos de dispositivo o sistema que guardan la configuración del dispositivo o curvas de calibración por canal.</p>
+  <p>La caracterización (o perfilado) es <em>grabar</em> la forma en la que un dispositivo reproduce o responde al color. Generalmente el resultado se almacena en un perfil ICC de dispositivo. Tal perfil no modifica en sí el color en ninguna medida. Permite al sistema, tal como al CMM (módulo de gestión de color, «Color Management Module») o a una aplicación capaz de gestionar color, modificar el color al combinarse con otro perfil de color. Sólo sabiendo las características de dos dispositivos se puede transferir el color de un dispositivo de representación a otro.</p>
+  <note>
+    <p>Tenga en cuenta que una caracterización (perfil) sólo será válida para un dispositivo si está en el mismo estado de calibración en el que estaba cuando se caracterizó.</p>
+  </note>
+  <p>En el caso de los perfiles de pantalla existe cierta confusión adicional ya que la información de calibración se almacena en el perfil por conveniencia. Por convenio, se almacena en una etiqueta denominada <em>vcgt</em>. Aunque se almacena en el perfil, ninguna de las herramientas o aplicaciones normales basadas en ICC la tienen en cuenta. De igual forma, las herramientas de calibración y aplicaciones típicas no son conscientes ni trabajan con la información de caracterización (perfil) ICC.</p>
+
+</page>

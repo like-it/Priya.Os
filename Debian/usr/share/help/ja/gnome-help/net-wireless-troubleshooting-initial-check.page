@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-initial-check" xml:lang="ja">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-hardware-info"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu ドキュメンテーション Wiki の貢献者</name>
+    </credit>
+    <credit type="author">
+      <name>GNOME ドキュメンテーションプロジェクト</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>簡単なネットワーク設定に誤りがないか確認してから、次の問題解決ステップへの準備を整えます。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>無線ネットワークトラブルシューティング</title>
+  <subtitle>初期接続確認を行います</subtitle>
+
+  <p>このステップでは、無線ネットワーク接続に関する基本的な情報をチェックします。無線接続がオフになっていたなど、問題が単純な原因で発生しているのではないことを確認し、次の問題解決ステップへの準備を整えるために行います。</p>
+
+  <steps>
+    <item>
+      <p>ラップトップを<em>有線</em>でインターネット接続させていないか確認します。</p>
+    </item>
+    <item>
+      <p>外付けワイヤレスアダプター (ラップトップに差し込める PCMCIA カードや USB アダプターなど) がある場合、しっかりとコンピューターに差し込まれているか確認します。</p>
+    </item>
+    <item>
+      <p>ワイヤレスカードがコンピューターの<em>内部</em>にある場合は、ワイヤレススイッチがオンになっているか確認します (スイッチがある場合)。ラップトップにはキーボードのキーの組み合わせを押すことで切り替え可能なワイヤレススイッチが搭載されていることがよくあります。</p>
+    </item>
+    <item>
+      <p>Click the system status area on the top bar and select
+      <gui>Wi-Fi</gui>, then select <gui>Wi-Fi Settings</gui>. Make sure that
+      <gui>Wi-Fi</gui> is set to <gui>ON</gui>. You should also check that
+      <link xref="net-wireless-airplane">Airplane Mode</link> is <em>not</em>
+      switched on.</p>
+    </item>
+    <item>
+      <p>Open the Terminal, type <cmd>nmcli device</cmd> and press
+      <key>Enter</key>.</p>
+      <p>This will display information about your network interfaces and
+      connection status. Look down the list of information and see if there is
+      an item related to the wireless network adapter. If the state is
+      <code>connected</code>, it means that the adapter is working and connected
+      to your wireless router.</p>
+    </item>
+  </steps>
+
+  <p>ワイヤレスルーターに接続されているのにインターネットにアクセスできない場合、ルーターが正しく設定されていない、またはインターネットサービスプロバイダー (ISP) 側で技術的な問題が発生している可能性があります。ルーターと ISP の設定ガイドを点検して設定に間違いがないか確認するか ISP にサポートを求めます。</p>
+
+  <p>If the information from <cmd>nmcli device</cmd> did not indicate that you were
+  connected to the network, click <gui>Next</gui> to proceed to the next
+  portion of the troubleshooting guide.</p>
+
+</page>

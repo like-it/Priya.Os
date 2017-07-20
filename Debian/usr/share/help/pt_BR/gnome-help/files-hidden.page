@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-hidden" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-29" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Torne um arquivo invisível, para que você não o veja no gerenciador de arquivos.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Ocultando um arquivo</title>
+
+  <p>O gerenciador de arquivos <app>Arquivos</app> permite a você ocultar e desocultar arquivos como desejar. Quando um arquivo é ocultado, ele não é exibido pelo gerenciador de arquivos, mas ele ainda está na pasta.</p>
+
+  <p>Para ocultar um arquivo, <link xref="files-rename">renomeie-o</link> com um <file>.</file> no começo do seu nome. Por exemplo, para ocultar um arquivo chamado <file>exemplo.txt</file>, você deveria renomeá-lo para <file>.exemplo.txt</file>.</p>
+
+<note>
+  <p>Você pode ocultar pastas da mesma maneira que se oculta arquivos. Renomeie a pasta colocando um <file>.</file> no começo do nome da pasta.</p>
+</note>
+
+<section id="show-hidden">
+ <title>Mostrar todos os arquivos ocultos</title>
+
+  <p>Se quiser ver todos os arquivos ocultos de uma pasta, vá para a pasta em questão e clique no botão de opções de visualização na barra de ferramentas e escolha <gui>Mostrar arquivos ocultos</gui> ou pressione <keyseq><key>Ctrl</key><key>H</key></keyseq>. Todos os arquivos ocultos serão mostrados juntamente com os arquivos que não estão ocultos.</p>
+
+  <p>Para ocultar esses arquivos novamente, clique no botão de opções de visualização na barra de ferramentas e escolha <gui>Mostrar arquivos ocultos</gui> ou pressione <keyseq><key>Ctrl</key><key>H</key></keyseq> de novo.</p>
+
+</section>
+
+<section id="unhide">
+ <title>Desocultar um arquivo</title>
+
+  <p>Para desocultar um arquivo, vá até a pasta que contém o arquivo oculto e clique no botão de opções de visualização na barra de ferramentas e escolha <gui>Mostrar arquivos ocultos</gui>. Então, localize o arquivo oculto e renomeie-o de forma que ele não contenha um <file>.</file> na frente do seu nome. Por exemplo, para desocultar um arquivo chamado <file>.exemplo.txt</file>, você deveria renomeá-lo para <file>exemplo.txt</file>.</p>
+
+  <p>Uma vez que tenha renomeado o arquivo, você pode ou clicar no botão de opções de visualização na barra de ferramentas e escolhe <gui>Mostrar arquivos ocultos</gui> ou pressionar <keyseq><key>Ctrl</key><key>H</key></keyseq> para esconder os demais arquivos ocultos de novo.</p>
+
+  <note><p>Por padrão, você verá apenas os arquivos ocultos no gerenciador de arquivos até que este seja fechado. Para alterar essa configuração de forma que o gerenciador de arquivos sempre mostre os arquivos ocultos, veja <link xref="nautilus-views"/>.</p></note>
+
+  <note><p>A maioria dos arquivos ocultos terão um <file>.</file> no começo de seus nomes. Outros, no entanto, podem ter um <file>~</file> no final dos seus nomes. Estes são cópias de segurança de arquivos. Veja <link xref="files-tilde"/> para mais informações.</p></note>
+
+</section>
+
+</page>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="status-icons" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="shell-overview#apps"/>
+
+    <revision version="0.1" date="2013-02-23" status="review"/>
+
+    <credit type="author copyright">
+      <name>Monica Kochofar</name>
+      <email>monicakochofar@gmail.com</email>
+      <years>2012</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Объясняется значение значков, расположенных справа в верхней панели.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Что означают значки в верхней панели?</title>
+<p>В этом разделе объясняется значение значков, расположенных в правом верхнем углу экрана, в частности, описываются различные варианты значков, представленных в интерфейсе GNOME.</p>
+
+<if:choose>
+<if:when test="!platform:gnome-classic">
+<media type="image" src="figures/top-bar-icons.png" style="floatend">
+  <p>Верхняя панель GNOME Shell</p>
+</media>
+</if:when>
+<if:when test="platform:gnome-classic">
+<media type="image" src="figures/top-bar-icons-classic.png" width="395" height="70" style="floatend">
+  <p>Верхняя панель GNOME Shell</p>
+</media>
+</if:when>
+</if:choose>
+
+<links type="section"/>
+
+<section id="universalicons">
+<title>Значки меню специальных возможностей</title>
+
+ <table shade="rows">
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/preferences-desktop-accessibility-symbolic.svg"/></td>
+      <td><p>Открывает меню, через которое можно управлять включением специальных возможностей.</p></td>
+    </tr>
+    
+  </table>
+</section>
+
+
+<section id="audioicons">
+<title>Значки индикатора громкости</title>
+
+ <table shade="rows">
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-high-symbolic.svg"/></td>
+      <td><p>Высокий уровень громкости</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-medium-symbolic.svg"/></td>
+      <td><p>Средний уровень громкости.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-low-symbolic.svg"/></td>
+      <td><p>Низкий уровень громкости.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-muted-symbolic.svg"/></td>
+      <td><p>Звук отключён.</p></td>
+    </tr>
+  </table>
+</section>
+
+
+<section id="bluetoothicons">
+<title>Значки диспетчера Bluetooth</title>
+
+ <table shade="rows">
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/></td>
+      <td><p>Bluetooth включён.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-disabled-symbolic.svg"/></td>
+      <td><p>Bluetooth отключён.</p></td>
+    </tr>
+  </table>
+</section>
+
+<section id="networkicons">
+<title>Значки диспетчера сети</title>
+<p/>
+<p><app>Сотовое соединение</app></p>
+ <table shade="rows">
+
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-3g-symbolic.svg"/></td>
+      <td><p>Подключено к сети 3G.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-4g-symbolic.svg"/></td>
+      <td><p>Подключено к сети 4G.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-edge-symbolic.svg"/></td>
+      <td><p>Подключено к сети EDGE.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-gprs-symbolic.svg"/></td>
+      <td><p>Подключено к сети GPRS.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-umts-symbolic.svg"/></td>
+      <td><p>Подключено к сети UMTS.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-connected-symbolic.svg"/></td>
+      <td><p>Установлено соединение с сотовой сетью.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-acquiring-symbolic.svg"/></td>
+      <td><p>Выполняется подключение к сотовой сети.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg"/></td>
+      <td><p>Очень высокий уровень сигнала.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-good-symbolic.svg"/></td>
+      <td><p>Высокий уровень сигнала.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-ok-symbolic.svg"/></td>
+      <td><p>Средний уровень сигнала.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-weak-symbolic.svg"/></td>
+      <td><p>Низкий уровень сигнала.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-none-symbolic.svg"/></td>
+      <td><p>Очень низкий уровень сигнала.</p></td>
+    </tr></table>
+
+
+
+
+<p><app>Соединение с локальной сетью</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-error-symbolic.svg"/></td>
+      <td><p>Ошибка поиска сети.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-idle-symbolic.svg"/></td>
+      <td><p>Сеть неактивна.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-no-route-symbolic.svg"/></td>
+      <td><p>Маршрута для сети не найдено.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-offline-symbolic.svg"/></td>
+      <td><p>Сеть отключена.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-receive-symbolic.svg"/></td>
+      <td><p>Сеть принимает данные.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-receive-symbolic.svg"/></td>
+      <td><p>Сеть передаёт и получает данные.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-symbolic.svg"/></td>
+      <td><p>Сеть передаёт данные.</p></td>
+    </tr>
+</table>
+
+
+
+<p><app>Соединение с виртуальной частной сетью</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-acquiring-symbolic.svg"/></td>
+      <td><p>Устанавливается сетевое соединение.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-symbolic.svg"/></td>
+      <td><p>Подключено к сети VPN.</p></td>
+    </tr>
+</table>
+
+
+<p><app>Соединения с проводными сетями</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-acquiring-symbolic.svg"/></td>
+      <td><p>Устанавливается сетевое соединение.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-disconnected-symbolic.svg"/></td>
+      <td><p>Отключено от сети.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-symbolic.svg"/></td>
+      <td><p>Подключено к проводной сети.</p></td>
+    </tr>
+</table>
+
+
+<p><app>Беспроводные соединения</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-acquiring-symbolic.svg"/></td>
+      <td><p>Устанавливается беспроводное соединение.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-encrypted-symbolic.svg"/></td>
+      <td><p>Беспроводная сеть зашифрована.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-connected-symbolic.svg"/></td>
+      <td><p>Подключено к беспроводной сети.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg"/></td>
+      <td><p>Очень высокий уровень сигнала.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-good-symbolic.svg"/></td>
+      <td><p>Высокий уровень сигнала.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-ok-symbolic.svg"/></td>
+      <td><p>Средний уровень сигнала.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-weak-symbolic.svg"/></td>
+      <td><p>Низкий уровень сигнала.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-none-symbolic.svg"/></td>
+      <td><p>Очень низкий уровень сигнала.</p></td>
+    </tr>
+
+  </table>
+</section>
+
+<section id="batteryicons">
+<title>Значки диспетчера питания</title>
+
+ <table shade="rows">
+   <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-symbolic.svg"/></td>
+      <td><p>Аккумулятор полностью заряжен.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-symbolic.svg"/></td>
+      <td><p>Аккумулятор частично разряжен.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-symbolic.svg"/></td>
+      <td><p>Низкий уровень заряда аккумулятора.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-symbolic.svg"/></td>
+      <td><p>Предупреждение: очень низкий уровень заряда аккумулятора.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-symbolic.svg"/></td>
+      <td><p>Критически низкий уровень заряда аккумулятора.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-missing-symbolic.svg"/></td>
+      <td><p>Аккумулятор был отключён.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-charged-symbolic.svg"/></td>
+      <td><p>Аккумулятор полностью заряжен.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-charging-symbolic.svg"/></td>
+      <td><p>Аккумулятор заряжен, зарядка продолжается.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-charging-symbolic.svg"/></td>
+      <td><p>Аккумулятор частично заряжен, идёт зарядка.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-charging-symbolic.svg"/></td>
+      <td><p>Низкий уровень заряда, идёт зарядка.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-charging-symbolic.svg"/></td>
+      <td><p>Очень низкий уровень заряда, идёт зарядка.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-charging-symbolic.svg"/></td>
+      <td><p>Аккумулятор полностью разряжен, идёт зарядка.</p></td>
+    </tr>
+  </table>
+</section>
+
+
+</page>

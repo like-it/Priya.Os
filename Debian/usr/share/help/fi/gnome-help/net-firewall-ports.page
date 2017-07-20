@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Määritä oikea tietoliikenneportti palomuuriin käyttämiäsi sovelluksia varten.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Yleisesti käytetyt verkkoportit</title>
+
+  <p>Alla on lueteltuna sovellukset, jotka käyttävät Internet-yhteyttä sekä niiden käyttämät portit. Voit <link xref="net-firewall-on-off">estää tai sallia</link> näiden sovellusten käyttää yhteyttä järjestelmän palomuurilla. Oikeasti portteja on tuhansia, joten tämä taulukko ei todellakaan kata kaikkia, mutta kuitenkin yleisimmät ja tärkeimmät.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>Portti</p>
+	</td>
+	<td>
+	  <p>Nimi</p>
+	</td>
+	<td>
+	  <p>Kuvaus</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>Mahdollistaa järjestelmien löytää toisensa, ja kertomaan toisilleen automaattisesti tarjoamansa palvelut.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>Tulostaminen</p>
+	</td>
+	<td>
+	  <p>Sallii tulostustöiden lähetyksen tulostimelle verkon yli.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>Tulostaminen</p>
+	</td>
+	<td>
+	  <p>Sallii tulostimen jaon muita käyttäjiä varten verkon yli.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>Tilan tiedotus</p>
+	</td>
+	<td>
+	  <p>Sallii pikaviestintilasi esittämisen verkossa muille käyttäjille (esimerkiksi "Tavoitettavissa" tai "Varattu").</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>Etätyöpöytä</p>
+	</td>
+	<td>
+	  <p>Sallii työpöytäsi jaon verkon kautta etäyhteyttä varten.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>Musiikkijako (DAAP)</p>
+	</td>
+	<td>
+	  <p>Sallii musiikkikirjaston jaon verkon kautta.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

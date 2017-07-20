@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+    <link type="guide" xref="net-wired"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME 文档项目</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Set up a VPN connection to a local network over the internet.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>连接到 VPN</title>
+
+<p>VPN(或者<em>虚拟专用网络</em>)是一种通过互联网连接到局域网的方法。例如，您出差旅行时想连接到您工作的局域网，您要找到一个上网的场所(比如旅馆)，然后可以连接到您工作的 VPN。看起来就像直接连接到您工作的网络，但实际上是通过了旅馆的互联网连接，VPN 连接通常使用<em>加密</em>以防止其他没有登录的人访问局域网。</p>
+
+<p>2有多种不同类型的 VPN，您需要安装一些额外的软件，这取决于您使用的 VPN 连接类型，从 VPN 管理那儿寻找连接的详细情况，找到您需要使用的<em>VPN 客户端</em>，然后进入软件安装中心，搜索用于您的 VPN<app>网络管理器</app>(如果有的话)，然后安装它。</p>
+
+<note>
+ <p>如果找不到适合您 VPN 的网络管理器的软件包，您可能要从提供 VPN 软件的公司下载客户端，可能要参考其他的使用指导说明。</p>
+</note>
+
+<p>To set up the VPN connection:</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Network</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>At the bottom of the list on the left, click the <gui>+</gui> button
+      to add a new connection.</p>
+    </item>
+    <item>
+      <p>Choose <gui>VPN</gui> in the interface list.</p>
+    </item>
+    <item>
+      <p>Choose which kind of VPN connection you have.</p>
+    </item>
+    <item>
+      <p>Fill in the VPN connection details, then press <gui>Add</gui> once you
+      are finished.</p>
+    </item>
+    <item>
+      <p>When you have finished setting-up the VPN, open the
+      <gui xref="shell-introduction#yourname">system menu</gui> from the right side of
+      the top bar, click <gui>VPN off</gui> and select <gui>Connect</gui>. You
+      may need to enter a password for the connection before it is established.
+      Once the connection is made, you will see a lock shaped icon in the top
+      bar.</p>
+    </item>
+    <item>
+      <p>Hopefully you will successfully connect to the VPN. If not, you may
+      need to double-check the VPN settings you entered. You can do this from
+      the <gui>Network</gui> panel that you used to create the connection.
+      Select the VPN connection from the list, then press the
+<media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button to review the settings.</p>
+    </item>
+    <item>
+      <p>To disconnect from the VPN, click the system menu on the top bar and
+      click <gui>Turn Off</gui> under the name of your VPN connection.</p>
+    </item>
+  </steps>
+
+</page>

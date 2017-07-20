@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-searching" xml:lang="hu">
+ 
+  <info>
+    <desc>Üzenetek keresése.</desc>
+    
+    <link type="guide" xref="searching-items"/>
+    <link type="guide" xref="mail-organizing"/>
+ 
+    <revision pkgversion="3.13.90" version="0.6" date="2015-03-09" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Max Vorobuov</name>
+      <email its:translate="no">vmax0770@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+ 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+ 
+<title>Levelek keresése</title>
+
+<section id="search-single">
+<title>Keresés egyetlen üzenetben</title>
+<p>A megjelenített üzenetben való kereséshez válassza a <guiseq><gui>Szerkesztés</gui><gui>Keresés üzenetben…</gui></guiseq> menüpontot.</p>
+</section>
+
+<section id="search-many">
+<title>Keresés minden üzenetben</title>
+
+<section id="quick-search">
+<title>Gyors keresés</title>
+<p>A levélnézetben feltételek megadásával gyorsan megkereshet egyes leveleket.</p>
+<steps>
+<item><p>A legördülő lista kibontásához kattintson a <media type="image" mime="image/png" its:translate="no" src="figures/search-icon.png"/> keresés ikonra.</p></item>
+<item><p>Válassza ki a keresési feltételt a listából.</p>
+<note style="tip"><p>A tapasztalt felhasználók <link href="https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10">több feltételt is egyesíthetnek a <gui>Tetszőleges kifejezés</gui> szintaxis használatával</link>.</p></note>
+</item>
+<item><p>Válassza ki a hatókört a szövegmező melletti legördülő listából.</p>
+<note style="tip"><p>A <gui>Jelenlegi fiók</gui> hatókörben a „fiók” kifejezés a <link xref="intro-main-window#e-mail">levélmappalista</link> felsőszintű csomópontjaira vonatkozik, mint például „Ezen a számítógépen” és a távoli postafiókok.</p></note>
+</item>
+<item><p>Adja meg a keresendő szöveget, és nyomja meg az <key>Enter</key> billentyűt.</p></item>
+<item><p>Az <app>Evolution</app> megjeleníti a találatokat.</p></item>
+</steps>
+<note style="tip"><p>Ha közvetlenül a negyedik lépéssel kezdi, akkor keresés a levél tárgyában és címeiben kerül végrehajtásra, és a hatókör a „Jelenlegi mappa” lesz.</p></note>
+<note style="tip"><p>Ha gyakran keres olyan levelekben, amelyek nem ugyanabban a mappában vannak, akkor hasznos lehet egy keresőmappát létrehozni; további részletekért lásd a <link xref="mail-search-folders">Keresőmappák használata</link> szakaszt.</p></note>
+<p>Ha több keresési feltételt szeretne beállítani, akkor használja a Speciális keresést (lásd alább).</p>
+</section>
+
+<!-- As advanced-search, clearing-search, saved-searches, editing-a-saved-search are totally identical in all *-searching.page files, this is centrally in one file that's included by XInclude. See
+http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-searching.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:section)"/>
+
+</section> 
+</page>

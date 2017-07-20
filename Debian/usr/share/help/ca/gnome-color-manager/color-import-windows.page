@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="color-import-windows" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <link type="seealso" xref="color-gettingprofiles"/>
+    <desc>Com importar un peril ICC en un sistema Windows.</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Manel Vidal</mal:name>
+      <mal:email>verduler@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Instal·lació d'un perfil ICC al Microsoft Windows</title>
+  <p>El mètode per assignar un perfil a un dispositiu i també utilitzar les corbes de calibratge incrustades és diferent per a cada versió de Microsoft Windows.</p>
+  <section id="xp">
+    <title>Windows XP</title>
+    <p>Des de l'Explorador de Windows feu clic amb el botó secundari al perfil i seguidament feu clic a <gui>Instal·la el perfil</gui>. Automàticament el sistema copiarà el perfil al directori correcte.</p>
+    <p>Llavors obriu el <guiseq><gui>Tauler de control</gui><gui>Color</gui></guiseq> i afegiu el perfil al dispositiu.</p>
+    <note style="warning">
+      <p>Si esteu substituint un perfil preexistent al Windows XP, la drecera anterior no funcionarà. Per substituir el perfil preexistent el nou perfil s'ha de copiar manualment a <file>C:\Windows\system32\spool\drivers\color</file>.</p>
+    </note>
+    <p>Windows XP requereix que un programa s'inicii durant l'arrencada per copiar les corbes de calibratge a la targeta de vídeo. Això es pot fer utilitzant l'<app>Adobe Gamma</app>, el <app>LUT Loader</app> o de franc, utilitzant el <app href="https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=12714"> Microsoft Color Control Panel Applet</app>. Aquest últim afegeix un element nou <gui>Color</gui> al tauler de control i permet establir fàcilment durant l'arrencada les corbes de calibratge des del perfil per defecte.</p>
+  </section>
+
+  <section id="vista">
+    <title>Windows Vista</title>
+    <p>Microsoft Windows Vista erròniament esborra les corbes de calibratge de vídeo LUT després d'iniciar la sessió, d'aturar temporalment l'ordinador i quan apareix la pantalla de l'UAC. Això significa que haurà de recarregar manualment les corbes de calibratge del perfil ICC. Si esteu utilitzant perfils amb corbes de calibratge incrustades heu d'anar amb compte de no esborrar l'estat del calibratge.</p>
+  </section>
+
+  <section id="7">
+    <title>Windows 7</title>
+    <p>De forma similar al Linux, al Windows 7 els perfils es poden instal·lar per a tot el sistema o per a un usuari en particular. En qualsevol cas, els perfils es desen a la mateixa ubicació. Des de l'explorador de Windows feu clic amb el botó secundari al perfil i feu clic a <gui>Instal·la el perfil</gui> o copieu el perfil .icc a <file>C:\Windows\system32\spool\drivers\color</file>.</p>
+    <p>Obriu <guiseq><gui>Tauler de control</gui><gui>Administració del color</gui></guiseq> i afegiu el perfil al sistema fent clic al botó <gui>Afegeix</gui>. Feu clic a la pestanya <gui>Opcions avançades</gui> i cerqueu <gui>calibratge de la pantalla</gui>. La casella de selecció <gui>Utilitza el calibratge de pantalla de Windows</gui> habilita la corba de calibratge, però la casella no es pot modificar. Això es pot canviar si feu clic a <gui>Canvia els valors predeterminats del sistema</gui> i torneu a la pestanya <gui>Opcions avançades</gui> i feu clic a la casella de selecció.</p>
+    <p>Per establir les rampes de gamma tanqueu el diàleg i feu clic a <gui>Torna a carregar els calibratges actuals</gui>. A partir d'ara, cada cop que arrenqueu, es carregara el perfil de les corbes de calibratge.</p>
+  </section>
+
+</page>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-switching" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-windows"/>
+    <link type="guide" xref="shell-overview#apps"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-07" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Έργο Τεκμηρίωσης GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Πατήστε <keyseq><key>Λογότυπο</key><key>Tab</key></keyseq>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Εναλλαγή μεταξύ παραθύρων</title>
+
+  <p>Μπορείτε να δείτε όλες τις εκτελούμενες εφαρμογές σας που διαθέτουν μια γραφική διεπαφή στον <em>εναλλάκτη παραθύρου</em>. Αυτό κάνει εύκολη την εναλλαγή μεταξύ των εργασιών σας δίνοντας σας μια πλήρη εικόνα των εφαρμογών που έχετε ανοιχτά.</p>
+
+  <p>Από έναν χώρο εργασίας:</p>
+
+  <steps>
+    <item>
+      <p>Πατήστε <keyseq><key xref="keyboard-key-super">Λογότυπο</key><key>Tab</key></keyseq> για να εμφανίσετε τον <gui>εναλλάκτη παραθύρου</gui>.</p>
+    </item>
+    <item>
+      <p>Απελευθερώστε το <key xref="keyboard-key-super">Λογότυπο</key> για να επιλέξτε το επόμενο (επισημασμένο) παράθυρο στον εναλλάκτη.</p>
+    </item>
+    <item>
+      <p>Αλλιώς, κρατώντας πατημένο ακόμα το πλήκτρο <key xref="keyboard-key-super"> Λογότυπο</key>, πατήστε <key>Tab</key> για να περιηγηθείτε τη λίστα των ανοικτών παραθύρων, ή <keyseq><key>Shift</key><key>Tab</key></keyseq> για αντίθετη περιήγηση.</p>
+    </item>
+  </steps>
+
+  <p if:test="platform:gnome-classic">Μπορείτε επίσης να χρησιμοποιήσετε τη λίστα παραθύρων στην κάτω γραμμή για να προσπελάσετε όλα τα ανοικτά παράθυρά σας και να τα αλλάξετε μεταξύ τους.</p>
+
+  <note style="tip" if:test="!platform:gnome-classic">
+    <p>Τα παράθυρα στον εναλλάκτη παραθύρων ομαδοποιούνται κατά εφαρμογή. Οι προεπισκοπήσεις των εφαρμογών με πολλαπλά παράθυρα καταδύονται καθώς τις περνάτε με κλικ. Κρατήστε πατημένο το <key xref="keyboard-key-super">Λογότυπο</key> και πατήστε <key>`</key> (ή το πλήκτρο πάνω από το <key>Tab</key>) για να περιηγηθείτε στη λίστα.</p>
+  </note>
+
+  <note if:test="!platform:gnome-classic">
+    <p>Στον εναλλάκτη παραθύρου, εφαρμογές από διαφορετικούς χώρους εργασίας διαιρούνται από κάθετους διαχωριστές.</p>
+  </note>
+
+  <p>Μπορείτε επίσης να μετακινηθείτε μεταξύ των εικονιδίων εφαρμογής στον εναλλάκτη παραθύρου με τα πλήκτρα <key>→</key> ή <key>←</key>, ή να επιλέξετε ένα κάνοντας κλικ σε αυτό με το ποντίκι.</p>
+
+  <p>Προεπισκοπήσεις των εφαρμογών με ένα μονό παράθυρο μπορούν να εμφανιστούν με το πλήκτρο <key>↓</key>.</p>
+
+  <p>Από την επισκόπηση <gui>Δραστηριότητες</gui>, πατήστε σε ένα <link xref="shell-windows">παράθυρο</link> για να μεταβείτε σε αυτό αφήνοντας την επισκόπηση. Αν έχετε ανοιχτούς πολλούς <link xref="shell-windows#working-with-workspaces">χώρους εργασίας</link>, μπορείτε να πατήσετε σε κάθε χώρο εργασίας για να προβάλετε τα ανοικτά παράθυρα σε κάθε έναν από αυτούς.</p>
+
+</page>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Sie müssen den richtigen Netzwerkport ermitteln, damit Ihre Firewall einem Programm den Netzwerkzugang ermöglichen oder verbieten kann.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Üblicherweise verwendete Netzwerk-Ports</title>
+
+  <p>Dies ist eine Liste von Netzwerkports, die üblicherweise von Anwendungen verwendet werden, die Netzwerkdienste bereitstellen, wie etwa Dateifreigaben oder das Betrachten entfernter Bildschirme. Sie können die Firewall Ihres Systems so einstellen, dass sie den <link xref="net-firewall-on-off">Zugriff auf diese Anwendungen verhindert oder erlaubt</link>. Es gibt tausende verwendeter Ports, deshalb ist diese Liste nicht vollständig.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>Port</p>
+	</td>
+	<td>
+	  <p>Name</p>
+	</td>
+	<td>
+	  <p>Beschreibung</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>Erlaubt Systemen, sich gegenseitig ausfindig zu machen und ihre angebotenen Dienste zu beschreiben, ohne dass Sie die Details manuell angeben müssen.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>Drucken</p>
+	</td>
+	<td>
+	  <p>Erlaubt Ihnen, Druckaufträge über das Netzwerk an einen Drucker zu senden.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>Drucken</p>
+	</td>
+	<td>
+	  <p>Erlaubt Ihnen, Ihren Drucker gemeinsam mit anderen Personen im Netzwerk zu benutzen.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>Anwesenheit</p>
+	</td>
+	<td>
+	  <p>Erlaubt Ihnen, Ihren Sofortnachrichten-Status anderen Personen im Netzwerk bekannt zu geben, wie etwa »Verfügbar« oder »Beschäftigt«.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>Entfernter Bildschirm</p>
+	</td>
+	<td>
+	  <p>Erlaubt es Ihnen, Ihren Schreibtisch mit anderen Leuten zu teilen, so dass diese Ihren Schreibtisch sehen oder Ihnen Hilfe aus der Ferne anbieten können.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>Musikverteilung (DAAP)</p>
+	</td>
+	<td>
+	  <p>Ermöglicht es Ihnen, Ihre Musikbibliothek mit anderen im Netzwerk zu teilen.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

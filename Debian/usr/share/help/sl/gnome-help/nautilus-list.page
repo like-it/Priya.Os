@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-list" xml:lang="sl">
+
+  <info>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="nautilus-prefs" group="nautilus-list"/>
+
+    <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Nadzirajte kateri podatki so prikazani v stolpcih v seznamskem pogledu.</desc>
+  </info>
+
+  <title>Files list columns preferences</title>
+
+  <p>There are eleven columns of information that you can display in the
+  <gui>Files</gui> list view. Click <gui>Files</gui> in the top bar, pick
+  <gui>Preferences</gui> and choose the <gui>List Columns</gui> tab to select
+  which columns will be visible.</p>
+
+  <note style="tip">
+    <p>Use the <gui>Move Up</gui> and <gui>Move Down</gui> buttons to choose
+    the order in which the selected columns will appear. Click <gui>Reset to
+    Default</gui> to undo any changes and return to the default columns.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Ime</gui></title>
+      <p>The name of folders and files.</p>
+      <note style="tip">
+        <p>The <gui>Name</gui> column cannot be hidden.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Velikost</gui></title>
+      <p>Velikost mape je podana kot število predmetov, ki so v mapi. Velikost datoteke je podana kot bajti, KB ali MB.</p>
+    </item>
+    <item>
+      <title><gui>Vrsta</gui></title>
+      <p>Prikazano kot mapa ali datoteka vrste kot je dokument PDF, slika JPEG, zvok MP3 in več.</p>
+    </item>
+    <item>
+      <title><gui>Spremenjeno</gui></title>
+      <p>Gives the date of the last time the file was modified.</p>
+    </item>
+    <item>
+      <title><gui>Lastnik</gui></title>
+      <p>Ime uporabnika, ki je lastnik datoteke ali mape.</p>
+    </item>
+    <item>
+      <title><gui>Skupina</gui></title>
+      <p>The group the file is owned by. Each user is normally in their own
+      group, but it is possible to have many users in one group. For example, a
+      department may have their own group in a work environment.</p>
+    </item>
+    <item>
+      <title><gui>Dovoljenja</gui></title>
+      <p>Displays the file access permissions. For example,
+      <gui>drwxrw-r--</gui></p>
+      <list>
+        <item>
+          <p>The first character is the file type. <gui>-</gui> means regular
+          file and <gui>d</gui> means directory (folder). In rare cases, other
+          characters can also be shown.</p>
+        </item>
+        <item>
+          <p>Naslednji trije znaki <gui>rwx</gui> določijo dovoljenja uporabnika, ki je lastnik datoteke.</p>
+        </item>
+        <item>
+          <p>Naslednji trije znaki <gui>rw-</gui> določajo dovoljenja vseh članov skupine, ki je lastnik datoteke.</p>
+        </item>
+        <item>
+          <p>Zadnji trije znaki v stolpcu <gui>r--</gui> določajo dovoljenja za vse uporabnike na sistemu.</p>
+        </item>
+      </list>
+      <p>Each permission has the following meanings:</p>
+      <list>
+        <item>
+          <p><gui>r</gui>: readable, meaning that you can open the file or
+          folder</p>
+        </item>
+        <item>
+          <p><gui>w</gui>: writable, meaning that you can save changes to it</p>
+        </item>
+        <item>
+          <p><gui>x</gui>: executable, meaning that you can run it if it is a
+          program or script file, or you can access subfolders and files if it
+          is a folder</p>
+        </item>
+        <item>
+          <p><gui>-</gui>: permission not set</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title><gui>Vrsta MIME</gui></title>
+      <p>Prikaže predmetovo vrsto MIME.</p>
+    </item>
+    <item>
+      <title><gui>Mesto</gui></title>
+      <p>Pot do mesta datoteke.</p>
+    </item>
+    <item>
+      <title><gui>Modified – Time</gui></title>
+      <p>Poda datum in čas zadnje spremembe datoteke.</p>
+    </item>
+    <item>
+      <title><gui>Dostopano</gui></title>
+      <p>Gives the date or time of the last time the file was modified.</p>
+    </item>
+  </terms>
+
+</page>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
+
+    <credit type="author">
+      <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>எக்காட்டெரினா ஜெராசிமோவா</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+<title>என் கணினியை இடைநிறுத்திய பிறகு ஏன் மீண்டும் இயங்க மாட்டேனென்கிறது?</title>
+
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
+
+<section id="resume">
+  <title>என் கணினி இடைநிறுத்தப்பட்ட பிறகு மீண்டும் தொடங்கவில்லை</title>
+  <p>உங்கள் கணினியை இடைநிறுத்திவிட்ட்டு பிறகு சொடுக்கியை சொடுக்கினால் அல்லது விசைப்பலகை விசையை அழுத்தினால், அது விழித்தெழுந்து கடவுச்சொல் கேட்கும் திரையைக் காண்பிக்கலாம். அப்படி நடக்காவிட்டால், பவர் பொத்தானை அழுத்தி முயற்சிக்கவும் (அப்படியே பிடித்திருக்க வேண்டாம் ஒரு முறை அழுத்தினால் போதும்).</p>
+  <p>அதுவும் பலனளிக்காவிட்டால், உங்கள் கணினியின் மானிட்டர் இயக்கப்பட்டுள்ளதா என்று பார்த்து விசைப்பலகை விசை ஒன்றை அழுத்தி முயற்சிக்கவும்.</p>
+  <p>கடைசியாக, பவர் பொத்தானை 5 முதல் 10 வினாடிகள் அழுத்திப் பிடித்து கணினியை அணைக்கவும். எனினும் இப்படிச் செய்தால் சேமிக்காத வேலைகள் இழக்கப்படலாம். அதன் பிறகு கணினியை மீண்டும் இயக்க முடியும்.</p>
+  <p>கணினியை இடைநிறுத்தும் ஒவ்வொரு முறையும் இப்படி நடந்தால் இடைநிறுத்தல் அம்சம் உங்கள் வன்பொருளுடன் சரியாக வேலை செய்யாதிருக்கலாம்.</p>
+  <note style="warning">
+    <p>உங்கள் கணினி மின் சக்தியை இழந்தால் மாற்று மின் சப்ளை இல்லாவிட்டால் (ஒரு பேட்டரி) அது அணைக்கப்படும்.</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>என் கணினியை விழித்தெழச் செய்த பிறகு என் வயர்லெஸ் இணைப்பு (அல்லது பிற வன்பொருள்) வேலை செய்யவில்லை</title>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
+  <p>சாதனத்தில் பவர் ஸ்விட்ச் இருந்தால், அதை அணைத்து மீண்டும் இயக்க முயற்சிக்கவும். பெரும்பாலும் சாதனம் மீண்டும் சரியாக இயங்கும். சாதனம் USB கேபிள் அல்லது அது போன்றவற்றால் இணைக்கப்பட்டிருந்தால், சாதனத்தை எடுத்துவிட்டு மீண்டும் இணைத்து வேலை செய்கிறதா எனப் பார்க்கவும்.</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
+</section>
+
+</page>

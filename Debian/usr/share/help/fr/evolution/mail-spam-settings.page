@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-spam-settings" xml:lang="fr">
+
+  <info>
+    <desc>Comment configurer la gestion des pourriels (spam) non désirés.</desc>
+
+    <link type="guide" xref="mail-spam"/>
+    <link type="seealso" xref="mail-spam-marking"/>
+
+    <revision pkgversion="3.12.9" version="0.11" date="2015-03-15" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Patrick O'Callaghan</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Pete Biggs</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-prefs-mail.html.en#mail-prefs-junk -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Paramètres de détection des pourriels</title>
+
+<section id="junk-tools">
+<title>Outils</title>
+<p><app>Evolution</app> vous permet de contrôler les pourriels en utilisant les outils <app>Bogofilter</app> ou <app>SpamAssassin</app>. Pour utiliser ces outils, vous devez vérifier qu'ils sont installés via l'outil de gestion des logiciels de votre distribution.</p>
+
+<note style="info package">
+  <p>Il se peut que vous deviez installer <app>Bogofilter</app> ou <app>SpamAssassin</app> pour réaliser ces étapes.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:bogofilter" href="http://bogofilter.sourceforge.net/" style="button">Installer bogofilter</link></p>
+      <p><link action="install:spamassassin" href="http://spamassassin.apache.org/" style="button">Installer spamassassin</link></p>
+    </if:when>
+  </if:choose>
+</note>
+
+<p>SpamAssassin fonctionne à travers d'un ensemble de règles prédéfinies ; par conséquent, il peut détecter les pourriels directement. Bogofilter n'est pas délivré avec un ensemble par défaut de critères ; donc, il ne filtrera rien automatiquement après son installation. Vous devez <link xref="mail-spam-marking">l'entraîner</link> d'abord pour qu'il fonctionne. Vous pouvez modifier les actions de SpamAssassin en l'entraînant également.</p>
+</section>
+
+<section id="junk-folder">
+<title>Dossier des pourriels</title>
+<p>Les messages marqués comme pourriels (soit manuellement par l'utilisateur ou automatiquement via SpamAssassin ou Bogofilter) seront déplacés dans le dossier de courriel <gui>Pourriels</gui>.</p>
+</section>
+
+<section id="preferences">
+<title>Préférences du pourriel</title>
+<note style="tip"><p>The junk mail options discussed in this page refer only to POP and Local Delivery accounts. For handling junk mail on IMAP accounts, see the <app>Evolution</app> settings under <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Mail Accounts</gui><gui style="button">Edit</gui><gui>Receiving Options</gui></guiseq>.</p></note>
+<p>You can modify how <app>Evolution</app> handles junk mail by changing the Junk Mail Preferences:</p>
+<steps>
+<item><p>Cliquez sur <guiseq><gui>Édition</gui><gui>Préférences</gui></guiseq>&gt; ou utilisez la combinaison <keyseq><key>Maj</key><key>Ctrl</key><key>S</key></keyseq>.</p></item>
+<item><p>Sélectionnez <gui>Préférences du courriel</gui>.</p></item>
+<item><p>Cliquez sur l'onglet <gui>Pourriel</gui>. Là, vous pouvez paramétrer les choses suivantes :</p>
+<list>
+<item><p>Détecter les pourriels dans les messages entrants.</p></item>
+<item><p>Supprimer les pourriels quand vous quittez en indiquant la fréquence de leur suppression.</p></item>
+<item><p>Ne pas marquer les messages comme pourriel si l'expéditeur est présent dans mon carnet d'adresses.</p></item>
+<item><p>Détecter les pourriels dans les en-têtes de courrier personnel (ajoutés par votre serveur de courrier).</p></item>
+</list>
+</item>
+</steps>
+
+<note style="tip"><p>Pour plus d'informations et des questions spécifiques à la configuration de Bogofilter ou SpamAssassin, il est recommandé de vérifier la Foire Aux Questions de <link href="http://bogofilter.sourceforge.net/faq.shtml">Bogofilter</link> ou <link href="http://wiki.apache.org/spamassassin/FrequentlyAskedQuestions">SpamAssassin</link>.</p></note>
+</section>
+
+</page>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Sie können steuern, welche Programme auf das Netzwerk zugreifen dürfen. Dies hilft Ihnen dabei, Ihren Rechner sicher zu halten.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Firewall-Zugriff erlauben oder blockieren</title>
+
+  <p>Ihr System sollte mit einer <em>Firewall</em> ausgestattet sein, die andere Personen aus dem Internet oder Ihrem Netzwerk daran hindern kann, auf Ihre Programme zuzugreifen. Das dient der Sicherheit Ihres Rechners.</p>
+
+  <p>Viele Anwendungen können Ihre Netzwerkverbindung nutzen. Zum Beispiel können Sie Dateien weitergeben oder jemanden über ein Netzwerk Ihren Bildschirm betrachten lassen. Je nachdem, wie Ihr Rechner eingestellt ist, müssen Sie eventuell die Firewall anpassen, damit diese Dienste wie erwartet funktionieren.</p>
+
+  <p>Jedes Programm, das einen Netzwerkdienst anbietet, verwendet einen bestimmten <em>Netzwerk-Port</em>. Um anderen Rechnern im Netzwerk den Zugriff auf einen Dienst zu ermöglichen, müssen Sie eventuell seinen zugeteilten Port in der Firewall »öffnen«:</p>
+
+
+  <steps>
+    <item>
+      <p>Gehen Sie zu <gui>Aktivitäten</gui> in der linken oberen Ecke des Bildschirms und starten Sie Ihre Firewall-Anwendung. Möglicherweise finden Sie keinen Firewall-Manager und müssen erst einen installieren (zum Beispiel Firestarter oder GUFW).</p>
+    </item>
+    <item>
+      <p>Öffnen oder deaktivieren Sie den Port für Ihren Netzwerkdienst, je nachdem, ob Sie anderen den Zugriff darauf erlauben wollen oder nicht. Um welchen Port es sich handelt, <link xref="net-firewall-ports">hängt vom Netzwerkdienst ab</link>.</p>
+    </item>
+    <item>
+      <p>Speichern Sie oder wenden Sie die Änderungen an und befolgen Sie mögliche zusätzliche Anweisungen der Firewall-Anwendung.</p>
+    </item>
+  </steps>
+
+</page>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="fi">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Gnomen dokumentointiprojekti</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Poista kaikki tiedostot ja kansiot ulkoiselta kiintolevyltä tai USB-muistitikulta alustamalla se.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Tyhjennä siirrettävä levy</title>
+
+  <p>Jos sinulla on siirrettävä levy, kuten USB-muistitikku tai ulkoinen kiintolevy, haluat ehkä joskus poistaa kaikki sen tiedostot ja kansiot. Voit tehdä tämän <em>alustamalla</em> levyn - alustus poistaa kaikki levyn tiedostot ja jättää sen tyhjäksi.</p>
+
+<steps>
+  <title>Tyhjennä siirrettävä levy</title>
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to wipe from the list of storage devices on the
+    left.</p>
+
+    <note style="warning">
+      <p>Varmista, että olet valinnut oikean levyn! Jos valitset väärän levyn, kaikki kyseisen levyn tiedostot poistetaan!</p>
+    </note>
+  </item>
+  <item>
+    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
+    menu button. Then click <gui>Format…</gui>.</p>
+  </item>
+  <item>
+    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
+    disk.</p>
+   <p>Jos käytät levyä Windows- ja Mac OS -koneilla Linuxin lisäksi, valitse <gui>FAT</gui>. Jos käytät sitä vain Windowsissa, <gui>NTFS</gui> voi olla parempi vaihtoehto. Lyhyt kuvaus <gui>tiedostojärjestelmästä</gui> näytetään vihjeenä.</p>
+  </item>
+  <item>
+    <p>Give the disk a name and click <gui>Format…</gui> to continue and show a
+    confirmation window. Check the details carefully, and click
+    <gui>Format</gui> to wipe the disk.</p>
+  </item>
+  <item>
+    <p>Once the formatting has finished, click the eject icon to safely remove
+    the disk. It should now be blank and ready to use again.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Levyn alustaminen ei poista tiedostoja turvallisesti</title>
+  <p>Levyn alustaminen ei ole täysin varma tapa kaiken sen sisältämän tiedon tuhoamiseen. Alustetulla levyllä ei vaikuta olevan tiedostoja, mutta erikoisohjelmistoilla on mahdollista palauttaa tiedostoja. Jos haluat poistaa kaikki tiedostot turvallisesti, sinun täytyy käyttää komentorivityökalua, kuten ohjelmaa <app>shred</app>.</p>
+</note>
+
+</page>

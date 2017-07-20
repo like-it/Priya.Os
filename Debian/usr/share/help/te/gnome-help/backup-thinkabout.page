@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="te">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>గ్నోమ్ పత్రీకరణ పరియోజన</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>మైకేల్ హిల్</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>మీరు బ్యాకప్ తీద్దామని అనుకొనే పత్రములు, ఫైళ్ళు మరియు అమరికలు కనుగొనే సంచయాల జాబితా.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Praveen Illa</mal:name>
+      <mal:email>mail2ipn@gmail.com</mal:email>
+      <mal:years>2011, 2014. </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>కృష్ణబాబు క్రొత్తపల్లి</mal:name>
+      <mal:email>kkrothap@redhat.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>నేను బ్యాకప్ తీయాలనుకొనే ఫైళ్ళను నేను ఎక్కడ కనుగొనగలను?</title>
+
+  <p>బ్యాకప్ తీయునప్పుడు ఏ ఫైళ్ళను బ్యాకప్ తీయాలో నిర్ణయించడం, వాటిని గుర్తించడం, అనునవి క్లిష్టమైన పనులు. మీరు బ్యాకప్ తీయాలనుకొనే ముఖ్యమైన ఫైళ్ళు మరియు అమరికల ఉమ్మడి స్థానాలు కిందన జాబితాచేసి వున్నాయి.</p>
+
+<list>
+ <item>
+  <p>వ్యక్తిగత ఫైళ్ళు (పత్రాలు, సంగీతం, ఫొటోలు మరియు వీడియోలు)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">సాధారణంగా ఇవి మీ నివాస సంచయం (<file>/home/your_name</file>) నందు వుంటాయి. అవి డెస్కుటాప్, పత్రములు, చిత్రాలు, సంగీతం మరియు వీడియోలు వంటి వుపసంచయాల నందు కూడా వుండవచ్చు.</p>
+  <p>If your backup medium has sufficient space (if it is an external hard
+  disk, for example), consider backing up the entire Home folder. You can find
+  out how much disk space your Home folder takes up by using the
+  <app>Disk Usage Analyzer</app>.</p>
+ </item>
+
+ <item>
+  <p>దాగివున్న ఫైళ్ళు</p>
+  <p>Any file or folder name that starts with a period (.) is hidden by
+  default. To view hidden files, click the
+  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
+  button in the toolbar, and then choose <gui>Show Hidden Files</gui>, or press
+  <keyseq><key>Ctrl</key><key>H</key></keyseq>. You can copy these to a
+  backup location like any other file.</p>
+ </item>
+
+ <item>
+  <p>వ్యక్తిగత అమరికలు (డెస్క్‍టాప్ ప్రాధాన్యతలు, అలంకారాలు, మరియు సాఫ్ట్‍వేర్ అమరికలు)</p>
+  <p>చాలా అనువర్తనాలు వాటి అమరికలను మీ నివాస సంచయం నందలి మరుగునవున్న సంచయాలనందు వుంచును (మరుగునవున్న ఫైళ్ళపై సమాచారం కొరకు పైన చూడండి).</p>
+  <p>చాలావరకు మీ అనువర్తన అమరికలు అనునవి మీ నివాస సంచయం నందు మరుగునవున్న <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file>, మరియు <file>.local</file> సంచయాలనందు నిల్వవుంచబడును.</p>
+ </item>
+
+ <item>
+  <p>వ్యవస్థ-మొత్తం అమరికలు</p>
+  <p>Settings for important parts of the system are not stored in your Home
+  folder. There are a number of locations that they could be stored, but most
+  are stored in the <file>/etc</file> folder. In general, you will not need to
+  back up these files on a home computer. If you are running a server, however,
+  you should back up the files for the services that it is running.</p>
+ </item>
+</list>
+
+</page>

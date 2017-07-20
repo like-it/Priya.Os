@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="hardware-auth"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
+
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <credit type="author editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email>jcampbell@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Вместо ввода пароля, вы можете входить в систему с помощью поддерживаемого сканера отпечатков пальцев.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Вход в систему по отпечатку пальца</title>
+
+  <p>Если ваш компьютер оборудован поддерживаемым сканером отпечатков пальцев, можно сохранить свой отпечаток пальца и использовать его для входа в систему.</p>
+
+<section id="record">
+  <title>Запись отпечатка пальца</title>
+
+  <p>Чтобы иметь возможность войти в систему по отпечатку пальца, его сначала нужно записать, чтобы система могла вас идентифицировать.</p>
+
+  <note style="tip">
+    <p>Если палец слишком сухой, могут возникнуть трудности с регистрацией отпечатка пальца. В этом случае слегка увлажните палец, вытрите его чистой безворсовой тканью, и попробуйте снова.</p>
+  </note>
+
+  <p>Для изменения учётных записей других пользователей необходимы <link xref="user-admin-explain">права администратора</link>.</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Users</gui>.</p>
+    </item>
+    <item>
+      <p>Нажмите <gui>Пользователи</gui> чтобы открыть этот раздел настроек.</p>
+    </item>
+    <item>
+      <p>Нажмите <gui>Отключено</gui> рядом с параметром <gui>Вход по отпечатку</gui> чтобы добавить отпечаток пальца для выбранной учётной записи. Чтобы добавить отпечаток пальца для другого пользователя, нужно сначала <gui>Разблокировать</gui> панель.</p>
+    </item>
+    <item>
+      <p>Выберите палец, который будет использоваться для отпечатка, затем нажмите <gui style="button">Далее</gui>.</p>
+    </item>
+    <item>
+      <p>Следуйте инструкциям, показанным в диалоговом окне, проведите пальцем по считывателю отпечатков <em>со средней скоростью</em>. Как только компьютер создаст качественную запись отпечатка вашего пальца, на экране появится сообщение <gui>Готово!</gui>.</p>
+    </item>
+    <item>
+      <p>Select <gui>Next</gui>. You will see a confirmation message that
+      your fingerprint was saved successfully. Select <gui>Close</gui> to
+      finish.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="verify">
+  <title>Проверьте, работает ли отпечаток вашего пальца</title>
+
+  <p>Теперь проверьте, как работает вход по отпечатку пальца. Даже если вы зарегистрировали отпечаток, вы всё равно сможете входить в систему с помощью ввода пароля.</p>
+
+  <steps>
+    <item>
+      <p>Сохраните изменения в любых открытых файлах и затем <link xref="shell-exit">выйдите из системы</link>.</p>
+    </item>
+    <item>
+      <p>На экране входа в систему выберите имя пользователя из списка. Появится поле для ввода пароля.</p>
+    </item>
+    <item>
+      <p>Вместо ввода пароля, вы должны иметь возможность провести пальцем по сканеру отпечатков.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

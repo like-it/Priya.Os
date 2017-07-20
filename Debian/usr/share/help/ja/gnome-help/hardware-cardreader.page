@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="hardware-cardreader" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="media#photos"/>
+    <link type="guide" xref="hardware#problems"/>
+
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>GNOME ドキュメンテーションプロジェクト</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>メディアカードリーダーの問題を解決します。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>メディアカードリーダーの問題</title>
+
+<p>多くのコンピューターはSD、MMC、SM、MS、CF、その他のストレージメディアカードのリーダーを備えています。これらメディアカードは自動的に検出され、<link xref="disk-partitions">マウント</link>されます。ここでは、メディアカードがマウントされない問題を解決する方法を紹介します。</p>
+
+<steps>
+<item>
+<p>カードが正しく挿入されていることを確認してください。カードを上下逆にしてみると適切に挿入できることもよくあります。また、カードがしっかりとスロットに収まっていることも確認してください。カードによっては、特にCFの場合、正しく挿入するために少し力が必要になります (強く押し込み過ぎないように注意してください。もし抵抗を感じたら、それ以上押し込まないでください)。</p>
+</item>
+
+<item>
+  <p>Open <app>Files</app> from the
+  <gui xref="shell-introduction#activities">Activities</gui> overview. Does the inserted
+  card appear in the <gui>Devices</gui> list in the left sidebar? Sometimes the
+  card appears in this list but is not mounted; click it once to mount. (If the
+  sidebar is not visible, press <key>F9</key> or click <gui style="menu">Files</gui> in
+  the top bar and select the <gui style="menuitem">Sidebar</gui>.)</p>
+</item>
+
+<item>
+  <p>If your card does not show up in the sidebar, press
+  <keyseq><key>Ctrl</key><key>L</key></keyseq>, then type
+  <input>computer:///</input> and press <key>Enter</key>. If your card reader
+  is correctly configured, the reader should come up as a drive when no card is
+  present, and the card itself when the card has been mounted.</p>
+</item>
+
+<item>
+<p>もしカードリーダーが表示されてもカードが表示されない場合は、カード側に問題がある可能性があります。別なカードを使ってみるか、もし可能ならそのカードを別なリーダーで確認します。</p>
+</item>
+</steps>
+
+<p>If no cards or drives are shown when browsing the <gui>Computer</gui>
+location, it is possible that your card reader does not work with Linux due to
+driver issues. If your card reader is internal (inside the computer instead of
+sitting outside) this is more likely. The best solution is to directly connect
+your device (camera, cell phone, etc.) to a USB port on the computer. USB
+external card readers are also available, and are far better supported by
+Linux.</p>
+
+</page>

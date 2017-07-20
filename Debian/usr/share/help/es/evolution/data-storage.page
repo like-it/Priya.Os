@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="data-storage" xml:lang="es">
+
+  <info>
+    <desc>¿Dónde almacena <app>Evolution</app> mis datos en el disco duro?</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+
+    <revision pkgversion="3.5.3" version="0.5" date="2012-06-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Ubicaciones de almacenamiento de datos</title>
+
+<note style="tip">
+<p>Esto sólo es interesante para usuarios avanzados que quieren depurar problemas.</p>
+</note>
+
+<p><app>Evolution</app> 3.6 y posterior almacena sus datos según la <link href="http://www.freedesktop.org/wiki/Specifications/basedir-spec">Especificación de carpetas base XDG</link>. De forma predeterminada significa que:</p>
+
+<terms>
+<item>
+<title>Los archivos de datos del usuario</title>
+<p><file>$HOME/.local/share/evolution</file></p>
+</item>
+<item>
+<title>Varios archivos de configuración y estado</title>
+<p><file>$HOME/.config/evolution</file></p>
+</item>
+<item>
+<title>Configuración de la cuenta</title>
+<p><file>$HOME/.config/evolution/sources</file></p>
+</item>
+<item>
+<title>Cachés de datos desechables</title>
+<p><file>$HOME/.cache/evolution</file></p>
+</item>
+<item>
+<title>Ajustes de configuración en GSettings</title>
+<p><file>$HOME/.config/dconf</file></p>
+</item>
+</terms>
+
+</page>

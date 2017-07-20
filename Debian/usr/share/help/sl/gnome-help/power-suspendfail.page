@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
+
+    <credit type="author">
+      <name>Dokumentacijski projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Zakaj se moj računalnik ne vklopi nazaj potem ko ga pošljem v stanje pripravljenosti?</title>
+
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
+
+<section id="resume">
+  <title>Moj računalnik je v stanju pripravljenosti in se ne prižge</title>
+  <p>V primeru da ste svoj računalnik poslali v stanje pripravljenosti in nato pritisnili tipko ali kliknili na miško, bi se moral iz stanja pripravljenosti povrniti in prikazati zaslon, ki vas bo vprašal za vaše geslo. V primeru da se to ne zgodi, poskusite s pritiskom na gumb za vklop (ne držite ga, pritisnite ga le enkrat).</p>
+  <p>V primeru da tudi to ne pomaga, se prepričajte, da je zaslon vašega računalnika vklopljen in ponovno pritisnite tipko na tipkovnici.</p>
+  <p>Kot zadnjo možnost poskusite izklopiti računalnik s pritiskom na gumb za vklop za 5-10 sekund. S tem boste izgubili vse neshranjeno delo, vendar boste lahko računalnik ponovno prižgali.</p>
+  <p>V primeru da se to zgodi vsakič, ko računalnik pošljete v stanje pripravljenosti, zmožnost stanja pripravljenosti morda z vašo strojno opremo ne deluje.</p>
+  <note style="warning">
+    <p>Če vaš računalnik izgubi napetost in nima nadomestnega vira napetosti (kot je delujoča baterija), se bo izklopil.</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>Moja brezžična povezava (ali druga strojna oprema) ne deluje, ko računalnik povrnem iz stanja pripravljenosti ali mirovanja</title>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
+  <p>V primeru da ima naprava stikalo za vklop, ga poskusite izklopiti in nato ponovno vklopiti. V večini primerov bo naprava začela ponovno delovati. V primeru da se naprava poveže preko kabla USB ali podobno, napravo odklopite in jo ponovno priklopite.</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
+</section>
+
+</page>

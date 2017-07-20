@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Contribuyentes al wiki de documentación de Ubuntu</name>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Algunos dispositivos no funcionan correctamente con ciertos adaptadores inalámbricos, así que puede que tenga que encontrar uno mejor.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Solucionador de problemas de red inalámbrica</title>
+
+  <subtitle>Asegúrese de que los controladores de su dispositivo están instalados</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>En este paso puede comprobar si es capaz de hacer funcionar los controladores del dispositivo para su adaptador inalámbrico. Un <em>controlador de dispositivo</em> es un programa software que le dice al equipo cómo hacer que el hardware funcione correctamente. Incluso si el equipo ha reconocido el adaptador inalámbrico, puede que no tenga controladores que funcionen bien. Puede que encuentre diferentes controladores para el adaptador inalámbrico que no funcionen. Intente algunas de las siguientes opciones:</p>
+
+  <list>
+    <item>
+      <p>Compruebe que su adaptador inalámbrico está en la lista de dispositivos soportados.</p>
+      <p>La mayoría de las distribuciones GNU/Linux mantienen una lista de dispositivos inalámbricos para las que tienen soporte. Algunas veces, estas listas proporcionan información adicional acerca de cómo obtener los controladores para que ciertos dispositivos funcionen correctamente. Vaya a la lista para su distribución (por ejemplo, <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>, <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>, <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> o <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>) y consulte si su marca y modelo de adaptador inalámbrico está listada. Puede que sea capaz de usar alguna de la información para hacer que sus controladores inalámbricos funcionen.</p>
+    </item>
+    <item>
+      <p>Buscar controladores restringidos (binarios).</p>
+      <p>Muchas distribuciones de Linux sólo traen controladores de dispositivos que son <em>libres</em> y <em>de código abierto</em>. esto es porque no pueden distribuir controladores propietarios o de código cerrado. Si el controlador adecuado para su adaptador inalámbrico sólo está disponible en una versión no libre, o «sólo binaria», puede que no esté instalado de manera predeterminada. Si este es el caso, consulte en la página web del fabricante del adaptador inalámbrico si tiene controladores para Linux.</p>
+      <p>Algunas distribuciones de Linux tienen una herramienta que puede descargar controladores restringidos. Si su distribución tiene una de ellas, utilícela para determinar si puede encontrar los controladores inalámbricos.</p>
+    </item>
+    <item>
+      <p>Usar los controladores de Windows para su adaptador.</p>
+      <p>En general, no puede usar un controlador de dispositivo diseñado para otro sistema operativo (como Windows) en otro sistema operativo (como Linux). Esto es porque manejan los dispositivos de maneras distintas. Sin embargo, para los adaptadores inalámbricos puede instalar una capa de compatibilidad llamada <em>NDISwrapper</em> que le permite usar en Linux algunos controladores inalámbricos para Windows. Esto es útil porque la mayoría de los adaptadores inalámbricos siempre tienen controladores para Windows, pero algunas veces no hay los controladores disponibles para Linux . Puede aprender cómo usar NDISwrapper <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">aquí</link>. Tenga en cuenta que no todos los controladores inalámbricos se pueden usar mediante NDISwrapper.</p>
+    </item>
+  </list>
+
+  <p>Si ninguna de estas opciones funciona, es posible que quiera probar un adaptador inalámbrico diferente para ver si puede conseguir que funcione. Los adaptadores USB inalámbricos normalmente son muy baratos y los podrá conectar a cualquier equipo. Debe verificar que el adaptador es compatible con su distribución de Linux antes de comprarlo.</p>
+
+</page>

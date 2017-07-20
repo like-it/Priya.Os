@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="power"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name>Alexandre Franke</name>
+      <email>afranke@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Naučte se, jak správně odejít od svého účtu, ať už odhlášením nebo přepnutím uživatele apod.</desc>
+    <!-- Should this be a guide which links to other topics? -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Odhlášení nebo přepnutí uživatele, vypnutí</title>
+
+  <p>Když skončíte u počítače, můžete jej vypnout, uspat (kvůli úspoře energie) nebo jej ponechat zapnutý a odhlásit se.</p>
+
+<section id="logout">
+  <title>Odhlášení nebo přepnutí uživatelů</title>
+
+  <p>Abyste umožnili ostatním uživatelům použít počítač, můžete se buď odhlásit nebo nebo zůstat přihlášeni a jen přepnout uživatele. Po přepnutí uživatelů zůstanou vaše aplikace běžet a když se přihlásíte zpátky, bude vše tam, kde jste to opustili.</p>
+
+  <p>Když se chcete <gui>Odhlásit</gui> nebo <gui>Přepnout uživatele</gui>, klikněte na <link xref="shell-introduction#yourname">systémovou nabídku</link> na pravé straně horní lišty, klikněte na své jméno a pak zvolte příslušnou položku.</p>
+
+  <note if:test="!platform:gnome-classic">
+    <p>Položky <gui>Odhlásit se</gui> a <gui>Přepnout uživatele</gui> se v nabídce objeví jen v případě, že máte v systému více než jeden uživatelský účet.</p>
+  </note>
+
+  <note if:test="platform:gnome-classic">
+    <p>Položka <gui>Přepnout uživatele</gui> se v nabídce objeví jen v případě, že máte v systému více než jeden uživatelský účet.</p>
+  </note>
+
+</section>
+
+<section id="lock-screen">
+  <info>
+    <link type="seealso" xref="session-screenlocks"/>
+  </info>
+
+  <title>Zamknutí obrazovky</title>
+
+  <p>Když odcházíte od svého počítače jen na krátkou chvíli, měli byste zamknout obrazovku, abyste zabránili ostatním lidem v přístupu ke svým souborům a běžícím aplikacím. Až se vrátíte, vytáhněte oponu na <link xref="shell-lockscreen">zamykací obrazovce</link> a zadejte své heslo, abyste se přihlásili zpět. Pokud obrazovku nezamknete, stane se tak automaticky po uplynutí určené doby.</p>
+
+  <p>Abyste zamkli obrazovku, klikněte na systémovou nabídku na pravé straně horní lišty a pak zmáčkněte zamykací tlačítko v dolní části nabídky.</p>
+
+  <p>Když je obrazovka zamknutá, mohou se ostatní uživatelé přihlásit ke svým vlastním účtům kliknutím na <gui>Přihlásit se jako jiný uživatel</gui> na obrazovce s heslem. Až skončí, můžete se přepnout zpět na svoji pracovní plochu.</p>
+
+</section>
+
+<section id="suspend">
+  <info>
+    <link type="seealso" xref="power-suspend"/>
+  </info>
+
+  <title>Uspání</title>
+
+  <p>Abyste ušetřili energii, uspěte svůj počítač, když jej zrovna nepoužíváte. Pokud používáte notebook, standardně jej GNOME uspí automaticky při zavření víka. Při uspání se pouze uchová stav v paměti počítač a většina součástí počítače se vypne. Během uspání je zapotřebí napájení, ale odběr je velmi malý.</p>
+
+  <p>Když chcete počítač uspat ručně, klikněte na systémovou nabídku na pravé straně horní lišty a podržte zmáčknutou klávesu <key>Alt</key>. Tlačítko vypnutí se změní na tlačítko uspání. Zmáčkněte jej.</p>
+
+</section>
+
+<section id="shutdown">
+<!--<info>
+  <link type="seealso" xref="power-off"/>
+</info>-->
+
+  <title>Vypnutí nebo restart</title>
+
+  <p>Když chcete svůj počítač úplně vypnout nebo provést úplný restart, klikněte na systémovou nabídku na pravé straně horní lišty a zmáčkněte vypínací tlačítko v dolní části nabídky. Otevře se dialogové okno, které vám nabídne, jestli chcete <gui>Restartovat</gui> nebo <gui>Vypnout</gui>.</p>
+
+  <p>V případě, že jsou zrovna přihlášeni nějací další uživatelé, nebude vám umožněno počítač vypnout nebo restartovat, protože byste tím ukončili jejich sezení. Pokud jste ale správci, budete dotázáni, jestli se má i přesto počítač vypnout/restartovat.</p>
+
+  <note style="tip">
+    <p>Vypnout počítač můžete chtít, když jej potřebujete přenést a není na baterie, nebo když jsou bateri málo nabité a nemáte nabíječku. Vypnutý počítač má také <link xref="power-batterylife">nižší spotřebu</link>, než když je uspaný.</p>
+  </note>
+
+</section>
+
+</page>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="ssh-export" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys"/>
+
+    <revision pkgversion="3.14" date="2014-10-03" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Εξαγωγή των δημόσιων και ιδιωτικών κλειδιών SSH για να τα αποθηκεύσετε σε αρχεία κλειδιών.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα του GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Εξαγωγή κλειδιών SSH</title>
+
+  <p>Εξάγετε τα περιεχόμενα των κλειδιών σας SSH και αποθηκεύστε τα σε αρχεία κλειδιών, για να έχετε ένα αντίγραφο ασφαλείας των κλειδιών σας ή να μοιραστείτε το δημόσιο κλειδί σας με κάποιον άλλον.</p>
+
+  <section id="public">
+    <title>Για να εξάγετε το δημόσιο κλειδί σας SSH:</title>
+
+    <steps>
+      <item>
+	<p>Επιλέξτε την κλειδοθήκη <gui>Κλειδιά OpenSSH</gui> από το αριστερό πλευρικό παράθυρο.</p>
+      </item>
+      <item>
+	<p>Επιλέξτε το <gui>Ιδιωτικό κλειδί SSH</gui> που πρέπει να εξαχθεί, από τον κατάλογο.</p>
+      </item>
+      <item>
+	<p>Επιλέξτε <guiseq><gui>Αρχείο</gui><gui>Εξαγωγή…</gui></guiseq>.</p>
+      </item>
+      <item>
+	<p>Πατήστε το πλήκτρο <gui style="button">Εξαγωγή</gui> για να αποθηκεύσετε το εξαγόμενο δημόσιο κλειδί στον υπολογιστή σας.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="private">
+    <title>Για να εξάγετε το ιδιωτικό κλειδί σας SSH:</title>
+
+    <steps>
+      <item>
+	<p>Επιλέξτε την κλειδοθήκη <gui>Κλειδιά OpenSSH</gui> από το αριστερό πλευρικό παράθυρο.</p>
+      </item>
+      <item>
+	<p>Επιλέξτε το <gui>Ιδιωτικό κλειδί SSH</gui> που πρέπει να εξαχθεί, από τον κατάλογο.</p>
+      </item>
+      <item>
+	<p>Κάντε δεξί κλικ το επιλεγμένο κλειδί και επιλέξτε <guiseq><gui>Ιδιότητες</gui><gui>Λεπτομέρειες</gui></guiseq>.</p>
+      </item>
+      <item>
+	<p>Πατήστε το πλήκτρο <gui style="button">Εξαγωγή ιδιωτικού κλειδιού</gui> για να αποθηκεύσετε το εξαγόμενο ιδιωτικό κλειδί στον υπολογιστή σας.</p>
+      </item>
+    </steps>
+
+    <note style="warning">
+      <p>Κρατήστε το εξαγόμενο αρχείο ιδιωτικών κλειδιών σε μια ασφαλή θέση, αφού τα περιεχόμενα του αρχείου πρέπει να κρατούνται ιδιωτικά, για να αποτραπεί η κατάχρηση του κλειδιού σας.</p>
+    </note>
+
+  </section>
+
+</page>

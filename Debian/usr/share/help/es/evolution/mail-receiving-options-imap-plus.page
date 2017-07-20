@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-receiving-options-imap-plus" xml:lang="es">
+
+  <info>
+    <desc>Opciones de recepción para cuentas IMAP+.</desc>
+
+    <link type="guide" xref="mail-receiving-options#common-server-types"/>
+    <link type="guide" xref="mail-account-manage-imap-plus#receiving-email"/>
+    <revision pkgversion="3.12.9" version="0.3" date="2015-02-15" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mainwindow-starting.html.en#bstggh0 -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Opciones de recepción IMAP+</title>
+
+<section id="receiving-email-imap-plus">
+<title>Recepción de correo</title>
+
+<p>En la página <gui>Recepción de correo</gui> (accesible a través de <guiseq><gui>Editar</gui><gui>Preferencias</gui><gui>Cuentas de correo</gui><gui style="button">Editar</gui><gui>Recepción de correo</gui></guiseq>):</p>
+
+<list>
+<item><p>Introduzca la dirección del servidor de correo electrónico en el campo <gui>Servidor</gui> e introduzca su nombre de usuario para ese servidor.</p></item>
+<item><p>Seleccione su quiere usar una conexión segura (SSL o TLS).</p><p>Debería activar esta opción si su servidor la soporta.</p>
+<note style="tip"><p>Los servidores de correo web gratuitos generalmente proporcionan información acerca de cuáles de estas opciones se pueden usar. Si está en un acontecimiento organizado puede que quiera contactar con el administrador de su sistema para obtener más información.</p></note></item>
+<item><p>Seleccione el tipo de autenticación en la lista de Autenticación o pulse <gui style="button">Comprobar tipos soportados</gui> para que <app>Evolution</app> compruebe qué tipos están soportados. Algunos servidores no informan de qué mecanismos de autenticación soportan esto, así que pulsar este botón no garantiza que los mecanismos disponibles actualmente funcionen.</p></item>
+<item><p>Marque si quiere que <app>Evolution</app> recuerde su contraseña.</p></item>
+</list>
+
+</section>
+
+<section id="receiving-options-imap-plus">
+<title>Opciones de recepción</title>
+
+<p>En la página <gui>Recepción de correo</gui> (accesible a través de <guiseq><gui>Editar</gui><gui>Preferencias</gui><gui>Cuentas de correo</gui><gui style="button">Editar</gui><gui>Recepción de correo</gui></guiseq>):</p>
+
+<list>
+<item><p>Si quiere que <app>Evolution</app> compruebe automáticamente si hay correo nuevo, seleccione la opción <gui>Comprobar si hay mensajes nuevos cada … minutos</gui> y seleccione la frecuencia en minutos.</p></item>
+<item><p>Seleccione <gui>Usar resincronización rápida</gui> si el servidor soporta <link href="http://tools.ietf.org/html/rfc5162">Extensiones de IMAP4 para resincronización rápida de buzón de correo</link>.</p></item>
+<!-- https://bugzilla.gnome.org/show_bug.cgi?id=730460 -->
+<item><p>Si el servidor no permite varias conexiones simultáneas de <app>Evolution</app> al servidor (por ejemplo, cuando tiene más de una cuenta en ese servidor, establezca el <gui>Número de conexiones simultáneas que usar</gui> a 1.</p></item>
+<item><p>También puede definir si <app>Evolution</app> debe comprobar si existe correo nuevo en todas sus carpetas o solo en las carpetas suscritas.</p></item>
+<item><p>Seleccione si quiere que <app>Evolution</app> sólo muestre las <link xref="mail-imap-subscriptions">carpetas suscritas</link>.</p></item>
+<item><p>Seleccione si quiere que los <link xref="mail-filters">filters</link>se apliquen automáticamente al correo que recibe, si el <link xref="mail-spam-marking">spam</link> se debe filtrar automáticamente y si se debe <link xref="mail-working-offline">sincronizar el correo en el servidor con su copia local para acceder a él en modo desconectado</link>.</p></item></list>
+
+</section>
+
+</page>

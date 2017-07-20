@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-remove" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="accounts" group="remove"/>
+    <link type="seealso" xref="accounts-disable-service"/>
+
+    <revision pkgversion="3.5.5" date="2012-08-15" status="draft"/>
+    <revision pkgversion="3.9.92" date="2013-09-18" status="draft"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Шон МакКенс (Shaun McCance)</name>
+      <email>shaunm@gnome.org</email>
+      <years>2015</years>
+    </credit>
+
+    <desc>Remove access to an online service provider from your
+    applications.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Удаление учётной записи</title>
+
+  <p>Можно удалить сетевую учётную запись, которой больше не пользуетесь.</p>
+
+  <note style="tip">
+    <p>Many online services provide an authorization token which GNOME stores
+    instead of your password. If you remove an account, you should also revoke
+    that certificate in the online service. This will ensure that no other
+    application or website can connect to that service using the authorization
+    for GNOME.</p>
+
+    <p>How to revoke the authorization depends on the service provider. Check
+    your settings on the provider's website for authorized or connected apps
+    or sites. Look for an app called "GNOME" and remove it.</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Online Accounts</gui>.</p>
+    </item>
+    <item>
+      <p>Нажмите на <gui>Сетевые учётные записи</gui>, чтобы открыть этот раздел настроек.</p>
+    </item>
+    <item>
+      <p>Выберите учётную запись, которую нужно удалить.</p>
+    </item>
+    <item>
+      <p>Нажмите кнопку <key>-</key> в левом нижнем углу окна.</p>
+    </item>
+    <item>
+      <p>Click <gui>Remove</gui> in the confirmation dialog.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Вместо полного удаления учётной записи можно <link xref="accounts-disable-service">ограничить доступ</link> к предоставляемым ею услугам.</p>
+  </note>
+</page>

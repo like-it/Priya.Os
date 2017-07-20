@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="look-display-fuzzy" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="hardware-problems-graphics"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Dokumentacijski projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Morda je ločljivost zaslona nepravilno nastavljena.</desc>
+  </info>
+
+<title>Zakaj je moj zaslon videti meglen/točkast?</title>
+
+<p>To se lahko zgodi, ker nastavljena ločljivost zaslona ni prava za vaš zaslon.</p>
+
+<p>To solve this, open the <gui xref="shell-introduction#activities">Activities</gui>
+overview and start typing <gui>Displays</gui>. Click on <gui>Displays</gui>
+to open the panel. Try some of the <gui>Resolution</gui> options and set the
+one that makes the screen look better.</p>
+
+<section id="multihead">
+  <title>Ko je priklopljenih več zaslonov</title>
+
+  <p>V primeru da imate z računalnikom povezana dva zaslona (na primer običajen zaslon in projektor), bosta morda zaslona imela različni ločljivosti. Grafična kartica računalnika lahko hkrati prikaže zaslon le pri eni ločljivosti, zato bo vsaj eden od zaslonov morda videti megleno.</p>
+
+  <p>You can set it so that the two displays have different resolutions, but
+  you will not be able to display the same thing on both screens
+  simultaneously. In effect, you will have two independent screens connected at
+  the same time. You can move windows from one screen to another, but you
+  cannot show the same window on both screens at once.</p>
+
+  <p>Za nastavitev zaslonov tako da bo imel vsak svojo ločljivost:</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Displays</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Displays</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>The displays should be listed as <gui>Mirrored</gui>. Select your main
+      display.</p>
+    </item>
+    <item>
+      <p>Select <gui>Primary</gui> in the list of display configurations, and
+      then click <gui style="button">Apply</gui> to save.</p>
+    </item>
+    <item>
+      <p>Izberite zaslon iz sivega polja na vrhu okna <gui>Zasloni</gui>. Spreminjajte <gui>Ločljivost</gui>, dokler ni videti prav.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

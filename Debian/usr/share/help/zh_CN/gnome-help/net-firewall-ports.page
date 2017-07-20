@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>您需要在防火墙中，为一个程序指定正确的网络端口来启用/禁用网络访问。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>常用网络端口</title>
+
+  <p>这是提供网络服务的应用程序(如文件共享或远程桌面查看应用程序)常用的网络端口的列表。您可更改系统防火墙来<link xref="net-firewall-on-off">阻止或允许对这些应用程序的访问</link>。使用的端口有数千个，因此该表并不能包含所有端口。</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>端口</p>
+	</td>
+	<td>
+	  <p>名称</p>
+	</td>
+	<td>
+	  <p>描述</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS、Avahi</p>
+	</td>
+	<td>
+	  <p>允许系统相互发现对方，并描述它们提供的服务，您无需手动指定详情。</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>打印</p>
+	</td>
+	<td>
+	  <p>允许您通过网络向打印机发送打印作业。</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>打印</p>
+	</td>
+	<td>
+	  <p>允许您通过网络与其他人共享打印机。</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>状态</p>
+	</td>
+	<td>
+	  <p>允许您向网络上的其他人广播您的即时消息状态，如“在线”或“忙碌”。</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>远程桌面</p>
+	</td>
+	<td>
+	  <p>允许您共享桌面，以便其他人可以查看或提供远程协助。</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>共享音乐(DAAP)</p>
+	</td>
+	<td>
+	  <p>允许您与网络上的其他人共享您的音乐库。</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Χρειάζεται να ορίσετε τη σωστή δικτυακή θύρα για ενεργοποίηση/απενεργοποίηση της πρόσβασης δικτύου για ένα πρόγραμμα με το τείχους προστασίας σας.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Κοινές χρησιμοποιούμενες θύρες δικτύου</title>
+
+  <p>Αυτή είναι μια λίστα δικτυακών θυρών που χρησιμοποιούνται γενικά από εφαρμογές που παρέχουν υπηρεσίες δικτύου, όπως κοινή χρήση αρχείων ή απομακρυσμένη προβολή επιφάνειας εργασίας. Μπορείτε να αλλάξετε το τείχος προστασίας του συστήματός σας σε <link xref="net-firewall-on-off">να φράσσεται ή να επιτρέπεται πρόσβαση</link> σε αυτές τις εφαρμογές. Υπάρχουν χιλιάδες θύρες σε χρήση, έτσι αυτός ο πίνακας δεν είναι πλήρης.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>Θύρα</p>
+	</td>
+	<td>
+	  <p>Όνομα</p>
+	</td>
+	<td>
+	  <p>Περιγραφή</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>Επιτρέπει στα συστήματα να επικοινωνούν μεταξύ τους και περιγράφει ποιες υπηρεσίες προσφέρουν, χωρίς να πρέπει να ορίσετε τις λεπτομέρειες χειροκίνητα.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>Εκτύπωση</p>
+	</td>
+	<td>
+	  <p>Επιτρέπει την αποστολή εργασιών εκτύπωσης σε έναν εκτυπωτή μέσω δικτύου.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>Εκτύπωση</p>
+	</td>
+	<td>
+	  <p>Επιτρέπει την κοινή χρήση του εκτυπωτή σας με άλλα άτομα μέσω δικτύου.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>Διαθεσιμότητα</p>
+	</td>
+	<td>
+	  <p>Επιτρέπει τη διαφήμιση της κατάστασης άμεσων μηνυμάτων σας σε άλλα άτομα στο δίκτυο, όπως "συνδεμένος" ή "απασχολημένος".</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>Απομακρυσμένη επιφάνεια εργασίας</p>
+	</td>
+	<td>
+	  <p>Επιτρέπει την κοινή χρήση της επιφάνειας εργασίας σας έτσι ώστε άλλα άτομα να το προβάλουν ή να παρέχουν απομακρυσμένη βοήθεια.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>Κοινή χρήση μουσικής (DAAP)</p>
+	</td>
+	<td>
+	  <p>Επιτρέπει να μοιράζετε τη μουσική σας βιβλιοθήκη με άλλους στο δίκτυό σας.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

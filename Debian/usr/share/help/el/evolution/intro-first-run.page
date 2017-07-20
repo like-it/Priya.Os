@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" id="intro-first-run" xml:lang="el">
+
+  <info>
+    <desc>Running <app>Evolution</app> for the very first time.</desc>
+
+    <link type="guide" xref="index#getting-started"/>
+
+    <revision pkgversion="3.8.2" version="0.7" date="2013-06-22" status="stub"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009-2010</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Εκκίνηση του <app>Evolution</app> για πρώτη φορά</title>
+
+<p>The first time you run <app>Evolution</app>, it opens the First-Run Assistant to help you set up email accounts and <link xref="import-data">import data from other applications.</link></p>
+
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-mail-account-identity.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:section)"/>
+
+<section id="restore">
+<title>Επαναφορά από αντίγραφο ασφαλείας</title>
+<p>Θα σας ζητηθεί αν θα επαναφέρετε από αντίγραφο ασφαλείας μιας προηγούμενης έκδοσης. Εάν έχετε ένα τέτοιο αντίγραφο ασφαλείας, πηγαίνετε στην επόμενη σελίδα.</p>
+
+ <section id="restore-howto" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Να εμφανιστεί πώς θα επαναφερθεί από αντίγραφο ασφαλείας</title>
+  </info>
+  <title>Επαναφορά</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="backup-restore.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section[@id='restore']/mal:list)"/>
+ </section>
+</section>
+
+<section id="receiving">
+<title>Λήψη μηνυμάτων</title>
+<p>Πρώτα, επιλέξτε τον τύπο εξυπηρετητή από τον πτυσσόμενο κατάλογο <gui>Τύπος εξυπηρετητή</gui>.</p>
+<p>Εάν δεν είστε αβέβαιοι για την επιλογή του τύπου του εξυπηρετητή, ρωτήστε το διαχειριστή δικτύου σας ή τον πάροχο υπηρεσίας διαδικτύου.</p>
+
+<note style="tip"><p>Αργότερα, αν θέλετε να αλλάξετε αυτόν το λογαριασμό, ή αν θέλετε να δημιουργήσετε έναν καινούριο, πατήστε <guiseq><gui>επεξεργασία</gui><gui>προτιμήσεις</gui><gui>λογαριασμοί αλληλογραφίας</gui></guiseq>. Επιλέξτε το λογαριασμό που θέλετε να αλλάξετε και πατήστε <gui style="button">επεξεργασία</gui>. Εναλλακτικά, προσθέστε ένα νέο λογαριασμό πατώντας <gui style="button">προσθήκη</gui>.</p></note>
+
+<section id="server-type-imap-plus">
+<title>IMAP+</title>
+<p>Κρατάει την αλληλογραφία στο διακομιστή σας ώστε να μπορείτε να την προσπελάσετε από πολλαπλά συστήματα.</p>
+
+ <section id="configure-sending-imap-plus" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Να εμφανιστεί πώς θα ρυθμιστεί αυτός ο τύπος λογαριασμού</title>
+  </info>
+  <title>Επιλογές λήψης IMAP+</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-imap-plus.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-pop">
+<title>POP</title>
+<p>Κατεβάζει την αλληλογραφία σας στον σκληρό σας δίσκο.</p>
+
+ <section id="configure-sending-pop" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Να εμφανιστεί πώς θα ρυθμιστεί αυτός ο τύπος λογαριασμού</title>
+  </info>
+  <title>Επιλογές λήψης POP</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-pop.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-usenet">
+<title>Ειδήσεις USENET</title>
+<p>Συνδέεται σε ένα διακομιστή ειδήσεων και κατεβάζει έναν κατάλογο διαθέσιμων περιλήψεων ειδήσεων.</p>
+
+ <section id="configure-sending-usenet" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Να εμφανιστεί πώς θα ρυθμιστεί αυτός ο τύπος λογαριασμού</title>
+  </info>
+  <title>Επιλογές λήψης ειδήσεων του Usenet</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-usenet-news.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-exchange-ews">
+<title>Exchange EWS</title>
+<p>Για σύνδεση σε Microsoft Exchange 2007/2010 ή εξυπηρετητή OpenChange. Σημειώστε ότι αυτό προς το παρόν σε ανάπτυξη και θα αντικαταστήσει τον τύπο λογαριασμού <gui>Exchange MAPI</gui> στο μέλλον. Μπορεί να μην είναι ακόμα διαθέσιμο για τη διανομή σας.</p>
+<note style="info package">
+  <p>Αυτό απαιτεί να έχετε το πακέτο <sys>evolution-ews</sys> εγκατεστημένο.</p>
+  <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+    <if:when test="action:install">
+      <p><link action="install:evolution-ews" href="https://wiki.gnome.org/Apps/Evolution#Get_the_Source_Code" style="button">Εγκατάσταση evolution-ews</link></p>
+    </if:when>
+  </if:choose>
+</note>
+
+ <section id="configure-sending-exchange-ews" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Να εμφανιστεί πώς θα ρυθμιστεί αυτός ο τύπος λογαριασμού</title>
+  </info>
+  <title>Ανταλλαγή επιλογών λήψης υπηρεσιών ιστού</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-exchange-ews.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-exchange-mapi">
+<title>Exchange MAPI</title>
+<p>Για σύνδεση με εξυπηρετητή Microsoft Exchange 2007/2010 ή OpenChange.</p>
+<note style="info package">
+  <p>Αυτό απαιτεί να έχετε το πακέτο <sys>evolution-mapi</sys> εγκατεστημένο.</p>
+  <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+    <if:when test="action:install">
+      <p><link action="install:evolution-mapi" href="https://wiki.gnome.org/Apps/Evolution#Get_the_Source_Code" style="button">Εγκατάσταση evolution-mapi</link></p>
+    </if:when>
+  </if:choose>
+</note>
+
+ <section id="configure-sending-exchange-mapi" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Να εμφανιστεί πώς θα ρυθμιστεί αυτός ο τύπος λογαριασμού</title>
+  </info>
+  <title>Επιλογές λήψης ανταλλαγής MAPI</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-exchange-mapi.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-local-delivery">
+<title>Τοπική παράδοση</title>
+<p>Τοπική παράδοση: Εάν θέλετε να μετακινήσετε αλληλογραφία από τον ετεροχρονισμό (την τοποθεσία όπου η αλληλογραφία περιμένει για παράδοση) και να την αποθηκεύετε στον προσωπικό σας φάκελο. Πρέπει να δώσετε τη διαδρομή προς τον ετεροχρονισμό αλληλογραφίας που θέλετε να χρησιμοποιείτε. Αν θέλετε να αφήνετε την αλληλογραφία στα αρχεία ετεροχρονισμού του συστήματός σας, διαλέξτε την επιλογή <gui>τυπικός ετεροχρονισμός UNIX Mbox</gui>.</p>
+
+ <section id="configure-sending-local-delivery" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Να εμφανιστεί πώς θα ρυθμιστεί αυτός ο τύπος λογαριασμού</title>
+  </info>
+  <title>Επιλογές λήψης τοπικής παράδοσης</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-local-delivery.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-mh-format-directories">
+<title>Κατάλογοι αλληλογραφίας σε μορφή ΜΗ</title>
+<p>Για μεταφόρτωση αλληλογραφίας χρησιμοποιώντας MH ή άλλης εφαρμογής τύπου MH.</p>
+
+ <section id="configure-sending-mh-format-directories" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Να εμφανιστεί πώς θα ρυθμιστεί αυτός ο τύπος λογαριασμού</title>
+  </info>
+  <title>Επιλογές λήψης καταλόγων αλληλογραφίας σε μορφή ΜΗ</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-mh-format-directories.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-maildir-format-directories">
+<title>Κατάλογοι αλληλογραφίας μορφής Maildir</title>
+<p>Κατάλογοι αλληλογραφίας μορφής Maildir: Για λήψη της αλληλογραφίας σας με την χρήση του Qmail ή άλλης εφαρμογής τύπου Maildir.</p>
+
+ <section id="configure-sending-maildir-format-directories" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Να εμφανιστεί πώς θα ρυθμιστεί αυτός ο τύπος λογαριασμού</title>
+  </info>
+  <title>Επιλογές λήψης καταλόγων μηνυμάτων σε μορφή Maildir</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-maildir-format-directories.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-unix-mbox-spool-file">
+<title>Απλό αρχείο ετεροχρονισμού Γιούνιξ mbox</title>
+<p>Τυπικό αρχείο ετεροχρονισμού Unix mbox: Για ανάγνωση και αποθήκευση αλληλογραφίας στο αρχείο ετεροχρονισμού αλληλογραφίας στο τοπικό σας σύστημα.</p>
+
+ <section id="configure-sending-unix-mbox-spool-file" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Να εμφανιστεί πώς θα ρυθμιστεί αυτός ο τύπος λογαριασμού</title>
+  </info>
+  <title>Τυπικές επιλογές λήψης αρχείου ετεροχρονισμού mbox του Unix</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-unix-mbox-spool-file.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-unix-mbox-spool-directory">
+<title>Τυπικός κατάλογος ετεροχρονισμού mbox του Γιούνιξ</title>
+<p>Τυπικός κατάλογος ετεροχρονισμού Unix mbox: Για ανάγνωση και αποθήκευση αλληλογραφίας στον κατάλογο ετεροχρονισμού αλληλογραφίας στο τοπικό σας σύστημα.</p>
+
+ <section id="configure-sending-unix-mbox-spool-directory" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Να εμφανιστεί πώς θα ρυθμιστεί αυτός ο τύπος λογαριασμού</title>
+  </info>
+  <title>Τυπικές επιλογές λήψης καταλόγου ετεροχρονισμού mbox του Unix</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-unix-mbox-spool-directory.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-none">
+<title>Κανένα</title>
+<p>If you do not plan to use <app>Evolution</app> for receiving email.</p>
+</section>
+
+</section>
+
+<section id="sending"> <!-- Do not rename, we link to it from the subpages -->
+<title>Αποστολή μηνυμάτων</title>
+<p>Διαθέσιμοι τύποι εξυπηρετητή είναι:</p>
+
+<section id="server-type-smtp">
+<title>SMTP</title>
+<p>Στέλνει αλληλογραφία χρησιμοποιώντας έναν εξερχόμενο εξυπηρετητή αλληλογραφίας. Αυτό είναι η πιο κοινή επιλογή για αποστολή αλληλογραφίας.</p>
+
+ <section id="configure-sending-smtp" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Να εμφανιστεί πώς θα ρυθμιστεί αυτός ο τύπος λογαριασμού</title>
+  </info>
+  <title>Επιλογές αποστολής SMTP</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-sending-options-smtp.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:list)"/>
+ </section>
+
+</section>
+
+<section id="server-type-sendmail">
+<title>Sendmail</title>
+<p>Χρησιμοποιεί την εφαρμογή <app>Sendmail</app> για να στέλνει αλληλογραφία από το σύστημά σας. Δεν είναι εύκολο να ρυθμιστεί, έτσι πρέπει να επιλέξετε αυτήν την επιλογή μόνο αν ξέρετε πώς να ρυθμίσετε μια υπηρεσία Sendmail.</p>
+</section>
+
+</section>
+
+<section id="account-information">
+<title>Πληροφορίες λογαριασμού</title>
+<p>Δώστε στον λογαριασμό οποιοδήποτε όνομα προτιμάτε.</p>
+</section>
+
+<section id="account-import">
+<title>Εισαγωγή αλληλογραφίας (προαιρετική)</title>
+<p>Συνεχίστε με <link xref="import-data">εισαγωγή δεδομένων από άλλη εφαρμογή</link>.</p>
+</section>
+
+</page>

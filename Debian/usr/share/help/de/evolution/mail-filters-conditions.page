@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters-conditions" xml:lang="de">
+
+  <info>
+    <desc>Verfügbare Bedingungen zum Einrichten von Filtern.</desc>
+
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.6.4" version="0.3" date="2013-04-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-filters.html.en#usage-mail-org-filters-new -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Verfügbare Filterbedingungen</title>
+
+<list>
+
+<!-- As filter and search folder conditions share a fair amount of options, those ones are centrally in one file that's 
+included by XInclude. See http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-filter-vfolder-conditions.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:item)"/>
+
+<item><p>Quellkonto:</p>
+<p>Filtert Nachrichten gemäß dem Server, von dem sie stammen. Dies ist nützlich, falls Sie mehrere POP-Konten besitzen.</p></item>
+
+<item><p>An Programm weiterleiten:</p>
+<p><gui>Evolution</gui> kann einen externen Befehl zum Verarbeiten einer Nachricht benutzen, und dann die Nachricht basierend auf dem Rückgabewert des Befehls weiterverarbeiten. Auf diese Weise genutzte Befehle müssen einen ganzzahligen Wert als Rückgabewert liefern. Dies kann zum Beispiel zum Filtern unerwünschter Nachrichten oder für einen Virenscanner genutzt werden.</p></item>
+
+<item><p>Unerwünscht-Test:</p>
+<p>Filtert gemäß den Ergebnissen des <link xref="mail-spam">Unerwünscht</link>-Tests.</p></item>
+
+<item><p>Auf alles zutreffen:</p>
+<p>Wendet eine Aktion immer auf jede Nachricht ohne weitere Bedingungen an. Dies kann am Ende der Nachrichtenfilterliste nützlich sein, um alle E-Mails abzudecken, die auf keinen der vorhergehenden Filter in der Liste passen.</p></item>
+
+</list>
+</page>

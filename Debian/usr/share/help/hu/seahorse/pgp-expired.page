@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-expired" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-07-03" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Használhatom továbbra is? Lehetséges a lejárati idő megváltoztatása?</desc>
+  </info>
+
+  <title>Mi történik, ha a kulcsom lejár?</title>
+
+  <p>Ha egy kulcs lejár, akkor érvénytelenné válik. Ez a következőket jelenti:</p>
+
+  <list>
+    <item>
+      <p>Nem használható többé üzenetek titkosítására és visszafejtésére.</p>
+    </item>
+    <item>
+      <p>Nem tud többé más kulcsokat aláírni, vagy más kulcsoktól aláírást fogadni.</p>
+    </item>
+  </list>
+
+  <p>A kulcs tervezett élettartama függvényében egy <link xref="pgp-create#advanced">meghatározhat lejárati időt</link>. Alapértelmezésben a <app>Jelszavak és kulcsok</app> alkalmazás egyetlen kulcsnak sem határoz meg lejárati időt. Ez azt jelenti, hogy a kulcsok mindig érvényesek maradnak.</p>
+
+  <p>Egy kulcs lejárati idejét bármikor meg lehet <link xref="pgp-expiration-change">változtatni</link>, még akkor is, ha a kulcs már érvénytelenné vált. Ha azonban az érvénytelenné vált kulcsot nem kívánja tovább használni, akkor ajánlott a kulcs <link xref="pgp-delete">törlése</link> vagy <link xref="subkeys-revoke">visszavonása</link>.</p>
+
+  <note style="info">
+    <p>Ha van olyan üzenete, amely a lejárt kulccsal lett titkosítva, akkor a kulcs törlése előtt hosszabbítsa meg annak lejárati idejét, és fejtse vissza az érintett üzeneteket.</p>
+  </note>
+
+</page>

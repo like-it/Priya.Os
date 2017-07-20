@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-select" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Premere <keyseq><key>Ctrl</key><key>S</key></keyseq> per selezionare diversi file con nomi simili.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Selezionare file in base al modello</title>
+
+  <p>È possibile selezionare file in una cartella usando un modello per il nome del file. Premere <keyseq><key>Ctrl</key><key>S</key></keyseq> per visualizzare la finestra <gui>Selezione corrispondenza oggetti</gui>. Digitare un modello usando parti comuni ai nomi dei file aggiungendo i metacaratteri. Sono disponibili due metacaratteri:</p>
+
+  <list style="compact">
+    <item><p><file>*</file> corrisponde a un numero indefinito di caratteri qualsiasi, anche l'assenza di caratteri.</p></item>
+    <item><p><file>?</file> corrisponde esattamente a un carattere qualsiasi.</p></item>
+  </list>
+
+  <p>Per esempio:</p>
+
+  <list>
+    <item><p>Se si ha un file di testo OpenDocument, un file PDF e un'immagine con lo stesso nome di base, per esempio <file>Fattura</file>, è possibile selezionarli tutti e tre contemporaneamente usando</p>
+    <example><p><file>Fattura.*</file></p></example></item>
+
+    <item><p>Se si hanno alcune foto con nomi del tipo <file>Vacanza-001.jpg</file>, <file>Vacanza-002.jpg</file>, <file>Vacanza-003.jpg</file>, è possibile selezionarle contemporaneamente usando</p>
+    <example><p><file>Vacanza-???.jpg</file></p></example></item>
+
+    <item><p>If you have photos as before, but you have edited some of them and
+    added <file>-edited</file> to the end of the file name of the photos you
+    have edited, select the edited photos with</p>
+    <example><p><file>Vacanza-???-modificata.jpg</file></p></example></item>
+  </list>
+
+</page>

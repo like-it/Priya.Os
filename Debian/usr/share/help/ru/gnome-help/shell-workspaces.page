@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" version="1.0 if/1.0" id="shell-workspaces" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces" group="#first"/>
+
+    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10.3" date="2014-01-26" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Рабочие места — это способ группировки окон на рабочем столе.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Что такое рабочее место, и для чего оно нужно?</title>
+
+    <media type="image" src="figures/shell-workspaces.png" width="162" height="434" style="floatend floatright">
+        <p>Переключатель рабочих мест</p>
+    </media>
+
+  <p if:test="!platform:gnome-classic">Рабочие места используются для упорядочения окон на рабочем столе. Можно создать несколько рабочих мест, работающих как виртуальные рабочие столы. Рабочие места предназначены для уменьшения хаоса на рабочем столе и упрощения навигации по нему.</p>
+
+  <p if:test="platform:gnome-classic">Рабочие места используются для упорядочения окон на рабочем столе. Можно использовать несколько рабочих мест, работающих как виртуальные рабочие столы. Рабочие места предназначены для уменьшения хаоса на рабочем столе и упрощения навигации по нему.</p>
+
+  <p>Рабочие места можно использовать для организации работы. Например, можно собрать все окна коммуникационных программ, таких как почтовая программа или клиент сети мгновенных сообщений, на одном рабочем месте, а окна, необходимые вам для выполняемой работы — на другом. На третьем рабочем месте может быть открыт ваш музыкальный проигрыватель.</p>
+
+<p>Использование рабочих мест:</p>
+
+<list>
+  <item>
+    <p if:test="!platform:gnome-classic">In the
+    <gui xref="shell-introduction#activities">Activities</gui> overview, move your cursor
+    to the right-most side of the screen.</p>
+    <p if:test="platform:gnome-classic">Нажмите клавишу <key xref="keyboard-key-super">Super</key>, чтобы открыть <gui>Обзор</gui> и затем переместите курсор на крайнюю правую часть экрана.</p>
+  </item>
+  <item>
+    <p if:test="!platform:gnome-classic">A vertical panel will appear showing
+    workspaces in use, plus an empty workspace. This is the
+    workspace selector.</p>
+    <p if:test="platform:gnome-classic">A vertical panel will appear showing
+    available workspaces. This is the workspace selector.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>To add a workspace, drag and drop a window from an existing workspace
+    onto the empty workspace in the workspace selector. This workspace now
+    contains the window you have dropped,
+    and a new empty workspace will appear below it.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>Чтобы удалить рабочее место, просто закройте все открытые на нём окна или переместите их на другие рабочие места.</p>
+  </item>
+</list>
+
+<p if:test="!platform:gnome-classic">Всегда существует по крайней мере одно рабочее место.</p>
+
+</page>

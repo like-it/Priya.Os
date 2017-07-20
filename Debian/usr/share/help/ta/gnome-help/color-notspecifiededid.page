@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-notspecifiededid" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="guide" xref="color-gettingprofiles"/>
+    <link type="guide" xref="color-why-calibrate"/>
+    <desc>முன்னிருப்பு மானிட்டர் தனியமைப்புகளில் அளவை வகுத்த தேதி இருக்காது.</desc>
+    <credit type="author">
+      <name>ரிச்சர்ட் ஹியூகஸ்</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>ஏன் முன்னிருப்பு மானிட்டர் தனியமைப்புகளில் அளவை வகுத்த தேதி இல்லை?</title>
+  <p>
+    The default color profile used for each monitor is generated
+    automatically based on the display 
+    <link href="https://en.wikipedia.org/wiki/Extended_Display_Identification_Data">
+    EDID</link> which is stored in a memory chip inside the monitor.
+    The EDID only gives us a snapshot of the available colors the monitor
+    was capable of displaying when it was manufactured, and does not
+    contain much other information for color correction.
+  </p>
+
+  <figure>
+    <desc>EDID ஐ புதுப்பிக்க முடியாது என்பதால், அதற்கு காலாவதி தேதி கிடையாது.</desc>
+    <media type="image" mime="image/png" src="figures/color-profile-default.png"/>
+  </figure>
+
+  <note style="tip">
+    <p>திரையை உற்பத்தி செய்த நிறுவனத்திடமிருந்து ஒரு தனியமைப்பைப் பெறுவது அல்லது நீங்களே ஒரு தனியமைப்பை உருவாக்குவதே மிகத் துல்லியமான நிற திருத்தமாக இருக்கும்.</p>
+  </note>
+
+</page>

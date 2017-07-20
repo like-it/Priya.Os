@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-photoid" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-24" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Incluir un ID de foto a sus claves existentes, para que la gente pueda identificarlas fácilmente.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Adjuntar una foto a su clave</title>
+
+  <p>Puede adjuntar un ID de foto a sus claves PGP para que cualquiera pueda verificar la propiedad de sus claves después de mirar su foto. Aunque una clave con una foto adjunta proporciona un nivel de seguridad ligeramente mejor que una clave sin foto, comprobar la foto de una clave no es tan seguro como comprobar la <link xref="misc-key-fingerprint">huella de la clave</link>, ya que cualquiera que tenga una foto suya puede crear una clave con su ID de foto, mientras que la huella de la clave no se puede imitar.</p>
+
+  <note style="info">
+    <p>A diferencia de las restricciones en <app>GPG</app>, el ID de foto que quiere subir no tiene por qué ser en formato <file>JPEG</file>. <app>Contraseñas y claves</app> le permite subir su foto en <file>png</file>, <file>jpg</file> y en muchos otros formatos comunes de imagen.</p>
+  </note>
+
+  <steps>
+    <title>Para adjuntar un ID de foto a una clave PGP:</title>
+    <item>
+      <p>Seleccione <gui>claves GnuPG</gui> en el panel de la izquierda.</p>
+    </item>
+    <item>
+      <p>Seleccione la clave PGP.</p>
+    </item>
+    <item>
+      <p>Pulse con el botón derecho sobre la clave que quiera y elija <guiseq><gui style="menuitem">Propiedades</gui> <gui>Propietario</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Pulse el botón <gui style="button">+</gui> en la parte izquierda para añadir una foto.</p>
+    </item>
+    <item>
+      <p>Seleccione la foto de su equipo.</p>
+    </item>
+    <item>
+      <p>Pulse <gui style="button">Cerrar</gui> para terminar.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Las fotos que seleccione deben tener un tamaño pequeño, preferiblemente de 120x150 píxeles. Dado que un ID de foto se adjunta siempre a su clave, una foto grande aumentará el tamaño de la clave y ralentizará las operaciones que usen esa clave. <app>Contraseñas y claves</app> redimensiona las fotos grandes a un tamaño óptimo después de pedirle su confirmación.</p>
+  </note>
+
+</page>

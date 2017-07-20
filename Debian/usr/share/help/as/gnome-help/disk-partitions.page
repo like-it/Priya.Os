@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="as">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME তথ্যচিত্ৰ প্ৰকল্প</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>ভলিউমসমূহ আৰু বিভাজনসমূহ কি বুজক আৰু সিহতক ব্যৱস্থাপনা কৰিবলৈ ডিস্ক সঁজুলি ব্যৱহাৰ কৰক।</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>ভলিউমসমূহ আৰু বিভাজনসমূহ ব্যৱস্থাপনা কৰক</title>
+
+  <p>The word <em>volume</em> is used to describe a storage device, like a hard
+ disk. It can also refer to a <em>part</em> of the storage on that device,
+ because you can split the storage up into chunks. The computer makes this
+ storage accessible via your file system in a process referred to as
+ <em>mounting</em>. Mounted volumes may be hard drives, USB drives, DVD-RWs, SD
+ cards, and other media. If a volume is currently mounted, you can read (and
+ possibly write) files on it.</p>
+
+  <p>Often, a mounted volume is called a <em>partition</em>, though they are not
+ necessarily the same thing. A “partition” refers to a <em>physical</em> area of
+ storage on a single disk drive. Once a partition has been mounted, it can be
+ referred to as a volume because you can access the files on it. You can think
+ of volumes as the labeled, accessible “storefronts” to the functional “back
+ rooms” of partitions and drives.</p>
+
+<section id="manage">
+ <title>ডিস্ক সঁজুলি ব্যৱহাৰ কৰি ভলিউমসমূহ আৰু বিভাজনসমূহ দৰ্শন আৰু ব্যৱস্থাপনা কৰক</title>
+
+  <p>আপুনি ডিস্ক সঁজুলিৰ সৈতে আপোনাৰ কমপিউটাৰৰ সংৰক্ষণ ভলিউম নিৰীক্ষণ আৰু পৰিবৰ্তন কৰিব পাৰিব।</p>
+
+<steps>
+  <item>
+    <p>Open the <gui>Activities</gui> overview and start <app>Disks</app>.</p>
+  </item>
+  <item>
+    <p>In the list of storage devices on the left, you will find hard disks,
+    CD/DVD drives, and other physical devices. Click the device you want to
+    inspect.</p>
+  </item>
+  <item>
+    <p>The right pane provides a visual breakdown of the volumes and
+    partitions present on the selected device. It also contains a variety of
+    tools used to manage these volumes.</p>
+    <p>সতৰ্ক হব: এই সঁজুলিসমূহে আপোনাৰ ডিস্কৰ সকলো তথ্য সম্পূৰ্ণভাৱে মচি পেলাব পাৰে।</p>
+  </item>
+</steps>
+
+  <p>Your computer most likely has at least one <em>primary</em> partition and a
+ single <em>swap</em> partition. The swap partition is used by the operating
+ system for memory management, and is rarely mounted.  The primary partition
+ contains your operating system, applications, settings, and personal files.
+ These files can also be distributed among multiple partitions for security or
+ convenience.</p>
+
+  <p>One primary partition must contain information that your computer uses to
+  start up, or <em>boot</em>. For this reason it is sometimes called a boot
+  partition, or boot volume. To determine if a volume is bootable, select the
+  partition and click the menu button in the toolbar underneath the partition
+  list. Then, click <gui>Edit Partition…</gui> and look at its
+  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
+  a bootable volume.</p>
+
+</section>
+
+</page>

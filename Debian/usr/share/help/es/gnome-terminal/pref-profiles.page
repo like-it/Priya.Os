@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="pref-profiles" xml:lang="es">
+
+  <info>
+    <revision pkgversion="3.8" date="2013-03-03" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-09-08" status="candidate"/>
+    <link type="guide" xref="index#preferences"/>
+    <link type="guide" xref="pref"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013-2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Crear, editar y eliminar perfiles.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@gnome.org</mal:email>
+      <mal:years>2001-2006</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Gestionar perfiles</title>
+
+  <p>Un perfil es una colección de parámetros de configuración de la <app>Terminal</app>. La <app>Terminal</app> soporta varios perfiles. Puede configurar los perfiles de la <app>Terminal</app> para que <link xref="pref-custom-command">ejecuten un comando o una shell personalizada</link>, configurar un perfil exclusivamente para conectarse a equipos remotos usando SSH o configurar un perfil que ejecute una sesión de <app>GNU Screen</app>.</p>
+
+  <p>La configuración disponible de la <app>Terminal</app> incluye:</p>
+
+  <list>
+    <item>
+      <p>Nombre de perfil.</p>
+    </item>
+    <item>
+      <p>Tipografías y colores de fondo</p>
+    </item>
+    <item>
+      <p><gui style="tab">Compatibilidad</gui> con las teclas <key>Retroceso</key> y <key>Supr</key>.</p>
+    </item>
+    <item>
+      <p><gui style="tab">Desplazamiento</gui>.</p>
+    </item>
+  </list>
+
+  <p>El perfil predeterminado se carga cuando se abre una terminal nueva, a menos que haya seleccionado otro perfil. Cualquier cambio que que haga se guardará en la configuración del perfil usado actualmente.</p>
+
+  <section id="set-default" style="task">
+    <title>Establecer un perfil predeterminado</title>
+
+    <p>El perfil predeterminado es una colección de configuraciones del perfil aplicada cada vez que se abre una pestaña o una ventana de la <app>Terminal</app>.</p>
+
+    <steps>
+      <item>
+        <p>Seleccione <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Preferencias</gui> <gui style="tab">Perfiles</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Seleccione el perfil que establecer como predeterminado en la lista desplegable <gui>Perfil utilizado al lanzar una terminal nueva</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="select-profile" style="task">
+    <title>Seleccionar un perfil</title>
+
+    <p>Puede cambiar en la pestaña o la ventana actual de la <app>Terminal</app> seleccionando un perfil en <guiseq><gui style="menu">Terminal</gui> <gui style="menuitem">Cambiar perfil</gui></guiseq>.</p>
+
+  </section>
+
+  <section id="new-profile" style="task">
+    <title>Crear un perfil nuevo</title>
+
+    <p>Cualquier cambio que se haga en un perfil nuevo se guardará automáticamente. Para crear un perfil nuevo:</p>
+
+    <steps>
+      <item>
+        <p>Seleccione <guiseq><gui style="menu">Archivo</gui> <gui style="menuitem">Perfil nuevo</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Introduzca un nombre para el nuevo perfil en <gui style="input">Nombre del perfil</gui>.</p>
+      </item>
+      <item>
+        <p>Seleccione la <link xref="app-fonts">tipografía</link>, la <link xref="app-cursor">forma del cursor</link> y el <link xref="app-terminal-sizes">tamaño de la ventana</link> en la pestaña <gui style="tab">General</gui>.</p>
+      </item>
+      <item>
+        <p>Establezca el comportamiento que prefiera para el comando <link xref="pref-custom-exit"><cmd>salir</cmd></link>. También puede establecer una <link xref="pref-custom-command">shell personalizada</link> en la pestaña <gui style="tab">Comando</gui>.</p>
+      </item>
+      <item>
+        <p>Establezca su<link xref="app-colors">tema y colores</link> preferidos en la pestaña <gui style="tab">Colores</gui>.</p>
+      </item>
+      <item>
+        <p>Establezca sus <link xref="pref-scrolling">preferencias de desplazamiento</link> en la pestaña <gui style="tab">Desplazamiento</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="create-profile-from-existing" style="task">
+    <title>Crear un perfil nuevo basándose en uno existente</title>
+
+    <p>Puede crear un perfil nuevo basándose en la configuración de un perfil existente:</p>
+
+    <steps>
+      <item>
+        <p>Seleccione el perfil que quiere editar en <guiseq><gui style="menu">Terminal</gui> <gui style="menuitem">Cambiar perfil</gui> <gui style="menuitem"><var>Nombre del perfil</var></gui></guiseq> donde <var>Nombre del perfil</var> es el nombre del perfil que quiere editar. Alternativamente, puede seleccionar <guiseq> <gui style="menu">Archivo</gui> <gui style="menuitem">Perfil nuevo</gui></guiseq> para clonar el perfil que está usando actualmente.</p>
+      </item>
+      <item>
+        <p>Configure las <link xref="#edit-profile">preferencias del perfil</link> que quiera. Estas preferencias se guardarán automáticamente. Si no actualiza el <gui>Nombre del perfil</gui> en la pestaña <gui style="tab">General </gui>, el perfil nuevo no sobrescribirá el perfil en el que se basa.</p>
+      </item>
+    </steps>
+
+    <p>Alternativamente, puede crear primero una copia del perfil existente y luego editar el perfil:</p>
+
+    <steps>
+      <item>
+        <p>Seleccione <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Preferencias</gui> <gui style="tab">Perfiles</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Seleccione el perfil que quiere.</p>
+      </item>
+      <item>
+        <p>Pulse <gui style="button">Clonar</gui>.</p>
+      </item>
+      <item>
+        <p>Configure las <link xref="#edit-profile">preferencias del perfil</link> que quiera. Estas preferencias se guardarán automáticamente. Si no actualiza el nombre del perfil, el perfil nuevo no sobrescribirá el perfil en el que se basa.</p>
+      </item>
+    </steps>
+
+    <note>
+      <p>Crear un perfil nuevo a partir de un perfil existente no afectará a la configuración del perfil existente. Cualquier cambio en la configuración se guardará en el perfil nuevo.</p>
+    </note>
+
+  </section>
+
+  <section id="edit-profile" style="task">
+    <title>Editar un perfil</title>
+
+    <note style="warning">
+      <p>Si se edita el perfil predeterminado, no se puede restaurar a su configuración original. Si todavía no ha creado otros perfiles para la <app>Terminal</app> y ha modifica el perfil predeterminado, la <app>Terminal</app> <em>puede</em> puede quedar inutilizable ya que algunas configuraciones pueden causar problemas. Se recomienda que <link xref="#create-profile-from-existing">cree una copia del perfil predeterminado</link> y luego la edite para crear un perfil personalizado.</p>
+    </note>
+
+    <p>Puede cambiar los perfiles existentes. Para editar un perfil, seleccione <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Preferencias del perfil</gui></guiseq>.</p>
+
+    <steps>
+      <item>
+        <p>Seleccione la <link xref="app-fonts">tipografía</link> las <link xref="app-cursor">formas del cursor</link> y el tamaño de la <link xref="app-terminal-sizes"><app>Terminal</app></link>.</p>
+      </item>
+      <item>
+        <p>También puede cambiar el comportamiento de la <app>Terminal</app> cuando <link xref="pref-custom-exit">un comando termina</link>, establecer una <link xref="pref-login-shell">shell de inicio de sesión personalizada</link> o cambiar las <link xref="pref-scrolling">preferencias de la barra de desplazamiento</link>.</p>
+      </item>
+      <item>
+        <p>Para cambiar los colores del texto y el fondo de la <app>Terminal</app>, consulte los <link xref="app-colors">esquemas de color de la <app>Terminal</app></link>.</p>
+      </item>
+      <item>
+        <p>Los cambios en el perfil se guardan inmediatamente. Para volver a la <app>Terminal</app>, pulse <gui style="button">Cerrar</gui>.</p>
+      </item>
+    </steps>
+
+    <note style="important">
+      <p>Asegúrese de que está editando el perfil que quiere, seleccione el perfil en <guiseq><gui style="menu">Terminal</gui> <gui style="menuitem">Cambiar perfil</gui></guiseq>.</p>
+    </note>
+
+  </section>
+
+  <section id="rename-profile" style="task">
+    <title>Renombrar un perfil existente</title>
+
+    <p>Puede renombrar los perfiles existentes, incluyendo el predeterminado:</p>
+
+    <steps>
+      <item>
+        <p>Seleccione <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Preferencias</gui> <gui style="tab">Perfiles</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Seleccione el perfil que quiere renombrar.</p>
+      </item>
+      <item>
+        <p>Pulse <gui style="button">Editar</gui>. Esto abrirá el diálogo de preferencias del perfil para el perfil seleccionado.</p>
+      </item>
+      <item>
+        <p>Escriba el nombre del perfil en la caja de texto para el <gui>Nombre del perfil</gui>.</p>
+      </item>
+      <item>
+        <p>Pulse <gui style="button">Cerrar</gui> para volver.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="delete-profile" style="task">
+    <title>Eliminar un perfil</title>
+  
+    <p>Para eliminar un perfil:</p>
+
+    <steps>
+      <item>
+        <p>Seleccione <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Preferencias</gui> <gui style="tab">Perfiles</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Seleccione el perfil que quiere eliminar.</p>
+      </item>
+      <item>
+        <p>Pulse <gui style="button">Eliminar</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+</page>

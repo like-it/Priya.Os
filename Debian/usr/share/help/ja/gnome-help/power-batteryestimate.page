@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="power-batteryestimate" xml:lang="ja">
+
+  <info>
+
+    <link type="guide" xref="power#faq"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
+
+    <desc><gui>バッテリーアイコン</gui>をクリックして表示されるバッテリー残量は推定値です。</desc>
+
+    <credit type="author">
+      <name>GNOME ドキュメンテーションプロジェクト</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>バッテリー残量の表示が間違っている</title>
+
+<p>バッテリー残量を確認してみると、表示される残り時間と実際にバッテリーが切れるまでの時間とが異なる場合があります。これは、バッテリー残量が推定に基づくためです。通常、推定値は時間の経過とともに改善されていきます。</p>
+
+<p>In order to estimate the remaining battery life, a number of factors must be
+taken into account. One is the amount of power currently being used by the
+computer: power consumption varies depending on how many programs you have
+open, which devices are plugged in, and whether you are running any intensive
+tasks (like watching high-definition video or converting music files, for
+example). This changes from moment to moment, and is difficult to predict.</p>
+
+<p>また、バッテリーの放電特性も要因の一つです。残量が少なくなるほど放電が速くなるバッテリーもあります。バッテリーの放電特性に関する正確な情報が無ければ、バッテリー残量についても大まかな推定しかできなくなります。</p>
+
+<p>バッテリーが放電する際、電源マネージャーはバッテリーの放電特性を算定してバッテリー残量をより正確に推定する方法を学習します。ただし、完全に正確な推定にはなりえません。</p>
+
+<note>
+  <p>どう見てもありえない推定バッテリー残量 (残り100日など) が表示される場合は、推定に必要な何らかのデータを電源マネージャーが取得できていない可能性があります。</p>
+  <p>電源を抜いたままバッテリーのみでしばらくラップトップを使用していた場合には、電源を挿し直して充電すれば、電源マネージャーで必要なデータを取得できるようになるでしょう。</p>
+</note>
+
+</page>

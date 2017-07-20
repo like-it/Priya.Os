@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task 2column" id="gedit-plugins-snippets" xml:lang="uk">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-22" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <desc>Use snippets to quickly insert often-used pieces of text.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Максим Дзюманенко</mal:name>
+      <mal:email>dziumanenko@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Назарій Ріттер</mal:name>
+      <mal:email>nazariy.ritter@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Фрагменти</title>
+
+  <p>«<app>Фрагменти</app>» забезпечують зручний спосіб вставки фрагментів коду, що часто повторюються, у файли. Наприклад, фрагмент HTML для тегу <code>&lt;img&gt;</code> буде вставляти як відкриваючі та закриваючі фрагменти тегу так і фіксовані місця для введення атрибутів зображення. Це може зробити написання коду простішим та швидшим.</p>
+
+  <section id="enable-snippets">
+    <title>Увімкнення плагіну «Фрагменти»</title>
+
+    <p>Щоб увімкнути плагін «<gui>Фрагменти</gui>»:</p>
+
+    <steps>
+      <item>
+        <p>Виберіть <guiseq><gui style="menu">«gedit»</gui> <gui style="menuitem">«Параметри»</gui> <gui style="tab">«Плагіни»</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Виберіть «<gui style="menuitem">Фрагменти</gui>», щоб увімкнути плагін.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="browse-snippets">
+    <title>Огляд фрагментів</title>
+
+    <p>Щоб оглянути доступні фрагменти:</p>
+    <steps>
+      <item>
+        <p>Виберіть <guiseq><gui style="menu">«Інструменти»</gui> <gui style="menuitem">«Управління фрагментами»</gui></guiseq>.</p>
+        <note style="important">
+          <p>Переконайтеся, що синтаксис встановлено вірно. Статусна панель в нижній частині вікна «<app>gedit</app>» показує поточне мовні налаштування. Ці мовні налаштування «gedit» вставляти правильні фрагменти. «<app>Gedit</app>», зазвичай, визначає мову або синтаксис файлу, що використовується, однак, інколи, може буде потрібно встановити його.</p>
+          <figure>
+            <desc>В цьому прикладі, встановлено мову HTML.</desc>
+            <media type="image" mime="image/png" src="figures/gedit-html-snippet.png"/>
+        </figure>
+        </note>
+      </item>
+      <item>
+        <p>Перегляньте фрагменти, доступні для Вашої мови або синтаксису.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="using-snippets">
+    <title>Використання «Фрагментів»</title>
+
+    <p>Щоб вставити фрагмент до поточного документу:</p>
+
+    <steps>
+      <item>
+        <p>Введіть назву потрібного фрагменту будь-де в поточному документі.</p>
+      </item>
+      <item>
+        <p>Натисніть <key>Tab</key>, щоб вставити фрагмент, асоційований зі введеним терміном.</p>
+      </item>
+    </steps>
+  </section>
+
+    <section id="example-insert-snippet">
+    <title>Приклад використання «Фрагментів»</title>
+
+    <p>Наприклад, якщо встановлено синтаксис <em>HTML</em>, введіть «<code>head </code>» та натисніть клавішу <key>Tab</key>. Текст буде доповнено фрагментом як:</p>
+
+    <code>
+      &lt;head&gt;
+      &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8" /&gt;
+      &lt;title&gt;Page Title&lt;/title&gt;
+      &lt;/head&gt;
+    </code>
+
+  </section>
+
+  <section id="adding-snippets">
+    <title>Додавання фрагментів</title>
+
+    <p>Можна додавати фрагменти, що будуть діяти або глобально (тобто, незалежно від мови), або лише за певного синтаксису.</p>
+
+    <steps>
+      <item>
+        <p>Виберіть <guiseq style="menu"><gui style="menuitem">«Інструменти»</gui> <gui style="menuitem">«Управління фрагментами»</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>З бічної панелі «<gui>Управління фрагментами</gui>» виберіть потрібний синтаксис та клацніть на кнопці «+», щоб відобразити існуючі фрагменти для обраного синтаксису.</p>
+        <note style="tip">
+          <p>Щоб додати фрагмент, що діє глобально (тобто, коли не встановлено певного синтаксису чи мови для документу), виберіть «<gui>Глобальний</gui>» з бічної панелі «<gui>Управління фрагментами</gui>».</p>
+        </note>
+      </item>
+      <item>
+        <p>Щоб додати новий фрагмент, клацніть на піктограмі «плюс», що на бічній панелі «<gui>Управління фрагментами</gui>».</p>
+      </item>
+      <item>
+        <p>Введіть назву нового фрагменту. Назва фрагменту може відрізнятися від самого фрагменту, що додається.</p>
+      </item>
+      <item>
+        <p>В розділі «<gui style="group">Активація</gui>» потрібно ввести термін для текстовому полі «<gui style="input">Тригеру табуляції:</gui>». Цей термін буди використовуватися для вставки даного фрагменту.</p>
+        <note style="tip">
+          <p>Якщо хочете вставляти фрагмент за допомогою комбінації клавіш, клацніть вказівником миші в текстовому полі «<gui style="input">Комбінація клавіш:</gui>» та натисніть потрібну комбінацію клавіш. Як тільки клавіші були натиснуті, комбінацію клавіш буде встановлено.</p>
+        </note>
+      </item>
+      <item>
+        <p>Під текстовим полем «<gui style="input">Змінити:</gui>», введіть потрібний текст фрагменту. Можна використовувати «<code>${n}</code>», для вказання змінних, де «<em>n</em>» замінюється числом, що означає порядковий номер включених змінних.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="example-add-snippet">
+    <title>Ще один приклад використання «Фрагментів»</title>
+
+    <p>Припустимо, було створено фрагмент з терміном «<var>вітання</var>» в «<gui style="input">Тригері табуляції:</gui>». Текстове поле «<gui style="input">Змінити:</gui>» містить:</p>
+
+    <code>
+"      &lt;вітання&gt;Привіт, ${1:чудовий}${2:дивовижний} світе!
+      &lt;/вітання&gt;
+    </code>
+
+    <p>Ввести цей фрагмент можна набравши в документі «<var>вітання</var>» та натиснувши клавішу <key>Tab</key>. Буде вставлено наступний текстовий фрагмент:</p>
+
+    <code>
+      &lt;вітання&gt;Привіт, чудовийдивовижний світе!&lt;/вітання&gt;
+    </code>
+
+    <p>Слова «чудовий» та «дивовижний» можна зберегти або видалити, на Ваш вибір. Щоб зробити це, натисніть <key>Tab</key>, щоб вибрати між «чудовий» та «дивовижний», та натисніть <key>Del</key>, щоб видалити найменш придатний варіант.</p>
+  </section>
+
+  <!--TODO: <section id="modifying-snippets">
+    <title>Modifying Existing Snippets</title>
+
+  </section>-->
+</page>

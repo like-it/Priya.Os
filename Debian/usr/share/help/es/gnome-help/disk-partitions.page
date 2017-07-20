@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="es">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>Entender qué son los volúmenes y particiones y usar la aplicación de utilidad de discos para gestionarlos.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>Gestionar volúmenes y particiones</title>
+
+  <p>La palabra <em>volumen</em> se usa para describir un dispositivo de almacenamiento, como un disco duro. También se puede referir a <em>parte</em> del almacenamiento en ese dispositivo, ya que puede dividir el dispositivo en varias áreas. El equipo hace accesible este almacenamiento a través de su sistema de archivos en un proceso que se denomina <em>montaje</em>. Los volúmenes que se pueden montar son discos duros, unidades USB, DVD-RW, tarjetas SD y otros dispositivos.</p>
+
+  <p>A menudo, un volumen montado se llama <em>partición</em>, aunque no son idénticos. Una «partición» se refiere a una o más áreas <em>físicas</em> de almacenamiento en una sola unidad. Una vez que la partición se ha montado, se le puede llamar un volumen. Puede pensar en volúmenes como el etiquetado, «escaparates» accesibles al «cuarto trastero» funcional de las particiones y los dispositivos.</p>
+
+<section id="manage">
+ <title>Ver y gestionar volúmenes y particiones usando la utilidad de discos</title>
+
+  <p>Puede comprobar y modificar los volúmenes de almacenamiento con la utilidad de discos.</p>
+
+<steps>
+  <item>
+    <p>Abra la vista de <gui>Actividades</gui> e inicie la aplicación <app>Discos</app>.</p>
+  </item>
+  <item>
+    <p>En la lista de dispositivos de almacenamiento de la izquierda encontrará discos duros, unidades de CD/DVD y otros dispositivos físicos. Pulse en el dispositivo que quiera inspeccionar.</p>
+  </item>
+  <item>
+    <p>El panel derecho proporciona un desglose visual de los volúmenes y particiones presentes en el dispositivo seleccionado. También contiene una variedad de herramientas utilizadas para manejar estos volúmenes.</p>
+    <p>Tenga cuidadoÑ con estas herramientas es posible eliminar completamente los datos en su disco.</p>
+  </item>
+</steps>
+
+  <p>Es muy probable que su equipo tenga al menos una partición <em>primaria</em> y una única partición <em>de intercambio</em>. La partición de intercambio la utiliza el sistema operativo para la gestión de memoria, y se monta en raras ocasiones. La partición primaria contiene el sistema operativo, aplicaciones, configuraciones y archivos personales. Estos archivos se pueden distribuir entre varias particiones por seguridad o comodidad.</p>
+
+  <p>Una partición primaria debe contener información que su equipo necesita para iniciarse, o <em>arrancar</em>. Por esta razón, a veces se le denomina partición de arranque, o volumen de arranque. Para saber si un determinado volumen es de arranque, seleccione la partición y pulse el icono de la rueda dentada en la barra de herramientas, debajo de la lista de particiones. Pulse en <gui>Editar partición…</gui> y mire sus <gui>Opciones</gui>. Los medios externos, tales como unidades USB o de CD también pueden contener volúmenes de arranque.</p>
+
+</section>
+
+</page>

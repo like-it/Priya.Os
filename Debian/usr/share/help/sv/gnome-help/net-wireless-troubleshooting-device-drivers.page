@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Medarbetare för Ubuntu dokumentations-wikin</name>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Vissa enhetsdrivrutiner fungerar inte så bra med vissa trådlösa adaptrar, så du kan vara tvungen att hitta en bättre.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Felsökning av trådlösa nätverk</title>
+
+  <subtitle>Säkerställ att fungerande enhetsdrivrutiner är installerade</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>I detta steget kan du kontrollera om du kan få fungerande enhetsdrivrutiner för din trådlösa adapter. En <em>enhetsdrivrutin</em> är en bit programvara som berättar för datorn hur den får hårdvaruenheten att fungera ordentligt. Även om den trådlösa adapter har känts igen av datorn kanske den inte har drivrutiner som fungerar så bra. Det kan finnas andra drivrutiner för den trådlösa adaptern som fungerar. Prova några av alternativen nedan:</p>
+
+  <list>
+    <item>
+      <p>Kontrollera om din trådlösa adapter finns på listan över enheter som stöds.</p>
+      <p>De flesta Linux-distributioner håller en lista över trådlösa enheter som de har stöd för. Ibland tillhandahåller dessa listor extra information om hur man får drivrutiner för specifika adaptrar att fungera ordentligt. Gå till listan för din distribution (till exempel <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>, <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>, <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> eller <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>) och se om tillverkare och modell för din trådlösa adapter finns listad. Det kan finnas information om hur man får din trådlösa adapter att fungera.</p>
+    </item>
+    <item>
+      <p>Leta efter begränsade (binära) drivrutiner.</p>
+      <p>Många Linux-distributioner har bara enhetsdrivrutiner som är <em>fria</em> och <em>öppen källkod</em>. Detta är på grund av att de inte kan distribuera drivrutiner som är proprietära, eller stängd källkod. Om den rätta drivrutinen för din trådlösa adapter bara finns som en icke-fri- eller ”enbart binär”-version, kanske den inte installeras som standard. Om detta är fallet titta på den trådlösa adapterns tillverkarens hemsida för att se om de har några Linux-drivrutiner.</p>
+      <p>Vissa Linux-distributioner har ett verktyg som kan hämta ner begränsade drivrutiner åt dig. Om din distribution har ett sådant, använd det för att se om det kan hitta några trådlösa drivrutiner åt dig.</p>
+    </item>
+    <item>
+      <p>Använd Windows-drivrutiner för din adapter.</p>
+      <p>Generellt sätt kan du inte använda en enhetsdrivrutin designad för ett operativsystem (som Windows) på ett annat operativsystem (som Linux). Detta är för att de har olika sätt att hantera enheter. För trådlösa adaptrar kan du dock installera ett kompatibilitetslager som heter <em>NDISwrapper</em> som låter dig använda några trådlösa Windows-drivrutiner under Linux. Detta är användbart eftersom trådlösa adaptrar nästan alltid har Windows-drivrutiner tillgängliga, medan Linux-drivrutiner ibland inte finns tillgängliga. Du kan lära dig mer om hur man använder NDISwrapper <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">här</link>. Notera att inte alla trådlösa drivrutiner kan användas via NDISwrapper.</p>
+    </item>
+  </list>
+
+  <p>Om inget av dessa alternativ fungerar, kan det vara bra att prova med en annan trådlös adapter för att se om du kan få det att fungera. Trådlösa USB-adaptrar är ofta ganska billiga, och går att ansluta till vilken dator som helst. Du bör dock kontrollera att adaptern är kompatibel med din Linux-distribution innan du köper den.</p>
+
+</page>

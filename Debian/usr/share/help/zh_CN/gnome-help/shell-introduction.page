@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-introduction" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="shell-overview" group="#first"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-13" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A visual introduction to your desktop, the top bar, and the
+    <gui>Activities</gui> overview.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>GNOME 指导</title>
+
+  <p>GNOME 3 完全重绘了用户界面，它的首首次设计保持您的思路，减少注意力的分散，帮助您完成任务。当您首次登录时，只看到一个空旷的桌面和顶部面板条。</p>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar.png" width="600" if:test="!target:mobile">
+      <p>GNOME 顶部面板条</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar-classic.png" width="500" height="40" if:test="!target:mobile">
+      <p>GNOME 顶部面板条</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>The top bar provides access to your windows and applications, your
+  calendar and appointments, and
+  <link xref="status-icons">system properties</link> like sound, networking,
+  and power. In the status menu in the top bar, you can change the volume or
+  screen brightness, edit your <gui>Wi-Fi</gui> connection details, check your
+  battery status, log out or switch users, and turn off your computer.</p>
+
+<links type="section"/>
+
+<section id="activities">
+  <title><gui>Activities</gui> overview</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
+      <p>活动按钮</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-activities-classic.png" width="108" height="69" style="floatend floatright" if:test="!target:mobile">
+      <p>活动按钮</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p if:test="!platform:gnome-classic">To access your windows and applications,
+  click the <gui>Activities</gui> button, or just move your mouse pointer to
+  the top-left hot corner. You can also press the
+  <key xref="keyboard-key-super">Super</key> key on your keyboard. You can
+  see your windows and applications in the overview. You can also just start
+  typing to search your applications, files, folders, and the web.</p>
+
+  <p if:test="platform:gnome-classic">To access your windows and applications,
+  click the <gui xref="shell-introduction#activities">Applications</gui> menu
+  at the top left of the screen and select the <gui>Activities Overview</gui>
+  item. You can also press the <key xref="keyboard-key-super">Super</key> key
+  to see your windows and applications in the <gui>Activities</gui> overview. 
+  Just start typing to search your applications, files, and folders.</p>
+
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
+    <p>dash</p>
+  </media>
+
+  <p>在视图的左边，您可以看到 <em>dash</em>浮动面板，它放置您最常用的程序和当前正在运行的程序，点击其中的图标可以打开这个程序，如果程序已经运行了会高亮显示，点击图标会显示最近使用的窗口。您也可以拖动图标到视图，或者拖到右边的任一工作区。</p>
+
+  <p>在图标上右击会显示一个菜单，允许您选择任一运行程序的窗口，或者打开一个新的窗口。您还可以按住 <key>Ctrl</key> 点击图标打开一个新窗口。</p>
+
+  <p>When you enter the overview, you will initially be in the windows
+  overview. This shows you live thumbnails of all the windows on the current
+  workspace.</p>
+
+  <p>点击 dash 面板底部的网格按钮，将显示应用程序列表，里面显示了系统中已安装的所有程序。点击程序图标或者把它拖到视图中，拖到工作区缩略图中，都将会运行该程序。您也可以把图标拖到 dash 面板，从而添加到收藏夹中。收藏夹中的程序即使没有运行，图标也会显示在 dash 面板中，因而可以快速访问它们。</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-apps-open">Learn more about starting
+      applications.</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-windows">Learn more about windows and
+      workspaces.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="appmenu">
+  <title>Application menu</title>
+  <if:choose>
+    <if:when test="!platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-shell.png" width="250" style="floatend floatright" if:test="!target:mobile">
+        <p>App Menu of <app>Terminal</app></p>
+      </media>
+      <p>Application menu, located beside the <gui>Activities</gui> button,
+      shows the name of the active application alongside with its icon and
+      provides quick access to application preferences or help. The items that
+      are available in the application menu vary depending on the application.
+      </p>
+    </if:when>
+    <if:when test="platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-classic.png" width="154" height="133" style="floatend floatright" if:test="!target:mobile">
+        <p>App Menu of <app>Terminal</app></p>
+      </media>
+      <p>Application menu, located next to the <gui>Applications</gui> and
+      <gui>Places</gui> menus, shows the name of the active application
+      alongside with its icon and provides quick access to application
+      preferences or help. The items that are available in the application menu
+      vary depending on the application.</p>
+    </if:when>
+  </if:choose>
+
+</section>
+
+<section id="clock">
+  <title>时钟、日历 &amp; 日程安排</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Clock, calendar, appointments and notifications</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-appts-classic.png" width="373" height="250" style="floatend floatright" if:test="!target:mobile">
+      <p>时钟、日历和日程安排</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Click the clock on the top bar to see the current date, a month-by-month
+  calendar, a list of your upcoming appointments and new notifications. You can
+  also open the calendar by pressing
+  <keyseq><key>Super</key><key>M</key></keyseq>. You can access the date and
+  time settings and open your full <app>Evolution</app> calendar directly from
+  the menu.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="clock-calendar">了解更多关于日历和日程安排。</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-notifications">了解更多提醒和消息托盘的相关内容。</link></p>
+    </item>
+  </list>
+
+</section>
+
+
+<section id="yourname">
+  <title>您和您的计算机</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-exit.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>用户菜单</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-exit-classic.png" width="250" height="200" style="floatend floatright" if:test="!target:mobile">
+      <p>用户菜单</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Click the system menu in the top-right corner to manage your system
+  settings and your computer.</p>
+
+<!-- Apparently not anymore. TODO: figure out how to update status.
+  <p>You can quickly set your availability directly from the menu. This will set
+  your status for your contacts to see in instant messaging applications such as
+  <app>Empathy</app>.</p>-->
+
+<!--
+<p>If you set yourself to Unavailable, you won't be bothered by message popups
+at the bottom of your screen. Messages will still be available in the message
+tray when you move your mouse to the bottom-right corner. But only urgent
+messages will be presented, such as when your battery is critically low.</p>
+
+<list style="compact">
+  <item><p><link xref="shell-session-status">Learn more about changing
+  your availability.</link></p></item>
+</list>
+-->
+
+  <p>When you leave your computer, you can lock your screen to prevent other
+  people from using it. You can also quickly switch users without logging out
+  completely to give somebody else access to the computer, or you can
+  suspend or power off the computer from the menu.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-exit">了解更多关于切换用户、退出、关闭计算机。</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="lockscreen">
+  <title>锁定屏幕</title>
+
+  <media type="image" src="figures/shell-lock.png" width="250" style="floatend floatright" if:test="!target:mobile">
+    <p>锁定屏幕</p>
+  </media>
+
+  <p>When you lock your screen, or it locks automatically, the lock screen is
+  displayed. In addition to protecting your desktop while you're away from your
+  computer, the lock screen displays the date and time. It also shows
+  information about your battery and network status, and allows you to control
+  media playback.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-lockscreen">了解更多锁定屏幕相关内容。</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="window-list">
+  <title>Window List</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <p>GNOME features a different approach to switching windows than a
+    permanently visible window list found in other desktop environments. This
+    lets you focus on the task at hand without distractions.</p>
+    <list style="compact">
+      <item>
+        <p><link xref="shell-windows-switching">Learn more about switching
+        windows.</link></p>
+      </item>
+    </list>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-window-list-classic.png" width="500" height="34" style="floatend floatright" if:test="!target:mobile">
+      <p>Window List</p>
+    </media>
+    <p>The window list at the bottom of the screen provides access to all your
+    open windows and applications and lets you quickly minimize and restore
+    them.</p>
+    <p>At the right-hand side of the window list, GNOME displays a short
+    identifier for the current workspace, such as <gui>1</gui> for the first
+    (top) workspace. In addition, the identifier also displays the total number
+    of available workspaces. To switch to a different workspace, you can click
+    the identifier and select the workspace you want to use from the menu.</p>
+    <p>If an application or a system component wants to get your attention, it
+    will display a blue icon at the right-hand side of the window list.
+    Clicking the blue icon shows the message tray.</p>
+  </if:when>
+</if:choose>
+
+</section>
+
+</page>

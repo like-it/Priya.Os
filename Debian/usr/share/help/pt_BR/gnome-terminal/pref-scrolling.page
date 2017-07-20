@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="pref-scrolling" xml:lang="pt-BR">
+
+  <info>
+    <revision pkgversion="3.8" date="2013-02-25" status="draft"/>
+    <revision pkgversion="3.12" date="2014-09-08" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+    <link type="guide" xref="profile"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013–2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Mudar a aparência e o comportamento da rolagem.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luciana Bastos de Freitas Menezes</mal:name>
+      <mal:email>lubfm@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andrius da Costa Ribas</mal:name>
+      <mal:email>andriusmao@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2009, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Felipe Braga</mal:name>
+      <mal:email>fbobraga@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Preferências da barra de rolagem</title>
+
+  <p>Quando muita saída é impressa na tela do terminal, pode ser útil fazer com que seu terminal se comporte de uma maneira específica, de modo que seja mais fácil trabalhar.</p>
+
+  <section id="visibility">
+    <title>Visibilidade da barra de rolagem</title>
+
+    <p>Você pode desativar a barra de rolagem:</p>
+
+    <steps>
+      <item>
+        <p>Selecione <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Preferências do perfil</gui> <gui style="tab">Rolagem</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Desmarque a opção <gui>Mostrar barra de rolagem</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Sua alteração será salva imediatamente.</p>
+
+  </section>
+
+  <section id="on-output">
+    <title>Rolagem com alguma saída</title>
+
+    <p>Você pode configurar o terminal para rolar automaticamente a tela para a parte inferior quando há novas saídas enquanto de um comando sendo executado.</p>
+
+    <steps>
+      <item>
+        <p>Selecione <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Preferências do perfil</gui> <gui style="tab">Rolagem</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Selecione <gui style="checkbox">Rolar com alguma saída</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="on-keystroke">
+    <title>Rolar ao pressionar tecla</title>
+
+    <p>Você pode configurar o terminal para rolar automaticamente a tela para a parte inferior quando você digita algo no prompt.</p>
+
+    <steps>
+      <item>
+        <p>Selecione <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Preferências do perfil</gui> <gui style="tab">Rolagem</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Marque a opção <gui style="checkbox">Rolar ao pressionar tecla</gui>.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="lines">
+    <title>Linhas de rolagem para trás</title>
+
+    <p>É possível limitar o número de linhas de saída do terminal que são armazenadas na memória. Você pode querer fazer isso se raramente reiniciar o terminal, de modo que seja limitada a quantidade de memória que a rolagem de volta usa.</p>
+
+    <steps>
+      <item>
+        <p>Selecione <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Preferências do perfil</gui> <gui style="tab">Rolagem</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Marque a opção <gui>Limitar rolagem para trás a</gui> e digite um número de linhas maior que 0 para limitar a rolagem para trás.</p>
+      </item>
+      <item>
+        <p>Opcionalmente, você pode clicar em <gui style="button">+</gui> para aumentar a quantidade de linhas e em <gui style="button">-</gui> para diminuí-las.</p>
+      </item>
+    </steps>
+
+    <note style="warning">
+      <p>Não limitar o número de linhas da rolagem para trás pode fazer o <app>Terminal</app> ficar lento durante a rolagem!</p>
+    </note>
+
+  </section>
+
+</page>

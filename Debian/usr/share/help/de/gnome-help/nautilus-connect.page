@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Dateien auf einem anderen Rechner ansehen und bearbeiten – via FTP, SSH, Windows-Freigaben oder WebDAV.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Durchsuchen von Dateien auf einem Server oder in einer Netzwerkfreigabe</title>
+
+<p>Sie können sich mit einem Server oder einer Netzwerkfreigabe verbinden, um Dateien auf diesem Server zu durchsuchen und anzusehen, genau so, als wären sie auf Ihrem Rechner. Das ist eine bequeme Art, Dateien im Internet hochzuladen oder herunterzuladen oder Dateien an andere Personen in Ihrem lokalen Netzwerk weiterzugeben.</p>
+
+<p>Um Dateien über ein Netzwerk zu durchsuchen, öffnen Sie die Anwendung <app>Dateien</app> in der <gui>Aktivitäten</gui>-Übersicht. Klicken Sie dann auf <gui>Andere Orte</gui> in der Seitenleiste. Die Dateiverwaltung findet alle Rechner in Ihrem lokalen Netzwerk, die signalisieren, dass sie Dateien anbieten können. Wenn Sie sich mit einem Server im Internet verbinden wollen oder wenn Sie den Rechner, nach dem Sie gesucht haben, nicht sehen, können Sie sich manuell mit einem Server verbinden, indem Sie seine Internet-/Netzwerk-Adresse eingeben.</p>
+
+<steps>
+  <title>Mit einem Dateiserver verbinden</title>
+  <item><p>Klicken Sie in der Dateiverwaltung auf <gui>Andere Orte</gui> in der Seitenleiste.</p>
+  </item>
+  <item><p>Geben Sie in <gui>Mit Server verbinden</gui> die Serveradresse in Form einer <link xref="#urls">Adresse</link> ein. Details zu unterstützen Adressen finden Sie <link xref="#types">unten aufgelistet</link>.</p>
+  <note>
+    <p>Falls schon einmal eine Verbindung zu dem Server aufgebaut wurde, können Sie ihn in der Liste <gui>Zuletzt verwendete Server</gui> anklicken.</p>
+  </note>
+  </item>
+  <item>
+    <p>Klicken Sie dann auf <gui>Verbinden</gui>. Ein neues Fenster wird geöffnet und zeigt Ihnen die Dateien auf dem Server. Sie können die Dateien genauso durchsuchen, wie Sie es auch auf dem eigenen Rechner tun. Der Server wird der Seitenleiste hinzugefügt, so dass Sie in Zukunft schnell auf ihn zugreifen können.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>Adressen schreiben</title>
+
+<p>Eine <em>URL</em> oder <em>uniform resource locator</em> ist eine Form einer Adresse, die auf einen Ort oder eine Datei im Netzwerk verweist. Die Adresse ist folgendermaßen formatiert:</p>
+  <example>
+    <p><sys>schema://servername.beispiel.com/ordner</sys></p>
+  </example>
+<p>Das <em>Schema</em> gibt das Protokoll oder den Servertyp an. Der Adressteil <em>beispiel.com</em> wird <em>Domain-Name</em> genannt. Falls ein Benutzername erforderlich ist, wird er vor dem Servernamen eingefügt:</p>
+  <example>
+    <p><sys>scheme://benutzername@servername.beispiel.com/ordner</sys></p>
+  </example>
+<p>Einige Schemata erfordern die Angabe der Portnummer. Fügen Sie sie nach dem Domain-Namen ein:</p>
+  <example>
+    <p><sys>schema://benutzername@servername.beispiel.com:port/ordner</sys></p>
+  </example>
+<p>Nachfolgend finden Sie einige spezifische Beispiele für die verschiedenen unterstützten Servertypen.</p>
+</section>
+
+<section id="types">
+ <title>Servertypen</title>
+
+<p>Sie können sich mit verschiedenen Arten von Servern verbinden. Manche Server sind öffentlich und erlauben es jedem, sich zu verbinden. Bei anderen Servern müssen Sie sich mit Namen und Passwort anmelden. </p>
+<p>Sie haben möglicherweise nicht die erforderlichen Rechte, um alles mit den Dateien auf einem Server tun zu dürfen. Zum Beispiel werden Sie auf öffentlichen FTP-Servern wahrscheinlich keine Dateien löschen können.</p>
+<p>Die Adresse, welche Sie eingeben, hängt von dem Protokoll ab, welches der Server zum Exportieren seiner Dateifreigaben verwendet.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>Wenn Sie einen <em>Secure-Shell</em>-Zugang zu einem Server haben, können Sie sich mit dieser Methode verbinden. Viele Homepage-Anbieter stellen einen SSH-Zugang zur Verfügung, damit ihre Kunden auf sicherem Weg Dateien hochladen können. SSH-Server erfordern immer eine Anmeldung.</p>
+  <p>Eine typische SSH-Adresse sieht in etwas so aus:</p>
+  <example>
+    <p><sys>ssh://benutzername@servername.beispiel.com/ordner</sys></p>
+  </example>
+
+  <p>Wenn Sie SSH verwenden, wird jeder Datenverkehr (auch Ihr Passwort) verschlüsselt, so dass ihn andere Benutzer Ihres Netzwerks nicht einsehen können.</p>
+</item>
+<item>
+  <title>FTP (mit Anmeldung)</title>
+  <p>FTP ist eine beliebte Methode, um Dateien über das Internet auszutauschen. Da der Datenverkehr über FTP nicht verschlüsselt wird, stellen nun einige Server einen SSH-Zugang zur Verfügung. Manche Server jedoch erlauben oder verlangen FTP zum Hoch- oder Herunterladen von Dateien. FTP-Server mit Anmeldung erlauben Ihnen für gewöhnlich Dateien zu löschen und hochzuladen.</p>
+  <p>Eine typische FTP-Adresse schaut etwa so aus:</p>
+  <example>
+    <p><sys>ftp://Benutzername@ftp.beispiel.com/pfad/</sys></p>
+  </example>
+</item>
+<item>
+  <title>Öffentlicher FTP</title>
+  <p>Server, die Ihnen das Herunterladen von Dateien erlauben, stellen manchmal einen öffentlichen oder anonymen FTP-Zugang bereit. Diese Server verlangen keinen Benutzernamen und kein Passwort und gestatten normalerweise nicht, Dateien zu löschen oder hochzuladen.</p>
+  <p>Eine typische anonyme FTP-Adresse schaut etwa so aus:</p>
+  <example>
+    <p><sys>ftp://ftp.beispiel.com/pfad/</sys></p>
+  </example>
+  <p>Manche anonymen FTP-Zugänge verlangen zur Anmeldung einen öffentlichen Benutzernamen und ein Passwort oder einen öffentlichen Benutzernamen mit Ihrer E-Mail-Adresse als Passwort. Wählen Sie für diese Server <gui>FTP (mit Zugangsbeschränkung)</gui> und geben Sie die vom FTP-Betreiber verlangten Zugangsdaten ein.</p>
+</item>
+<item>
+  <title>Windows-Freigabe</title>
+  <p>Windows-Rechner verwenden ein proprietäres Protokoll, um Dateien in einem lokalen Netzwerk auszutauschen. Die Rechner in einem Windows-Netzwerk sind manchmal in <em>Domains</em> organisiert, um den Zugriff besser verwalten zu können. Wenn Sie über die entsprechenden Zugriffsrechte auf dem entfernten Rechner verfügen, können Sie sich in der Dateiverwaltung mit einer Windows-Freigabe verbinden.</p>
+  <p>Eine typische Adresse einer Windows-Freigabe schaut etwa so aus:</p>
+  <example>
+    <p><sys>smb://servername/Freigabe</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV und Sicheres WebDAV</title>
+  <p>WebDAV basiert auf HTTP, dem Protokoll, das im World Wide Web verwendet wird, und wird manchmal dazu benutzt, Dateien im lokalen Netzwerk auszutauschen oder im Internet abzuspeichern. Wenn der Server, zu dem Sie sich verbinden, sichere Verbindungen unterstützt, sollten Sie diese Option wählen. Sicheres WebDAV verwendet eine starke SSL-Verschlüsselung, so dass andere Benutzer Ihr Passwort nicht einsehen können.</p>
+  <p>Eine typische WebDAV-Adresse schaut etwa so aus:</p>
+  <example>
+    <p><sys>dav://Beispiel.Rechnername.com/Pfad</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS-Freigabe</title>
+  <p>UNIX-Rechner verwenden traditionell das »Network File System«-Protokoll (NFS), um Dateien über ein lokales Netzwerk freizugeben. Mit NFS basiert die Sicherheit auf der Kennung (UID) des Benutzers, der auf die Freigabe zugreift, so dass für die Verbindung keine Eingabe von Anmeldedaten nötig ist.</p>
+  <p>Eine typische Adresse einer NFS-Freigabe schaut etwa so aus:</p>
+  <example>
+    <p><sys>nfs://Servername/Pfad</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

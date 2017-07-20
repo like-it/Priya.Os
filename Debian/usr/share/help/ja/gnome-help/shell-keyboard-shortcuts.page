@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" version="1.0 ui/1.0" id="shell-keyboard-shortcuts" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="guide" xref="keyboard"/>
+    <link type="guide" xref="shell-overview#apps"/>
+    <link type="seealso" xref="keyboard-key-super"/>
+
+    <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>キーボードでデスクトップを使いこなします。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>便利なキーボードショートカット</title>
+
+<p>このページでは、デスクトップやアプリケーションをより効率的に使う上で役に立つキーボードショートカットの概要を説明します。マウスやポインティングデバイスの使用が困難である場合は、キーボードだけを使った操作法の詳細について <link xref="keyboard-nav"/> を参照してください。</p>
+
+<table rules="rows" frame="top bottom" ui:expanded="true">
+<title>デスクトップを使いこなす</title>
+  <tr xml:id="alt-f1">
+    <td><p><keyseq><key>Alt</key><key>F1</key></keyseq> または <link xref="keyboard-key-super">Super</link> キー</p></td>
+    <td><p><gui>アクティビティ</gui>画面とデスクトップを切り替えます。アクティビティ画面では、キー入力を始めるとすぐに、アプリケーション、連絡先、ドキュメントの検索が行われます。</p></td>
+  </tr>
+  <tr xml:id="alt-f2">
+    <td><p><keyseq><key>Alt</key><key>F2</key></keyseq></p></td>
+    <td><p>コマンドウィンドウをポップアップします (コマンドをさっと実行するのに使います)。</p></td>
+  </tr>
+  <tr xml:id="super-tab">
+    <td><p><keyseq><key>Super</key><key>Tab</key></keyseq></p></td>
+    <td><p><link xref="shell-windows-switching">すばやくウィンドウを切り替えます</link>。<key>Shift</key>を押しながらの場合は、切り替え順序が逆転します。</p></td>
+  </tr>
+  <tr xml:id="super-tick">
+    <td><p><keyseq><key>Super</key><key>`</key></keyseq></p></td>
+    <td>
+      <p>同一のアプリケーション内で、あるいは<keyseq><key>Super</key><key>Tab</key></keyseq>の後に選択したアプリケーション内で、ウィンドウを切り替えます。</p>
+      <p>このショートカットでは、US キーボードの <key>`</key> を使って説明しています。US キーボードでは <key>`</key> キーは <key>Tab</key> の上段に配置されています。他のすべてのキーボードにおいて、このショートカットは、<key>Super</key> に <key>Tab</key> の上のキーを組み合わせたものを意味しています。</p>
+    </td>
+  </tr>
+  <tr xml:id="ctrl-alt-tab">
+    <!-- To be updated to <key>Tab</key> in the future. -->
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq></p></td>
+    <td>
+      <p>Give keyboard focus to the top bar. In the <gui>Activities</gui>
+      overview, switch keyboard focus between the top bar, dash, windows
+      overview, applications list, search field, and message tray. Use the
+      arrow keys to navigate.</p>
+    </td>
+  </tr>
+  <tr xml:id="super-a">
+    <td><p><keyseq><key>Super</key><key>A</key></keyseq></p></td>
+    <td><p>アプリケーション一覧を表示します。</p></td>
+  </tr>
+  <tr xml:id="super-updown">
+    <td><p><keyseq><key>Super</key><key>Page Up</key></keyseq> および <keyseq><key>Super</key><key>Page Down</key></keyseq></p></td>
+    <td><p><link xref="shell-workspaces-switch">ワークスペースを切り替えます</link>。</p></td>
+  </tr>
+  <tr xml:id="super-shift-updown">
+    <td><p><keyseq><key>Super</key><key>Shift</key><key>Page Up</key></keyseq> および <keyseq><key>Super</key><key>Shift</key><key>Page Down</key></keyseq></p></td>
+    <td><p><link xref="shell-workspaces-movewindow">現在のウィンドウを別のワークスペースへ移します</link>。</p></td>
+  </tr>
+  <tr xml:id="super-shift-left">
+    <td><p><keyseq><key>Super</key><key>Shift</key><key>←</key></keyseq></p></td>
+    <td><p>Move the current window one monitor to the left.</p></td>
+  </tr>
+  <tr xml:id="super-shift-right">
+    <td><p><keyseq><key>Super</key><key>Shift</key><key>→</key></keyseq></p></td>
+    <td><p>Move the current window one monitor to the right.</p></td>
+  </tr>
+  <tr xml:id="ctrl-alt-Del">
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Delete</key></keyseq></p></td>
+    <td><p><link xref="shell-exit">Power Off</link>.</p></td>
+  </tr>
+  <tr xml:id="ctrl-alt-l">
+    <td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
+    <td><p><link xref="shell-exit#lock-screen">画面をロックします</link>。</p></td>
+  </tr>
+  <tr xml:id="super-m">
+    <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
+    <td><p>Open <link xref="shell-notifications#messagetray">the message
+    tray</link>. Press <keyseq><key>Super</key><key>M</key></keyseq> again or
+    <key>Esc</key> to close.</p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>共通の編集用ショートカット</title>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td>
+    <td><p>すべてのテキスト、あるいはリストの全項目を選択します。</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>X</key></keyseq></p></td>
+    <td><p>選択したテキストあるいは項目を切り取って (削除して)、クリップボードに保存します。</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>C</key></keyseq></p></td>
+    <td><p>選択したテキストあるいは項目をクリップボードにコピーします。 </p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>V</key></keyseq></p></td>
+    <td><p>クリップボードの内容を貼り付けます。</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Z</key></keyseq></p></td>
+    <td><p>最後に実行した操作を元に戻します。</p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>画面のキャプチャー</title>
+  <tr>
+    <td><p><key>Prnt Scrn</key></p></td>
+    <td><p><link xref="screen-shot-record#screenshot">スクリーンショットを撮ります</link>。</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Alt</key><key>Prnt Scrn</key></keyseq></p></td>
+    <td><p><link xref="screen-shot-record#screenshot">ウィンドウのスクリーンショットを撮ります</link>。</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Shift</key><key>Prnt Scrn</key></keyseq></p></td>
+    <td><p><link xref="screen-shot-record#screenshot">選択領域のスクリーンショットを撮ります</link>。マウスポインターが十字型に変わります。ドラッグして領域を選択します。</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq></p></td>
+    <td><p><link xref="screen-shot-record#screencast">スクリーンキャストの録画を開始します</link>。</p></td>
+  </tr>
+</table>
+
+</page>

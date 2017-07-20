@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-delete" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="seealso" xref="files-recover"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-16" status="review"/>
+    <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
+    <revision pkgversion="3.16" date="2015-02-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Cristopher Thomas</name>
+      <email>crisnoh@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>删除不再需要的文件或文件夹。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>删除文件和文件夹</title>
+
+  <p>If you do not want a file or folder any more, you can delete it. When you
+  delete an item it is moved to the <gui>Trash</gui> folder, where it is stored
+  until you empty the trash. You can <link xref="files-recover">restore
+  items</link> in the <gui>Trash</gui> folder to their original location if you
+  decide you need them, or if they were accidentally deleted.</p>
+
+  <steps>
+    <title>要将文件移动到回收站：</title>
+    <item><p>单击选中您想要删除的项目。</p></item>
+    <item><p>Press <key>Delete</key> on your keyboard. Alternatively, drag the
+    item to the <gui>Trash</gui> in the sidebar.</p></item>
+  </steps>
+
+  <p>The file will be moved to the trash, and you'll be presented with an
+  option to <gui>Undo</gui> the deletion. The <gui>Undo</gui> button will appear
+  for a few seconds. If you select <gui>Undo</gui>, the file will be restored
+  to its original location.</p>
+
+  <p>要永久删除文件以腾出部分磁盘空间，您必须清空回收站。要清空回收站，右键单击<gui>回收站</gui>图标并选择<gui>清空回收站</gui>。</p>
+
+  <section id="permanent">
+    <title>永久删除文件</title>
+    <p>您可以绕过回收站，直接永久删除文件。</p>
+
+  <steps>
+    <title>永久删除文件</title>
+    <item><p>选中您想删除的文件。</p></item>
+    <item><p>按住 <gui>Shift</gui> 键，然后按键盘上的 <key>Delete</key> 键。</p></item>
+    <item><p>由于这一操作不能恢复，您会被询问确认是否要删除文件或文件夹。</p></item>
+  </steps>
+
+  <note><p><link xref="files#removable">可移动设备</link>上已删除的文件在其他操作系统上可能看不到，如 Windows 或 Mac OS。但这些文件仍然存在，当您将设备重新插入您的计算机时，将重新可用。</p></note>
+
+  </section>
+
+</page>

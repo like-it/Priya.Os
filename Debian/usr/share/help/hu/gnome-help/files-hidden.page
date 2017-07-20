@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-hidden" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-29" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Fájl láthatatlanná tétele, hogy ne jelenjen meg a fájlkezelőben.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Fájl elrejtése</title>
+
+  <p>A <app>Fájlok</app> fájlkezelő lehetővé teszi fájljai igény szerinti elrejtését és megjelenítését. A rejtett fájlok alapesetben nem láthatók: a fájlkezelőben nem jelennek meg, de a mappa továbbra is tartalmazza azokat.</p>
+
+  <p>Fájl elrejtéséhez <link xref="files-rename">nevezze át</link> azt úgy, hogy a név első karaktere egy <file>.</file> legyen. A <file>példa.txt</file> fájl elrejtéséhez például a <file>.példa.txt</file> nevet használja.</p>
+
+<note>
+  <p>Mappákat ugyanúgy rejthet el, mint fájlokat. Nevezze át a mappát egy <file>.</file> beszúrásával a nevének elejére.</p>
+</note>
+
+<section id="show-hidden">
+ <title>Minden rejtett fájl megjelenítése</title>
+
+  <p>Ha szeretné látni egy mappa minden rejtett fájlját, akkor lépjen be a mappába, és nyomja meg a nézetbeállítások gombot az eszköztáron, és válassza a <gui>Rejtett fájlok megjelenítése</gui> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>H</key></keyseq> billentyűkombinációt. Ekkor minden rejtett fájl megjelenik a nem rejtettekkel együtt.</p>
+
+  <p>Ezen fájlok ismételt elrejtéséhez nyomja meg a nézetbeállítások gombot az eszköztáron, és válassza a <gui>Rejtett fájlok megjelenítése</gui> menüpontot, vagy nyomja meg újra a <keyseq><key>Ctrl</key><key>H</key></keyseq> billentyűkombinációt.</p>
+
+</section>
+
+<section id="unhide">
+ <title>Fájl rejtésének megszüntetése</title>
+
+  <p>Fájl elrejtésének megszüntetéséhez nyissa meg az azt tartalmazó mappát, és nyomja meg a <gui>Rejtett fájlok megjelenítése</gui> gombot az eszköztáron, és válassza a <gui>Rejtett fájlok megjelenítése</gui> menüpontot. Ezután keresse meg a rejtett fájlt, és törölje a fájl nevét kezdő <file>.</file> karaktert. Például egy <file>.példa.txt</file> nevű fájl ismételt megjelenítéséhez nevezze azt át <file>példa.txt</file>-re.</p>
+
+  <p>Miután átnevezte a fájlt, nyomja meg a nézet beállításai gombot az eszköztáron, és válassza a <gui>Rejtett fájlok megjelenítése</gui> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>H</key></keyseq> billentyűkombinációt a többi rejtett fájl ismételt elrejtéséhez.</p>
+
+  <note><p>Alapesetben a rejtett fájlok csak addig jelennek meg, amíg be nem zárja a fájlkezelőt. Ezen beállítás módosításával kapcsolatban nézze meg a <link xref="nautilus-views"/> részt.</p></note>
+
+  <note><p>A legtöbb rejtett fájl neve <file>.</file> karakterrel kezdődik, míg más fájlok utolsó karaktere esetleg egy <file>~</file>. Ezek a fájlok a biztonsági másolatok, további információkért lásd a <link xref="files-tilde"/> részt.</p></note>
+
+</section>
+
+</page>

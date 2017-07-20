@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-sorting-message-list" xml:lang="de">
+
+  <info>
+    <desc>Die E-Mail-Liste eines Nachrichtenordners sortieren.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+    <link type="guide" xref="mail-layout-changing"/>
+
+    <revision pkgversion="3.3.91" version="0.7" date="2012-03-07" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-columns.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Die E-Mail-Liste sortieren</title>
+  
+<p><gui>Evolution</gui> ermöglicht das Organisieren Ihrer E-Mails, indem Sie Ihre Nachrichten in der <link xref="intro-main-window#e-mail">Nachrichtenliste</link> sortieren.</p>
+
+<section id="email-threads">
+<title>E-Mails in E-Mail-Threads sortieren</title>
+<p>Aktivieren Sie eine gruppierte Nachrichtenansicht, indem Sie auf <guiseq><gui>Ansicht</gui><gui>Nach Threads gruppieren</gui></guiseq> klicken oder <keyseq><key>Strg</key><key>T</key></keyseq> drücken.</p>
+<p>Wenn Sie diese Funktion aktivieren, werden Antworten zusammen mit der ursprünglichen Nachricht angeordnet und Sie können so den Verlauf der Nachrichten nachvollziehen.</p>
+<p>Sobald eine neue Nachricht eingeht, wird diese unter die übergeordnete Nachricht hinzugefügt. Threads werden nach Datum der zuletzt erhaltenen Nachricht sortiert und angezeigt.</p>
+<note style="tip"><p>Für fortgeschrittene Anwender: Es gibt einen GSettings-Schlüssel, der das Umschalten zwischen eingeklapptem und ausgeklapptem Zustand der E-Mail-Threads ermöglicht. Der eingeklappte Zustand ist voreingestellt und kann im <app>Terminal</app> mit dem Befehl <cmd>gsettings set org.gnome.evolution.mail thread-expand true</cmd> angepasst werden.</p>
+<list>
+<item><p>Öffnen Sie die Anwendung <app>Terminal</app>.</p></item>
+<item><p>Führen Sie folgenden Befehl aus: <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd></p></item>
+</list>
+</note>
+</section>
+
+<section id="column-headers">
+<title>E-Mails sortieren mit Spaltenköpfen</title>
+<p>Die E-Mail-Liste besitzt Spalten, die den Absender, das Datum und den Betreff anzeigen, sowie ob eine Nachricht gelesen wurde, ob sie Anhänge besitzt, oder wie wichtig sie ist. So können Sie die Reihenfolge der Spalten in der Nachrichtenliste ändern:</p>
+<list>
+<item><p>Verschieben Sie die Flächen der Spaltenköpfe</p></item>
+<item><p>Klicken Sie mit der rechten Maustaste auf die Kopfzeile.</p></item>
+<item><p>Wählen Sie die Option <gui>Diese Spalte entfernen</gui> oder <gui>Eine Spalte hinzufügen</gui>.</p></item>
+</list>
+
+<p><gui>Evolution</gui> ermöglicht es Ihnen, Ihre Nachrichten mit Hilfe dieser Spalten zu sortieren. Klicken Sie auf die Spaltenbeschriftung, um E-Mails zu sortieren. Die Richtung des Pfeils neben der Beschriftung gibt die Sortierreihenfolge an.</p>
+</section>
+
+<section id="sort-options">
+<title>Weitere Sortieroptionen anwenden</title>
+<p><gui>Evolution</gui> bietet auch andere Möglichkeiten zur Sortierung von E-Mails. Möglich sind <gui>Sortieren nach</gui>, <gui>Aufsteigend sortieren</gui>, <gui>Absteigend sortieren</gui> und <gui>Unsortiert</gui>.</p>
+	<section id="sort-options-by">
+	<title>Sortieren nach</title>
+		<p>Nachrichten können ebenso mit Hilfe der Liste <gui>Sortieren nach</gui> sortiert werden.</p>
+		<steps>
+		<item><p>Klicken Sie mit der rechten Maustaste auf die Spaltenbezeichnung in der E-Mail-Liste.</p></item>
+		<item><p>Wählen Sie die Optionen <gui>Sortieren nach</gui>.</p><p>Die Liste der Sortierkriterien für E-Mails wird daraufhin angezeigt:</p>
+			<list>
+			<item><p>Betreff - Gekürzt</p></item>
+			<item><p>Beschriftungen</p></item>
+			<item><p>Empfänger</p></item>
+			<item><p>Absender</p></item>
+			<item><p>Ort</p></item>
+			<item><p>Fällig am</p></item>
+			<item><p><link xref="mail-follow-up-flag">Zur Nachverfolgung markiert</link></p></item>
+			<item><p>Markierungsstatus</p></item>
+			<item><p>Größe</p></item>
+			<item><p>An</p></item>
+			<item><p>Erhalten</p></item>
+			<item><p>Datum</p></item>
+			<item><p>Betreff</p></item>
+			<item><p>Von</p></item>
+			<item><p>Anlage</p></item>
+			<item><p>Markiert</p></item>
+			<item><p>Status</p></item>
+			<item><p>Benutzerdefiniert</p></item>
+			</list>
+		</item>
+		<item><p>Wählen Sie die Sortierreihenfolge zum Sortieren der E-Mail-Nachrichten.</p></item>
+		</steps>
+	</section>
+
+	<section id="sort-options-ascending">
+	<title>Aufsteigend sortieren</title>
+		<steps>
+		<item><p>Klicken Sie mit der rechten Maustaste auf die Spaltenbezeichnung in der E-Mail-Liste.</p></item>
+		<item><p>Wählen Sie die Option <gui>Aufsteigend sortieren</gui>.</p></item>
+		</steps>
+		<p>Die jüngsten Nachrichten werden unten angezeigt.</p>
+	</section>
+
+	<section id="sort-options-descending">
+	<title>Absteigend sortieren</title>
+		<steps>
+		<item><p>Klicken Sie mit der rechten Maustaste auf die Spaltenbezeichnung in der E-Mail-Liste.</p></item>
+		<item><p>Wählen Sie die Option <gui>Absteigend sortieren</gui>.</p></item>
+		</steps>
+		<p>Die jüngsten Nachrichten werden oben angezeigt.</p>
+	</section>
+
+	<section id="sort-options-unsort">
+	<title>Sortierung zurücksetzen</title>
+		<steps>
+		<item><p>Klicken Sie mit der rechten Maustaste auf die Spaltenbezeichnung in der E-Mail-Liste.</p></item>
+		<item><p>Wählen Sie die Option <gui>Sortierung zurücksetzen</gui>.</p></item>
+		</steps>
+		<p>So wird nicht in der Spalte sortiert. Die Nachrichten werden wieder in der Reihenfolge dargestellt, wie sie zu dem Ordner hinzugefügt wurden.</p>
+	</section>
+</section>
+
+</page>

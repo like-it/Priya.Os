@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ver y editar archivos en otro equipo sobre FTP, SSH, compartidos de Windows o WebDAV.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Examinar archivos en un servidor o compartición de red</title>
+
+<p>Puede conectarse a un servidor o a un recurso compartido para buscar y ver los archivos en el servidor, exactamente como si estuvieran en su máquina local o dispositivo extraíble. Esta es una manera conveniente para descargar o subir archivos, o para compartir archivos con usuarios en su red local.</p>
+
+<p>Para examinar archivos en la red, abra la aplicación <app>Archivos</app> de la vista de <gui>Actividades</gui> y pulse en <gui>Otras ubicaciones</gui> en la barra lateral. El gestor de archivos buscará cualquier equipo en su red de área local que informe su posibilidad para servir archivos. Si quiere conectarse a un servidor de Internet, o si no ve el equipo que está buscando, puede conectarse manualmente a un servidor introduciendo su dirección de red o de Internet.</p>
+
+<steps>
+  <title>Conectar con un servidor de archivos</title>
+  <item><p>En el gestor de archivos, pulse <gui>Otras ubicaciones</gui> en la barra lateral.</p>
+  </item>
+  <item><p>En <gui>Conectar al servidor</gui>, introduzca la dirección del servidor, en forma de <link xref="#urls">URL</link>. Los detalles sobre los URL soportados se <link xref="#types">muestran a continuación</link>.</p>
+  <note>
+    <p>Si se ha conectado antes al servidor, puede pulsar en él en la lista <gui>Servidores recientes</gui>.</p>
+  </note>
+  </item>
+  <item>
+    <p>Pulse <gui>Conectar</gui>. Se mostrarán los archivos en el servidor. Puede examinar los archivos de igual forma que si estuviesen en su mismo equipo. El servidor se añadirá a la barra lateral, por lo que podrá acceder a él fácilmente en el futuro.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>Escribir URL</title>
+
+<p>Un <em>URL</em> o <em>localizador uniforme de recursos</em>, es una forma de dirección que se refiere a una ubicación o archivo en una red. La dirección se forma así:</p>
+  <example>
+    <p><sys>esquema://nombreservidor.ejemplo.com/carpeta</sys></p>
+  </example>
+<p>El <em>esquema</em> especifica el protocolo o tipo de servidor. El fragmento <em>ejemplo.com</em> de la dirección se llama <em>nombre de dominio</em>. Si se requiere un nombre de usuario, se inserta antes del nombre del servidor:</p>
+  <example>
+    <p><sys>esquema://usuario@nombreservidor.ejemplo.com/carpeta</sys></p>
+  </example>
+<p>Algunos esquemas requieren que especifique el número de puerto. Insértelo después del nombre de dominio:</p>
+  <example>
+    <p><sys>esquema://usuario@nombreservidor.ejemplo.com:puerto/carpeta</sys></p>
+  </example>
+<p>A continuación hay ejemplos específicos para los distintos tipos de servidores soportados.</p>
+</section>
+
+<section id="types">
+ <title>Tipos de servidores</title>
+
+<p>Puede conectarse a diferentes tipos de servidores. Algunos servidores son públicos, y permiten a cualquiera conectarse. Otros servidores requieren que inicie sesión con su nombre de usuario y contraseña.</p>
+<p>Puede que no tenga permisos para realizar ciertas acciones sobre los archivos en un servidor. Por ejemplo, en sitios FTP públicos, probablemente no podrá eliminar archivos.</p>
+<p>El URL que ingrese depende del protocolo que use el servidor para exportar sus archivos compartidos.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>Si tiene una cuenta <em>ssh</em> en un servidor, puede conectarse usando este método. Muchos servidores de alojamiento web proporcionan cuentas SSH a sus miembros para que puedan subir archivos de forma segura. Los servidores SSH siempre requieren que inicie sesión.</p>
+  <p>Un URL de SSH típico se parece a esto:</p>
+  <example>
+    <p><sys>ssh://usuario@servidor.ejemplo.com/carpeta</sys></p>
+  </example>
+
+  <p>Cuando se usa SSH, todos los datos que envía (incluyendo su contraseña) van cifrados, por lo que otros usuarios de su red no podrán verlos.</p>
+</item>
+<item>
+  <title>FTP (con registro)</title>
+  <p>FTP es un manera popular para intercambiar archivos por Internet. Dado que, a través de FTP, los datos no están cifrados, muchos servidores facilitan el acceso a través de SSH. Algunos servidores, sin embargo, todavía permiten o requieren el uso de FTP para subir o descargar archivos. Los sitios FTP con inicio de sesión generalmente le permitirán eliminar y subir archivos.</p>
+  <p>Un URL de FTP típico se parece a esto:</p>
+  <example>
+    <p><sys>ftp://usuario@ftp.ejemplo.com/ruta/</sys></p>
+  </example>
+</item>
+<item>
+  <title>FTP público</title>
+  <p>Los sitios que le permiten descargar archivos a veces proporcionan acceso FTP público o anónimo. Estos servidores no requieren un nombre de usuario y contraseña, y por lo general no le permiten eliminar o subir archivos.</p>
+  <p>Un URL de FTP anónimo típico se parece a esto:</p>
+  <example>
+    <p><sys>ftp://ftp.ejemplo.com/ruta/</sys></p>
+  </example>
+  <p>Algunos sitios FTP anónimos requieren iniciar sesión con un nombre de usuario y contraseña pública, o con un nombre de usuario público utilizando su dirección de correo electrónico como contraseña. Para estos servidores, utilice el método de <gui>FTP (con entrada)</gui>, y use las credenciales especificadas por el sitio FTP.</p>
+</item>
+<item>
+  <title>Compartición Windows</title>
+  <p>Los equipos Windows usan un protocolo privativo para compartir archivos a través de una red de área local. Los equipos de una red Windows a veces se agrupan en <em>dominios</em> para organizar y controlar mejor el acceso. Si tiene los permisos adecuados en el equipo remoto, podrá conectarse a un recurso compartido de Windows desde el gestor de archivos.</p>
+  <p>Un URL de compartición de Windows típico se parece a esto:</p>
+  <example>
+    <p><sys>smb://servidor/Share</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV y WebDAV seguro</title>
+  <p>Basado en el protocolo HTTP usado en la web, a veces se usa WebDAV para compartir archivos en una red local o guardarlos en Internet. Si el servidor al que se está conectando admite conexiones seguras, debería escoger esta opción. WebDAV seguro usa cifrado SSL fuerte, por lo que nadie podrá ver su contraseña ni sus datos.</p>
+  <p>Un URL de WebDAV se parece a esto:</p>
+  <example>
+    <p><sys>dav://ejemplo.servidor.com/ruta</sys></p>
+  </example>
+</item>
+<item>
+  <title>Compartición NFS</title>
+  <p>Tradicionalmente, los equipos UNIX usando el protocolo NFS para comaprtir archivos en una red local. En NFS, la seguridad se basa en el UID del usuario que acceder al recurso compartido, por lo que no se necesitan credenciales de autenticación al conectarse.</p>
+  <p>Un URL de compartición NFS típico se parece a esto:</p>
+  <example>
+    <p><sys>nfs://servidor/ruta</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

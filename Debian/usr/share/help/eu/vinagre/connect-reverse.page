@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect-reverse" xml:lang="eu">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <link type="seealso" xref="connect"/>
+    <title type="sort">3</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Connect to computers not on your local network: bypassing firewall
+    restrictions on remote host.</desc>
+  </info>
+
+  <title><gui>Reverse Connections…</gui></title>
+
+  <p>A reverse connection is usually used to bypass firewall restrictions on
+  open ports. A firewall usually blocks open ports, but does not block outgoing
+  traffic. In a normal forward connection, a client connects to an open port on
+  the server. However, in the case of a reverse connection, the client opens
+  a port for the server to connect to.</p>
+
+  <section id="enable-reverse-connections">
+    <title>Enabling reverse connections</title>
+
+    <steps>
+      <item>
+        <p>Select <guiseq><gui style="menu">Remote</gui>
+        <gui style="menuitem">Reverse Connections…</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Check <gui>Enable Reverse Connections</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="accessing-behind-firewall">
+    <title>Access a computer behind a firewall</title>
+
+    <p>The remote machine needs to connect to your machine using your <em>IP
+    address</em> and port number, which can be found in the
+    <gui>Reverse Connections…</gui> dialog, under <gui>Connectivity</gui>.</p>
+
+    <note>
+      <p>Currently, <app>Vino</app>, the GNOME VNC server, does not support
+      reverse connections which are also known as "listen mode". Some other
+      applications, such as <app>UltraVNC</app>, <app>RealVNC</app> and
+      <app>TightVNC</app>, do have support for reverse connections.</p>
+    </note>
+
+    <p>Once the remote computer connects to your machine, <app>Remote Desktop
+    Viewer</app> will establish the reverse connection.</p>
+
+    <p>When connecting to a machine which is not on your local network, you
+    will need to provide your externally visible IP address and port number to
+    the remote server.</p>
+
+  </section>
+
+</page>

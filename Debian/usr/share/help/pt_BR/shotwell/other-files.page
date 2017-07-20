@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="other-files" xml:lang="pt-BR">
+
+    <info>
+        <link type="guide" xref="index#other"/>
+        <desc>Mantenha a biblioteca do Shotwell sincronizada com os arquivos de seu disco rígido.</desc>
+        
+        <link type="next" xref="other-plugins"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Felipe Braga</mal:name>
+      <mal:email>fbobraga@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+   <title>Arquivos de fotos</title>
+
+    <p>Cada foto na biblioteca do Shotwell corresponde a um arquivo armazenado em seu disco rígido. O Shotwell tem várias funcionalidades que te ajudam a manter a biblioteca e os arquivos no disco sincronizados.</p>
+    <links type="section"/>
+    
+    <section id="dirpattern">
+        <title>Usando um padrão de diretórios personalizado</title>
+        <p>O Shotwell permite especificar como chama diretórios em sua biblioteca. Você pode fazer isso alterando a <gui>Estrutura de diretório</gui> e as configurações <gui>Padrão</gui> na janela <gui>Preferências</gui>. Você pode usar um padrão na lista, ou escolher <gui>Personalizar</gui> e digitar o seu próprio.</p>
+
+        <p>Os símbolos disponíveis para o padrão de diretório começam com uma % (sinal de porcentagem). Os valores produzidos são dependentes da idioma/região, de modo que você vê no seu computador pode se diferente dos exemplos abaixo.</p>
+
+        <table frame="all" rules="rowgroups">
+            <tbody>
+                <tr>
+                    <td><p> </p></td> <td><p><em>Símbolo</em></p></td> <td><p><em>Significado</em></p></td> <td><p><em>Exemplo</em></p></td>
+                </tr>
+            </tbody>
+            <tbody>
+            <tr>
+                <td><p> </p></td><td><p>%Y</p></td><td><p>Ano (completo)</p></td><td><p>2011</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%y</p></td><td><p>Ano (dois dígitos)</p></td><td><p>11</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%d</p></td><td><p>Dia do mês (com zero inicial)</p></td><td><p>03</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%A</p></td><td><p>Nome do dia da semana (completo)</p></td><td><p>Quarta-feira</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%a</p></td><td><p>Nome do dia da semana (abreviado)</p></td><td><p>Qua</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%m</p></td><td><p>Mês (com zero inicial)</p></td><td><p>02</p></td>
+            </tr>
+            <tr><td><p> </p></td><td><p>%b</p></td><td><p>Nome do mês (abreviado)</p></td><td><p>Fev</p></td></tr><tr><td><p> </p></td><td><p>%B</p></td><td><p>Nome do mês (completo)</p></td><td><p>Fevereiro</p></td></tr><tr><td><p> </p></td><td><p>%I</p></td><td><p>Hora (formato de 12h)</p></td><td><p>05</p></td></tr><tr><td><p> </p></td><td><p>%H</p></td><td><p>Hora (formato de 24h)</p></td><td><p>17</p></td></tr><tr><td><p> </p></td><td><p>%M</p></td><td><p>Minuto</p></td><td><p>16</p></td></tr><tr><td><p> </p></td><td><p>%S</p></td><td><p>Segundo</p></td><td><p>30</p></td></tr><tr><td><p> </p></td><td><p>%p</p></td><td><p>AM ou PM</p></td><td><p>PM</p></td></tr>
+            </tbody>
+        </table>
+
+        <p>Existem outros símbolos disponíveis; por favor, verifique o manual do "strftime", com o comando <cmd>man strftime</cmd> se você precisa de um que não esteja aqui.</p>
+    </section>
+
+    <section id="automatic-import">
+       <title>Importando fotos automaticamente</title>
+       
+       <p>O Shotwell pode importar novas fotos que aparecem no diretório da biblioteca automaticamente. (O diretório da biblioteca é geralmente o diretório <file>Imagens</file> em seu diretório pessoal, você ajustar isso na janela de <gui>Preferências</gui>.)</p>
+       
+       <p>Para habilitar a importação automática, marque a opção <gui>Monitorar diretório de biblioteca por novos arquivos</gui> na janela de <gui>Preferências</gui>.</p>
+       
+       <note style="advanced"><p>O Shotwell também pode seguir links simbólicos dentro de diretórios automaticamente importados.</p></note>
+
+    </section>
+
+    <section id="automatic-rename">
+       <title>Renomeando automaticamente fotos importadas para minúsculas</title>
+       
+       <p>O Shotwell pode mudar automaticamente os nomes dos arquivos de fotos importadas para minúsculas. Para habilitar isso, escolha <guiseq><gui>Editar</gui><gui>Preferências</gui></guiseq> e, na janela <gui>Preferências</gui>, marque a opção <gui>Renomear arquivos importados para letra minúscula</gui>.</p>
+    
+    </section>
+    
+    <section id="writing-metadata">
+       <title>Gravando os metadados sob demanda</title>
+       
+       <p>Por padrão, o Shotwell não modifica arquivos de fotos, mesmo quando você editar fotos ou alterar suas etiquetas ou títulos. O Shotwell registra essas mudanças apenas no seu próprio banco de dados.</p>
+       
+       <p>Para alterar esse comportamento, você pode marcar a opção <gui>Gravar etiquetas, títulos e outros metadados para arquivos de fotos</gui> na janela <gui>Preferências</gui>. Quando essa opção é ativada, o Shotwell grava os seguintes metadados para a maioria dos arquivos de fotos sempre que você alterá-la no Shotwell:</p>
+       
+       <list>
+       <item><p>títulos</p></item>
+       <item><p>etiquetas</p></item>
+       <item><p>avaliações</p></item>
+       <item><p>informações sobre rotação</p></item>
+       <item><p>data/hora</p></item>
+       </list>
+       
+       <p>O Shotwell armazena essas informações em arquivos de fotos nos formatos EXIF, IPTC e/ou XMP. Note que o Shotwell pode escrever apenas em arquivos de fotos em JPEG, PNG e TIFF, e não em fotos BMP, em fotos RAW ou em arquivos de vídeo.</p>
+    
+    </section>
+    
+    <section id="runtime-monitoring">
+    <title>Monitoramento em tempo de execução</title>
+    
+    <p>Enquanto o Shotwell é executado, ele percebe as alterações feitas em arquivos de sua biblioteca externamente. Quando uma foto é alterada, o Shotwell relê o arquivo e atualiza a sua visão da foto e de seus metadados.</p>
+    
+    <p>Note que o Shotwell verifica todos os arquivos de sua biblioteca na inicialização, mas apenas arquivos de fotos contidas no diretório da biblioteca são monitorados em tempo real, após a inicialização. Esperamos remover esta limitação em uma nova versão.</p>
+
+    </section>
+    
+</page>

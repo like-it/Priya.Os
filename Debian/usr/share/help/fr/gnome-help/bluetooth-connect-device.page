@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-connect-device" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="bluetooth"/>
+    <link type="seealso" xref="sharing-bluetooth"/>
+    <link type="seealso" xref="bluetooth-remove-connection"/>
+
+    <revision pkgversion="3.8" date="2013-05-16" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-22" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Associer des périphériques Bluetooth.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Association d'un ordinateur à un périphérique Bluetooth</title>
+
+  <p>Before you can use a Bluetooth device like a mouse or a headset, you first
+  need to connect your computer to the device. This is also called
+  <em>pairing</em> the Bluetooth devices.</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Bluetooth</gui>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Bluetooth</gui> pour ouvrir le panneau.</p>
+    </item>
+    <item>
+      <p>Assurez-vous que le Bluetooth soit activé : l'interrupteur de la barre de titre doit être basculé sur <gui>Activé</gui>. Si cela est le cas et si le panneau est ouvert, votre ordinateur commence aussitôt à chercher les périphériques.</p>
+    </item>
+    <item>
+      <p>Assurez-vous que le périphérique Bluetooth est <link xref="bluetooth-visibility">visible ou détectable</link> et placez-le entre 5 et 10 mètres de l'ordinateur.</p>
+    </item>
+    <item>
+      <p>Choisissez le périphérique dans la liste des <gui>Périphériques</gui> et cliquez dessus. Le panneau le concernant s'ouvre.</p>
+    </item>
+    <item>
+      <p>Si nécessaire, confirmez le code PIN sur l'autre périphérique. Le périphérique devrait vous afficher le code PIN que vous voyez sur l'écran de l'ordinateur. Confirmez le code PIN du périphérique en appuyant sur <gui>Apparier</gui> ou sur <gui>Confirmer</gui>, puis cliquez sur <gui>Confirmer</gui> à l'écran.</p>
+      <p>La saisie doit être effectuée dans les 20 secondes suivantes pour la plupart des périphériques, sinon la connexion n'est pas établie. Si cela arrive, revenez à la liste des périphériques et recommencez.</p>
+    </item>
+    <item>
+      <p>L'entrée du périphérique dans la liste des <gui>Périphériques</gui> affiche l'état <gui>Connecté</gui>.</p>
+    </item>
+    <item>
+      <p>Pour modifier un périphérique, cliquez dessus dans la liste des <gui>Périphériques</gui>. Un panneau spécifique à ce périphérique s'affiche et montre les options suuplémentaires applicables au type de périphérique auquel vous vous connectez.</p>
+    </item>
+    <item>
+      <p>Fermez le panneau après avoir modifié les paramètres.</p>
+    </item>
+  </steps>
+
+  <media its:translate="no" type="image" src="figures/bluetooth-menu.png" style="floatend">
+    <p its:translate="yes">L'icône Bluetooth dans la barre du haut de l'écran</p>
+  </media>
+  <p>Lorsqu'un ou plusieurs périphériques Bluetooth sont connectés, l'icône Bluetooth apparaît dans la zone d'état du système.</p>
+
+</page>

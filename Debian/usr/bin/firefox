@@ -1,0 +1,6 @@
+#!/bin/sh
+
+FIREFOX="$(which firefox)"
+[ -x "$FIREFOX.real" ] && exec "$FIREFOX.real" "$@"
+
+exec firefox-esr "$@"

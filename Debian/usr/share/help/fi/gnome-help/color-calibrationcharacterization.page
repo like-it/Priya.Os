@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="fi">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>Kalibrointi ja profilointi ovat täysin eri asioita.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mitä eroa on kalibroinnilla ja profiloinnilla?</title>
+  <p>Monet hämääntyvät usein kalibroinnin ja profiloinnin eroista. Kalibrointi on laitteen väriominaisuuksien muokkausta. Tämä toteutetaan yleensä kahdella tavalla:</p>
+  <list>
+    <item><p>Muuttamalla laitteen omia väreihin vaikuttavia arvoja</p></item>
+    <item><p>Lisäämällä käyriä värikanaviin</p></item>
+  </list>
+  <p>Kalibroinnin tarkoitus on laittaa laite määrättyyn tilaan värivasteen suhteen. Tätä käytetään usein päivittäisenä toimena toistettavissa olevan värikäyttäytymisen saavuttamiseksi. Tavallisesti kalibrointia säilytetään laite- tai järjestelmäkohtaisissa tiedostomuodoissa, joihin tallennetaan laiteasetukset tai kanavakohtaiset kalibrointikäyrät.</p>
+  <p>Karakterisointi (eli profilointi( on laitteen värien toistamisen <em>tallentamista</em>. Tulos tallennetaan yleensä laite-ICC-profiiliksi. Profiili ei muokkaa itsessään väriä, vaan se mahdollistaa CMM-järjestelmien (Color Management Module) tai väriasioita ymmärtävän ohjelman värien muokkaamiseen yhdessä toisen laitteen profiilin kanssa. Vain tietämällä kahden laitteen profiili on mahdollista siirtää värien toisto laitteelta toiselle onnistuneesti.</p>
+  <note>
+    <p>Huomaa, että kuvantaminen (profiili) on voimassa laitteelle, jos se on samassa tilassa kuin se oli kalibroitaessa.</p>
+  </note>
+  <p>Näyttöprofiilien tapauksessa saattaa olla hämmennystä aiheuttavaa, että kalibrointitiedot tallennetaan usein mukavuussyistä. Tapana on tallentaa tiedot <em>vcgt</em>-merkintään. Vaikka se tallennetaan profiiliin, mikään tavallista ICC-työkaluista tai sovelluksista ei ole tietoinen siitä eikä tee sillä mitään. Samaan tapaan tavalliset näytön kalibrointityökalut ja -sovellukset eivät ole tietoisia siitä tai käytä tätä ICC-karakterisointitietoa.</p>
+
+</page>

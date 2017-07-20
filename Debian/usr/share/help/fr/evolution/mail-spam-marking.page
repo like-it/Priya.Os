@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-spam-marking" xml:lang="fr">
+
+  <info>
+    <desc>Comment marquer les pourriels.</desc>
+
+    <link type="guide" xref="mail-spam"/>
+
+    <revision pkgversion="3.3.91" version="0.4" date="2012-03-07" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Pete Biggs</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Barbara Tobias</name>
+      <email its:translate="no">barbtobias09@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-spam.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Marquage d'un message comme pourriel</title>
+
+<p>Alors que SpamAssassin est délivré avec un ensemble de règles prédéfinies, Bogofilter a besoin d'être éduqué avant de pouvoir filtrer automatiquement les pourriels. Si vous entraînez Bogofilter sur de mauvais messages, il supposera que tous les courriels sont mauvais (parce qu'il ne sait pas faire la différence), et par conséquent il ne prendra pas de décision tant que la base de données ne sera pas suffisamment grande pour déterminer ce qui est ou n'est pas pourriel. Dans tous les cas, lorsque vous commencez à utiliser le blocage des pourriels, vérifiez le dossier <gui>Pourriels</gui> fréquemment pour être sûr que des courriels légitimes ne sont marqués comme pourriels.</p>
+
+<section id="marking-junk">
+<title>Marquage manuel des pourriels</title>
+<p>If <app>Evolution</app> misses junk mail, right-click the message, then click <gui>Mark as Junk</gui>, or mark the message and press <keyseq><key>Ctrl</key><key>J</key></keyseq> or click the <gui>Junk</gui> button in the tool bar. When you correct it, the filter can recognize similar messages in the future, and becomes more accurate as time goes on.</p>
+<p>Si des messages corrects sont marqués injustement comme pourriel, enlevez-les du dossier en faisant un clic-droit sur les messages et en choisissant <gui>Marquer comme non pourriel</gui>, ou en appuyant sur <keyseq><key>Maj</key><key>Ctrl</key><key>J</key></keyseq> ou sélectionnez le message et cliquez sur le bouton <gui>Non pourriel</gui>.</p>
+
+</section>
+</page>

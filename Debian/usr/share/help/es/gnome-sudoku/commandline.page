@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="commandline" xml:lang="es">
+  <info>
+    <revision pkgversion="3.4" version="0.1" date="2012-03-08" status="final"/>
+   <link type="guide" xref="index#advanced"/>
+    <credit type="author copyright">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007 - 2010</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Línea de comandos</title>
+<p>Para ver las opciones de línea de comandos de gnome-sudoku: <cmd>gnome-sudoku --help</cmd></p>
+<p>Para ver el número de versión de gnome-sudoku: <cmd>gnome-sudoku --version</cmd></p>
+
+<section id="debug">
+<title>Imprimir información de depuración</title>
+<p>Este comando puede ser útil cuando está rellenando un informe de error y necesita enviar información de depuración: <cmd>gnome-sudoku -v</cmd></p>
+</section>
+
+<section id="profile">
+<title>Información del perfil</title>
+<p>Este comando es útil si está enviando un informe de error por bajo rendimiento. Mostrará el rendimiento de diferentes funciones que se ejecutan, y posiblemente revele qué funciones en concreto son las responsables del bajo rendimiento. Esta información, adjuntada a un informe de error, hará que el problema sea más fácil de resolver, aunque este comando lo usan generalmente los programadores.</p>
+<p><cmd>gnome-sudoku -p</cmd></p>
+<p>Cuando salga de la aplicación, la terminal mostrará estadísticas de rendimiento.</p>
+</section>
+
+<section id="step">
+<title>Ejecutar <app>GNOME Sudoku</app> paso a paso</title>
+<p>Este comando es útil principalmente para desarrolladores, para examinar paso a paso el código: <cmd>gnome-sudoku -w</cmd></p>
+</section>
+</page>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-photoid" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-24" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Jak ke svým stávajícím klíčům přiložit identifikační fotografii, aby vás lidé snadněji rozpoznali.</desc>
+  </info>
+
+  <title>Připojení fotografie k vašemu klíči</title>
+
+  <p>Ke svému klíči PGP můžete připojit identifikační fotografii, aby si každý mohl ověřit vlastnictví klíče kouknutím na fotografii. Ačkoliv klíč s připojenou fotografií poskytuje o něco lepší úroveň bezpečnosti než klíč bez ní, kontrola fotografie v klíči není tak bezpečná, jako kontrola <link xref="misc-key-fingerprint">otisku klíče</link>, protože kdokoliv, kdo má vaši fotografii, může vytvořit klíč s vaší identifikační fotografií, zatímco otisk napodobit nelze.</p>
+
+  <note style="info">
+    <p>Na rozdíl od omezení v aplikaci <app>GPG</app>, nemusí být identifikační fotografie ve formátu <file>JPEG</file>. <app>Hesla a klíče</app> umožňují nahrát fotografii v <file>png</file>, <file>jpg</file> a několika dalších běžných formátech obrázků.</p>
+  </note>
+
+  <steps>
+    <title>Když chcete ke klíči PGP přiložit identifikační fotografii:</title>
+    <item>
+      <p>V levém postranním panelu vyberte <gui>Klíče GnuPG</gui>.</p>
+    </item>
+    <item>
+      <p>Vyberte klíč PGP.</p>
+    </item>
+    <item>
+      <p>Klikněte pravým tlačítkem na zvolený klíč a vyberte <guiseq><gui style="menuitem">Vlastnosti</gui> <gui>Vlastník</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Fotografii přidáte zmáčknutím tlačítka se znakem <gui style="button">+</gui> umístěným po levé straně.</p>
+    </item>
+    <item>
+      <p>Ve svém počítači vyberte fotografii.</p>
+    </item>
+    <item>
+      <p>Operaci dokončíte kliknutím na <gui style="button">Zavřít</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Fotografie, kterou vyberete, by měla mít malou velikost, nejlépe tak 120 krát 150 pixelů. Protože je identifikační fotografie vždy vložena v klíči, zvedla by velká fotografie velikost klíče a zpomalila tak veškeré operace s tímto klíčem. U velké fotografie se vás aplikace <app>Hesla a klíče</app> dotáže, jestli ji má upravit na optimální velikost.</p>
+  </note>
+
+</page>

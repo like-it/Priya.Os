@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>名前順、サイズ順、種類順、更新日時順に、ファイルを配置します。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>ファイル、フォルダーを並べ替える</title>
+
+<p>You can sort files in different ways in a folder, for example by sorting them
+in order of date or file size. See <link xref="#ways"/> below for a list of
+common ways to sort files. See <link xref="nautilus-views"/> for information on
+how to change the default sort order.</p>
+
+<p>The way that you can sort files depends on the <em>folder view</em> that you
+are using. You can change the current view using the list or icon buttons in the
+toolbar.</p>
+
+<section id="icon-view">
+  <title>アイコン表示</title>
+
+  <p>To sort files in a different order, click the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
+  Date</gui>.</p>
+
+  <p>As an example, if you select <gui>By Name</gui>, the files will be sorted
+  by their names, in alphabetical order. See <link xref="#ways"/> for other
+  options.</p>
+
+  <p>You can sort in the reverse order by selecting <gui>Reversed Order</gui>
+  from the menu.</p>
+
+</section>
+
+<section id="list-view">
+  <title>一覧表示</title>
+
+  <p>異なる順序でファイルを並べ替えるには、ファイルマネージャー中の列見出しのどれかをクリックします。たとえば、<gui>種類</gui>をクリックすると、ファイルを種類順に並べ替えます。列見出しをもう一度クリックすると、並びが反転します。</p>
+  <p>In list view, you can show columns with more attributes and sort on those
+  columns. Click the view options button in the toolbar, pick <gui>Visible
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  Columns…</gui> and select the columns that you want to be visible. You will
+  then be able to sort by those columns. See <link xref="nautilus-list"/> for
+  descriptions of available columns.</p>
+
+</section>
+
+<section id="ways">
+  <title>並べ替え方法</title>
+
+  <terms>
+    <item>
+      <title>名前</title>
+      <p>ファイル名のアルファベット順に並べ替えます。</p>
+    </item>
+    <item>
+      <title>サイズ</title>
+      <p>ファイルサイズ (ファイルが占めるディスク領域の大きさ) の順に並べ替えます。デフォルトでは最も小さいものから最も大きいものの順になります。</p>
+    </item>
+    <item>
+      <title>種類</title>
+      <p>ファイル種別の順に並べ替えます。同じ種類のファイルはひとまとまりになり、その中で名前順に並びます。</p>
+    </item>
+    <item>
+      <title>Last Modified</title>
+      <p>最後に更新した日時の順に並べ替えます。デフォルトでは、最も古いものから最も新しいものの順になります。</p>
+    </item>
+  </terms>
+
+</section>
+
+</page>

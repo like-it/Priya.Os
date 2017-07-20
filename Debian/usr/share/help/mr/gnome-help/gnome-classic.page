@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="question" version="1.0 if/1.0" id="gnome-classic" xml:lang="mr">
+
+  <info>
+<!--    <link type="guide" xref="shell-overview#desktop" />-->
+
+    <revision pkgversion="3.10.1" date="2013-10-28" status="review"/>
+
+    <credit type="author">
+      <name>GNOME डॉक्युमेंटेशन प्रकल्प</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>जास्त पारंपारिक डेस्कटॉप अनुभव पसंत असल्यास GNOME Classicचा वापर करणे शिफारसीय आहे.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>GNOME क्लासिक काय आहे?</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+  <p><em>GNOME Classic</em> is a feature for users who prefer a more traditional
+  desktop experience. While <em>GNOME Classic</em> is based on <em>GNOME 3</em>
+  technologies, it provides a number of changes to the user interface, such as
+  the <gui>Applications</gui> and
+  <gui>Places</gui> menus on the top bar, and a window
+  list at the bottom of the screen.</p>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+<p><em>GNOME Classic</em> is a feature for users who prefer a more traditional
+  desktop experience. While <em>GNOME Classic</em> is based on <em>GNOME 3</em>
+  technologies, it provides a number of changes to the user interface, such as
+  the <gui xref="shell-introduction#activities">Applications</gui> and
+  <gui>Places</gui> menus on the top bar, and a window
+  list at the bottom of the screen.</p>
+  </if:when>
+</if:choose>
+
+<p>You can use the <gui>Applications</gui> menu on the top bar to launch
+ applications. The <gui xref="shell-introduction#activities">Activities</gui>
+ overview is available by selecting the <gui>Activities
+ Overview</gui> item from the menu.</p>
+
+<p>To access the <em><gui>Activities</gui> overview</em>,
+ you can also press the <key xref="keyboard-key-super">Super</key> key.</p>
+
+<section id="gnome-classic-window-list">
+<title>पटल यादी</title>
+
+<p>पडद्याच्या अखेरीस पटल सूची सर्व खुले पटलकरिता प्रवेश पुरवला जातो आणि ॲप्लिकेशन्स तुम्हाला पटकन कमी करण्यास आणि पूर्वस्थितीत आणण्यास मदत करते.</p>
+
+<p>At the right-hand side of the window list, GNOME displays a short
+ identifier for the current workspace, such as <gui>1</gui> for the first
+ (top) workspace. In addition, the identifier also displays the total number
+ of available workspaces. To switch to a different workspace, you can click
+ the identifier and select the workspace you want to use from the menu.</p>
+
+<p>ॲप्लिकेशन किंवा सिस्टम कम्पोनंटला तुमची आवश्यकता असल्यास, पटल सूचीच्या उजव्या-बाजूस निळे चिन्ह दाखवेल. निळ्या चिन्हावर क्लिक करून <link xref="shell-notifications">संदेश ट्रे</link> दाखवले जाते, जे सर्व सूचनांकरिता प्रवेश पुरवते.</p>
+
+</section>
+
+<section id="gnome-classic-switch">
+<title>GNOME क्लासिक कडे आणि पासून स्थानांतर करा</title>
+
+<note if:test="!platform:gnome-classic" style="important">
+<p>GNOME क्लासिक फक्त ठराविक इंस्टॉल केलेल्या GNOME शेल विस्तारांसह उपलब्ध आहे. काही Linux वितरकांकडे हे विस्तार उपलब्ध नसतील किंवा पूर्वनिर्धारितपणे इंस्टॉल होत नसावे.</p>
+</note>
+
+  <steps>
+    <title><em>GNOME</em> ते <em>GNOME क्लासिक</em> स्थानांतर करण्यासाठी:</title>
+    <item>
+      <p>Save any open work, and then log out. Click the system menu on the right
+      side of the top bar, click your name and then choose the right option.</p>
+    </item>
+    <item>
+      <p>A confirmation message will appear. Select <gui>Log Out</gui> to
+      confirm.</p>
+    </item>
+    <item>
+      <p>प्रवेश पडद्यावर, सूचीतून तुमचे नाव निवडा.</p>
+    </item>
+    <item>
+      <p>पासवर्ड नोंदणी पेटीमध्ये पासवर्ड द्या.</p>
+    </item>
+    <item>
+      <p>पर्याय चिन्ह क्लिक करा, ज्यास <gui>प्रवेश करा</gui> बटनाच्या डावीकडे दाखविले जाते, आणि <gui>GNOME क्लासिक</gui> पसंत करा.</p>
+    </item>
+    <item>
+      <p>Click the <gui>Sign In</gui> button.</p>
+    </item>
+  </steps>
+
+  <steps>
+    <title><em>GNOME क्लासिक</em> ते <em>GNOME</em> स्थानांतर करण्यासाठी:</title>
+    <item>
+      <p>Save any open work, and then log out. Click the system menu on the right
+      side of the top bar, click your name and then choose the right option.</p>
+    </item>
+    <item>
+      <p>A confirmation message will appear. Select <gui>Log Out</gui> to
+      confirm.</p>
+    </item>
+    <item>
+      <p>प्रवेश पडद्यावर, सूचीतून तुमचे नाव निवडा.</p>
+    </item>
+    <item>
+      <p>पासवर्ड नोंदणी पेटीमध्ये पासवर्ड द्या.</p>
+    </item>
+    <item>
+      <p>पर्याय चिन्ह क्लिक करा, ज्यास <gui>प्रवेश करा</gui> बटनाच्या डावीकडे दाखविले जाते, आणि <gui>GNOME</gui> पसंत करा.</p>
+    </item>
+    <item>
+      <p>Click the <gui>Sign In</gui> button.</p>
+    </item>
+  </steps>
+  
+</section>
+
+</page>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-autorun" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="media#photos"/>
+    <link type="guide" xref="media#videos"/>
+    <link type="guide" xref="media#music"/>
+    <link type="guide" xref="files#removable"/>
+
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
+    <revision pkgversion="3.9.92" date="2013-10-04" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Anwendungen für CDs und DVDs, Kameras, Audio-Abspielgeräte und weitere Geräte und Medien automatisch starten.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <!-- TODO: fix bad UI strings, then update help -->
+  <title>Anwendungen für Geräte oder Medien öffnen</title>
+
+  <p>Sie können eine Anwendung automatisch starten lassen, wenn Sie ein Gerät anschließen oder eine CD/DVD oder eine Speicherkarte einlegen. Sie könnten zum Beispiel wollen, dass Ihre Fotoverwaltung geöffnet wird, wenn Sie eine Digitalkamera anschließen. Sie können das aber auch abstellen, so dass nichts weiter passiert, wenn Sie ein Gerät anschließen.</p>
+
+  <p>So legen Sie fest, welche Anwendung geöffnet wird, wenn verschiedene Geräte angeschlossen werden:</p>
+
+<steps>
+  <item>
+    <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Details</gui> ein.</p>
+  </item>
+  <item>
+    <p>Klicken Sie auf <gui>Details</gui>, um das Panel zu öffnen.</p>
+  </item>
+  <item>
+    <p>Öffnen Sie <gui>Wechselmedien</gui>.</p>
+  </item>
+  <item>
+    <p>Suchen Sie nach dem gewünschten Geräte- oder Medientyp und wählen Sie eine Anwendung oder Aktion dafür aus. Nachfolgend werden die verschiedenen Geräte- und Medientypen beschrieben.</p>
+    <p>Anstatt eine Anwendung zu starten, können Sie auch mit der Option <gui>Ordner öffnen</gui> festlegen, dass das Gerät in der Dateiverwaltung angezeigt wird. In diesem Fall werden Sie gefragt, was passieren soll, sonst wird nichts automatisch ausgeführt.</p>
+  </item>
+  <item>
+    <p>Wenn Sie das Gerät oder den Medientyp, nach dem Sie suchen, in der Liste nicht finden können (wie Blu-ray-Medien oder E-Book-Reader), klicken Sie auf <gui>Andere Medien …</gui> für eine detailliertere Geräteliste. Wählen Sie in der Auswahlliste <gui>Typ</gui> den Geräte- oder Medientyp und in der Auswahlliste <gui>Aktion</gui> die Anwendung oder Aktion aus.</p>
+  </item>
+</steps>
+
+  <note style="tip">
+    <p>Wenn Sie nicht wollen, dass eine Anwendung automatisch geöffnet wird, egal welches Gerät Sie anschließen, kreuzen Sie <gui>Beim Einlegen von Datenträgern nie nachfragen oder Programme starten</gui> unten in den <gui>Details</gui> des Wechselmedien-Fensters an.</p>
+  </note>
+
+<section id="files-types-of-devices">
+  <title>Geräte- und Medientypen</title>
+<terms>
+  <item>
+    <title>Audio-CDs</title>
+    <p>Wählen Sie Ihre bevorzugte Musik-Anwendung oder Ihr bevorzugtes Programm zum Auslesen von Audio-CDs. Falls Sie Audio-DVDs (DVD-A) verwenden, wählen Sie unter <gui>Andere Medien …</gui>, wie diese geöffnet werden sollen. Falls Sie ein Audio-Medium in der Dateiverwaltung öffnen, erscheinen die Titel als WAV-Dateien, die Sie in jeder Anwendung zur Audiowiedergabe abspielen können.</p>
+  </item>
+  <item>
+    <title>Video-Medien</title>
+    <p>Wählen Sie Ihre bevorzugte Video-Anwendung zum Öffnen von Video-DVDs. Mit dem Knopf <gui>Andere Medien …</gui> können Sie Anwendungen für Blu-ray, HD-DVD, Video-CD (VCD) und Super-Video-CD (SVCD) festlegen. Falls DVDs oder andere Video-Medien beim Einlegen nicht korrekt funktionieren, lesen Sie bitte <link xref="video-dvd"/>.</p>
+  </item>
+  <item>
+    <title>Leere Medien</title>
+    <p>Verwenden Sie den Knopf <gui>Andere Medien …</gui>, um das Medienbrennprogramm für leere CDs, leere DVDs, leere Blu-ray-Medien und leere HD-DVDs auszuwählen.</p>
+  </item>
+  <item>
+    <title>Kameras und Fotos</title>
+    <p>In der Auswahlliste <gui>Fotos</gui> können Sie eine Anwendung zur Fotoverwaltung auswählen, die ausgeführt werden soll, wenn Sie Ihre Digitalkamera anschließen oder eine Speicherkarte aus einer Kamera einstecken, wie eine CF-, SD-, MMC-, oder MS-Karte. Sie können auch einfach Ihre Fotos mit der Dateiverwaltung durchsuchen.</p>
+    <p>Mit <gui>Andere Medien …</gui> können Sie eine Anwendung zum Öffnen von Kodak Bild-CDs einstellen, welche Sie sie zum Beispiel in Geschäften erstellen können. Hierbei handelt es sich um gewöhnliche Daten-CDs, die JPEG-Bilder in einem Ordner namens <file>Pictures</file> enthalten.</p>
+  </item>
+  <item>
+    <title>Musikwiedergabegeräte</title>
+    <p>Wählen Sie eine Anwendung zur Verwaltung der Musiksammlung auf Ihrem tragbaren Musik-Wiedergabegerät oder verwalten Sie die Dateien selbst in der Dateiverwaltung.</p>
+    </item>
+    <item>
+      <title>E-Book-Leser</title>
+      <p>Verwenden Sie den Knopf <gui>Andere Medien …</gui>, um eine Anwendung zum Verwalten der Bücher auf Ihrem E-Book-Lesegerät zu wählen, oder verwalten Sie die Dateien selbst in der Dateiverwaltung.</p>
+    </item>
+    <item>
+      <title>Software</title>
+      <p>Einige CDs/DVDs und sonstige Wechselmedien enthalten Software, die dazu bestimmt ist, beim Einlegen oder Anschließen des Mediums automatisch ausgeführt zu werden. In der Option <gui>Software</gui> legen Sie fest, welche Aktion auszuführen ist, wenn solche Medien mit automatisch ausführbarer Software eingelegt oder angeschlossen werden. Sie werden stets um Bestätigung gebeten, bevor die Software ausgeführt wird.</p>
+      <note style="warning">
+        <p>Führen Sie niemals Software von Medien aus, denen Sie nicht vertrauen.</p>
+      </note>
+   </item>
+</terms>
+
+</section>
+
+</page>

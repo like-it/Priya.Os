@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-join-split-lines" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision version="3.8" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Spojit několik řádků textu nebo rozdělit dlouhé řádky.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Spojit/rozdělit řádky</title>
+
+  <p>Zásuvný modul <app>Spojit/rozdělit řádky</app> umí spojit krátké řádky do jednoho dlouhého nebo naopak rozdělit dlouhý řádek do více krátkých.</p>
+  
+  <p>Pokud chcete zásuvný modul povolit, vyberte <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Předvolby</gui><gui>Zásuvné moduly</gui><gui>Spojit/rozdělit řádky</gui></guiseq>.</p>
+
+  <steps>
+    <title>Když chcete spojit více řádků do jedno dlouhého:</title>
+    <item>
+      <p>Vyberte řádky, které chcete spojit. To uděláte buď myší nebo zmáčknutím <keyseq><key>Shift</key><key>šipka nahoru</key> </keyseq> případně <keyseq><key>Shift</key><key>šipka dolů</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Zmáčkněte <keyseq><key>Ctrl</key><key>J</key></keyseq>.</p>
+      <p>Řádky, které jste vybrali, budou spojeny do jednoho dlouhého řádku.</p>
+    </item>
+  </steps>
+
+  <steps>
+    <title>Když chcete jeden řádek rozdělit na více řádků:</title>
+    <item>
+      <p>Vyberte řádek, který chcete rozdělit, umístěním kurzoru kdekoliv do tohoto řádku.</p>
+    </item>
+    <item>
+      <p>Zmáčkněte <keyseq><key>Ctrl</key><key>Shift</key> <key>J</key></keyseq>.</p>
+      <p>Řádek bude rozdělen na více řádků. K určení, kde je řádek bezpečné rozdělit, se použijí mezery a pravidlo, že délka řádku nemá přesáhnout 80 znaků.</p>
+    </item>
+  </steps>
+
+</page>

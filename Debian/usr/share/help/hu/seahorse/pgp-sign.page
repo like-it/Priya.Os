@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="pgp-sign" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision pkgversion="3.9" date="2013-08-29" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Ha megbízik egy kulcsban, akkor aláírhatja azt.</desc>
+  </info>
+
+  <title>Kulcsok aláírása</title>
+
+  <p>Bizalma és a kulcs eredetiségéért való jótállása jeleként aláírhatja a kulcsot. Egy személy kulcsát csak akkor szabad aláírni, ha összehasonlította a <link xref="pgp-userid">felhasználói azonosítót</link> a személyazonosság egy hiteles forrásával, például személyi igazolvánnyal, útlevéllel, jogosítvánnyal, vagy egyéb hasonló dokumentummal. Megegyezés esetén a kulcs megbízhatónak nyilvánítható.</p>
+
+  <steps>
+    <title>Kulcs aláírásához:</title>
+    <item>
+      <p>Importálja az aláírásra szánt <link xref="pgp-retrieve-remote">távoli kulcsot</link>, vagy az azt tartalmazó <link xref="pgp-import">kulcsfájlt</link> a <app>Jelszavak és kulcsok</app> alkalmazásba.</p>
+    </item>
+    <item>
+      <p>Válassza ki a <gui>GnuPG kulcsok</gui> listából az importált kulcsot.</p>
+    </item>
+    <item>
+      <p>Kattintson a jobb egérgombbal a kulcsra, majd válassza a <gui>Tulajdonságok</gui> menüpontot, a következő ablakban pedig a <gui>Megbízhatóság</gui> fület.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui style="button">Kulcs aláírása</gui> gombra.</p>
+    </item>
+    <item>
+      <p>A kulcs hitelességi vizsgálata függvényében válasszon a rendelkezésre álló lehetőségek közül: <gui style="radiobutton">Egyáltalán nem</gui>, <gui style="radiobutton">Szokásos módon</gui> vagy <gui style="radiobutton">Nagyon alaposan</gui>.</p>
+    </item>
+    <item>
+      <p>A jelölőnégyzetek lehetőséget adnak az aláírás egy későbbi időpontban való visszavonására, és az aláírás közzétételére.</p>
+    </item>
+    <item>
+      <p>Ha több személyes PGP kulccsal rendelkezik, válassza ki a megfelelő kulcsot az <gui>Aláíró</gui> melletti listából az ablak alján.</p>
+    </item>
+    <item>
+      <p>A befejezéshez kattintson az <gui style="button">Aláírás</gui> gombra.</p>
+    </item>
+  </steps>
+
+  <note style="info">
+    <title>Aláírhatom a saját kulcsaimat is?</title>
+    <p>Minden újonnan <link xref="pgp-create">készített</link> <gui>GnuPG kulcs</gui> automatikusan hordozza az Ön aláírását. Ez vonatkozik az összes <gui>GnuPG kulccsal</gui> <link xref="subkeys-add">létrehozott</link> részkulcsra is.</p>
+  </note>
+
+</page>

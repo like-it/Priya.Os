@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="net-security-tips" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="net-general"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-21" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Steven Richards</name>
+      <email>steven.richardspc@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>General tips to keep in mind when using the internet.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>インターネット上で安全性を維持する</title>
+
+  <p>A possible reason for why you are using Linux is the robust security that
+  it is known for. One reason that Linux is relatively safe from malware and
+  viruses is due to the lower number of people who use it. Viruses are targeted
+  at popular operating systems, like Windows, that have an extremely large user
+  base. Linux is also very secure due to its open source nature, which allows
+  experts to modify and enhance the security features included with each
+  distribution.</p>
+
+  <p>Linux をセキュアにするための対策を取っていても、脆弱性を完全に取り除くことはできません。インターネットの平均的なユーザーの場合、次の被害に遭うおそれがあります。</p>
+
+  <list>
+    <item>
+      <p>フィッシング詐欺 (偽装して機密情報を盗もうとする web サイトやメール)</p>
+    </item>
+    <item>
+      <p><link xref="net-email-virus">悪意のあるメール転送</link></p>
+    </item>
+    <item>
+      <p><link xref="net-antivirus">悪意のある (ウイルスを持つ) アプリケーション</link></p>
+    </item>
+    <item>
+      <p><link xref="net-wireless-wepwpa">Unauthorized remote/local network
+      access</link></p>
+    </item>
+  </list>
+
+  <p>オンラインでの安全を確保するため、次の点に留意してください。</p>
+
+  <list>
+    <item>
+      <p>知らない人から送信されてきたメール、添付ファイル、リンクなどには注意します。</p>
+    </item>
+    <item>
+      <p>web サイトの話がうま過ぎる、不必要に見える機密情報を求めてくるなどの場合は、送信している情報、そしてその情報がなりすまし犯やその他の犯罪者に漏れた場合に考えられる結果についてよく考えてみてください。</p>
+    </item>
+    <item>
+      <p>Be careful in providing
+      <link xref="user-admin-explain">root level permissions</link> to any
+      application, especially ones that you have not used before or which are
+      not well-known. Providing anyone or anything with root level permissions
+      puts your computer at high risk to exploitation.</p>
+    </item>
+    <item>
+      <p>リモートアクセスのサービスは必要最低限のものだけを実行してください。SSH や VNC の実行が役に立つ場合もありますが、適切に安全性を確保していないとコンピューターへの侵入ルートを開くことになります。不正侵入を防ぐため、<link xref="net-firewall-on-off">ファイアウォール</link>の使用を検討してください。</p>
+    </item>
+  </list>
+
+</page>

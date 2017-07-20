@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-open" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-30" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <credit type="author">
+      <name>Cristopher Thomas</name>
+      <email>crisnoh@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Öppna filer med ett program som inte är standardprogrammet för den typen av fil. Du kan även ändra standardprogrammet.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Öppna filer med andra program</title>
+
+  <p>När du dubbelklickar (eller mittenklickar) på en fil i filhanteraren kommer den att öppnas med standardprogrammet för den filtypen. Du kan öppna den i ett annat program, söka på nätet efter program eller sätta standardprogrammet för alla filer av samma typ.</p>
+
+  <p>För att öppna en fil med ett annat program än standardprogrammet, högerklicka på filen och välj programmet du önskar från toppen av menyn. Om du inte ser programmet du önskar klicka på <gui>Öppna med annat program</gui>. Som standard visar filhanteraren bara program som är kända för att kunna hantera filen. För att bläddra genom alla programmen på din dator, klicka <gui>Visa alla program</gui>.</p>
+
+<p>Om du fortfarande inte kan hitta programmet du önskar kan du söka efter fler program genom att klicka på <gui>Hitta nya program</gui>. Filhanteraren kommer att söka på nätet efter paket som innehåller program som är kända för att hantera filer av den typen.</p>
+
+<section id="default">
+  <title>Ändra standardprogrammet</title>
+  <p>Du kan ändra standardprogrammet som används för att öppna filer av en given typ. Detta låter dig öppna ditt föredragna program när du dubbelklickar för att öppna en fil. Du kanske till exempel vill att din önskade musikspelare ska öppnas när du dubbelklickar på en MP3-fil.</p>
+
+  <steps>
+    <item><p>Välj en fil av typen vars standardprogram du vill ändra. För att till exempel ändra vilket program som används för att öppna MP3-filer, välj en <file>.mp3</file>-fil.</p></item>
+    <item><p>Högerklicka på filen och välj <gui>Egenskaper</gui>.</p></item>
+    <item><p>Välj fliken <gui>Öppna med</gui>.</p></item>
+    <item><p>Välj programmet du vill ha och klicka på <gui>Ställ in som standard</gui>.</p>
+    <p>Om <gui>Övriga program</gui> innehåller ett program du vill använda ibland, men inte vill göra till standardprogram, välj det programmet och klicka <gui>Lägg till</gui>. Detta kommer lägga till det till i <gui>Rekommenderade program</gui>. Du kommer då att kunna använda detta program genom att högerklicka och välja det från listan.</p></item>
+  </steps>
+
+  <p>Detta ändrar standardprogrammet inte enbart för den valda filen, utan för alla filer av samma typ.</p>
+
+<!-- TODO: mention resetting the open with list with the "Reset" button -->
+
+</section>
+
+</page>

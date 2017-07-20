@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME 文档项目</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>了解什么是卷和分区，使用磁盘实用程序管理卷和分区。</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>管理卷和分区</title>
+
+  <p><em>卷</em>是一个描述硬盘等存储设备的术语。当您把存储设备分成若干个区之后，它也可以指设备上的<em>部分</em>存储空间。您可以将卷<em>挂载</em>到计算机上。您可以挂载硬盘、USB 驱动器、DVD-RW、SD 卡以及其他媒体。如果某个卷现在处于已挂载状态，您就可以对其进行读取和写入操作。</p>
+
+  <p>已被挂载的卷一般被称为<em>分区</em>，尽管这两个术语严格来说并不相同。“分区”是指一个磁盘驱动器上的<em>物理</em>存储区域。分区安装后，也可以被称为卷，因为您可以对其进行读写操作。</p>
+
+<section id="manage">
+ <title>使用磁盘实用工具查看和管理卷和分区</title>
+
+  <p>您可以使用磁盘实用工具检查和修改计算机的存储卷。</p>
+
+<steps>
+  <item>
+    <p>Open the <gui>Activities</gui> overview and start <app>Disks</app>.</p>
+  </item>
+  <item>
+    <p>In the list of storage devices on the left, you will find hard disks,
+    CD/DVD drives, and other physical devices. Click the device you want to
+    inspect.</p>
+  </item>
+  <item>
+    <p>The right pane provides a visual breakdown of the volumes and
+    partitions present on the selected device. It also contains a variety of
+    tools used to manage these volumes.</p>
+    <p>请注意：使用这些实用程序可能会彻底清除您磁盘上的数据。</p>
+  </item>
+</steps>
+
+  <p>一般来说，您的计算机有至少一个<em>主</em>分区和一个单一的<em>交换</em>分区。交换分区由操作系统用来进行内存管理，很少被挂载。主分区包含您的操作系统、应用程序、设置以及个人文件。为安全或方便起见，这些文件还可能分布在多个分区。</p>
+
+  <p>One primary partition must contain information that your computer uses to
+  start up, or <em>boot</em>. For this reason it is sometimes called a boot
+  partition, or boot volume. To determine if a volume is bootable, select the
+  partition and click the menu button in the toolbar underneath the partition
+  list. Then, click <gui>Edit Partition…</gui> and look at its
+  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
+  a bootable volume.</p>
+
+</section>
+
+</page>

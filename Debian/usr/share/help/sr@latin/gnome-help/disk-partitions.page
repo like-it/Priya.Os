@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="sr-Latn">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Gnomov projekat dokumentacije</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>Da shvatite šta su to volumeni i particije i da koristite program za upravljanje njima.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Upravljajte volumenima i particijama</title>
+
+  <p>Reč <em>volumen</em> se koristi da opiše skladišni uređaj, kao što je čvrsti disk. Takođe može da se odnosi na <em>deo</em> skladišta na tom uređaju, zato što možete da izdelite skladište na komade. Računar čini ova skladišta dostupnim na vašem sistemu datoteka putem procesa koji se naziva <em>montiranje</em>. Montirani volumeni mogu biti čvrsti diskovi, USB diskovi, Prepisivi DVD diskovi, SD kartice, i ostali mediji. Ako je volumen trenutno montiran, možete da čitate (i po mogućnosti da zapisujete) datoteke na njemu.</p>
+
+  <p>Često, montirani volumen se naziva <em>particija</em>, iako nisu neophodno iste stvari. „Particija“ se odnosi na <em>fizičku</em> oblast skladišta na pojedinačnom disk uređaju. Nakon što je particija montirana, o njoj se može govoriti kao o volumenu zato što možete da pristupite datotekama na njoj. Možete da mislite o volumenima kao o označenim, pristupačnim „ulazima skladišta“ do funkcionalnih „pozadinskih magacina“ particija i uređaja.</p>
+
+<section id="manage">
+ <title>Pogledajte i upravljajte volumenima i particijama koristeći upravnika diskova</title>
+
+  <p>Možete da proverite i da izmenite volumene skladišta vašeg računara sa upravnikom diska.</p>
+
+<steps>
+  <item>
+    <p>Otvorite pregled <gui>aktivnosti</gui> i pokrenite program <app>Diskovi</app>.</p>
+  </item>
+  <item>
+    <p>U spisku skladišnih uređaja na levoj strani, naći ćete čvrste diskove, CD/DVD uređaje, i ostale fizičke uređaje. Kliknite na uređaj koji želite da ispitate.</p>
+  </item>
+  <item>
+    <p>Desna površ obezbeđuje vidni prikaz volumena i particija prisutnih na izabranom uređaju. Takođe sadrži razne alate koji se koriste za upravljanje tim volumenima.</p>
+    <p>Budite oprezni: sa ovim pomagalima možete u potpunosti da obrišete podatke na vašem disku.</p>
+  </item>
+</steps>
+
+  <p>Vaš računar najverovatnije ima barem jednu <em>primarnu</em> particiju i jednu particiju <em>pomoćne memorije</em>. Particiju pomoćne memorije koristi operativni sistem za upravljanje memorijom, i retko kada biva montirana. Primarna particija sadrži vaš operativni sistem, programe, podešavanja, i lične datoteke. Ove datoteke mogu takođe biti raspoređene na više particija iz bezbednosti ili pogodnosti.</p>
+
+  <p>Jedna primarna particija mora da sadrži podatke koje vaš računar koristi za pokretanje, ili <em>podizanje</em>. Iz ovog razloga se ponekada zove particija za podizanje, ili volumen za podizanje. Da odredite da li se sa volumena vrši podizanje, izaberite particiju i pritisnite dugme izbornika na traci alata ispod spiska particija. Zatim, pritisnite <gui>Uredi particiju…</gui> i pogledajte njene <gui>zastavice</gui>. Spoljni mediji kao što su USB uređaji i CD diskovi mogu takođe da sadrže volumen za podizanje.</p>
+
+</section>
+
+</page>

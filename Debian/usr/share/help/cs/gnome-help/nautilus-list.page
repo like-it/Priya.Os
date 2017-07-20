@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-list" xml:lang="cs">
+
+  <info>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="nautilus-prefs" group="nautilus-list"/>
+
+    <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak nastavit, které údaje se mají zobrazovat ve sloupcích v seznamovém zobrazení.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Předvolby sloupců v seznamu souborů</title>
+
+  <p>K dispozici je jedenáct různých sloupců s informace, které si můžete zobrazit ve sloupcovém zobrazení v <gui>Souborech</gui>. Klikněte na <gui>Soubory</gui> v horní liště, zvolte <gui>Předvolby</gui> a vyberte kartu <gui>Sloupce seznamu</gui>, abyste mohli vybrat, které sloupce budou viditelné.</p>
+
+  <note style="tip">
+    <p>Můžete použít tlačítka <gui>∧</gui> a <gui>∨</gui> ke změně pořadí, v jakém se vybrané sloupce objeví. Když potřebujete změny vrátit zpět a používat výchozí sloupce, klikněte na <gui>Vrátit na výchozí</gui>.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Název</gui></title>
+      <p>Název souboru nebo složky.</p>
+      <note style="tip">
+        <p>Sloupec <gui>Název</gui> nelze skrýt.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Velikost</gui></title>
+      <p>Velikost složky je dána počtem položek, které obsahuje. Velikost souboru je uvedena v bajtech, kB nebo MB.</p>
+    </item>
+    <item>
+      <title><gui>Typ</gui></title>
+      <p>Zobrazeno buď jako složka nebo jako typ souboru, jako je dokument PDF, obrázek JPEG, zvuk MP3 apod.</p>
+    </item>
+    <item>
+      <title><gui>Změněný</gui></title>
+      <p>Uvádí datum z časového údaje, kdy byl soubor naposledy změněn.</p>
+    </item>
+    <item>
+      <title><gui>Vlastník</gui></title>
+      <p>Jméno uživatele, který složku nebo soubor vlastní.</p>
+    </item>
+    <item>
+      <title><gui>Skupina</gui></title>
+      <p>Skupina, která soubor vlastní. Normálně je každý uživatel ve své vlastní skupině, ale může být ve skupině i více uživatelů. Například ve firemním prostředí může mít svoji skupinu každé oddělení.</p>
+    </item>
+    <item>
+      <title><gui>Oprávnění</gui></title>
+      <p>Zobrazuje oprávnění přístupu k souboru. Například <gui>drwxrw-r--</gui></p>
+      <list>
+        <item>
+          <p>První znak představuje typ souboru. <gui>-</gui> znamená běžný soubor a <gui>d</gui> složku. Ve zřídkavých případech můžete narazit i na jiná písmena.</p>
+        </item>
+        <item>
+          <p>Následující tři znaky <gui>rwx</gui> určují oprávnění pro uživatele, který soubor vlastní.</p>
+        </item>
+        <item>
+          <p>Následující tři znaky <gui>rw-</gui> určují oprávnění pro všechny členy skupiny, která soubor vlastní.</p>
+        </item>
+        <item>
+          <p>Poslední tři znaky <gui>r--</gui> určují oprávnění pro všechny ostatní uživatele v systému.</p>
+        </item>
+      </list>
+      <p>Jednotlivá oprávnění mají následující význam:</p>
+      <list>
+        <item>
+          <p><gui>r</gui>: čtení (Read) znamená, že můžete soubor nebo složku otevřít</p>
+        </item>
+        <item>
+          <p><gui>w</gui>: zápis (Write) znamená, že můžete ukládat změny</p>
+        </item>
+        <item>
+          <p><gui>x</gui>: spouštění (eXxecute) znamená, že pokud se jedná o program nebo skript, můžete jej spustit, nebo u složky, že máte přístup k podsložkám a souborům v ní</p>
+        </item>
+        <item>
+          <p><gui>-</gui>: žádné oprávnění není nastaveno</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title><gui>Typ MIME</gui></title>
+      <p>Zobrazuje typ MIME položky.</p>
+    </item>
+    <item>
+      <title><gui>Umístění</gui></title>
+      <p>Cesta k umístění souboru.</p>
+    </item>
+    <item>
+      <title><gui>Změněný – čas</gui></title>
+      <p>Uvádí datum a čas, kdy byl soubor naposledy změněn.</p>
+    </item>
+    <item>
+      <title><gui>Použitý</gui></title>
+      <p>Uvádí datum nebo čas, kdy byl soubor naposledy změněn.</p>
+    </item>
+  </terms>
+
+</page>

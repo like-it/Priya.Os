@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Μπορείτε να ελέγξτε ποια προγράμματα μπορούν να έχουν πρόσβαση το δίκτυο. Αυτό βοηθά να κρατήσετε τον υπολογιστή σας ασφαλή.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ενεργοποιήστε ή φράξτε την πρόσβαση τείχους προστασίας</title>
+
+  <p>Το σύστημά σας πρέπει να είναι εφοδιασμένο με ένα <em>τείχος προστασίας</em> που του επιτρέπει να φράσσει την πρόσβαση προγραμμάτων από άλλα άτομα στο διαδίκτυο ή στο δίκτυο σας. Αυτό βοηθά να κρατήσετε τον υπολογιστή σας ασφαλή.</p>
+
+  <p>Πολλές εφαρμογές μπορούν να χρησιμοποιήσουν την δικτυακή σύνδεσή σας. Για παράδειγμα, μπορείτε να μοιραστείτε αρχεία ή να αφήσετε κάποιον να προβάλει την επιφάνεια εργασίας σας απομακρυσμένα όταν συνδέεται με ένα δίκτυο. Ανάλογα με πώς ο υπολογιστής σας ορίστηκε, μπορεί να χρειαστείτε να ρυθμίσετε το τείχος προστασίας για να επιτρέψετε αυτές τις υπηρεσίες να δουλέψουν όπως προβλέπεται.</p>
+
+  <p>Κάθε πρόγραμμα που παρέχει υπηρεσίες δικτύου χρησιμοποιεί μια ειδική <em>δικτυακή θύρα</em>. Για να ενεργοποιήσετε άλλους υπολογιστές στο δίκτυο να προσπελάσουν μια υπηρεσία, μπορεί να χρειαστείτε να "ανοίξετε" την εκχωρημένη του θύρα στο τείχος προστασίας:</p>
+
+
+  <steps>
+    <item>
+      <p>Πηγαίνετε στις <gui>Δραστηριότητες</gui> στην πάνω αριστερή γωνία της οθόνης και αρχίστε την εφαρμογή τείχους προστασίας. Μπορεί να χρειαστεί να εγκαταστήσετε έναν διαχειριστή τείχους προστασίας ο ίδιος εάν δεν μπορείτε να βρείτε έναν (για παράδειγμα, Firestarter ή GUFW).</p>
+    </item>
+    <item>
+      <p>Ανοίξτε ή απενεργοποιήστε τη θύρα για την δικτυακή υπηρεσία, ανάλογα με το εάν θέλετε τα άτομα να μπορούν να το προσπελάσουν ή όχι. Ποια θύρα χρειάζεται να αλλάξετε θα <link xref="net-firewall-ports">εξαρτηθεί από την υπηρεσία</link>.</p>
+    </item>
+    <item>
+      <p>Αποθηκεύστε ή εφαρμόστε τις αλλαγές, ακολουθώντας οποιεσδήποτε πρόσθετες οδηγίες που δίνονται από το εργαλείο του τείχους προστασίας.</p>
+    </item>
+  </steps>
+
+</page>

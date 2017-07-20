@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-sync" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-07-03" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Jak synchronizovat údaje zobrazované ve vašem místním klíči s příslušným klíčem na serveru s klíči.</desc>
+  </info>
+
+  <title>Synchronizace vašich klíčů</title>
+
+  <p>Klíče PGP ve vaší klíčence je zapotřebí synchronizovat se serverem s klíči, aby se zajistilo, že se libovolné změny provedené na serveru, jako například nový podpis, aktualizují i do vaší místní kopii klíče. Obdobně, když provedete změny v údajích své místní kopie, třeba v datu vypršení platnosti nebo v podpisu něčího klíče, měli byste synchronizovat klíče, aby se změny aktualizovaly i do vzdálené kopie klíče. Abyste mohli klíče synchronizovat, musíte mít funkční připojení k Internetu.</p>
+
+  <steps>
+    <title>Jak mohu klíče synchronizovat?</title>
+    <item>
+      <p>Vyberte klíč PGP, který chcete synchronizovat.</p>
+    </item>
+    <item>
+      <p>Vyberte <guiseq><gui style="menu">Vzdálené</gui> <gui style="menuitem">Sychnronizovat a zveřejnit klíče…</gui></guiseq></p>
+    </item>
+    <item>
+      <p>Synchronizaci proveďte kliknutím na tlačítko <gui style="button">Synchronizovat</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="important">
+    <title>Proč je tlačítko <gui style="button">Synchronizovat</gui> nefunkční?</title>
+    <p>Synchronizovat je možné jen klíče PGP, které byly zveřejněny na serveru s klíči. Pokud je tlačítko <gui style="button">Synchronizovat</gui> zašedlé, zkontrolujte, jestli byl klíč zveřejněn na serveru s klíči. V případě svých vlastních klíčů si proveďte jejich zveřejnění.</p>
+  </note>
+
+</page>

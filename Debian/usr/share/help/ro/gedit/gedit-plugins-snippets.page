@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task 2column" id="gedit-plugins-snippets" xml:lang="ro">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-22" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <desc>Use snippets to quickly insert often-used pieces of text.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Laurențiu Cristian Ion</mal:name>
+      <mal:email>ionlaurentiucristian@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Șerbănescu</mal:name>
+      <mal:email>daniel [at] serbanescu [dot] dk</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Fragmente de text</title>
+
+  <p><app>Fragmente de text</app> oferă un mod convenient de a introduce porțiuni de cod repetitive în fișerele dumneavoastră. De exemplu un fragment HTML pentru tagul <code>&lt;img&gt;</code> va introduce deschiderea și închiderea tagului, de asemenea și locurile fixe unde ați pute introduce atributele imaginii. Asta poate face scrierea codului mai rapidă.</p>
+
+  <section id="enable-snippets">
+    <title>Activarea modulului Fragmente de text</title>
+
+    <p>Pentru a activa modulul <gui>Fragmente de text</gui>:</p>
+
+    <steps>
+      <item>
+        <p>Selectați <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Preferințe</gui> <gui style="tab">Module</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Selectați <gui style="menuitem">Fragmente de text</gui> pentru a activa modulul.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="browse-snippets">
+    <title>Navigarea fragmentelor de text</title>
+
+    <p>Pentru a naviga prin fragmentele de text disponibile:</p>
+    <steps>
+      <item>
+        <p>Selectați <guiseq><gui style="menu">Unelte</gui> <gui style="menuitem">Administrează fragmente de text</gui></guiseq>.</p>
+        <note style="important">
+          <p>Asigurațivă că sintaxa este stabilită corespunzător. Bara de stare din partea inferioară a ferestrei <app>gedit</app> va arăta configurarea curentă pentru limbaj. Această configurare de limbaj este ceea ce permite gedit să insereze fragmentele potrivite. <app>Gedit</app> în mod normal va detecta limbajul sau sintaxa fișierului pe care îl folosiți, dar uneori poate fi necesar să o configurați dumneavoastră.</p>
+          <figure>
+            <desc>În acest exemplu, limbajul configurat este HTML.</desc>
+            <media type="image" mime="image/png" src="figures/gedit-html-snippet.png"/>
+        </figure>
+        </note>
+      </item>
+      <item>
+        <p>Navigați fragmentele de text care sunt disponibile pentru limbajul sau sintaxa dumneavoastră.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="using-snippets">
+    <title>Utilizarea fragmentelor de text</title>
+
+    <p>Pentru a introduce un fragment de text în documentul curent:</p>
+
+    <steps>
+      <item>
+        <p>Tastați numele fragmentului de text dorit oriunde în documentul curent.</p>
+      </item>
+      <item>
+        <p>Apăsați <key>Tab</key> pentru a introduce fragmentul de text asociat cu termenul tastat.</p>
+      </item>
+    </steps>
+  </section>
+
+    <section id="example-insert-snippet">
+    <title>Exemplu de utilizare a fragmentelor de text</title>
+
+    <p>De exemplu, dacă stabiliți sintaxa la <em>HTML</em>, tastați <code>head</code>, și apăsați tasta <key>Tab</key>. Textul va fi autocompletat într-un fragment de text cum ar fi:</p>
+
+    <code>
+      &lt;head&gt;
+      &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8" /&gt;
+      &lt;title&gt;Page Title&lt;/title&gt;
+      &lt;/head&gt;
+    </code>
+
+  </section>
+
+  <section id="adding-snippets">
+    <title>Adăugarea fragmentelor de text</title>
+
+    <p>Puteți adăuga Fragmente de text care funcționează fie global (agnostic de limbaj) sau numai în cadrul unei sintaxe particulare.</p>
+
+    <steps>
+      <item>
+        <p>Selectați <guiseq style="menu"><gui style="menuitem">Unelte</gui> <gui style="menuitem">Administrează fragmentele de text</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Din bara laterală <gui>Administrează fragmentele de text</gui> selectați sintax dorită și apăsați pe butonul „+” pentru a lista fragmentele de text existente pentru sintaxa selectată.</p>
+        <note style="tip">
+          <p>To add a snippet that works globally (that is, when no particular
+          syntax or language has been set for the document), select
+          <gui>Global</gui> from the <gui>Manage Snippets</gui> sidebar.</p>
+        </note>
+      </item>
+      <item>
+        <p>To add a new snippet, click on the "plus" icon in the
+        <gui>Manage Snippets</gui> sidebar.</p>
+      </item>
+      <item>
+        <p>Input a name for the new snippet. The name of the snippet can be
+        different from the snippet you want to add.</p>
+      </item>
+      <item>
+        <p>Under the <gui style="group">Activation</gui> section, you must
+        input a term for the <gui style="input">Tab trigger:</gui> textarea.
+        You will be using this term to insert your snippet.</p>
+        <note style="tip">
+          <p>If you wish to insert a snippet with a keyboard shortcut, then
+          click your mouse pointer on <gui style="input">Shortcut key:</gui>
+          textarea and press the desired combination of keys. Once you have
+          pressed and released the keys, the keyboard shortcut will be set.</p>
+        </note>
+      </item>
+      <item>
+        <p>Under the textarea for <gui style="input">Edit:</gui>, input the
+        desired text for the snippet. You may use <code>${n}</code> to indicate
+        variables, where <em>n</em> is replaced with a number that
+        represents the numerical order of variables included.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="example-add-snippet">
+    <title>New Snippet Example</title>
+
+    <p>Consider you have created a snippet with the term <var>greetings</var>
+    in <gui style="input">Tab trigger:</gui>. The
+    <gui style="input">Edit:</gui> textarea contains:</p>
+
+    <code>
+      <![CDATA[<greetings>Hello ${1:wonderful}${2:amazing} world!
+      </greetings>]]>
+    </code>
+
+    <p>You can insert this snippet by typing <var>greetings</var> in the
+    document and pressing the <key>Tab</key> key. The following text snippet
+    will be inserted:</p>
+
+    <code>
+      <![CDATA[<greetings>Hello wonderfulamazing world!</greetings>]]>
+    </code>
+
+    <p>The words "wonderful" and "amazing" can be retained or deleted depending
+    on your choice of usage. To do so, press <key>Tab</key> to choose between
+    "wonderful" and "amazing" and press <key>Del</key> to delete the least
+    preferred option.</p>
+  </section>
+
+  <!--TODO: <section id="modifying-snippets">
+    <title>Modifying Existing Snippets</title>
+
+  </section>-->
+</page>

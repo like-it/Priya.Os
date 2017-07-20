@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="sl">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Dokumentacijski projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Svoj disk lahko preizkusite za težave in se prepričate, da je zdrav.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Preverjanje trdega diska za težave.</title>
+
+<section id="disk-status">
+ <title>Preverjanje trdega diska</title>
+  <p>Trdi diski imajo vgrajeno orodje za preverjanje zdrava <app>SMART</app>, ki stalno preverja za morebitne težave diska. SMART vas tudi opozori, če je disk pred odpovedjo in vam pomaga pri izogibanju izgube pomembnih podatkov.</p>
+
+  <p>Čeprav se SMART izvaja samodejno, lahko zdravje diska preverite tudi s programom <app>Diski</app>:</p>
+
+<steps>
+ <title>Preverite zdravje diska s programom Diski</title>
+
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to check from the list of storage devices on
+    the left. Information and status of the disk will be shown.</p>
+  </item>
+  <item>
+    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
+    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+  </item>
+  <item>
+    <p>See more information under <gui>SMART Attributes</gui>, or click the
+    <gui style="button">Start Self-test</gui> button to run a self-test.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>Kaj storiti, če disk ne deluje brezhibno?</title>
+
+  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
+  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
+  to be prepared with a <link xref="backup-why">backup</link> to prevent data
+  loss.</p>
+
+  <p>V primeru da stanje pravi "Pre-fail" je disk v razumno dobrem stanju, vendar so bili zaznani znaki obrabe, kar pomeni, da se bo lahko kmalu pokvaril. V primeru da je vaš trdi disk (ali računalnik) star nekaj let, boste to sporočilo verjetno videli vsaj na nekaj preverjanjih stanja. <link xref="backup-how">Redno ustvarjajte varnostne kopije pomembnih datotek</link> in občasno preverite ali se stanje diska slabša.</p>
+
+  <p>V primeru da se stanje poslabša, odpeljite računalnik/trdi disk k profesionalcu za nadaljnjo diagnozo in popravilo.</p>
+
+</section>
+
+</page>

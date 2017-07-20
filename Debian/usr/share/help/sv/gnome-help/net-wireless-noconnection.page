@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-wireless-noconnection" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" version="0.2" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Dubbelkolla lösenordet och andra saker att prova.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Jag har matat in rätt lösenord, men kan fortfarande inte ansluta</title>
+
+<p>Om du är säker på att du matat in korrekt <link xref="net-wireless-wepwpa">trådlöst lösenord</link> men fortfarande inte lyckas ansluta till ett trådlöst nätverk prova något av följande:</p>
+
+<list>
+ <item>
+  <p>Dubbelkolla att du har korrekt lösenord</p>
+  <p>Lösenord är skiftlägeskänsliga (det spelar roll om de har stora eller små bokstäver), så kontrollera att du inte har fel skiftläge för något av tecknen.</p>
+ </item>
+
+ <item>
+  <p>Prova hex- eller ASCII-lösennyckeln</p>
+  <p>Lösenordet du matar in kan också representeras på ett annat sätt - som en sträng av hexadecimala tecken (siffrorna 0-9 och bokstäverna a-f) som kallas lösennyckel. Varje lösenord har en motsvarande lösennyckel. Om du har tillgång till lösennyckeln samt lösenordet/lösenfrasen, prova att skriva lösennyckeln istället. Säkerställ att du har alternativet <gui>trådlös säkerhet</gui> rätt inställt när du blir tillfrågad om ditt lösenord (välj till exempel <gui>WEP 40/128-bitars nyckel</gui> om du skriver in den 40 tecken långa lösennyckeln för WEP-krypterad anslutning).</p>
+ </item>
+
+ <item>
+  <p>Prova att stänga av ditt trådlösa kort och sätt igång det igen</p>
+  <p>Ibland kan trådlösa kort fastna eller råka ut för mindre problem som innebär att de inte fungerar ordentligt. Prova att stänga av kortet och sätta igång det igen för att återställa det - se <link xref="net-wireless-troubleshooting"/> för vidare information.</p>
+ </item>
+
+ <item>
+  <p>Kontrollera att du använder korrekt typ av trådlös säkerhet</p>
+  <p>När du tillfrågas om ditt trådlösa säkerhetslösenord, kan du välja vilken typ av trådlös säkerhet som ska användas. Säkerställ att du väljer den som används av routern eller den trådlösa basstationen. Detta bör vara valt som standard, men ibland kanske den inte är det av någon anledning. Om du inte vet vilken det är prova dig fram genom de olika alternativen.</p>
+ </item>
+
+ <item>
+  <p>Kontrollera att ditt trådlösa kort har ordentligt stöd</p>
+  <p>Vissa trådlösa kort har inte särskilt bra stöd. De visas som en trådlös anslutning, men de kan inte ansluta till ett nätverk eftersom deras drivrutiner saknar möjligheten att göra detta. Se om du kan få tag i en alternativ trådlös drivrutin eller om du behöver utföra någon extra inställning (som att installera en annan <em>fast programvara</em>). Se <link xref="net-wireless-troubleshooting"/> för vidare information.</p>
+ </item>
+
+</list>
+
+</page>

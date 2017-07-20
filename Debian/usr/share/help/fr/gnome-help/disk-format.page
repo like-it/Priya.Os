@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="fr">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Supprimer tous les fichiers et dossiers d'un disque dur externe ou d'une clé USB en les formatant.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Effacement complet d'un disque amovible</title>
+
+  <p>Si vous possédez une disque amovible, tel qu'une clé USB ou un disque dur externe, vous pouvez avoir besoin d'en effacer complètement tous les fichiers et dossiers. Vous pouvez le faire en <em>formatant</em> le disque ce qui supprime tous les fichiers sur le disque et le laisse vide.</p>
+
+<steps>
+  <title>Formatage d'un disque amovible</title>
+  <item>
+    <p>Ouvrez <app>Disques</app> à partir de la vue d'ensemble des <gui>Activités</gui>.</p>
+  </item>
+  <item>
+    <p>Sélectionnez le disque que vous voulez effacer dans la liste des périphériques de stockage à gauche.</p>
+
+    <note style="warning">
+      <p>Assurez-vous que vous avez sélectionné le bon disque ! Si vous en choisissez un autre, c'est lui qui sera définitivement effacé !</p>
+    </note>
+  </item>
+  <item>
+    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
+    menu button. Then click <gui>Format…</gui>.</p>
+  </item>
+  <item>
+    <p>Dans la fenêtre qui s'affiche, choisissez un <gui>type</gui> de système de fichiers pour le disque.</p>
+   <p>Si vous utilisez le disque sur des ordinateurs Windows ou Mac OS en plus des ordinateurs Linux, choisissez <gui>FAT</gui>. Si vous ne l'utilisez que sur Windows, <gui>NTFS</gui>, est une meilleure option. Une brève description du <gui>type de système de fichiers</gui> est présentée dans une étiquette.</p>
+  </item>
+  <item>
+    <p>Donnez un nom au disque et cliquez sur <gui>Formater…</gui> pour continuer et afficher une fenêtre de confirmation. Vérifiez attentivement les informations et cliquez sur <gui>Formater</gui> pour confirmer l'effacement du disque.</p>
+  </item>
+  <item>
+    <p>Une fois le formatage terminé, cliquez sur l'icône d'éjection pour démonter en toute sécurité le disque. Il est maintenant vierge et prêt à être utilisé à nouveau.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Le formatage d'un disque n'est pas un moyen sûr de supprimer des données</title>
+  <p>Un disque formaté semble complètement vide de tout fichier, mais il est possible, avec un logiciel de récupération spécialisé, d'en récupérer les fichiers. Si vous avez besoin de supprimer des fichiers en toute sécurité, servez-vous d'un utilitaire en ligne de commande comme <app>shred</app>.</p>
+</note>
+
+</page>

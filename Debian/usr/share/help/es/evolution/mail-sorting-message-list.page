@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-sorting-message-list" xml:lang="es">
+
+  <info>
+    <desc>Ordenar la lista de mensajes en una carpeta de correo.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+    <link type="guide" xref="mail-layout-changing"/>
+
+    <revision pkgversion="3.3.91" version="0.7" date="2012-03-07" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-columns.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ordenar la lista de mensajes</title>
+  
+<p><app>Evolution</app> le permite organizar sus correos permitiéndole ordenar sus mensajes en la <link xref="intro-main-window#e-mail">lista de mensajes</link>.</p>
+
+<section id="email-threads">
+<title>Ordenar los correos por conversaciones</title>
+<p>Puede usar mensajes por conversaciones para ordenar los correos electrónicos. Para activar esta opción pulse en <guiseq><gui>Ver</gui><gui>Agrupar por conversaciones</gui></guiseq> o pulse <keyseq><key>Ctrl</key><key>T</key></keyseq>.</p>
+<p>Cuando esta característica está activada, agrupa las respuestas con el correo original y le permite seguir la conversación de un mensaje al siguiente.</p>
+<p>Cuando un correo nuevo llega se añadirá debajo del mensaje original. Los hilos se agrupan y muestran basándose en la fecha del correo más recientemente recibido.</p>
+<note style="tip"><p>Para usuarios avanzados: existe una clave de GSettings que le permite cambiar el estado de las conversaciones de correo electrónico entre contraídas y expandidas. El estado contraído está activado de forma predeterminada. Se puede cambiar iniciando la aplicación <app>Terminal</app> y ejecutando el comando <cmd>gsettings set org.gnome.evolution.mail thread-expand true</cmd></p>
+<list>
+<item><p>Abra la aplicación <app>Terminal</app>.</p></item>
+<item><p>Ejecute el comando <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd></p></item>
+</list>
+</note>
+</section>
+
+<section id="column-headers">
+<title>Uso de cabeceras para ordenar los mensajes</title>
+<p>La lista de mensajes tiene columnas para indicar si un mensaje se ha leído, si tiene adjuntos, su importancia, el remitente, la fecha y el asunto. Para cambiar las columnas usadas en la lista de mensajes puede hacer una de las siguientes:</p>
+<list>
+<item><p>Arrastre y suelte las barras de cabeceras de columnas</p></item>
+<item><p>Pulse con el botón derecho en el la cabecera.</p></item>
+<item><p>Seleccione la opción <gui>Quitar esta columna</gui> o <gui>Añadir una columna</gui>.</p></item>
+</list>
+
+<p><app>Evolution</app> le permite ordenar sus mensajes usando estas columnas. Simplemente pulse en la etiqueta de la columna para ordenar los mensajes. La dirección de la flecha junto a la etiqueta indica la dirección de la ordenación.</p>
+</section>
+
+<section id="sort-options">
+<title>Usar otras opciones de ordenación</title>
+<p><app>Evolution</app> proporciona otras formas de ordenar mensajes de correo electrónico. Puede usar Ordenar por, Ordenar ascendentemente, Ordenar descendentemente o Restablecer ordenación.</p>
+	<section id="sort-options-by">
+	<title>Ordenar por</title>
+		<p>También puede ordenar correos electrónicos usando la lista <gui>Ordenar por</gui>.</p>
+		<steps>
+		<item><p>Pulse con el botón derecho del ratón sobre las cabeceras de las columnas de la lista de correos.</p></item>
+		<item><p>Seleccione la opción <gui>Ordenar por</gui>.</p><p>Esto muestra la lista de criterios para ordenar los mensajes de correo electrónico:</p>
+			<list>
+			<item><p>Asunto recortado</p></item>
+			<item><p>Etiquetas</p></item>
+			<item><p>Destinatarios</p></item>
+			<item><p>Remitente</p></item>
+			<item><p>Lugar</p></item>
+			<item><p>Vence en</p></item>
+			<item><p><link xref="mail-follow-up-flag">Marcar para seguimiento</link>.</p></item>
+			<item><p>Marca de estado</p></item>
+			<item><p>Tamaño</p></item>
+			<item><p>Para</p></item>
+			<item><p>Recibido</p></item>
+			<item><p>Fecha</p></item>
+			<item><p>Asunto</p></item>
+			<item><p>De</p></item>
+			<item><p>Adjunto</p></item>
+			<item><p>Marcado</p></item>
+			<item><p>Estado</p></item>
+			<item><p>Personalizado</p></item>
+			</list>
+		</item>
+		<item><p>Seleccione la opción que quiere usar para ordenar los mensajes de correo electrónico.</p></item>
+		</steps>
+	</section>
+
+	<section id="sort-options-ascending">
+	<title>Orden ascendente</title>
+		<steps>
+		<item><p>Pulse con el botón derecho del ratón sobre las cabeceras de las columnas de la lista de correos.</p></item>
+		<item><p>Seleccione la opción <gui>Ordenar ascendentemente</gui>.</p></item>
+		</steps>
+		<p>Los mensajes se mostrarán con el correo más reciente en la parte inferior.</p>
+	</section>
+
+	<section id="sort-options-descending">
+	<title>Orden descendente</title>
+		<steps>
+		<item><p>Pulse con el botón derecho del ratón sobre las cabeceras de las columnas de la lista de correos.</p></item>
+		<item><p>Seleccione la opción <gui>Ordenar descendentemente</gui>.</p></item>
+		</steps>
+		<p>Los mensajes se mostrarán con el correo más reciente en la parte superior.</p>
+	</section>
+
+	<section id="sort-options-unsort">
+	<title>Restablecer ordenación</title>
+		<steps>
+		<item><p>Pulse con el botón derecho del ratón sobre las cabeceras de las columnas de la lista de correos.</p></item>
+		<item><p>Seleccione la opción <gui>Restablecer ordenación</gui>.</p></item>
+		</steps>
+		<p>Esto elimina la ordenación para esta columna, revirtiendo el orden de los mensajes según se añadieron a la carpeta.</p>
+	</section>
+</section>
+
+</page>

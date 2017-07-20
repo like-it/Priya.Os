@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="ta">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>தொகுதிகள், பிரிவாக்கங்கள் என்றால் என்ன என்று புரிந்துகொண்டு, அவற்றை நிர்வகிக்க வட்டுப் பயன்பாட்டைப் பயன்படுத்தவும்.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>தொகுதிகள் மற்றும் பிரிவாக்கங்களை நிர்வகித்தல்</title>
+
+  <p><em>தொகுதி</em> எனும் சொல் வன் வட்டு போன்ற சேமிப்பு சாதனத்தைக் குறிப்பிடப் பயன்படுகிறது. ஒரு சாதனத்தின் சேமிப்பிடத்தை சிறு பிரிவுகளாகப் பிரிக்க முடியும் என்பதால், இச்சொல் அந்த சாதனத்தில்  உள்ள சேமிப்பிடத்தின் ஒரு <em>பகுதியையும்</em> குறிக்கலாம். உங்கள் கணினி <em>மவுன்ட்டிங்</em> என்னும் நிகழ்முறையின் மூலம் இந்த சேமிப்பிடத்தை கோப்புமுறைமைகள் வழியாக அணுகக்கூடியதாக்குகிறது. USB இயக்கிகள், DVD-RWகள், SD கார்டுகள் மற்றும் பிற ஊடகங்கள் ஆகிய எவையும் மவுன்ட் செய்யப்பட்ட ஒரு தொகுதியாக இருக்கலாம். ஒரு தொகுதி மவுன்ட் செய்யப்பட்டிருந்தால் அதில் உள்ள கோப்புகளை நீங்கள் வாசிக்க (எழுதவும் சாத்தியமுள்ளது) முடியும்.</p>
+
+  <p>பொதுவாக மவுன்ட் செய்யப்பட்ட ஒரு தொகுதி <em>பிரிவாக்கம்</em> என அழைக்கப்படுகிறது, ஆனாலும் அவை இரண்டுக்கும் பொருள் வேறு. “பிரிவாக்கம்” என்பது ஒரு வட்டு இயக்கியின் சேமிப்பிடத்தின் ஒரு <em>உண்மையான</em> பகுதியைக் குறிக்கிறது. ஒரு பிரிவாக்கத்தை மவுன்ட் செய்த பிறகு அதில் உள்ள கோப்புகளை நீங்கள் வாசிக்க முடிவதால், அதை தொகுதி என்று குறிப்பிடலாம். தொகுதிகள் என்பதை நீங்கள் பிரிவாக்கங்கள் மற்றும் இயக்கிகள் எனும் செயல்படும் கிடங்கின் முன் கடை வாசல்கள் போலக் கருதலாம்.</p>
+
+<section id="manage">
+ <title>வட்டு பயன்பாட்டைக் கொண்டு தொகுதிகளையும் பிரிவாக்கங்களையும் காணுதல், நிர்வகித்தல்</title>
+
+  <p>வட்டுப் பயன்பாட்டைக் கொண்டு உங்கள் கணினியில் உள்ள சேமிப்பிடத் தொகுதிகளை சோதித்து மாற்றியமைக்கலாம்.</p>
+
+<steps>
+  <item>
+    <p>Open the <gui>Activities</gui> overview and start <app>Disks</app>.</p>
+  </item>
+  <item>
+    <p>In the list of storage devices on the left, you will find hard disks,
+    CD/DVD drives, and other physical devices. Click the device you want to
+    inspect.</p>
+  </item>
+  <item>
+    <p>The right pane provides a visual breakdown of the volumes and
+    partitions present on the selected device. It also contains a variety of
+    tools used to manage these volumes.</p>
+    <p>கவனம் தேவை: இந்தப் பயன்பாடுகளைக் கொண்டு உங்கள் வட்டிலுள்ள தரவை முற்றிலுமாக அழித்துவிடவும் முடியும்.</p>
+  </item>
+</steps>
+
+  <p>அநேகமாக உங்கள் கணினியில் குறைந்தது ஒரு <em>முதல் நிலை</em> பிரிவாக்கமும் ஒரு <em>ஸ்வேப்</em> பிரிவாக்கமும் கண்டிப்பாக இருக்கும். ஸ்வேப் பிரிவாக்கம் என்பது நினைவக நிர்வாகத்திற்காக இயக்க முறைமையால் பயன்படுத்தப்படும், அது அரிதாகவே மவுன்ட் செய்யப்படும் முதல் நிலை பிரிவாக்கத்தில் தான் உங்கள் இயக்க முறைமை, பயன்பாடுகள், அமைவுகள் மற்றும் தனிப்பட்ட கோப்புகள் ஆகியன உள்ளன. பாதுகாப்பு அல்லது வசதிக்காக இந்தக் கோப்புகள் வெவ்வேறு பிரிவாக்கங்களிலும் தனித்தனியாக வைக்கப்பட்டு இருக்கலாம்.</p>
+
+  <p>One primary partition must contain information that your computer uses to
+  start up, or <em>boot</em>. For this reason it is sometimes called a boot
+  partition, or boot volume. To determine if a volume is bootable, select the
+  partition and click the menu button in the toolbar underneath the partition
+  list. Then, click <gui>Edit Partition…</gui> and look at its
+  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
+  a bootable volume.</p>
+
+</section>
+
+</page>

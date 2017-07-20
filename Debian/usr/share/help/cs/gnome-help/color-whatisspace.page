@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>Prostor barev je definovaný rozsah barev.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Co je to prostor barev?</title>
+
+  <p>Prostor barev je definovaný rozsah barev. Mezi nejznámější patří sRGB, AdobeRGB a ProPhotoRGB.</p>
+
+  <p>Lidský zrak není jednoduchý senzor RGB, umíme ale napodobit reakci očí pomocí chromatického diagramu CIE 1931, který zobrazuje zobrazuje ve tvaru podkovy reakci lidského zraku. Jak můžete vidět, v lidském vnímání je rozpoznáno více odstínů zelené, než modré a červené. Při použití trichromatického prostoru barev, jako je RGB, dokážeme prezentovat na počítači barvy pomocí tří hodnot, které omezí rozsah barev do tvaru <em>trojúhelníku</em>.</p>
+
+  <note>
+    <p>Používání modelů, jako je chromatický diagram CIE 1931, je velkým zjednodušením lidského zrakového systému a skutečný gamut je vyjádřen spíše 3D útvarem, než projekcí ve 2D. Projekce 3D útvaru do 2D může být někdy matoucí, takže pokud chcete vidět skutečný 3D útvar, použijte aplikaci <code>gcm-viewer</code>.</p>
+  </note>
+
+  <figure>
+    <desc>sRGB, AdobeRGB a ProPhotoRGB znázorněné bílými trojúhelníky</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>Nejprve se podívejme na sRGB, což je nejmenší prostor a umí pokrýt nejmenší množství barev. Jedná se o aproximaci pro 10 let staré monitory CRT, takže moderní monitory mohou snadno zobrazit více barev, než je v tomto modelu. sRGB je <em>nejmenším společným základem</em> ostatních standardů a je používán v řadě reálných aplikací (včetně Internetu).</p>
+  <p>AdobeRGB je často používaný <em>prostor pro úpravy</em>. Umí pokrýt více barev než sRGB, což znamená, že můžete změny barvy ve fotografii bez velkých obav, že nejživější barvy budou oříznuty nebo potlačeny do tmava.</p>
+  <p>ProPhoto je nejrozsáhlejší dostupný prostor a je často používán pro dokumenty v archivech. Pokrývá téměř celý rozsah barev, které dokáže zachytit lidské oko a k tomu i barvy, které lidské oko nerozpozná!</p>
+
+  <p>Možná vás teď napadlo, že když je ProPhoto jasně nejlepší, proč jej nepoužíváme všude? Důvodem je <em>nespojitost</em> hodnot. Pokud máme jen 8 bitů (tj. 256 úrovní) pro kódování každého kanálu, způsobí větší rozsah mnohem větší kroky mezi hodnotami.</p>
+  <p>Větší krok znamená větší chybu mezi nasnímanou hodnotou barvy a uloženou barvou a pro některé barvy to může být velký problém. Přijde se tím o klíčové barvy, jako je barva kůže, které jsou velmi důležité a i oko netrénovaného člověka si takové chyby dokáže všimnou a fotografie mu pak přijde špatná.</p>
+  <p>Řešením je samozřejmě použití 16bitových obrázků, u kterých máme mnohem více kratších kroků a tím menší chybu danou nespojitostí, ale za cenu zdvojnásobení velikosti obrázku. Drtivá většina dnes existujícího digitálního obsahu používá 8bpp (8 bitů na pixel).</p>
+  <p>Správa barev je postup převodu z jednoho prostoru barev do druhého, kde prostor barev může být dobře známý definovaný prostor, jako je sRGB, nebo vlastní prostor, jako je profil vašeho monitoru nebo tiskárny.</p>
+
+</page>

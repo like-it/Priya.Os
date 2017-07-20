@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-search-folders-add" xml:lang="hu">
+
+  <info>
+    <desc>Keresőmappa beállítása.</desc>
+    
+    <link type="guide" xref="mail-search-folders"/>
+
+    <revision pkgversion="3.0.2" version="0.1" date="2011-07-30" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-vfolders.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Keresőmappa létrehozása</title>
+
+<steps>
+<item><p>Válassza a <guiseq><gui>Szerkesztés</gui><gui>Keresőmappák</gui></guiseq> menüpontot, vagy kattintson a jobb egérgombbal a levélre, és válassza a <gui>Szabály létrehozása</gui> menüpontot. Ezután válassza ki a keresőmappa alapjául szolgáló feltételeket, vagy ha keresést végzett, akkor válassza a <guiseq><gui>Keresés</gui><gui>Keresőmappa létrehozása a keresésből…</gui></guiseq> menüpontot.</p></item>
+<item><p>Nyomja meg a <gui style="button">Hozzáadás</gui> gombot.</p></item>
+<item><p>Írjon be egy nevet a <gui>Szabály neve</gui> mezőbe.</p></item>
+<item><p>Adja meg a szabály feltételeit. Minden feltételhez elsőként válassza ki a levél ellenőrzendő részét, majd adja meg az összehasonlítást.</p><p>Az elérhető feltételekkel kapcsolatos további információkért lásd a <link xref="mail-search-folders-conditions">Használható keresőmappa-feltételek</link> szakaszt.</p></item>
+<item><p>Ha több feltételt szeretne meghatározni, akkor az <gui>Elemek keresése</gui> alatt adja meg, hogy a feltételek közül bármelyiknek vagy mindegyiknek kell-e illeszkednie, nyomja meg a <gui style="button">Feltétel hozzáadása</gui> gombot, és ismételje meg az előző lépést.</p></item>
+<item><p>Válassza ki a keresőmappához használandó mappákat a <gui>Keresőmappa-források</gui> szakaszban. A lehetőségek:</p>
+<list>
+  <item><p>Az összes helyi mappa:</p>
+  <p>Minden helyi mappa használata a keresőmappa forrásaként a kiválasztott mappákon túl.</p></item>
+
+  <item><p>Az összes aktív távoli mappa:</p>
+  <p>A távoli mappák akkor számítanak aktívnak, ha kapcsolódik a kiszolgálóhoz. Kapcsolódnia kell a levélkiszolgálójához, hogy a keresőmappa az adott forrás leveleit is figyelembe vegye a kiválasztott mappákon túl.</p></item>
+
+  <item><p>Az összes helyi és aktív távoli mappa:</p>
+  <p>Minden helyi és aktív távoli mappa használata a keresőmappa forrásaként a kiválasztott mappákon túl.</p></item>
+
+  <item><p>Megadott mappák:</p>
+  <p>A megadott mappákat használja a keresőmappa forrásaként. Ebben az esetben nyomja meg a <gui style="button">Hozzáadás</gui> gombot a mappák kiválasztásához.</p></item>
+</list>
+</item>
+<item><p>Nyomja meg az <gui style="button">OK</gui> gombot.</p></item>
+</steps>
+
+</page>

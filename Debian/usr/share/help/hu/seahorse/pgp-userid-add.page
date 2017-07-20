@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-userid-add" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="pgp-userid#add-remove"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-27" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>A több felhasználói azonosító megkönnyíti egyetlen kulcs használatát a különböző emberekkel való kommunikációra.</desc>
+  </info>
+
+  <title>További felhasználói azonosító hozzáadása egy kulcshoz</title>
+
+  <p>Egy kulcs több felhasználói azonosítót tartalmazhat. Ez különösen akkor előnyös, ha több emberrel folytatott kommunikáció esetén egyikük nem ismeri fel a felhasználói azonosítóban megadott e-mail címet. Megeshet, hogy ez a személy nem fogja importálni a számára ismeretlen információt tartalmazó nyilvános kulcsot. Ha ilyen esetekben nem szeretne egy új kulcsot a megfelelő felhasználói azonosítóval létrehozni, akkor a már meglévő kulcshoz további felhasználói azonosítókat is hozzáadhat.</p>
+
+  <steps>
+    <title>További felhasználói azonosító hozzáadásához:</title>
+    <item>
+      <p>Válassza ki a bal oldali sávban a <gui>GnuPG kulcsok</gui> kulcstartót.</p>
+    </item>
+    <item>
+      <p>A GnuPG kulcsok listájából válassza ki a kívánt <gui>Személyes PGP-kulcsot</gui>.</p>
+    </item>
+    <item>
+      <p>Kattintson a jobb egérgombbal a kulcsra, majd válassza ki a <guiseq><gui>Tulajdonságok</gui> <gui>Nevek és aláírások</gui></guiseq> lapot.</p>
+    </item>
+    <item>
+      <p>Új felhasználói azonosító hozzáadásához kattintson a <gui style="button">Név hozzáadása</gui> gombra.</p>
+    </item>
+    <item>
+      <p>A megjelenő ablakban töltse ki az új felhasználói azonosítóhoz szükséges <gui>Teljes név</gui>, <gui>E-mail cím</gui> és <gui>Kulcs megjegyzés</gui> mezőket.</p>
+    </item>
+    <item>
+      <p>A befejezéshez adja meg a helyes jelszót, majd kattintson az <gui style="button">OK</gui> gombra.</p>
+    </item>
+  </steps>
+
+  <p>Az új felhasználói azonosító ezt követően a <gui>Nevek és aláírások</gui> lapon jelenik meg.</p>
+
+  <note style="tip">
+    <p>Ha kulcsát előzőleg közzétette egy kulcskiszolgálón, az új felhasználói azonosító hozzáadása után a kulcsot <link xref="synchronize">szinkronizálni</link> kell, hogy frissüljenek az új információk a kulcs távoli másolatán.</p>
+  </note>
+
+</page>

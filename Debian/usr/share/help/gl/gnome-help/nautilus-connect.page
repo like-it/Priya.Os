@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ver e editar ficheiros noutro equipo sobre FTP, SSH, compartidos de Windows ou WebDAV.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Examinar ficheiros nun servidor ou compartición de rede</title>
+
+<p>Pode conectarse a un servidor ou recurso en rede para examinalo e ver os ficheiros en dito servidor, como se estiveran no seu propio computador. Isto é unha forma fácil de descargar e subir ficheiros a internet, ou de compartir ficheiros con outras persoas na súa rede local.</p>
+
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
+
+<steps>
+  <title>Conectarse a un servidor de ficheiros</title>
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
+   sidebar.</p>
+  </item>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
+  <note>
+    <p>Se xa se conectou a un servidor anteriormente, pode premer sobre el na lista <gui>Servidores recentes</gui>.</p>
+  </note>
+  </item>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>Escribindo URLs</title>
+
+<p>Unha <em>URL</em>, ou un <em>localizador de recurso uniforme</em>, é un formado de enderezo que se refire a unha localización dun ficheiro nunha rede. O enderezo ten o seguinte formato:</p>
+  <example>
+    <p><sys>esquema://nomedoservidor.exemplo.com/cartafol</sys></p>
+  </example>
+<p>O <em>esquema</em> especifica o protocolo ou tipo de servidor. A parte <em>exemplo.com</em> do enderezo é o denominado <em>nome do dominio</em>. Se se require un nome de usuario, escríbese antes do nome do servidor:</p>
+  <example>
+    <p><sys>esquema://nomeusuario@nomedoservidor.exemplo.com/cartafol</sys></p>
+  </example>
+<p>Algúns esquemas requiren que se especifique un número de porto. Escríbao despois do nome do dominio:</p>
+  <example>
+    <p><sys>esquema://nomedoservidor.exemplo.com:porto/cartafol</sys></p>
+  </example>
+<p>Embaixo móstranse algúns exemplos dos distintos tipos de servidor que se admiten.</p>
+</section>
+
+<section id="types">
+ <title>Tipos de servidor</title>
+
+<p>Pode conectarse a diferentes tipos de servidores. Algúns servidores son públicos, e permiten a calquera conectarse. Outros servidores requiren que inicie sesión cun nome de usuario e contrasinal.</p>
+<p>Podería non ter permisos para levar a cabo certas accións en ficheiros do servidor. Por exemplo, en sitios FTP públicos, probabelmente non poida eliminar ficheiros.</p>
+<p>O URL que escriba depende do protocolo que usa o servidor para exportar os seus ficheiros compartidos.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>Se ten unha conta nunha <em>shell segura</em> nun servidor, pode conectarse a ela empregando este método. Algúns servidores web fornecen contas SSH aos membros para que poidan subir ficheiros de forma segura. Os servidores SSH sempre requiren que inicie a sesión.</p>
+  <p>Un URL de SSH típico seméllase a isto:</p>
+  <example>
+    <p><sys>ssh://nomeusuario@nomedoservidor.exemplo.com/cartafol</sys></p>
+  </example>
+
+  <p>Ao usar SSH, todos os datos que envía (incluíndo o contrasinal) van cifrados, polo que outros usuarios da súa rede non poderán velos.</p>
+</item>
+<item>
+  <title>FTP (con rexistro)</title>
+  <p>FTP é unha forma moi coñecida de intercambiar ficheiros na Internet. Xa que os datos non son cifrados en FTP, algúns servidores ofrecen acceso mediante SSH. Algúns servidores, pola contra, aínda permiten ou requiren que use FTP para subir e desargar ficheiros. Os sitios FTP con inicio de sesión normalmente permitirán eliminar e subir ficheiros.</p>
+  <p>Un URL de FTP típico seméllase a isto:</p>
+  <example>
+    <p><sys>ftp://nomedeusuario@ftp.exemplo.gal/ruta/</sys></p>
+  </example>
+</item>
+<item>
+  <title>FTP público</title>
+  <p>Os sitios que lle permiten descargar ficheiros en ocasións fornecerán un acceso FTP público ou anónimo. Estes servidores non requiren un nome de usuario e contrasinal, e normalmente non lle permitirán eliminar ou subir ficheiros.</p>
+  <p>Un URL de FTP anónimo típico seméllase a isto:</p>
+  <example>
+    <p><sys>ftp://ftp.exemplo.gal/ruta/</sys></p>
+  </example>
+  <p>Algúns sitios FTP anónimos requiren que inicie sesión con un nome de usuario público e un contrasinal, ou con un nome de usuario público empregando o seu enderezo de correo electrónico como o seu contrasinal. Para estes servidores, use o método <gui>FTP (con inicio de sesión)</gui>, e use as credenciais especificadas no sitio FTP.</p>
+</item>
+<item>
+  <title>Compartido por Windows</title>
+  <p>Os computadores con Windows usan un protocolo privativo para compartir ficheiros nunha rede local. Os computadores nunha rede Windows a miúdo están agrupados en <em>dominios</em> para organizar e ter un control de acceso mellor. Se ten permisos nun computador remoto, pode conectarse a unha compartición de Windows desde o xestor de ficheiros.</p>
+  <p>Un URL de compartición de Windows típico seméllase a isto:</p>
+  <example>
+    <p><sys>smb://nomedoservidor/Share</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV e WebDAV seguro</title>
+  <p>Baseado no protocolo HTTP usando no web, WebDAV é usado en ocasións para compartir ficheiros nunha rede local e para almacenar ficheiros en internet. Se o servidor co que está conectando admite as conexións seguras, debería escoller esta opcón. WebDAV seguro usa un cifrado SSL forte, polo que outros usuarios non poderán ver o seu contrasinal.</p>
+  <p>A WebDAV URL looks like this:</p>
+  <example>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

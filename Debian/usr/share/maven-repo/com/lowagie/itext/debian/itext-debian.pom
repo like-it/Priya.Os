@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.lowagie</groupId>
+	<artifactId>itext</artifactId>
+	<version>debian</version>
+	<packaging>jar</packaging><properties>
+		
+			<debian.bouncycastle.bcmail-bc.jdk.originalVersion>bc.version</debian.bouncycastle.bcmail-bc.jdk.originalVersion>
+		
+			<debian.bouncycastle.bcprov-bc.jdk.originalVersion>bc.version</debian.bouncycastle.bcprov-bc.jdk.originalVersion>
+		
+			<debian.bouncycastle.bctsp-bc.jdk.originalVersion>bc.version</debian.bouncycastle.bctsp-bc.jdk.originalVersion>
+		
+			<debian.hasPackageVersion/>
+		
+			<debian.originalVersion>2.1.7</debian.originalVersion>
+		
+			<debian.package>libitext-java</debian.package>
+	</properties>
+	
+	<name>iText, a Free Java-PDF library</name>
+	<description>iText, a free Java-PDF library</description>
+	<dependencies>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcmail</artifactId>
+			<version>debian</version>
+		</dependency>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov</artifactId>
+			<version>debian</version>
+		</dependency>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcpkix</artifactId>
+			<version>debian</version>
+		</dependency>
+	</dependencies>
+</project>

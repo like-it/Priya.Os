@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="hu">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Minden fájl és mappa eltávolítása külső merevlemezről vagy USB-meghajtóról formázással.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Minden adat törlése cserélhető adathordozóról</title>
+
+  <p>Ha rendelkezik cserélhető meghajtóval, például USB-meghajtóval vagy külső merevlemezzel, akkor néha szükség lehet az azon lévő összes fájl és mappa törlésére. Ezt a meghajtó <em>formázásával</em> érheti el – ez törli a meghajtó összes fájlját, ezután a meghajtó teljesen üres lesz.</p>
+
+<steps>
+  <title>Cserélhető lemez formázása</title>
+  <item>
+    <p>Nyissa meg a <app>Lemezeket</app> a <gui>Tevékenységek</gui> áttekintésből.</p>
+  </item>
+  <item>
+    <p>Válassza ki a törlendő lemezt a tárolóeszközök bal oldali listájából.</p>
+
+    <note style="warning">
+      <p>Győződjön meg róla, hogy a megfelelő lemezt választotta ki! Ha rossz lemezt választ, a másik lemez fájljai kerülnek törlésre.</p>
+    </note>
+  </item>
+  <item>
+    <p>A <gui>Kötetek</gui> szakasz alatti eszköztáron kattintson a menü gombra, majd a <gui>Formázás…</gui> menüpontra.</p>
+  </item>
+  <item>
+    <p>A megjelenő ablakban válassza ki a fájlrendszer <gui>Típusát</gui> a lemezhez.</p>
+   <p>Ha a lemezt Linuxon kívül Windows és Mac OS rendszereket futtató számítógépeken is használja, akkor válassza a <gui>FAT</gui> lehetőséget. Ha csak Windowson használja, akkor az <gui>NTFS</gui> jobb választás lehet. A <gui>fájlrendszer típusának</gui> rövid leírása megjelenik egy címkében.</p>
+  </item>
+  <item>
+    <p>Adjon nevet a lemeznek, és nyomja meg a <gui>Formázás</gui> gombot a folytatáshoz és a megerősítési ablak megjelenítéséhez. Körültekintően ellenőrizze az adatokat, és kattintson a <gui>Formázás</gui> gombra a lemez törléséhez.</p>
+  </item>
+  <item>
+    <p>A formázás befejeződése után kattintson a kiadás ikonra a lemez biztonságos eltávolításához. Ekkorra az már üres, és készen áll az újabb használatra.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>A formázás nem törli biztonságosan a fájljait</title>
+  <p>A lemez formázása nem teljesen biztonságos módszer a rajta lévő adatok törléséhez. A formázott lemezen nem látszanak fájlok, de speciális helyreállító szoftverek képesek lehetnek visszaállítani a fájlokat. Ha biztonságosan kell törölnie a fájlokat, akkor használja a parancssori <app>shred</app> programot.</p>
+</note>
+
+</page>

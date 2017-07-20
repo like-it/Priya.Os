@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="problem" version="1.0 if/1.0" id="bluetooth-problem-connecting" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="bluetooth#problems"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Der Adapter könnte ausgeschaltet sein oder es könnten keine Treiber verfügbar sein, oder Bluetooth könnte deaktiviert oder gesperrt sein.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ich kann mein Bluetooth-Gerät nicht verbinden</title>
+
+  <p>Es gibt eine Reihe von Gründen, warum Sie nicht in der Lage sein könnten, eine Verbindung zu einem Bluetooth-Gerät herzustellen (beispielsweise ein Mobiltelefon oder ein Headset):</p>
+
+  <terms>
+    <item>
+      <title>Verbindung wird blockiert oder ist nicht vertrauenswürdig</title>
+      <p>Einige Bluetooth-Geräte blockieren standardmäßig Verbindungsanfragen oder erfordern die Änderung der Einstellungen, um Verbindungen zu ermöglichen. Stellen Sie sicher, dass Ihr Gerät dafür eingerichtet ist, Verbindungen zu ermöglichen.</p>
+    </item>
+    <item>
+      <title>Bluetooth-Hardware wurde nicht erkannt</title>
+      <p>Ihr Bluetooth-Adapter oder -Dongle könnte vom Rechner nicht erkannt worden sein. Die Ursache dafür könnte sein, dass die <link xref="hardware-driver">Treiber</link> für den Adapter nicht installiert sind. Einige Bluetooth-Adapter werden von Linux nicht unterstützt, so dass Sie die richtigen Treiber dafür nicht finden werden. In diesem Fall werden Sie einen anderen Bluetooth-Adapter besorgen müssen.</p>
+    </item>
+    <item>
+      <title>Adapter ist nicht eingeschaltet</title>
+      <if:choose>
+        <if:when test="platform:unity">
+          <p>Stellen Sie sicher, dass Ihr Bluetooth-Adapter eingeschaltet ist. Klicken Sie auf das Bluetooth-Symbol in der <gui>Menüleiste</gui> und überprüfen Sie, ob Bluetooth nicht <link xref="bluetooth-turn-on-off">deaktiviert</link> ist.</p>
+        </if:when>
+        <p>Stellen Sie sicher, dass Ihr Bluetooth-Adapter eingeschaltet ist. Öffnen Sie auf das Bluetooth-Panel und überprüfen Sie, ob Bluetooth nicht <link xref="bluetooth-turn-on-off">deaktiviert</link> ist.</p>
+      </if:choose>
+    </item>
+    <item>
+      <title>Gerät für die Verbindung ist ausgeschaltet</title>
+      <p>Stellen Sie sicher, dass Bluetooth auf dem zu verbindenden Gerät eingeschaltet ist und dass es <link xref="bluetooth-visibility">erkennbar oder sichtbar</link> ist. Wenn Sie zum Beispiel eine Verbindung zu einem Mobiltelefon herstellen wollen, schauen Sie nach, ob es sich vielleicht im Flugzeugmodus befindet.</p>
+    </item>
+    <item>
+      <title>Kein Bluetooth-Adapter in Ihrem Rechner</title>
+      <p>Viele Rechner haben keine Bluetooth-Schnittstelle. Sie können einen Adapter kaufen, falls Sie Bluetooth verwenden wollen.</p>
+    </item>
+  </terms>
+
+</page>

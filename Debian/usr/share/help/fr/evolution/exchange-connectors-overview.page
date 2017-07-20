@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="guide" id="exchange-connectors-overview" xml:lang="fr">
+
+  <info>
+    <desc>Quel paquet supplémentaire installer pour se connecter à un serveur Exchange.</desc>
+
+    <link type="guide" xref="exchange-placeholder"/>
+
+    <revision pkgversion="3.7.5" version="0.7" date="2013-01-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Choix du bon connecteur</title>
+
+<p>En fonction de la version du serveur Microsoft Exchange auquel vous désirez vous connecter, il est nécessaire de s'assurer qu'un paquet supplémentaire est installé qui fournit cette fonctionnalité.</p>
+
+<p>Pour Microsoft Exchange 2007, 2010 et plus récents, il est recommandé d'utiliser le paquet <sys>evolution-ews</sys>.</p>
+<if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+  <if:when test="action:install">
+    <note style="info package">
+      <p><link action="install:evolution-ews" href="https://wiki.gnome.org/Apps/Evolution#Get_the_Source_Code" style="button">Installer evolution-ews</link></p>
+    </note>
+  </if:when>
+</if:choose>
+
+
+<p>Pour les versions plus anciennes de Microsoft Exchange, ou si <sys>evolution-ews</sys> ne fonctionne pas bien pour vous, essayez <sys>evolution-mapi</sys>. Celui-ci utilise l'API de messagerie de Microsoft qui est également employée par Microsoft Outlook. Cependant, <sys>evolution-mapi</sys> nécessite l'installation d'<sys>OpenChange</sys> et <sys>Samba 4</sys> et n'est pas aussi performant que <sys>evolution-ews</sys>.</p>
+
+<if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+  <if:when test="action:install">
+    <note style="info package">
+      <p><link action="install:evolution-mapi" href="https://wiki.gnome.org/Apps/Evolution#Get_the_Source_Code" style="button">Installer evolution-mapi</link></p>
+    </note>
+  </if:when>
+</if:choose>
+
+<note style="tip"><p>Si vous n'êtes pas certain de la version du serveur Microsoft Exchange utilisée, contactez votre administrateur système.</p></note>
+
+<!-- TODO:POST-3-4: <mbarnes> actually, a table in the docs would make it crystal clear  (Exchange version x Evolution backend); <seanius> also, a feature matrix of what works in the particular releases might be helpful, though maybe hard to visualize in a compact manner
+-->
+
+</page>

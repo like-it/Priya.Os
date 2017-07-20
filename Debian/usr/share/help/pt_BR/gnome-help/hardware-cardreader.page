@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="hardware-cardreader" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="media#photos"/>
+    <link type="guide" xref="hardware#problems"/>
+
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Projeto de documentação do GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Solucione problemas de leitores de cartão de memória</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Problemas com leitor de cartão de memória</title>
+
+<p>Muitos computadores contêm leitores de SD, MMC, SM, MS, CF e outros cartões de armazenamento de mídia. Eles devem ser detectados automaticamente e <link xref="disk-partitions">montados</link>. Seguem aqui algumas etapas de soluções, caso não sejam:</p>
+
+<steps>
+<item>
+<p>Certifique-se de que o cartão está inserido corretamente. Muitos cartões ficam de cabeça para baixo quando estão inseridos corretamente. Também, certifique-se de que o cartão está inserido firmemente na abertura; alguns cartões, especialmente CF, requerem uma pequena quantidade de força para serem inseridos corretamente. (Tenha cuidado para não empurrar muito forte! Se você se deparar com algo sólido, não force.)</p>
+</item>
+
+<item>
+  <p>Abra <app>Arquivos</app> pelo panorama de <gui xref="shell-introduction#activities">Atividades</gui>. O cartão inserido aparece na lista de <gui>Dispositivos</gui> na barra lateral da esquerda? Algumas vezes, o cartão aparece nessa lista, mas não está montado; clique nele uma vez para montar. (Se a barra lateral não está visível, pressione <key>F9</key> ou clique em <gui style="menu">Arquivos</gui> na barra superior e selecione o <gui style="menuitem">Barra lateral</gui>.)</p>
+</item>
+
+<item>
+  <p>Se seu cartão não for mostrado na barra lateral, clique <keyseq><key>Ctrl</key><key>L</key></keyseq> e, então, digite <input>computer:///</input> e pressione <key>Enter</key>. Se o seu leitor de cartão estiver configurado corretamente, o leitor deve aparecer como uma unidade quando nenhum cartão estiver presente e como o próprio cartão, quando o cartão tiver sido montado.</p>
+</item>
+
+<item>
+<p>Se você vir o leitor de cartão, mas não o cartão, o problema pode ser com o próprio cartão. Tente um cartão diferente ou verifique o cartão em um leitor diferente, se possível.</p>
+</item>
+</steps>
+
+<p>Se nenhum cartão ou unidade estiver disponível no local <gui>Computador</gui>, é possível que seu leitor de cartão não funcione no Linux por causa de problemas de driver. Se seu leitor de cartão for interno (dentro do computador, ao invés de conectado do lado de fora), é mais provável que isso aconteça. A melhor solução é conectar diretamente seu dispositivo (câmera, celular, etc.) em uma porta USB do computador. Leitores de cartão USB (externo) também estão disponíveis e têm suporte muito melhor no Linux.</p>
+
+</page>

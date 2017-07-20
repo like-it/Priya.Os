@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="de">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>Kalibrierung und Charakterisierung sind zwei völlig verschiedene Dinge.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Was ist der Unterschied zwischen Kalibrierung und Charakterisierung?</title>
+  <p>Viele Leute sind zunächst verwirrt über den Unterschied zwischen Kalibrierung und Charakterisierung. Kalibrierung ist der Prozess der Anpassung des Farbverhaltens des Gerätes. Dies geschieht üblicherweise über zwei Mechanismen:</p>
+  <list>
+    <item><p>Änderung der Steuerungen oder internen Einstellungen</p></item>
+    <item><p>Anwendung von Kurven auf deren Farbkanäle</p></item>
+  </list>
+  <p>Die Grundidee der Kalibrierung ist, den Status eines Gerätes anhand seines Farbverhaltens zu definieren. Oft ist dies tagtäglich wichtig, um ein reproduzierbares Verhalten zu gewährleisten. Typischerweise werden Kalibrierungsdaten in geräte- oder systemspezifischen Formaten gespeichert, die Geräteeinstellungen oder kanalweise getrennte Kalibrierungskurven enthalten.</p>
+  <p>Charakterisierung (oder Profilierung) ist das <em>Aufzeichnen</em> des Weges, wie ein Gerät sich in Bezug auf Farben verhält und diese reproduziert. Üblicherweise wird das Ergebnis in einem auf Geräte bezogenen ICC-Profil gespeichert. Die Farben an sich werden dabei durch das Profil in keiner Weise verändert. Es erlaubt lediglich einem System wie CMM (Farbverwaltungsmodul) oder einer auf Farben bezogenen Anwendung die Anpassung von Farben, wenn es mit einem weiteren Geräteprofil kombiniert wird. Nur durch Kenntnis der Charakteristiken der zwei Geräte gibt es eine Möglichkeit, die Farbdarstellung des einen Gerätes auf das andere Gerät zu übertragen.</p>
+  <note>
+    <p>Beachten Sie, dass eine Charakterisierung (ein Profil) für ein Gerät nur dann gültig ist, wenn es sich im selben Kalibrierungszustand wie zum Zeitpunkt der Charakterisierung befindet.</p>
+  </note>
+  <p>Bildschirmprofile stiften oft zusätzliche Verwirrung, da die Kalibrierungsinformationen direkt im Profil enthalten sind. Es ist festgelegt, dass diese in einem Tag namens <em>vcgt</em> gespeichert sind. Obwohl verfügbar, nimmt keines der üblichen ICC-Werkzeuge Notiz davon oder nutzt diese Informationen in irgendeiner Weise. Typische Werkzeuge und Anwendungen zur Bildschirmkalibrierung beziehen sie ebenfalls nicht ein oder verarbeiten die ICC-Charakterisierungsinformation (das Profil) weiter.</p>
+
+</page>

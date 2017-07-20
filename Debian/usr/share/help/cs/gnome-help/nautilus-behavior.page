@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>Jak otevírat soubory jednoduchým kliknutím, jak spustit nebo zobrazit textové soubory a jak nastavit chování koše.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Předvolby chování ve správci souborů</title>
+<p>Můžete určit, jestli se má u souborů používat jednoduché nebo dvojité kliknutí, jak se mají obsluhovat spustitelné soubory a chování koše. Klikněte v horní liště na <gui>Soubory</gui>, zvolte <gui>Předvolby</gui> a vyberte kartu <gui>Chování</gui>.</p>
+
+<section id="behavior">
+<title>Chování</title>
+<terms>
+ <item>
+  <title><gui>Aktivovat položky jediným kliknutím</gui></title>
+  <title><gui>Aktivovat položky dvojitým kliknutím</gui></title>
+  <p>Ve výchozím stavu se soubory jednoduchým kliknutím vybírají a dvojitým otevírají. Můžete místo toho zvolit, aby se soubory a složky otevíraly po jednoduchém kliknutí. Když použijete tento režim, může vybírat soubory tak, že držíte zmáčknutou klávesu <key>Ctrl</key> a klikáte.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>Spustitelné textové soubory</title>
+ <p>Spustitelný textový soubor je soubor, který obsahuje programový skript, který můžete spustit (nechat provést). <link xref="nautilus-file-properties-permissions">Oprávnění k souboru</link> musí být nastavena tak, aby spuštění souboru povolovala. Mezi nejznámější skriptovací jazyky patří <sys>Shell</sys>, <sys>Python</sys> a <sys>Perl</sys>. Mají přípony <file>.sh</file> respektive <file>.py</file> respektive <file>.pl</file>.</p>
+ 
+ <p>Jestli používáte otevírání spustitelných textových souborů, můžete si vybrat z:</p>
+ 
+ <list>
+  <item>
+    <p><gui>Spouštět spustitelné textové soubory při otevření</gui></p>
+  </item>
+  <item>
+    <p><gui>Zobrazit spustitelné textové soubory při otevření</gui></p>
+  </item>
+  <item>
+    <p><gui>Vždy se ptát</gui></p>
+  </item>
+ </list>
+
+ <p>Když je vybráno <gui>Vždy se ptát</gui>, objeví se při pokusu o spuštění dialogové okno, které se dotáže, jestli si vybraný textový soubor přejete spustit nebo zobrazit.</p>
+
+ <p>Spustitelné textové soubory bývají nazývány také <em>skripty</em>. Všechny skripty uložené ve složce <file>~/.local/share/nautilus/scripts</file> se objeví v kontextové nabídce pro soubor v podnabídce <gui style="menuitem">Skripty</gui>. Pokud je skript spuštěn z místní složky, jsou mu všechny vybrané soubory předány jako parametry. Když chcete spustit skript vůči souboru:</p>
+
+<steps>
+  <item>
+    <p>Přejděte do požadované složky.</p>
+  </item>
+  <item>
+    <p>Vyberte požadovaný soubor.</p>
+  </item>
+  <item>
+    <p>Klikněte na soubor pravým tlačítkem, aby se otevřela kontextová nabídka a vyberte požadovaný skript, který se má spustit, z nabídky <gui style="menuitem">Skripty</gui>.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>Skriptu, který je spouště ze vzdálené složky, jako je složka zobrazující web nebo obsah <sys>ftp</sys>, nejsou předány žádné parametry.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">Předvolby koše ve správci souborů</title>
+</info>
+<title>Koš</title>
+
+<terms>
+ <item>
+  <title><gui>Zeptat se před vyprázdněním koše</gui></title>
+  <p>Tato volba je ve výchozím stavu zapnutá. Když vyprazdňujete koš, zobrazí se zpráva žádající potvrzení, že opravdu chcete koš vyprázdnit a soubory smazat.</p>
+ </item>
+</terms>
+</section>
+
+</page>

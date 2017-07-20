@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.bouncycastle</groupId>
+	<artifactId>bcpkix</artifactId>
+	<version>1.56</version>
+	<packaging>jar</packaging><properties>
+		
+			<debian.hasPackageVersion/>
+		
+			<debian.mavenRules>org.bouncycastle s/bcpkix-jdk15on/bcpkix/ * s/.*/debian/ * *</debian.mavenRules>
+		
+			<debian.org.bouncycastle.bcprov-jdk15on.originalVersion>1.56</debian.org.bouncycastle.bcprov-jdk15on.originalVersion>
+		
+			<debian.originalVersion>1.56</debian.originalVersion>
+		
+			<debian.package>libbcpkix-java</debian.package>
+	</properties>
+	
+	<name>Bouncy Castle PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF APIs</name>
+	<description>The Bouncy Castle Java APIs for CMS, PKCS, EAC, TSP, CMP, CRMF, OCSP, and certificate generation. This jar contains APIs for JDK 1.5 to JDK 1.8. The APIs can be used in conjunction with a JCE/JCA provider such as the one provided with the Bouncy Castle Cryptography APIs.</description>
+	<dependencies>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov</artifactId>
+			<version>debian</version>
+			<type>jar</type>
+		</dependency>
+	</dependencies>
+</project>

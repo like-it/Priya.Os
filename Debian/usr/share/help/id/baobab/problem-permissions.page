@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="problem-permissions" xml:lang="id">
+  <info>
+    <link type="guide" xref="index#problems"/>
+    <revision pkgversion="3.12" date="2014-01-25" status="review"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Saya melihat pesan galat <gui>Tak bisa memindai /… atau beberapa folder yang dimuatnya</gui> ketika memindai.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Galat ketika memindai</title>
+
+  <p>Ketika memindai Anda mungkin melihat suatu pesan <gui>Tak bisa memindai /… atau beberapa folder yang dimuatnya</gui> di puncak jendela <app>Penganalisa Pemakaian Disk</app>. Kesalahan ini muncul karena Anda tak memiliki hak yang diperlukan untuk mengakses beberapa berkas karena pembatasan yang diberlakukan pada sistem target. Berkas yang tak dapat Anda akses tak akan dipakai untuk menghitung <link xref="views">bagan</link> yang merepresentasikan pemakaian disk, sehingga hasil yang dilaporkan mungkin salah.</p>
+
+  <p>Tak memiliki akses ke semua berkas dan direktori adalah hal yang sepenuhnya umum sehingga tak ada yang dapat Anda lakukan atas kesalahan ini.</p>
+
+  <note style="info"><p><app>Penganalisis Penggunaan Disk</app> memakai perintah <cmd>du</cmd> untuk membuat tilikan terrinci dari pemakaian penyimpanan, dan memerlukan Anda punya hak baca pada berkas dan hak eksekusi pada direktori.</p>
+
+  <p>Di sisi lain, pemakaian disk sistem berkas pada penggunaan perintah <cmd>df</cmd> untuk utilisasi disk pada jendela utama yang mengandalkan sistem berkas dan bukan hak berkas.</p></note>
+</page>

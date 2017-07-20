@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.apache.commons</groupId>
+	<artifactId>commons-parent</artifactId>
+	<version>debian</version>
+	<packaging>pom</packaging>
+	<parent>
+		<groupId>org.apache</groupId>
+		<artifactId>apache</artifactId>
+		<version>debian</version>
+	</parent>
+	
+	<name>Apache Commons Parent</name>
+	<url>http://commons.apache.org/</url>
+	<description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
+	<!--
+Version 39:
+
+- Update Compiler Plugin : 3.2 -> 3.3
+- Update Build Helper Plugin : 1.8 -> 1.9.1
+- Update Release Plugin : 2.5.1 -> 2.5.2
+- Update Javadoc Plugin : 2.10.2 -> 2.10.3
+- Update Jacoco 0.7.4.201502262128 -> 0.7.5.201505241946
+- Move assembly to standard location. src/main => src/assembly/src.xml
+- Update animal-sniffer Plugin : 1.13 -> 1.14 (for java 7+ builds) supporting Java8
+- dropped the trunks-proper profile
+
+ -->
+	<!-- Maven versions plugin reports an error if this is omitted -->
+	<!--
+    In release 31, the maven.compile.* properties were corrected to maven.compiler.*
+    [See COMMONSSITE-69]
+    If updating from a previous version, please check the property definitions
+
+    Starting with version 22, the RAT plugin has changed Maven group and id, so any existing configuration
+    needs to be updated.
+    To fix component POMs, please change any occurrences of:
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>rat-maven-plugin</artifactId>
+    to the new values:
+        <groupId>org.apache.rat</groupId>
+        <artifactId>apache-rat-plugin</artifactId>
+
+    Site deployment
+    ===============
+    Cannot define this here at present, see https://issues.apache.org/jira/browse/COMMONSSITE-26.
+
+    The following should be added to the component POM:
+
+    <distributionManagement>
+      <site>
+        <id>commons.site</id>
+        <name>Apache Commons Site SVN</name>
+        <url>scm:svn:${commons.scmPubUrl}</url>
+      </site>
+    </distributionManagement>
+
+    Alternatively you can map the component's existing site id to the
+    commons.scmPubServer property.
+
+    Coverage tool selection
+    =======================
+    Starting with release 30, there are optional profiles for both Cobertura and JaCoCo.
+    These can be enabled independently on the command-line:
+
+    mvn site -Pcobertura -Pjacoco
+
+    Or the component can define a default coverage tool by creating either (or both) of the following files:
+
+    src/site/resources/profile.cobertura
+    src/site/resources/profile.jacoco
+
+    These can later be overridden by cancelling the profile:
+
+    mvn site -P!jacoco
+
+  -->
+	<!--
+    This section *must* be overwritten by subprojects. It is only to allow
+    a release of the commons-parent POM.
+  -->
+	<scm>
+		<connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-39</connection>
+		<developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-39</developerConnection>
+		<url>http://svn.apache.org/viewvc/commons/proper/commons-parent/tags/commons-parent-39</url>
+	</scm>
+	<mailingLists>
+		<!-- N.B. commons-site now uses the Apache POM so has its own copy of the mailing list definitions -->
+		<!--
+        Components should normally override the default mailing list report by using the comnand
+        mvn commons:mail-page
+        This generates the file src/site/xdoc/mail-lists.xml which when processed will replace the PIR version.
+     -->
+		<!-- Changes to this list should be synchronised with the commons build plugin -->
+		<mailingList>
+			<name>Commons User List</name>
+			<subscribe>user-subscribe@commons.apache.org</subscribe>
+			<unsubscribe>user-unsubscribe@commons.apache.org</unsubscribe>
+			<post>user@commons.apache.org</post>
+			<archive>http://mail-archives.apache.org/mod_mbox/commons-user/</archive>
+			<otherArchives>
+				<otherArchive>http://markmail.org/list/org.apache.commons.users/</otherArchive>
+				<otherArchive>http://old.nabble.com/Commons---User-f319.html</otherArchive>
+				<otherArchive>http://www.mail-archive.com/user@commons.apache.org/</otherArchive>
+				<otherArchive>http://news.gmane.org/gmane.comp.jakarta.commons.user</otherArchive>
+			</otherArchives>
+		</mailingList>
+		<mailingList>
+			<name>Commons Dev List</name>
+			<subscribe>dev-subscribe@commons.apache.org</subscribe>
+			<unsubscribe>dev-unsubscribe@commons.apache.org</unsubscribe>
+			<post>dev@commons.apache.org</post>
+			<archive>http://mail-archives.apache.org/mod_mbox/commons-dev/</archive>
+			<otherArchives>
+				<otherArchive>http://markmail.org/list/org.apache.commons.dev/</otherArchive>
+				<otherArchive>http://old.nabble.com/Commons---Dev-f317.html</otherArchive>
+				<otherArchive>http://www.mail-archive.com/dev@commons.apache.org/</otherArchive>
+				<otherArchive>http://news.gmane.org/gmane.comp.jakarta.commons.devel</otherArchive>
+			</otherArchives>
+		</mailingList>
+		<mailingList>
+			<name>Commons Issues List</name>
+			<subscribe>issues-subscribe@commons.apache.org</subscribe>
+			<unsubscribe>issues-unsubscribe@commons.apache.org</unsubscribe>
+			<archive>http://mail-archives.apache.org/mod_mbox/commons-issues/</archive>
+			<otherArchives>
+				<otherArchive>http://markmail.org/list/org.apache.commons.issues/</otherArchive>
+				<otherArchive>http://old.nabble.com/Commons---Issues-f25499.html</otherArchive>
+				<otherArchive>http://www.mail-archive.com/issues@commons.apache.org/</otherArchive>
+			</otherArchives>
+		</mailingList>
+		<mailingList>
+			<name>Commons Commits List</name>
+			<subscribe>commits-subscribe@commons.apache.org</subscribe>
+			<unsubscribe>commits-unsubscribe@commons.apache.org</unsubscribe>
+			<archive>http://mail-archives.apache.org/mod_mbox/commons-commits/</archive>
+			<otherArchives>
+				<otherArchive>http://markmail.org/list/org.apache.commons.commits/</otherArchive>
+				<otherArchive>http://www.mail-archive.com/commits@commons.apache.org/</otherArchive>
+			</otherArchives>
+		</mailingList>
+		<mailingList>
+			<name>Apache Announce List</name>
+			<subscribe>announce-subscribe@apache.org</subscribe>
+			<unsubscribe>announce-unsubscribe@apache.org</unsubscribe>
+			<archive>http://mail-archives.apache.org/mod_mbox/www-announce/</archive>
+			<otherArchives>
+				<otherArchive>http://markmail.org/list/org.apache.announce/</otherArchive>
+				<otherArchive>http://old.nabble.com/Apache-News-and-Announce-f109.html</otherArchive>
+				<otherArchive>http://www.mail-archive.com/announce@apache.org/</otherArchive>
+				<otherArchive>http://news.gmane.org/gmane.comp.apache.announce</otherArchive>
+			</otherArchives>
+		</mailingList>
+	</mailingLists>
+	<build>
+		<!-- TODO find a better way to add N&L files to jars and test jars
+         See also maven-remote-resources-plugin configuration below.
+    -->
+		<resources>
+			<!-- This is the default setting from the super-pom -->
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+			<!-- hack to ensure the N&L appear in jars -->
+			<resource>
+				<directory>${basedir}</directory>
+				<targetPath>META-INF</targetPath>
+				<includes>
+					<include>NOTICE.txt</include>
+					<include>LICENSE.txt</include>
+				</includes>
+			</resource>
+		</resources>
+		<!-- ensure test jars also get NOTICE & LICENSE files -->
+		<testResources>
+			<!-- This is the default setting from the super-pom -->
+			<testResource>
+				<directory>src/test/resources</directory>
+			</testResource>
+			<!-- hack to ensure the N&L appear in jars -->
+			<testResource>
+				<directory>${basedir}</directory>
+				<targetPath>META-INF</targetPath>
+				<includes>
+					<include>NOTICE.txt</include>
+					<include>LICENSE.txt</include>
+				</includes>
+			</testResource>
+		</testResources>
+		<pluginManagement>
+			<plugins>
+				<!-- org.apache.maven.plugins, alpha order by artifact id -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-clean-plugin</artifactId>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>${maven.compiler.source}</source>
+						<target>${maven.compiler.target}</target>
+						<encoding>${commons.encoding}</encoding>
+						<!--
+               fork is set true by the java-1.x profiles
+               This allows the use of a different version of the compiler from the
+               JDK being used to run Maven
+            -->
+						<fork>${commons.compiler.fork}</fork>
+						<!-- the following are only needed if fork is true -->
+						<compilerVersion>${commons.compiler.compilerVersion}</compilerVersion>
+						<executable>${commons.compiler.javac}</executable>
+					</configuration>
+				</plugin>
+				<!-- Apache parent includes docck -->
+				<!-- Apache parent: invoker -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<configuration>
+						<!-- keep only errors and warnings -->
+						<quiet>true</quiet>
+						<encoding>${commons.encoding}</encoding>
+						<docEncoding>${commons.docEncoding}</docEncoding>
+						<notimestamp>true</notimestamp>
+						<links>
+							<link>${commons.javadoc.java.link}</link>
+							<link>${commons.javadoc.javaee.link}</link>
+						</links>
+						<archive>
+							<manifest>
+								<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+								<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+							</manifest>
+						</archive>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+				</plugin>
+				<!-- Apache parent: scm -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+				</plugin>
+				<!-- Other plugins, alpha order by groupId and artifactId -->
+				<plugin>
+					<groupId>org.apache.felix</groupId>
+					<artifactId>maven-bundle-plugin</artifactId>
+					<inherited>true</inherited>
+				</plugin>
+				<!-- Apache parent: plexus & modello -->
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<!-- org.apache.maven.plugins, alpha order by artifact id -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			<!-- Unfortunately the much simpler
+           <prerequisites><maven>3.0</maven></prerequisites>
+           is not inherited so we have to use the enforcer plugin
+      -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifestFile>${commons.manifestfile}</manifestFile>
+						<manifestEntries>
+							<Specification-Title>${project.name}</Specification-Title>
+							<Specification-Version>${project.version}</Specification-Version>
+							<Specification-Vendor>${project.organization.name}</Specification-Vendor>
+							<Implementation-Title>${project.name}</Implementation-Title>
+							<Implementation-Version>${project.version}</Implementation-Version>
+							<Implementation-Vendor>${project.organization.name}</Implementation-Vendor>
+							<Implementation-Vendor-Id>org.apache</Implementation-Vendor-Id>
+							<Implementation-Build>${implementation.build}</Implementation-Build>
+							<X-Compile-Source-JDK>${maven.compiler.source}</X-Compile-Source-JDK>
+							<X-Compile-Target-JDK>${maven.compiler.target}</X-Compile-Target-JDK>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<!--
+            commons.surefire.java is normally empty.
+            It is defined by the java-1.x profiles to change the JVM used by Surefire 
+          -->
+					<jvm>${commons.surefire.java}</jvm>
+				</configuration>
+			</plugin>
+			<!-- Other plugins, alpha order by groupId and artifactId -->
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<configuration>
+					<!--
+            dummy entry to stop bundle plugin from picking up jar config and reporting
+            WARNING: Duplicate name in Manifest
+            See http://markmail.org/message/mpkl24wk3jrjhhjg
+          -->
+					<archive>
+						<forced>true</forced>
+					</archive>
+					<excludeDependencies>${commons.osgi.excludeDependencies}</excludeDependencies>
+					<manifestLocation>${project.build.directory}/osgi</manifestLocation>
+					<instructions>
+						<!-- stops the "uses" clauses being added to "Export-Package" manifest entry -->
+						<_nouses>true</_nouses>
+						<!-- Stop the JAVA_1_n_HOME variables from being treated as headers by Bnd -->
+						<_removeheaders>JAVA_1_3_HOME,JAVA_1_4_HOME,JAVA_1_5_HOME,JAVA_1_6_HOME,JAVA_1_7_HOME,JAVA_1_8_HOME,JAVA_1_9_HOME</_removeheaders>
+						<Bundle-SymbolicName>${commons.osgi.symbolicName}</Bundle-SymbolicName>
+						<Export-Package>${commons.osgi.export}</Export-Package>
+						<Private-Package>${commons.osgi.private}</Private-Package>
+						<Import-Package>${commons.osgi.import}</Import-Package>
+						<DynamicImport-Package>${commons.osgi.dynamicImport}</DynamicImport-Package>
+						<Bundle-DocURL>${project.url}</Bundle-DocURL>
+					</instructions>
+				</configuration>
+				<executions>
+					<execution>
+						<id>bundle-manifest</id>
+						<phase>process-classes</phase>
+						<goals>
+							<goal>manifest</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- Needed for command-line access, e.g mvn apache-rat:rat and mvn apache-rat:check -->
+		</plugins>
+	</build>
+	<properties>
+		<!-- configuration bits for cutting a release candidate, must be overridden by components -->
+		<commons.release.version>${project.version}</commons.release.version>
+		<commons.rc.version>RC1</commons.rc.version>
+		<commons.jira.id>COMMONSSITE</commons.jira.id>
+		<!-- Default configuration for compiler source and target JVM -->
+		<!-- Do NOT change this; it must remain as 1.3 -->
+		<maven.compiler.source>1.3</maven.compiler.source>
+		<maven.compiler.target>1.3</maven.compiler.target>
+		<!-- compiler and surefire plugin settings for "java" profiles -->
+		<commons.compiler.fork>false</commons.compiler.fork>
+		<commons.compiler.compilerVersion>
+		</commons.compiler.compilerVersion>
+		<commons.compiler.javac>
+		</commons.compiler.javac>
+		<commons.surefire.java>
+		</commons.surefire.java>
+		<!-- plugin versions (allows same value in reporting and build sections) -->
+		<commons.surefire.version>2.18.1</commons.surefire.version>
+		<commons.surefire-report.version>2.18.1</commons.surefire-report.version>
+		<commons.javadoc.version>2.10.3</commons.javadoc.version>
+		<commons.rat.version>0.11</commons.rat.version>
+		<commons.changes.version>2.11</commons.changes.version>
+		<commons.clirr.version>2.6.1</commons.clirr.version>
+		<commons.jxr.version>2.5</commons.jxr.version>
+		<commons.project-info.version>2.8</commons.project-info.version>
+		<commons.wagon-ssh.version>2.8</commons.wagon-ssh.version>
+		<commons.site-plugin.version>3.4</commons.site-plugin.version>
+		<commons.jacoco.version>0.7.5.201505241946</commons.jacoco.version>
+		<commons.cobertura.version>2.7</commons.cobertura.version>
+		<commons.jdepend.version>2.0</commons.jdepend.version>
+		<commons.compiler.version>3.3</commons.compiler.version>
+		<commons.scm-publish.version>1.1</commons.scm-publish.version>
+		<commons.findbugs.version>2.5.5</commons.findbugs.version>
+		<!-- plugin versions 1.12 and 1.13 currently require Java 7 -->
+		<commons.animal-sniffer.version>1.11</commons.animal-sniffer.version>
+		<!--  Almost all signatures use version 1.0. Allow override just in case -->
+		<commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
+		<!-- Default values for the download-page generation by commons-build-plugin -->
+		<commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
+		<commons.release.desc>
+		</commons.release.desc>
+		<commons.binary.suffix>-bin</commons.binary.suffix>
+		<commons.release.2.name>${project.artifactId}-${commons.release.2.version}</commons.release.2.name>
+		<commons.release.2.desc>
+		</commons.release.2.desc>
+		<commons.release.2.binary.suffix>-bin</commons.release.2.binary.suffix>
+		<commons.release.3.name>${project.artifactId}-${commons.release.3.version}</commons.release.3.name>
+		<commons.release.3.desc>
+		</commons.release.3.desc>
+		<commons.release.3.binary.suffix>-bin</commons.release.3.binary.suffix>
+		<!-- Default values for the jacoco-maven-plugin reports -->
+		<commons.jacoco.classRatio>1.00</commons.jacoco.classRatio>
+		<commons.jacoco.instructionRatio>0.90</commons.jacoco.instructionRatio>
+		<commons.jacoco.methodRatio>0.95</commons.jacoco.methodRatio>
+		<commons.jacoco.branchRatio>0.85</commons.jacoco.branchRatio>
+		<commons.jacoco.complexityRatio>0.85</commons.jacoco.complexityRatio>
+		<commons.jacoco.lineRatio>0.90</commons.jacoco.lineRatio>
+		<commons.jacoco.haltOnFailure>false</commons.jacoco.haltOnFailure>
+		<!-- Commons Component Id -->
+		<commons.componentid>${project.artifactId}</commons.componentid>
+		<!-- Configuration properties for the OSGi maven-bundle-plugin -->
+		<commons.osgi.symbolicName>org.apache.commons.${commons.componentid}</commons.osgi.symbolicName>
+		<commons.osgi.export>org.apache.commons.*;version=${project.version};-noimport:=true</commons.osgi.export>
+		<commons.osgi.import>*</commons.osgi.import>
+		<commons.osgi.dynamicImport>
+		</commons.osgi.dynamicImport>
+		<commons.osgi.private>
+		</commons.osgi.private>
+		<commons.osgi.excludeDependencies>true</commons.osgi.excludeDependencies>
+		<!-- location of any manifest file used by maven-jar-plugin -->
+		<commons.manifestfile>${project.build.directory}/osgi/MANIFEST.MF</commons.manifestfile>
+		<!--
+      Make the deployment protocol pluggable. This allows to switch to
+      other protocols like scpexe, which some users prefer over scp.
+    -->
+		<commons.deployment.protocol>scp</commons.deployment.protocol>
+		<!--
+      Encoding of Java source files: ensures that the compiler and
+      the javadoc generator use the right encoding. Subprojects may
+      overwrite this, if they are using another encoding.
+    -->
+		<commons.encoding>iso-8859-1</commons.encoding>
+		<!-- used in this pom to provide the Javadoc HTML file encoding -->
+		<commons.docEncoding>${commons.encoding}</commons.docEncoding>
+		<!-- Define source encoding for filtering; used by general plugins -->
+		<project.build.sourceEncoding>${commons.encoding}</project.build.sourceEncoding>
+		<!-- This is used by reporting plugins -->
+		<project.reporting.outputEncoding>${commons.encoding}</project.reporting.outputEncoding>
+		<!-- Javadoc link to Java API.  Default is Java 1.7; components can override to other versions -->
+		<commons.javadoc.java.link>http://docs.oracle.com/javase/7/docs/api/</commons.javadoc.java.link>
+		<commons.javadoc.javaee.link>http://docs.oracle.com/javaee/6/api/</commons.javadoc.javaee.link>
+		<!-- build meta inf -->
+		<maven.build.timestamp.format>yyyy-MM-dd HH:mm:ssZ</maven.build.timestamp.format>
+		<implementation.build>${scmBranch}@r${buildNumber}; ${maven.build.timestamp}</implementation.build>
+		<!-- Allow Clirr severity to be overriden by the command-line option -DminSeverity=level -->
+		<minSeverity>info</minSeverity>
+		<!-- Control number of issues retrieved from JIRA with changes plugin -->
+		<commons.changes.maxEntries>100</commons.changes.maxEntries>
+		<!-- Allow surefire-report aggregation to be easily configured for multi-module projects -->
+		<commons.surefire-report.aggregate>false</commons.surefire-report.aggregate>
+		<!-- Allow changes Jira report to be restricted to just the current version (plugin default is false)-->
+		<commons.changes.onlyCurrentVersion>false</commons.changes.onlyCurrentVersion>
+		<!-- Allow changes Jira report maxEntries to be overridden (plugin default 100) -->
+		<commons.changes.maxEntries>100</commons.changes.maxEntries>
+		<!-- Allow changes Jira report runOnlyAtExecutionRoot to be overridden (plugin default is false) -->
+		<commons.changes.runOnlyAtExecutionRoot>false</commons.changes.runOnlyAtExecutionRoot>
+		<!-- scm publish plugin configuration -->
+		<commons.site.cache>${user.home}/commons-sites</commons.site.cache>
+		<!-- value modules can override it -->
+		<commons.site.path>${project.artifactId}</commons.site.path>
+		<commons.scmPubUrl>https://svn.apache.org/repos/infra/websites/production/commons/content/proper/${project.artifactId}</commons.scmPubUrl>
+		<commons.scmPubCheckoutDirectory>${commons.site.cache}/${commons.site.path}</commons.scmPubCheckoutDirectory>
+		<commons.scmPubServer>commons.site</commons.scmPubServer>
+		<sonar.host.url>https://analysis.apache.org/</sonar.host.url>
+		
+			<debian.hasPackageVersion/>
+		
+			<debian.mavenRules>org.apache.commons commons-parent pom s/.*/debian/ * *</debian.mavenRules>
+		
+			<debian.originalVersion>39</debian.originalVersion>
+		
+			<debian.package>libcommons-parent-java</debian.package>
+	</properties>
+</project>

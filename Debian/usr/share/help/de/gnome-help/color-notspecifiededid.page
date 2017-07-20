@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-notspecifiededid" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="guide" xref="color-gettingprofiles"/>
+    <link type="guide" xref="color-why-calibrate"/>
+    <desc>Standard-Bildschirmprofile haben kein Kalibrierungsdatum.</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Warum hat ein Standardprofil eines Bildschirms kein Ablaufdatum der Kalibrierung?</title>
+  <p>Das für jeden Bildschirm verwendete Farbprofil wird auf der Basis der Display- <link href="https://en.wikipedia.org/wiki/Extended_Display_Identification_Data"> EDID</link> automatisch erstellt. Die Display-EDID befindet sich auf einem Speicherchip im Bildschirm und vermittelt lediglich eine »Momentaufnahme« der vom Monitor darstellbaren Farben zum Zeitpunkt der Herstellung. Weitere Informationen zur Farbkorrektur sind dort nicht enthalten.</p>
+
+  <figure>
+    <desc>Da die EDID nicht aktualisiert werden kann, hat sie auch kein Ablaufdatum.</desc>
+    <media type="image" mime="image/png" src="figures/color-profile-default.png"/>
+  </figure>
+
+  <note style="tip">
+    <p>Ein Farbprofil vom Hersteller des Bildschirms oder die Erstellung eines eigenen Profils wird zu genauerer Darstellung der Farben führen.</p>
+  </note>
+
+</page>

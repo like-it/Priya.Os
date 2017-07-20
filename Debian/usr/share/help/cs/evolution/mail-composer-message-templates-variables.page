@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-composer-message-templates-variables" xml:lang="cs">
+
+  <info>
+   <desc>Nastavení proměnných v šablonách a opětovné použití položek ze zprávy, na kterou odpovídáte</desc>
+   
+   <link type="guide" xref="mail-composer-message-templates#options"/>
+
+ <revision pkgversion="3.5.90" version="0.3" date="2012-08-17" status="draft"/>
+ <credit type="author">
+   <name its:translate="no">Andre Klapper</name>
+   <email its:translate="no">ak-47@gmx.net</email>
+ </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/b1dlaazl.html.en -->
+ </credit>
+ 
+ <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+     
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Použití proměnných v šablonách</title>
+
+<section id="configure">	
+<title>Nastavení proměnných pro šablony zpráv</title>
+<steps>
+<item><p>Vyberte <guiseq><gui>Upravit</gui> <gui>Zásuvné moduly</gui></guiseq>.</p></item>
+<item><p>Klikněte na <gui>Šablony</gui>.</p></item>
+<item><p>Klikněte na kartu <gui>Nastavení</gui>.</p></item>
+<item><p>Můžete přidat, upravit nebo odstranit páry klíč - hodnota. Můžete určit libovolný počet párů klíč - hodnota.</p></item>
+</steps>
+ <p>V kterékoliv šabloně je výskyt $klíč nahrazen hodnotou, kterou má ve svém nastavení. Například nastavíte klíčové slovo na vedouci a hodnotu na Jindra, jakýkoliv výskyt $vedouci je nahrazen ve zprávě výrazem Jindra. </p>
+ <p>Předpokládejme, že máte 1000 šablon zpráv se jménem vašeho současného vedoucího. V momentě, kdy je současný vedoucí nahrazen novým, není pro vás jednoduché změnit jméno vedoucího ve všech tisíci zprávách. Pokud má zpráva klíčovou hodnotu $vedouci, můžete hodnotu změnit na kartě Nastavení tohoto zásuvného modulu.</p>
+ <p>Ve výchozím stavu jsou proměnné celého prostředí použity jako páry klíčových hodnot. Výskyt $promenna_prostredi je nahrazen hodnotou, kterou nese. Například výskyt $PATH ve vaší šabloně je nahrazen hodnotou, když je šablona použita.</p>
+ <p>Proces nahrazování používá následující pořadí priorit:</p>
+ <steps>
+  <item>
+<p>$klíč je nahrazen hodnotou mu přiřazenou na kartě Nastavení zásuvného modulu Šablona.</p>
+  </item>
+  <item>
+<p>Pokud není klíč nalezen, je nahrazen hodnotou proměnné z prostředí.</p>
+  </item>
+  <item>
+<p>Pokud není klíč ani volbou v nastavení, ani proměnnou v prostředí, žádné změny neproběhnou.</p>
+  </item>
+ </steps>
+</section>
+
+<!-- as per https://bugzilla.gnome.org/show_bug.cgi?id=641845 - available since 3.2-->
+<section id="reply-variables">
+<title>Použití prvků ze zprávy v šabloně pro odpověď̈́</title>
+<p>Šablony mohou obsahovat více, než jen předdefinované <link xref="#configure">páry klíč - hodnota</link>. Můžete také získávat libovolnou hodnotu hlavičky z e-mailu, na který šablonou odpovídáte a k tomu i celé tělo zprávy.</p>
+
+<!-- TRANSLATORS: Do NOT translate "$ORIG[subject]" and "$ORIG[body]" in this sentence. -->
+<p its:locNote="TO TRANSLATORS: Do NOT translate $ORIG[subject] and $ORIG[body] in this sentence!">Uděláte to tak, že použijete formát <code>$ORIG[název_hlavičky]</code> a nahradíte proměnnou <code>název_hlavičky</code> požadovanou hlavičkou. Například, když si přejete vložit řádek s předmětem zprávy na kterou odpovídáte, použijte <code>$ORIG[subject]</code>. Pro vložení celého těla použijte <code>$ORIG[body]</code>.</p>
+
+<!-- TRANSLATORS: Do NOT translate "$ORIG[body]" and "$ORIG[reply-to]" in this sentence. -->
+<p its:locNote="TO TRANSLATORS: Do NOT translate $ORIG[body] and $ORIG[reply-to] in this sentence!">Pokud není za proměnnou nalezeno příslušné nahrazení, proměnná není odstraněna (vyjma <code>$ORIG[body]</code>), ale je ponechána na místě, takže uvidíte, že je něco špatně. Může se to stát, když zkusíte použít hlavičky, které nemusí být v původní zprávě nutně vždy dostupné (například <code>$ORIG[reply-to]</code>).</p>
+</section>
+
+</page>

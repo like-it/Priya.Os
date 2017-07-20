@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="kn">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">ಜಾಲವನ್ನು ವೀಕ್ಷಿಸಿ</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">A tutorial on browsing the web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  </info>
+
+  <title>ಜಾಲವನ್ನು ವೀಕ್ಷಿಸಿ</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>ತೆರೆಯ ಮೇಲ್ಭಾಗದ ಎಡಗಡೆಯಲ್ಲಿರುವ <gui>ಅನ್ವಯಗಳು</gui> ಪರಿವಿಡಿಯ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ.</p></item>
+      <item><p>ಪರಿವಿಡಿಗಾಗಿ, <guiseq><gui>ಅಂತರಜಾಲ</gui><gui>ಫೈರ್ಫಾಕ್ಸ್</gui> </guiseq> ಅನ್ನು ಆರಿಸಿ.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p><gui>ಚಟುವಟಿಕೆಗಳ ಅವಲೋಕನವನ್ನು</gui> ತೋರಿಸಲು ನಿಮ್ಮ ಮೌಸ್‌ನ ಸೂಚಕವನ್ನು ತೆರೆಯ ಮೇಲ್ಭಾಗದ ಎಡಗಡೆ ಇರುವ <gui>ಚಟುವಟಿಕೆಗಳು</gui> ಮೂಲೆಗೆ ತೆಗೆದುಕೊಂಡುಹೋಗಿ&gt;.</p></item>
+      <item><p>ತೆರೆಯ ಎಡಭಾಗದಲ್ಲಿರುವ ಪಟ್ಟಿಯಿಂದ <app>Firefox</app> ವೀಕ್ಷಕದ ಚಿಹ್ನೆಯನ್ನು ಆರಿಸಿಕೊಳ್ಳಿ.</p></item>
+    </steps>
+
+    <note><p>ಪರ್ಯಾಯವಾಗಿ, ನೀವು <gui>ಚಟುವಟಿಕೆಗಳ ಅವಲೋಕನ</gui>ದಲ್ಲಿ <em>Firefox</em> ಎಂದು <link xref="gs-use-system-search">ಟೈಪ್</link> ಮಾಡುವ ಮೂಲಕ ಜಾಲವೀಕ್ಷಕವನ್ನು ಆರಂಭಿಸಬಹುದು.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p><gui>ಚಟುವಟಿಕೆಗಳ ಅವಲೋಕನವನ್ನು</gui> ತೋರಿಸಲು ನಿಮ್ಮ ಮೌಸ್‌ನ ಸೂಚಕವನ್ನು ತೆರೆಯ ಮೇಲ್ಭಾಗದ ಎಡಗಡೆ ಇರುವ <gui>ಚಟುವಟಿಕೆಗಳು</gui> ಮೂಲೆಗೆ ತೆಗೆದುಕೊಂಡುಹೋಗಿ&gt;.</p></item>
+      <item><p>ತೆರೆಯ ಎಡಭಾಗದಲ್ಲಿರುವ ಪಟ್ಟಿಯಿಂದ <app>Web</app> ವೀಕ್ಷಕದ ಚಿಹ್ನೆಯನ್ನು ಆರಿಸಿಕೊಳ್ಳಿ.</p></item>
+    </steps>
+
+    <note><p>ಪರ್ಯಾಯವಾಗಿ, ನೀವು <gui>ಚಟುವಟಿಕೆಗಳ ಅವಲೋಕನ</gui>ದಲ್ಲಿ <em>web</em> ಎಂದು <link xref="gs-use-system-search">ಟೈಪ್</link> ಮಾಡುವ ಮೂಲಕ ಜಾಲವೀಕ್ಷಕವನ್ನು ಆರಂಭಿಸಬಹುದು.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>ಜಾಲವೀಕ್ಷಕ ಕಿಟಕಿಯ ಮೇಲ್ಭಾಗದಲ್ಲಿರುವ ವಿಳಾಸ ಪಟ್ಟಿಯ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ ನೀವು ಭೇಟಿ ನೀಡಲು ಬಯಸುವ ಜಾಲತಾಣವನ್ನು ನಮೂದಿಸಲು ಪ್ರಾರಂಭಿಸಿ.</p></item>
+      <item><p>ಒಂದು ಜಾಲತಾಣದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿದಾಗ, ಅದಕ್ಕಾಗಿ ಜಾಲವೀಕ್ಷಣಾ ಇತಿಹಾಸದಲ್ಲಿ ಮತ್ತು ಬುಕ್‌ಮಾರ್ಕುಗಳಲ್ಲಿ ಹುಡುಕಲು ಆರಂಭಿಸಲಾಗುತ್ತದೆ, ಆದ್ದರಿಂದ ನೀವು ನಿಖರವಾದ ವಿಳಾಸವನ್ನು ನೆನಪಿಟ್ಟುಕೊಳ್ಳುವ ಅಗತ್ಯವಿರುವುದಿಲ್ಲ.</p>
+        <p>ಜಾಲಾತಾಣವು ಇತಿಹಾಸದಲ್ಲಿ ಅಥವ ಬುಕ್‌ಮಾರ್ಕುಗಳಲ್ಲಿ ಕಂಡುಬಂದರೆ, ವಿಳಾಸ ಪಟ್ಟಿಯ ಕೆಳಗೆ ಒಂದು ಬೀಳಿಕೆ (ಡ್ರಾಪ್‌-ಡೌನ್) ಪಟ್ಟಿಯು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ.</p></item>
+      <item><p>ಬೀಳಿಕೆ ಪಟ್ಟಿಯಿಂದ, ಬಾಣದ ಗುರುತಿನ ಕೀಲಿಗಳನ್ನು ಬಳಸಿಕೊಂಡು ನೀವು ಕ್ಷಿಪ್ರವಾಗಿ ಒಂದು ಜಾಲತಾಣವನ್ನು ಆರಿಸಬಹುದು.</p>
+      </item>
+      <item><p>ನೀವು ಒಂದು ಜಾಲತಾಣವನ್ನು ಆರಿಸಿದ ನಂತರ, ಅದಕ್ಕೆ ಭೇಟಿ ನೀಡಲು <key>Enter</key> ಅನ್ನು ಒತ್ತಿ.</p>
+      </item>
+    </steps>
+
+</page>

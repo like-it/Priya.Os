@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="contacts-ldap" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="contacts-using-several-addressbooks"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2015-03-09" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/usage-contact-sharing.html.en
+	   and
+	   http://library.gnome.org/users/evolution/2.32/config-prefs-contact.html.en#bxmw6w5
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Χρήση κοινόχρηστου βιβλίου διευθύνσεων σε τοπικό δίκτυο.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009-2010</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Προσθήκη πρόσβασης LDAP</title>
+
+  <p>Το πρωτόκολλο LDAP δημιουργήθηκε για να επιτρέπει στους χρήστες να μοιράζονται πληροφορίες επαφών μέσω δικτύου μέσω κοινής πρόσβασης σε ένα κεντρικό κατάλογο. Το LDAP επιτρέπει σε μια εταιρεία να διατηρεί μια κοινή ομάδα πληροφοριών επαφών. Πολλές εταιρείες διατηρούν ένα κοινό βιβλίο διευθύνσεων LDAP για όλους τους υπαλλήλους τους ή για επαφές πελατών.</p>
+
+<section id="add-ldap-addressbook">
+  <title>Προσθήκη βιβλίου διευθύνσεων LDAP</title>
+
+  <steps>
+    <item>
+      <p>Πατήστε <guiseq><gui>Αρχείο</gui><gui>Νέο</gui><gui>Βιβλίο διευθύνσεων</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Στην καρτέλα <gui>γενικά</gui>, επιλέξτε τον τύπο <gui>εξυπηρετητές LDAP</gui>.</p>
+    </item>
+    <item>
+      <p>Εισάγετε ένα όνομα που προτιμάτε.</p>
+    </item>
+    <item>
+      <p>Εισάγετε τη διεύθυνση του εξυπηρετητή, τον αριθμό θύρας (ο προεπιλεγμένος αριθμός είναι 389) και εάν θέλετε να συνδεθείτε με ασφάλεια.</p>
+    </item>
+    <item>
+      <p>Ορίστε τη μέθοδο σύνδεσης και το όνομα χρήστη.</p>
+    </item>
+    <item>
+      <p>Κλικ στο <gui style="button">εφαρμογή</gui>.</p>
+    </item>
+    <item>
+      <p>Στην καρτέλα <gui>λεπτομέρειες</gui> μπορείτε να ορίσετε τις επόμενες ρυθμίσεις:</p>
+      <list>
+        <item>
+	  <p>Βάση αναζήτησης: Η βάση αναζήτησης είναι το σημείο εκκίνησης για μια αναζήτηση καταλόγου. Επικοινωνήστε με το διαχειριστή του συστήματός σας για πληροφορίες για τις σωστές ρυθμίσεις.</p>
+        </item>
+        <item>
+	  <p>Εμβέλεια αναζήτησης: Η εμβέλεια αναζήτησης είναι το εύρος μιας δοσμένης αναζήτησης.</p>
+	  <p>Οι ακόλουθες επιλογές είναι διαθέσιμες:</p>
+          <list>
+            <item>
+	      <p>Ένα: Αναζητά τη βάση αναζήτησης και μια καταχώριση από κάτω του.</p>
+	    </item>
+            <item>
+	      <p>Υπό: Αναζητά στη Βάση αναζήτησης και σε όλες τις πιο κάτω καταχωρήσεις.</p>
+            </item>
+          </list>
+        </item>
+        <item>
+	  <p>Φίλτρο αναζήτησης: Το φίλτρο αναζήτησης μπορεί να οριστεί εδώ για όλες τις αναζητήσεις σε LDAP. Για παράδειγμα:</p>
+          <list>
+            <item>
+              <p><code>ObjectClass=*</code>: εμφανίζει όλα τα αντικείμενα από τον εξυπηρετητή.</p>
+	    </item>
+            <item>
+	      <p><code>ObjectClass=User</code>: εμφανίζει μόνο τους χρήστες.</p>
+	    </item>
+            <item>
+	      <p><code>Filter (|(ObjectClass=User)(ObjectClass=groupOfNames))</code>: ανακτά τα αντικείμενα λίστας χρήστη και επαφής.</p>
+	    </item>
+            <item>
+	      <p><code>(&amp;(mail=*)(ObjectClass=*))</code>: εμφανίζει τα συσχετισμένα αντικείμενα με τις διευθύνσεις αλληλογραφίας.</p>
+	    </item>
+          </list>
+        </item>
+        <item>
+	  <p>Όριο χρόνου (λεπτά): Ο μέγιστος χρόνος που το <app>Evolution</app> προσπαθεί να κατεβάσει δεδομένα από τον εξυπηρετητή προτού τα παρατήσει.</p>
+        </item>
+        <item>
+	  <p>Όριο λήψης: Ο μέγιστος αριθμός αποτελεσμάτων για μια αναζήτηση. Οι περισσότεροι εξυπηρετητές αρνούνται να στείλουν σε περισσότερες από 500 επαφές, αλλά μπορείτε να ορίσετε ένα πιο χαμηλό αριθμό για να μειώσετε τις λήψεις για πολύ πλατιές αναζητήσεις.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Αν είστε αβέβαιος για κάποιες ρυθμίσεις, επικοινωνήστε με τον διαχειριστή του συστήματός σας.</p>
+  </note>
+
+</section>
+
+<section id="ldap-vs-local-addressbooks">
+  <title>Διαφορές με τοπικά βιβλία διευθύνσεων</title>
+
+  <p>Τα βιβλία διευθύνσεων LDAP δουλεύουν όπως τοπικά βιβλία διευθύνσεων στον υπολογιστή σας, με τις επόμενες εξαιρέσεις:</p>
+
+  <list>
+    <item>
+      <p>Οι δικτυακοί φάκελοι είναι διαθέσιμοι μόνο όταν είστε συνδεδεμένοι στο δίκτυο. Αν χρησιμοποιείτε φορητό υπολογιστή ή έχετε μια σύνδεση μέσω μόντεμ, ίσως χρειαστεί να αντιγράψετε ή να κρύψετε ένα μέρος από το δικτυακό κατάλογο. Αυτό το κάνετε σύροντας και αφήνοντας τις επιθυμητές επαφές στο τοπικό βιβλίο διευθύνσεων.</p>
+    </item>
+    <item>
+      <p>You can also mark the network folder for offline usage. To mark the
+      folder, right-click the folder, click <gui>Properties</gui> and select
+      <gui>Copy folder content locally for offline operation</gui>.</p>
+    </item>
+    <item>
+      <p>Για να αποτρέψει υπερβολική κίνηση στο δίκτυο, το <app>Evolution</app> δεν φορτώνει κανονικά δεδομένα από το διακομιστή LDAP κατά το ξεκίνημα.</p>
+    </item>
+    <item>
+      <p>Ανάλογα με τις ρυθμίσεις του διακομιστή σας, ίσως να μη μπορείτε να επεξεργαστείτε όλα τα πεδία σε μια επαφή αποθηκευμένη σε ένα εξυπηρετητή LDAP. Μερικοί εξυπηρετητές αποτρέπουν μερικές ή όλες τις αλλαγές, και άλλοι χρησιμοποιούν ένα μικρότερο σύνολο πεδίων από αυτά που επιτρέπει το <app>Evolution</app>. Ελέγξτε το με το διαχειριστή του συστήματός σας αν χρειάζεστε διαφορετικές ρυθμίσεις.</p>
+    </item>
+  </list>
+
+</section>
+
+</page>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak řídit, které programy mají přístup k síti. To pomáhá udržet počítač bezpečný.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Povolení nebo blokování přístupu na firewallu</title>
+
+  <p>Váš systém by měl být vybaven <em>firewallem</em>, který umí blokovat programy vůči přístupu ostatními lidmi z Internetu nebo místní sítě. To pomáhá udržet váš počítač v bezpečí.</p>
+
+  <p>Síťové připojení může využívat řada aplikací. Například, když jste připojeni k síti, můžete sdílet soubory nebo někomu umožnit prohlížet si vzdáleně vaši pracovní plochu. V závislosti na tom, jak je počítač nastaven, může být potřeba přizpůsobit firewall, aby tyto služby fungovaly tak, jak je zamýšleno.</p>
+
+  <p>Každý program, který poskytuje síťové služby k tomu používá konkrétní <em>síťový port</em>. Abyste dovolili ostatním počítačům v síti přístup k službě, musíte na firewallu „otevřít“ port, který ji patří:</p>
+
+
+  <steps>
+    <item>
+      <p>Jděte do <gui>Činností</gui> v levém horním rohu obrazovky a spusťte firewallovou aplikaci. Možná si budete muset nějakou aplikaci pro správu firewallu doinstalovat, když žádnou nenajdete (například Firestarter nebo GUFW).</p>
+    </item>
+    <item>
+      <p>Otevřete nebo zakažte port pro síťovou službu podle toho, k čemu chcete, aby lidé měli přístup nebo ho naopak neměli. Který port potřebujete změnit <link xref="net-firewall-ports">závisí na službě</link>.</p>
+    </item>
+    <item>
+      <p>Uložte nebo použijte změny, řiďte se přitom instrukcemi poskytovanými daným nástrojem firewallu.</p>
+    </item>
+  </steps>
+
+</page>

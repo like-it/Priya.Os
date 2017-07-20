@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>Ouvrir des fichiers d'un seul clic, lancer ou afficher des fichiers texte exécutable et définir le comportement de la corbeille.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Préférences du gestionnaire de fichiers</title>
+<p>Il est possible de choisir d'ouvrir les fichiers d'un simple ou d'un double clic, la manière d'exécuter les fichiers textes et le comportement de la corbeille. Cliquez sur <gui>Fichiers</gui> dans la barre supérieure, choisissez <gui>Préférences</gui> et sélectionnez l'onglet <gui>Comportement</gui>.</p>
+
+<section id="behavior">
+<title>Comportement</title>
+<terms>
+ <item>
+  <title><gui>Simple clic pour ouvrir les éléments</gui></title>
+  <title><gui>Double-clic pour ouvrir les éléments</gui></title>
+  <p>Par défaut, un simple clic sélectionne les fichiers et un double-clic les ouvre. Il est possible de décider d'ouvrir fichiers et dossiers d'un simple clic. Dans ce mode, il est possible de sélectionner un ou plusieurs fichiers en maintenant la touche <key>Ctrl</key> enfoncée.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>Fichiers texte exécutables</title>
+ <p>Un fichier texte exécutable est un fichier qui contient un programme que vous pouvez lancer (exécuter). Les <link xref="nautilus-file-properties-permissions">permissions du fichier</link> doivent aussi autoriser l'exécution de ce fichier. Les fichiers les plus courants sont les scripts <sys>Shell</sys>, <sys>Python</sys> et <sys>Perl</sys>. Ils se terminent respectivement par les extensions <file>.sh</file>, <file>.py</file> et <file>pl</file>.</p>
+ 
+ <p>Lorsque vous ouvrez un fichier texte exécutable, vous avez le choix entre :</p>
+ 
+ <list>
+  <item>
+    <p><gui>Lancer les fichiers textes exécutables lorsqu'ils sont ouverts</gui></p>
+  </item>
+  <item>
+    <p><gui>Afficher les fichiers textes exécutables lorsqu'ils sont ouverts</gui></p>
+  </item>
+  <item>
+    <p><gui>Demander à chaque fois</gui></p>
+  </item>
+ </list>
+
+ <p>Si vous avez choisi <gui>Demander à chaque fois</gui>, une boîte de dialogue s'ouvre pour vous demander si vous souhaitez lancer ou afficher le fichier sélectionné.</p>
+
+ <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
+
+<steps>
+  <item>
+    <p>Naviguer vers le dossier désiré</p>
+  </item>
+  <item>
+    <p>Sélectionnez le fichier voulu</p>
+  </item>
+  <item>
+    <p>Faites un clic droit sur le fichier pour ouvrir le menu contextuel et sélectionnez le script voulu à exécuter depuis le menu <gui style="menuitem">Scripts</gui>.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>Un script ne recevra aucun paramètre s'il est exécuté depuis un dossier distant tel qu'un dossier affichant un contenu web ou <sys>ftp</sys>.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">Préférences de la corbeille du gestionnaire de fichiers</title>
+</info>
+<title>Corbeille</title>
+
+<terms>
+ <item>
+  <title><gui>Ask before emptying the Trash</gui></title>
+  <p>C'est l'option définie par défaut. Quand la corbeille est vidée, un message s'affiche demandant de confirmer la suppression définitive des fichiers.</p>
+ </item>
+</terms>
+</section>
+
+</page>

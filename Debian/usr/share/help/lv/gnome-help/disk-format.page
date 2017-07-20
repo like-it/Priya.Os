@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="lv">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME dokumentācijas projekts</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Formatējot ārējo cieto disku vai USB zibatmiņu, visas datnes un mapes tiek dzēstas.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Notīriet visu no izņemamā diska</title>
+
+  <p>Ja jums ir izņemamais disks, kā, piemēram, USB atmiņas karte vai ārējais cietais disks, jūs varētu vēlēties pilnībā izdzēst visas datnes un mapes no tā. To varat izdarīt <em>formatējot</em> disku - tas izdzēš visas datnes un atstāj disku tukšu.</p>
+
+<steps>
+  <title>Formatēt izņemamo disku</title>
+  <item>
+    <p>Atveriet lietotni <app>Diski</app> no <gui>Aktivitāšu</gui> pārskata.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to wipe from the list of storage devices on the
+    left.</p>
+
+    <note style="warning">
+      <p>Pārliecinieties, ka esat izvēlējies pareizo disku! Ja jūs izvēlēsieties nepareizo disku, visas datnes no tā tiks izdzēstas.</p>
+    </note>
+  </item>
+  <item>
+    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
+    menu button. Then click <gui>Format…</gui>.</p>
+  </item>
+  <item>
+    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
+    disk.</p>
+   <p>Ja izmantojat disku uz Windows un Mac OS datoriem līdzās Linux datoram, izvēlieties <gui>FAT</gui>. Ja jūs to izmantojiet tikai uz Windows, <gui>NTFS</gui> varētu būt labāka izvēle. Īss apraksts no <gui>datņu sistēmas tips</gui> tiks pasniegts kā etiķete.</p>
+  </item>
+  <item>
+    <p>Give the disk a name and click <gui>Format…</gui> to continue and show a
+    confirmation window. Check the details carefully, and click
+    <gui>Format</gui> to wipe the disk.</p>
+  </item>
+  <item>
+    <p>Once the formatting has finished, click the eject icon to safely remove
+    the disk. It should now be blank and ready to use again.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Formatēšana negarantē datņu izdzēšanu</title>
+  <p>Formatēt disku nav pilnīgi drošs veids, kā izdzēst visus tā datus. Formatētā diskā neparādīsies datnes, bet ir iespējams tos atgūt ar speciālu programmu palīdzību. Ja vēlaties droši izdzēst datnes, jums vajadzēs izmantot komandrindu utilītas, piemēram, <app>shred</app>.</p>
+</note>
+
+</page>

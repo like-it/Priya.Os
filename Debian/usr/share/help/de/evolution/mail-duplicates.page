@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-duplicates" xml:lang="de">
+
+  <info>
+    <desc>Mit doppelten E-Mail-Nachrichten umgehen</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+
+    <revision pkgversion="3.7.4" version="0.6" date="2013-01-23" status="final"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>E-Mails werden doppelt heruntergeladen</title>
+
+<section id="remove">
+<title>Doppelte Nachrichten entfernen</title>
+<p>Wählen Sie zum Entfernen doppelter E-Mails in einem Ordner mehrere Nachrichten (oder wählen Sie alle Nachrichten mit <guiseq><gui>Bearbeiten</gui><gui>Alle auswählen</gui></guiseq> oder drücken Sie <keyseq><key>Strg</key><key>A</key></keyseq>) und klicken Sie auf <guiseq><gui>Nachricht</gui><gui>Doppelte Nachrichten löschen</gui></guiseq>.</p>
+<!-- available by default since 2.91, as per http://mail.gnome.org/archives/evolution-list/2011-August/msg00000.html -->
+</section>
+
+<section id="reasons">
+<title>Gründe</title>
+<p>Aus folgenden Gründen könnten doppelte E-Mails heruntergeladen werden:</p>
+<list>
+<item><p>Es gibt mehrere Kopien derselben Nachricht im Postfach.</p></item>
+<item><p><gui>Evolution</gui> hat ein Problem mit der UIDL-Erweiterung.</p></item>
+<item><p>Die Zwischenspeicherdateien in <file>$HOME/.local/share/evolution/mail/local/</file> sind schreibgeschützt.</p></item>
+</list>
+</section>
+
+</page>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="gu">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>જેકબ સ્ટેઇનર</name>
+    </credit>
+    <credit type="author">
+      <name>પેટર કોવર</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">વેબ બ્રાઉઝ કરો</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">A tutorial on browsing the web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  </info>
+
+  <title>વેબ બ્રાઉઝ કરો</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>સ્ક્રીનની ટોચે ડાબે <gui>કાર્યક્રમો</gui> મેનુ પર ક્લિક કરો.</p></item>
+      <item><p>મેનુમાંથી, <guiseq><gui>ઇન્ટરનેટ</gui><gui>Firefox</gui> </guiseq> પસંદ કરો.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p><gui>પ્રવૃત્તિ ઝાંખી</gui> ને બતાવવા માટે સ્ક્રીનની ટોચે ડાબે <gui>પ્રવૃત્તિઓ</gui> તરફ તમારા માઉસ પોઇંટરને ખસેડો.</p></item>
+      <item><p>સ્ક્રીનની જમણી બાજુ પર પટ્ટીમાંથી <app>Firefox</app> બ્રાઉઝર ચિહ્નને પસંદ કરો.</p></item>
+    </steps>
+
+    <note><p>વૈકલ્પિક રીતે, તમે <gui>પ્રવૃત્તિ ઝાંખી</gui> માં <em>Firefox</em> <link xref="gs-use-system-search">ને ફક્ત ટાઇપ કરીને</link> બ્રાઉઝરને શરૂ કરી શકો છો.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p><gui>પ્રવૃત્તિ ઝાંખી</gui> ને બતાવવા માટે સ્ક્રીનની ટોચે ડાબે <gui>પ્રવૃત્તિઓ</gui> તરફ તમારા માઉસ પોઇંટરને ખસેડો.</p></item>
+      <item><p>સ્ક્રીનની ડાબી બાજુ પર પટ્ટીમાંથી <app>વેબ</app> બ્રાઉઝર ચિહ્નને પસંદ કરો.</p></item>
+    </steps>
+
+    <note><p>વૈકલ્પિક રીતે, તમે <gui>પ્રવૃત્તિ ઝાંખી</gui> માં <em>વેબ</em> <link xref="gs-use-system-search">ને ફક્ત ટાઇપ કરીને</link> બ્રાઉઝરને શરૂ કરી શકો છો.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>બ્રાઉઝર વિન્ડોની ટોચે સરનામાં પર ક્લિક કરો અને વેબસાઇટને ટાઇપ કરવાનું શરૂ કરો જે તમે મુલાકાત કરવા માંગો છો.</p></item>
+      <item><p>બ્રાઉઝર ઇતિહાલ અને બુકમાર્કમાં તેની માટે શોધવા વેબસાઇટમાં લખવાનું શરૂ થાય છે, તેથી તમારે ચોક્કસ સરનામાંને યાદ રાખવાની જરૂર નથી.</p>
+        <p>ઇતિહાસ અને બુકમાર્કમાં જો વેબસાઇટ મળી હોય તો, ડ્રોપ-ડાઉન યાદી સરનામાં પટ્ટી નીચે બનાવેલ છે.</p></item>
+      <item><p>ડ્રોપ-ડાઉન યાદીમાંથી, તમે તીર કીઓની મદદથી વેબસાઇટને ઝડપથી પસંદ કરી શકો છો.</p>
+      </item>
+      <item><p>તમે વેબસાઇટ પસંદ કર્યા પછી, તેની મુલાકાત માટે <key>Enter</key> દબાવો.</p>
+      </item>
+    </steps>
+
+</page>

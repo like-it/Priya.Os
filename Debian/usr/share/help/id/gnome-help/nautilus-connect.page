@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>View and edit files on another computer over FTP, SSH, Windows
+    shares, or WebDAV.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Browse files on a server or network share</title>
+
+<p>You can connect to a server or network share to browse and
+view files on that server, exactly as if they were on your
+own computer. This is a convenient way to download or upload
+files on the internet, or to share files with other people on
+your local network.</p>
+
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
+
+<steps>
+  <title>Menyambung ke suatu server berkas</title>
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
+   sidebar.</p>
+  </item>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
+  <note>
+    <p>If you have connected to the server before, you can click on it in the
+    <gui>Recent Servers</gui> list.</p>
+  </note>
+  </item>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>Menulis URL</title>
+
+<p>A <em>URL</em>, or <em>uniform resource locator</em>, is a form of address
+ that refers to a location or file on a network. The address is formatted like this:</p>
+  <example>
+    <p><sys>scheme://servername.example.com/folder</sys></p>
+  </example>
+<p>The <em>scheme</em> specifies the protocol or type of server. The
+  <em>example.com</em> portion of the address is called the <em>domain name</em>.
+  If a username is required, it is inserted before the server name:</p>
+  <example>
+    <p><sys>scheme://nama@servername.example.com/folder</sys></p>
+  </example>
+<p>Some schemes require the port number to be specified. Insert it after the domain name:</p>
+  <example>
+    <p><sys>scheme://servername.example.com:port/folder</sys></p>
+  </example>
+<p>Below are specific examples for the various server types that are supported.</p>
+</section>
+
+<section id="types">
+ <title>Tipe server</title>
+
+<p>You can connect to different types of servers. Some servers are public,
+   and allow anybody to connect. Other servers require you to log in with a
+   username and password.</p>
+<p>You may not have permissions to perform certain actions on files on a server.
+  For example, on public FTP sites, you will probably not be able to delete
+  files.</p>
+<p>The URL you enter depends on the protocol that the
+  server uses to export its file shares.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>If you have a <em>secure shell</em> account on a server, you
+  can connect using this method. Many web hosts provide SSH accounts
+  to members so they can securely upload files. SSH servers always
+  require you to log in.</p>
+  <p>Biasanya URL SSH nampak seperti ini:</p>
+  <example>
+    <p><sys>ssh://nama@servername.example.com/folder</sys></p>
+  </example>
+
+  <p>Ketika memakai SSH, semua data yang Anda kirim (termasuk sandi Anda) dienkripsi sehingga pengguna lain pada jaringan Anda tak bisa melihatnya.</p>
+</item>
+<item>
+  <title>FTP (dengan login)</title>
+  <p>FTP is a popular way to exchange files on the Internet.
+  Because data is not encrypted over FTP, many servers now provide
+  access through SSH. Some servers, however, still allow or require
+  you to use FTP to upload or download files. FTP sites with logins
+  will usually allow you to delete and upload files.</p>
+  <p>Biasanya URL FTP nampak seperti ini:</p>
+  <example>
+    <p><sys>ftp://nama@ftp.example.com/path/</sys></p>
+  </example>
+</item>
+<item>
+  <title>FTP Publik</title>
+  <p>Sites that allow you to download files will sometimes provide
+  public or anonymous FTP access. These servers do not require a
+  username and password, and will usually not allow you to delete
+  or upload files.</p>
+  <p>Biasanya URL FTP anonim nampak seperti ini:</p>
+  <example>
+    <p><sys>ftp://ftp.example.com/path/</sys></p>
+  </example>
+  <p>Some anonymous FTP sites require you to log in with a
+  public username and password, or with a public username using
+  your email address as the password. For these servers, use the
+  <gui>FTP (with login)</gui> method, and use the credentials
+  specified by the FTP site.</p>
+</item>
+<item>
+  <title>Berbagi pakai Windows</title>
+  <p>Windows computers use a proprietary protocol to share files over a local
+  area network. Computers on a Windows network are sometimes grouped into
+  <em>domains</em> for organization and to better control access. If you have
+  the right permissions on the remote computer, you can connect to a Windows
+  share from the file manager.</p>
+  <p>Biasanya URL share Windows nampak seperti ini:</p>
+  <example>
+    <p><sys>smb://servername/Share</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV dan WebDAV Aman</title>
+  <p>Berdasarkan protokol HTTP digunakan di web, WebDAV kadang-kadang digunakan untuk berbagi file pada jaringan lokal dan untuk menyimpan file di internet. Jika server yang anda hubungi mendukung koneksi yang aman, Anda harus memilih opsi ini. Aman WebDAV menggunakan enkripsi SSL kuat, sehingga pengguna lain tidak dapat melihat password Anda.</p>
+  <p>A WebDAV URL looks like this:</p>
+  <example>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

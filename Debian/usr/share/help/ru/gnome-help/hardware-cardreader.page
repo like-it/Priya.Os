@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="hardware-cardreader" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="media#photos"/>
+    <link type="guide" xref="hardware#problems"/>
+
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Устранение проблем с устройствами чтения карт памяти</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Проблемы с устройствами для чтения карт памяти</title>
+
+<p>Многие компьютеры оснащены устройствами чтения SD, MMC, SM, MS, CF и других мультимедийных карт памяти. Они должны обнаруживаться и <link xref="disk-partitions">подключаться</link> автоматически. Вот несколько советов по устранению неполадок, на случай, если этого не происходит:</p>
+
+<steps>
+<item>
+<p>Убедитесь в том, что карта памяти вставлена правильно. Многие карты памяти, когда они вставлены правильно, выглядят перевёрнутыми. Проверьте также, надёжно ли карта вставлена в отверстие. Некоторые карты памяти, особенно CF, для вставки требуют приложения небольшого усилия. (Будьте осторожны и не нажимайте слишком сильно! Если карта наткнулась на что-то твёрдое, не проталкивайте её.)</p>
+</item>
+
+<item>
+  <p>Open <app>Files</app> from the
+  <gui xref="shell-introduction#activities">Activities</gui> overview. Does the inserted
+  card appear in the <gui>Devices</gui> list in the left sidebar? Sometimes the
+  card appears in this list but is not mounted; click it once to mount. (If the
+  sidebar is not visible, press <key>F9</key> or click <gui style="menu">Files</gui> in
+  the top bar and select the <gui style="menuitem">Sidebar</gui>.)</p>
+</item>
+
+<item>
+  <p>If your card does not show up in the sidebar, press
+  <keyseq><key>Ctrl</key><key>L</key></keyseq>, then type
+  <input>computer:///</input> and press <key>Enter</key>. If your card reader
+  is correctly configured, the reader should come up as a drive when no card is
+  present, and the card itself when the card has been mounted.</p>
+</item>
+
+<item>
+<p>Если вы видите устройство чтения, но не карту памяти, проблема может быть в самой карте. Попробуйте вставить другую карту памяти или проверьте эту карту памяти на другом устройстве чтения, если есть такая возможность.</p>
+</item>
+</steps>
+
+<p>If no cards or drives are shown when browsing the <gui>Computer</gui>
+location, it is possible that your card reader does not work with Linux due to
+driver issues. If your card reader is internal (inside the computer instead of
+sitting outside) this is more likely. The best solution is to directly connect
+your device (camera, cell phone, etc.) to a USB port on the computer. USB
+external card readers are also available, and are far better supported by
+Linux.</p>
+
+</page>

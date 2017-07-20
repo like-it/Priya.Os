@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="te">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>గ్నోమ్ పత్రీకరణ పరియోజన</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>USB ఫ్లాష్ డ్రైవ్‌ను ఫార్మాట్ చేసి దాని నుండి అన్ని ఫైళ్ళు మరియు సంచయాలను తీసివేయి.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Praveen Illa</mal:name>
+      <mal:email>mail2ipn@gmail.com</mal:email>
+      <mal:years>2011, 2014. </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>కృష్ణబాబు క్రొత్తపల్లి</mal:name>
+      <mal:email>kkrothap@redhat.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>తీసివేయదగ డిస్కు పైని మొత్తం తుడిచివేయి</title>
+
+  <p>మీరు తీసివేయదగు డిస్కు కలిగివుంటే, USB మెమొరీ స్టిక్ లేదా బాహ్య హార్డు డిస్కు వంటివి, మీరు వాటినందలి అన్ని ఫైళ్ళు మరియు సంచయాలు తొలగించాలని అనుకోవచ్చు. డిస్కును <em>ఫార్మాట్</em> చేయుట ద్వారా మీరు ఇది చేయవచ్చు - ఇది డిస్కుపైని అన్ని ఫైళ్ళను తొలగించును మరియు దానిని ఖాళీగా వదులును.</p>
+
+<steps>
+  <title>తీసివేయదగ డిస్కు ఫార్మాట్ చేయి</title>
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to wipe from the list of storage devices on the
+    left.</p>
+
+    <note style="warning">
+      <p>మీరు ఖచ్చితమైన డిస్కును ఎంపికచేయునట్లు చూసుకోండి! మీరు సరికాని డిస్కు ఎంచితే, ఆ డిస్కుపైని అన్ని ఫైళ్ళు తొలగించబడును!</p>
+    </note>
+  </item>
+  <item>
+    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
+    menu button. Then click <gui>Format…</gui>.</p>
+  </item>
+  <item>
+    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
+    disk.</p>
+   <p>లైనక్స్ కంప్యూటర్లకు అదనంగా మీరు డిస్కును విండోస్ మరియు మాక్ OS కంప్యూటర్లనందు వుపయోగిస్తుంటే, <gui>FAT</gui> ఎంచుకోండి. మీరు దానిని విండోస్ నందు మాత్రమే వుపయోగిస్తుంటే, బహుశా <gui>NTFS</gui> మంచి ఐచ్చికం కావచ్చు. <gui>ఫైల్ సిస్టమ్ రకం</gui> సంక్షిప్త వివరణ లేబుల్‌గా వుంచబడును.</p>
+  </item>
+  <item>
+    <p>Give the disk a name and click <gui>Format…</gui> to continue and show a
+    confirmation window. Check the details carefully, and click
+    <gui>Format</gui> to wipe the disk.</p>
+  </item>
+  <item>
+    <p>Once the formatting has finished, click the eject icon to safely remove
+    the disk. It should now be blank and ready to use again.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>డిస్కును ఫార్మాట్ చేయుట అనునది మీ ఫైళ్ళను సురక్షితంగా తొలగించదు</title>
+  <p>డిస్కు పైని దత్తాంశం పూర్తిగా చెరిపివేయుటకు ఫార్మాట్ చేయుట అనేది సురక్షితమైన మార్గంకాదు. ఫార్మాట్ చేసిన డిస్కు దానినందు ఫైళ్ళు వున్నట్లు కనిపించదు, అయితే ప్రత్యేక రికవరీ సాఫ్టువేర్ ఆ ఫైళ్ళను వెలికితీయగలదు. మీరు సురక్షితంగా ఫైళ్ళను తొలగించాలంటే, మీరు ఆదేశ-వరుస సౌలభ్యం వుపయోగించవలసివుంటుంది,  <app>shred</app> వంటిది.</p>
+</note>
+
+</page>

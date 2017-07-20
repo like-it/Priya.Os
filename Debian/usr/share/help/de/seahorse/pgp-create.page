@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="pgp-create" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys" group="#first"/>
+
+    <revision version="0.5" date="2013-02-16" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Erstellen und verwenden Sie GnuPG-Schlüssel zum Verschlüsseln und Signieren von E-Mails.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>PGP-Schlüssel erstellen</title>
+
+  <p>So erstellen Sie einen neuen PGP-Schlüssel:</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Datei</gui><gui>Neu …</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Wählen Sie <gui>PGP-Schlüssel</gui> und drücken Sie <gui style="button">Fortsetzen</gui>.</p>
+    </item>
+    <item>
+      <p>Geben Sie Ihren vollständigen Namen in das Feld <gui>Vollständiger Name</gui> ein.</p>
+    </item>
+    <item>
+      <p>Optional können Sie Ihre E-Mail-Adresse und einen Kommentar zur Beschreibung des Schlüssels hinzufügen.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Erstellen</gui>.</p>
+    </item>
+    <item>
+      <p>Geben Sie im Passwortdialog ein Passwort für den Schlüssel ein. Wiederholen Sie das Passwort um es zu bestätigen.</p>
+    </item>
+    <item>
+      <p>Klicken Sie zum Abschließen auf <gui style="button">OK</gui>.</p>
+    </item>
+  </steps>
+
+  <p><app>Passwörter und Schlüssel</app> benötigt einige Zeit um Ihren Schlüssel zu erstellen. Bewegen Sie Ihre Maus, drücken Sie einige Tasten oder surfen Sie im Internet während Ihr Schlüssel erstellt wird. Dadurch helfen Sie <app>Passwörter und Schlüssel</app> einen wahrhaft zufälligen Schlüssel zu erstellen. Der Schlüssel wird dann unter <gui>GnuPG-Schlüssel</gui> angezeigt.</p>
+
+  <note style="tip">
+    <p>Die Felder <gui>Vollständige Name</gui>, <gui>E-Mail-Adresse</gui> und <gui>Kommentar</gui> werden Schlüssel-<link xref="pgp-userid">Benutzerkennung</link> genannt.</p>
+  </note>
+
+<section id="advanced" ui:expanded="false">
+  <title>Erweiterte PGP-Schlüssel Optionen</title>
+
+  <p>Klappen Sie die Leiste <gui>Erweiterte Schlüsseloptionen</gui> aus und wählen Sie eigene Werte für den Schlüsseltyp, Schlüsselstärke und das Ablaufdatum.</p>
+
+  <terms>
+    <item>
+    <title>Schlüssel-Typ</title>
+      <p>Erzeugen Sie abhängig von Ihrem Bedarf Schlüssel nur zum Signieren oder zum Verschlüsseln und Signieren. Der RSA- und DSA-Algorithmus erzeugen gleichwertig sichere Schlüssel.</p>
+    </item>
+    <item>
+    <title>Schlüsselstärke</title>
+      <p>Die Schlüsselstärke wird im Sinne der Größe eines Schlüssels in Bits bemessen. Es ist schwer und zeitaufwendiger einen starken Schlüssel zu brechen, aber starke Schlüssel verlangsamen den Prozess der Verschlüsselung bzw. Signierung. Wählen Sie die Schlüsselstärke in <app>Passwörter und Schlüssel</app> abhängig von der geplanten Verwendungsdauer eine Schlüssels. Ein kleiner Schlüssel ist ausreichend für kurzzeitigen Gebrauch, ein großer ist besser für den Langzeitgebrauch geeignet.</p>
+    </item>
+    <item>
+    <title>Ablaufdatum</title>
+      <p>Wenn ein Schlüssel abläuft <link xref="pgp-expired">funktionieren bestimmte Aktionen nicht mehr</link>. In <app>Passwörter und Schlüssel</app> können Sie festlegen, dass Ihr Schlüssel entweder <gui style="checkbox">nie verfällt</gui> oder ein Ablaufdatum für ihn festlegen.</p>
+      <p>Es wird empfohlen, dass Sie ein Ablaufdatum festlegen für den Fall, dass Sie Zugang zu Ihrem Schlüssel verlieren. Selbst wenn Ihr Schlüssel verfällt können Sie <link xref="pgp-expiration-change">das Ablaufdatum weiter in die Zukunft verlegen</link>.</p>
+    </item>
+  </terms>
+
+</section>
+
+</page>

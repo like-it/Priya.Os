@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="es">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Quitar todos los archivos y carpetas de una unidad de disco duro externo o memoria flash USB formateándola.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Limpiar todo en un disco extraíble</title>
+
+  <p>Si tiene un disco extraíble, como una memoria USB o un disco duro externo, es posible que quiera eliminar por completo todos los archivos que tiene ahí. Puede hacer esto <em>formateando</em> el disco; esto elimina todos los archivos en el disco y lo deja vacío.</p>
+
+<steps>
+  <title>Formatear un disco extraíble</title>
+  <item>
+    <p>Abra <app>Discos</app> desde la vista de <gui>Actividades</gui>.</p>
+  </item>
+  <item>
+    <p>Seleccione el disco que quiere eliminar de la lista de dispositivos de almacenamiento de la izquierda.</p>
+
+    <note style="warning">
+      <p>Asegúrese de que ha seleccionado el disco correcto. Si elige el disco equivocado, se eliminarán todos los archivos en el otro disco.</p>
+    </note>
+  </item>
+  <item>
+    <p>En la barra de herramientas, debajo de la sección <gui>Volúmenes</gui>, pulse el icono de la rueda dentada. Después pulse <gui>Formatear…</gui>.</p>
+  </item>
+  <item>
+    <p>En la ventana que aparece, seleccione un <gui>Tipo</gui> de sistema de archivos para el disco.</p>
+   <p>Si quiere usar el disco en equipos Windows y Mac OS así como en GNU/Linux, seleccione <gui>FAT</gui>. Si solo quiere usarlo con Windows, <gui>NTFS</gui> puede ser una mejor opción. Se mostrará una pequeña descripción de los <gui>tipos de sistema de archivo</gui> como una etiqueta.</p>
+  </item>
+  <item>
+    <p>Asigne un nombre al disco y pulse <gui>Formatear…</gui> para continuar y mostrar una ventana de confirmación. Compruebe los detalles con cuidado y pulse <gui>Formatear</gui> para vaciar el disco.</p>
+  </item>
+  <item>
+    <p>Una vez que haya acabado el formateo, pulse el botón de extraer para quitar el disco. Ahora debería estar vacío y listo para usarse de nuevo.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>El formateo permanente no elimina de forma segura sus archivos</title>
+  <p>Formatear un disco no es una manera completamente segura de limpiar todos sus datos. Un disco formateado parecerá que no contiene archivos, pero es posible obtener los archivos con un programa especial de recuperación. Si necesita eliminar los archivos con seguridad, deberá usar una herramienta de línea de comandos como <app>shred</app>.</p>
+</note>
+
+</page>

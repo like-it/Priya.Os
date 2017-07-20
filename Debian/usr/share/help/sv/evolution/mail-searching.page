@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-searching" xml:lang="sv">
+ 
+  <info>
+    <desc>Sökning efter meddelanden.</desc>
+    
+    <link type="guide" xref="searching-items"/>
+    <link type="guide" xref="mail-organizing"/>
+ 
+    <revision pkgversion="3.13.90" version="0.6" date="2015-03-09" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Max Vorobuov</name>
+      <email its:translate="no">vmax0770@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+ 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+ 
+<title>Sök efter e-post</title>
+
+<section id="search-single">
+<title>Sök i ett enstaka meddelande</title>
+<p>För att hitta text i det visade meddelandet, välj <guiseq><gui>Redigera</gui><gui>Sök i meddelande…</gui></guiseq> från huvudmenyn.</p>
+</section>
+
+<section id="search-many">
+<title>Sök över flera meddelanden</title>
+
+<section id="quick-search">
+<title>Snabbsökning</title>
+<p>I meddelandevyn kan du snabbt söka efter meddelanden genom att definiera villkor.</p>
+<steps>
+<item><p>Klicka på sökikonen <media type="image" mime="image/png" its:translate="no" src="figures/search-icon.png"/> för att expandera rullgardinslistan.</p></item>
+<item><p>Välj sökvillkoret från listan.</p>
+<note style="tip"><p>Avancerade användare kan <link href="https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10">kombinera många villkor genom att använda syntaxen för <gui>Friformsuttryck</gui></link>.</p></note>
+</item>
+<item><p>Välj räckvidden från rullgardinslistan till höger om textrutan.</p>
+<note style="tip"><p>För räckvidden <gui>Aktuellt konto</gui> refererar termen ”konto” till toppnivå-noderna i <link xref="intro-main-window#e-mail"> e-postmapplistan</link>, så som ”På denna dator” och fjärr-e-postkonton.</p></note>
+</item>
+<item><p>Mata in texten du vill söka efter och tryck <key>Retur</key>.</p></item>
+<item><p><app>Evolution</app> visar sökresultaten.</p></item>
+</steps>
+<note style="tip"><p>Om du börjar direkt från det fjärde steget kommer texten att genomsökas i e-postmeddelandens ämnen och adresser och räckvidden kommer att vara ”Aktuell mapp”.</p></note>
+<note style="tip"><p>Om du söker efter meddelanden som inte är i samma mapp relativt ofta kanske det är bättre att skapa en sökmapp istället; se <link xref="mail-search-folders">Använda sökmappar</link> för vidare information.</p></note>
+<p>Om du vill ställa in flera sökvillkor bör du använda en Avancerad sökning som beskrivs nedan.</p>
+</section>
+
+<!-- As advanced-search, clearing-search, saved-searches, editing-a-saved-search are totally identical in all *-searching.page files, this is centrally in one file that's included by XInclude. See
+http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-searching.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:section)"/>
+
+</section> 
+</page>

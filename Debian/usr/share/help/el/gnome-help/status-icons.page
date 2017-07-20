@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="status-icons" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="shell-overview#apps"/>
+
+    <revision version="0.1" date="2013-02-23" status="review"/>
+
+    <credit type="author copyright">
+      <name>Monica Kochofar</name>
+      <email>monicakochofar@gmail.com</email>
+      <years>2012</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Εξηγεί τη σημασία των εικονιδίων που βρίσκονται στα δεξιά της πάνω γραμμής.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Τι σημαίνουν τα εικονίδια στην πάνω γραμμή;</title>
+<p>Αυτή η ενότητα εξηγεί τη σημασία των εικονιδίων που βρίσκονται στη πάνω δεξιά γωνία της οθόνης. Ειδικά, περιγράφονται οι διαφορετικές παραλλαγές των έτοιμων εικονιδίων από τη διεπαφή του GNOME.Οδηγεί σε ένα μενού που ενερ</p>
+
+<if:choose>
+<if:when test="!platform:gnome-classic">
+<media type="image" src="figures/top-bar-icons.png" style="floatend">
+  <p>Η πάνω γραμμή του κελύφους GNOME</p>
+</media>
+</if:when>
+<if:when test="platform:gnome-classic">
+<media type="image" src="figures/top-bar-icons-classic.png" width="395" height="70" style="floatend">
+  <p>Η πάνω γραμμή του κελύφους GNOME</p>
+</media>
+</if:when>
+</if:choose>
+
+<links type="section"/>
+
+<section id="universalicons">
+<title>Εικονίδια μενού γενικής πρόσβασης</title>
+
+ <table shade="rows">
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/preferences-desktop-accessibility-symbolic.svg"/></td>
+      <td><p>Οδηγεί σε ένα μενού που ενεργοποιεί τις ρυθμίσεις προσιτότητας.</p></td>
+    </tr>
+    
+  </table>
+</section>
+
+
+<section id="audioicons">
+<title>Εικονίδια ελέγχου έντασης</title>
+
+ <table shade="rows">
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-high-symbolic.svg"/></td>
+      <td><p>Η ένταση ορίστηκε στο υψηλό.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-medium-symbolic.svg"/></td>
+      <td><p>Η ένταση ορίστηκε στο μεσαίο.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-low-symbolic.svg"/></td>
+      <td><p>Η ένταση ορίστηκε στο χαμηλό.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-muted-symbolic.svg"/></td>
+      <td><p>Η ένταση είναι κλειστή.</p></td>
+    </tr>
+  </table>
+</section>
+
+
+<section id="bluetoothicons">
+<title>Εικονίδια του διαχειριστή Bluetooth</title>
+
+ <table shade="rows">
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/></td>
+      <td><p>Το Bluetooth έχει ενεργοποιηθεί.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-disabled-symbolic.svg"/></td>
+      <td><p>Το Bluetooth έχει απενεργοποιηθεί.</p></td>
+    </tr>
+  </table>
+</section>
+
+<section id="networkicons">
+<title>Εικονίδια διαχειριστή δικτύου</title>
+<p/>
+<p><app>Σύνδεση σε δίκτυο κινητής τηλεφωνίας</app></p>
+ <table shade="rows">
+
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-3g-symbolic.svg"/></td>
+      <td><p>Συνδέθηκε σε 3G δίκτυο.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-4g-symbolic.svg"/></td>
+      <td><p>Συνδέθηκε σε 4G δίκτυο.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-edge-symbolic.svg"/></td>
+      <td><p>Συνδέθηκε σε δίκτυο EDGE.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-gprs-symbolic.svg"/></td>
+      <td><p>Συνδέθηκε σε δίκτυο GPRS.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-umts-symbolic.svg"/></td>
+      <td><p>Συνδέθηκε σε δίκτυο UMTS.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-connected-symbolic.svg"/></td>
+      <td><p>Συνδέθηκε σε δίκτυο κινητής τηλεφωνίας.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-acquiring-symbolic.svg"/></td>
+      <td><p>Λήψη ενός δικτύου κινητής τηλεφωνίας.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg"/></td>
+      <td><p>Πολύ υψηλή ισχύς σήματος.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-good-symbolic.svg"/></td>
+      <td><p>Υψηλή ισχύς σήματος.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-ok-symbolic.svg"/></td>
+      <td><p>Μέτρια ισχύς σήματος.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-weak-symbolic.svg"/></td>
+      <td><p>Χαμηλή ισχύς σήματος.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-none-symbolic.svg"/></td>
+      <td><p>Πολύ χαμηλή ισχύς σήματος.</p></td>
+    </tr></table>
+
+
+
+
+<p><app>Σύνδεση σε δίκτυο τοπικής περιοχής (LAN)</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-error-symbolic.svg"/></td>
+      <td><p>Παρουσιάστηκε σφάλμα στην εύρεση του δικτύου.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-idle-symbolic.svg"/></td>
+      <td><p>Το δίκτυο είναι αδρανές.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-no-route-symbolic.svg"/></td>
+      <td><p>Δεν βρέθηκε διαδρομή για το δίκτυο.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-offline-symbolic.svg"/></td>
+      <td><p>Το δίκτυο είναι εκτός σύνδεσης.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-receive-symbolic.svg"/></td>
+      <td><p>Το δίκτυο λαμβάνει δεδομένα.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-receive-symbolic.svg"/></td>
+      <td><p>Το δίκτυο εκπέμπει και δέχεται δεδομένα.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-symbolic.svg"/></td>
+      <td><p>Το δίκτυο εκπέμπει δεδομένα.</p></td>
+    </tr>
+</table>
+
+
+
+<p><app>Σύνδεση σε εικονικό ιδιωτικό δίκτυο (VPN)</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-acquiring-symbolic.svg"/></td>
+      <td><p>Λήψη σύνδεσης δικτύου.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-symbolic.svg"/></td>
+      <td><p>Συνδέθηκε σε δίκτυο VPN.</p></td>
+    </tr>
+</table>
+
+
+<p><app>Ενσύρματη σύνδεση</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-acquiring-symbolic.svg"/></td>
+      <td><p>Λήψη σύνδεσης δικτύου.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-disconnected-symbolic.svg"/></td>
+      <td><p>Αποσυνδέθηκε από το δίκτυο.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-symbolic.svg"/></td>
+      <td><p>Συνδέθηκε σε ενσύρματο δίκτυο.</p></td>
+    </tr>
+</table>
+
+
+<p><app>Ασύρματη σύνδεση</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-acquiring-symbolic.svg"/></td>
+      <td><p>Λήψη της ασύρματης σύνδεσης.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-encrypted-symbolic.svg"/></td>
+      <td><p>Το ασύρματο δίκτυο είναι κρυπτογραφημένο.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-connected-symbolic.svg"/></td>
+      <td><p>Συνδέθηκε σε ασύρματο δίκτυο.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg"/></td>
+      <td><p>Πολύ υψηλή ισχύς σήματος.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-good-symbolic.svg"/></td>
+      <td><p>Υψηλή ισχύς σήματος.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-ok-symbolic.svg"/></td>
+      <td><p>Μέτρια ισχύς σήματος.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-weak-symbolic.svg"/></td>
+      <td><p>Χαμηλή ισχύς σήματος.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-none-symbolic.svg"/></td>
+      <td><p>Πολύ χαμηλή ισχύς σήματος.</p></td>
+    </tr>
+
+  </table>
+</section>
+
+<section id="batteryicons">
+<title>Εικονίδια διαχειριστή ισχύος</title>
+
+ <table shade="rows">
+   <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-symbolic.svg"/></td>
+      <td><p>Η μπαταρία είναι πλήρης.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-symbolic.svg"/></td>
+      <td><p>Η μπαταρία είναι μερικώς άδεια.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-symbolic.svg"/></td>
+      <td><p>Το φορτίο της μπαταρίας είναι χαμηλό</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-symbolic.svg"/></td>
+      <td><p>Προσοχή: Η μπαταρία είναι πολύ χαμηλή.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-symbolic.svg"/></td>
+      <td><p>Η μπαταρία είναι πολύ χαμηλή.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-missing-symbolic.svg"/></td>
+      <td><p>Η μπαταρία έχει αποσυνδεθεί.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-charged-symbolic.svg"/></td>
+      <td><p>Η μπαταρία είναι πλήρως φορτισμένη.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-charging-symbolic.svg"/></td>
+      <td><p>Η μπαταρία είναι γεμάτη και φορτίζεται.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-charging-symbolic.svg"/></td>
+      <td><p>Η μπαταρία είναι μερικώς γεμάτη και φορτίζεται.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-charging-symbolic.svg"/></td>
+      <td><p>Η μπαταρία είναι χαμηλή και φορτίζεται.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-charging-symbolic.svg"/></td>
+      <td><p>Η μπαταρία είναι πολύ χαμηλή και φορτίζεται.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-charging-symbolic.svg"/></td>
+      <td><p>Η μπαταρία είναι άδεια και φορτίζεται.</p></td>
+    </tr>
+  </table>
+</section>
+
+
+</page>

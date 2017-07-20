@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="sv">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Testa din hårddisk för att kontrollera att den är frisk och utan problem.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Kontrollera din hårddisk efter problem</title>
+
+<section id="disk-status">
+ <title>Att kontrollera hårddisken</title>
+  <p>Hårddiskar har inbyggda hälsokontroller som kallas <app>SMART</app> (Själv-övervakande, analys och rapport-teknologi, Engelska: Self-Monitoring, Analysis and Reporting Technology) som kontinuerligt kontrollerar disken efter möjliga problem. SMART varnar också dig om disken snart kommer att gå sönder för att hjälpa dig att undvika att viktig data går förlorad.</p>
+
+  <p>Även om SMART körs automatiskt kan du också kontrollera din disks hälsa genom att köra programmet <app>Diskar</app>:</p>
+
+<steps>
+ <title>Kontrollera din hårddisks hälsa med programmet Diskar</title>
+
+  <item>
+    <p>Öppna <app>Diskar</app> från översiktsvyn <gui>Aktiviteter</gui>.</p>
+  </item>
+  <item>
+    <p>Välj disken som du vill kontrollera från listan över lagringsenheter till vänster. Information och status om disken kommer att visas.</p>
+  </item>
+  <item>
+    <p>Klicka på menyknappen och välj <gui>SMART-data och självtester…</gui>. <gui>Övergripande bedömning</gui> bör visa ”Disken är OK”.</p>
+  </item>
+  <item>
+    <p>Se vidare under <gui>SMART-attribut</gui> eller klicka på knappen <gui style="button">Påbörja självtest</gui> för att köra ett självtest.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>Vad gör jag om disken inte mår bra?</title>
+
+  <p>Även om <gui>Övergripande bedömning</gui> indikerar att disken <em>inte</em> mår bra så behöver det inte innebära panik. Det är dock bra att bara förberedd med en <link xref="backup-why">säkerhetskopia</link> för att undvika dataförlust.</p>
+
+  <p>Om tillståndet visar "Pre-fail" mår disken fortfarande ganska bra men visar tecken på slitage, vilket innebär att den kan krascha inom en nära framtid. Om din hårddisk (eller dator) har några år på nacken kommer du antagligen se det här meddelandet för åtminstone ett par hälsokontroller. Du bör <link xref="backup-how">säkerhetskopiera dina viktiga filer regelbundet</link> och kontrollera disktillståndet med jämna mellanrum för att se om det förvärras.</p>
+
+  <p>Om det blir värre så kan det vara bra att ta med datorn/hårddisken till en reparatör för ytterligare diagnos eller reparation.</p>
+
+</section>
+
+</page>

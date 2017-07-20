@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>Enkelklick för att öppna filer, köra eller visa körbara textfiler och ange papperskorgsbeteende.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Filhanterarens beteendeinställningar</title>
+<p>Du kan styra huruvida du enkelklickar eller dubbelklickar på filer, hur körbara textfiler hanteras och papperskorgsbeteendet. Klicka på <gui>Filer</gui> i systemraden, välj <gui>Inställningar</gui> och välj fliken <gui>Beteende</gui>.</p>
+
+<section id="behavior">
+<title>Beteende</title>
+<terms>
+ <item>
+  <title><gui>Enkelklick för att öppna objekt</gui></title>
+  <title><gui>Dubbelklick för att öppna objekt</gui></title>
+  <p>Som standard kommer klickande att markera filer och dubbelklickande att öppna dem. Du kan istället välja att låta filer och mappar öppnas när du klickar på dem en gång. När du använder enkelklicksläget kan du hålla ner <key>Ctrl</key> medan du klicka för att välja en eller flera filer.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>Körbara textfiler</title>
+ <p>En körbar textfil är en fil som innehåller ett program som du kan köra (exekvera). <link xref="nautilus-file-properties-permissions">Filrättigheterna</link> måste också tillåta att filen körs som ett program. De vanligaste är <sys>Shell-</sys>, <sys>Python-</sys> och <sys>Perl-</sys>-skript. Dessa har filändelserna <file>.sh</file>, <file>.py</file> respektive <file>.pl</file>.</p>
+ 
+ <p>När du öppnar en körbar textfil kan du välja mellan:</p>
+ 
+ <list>
+  <item>
+    <p><gui>Kör körbara textfiler när de öppnas</gui></p>
+  </item>
+  <item>
+    <p><gui>Visa körbara textfiler när de öppnas</gui></p>
+  </item>
+  <item>
+    <p><gui>Fråga varje gång</gui></p>
+  </item>
+ </list>
+
+ <p>Om du väljer <gui>Fråga varje gång</gui> kommer en dialogruta visas där du får välja om du vill köra eller visa den markerade textfilen.</p>
+
+ <p>Körbara textfiler kallas också för <em>skript</em>. Alla skript i mappen <file>~/.local/share/nautilus/scripts</file> kommer att visas i snabbvalsmenyn för en fil i undermenyn <gui style="menuitem">Skript</gui>. När ett skript körs från en lokal mapp kommer alla valda filer att klistras in till skriptet som parametrar. För att köra ett skript på en fil:</p>
+
+<steps>
+  <item>
+    <p>Navigera till den önskade mappen.</p>
+  </item>
+  <item>
+    <p>Markera filen du vill arbeta med.</p>
+  </item>
+  <item>
+    <p>Högerklicka på filen för att öppna snabbvalsmenyn och välj det önskade skriptet att köra från menyn <gui style="menuitem">Skript</gui>.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>Ett skript kommer inte att ges någon parameter när det körs från en fjärrmapp som exempelvis en mapp som visar webb- eller <sys>ftp</sys>-innehåll.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">Papperskorgsinställningar för filhanterare</title>
+</info>
+<title>Papperskorg</title>
+
+<terms>
+ <item>
+  <title><gui>Fråga innan papperskorgen töms</gui></title>
+  <p>Detta alternativ är valt som standard. När du tömmer papperskorgen kommer ett meddelande att visas som bekräftar att du önskar tömma papperskorgen eller ta bort filer.</p>
+ </item>
+</terms>
+</section>
+
+</page>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-folders" xml:lang="hu">
+
+  <info>
+    <desc>Mappák használata levelei rendszerezésére.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.0.2" version="0.2" date="2011-07-30" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-folders.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mappák használata</title>
+  
+<p>Az <app>Evolution</app> a legtöbb levelezőrendszerhez hasonlóan mappákat használ az e-mailek tárolására. Kezdetben néhány levélmappája van, például Beérkezett üzenetek, Postázandó és Piszkozatok. Szükség esetén további mappákat is létrehozhat.</p>
+
+<section id="create-folder">
+<title>Mappa létrehozása</title>
+<p>Mappa létrehozásához:</p>
+<steps>
+<item><p>Válassza a <gui>Mappák</gui> menü <gui>Új</gui> menüpontját. Ezen kívül a mappalistában bárhol a jobb egérgombbal kattintva és az <gui>Új mappa</gui> menüpontot kiválasztva is létrehozhat új mappát.</p></item>
+<item><p>Adja meg a mappa nevét és helyét.</p></item>
+<item><p>Nyomja meg a <gui>Létrehozás</gui> gombot.</p></item>
+</steps>
+<p>Az új mappa megjelenik a mappanézetben. Ezután üzeneteket mozgathat a mappába.</p>
+
+<note style="warning">
+<p>A <gui>Beérkezett</gui> üzenetek mappa a legtöbb IMAP-kiszolgálón nem tartalmazhat egyidejűleg üzeneteket és almappákat is. Az IMAP levélkiszolgálón további mappák létrehozásakor ügyeljen arra, hogy a mappákat az IMAP-fiók gyökerében és ne a Beérkezett üzenetek mappában hozza létre. Az almappák létrehozása a Beérkezett üzenetek mappában megakadályozhatja a már ott lévő üzenetek elolvasását. Ha ez bekövetkezik, akkor helyezze át a mappákat az IMAP-fiók gyökerébe.</p>
+</note>
+
+</section>
+
+<section id="use-folder">
+<title>Üzenetek áthelyezése új mappákba</title>
+<p>Az üzeneteket a következő módszerek bármelyikének használatával helyezheti át mappákba:</p>
+<list>
+<item><p>Fogja meg és ejtse az üzeneteket a mappába.</p></item>
+<item><p>Kattintson a jobb egérgombbal a levélre, majd válassza az <gui>Áthelyezés mappába</gui> menüpontot.</p></item>
+<item><p>Válasszon ki egy levelet, és nyomja meg a <keyseq><key>Shift</key><key>Ctrl</key><key>V</key></keyseq> kombinációt.</p></item>
+<item><p>Válasszon ki egy levelet, majd az <guiseq><gui>Üzenet</gui><gui>Áthelyezés mappába</gui></guiseq> menüpontot.</p></item>
+</list>
+
+<p>A másolás lépései hasonlók.</p>
+
+<note style="tip"><p>A fájlok áthelyezése automatikusan is elvégezhető <link xref="mail-filters">szűrők</link> létrehozásával.</p></note>
+
+</section>
+
+<!--Reuse http://library.gnome.org/users/evolution/2.32/usage-mail-organize-folders.html.en and add "Novell, Inc" as an author to this page. Mention the combination with filters (see seealso link)-->
+	
+</page>

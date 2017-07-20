@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="ssh-connect-remote" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+    </credit>
+
+    <desc>Χρησιμοποιήστε κλειδιά SSH για να συνδεθείτε σε έναν άλλον υπολογιστή χωρίς να εισάγετε κωδικό πρόσβασης.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα του GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Σύνδεση με άλλους υπολογιστές</title>
+
+  <p>Μπορείτε να χρησιμοποιήσετε το <app>Κωδικοί πρόσβασης και κλειδιά</app> για να εγκαταστήσετε το κλειδί σας SSH σε έναν απομακρυσμένο υπολογιστή που μπορεί να τρέξει ένα διακομιστή SSH. Μπορείτε επίσης να <link xref="ssh-create#ssh-create-key-and-set-up">ρυθμίσετε το κλειδί σας SSH για απομακρυσμένη σύνδεση ενώ δημιουργείτε το κλειδί</link>.</p>
+
+  <steps>
+    <item>
+      <p>Κάντε δεξί κλικ το <gui>κλειδί SSH</gui> και επιλέξτε το <gui>Ρύθμιση κλειδιού για ασφαλές κέλυφος…</gui>.</p>
+    </item>
+    <item>
+      <p>Στο παράθυρο διαλόγου που ανοίγει, εισάγετε την <gui>Διεύθυνση διακομιστή</gui> που χρησιμοποιείτε κανονικά για να συνδεθείτε σε έναν απομακρυσμένο υπολογιστή μέσα από SSH και πατήστε <gui>Ρύθμιση</gui>.</p>
+    </item>
+    <item>
+      <p>Το πρόγραμμα θα προσπαθήσει τώρα να συνδέσει τη συγκεκριμένη <gui>Διεύθυνση διακομιστή</gui> με το εισερχόμενο <gui>όνομα σύνδεσης</gui>. Αν υπάρχουν προβλήματα στην πρόσβαση του απομακρυσμένου υπολογιστή, θα εμφανιστεί ένα αναδυόμενο παράθυρο που εξηγεί το πρόβλημα και μπορείτε να ξαναπροσπαθήσετε. Βεβαιωθείτε ότι έχετε μια σύνδεση δικτύου και ότι ο απομακρυσμένος υπολογιστής είναι ενεργός και προσβάσιμος.</p>
+    </item>
+    <item>
+      <p>Αν η σύνδεση με τον απομακρυσμένο υπολογιστή ήταν πετυχημένη, ένα πλαίσιο διαλόγου θα εμφανιστεί που θα ζητά τον <gui>κωδικό πρόσβασης</gui> που χρησιμοποιείτε για να συνδεθείτε στον απομακρυσμένο υπολογιστή. Εισάγετε τον κωδικό πρόσβασης σας, έπειτα πατήστε <gui style="button">Εντάξει</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Θα πρέπει τώρα να μπορείτε να συνδεθείτε στον απομακρυσμένο υπολογιστή μέσα από SSH χωρίς έναν κωδικό πρόσβασης.</p>
+
+</page>

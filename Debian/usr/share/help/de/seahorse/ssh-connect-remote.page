@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="ssh-connect-remote" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+    </credit>
+
+    <desc>SSH-Schlüssel verwenden, um sich an einem anderen Rechner ohne Passworteingabe anzumelden.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mit anderen Rechnern verbinden</title>
+
+  <p>Verwenden Sie <app>Passwörter und Schlüssel</app>, um Ihren SSH-Schlüssel auf einem entfernten Rechner zu installieren, auf dem ein SSH-Dienst läuft. Sie können <link xref="ssh-create#ssh-create-key-and-set-up">Ihren SSH-Schlüssel auch während der Erstellung für entferntes Anmelden einrichten</link>.</p>
+
+  <steps>
+    <item>
+      <p>Klicken Sie mit der rechten Maustaste auf den <gui>SSH-Schlüssel</gui> und wählen Sie <gui>SSH-Schlüssel einrichten …</gui>.</p>
+    </item>
+    <item>
+      <p>Daraufhin öffnet sich ein Dialogfenster. Geben Sie die <gui>Server-Adresse</gui> an, die Sie normalerweise zur Anmeldung mit SSH am entfernten Rechner verwenden, und klicken Sie auf <gui>Einrichten</gui>.</p>
+    </item>
+    <item>
+      <p>Das Programm versucht nun eine Verbindung zur angegebenen <gui>Server-Adresse</gui> mit dem <gui>Anmeldenamen</gui>. Im Falle von Problemen beim Zugriff auf den entfernten Rechner öffnet sich ein Einblendfenster, welches das Problem erläutert. Stellen Sie sicher, dass eine Netzverbindung besteht und der entfernte Rechner eingeschaltet und Zugriff möglich ist.</p>
+    </item>
+    <item>
+      <p>Wenn die Verbindung zum entfernten Rechner erfolgreich aufgebaut wurde erscheint ein Dialogfenster, das nach dem <gui>Passwort</gui> zur Anmeldung fragt. Geben Sie Ihr Passwort ein und klicken Sie dann auf <gui style="button">OK</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Nun sollten Sie sich am entfernten Rechner mit SSH ohne Passwort anmelden können.</p>
+
+</page>

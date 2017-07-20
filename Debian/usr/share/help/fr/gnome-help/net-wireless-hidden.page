@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-hidden" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Se connecter à un réseau sans fil qui n'est pas affiché dans la liste des réseaux.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Connexion à un réseau sans fil masqué</title>
+
+<p>Il est possible de configurer un réseau sans fil pour qu'il soit « masqué ». Les réseaux sans fil masqués ne s'affichent pas dans les paramètres <gui>Réseau</gui>. Pour vous connecter à un réseau sans fil masqué :</p>
+
+<steps>
+  <item>
+    <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> from the right
+    side of the top bar.</p>
+  </item>
+  <item>
+    <p>Select
+    <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/>
+      Wi-Fi Not Connected</gui>. The Wi-Fi section of the menu will expand.</p>
+  </item>
+  <item>
+    <p>Click <gui>Wi-Fi Settings</gui>.</p>
+  </item>
+  <item><p>Cliquez sur le bouton <gui>Connexion à un réseau masqué…</gui>.</p></item>
+ <item>
+  <p>Dans la boîte de dialogue qui s'affiche, sélectionnez un réseau masqué dans la liste déroulante <gui>Connexion</gui>, ou sur <gui>Nouveau</gui>.</p>
+ </item>
+ <item>
+  <p>Pour une nouvelle connexion, saisissez le nom du réseau et définissez le type de sécurité sans fil à lui appliquer dans la liste déroulante <gui>Sécurité Wi-Fi</gui>.</p>
+ </item>
+ <item>
+  <p>Saisissez le mot de passe ou autre information de sécurité.</p>
+ </item>
+ <item>
+  <p>Cliquez sur <gui>Connexion</gui>.</p>
+ </item>
+</steps>
+
+  <p>Pour connaître le nom de réseau à saisir, regardez sur l'étiquette du point d'accès ou du routeur. Si vous n'avez pas le nom du réseau (SSID), vous pouvez utiliser le <gui>BSSID</gui> (Basic Service Set Identifier) qui ressemble à ceci <gui>02:00:01:02:03:04</gui> et qui se trouve en général sous la station.</p>
+
+  <p>Il vous faut aussi vérifier les paramètres de sécurité que la station émettrice sans fil utilise. Recherchez des termes comme WEP et WPA.</p>
+
+<note>
+ <p>Vous pouvez penser que masquer votre réseau sans fil améliore sa sécurité en empêchant les personnes qui ne savent pas qu'il existe de s'y connecter. En fait, ce n'est pas le cas ; ce réseau est un peu plus difficile à trouver, mais il reste néanmoins détectable.</p>
+</note>
+
+</page>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-folders" xml:lang="fr">
+
+  <info>
+    <desc>Utiliser des dossiers pour organiser vos courriels.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.0.2" version="0.2" date="2011-07-30" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-folders.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Utilisation des dossiers</title>
+  
+<p><app>Evolution</app>, like most mail systems, uses folders to store email messages. You start out with a few mail folders such as the Inbox, Outbox, and Drafts. You can, however, create more folders if required.</p>
+
+<section id="create-folder">
+<title>Création d'un dossier</title>
+<p>Pour créer un dossier :</p>
+<steps>
+<item><p>Cliquez sur <gui>Dossier</gui> et sélectionnez <gui>Nouveau</gui>. Vous pouvez aussi faire un clic-droit sur la liste des dossiers et en sélectionner l'option <gui>Nouveau dossier</gui>.</p></item>
+<item><p>Spécifiez le nom et l'emplacement du dossier.</p></item>
+<item><p>Cliquez sur le bouton <gui>Créer</gui>.</p></item>
+</steps>
+<p>Le nouveau dossier s'affiche dans la vue des dossiers. Vous pouvez alors déplacer des messages dans ce dossier.</p>
+
+<note style="warning">
+<p>The <gui>Inbox</gui> folders on most IMAP servers cannot contain both messages and subfolders. When creating additional folders on your IMAP mail server, branch the folders from the root of the IMAP account and not from the Inbox. Creating subfolders in your Inbox may prevent you from reading messages that exist in the Inbox. If this happens, move the folders to the IMAP account.</p>
+</note>
+
+</section>
+
+<section id="use-folder">
+<title>Déplacement de messages vers les nouveaux dossiers</title>
+<p>Vous pouvez déplacer les messages dans les dossiers à l'aide des méthodes suivantes :</p>
+<list>
+<item><p>Glissez-déposez les messages dans le dossier.</p></item>
+<item><p>Faites un clic-droit sur le message et sélectionnez l'option <gui>Déplacer vers le dossier</gui>.</p></item>
+<item><p>Sélectionnez un message et appuyez sur<keyseq><key>Maj</key><key>Ctrl</key><key>V</key></keyseq>.</p></item>
+<item><p>Sélectionnez un message et cliquez sur <guiseq><gui>Message</gui><gui>Déplacer vers le dossier</gui></guiseq>.</p></item>
+</list>
+
+<p>Les étapes pour la copie sont les mêmes.</p>
+
+<note style="tip"><p>Le déplacement de fichiers peut être automatisé en configurant des <link xref="mail-filters">filtres</link>.</p></note>
+
+</section>
+
+<!--Reuse http://library.gnome.org/users/evolution/2.32/usage-mail-organize-folders.html.en and add "Novell, Inc" as an author to this page. Mention the combination with filters (see seealso link)-->
+	
+</page>

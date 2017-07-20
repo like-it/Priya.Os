@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Nadzirate lahko do katerih programov je mogoče dostopati preko omrežja. To pomaga obdržati vaš računalnik varen.</desc>
+  </info>
+
+  <title>Omogočanje in blokiranje dostopa do požarnega zidu</title>
+
+  <p>Vaš sistem bi moral biti opremljen s <em>požarnim zidom</em>, ki omogoča blokado dostopa do programov z interneta ali krajevnega omrežja. To pomaga obdržati vaš računalnik varen.</p>
+
+  <p>Veliko programov lahko zagotavlja omrežne storitve. Na primer lahko souporabljate datoteke ali pustite nekomu, da si oddaljeno ogleda vaše namizje. Glede na to kako je vaš računalnik nastavljen, boste morda prilagoditi požarni zid, da bo tem storitvam omogočal delovanje.</p>
+
+  <p>Vsak program, ki zagotavlja storitve, uporablja določena <em>omrežna vrata</em>. Za omogočitev dostopa do storitev tega programa boste morda morali dovoliti dostop do njegovih dodeljenih vrat na požarnem zidu. Za omogočitev povezav na vratih 53 v terminal vnesite <cmd>sudo ufw allow 53</cmd>. Za blokiranje vrat 53 vnesite <cmd>sudo ufw block 53</cmd>.</p>
+
+
+  <steps>
+    <item>
+      <p>Pojdite na <gui>Dejavnosti</gui> v zgornjem levem kotu zaslona in zaženite svoj program požarnega zidu. Morda boste morali namestiti upravljalnik požarnega zidu, če ga ne morete najdi (na primer Firestarter ali GUFW).</p>
+    </item>
+    <item>
+      <p>Odprite ali onemogočite vrata za svojo omrežno storitev glede na to ali želite, da ljudje lahko do nje dostopajo ali ne. Vrata, ki jih želite spremeniti, so <link xref="net-firewall-ports">odvisne od storitve</link>.</p>
+    </item>
+    <item>
+      <p>Shranite ali uveljavite spremembe in sledite morebitnim dodatnim navodilom orodja požarnega zidu.</p>
+    </item>
+  </steps>
+
+</page>

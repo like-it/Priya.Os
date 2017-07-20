@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="printing-setup" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="printing#setup" group="#first"/>
+    <link type="seealso" xref="printing-setup-default-printer" group="#first"/>
+
+    <revision pkgversion="3.10.2" date="2013-11-03" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>コンピューターに接続したプリンターをセットアップします。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>ローカルプリンターをセットアップする</title>
+
+  <p>プリンターの多くは、コンピューターに接続すると自動的に認識されます。たいていの場合、USB ケーブルでプリンターとコンピューターを接続します。</p>
+
+  <note style="tip">
+    <p>現在では、ネットワークプリンターとローカルプリンターのどちらをインストールするのかを選択する必要はありません。すべて一つのウィンドウに表示されます。</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>プリンターの電源が入っていることを確認します。</p>
+    </item>
+    <item>
+      <p>適したケーブルを使ってプリンターをシステムに接続します。システムによるドライバーの検索状況が画面に表示され、インストールの認証が求められます。</p>
+    </item>
+    <item>
+      <p>プリンターのインストールが完了するとメッセージが表示されます。<gui>テストページの印刷</gui>を選択してテストページを印刷するか、<gui>オプション</gui>を選択して詳細な設定を行います。</p>
+    </item>
+  </steps>
+
+  <p>If your printer was not set up automatically, you can add it in the
+  printer settings:</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Printers</gui>.</p>
+    </item>
+    <item>
+      <p><gui>プリンター</gui>を選択します。</p>
+    </item>
+    <item>
+      <p>右上にある<gui>ロック解除</gui>ボタンをクリックして、パスワードを入力します。</p>
+    </item>
+    <item>
+      <p>Click the <gui>+</gui> button.</p>
+    </item>
+    <item>
+      <p>ポップアップウィンドウで新しいプリンターを選択します。<gui>追加</gui>をクリックします。</p>
+    </item>
+  </steps>
+
+  <p>If your printer does not appear in the Add a New Printer window, you may
+  need to install print drivers.</p>
+
+  <p>プリンターをインストールしたら、<link xref="printing-setup-default-printer">デフォルトプリンターの変更</link>を行うとよいでしょう。</p>
+
+</page>

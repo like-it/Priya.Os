@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whyimportant" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="color"/>
+    <desc>Farbverwaltung ist für Designer, Fotografen und Künstler bedeutsam.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Warum ist Farbverwaltung wichtig?</title>
+  <p>Die Farbverwaltung ist der Vorgang der Aufnahme von Farben von einem Eingabegerät, die Anzeige auf dem Bildschirm und der Ausdruck. Dabei sollten die exakten Farben und deren Bereiche auf allen Geräten gleich sein.</p>
+
+  <p>Die Notwendigkeit der Farbverwaltung lässt sich vielleicht am besten anhand einer Fotografie eines Vogels an einem Wintertag begründen.</p>
+
+  <figure>
+    <desc>Vogel an einem Wintertag, wie durch den Sucher der Kamera gesehen</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-camera.png"/>
+  </figure>
+
+  <p>Zeigt den typisch übersättigten Blau-Kanal, wodurch das Bild kalt wirkt.</p>
+
+  <figure>
+    <desc>So sieht der Benutzer das Bild üblicherweise auf dem Bildschirm eines Business-Laptops</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-display.png"/>
+  </figure>
+
+  <p>Beachten Sie, dass das Weiß keineswegs ein »Papierweiß« ist und das Auge eher schlammbraun ist.</p>
+
+  <figure>
+    <desc>So sieht der Benutzer das Bild als Ausdruck auf einem typischen Tintenstrahldrucker</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-printer.png"/>
+  </figure>
+
+  <p>Das Grundproblem ist hierbei, dass jedes Gerät einen anderen Bereich von Farben verwalten kann. So könnten Sie sehr wohl »Electric Blue« fotografieren, doch leider werden die meisten Drucker nicht fähig sein, es zu reproduzieren.</p>
+  <p>Die meisten Bildaufzeichnungsgeräte arbeiten mit RGB (Rot, Grün, Blau) und müssen diesen Farbraum in CMYK (Cyan, Magenta, Gelb und Schwarz) umwandeln. Ein weiteres Problem ist, dass es keine <em>weiße</em> Tinte gibt, so dass das Weiß direkt von der Farbe des Papiers abhängig ist.</p>
+
+  <p>Ein weiteres Problem sind die Einheiten. Ohne die Skalierung anzugeben, nach welcher eine Farbe gemessen wird, wissen wir nicht, ob 100% Rot nahe Infrarot liegt oder einfach nur das kräftigste Rot Ihres Druckers ist. Was 50% rot auf Ihrem Bildschirm ist, liegt vielleicht bei 62% auf dem Bildschirm Ihres Freundes. Es ist so, als würden Sie jemandem erzählen, Sie hätten gerade 7 Entfernungseinheiten zurückgelegt, ohne etwas darüber verlauten zu lassen, ob es 7 Kilometer oder vielleicht nur 7 Meter waren.</p>
+
+  <p>In diesem Zusammenhang sprechen wir von Gamut. Dies ist essenziell der reproduzierbare Farbbereich. Für ein Gerät wie eine digitale Spiegelreflexkamera ist dieser Bereich vielleicht sehr groß, da sie ja alle Farben eines Sonnenuntergangs darstellen können soll, während ein Projektor einen sehr kleinen Bereich hat, wodurch Farben »verwaschen« wirken.</p>
+
+  <p>In einigen Fällen können wir das Geräteverhalten dahingehend <em>beeinflussen</em>, dass wir die an das Gerät gesendeten Daten verändern. In vielen Fällen ist das aber nicht möglich (Sie können »Electric Blue« nicht drucken) und wir müssen dem Benutzer zeigen, wie das Ergebnis aussehen sollte.</p>
+
+  <p>Für Fotografen ist es sinnvoll, den gesamten Farbtonbereich eines Farbgeräts zu verwenden, um beispielsweise weiche Farbverläufe zu erzielen. Für andere Grafiken ist eher der genaue Farbwert von Bedeutung. Wenn Sie beispielsweise einen Kaffeebecher mit dem RedHat-Logo bedrucken wollen, ist es wichtig, dass das Rot <em>genau</em> das RedHat-Rot ist.</p>
+
+</page>

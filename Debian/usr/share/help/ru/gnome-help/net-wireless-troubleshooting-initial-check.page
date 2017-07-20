@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-initial-check" xml:lang="ru">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-hardware-info"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Люди, делающие вклад в wiki документации для Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Проверьте правильность простых сетевых настроек и приготовьтесь к следующим шагам по устранению неполадок.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Устранение неполадок с беспроводной сетью</title>
+  <subtitle>Первоначальная проверка соединения</subtitle>
+
+  <p>На этом этапе вы проверите некоторые основные сведения о своём беспроводном соединении. Это поможет убедиться, что проблемы с сетью не вызваны какой-нибудь относительно простой причиной, например, отключённым беспроводным соединением, а также подготовиться к следующим этапам по устранению неполадок.</p>
+
+  <steps>
+    <item>
+      <p>Убедитесь, что ноутбук не подключён к Интернету <em>проводным</em> соединением.</p>
+    </item>
+    <item>
+      <p>Если у вас внешний беспроводной адаптер (например, USB-адаптер или карта PCMCIA), проверьте, надёжно ли он вставлен в соответствующий разъём на компьютере.</p>
+    </item>
+    <item>
+      <p>Если беспроводная карта находится <em>внутри</em> компьютера, убедитесь, что переключатель беспроводного соединения (если он есть) включён. На ноутбуках беспроводную карту часто можно включить или отключить нажатием определённой комбинации клавиш на клавиатуре.</p>
+    </item>
+    <item>
+      <p>Click the system status area on the top bar and select
+      <gui>Wi-Fi</gui>, then select <gui>Wi-Fi Settings</gui>. Make sure that
+      <gui>Wi-Fi</gui> is set to <gui>ON</gui>. You should also check that
+      <link xref="net-wireless-airplane">Airplane Mode</link> is <em>not</em>
+      switched on.</p>
+    </item>
+    <item>
+      <p>Open the Terminal, type <cmd>nmcli device</cmd> and press
+      <key>Enter</key>.</p>
+      <p>This will display information about your network interfaces and
+      connection status. Look down the list of information and see if there is
+      an item related to the wireless network adapter. If the state is
+      <code>connected</code>, it means that the adapter is working and connected
+      to your wireless router.</p>
+    </item>
+  </steps>
+
+  <p>Если соединение с беспроводным маршрутизатором установлено, но доступ в Интернет всё равно отсутствует, возможно, что маршрутизатор настроен неправильно или возникли какие-то технические проблемы у вашего интернет-провайдера. Ещё раз прочтите руководства по настройке маршрутизатора и подключения к провайдеру, чтобы убедиться, что настройки сделаны правильно, либо обратитесь за поддержкой к интернет-провайдеру.</p>
+
+  <p>If the information from <cmd>nmcli device</cmd> did not indicate that you were
+  connected to the network, click <gui>Next</gui> to proceed to the next
+  portion of the troubleshooting guide.</p>
+
+</page>

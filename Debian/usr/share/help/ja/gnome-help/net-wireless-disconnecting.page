@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-wireless-disconnecting" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+    <link type="guide" xref="net-problem"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>信号が弱い、またはネットワークに正しく接続されていない可能性があります。</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>無線ネットワークが切断されてしまいます、なぜですか?</title>
+
+<p>You may find that you have been disconnected from a wireless network even
+ though you wanted to stay connected. Your computer will normally try to
+ reconnect to the network as soon as this happens (the network icon on the top
+ bar will display three dots if it is trying to reconnect), but it can be
+ annoying, especially if you were using the internet at the time.</p>
+
+<section id="signal">
+ <title>ワイヤレス信号が弱い</title>
+
+ <p>無線ネットワークが切断されてしまう一般的な原因は弱信号によるものです。無線ネットワークの範囲は限られているため、基地局から離れすぎると接続維持に十分な強度の信号を受け取れない場合があります。基地局との間にある壁や物なども信号を弱める原因となり得ます。</p>
+
+ <p>トップバーのネットワークアイコンにワイヤレス信号の強度が表示されます。信号が弱いようであれば基地局の近くに移動してみてください。</p>
+
+</section>
+
+<section id="network">
+ <title>ネットワーク接続が正しく確立されない</title>
+
+ <p>無線ネットワークに接続すると、最初は接続に成功したように見え直後に切断されてしまうことがあります。ネットワークに接続が成功したのはコンピューターの一部分だけだったことが原因でこのようなことが発生します。接続の確立までは成功したが何らかの理由で最終的な確定を行えず切断されてしまったということです。</p>
+
+ <p>間違ったワイヤレスパスフレーズを入力した、使用しているコンピューターがネットワークでは許可されていなかった (ネットワークでログイン用のユーザー名の入力が求められた) などがその原因として考えられます。</p>
+
+</section>
+
+<section id="hardware">
+ <title>無線用ハードウェアやドライバーが不安定</title>
+
+ <p>無線ネットワークのハードウェアが若干、不安定になることがあります。無線ネットワークが複雑なため、ときどき、ワイヤレスカードや基地局で小さな問題が発生し接続が途切れることがあります。困った現象ですが、多くのデバイスで定期的に見られます。ときどき、無線接続が切断されてしまう場合にはこれが唯一の原因となる可能性があります。繰り返し頻繁に起こるようなら、別のハードウェアの使用を検討するのもよいでしょう。</p>
+
+</section>
+
+<section id="busy">
+ <title>無線ネットワークが混雑している</title>
+
+ <p>利用度の高いエリア (大学やカフェなど) の無線ネットワークでは、多くのコンピューターによる同時接続が頻繁に試行されます。このようなネットワークでは混雑が激しく接続を試行するコンピューターのすべてを処理できないことがあり、その一部が切断されてしまうことがあります。</p>
+
+</section>
+
+</page>

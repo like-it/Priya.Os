@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Você precisa especificar a porta de rede correta para habilitar/desabilitar o acesso a rede para um programa com seu firewall.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Portas de rede comumente usadas</title>
+
+  <p>Esta é a lista de portas de rede comumente usadas por aplicativos que fornece serviços de rede, como compartilhamento de arquivo ou visualização de área de trabalho remota. Você pode alterar o firewall do seu sistema para <link xref="net-firewall-on-off">bloquear ou permitir acesso</link> a esse aplicativos. Há milhares de portas em uso, de forma que esta tabela não está completa.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>Porta</p>
+	</td>
+	<td>
+	  <p>Nome</p>
+	</td>
+	<td>
+	  <p>Descrição</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>Permite que sistemas localizem uns aos outros e descreve quais serviços eles oferecem, sem ter que especificar os detalhes manualmente.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>Imprimindo</p>
+	</td>
+	<td>
+	  <p>Permite que você envie trabalhos de impressão para uma impressora pela rede.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>Imprimindo</p>
+	</td>
+	<td>
+	  <p>Permite que você compartilhe sua impressora com outras pessoas pela rede.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>Presença</p>
+	</td>
+	<td>
+	  <p>Permite que você anuncie seu estado de mensagem instantânea a outras pessoas na rede, como "conectado" ou "ocupado".</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>Área de trabalho remota</p>
+	</td>
+	<td>
+	  <p>Permite que você compartilhe sua área de trabalho de forma que outras pessoas possam vê-la ou fornecer assistência remota.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>Compartilhamento de músicas (DAAP)</p>
+	</td>
+	<td>
+	  <p>Permite que você compartilhe sua biblioteca de músicas com outros na sua rede.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

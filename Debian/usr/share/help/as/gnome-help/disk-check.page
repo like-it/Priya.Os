@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="as">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME তথ্যচিত্ৰ প্ৰকল্প</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>নাটালিয়া ৰুজ লিভা</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>মাইকেল হিল</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>আপোনাৰ হাৰ্ড ডিস্ক সুস্ততা নিশ্চিত কৰিবলৈ সমস্যাৰ বাবে হাৰ্ড ডিস্ক পৰিক্ষা কৰক।</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>সমস্যাৰ বাবে আপোনাৰ হাৰ্ড ডিস্ক নিৰীক্ষণ কৰক</title>
+
+<section id="disk-status">
+ <title>হাৰ্ড ডিস্ক নিৰীক্ষণ কৰা</title>
+  <p>হাৰ্ড ডিস্কবোৰৰ এটা বিল্ট-ইন স্বাস্থ্য-পৰিক্ষণ সঁজুলি <app>SMART</app> (স্ব-পৰ্যবেক্ষন, বিশ্লেষণ, আৰু সংবাদন প্ৰযুক্তি) থাকে, যি ডিস্কবোৰক সম্ভাব্য সমস্যাবোৰৰ বাবে নিয়মিতভাৱে নিৰীক্ষণ কৰে। SMART এ লগতে আপোনাক সতৰ্ক কৰে যদি ডিস্ক ব্যৰ্থ হব লয়, যাৰ ফলত আপুনি গুৰুত্বপূৰ্ণ তথ্যৰ হানিৰ পৰা বাচিব পাৰে।</p>
+
+  <p>যদিও SMART স্বচালিতভাৱে চলে, আপুনি আপোনাৰ ডিস্কৰ স্বাস্থ্য <app>ডিস্কসমূহ</app> এপ্লিকেচন চলাই নিৰীক্ষণ কৰিব পাৰিব:</p>
+
+<steps>
+ <title>ডিস্কসমূহ এপ্লিকেচন ব্যৱহাৰ কৰি আপোনাৰ ডিস্কৰ স্বাস্থ্য নিৰীক্ষণ কৰক</title>
+
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to check from the list of storage devices on
+    the left. Information and status of the disk will be shown.</p>
+  </item>
+  <item>
+    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
+    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+  </item>
+  <item>
+    <p>See more information under <gui>SMART Attributes</gui>, or click the
+    <gui style="button">Start Self-test</gui> button to run a self-test.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>ডিস্ক সুস্ত নাথাকিলে কি হব?</title>
+
+  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
+  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
+  to be prepared with a <link xref="backup-why">backup</link> to prevent data
+  loss.</p>
+
+  <p>If the status says "Pre-fail", the disk is still reasonably healthy but
+ signs of wear have been detected which mean it might fail in the near future.
+ If your hard disk (or computer) is a few years old, you are likely to see
+ this message on at least some of the health checks. You should
+ <link xref="backup-how">backup your important files regularly</link> and check
+ the disk status periodically to see if it gets worse.</p>
+
+  <p>যদি ই আৰু বেয়া হয়, আপুনি ততোধিক বিশ্লেষণ অথবা মেৰামতিৰ বাবে কমপিউটাৰ/অথবা হাৰ্ড ড্ৰাইভ এজন দক্ষ ব্যক্তিৰ ওচৰ লৈ যাব লাগে।</p>
+
+</section>
+
+</page>

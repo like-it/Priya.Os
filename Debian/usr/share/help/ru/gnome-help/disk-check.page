@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="ru">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Проверьте свой жёсткий диск на наличие неисправностей, чтобы убедиться, что он в порядке.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Проверка жёсткого диска на наличие неисправностей</title>
+
+<section id="disk-status">
+ <title>Проверка жёсткого диска</title>
+  <p>Жёсткие диски имеют встроенный диагностический инструмент <app>SMART</app> (Self-Monitoring, Analysis, and Reporting Technology), постоянно проверяющий диск на наличие потенциальных проблем. SMART предупредит вас в случае возможности выхода диска из строя, чтобы помочь избежать потери важных данных.</p>
+
+  <p>Хотя SMART запускается автоматически, можно также поверить исправность диска с помощью приложения <app>Диски</app>:</p>
+
+<steps>
+ <title>Проверка исправности диска с помощью приложения <app>Диски</app></title>
+
+  <item>
+    <p>Откройте <gui>Обзор</gui> и откройте приложение <app>Диски</app>.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to check from the list of storage devices on
+    the left. Information and status of the disk will be shown.</p>
+  </item>
+  <item>
+    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
+    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+  </item>
+  <item>
+    <p>See more information under <gui>SMART Attributes</gui>, or click the
+    <gui style="button">Start Self-test</gui> button to run a self-test.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>Что делать, если диск неисправен?</title>
+
+  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
+  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
+  to be prepared with a <link xref="backup-why">backup</link> to prevent data
+  loss.</p>
+
+  <p>Статус «На грани отказа» означает, что диск в основном исправен, но были замечены признаки износа, что означает, что диск может начать сбоить в ближайшем будущем. Если вашему диску (или компьютеру) несколько лет, то, скорей всего, вы увидите это сообщение не один раз во время проверок работоспособности диска. Необходимо на постоянной основе <link xref="backup-how">делать резервные копии важных файлов</link> и время от времени проверять состояние диска, чтобы успеть заметить признаки ухудшения.</p>
+
+  <p>Если состояние ухудшается, возможно, стоит показать компьютер или диск профессионалу для дальнейшей диагностики или ремонта.</p>
+
+</section>
+
+</page>

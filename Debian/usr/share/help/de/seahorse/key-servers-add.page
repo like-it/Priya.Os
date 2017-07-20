@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="key-servers-add" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+    <link type="seealso" xref="pgp-sync"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-08-18" status="draft"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Erweitern Sie die Liste der Schlüssel-Server in <app>Passwörter und Schlüssel</app></desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Einen Schlüssel-Server hinzufügen</title>
+    <p><app>Passwörter und Schlüssel</app> kennt im Vorhinein die folgenden Schlüssel-Server:</p>
+
+    <list>
+      <item>
+        <p>hkp://pool.sks-keyservers.net</p>
+      </item>
+      <item>
+        <p>ldap://keyserver.pgp.com</p>
+      </item>
+    </list>
+
+  <steps>
+    <title>So fügen Sie einen Schlüssel-Server hinzu</title>
+    <item>
+      <p>Wählen Sie <guiseq><gui style="menu">Bearbeiten</gui><gui style="menuitem">Einstellungen</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf den Knopf <gui style="button">Hinzufügen</gui>.</p>
+    </item>
+    <item>
+      <p>Wählen Sie im neuen Dialog den passenden <gui>Typ des Schlüssel-Servers</gui>. Schlüssel-Server werden über das Protokoll unterschieden, mit welchem sie kommunizieren. Schauen Sie sich die ersten Zeichen der Internet-Adresse Ihres Schlüssel-Servers an, um dessen Typ zu erkennen.</p>
+    </item>
+    <item>
+      <p>Fügen Sie im Feld <gui style="input">Rechner</gui> die Internet-Adresse Ihres Schlüssel-Servers ein. Schauen Sie in der Dokumentation des Schlüssel-Servers nach, ob dieser auf einem vom Standard abweichenden Port arbeitet. Falls dem so ist, geben Sie den abweichenden Port nach dem Doppelpunkt ein. Lassen Sie das Eingabefeld nach dem Doppelpunkt frei, wenn Sie unsicher sind.</p>
+    </item>
+    <item>
+      <p>Klicken Sie zum Abschließen auf <gui style="button">OK</gui>.</p>
+    </item>
+  </steps>
+
+</page>

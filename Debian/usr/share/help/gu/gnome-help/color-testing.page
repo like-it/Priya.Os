@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="color-testing" xml:lang="gu">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-gettingprofiles"/>
+
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-04" status="candidate"/>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <credit type="editor">
+      <name>ઍકાટેરીના ગેરાસીમોવા</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Use the supplied test profiles to check that your profiles are being
+    applied correctly to your screen.</desc>
+  </info>
+
+  <title>હું કેવી રીતે ચકાસુ જો રંગ સંચાલન યોગ્ય રીતે કામ કરે તો?</title>
+
+  <p>રંગ રૂપરેખાની અસરો એ અમુકવાર સૂક્ષ્મ છે અને તેને જોવાનું મુશ્કેલ હોઇ શકે છે જો કંઇપણ ફેરફાર થયેલ હોય.</p>
+
+  <p>GNOME comes with several profiles for testing that make it very clear when
+  the profiles are being applied:</p>
+
+  <terms>
+    <item>
+      <title>વાદળી</title>
+      <p>This will turn the screen blue and tests if the calibration curves are
+      being sent to the display.</p>
+    </item>
+<!--    <item>
+      <title>ADOBEGAMMA-test</title>
+      <p>This will turn the screen pink and tests different features of a
+      screen profile.</p>
+    </item>
+    <item>
+      <title>FakeBRG</title>
+      <p>This will not change the screen, but will swap around the RGB channels
+      to become BGR. This will make all the colors gradients look mostly
+      correct, and there won't be much difference on the whole screen, but
+      images will look very different in applications that support color
+      management.</p>
+    </item>-->
+  </terms>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Color</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Color</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>ઉપકરણને પસંદ કરો જેની માટે તમે રૂપરેખાને ઉમેરવા માંગો છો. તમે નોંધને બનાવવાની ઇચ્છા રાખી શકો છો કે કઇ રૂપરેખાને હાલમાં વાપરેલ છે.</p>
+    </item>
+    <item>
+      <p>Click <gui>Add profile</gui> to select a test profile, which should be
+      at the bottom of the list.</p>
+    </item>
+    <item>
+      <p>Press <gui>Add</gui> to confirm your selection.</p>
+    </item>
+    <item>
+      <p>To revert to your previous profile, select the device in the
+      <gui>Color</gui> panel, then select the profile that you were using
+      before you tried one of the test profiles and press <gui>Enable</gui> to
+      use it again.</p>
+    </item>
+  </steps>
+
+
+  <p>Using these profiles, you can clearly see when an application supports
+  color management.</p>
+
+</page>

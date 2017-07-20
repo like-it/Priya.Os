@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="strategy" xml:lang="sv">
+	<info>
+          <revision version="3.4" date="2012-03-08" status="final"/>
+	  <link type="guide" xref="index#play"/>
+	  <credit type="author copyright">
+	    <name>Radoslav Asparuhov</name>
+	    <email>rasparuhov@gmail.com</email>
+	  <years>2011</years>
+	  </credit>
+	  <credit type="editor">
+	    <name>Tiffany Antopolski</name>
+	    <email>tiffany.antopolski@gmail.com</email>
+	  </credit>
+	  <license>
+		<p>Creative Commons DelaLika 3.0</p>
+	  </license>
+	
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Erik Sköldås</mal:name>
+      <mal:email>erik.skoldas@tele2.se</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Strategi</title>
+        <p>Det finns bara en möjlighet för varje cell i ett Sudoku-pussel. Följande strategier kommer att hjälpa dig att systematiskt upptäcka lösningen för varje cell.</p>
+ <section id="strategy1">
+	<title>Strategi 1:</title>
+	  <steps>
+	    <item><p>Välj den rad med flest siffror i.</p>
+                  <note><p>Du bör välja den rad eller kolumn med flest siffror. För enkelheten skull är dessa instruktioner skrivna som om en rad hade flest siffror.</p></note>
+            </item>
+	    <item><p>Avgör vilka nummer i raden som saknas.</p></item>
+	    <item><p>Välj en av de tomma cellerna i denna rad. Bestäm vilka av de saknade siffrorna som finns i samma kolumn eller i cellens 3x3-kvadrat.</p></item>
+	    <item><p>Använd <link xref="notes">anteckningar</link>, ange de saknade siffrorna som inte är i den kolumnen eller 3x3kvadraten, i det övre fältet. Dessa siffror är kandidatlösningar för den cellen.</p></item>
+	    <item><p>Gå till nästa tomma cell i den valda raden och upprepa ovanstående metod. Upprepa detta för varje rad och kolumn, börja med dem med flest nummer och fortsätt till de som har minst. Titta alltid noga på siffrorna och glöm inte 3x3-kvadraterna.</p></item>
+	   </steps>
+            <note><p>Denna strategi kommer att bidra till att avslöja celler som endast har ett möjligt val. När du har hittat denna ruta, kan du fylla i cellen med det valet, och upprepa strategin igen tills hela pusslet är löst.</p></note>
+<figure>
+  <desc>Exempel på användning av strategi 1.</desc>
+  <media type="image" mime="image/png" src="figures/strategy1.png" width="400" its:translate="no"/>
+</figure>
+
+</section>
+<section id="strategy2">
+
+	<title>Strategi 2:</title>
+	  <steps>
+	    <item><p>Hitta det nummer som förekommer oftast.</p></item>
+	    <item><p>Titta nu på de vänstra vertikala grupperingarna av 3x3-kvadraterna och lokalisera alla kolumner i vilka det här numret anges.</p></item>
+  	    <item><p>I denna gruppering, välj en 3x3-kvadrat som inte innehåller detta nummer i någon av dess celler. Använd <link xref="notes">anteckningar</link>, skriv detta nummer i varje tom cell i kolumnen där det här numret visas. Om numret visas i raden i en av dessa celler, skriv inte in den i den cellens anteckning.</p></item>
+	    <item><p>Upprepa de sista två stegen för mitten och den högra vertikala grupperingen.</p></item>
+            <item><p>Hitta nästa nummer som visas mest, och upprepa detta tills du har gjort det för alla 9 siffror.</p></item>
+	  </steps>
+            <note><p>Denna strategi kommer att bidra till att avslöja celler som endast har ett möjligt val. När du har hittat denna ruta, kan du fylla i cellen med det valet, och upprepa strategin igen tills hela pusslet är löst.</p></note>
+<figure>
+  <desc>Exempel på användning av strategi 2.</desc>
+  <media type="image" mime="image/png" src="figures/strategy2.png" width="400" its:translate="no"/>
+</figure>
+
+	   <note><p>Om ingen av ovanstående strategierna löser pusslet på egen hand, kan du växla strategier. Du kan också kombinera strategierna.</p></note>
+</section>
+</page>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <title type="sort">1</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Anslut till en annan dator på ditt lokala nätverk.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Etablera en anslutning</title>
+
+  <p>Du kan ansluta till andra datorer på ditt lokala nätverk via <app>Fjärrskrivbordsvisare</app>.</p>
+
+  <steps>
+    <item>
+      <p>Välj <guiseq><gui style="menu">Fjärr</gui> <gui style="menuitem">Anslut</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Välj <gui>Protokoll</gui> och <gui>Värd</gui> för anslutningen.</p>
+      <note>
+        <p>Vissa protokoll låter dig se alla tillgängliga datorer på ditt lokala nätverk genom att klicka på <gui style="button">Sök</gui>-knappen. Denna knapp kommer inte att visas om du inte har <app>Avahi</app>-stöd.</p>
+      </note>
+    </item>
+    <item>
+      <p>Välj de inställningar du vill ha aktiverade när anslutningen görs. Inställningarna varierar beroende på vilket protokoll du använder.</p>
+    </item>
+    <item>
+      <p>Klicka på knappen <gui style="button">Anslut</gui>.</p>
+      <p>I detta läge kan fjärrskrivbordet behöva bekräfta anslutningen. Om detta är fallet kommer visaren att fortsatt vara svart tills anslutningen är bekräftad.</p>
+      <note>
+        <p>Vissa datorer kan kräva en säker anslutning: en autentiseringsdialog kommer att visas som efterfrågar inloggningsuppgifter. Typen av inloggningsuppgifter beror på fjärrvärden; det kan vara ett lösenord och ett användarnamn. Om du väljer <gui>Kom ihåg denna inloggningsuppgift</gui> så kommer <app>Fjärrskrivbordsvisare</app> att spara informationen i <app>GNOME-nyckelring</app>.</p>
+      </note>
+    </item>
+  </steps>
+
+  <p>Om anslutningen har använts förut kan du också nå den via <guiseq><gui style="menu">Fjärr</gui> <gui style="menuitem">Senaste anslutningar</gui></guiseq>.</p>
+
+  <p>För att stänga en anslutning, välj <guiseq><gui style="menu">Fjärr</gui> <gui style="menuitem">Stäng</gui></guiseq> eller klicka på <gui style="button">Stäng</gui>-knappen.</p>
+
+</page>

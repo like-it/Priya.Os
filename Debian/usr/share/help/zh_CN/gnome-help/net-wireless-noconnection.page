@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-wireless-noconnection" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" version="0.2" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Double-check the password, and other things to try.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>我输入的密码是对的，但是还是不能连接</title>
+
+<p>如果您确定输入的密码是正确的<link xref="net-wireless-wepwpa">无线连接密码</link>，但是仍然不能连接到网络，试试下面的操作：</p>
+
+<list>
+ <item>
+  <p>Double-check that you have the correct password</p>
+  <p>密码是大小写敏感的(它是区分大写和小写字母的)，因此检查一下您输入的字母是否有误。</p>
+ </item>
+
+ <item>
+  <p>试试十六进制或 ASCII 密钥</p>
+  <p>您输入的密码也可以其他形式表示，即作为十六进制的字符串(数字 0-9 和字母 a-f)。如果您可访问通行码和密码/口令，请尝试键入通行码。确保在系统询问密码时选择正确的<gui>无线安全</gui>选项(例如，如果在为WEP 加密连接键入 40 个字符的通行码，则选择<gui>WEP 40/128 位密钥</gui>)。</p>
+ </item>
+
+ <item>
+  <p>尝试关闭您的无线网卡，然后再开启它</p>
+  <p>有时无线网卡会被阻断或者出现小错误，这样它就不能连接。试着关闭网卡，然后再开启，让它重启一下－更多信息请参阅 <link xref="net-wireless-troubleshooting"/></p>
+ </item>
+
+ <item>
+  <p>Check that you're using the correct type of wireless security</p>
+  <p>当提示您输入无线安全密码时，您要选择无线安全所使用的类型，确保您选择的类型是无线路由器或基站使用的。这应该会默认选中，但有时由于某些原因没选中，如果您不知道选哪一个，可以多试几次，找出正确的选项。</p>
+ </item>
+
+ <item>
+  <p>检查您的无线网卡被正确地支持</p>
+  <p>一些无线网卡支持的不是很好，虽然它们显示已连接，但实际并没有，这是因为驱动缺乏支持。试试其他无线驱动，或者您需要执行一些额外的安装(像安装一个不同的<em>固件</em>)。更多信息请参阅 <link xref="net-wireless-troubleshooting"/></p>
+ </item>
+
+</list>
+
+</page>

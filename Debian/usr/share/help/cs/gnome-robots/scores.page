@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="scores" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#play"/>
+
+    <revision pkgversion="3.8" version="0.1" date="2013-04-03" status="draft"/>
+    <revision pkgversion="3.11.90" date="2014-03-22" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">safincrazy@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Rachel Dunstan</name>
+      <email its:translate="no">dunstanrc@gmail.com</email>
+    </credit>
+
+    <desc>Jak se ve hře <app>Roboti</app> přidělují body.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Skóre</title>
+
+  <p>V <app>Robotech</app> existují dva typy nepřátel. Vysoce nebezpeční nepřátelé, za které získáte 20 bodů, když zemřou, a málo nebezpeční nepřátelé, za které ve stejné situaci získáte 10 bodů.</p>
+
+<section id="high-low-risk">
+  <title>Vysoce a málo nebezpeční nepřátelé podle motivu</title>
+
+  <p>Nepřátelé ve hře závisí na zvoleném <link xref="appearance">motivu hry</link>.</p>
+
+  <table frame="top bottom" rules="rows">
+    <thead>
+    <tr>
+    <td><p>Motiv hry</p></td>
+    <td><p>Vysoce nebezpečný nepřítel (20 bodů)</p></td>
+    <td><p>Málo nebezpečný nepřítel (10 bodů)</p></td></tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><p>mraveniště</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/anthills-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Vysoce nebezpečné mraveniště</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/anthills-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Málo nebezpečné mraveniště</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>bubáci</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/boo-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Vysoce nebezpečný bubák</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/boo-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Málo nebezpečný bubák</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>krávy</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/cows-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Vysoce nebezpečná kráva</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/cows-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Málo nebezpečná kráva</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>vejce</p></td>
+    <td><p>
+    <media type="image" its:translate="no" src="figures/eggs-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Vysoce nebezpečné vejce</span></media></p></td>
+    <td><p>
+    <media type="image" its:translate="no" src="figures/eggs-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Málo nebezpečné vejce</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>trpaslíci</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/gnomes-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Vysoce nebezpečný trpaslík</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/gnomes-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Málo nebezpečný trpaslík</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>myši</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/mice-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Vysoce nebezpečná myš</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/mice-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Málo nebezpečná myš</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>roboti</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/robots-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Vysoce nebezpečný robot</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/robots-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Málo nebezpečný robot</span></media></p></td>
+    </tr>
+    <tr><td><p>louže</p></td>
+    <td><p>
+    <media type="image" its:translate="no" src="figures/spills-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Vysoce nebezpečná louže</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/spills-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Málo nebezpečná louže</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>mraky</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/stormclouds-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Vysoce nebezpečný mrak</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/stormclouds-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Málo nebezpečný mrak</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>toustovače</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/toasters-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Vysoce nebezpečný toustovač</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/toasters-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Málo nebezpečný toustovač</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>ufa</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/ufo-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Vysoce nebezpečné ufo</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/ufo-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Málo nebezpečné ufo</span></media></p></td>
+    </tr>
+  </tbody>
+  </table>
+
+</section>
+
+<section id="high-scores">
+  <title>Nejvyšší skóre</title>
+
+  <p>Pro zobrazení nejvyšších skóre vyberte <guiseq><gui style="menu">Hra</gui> <gui style="menuitem">Skóre</gui></guiseq>.</p>
+
+  <p>Skóre se zaznamenává zvlášť pro každou kombinaci <link xref="game-types">typu hry a volby bezpečné tahy</link>. Pro zobrazení skóre pro konkrétní typ hry a volby bezpečných tahů použijte rozbalovací nabídku vedle popisku <gui>Mapa</gui>.</p>
+
+</section>
+
+</page>

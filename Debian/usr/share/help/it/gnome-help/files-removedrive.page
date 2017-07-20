@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-removedrive" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="files#removable"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-10-08" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Espellere o smontare un'unità USB, un CD, un DVD o altri dispositivi.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Rimuovere in sicurezza un dispositivo esterno</title>
+
+  <p>Quando si utilizza un dispositivo di archiviazione esterno, come un'unità USB, è consigliabile rimuoverlo in sicurezza prima di scollegarlo. Se ci si limita a scollegarlo, si corre il rischio di farlo mentre un'applicazione lo sta ancora usando. Questo potrebbe provocare la perdita o il danneggiamento di alcuni file. Quando si usa un disco ottico, come un CD o un DVD, si può usare la stessa procedura per espellere il disco dal computer.</p>
+
+  <steps>
+    <title>Per espellere un dispositivo rimovibile:</title>
+    <item>
+      <p>From the <gui xref="shell-introduction#activities">Activities</gui> overview,
+      open <app>Files</app>.</p>
+    </item>
+    <item>
+      <p>Individuare il dispositivo nel riquadro laterale. Dovrebbe presentare una piccola icona di espulsione vicino al nome. Fare clic sull'icona di espulsione per rimuovere in sicurezza o espellere il dispositivo.</p>
+      <p>In alternativa, è possibile fare clic col pulsante destro del mouse sul nome del dispositivo nel riquadro laterale e selezionare <gui>Espelli</gui>.</p>
+    </item>
+  </steps>
+
+  <section id="remove-busy-device">
+    <title>Rimuovere in sicurezza un dispositivo in uso</title>
+
+  <p>If any of the files on the device are open and in use by an application,
+  you will not be able to safely remove the device. You will be prompted with a
+  window telling you <gui>Volume is busy</gui>. To safely remove the device:</p>
+
+  <steps>
+    <item><p>Click <gui>Cancel</gui>.</p></item>
+    <item><p>Close all the files on the device.</p></item>
+    <item><p>Click the eject icon to safely remove or eject the
+    device.</p></item>
+    <item><p>In alternativa, è possibile fare clic col pulsante destro del mouse sul nome del dispositivo nel riquadro laterale e selezionare <gui>Espelli</gui>.</p></item>
+  </steps>
+
+  <note style="warning"><p>You can also choose <gui>Eject Anyway</gui> to
+  remove the device without closing the files. This may cause errors in
+  applications that have those files open.</p></note>
+
+  </section>
+
+</page>

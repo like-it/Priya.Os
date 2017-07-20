@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="color-import-windows" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <link type="seealso" xref="color-gettingprofiles"/>
+    <desc>Jak naimportovat existující profil ICC ve Windows.</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Milan Knížek</mal:name>
+      <mal:email>knizek@volny.cz</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Instalace profilu ICC v Microsoft Windows</title>
+  <p>Metoda přiřazení profilu k zařízení a též načtení kalibračních křivek vložených v profilu se liší pro každou verzi Microsoft Windows.</p>
+  <section id="xp">
+    <title>Windows XP</title>
+    <p>Klikněte pravým tlačítkem na soubor profilu v Průzkumníku a zvolte <gui>Instalovat profil</gui>. Tím se profil zkopíruje automaticky do správné složky.</p>
+    <p>Poté otevřete <guiseq><gui>Ovládací panely</gui><gui>Barvy</gui></guiseq> a přidejte profil k zařízení.</p>
+    <note style="warning">
+      <p>Pokud chcete ve Windows XP nahradit existující profil, výše uvedený odkaz nefunguje. Místo toho je nutné profily ručně zkopírovat do <file>C:\Windows\system32\spool\drivers\color</file> a teprve poté je nastavit.</p>
+    </note>
+    <p>Windows XP vyžaduje program, který po spuštění počítače zkopíruje kalibrační křivky z profilu do grafické karty. Umí to např. <app>Adobe Gamma</app>, <app>LUT Loader</app> nebo lze udělat zdarma pomocí <app href="https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=12714"> Microsoft Color Control Panel Applet</app>. Poslední jmenovaný program přidá do Ovládacích panelů novou položku <gui>Barvy</gui> a zajistí načtení kalibračních křivek z výchozího profilu po každém spuštění počítače.</p>
+  </section>
+
+  <section id="vista">
+    <title>Windows Vista</title>
+    <p>Následkem chyby v Microsoft Windows Vista dojde k odstranění kalibračních křivek z LUT grafické karty po přihlášení se, po uspání a při zobrazení dialogového okna UAC (kontrola přístupu uživatele). Tzn., že po těchto událostech musíte kalibrační křivky profilu ICC znovu načíst ručně. Pokud tedy používáte profily s vloženými kalibračními křivkami, mějte na paměti, že snadno může dojít k jejich vymazání z grafické karty.</p>
+  </section>
+
+  <section id="7">
+    <title>Windows 7</title>
+    <p>Obdobně jako v Linuxu lze i ve Windows 7 instalovat profily pro všechny uživatele (systémové) nebo jen pro jednoho (uživatelské). V každém případě jsou však uloženy na jednom místě. Klikněte pravým tlačítkem na soubor profilu v Průzkumníku a zvolte <gui>Instalovat profil</gui> nebo zkopírujte soubor profilu .icc do <file>C:\Windows\system32\spool\drivers\color</file>.</p>
+    <p>Otevřete <guiseq><gui>Ovládací panely</gui><gui>Správa barev</gui></guiseq> a přidejte profil do systému pomocí kliknutí na tlačítko <gui>Přidat</gui>. Klikněte na záložku <gui>Upřesnit</gui> a hledejte <gui>Kalibrace displeje</gui>. Načítání kalibračních křivek se zapne přepínačem <gui>Použít kalibraci displeje systému Windows</gui>, který je však zatím neaktivní. Přepínač se aktivuje kliknutím na <gui>Změnit výchozí předvolby</gui> a poté již lze přepínač na záložce <gui>Upřesnit</gui> zapnout.</p>
+    <p>Pro nastavení gamy displeje uzavřete dialogové okno a klikněte na <gui>Znovu načíst stávající kalibraci</gui>. Kalibrační křivky by nyní měly být nastaveny automaticky při spuštění počítače.</p>
+  </section>
+
+</page>

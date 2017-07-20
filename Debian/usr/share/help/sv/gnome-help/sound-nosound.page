@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="sound-nosound" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="sound-broken"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Kontrollera att ljudet inte är tystat, att kablarna är anslutna ordentligt och att ljudkortet detekterats.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Jag kan inte höra några ljud alls från datorn</title>
+
+  <p>Om du inte kan höra några ljud alls från din dator, till exempel när du försöker spela musik, prova dessa felsökningssteg.</p>
+
+<section id="mute">
+  <title>Säkerställ att ljudvolymen inte är tyst</title>
+
+  <p>Öppna <gui xref="shell-introduction#yourname">systemmenyn</gui> från högersidan på systemraden och säkerställ att ljudet inte är tyst eller långt nedskruvat.</p>
+
+  <p>Vissa bärbara datorer har tangenter för att tysta ljudet på tangentbordet — tryck på den knappen för att se om det ljudet fungerar.</p>
+
+  <p>Du bör också kontrollera att du inte har tystat ljudet från programmet som du använder för att spela ljud (till exempel din musikspelare eller filmspelare). Programmet kan ha en volymknapp i sitt huvudfönster, så kontrollera den.</p>
+
+  <p>Dessutom kan du kontrollera <gui>Program</gui>-fliken i <gui>Ljud</gui>-gränssnittet:</p>
+  <steps>
+    <item>
+    <p>Öppna <app>Inställningar</app> från översiktsvyn <gui>Aktiviteter</gui>.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Ljud</gui>.</p>
+    </item>
+    <item>
+      <p>Gå till <gui>Program</gui>-fliken och kontrollera att ditt program inte har ljudet avstängt.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="speakers">
+  <title>Kontrollera att högtalarna är igång och korrekt anslutna</title>
+  <p>Om din dator har externa högtalare, försäkra dig om att de är påslagna och att volymen är uppskruvad. Säkerställ att högtalarkabeln är ordentligt inkopplad i kontakten ”ljudutgång” på din dator. Denna kontakt är vanligtvis ljusgrön till färgen.</p>
+
+  <p>Vissa ljudkort kan växla vilken kontakt som de använder som utgång (till högtalarna) och ingång (från till exempel en mikrofon). Utgångskontakten kan vara olika när du kör Linux än i Windows eller Mac OS. Prova att koppla in högtalarkabeln i olika ljudkontakter på din dator.</p>
+
+ <p>En sista sak att kontrollera är att se om ljudkabeln är ordentligt inkopplad på baksidan av högtalarna. Vissa högtalare har dessutom mer än en ingång.</p>
+</section>
+
+<section id="device">
+  <title>Kontrollera att rätt ljudenhet är vald</title>
+
+  <p>Vissa datorer har flera ”ljudenheter” installerade. Vissa av dessa är kapabla att sända ut ljud medan andra inte är det, så du bör kontrollera att du har rätt ljudenhet vald. Det kan behövas ett antal försök för att hitta den rätta.</p>
+
+  <steps>
+    <item>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Ljud</gui>.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Ljud</gui> för att öppna panelen.</p>
+    </item>
+    <item>
+      <p>I fliken <gui>Utgång</gui>, ändra inställningen <gui>Profil</gui> för den valda enheten och spela ett ljud för att se om det fungerar. Du kan behöva gå genom listan och prova varje profil.</p>
+
+      <p>Om det inte fungerar kan du behöva göra detsamma för de andra enheterna som är listade.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="hardware-detected">
+
+ <title>Kontrollera att ljudkortet detekterades ordentligt</title>
+
+  <p>Ditt ljudkort kanske inte har detekterats ordentligt, antagligen för att drivrutinerna för kortet inte är installerade. Du kan behöva installera drivrutinerna för kortet manuellt. Hur du gör detta beror på korttypen.</p>
+
+  <p>Kör kommandot <cmd>lspci</cmd> i terminalen för att få reda på vilket ljudkort du har:</p>
+  <steps>
+    <item>
+      <p>Gå till översiktsvyn <gui>Aktiviteter</gui> och öppna en Terminal.</p>
+    </item>
+    <item>
+      <p>Kör <cmd>lspci</cmd> som <link xref="user-admin-explain">administratör</link>; skriv antingen <cmd>sudo lspci</cmd> och mata in ditt lösenord, eller skriv <cmd>su</cmd>, mata in <em>root</em>-lösenordet (administratörslösenordet) och skriv sedan <cmd>lspci</cmd>.</p>
+    </item>
+    <item>
+      <p>Kontrollera om en <em>ljudstyrenhet</em> eller en <em>ljudenhet</em> listas: i sådana fall bör du se tillverkarens namn och modellnummer på ljudkortet. <cmd>lspci -v </cmd> kommer att visa en lista med mer detaljerad information.</p>
+    </item>
+  </steps>
+
+  <p>Du kan nog hitta och installera drivrutinerna för ditt kort. Det är bäst att fråga efter instruktioner på supportforum (eller liknande) för din Linux-distribution.</p>
+
+  <p>Om du inte kan få tag i drivrutiner för ditt ljudkort kanske du föredrar att köpa ett nytt ljudkort. Du kan köpa ljudkort som kan installeras inuti dator eller externa USB-ljudkort.</p>
+
+</section>
+
+</page>

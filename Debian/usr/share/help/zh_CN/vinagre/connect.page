@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <title type="sort">1</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>建立到局域网另一台计算机的连接。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>建立连接</title>
+
+  <p>You can connect to other computers on your local network using
+  <app>Remote Desktop Viewer</app>.</p>
+
+  <steps>
+    <item>
+      <p>选择 <guiseq><gui style="menu">远程</gui> <gui style="menuitem">连接</gui></guiseq>。</p>
+    </item>
+    <item>
+      <p>为连接选择<gui>协议</gui>和<gui>主机</gui>。</p>
+      <note>
+        <p>某些协议允许您通过点击<gui style="button">查找</gui>按钮来查看局域网中所有的计算机。若没有<app>avahi</app>支持，该按钮将不会显示。</p>
+      </note>
+    </item>
+    <item>
+      <p>选择连接建立时您要启用的选项。选项会根据您使用的协议变化。</p>
+    </item>
+    <item>
+      <p>点击<gui style="button">连接</gui>按钮。</p>
+      <p>此时，远程桌面可能需要确认连接。如果是这样，查看器可能会在连接确认前变黑。</p>
+      <note>
+        <p>Some computers may require a secure connection: an authentication
+        dialog will be displayed, asking for the credentials. The type of
+        credentials depend on the remote host; it may be a password and a
+        username. If you select <gui>Remember this credential</gui>,
+        <app>Remote Desktop Viewer</app> will store the information using
+        <app>GNOME Keyring</app>.</p>
+      </note>
+    </item>
+  </steps>
+
+  <p>如果连接原先使用过，您也可以通过<guiseq><gui style="menu">远程</gui><gui style="menuitem">最近连接</gui></guiseq>来启用它。</p>
+
+  <p>要关闭连接，选择 <guiseq><gui style="menu">远程</gui> <gui style="menuitem">关闭</gui></guiseq> 或点击 <gui style="button">关闭</gui> 按钮。</p>
+
+</page>

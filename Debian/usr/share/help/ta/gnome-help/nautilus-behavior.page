@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>கோப்புகளைத் திறக்க அல்லது செயல்படுத்தக்கூடிய உரை கோப்புகளை இயக்க அல்லது காண ஒற்றை சொடுக்கம் செய்தல் மற்றும் குப்பை நடத்தையைக் குறிப்பிடுதல்.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>டிஃபானி அன்ட்டொபோல்ஸ்கி</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>ஷான் மெக்கேன்ஸ்</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>மைக்கேல் ஹில்</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>சிந்து S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+<title>கோப்பு மேலாளர் நடத்தை முன்னுரிமைகள்</title>
+<p>கோப்புகளைத் திறக்க ஒற்றை சொடுக்கம் செய்ய வேண்டுமா அல்லது இரு சொடுக்கம் செய்ய வேண்டுமா என்பதையும், செயல்படுத்தக்கூடிய உரை கோப்புகள் எப்படி கையாளப்படுகின்றன என்பதையும் குப்பைத் தொட்டி எப்படி நடந்துகொள்ள வேண்டும் என்பதையும் நீங்கள் கட்டுப்படுத்த முடியும். மேல் பட்டியில் <gui>கோப்புகள்</gui> ஐ சொடுக்கி <gui>முன்னுரிமைகள்</gui> ஐ தேர்வு செய்து, <gui>நடத்தை</gui> தாவலைத் தேர்ந்தெடுக்கவும்.</p>
+
+<section id="behavior">
+<title>நடத்தை</title>
+<terms>
+ <item>
+  <title><gui>உருப்படிகளைத் திறக்க ஒற்றை சொடுக்கம்</gui></title>
+  <title><gui>உருப்படிகளைத் திறக்க இரு சொடுக்கம்</gui></title>
+  <p>முன்னிருப்பாக, சொடுக்கம் செய்யும் போது கோப்புகள் தேர்வு செய்யப்படும், இரு சொடுக்கும் போது அவை திறக்கப்படும். நீங்கள் மாறாக கோப்புகள் மற்றும் கோப்புறைகளை ஒரு முறை சொடுக்கும் போது அவை திறக்குமாறும் அமைக்கலாம். நீங்கள் ஒற்றை சொடுக்க முறையைப் பயன்படுத்தும் போது ஒன்று அல்லது அதற்கு மேற்பட்ட கோப்புகளைத் தேர்ந்தெடுக்க சொடுக்கும் போது, <key>Ctrl</key> விசையைப் பிடித்துக்கொள்ள வேண்டும்.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>செயல்படுத்தக்கூடிய உரை கோப்புகள்</title>
+ <p>நீங்கள் இயக்கக்கூடிய ஒரு நிரலைக் கொண்டுள்ள உரைக் கோப்பே செயல்படுத்தக்கூடிய உரை கோப்பு எனப்படும். ஒரு கோப்பு நிரலாக செயல்படுத்தப்பட வேண்டுமெனில் அதை <link xref="nautilus-file-properties-permissions">கோப்பு அனுமதிகளும்</link> அனுமதிக்க வேண்டும். <link xref="nautilus-file-properties-permissions"> கோப்பு அனுமதிகளை </link> ஒரு திட்டம் என ரன் கோப்பு அனுமதிக்க வேண்டும். <sys>Shell</sys>, <sys>Python</sys> மற்றும் <sys>Perl</sys> ஸ்கிரிப்ட்டுகள் இவற்றில் பொதுவானவை. அவற்றின் நீட்டிப்புகள் முறையே <file>.sh</file>, <file>.py</file> மற்றும் <file>.pl</file> ஆகும்.</p>
+ 
+ <p>நீங்கள் செயல்படுத்தக்கூடிய உரை கோப்பு ஒன்றைத் திறக்கும் போது, நீங்கள் இவ்விருப்பங்களைத் தேர்வு செய்யலாம்:</p>
+ 
+ <list>
+  <item>
+    <p><gui>செயல்படுத்தக்கூடிய உரை கோப்புகளை திறக்கும் போது அவற்றை இயக்குதல்</gui></p>
+  </item>
+  <item>
+    <p><gui>செயல்படுத்தக்கூடிய உரை கோப்புகளை திறக்கும் போது அவற்றைக் காணுதல்</gui></p>
+  </item>
+  <item>
+    <p><gui>ஒவ்வொரு முறையும் கேட்டல்</gui></p>
+  </item>
+ </list>
+
+ <p><gui>ஒவ்வொரு முறையும் கேட்டல்</gui> என்பது தேர்ந்தெடுக்கப்பட்டால், நீங்கள் தேர்ந்தெடுத்த உரை கோப்பை இயக்க வேண்டுமா அல்லது காண வேண்டுமா என கேட்கும் ஒரு பாப்-அப் உரையாடல் காண்பிக்கப்படும்.</p>
+
+ <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
+
+<steps>
+  <item>
+    <p>விரும்பிய கோப்புறைக்குச் செல்லவும்.</p>
+  </item>
+  <item>
+    <p>விரும்பும் கோப்பைத் தேர்ந்தெடுக்கவும்.</p>
+  </item>
+  <item>
+    <p>சூழல் மெனுவைத் திறக்க கோப்பை வலது சொடுக்கம் செய்து <gui style="menuitem">Scripts</gui> மெனுவிலிருந்து இயக்க விரும்பும் ஸ்கிரிப்ட்டைத் தேர்ந்தெடுக்கவும்.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>வலை அல்லது <sys>ftp</sys> உள்ளடக்கத்தைக் காட்டும் ஒரு கோப்புறையில் இருந்து ஒரு ஸ்கிரிப்ட்டை இயக்கினால், அதற்கு எந்த அளவுருக்களும் வழங்கப்படாது.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">கோப்பு மேலாளர் குப்பைத் தொட்டி முன்னுரிமைகள்</title>
+</info>
+<title>குப்பைத்தொட்டி</title>
+
+<terms>
+ <item>
+  <title><gui>Ask before emptying the Trash</gui></title>
+  <p>இந்த விருப்பம் முன்னிருப்பாக தேர்வு செய்யப்பட்டிருக்கும். குப்பைத் தொட்டியை காலியாக்கும் போது, நீங்கள் குப்பைத் தொட்டியை காலி செய்ய வேண்டுமா அல்லது கோப்புகளை அழிக்க வேண்டுமா என்று உறுதிப்படுத்துமாறு ஒரு செய்தி காண்பிக்கப்படும்.</p>
+ </item>
+</terms>
+</section>
+
+</page>

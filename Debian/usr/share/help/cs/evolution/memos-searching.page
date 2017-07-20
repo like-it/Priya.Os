@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="memos-searching" xml:lang="cs">
+
+  <info>
+    <desc>Jak vyhledat poznámku.</desc>
+    
+    <link type="guide" xref="searching-items"/>
+    <link type="guide" xref="tasks-organizing"/>
+
+    <revision pkgversion="3.5.90" version="0.3" date="2012-08-17" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Max Vorobuov</name>
+      <email its:translate="no">vmax0770@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Hledání poznámek</title>
+
+<section id="search-single">
+<title>Hledání v jedné poznámce</title>
+<p>Chcete-li najít text v zobrazené poznámce, vyberte v hlavní nabídce <guiseq><gui>Upravit</gui> <gui>Najít v poznámce…</gui></guiseq></p>
+</section>
+
+<section id="search-many">
+<title>Hledání ve všech poznámkách</title>
+
+<section id="quick-search">
+<title>Rychlé hledání</title>
+<p>V zobrazení Poznámky můžete poznámky rychle vyhledávat podle shrnutí nebo kategorie.</p>
+<p>Hledání podle shrnutí:</p>
+<steps>
+<item><p>Klikněte na ikonu hledání <media type="image" mime="image/png" its:translate="no" src="figures/search-icon.png"/>, aby se rozbalil seznam.</p></item>
+<item><p>V seznamu vyberte podmínky hledání.</p></item>
+<item><p>Zadejte text, který chcete vyhledat, a zmáčkněte <key>Enter</key>.</p></item>
+<item><p><app>Evolution</app> zobrazí výsledky hledání.</p></item>
+</steps>
+<p>Hledání podle kategorie:</p>
+<steps>
+<item><p>Klikněte na rozbalovací seznam <gui>Zobrazit</gui>.</p></item>
+<item><p>Vyberte ze seznamu kategorii.</p></item>
+<item><p><app>Evolution</app> zobrazí výsledky hledání.</p></item>
+</steps>
+<p>Chcete-li nastavit několik podmínek vyhledávání, měli byste použít pokročilé hledání, které je popsáno níže.</p>
+</section>
+
+<!-- As advanced-search, clearing-search, saved-searches, editing-a-saved-search are totally identical in all *-searching.page files, this is centrally in one file that's included by XInclude. See
+http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-searching.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:section)"/>
+
+</section>
+</page>

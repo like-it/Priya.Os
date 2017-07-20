@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-media" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.2" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Διαμοιραστείτε πολυμέσα στο τοπικό δίκτυο σας χρησιμοποιώντας UPnP.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Κοινή χρήση της μουσικής, των φωτογραφιών και των βίντεό σας</title>
+
+  <p>Μπορείτε να περιηγηθείτε, να αναζητήσετε και να παίξετε τα μέσα στον υπολογιστή σας χρησιμοποιώντας μια ενεργή συσκευή <sys>UPnP</sys> ή <sys>DLNA</sys> όπως ένα τηλέφωνο, τηλεόραση ή κονσόλα παιχνιδιού. Ρυθμίστε την <gui>Κοινή χρήση μέσων</gui> για να επιτρέψετε σε αυτές τις συσκευές να προσπελάσουν τους φακέλους που περιέχουν τη μουσική, τις φωτογραφίες και τα βίντεό σας.</p>
+
+  <note style="info package">
+    <p>Πρέπει να έχετε εγκατεστημένο το πακέτο <app>Rygel</app> για να είναι ορατή η <gui>Κοινή χρήση πολυμέσων</gui>.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:rygel" style="button">Εγκατάσταση Rygel</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Κοινή χρήση</gui>.</p>
+    </item>
+    <item>
+      <p>Κάντε κλικ στο <gui>Κοινή χρήση</gui> για να ανοίξετε τον πίνακα.</p>
+    </item>
+    <item>
+      <p>Αν η <gui>Κοινή χρήση</gui> είναι <gui>ΑΝΕΝΕΡΓΗ</gui>, αλλάξτε την σε <gui>ΕΝΕΡΓΗ</gui>.</p>
+
+      <note style="info"><p>Αν το κείμενο κάτω από το <gui>όνομα υπολογιστή</gui> σας επιτρέπει να το επεξεργαστείτε, μπορείτε να <link xref="sharing-displayname">αλλάξετε</link> το όνομα που ο υπολογιστής σας εμφανίζετε στο δίκτυο.</p></note>
+    </item>
+    <item>
+      <p>Επιλέξτε <gui>Κοινή χρήση πολυμέσων</gui>.</p>
+    </item>
+    <item>
+      <p>Αλλάξτε το <gui>Κοινή χρήση πολυμέσων</gui> σε <gui>ΝΑΙ</gui>.</p>
+    </item>
+    <item>
+      <p>Από προεπιλογή, οι φάκελοι <file>Μουσική</file>, <file>Εικόνες</file> και <file>Βίντεο</file> είναι κοινόχρηστα. Για να αφαιρέσετε ένα από αυτά, κάντε κλικ στο <gui>Χ</gui> δίπλα στο όνομα του φακέλου.</p>
+    </item>
+    <item>
+      <p>Για να προσθέσετε ένα φάκελο, κάντε κλικ στο <gui style="button">+</gui> για να ανοίξετε το παράθυρο <gui>Επιλογή φακέλου</gui>. Περιηγηθείτε <em>στον</em> επιθυμητό φάκελο και πατήστε <gui style="button">Άνοιγμα</gui>.</p>
+    </item>
+    <item>
+      <p>Κάντε κλικ στο <gui style="button">Χ</gui>. Θα μπορείτε τώρα να περιηγηθείτε ή να αναπαράγετε πολυμέσα στους φακέλους που επιλέξατε χρησιμοποιώντας την εξωτερική συσκευή.</p>
+    </item>
+  </steps>
+
+  <section id="networks">
+  <title>Δίκτυα</title>
+
+  <p>Η ενότητα <gui>Δίκτυα</gui> εμφανίζει τα δίκτυα στα οποία είσαστε προς το παρόν συνδεμένοι. Χρησιμοποιήστε τον διακόπτη <gui>ΝΑΙ | ΟΧΙ</gui> δίπλα στο κάθε δίκτυο για να επιλέξετε που μπορούν να διαμοιραστούν τα πολυμέσα σας.</p>
+
+  </section>
+
+</page>

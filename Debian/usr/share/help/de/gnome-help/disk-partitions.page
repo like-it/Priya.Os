@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="de">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>Was sind Datenträger und Partitionen? So setzen Sie die Laufwerksverwaltung ein.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>Datenträger und Partitionen verwalten</title>
+
+  <p>Das Wort <em>Datenträger</em> wird verwendet, um ein Speichergerät zu beschreiben, etwa eine Festplatte. Es kann sich auch auf einen <em>Teil</em> des Speichers auf diesem Gerät beziehen, weil Sie Speicherplatz in Blöcke aufteilen können. Der Rechner erlaubt den Zugriff auf diesen Speicher über Ihr Dateisystem durch einen Vorgang, der als <em>Einhängen</em> bezeichnet wird. Eingehängte Datenträger können Festplatten, USB-Laufwerke, DVD-RWs, SD-Karten und andere Medien sein. Wenn ein Datenträger gerade eingehängt ist, können Sie darauf befindliche Dateien lesen (und möglicherweise auch schreiben).</p>
+
+  <p>Eingehängte Datenträger werden oft als <em>Partitionen</em> bezeichnet, obwohl das nicht unbedingt ein und dasselbe ist. Eine »Partition« meint einen <em>physischen</em> Speicherbereich auf einem bestimmten Laufwerk. Sobald eine Partition eingehängt ist, kann man sie als Datenträger bezeichnen, weil man auf die Dateien darauf zugreifen kann.</p>
+
+<section id="manage">
+ <title>Datenträger und Partitionen mit der Laufwerksverwaltung betrachten und verwalten</title>
+
+  <p>Sie können die Datenträger Ihres Rechners mit der Laufwerksverwaltung überprüfen und verändern.</p>
+
+<steps>
+  <item>
+    <p>Öffnen Sie die <gui>Aktivitäten</gui>-Übersicht und starten Sie die Anwendung <app>Laufwerke</app>.</p>
+  </item>
+  <item>
+    <p>In der Liste der Speichergeräte in der linken Leiste finden Sie Festplatten, CD/DVD-Laufwerke und andere physische Geräte. Klicken Sie auf das Gerät, das Sie untersuchen wollen.</p>
+  </item>
+  <item>
+    <p>In der rechten Leiste befindet sich eine visuelle Aufbereitung der Datenträger und Partitionen auf dem gewählten Gerät. Er enthält auch eine Reihe von Hilfsmitteln zur Verwaltung dieser Datenträger.</p>
+    <p>Vorsicht: Es ist möglich, mit diesen Hilfsprogrammen alle Daten auf Ihrer Festplatte unwiederbringlich zu löschen.</p>
+  </item>
+</steps>
+
+  <p>Ihr Rechner hat höchstwahrscheinlich mindestens eine <em>primäre</em> Partition und eine einzelne Partition für den <em>Auslagerungsspeicher</em>, auch als Swap-Partition bezeichnet. Der Auslagerungsspeicher wird vom Betriebssystem für die Verwaltung des Arbeitsspeichers verwendet und wird selten eingehängt. Die primäre Partition enthält Ihr Betriebssystem, Ihre Anwendungen, Einstellungen und persönlichen Dateien. Diese Dateien können auch über mehrere Partitionen verteilt sein, wenn es die Sicherheit erfordert oder anderweitig zweckmäßig ist.</p>
+
+  <p>Eine primäre Partition muss Informationen enthalten, die Ihr Rechner zum Hochfahren oder <em>Booten</em> braucht. Aus diesem Grund wird Sie manchmal Boot-Partition genannt. Um festzustellen, ob ein Datenträger bootfähig ist, wählen Sie die Partition und klicken Sie auf den Menü-Knopf in der Werkzeugleiste unterhalb der Partitionsliste. Klicken Sie anschließend auf <gui>Partition bearbeiten …</gui> und sehen Sie unter <gui>Flags</gui> nach. Externe Medien wie USB-Laufwerke und CDs können auch bootfähige Datenträger enthalten.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="pgp-subkeys" xml:lang="de">
+  <info>
+    <link type="guide" xref="index#pgp-keys" group="second"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-28" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Ein Unterschlüssel ist in einem PGP-Schlüsselpaar immer an einen Hauptschlüssel gebunden. Er wird zur Verschlüsselung eingesetzt.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Was ist ein Unterschlüssel?</title>
+
+  <p>Obwohl es sehr wichtig ist, Ihre Schlüssel sicher zu verwahren, kann dies mit vielen Schlüsseln sehr mühsam werden. <app>Passwörter und Schlüssel</app> bietet eine einfache Lösung für die Schlüsselsicherheit, indem <em>Unterschlüssel</em> zum Signieren und Verschlüsseln eingesetzt werden.</p>
+
+  <p>Immer wenn Sie einen neuen öffentlichen kryptografischen Schlüssel <link xref="pgp-create">erzeugen</link> wird ein <em>Schlüsselpaar</em> anstatt eines einzelnen Schlüssels generiert. Das Schlüsselpaar besteht aus einem <em>Hauptschlüssel</em> und einem <em>Unterschlüssel</em>. Mit dem Hauptschlüssel können weitere zusätzliche Unterschlüssel erstellt werden, die dann daran gebunden werden.</p>
+
+  <list>
+    <title>Wozu dient jeder Schlüssel in einem Schlüsselpaar?</title>
+      <item>
+	<p>Der <em>Hauptschlüssel</em> wird zum <link xref="pgp-sign">Signieren</link> anderer Schlüssel eingesetzt, zum Erstellen von Unterschlüsseln und zum <link xref="subkeys-revoke">Widerrufen</link> von Unterschlüsseln. Ihr Hauptschlüssel muss sehr sicher verwahrt werden. Vertrauenssignaturen werden ebenfalls mit Ihrem Hauptschlüssel gesammelt. Wenn der Hauptschlüssel in fremde Hände gelangt, so bleibt Ihnen nichts anderes übrig, als diesen samt allen zugehörigen Unterschlüsseln zu widerrufen.</p>
+      </item>
+      <item>
+	<p>Der Vorgabe-<em>Unterschlüssel</em> wird zum Verschlüsseln und Entschlüsseln von Nachrichten eingesetzt. Es können weitere zusätzliche Unterschlüssel zum Signieren erstellt werden. Obwohl es wichtig ist Ihre Unterschlüssel sicher zu verwahren, können Sie jederzeit einen Unterschlüssel widerrufen, wenn dieser in fremde Hände gelangt, und einen neuen mit dem Hauptschlüssel erstellen.</p>
+      </item>
+  </list>
+
+  <section id="more" style="2column">
+    <title>Erfahren Sie mehr über Unterschlüssel</title>
+  </section>
+</page>

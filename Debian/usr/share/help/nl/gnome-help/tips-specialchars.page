@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tips-specialchars" xml:lang="nl">
+
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="seealso" xref="keyboard-layouts"/>
+
+    <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Tekens typen die niet op uw toetsenbord voorkomen, met inbegrip van vreemde alfabetten, wiskundige symbolen en dingbats.</desc>
+  </info>
+
+  <title>Speciale tekens invoeren</title>
+
+  <p>U kunt duizenden tekens uit de meeste schriften van de wereld invoeren en bekijken, zelfs die welke niet op uw toetsenbord voorkomen. Op deze pagina treft u verschillende manieren om speciale tekens in te voeren.</p>
+
+  <links type="section">
+    <title>Manieren om tekens in te voeren</title>
+  </links>
+
+  <section id="charmap">
+    <title>Tekens en symbolen</title>
+    <p>Gnome bevat een toepassing voor vreemde tekens en symbolen waarmee u door alle tekens in Unicode kunt bladeren. Gebruik Tekens en symbolen om het gewenste teken te zoeken en kopieer en plak dat waar u het nodig heeft.</p>
+
+    <p>You can find <app>Character Map</app> in the <gui>Activities</gui>
+    overview. For more information on the character map, see the
+    <link href="help:gucharmap">Character Map Manual</link>.</p>
+
+  </section>
+
+  <section id="characters">
+    <title>Characters</title>
+    <p>Another useful application shipped with GNOME is <app>Characters</app>.
+    It lets you find and insert unusual characters by browsing character
+    categories or searching for keywords.</p>
+
+    <p>You can launch Characters from the Activities overview. For more
+    information on Characters, see the <link href="help:gnome-characters">
+    Characters Manual</link>.</p>
+
+  </section>
+
+  <section id="compose">
+    <title>Samensteltoets</title>
+    <p>Een samensteltoets is een speciale toets in combinatie waarmee u meerdere toetsen achter elkaar kunt indrukken om een speciaal teken te krijgen. Om bijvoorbeeld de letter met accent <em>é</em> te typen kunt u de <key>samensteltoets</key> indrukken, gevolgd door <key>'</key> en daarna <key>e</key>.</p>
+    <p>Toetsenborden hebben geen speciale samensteltoets. In plaats daarvan kunt u één van de bestaande toetsen op uw toetsenbord instellen als samensteltoets.</p>
+
+    <steps>
+      <title>Een samensteltoets definiëren</title>
+      <item>
+        <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+        start typing <gui>Keyboard</gui>.</p>
+      </item>
+      <item>
+        <p>Click on <gui>Keyboard</gui> to open the panel.</p>
+      </item>
+      <item><p>Select the <gui>Shortcuts</gui> tab and click
+      <gui>Typing</gui>.</p></item>
+      <item><p>Click on <gui>Compose Key</gui> in the right pane.</p></item>
+      <item><p>Click on <gui>Disabled</gui> and select the key you would like to
+      behave as a compose key from the drop-down menu. You can choose either of
+      the <key>Ctrl</key> keys, the right <key>Alt</key> key, the right
+      <key>Win</key> or <key xref="keyboard-key-super">Super</key> key if
+      you have one, the <key xref="keyboard-key-menu">Menu</key> key or
+      <key>Caps Lock</key>. Any key you select will then only work as a compose
+      key, and will no longer work for its original purpose.</p></item>
+    </steps>
+    <p>U kunt vele veelvoorkomende tekens intypen met de samensteltoets, bijvoorbeeld:</p>
+    <list>
+      <item><p>Druk op de <key>samensteltoets</key> gevolgd door <key>'</key> en dan een letter waarop een accent aigu moet komen, zoals <em>é</em>.</p></item>
+      <item><p>Druk op de <key>samensteltoets</key> gevolgd door <key>`</key> en dan een letter waarop een accent grave moet komen, zoals <em>è</em>.</p></item>
+      <item><p>Druk op de <key>samensteltoets</key> gevolgd door <key>"</key> en dan een letter waarop een ümlaut moet komen, zoals <em>ë</em>.</p></item>
+      <item><p>Druk op de <key>samensteltoets</key> gevolgd door <key>-</key> en dan de letter waarop een macron moet komen, zoals <em>ē</em>.</p></item>
+    </list>
+    <p>Zie voor meer samensteltoetscombinaties <link href="http://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations">de samensteltoetspagina op Wikipedia</link>.</p>
+  </section>
+
+<section id="ctrlshiftu">
+  <title>Codepunten</title>
+
+  <p>U kunt enkel via het toetsenbord elk Unicode-teken invoeren met het numerieke codepunt van dat teken. Elk teken wordt geïdentificeerd door een codepunt bestaande uit vier tekens. Om het codepunt voor een teken te vinden zoekt u het teken op in de toepassing voor vreemde tekens en kijkt u in de statusbalk of het tabblad  <gui>Tekendetails</gui>. Het codepunt bestaat uit de vier tekens na <gui>U+</gui>.</p>
+
+  <p>To enter a character by its code point, hold down <key>Ctrl</key> and
+  <key>Shift</key>, type <key>U</key> followed by the four-character code
+  point, then release <key>Ctrl</key> and <key>Shift</key>. If you often use
+  characters that you can't easily access with other methods, you might find
+  it useful to memorize the code point for those characters so you can enter
+  them quickly.</p>
+
+</section>
+
+  <section id="layout">
+    <title>Toetsenbordindelingen</title>
+    <p>U kunt ervoor zorgen dat uw toetsenbord zich gedraagt als een toetsenbord voor een andere taal, ongeacht de letters die op de toetsen staan. U kunt eenvoudig wisselen tussen verschillende toetsenbordindelingen via een pictogram in het bovenpaneel. Hoe u dat doet leest u in <link xref="toetsenbordindelingen"/>.</p>
+  </section>
+
+<section id="im">
+  <title>Input methods</title>
+
+  <p>An Input Method expands the previous methods by allowing to enter
+  characters not only with keyboard but also any input devices. For instance
+  you could enter characters with a mouse using a gesture method, or enter
+  Japanese characters using a Latin keyboard.</p>
+
+  <p>To choose an input method, right-click over a text widget, and in the menu
+  <gui>Input Method</gui>, choose an input method you want to use. There is no
+  default input method provided, so refer to the input methods documentation to
+  see how to use them.</p>
+
+</section>
+
+</page>

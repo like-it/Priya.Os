@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-multi-monitor" xml:lang="gl">
+
+  <info>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <link type="guide" xref="wacom"/>
+
+    <credit type="author copyright">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Mapear a tableta Wacom a unha pantala específica.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Seleccione unha pantalla</title>
+
+<steps>
+  <item>
+    <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+    start typing <gui>Wacom Tablet</gui>.</p>
+  </item>
+  <item>
+    <p>Click on <gui>Wacom Tablet</gui> to open the panel.</p>
+    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
+    <note style="tip"><p>If no tablet is detected, you'll be asked to
+    <gui>Please plug in or turn on your Wacom tablet</gui>. Click the
+    <gui>Bluetooth Settings</gui> link to connect a wireless tablet.</p></note>
+  </item>
+  <item><p>Prema <gui>Mapa que monitorizar…</gui>.</p></item>
+  <item><p>Marque <gui>Mapear a unha única pantalla</gui>.</p></item>
+  <item><p>Ao carón de <gui>Saída</gui>, seleccione a pantalla que quere recibir a entrada da súa tableta gráfica.</p>
+     <note style="tip"><p>Só se pode seleccionar as pantallas que están configuradas.</p></note>
+  </item>
+  <item>
+    <p>Switch <gui>Keep aspect ratio (letterbox)</gui> to <gui>ON</gui> to
+    match the drawing area of the tablet to the proportions of the monitor.
+      This setting, also called <em>force proportions</em>,
+      <em>letterboxes</em> the drawing area on a tablet to correspond more
+      directly to a display. For example, a 4∶3 tablet would be mapped so that
+      the drawing area would correspond to a widescreen display.</p>
+  </item>
+  <item><p>Prema <gui>Pechar</gui>.</p></item>
+</steps>
+
+</page>

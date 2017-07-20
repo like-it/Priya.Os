@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-meetings-sending-invitation" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="calendar-meetings"/>
+
+    <revision pkgversion="3.0.2" version="0.2" date="2011-07-29" status="stub"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en#usage-calendar-rsvp
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Találkozómeghívások küldése.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Találkozómeghívások küldése</title>
+
+  <p>Amikor találkozót (csoporttalálkozót) hoz létre, a résztvevőket különböző kategóriákba sorolhatja, mint például „levezető” vagy „szükséges”. A találkozó részleteinek mentésekor minden résztvevő kap egy e-mailt a találkozó információival, ez lehetővé teszi a visszajelzést is.</p>
+
+  <p>Ha nincs szüksége a részvételi visszajelzésre az esemény tervezésekor, és inkább csak bejelenti az eseményt, akkor kattintson jobb gombbal a találkozóra, és válassza a <gui>Továbbítás iCalendar-ként</gui> menüpontot. Ez megnyit egy új e-mailt, mellékelve az esemény értesítését bejelentésként. A címzettek egy kattintással hozzá tudják adni az eseményt naptárukhoz, de nem küldenek automatikusan e-mailt Önnek arról, hogy tervezik-e a részvételt.</p>
+
+  <p>Találkozók ütemezése:</p>
+
+  <steps>
+    <item>
+      <p>Válassza a <guiseq><gui>Fájl</gui><gui>Új</gui><gui>Találkozó</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Ha több e-mail fiókja van, akkor a <gui>Szervező</gui> mezőben válassza ki a használni kívántat.</p>
+    </item>
+    <item>
+      <p>Válasszon egy naptárt a <gui>Naptár</gui> legördülő menüből.</p>
+    </item>
+    <item>
+      <p>Amennyiben szeretne másokat meghívni, az e-mail címük hozzáadásához nyomja meg a <gui style="button">Hozzáadás</gui> gombot.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Nézet</gui> menüre a menüsoron a <gui>Típus</gui>, <gui>Szerep</gui>, <gui>Állapot</gui> és az <gui>RSVP</gui> mezők megjelenítéséhez vagy elrejtéséhez.</p>
+    </item>
+    <item>
+      <p>Írjon be egy rövid összegzést az <gui>Összefoglaló</gui> mezőbe.</p>
+    </item>
+    <item>
+      <p>(Opcionális) Írjon be egy helyet a <gui>Hely</gui> mezőbe.</p>
+    </item>
+    <item>
+      <p>Ha egész napos eseménnyé szeretné tenni az eseményt, akkor válassza a <guiseq><gui>Beállítások</gui><gui>Egész napos esemény</gui></guiseq> menüpontot, vagy nyomja meg az <gui>Egész napos esemény</gui> gombot az eszköztáron.</p>
+    </item>
+    <item>
+      <p>Válassza ki a dátumot és időt.</p>
+    </item>
+    <item>
+      <p>Ha az esemény nem egész napos, válassza az <gui>Ettől</gui> lehetőséget a kezdési idő kiválasztásához, vagy az <gui>Eddig</gui> lehetőséget az esemény befejezési idejének megadásához.</p>
+    </item>
+    <item>
+      <p>(Opcionális) A <gui>Leírás</gui> mezőbe írja be az esemény leírását.</p>
+    </item>
+    <item>
+      <p>A résztvevők időbeosztás-információinak lekéréséhez nyomja meg az eszköztáron az <gui>Időbeosztás</gui> gombot, vagy válassza a <guiseq><gui>Beállítások</gui><gui>Időbeosztás</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Mentés</gui> gombra a találkozó mentéséhez.</p>
+    </item>
+  </steps>
+
+  <p>A címzettek kapni fognak egy e-mailt, a meghívóval az eseményére.</p>
+
+  <p>Emellett beállíthat az eseményhez <link xref="calendar-timezones">időzónát</link>, <link xref="using-categories">kategóriát</link>, <link xref="calendar-alarms-and-reminders">emlékeztetőt</link>, <link xref="calendar-recurrence">ismétlődést</link> vagy <link xref="calendar-classifications">besorolást</link>, valamint mellékletet is csatolhat.</p>
+
+  <note style="tip">
+    <p>Az <app>Evolutionben</app> csak egy szervezője lehet a találkozónak, és csak ez az egy szervező adhat résztvevőket a találkozóhoz. A szervező megváltoztatható ugyan, de nem ez az ajánlott módszer új résztvevők meghívásához. Ha Ön nem szervező és meg szeretne hívni egy új résztvevőt, akkor továbbítsa a találkozó szervezőjétől kapott meghívólevelet a további résztvevőknek.</p>
+  </note>
+
+</page>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://fedoraproject.org/fedora/23">
+    <short-id>fedora23</short-id>
+    <name>Fedora 23</name>
+    <version>23</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="ca">Projecte Fedora</vendor>
+    <vendor xml:lang="de">Fedora-Projekt</vendor>
+    <vendor xml:lang="es">Fedora Project</vendor>
+    <vendor xml:lang="fr">Fedora Project</vendor>
+    <vendor xml:lang="ja">Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="pt_BR">Projeto Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <upgrades id="http://fedoraproject.org/fedora/22"/>
+    <derives-from id="http://fedoraproject.org/fedora/22"/>
+
+    <release-date>2015-11-03</release-date>
+
+    <variant id="workstation">
+      <name>Fedora 23 Workstation</name>
+    </variant>
+    <variant id="workstation-netinst">
+      <name>Fedora 23 Workstation</name>
+    </variant>
+    <variant id="server">
+      <name>Fedora 23 Server</name>
+    </variant>
+    <variant id="server-netinst">
+      <name>Fedora 23 Server</name>
+    </variant>
+
+    <devices>
+      <device id="http://pcisig.com/pci/1af4/1041"/> 
+      <device id="http://pcisig.com/pci/1af4/1042"/> 
+      <device id="http://pcisig.com/pci/1af4/1043"/> 
+      <device id="http://pcisig.com/pci/1af4/1044"/> 
+      <device id="http://pcisig.com/pci/1af4/1045"/> 
+      <device id="http://pcisig.com/pci/1af4/1048"/> 
+      <device id="http://pcisig.com/pci/1af4/1049"/> 
+      <device id="http://pcisig.com/pci/1af4/1052"/> 
+      
+    </devices>
+
+    
+
+    
+    <media live="true" arch="i686">
+      <variant id="workstation"/>
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Workstation/i386/iso/Fedora-Live-Workstation-i686-23-10.iso</url>
+      <iso>
+        <volume-id>Fedora-Live-WS-i686-23.*</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+    <media live="true" arch="x86_64">
+      <variant id="workstation"/>
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Workstation/x86_64/iso/Fedora-Live-Workstation-x86_64-23-10.iso</url>
+      <iso>
+        <volume-id>Fedora-Live-WS-x86_64-23.*</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    
+    <media arch="i686">
+      <variant id="workstation-netinst"/>
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Workstation/i386/iso/Fedora-Workstation-netinst-i386-23.iso</url>
+      <iso>
+        <volume-id>Fedora-WS-23(_[[:alpha:]]*)*-i386</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <variant id="workstation-netinst"/>
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Workstation/x86_64/iso/Fedora-Workstation-netinst-x86_64-23.iso</url>
+      <iso>
+        <volume-id>Fedora-WS-23(_[[:alpha:]]*)*-x86_64</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    
+
+    
+    <media arch="i686">
+      <variant id="server"/>
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Server/i386/iso/Fedora-Server-DVD-i386-23.iso</url>
+      <iso>
+        <volume-id>Fedora-S-23(_[[:alpha:]]*)*-i386</volume-id>
+        <system-id>LINUX</system-id>
+        
+        <volume-size>2254878720</volume-size>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <variant id="server"/>
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Server/x86_64/iso/Fedora-Server-DVD-x86_64-23.iso</url>
+      <iso>
+        <volume-id>Fedora-S-23(_[[:alpha:]]*)*-x86_64</volume-id>
+        <system-id>LINUX</system-id>
+        <volume-size>2149087232</volume-size>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    
+    <media arch="i686">
+      <variant id="server-netinst"/>
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Server/i386/iso/Fedora-Server-netinst-i386-23.iso</url>
+      <iso>
+        <volume-id>Fedora-S-23(_[[:alpha:]]*)*-i386</volume-id>
+        <system-id>LINUX</system-id>
+        <volume-size>479557632</volume-size>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <variant id="server-netinst"/>
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Server/x86_64/iso/Fedora-Server-netinst-x86_64-23.iso</url>
+      <iso>
+        <volume-id>Fedora-S-23(_[[:alpha:]]*)*-x86_64</volume-id>
+        <system-id>LINUX</system-id>
+        <volume-size>435079168</volume-size>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <variant id="server"/>
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Server/i386/os/</url>
+      <treeinfo>
+        <family>Fedora</family>
+        <version>23</version>
+        <arch>i386</arch>
+      </treeinfo>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Server/x86_64/os/</url>
+      <variant id="server"/>
+      <treeinfo>
+        <family>Fedora</family>
+        <version>23</version>
+        <arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+
+    
+
+    <resources arch="all">
+      <minimum>
+        <n-cpus>1</n-cpus>
+        <cpu>1000000000</cpu>
+        <ram>1073741824</ram>
+        <storage>10737418240</storage>
+      </minimum>
+
+      <recommended>
+        <ram>2147483648</ram>
+        <storage>21474836480</storage>
+      </recommended>
+    </resources>
+
+    <installer>
+      <script id='http://fedoraproject.org/fedora/kickstart/jeos'/>
+      <script id='http://fedoraproject.org/fedora/kickstart/desktop'/>
+    </installer>
+  </os>
+</libosinfo>

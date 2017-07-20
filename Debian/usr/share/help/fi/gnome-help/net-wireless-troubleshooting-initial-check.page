@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-initial-check" xml:lang="fi">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-hardware-info"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntun dokumentaatio-wikin tekoon osallistuneet</name>
+    </credit>
+    <credit type="author">
+      <name>Gnomen dokumentointiprojekti</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Verkkoyhteyden asetusten tarkistaminen ja seuraaviin vaiheisiin valmistuminen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Langattoman verkon vianselvitys</title>
+  <subtitle>Perusasioiden tarkistus</subtitle>
+
+  <p>Tässä vaiheessa tarkistetaan perustietoja langattomasta verkkoyhteydestäsi. Näin varmistetaan, ettei ongelma johdu jostain varsin yksinkertaisesta asiasta, kuten että langaton yhteys on pois päältä. Samalla valmistaudutaan vianselvityksen seuraaviin vaiheisiin.</p>
+
+  <steps>
+    <item>
+      <p>Varmista, että kannettava tietokone ei ole yhteydessä verkkoon <em>kiinteää</em> eli langallista verkkoyhteyttä käyttäen.</p>
+    </item>
+    <item>
+      <p>Jos käytössä on ulkoinen verkkosovitin (USB- tai kannettavan PCMCIA-väylään liitettävä), varmista että se on kunnolla kiinnitetty.</p>
+    </item>
+    <item>
+      <p>Jos tietokone käyttää <em>sisäistä</em> langatonta verkkokorttia, varmista, että se on kytketty päälle. Kannettavissa tietokoneissa on usein painike tai pikanäppäinyhdistelmä, jolla langattoman verkon saa päälle ja pois päältä.</p>
+    </item>
+    <item>
+      <p>Click the system status area on the top bar and select
+      <gui>Wi-Fi</gui>, then select <gui>Wi-Fi Settings</gui>. Make sure that
+      <gui>Wi-Fi</gui> is set to <gui>ON</gui>. You should also check that
+      <link xref="net-wireless-airplane">Airplane Mode</link> is <em>not</em>
+      switched on.</p>
+    </item>
+    <item>
+      <p>Open the Terminal, type <cmd>nmcli device</cmd> and press
+      <key>Enter</key>.</p>
+      <p>This will display information about your network interfaces and
+      connection status. Look down the list of information and see if there is
+      an item related to the wireless network adapter. If the state is
+      <code>connected</code>, it means that the adapter is working and connected
+      to your wireless router.</p>
+    </item>
+  </steps>
+
+  <p>Jos verkkolaite on yhteydessä langattomaan reitittimeen, mutta Internet-yhteys ei vieläkään toimi, reititintä ei ole välttämättä asetettu oikein tai palveluntarjoajallasi (ISP) voi olla teknisiä ongelmia. Tarkista reititin ja palveluntarjoajalta saatu asennusohje, tai ota yhteyttä palvelutarjoajan asiakastukeen.</p>
+
+  <p>If the information from <cmd>nmcli device</cmd> did not indicate that you were
+  connected to the network, click <gui>Next</gui> to proceed to the next
+  portion of the troubleshooting guide.</p>
+
+</page>

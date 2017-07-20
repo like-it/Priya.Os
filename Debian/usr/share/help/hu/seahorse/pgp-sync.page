@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-sync" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-07-03" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>A helyi kulcson tárolt információk szinkronizálása a megfelelő távoli kulccsal.</desc>
+  </info>
+
+  <title>Kulcsok szinkronizálása</title>
+
+  <p>A kulcstartókon tárolt PGP-kulcsokat ajánlott rendszeresen szinkronizálni egy kulcskiszolgálóval. Ez teszi lehetővé a kulcskiszolgálón tárolt módosítások (mint például egy új aláírás) helyi kulcshoz való hozzáfűzését. Ehhez hasonlóan a kulcsok helyi példányán elvégzett saját módosításokat (például a lejárati idő megváltoztatását, vagy más kulcsának aláírását) követően is ajánlatos a kulcsok szinkronizálása. A kulcsok szinkronizálásához működő internetkapcsolat szükséges.</p>
+
+  <steps>
+    <title>Hogyan lehet kulcsot szinkronizálni?</title>
+    <item>
+      <p>Válassza ki a szinkronizálandó PGP-kulcsot.</p>
+    </item>
+    <item>
+      <p>Válassza a <guiseq><gui style="menu">Távoli</gui> <gui style="menuitem">Kulcsok szinkronizálása és közzététele…</gui></guiseq> pontját.</p>
+    </item>
+    <item>
+      <p>A kulcs szinkronizálásához válassza ki a <guiseq><gui style="menu">Távoli</gui><gui style="menuitem">Kulcsok szinkronizálása és közzététele…</gui></guiseq> menüpontot. A következő ablakban kattintson a <gui style="button">Szinkronizálás</gui> gombra.</p>
+    </item>
+  </steps>
+
+  <note style="important">
+    <title>Miért nem kattintható a <gui style="button">Szinkronizálás</gui> gomb?</title>
+    <p>Kizárólag a kulcskiszolgálón már közzétett PGP-kulcsokat lehet szinkronizálni. Ha a <gui style="button">Szinkronizálás</gui> gomb nem kattintható, ellenőrizze az illető kulcs közzétételét. Saját kulcsait a szinkronizálást megelőzően először közzé kell tenni.</p>
+  </note>
+
+</page>

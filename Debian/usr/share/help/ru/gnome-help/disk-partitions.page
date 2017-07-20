@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="ru">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>Что такое тома и разделы и как управлять ими с помощью «Дисковой утилиты».</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>Управление томами и разделами</title>
+
+  <p>Слово <em>том</em> используется для описания устройства хранения информации, например, жёсткого диска. Также так может называться <em>часть</em> хранилища на этом устройстве, поскольку хранилище можно разбить на отдельные части. Хранилище становятся доступны благодаря файловой системе, в результате процесса, который называется<em>монтирование</em>. Смонтированным томом может быть жёсткий диск, USB диск, привод DVD-RW, карта памяти SD и другие носители информации. Файлы на смонтированном томе доступны для чтения и, возможно, для записи.</p>
+
+  <p>Смонтированный том часто называют <em>разделом</em>, хотя это не всегда одно и то же. «Разделом» называется <em>физическая</em> область хранения на одном дисковом приводе. Как только раздел был смонтирован, его можно называть томом, поскольку его файлы теперь доступны. Том можно представить как подписанную и доступную «витрину», представляющую функционал «служебных помещений» разделов и приводов.</p>
+
+<section id="manage">
+ <title>Просмотр и управление томами и разделами с помощью дисковой утилиты</title>
+
+  <p>Проверить и изменить запоминающие устройства вашего компьютера можно с помощью дисковой утилиты.</p>
+
+<steps>
+  <item>
+    <p>Откройте <gui>Обзор</gui> и запустите приложение <app>Диски</app>.</p>
+  </item>
+  <item>
+    <p>В списке устройств хранения данных слева находятся жёсткие диски, приводы CD и DVD и другие физические устройства. Чтобы получить информацию об устройстве, нажмите на это устройство в списке.</p>
+  </item>
+  <item>
+    <p>В панели справа отображается наглядное представление о томах и разделах на выбранном устройстве. В этой же панели содержатся различные элементы для управления этими томами.</p>
+    <p>Будьте осторожны: этими утилитами можно полностью удалить данные на жёстком диске.</p>
+  </item>
+</steps>
+
+  <p>Скорее всего, ваш компьютер имеет по крайней мере один <em>первичный</em> раздел и один раздел <em>подкачки</em>. Раздел подкачки используется операционной системой для управления памятью, и редко монтируется. Первичный раздел содержит операционную систему, приложения, настройки и личные файлы. Эти файлы также могут быть распределены между несколькими разделами по соображениям безопасности или удобства.</p>
+
+  <p>One primary partition must contain information that your computer uses to
+  start up, or <em>boot</em>. For this reason it is sometimes called a boot
+  partition, or boot volume. To determine if a volume is bootable, select the
+  partition and click the menu button in the toolbar underneath the partition
+  list. Then, click <gui>Edit Partition…</gui> and look at its
+  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
+  a bootable volume.</p>
+
+</section>
+
+</page>

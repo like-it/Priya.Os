@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="subkeys-add" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="pgp-subkeys#more"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-28" status="draft"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Las subclaves adicionales hace que su clave maestra sea más segura.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Añadir subclaves adicionales</title>
+
+  <p>Puede añadir subclaves adicionales a la misma clave maestra. Debe elegir la subclave correcta cada vez que quiera cifrar o firmar cuando hace esto.</p>
+
+  <steps>
+    <title>Para añadir subclaves adicionales a una clave PGP:</title>
+      <item>
+        <p>Seleccione <gui>claves GnuPG</gui> en el panel de la izquierda.</p>
+      </item>
+      <item>
+	<p>Seleccione la <gui>clave PGP personal</gui> en la lista.</p>
+      </item>
+      <item>
+	<p>Pulse con el botón derecho sobre la clave seleccionada y elija <guiseq><gui>Propiedades</gui><gui>Detalles</gui></guiseq>.</p>
+      </item>
+      <item>
+	<p>Si el panel <gui>Subclaves</gui> panel no está expandido, expándalo.</p>
+      </item>
+      <item>
+	<p>Pulse <gui style="button">Añadir</gui> para añadir una subclave nueva.</p>
+      </item>
+      <item>
+	<p>Elija las propiedades adecuadas de su clave seleccionando el <gui>Tipo de clave</gui>, la <gui>Longitud de la clave</gui> y la <gui>Fecha de caducidad</gui> correctas y pulse <gui style="button">Aceptar</gui>.</p>
+      </item>
+  </steps>
+
+  <note style="tip">
+    <p>Asegúrese siempre de que la subclave caduca antes que la clave maestra, ya que no se puede usar una subclave  si la clave maestra ha caducado.</p>
+  </note>
+
+
+</page>

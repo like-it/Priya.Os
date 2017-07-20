@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="task" id="txt-search" xml:lang="ru">
+
+  <info>
+    <revision version="0.1" date="2013-03-03" status="candidate"/>
+    <link type="guide" xref="index#textoutput"/>
+
+    <credit type="author copyright">
+      <name>С. Синдху (Sindhu S)</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Поиск в выводе <app>Терминала</app>.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Сергей В. Миронов</mal:name>
+      <mal:email>sergo@bk.ru</mal:email>
+      <mal:years>2007.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Используйте <gui style="menuitem">Поиск</gui></title>
+
+  <p>Можно совершать поиск по тексту в выводе <app>Терминала</app>:</p>
+
+  <steps>
+    <item>
+      <p>Выберите <guiseq><gui style="menu">Поиск</gui> <gui style="menuitem">Найти…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Введите ключевое слово и нажмите <gui style="button">Поиск</gui>. Для отмены нажмите <gui style="button">Закрыть</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Чтобы сделать результаты поиска более точными, можно использовать следующие возможности:</p>
+
+  <terms>
+    <item>
+      <title><gui style="checkbox">Учитывать регистр</gui></title>
+      <p>Сделайте поиск чувствительным к регистру: это выдаст только те результаты, которые совпадают с регистром букв в ключевом слове.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Только полные слова</gui></title>
+      <p><app>Терминал</app> будет искать слово целиком и проигнорирует результаты, совпадающие лишь частично с ключевым словом. Например, если вы искали «gnome», то <app>Терминал</app> покажет только точно совпадающие результаты, и опустит такие результаты, как «gnome-terminal».</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">По регулярному выражению</gui></title>
+      <p>В ключевых словах можно использовать шаблоны регулярных выражений, также известные как шаблоны regex. <app>Терминал</app> покажет результаты, совпадающие с этими условиями поиска.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Обратный поиск</gui></title>
+      <p><app>Терминал</app> будет искать ключевое слово начиная с последнего консольного вывода и далее вверх. Такой параметр рекомендуется, если ищется слово, которое могло использоваться недавно; таким образом поиск будет быстрее.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Автоматически переходить к началу документа</gui></title>
+      <p><app>Терминал</app> начинает поиск с текущей позиции в обратной прокрутке до конца доступного консольного вывода и затем начинает поиск сверху.</p>
+    </item>
+  </terms>
+
+  <note style="tip">
+    <p>If you expect to work with a lot of <app>Terminal</app> output, increase
+    the <link xref="pref-scrolling#lines">scrollback lines</link> to
+    a higher limit to allow <app>Terminal</app> to search further back.</p>
+  </note>
+
+</page>

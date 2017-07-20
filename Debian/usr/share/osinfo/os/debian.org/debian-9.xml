@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://debian.org/debian/9">
+    <short-id>debian9</short-id>
+    <short-id>debianstretch</short-id>
+    <name>Debian Stretch</name>
+    <version>9</version>
+    <vendor>Debian Project</vendor>
+    <vendor xml:lang="ca">Projecte Debian</vendor>
+    <vendor xml:lang="de">Debian-Projekt</vendor>
+    <vendor xml:lang="es">Debian Project</vendor>
+    <vendor xml:lang="fr">Debian Project</vendor>
+    <vendor xml:lang="ja">Debian プロジェクト</vendor>
+    <vendor xml:lang="pl">Projekt Debian</vendor>
+    <vendor xml:lang="pt_BR">Projeto Debian</vendor>
+    <vendor xml:lang="uk">Проект Debian</vendor>
+    <family>linux</family>
+    <distro>debian</distro>
+    <upgrades id="http://debian.org/debian/8"/>
+    <derives-from id="http://debian.org/debian/8"/>
+
+    <release-date>2017-02-02</release-date>
+
+    <devices>
+      <device id="http://pcisig.com/pci/1af4/1041"/>
+      <device id="http://pcisig.com/pci/1af4/1042"/>
+      <device id="http://pcisig.com/pci/1af4/1043"/>
+      <device id="http://pcisig.com/pci/1af4/1044"/>
+      <device id="http://pcisig.com/pci/1af4/1045"/>
+      <device id="http://pcisig.com/pci/1af4/1048"/>
+      <device id="http://pcisig.com/pci/1af4/1049"/>
+      <device id="http://pcisig.com/pci/1af4/1052"/>
+    </devices>
+
+    <resources arch="all">
+      <minimum>
+        <cpu>1000000000</cpu>
+        <n-cpus>1</n-cpus>
+        <ram>1073741824</ram>
+        <storage>10737418240</storage>
+      </minimum>
+      <recommended>
+        <cpu>1000000000</cpu>
+        <ram>1073741824</ram>
+        <storage>21474836480</storage>
+      </recommended>
+    </resources>
+
+    <media arch="i686">
+      <url>http://cdimage.debian.org/cdimage/stretch_di_rc3/i386/iso-dvd/debian-stretch-DI-rc3-i386-DVD-1.iso</url>
+      <iso>
+        <volume-id>Debian stretch-DI-rc\d i386 1</volume-id>
+      </iso>
+      <kernel>install.386/vmlinuz</kernel>
+      <initrd>install.386/initrd.gz</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://cdimage.debian.org/cdimage/stretch_di_rc3/amd64/iso-dvd/debian-stretch-DI-rc3-amd64-DVD-1.iso</url>
+      <iso>
+	<volume-id>Debian stretch-DI-rc\d amd64 1</volume-id>
+      </iso>
+      <kernel>install.amd/vmlinuz</kernel>
+      <initrd>install.amd/initrd.gz</initrd>
+    </media>
+
+    <installer>
+      <script id='http://debian.org/debian/preseed/jeos'/>
+      <script id='http://debian.org/debian/preseed/desktop'/>
+    </installer>
+  </os>
+</libosinfo>

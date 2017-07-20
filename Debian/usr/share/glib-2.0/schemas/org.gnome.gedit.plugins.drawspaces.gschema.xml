@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <flags id='org.gnome.gedit.plugins.drawspaces.GtkSourceDrawSpacesFlags'>
+    <value value='1' nick='space'/>
+    <value value='2' nick='tab'/>
+    <value value='4' nick='newline'/>
+    <value value='8' nick='nbsp'/>
+    <value value='16' nick='leading'/>
+    <value value='32' nick='text'/>
+    <value value='64' nick='trailing'/>
+  </flags>
+
+  <schema path="/org/gnome/gedit/plugins/drawspaces/" id="org.gnome.gedit.plugins.drawspaces" gettext-domain="gedit-plugins">
+    <key type="b" name="show-white-space">
+      <default>true</default>
+      <summary>Show _White Space</summary>
+      <description>If TRUE drawing will be enabled.</description>
+    </key>
+    <key name="draw-spaces" flags="org.gnome.gedit.plugins.drawspaces.GtkSourceDrawSpacesFlags">
+      <default>['space', 'tab', 'leading', 'text', 'trailing']</default>
+      <summary>Draw Spaces</summary>
+      <description>The type of spaces to be drawn.</description>
+    </key>
+  </schema>
+</schemalist>

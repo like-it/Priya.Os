@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="as">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>শ্বণ মেকেন্স</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>মাইকেল হিল</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>FTP, SSH, Windows ছেয়াৰ, অথবা WebDAV ৰে অন্য কমপিউটাৰত ফাইলসমূহ দৰ্শন কৰক আৰু সম্পাদন কৰক।</desc>
+
+  </info>
+
+<title>এটা চাৰ্ভাৰ অথবা নেটৱাৰ্ক অংশীদাৰীত ফাইলসমূহ ব্ৰাউছ কৰক</title>
+
+<p>আপুনি এটা চাৰ্ভাৰ অথবা নেটৱাৰ্ক ছেয়াৰৰ সৈতে অংয়োগ কৰিব পাৰে আৰু সেই চাৰ্ভাৰৰ ফাইলসমূহ ব্ৰাউছ আৰু দৰ্শন কৰিব পাৰে, যেন সিহত আপোনাৰ কমপিউটাৰত আছে। ই ইন্টাৰনেটৰ পৰা ফাইলসমূহ ডাউনল'ড কৰাৰ অথবা আপল'ড কৰাৰ, অথবা আপোনাৰ স্থানীয় নেটৱাৰ্কত অন্য মানুহৰ সৈতে ফাইলসমূহ অংশীদাৰী কৰাৰ এটা সহজ পদ্ধতি।</p>
+
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
+
+<steps>
+  <title>এটা ফাইল চাৰ্ভাৰৰ সৈতে সংযোগ কৰক</title>
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
+   sidebar.</p>
+  </item>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
+  <note>
+    <p>যদি আপুনি চাৰ্ভাৰৰ সৈতে আগত সংযোগ কৰিছে, আপুনি ইয়াক <gui>শেহতীয়া চাৰ্ভাৰসমূহ</gui> তালিকাত ক্লিক কৰিব পাৰিব।</p>
+  </note>
+  </item>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>URLs লিখা</title>
+
+<p>এটা <em>URL</em>, অথবা <em>uniform resource locator</em>, এটা ঠিকনাৰ ধৰণ যি এটা নেটৱাৰ্কত এটা অৱস্থান অথবা ফাইললৈ প্ৰসংগ কৰে। ঠিকনাক এই ধৰণে ফৰমেট কৰা হয়:</p>
+  <example>
+    <p><sys>scheme://servername.example.com/folder</sys></p>
+  </example>
+<p><em>আঁচনি</em> এ প্ৰটোকল অথবা চাৰ্ভাৰৰ ধৰণ ধাৰ্য্য কৰে। ঠিকনাৰ <em>example.com</em>অংশক <em>ডমেইন নাম</em> কোৱা হয়। যদি এটা ব্যৱহাৰকাৰীনামী প্ৰয়োজন হয়, ইয়াক চাৰ্ভাৰ নামৰ আগত সুমুৱা হয়:</p>
+  <example>
+    <p><sys>scheme://username@servername.example.com/folder</sys></p>
+  </example>
+<p>কিছুমান আচঁনিৰ বাবে পৰ্ট সংখ্যা ধাৰ্য্য কৰিব লাগিব। ইয়াক ডমেইন নামৰ পিছত সুমুৱাওক:</p>
+  <example>
+    <p><sys>scheme://servername.example.com:port/folder</sys></p>
+  </example>
+<p>তলত সমৰ্থিত বিভিন্ন চাৰ্ভাৰ ধৰণৰ বিশেষ উদাহৰণ দিয়া হৈছে।</p>
+</section>
+
+<section id="types">
+ <title>চাৰ্ভাৰসমূহৰ ধৰণ</title>
+
+<p>আপুনি বিভিন্ন ধৰণৰ চাৰ্ভাৰৰ সৈতে সংযোগ কৰিব পাৰিব। কিছুমান চাৰ্ভাৰ ৰাজহুৱা হয়, আৰু যিকোনো মানুহক সংযোগ কৰাৰ অনুমতি দিয়ে। অন্য চাৰ্ভাৰৰ বাবে আপুনি এটা ব্যৱহাৰকাৰীনাম আৰু পাছৱাৰ্ডৰ সৈতে লগ ইন কৰিব লাগিব।</p>
+<p>এটা চাৰ্ভাৰৰ ফাইলসমূহ কিছুমান কাৰ্য্য কৰিবলৈ আপোনাৰ অনুমতি নাথাকিব পাৰে। উদাহৰণস্বৰূপ, ৰাজহুৱা FTP ছাইটসমূহত, আপুনি ফাইলসমূহ সম্ভবত মচিব নোৱাৰিব।</p>
+<p>আপুনি সুমুৱা URL চাৰ্ভাৰে ইয়াৰ ফাইল অংশীদাৰী এক্সপোৰ্ট কৰিবলৈ ব্যৱহাৰ কৰা প্ৰটোকলৰ ওপৰত নিৰ্ভৰ কৰে।</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>যদি আপোনাৰ চাৰ্ভাৰত এটা <em>secure shell</em> একাওন্ট আছে, আপুনি এই পদ্ধতি ব্যৱহাৰ কৰি সংযোগ কৰিব পাৰিব। নহুতো ৱেব হস্টে সদস্যসকলৰ বাবে SSH একাওন্টসমূহ প্ৰদান কৰে যাতে সিহতে সুৰক্ষিতভাৱে ফাইলসমূহ আপল'ড কৰিব পাৰে। SSH চাৰ্ভাৰসমূহৰ বাবে আপুনি লগ ইন থাকিব লাগিব।</p>
+  <p>এটা সাধাৰণ SSH URL দেখাত এনেকুৱা হয়:</p>
+  <example>
+    <p><sys>ssh://username@servername.example.com/folder</sys></p>
+  </example>
+
+  <p>SSH ব্যৱহাৰ কৰোতে, আপুনি পঠোৱা সকলো তথ্য (আপোনাৰ পাছৱাৰ্ডৰ সৈতে) ইনক্ৰিপ্টেড থাকে যাতে আপোনাৰ নেটৱাৰ্কত থকা অন্য ব্যৱহাৰকাৰীসকলে ইয়াক চাব নোৱাৰে।</p>
+</item>
+<item>
+  <title>FTP (লগিনৰ সৈতে)</title>
+  <p>FTP ইন্টাৰনেটত ফাইলসমূহ বিনিময় কৰাৰ এটা জনপ্ৰিয় পদ্ধতি। যিহেতু তথ্য FTP ৰে ইনক্ৰিপ্ট কৰা নহয়, বহুতো চাৰ্ভাৰে এতিয়া SSH ৰ সহায়ত অভিগম প্ৰদান কৰে। কিছুমান চাৰ্ভাৰত, এতিয়াও, আপুনি ফাইলসমূহ আপল'ড অথবা ডাউনল'ড কৰিবলৈ FTP ব্যৱহাৰ কৰিব লাগিব। লগিনসমূহৰ সৈতে FTP ছাইটসমূহে সাধাৰণত আপোনাক ফাইলসমূহ মচাৰ আৰু আপল'ড কৰাৰ অনুমতি দিয়ে।</p>
+  <p>এটা সাধাৰণ FTP URL দেখাত এনেকুৱা হয়:</p>
+  <example>
+    <p><sys>ftp://username@ftp.example.com/path/</sys></p>
+  </example>
+</item>
+<item>
+  <title>ৰাজহুৱা FTP</title>
+  <p>ছাইটসমূহ যি আপোনাক ফাইলসমূহ ডাউনল'ড কৰাৰ অনুমতি কেতিয়াবা ৰাজহুৱা অথবা বেনামী FTP অভিগম প্ৰদান কৰে। এই চাৰ্ভাৰসমূহৰ এটা ব্যৱহাৰকাৰীনাম অথবা পাছৱাৰ্ডৰ প্ৰয়োজন নহয়, আৰু সাধাৰণত আপোনাক ফাইলসমূহ মচাৰ অথবা আপল'ড কৰাৰ অনুমতি নিদিয়ে।</p>
+  <p>এটা সাধাৰণ বেনামী FTP URL দেখাত এনেকুৱা হয়:</p>
+  <example>
+    <p><sys>ftp://ftp.example.com/path/</sys></p>
+  </example>
+  <p>কিছুমান বেনামী FTP ছাইটত আপুনি এটা ৰাজহুৱা ব্যৱহাৰকাৰীনাম আৰু পাছৱাৰ্ডৰ সৈতে লগ ইন কৰিব লাগিব, অথবা এটা ৰাজহুৱা ব্যৱহাৰকাৰীনামৰ সৈতে য'ত আপোনাৰ ইমেইল ঠিকনাক পাছৱাৰ্ড ৰূপে ব্যৱহাৰ কৰা হৈছে। এই চাৰ্ভাৰসমূহৰ বাবে, <gui>FTP (লগিনৰ সৈতে)</gui> পদ্ধতি ব্যৱহাৰ কৰক, আৰু FTP ছাইট দ্বাৰা ধাৰ্য্য কৰা তথ্যসমূহ ব্যৱহাৰ কৰক।</p>
+</item>
+<item>
+  <title>Windows অংশীদাৰী</title>
+  <p>Windows computers use a proprietary protocol to share files over a local
+  area network. Computers on a Windows network are sometimes grouped into
+  <em>domains</em> for organization and to better control access. If you have
+  the right permissions on the remote computer, you can connect to a Windows
+  share from the file manager.</p>
+  <p>এটা সাধাৰণ Windows অংশীদাৰী URL দেখাত এনেকুৱা হয়:</p>
+  <example>
+    <p><sys>smb://servername/Share</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV আৰু সুৰক্ষিত WebDAV</title>
+  <p>Based on the HTTP protocol used on the web, WebDAV is sometimes used to
+  share files on a local network and to store files on the internet. If the
+  server you're connecting to supports secure connections, you should choose
+  this option. Secure WebDAV uses strong SSL encryption, so that other users
+  can't see your password.</p>
+  <p>A WebDAV URL looks like this:</p>
+  <example>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

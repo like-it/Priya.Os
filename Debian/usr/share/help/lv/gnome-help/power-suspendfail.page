@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
+
+    <credit type="author">
+      <name>GNOME dokumentācijas projekts</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Kāpēc mans dators neatmostas pēc iesnaudināšanas?</title>
+
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
+
+<section id="resume">
+  <title>Dators neatmostas pēc iesnaudināšanas</title>
+  <p>Kad dators ir iesnaudināts, pēc taustiņa nospiešanas vai peles klikšķa tam vajadzētu atmosties un parādīt ekrānu, kas prasa jūsu paroli. Ja tas nenotiek, mēģiniet nospiest ieslēgšanas pogu (neturiet to, tikai vienreiz nospiediet).</p>
+  <p>Ja arī tas nelīdz, pārliecinieties, ka monitors ir ieslēgts, un vēlreiz izmēģiniet tastatūras taustiņus.</p>
+  <p>Visbeidzot, ja neizdodas datoru atmodināt, jūs varat to izslēgt, paturot izslēgšanas pogu nospiestu 5-10 sekundes, lai gan tad nesaglabātās izmaiņas būs zaudētas. Pēc tam varēsiet datoru atkal ieslēgt.</p>
+  <p>Ja tas notiek katru reizi, kad iesnaudināt datoru, iespējams, ka šī iespēja ar jūsu aparatūru nedarbojas.</p>
+  <note style="warning">
+    <p>Ja dators pārstāj saņemt elektrību un tam nav alternatīvā strāvas avota (tāda kā strādājošas baterijas), tas izslēgsies.</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>Bezvadu savienojums (vai citas ierīces) nestrādā, datoram atmostoties</title>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
+  <p>Ja ierīcei ir ieslēgšanas slēdzis, mēģiniet to izslēgt un ieslēgt. Vairumā gadījumu ierīce atkal sāks darboties. Ja ierīce pievienota datoram ar USB vadu vai līdzīgā veidā, izņemiet un iespraudiet vadu, un tad pārbaudiet, vai ierīce strādā.</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
+</section>
+
+</page>

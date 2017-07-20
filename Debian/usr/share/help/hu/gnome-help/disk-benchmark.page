@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="disk-benchmark" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="disk"/>
+
+    <revision pkgversion="3.6.2" version="0.2" date="2012-11-16" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+   <credit type="editor">
+     <name>Michael Hill</name>
+     <email>mdhillca@gmail.com</email>
+   </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Teljesítménytesztek futtatásával meghatározhatja merevlemeze sebességét.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>A merevlemez teljesítményének tesztelése</title>
+
+  <p>A merevlemez sebességének tesztelése:</p>
+
+  <steps>
+    <item>
+      <p>Nyissa meg a <app>Lemezeket</app> a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintésből.</p>
+    </item>
+    <item>
+      <p>Válassza ki a meghajtót a bal oldali listából.</p>
+    </item>
+    <item>
+      <p>Kattintson a menü gombra, és válassza a <gui>Lemez teljesítménytesztje…</gui> menüpontot.</p>
+    </item>
+    <item>
+      <p>Nyomja meg a <gui>Teljesítményteszt indítása</gui> gombot, és igényeinek megfelelően módosítsa az <gui>Átviteli sebesség</gui> és <gui>Hozzáférési idő</gui> paramétereket.</p>
+    </item>
+    <item>
+      <p>Nyomja meg a <gui>Teljesítményteszt indítása</gui> gombot az adatok olvasási sebességének teszteléséhez. Ehhez <link xref="user-admin-explain">rendszergazdai jogosultság</link> szükséges. Írja be jelszavát, vagy a kért rendszergazdai fiók jelszavát.</p>
+      <note>
+        <p>Ha az <gui>Írási teljesítményteszt</gui> jelölőnégyzet be van jelölve, akkor az adatok olvasási és írási sebessége is tesztelésre kerül. Az utóbbi lehetőség tovább fog tartani.</p>
+      </note>
+    </item>
+  </steps>
+
+  <p>A teszt befejeződésekor az eredmények megjelennek a grafikonon. A zöld pontok és csatlakozó vonalak a mintavételeket jelölik, ezek a jobb tengelynek felelnek meg, amely a hozzáférési időt jeleníti meg a vízszintes tengelyen ábrázolt eltelt idő függvényében. A kék vonal az olvasási sebességet képviseli, míg a vörös az írásit, ezek adat-hozzáférési sebességként jelennek meg a bal tengelyen, a tányér külsejétől indulva bejárt lemez százalékos arányának függvényében az alsó tengelyen.</p>
+
+  <p>A grafikon alatt megjelennek a minimális, maximális és átlagos olvasási és írási sebességek, az átlagos hozzáférési idő és az utolsó teljesítményteszt óta eltelt idő.</p>
+
+</page>

@@ -1,0 +1,8 @@
+[Unit]
+Description=Telepathy Mission Control service
+Documentation=man:mission-control-5(8)
+
+[Service]
+Type=dbus
+BusName=org.freedesktop.Telepathy.AccountManager
+ExecStart=/usr/lib/telepathy/mission-control-5

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Pourquoi mon ordinateur ne sort-il pas de veille après une suspension ?</title>
+
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
+
+<section id="resume">
+  <title>Mon ordinateur est mis en veille et ne se réveille pas</title>
+  <p>Quand votre ordinateur est en veille (suspendu) et que vous appuyez sur une touche ou que vous bougez la souris, il doit se réveiller et afficher un message à l'écran demandant la saisie de votre mot de passe. Si ce n'est pas le cas, essayez d'appuyer sur le bouton de mise en marche (ne le maintenez pas enfoncé, appuyez juste une fois).</p>
+  <p>Si cela ne change rien, vérifiez que votre moniteur est allumé et appuyez une nouvelle fois sur une touche du clavier.</p>
+  <p>En dernier ressort, éteignez l'ordinateur en maintenant le bouton de mise en marche enfoncé pendant 5 à 10 secondes. Par cette action, vous perdrez tout travail non enregistré. Vous pouvez cependant rallumer ensuite votre ordinateur.</p>
+  <p>Si cela se produit à chaque fois que votre ordinateur se met en veille, c'est que cette fonction n'est pas compatible avec votre matériel.</p>
+  <note style="warning">
+    <p>Si votre ordinateur perd de l'énergie et n'a pas de source d'énergie alternative (comme une batterie fonctionnelle), il s'éteindra.</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>Connexion sans fil (ou autre périphérique) non fonctionnelle à la sortie de veille</title>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
+  <p>S'il y a un commutateur sur le périphérique, éteignez et rallumez-le. Dans la majorité des cas, il recommence à fonctionner. S'il est connecté par une liaison USB ou autre, débranchez-le puis rebranchez pour voir s'il fonctionne.</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
+</section>
+
+</page>

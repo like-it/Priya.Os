@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Veja informações básicas de arquivo, defina permissões e escolha os aplicativos padrão.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Propriedades do arquivo</title>
+
+  <p>Para ver informações sobre um arquivo ou pasta, clique com botão direito nele(a) e selecione <gui>Propriedades</gui>. Você também pode selecionar o arquivo e pressionar <keyseq><key>Alt</key><key>Enter</key></keyseq>.</p>
+
+  <p>A janela de propriedades de arquivos mostra a você informações como o tipo de arquivo, o tamanho do arquivo e quando você modificou pela última vez. Se você precisa desta informação com frequência, você pode tê-la exibida em <link xref="nautilus-list">colunas de visão de lista</link> ou <link xref="nautilus-display#icon-captions">legenda de ícones</link>.</p>
+
+  <p>A informação dada na aba <gui>Básico</gui> é explicada abaixo. Também há as abas <gui><link xref="nautilus-file-properties-permissions">Permissões</link></gui> e <gui><link xref="files-open#default">Abrir com</link></gui>. Para determinados tipos de arquivos, como imagens e vídeos, haverá uma aba extra que fornece informações como as dimensões, duração e codec.</p>
+
+<section id="basic">
+ <title>Propriedades básicas</title>
+ <terms>
+  <item>
+    <title><gui>Nome</gui></title>
+    <p>Você pode renomear o arquivo alterando este campo. Você também pode renomear um arquivo fora da janela de propriedades. Veja <link xref="files-rename"/>.</p>
+  </item>
+  <item>
+    <title><gui>Tipo</gui></title>
+    <p>Isso ajuda você a identificar o tipo de arquivo, como um documento PDF, texto OpenDocument (odt) ou imagem JPEG. O tipo de arquivo determina quais aplicativos podem abrir o arquivo, além de outras coisas. Por exemplo, você pode abrir uma imagem com um reprodutor de música. Veja <link xref="files-open"/> para mais informações sobre isto.</p>
+    <p>O <em>tipo MIME</em> do arquivo é mostrado em parênteses; tipo MIME é uma forma padrão que computadores usam para se referir aos tipos de arquivos.</p>
+  </item>
+
+  <item>
+    <title>Conteúdo</title>
+    <p>Este campo é exibido se você estiver procurando pelas propriedades de uma pasta em vez de um arquivo. Isso ajuda você a ver o número de itens na pasta. Se a pasta inclui outras pastas, cada pasta interna é contada como um item, mesmo se ela contiver mais outros itens. Cada arquivo é contado como um único item. Se a pasta estiver vazia, os conteúdos vão exibir <gui>nada</gui>.</p>
+  </item>
+
+  <item>
+    <title>Tamanho</title>
+    <p>Este campo é exibido se você estiver vendo um arquivo (não uma pasta). O tamanho de um arquivo informa você quanto espaço ela utiliza. Isso também é um indicador de quanto tempo levará para baixar um arquivo ou enviá-lo em um e-mail (arquivos grandes demoram mais para enviar/receber).</p>
+    <p>Tamanhos pode ser mostrados em bytes, KB, MB ou GB; no caso dos últimos três, o tamanho em bytes também vai ser fornecido em parênteses. Tecnicamente, 1 KB é 1024 bytes, 1 MB é 1024 KB e por aí vai.</p>
+  </item>
+
+  <item>
+    <title>Pastas pai</title>
+    <p>A localização de cada arquivo em seu computador é fornecido pelo seu <em>caminho absoluto</em>. Este é um "endereço" único do arquivo em seu computador, feito de uma lista de pastas que você precisaria acessar para encontrar o arquivo. Por exemplo, se Jim tivesse um arquivo chamado <file>Resumo.pdf</file> em sua pasta pessoal, sua pasta pai seria <file>/home/jim</file> e sua localização seria <file>/home/jim/Resumo.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Espaço livre</title>
+    <p>Isso é exibido apenas para pastas. Isso fornece a quantidade de espaço em disco que está disponível no disco na qual está a pasta. Isso é útil para verificar se o disco rígido está cheio.</p>
+  </item>
+
+  <item>
+    <title>Acessado</title>
+    <p>A data e hora de quando o arquivo foi aberto pela última vez.</p>
+  </item>
+
+  <item>
+    <title>Modificado</title>
+    <p>A data e hora quando o arquivo foi salvo e alterado pela última vez.</p>
+  </item>
+ </terms>
+</section>
+
+</page>

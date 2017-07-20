@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>Μονό κλικ για να ανοίξετε αρχεία, να εκτελέσετε ή να προβάλετε εκτελέσιμα αρχεία κειμένου και να ορίσετε τη συμπεριφορά απορριμμάτων.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Προτιμήσεις συμπεριφοράς διαχειριστή αρχείων</title>
+<p>Μπορείτε να ελέγξετε εάν κάνετε μονό κλικ ή διπλό κλικ σε αρχεία, το πώς χειρίζονται εκτελέσιμα αρχεία κειμένου και τη συμπεριφορά των απορριμμάτων. Κάντε κλικ στο <gui>Αρχεία</gui> στην πάνω γραμμή, επιλέξτε <gui>Προτιμήσεις</gui> και διαλέξτε την καρτέλα <gui>Συμπεριφορά</gui>.</p>
+
+<section id="behavior">
+<title>Συμπεριφορά</title>
+<terms>
+ <item>
+  <title><gui>Μονό κλικ για να ανοίξετε στοιχεία</gui></title>
+  <title><gui>Διπλό κλικ για να ανοίξετε στοιχεία</gui></title>
+  <p>Από προεπιλογή, το κλικ επιλέγει αρχεία και το διπλό κλικ τα ανοίγει. Μπορείτε να επιλέξετε να ανοίγετε αρχεία και φακέλους όταν τα πατάτε μια φορά. Όταν χρησιμοποιείτε λειτουργία μονού κλικ, μπορείτε να κρατήσετε πατημένο το πλήκτρο <key>Ctrl</key> ενώ κάνετε κλικ για να επιλέξετε ένα ή περισσότερα αρχεία.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>Εκτελέσιμα αρχεία κειμένου</title>
+ <p>Ένα εκτελέσιμο αρχείο κειμένου είναι ένα αρχείο που περιέχει ένα πρόγραμμα που μπορείτε να εκτελέσετε. Τα <link xref="nautilus-file-properties-permissions">δικαιώματα αρχείου</link> πρέπει επίσης να επιτρέπουν το αρχείο να εκτελεστεί ως πρόγραμμα. Οι πιο κοινές δέσμες ενεργειών είναι <sys>κέλυφος</sys>, <sys>Python</sys> και <sys>Perl</sys>. Αυτά έχουν επεκτάσεις <file>.sh</file>, <file>.py</file> και <file>.pl</file>, αντίστοιχα.</p>
+ 
+ <p>Όταν ανοίγετε ένα εκτελέσιμο αρχείο κειμένου, μπορείτε να επιλέξτε από:</p>
+ 
+ <list>
+  <item>
+    <p><gui>Εκτέλεση εκτελέσιμων αρχείων κειμένου όταν ανοιχτούν</gui></p>
+  </item>
+  <item>
+    <p><gui>Προβολή εκτελέσιμων αρχείων κειμένου όταν ανοιχτούν</gui></p>
+  </item>
+  <item>
+    <p><gui>Ερώτηση κάθε φορά</gui></p>
+  </item>
+ </list>
+
+ <p>Εάν έχει επιλεγεί το <gui>Ερώτηση κάθε φορά</gui>, ένας διάλογος θα αναδυθεί ρωτώντας εάν επιθυμείτε να εκτελέσετε ή να προβάλετε το επιλεγμένο αρχείο κειμένου.</p>
+
+ <p>Τα εκτελέσιμα αρχεία κειμένου λέγονται επίσης <em>δέσμες ενεργειών</em>. Όλες οι δέσμες ενεργειών στον φάκελο <file>~/.local/share/nautilus/scripts</file> θα εμφανιστούν στο μενού περιεχομένων για ένα αρχείο του υπομενού <gui style="menuitem">Δέσμες ενεργειών</gui>. Όταν εκτελείται μια από έναν τοπικό φάκελο, όλα τα επιλεγμένα αρχεία θα επικολληθούν στην δέσμη ενεργειών ως παράμετροι. Για να εκτελέσετε μια δέσμη ενεργειών σε ένα αρχείο:</p>
+
+<steps>
+  <item>
+    <p>Περιηγηθείτε στον επιθυμητό φάκελο.</p>
+  </item>
+  <item>
+    <p>Επιλέξτε το επιθυμητό αρχείο.</p>
+  </item>
+  <item>
+    <p>Κάντε δεξί κλικ στο αρχείο για να ανοίξετε το μενού περιεχομένων και επιλέξτε την επιθυμητή δέσμη ενεργειών για εκτέλεση από το μενού <gui style="menuitem">Δέσμες ενεργειών</gui>.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>Δεν θα περαστούν παράμετροι σε μια δέσμη ενεργειών όταν εκτελείται από έναν απομακρυσμένο φάκελο όπως έναν φάκελο που εμφανίζει περιεχόμενο ιστού ή <sys>ftp</sys>.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">Προτιμήσεις απορριμμάτων του διαχειριστή αρχείων</title>
+</info>
+<title>Απορρίμματα</title>
+
+<terms>
+ <item>
+  <title><gui>Ask before emptying the Trash</gui></title>
+  <p>Αυτή η επιλογή επιλέγεται από προεπιλογή. Όταν αδειάζετε τα απορρίμματα, ένα μήνυμα θα εμφανιστεί επιβεβαιώνοντας ότι θα θέλατε να αδειάσετε τα απορρίμματα ή να διαγράψετε τα αρχεία.</p>
+ </item>
+</terms>
+</section>
+
+</page>

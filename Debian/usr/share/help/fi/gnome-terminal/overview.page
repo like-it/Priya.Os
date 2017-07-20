@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="overview" xml:lang="fi">
+  <info>
+    <revision version="0.1" date="2013-01-10" status="draft"/>
+    <link type="guide" xref="index"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Mikä pääte on?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sami Jaktholm</mal:name>
+      <mal:email>sjakthol@outlook.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Yleistä päätteistä</title>
+
+  <p><app>Pääte</app> on <gui>GNOME:lle</gui> suunniteltu pääteohjelma. Seuraavat termit ja niiden kuvaukset helpottavat <app>Päätteen</app> käytön ja sen ominaisuuksien ymmärtämistä.</p>
+
+  <terms>
+    <item>
+      <title>Pääte</title>
+      <p>Pääte on tekstisyötteen syöttökohde tietokoneessa, jota kutsutaan myös komentoriviksi (Command Line Interface, CLI).</p>
+    </item>
+    <item>
+      <title>Fyysiset päätteet</title>
+      <p>IBM 3270, VT100 ja useat muut ovat laitteistotason päätteitä, joita ei enää tuoteta fyysisinä laitteina. Näiden päätteiden emuloimiseen on luotu pääte-emulaattoreita.</p>
+    </item>
+    <item>
+      <title>Pääte-emulaattorit</title>
+      <p>Emuloinnilla tarkoitetaan sovellusten kykyä imitoida toista ohjelma tai laitetta.</p>
+
+      <p>Pääte-emulaattori (tunnetaan myös nimellä tty) on sovellus, joka emuloi videopäätettä nykyaikaisissa tietokoneissa, jotka käyttävät graafisia käyttöliittymiä ja tarjoavat interaktiivisen käyttömahdollisuuden ohjelmille, jotka toimivat vain komentoriviympäristössä. Näitä ohjelmia voidaan ajaa joko samalla laitteella tai toisella tietokoneella <app>telnet</app>-, <app>ssh</app> tai <app>dial-up</app> -yhteyden välityksellä.</p>
+    </item>
+    <item>
+      <title>VTE</title>
+      <p>Virtuaalinen pääteympäristö (Virtual Terminal Environment, VTE) on pääte-emulaattori, joka emuloi tekstipäätettä graafisessa käyttöliittymäympäristössä. <app>Pääte</app> toimii pääasiassa <app>VTE:n</app> avulla. <app>VTE</app> sisältää osia, jotka toteuttavat täysin toimivan pääte-emulaattorin.</p>
+    </item>
+    <item>
+      <title>Komentotulkki</title>
+      <p><em>Komentotulkki</em> (eng.  shell) on ohjelma, joka tarjoaa rajapinnan komentojen tai ohjelmien "käynnistämiseen" päätteestä. Se myös mahdollistaa hakemistojen sisällön selaamisen ja avaamisen. Suosittuja komentotulkkeja ovat <app>bash</app>, <app>zsh</app>, <app>csh</app>.</p>
+    </item>
+    <item>
+      <title>Ohjausmerkkijonot</title>
+      <p>Ohjausmerkkijono on nimensä mukaisesti merkkijono, joilla muutetaan datan merkitystä päätteessä. Ohjausmerkkijonoja käytetään, kun tietokoneessa on käytettävissä vain yksi kanava edestakaiseen tiedonsiirtoon. Ohjausmerkkijonoilla lähetetystä tiedosta erotellaan suoritettava komento sekä säilytettävä ja näytettävä data toisistaan.</p>
+    </item>
+
+    <item>
+      <title>Kehote</title>
+      <p>Kehote tunnetaan myös nimellä <em>komentokehote</em> (eng. prompt). Se on merkkijono, jolla komentoriviympäristö ilmoittaa komentotulkin valmiudesta vastaanottaa komentoja.</p>
+
+      <p>Kehote loppuu yleensä johonkin merkeistä  <sys>$</sys>, <sys>%</sys>, <sys>#</sys> tai <sys>&gt;</sys>, ja sisältää tietoa työskentelykansion polusta. Unix-pohjaisissa järjestelmissä kehote loppuu yleensä merkkeihin <sys>$</sys> tai <sys>%</sys> riippuen käyttäjän asemasta. Esimerkiksi <sys>$</sys> kuvaa normaalia käyttäjää ja <sys>#</sys> pääkäyttäjää (<sys>root</sys>).</p>
+    </item>
+    <item>
+      <title>Komento</title>
+      <p>Kehotteeseen kirjoitettu syöte, joka tulisi ajaa, on <em>komento</em>. Se on ohjelman nimen ja ohjelman suoritustapaa määrittävien parametrien yhdistelmä.</p>
+    </item>
+  </terms>
+
+</page>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-working-offline" xml:lang="de">
+
+  <info>
+    <desc>Arbeiten Sie mit Ihren E-Mails auch ohne bestehende Netzwerkverbindung.</desc>
+<!-- TODO:POST-3-8: Offline work for web calendars etc also exists => create index page for Offline working? -->
+    <link type="guide" xref="index#mail-basic"/>
+
+    <revision pkgversion="3.7.4" version="0.3" date="2013-01-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-send.html.en#usage-mail-getnsend-offline -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Offline arbeiten</title>
+
+<p>Der erzwungene Offline-Modus hilft Ihnen, mit entfernten Mail-Systemen wie GroupWise, IMAP oder Exchange ohne dauerhafte Verbindung zum Netzwerk zu arbeiten. <app>Evolution</app> hält eine lokale Kopie von einem oder mehreren Ordnern vorrätig, damit Sie Nachrichten schreiben und im Ausgangsordner speichern können, so dass diese bei der nächsten Verbindung mit einem Netzwerk verschickt werden können.</p>
+
+<note style="warning"><p>Der erzwungene Offline-Modus von <gui>Evolution</gui> bezieht sich nur auf E-Mails und betrifft nicht Kontakte und Kalender.</p></note>
+
+<p>POP lädt alle Nachrichten auf Ihre lokale Festplatte herunter, andere Verbindungsarten jedoch laden oftmals nur die Kopfzeilen herunter, und alles weitere erst dann, wenn Sie die Nachricht wirklich lesen wollen. Bevor Sie <app>Evolution</app> zwingen offline zu gehen, lädt <app>Evolution</app> die ungelesenen Nachrichten aus den Ordnern herunter, die Sie zur Speicherung ausgewählt haben.</p>
+
+<section id="mark-folders">
+<title>Ordner für die Offline-Nutzung markieren</title>
+<p>Um einen Ordner für die Offline-Nutzung zu markieren,</p>
+<steps>
+<item><p>Klicken Sie mit der rechten Maustaste auf den Ordner, und wählen Sie <gui>Eigenschaften</gui>.</p></item>
+<item><p>Klicken Sie auf <gui>Ordnerinhalt lokal zum Arbeiten im Offline-Modus kopieren</gui>.</p></item>
+</steps>
+</section>
+
+<section id="sync-for-offline">
+<title>Nachrichten für Offline-Benutzung herunterladen</title>
+<p>Der Verbindungsstatus wird als kleines Symbol in der linken unteren Ecke des <app>Evolution</app>-Hauptfensters gezeigt. Wenn Sie online sind, werden zwei verbundene Kabel angezeigt. Wenn Sie durch Anklicken des Symbols oder mittels <guiseq><gui>Datei</gui><gui>Offline arbeiten</gui></guiseq> offline gehen, werden die beiden Kabel getrennt. Sie werden gefragt, ob Sie unverzüglich offline gehen wollen oder vorher lokale Ordner abgeglichen werden sollen.</p>
+<p>Wählen Sie <guiseq><gui>Datei</gui><gui> Nachrichten für Offline-Modus herunterladen</gui></guiseq>, um Nachrichten für das Arbeiten ohne Netzwerkverbindung herunter zu laden.</p>
+</section>
+
+<section id="network-manager-integration">
+<title>Automatische Erkennung des Verbindungsstatus</title>
+<p><app>Evolution</app> erkennt automatisch den Netzwerkstatus und verhält sich dementsprechend. <app>Evolution</app> geht zum Beispiel automatisch in den Offline-Modus, wenn die Netzwerkverbindung getrennt wird und geht in den Online-Modus, wenn das Netzwerk wieder verfügbar ist.</p>
+</section>
+
+</page>

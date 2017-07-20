@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="about-ssh" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="concepts" group="first"/>
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Τα κλειδιά SSH χρησιμοποιούνται για σύνδεση σε έναν απομακρυσμένο υπολογιστή, μόλις επιτευχθεί μιας ασφαλής σύνδεση.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα του GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Τι είναι ένα ασφαλές κλειδί κελύφους;</title>
+
+  <p>Ένα <em>Ασφαλές κλειδί κελύφους</em>, ονομάζεται συχνά απλώς <em>κλειδί SSH</em>, σας βοηθά να δημιουργήσετε μια ασφαλή σύνδεση μέσα από ένα επισφαλές δίκτυο.</p>
+
+  <list>
+    <title>Ένα κλειδί SSH στην πραγματικότητα αποτελείται από δύο τμήματα:</title>
+    <item><p>Ένα δημόσιο κλειδί, που είναι πλατιά διαθέσιμο.</p></item>
+    <item><p>Ένα ιδιωτικό κλειδί, που κρατιέται μυστικό. Τι ιδιωτικό κλειδί χρησιμοποιείται για το ξεκλείδωμα κρυπτογραφημένων μηνυμάτων με ένα αντίστοιχο δημόσιο κλειδί.</p></item>
+  </list>
+
+  <p>Το πλεονέκτημα της χρήσης ενός <em>κλειδιού SSH</em> στη δημιουργία μιας σύνδεσης μεταξύ υπολογιστών είναι ότι μόνο το <em>Δημόσιο κλειδί</em> χρειάζεται να σταλεί μέσω του δικτύου. Οι κρυπτογραφημένες μεταδόσεις με ένα <em>Δημόσιο κλειδί</em> μπορούν να αποκωδικοποιηθούν μόνο με ξεκλείδωμά τους με το αντίστοιχο <em>Ιδιωτικό κλειδί</em> και έναν κωδικό πρόσβασης. Επειδή μόνο το δημόσιο κλειδί στάλθηκε μέσω του δικτύου, ο κωδικός πρόσβασης του κλειδιού κρατιέται μυστικός.</p>
+
+</page>

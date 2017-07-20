@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="task" id="app-fonts" xml:lang="fr">
+
+  <info>
+    <revision version="0.1" date="2013-02-22" status="candidate"/>
+    <link type="guide" xref="index#appearance"/>
+    <link type="guide" xref="profile"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Utiliser les polices du système ou choisir une police personnalisée pour votre terminal.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yoann Fievez</mal:name>
+      <mal:email>yoann.fievez@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jérôme Sirgue</mal:name>
+      <mal:email>jsirgue@free.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Guillaume Bernard</mal:name>
+      <mal:email>translate@filorin.fr</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Changer la police et le style</title>
+
+  <p>Lorsque vous travaillez sur beaucoup de texte <app>Terminal</app>, vous pouvez modifier la police par défaut selon vos préférences. Vous disposez des options suivantes :</p>
+
+  <section id="system-font">
+  <title>Police système à chasse fixe</title>
+
+  <p>Pour utiliser les polices par défaut du système : </p>
+
+  <steps>
+    <item>
+      <p>Sélectionnez <guiseq><gui style="menu">Édition</gui> <gui style="menuitem">Préférences du profil</gui> <gui style="tab">Général</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Sélectionner <gui style="checkbox">Utiliser la police à chasse fixe du système</gui>.</p>
+    </item>
+  </steps>
+
+  </section>
+
+  <section id="custom-font">
+  <title>Définition d'une police personnalisée</title>
+
+  <p>Pour définir une taille et une police personnalisées : </p>
+
+  <steps>
+    <item>
+      <p>Sélectionner <guiseq><gui style="menu">Édition</gui> <gui style="menuitem">Préférences du profil</gui> <gui style="tab">Général</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Assurez-vous que l'option <gui>Utiliser la police à chasse fixe du système</gui> n'est pas cochée.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton à coté de <gui>Police</gui>.</p>
+    </item>
+    <item>
+      <p>Saisissez le nom de la police désirée dans le champ de recherche ou parcourez la liste des polices.</p>
+    </item>
+    <item>
+      <p>Faites glisser le curseur qui est en dessous de la liste des polices pour définir la taille de la police. Sinon, vous pouvez saisir la taille de la police dans le champ à côté du curseur, ou cliquer sur <gui style="button">+</gui> pour augmenter la taille de la police ou <gui style="button">-</gui> pour diminuer la taille de police sélectionnée.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui style="button">Sélectionner</gui> pour appliquer vos changements. Pour annuler les changements et revenir dans la fenêtre de dialogue précédente, cliquez sur <gui style="button">Annuler</gui>.</p>
+    </item>
+  </steps>
+
+  </section>
+
+  <section id="bold-fonts">
+  <title>Texte gras</title>
+
+  <p><app>Terminal</app> permet au shell de traiter des textes comme l'invite, les noms de répertoire, ou les en-têtes de page « man » (de manuels) pour qu'ils apparaissent en gras.</p>
+
+  <steps>
+    <item>
+      <p>Allez sur <guiseq><gui style="menu">Édition</gui> <gui style="menuitem">Préférences du profil</gui> <gui style="tab">Général</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Sélectionner <gui style="checkbox">Activer le texte en gras</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="important">
+    <p><gui style="checkbox">Activer le texte en gras</gui> est une fonctionnalité spécifique du shell. Si vous utilisez un shell autre que Bash,le comportement décrit ne sera peut-être pas le même.</p>
+  </note>
+
+  </section>
+
+</page>

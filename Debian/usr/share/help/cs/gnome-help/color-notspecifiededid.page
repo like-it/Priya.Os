@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-notspecifiededid" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="guide" xref="color-gettingprofiles"/>
+    <link type="guide" xref="color-why-calibrate"/>
+    <desc>Výchozí profily monitoru neobsahují datum kalibrace.</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Proč výchozí profily monitoru nemají vypršení platnosti kalibrace?</title>
+  <p>Výchozí barevný profil použitý u každého z monitorů je generován automaticky na základě <link href="https://en.wikipedia.org/wiki/Extended_Display_Identification_Data">EDID</link> displeje, která jsou uchovaná v paměťovém čipu uvnitř monitoru. EDID poskytují jen nástin dostupných barev, které monitor zvládal zobrazit, když byl vyroben, a neobsahuje žádné další informace o korekci barev.</p>
+
+  <figure>
+    <desc>Protože EDID nelze aktualizovat, nemá datum vypršení platnosti.</desc>
+    <media type="image" mime="image/png" src="figures/color-profile-default.png"/>
+  </figure>
+
+  <note style="tip">
+    <p>Získání profilu od výrobce monitoru nebo vytvoření profilu vlastními silami by vedlo k přesnějším korekcím barev.</p>
+  </note>
+
+</page>

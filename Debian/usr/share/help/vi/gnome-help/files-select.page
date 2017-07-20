@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-select" xml:lang="vi">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Nhấn <keyseq><key>Ctrl</key><key>S</key></keyseq> để chọn nhiều tập tin với tên tương tự nhau.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
+      <mal:email>pclouds@gmail.com</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Chọn tập tin theo mẫu</title>
+
+  <p>Bạn có thể chọn tập tin trong thư mục dùng mẫu tên tập tin. Nhấn <keyseq><key>Ctrl</key><key>S</key></keyseq> để hiện cửa sổ <gui>Chọn các mục tương ứng</gui>. Nhập mẫu dùng phần giống nhau của tập tin kèm ký hiệu mẫu. Có hay ký hiệu có thể dùng:</p>
+
+  <list style="compact">
+    <item><p><file>*</file> nghĩa là bất cứ ký tự nào, thậm chí không có ký tự nào.</p></item>
+    <item><p><file>?</file> nghĩa là chỉ một ký tự bất kỳ.</p></item>
+  </list>
+
+  <p>Ví dụ:</p>
+
+  <list>
+    <item><p>Nếu bạn có một tài liệu văn bản OpenDocument, một tập tin PDF và một ảnh có cùng tên cơ bản <file>Hoá-Đơn</file>, chọn cả ba bằng mẫu</p>
+    <example><p><file>Invoice.*</file></p></example></item>
+
+    <item><p>Nếu bạn có hình tên <file>Nghỉ-hè-001.jpg</file>, <file>Nghỉ-hè-002.jpg</file> và <file>Nghỉ-hè-003.jpg</file>, chọn tất cả với mẫu</p>
+    <example><p><file>Nghỉ-hè-???.jpg</file></p></example></item>
+
+    <item><p>If you have photos as before, but you have edited some of them and
+    added <file>-edited</file> to the end of the file name of the photos you
+    have edited, select the edited photos with</p>
+    <example><p><file>Nghỉ-hè-???-đã-sửa.jpg</file></p></example></item>
+  </list>
+
+</page>

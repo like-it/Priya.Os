@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="color-import-windows" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <link type="seealso" xref="color-gettingprofiles"/>
+    <desc>Hur man importerar en befintlig ICC-profil med ett Windows-system.</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Erik Sköldås</mal:name>
+      <mal:email>erik.skoldas@tele2.se</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Installera en ICC-profil i Microsoft Windows</title>
+  <p>Metoden för att tilldela profilen till en enhet och dessutom använda de inbyggda kalibreringskurvorna är olika för varje version av Microsoft Windows.</p>
+  <section id="xp">
+    <title>Windows XP</title>
+    <p>Högerklicka på profilen i Windows Explorer och klicka på <gui>Installera profil</gui>. Detta kopierar automatiskt profilen till rätt katalog.</p>
+    <p>Öppna sedan <guiseq><gui>Kontrollpanelen</gui><gui>Färg</gui></guiseq> och lägg till profilen till enheten.</p>
+    <note style="warning">
+      <p>Om du byter ut en befintlig profil i Windows XP, fungerar inte ovanstående genväg. Profilerna måste kopieras manuellt till <file>C:\Windows\system32\spool\drivers\color</file> för att den ursprungliga profilen skall bytas ut.</p>
+    </note>
+    <p>Windows XP kräver att ett program körs vid uppstart för att kopiera kalibreringskurvans profil till grafikkortet. Detta kan göras genom att använda <app>Adobe Gamma</app>, <app>LUT Loader</app> eller Microsoft gratisprogram <app href="https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=12714"> Kontrollpanelen för färghantering</app>. Om den senare används så lägger den till ett nytt <gui>Färg</gui>-objekt i kontrollpanelen som tillåter att kalibreringskurvorna från standardprofilen enkelt konfigureras vid varje uppstart.</p>
+  </section>
+
+  <section id="vista">
+    <title>Windows Vista</title>
+    <p>Microsoft Windows Vista tar felaktigt bort kalibreringskurvor från video-LUT:en efter inloggning, efter vänteläge, och när UAC-skärm visas. Detta innebär att du kan behöva manuellt läsa in ICC-profilens kalibreringskurvor. Om du använder profiler med inbyggd kalibreringskurva måste du vara mycket försiktig då kalibreringstillståndet inte har blivit rensat.</p>
+  </section>
+
+  <section id="7">
+    <title>Windows 7</title>
+    <p>Windows 7 stöder ett liknande system som Linux, eftersom profiler kan installeras systemomfattande eller specifikt för användaren. De lagras dock på samma ställe. Högerklicka på profilen i Windows utforskare och klicka på <gui>Installera profil</gui> eller kopiera .icc-profilen till <file>C:\Windows\system32\spool\drivers\color</file>.</p>
+    <p>Öppna <guiseq><gui>Kontrollpanelen</gui><gui>Färghantering</gui></guiseq> och lägg sedan till profilen i systemet genom att klicka på knappen <gui>Lägg till</gui>. Klicka på fliken <gui>Avancerat</gui> och leta efter <gui>Kalibrering av bildskärm</gui>. Inläsning av kalibreringskurvan aktiveras genom kryssrutan <gui>Använd Windows bildkalibrering</gui> men den är inte valbar. Detta kan aktiveras genom att klicka på <gui>Ändra systemstandard</gui> och sedan återvända till fliken <gui>Avancerat</gui> och där klicka i kryssrutan.</p>
+    <p>Stäng dialogrutan och klicka på <gui>Uppdatera nuvarande kalibreringar</gui> för att ställa in gammaramper. Profilens kalibreringskurva bör nu bli inställd för varje start.</p>
+  </section>
+
+</page>

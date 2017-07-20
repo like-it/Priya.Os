@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="ssh-create" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys" group="first"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="incomplete"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Crear claves SSH para iniciar sesión en otros equipos.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Crear una clave SSH nueva</title>
+
+  <p>Una clave SSH le ayudará a crear conexiones seguras entre equipos. Al crear una clave SSH se crean tanto la clave <em>Pública</em> como la <em>Privada</em>. Para crear una clave nueva.:</p>
+
+    <steps>
+      <item><p>Seleccione <guiseq><gui>Archivo</gui><gui>Nuevo…</gui></guiseq>.</p></item>
+      <item><p>Seleccione <gui>Clave de Shell segura</gui> y pulse <gui>Continuar</gui>.</p></item>
+      <item><p>Introduzca una descripción para la clave. Esta descripción le ayudará a identificar su clave posteriormente. Por ejemplo, puede introducir la la fecha, para qué se usará la clave o el nombre del servidor en el que pretende instalar la clave. El campo de descripción es opcional, y la manera de describir la clave depende totalmente de usted.</p></item>
+      <item><p>Puede cambiar la configuración predeterminada del tipo de cifrado o la fortaleza de la clave expandiendo el panel <gui>Opciones avanzadas de clave</gui>.</p></item>
+    </steps>
+
+  <p>En este punto, puede simplemente crear su clave o crearla e instalarla en un equipo remoto para permitir el inicio de sesión sin contraseña.</p>
+
+  <section id="ssh-just-create-key" ui:expanded="false">
+    <title>Crear su clave y con configurar el inicio de sesión remoto</title>
+    <p>Puede crear la clave SSH y elegir configurarla más tarde.</p>
+
+    <steps>
+      <item>
+	<p>Pulse el botón <gui style="button">Tan sólo crear clave</gui>.</p>
+      </item>
+      <item>
+	<p>Escriba una contraseña para su clave SSH y pulse <gui style="button">Aceptar</gui>.</p>
+      </item>
+      <item>
+	<p>Vuelva a escribir la contraseña y pulse <gui style="button">Aceptar</gui> para terminar.</p>
+      </item>
+    </steps>
+
+    <p>La clave SSH aparecerá en el depósito de <gui>claves OpenSSH</gui>.</p>
+
+    <note style="tip">
+      <p>Cuando intente usar su clave SSH, su sistema operativo le pedirá la clave usada durante la creación. Esto asegura que, si alguien logra tener acceso a su clave SSH, no podrá usarla sin la contraseña.</p>
+    </note>
+
+  </section>
+
+  <section id="ssh-create-key-and-set-up" ui:expanded="false">
+    <title>Crear su clave e instalarla en un equipo remoto</title>
+    <p>Una de las cosas más útiles que tiene una clave SSH es que puede instalar la clave pública en un equipo remoto, lo que le permitirá iniciar sesión en el equipo remoto mediante SSH sin necesidad de introducir su contraseña cada vez.</p>
+
+    <steps>
+      <item>
+	<p>Pulse el botón <gui style="button">Crear y configurar</gui> y siga las instrucciones para introducir una contraseña o una frase de paso.</p>
+      </item>
+      <item>
+	<p>En la ventana de diálogo que se abre, introduzca la <gui>Dirección del servidor</gui> que usar normalmente para iniciar sesión en el equipo remoto mediante SSH.</p>
+      </item>
+      <item>
+	<p>Asegúrese de que el <gui>Nombre de inicio de sesión</gui> que usar en el equipo remoto es correcto y pulse <gui>Configurar</gui>.</p>
+      </item>
+      <item>
+	<p>El programa intentará conectarse a la <gui>Dirección del servidor</gui> indicada cono el <gui>Nombre de inicio de sesión</gui> introducido. Si hay algún problema al intentar acceder al equipo remoto, aparecerá una ventana emergente explicando el problema, y podrá intentarlo de nuevo. Asegúrese de que está conectado a la red y de que ele equipo remoto está activo y accesible.</p>
+      </item>
+      <item>
+	<p>Si la conexión al equipo remoto se completa con éxito, aparecerá un cuadro de diálogo solicitando la <gui>Contraseña</gui> usada para iniciar sesión en el equipo remoto. Introdúzcala y pulse <gui style="button">Aceptar</gui>.</p>
+      </item>
+    </steps>
+
+    <p>La parte pública de la clave SSH seleccionada se instalará en el equipo remoto y se configurará para permitir el acceso por SSH sin contraseña. Ahora debería poder iniciar sesión en el equipo remoto mediante SSH sin necesidad de introducir su contraseña.</p>
+
+    <note style="tip">
+      <p>Si la autenticación SSH falla y no puede usar la autenticación con contraseña, contacte con el administrador del servicio para obtener ayuda.</p>
+    </note>
+  </section>
+</page>

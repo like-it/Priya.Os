@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-media" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.2" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak sdílet multimédia v místní síti pomocí UPnP.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Sdílení vaší hudby, fotografií a videí</title>
+
+  <p>Můžete procházet, vyhledávat a přehrávat multimédia na svém počítači pomocí zařízení podporující <sys>UPnP</sys> nebo <sys>DLNA</sys>, jako jsou chytré telefony, televize nebo herní konzole. Nastavte <gui>Sdílení multimédií</gui>, abyste umožnili těmto zařízením přístup k složkám obsahujícím hudbu, fotografie a videa.</p>
+
+  <note style="info package">
+    <p>Aby bylo <app>Sdílení multimédií</app> vidět, musíte mít nainstalovaný balíček <gui>Rygel</gui>.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:rygel" style="button">Nainstalovat Rygel</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Sdílení</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknutím na <gui>Sdílení</gui> otevřete příslušný panel.</p>
+    </item>
+    <item>
+      <p>Pokud je vypínač <gui>Sdílení</gui> v poloze <gui>○</gui> (vypnuto), přepněte jej na <gui>❙</gui> (zapnuto).</p>
+
+      <note style="info"><p>Text pod popiskem <gui>Název počítače</gui> je možné upravit a <link xref="sharing-displayname">změnit</link> tak název svého počítače, kterým se prezentuje v síti.</p></note>
+    </item>
+    <item>
+      <p>Vyberte <gui>Sdílení médií</gui>.</p>
+    </item>
+    <item>
+      <p>Vypínač <gui>Sdílení médií</gui> přepněte do polohy <gui>❙</gui> (zapnuto).</p>
+    </item>
+    <item>
+      <p>Ve výchozím stavu jsou sdíleny složky <file>Hudba</file>, <file>Obrázky</file> a <file>Videa</file>. Pokud některou z nich chcete odebrat, klikněte na <gui>×</gui> vedle názvu složky.</p>
+    </item>
+    <item>
+      <p>Pokud chcete přidat jinou složku, klikněte na <gui style="button">+</gui>, aby se otevřelo okno <gui>Výběr složky</gui>. Přejděte <em>do</em> požadované složky a klikněte na <gui style="button">Otevřít</gui>.</p>
+    </item>
+    <item>
+      <p>Klikněte na <gui style="button">×</gui>. Nyní budete moci pomocí externích zařízení procházet nebo přehrávat multimédia v složkách, které jste vybrali.</p>
+    </item>
+  </steps>
+
+  <section id="networks">
+  <title>Sítě</title>
+
+  <p>V části <gui>Sítě</gui> jsou uvedeny sítě, ke kterým jste právě připojeni. Použijte vypínač vedle jednotlivých sítí k volbě, kde mohou být vaše multimédia sdílena.</p>
+
+  </section>
+
+</page>

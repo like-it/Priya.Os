@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="status-icons" xml:lang="mr">
+
+  <info>
+    <link type="guide" xref="shell-overview#apps"/>
+
+    <revision version="0.1" date="2013-02-23" status="review"/>
+
+    <credit type="author copyright">
+      <name>Monica Kochofar</name>
+      <email>monicakochofar@gmail.com</email>
+      <years>२०१२</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>शीर्षपट्टीतील उजव्या बाजूला स्थित चिन्हांचा अर्थ समजवते.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>उच्च पट्टीवरच्या चिन्हांचा अर्थ काय आहे?</title>
+<p>हे विभाग शीर्षपट्टीतील उजव्या बाजूला स्थित चिन्हांचा अर्थ समजवते. विशेषतया, GNOME संवादतर्फे पुरवलेल्या चिन्हांचे विविध प्रकारांचे वर्णन केले जाते.</p>
+
+<if:choose>
+<if:when test="!platform:gnome-classic">
+<media type="image" src="figures/top-bar-icons.png" style="floatend">
+  <p>GNOME शेल उच्च पट्टी</p>
+</media>
+</if:when>
+<if:when test="platform:gnome-classic">
+<media type="image" src="figures/top-bar-icons-classic.png" width="395" height="70" style="floatend">
+  <p>GNOME शेल उच्च पट्टी</p>
+</media>
+</if:when>
+</if:choose>
+
+<links type="section"/>
+
+<section id="universalicons">
+<title>वैश्विक प्रवेश मेनु चिन्हे</title>
+
+ <table shade="rows">
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/preferences-desktop-accessibility-symbolic.svg"/></td>
+      <td><p>ॲक्सेसिबिलिटि सेटिंग्ज सुरू करणाऱ्या मेन्युकडे निर्देशीत करते.</p></td>
+    </tr>
+    
+  </table>
+</section>
+
+
+<section id="audioicons">
+<title>आवाज नियंत्रण चिन्हे</title>
+
+ <table shade="rows">
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-high-symbolic.svg"/></td>
+      <td><p>आवाजाची पातळी उच्च ठेवलेली आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-medium-symbolic.svg"/></td>
+      <td><p>आवाजाची पातळी मध्यम ठेवलेली आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-low-symbolic.svg"/></td>
+      <td><p>आवाजाची पातळी कमी ठेवलेली आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-muted-symbolic.svg"/></td>
+      <td><p>आवाज बंद केला आहे.</p></td>
+    </tr>
+  </table>
+</section>
+
+
+<section id="bluetoothicons">
+<title>ब्लुटुथ व्यवस्थापक चिन्हे</title>
+
+ <table shade="rows">
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/></td>
+      <td><p>ब्लुटुथ सुरु झालेलं आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-disabled-symbolic.svg"/></td>
+      <td><p>ब्लुटुथ बंद झालेलं आहे.</p></td>
+    </tr>
+  </table>
+</section>
+
+<section id="networkicons">
+<title>नेटवर्क व्यवस्थापक चिन्हे</title>
+<p/>
+<p><app>सेल्युलर जोडणी</app></p>
+ <table shade="rows">
+
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-3g-symbolic.svg"/></td>
+      <td><p>3G नेटवर्कला जोडलेलं आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-4g-symbolic.svg"/></td>
+      <td><p>4G नेटवर्कला जोडलेलं आहे.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-edge-symbolic.svg"/></td>
+      <td><p>EDGE नेटवर्कला जोडलेलं आहे.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-gprs-symbolic.svg"/></td>
+      <td><p>GPRS नेटवर्कला जोडलेलं आहे.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-umts-symbolic.svg"/></td>
+      <td><p>UMTS नेटवर्कला जोडलेलं आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-connected-symbolic.svg"/></td>
+      <td><p>सेल्युलर नेटवर्कला जोडलेलं आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-acquiring-symbolic.svg"/></td>
+      <td><p>सेल्युलर नेटवर्क जोडणी मिळवत आहे.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg"/></td>
+      <td><p>अति उच्च सिगनल पातळी.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-good-symbolic.svg"/></td>
+      <td><p>उच्च सिगनल पातळी.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-ok-symbolic.svg"/></td>
+      <td><p>मध्यम सिगनल पातळी.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-weak-symbolic.svg"/></td>
+      <td><p>कमी सिगनल पातळी.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-none-symbolic.svg"/></td>
+      <td><p>अतिशय कमी सिगनल पातळी.</p></td>
+    </tr></table>
+
+
+
+
+<p><app>स्थानिक क्षेत्र नेटवर्क (एलएएन) जोडणी</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-error-symbolic.svg"/></td>
+      <td><p>नेटवर्क शोधतेवेळी त्रुटी आढळली.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-idle-symbolic.svg"/></td>
+      <td><p>नेटवर्क अकार्यरत आहे.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-no-route-symbolic.svg"/></td>
+      <td><p>नेटवर्कसाठी कुठलाही मार्ग सापडला नाही.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-offline-symbolic.svg"/></td>
+      <td><p>नेटवर्क ऑफलाइन आहे.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-receive-symbolic.svg"/></td>
+      <td><p>नेटवर्क डाटा स्वीकारत आहे.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-receive-symbolic.svg"/></td>
+      <td><p>नेटवर्क डाटा पाठवत आणि स्वीकारत आहे.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-symbolic.svg"/></td>
+      <td><p>नेटवर्क डाटा पाठवत आहे.</p></td>
+    </tr>
+</table>
+
+
+
+<p><app>व्हरच्युयल खाजगी नेटवर्क (व्हीपीएन) जोडणी</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-acquiring-symbolic.svg"/></td>
+      <td><p>नेटवर्क जोडणी मिळवत आहे.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-symbolic.svg"/></td>
+      <td><p>व्हीपीएन नेटवर्कशी जोडणी झाली आहे.</p></td>
+    </tr>
+</table>
+
+
+<p><app>वायर्ड जोडणी</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-acquiring-symbolic.svg"/></td>
+      <td><p>नेटवर्क जोडणी मिळवत आहे.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-disconnected-symbolic.svg"/></td>
+      <td><p>नेटववर्कपासून खंडित झालं आहे.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-symbolic.svg"/></td>
+      <td><p>वायर्ड नेटवर्कशी जोडलं आहे.</p></td>
+    </tr>
+</table>
+
+
+<p><app>वायरलेस जोडणी</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-acquiring-symbolic.svg"/></td>
+      <td><p>वायरलेस जोडणी मिळवत आहे.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-encrypted-symbolic.svg"/></td>
+      <td><p>वायरलेस नेटवर्क एनक्रिप्ट केलेले आहे.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-connected-symbolic.svg"/></td>
+      <td><p>वायरलेस नेटवर्कशी जोडलं आहे.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg"/></td>
+      <td><p>अति उच्च सिगनल पातळी.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-good-symbolic.svg"/></td>
+      <td><p>उच्च सिगनल पातळी.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-ok-symbolic.svg"/></td>
+      <td><p>मध्यम सिगनल पातळी.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-weak-symbolic.svg"/></td>
+      <td><p>कमी सिगनल पातळी.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-none-symbolic.svg"/></td>
+      <td><p>अतिशय कमी सिगनल पातळी.</p></td>
+    </tr>
+
+  </table>
+</section>
+
+<section id="batteryicons">
+<title>वीज व्यवस्थापक चिन्हे</title>
+
+ <table shade="rows">
+   <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-symbolic.svg"/></td>
+      <td><p>बॅटरी पूर्ण आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-symbolic.svg"/></td>
+      <td><p>बॅटरी थोडी कमी झाली आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-symbolic.svg"/></td>
+      <td><p>बॅटरी कमी आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-symbolic.svg"/></td>
+      <td><p>चेतावनी: बॅटरी खूप कमी आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-symbolic.svg"/></td>
+      <td><p>बॅटरी अतिशय कमी आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-missing-symbolic.svg"/></td>
+      <td><p>बॅटरी काढली गेली आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-charged-symbolic.svg"/></td>
+      <td><p>बॅटरी पूर्ण चार्ज आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-charging-symbolic.svg"/></td>
+      <td><p>बॅटरी पूर्ण आहे आणि चार्ज होत आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-charging-symbolic.svg"/></td>
+      <td><p>बॅटरी अर्धवट पूर्ण झाली आहे आणि चार्ज होत आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-charging-symbolic.svg"/></td>
+      <td><p>बॅटरी कमी आहे आणि चार्ज होत आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-charging-symbolic.svg"/></td>
+      <td><p>बॅटरी खूप कमी आहे आणि चार्ज होत आहे.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-charging-symbolic.svg"/></td>
+      <td><p>बॅटरी संपली आहे आणि चार्ज होत आहे.</p></td>
+    </tr>
+  </table>
+</section>
+
+
+</page>

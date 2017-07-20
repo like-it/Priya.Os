@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-expiration-change" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision pkgversion="3.9" version="0.1" date="2013-07-22" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Das Ablaufdatum Ihrer Schlüssel verlängern oder verkürzen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ändern des Ablaufdatums Ihrer Schlüssel</title>
+
+  <p>Wenn Ihr PGP-Schlüssel abgelaufen ist und Sie ihn aber weiter verwenden möchten, so können Sie das Ablaufdatum neu festlegen. Sie können auch die Ablaufeinstellungen so ändern, dass ein Schlüssel an einem früheren Datum abläuft.</p>
+
+  <steps>
+    <title>So ändern Sie das Ablaufdatum eines PGP-Schlüssels:</title>
+    <item>
+      <p>Wählen Sie den PGP-Schlüssel aus der Liste.</p>
+    </item>
+    <item>
+      <p>Klicken Sie mit der rechten Maustaste auf den gewählten Schlüssel und wählen Sie <gui>Eigenschaften</gui>.</p>
+    </item>
+    <item>
+      <p>Wählen Sie den Reiter <gui>Details</gui> in dem neuen Fenster.</p>
+    </item>
+    <item>
+      <list>
+        <item>
+	  <p>Drücken Sie zum Ändern des Ablaufdatums auf den kleinen Knopf mit dem Bild eines Kalenders rechts im Dialog neben <gui>Läuft ab</gui>. Wählen Sie anschließend ein neues Ablaufdatum im Kalender.</p>
+        </item>
+        <item>
+	  <p>Um das Ablaufdatum eines <link xref="pgp-subkeys">Unterschlüssels</link> zu ändern, klappen Sie die Leiste <gui>Unterschlüssel</gui> aus und wählen Sie den Unterschlüssel in der Liste. Klicken Sie dann auf den Knopf <gui style="button">Ablauf??</gui> auf der linken Seite der Leiste und wählen Sie ein neues Ablaufdatum.</p>
+	</item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="important">
+    <p>Wenn Sie das Ablaufdatum eines bereits veröffentlichten Schlüssels ändern, so müssen Sie nach den gewünschten Änderungen den Schlüssel mit dem Schlüssel-Server <link xref="pgp-sync">abgleichen</link>.</p>
+  </note>
+
+</page>

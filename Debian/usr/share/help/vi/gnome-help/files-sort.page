@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="vi">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Sắp tập tin theo tên, kích thước, loại hoặc thời điểm thay đổi.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
+      <mal:email>pclouds@gmail.com</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Sắp xếp tập tin và thư mục</title>
+
+<p>You can sort files in different ways in a folder, for example by sorting them
+in order of date or file size. See <link xref="#ways"/> below for a list of
+common ways to sort files. See <link xref="nautilus-views"/> for information on
+how to change the default sort order.</p>
+
+<p>The way that you can sort files depends on the <em>folder view</em> that you
+are using. You can change the current view using the list or icon buttons in the
+toolbar.</p>
+
+<section id="icon-view">
+  <title>Biểu tượng</title>
+
+  <p>To sort files in a different order, click the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
+  Date</gui>.</p>
+
+  <p>As an example, if you select <gui>By Name</gui>, the files will be sorted
+  by their names, in alphabetical order. See <link xref="#ways"/> for other
+  options.</p>
+
+  <p>You can sort in the reverse order by selecting <gui>Reversed Order</gui>
+  from the menu.</p>
+
+</section>
+
+<section id="list-view">
+  <title>Danh sách</title>
+
+  <p>Để sắp tập tin theo thứ tự khác, nhấn vào đầu một trong các cột trong trình quản lý tập tin. Ví dụ, nhấn<gui>Loại</gui> để sắp theo loại tập tin. Nhấn đầu cột lần nữa để đảo thứ tự.</p>
+  <p>In list view, you can show columns with more attributes and sort on those
+  columns. Click the view options button in the toolbar, pick <gui>Visible
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  Columns…</gui> and select the columns that you want to be visible. You will
+  then be able to sort by those columns. See <link xref="nautilus-list"/> for
+  descriptions of available columns.</p>
+
+</section>
+
+<section id="ways">
+  <title>Cách sắp xếp tập tin</title>
+
+  <terms>
+    <item>
+      <title>Tên</title>
+      <p>Sắp theo tên tập tin theo bảng chữ cái.</p>
+    </item>
+    <item>
+      <title>Kích thước</title>
+      <p>Sắp theo kích thước tập tin (dùng bao nhiêu đĩa). Mặc định sắp từ nhỏ nhất đến lớn nhất.</p>
+    </item>
+    <item>
+      <title>Loại</title>
+      <p>Sắp theo loại tập tin theo bảng chữ cái. Tập tin cùng loại sẽ được nhóm với nhau rồi sắp theo tên.</p>
+    </item>
+    <item>
+      <title>Last Modified</title>
+      <p>Sắp theo ngày giờ tập tin bị thay đổi lần cuối. Mặc định sắp từ tập tin cũ nhất đến tập tin mới nhất.</p>
+    </item>
+  </terms>
+
+</section>
+
+</page>

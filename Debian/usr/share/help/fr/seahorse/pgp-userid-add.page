@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-userid-add" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="pgp-userid#add-remove"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-27" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Le fait de posséder plusieurs identifiants utilisateur facilite l'usage de la même clé pour communiquer avec différentes personnes.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ajout d'autres identifiants utilisateur à une clé</title>
+
+  <p>Une clé peut disposer de plusieurs identifiants utilisateur. C'est utile si vous désirez vous servir de la même clé lors de la communication avec plusieurs personnes et que l'une d'entre elles ne reconnaît pas, disons, l'adresse électronique dans votre identifiant. Cette personne peut ne pas vouloir importer votre clé publique puisqu'elle contient une information qu'elle ne connaît pas. Dans ce cas, si vous ne souhaitez pas créer une nouvelle clé avec un autre identifiant, vous pouvez joindre un nouvel identifiant utilisateur à la clé existante.</p>
+
+  <steps>
+    <title>Ajout d'un autre identifiant utilisateur :</title>
+    <item>
+      <p>Sélectionnez le trousseau <gui>Clés GnuPG</gui> dans le panneau de gauche.</p>
+    </item>
+    <item>
+      <p>Dans la liste, sélectionnez la <gui>clé personnelle PGP</gui> de votre choix.</p>
+    </item>
+    <item>
+      <p>Faites un clic droit sur la clé sélectionnée et choisissez <guiseq><gui>Propriétés</gui> <gui>Noms et signatures</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton <gui style="button">Ajouter nom</gui> pour ajouter un nouvel identifiant utilisateur.</p>
+    </item>
+    <item>
+      <p>Dans la nouvelle boîte de dialogue, remplissez les données <gui>Nom complet</gui>, <gui>Adresse électronique</gui> et <gui>Commentaire</gui> pour le nouvel identifiant</p>
+    </item>
+    <item>
+      <p>Saisissez la bonne phrase de passe et cliquez sur <gui style="button">Valider</gui> pour terminer.</p>
+    </item>
+  </steps>
+
+  <p>Le nouvel identifiant utilisateur figure maintenant dans la liste sous le panneau <gui>Noms et signatures</gui>.</p>
+
+  <note style="tip">
+    <p>Si la clé a été publiée sur un serveur, <link xref="pgp-sync">synchronisez-la</link> après y avoir ajouté de nouveaux identifiants utilisateur afin de mettre à jour la copie distante de la clé.</p>
+  </note>
+
+</page>

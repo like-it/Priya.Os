@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="color-testing" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-gettingprofiles"/>
+
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-04" status="candidate"/>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Use os perfis de teste fornecidos para verificar se seus perfis estão sendo aplicados corretamente à sua tela.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Como testo se o gerenciamento de cores está funcionando corretamente?</title>
+
+  <p>Os efeitos de um perfil de cores são às vezes sutis, e pode ser difícil ver se algo mudou.</p>
+
+  <p>No GNOME, nós embarcamos vários perfis para teste que vão deixar bem claro quando os perfis estão sendo aplicados:</p>
+
+  <terms>
+    <item>
+      <title>Azul</title>
+      <p>Isso vai deixar a tela azul e testa se as curvas de calibração estão sendo enviadas para a tela.</p>
+    </item>
+<!--    <item>
+      <title>ADOBEGAMMA-test</title>
+      <p>This will turn the screen pink and tests different features of a
+      screen profile.</p>
+    </item>
+    <item>
+      <title>FakeBRG</title>
+      <p>This will not change the screen, but will swap around the RGB channels
+      to become BGR. This will make all the colors gradients look mostly
+      correct, and there won't be much difference on the whole screen, but
+      images will look very different in applications that support color
+      management.</p>
+    </item>-->
+  </terms>
+
+  <steps>
+    <item>
+      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Cor</gui>.</p>
+    </item>
+    <item>
+      <p>Clique em <gui>Cor</gui> para abrir o painel.</p>
+    </item>
+    <item>
+      <p>Selecione o dispositivo para o qual você deseja adicionar um perfil. Você pode querer tomar uma nota de qual perfil está sendo usado atualmente.</p>
+    </item>
+    <item>
+      <p>Clique em <gui>Adicionar perfil</gui> para selecionar um perfil de teste, o qual deve estar embaixo da lista.</p>
+    </item>
+    <item>
+      <p>Pressione <gui>Adicionar</gui> para confirmar sua seleção.</p>
+    </item>
+    <item>
+      <p>Para reverter para seu perfil anterior, selecione o dispositivo no painel <gui>Cor</gui> e, então, selecione o perfil que você estava usando antes de você tentar os perfis de teste e pressione <gui>Habilitar</gui> para usá-lo novamente.</p>
+    </item>
+  </steps>
+
+
+  <p>Ao usar esses perfis, você pode ver claramente quando um aplicativo tem suporte ao gerenciamento de cores.</p>
+
+</page>

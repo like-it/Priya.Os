@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="seealso" xref="net-findip"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Att använda en statisk IP-adress kan göra det enklare att erbjuda vissa nätverkstjänster från din dator.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Skapa en anslutning med en fast IP-adress</title>
+
+  <p>De flesta nätverk kommer automatiskt att tilldela en <link xref="net-what-is-ip-address">IP-adress</link> och andra detaljer till din dator när du ansluter till nätverket. Dessa detaljer kan uppdateras regelbundet men du kanske önskar att få en fast IP-adress till din dator så du alltid vet vilken dess adress är (om den till exempel är en filserver).</p> <p>För att ge din dator en fast (statisk) IP-adress:</p>
+
+  <steps>
+    <item>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Nätverk</gui>.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Nätverk</gui> för att öppna panelen.</p>
+    </item>
+    <item>
+      <p>I vänstra panelen, välj nätverksanslutningen som du vill ge en fast adress. Om du ansluter till nätverket med en kabel, klicka på <gui>Trådbundet</gui>, klicka sedan på knappen <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">inställningar</span></media> i nedre högra hörnet av panelen. För en <gui>Trådlös</gui>-anslutning kommer <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">inställningar</span></media>-knappen att finnas intill det aktiva nätverket.</p>
+    </item>
+    <item>
+      <p>Klicka på fliken <gui>IPv4</gui> eller <gui>IPv6</gui> och ändra <gui>Adresser</gui> till <em>Manuell</em>.</p>
+    </item>
+    <item>
+      <p>Mata in information om <em>Adress</em>, <em>Nätmask</em> och <em>Gateway</em> i de avsedda fälten. Hur du väljer dessa beror på dina nätverksinställningar; det finns specifika regler som styr vilka IP-adresser och nätmasker som är giltiga för ett givet nätverk.</p>
+    </item>
+    <item>
+      <p>Om det behövs, mata in adressen till en <em>Domännamnsserver</em> i fältet <gui>DNS-servrar</gui>. Detta är IP-adressen till en server som slår upp domännamn; de flesta företagsnätverk och internetleverantörer har dedikerade DNS-servrar.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Verkställ</gui>. Nätverksanslutningen bör nu ha en fast IP-adress.</p>
+    </item>
+  </steps>
+
+</page>

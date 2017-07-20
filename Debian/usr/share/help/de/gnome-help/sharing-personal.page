@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-personal" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.1" date="2013-09-23" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Andere Personen auf Dateien in Ihrem Ordner <file>Öffentlich</file> zugreifen lassen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ihre persönlichen Dateien freigeben</title>
+
+  <p>Sie können anderen Personen von einem anderen Rechner im Netzwerk aus Zugriff auf den Ordner <file>Öffentlich</file> in Ihrem <file>Persönlichen Ordner</file> gewähren. Richten Sie <app>Persönliche Dateifreigabe</app> ein, um anderen Zugriff auf den Ordner zu gewähren.</p>
+
+  <note style="info package">
+    <p>Das Paket <app>gnome-user-share</app> muss installiert sein, damit <gui>Persönliche Dateifreigabe</gui> angezeigt wird.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:gnome-user-share" style="button">GNOME-Dateifreigabe installieren</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Freigabe</gui> ein.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Freigabe</gui>, um das Panel zu öffnen.</p>
+    </item>
+    <item>
+      <p>Wenn <gui>Freigabe</gui> auf <gui>AUS</gui> gestellt ist, so schalten Sie diese <gui>An</gui>.</p>
+
+      <note style="info"><p>Wenn sich der Text unterhalb von <gui>Rechnername</gui> bearbeiten lässt, können Sie den Namen <link xref="sharing-displayname">ändern</link>, unter dem Ihr Rechner im Netzwerk angezeigt wird.</p></note>
+    </item>
+    <item>
+      <p>Wählen Sie <gui>Persönliche Dateifreigabe</gui>.</p>
+    </item>
+    <item>
+      <p>Schalten Sie <gui>Persönliche Dateifreigabe</gui> auf <gui>AN</gui>. Dies bedeutet, dass Anderen der Versuch erlaubt wird, sich mit Ihrem Rechner zu verbinden und Dateien In Ihrem Ordner <file>Öffentlich</file> anzusehen.</p>
+      <note style="info">
+        <p>Eine <em>URI</em> (Adresse) wird angezeigt, über die von anderen Rechnern im Netzwerk aus auf den Ordner <file>Öffentlich</file> zugegriffen werden kann.</p>
+      </note>
+    </item>
+  </steps>
+
+  <section id="security">
+  <title>Sicherheit</title>
+
+  <terms>
+    <item>
+      <title>Passwort verlangen</title>
+      <p>Damit andere Personen ein Passwort eingeben müssen, wenn sie auf Ihren Ordner <file>Öffentlich</file> zugreifen wollen, Stellen Sie <gui>Passwort verlangen</gui> auf <gui>AN</gui>. Wenn Sie diese Option nicht verwenden kann jeder versuchen Ihren Ordner <file>Öffentlich</file> zu betrachten.</p>
+      <note style="tip">
+        <p>Diese Option ist standardmäßig deaktiviert, aber Sie sollten sie aktivieren und ein sicheres Passwort festlegen.</p>
+      </note>
+    </item>
+  </terms>
+  </section>
+
+  <section id="networks">
+  <title>Netzwerke</title>
+
+  <p>Der Abschnitt <gui>Netzwerke</gui> listet die Netzwerke auf, mit denen Sie gegenwärtig verbunden sind. Verwenden Sie den <gui>AN | AUS</gui>-Schalter neben jedem der Einträge, um zu wählen, wo Ihre persönlichen Dateien freigegeben werden können.</p>
+
+  </section>
+
+</page>

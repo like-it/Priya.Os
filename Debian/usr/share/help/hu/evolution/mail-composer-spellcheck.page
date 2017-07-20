@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-composer-spellcheck" xml:lang="hu">
+
+  <info>
+    <desc>Levelek helyesírás-ellenőrzése a szerkesztőben.</desc>
+    
+    <link type="guide" xref="index#mail-composing"/>
+
+    <revision pkgversion="3.20.5" version="0.7" date="2016-11-21" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Helyesírás-ellenőrzés</title>
+
+<!-- Instructions are only valid from Evolution 2.24 on -->
+
+<section id="required-packages">
+<title>Előfeltételek</title>
+<p>Az elküldendő e-mailek helyesírásának ellenőrzéséhez elsőként győződjön meg a disztribúciója szoftverkezelő eszközének segítségével, hogy a nyelvének megfelelő <sys>hunspell</sys> csomag, illetve az <sys>enchant</sys> csomag telepítve van-e.</p>
+
+<note style="info package">
+  <p>Ezen lépések végrehajtásához szükség lehet a <sys>hunspell</sys> és/vagy az <sys>enchant</sys> csomag telepítésére.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:hunspell" href="http://hunspell.sourceforge.net/" style="button">A hunspell telepítése</link></p>
+      <p><link action="install:enchant" href="http://www.abisource.com/projects/enchant/" style="button">Az enchant telepítése</link></p>
+    </if:when>
+  </if:choose>
+</note>
+</section>
+
+<section id="global-preferences">
+<title>Globális beállítások</title>
+
+<p>Under <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Composer Preferences</gui><gui>Spell Checking</gui><gui>Options</gui></guiseq> you can define whether your spelling is checked while you type.</p>
+
+<p>You can also define which installed languages are used for spell checking in the list available under <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Composer Preferences</gui><gui>Spell Checking</gui><gui>Languages</gui></guiseq> or in the email composer via <guiseq><gui>Edit</gui><gui>Current Languages</gui></guiseq>.</p>
+</section>
+
+<section id="composer">
+<title>Kézi helyesírás-ellenőrzés a szerkesztőben</title>
+<p>If you do not have <gui>Checking spelling while I type</gui> enabled in the <link xref="#global-preferences">Composer Preferences</link> you can run a spell check in the email composer by clicking <guiseq><gui>Edit</gui><gui>Check Spelling…</gui></guiseq> or by pressing <key>F7</key>.</p>
+</section>
+
+</page>

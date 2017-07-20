@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-join-split-lines" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision version="3.8" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Textzeilen zusammenfassen oder lange Zeilen teilen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Zeilen zusammenfügen/umbrechen</title>
+
+  <p>Das <app>Zeilen zusammenfügen/umbrechen</app>-Plugin kann kurze Zeilen zu einer längeren Zeile zusammenfassen oder längere Zeilen in kürzere Zeilen umbrechen.</p>
+  
+  <p>Um das Plugin zu aktivieren, wählen Sie <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Einstellungen</gui><gui>Plugins</gui><gui>Zeilen zusammenfügen/umbrechen</gui></guiseq>.</p>
+
+  <steps>
+    <title>So fügen Sie mehrere Zeilen zu einer längeren Zeile zusammen:</title>
+    <item>
+      <p>Wählen Sie die Zeilen, die Sie zusammenführen wollen. Dazu können Sie entweder die Maus verwenden, oder drücken Sie <keyseq><key>Umschalttaste</key><key>Pfeiltaste hoch</key></keyseq> oder <keyseq><key>Umschalttaste</key><key>Pfeiltaste runter</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Drücken Sie <keyseq><key>Strg</key><key>J</key></keyseq>.</p>
+      <p>Die gewählten Zeilen werden zu einer längeren Zeile zusammengefasst.</p>
+    </item>
+  </steps>
+
+  <steps>
+    <title>So teilen Sie eine Zeile in mehrere Zeilen:</title>
+    <item>
+      <p>Wählen Sie die zu teilende Zeile aus, indem Sie den Eingabecursor an einer beliebigen Stelle in dieser Zeile platzieren.</p>
+    </item>
+    <item>
+      <p>Drücken Sie <keyseq><key>Strg</key><key>Umschalttaste</key> <key>J</key></keyseq>.</p>
+      <p>Die Zeile wird in mehrere Zeilen unterteilt. Leerzeichen werden dazu verwendet, einen sicheren Platz zum Teilen der Zeile zu finden. Die Länge jeder Zeile wird 80 Zeichen nicht überschreiten.</p>
+    </item>
+  </steps>
+
+</page>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-expiration-change" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision pkgversion="3.9" version="0.1" date="2013-07-22" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Jak prodloužit nebo odložit datum vypršení platnosti u vašeho klíče.</desc>
+  </info>
+
+  <title>Změna data vypršení platnosti vašich klíčů</title>
+
+  <p>Pokud vašemu klíči PGP vypršela platnost, ale vy si přejete pokračovat v jeho používání, můžete změnit datum vypršení. Můžete také změnit nastavení platnosti tak, aby vypršela dříve.</p>
+
+  <steps>
+    <title>Když chcete změnit datum vypršení platnosti klíče PGP:</title>
+    <item>
+      <p>V seznamu vyberte klíč PGP.</p>
+    </item>
+    <item>
+      <p>Klikněte pravým tlačítkem na vybraný klíč a zvolte <gui>Vlastnosti</gui>.</p>
+    </item>
+    <item>
+      <p>V novém dialogovém okně vyberte kartu <gui>Podrobnosti</gui>.</p>
+    </item>
+    <item>
+      <list>
+        <item>
+	  <p>Když chcete změnit datum vypršení platnosti hlavního klíče, zmáčkněte malé tlačítko s obrázkem kalendáře vedle <gui>Vyprší</gui> na pravé straně dialogového okna. V kalendáři pak můžete vybrat nové datum.</p>
+        </item>
+        <item>
+	  <p>Když chcete změnit datum vypršení platnosti <link xref="pgp-subkeys">podklíče</link>, rozbalte panel <gui>Podklíče</gui> a vyberte podklíč v seznamu. Zmáčkněte tlačítko <gui style="button">Vyprší</gui> na levé straně panelu a vyberte nové datum vypršení platnosti.</p>
+	</item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="important">
+    <p>Pokud změníte datum vypršení platnosti u klíče, který jste zveřejnili, musíte po provedení změn klíč <link xref="pgp-sync">synchronizovat</link> se serverem s klíči.</p>
+  </note>
+
+</page>

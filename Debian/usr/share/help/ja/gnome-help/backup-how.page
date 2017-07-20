@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="backup-how" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="backup-why"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit>
+      <name>GNOME ドキュメンテーションプロジェクト</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Déjà Dup (あるいは、他のバックアップアプリケーション) を使って、重要なファイルや設定のコピーを作成し、データの消失を防ぎます</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>バックアップ方法</title>
+
+  <p>ファイルや設定の最も簡単なバックアップ方法は、バックアップ処理をバックアップアプリケーションに管理させることです。様々なバックアップアプリケーションが利用可能であり、たとえば <app>Déjà Dup</app> などがあります。</p>
+
+  <p>使用するバックアップアプリケーションのヘルプの説明に従えば、バックアップ設定を行えるでしょう。データの復旧方法も同様です。</p>
+
+  <p>他の方法は、外付けハードドライブや、ネットワーク上の別のコンピューター、USB ドライブなどの安全な場所へ<link xref="files-copy">ファイルをコピーする</link>というものです。通常、<link xref="backup-thinkabout">個人的なファイル</link>や設定は、ユーザーのホームフォルダーにあります。したがってそこからファイルのコピーができます。</p>
+
+  <p>バックアップできるデータ量は、ストレージのサイズに制限されます。バックアップデバイスに空き領域があるなら、次の例外を除いて、ホームフォルダー全体をバックアップするに越したことはありません。</p>
+
+<list>
+ <item><p>他の場所にすでにバックアップ済みのファイル。たとえば CD、DVD、その他のリムーバブルメディアなど。</p></item>
+ <item><p>Files that you can recreate easily. For example, if you are a
+ programmer, you do not have to back up the files that get produced when you
+ compile your programs. Instead, just make sure that you back up the original
+ source files.</p></item>
+ <item><p>ゴミ箱フォルダーのファイル。ゴミ箱フォルダーは、<file>~/.local/share/Trash</file> にあります。</p></item>
+</list>
+
+</page>

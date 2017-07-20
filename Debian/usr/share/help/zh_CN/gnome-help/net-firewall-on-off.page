@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>您可以控制哪些程序可以访问网络，这有助于保持您的计算机安全。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>启用和阻止防火墙访问</title>
+
+  <p>您的系统可能安装有<em>防火墙</em> ，可以阻止来自其他网络用户的程序操作。这有助于保持您的计算机安全。</p>
+
+  <p>许多应用程序可以使用网络连接，当连接到互联网后，您可以共享文件或允许其他人远程查看您的桌面，这取决于您的计算机设置，您可能需要调整防火墙来实现预期的网络服务。</p>
+
+  <p>每个提供服务的程序使用一个特定的<em>网络端口</em>，要允许网络中的其他计算机访问这些服务，您可能需要在防火墙中“开启”相关的端口：</p>
+
+
+  <steps>
+    <item>
+      <p>点击屏幕左上角进入<gui>活动</gui>视图，运行防火墙程序。如果您没有找到的话，就需要自己安装一个防火墙处理器程序(例如 Firestarter 或 GUFW)。</p>
+    </item>
+    <item>
+      <p>开启或禁用网络服务端口，取决于您是否想让其他人访问，需要设置哪一个端<link xref="net-firewall-ports">取决于运行的服务</link>。</p>
+    </item>
+    <item>
+      <p>保存和应用更改，还可以参考防火墙工具的其他指导。</p>
+    </item>
+  </steps>
+
+</page>

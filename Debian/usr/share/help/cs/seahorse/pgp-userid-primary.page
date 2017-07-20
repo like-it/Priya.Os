@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-userid-primary" xml:lang="cs">
+  <info>
+    <link type="guide" xref="pgp-userid#add-remove"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-06-27" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Jak změnit své výchozí ID uživatele.</desc>
+  </info>
+
+  <title>Co je to hlavní ID uživatele?</title>
+
+  <p>Když máte více ID uživatele, jedno z nich je určeno jako hlavní. Při šifrování a podepisování aplikace <app>Hesla a klíče</app> připojí standardně hlavní ID uživatele k informacím v klíči, pokud místo něj vyslovně neurčíte jiné ID uživatele.</p>
+
+  <steps>
+    <title>Když chcete v klíči PGP změnit hlavní ID uživatele:</title>
+    <item>
+      <p>V levém postranním panelu vyberte klíčenku <gui>Klíče GnuPG</gui>.</p>
+    </item>
+    <item>
+      <p>Vyberte v seznamu <gui>Osobní klíč PGP</gui>.</p>
+    </item>
+    <item>
+      <p>Klikněte na vybraný klíč pravým tlačítkem a zvolte <guiseq><gui>Vlastnosti</gui> <gui>Jména a podpisy</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Vyberte v seznamu nové hlavní ID uživatele a klikněte na <gui style="button">Hlavní</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Příslušné ID uživatele se přesune na začátek seznamu <gui>Jména a podpisy</gui> a stane se hlavním ID uživatele.</p>
+
+  <note style="tip">
+    <p>Po změně hlavního ID uživatele proveďte synchronizaci klíčů, aby se zajistila aktuálnost zvdálených kopií.</p>
+  </note>
+
+</page>

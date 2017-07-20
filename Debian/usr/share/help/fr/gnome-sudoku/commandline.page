@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="commandline" xml:lang="fr">
+  <info>
+    <revision pkgversion="3.4" version="0.1" date="2012-03-08" status="final"/>
+   <link type="guide" xref="index#advanced"/>
+    <credit type="author copyright">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Paternité-Partage des Conditions Initiales à l'Identique 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2007-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2008</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Ligne de commande</title>
+<p>Pour afficher les options de la ligne de commande de gnome-sudoku : <cmd>gnome-sudoku --help</cmd></p>
+<p>Pour afficher le numéro de version de votre gnome-sudoku : <cmd>gnome-sudoku --version</cmd></p>
+
+<section id="debug">
+<title>Affichage des informations de débogage</title>
+<p>Cette commande peut être utile si vous saisissez un rapport de bogue et que vous avez besoin d'envoyer des informations de débogage : <cmd>gnome-sudoku -v</cmd></p>
+</section>
+
+<section id="profile">
+<title>Informations de profil</title>
+<p>Cette commande est utile si vous remplissez un bogue sur des performances faibles. Cela affiche la performance des différentes fonctions qui s'exécutent et révélera peut-être les fonctions spécifiques responsables des mauvaises performances. Cette information, jointe au bogue, pourrait faciliter la résolution du problème mais cette commande est utilisée principalement par les programmateurs.</p>
+<p><cmd>gnome-sudoku -p</cmd></p>
+<p>Lorsque vous quittez l'application, le terminal affiche les statistiques de performance.</p>
+</section>
+
+<section id="step">
+<title>Parcours de <app>GNOME Sudoku</app></title>
+<p>Cette commande est utilisée principalement par les programmateurs pour parcourir le code : <cmd>gnome-sudoku -w</cmd></p>
+</section>
+</page>

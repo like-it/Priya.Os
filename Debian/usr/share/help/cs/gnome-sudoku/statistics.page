@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="statistics" xml:lang="cs">
+  <info>
+    <revision pkgversion="3.4" version="0.1" date="2012-03-08" status="final"/>
+    <link type="guide" xref="index#tips"/>
+    <credit type="editor copyright">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Statistiky</title>
+<p>Pokud se chcete podívat na statistiky o aktuálním sudodku, klikněte na <guiseq><gui>Hra</gui> <gui>Statistiky hlavolamu</gui></guiseq>.</p>
+  <figure>
+    <desc>Příklad statistik u velmi těžkého hlavolamu</desc>
+    <media type="image" mime="image/png" src="figures/stats-very-hard.png" width="400">
+    </media>
+  </figure>
+
+<p><app>GNOME Sudoku</app> hodnotí hlavolam podle počtu políček, která lze vyplnit velmi rychle.</p>
+
+<p>Zpráva se statistikami hlavolamu zobrazuje:</p>
+
+<list>
+ <item><p>celkovou náročnost</p></item>
+ <item><p>počet políček, která lze vyplnit díky eliminaci, počínaje nevyplněnou mřžkou (např. v tomto políčku může být pouze 2, proto to musí být 2)</p></item>
+  <item><p>počet políček, která lze vyplnit díky vyplňování, počínaje nevyplněnou mřížkou (např. pouze jedno políčko v tomto řádku může být 2, proto to musí být 2)</p></item>
+  <item><p>kolikrát během řešení sudoku musel počítač přistoupit k použití metody pokus-omyl, aby jej vyřešil</p></item>
+</list>
+
+<note><p>Všechna sudoku mohou být vyřešena bez hádání, čistě logickými postupy. Když je ve statistikách uvedeno, že program Sudoku použil x-krát metodu pokus-omyl, neznamená to, že by ji k vyřešení měl použít i lidský hráč.</p></note>
+</page>

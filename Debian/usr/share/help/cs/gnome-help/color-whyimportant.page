@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whyimportant" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="color"/>
+    <desc>Správa barev je důležitá pro grafiky, fotografy a umělce.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Proč je správa barev důležitá?</title>
+  <p>Správa barev je postup snímání barev pomocí vstupního zařízení, jejich zobrazení na obrazovce a jejich tisk, přičemž se snažíte řídit, aby barvy a rozsah barev byly na všech médiích přesně věrné.</p>
+
+  <p>Potřebu správy barev asi nejlépe vysvětlíme na názorném příkladu fotografie ptáčka v mrazivém zimním dni.</p>
+
+  <figure>
+    <desc>Ptáček na zmrzlé zdi tak, jak ho vidíte v hledáčku fotoaparátu</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-camera.png"/>
+  </figure>
+
+  <p>Ukazuje typicky přesaturovaný modrý kanál, který vytváří studený vzhled obrázku.</p>
+
+  <figure>
+    <desc>Toto uživatel uvidí na obrazovce typického pracovního notebooku</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-display.png"/>
+  </figure>
+
+  <p>Všimněte si, jak bílá není „papírově bílá“ a černa na očích je nyní dohněda.</p>
+
+  <figure>
+    <desc>Toto uživatel uvidí pro vytisknutí na typické inkoustové tiskárně</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-printer.png"/>
+  </figure>
+
+  <p>Základní problém, který zde máme, je, že každé ze zařízení je schopné zvládnout jiný rozsah barev. Takže, zatímco můžete bez problémů vyfotit modrou barvu elektrického výboje, většina tiskáren nebude schopná tento odstín modré správně reprodukovat.</p>
+  <p>Většina obrazových zařízení snímá v RGB (red/červená, green/zelená, blue/modrá) a pro tiskárnu se musí provést převod do CMYK (cyan/azurová, magenta/purpurová, yellow/žlutá, black/černá). Jiným problémem je, že nemáte <em>bílý</em> inkoust, takže bílá může být jen tak bílá, jako je bílý papír.</p>
+
+  <p>Dalším problémem jsou jednotky. Bez uvedení měřítka, ve kterém jsou barvy měřeny, nedokážeme říci, jestli 100% červená je blízko infračervené nebo hlubší červená na tiskárně. Co když 50% červená na displeji je nejspíše něco jako 62% červená na jiném displeji. Je to, jako by vám někdo řekl, že máte jet 7 jednotek, aniž by upřesnil, jestli jde o 7 kilometrů nebo 7 metrů.</p>
+
+  <p>V barvách se bavíme o jednotkách v gamutu. Gamut je v podstatě rozsah barev, který je možné reprodukovat. Zařízení, jako je fotoaparát DSLR, může mít velmi rozsáhlý gamut, takže je schopné zachytit všechny denní barvy, ale takový projektor má velmi malý gamut a všechny barvy jsou „vybledlé“.</p>
+
+  <p>V některých případech dokážeme na zařízení vytvořit <em>správný</em> výstup změnou dat, která do zařízení posíláme, ale v jiných případech to možné není (nelze vytisknout „elektrickou“ modrou), takže musíme uživateli ve výsledku zobrazit aspoň něco, co vypadá podobně.</p>
+
+  <p>Pro fotografy má smysl používat úplný rozsah odstínů barev daného zařízení, aby bylo možné v barvách provádět plynulé změny. U jiné grafiky můžete chtít barvu přesně zadat. To je důležité například, když budete chtít potisknout hrnek logem, kdy logo <em>musí</em> mít barvy přesně specifikované jeho autorem.</p>
+
+</page>

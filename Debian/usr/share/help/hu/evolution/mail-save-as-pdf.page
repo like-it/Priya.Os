@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-save-as-pdf" xml:lang="hu">
+
+  <info>
+    <desc>E-mailek átalakítása PDF-fájlokká.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+
+    <revision pkgversion="3.5.90" version="0.2" date="2012-08-16" status="review"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Üzenetek mentése PDF-ként</title>
+
+<p>Az e-mailek PDF formátumú fájlokba mentéséhez válassza a <guiseq><gui>Fájl</gui><gui>Nyomtatás</gui></guiseq> menüpontot, majd a <gui>Nyomtatás fájlba</gui> lehetőséget. A nyomtatással kapcsolatos általános információkért lásd az <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">asztali környezet súgóját</link>.</p>
+
+<note style="advanced">
+<p>Az üzeneteket a fájlkezelőbe húzva is exportálhatja, az alapértelmezett szöveges formátum helyett pedig beállíthatja a PDF használatát.</p>
+<list>
+<item><p>Nyissa meg a <app>Terminál</app> alkalmazást.</p></item>
+<item><p>Futtassa a következő parancsot: <cmd>gsettings set org.gnome.evolution.mail drag-and-drop-save-file-format 'pdf'</cmd></p></item>
+</list>
+<p>Ehhez a <app>dconf-editor</app> alkalmazást is használhatja.</p>
+</note>
+<!-- As per https://mail.gnome.org/archives/evolution-list/2012-June/msg00174.html -->
+
+</page>

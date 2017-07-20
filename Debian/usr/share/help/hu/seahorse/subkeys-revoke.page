@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="subkeys-revoke" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="pgp-subkeys#more"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-08-25" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Kompromittált vagy használaton kívüli részkulcs visszavonása</desc>
+  </info>
+
+  <title>Részkulcsok visszavonása</title>
+
+  <p>Ha részkulcsa kompromittálódott vagy már nincs használatban, érdemes lehet visszavonni a kulcsot az azzal való visszaélés megelőzése érdekében.</p>
+
+  <steps>
+    <title>Részkulcs visszavonásához:</title>
+    <item>
+      <p><link xref="subkeys-examine">Nyissa ki</link> a <gui>Részkulcsok</gui> ablaktáblát.</p>
+    </item>
+    <!--The above step can be replaced with the following, if it's too vague:
+    <item>
+      <p>Select <gui>GnuPG keys</gui> from the panel on the left.</p>
+    </item>
+    <item>
+      <p>Right click on the PGP key and select
+      <guiseq><gui>Properties</gui><gui>Details</gui>.</p>
+    </item>
+    <item>
+      <p>Expand the subkeys panel if required.</p>
+    </item>-->
+    <item>
+      <p>Válassza ki a kívánt részkulcsot a listából, és nyomja meg a <gui style="button">Visszavonás</gui> gombot.</p>
+    </item>
+    <item>
+      <p>A megjelenő ablakban válassza ki a visszavonás okát. A <gui>Leírás</gui> mezőben részletesebben is leírhatja a visszavonás okát.</p>
+    </item>
+    <item>
+      <p>Nyomja meg a <gui style="button">Visszavonás</gui> gombot.</p>
+    </item>
+    <item>
+      <p>A kulcs feloldásához meg kell adnia a jelmondatot.</p>
+    </item>
+    <item>
+      <p>A részkulcs <gui>Állapota</gui> <gui>Visszavontra</gui> változik a <gui>Részkulcsok</gui> panelen.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Ha részkulcsát előzőleg <link xref="pgp-publish">közzétette</link>, akkor a visszavonást követően a változtatások alkalmazásához <link xref="synchronize">szinkronizálja</link> a részkulcsot egy távoli kulcskiszolgálóval.</p>
+  </note>
+
+</page>

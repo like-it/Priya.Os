@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="mail-account-manage-mh-format-directories" xml:lang="sv">
+
+  <info>
+    <desc>Lägg till och redigera ett konto med e-postkataloger i MH-format i <app>Evolution</app>.</desc>
+
+    <link type="guide" xref="mail-account-management#mail-local-account-types"/>
+
+    <revision pkgversion="3.4" version="0.4" date="2013-06-22" status="candidate"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Inställningar för konto med e-postkataloger i MH-format</title>
+
+<section id="account-editor">
+<title>Kontoredigerare</title>
+<p>E-postkonton kan läggas till genom att välja <guiseq><gui>Arkiv</gui><gui>Nytt</gui><gui>E-postkonto</gui></guiseq> eller via <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>E-postkonton</gui><gui style="button">Lägg till</gui></guiseq>. Stegen är mestadels de samma som för <link xref="intro-first-run">assistenten som körs första gången</link>, förutom att du inte tillfrågas huruvida du vill importera data från andra program eller återskapa data från en säkerhetskopia.</p>
+<p>E-postkonton kan redigeras via <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>E-postkonton</gui><gui style="button">Redigera</gui></guiseq>.</p>
+<p>Följande inställningar finns tillgängliga när ett existerande konto redigeras:</p>
+
+<!-- As the "Identity" section is identical in all account pages, it is centrally in one file included 
+via XInclude. See +http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-mail-account-identity.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:section)"/>
+
+<section id="receiving-email">
+<info>
+  <title type="link">Alternativ för e-postmottagning och mottagning (konton med e-postkataloger i MH-format)</title>
+</info>
+<title>Alternativ för e-postmottagning och mottagning</title>
+</section>
+
+<section id="sending-email">
+<info>
+  <title type="link">Skicka e-post (konton med e-postkataloger i MH-format)</title>
+</info>
+<title>Sändning av e-post</title>
+</section>
+
+<section id="defaults">
+<info>
+  <title type="link">Standardinställningar (konton med e-postkataloger i MH-format)</title>
+</info>
+<title>Standardvärden</title>
+</section>
+
+<section id="security">
+<info>
+  <title type="link">Säkerhet (konton med e-postkataloger i MH-format)</title>
+</info>
+<title>Säkerhet</title>
+</section>
+
+</section> <!-- end "account editor" section, now list any account settings stuff related to this account type outside of it -->
+
+<!-- <section id="other-settings">
+<info>
+  <title type="link">Other settings (MH Format Mail Directories accounts)</title>
+</info>
+<title>Other settings</title>
+<p>Other account related settings that are not located in the <gui>Account Editor</gui>:</p>
+</section> -->
+
+</page>

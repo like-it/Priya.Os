@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-spellcheck" xml:lang="uk">
+  
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/> 
+    <desc>Check your files for spelling errors.</desc>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Максим Дзюманенко</mal:name>
+      <mal:email>dziumanenko@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Назарій Ріттер</mal:name>
+      <mal:email>nazariy.ritter@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title>Перевірка орфографії документу</title>
+  <section id="enable-spell-check">
+    <title>Увімкнення перевірки орфографії</title>
+    <p>Функція перевірки орфографії забезпечується плагіном в «<app>gedit</app>», який можна увімкнути, коли потрібно. Щоб увімкнути плагін:</p>
+
+    <steps>
+      <item>
+        <p>Виберіть <guiseq><gui style="menu">«gedit»</gui> <gui style="menuitem">«Параметри»</gui> <gui style="tab">«Плагіни»</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Виберіть «<gui style="menuitem">Перевірка орфографії</gui>», щоб увімкнути плагін.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="spell-check">
+    <title>Перевірка орфографії документу</title>
+
+    <p>Щоб перевірити документ на наявність слів з орфографічними помилками:</p>
+
+    <steps>
+      <item>
+        <p>Виберіть <guiseq><gui style="menu">«Інструменти»</gui> <gui style="menuitem">«Перевірка орфографії»</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Для автоматичного виділення слів з орфографічними помилками при набиранні тексту в документі, виберіть <guiseq><gui style="menu">«Інструменти»</gui><gui style="menuitem">«Виділяти слова з орфографічними помилками»</gui></guiseq>.</p>
+    </note>
+  </section>
+
+  <section id="use-spell-check">
+    <title>Використання функції перевірки орфографії</title>
+
+    <p>Використовуючи діалогове вікно перевірки орфографії, можна вибрати потрібну заміну слів з орфографічними помилками. Слово з орфографічною помилкою, що перевіряється функцією перевірки орфографії, відображається жирним шрифтом після «<gui>Слово з орфографічною помилкою:</gui>». Можна вибрати наступні дії для виправлення:</p>
+
+    <list>
+      <item>
+        <p>«<gui style="input">Змінити на:</gui>» дозволяє ввести слово та використати «<gui style="button">Перевірити слово</gui>» для перевірки правильності написання.</p>
+      </item>
+      <item>
+        <p>«<gui style="menu">Варіанти:</gui>» відображає список доступних замін слова.</p>
+      </item>
+      <item>
+        <p>«<gui style="button">Пропустити</gui>» дозволяє ігнорувати перевірку орфографії для <em>одного</em> екземпляру поточного слова.</p>
+      </item>
+      <item>
+        <p>«<gui style="button">Пропустити все</gui>» дозволяє ігнорувати перевірку орфографії для <em>всіх</em> екземплярів поточного слова.</p>
+      </item>
+      <item>
+        <p>«<gui style="button">Змінити</gui>» заміняє нерозпізнане слово або слово з орфографічною помилкою на <em>вибрану</em> заміну зі списку «<gui style="menuitem">Варіанти:</gui>».</p>
+      </item>
+      <item>
+        <p>«<gui style="button">Змінити все</gui>» заміняє <em>всі</em> нерозпізнані слова або слова з орфографічними помилками на вибрану заміну зі списку «<gui style="menuitem">Варіанти:</gui>».</p>
+      </item>
+      <item>
+        <p>«<gui style="button">Додати слово</gui>» дозволяє додати поточне слово до «<gui>Словника користувача</gui>» «<app>gedit</app>». Додання користувацьких слів до «<gui>Словника користувача</gui>» дозволяє «<app>gedit</app>» розпізнавати їх в документах і, таким чином, вони не будуть виділятися як слова з орфографічними помилками.</p>
+      </item>
+    </list>
+
+  </section>
+
+  <section id="define-spell-check-language">
+    <title>Визначення мови для перевірки орфографії</title>
+    <p>За замовчуванням, для перевірки орфографії документу використовується поточна мова. Якщо потрібно використовувати іншу мову, виберіть <guiseq><gui style="menu">«Інструменти»</gui><gui style="menuitem">«Встановити мову…»</gui></guiseq>, а потім виберіть потрібну мову.</p>
+  </section>
+
+  <section id="dict">
+    <title>Словники</title>
+
+    <p>«<app>gedit</app>» використовує «<link href="http://www.abisource.com/projects/enchant/">Enchant</link>» – невелику системну утиліту, для перевірки орфографії. «Enchant» може використовувати декілька різних словників для перевірки орфографії. Двоє з таких фонових словників – це «<em>Hunspell</em>» та «<em>Aspell</em>».</p>
+
+    <p>Якщо потрібна мова – відсутня в «<app>gedit</app>», використовуйте встановлювач програмного забезпечення або менеджер пакунків для встановлення потрібного словника.</p>
+  </section>
+</page>

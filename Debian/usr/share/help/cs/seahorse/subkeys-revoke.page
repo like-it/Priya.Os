@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="subkeys-revoke" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="pgp-subkeys#more"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-08-25" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Jak odvolat podklíč, který byl kompromitován nebo není používán.</desc>
+  </info>
+
+  <title>Odvolání vašeho podklíče</title>
+
+  <p>Pokud byl váš podklíč kompromitován nebo již není nadále používán, může být dobrý nápad jej odvolat, aby se předešlo jeho zneužití.</p>
+
+  <steps>
+    <title>Když chcete odvolat podklíč:</title>
+    <item>
+      <p><link xref="subkeys-examine">Přejděte</link> do panelu <gui>Podklíče</gui>.</p>
+    </item>
+    <!--The above step can be replaced with the following, if it's too vague:
+    <item>
+      <p>Select <gui>GnuPG keys</gui> from the panel on the left.</p>
+    </item>
+    <item>
+      <p>Right click on the PGP key and select
+      <guiseq><gui>Properties</gui><gui>Details</gui>.</p>
+    </item>
+    <item>
+      <p>Expand the subkeys panel if required.</p>
+    </item>-->
+    <item>
+      <p>Vyberte podklíč v seznamu a zmáčkněte tlačítko <gui style="button">Odvolat</gui>.</p>
+    </item>
+    <item>
+      <p>V novém dialogovém okně vyberte důvod odvolání klíče. Volitelně můžete důvod podrobněji rozvést v poli <gui>Popis</gui>.</p>
+    </item>
+    <item>
+      <p>Zmáčkněte tlačítko <gui style="button">Odvolat</gui>.</p>
+    </item>
+    <item>
+      <p>Budete muset klíč odemknout pomocí jeho heslové fráze.</p>
+    </item>
+    <item>
+      <p><gui>Stav</gui> podklíče se v panelu <gui>Podklíče</gui> změní na <gui>Odvolaný</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>V případě, že máte svůj podklíč <link xref="pgp-publish">zveřejněn</link>, můsíte po jeho odvolání provést <link xref="pgp-sync">synchronizaci</link> se serverem s klíči, aby se zneplatnily všechny jeho kopie.</p>
+  </note>
+
+</page>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whyimportant" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="color"/>
+    <desc>Värinhallinta on tärkeää suunnittelijoile, valokuvaajille ja taiteilijoille.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Miksi värinhallinnalla on merkitystä?</title>
+  <p>Värinhallinta on prosessi, jossa kaapataan kuva syötelaitteella, näytetään se näytöllä ja tulostetaan se niin,  että koko ajan hallussa pidetään täsmälliset oikeat värit sekä jokaisen eri median hallitsema väriavaruus.</p>
+
+  <p>Tarve värienhallinnalle voidaan havainnollistaa valokuvalla linnusta kylmänä talvipäivänä.</p>
+
+  <figure>
+    <desc>Lintu jäisellä seinällä, siten kuin se näkyy kameran etsimessä</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-camera.png"/>
+  </figure>
+
+  <p>Tavallisesti ilmi käy ylikorostunut sininen kanava, mikä tekee kuvasta kylmän näköisen.</p>
+
+  <figure>
+    <desc>Tämän käyttäjä näkee tyypillisen yrityskannettavan näytöllä</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-display.png"/>
+  </figure>
+
+  <p>Huomaa, kuinka valkoinen ei ole "paperinvalkoinen" ja silmän musta onkin nyt mutaisen ruskea.</p>
+
+  <figure>
+    <desc>Tämän käyttäjä näkee tulostaessaan tyypillisellä mustesuihkutulostimella</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-printer.png"/>
+  </figure>
+
+  <p>Perusongelma on, että jokainen laite kykenee hallitsemaan erilaisen joukon värejä. Tästä johtuen vaikka onkin mahdollista ottaa valokuva sähkönsinisestä väristä, useimmat tulostimet eivät pysty sitä toistamaan.</p>
+  <p>Useimmat kuvalaitteet kaappaavat kuvan RGB-muodossa (punainen, vihreä, sininen) ja joutuvat muuntamaan sen CMYK-muotoon (syaani, magenta, keltainen, musta) tulostusta varten. Lisäksi ongelmana on, että <em>valkoista</em> mustetta ei ole, joten valkoinen voi olla korkeintaan yhtä valkoinen kuin paperi jolle tulostetaan.</p>
+
+  <p>Toinen ongelma on yksiköt. Määrittämättä värien mittausaluetta ei tiedetä, onko "100-prosenttinen punainen" lähellä infrapunaa vai tulostimen tumminta punasävyä. Yhden näytön 50-prosenttinen punainen on toisen näytön 62-prosenttinen punainen. Tätä voisi verrata siihen, että ravintosuosituksessa neuvotaan juomaan kaksi annosta maitoa, ilman että sanotaan onko annos maitolasi vai maitolitra.</p>
+
+  <p>Väreissä yksikkönä käytetään gamutia. Gamut on periaatteessa värisävyjen joukko, jonka laite pystyy toistamaan. Digitaalinen järjestelmäkamera saattaa omata erittäin suuren gamutin, eli se voi olla kykeneväinen tallentamaan kaikki auringonlaskun värit. Sen sijaan videotykillä voi olla todella pieni gamut, jolloin värit eivät erotu kunnolla, vaan sekoittuvat toisiinsa.</p>
+
+  <p>Toisinaan on mahdollista <em>korjata</em> laitteen ulostuloa muuttamalla sille lähetettävää tietoa. Kun tämä ei ole mahdollista (sähkönsinisen tulostus on mahdotonta), käyttäjälle on näytettävä millainen lopputulos tulee olemaan.</p>
+
+  <p>Valokuvissa on järkevää käyttää värilaitteen tonaalista kirjoa, jotta värimuutokset ovat sulavia. Muun grafiikan kohdalla voi olla tarpeen, että värit ovat aivan tarkkoja. Esimerkkinä Red Hat -logon tulostus kahvimukiin, jolloin punaisen <em>tulee ehdottomasti</em> vastata Red Hatin logon punaista.</p>
+
+</page>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-commander" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/> 
+    <revision version="3.4" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Använd ett kommandoradsgränssnitt för avancerad redigering.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Josef Andersson</mal:name>
+      <mal:email>josef.andersson@fripost.org</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Kommando</title>
+
+  <p>Insticksmodulen <app>Kommando</app> är ett instick för avancerade <app>gedit</app>-användare som låter dig utföra kommandoradsåtgärder på aktuell fil. För att aktivera insticksmodulen Kommando, välj <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Inställningar</gui> <gui>Insticksmoduler</gui><gui>Kommando</gui></guiseq>.</p>
+
+  <p>När du väl har aktiverat insticksmodulen, aktivera den genom att trycka ned <keyseq><key>Ctrl</key><key>.</key></keyseq>.</p>
+  
+  <note style="tip">
+    <p>Den sista tangenten i tangentkombinationen ovan är en punkt.</p>
+  </note>
+
+  <table frame="all" rules="all">
+    <thead>
+      <tr>
+        <td><p>Åtgärd</p></td>
+	<td><p>Tangentbordsgenväg</p></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><p>Få en överblick över tillgängliga kommandon</p></td>
+	<td><p><keyseq><key>Tab</key><key>Tab</key></keyseq></p></td>
+      </tr>
+      <tr>
+        <td><p>Hitta ett ord i den aktuella filen</p></td>
+	<td>
+	  <p><key>/</key> <input>foo</input></p>
+          <p>Detta kommer att hitta ordet <input>foo</input>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Ersätt ett ord i den aktuella filen</p></td>
+	<td>
+	  <p><keyseq><key>/</key><key>/</key></keyseq> <input>foo bar</input></p>
+          <p>Detta kommer att ersätta <input>foo</input> med <input>bar</input>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Flytta markören till ett speciellt radnummer i din fil</p></td>
+        <td>
+	  <p>go <input>[radnummer]</input> <em>eller</em> bara <key>G</key> <input>[radnummer]</input></p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>Växla bokmärkesindikatorn för den aktuella raden</p></td>
+        <td><p>bookmark <em>eller</em> bara <key>B</key></p></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <note style="tip">
+    <p>En del kommandon, som kommandot <app>bookmark</app> kräver att passande insticksmodul är installerad och aktiverad. Om du inte har den passande insticksmodulen installerad och aktiverad kommer du att få ett felmeddelande.</p>
+  </note>
+
+</page>

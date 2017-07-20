@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Você pode ter que informar suas configurações de rede, se elas não forem definidas automaticamente.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Definindo manualmente as configurações de rede</title>
+
+  <p>Se sua rede não atribuir configurações automaticamente para seu computador, você pode ter que você mesmo digitá-las manualmente. Este tópico presume que você já sabe as configurações corretas a serem usadas. Se não sabe, você pode precisar perguntar ao seu administrador de redes ou procurar nas configurações do seu roteador ou switch de rede.</p>
+
+  <steps>
+    <title>Para definir manualmente suas configurações de rede:</title>
+    <item>
+      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Rede</gui>.</p>
+    </item>
+    <item>
+      <p>Clique em <gui>Rede</gui> para abrir o painel.</p>
+    </item>
+    <item>
+      <p>No painel esquerdo, selecione a conexão de rede que você deseja configurar manualmente. Se você se conectar a uma rede cabeada, clique em <gui>Com fio</gui> e, então, clique no botão <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">configurações</span></media> no canto inferior direito do painel. Para um conexão <gui>Wi-Fi</gui>, o botão <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">configurações</span></media> estará localizado ao lado da rede ativa.</p>
+      <p>Certifique-se de que sua placa de rede sem fio está ativada ou um cabo de rede está conectado.</p>
+    </item>
+    <item>
+      <p>Clique em <gui>IPv4</gui> e altere o <gui>Endereços</gui> para <gui>Manual</gui>.</p>
+    </item>
+    <item>
+      <p>Digite o <gui>Endereço</gui> e <gui>Gateway</gui>, assim como a <gui>Máscara de rede</gui> apropriadade.</p>
+      <p>Estes três endereços devem ser <em>Endereços IP</em>; isto é, eles devem consistir em quatro números separados por pontos (ex.: 123.45.6.78).</p>
+    </item>
+    <item>
+      <p>Na seção <gui>DNS</gui>, alterne <gui>Automático</gui> para <gui>OFF</gui>. Digite o endereço IP de um servidor DNS que você deseja usar. Digite endereços de servidores adicionais usando o botão <gui>+</gui>.</p>
+    </item>
+    <item>
+      <p>Na seção <gui>Rotas</gui>, alterne <gui>Automático</gui> para <gui>OFF</gui>. Digite o <gui>Endereço</gui>, a <gui>Máscara de rede</gui>, o <gui>Gateway</gui> e a <gui>Métrica</gui> de uma rota que você deseja usar. Insira rotas adicionais usando o botão <gui>+</gui>.</p>
+    </item>
+    <item>
+      <p>Clique em <gui>Aplicar</gui>. Se você não está conectado à rede, clique na área de status do sistema na barra superior e conecte-se. Teste as configurações de rede tentando visitar um site ou procurar por arquivos de compartilhados na rede, por exemplo.</p>
+    </item>
+  </steps>
+
+</page>

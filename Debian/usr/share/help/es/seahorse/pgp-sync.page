@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-sync" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-07-03" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Sincronizar la información presente en su clave local con la clave correspondiente en un servidor de claves.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Sincronizar sus claves</title>
+
+  <p>Las claves PGP del depósito de claves deben sincronizarse con un servidor de claves para asegurarse de que los cambios hecho en la clave del servidor de claves, como una firma nueva, se actualizan en su copia local de la clave. De igual manera, cuando cambia la información en su copia local de la clave, como la fecha de caducidad, o cuando firma la clave de alguien, debe sincronizar sus claves para actualizar los cambios en la copia remota de la clave. Para sincronizar sus claves necesitará estar conectado a Internet.</p>
+
+  <steps>
+    <title>¿Cómo se sincroniza una clave?</title>
+    <item>
+      <p>Seleccione la clave PGP que quiere sincronizar.</p>
+    </item>
+    <item>
+      <p>Seleccione <guiseq><gui style="menu">Remoto</gui> <gui style="menuitem">Sincronizar y publicar claves…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Pulse el botón <gui style="button">Sincronizar</gui> para sincronizar su clave.</p>
+    </item>
+  </steps>
+
+  <note style="important">
+    <title>¿Por qué no puedo pulsar el botón <gui style="button">Sincronizar</gui>?</title>
+    <p>Sólo se pueden sincronizar las claves PGP que se hayan publicado en un servidor de claves. Si no puede pulsar el botón <gui style="button">Sincronizar</gui>, compruebe si la clave se la publicado en un servidor de claves. En el caso de querer sincronizar sus propias claves, publíquelas antes de sincronizarlas.</p>
+  </note>
+
+</page>

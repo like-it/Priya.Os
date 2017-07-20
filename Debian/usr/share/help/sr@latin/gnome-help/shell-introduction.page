@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-introduction" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="shell-overview" group="#first"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-13" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Šon Mek Kens</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Vidni uvod u vašu radnu površ, gornju traku, i pregled <gui>Aktivnosti</gui>.</desc>
+  </info>
+
+  <title>Upoznavanje sa Gnomom</title>
+
+  <p>Gnom 3 karakteriše potpuno nov izgled korisničkog sučelja osmišljenog da vam ne stoji na putu, umanji ometanje, i da vam pomogne da obavite posao. Kada se prvi put prijavite, videćete praznu radnu površ i gornju traku.</p>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar.png" width="600" if:test="!target:mobile">
+      <p>Gornja traka Gnomove školjke</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar-classic.png" width="500" height="40" if:test="!target:mobile">
+      <p>Gornja traka Gnomove školjke</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Gornja traka obezbeđuje pristup vašim prozorima i programima, vašem kalendaru i sastancima, i <link xref="status-icons">osobinama sistema</link> kao što je zvuk, umrežavanje, i napajanje. U izborniku stanja na gornjoj traci, možete da izmenite jačinu zvuka ili osvetljenost ekrana, da uređujete pojedinosti vaše <gui>bežične</gui> veze, da proverite stanje baterije, da se odjavite ili da promenite korisnika, ili da isključite računar.</p>
+
+<links type="section"/>
+
+<section id="activities">
+  <title>Pregled <gui>Aktivnosti</gui></title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
+      <p>Dugme aktivnosti</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-activities-classic.png" width="108" height="69" style="floatend floatright" if:test="!target:mobile">
+      <p>Dugme aktivnosti</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p if:test="!platform:gnome-classic">Da pristupite vašim prozorima i programima, kliknite na dugme <gui>Aktivnosti</gui>, ili jednostavno pomerite pokazivač miša u gornji levi ugao. Takođe možete da pritisnete taster <key xref="keyboard-key-super">Super</key> na vašoj tastaturi. Videćete vaše prozore i programe u pregledu. Možete takođe samo da započnete da kucate da biste pretražili vaše programe, datoteke, fascikle i veb.</p>
+
+  <p if:test="platform:gnome-classic">Da pristupite vašim prozorima i programima, pritisnite izbornik <gui xref="shell-introduction#activities">Programi</gui> u gornjem levom uglu ekrana i izaberite stavku <gui>Pregled aktivnosti</gui>. Takođe možete da pritisnete taster <key xref="keyboard-key-super">Super</key> da vidite vaše prozore i programe u pregledu <gui>Aktivnosti</gui>. Samo počnite da kucate da biste potražili vaše programe, datoteke i fascikle.</p>
+
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
+    <p>Poletnik</p>
+  </media>
+
+  <p>Na levoj strani pregleda, naći ćete <em>poletnika</em>. Poletnik vam prikazuje vaše omiljene programe i one koji su već pokrenuti. Kliknite na neku ikonicu na poletniku da otvorite taj program; ako je program već pokrenut, biće istaknut. Klik na ikonicu će izdići najskoriji korišćeni prozor. Možete takođe da prevučete ikonicu u pregled, ili na bilo koji radni prostor na desnoj strani.</p>
+
+  <p>Klik desnim tasterom miša na ikonicu prikazuje izbornik koji vam omogućava da izaberete bilo koji prozor u pokrenutom programu, ili da otvorite novi prozor. Možete takođe da kliknete na ikonicu dok držite pritisnutim taster <key>Ktrl</key> da otvorite novi prozor.</p>
+
+  <p>Kada ste u pregledu, na početku će vam uvek biti prikazan pregled prozora. U njemu su vam prikazane žive minijature svih prozora na tekućem radnom prostoru.</p>
+
+  <p>Kliknite na dugme mreže pri dnu poletnika da prikažete pregled programa. Ovo će vam prikazati sve programe instalirane na vašem računaru. Kliknite na neki od programa da ga pokrenete, ili prevucite program u pregled ili na minijaturu radnog prostora. Možete takođe da prevučete program u poletniku da biste ga učinili omiljenim. Vaši omiljeni programi ostaju u poletniku čak i kada nisu pokrenuti, tako da im možete pristupiti brzo.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-apps-open">Saznajte više o početnim programima.</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-windows">Saznajte više o prozorima i radnim prostorima.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="appmenu">
+  <title>Izbornik programa</title>
+  <if:choose>
+    <if:when test="!platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-shell.png" width="250" style="floatend floatright" if:test="!target:mobile">
+        <p>Izbornik programa <app>Terminal</app></p>
+      </media>
+      <p>Izbornik programa, koje se nalazi pored dugmeta <gui>Aktivnosti</gui>, prikazuje naziv radnog programa zajedno sa njegovom ikonicom i obezbeđuje brz pristup postavkama ili pomoći programa. Stavke koje su dostupne u izborniku programa zavise od programa.</p>
+    </if:when>
+    <if:when test="platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-classic.png" width="154" height="133" style="floatend floatright" if:test="!target:mobile">
+        <p>Izbornik programa <app>Terminal</app></p>
+      </media>
+      <p>Izbornik programa, koje se nalazi pored izbornika <gui>Programi</gui> i <gui>Prečice</gui>, prikazuje naziv radnog programa zajedno sa njegovom ikonicom i obezbeđuje brz pristup postavkama ili pomoći programa. Stavke koje su dostupne u izborniku programa zavise od programa.</p>
+    </if:when>
+  </if:choose>
+
+</section>
+
+<section id="clock">
+  <title>Sat, kalendar i sastanci</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Sat, kalendar, sastanci i obaveštenja</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-appts-classic.png" width="373" height="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Sat, kalendar, i sastanci</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Kliknite na sat na gornjoj traci da vidite trenutni datum, kalendar pojedinačnih meseci, spisak vaših nadolazećih sastanaka i nova obaveštenja. Možete da otvorite kalendar i tako što ćete pritisnuti <keyseq><key>Super</key><key>M</key></keyseq>. Možete da pristupite podešavanjima datuma i vremena i da otvorite potpuni kalendar <app>Evolucije</app> upravno iz izbornika.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="clock-calendar">Saznajte više o kalendaru i sastancima.</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-notifications">Saznajte više o obaveštenjima i fioci poruka.</link></p>
+    </item>
+  </list>
+
+</section>
+
+
+<section id="yourname">
+  <title>Vi i vaš računar</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-exit.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Korisnički izbornik</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-exit-classic.png" width="250" height="200" style="floatend floatright" if:test="!target:mobile">
+      <p>Korisnički izbornik</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Kliknite na sistemski izbornik u gornjem desnom uglu da upravljate sistemskim podešavanjima i vašim računarom.</p>
+
+<!-- Apparently not anymore. TODO: figure out how to update status.
+  <p>You can quickly set your availability directly from the menu. This will set
+  your status for your contacts to see in instant messaging applications such as
+  <app>Empathy</app>.</p>-->
+
+<!--
+<p>If you set yourself to Unavailable, you won't be bothered by message popups
+at the bottom of your screen. Messages will still be available in the message
+tray when you move your mouse to the bottom-right corner. But only urgent
+messages will be presented, such as when your battery is critically low.</p>
+
+<list style="compact">
+  <item><p><link xref="shell-session-status">Learn more about changing
+  your availability.</link></p></item>
+</list>
+-->
+
+  <p>Kada napustite vaš računar, možete da zaključate ekran da biste sprečili druge da ga koriste. S lakoćom možete da promenite korisnika bez potpunog odjavljivanja da biste nekome dali pristup vašem računaru, ili možete da obustavite ili da ugasite računar iz izbornika.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-exit">Saznajte više o promeni korisnika, odjavljivanju, i gašenju računara.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="lockscreen">
+  <title>Zaključavanje ekrana</title>
+
+  <media type="image" src="figures/shell-lock.png" width="250" style="floatend floatright" if:test="!target:mobile">
+    <p>Zaključavanje ekrana</p>
+  </media>
+
+  <p>Kada zaključate ekran, ili ako se sam zaključa, biva prikazan ekran zaključavanja. Pored toga što štiti vašu radnu površ kada ste daleko od računara, ekran zaključavanja prikazuje datum i vreme. Takođe prikazuje informacije o stanju vaše baterije i mreže, i omogućava vam da upravljate puštanjem medija.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-lockscreen">Saznajte više o zaključavanju ekrana.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="window-list">
+  <title>Spisak prozora</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <p>Gnoma odlikuje drugačiji pristup prebacivanja prozora nego što je to stalno vidljiv spisak prozora koji nalazimo u drugim okruženjima radne površi. Ovo vam dopušta da se usredsredite na zadatak na kome radite bez ometanja.</p>
+    <list style="compact">
+      <item>
+        <p><link xref="shell-windows-switching">Saznajte više o prebacivanju prozora.</link></p>
+      </item>
+    </list>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-window-list-classic.png" width="500" height="34" style="floatend floatright" if:test="!target:mobile">
+      <p>Spisak prozora</p>
+    </media>
+    <p>Spisak prozora na dnu ekrana obezbeđuje pristup svim vašim otvorenim prozorima i programima i dopušta vam da ih brzo umanjite i povratite.</p>
+    <p>Na desnoj strani spiska prozora, Gnom prikazuje kratak odrednik za trenutni radni prostor, kao što je <gui>1</gui> za prvi (gornji) radni prostor. Pride, odrednik takođe prikazuje ukupan broj dostupnih radnih prostora. Da se prebacite na drugi radni prostor, možete da kliknete na odrednik i da iz izbornika izaberete radni prostor kojiželite da koristite.</p>
+    <p>Ako neki program ili komponenta sistema želi da skrene vašu pažnju, prikazaće plavu ikonicu na desnoj strani spiska prostora. Pritisnite plavu ikonicu da prikažete fioku poruka.</p>
+  </if:when>
+</if:choose>
+
+</section>
+
+</page>

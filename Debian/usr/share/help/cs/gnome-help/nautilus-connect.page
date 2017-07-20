@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak zobrazit a upravit soubory na jiných počítačích přes FTP, SSH, sdílení Windows nebo WebDAV.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Procházení souborů na serveru nebo síťovém sdílení</title>
+
+<p>Můžete se připojit k serveru nebo síťovému sdílení, abyste mohli procházet a otevírat soubory na daném serveru, úplně stejně, jako by byly na vašem počítači. Jedná se o pohodlný způsob, jak stahovat soubory z a nahrávat na Internet, nebo jak sdílet soubory s ostatními lidmi na vaší místní síti.</p>
+
+<p>Když chcete procházet soubory na síti, otevřete z přehledu <gui>Činnosti</gui> aplikaci <app>Soubory</app> a klikněte v postranním panelu na <gui>Další umístění</gui>. Správce souborů vyhledá ve vaší místní síti všechny počítače, které nabízí své služby souborového serveru. Když se chcete připojit k serveru v Internetu, nebo když nevidíte v seznamu počítač, který hledáte, můžete se připojit k serveru ručně zadáním jeho internetové/síťové adresy.</p>
+
+<steps>
+  <title>Připojení k souborovému serveru</title>
+  <item><p>Ve správci souborů klikněte v postranním panelu na <gui>Další umístění</gui>.</p>
+  </item>
+  <item><p>V <gui>Připojit k serveru</gui> zadejte adresu serveru ve formě <link xref="#urls">URL</link>. Podrobnosti o podporovaných URL jsou <link xref="#types">uvedeny níže</link>.</p>
+  <note>
+    <p>Pokud jste byli k serveru připojeni již dříve, můžete kliknout na příslušný server v seznamu <gui>Nedávná připojení</gui>.</p>
+  </note>
+  </item>
+  <item>
+    <p>Klikněte na <gui>Připojit</gui> a zobrazí se soubory ze serveru. Soubory můžete procházet stejně, jako by byly na vašem počítači. Server bude také přidán do postranního panelu, takže se na něj příště rychle dostanete.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>Zápis adres URL</title>
+
+<p><em>URL</em> (Uniform Resource Locator) je forma adresy, které odkazuje na umístění nebo soubor na síti. Adresa má takovýto formát:</p>
+  <example>
+    <p><sys>schéma://server.doména.cz/složka</sys></p>
+  </example>
+<p><em>Schéma</em> určuje protokol nebo typ serveru. Části adresy <em>doména.cz</em> se říká <em>název domény</em>. Pokud je požadováno uživatelské jméno, vkládá se před název serveru:</p>
+  <example>
+    <p><sys>schéma://uživatel@server.doména.cz/složka</sys></p>
+  </example>
+<p>Některá schémata vyžadují uvedení čísla portu. To se zadává za název domény:</p>
+  <example>
+    <p><sys>schéma://server.doména.cz:port/složka</sys></p>
+  </example>
+<p>Níže jsou konkrétní příklady pro různé typy serverů, které jsou podporovány.</p>
+</section>
+
+<section id="types">
+ <title>Typy služeb</title>
+
+<p>Můžete se připojit k různým typům serverů. Některé servery jsou veřejné a dovolí komukoliv se k nim připojit. Jiné servery vyžadují, abyste se přihlásili uživatelským jménem a heslem.</p>
+<p>Na serveru nemusíte mít oprávnění provádět některé činnosti se soubory. Například na veřejných serverech FTP nejspíše nebudete moci mazat soubory.</p>
+<p>URL, kterou zadáváte, závisí na protokolu, který server používá k exportu svých sdílených souborů.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>V případě, že máte na serveru účet <em>secure shell</em>, můžete se přihlásit pomocí této metody. Řada poskytovatelů hostování WWW nabízí zákazníkům účet SSH, aby mohli bezpečně nahrávat své soubory. Servery SSH vždy požadují přihlášení.</p>
+  <p>Typická adresa URL pro SSH vypadá nějak takto:</p>
+  <example>
+    <p><sys>ssh://uzivatelskejmeno@nazevserveru.priklad.cz/slozka</sys></p>
+  </example>
+
+  <p>Když používáte SSH, jsou všechna posílaná data (včetně hesel) šifrována, takže ostatní uživatelé v síti je nemohou vidět.</p>
+</item>
+<item>
+  <title>FTP (s přihlášením)</title>
+  <p>FTP je oblíbený způsob výměny souborů na Internetu. Protože data nejsou při přenosu FTP šifrována, mnoho serverů dnes poskytuje přístup přes SSH. Některé servery ale stále umožňují nebo přímo požadují použití FTP pro nahrávání nebo stahování souborů. FTP servery, ke kterým se musíte přihlašovat, obvykle umožňují mazání a nahrávání souborů.</p>
+  <p>Typická adresa URL pro FTP vypadá nějak takto:</p>
+  <example>
+    <p><sys>ftp://uzivatelskejmeno@ftp.priklad.cz/cesta/</sys></p>
+  </example>
+</item>
+<item>
+  <title>Veřejné FTP</title>
+  <p>Servery, které nabízejí stahování souborů někdy poskytují veřejný nebo anonymní přístup k FTP. Tyto servery nepožadují uživatelské jméno a heslo a na druhou stranu neumožňují mazání a nahrávání souborů.</p>
+  <p>Typická adresa URL pro anonymní FTP vypadá nějak takto:</p>
+  <example>
+    <p><sys>ftp://ftp.priklad.cz/cesta/</sys></p>
+  </example>
+  <p>Některé anonymní servery FTP požadují přihlášení pomocí veřejného uživatelského jména a hesla nebo veřejného uživatelského jména s vaší e-mailovou adresou jako heslem. Pro tyto servery použijte metodu <gui>FTP (s přihlášením)</gui> a k ní údaje určené na webu serveru.</p>
+</item>
+<item>
+  <title>Sdílení Windows</title>
+  <p>Počítače s Windows používají ke sdílení souborů přes síť soukromý protokol firmy Microsoft. Někdy se tyto počítače v síti seskupují do <em>domén</em>, kvůli jejich organizaci a lepšímu řízení přístupu. Pokud máte správná oprávnění ke vzdálenému počítači, můžete se ze správce souborů připojit ke sdílení Windows.</p>
+  <p>Typická adresa URL pro sdílení Windows vypadá nějak takto:</p>
+  <example>
+    <p><sys>smb://server/sdílení</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV a Secure WebDAV</title>
+  <p>Ačkoliv je WebDAV založen na protokolu HTTP používaném na webech, používá se mimo ukládání souborů v Internetu někdy i ke sdílení souborů v místní síti. Pokud server, ke kterému se připojujete používá zabezpečené připojení, měli byste si jej zapnout. Zabezpečený WebDAV používá silné šifrování SSL, takže ostatní uživatelé nemohou vidět vaše heslo.</p>
+  <p>Typycká adresa URL pro WebDAV vypadá nějak takto:</p>
+  <example>
+    <p><sys>dav://priklad.server.cz/cesta/</sys></p>
+  </example>
+</item>
+<item>
+  <title>Sdílení na NFS</title>
+  <p>Unixové počítače tradičně používají protokol NFS (Network File System) ke sdílení souborů v místní síti. V NFS je bezpečnost založena na UID uživatele přistupujícího ke sdílení, takže při připojování není potřeba žádné ověřování pověření.</p>
+  <p>Typycká adresa URL pro NFS vypadá nějak takto:</p>
+  <example>
+    <p><sys>nfs://server/cesta/</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>Izvršite jedan klik da otvorite datoteke, pokrenete ili pogledate izvršne tekstualne datoteke, i da odredite ponašanje smeća.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tifani Antopoloski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Šon Mek Kens</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Dejvid King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Postavke ponašanja upravnika datoteka</title>
+<p>Možete da odredite da li ćete izvršiti jedan ili dva klika nad datotekom, kako će biti rukovano izvršnim tekstualnim datotekama, kao i ponašanje smeća. Kliknite <gui>Datoteke</gui> na gornjoj traci, izaberite <gui>Postavke</gui> a zatim jezičak <gui>Ponašanje</gui>.</p>
+
+<section id="behavior">
+<title>Ponašanje</title>
+<terms>
+ <item>
+  <title><gui>Jednostruki klik za otvaranje stavki</gui></title>
+  <title><gui>Dvoklik za otvaranje stavki</gui></title>
+  <p>Po osnovi, jedan klik bira datoteke a dvoklik ih otvara. Umesto ovoga možete da izaberete da se i datoteke i fascikle otvore kada na njih kliknete jednom. Kada koristite režim jednog klika, možete da držite pritisnutim taster <key>Ktrl</key> dok klikate da izaberete jednu ili više datoteka.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>Izvršne tekstualne datoteke</title>
+ <p>Izvršna tekstualna datoteka je datoteka koja sadrži program koji možete da pokrenete (izvršite). <link xref="nautilus-file-properties-permissions">Ovlašćenja datoteke</link> moraju takođe da dopuštaju da datoteka bude pokrenuta kao program. Najčešće su skripte <sys>Školjke</sys>, <sys>Pitona</sys> i <sys>Perla</sys>. Njihova proširenja su redom <file>.sh</file>, <file>.py</file> i <file>.pl</file>.</p>
+ 
+ <p>Kada otvorite izvršnu tekstualnu datoteku, možete da izaberete:</p>
+ 
+ <list>
+  <item>
+    <p><gui>Pokreni izvršne tekstualne datoteke pri otvaranju</gui></p>
+  </item>
+  <item>
+    <p><gui>Pregledaj izvršne tekstualne datoteke pri otvaranju</gui></p>
+  </item>
+  <item>
+    <p><gui>Pitaj svaki put</gui></p>
+  </item>
+ </list>
+
+ <p>Ako je izabrano <gui>Pitaj svaki put</gui>, pojaviće se prozorče koje će vas pitati da li želite da pokrenete ili da pregledate izabranu tekstualnu datoteku.</p>
+
+ <p>Izvršne tekstualne datoteke se takođe nazivaju <em>skriptama</em>. Sve skripte u fascikli <file>~/.local/share/nautilus/scripts</file> će se pojaviti u priručnom izborniku za datoteku pod podizbornikom <gui style="menuitem">Skripte</gui> submenu. Kada se skripta izvrši iz mesne fascikle, sve izabrane datoteke će joj biti prosleđene kao parametri. Da izvršite skriptu nad datotekom:</p>
+
+<steps>
+  <item>
+    <p>Idite do željene fascikle.</p>
+  </item>
+  <item>
+    <p>Izaberite željenu datoteku.</p>
+  </item>
+  <item>
+    <p>Kliknite desnim tasterom miša nad datotekom da otvorite priručni izbornik i izaberite željenu skriptu za izvršavanje iz izbornika <gui style="menuitem">Skripte</gui>.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>Skripti neće biti prosleđeni nikakvi parametri kada se izvršava iz udaljene fascikle kao što je fascikla koja pokazuje veb ili <sys>ftp</sys> sadržaj.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">Postavke smeća upravnika datoteka</title>
+</info>
+<title>Smeće</title>
+
+<terms>
+ <item>
+  <title><gui>Pitaj pre izbacivanja smeća</gui></title>
+  <p>Ova opcija je izabrana po osnovi. Kada praznite smeće, biće prikazana poruka koja će potvrditi da želite da ispraznite smeće ili da izbrišete datoteke.</p>
+ </item>
+</terms>
+</section>
+
+</page>

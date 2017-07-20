@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters-not-working" xml:lang="sv">
+
+  <info>
+    <desc>Fixa problem med e-postfilter som inte sorterar och organiserar e-post som förväntat.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.9.3" version="0.5" date="2013-06-24" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>E-postfilter fungerar inte</title>
+
+<section id="order">
+<title>Filterordning</title>
+<p>Ordningen på filtren är mycket viktig. De tillämpas för originalmeddelandet i sekvens, som ett recept.</p>
+<p>Om ditt första filter har en regel <gui>Stoppa behandling</gui> så kommer alla meddelanden som matchar detta filter att ignorera alla efterföljande filter.</p>
+<p>När du flyttar ett meddelande till en annan mapp, innebär ”flytta” att faktiskt lägga till en kopia av meddelanden i slutet på destinationsmappen och att markera originalmeddelandet för borttagning. Så påföljande filterregler kommer att tillämpas på originalmeddelandet som nu är märkt för borttagning. Därför bör flyttning av ett meddelande vanligtvis finnas sist i en sekvens av filterregler.</p>
+<p>För att kontrollera reglerna och deras ordning för ett existerande filter, studera dess åtgärder i avsnittet <gui>Sedan</gui> genom att <link xref="mail-filters#editing">redigera filtret</link>.</p>
+</section>
+
+<section id="several-clients">
+<title>Användning av flera e-postklienter</title>
+<p>En annan sak du måste tänka på är att filter beror på ”nytt”-flaggan som ställs in på servern när ett visst e-postmeddelande först hämtas från servern. Om du använder en annan e-postklient förutom <app>Evolution</app> kommer kanske dina filter inte att fungera automatiskt.</p>
+</section>
+
+<section id="filter-log">
+<title>Logga filteråtgärder</title>
+<p>Om det fortfarande är oklart varför filter inte fungerar som förväntat kan du aktivera loggning av filteråtgärder.</p>
+<list>
+<item><p>Stäng <app>Evolution</app>.</p></item>
+<item><p>Öppna <app>Terminal</app>-programmet.</p></item>
+<item><p>Kör kommandot <cmd>gsettings set org.gnome.evolution.mail filters-log-actions true</cmd></p></item>
+<item><p>Kör kommandot <cmd>gsettings set org.gnome.evolution.mail filters-log-file "/home/mittanvändarnamn/min-filter-logg"</cmd> och ersätt <cmd>mittanvändarnamn</cmd> med ditt användarnamn. Detta kommer att skapa en textfil med namnet <file>min-filter-logg</file> i din hemkatalog. Notera att den absoluta sökvägen till filnamnet måste matas in; en syntax så som <sys>~</sys> eller <sys>$HOME</sys> kommer inte att fungera.</p></item><!-- this is explained in https://bugzilla.gnome.org/show_bug.cgi?id=669471 -->
+<item><p>Starta <app>Evolution</app>.</p></item>
+<item><p>Hämta e-postmeddelanden för att tillämpa filter.</p></item>
+<item><p>Öppna filen <file>min-filter-logg</file> med en textredigerare för att se vilka filteråtgärder som har tillämpats.</p></item>
+</list>
+
+<p>Notera att du kan inaktivera filterloggning igen genom kommandot <cmd>gsettings set org.gnome.evolution.mail filters-log-actions false</cmd></p>
+
+<p>Du kan också använda programmet <app>dconf-editor</app> för att göra detta.</p>
+</section>
+
+</page>

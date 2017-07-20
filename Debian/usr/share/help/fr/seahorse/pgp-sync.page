@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-sync" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-07-03" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Synchroniser les informations présentes dans la clé locale avec la clé correspondante sur le serveur de clés.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Synchronisation des clés</title>
+
+  <p>Les clés PGP des trousseaux doivent être synchronisées avec un serveur de clés pour être certain que tout changement effectué sur le serveur, comme une nouvelle signature, est répercuté sur la copie locale de la clé. De même, si vous modifiez des informations dans votre copie locale de la clé, comme la date d'expiration, ou si vous signez la clé de quelqu'un, vous devez synchroniser les clés afin de mettre à jour les modifications sur la clé distante. Une connexion Internet est nécessaire pour pouvoir synchroniser les clés.</p>
+
+  <steps>
+    <title>Synchronisation d'une clé</title>
+    <item>
+      <p>Sélectionnez la clé PGP que vous voulez synchroniser.</p>
+    </item>
+    <item>
+      <p>Sélectionnez <guiseq><gui style="menu">Distant</gui> <gui style="menuitem">Synchroniser et publier des clés…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton <gui style="button">Synchroniser</gui> pour synchroniser la clé.</p>
+    </item>
+  </steps>
+
+  <note style="important">
+    <title>Impossibilité de cliquer sur le bouton <gui style="button">Synchroniser</gui></title>
+    <p>Seules les clés publiées sur un serveur de clés peuvent être synchronisées. S'il est impossible de cliquer sur le bouton <gui style="button">Synchroniser</gui>, vérifiez si la clé a bien été publiée sur un serveur. Dans le cas de la synchronisation de vos propres clés, publiez-les avant de les synchroniser.</p>
+  </note>
+
+</page>

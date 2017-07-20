@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                              http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.jfree</groupId>
+	<artifactId>jcommon</artifactId>
+	<version>1.0.23</version>
+	<packaging>jar</packaging>
+	<name>JCommon</name>
+	<!-- this is required to host it on Sonatype's OSSRH -->
+	<description>JCommon is a free general purpose Java class library that is used in
+    several projects at www.jfree.org, including JFreeChart and
+    JFreeReport.</description>
+	<dependencies>
+	</dependencies>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.source.level>1.6</project.source.level>
+		<project.target.level>1.6</project.target.level>
+		
+			<debian.junit.junit.originalVersion>3.8.2</debian.junit.junit.originalVersion>
+		
+			<debian.mavenRules>s/jfree/org.jfree/ jcommon * s/.*/debian/ * *</debian.mavenRules>
+		
+			<debian.originalVersion>1.0.23</debian.originalVersion>
+		
+			<debian.package>libjcommon-java</debian.package>
+	</properties>
+</project>

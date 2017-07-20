@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="net-wireless" group="first"/>
+    <link type="guide" xref="hardware#problems" group="first"/>
+    <link type="next" xref="net-wireless-troubleshooting-initial-check"/>
+
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Συντελεστές στην τεκμηρίωση wiki του Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Έργο Τεκμηρίωσης GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ταυτοποιήστε και διορθώστε προβλήματα με ασύρματες συνδέσεις</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ανιχνευτής προβλημάτων ασύρματου δικτύου</title>
+
+  <p>Αυτός είναι ένας οδηγός αντιμετώπισης προβλημάτων βήμα-βήμα που θα σας βοηθήσει να βρείτε και να λύσετε προβλήματα με το ασύρματο δίκτυο σας. Εάν για κάποιο λόγο δεν μπορείτε να συνδεθείτε σε ένα ασύρματο δίκτυο, δοκιμάστε αυτές τις οδηγίες.</p>
+
+  <p>Θα προχωρήσουμε στα επόμενα βήματα για να συνδέσετε τον υπολογιστή σας στο διαδίκτυο:</p>
+
+  <list style="numbered compact">
+    <item>
+      <p>Εκτέλεση αρχικού ελέγχου</p>
+    </item>
+    <item>
+      <p>Συλλογή πληροφοριών για το υλικό σας</p>
+    </item>
+    <item>
+      <p>Έλεγχος του υλικού σας</p>
+    </item>
+    <item>
+      <p>Προσπάθεια δημιουργίας σύνδεσης με τον ασύρματο δρομολογητή σας</p>
+    </item>
+    <item>
+      <p>Εκτέλεση ελέγχου του μόντεμ και δρομολογητή σας</p>
+    </item>
+  </list>
+
+  <p>Για ξεκίνημα, κάντε κλικ στον σύνδεσμο <em>Επόμενο</em> στα πάνω δεξιά της σελίδας. Αυτός ο σύνδεσμος και άλλοι παρόμοιοι στις επόμενες σελίδες θα σας δείξουν κάθε βήμα στον οδηγό.</p>
+
+  <note>
+    <title>Χρησιμοποιώντας τη γραμμή εντολών</title>
+    <p>Some of the instructions in this guide ask you to type commands into the
+    <em>command line</em> (Terminal). You can find the <app>Terminal</app> application in
+    the <gui>Activities</gui> overview.</p>
+    <p>Εάν δεν είσαστε εξοικειωμένος με τη χρήση της γραμμής εντολών, μην ανησυχείτε - αυτός ο οδηγός θα σας κατευθύνει σε κάθε βήμα. Αυτό που χρειάζεστε να θυμάστε είναι ότι οι εντολές εξαρτώνται από πεζά/κεφαλαία (έτσι πρέπει να τις πληκτρολογήσετε <em>ακριβώς</em> όπως εμφανίζονται εδώ) και να πατήσετε <key>Enter</key> μετά την πληκτρολόγηση κάθε εντολής για να εκτελεστεί.</p>
+  </note>
+
+</page>

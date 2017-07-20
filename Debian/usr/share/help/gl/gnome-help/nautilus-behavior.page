@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>Unha sola pulsación para abrir ficheiros, executar ou ver ficheiros de texto executábeis, e especificar o comportamento do lixo.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Preferencias do comportamento do xestor de ficheiros</title>
+<p>Pode controlar se abrir os cartafoles con un só clic ou con un dobre, como se xestionar os ficheiros de texto executábeis, ademais do comportamento do lixo. Prema <gui>Ficheiros</gui> na barra superiro, seleccione <gui>Preferencias</gui> e seleccione a lapela <gui>Comportamento</gui>.</p>
+
+<section id="behavior">
+<title>Comportamento</title>
+<terms>
+ <item>
+  <title><gui>Un só clic para abrir elementos</gui></title>
+  <title><gui>Dobre clic para abrir elementos</gui></title>
+  <p>Por omisión, ao premer selecciónanse ficheiros e ao facer dobre clic sobre eles ábrense. Tamén pode escoller se quere que os ficheiros e cartafoles se abran con un só clic. Cando está no modo dun só clic, pode manter a tecla <key>Ctrl</key> mentres preme para seleccionar un ou máis ficheiros.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>Ficheiros de texto executábeis</title>
+ <p>Un ficheiro de texto executábel é un ficheiro que contén un programa que pode iniciarse (executarse). Os <link xref="nautilus-file-properties-permissions">permisos do ficheiro</link> deben tamén permitirlle facelo para executalo como un programa. O máis común son scripts de <sys>Shell</sys>, <sys>Python</sys> e <sys>Perl</sys>. Os cales teñen as extensións <file>.sh</file>, <file>.py</file> e <file>.pl</file>, respectivamente.</p>
+ 
+ <p>Cando abra un ficheiro de texto executábel, pode seleccionar:</p>
+ 
+ <list>
+  <item>
+    <p><gui>Executar os ficheiros de texto executábeis cando se abran</gui></p>
+  </item>
+  <item>
+    <p><gui>Ver os ficheiros de texto executábeis cando se abran</gui></p>
+  </item>
+  <item>
+    <p><gui>Preguntar cada vez</gui></p>
+  </item>
+ </list>
+
+ <p>Se selecciona <gui>Preguntar cada vez</gui>, aparecerá un diálogo preguntándolle se desexa executar ou ver o ficheiro de texto seleccionado.</p>
+
+ <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
+
+<steps>
+  <item>
+    <p>Navegue ao cartafol desexado.</p>
+  </item>
+  <item>
+    <p>Seleccione o ficheiro desexado.</p>
+  </item>
+  <item>
+    <p>Prema co botón dereito sobre o ficheiro para abrir o menú contextual e seleccione o script desexado para executar desde o menú <gui style="menuitem">Scripts</gui>.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>Non se lle pasarán parámetros a un script cando se execute desde un cartafol remoto como un cartafol web ou contido <sys>ftp</sys>.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">Preferencias do lixo do xestor de ficheiros</title>
+</info>
+<title>Lixo</title>
+
+<terms>
+ <item>
+  <title><gui>Ask before emptying the Trash</gui></title>
+  <p>Esta opción está seleccionada por omisión. Cando se vai a baleirar o lixo, aparece un mensaxe confirmando se quere baleirar o lixo ou eliminar os ficheiros.</p>
+ </item>
+</terms>
+</section>
+
+</page>

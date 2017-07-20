@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters-conditions" xml:lang="hu">
+
+  <info>
+    <desc>Szűréshez használható feltételek.</desc>
+
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.6.4" version="0.3" date="2013-04-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-filters.html.en#usage-mail-org-filters-new -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Használható szűrőfeltételek</title>
+
+<list>
+
+<!-- As filter and search folder conditions share a fair amount of options, those ones are centrally in one file that's 
+included by XInclude. See http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-filter-vfolder-conditions.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:item)"/>
+
+<item><p>Forráspostafiók:</p>
+<p>Az üzeneteket azon kiszolgáló alapján szűri, amelyről azok érkeztek. Ez akkor hasznos, amikor több POP postafiókot használ.</p></item>
+
+<item><p>Átirányítás programhoz:</p>
+<p>Az <app>Evolution</app> képes külső parancsot is használni az üzenetek feldolgozására, majd a visszatérési érték alapján folytatni a feldolgozást. Az így használt parancsoknak egész számot kell visszaadniuk. Ez leggyakrabban külső levélszemét-szűrők hozzáadására használatos.</p></item>
+
+<item><p>Levélszemét-teszt:</p>
+<p>Szűrés a <link xref="mail-spam">levélszemét-teszt</link> eredményei alapján.</p></item>
+
+<item><p>Összes illesztése:</p>
+<p>Mindig alkalmaz egy műveletet minden üzenetre, feltétel nélkül. Ez az üzenetszűrők listájának végén lehet hasznos, azon üzenetek feldolgozására, amelyeket a listában előrébb lévő szűrők nem dolgoztak fel.</p></item>
+
+</list>
+</page>

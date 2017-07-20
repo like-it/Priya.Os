@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="lv">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>Kalibrācija un profilēšana jeb raksturošana ir divas pilnīgi dažādas lietas.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Kāda atšķirība starp kalibrāciju un profilēšanu jeb raksturošanu?</title>
+  <p>Daudzi cilvēki sākumā ir neizpratnē par atšķirībām starp kalibrāciju un raksturošanu. Kalibrācija ir process, kas maina ierīces krāsu uzvedību. Tas tipiski tiek darīts, izmantojot divus mehānismus:</p>
+  <list>
+    <item><p>Mainot tā kontroles vai iekšējos iestatījumus</p></item>
+    <item><p>Pielietojot līknes tās krāsu kanāliem</p></item>
+  </list>
+  <p>Kalibrācijas ideja ir iestatīt ierīci noteiktā stāvoklī attiecībā uz tās krāsu atbilstību. Parasti tas tiek izmantots kā ikdienas veids, lai uzturētu atkārtojamu uzvedību. Tipiski kalibrācijas rezultāti tiks glabāti ierīcē vai sistēmas specifiskos datņu formātos, kas pieraksta ierīces iestatījumus vai katra kanāla kalibrācijas līknes.</p>
+  <p>Raksturošana (jeb profilēšana) <em>ieraksta</em>, kādā veidā ierīce attēlo vai "atbild" uz krāsu. Tipiski rezultāts tiek saglabāts ierīces ICC profilā. Šāds profils pats nemaina krāsu nekādā veidā. Tas atļauj sistēmai kā krāsu pārvaldības modulis (CMM jeb Color Management Module) vai krāsu vērā ņemošai lietotnei modificēt krāsas kombinācijā ar citu ierīces profilu. Tikai zinot abu ierīču raksturīpašības var tikt nodrošināts veids kā pārnest krāsu informāciju no vienas uz citu.</p>
+  <note>
+    <p>Atcerieties, ka raksturošana ar profilu būs derīga tikai tad, ja ierīce būs tādā pašā kalibrācijas stāvoklī kā tad, kad tā tika profilēta.</p>
+  </note>
+  <p>Displeju profilu gadījumā ir papildu apjukums tāpēc, ka kalibrācijas informācija tiek glabāta profilā uzskatāmībai. Pēc standarta tā tiek glabāta birkā ar nosaukumu <em>vcgt</em>. Lai gan tas tiek glabāts profilā, neviens no normālajiem ICC bāzētajiem rīkiem vai lietotnēm to neizmanto. Līdzīgi, tipiski displeju kalibrācijas rīki un lietotnes neliksies ne zinis, vai arī neko nedarīs ar ICC profilēšanas informāciju.</p>
+
+</page>

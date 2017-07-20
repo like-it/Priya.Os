@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-select" xml:lang="sr">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <credit type="author">
+      <name>Шон Мек Кенс</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Притисните <keyseq><key>Ктрл</key><key>С</key></keyseq> да изаберете неколик датотека које имају сличне називе.</desc>
+  </info>
+
+  <title>Изаберите датотеке према обрасцу</title>
+
+  <p>Можете да изаберете датотеке у фасцикли користећи образац у називу датотеке. Притисните <keyseq><key>Ктрл</key><key>С</key></keyseq> да призовете прозорче <gui>Означи ставке по услову</gui>. Упишите образац користећи опште делове назива датотеке плус знакове замене (џокере). Доступна су два знака замене:</p>
+
+  <list style="compact">
+    <item><p><file>*</file> одговара било ком броју било којих знакова, чак уопште и без знакова.</p></item>
+    <item><p><file>?</file> одговара тачно једном од било ког знака.</p></item>
+  </list>
+
+  <p>На пример:</p>
+
+  <list>
+    <item><p>Ако имате текстуалну датотеку Отвореног документа, ПДФ датотеку, и слику и да све оне имају исти основни назив <file>Фактура</file>, изаберите све три помоћу обрасца</p>
+    <example><p><file>Фактура.*</file></p></example></item>
+
+    <item><p>Ако имате неке фотографије под називом <file>Летовање-001.jpg</file>, <file>Летовање-002.jpg</file>, <file>Летовање-003.jpg</file>; изаберите их све помоћу обрасца</p>
+    <example><p><file>Летовање-???.jpg</file></p></example></item>
+
+    <item><p>Ако имате овакве фотографије, али сте уредили неке од њих и додали <file>-уређена</file> на крај назива датотеке фотографија које сте уредили, изаберите уређене фотографије помоћу</p>
+    <example><p><file>Летовање-???-уређена.jpg</file></p></example></item>
+  </list>
+
+</page>

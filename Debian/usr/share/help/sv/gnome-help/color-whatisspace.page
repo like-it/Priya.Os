@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>En färgrymd är ett definierat intervall av färger.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Vad är en färgrymd?</title>
+
+  <p>En färgrymd är ett definierat intervall av färger. Välkända färgrymder är sRGB, AdobeRGB, och ProPhotoRGB.</p>
+
+  <p>Människans synsinne är inte en enkel RGB-sensor, men vi kan approximera hur ögat svarar med ett CIE 1931-kromacitetsdiagram som visar människans visuella svar som en hästskoform. Du kan se att mänsklig syn detekterar många fler nyanser av grönt än blått eller rött. Med en trefärgad färgrymd som RGB representerar vi färger på datorn som tre värden vilket begränsar kodningen av färger till en <em>triangel</em>.</p>
+
+  <note>
+    <p>Att använda modeller så som ett CIE 1931-kromacitetsdiagram är en förenkling av människans visuella system, och riktiga färgomfång uttrycks som 3D-höljen snarare än 2D-projektioner. En 2D-projektion av en 3D-form kan ibland vara vilseledande så om du vill se 3D-höljet använd programmet <code>gcm-viewer</code>.</p>
+  </note>
+
+  <figure>
+    <desc>sRGB, AdobeRGB och ProPhotoRGB representerade som vita trianglar</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>Titta först på sRGB som är den minsta färgrymden och kan koda det minsta antalet färger. Den är en approximation av en 10 år gammal CRT-skärm så de flesta moderna skärmar kan med lätthet visa fler färger än detta. sRGB är en standard eller <em>minsta gemensamma nämnare</em> och används i många program (inklusive Internet).</p>
+  <p>AdobeRGB är ofta använd som en <em>redigeringsrymd</em>. Den kan koda fler färger än sRGB vilket innebär att du kan ändra färger i ett foto utan att oroa dig för mycket för att de mest intensiva färgerna begränsas eller svärtan förstörs.</p>
+  <p>ProPhoto är den största rymden som finns tillgänglig och används ofta för dokumentarkivering. Den kan koda för nästan hela intervallet av färger som det mänskliga ögon kan se och dessutom för en del färger ögat inte kan uppfatta!</p>
+
+  <p>Så om ProPhoto är så mycket bättre, varför inte använda den överallt? Svaret på den frågan har att göra med <em>kvantisering</em>. Om du bara har 8 bitar (256 nivåer) för att koda varje kanal, ger ett större intervall större steg mellan varje värde.</p>
+  <p>Större steg innebär en större avvikelse mellan den uppfattade färgen och den lagrade färgen, och för en del färger är det här ett stort problem. Det visar sig att vissa färger, som hudtoner, är väldigt viktiga, och även små avvikelser gör att oinvigda beskådare märker att något i fotografiet ser fel ut.</p>
+  <p>Självklart kommer en 16 bitars bild att resultera i fler steg och ett mycket mindre kvantiseringsfel, men detta dubblar storleken på varje bildfil. Det mesta material som existerar idag är 8bpp, d.v.s. 8 bitar per pixel.</p>
+  <p>Färghantering är processen för hur man konverterar från en färgrymd till en annan där en färgrymd kan vara en välkänd, definierad rymd som sRGB eller en anpassad rymd så som din skärm- eller skrivarprofil.</p>
+
+</page>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>È necessario specificare l'esatta porta per abilitare o bloccare l'accesso alla rete di un programma usando il firewall.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Porte di rete comunemente usate</title>
+
+  <p>Questo è un elenco di porte di rete comunemente usate dalle applicazioni che forniscono servizi, come la condivisione di file o la visualizzazione remota del desktop. È possibile modificare il firewall di sistema per <link xref="net-firewall-on-off">bloccare o consentire l'accesso</link> a questa applicazioni. Ci sono migliaia di porte in uso, quindi questa tabella non è completa.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>Porta</p>
+	</td>
+	<td>
+	  <p>Nome</p>
+	</td>
+	<td>
+	  <p>Descrizione</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>Consente ai sistemi di trovarne altri e descrive quali servizi vengono offerti, senza dover specificare manualmente i dettagli.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>Stampa</p>
+	</td>
+	<td>
+	  <p>Consente di inviare lavori di stampa a una stampante di rete.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>Stampa</p>
+	</td>
+	<td>
+	  <p>Consente di condividere la propria stampante in rete con altre persone.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>Presenza</p>
+	</td>
+	<td>
+	  <p>Consente di comunicare lo stato di messaggistica istantanea, come «in linea» o «occupato», ad altre persone in rete.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>Desktop remoto</p>
+	</td>
+	<td>
+	  <p>Consente la condivisione del desktop in modo che altre persone possano visualizzarlo o per ricevere assistenza remota.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>Condivisione di musica (DAAP)</p>
+	</td>
+	<td>
+	  <p>Consente di condividere la propria libreria musicale con altre persone in rete.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="question" version="1.0 if/1.0" id="gnome-classic" xml:lang="pt-BR">
+
+  <info>
+<!--    <link type="guide" xref="shell-overview#desktop" />-->
+
+    <revision pkgversion="3.10.1" date="2013-10-28" status="review"/>
+
+    <credit type="author">
+      <name>Projeto de documentação do GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Considere mudar para o GNOME Clássico, se você preferir uma experiência de ambiente mais tradicional.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>O que é GNOME Clássico?</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+  <p>O <em>GNOME Clássico</em> é um recurso para usuários que preferem uma experiência de ambiente mais tradicional. Enquanto o <em>GNOME Clássico</em> é baseado nas tecnologias do <em>GNOME 3</em>, ele fornece várias alterações na interface do usuário, tais como os menus <gui>Aplicativos</gui> e <gui>Locais</gui> na barra superior e uma lista de janelas na parte inferior da janela.</p>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+<p>O <em>GNOME Clássico</em> é um recurso para usuários que preferem uma experiência de ambiente mais tradicional. Enquanto o <em>GNOME Clássico</em> é baseado nas tecnologias do <em>GNOME 3</em>, ele fornece várias alterações na interface do usuário, tais como os menus <gui xref="shell-introduction#activities">Aplicativos</gui> e <gui>Locais</gui> na barra superior e uma lista de janelas na parte inferior da janela.</p>
+  </if:when>
+</if:choose>
+
+<p>Você pode usar o menu <gui>Aplicativos</gui> na barra superior para iniciar aplicativos. O panorama de <gui xref="shell-introduction#activities">Atividades</gui> está disponível ao selecionar o item <gui>Panorama de atividades</gui> no menu.</p>
+
+<p>Para acessar o <em>panorama de <gui>Atividades</gui></em>, você também pode pressionar a tecla <key xref="keyboard-key-super">Super</key>.</p>
+
+<section id="gnome-classic-window-list">
+<title>Lista de janelas</title>
+
+<p>A lista de janelas na parte inferior da janela fornece acesso a todas as suas janelas e aplicativos abertos e permite que você minimize e restaure-os rapidamente.</p>
+
+<p>No lado direito da lista de janelas, o GNOME exibe um pequeno identificador para o espaço de trabalho atual, como <gui>1</gui> para o primeiro (de cima) espaço de trabalho. Adicionalmente, o identificador também exibe o número total de espaços de trabalhos disponíveis. Para alternar para um espaço de trabalho diferente, você pode clicar no identificador e selecionar o espaço de trabalho que você deseja usar do menu.</p>
+
+<p>Se um aplicativo ou um componente de sistema deseja obter sua atenção, ele vai exibir um ícone azul no lado direito da lista de janelas. Ao clicar no ícone azul mostra a <link xref="shell-notifications">área de notificação</link>, o que permite a você acesso as suas notificações.</p>
+
+</section>
+
+<section id="gnome-classic-switch">
+<title>Alternar para e do GNOME Clássico</title>
+
+<note if:test="!platform:gnome-classic" style="important">
+<p>GNOME Clássico está disponível apenas em sistemas com determinadas extensões do GNOME Shell instaladas. Algumas distribuições Linux podem não ter essas extensões disponíveis ou instaladas por padrão.</p>
+</note>
+
+  <steps>
+    <title>Para alternar do <em>GNOME</em> para <em>GNOME Clássico</em>:</title>
+    <item>
+      <p>Salve qualquer trabalho aberto e encerre sua sessão. Clique no menu de sistema no canto superior direito, clique no seu nome e, então, escolha a opção correta.</p>
+    </item>
+    <item>
+      <p>Uma mensagem de confirmação aparecerá. Selecione <gui>Encerrar sessão</gui> para confirmar.</p>
+    </item>
+    <item>
+      <p>Na tela de início de sessão, selecione seu nome de usuário na lista.</p>
+    </item>
+    <item>
+      <p>Digite sua senha no campo de senhas.</p>
+    </item>
+    <item>
+      <p>Clique no ícone de opções, o qual é exibido à esquerda do botão <gui>Entrar</gui> e selecione <gui>GNOME Clássico</gui>.</p>
+    </item>
+    <item>
+      <p>Clique no botão <gui>Entrar</gui>.</p>
+    </item>
+  </steps>
+
+  <steps>
+    <title>Para alternar do <em>GNOME Clássico</em> para <em>GNOME</em>:</title>
+    <item>
+      <p>Salve qualquer trabalho aberto e encerre sua sessão. Clique no menu de sistema no canto superior direito, clique no seu nome e, então, escolha a opção correta.</p>
+    </item>
+    <item>
+      <p>Uma mensagem de confirmação aparecerá. Selecione <gui>Encerrar sessão</gui> para confirmar.</p>
+    </item>
+    <item>
+      <p>Na tela de início de sessão, selecione seu nome de usuário na lista.</p>
+    </item>
+    <item>
+      <p>Digite sua senha no campo de senhas.</p>
+    </item>
+    <item>
+      <p>Clique no ícone de opções, o qual é exibido à esquerda do botão <gui>Entrar</gui> e selecione <gui>GNOME</gui>.</p>
+    </item>
+    <item>
+      <p>Clique no botão <gui>Entrar</gui>.</p>
+    </item>
+  </steps>
+  
+</section>
+
+</page>

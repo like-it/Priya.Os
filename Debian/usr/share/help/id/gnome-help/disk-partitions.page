@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="id">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Projek Dokumentasi GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>Memahami apa itu volume dan partisi dan memakai utilitas disk untuk mengelola mereka.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>Mengelola volume dan partisi</title>
+
+  <p>Kata <em>volume</em> dipakai untuk menjelaskan suatu perangkat penyimpanan, seperti sebuah hard disk. Itu juga bisa mengacu kepada sebuah <em>bagian</em> dari penyimpanan pada perangkat, karena Anda dapat memecah penyimpanan ke dalam bongkahan-bongkahan. Komputer membuat penyimpanan ini dapat diakses melalui sistem berkas Anda dalam suatu proses yang dikenal sebagai <em>mengait</em>. Volume yang dikat mungkin berubah hard disk, USB, DVD-RW, kartu SD, dan media lain. Bila suatu volume saat ini sedang dikait, Anda dapat membaca (dan mungkin menulis) berkas-berkas padanya.</p>
+
+  <p>Often, a mounted volume is called a <em>partition</em>, though they are not
+ necessarily the same thing. A “partition” refers to a <em>physical</em> area of
+ storage on a single disk drive. Once a partition has been mounted, it can be
+ referred to as a volume because you can access the files on it. You can think
+ of volumes as the labeled, accessible “storefronts” to the functional “back
+ rooms” of partitions and drives.</p>
+
+<section id="manage">
+ <title>Lihat dan kelola volume dan partisi memakai utilitas disk</title>
+
+  <p>Anda dapat memeriksa dan mengubah volume penyimpanan komputer Anda dengan utilitas diska.</p>
+
+<steps>
+  <item>
+    <p>Open the <gui>Activities</gui> overview and start <app>Disks</app>.</p>
+  </item>
+  <item>
+    <p>In the list of storage devices on the left, you will find hard disks,
+    CD/DVD drives, and other physical devices. Click the device you want to
+    inspect.</p>
+  </item>
+  <item>
+    <p>The right pane provides a visual breakdown of the volumes and
+    partitions present on the selected device. It also contains a variety of
+    tools used to manage these volumes.</p>
+    <p>Berhati-hatilah: mungkin saja menghapus sepenuhnya data pada disk Anda dengan utilitas ini.</p>
+  </item>
+</steps>
+
+  <p>Your computer most likely has at least one <em>primary</em> partition and a
+ single <em>swap</em> partition. The swap partition is used by the operating
+ system for memory management, and is rarely mounted.  The primary partition
+ contains your operating system, applications, settings, and personal files.
+ These files can also be distributed among multiple partitions for security or
+ convenience.</p>
+
+  <p>One primary partition must contain information that your computer uses to
+  start up, or <em>boot</em>. For this reason it is sometimes called a boot
+  partition, or boot volume. To determine if a volume is bootable, select the
+  partition and click the menu button in the toolbar underneath the partition
+  list. Then, click <gui>Edit Partition…</gui> and look at its
+  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
+  a bootable volume.</p>
+
+</section>
+
+</page>

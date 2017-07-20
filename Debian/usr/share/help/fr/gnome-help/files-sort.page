@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Organiser les fichiers par nom, taille, type ou en fonction de leur date de modification.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Tri des fichiers et des dossiers</title>
+
+<p>Vous pouvez trier les fichiers de différentes façons dans un dossier, par exemple dans l'ordre chronologique ou selon leur taille. Consultez ci-dessous la liste <link xref="#ways"/> pour connaître les manières usuelles d'effectuer un tri. Consultez <link xref="nautilus-views"/> sur la façon de modifier l'ordre de tri par défaut.</p>
+
+<p>La façon de trier les fichiers dépend de votre choix d'<em>affichage des dossiers</em>. Vous pouvez modifier l'affichage actuel en vous servant de la liste ou des boutons de la barre d'outils.</p>
+
+<section id="icon-view">
+  <title>Vue en icônes</title>
+
+  <p>To sort files in a different order, click the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
+  Date</gui>.</p>
+
+  <p>À titre d'exemple, si vous choisissez <gui>Par nom</gui>, les fichiers sont triés par leur nom dans l'ordre alphabétique. Consultez <link xref="#ways"/> pour d'autres options.</p>
+
+  <p>Vous pouvez inverser l'ordre de tri en cochant la case <gui>Ordre inversé</gui> dans le menu.</p>
+
+</section>
+
+<section id="list-view">
+  <title>Vue en liste</title>
+
+  <p>Pour trier les fichiers dans un ordre différent, cliquez sur une des colonnes de l'en-tête du gestionnaire de fichiers. Par exemple, cliquez sur <gui>Type</gui> pour trier par type de fichier. Cliquez une nouvelle fois sur cette colonne pour inverser l'ordre.</p>
+  <p>In list view, you can show columns with more attributes and sort on those
+  columns. Click the view options button in the toolbar, pick <gui>Visible
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  Columns…</gui> and select the columns that you want to be visible. You will
+  then be able to sort by those columns. See <link xref="nautilus-list"/> for
+  descriptions of available columns.</p>
+
+</section>
+
+<section id="ways">
+  <title>Méthodes de tri des fichiers</title>
+
+  <terms>
+    <item>
+      <title>Nom</title>
+      <p>Trie les fichiers dans l'ordre alphabétique en fonction de leur nom.</p>
+    </item>
+    <item>
+      <title>Taille</title>
+      <p>Trie les fichiers en fonction de leur taille (la place qu'ils occupent sur le disque). Par défaut, range du plus petit au plus gros.</p>
+    </item>
+    <item>
+      <title>Type</title>
+      <p>Trie alphabétiquement les fichiers en fonction de leur type. Les fichiers d'un même type sont regroupés et ensuite triés par nom.</p>
+    </item>
+    <item>
+      <title>Last Modified</title>
+      <p>Trie les fichiers en fonction de la date et l'heure de leur dernière modification. Par défaut, range du plus ancien au plus récent.</p>
+    </item>
+  </terms>
+
+</section>
+
+</page>

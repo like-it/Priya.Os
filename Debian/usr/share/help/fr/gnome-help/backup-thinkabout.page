@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Une liste des dossiers contenant des documents, des fichiers et des paramètres que vous aimeriez sans doute sauvegarder.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Où trouver les fichiers à sauvegarder ?</title>
+
+  <p>Déterminer quels fichiers sauvegarder et les localiser est l'étape la plus compliquée d'un processus de sauvegarde. Voici ci-dessous une liste non exhaustive des fichiers et paramètres méritant d'être sauvegardés ainsi que leur localisation.</p>
+
+<list>
+ <item>
+  <p>Fichiers personnels (documents, musique, photos et vidéos)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Ils sont généralement stockés dans votre dossier personnel (<file>/home/votre_nom</file>). Ils peuvent aussi se trouver dans des sous-dossiers comme « Bureau », « Documents », « Images », « Musique » et « Vidéos ».</p>
+  <p>Si votre média de sauvegarde possède suffisamment d'espace disponible (par exemple un disque dur externe), vous devez envisager de sauvegarder votre dossier personnel dans son intégralité. Pour savoir combien d'espace requiert votre dossier personnel, utilisez l'application <app>Analyseur d'utilisation des disques</app>.</p>
+ </item>
+
+ <item>
+  <p>Fichiers cachés</p>
+  <p>Tout fichier ou dossier dont le nom commence par un point (.) est masqué par défaut. Pour afficher les fichiers cachés, cliquez sur <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Options d'affichage</span></media></gui> dans la barre d'outils et choisissez <gui>Afficher les fichiers cachés</gui>, ou pressez le raccourci clavier <keyseq><key>Ctrl</key><key>H</key></keyseq>. Vous pouvez sauvegarder ces fichiers comme n'importe quel autre.</p>
+ </item>
+
+ <item>
+  <p>Réglages personnels (préférences du bureau, thèmes et paramètres des logiciels)</p>
+  <p>La plupart des applications stockent leurs paramètres dans des dossiers cachés à l'intérieur de votre dossier personnel (voyez ci-dessus les explications sur les fichiers cachés).</p>
+  <p>La plupart des paramètres de vos applications sont enregistrés dans les fichiers cachés <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file> et <file>.local</file> dans votre dossier personnel.</p>
+ </item>
+
+ <item>
+  <p>Préférences système</p>
+  <p>Les paramètres pour les parties importantes du système ne sont pas enregistrés dans votre dossier personnel. Ils peuvent être stockés à plusieurs endroits mais la plupart le sont dans le dossier <file>/etc</file>. En général, vous n'avez pas besoin de sauvegarder ces fichiers pour un ordinateur personnel. Par contre, si vous utilisez un serveur, vous devriez sauvegarder les fichiers correspondant aux services en cours d'utilisation.</p>
+ </item>
+</list>
+
+</page>

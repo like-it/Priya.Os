@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -e
+
+base6dir=/usr/lib/jvm/java-6-openjdk-i386
+base7dir=/usr/lib/jvm/java-7-openjdk-i386
+base8dir=/usr/lib/jvm/java-8-openjdk-i386
+tools='javaws itweb-settings policyeditor'
+
+if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
+    for i in $tools; do
+        update-alternatives --remove $i $base6dir/jre/bin/$i
+    done
+    for i in $tools; do
+        update-alternatives --remove $i $base7dir/jre/bin/$i
+    done
+    for i in $tools; do
+        update-alternatives --remove $i $base8dir/jre/bin/$i
+    done
+fi
+
+

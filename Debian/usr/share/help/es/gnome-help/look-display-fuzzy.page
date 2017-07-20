@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="look-display-fuzzy" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="hardware-problems-graphics"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>La resolución de la pantalla puede estar incorrectamente ajustada.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>¿Por qué parece que lo que hay en mi pantalla está difuso o pixelado?</title>
+
+<p>Esto puede suceder porque la resolución de pantalla que ha definido no es la más adecuado para su pantalla.</p>
+
+<p>Para solucionar este problema, abra la vista de <gui xref="shell-introduction#activities">actividades</gui> y empiece a escribir <gui>Pantallas</gui>. Pulse en <gui>Pantallas</gui> para abrir el panel. Pruebe algunas de las opciones de <gui>Resolución</gui> y establezca la que haga que se vea mejor la pantalla.</p>
+
+<section id="multihead">
+  <title>Cuando hay varias monitores conectadas</title>
+
+  <p>Si tiene dos pantallas conectadas al equipo (por ejemplo, un monitor normal y un proyector), estas podrían tener una resolución diferente. Sin embargo, la tarjeta gráfica del equipo solo puede visualizar la pantalla en una única resolución cada vez, por lo que al menos una de las pantallas podría verse borrosa.</p>
+
+  <p>Es posible hacer que las dos pantallas tengan distinta resolución, pero entonces no podrá visualizar lo mismo en ambas pantallas simultáneamente. De hecho, tendría dos pantallas independientes conectadas al mismo tiempo. Puede mover ventanas de una pantalla a la otra, pero no podrá mostrar la misma ventana en ambas pantallas a la vez.</p>
+
+  <p>Para configurar las pantallas, para que cada una tenga su propia resolución:</p>
+
+  <steps>
+    <item>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Pantallas</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse en <gui>Pantallas</gui> para abrir el panel.</p>
+    </item>
+    <item>
+      <p>Las pantallas deben aparece <gui>En espejo</gui>. Seleccione su pantalla principal.</p>
+    </item>
+    <item>
+      <p>Seleccione <gui>Primaria</gui> en la lista de configuraciones de pantalla y pulse <gui style="button">Aplicar</gui> para guardar.</p>
+    </item>
+    <item>
+      <p>Seleccione cada pantalla por turnos de la caja gris en la parte superior de la ventana de <gui>Monitores</gui>. Cambie la <gui>Resolución</gui> hasta que la pantalla se vea bien.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

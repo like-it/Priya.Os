@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Фил Булл (Phil Bull)</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Если настройки сети не назначаются автоматически, придётся задать их вручную.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Настройка параметров соединения вручную</title>
+
+  <p>Если ваша сеть не назначает автоматически параметры сетевого соединения для вашего компьютера, вам придётся ввести их самому. В этой теме предполагается, что вам известны правильные настройки. Если нет, нужно узнать их у администратора сети или взглянуть на настройки сетевого маршрутизатора или коммутатора.</p>
+
+  <steps>
+    <title>Чтобы настроить параметры сетевого соединения вручную:</title>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
+    </item>
+    <item>
+      <p>Нажмите <gui>Сеть</gui> чтобы открыть этот раздел настроек.</p>
+    </item>
+    <item>
+      <p>In the left pane, select the network connection that you want to set
+      up manually. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
+      <p>Убедитесь, что беспроводная карта включена или сетевой кабель подключён к компьютеру.</p>
+    </item>
+    <item>
+      <p>Нажмите <gui>IPv4</gui> и измените <gui>Адреса</gui> на <gui>Вручную</gui>.</p>
+    </item>
+    <item>
+      <p>Введите <gui>Адрес</gui> и <gui>Маршрут</gui>, а также соответствующую<gui>Сетевую маску</gui>.</p>
+      <p>Эти три адреса должны быть <em>IP-адресами</em>, то есть, они должны состоять из четырёх чисел, разделённых точками (например, 123.45.6.78).</p>
+    </item>
+    <item>
+      <p>In the <gui>DNS</gui> section, switch <gui>Automatic</gui> to
+      <gui>OFF</gui>. Enter the IP address of a DNS server you want to use.
+      Enter additional DNS server addresses using the <gui>+</gui> button.</p>
+    </item>
+    <item>
+      <p>In the <gui>Routes</gui> section, switch <gui>Automatic</gui> to
+      <gui>OFF</gui>. Enter the <gui>Address</gui>, <gui>Netmask</gui>,
+      <gui>Gateway</gui> and <gui>Metric</gui> for a route you want to use.
+      Enter additional routes using the <gui>+</gui> button.</p>
+    </item>
+    <item>
+      <p>Нажмите <gui>Применить</gui>. Если вы не подключены к сети, нажмите на статус системы в верхней панели и подключитесь. Чтобы проверить правильность настроек, попробуйте посетить веб-сайт или открыть общий ресурс сети.</p>
+    </item>
+  </steps>
+
+</page>

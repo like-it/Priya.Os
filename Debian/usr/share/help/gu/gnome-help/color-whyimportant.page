@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whyimportant" xml:lang="gu">
+
+  <info>
+    <link type="guide" xref="color"/>
+    <desc>રંગ સંચાલન એ રચનાકર્તા, ફોટોગ્રાફર અને લેખકો માટે મહત્વનું છે.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>રંગ સંચાલન મહત્વનું શા માટે છે?</title>
+  <p>
+    Color management is the process of capturing a color using an input
+    device, displaying it on a screen, and printing it all whilst managing
+    the exact colors and the range of colors on each medium.
+  </p>
+
+  <p>રંગ વ્યવસ્થાપનની જરૂરીયાત એ કદાચ શિયાળામાં ઝાંકળ (અથવા હિમ)વાળા દિવસે લેવાયેલા પક્ષીના ચિત્ર પરથી વધુ શ્રેષ્ઠ સમજાવવામાં આવે છે.</p>
+
+  <figure>
+    <desc>કૅમેરા દૃશ્ય-શોધક પર દેખાતું ઝાંકળવાળી દિવાલ પર બેસેલું પક્ષી</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-camera.png"/>
+  </figure>
+
+  <p>
+    Displays typically over-saturate the blue channel, making the images
+    look cold.
+  </p>
+
+  <figure>
+    <desc>આ એ છે કે વપરાશકર્તા એ ખાસ ધંધાકીય લેપટોપ સ્ક્રીન પર જુએ છે</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-display.png"/>
+  </figure>
+
+  <p>નોંધ કરો કે કે કેવી રીતે સફેદ રંગ એ 'કાગળના રંગનો સફેદ' નથી અને આંખમાનો કાળો રંગ એ હવે ગેરુ રંગનો છે.</p>
+
+  <figure>
+    <desc>આ એક વિશિષ્ટ ઇંજેક્ટ પ્રિન્ટર પર છાપવા જ્યારે વપરાશકર્તા જુએ છે</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-printer.png"/>
+  </figure>
+
+  <p>મૂળભૂત સમસ્યા અમારી પાસે એ છે કે દરેક ઉપકરણ વિવિધ રંગોની સીમાને સંચાલિત કરે છે. તેથી જ્યારે તમે ઇલેક્ટ્રીક બ્લુનો ફોટો લેવા સક્ષમ હોઇ શકો ત્યારે, મોટાભાગનાં પ્રિન્ટરો તેને ફરી પેદા કરવા દેતા નથી.</p>
+  <p>
+    Most image devices capture in RGB (Red, Green, Blue) and have
+    to convert to CMYK (Cyan, Magenta, Yellow, and Black) to print.
+    Another problem is that you can't have <em>white</em> ink, and so
+    the whiteness can only be as good as the paper color.
+  </p>
+
+  <p>
+    Another problem is units. Without specifying the scale on which a
+    color is measured, we don't know if 100% red is near infrared or
+    just the deepest red ink in the printer. What is 50% red on one
+    display is probably something like 62% on another display.
+    It's like telling a person that you've just driven 7 units of
+    distance, without the unit you don't know if that's 7 kilometers or
+    7 meters.
+  </p>
+
+  <p>
+    In color, we refer to the units as gamut. Gamut is essentially the
+    range of colors that can be reproduced.
+    A device like a DSLR camera might have a very large gamut, being able
+    to capture all the colors in a sunset, but a projector has a very
+    small gamut and all the colors are going to look "washed out".
+  </p>
+
+  <p>અમુક સ્થિતિઓમાં અમે માહિતીને બદલીને ઉપકરણ આઉટપુટને <em>યોગ્ય</em> કરી શકો છો કે અમે તેમાં મોકલ્યો છે, પરંતુ બીજી સ્થિતિઓમાં જ્યાં તે શક્ય નથી (તમે ઇલેક્ટ્રીક બ્લુને છાપી શકતા નથી) અમારે વપરાશકર્તાને બતાવવાની જરૂર છે કે ક્યું પરિણામ એ આનાં જેવુ લાગે છે.</p>
+
+  <p>
+    For photographs it makes sense to use the full tonal range of a color
+    device, to be able to make smooth changes in color.
+    For other graphics, you might want to match the color exactly, which
+    is important if you're trying to print a custom mug with the Red Hat
+    logo that <em>has</em> to be the exact Red Hat Red.
+  </p>
+
+</page>

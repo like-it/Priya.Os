@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="seealso" xref="net-findip"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Utiliser une adresse IP statique peut simplifier la gestion de certains services réseau à partir de votre ordinateur.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Création d'une connexion avec une adresse IP fixe</title>
+
+  <p>La plupart des réseaux attribuent automatiquement une <link xref="net-what-is-ip-address">adresse IP</link> et d'autres détails à votre ordinateur quand vous vous connectez au réseau. Ces détails sont susceptibles de changer de temps en temps mais il est possible que vous vouliez conserver une adresse IP fixe que vous connaissez (par exemple, pour identifier un serveur de fichiers).</p> <p>Pour attribuer à votre ordinateur une adresse IP fixe (statique) :</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Réseau</gui> pour ouvrir le panneau.</p>
+    </item>
+    <item>
+      <p>In the left pane, select the network connection that you want to give
+      a fixed address. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
+    </item>
+    <item>
+      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
+    </item>
+    <item>
+      <p>Saisissez l'<em>Adresse</em>, le <em>Masque réseau</em> et la <em>Passerelle</em> dans les champs adéquats. Votre choix définit le paramétrage de votre réseau. Vous devez respecter des règles spécifiques à chaque réseau pour choisir une adresse IP et un masque réseau valides.</p>
+    </item>
+    <item>
+      <p>Si nécessaire, saisissez l'adresse d'un <em>Serveur de nom de domaine (DNS)</em> dans la case <gui>Serveurs DNS</gui>. C'est l'adresse IP d'un serveur qui recherche les noms de domaine ; beaucoup de réseaux professionnels et de fournisseurs internet possèdent des serveurs DNS dédiés.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Appliquer</gui>. Le réseau doit maintenant avoir une adresse IP fixe.</p>
+    </item>
+  </steps>
+
+</page>

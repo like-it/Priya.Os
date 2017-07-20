@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="strategy" xml:lang="es">
+	<info>
+		<link type="guide" xref="index#tips"/>
+		<include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+		<desc>Estrategias para jugar Hitori.</desc>
+	
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2010</mal:years>
+    </mal:credit>
+  </info>
+	<title>Estrategias de juego</title>
+
+	<p>Hitori es bastante similar al Sudoku, de hecho usa parte de su deducción lógica para averiguar qué celdas se deben pintar. Una estrategia es usar <key>Mayús</key>-ratón para resaltar todos los números repetidos en cada <em>columna</em>, después usar <key>Ctrl</key>-ratón para resaltar todos los números repetidos en cada <em>fila</em>.</p>
+	<p>Una vez que esto está echo para el tablero entero, las celdas que se han resaltado de ambas maneras, son buenas candidatas para ser pintadas, aunque no siempre. Al pintar una celda, quite el resaltado del resto de celdas con el mismo número en la misma fila y columna, ya que esa celda se convierte en una buena forma de mantener el seguimiento de qué celdas todavía violan la <link xref="game">primera regla de Hitori</link>.</p>
+	<p>Tenga siempre en mente la segunda regla de Hitori, dos celdas adyacentes no pueden estar ambas pintadas. <app>Hitori</app> resaltará en rojo la celda más a la izquierda que viole la regla número dos. De igual forma, se resaltarán en rojo grupos de celtas que violen la tercera regla separando uno o más celdas sin pintar de las otras celdas sin pintar.</p>
+
+	<p>Si se queda parado en cualquier punto, elija <guiseq><gui style="menu">Juego</gui><gui style="menuitem">Sugerencias</gui></guiseq> para que <app>Hitori</app> marque una casilla que se debería pintar o limpiar y así acercarse a la solución.</p>
+</page>

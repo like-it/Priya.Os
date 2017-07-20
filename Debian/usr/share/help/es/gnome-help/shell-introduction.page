@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-introduction" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="shell-overview" group="#first"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-13" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Una introducción visual a su escritorio, la barra superior y la vista de <gui>Actividades</gui>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Introducción a GNOME</title>
+
+  <p>GNOME 3 cuenta con una interfaz de usuario completamente reinventada, diseñada para permanecer fuera de su vista, minimizar las distracciones, y ayudarle a trabajar. La primera vez que inicie una sesión, verá un escritorio vacío y la barra superior.</p>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar.png" width="600" if:test="!target:mobile">
+      <p>Barra superior de GNOME Shell</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar-classic.png" width="500" height="40" if:test="!target:mobile">
+      <p>Barra superior de GNOME Shell</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>La barra superior proporciona acceso a las ventanas y a sus aplicaciones, a su calendario y a sus citas, y a las <link xref="status-icons">propiedades del sistema</link> como el sonido, la red, y la energía. En el menú de estado en la barra superior, puede cambiar el volumen o el brillo de la pantalla, editar su conexión <gui>inalámbrica</gui>, comprobar el estado de la batería, salir o cambiar de usuario, y apagar el equipo.</p>
+
+<links type="section"/>
+
+<section id="activities">
+  <title>Vista de <gui>Actividades</gui></title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
+      <p>Botón «Actividades»</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-activities-classic.png" width="108" height="69" style="floatend floatright" if:test="!target:mobile">
+      <p>Botón «Actividades»</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p if:test="!platform:gnome-classic">Para acceder a sus ventanas y aplicaciones, pulse el botón <gui>Actividades</gui>, o simplemente lleve el puntero del ratón a la esquina superior izquierda activa. También puede pulsar la tecla <link xref="keyboard-key-super">Super</link> en su teclado. Puede ver sus ventanas y aplicaciones en la vista de actividades. También puede empezar a escribir para buscar aplicaciones, archivos o carpetas y en la web.</p>
+
+  <p if:test="platform:gnome-classic">Para acceder a sus ventanas y aplicaciones, pulse en el menú <gui xref="shell-introduction#activities">Aplicaciones</gui> en la parte superior izquierda de la pantalla y seleccione el elemento <gui>Vista de actividades</gui>. También puede pulsar la tecla <key xref="keyboard-key-super">Super</key> para ver sus ventanas y aplicaciones en la vista de <gui>Actividades</gui>. Simplemente empiece a escribir para ver sus aplicaciones, archivos y carpetas.</p>
+
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
+    <p>El tablero</p>
+  </media>
+
+  <p>A la izquierda de la vista, encontrará el <em>tablero</em>. El tablero le muestra sus aplicaciones favoritas y en ejecución. Pulse en cualquier icono en el tablero para abrir dicha aplicación. Si la aplicación se está ejecutando, se resaltará. Pulsar en el icono abrirá la ventana utilizada ​​más recientemente. También puede arrastrar el icono a la vista general o a cualquier área de trabajo de la derecha.</p>
+
+  <p>Pulsar con el botón derecho muestra un menú que le permite escoger cualquier ventana de una aplicación en ejecución, o abrir una ventana nueva. También puede pulsar en el icono mientras mantiene pulsada la tecla <key>Ctrl</key> para abrir una ventana nueva.</p>
+
+  <p>Cuando entre en la vista, inicialmente estará en la vista de las ventanas. Esto muestra las miniaturas de todas las ventanas en el área de trabajo actual.</p>
+
+  <p>Pulse en el botón de rejilla en la parte inferior del tablero para mostrar la vista de aplicaciones. Esto le muestra todas las aplicaciones instaladas en su equipo. Pulse en cualquier aplicación para ejecutarla, o arrastre una aplicación a la vista o sobre la miniatura del espacio de trabajo. También puede arrastrar una aplicación al tablero para que sea uno de los favoritos. Sus aplicaciones favoritas permanecerán en el tablero, incluso cuando no estén en funcionamiento, para que pueda acceder a ellas rápidamente.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-apps-open">Aprender más acerca de iniciar aplicaciones.</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-windows">Aprender más acerca de las ventanas y las áreas de trabajo.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="appmenu">
+  <title>Menú de aplicaciones</title>
+  <if:choose>
+    <if:when test="!platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-shell.png" width="250" style="floatend floatright" if:test="!target:mobile">
+        <p>Menú de aplicación de la <app>Terminal</app></p>
+      </media>
+      <p>El menú de aplicación, situado junto al botón de <gui>Actividades</gui>, muestra el nombre de la aplicación junto con su icono y proporciona un acceso rápido a las preferencias de la aplicación o a su ayuda. Los elementos disponibles en este menú varían en función de la aplicación.</p>
+    </if:when>
+    <if:when test="platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-classic.png" width="154" height="133" style="floatend floatright" if:test="!target:mobile">
+        <p>Menú de aplicación de la <app>Terminal</app></p>
+      </media>
+      <p>El menú de aplicación, situado junto a los menús de <gui>Actividades</gui> y <gui>Lugares</gui>, muestra el nombre de la aplicación junto con su icono y proporciona un acceso rápido a las preferencias de la aplicación o a su ayuda. Los elementos disponibles en este menú varían en función de la aplicación.</p>
+    </if:when>
+  </if:choose>
+
+</section>
+
+<section id="clock">
+  <title>Reloj, calendario y citas</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Reloj, calendario, citas y notificaciones</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-appts-classic.png" width="373" height="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Reloj, calendario y citas</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Pulse en el reloj en el centro de la barra superior para ver la fecha actual, un calendario mensual y una lista de sus próximas citas. También puede abrir el calendario pulsando <keyseq><key>Súper</key><key>M</key></keyseq>. Puede acceder a la configuración de fecha y hora y abrir totalmente su calendario de <app>Evolution</app> directamente desde el menú.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="clock-calendar">Aprender más sobre el calendario y las citas.</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-notifications">Aprender más acerca de la bandeja de mensajes</link>.</p>
+    </item>
+  </list>
+
+</section>
+
+
+<section id="yourname">
+  <title>Usted y su equipo</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-exit.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Menú del usuario</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-exit-classic.png" width="250" height="200" style="floatend floatright" if:test="!target:mobile">
+      <p>Menú del usuario</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Pulse en el menú del sistema en la esquina superior derecha de la pantalla para la configuración del sistema y su equipo.</p>
+
+<!-- Apparently not anymore. TODO: figure out how to update status.
+  <p>You can quickly set your availability directly from the menu. This will set
+  your status for your contacts to see in instant messaging applications such as
+  <app>Empathy</app>.</p>-->
+
+<!--
+<p>If you set yourself to Unavailable, you won't be bothered by message popups
+at the bottom of your screen. Messages will still be available in the message
+tray when you move your mouse to the bottom-right corner. But only urgent
+messages will be presented, such as when your battery is critically low.</p>
+
+<list style="compact">
+  <item><p><link xref="shell-session-status">Learn more about changing
+  your availability.</link></p></item>
+</list>
+-->
+
+  <p>Al dejar su equipo, puede bloquear la pantalla para evitar que otras personas lo usen. Puede rápidamente cambiar de usuario sin necesidad de iniciar la sesión completamente para dar a alguien acceso al equipo. O bien, puede suspender o apagar el equipo desde el menú.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-exit">Aprender más acerca de cambiar de usuario, cerrar la sesión y apagar el equipo.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="lockscreen">
+  <title>Bloquear la pantalla</title>
+
+  <media type="image" src="figures/shell-lock.png" width="250" style="floatend floatright" if:test="!target:mobile">
+    <p>Bloquear la pantalla</p>
+  </media>
+
+  <p>Cuando bloquea su pantalla o se bloquea automáticamente, se muestra la pantalla de bloqueo. Además de proteger su escritorio mientras está ausente de su equipo, la pantalla de bloqueo muestra la fecha y la hora. También muestra información sobre la batería y el estado de la red, y le permite controlar la reproducción de medios.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-lockscreen">Aprenda más sobre la pantalla de bloqueo.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="window-list">
+  <title>Lista de ventanas</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <p>GNOME implementa una manera de cambiar entre ventanas diferente a a la de la lista de ventanas visible en otros entornos de escritorio. Esto le permite centrarse en las tareas que tiene a mano sin distracciones.</p>
+    <list style="compact">
+      <item>
+        <p><link xref="shell-windows-switching">Aprender más sobre cambiar entre ventanas. </link></p>
+      </item>
+    </list>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-window-list-classic.png" width="500" height="34" style="floatend floatright" if:test="!target:mobile">
+      <p>Lista de ventanas</p>
+    </media>
+    <p>La lista de ventanas en la parte inferior de la pantalla proporciona acceso a todas sus ventanas y aplicaciones abiertas y le permite minimizarlas y restaurarlas rápidamente.</p>
+    <p>A la derecha de la lista de ventanas, GNOME muestra un identificador corto para el área de trabajo actual, como <gui>1</gui> para la primera área de trabajo. Además, el identificador también muestra el número total de áreas de trabajo disponibles. Para cambiar a un área de trabajo diferente, puede pulsar el en identificador y seleccionar el área de trabado que quiere usar en el menú.</p>
+    <p>Si una aplicación o un componente del sistema quieren llamar su atención, mostrará un icono azul en la parte derecha de la lista de ventanas. Al pulsar en el icono azul se mostrará la bandeja de mensajes.</p>
+  </if:when>
+</if:choose>
+
+</section>
+
+</page>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-userid-primary" xml:lang="fr">
+  <info>
+    <link type="guide" xref="pgp-userid#add-remove"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-06-27" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Modifier votre identifiant utilisateur par défaut</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Définition de la notion d'utilisateur primaire</title>
+
+  <p>Si vous avez plusieurs identifiants utilisateur, l'un d'eux est l'identifiant primaire. <gui>Mots de passe et Clés</gui> joint l'identifiant primaire par défaut aux informations de la clé, lors du chiffrement ou de la signature, à moins que vous ne choisissiez explicitement un autre identifiant.</p>
+
+  <steps>
+    <title>Changement d'identifiant utilisateur primaire dans une clé PGP :</title>
+    <item>
+      <p>Sélectionnez le trousseau <gui>Clés GnuPG</gui> dans le panneau de gauche.</p>
+    </item>
+    <item>
+      <p>Sélectionnez la <gui>Clé PGP personnelle</gui> dans la liste.</p>
+    </item>
+    <item>
+      <p>Faites un clic droit sur la clé choisie et sélectionnez <guiseq><gui>Propriétés</gui> <gui>Nom et signatures</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Sélectionnez le nouvel identifiant primaire dans la liste et cliquez sur <gui style="button">Primaire</gui>.</p>
+    </item>
+  </steps>
+
+  <p>L'identifiant utilisateur se déplace en haut de la liste <gui>Noms et signatures</gui> et devient ainsi l'identifiant utilisateur primaire.</p>
+
+  <note style="tip">
+    <p>Synchronisez vos clés après avoir changé d'identifiant utilisateur primaire afin de mettre à jour les copies locales de la clé.</p>
+  </note>
+
+</page>

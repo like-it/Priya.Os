@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect-reverse" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <link type="seealso" xref="connect"/>
+    <title type="sort">3</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Menyambung ke komputer yang bukan pada jaringan lokal Anda: melewati pembatasan firewall pada host remote.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014, 2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title><gui>Koneksi Balik…</gui></title>
+
+  <p>Koneksi balik biasanya dipakai untuk melewati pembatasan firewall tentang port yang terbuka. Suatu firewall biasanya memblokir port yang terbuka, tapi tak memblokir trafik keluar. Dalam suatu koneksi maju yang normal, sebuah klien menyambung ke suatu port terbuka pada server. Namun, dalam kasus koneksi balik, klien membuka suatu port untuk server menyambung.</p>
+
+  <section id="enable-reverse-connections">
+    <title>Memfungsikan koneksi balik</title>
+
+    <steps>
+      <item>
+        <p>Pilih <guiseq><gui style="menu">Remote</gui> <gui style="menuitem">Koneksi Balik…</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Contreng <gui>Fungsikan Koneksi Balik</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="accessing-behind-firewall">
+    <title>Mengakses komputer di belakang firewall</title>
+
+    <p>Mesin remote perlu menyambung ke mesin Anda memakai <em>alamat IP</em> dan nomor port Anda, yang bisa ditemukan dalam dialog <gui>Koneksi Balik…</gui>, di bawah <gui>Konektivitas</gui>.</p>
+
+    <note>
+      <p>Saat ini, <app>Vino</app>, server VNC GNOME, tidak mendukung koneksi balik yang juga dikenal sebagai "mode mendengar". Beberapa aplikasi lain, seperti <app>UltraVNC</app>, <app>RealVNC</app>, dan <app>TightVNC</app>, memiliki dukungan bagi koneksi balik.</p>
+    </note>
+
+    <p>Setelah komputer remote menyambung ke mesin Anda, <app>Penampil Desktop Jauh</app> akan menjalin koneksi balik.</p>
+
+    <p>Ketika menyambung ke mesin yang tidak berada pada jaringan lokal Anda, Anda perlu menyediakan nomor port dan alamat IP Anda yang nampak dari eksternal ke server remote.</p>
+
+  </section>
+
+</page>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="misc-key-fingerprint" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="concepts"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Otisk je jedinečné ID pro každý klíč, které se často používá k ověření vlastnictví klíče.</desc>
+  </info>
+
+  <title>Co je to otisk klíče?</title>
+
+  <p>Otisk klíče je jedinečná sekvence písmen a číslic použitá k identifikaci klíče. Obdobně jako u otisků prstů dvou různých lidí, i otisky dvou různých klíčů nebudou nikdy stejné. Otisk je nejlepší způsob jak identifikovat konkrétní klíč.</p>
+
+  <p>Klíč má několik vlastností, jako je název a e-mail vlastníka klíče, typ klíče, datum vypršení platnosti klíče atd. V případě, že hledáte veřejný klíč a najdete několik klíčů se stejnými vlastnostmi, je jedinou možností, jak hledaný klíč identifikovat, porovnat otisky s otiskem hledaného klíče.</p>
+
+  <p>Když se zkusíte přihlásit ke vzdálenému počítači pomocí <link xref="index#ssh-keys">SSH</link> je to právě otisk klíče, co se ověřuje. Když podepisujete pomocí klíče <link xref="index#pgp-keys">PGP</link>, měli byste vždy zkontrolovat otisk a ověřit totožnost majitele, abyste získali jistotu, že podepisujete správným klíčem.</p>
+
+<section id="fingerprint-ui">
+  <title>Otisky v <app>Heslech a klíčích</app></title>
+
+    <p>Na otisk klíče v aplikaci <app>Hesla a klíče</app> se můžete podívat při kontrole vlastností klíče.</p>
+
+    <steps>
+      <title>Když chcete zkontrolovat otisk klíče:</title>
+        <item>
+	  <p>V levém postranním panelu vyberte <gui>Klíče GnuPG</gui>.</p>
+        </item>
+        <item>
+          <p>V seznamu vyberte klíč PGP.</p>
+        </item>
+        <item>
+          <p>Klikněte pravým tlačítkem na klíč a vyberte <gui style="menuitem">Vlastnosti</gui>.</p>
+	</item>
+        <item>
+          <p>V novém dialogovém okně vyberte kartu <gui>Podrobnosti</gui>.</p>
+        </item>
+        <item>
+          <p>Otisk klíče můžete vidět po levé straně.</p>
+        </item>
+    </steps>
+
+  <!-- stefw: Suggest documenting that the key fingerprint is the
+  only way to uniquely tell the difference between two keys.
+
+  Two keys may have the same name and description. The label or name
+  is no guarantee that the key represents the person described in the label.
+
+  The way to guarantee that you have a given key is to compare the
+  fingerprint with the person who owns the key.
+
+  For SSH keys this is done when you initially connect to a server.
+
+  For PGP keys this is usually done through the web of trust. Where someone
+  you know signs a key, and vouches that the key with a given fingerprint
+  is owned by the person noted on the label.
+  -->
+</section>
+
+</page>

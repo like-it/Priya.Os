@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <title type="sort">1</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Conectarse a otro equipo en su red local.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Establecer una conexión</title>
+
+  <p>Puede conectarse con otros equipos en su red local usando el <app>Visor de escritorios remotos</app>.</p>
+
+  <steps>
+    <item>
+      <p>Elija <guiseq><gui style="menu">Remoto</gui> <gui style="menuitem">Conectar</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Elija el <gui>Protocolo</gui> y el <gui>Equipo</gui>. para la conexión.</p>
+      <note>
+        <p>Algunos protocolos le permiten ver todos los equipos disponibles en su red local pulsando el botón <gui style="button">Buscar</gui>. No se mostrará este botón si no tiene soporte <app>Avahi</app>.</p>
+      </note>
+    </item>
+    <item>
+      <p>Seleccione las opciones que quiere tener activadas cuando se realiza la conexión. Las opciones variarán dependiendo del protocolo que use.</p>
+    </item>
+    <item>
+      <p>Pulse el botón <gui style="button">Conectar</gui>.</p>
+      <p>En este punto, el escritorio remoto puede necesitar confirmar la conexión. Si es el caso, el visor permanecerá en negro hasta que se confirme la conexión.</p>
+      <note>
+        <p>Algunos equipos requieren una conexión segura: se mostrará un diálogo de autenticación solicitando las credenciales. El tipo de credenciales depende del equipo remoto, pueden ser usuario y contraseña. Si selecciona <gui>Recordar estas credenciales</gui> el <app>Visor de escritorios remotos</app> almacenará la información usando el <app>Depósito de claves de GNOME</app>.</p>
+      </note>
+    </item>
+  </steps>
+
+  <p>Si se ha usado anteriormente la conexión, entonces también puede acceder a ella a través de <guiseq><gui style="menu">Remoto</gui> <gui style="menuitem">Conexiones recientes</gui></guiseq>.</p>
+
+  <p>Para cerrar una conexión, elija <guiseq><gui style="menu">Remoto</gui> <gui style="menuitem">Cerrar</gui></guiseq> o pulse el botón <gui style="button">Cerrar</gui>.</p>
+
+</page>

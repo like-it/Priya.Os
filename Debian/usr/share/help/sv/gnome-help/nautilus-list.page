@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-list" xml:lang="sv">
+
+  <info>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="nautilus-prefs" group="nautilus-list"/>
+
+    <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Styr vilken information som visas i kolumnerna i listvyn.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Kolumninställningar för listvy i Filer</title>
+
+  <p>Det finns elva kolumner med information som du kan visa i listvyn i <gui>Filer</gui>. Klicka på <gui>Filer</gui> i systemraden, välj <gui>Inställningar</gui> och välj fliken <gui>Listkolumner</gui> för att välja vilka kolumner som kommer att vara synliga.</p>
+
+  <note style="tip">
+    <p>Använd knapparna <gui>Flytta upp</gui> och <gui>Flytta ned</gui> för att välja ordningen som de valda kolumnerna kommer att visas. Klicka på <gui>Återställ till standardalternativ</gui> för att ångra ändringar och återgå till standardkolumnerna.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Namn</gui></title>
+      <p>Namnet på mappar och filer.</p>
+      <note style="tip">
+        <p><gui>Namn</gui>-kolumnen kan inte gömmas.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Storlek</gui></title>
+      <p>Storleken för en mapp anges som antalet av objekt som finns i mappen. Storleken för en fil anges som byte, KB, eller MB.</p>
+    </item>
+    <item>
+      <title><gui>Typ</gui></title>
+      <p>Visas som mapp, eller filtyp som PDF-dokument, JPEG-bild, MP3-ljud, med mera.</p>
+    </item>
+    <item>
+      <title><gui>Ändrad</gui></title>
+      <p>Visar datum då filen senast ändrades.</p>
+    </item>
+    <item>
+      <title><gui>Ägare</gui></title>
+      <p>Namnet på användaren som äger filen eller mappen.</p>
+    </item>
+    <item>
+      <title><gui>Grupp</gui></title>
+      <p>Gruppen som äger filen. Varje användare är normalt i sin egen grupp, men det är möjligt att ha många användare i en grupp. En avdelning kan till exempel ha en egen grupp i en arbetsmiljö.</p>
+    </item>
+    <item>
+      <title><gui>Rättigheter</gui></title>
+      <p>Visar filrättigheterna. Till exempel <gui>drwxrw-r--</gui></p>
+      <list>
+        <item>
+          <p>Det första tecknet är filtypen. <gui>-</gui> innebär en normal fil och <gui>d</gui> innebär en mapp. I ovanliga fall kan andra tecken också visas.</p>
+        </item>
+        <item>
+          <p>Nästa tre tecken <gui>rwx</gui> anger rättigheter för användaren som äger filen.</p>
+        </item>
+        <item>
+          <p>Nästa tre <gui>rw-</gui> anger rättigheter för alla medlemmar i gruppen som äger filen.</p>
+        </item>
+        <item>
+          <p>De sista tre tecknen i kolumnen <gui>r--</gui> ange rättigheter för alla andra användare på systemet.</p>
+        </item>
+      </list>
+      <p>Varje rättighet har följande innebörd:</p>
+      <list>
+        <item>
+          <p><gui>r</gui>: läsbar, innebär att du kan öppna filen eller mappen</p>
+        </item>
+        <item>
+          <p><gui>w</gui>: skrivbar, innebär att du kan spara ändringar till den</p>
+        </item>
+        <item>
+          <p><gui>x</gui>: körbar, innebär att du kan köra den om det är program- eller skriptfil eller så kan du komma åt undermappar om det är en mapp</p>
+        </item>
+        <item>
+          <p><gui>-</gui>: rättighet inte inställd</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title><gui>MIME-typ</gui></title>
+      <p>Visar objektets MIME-typ.</p>
+    </item>
+    <item>
+      <title><gui>Plats</gui></title>
+      <p>Sökvägen till platsen för filen.</p>
+    </item>
+    <item>
+      <title><gui>Ändrad – Tid</gui></title>
+      <p>Visar tid och datum då filen senast ändrades.</p>
+    </item>
+    <item>
+      <title><gui>Åtkommen</gui></title>
+      <p>Visar tid eller datum då filen senast ändrades.</p>
+    </item>
+  </terms>
+
+</page>

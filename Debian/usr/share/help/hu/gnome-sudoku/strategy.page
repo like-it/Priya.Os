@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="strategy" xml:lang="hu">
+	<info>
+          <revision version="3.4" date="2012-03-08" status="final"/>
+	  <link type="guide" xref="index#play"/>
+	  <credit type="author copyright">
+	    <name>Radoslav Asparuhov</name>
+	    <email>rasparuhov@gmail.com</email>
+	  <years>2011</years>
+	  </credit>
+	  <credit type="editor">
+	    <name>Tiffany Antopolski</name>
+	    <email>tiffany.antopolski@gmail.com</email>
+	  </credit>
+	  <license>
+		<p>Creative Commons Share Alike 3.0</p>
+	  </license>
+	
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Stratégia</title>
+        <p>Csak egy lehetséges érték van minden cellához a Sudoku feladványokban. A következő stratégiák segíteni fognak Önnek szisztematikusan felfedezni minden cella megoldását.</p>
+ <section id="strategy1">
+	<title>1. stratégia:</title>
+	  <steps>
+	    <item><p>Válassza ki azt a sort, amelyben a legtöbb szám található.</p>
+                  <note><p>Valójában a legtöbb számot tartalmazó sort vagy oszlopot kellene kiválasztani. Az egyszerűség kedvéért ezeket az utasításokat úgy írták meg, mintha egy sor tartalmazná a legtöbb számot.</p></note>
+            </item>
+	    <item><p>Határozza meg, hogy mely számok hiányoznak a sorból.</p></item>
+	    <item><p>Válasszon egy üres cellát a sorból. Határozza meg, hogy mely hiányzó számok találhatók meg abban az oszlopban vagy abban a 3x3-as dobozban.</p></item>
+	    <item><p>Használja a <link xref="notes">jegyzeteket</link>, írja be a felső mezőbe azokat a hiányzó számokat, amelyek nincsenek az oszlopban vagy a 3x3-as dobozban. Ezek a számok a cella lehetséges megoldásai.</p></item>
+	    <item><p>Menjen a kiválasztott sor következő üres cellájára, és ismételje a fenti módszert. Ismételje ezt meg minden sor és oszlop esetén a legtöbb számmal rendelkezőktől kezdve a legkevesebbet tartalmazókig. Mindig figyelmesen keresse a számokat, és ne felejtse el a 3x3-as dobozokat.</p></item>
+	   </steps>
+            <note><p>Ez a stratégia segíteni fog megtalálni azokat a cellákat, amelyekhez csak egy lehetséges választása van. Ha megtalálta, kitöltheti a cellákat a megoldással, és ismételheti a stratégiát újra egészen addig, amíg a teljes feladványt meg nem oldja.</p></note>
+<figure>
+  <desc>Példa az 1. stratégia használatára.</desc>
+  <media type="image" mime="image/png" src="figures/strategy1.png" width="400" its:translate="no"/>
+</figure>
+
+</section>
+<section id="strategy2">
+
+	<title>2. stratégia:</title>
+	  <steps>
+	    <item><p>Keresse meg a leggyakrabban előforduló számot.</p></item>
+	    <item><p>Most nézzen rá a 3x3-as dobozok bal függőleges oszlopára, és keresse meg azokat az oszlopokat, amelyekben ez a szám előfordul.</p></item>
+  	    <item><p>Ebben a dobozoszlopban keressen egy 3x3-as dobozt, amelynek egyik cellája sem tartalmazza ezt a számot. Használja a <link xref="notes">jegyzeteket</link>, írja be ezt a számot az oszlop minden üres cellájába, amelyben ez a szám nem szerepel. Ha a szám szerepel ezen cellák egyikének sorában, akkor ne írja be annak a cellának a jegyzetébe.</p></item>
+	    <item><p>Ismételje az utolsó két lépést a középső és a jobb függőleges dobozoszlopoknál is.</p></item>
+            <item><p>Keresse meg a következő legtöbbször előforduló számot, és ezt ismételje addig, amíg nem végzett mind a 9 számmal.</p></item>
+	  </steps>
+            <note><p>Ez a stratégia segíteni fog megtalálni azokat a cellákat, amelyekhez csak egy lehetséges választása van. Ha megtalálta, kitöltheti a cellákat a megoldással, és ismételheti a stratégiát újra egészen addig, amíg a teljes feladványt meg nem oldja.</p></note>
+<figure>
+  <desc>Példa a 2. stratégia használatára.</desc>
+  <media type="image" mime="image/png" src="figures/strategy2.png" width="400" its:translate="no"/>
+</figure>
+
+	   <note><p>Ha a fenti stratégiák egyike sem oldja meg a feladványt önállóan, váltogathatja a stratégiákat. A stratégiákat kombinálhatja is.</p></note>
+</section>
+</page>

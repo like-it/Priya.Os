@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" version="1.0 ui/1.0" id="shell-keyboard-shortcuts" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="guide" xref="keyboard"/>
+    <link type="guide" xref="shell-overview#apps"/>
+    <link type="seealso" xref="keyboard-key-super"/>
+
+    <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Moverse por el escritorio usando el teclado.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Atajos de teclado útiles</title>
+
+<p>Esta página le proporciona una vista general de los atajos de telcado que puede usar en su escritorio y aplicaciones de una forma eficiente. Si no puede usar un ratón o un dispositivo apuntador, consulte la <link xref="keyboard-nav"/> para obtener más información acerca de navegar por los interfaces sólo con el teclado.</p>
+
+<table rules="rows" frame="top bottom" ui:expanded="true">
+<title>Primeros pasos en el escritorio</title>
+  <tr xml:id="alt-f1">
+    <td><p><keyseq><key>Alt</key><key>F1</key></keyseq> o la tecla <key xref="keyboard-key-super">Super</key></p></td>
+    <td><p>Cambia entre la vista general de <gui>Actividades</gui> y el escritorio. En la vista general, comience a escribir para buscar instantáneamente sus aplicaciones, contactos y documentos.</p></td>
+  </tr>
+  <tr xml:id="alt-f2">
+    <td><p><keyseq><key>Alt</key><key>F2</key></keyseq></p></td>
+    <td><p>Ventana de comandos emergente (para ejecutar comandos rápidamente)</p></td>
+  </tr>
+  <tr xml:id="super-tab">
+    <td><p><keyseq><key>Super</key><key>Tab</key></keyseq></p></td>
+    <td><p><link xref="shell-windows-switching">Cambio rápido entre ventanas.</link> Mantenga pulsada <key>Mayús</key> invertir el orden.</p></td>
+  </tr>
+  <tr xml:id="super-tick">
+    <td><p><keyseq><key>Super</key><key>`</key></keyseq></p></td>
+    <td>
+      <p>Cambia entre ventanas de la misma aplicación, o desde la aplicación seleccionada después de <keyseq><key>Super</key><key>Tab</key></keyseq>.</p>
+      <p>Este atajo de teclado usa <key>`</key> en teclados estadounidenses, donde la tecla <key>`</key> está encima de la tecla <key>Tab</key>. En cualquier otro teclado, el atajo se usa con la tecla <key>Super</key> y cualquiera que sea la tecla encima de la tecla <key>Tab</key>.</p>
+    </td>
+  </tr>
+  <tr xml:id="ctrl-alt-tab">
+    <!-- To be updated to <key>Tab</key> in the future. -->
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq></p></td>
+    <td>
+      <p>Pone el foco del teclado en la barra superior. En la vista de <gui>Actividades</gui>, cambia el foco del teclado entre la barra superior, el tablero, la vista previa de ventanas, la lista de aplicaciones y el campo de búsqueda. Use las teclas de flechas para navegar.</p>
+    </td>
+  </tr>
+  <tr xml:id="super-a">
+    <td><p><keyseq><key>Super</key><key>A</key></keyseq></p></td>
+    <td><p>Mostrar la lista de aplicaciones.</p></td>
+  </tr>
+  <tr xml:id="super-updown">
+    <td><p><keyseq><key>Super</key><key>Re. Pág</key></keyseq> y <keyseq><key>Super</key><key>Av. Pág</key></keyseq></p></td>
+    <td><p><link xref="shell-workspaces-switch">Cambiar entre áreas de trabajo</link>.</p></td>
+  </tr>
+  <tr xml:id="super-shift-updown">
+    <td><p><keyseq><key>Super</key><key>Mayús</key><key>Re. Pág</key></keyseq> y <keyseq><key>Super</key><key>Mayús</key><key>Av. Pág</key></keyseq></p></td>
+    <td><p><link xref="shell-workspaces-movewindow">Mover la ventana actual a un área de trabajo diferente</link>.</p></td>
+  </tr>
+  <tr xml:id="super-shift-left">
+    <td><p><keyseq><key>Super</key><key>Mayús</key><key>←</key></keyseq></p></td>
+    <td><p>Mover la ventana una pantalla a la izquierda.</p></td>
+  </tr>
+  <tr xml:id="super-shift-right">
+    <td><p><keyseq><key>Super</key><key>Mayús</key><key>→</key></keyseq></p></td>
+    <td><p>Mover la ventana una pantalla a la derecha.</p></td>
+  </tr>
+  <tr xml:id="ctrl-alt-Del">
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Supr</key></keyseq></p></td>
+    <td><p><link xref="shell-exit">Apagar</link>.</p></td>
+  </tr>
+  <tr xml:id="ctrl-alt-l">
+    <td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
+    <td><p><link xref="shell-exit#lock-screen">Bloquear la pantalla</link>.</p></td>
+  </tr>
+  <tr xml:id="super-m">
+    <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
+    <td><p>Abra la <link xref="shell-notifications#messagetray">bandeja de mensajes</link>. Pulse <keyseq><key>Super</key><key>M</key></keyseq> otra vez o <key>Esc</key> para cerrarla.</p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>Combinaciones de teclas de edición más comunes</title>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td>
+    <td><p>Seleccionar todo el texto o todos los elementos en una lista.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>X</key></keyseq></p></td>
+    <td><p>Cortar (quitar) el texto o los elementos seleccionados y colocarlo en el escritorio.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>C</key></keyseq></p></td>
+    <td><p>Copiar el texto o los elementos seleccionados al portapapeles.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>V</key></keyseq></p></td>
+    <td><p>Pegar los contenidos del portapapeles.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Z</key></keyseq></p></td>
+    <td><p>Deshacer la última acción.</p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>Capturar la pantalla</title>
+  <tr>
+    <td><p><key>Impr Pant</key></p></td>
+    <td><p><link xref="screen-shot-record#screenshot">Tomar una captura de pantalla</link>.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Alt</key><key>Impr Pant</key></keyseq></p></td>
+    <td><p><link xref="screen-shot-record#screenshot">Tomar una captura de pantalla de una ventana</link>.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Mayús</key><key>Impr Pant</key></keyseq></p></td>
+    <td><p><link xref="screen-shot-record#screenshot">Tomar una captura de pantalla de un área de la pantalla</link>. El puntero se convierte en una cruz. Pulse y arrastre para seleccionar un área.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Mayús</key><key>R</key></keyseq></p></td>
+    <td><p><link xref="screen-shot-record#screencast">Iniciar y finalizar una grabación de vídeo</link>.</p></td>
+  </tr>
+</table>
+
+</page>

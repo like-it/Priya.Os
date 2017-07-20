@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
+
+    <credit type="author">
+      <name>GNOME ドキュメンテーションプロジェクト</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>コンピューターをサスペンドしたあと復帰しないのはなぜですか?</title>
+
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
+
+<section id="resume">
+  <title>コンピューターをサスペンドしたあと復帰できない</title>
+  <p>コンピューターをサスペンドしたあとキーボードやマウスを操作すると、通常ではコンピューターが再開してパスワード入力画面が表示されます。コンピューターが立ち上がらない場合は、電源ボタンを押してみてください (長押しせず、短く一度だけ押すこと)。</p>
+  <p>状態が変わらない場合は、モニターがオンになっていることを確認してからもう一度何かキーを押してみてください。</p>
+  <p>最後の手段として、電源ボタンを 5 秒から 10 秒ほど長押ししてコンピューターの電源をオフにします。ただし、これを行うと保存していない作業は全て失われることになります。これでコンピューターの電源を再びオンにすることができるでしょう。</p>
+  <p>コンピューターをサスペンドする度にこの問題が発生する場合は、お使いのハードウェアではサスペンド機能が正常に動作できない可能性があります。</p>
+  <note style="warning">
+    <p>電源を失い、予備の供給電源 (動作するバッテリーなど) を得られない場合、コンピューターはオフになります。</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>コンピューターを再開しても、無線接続 (または他のハードウェア) が動作しません</title>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
+  <p>デバイスに電源スイッチがある場合は、一度オフにしてからオンにし直してみます。ほとんどの場合、デバイスが正常に作動し始めるようになります。デバイスを USB ケーブルなどで接続している場合は、一度デバイスを取り外してから挿し直してみてください。</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
+</section>
+
+</page>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-expired" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-07-03" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Μπορώ να το χρησιμοποιώ ακόμα; Μπορούν οι ημερομηνίες λήξης να αλλαχθούν;</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα του GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Τι συμβαίνει αν λήξει το κλειδί μου;</title>
+
+  <p>Όταν το κλειδί σας λήξει, γίνεται άκυρο. Αυτό σημαίνει:</p>
+
+  <list>
+    <item>
+      <p>Δεν μπορεί πια να χρησιμοποιηθεί για κρυπτογράφηση και αποκρυπτογράφηση μηνυμάτων.</p>
+    </item>
+    <item>
+      <p>Δεν μπορεί να υπογράψει άλλα κλειδιά ή να δεχτεί υπογραφές από άλλα κλειδιά.</p>
+    </item>
+  </list>
+
+  <p>Ανάλογα με το πόσο θέλετε να είναι έγκυρο το κλειδί σας, μπορείτε να <link xref="pgp-create#advanced">ορίσετε μια ημερομηνία λήξης</link> για αυτό. Από προεπιλογή, το <app>Κωδικοί πρόσβασης και κλειδιά</app> ορίζει όλα τα κλειδιά να είναι έγκυρα για πάντα. Δηλαδή, τα κλειδιά δεν λήγουν ποτέ.</p>
+
+  <p>Η ημερομηνία λήξης ενός κλειδιού μπορεί να <link xref="pgp-expiration-change">αλλάξει</link> οποτεδήποτε, ακόμα και μετά τη λήξη του κλειδιού. Όμως, αν θέλετε να σταματήσετε τη χρήση του ληγμένου κλειδιού, θα πρέπει να το <link xref="pgp-delete">διαγράψετε</link> ή να το <link xref="subkeys-revoke">ανακαλέσετε</link>.</p>
+
+  <note style="info">
+    <p>Αν έχετε κρυπτογραφημένα μηνύματα με ένα ληγμένο κλειδί, πρέπει να αλλάξετε την ημερομηνία λήξης του κλειδιού για να αποκρυπτογραφήσετε τέτοια μηνύματα πριν την διαγραφή τους ή την ανάκλησή τους.</p>
+  </note>
+
+</page>

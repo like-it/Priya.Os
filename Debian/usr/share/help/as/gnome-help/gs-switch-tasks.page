@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-switch-tasks" version="1.0 if/1.0" xml:lang="as">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>ইয়াকুব স্টাইনাৰ</name>
+    </credit>
+    <credit type="author">
+      <name>পিটাৰ ক'ভাৰ</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="videos"/>
+    <title role="trail" type="link">কাৰ্য্য পৰিবৰ্তন কৰক</title>
+    <link type="seealso" xref="shell-windows-switching"/>
+    <title role="seealso" type="link">কাৰ্য্য পৰিবৰ্তন কৰিবলৈ এটা শিক্ষা</title>
+    <link type="next" xref="gs-respond-messages"/>
+  </info>
+
+  <title>কাৰ্য্য পৰিবৰ্তন কৰক</title>
+
+  <ui:overlay width="812" height="452">
+  <media type="video" its:translate="no" src="figures/gnome-task-switching.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-task-switching.svg"/>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>কাৰ্য্য পৰিবৰ্তন কৰা হৈছে</tt:p>
+         </tt:div>
+         <if:if test="!platform:gnome-classic">
+         <tt:div begin="5s" end="8s">
+           <tt:p>আপোনাৰ মাউছ পোইন্টাৰক পৰ্দাৰ ওপৰ বাঁওফালৰ চুকত <gui>কাৰ্য্যসমূহ</gui> লৈ নিয়ক।</tt:p>
+           </tt:div>
+         </if:if>
+         <tt:div begin="9s" end="12s">
+           <tt:p>এটা কাৰ্য্যলৈ যাবলে এটা উইন্ডোত ক্লিক কৰক।</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="14s">
+           <tt:p>এটা উইন্ডোক পৰ্দাৰ বাওঁফালে ডাঙৰ কৰিবলে, উইন্ডোৰ শীৰ্ষকবাৰ ধৰি তাক বাঁওফালে টানক।</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="16s">
+           <tt:p>যেতিয়া পৰ্দাৰ আধা উজ্জ্বল হয়, উইন্ডো এৰিব।</tt:p>
+         </tt:div>
+         <tt:div begin="16s" end="18">
+           <tt:p>এটা উইন্ডোক সোঁফালে ডাঙৰ কৰিবলে, উইন্ডোৰ শীৰ্ষকবাৰ ধৰি তাক সোঁফালে টানক।</tt:p>
+         </tt:div>
+         <tt:div begin="18s" end="20s">
+           <tt:p>যেতিয়া পৰ্দাৰ আধা উজ্জ্বল হয়, উইন্ডো এৰিব।</tt:p>
+         </tt:div>
+         <tt:div begin="23s" end="27s">
+           <tt:p><gui>উইন্ডো পৰিবৰ্তক</gui> দেখুৱাবলে <keyseq> <key href="help:gnome-help/keyboard-key-super">Super</key><key> Tab</key></keyseq> টিপক।</tt:p>
+         </tt:div>
+         <tt:div begin="27s" end="29s">
+           <tt:p>পৰৱৰ্তী উজ্জ্বল উইন্ডো বাছিবলে <key href="help:gnome-help/keyboard-key-super">Super </key> এৰক।</tt:p>
+         </tt:div>
+         <tt:div begin="29s" end="32s">
+           <tt:p>খোলা উইন্ডোসমূহৰে গমন কৰিবলে, <key href="help:gnome-help/keyboard-key-super">Super</key> ধৰি ৰাখক, আৰু <key>Tab</key> টিপক।</tt:p>
+         </tt:div>
+         <tt:div begin="35s" end="37s">
+           <tt:p><gui>কাৰ্য্যসমূহ অভাৰভিউ</gui> দেখুৱাবলে <key href="help:gnome-help/keyboard-key-super">Super </key> কি' টিপক।</tt:p>
+         </tt:div>
+         <tt:div begin="37s" end="40s">
+           <tt:p>আপুনি যি এপ্লিকেচনলৈ যাব বিচাৰে তাৰ নাম টাইপ কৰা আৰম্ভ কৰক।</tt:p>
+         </tt:div>
+         <tt:div begin="40s" end="43s">
+           <tt:p>যেতিয়া এপ্লিকেচন আপোনাৰ সন্ধানৰ প্ৰথম ফলাফল হিচাপে উপস্থিত হয়, তালৈ যাবলে <key> Enter</key> টিপক।</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+  <section id="switch-tasks-overview">
+    <title>কাৰ্য্য পৰিবৰ্তন কৰক</title>
+
+<if:choose>
+<if:when test="!platform:gnome-classic">
+
+  <steps>
+    <item><p><gui>কাৰ্য্যসমূহ অভাৰভিউ</gui> দেখুৱাবলৈ আপোনাৰ মাউছ পোইন্টাৰক পৰ্দাৰ ওপৰ বাঁওফালৰ চুকত <gui>কাৰ্য্যসমূহ</gui> লৈ নিয়ক য'ত আপুনি বৰ্তমানে চলি থকা কাৰ্য্যসমূহ সৰু উইন্ডো ৰূপে দেখা পাব।</p></item>
+     <item><p>এটা কাৰ্য্যলৈ যাবলে এটা উইন্ডোত ক্লিক কৰক।</p></item>
+  </steps>
+
+</if:when>
+<if:when test="platform:gnome-classic">
+
+  <steps>
+    <item><p>আপুনি পৰ্দাৰ তলত <gui>উইন্ডো তালিকা</gui> ব্যৱহাৰ কৰি কাৰ্য্যসমূহ পৰিবৰ্তন কৰিব পাৰিব। খোলা কাৰ্য্যসমূহ <gui>উইন্ডো তালিকা</gui> ত বুটাম হিচাপে উপস্থিত হয়।</p></item>
+     <item><p>এটা কাৰ্যলৈ যাবলৈ <gui>উইন্ডো তালিকা</gui> ত এটা বুটাম ক্লিক কৰক।</p></item>
+  </steps>
+
+</if:when>
+</if:choose>
+
+  </section>
+
+  <section id="switching-tasks-tiling">
+    <title>টাইল উইন্ডোসমূহ</title>
+    
+    <steps>
+      <item><p>এটা উইন্ডোক পৰ্দাৰ এফালে ডাঙৰ কৰিবলে, উইন্ডোৰ শীৰ্ষকবাৰ ধৰি তাক পৰ্দাৰ বাঁওফালে অথবা সোঁফালে টানক।</p></item>
+      <item><p>যেতিয়া পৰ্দাৰ আধা উজ্জ্বল হয়, উইন্ডোক পৰ্দাৰ নিৰ্বাচিত অংশত ডাঙৰ হ'বলৈ এৰি দিব।</p></item>
+      <item><p>দুটা উইন্ডোক ওচৰা-ওচৰি ডাঙৰ কৰিবলৈ, দ্বিতীয় উইন্ডোৰ শীৰ্ষকবাৰ ধৰি তাক পৰ্দাৰ বিপৰিত দিশত টানক।</p></item>
+       <item><p>যেতিয়া পৰ্দাৰ আধা উজ্জ্বল হয়, উইন্ডোক পৰ্দাৰ বিপৰিত অংশত ডাঙৰ হ'বলৈ এৰি দিব।</p></item>
+    </steps>
+    
+  </section>
+  
+  <section id="switch-tasks-windows">
+    <title>উইন্ডোসমূহৰ মাজত চুইচ কৰক</title>
+    
+  <steps>
+   <item><p><gui>উইন্ডো পৰিবৰ্তক</gui> দেখুৱাবলে <keyseq> <key href="help:gnome-help/keyboard-key-super">Super</key><key> Tab</key></keyseq> টিপক।, যি বৰ্তমানে খোলা উইন্ডোসমূহ দেখুৱায়।</p></item>
+   <item><p><gui>উইন্ডো পৰিবৰ্তক</gui> ত পৰৱৰ্তী উজ্জ্বল উইন্ডো বাছিবলে <key href="help:gnome-help/keyboard-key-super">Super </key> এৰক।</p>
+   </item>
+   <item><p>খোলা উইন্ডোসমূহৰে গমন কৰিবলে, <key href="help:gnome-help/keyboard-key-super">Super</key> ধৰি ৰাখক, আৰু <key>Tab</key> টিপক।</p></item>
+  </steps>
+
+  </section>
+
+  <section id="switch-tasks-search">
+    <title>এপ্লিকেচনসমুহ পৰিবৰ্তন কৰিবলৈ সন্ধান ব্যৱহাৰ কৰক</title>
+    
+    <steps>
+      <item><p><gui>কাৰ্য্যসমূহ অভাৰভিউ</gui> দেখুৱাবলে <key href="help:gnome-help/keyboard-key-super">Super</key> কি' টিপক।</p></item>
+      <item><p>আপুনি যি এপ্লিকেচনলৈ যাব বিচাৰে তাৰ নাম টাইপ কৰা আৰম্ভ কৰক। আপুনি টাইপ কৰাৰ সৈতে মিল খোৱা এপ্লিকেচনসমূহ আপুনি টাইপ কৰাৰ সৈতে উপস্থিত হ'ব।</p></item>
+      <item><p>যেতিয়া আপুনি যাব বিচৰা এপ্লিকেচন আপোনাৰ সন্ধানৰ প্ৰথম ফলাফল হিচাপে উপস্থিত হয়, তালৈ যাবলে <key> Enter</key> টিপক।</p></item>
+      
+    </steps>
+    
+  </section>
+
+</page>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="gu">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>તમારાં ફાયરવોલ સાથે કાર્યક્રમ માટે નેટવર્ક પ્રવેશને સક્રિય/નિષ્ક્રિય કરવા માટે બરાબર નેટવર્ક પોર્ટને સ્પષ્ટ કરવાની તમારે જરૂર છે.</desc>
+  </info>
+
+  <title>સામાન્ય રીતે વાપરેલ નેટવર્ક પોર્ટ</title>
+
+  <p>This is a list of network ports commonly used by applications that provide
+  network services, like file sharing or remote desktop viewing. You can change
+  your system's firewall to <link xref="net-firewall-on-off">block or allow
+  access</link> to these applications. There are thousands of ports in use, so
+  this table isn't complete.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>પોર્ટ</p>
+	</td>
+	<td>
+	  <p>નામ</p>
+	</td>
+	<td>
+	  <p>વર્ણન</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>એકબીજાને શોધવા માટે સિસ્ટમોને પરવાનગી આપે છે, અને કઇ સેવાઓ તેઓ માંગણી કરે છે તેનું વર્ણન કરો, તમે જાતે વિગતોને સ્પષ્ટ કર્યા વગર.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>છાપી રહ્યા છે</p>
+	</td>
+	<td>
+	  <p>નેટવર્ક પર પ્રિન્ટરમાં પ્રિન્ટ કાર્યને મોકલવા માટે તમને પરવાનગી આપે છે.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>છાપી રહ્યા છે</p>
+	</td>
+	<td>
+	  <p>નેટવર્ક પર બીજા લોકો સાથે તમારાં પ્રિન્ટરને વહેંચવા તમને પરવાનગી આપે છે.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>હાજરી</p>
+	</td>
+	<td>
+	  <p>નેટવર્ક પર બીજા લોકો માટે તમારાં તરતજ સંદેશાની પરિસ્થિતિને જાહેરાત કરવા તમને પરવાનગી આપે છે, જેમ કે  "ઓનલાઇન" અથવા "વ્યસ્ત".</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>દૂરસ્થ ડેસ્કટોપ</p>
+	</td>
+	<td>
+	  <p>તમારાં ડેસ્કટોપને વહેંચવા માટે તમને પરવાનગી આપે છે તેથી બીજા લોકો તેને જોઇ શકે છે અથવા દૂરસ્થ મદદકર્તાને પૂરા પાડે છે.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>સંગીત વહેંચણી (DAAP)</p>
+	</td>
+	<td>
+	  <p>તમારાં નેટવર્ક પર બીજાઓ માટે તમારી સંગીત લાઇબ્રેરીને વહેંચવા માટે તમને પરવાનગી આપે છે.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

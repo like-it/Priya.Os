@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-initial-check" xml:lang="ta">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-hardware-info"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu documentation wiki இன் பங்களிப்பாளர்கள்</name>
+    </credit>
+    <credit type="author">
+      <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>எளிய பிணைய அமைவுகள் சரியா எனப் பார்த்துக்கொண்டு பிறகு அடுத்த சில சிக்கல் தீர்ப்பு செயல்படுகளுக்குச் செல்லவும்.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>வயர்லெஸ் பிணைய சிக்கல்தீர்வி</title>
+  <subtitle>தொடக்க இணைப்பு சோதனையைச் செய்யவும்</subtitle>
+
+  <p>இந்த செயல்படியில் நீங்கள் உங்கள் வயர்லெஸ் பிணைய இணைப்பு பற்றிய சில அடிப்படை தகவலை சோதிப்பீர்கள். இது உங்கள் பிணைய சிக்கல், வயர்லெஸ் இணைப்பு அணைக்கப்பட்டிருத்தல் போன்ற வெறும் எளிய பிரச்சனைகளால் ஏற்பட்டிருக்கவில்லை என்பதை உறுதிப்படுத்த. பிறகு அடுத்த சில சிக்கல் தீர்ப்பு செயல்படிகளுக்குச் செல்லவும்.</p>
+
+  <steps>
+    <item>
+      <p>உங்கள் மடிக்கணினி ஒரு <em>வயர்டு</em> இணைய இணைப்புடன் இணைக்கப்பட்டுள்ளதா என உறுதிப்படுத்திக்கொள்ளவும்.</p>
+    </item>
+    <item>
+      <p>உங்களிடம் ஒரு வெளிப்புற வயர்லெஸ் அடாப்ட்டர் இருந்தால் (மடிக்கணினியிலேயே செருகப்படும் USB அடாப்ட்டர் அல்லது PCMCIA கார்டு போன்ற), அவை அவற்றுக்கான துளைகளில் சரியாக பொருத்தப்பட்டுள்ளதா என உறுதிப்படுத்திக் கொள்ளவும்.</p>
+    </item>
+    <item>
+      <p>உங்கள் வயர்லெஸ் கார்டு உங்கள் கணினிக்கு <em>உட்புறம்</em> இருந்தால், வயர்லெஸ் ஸ்விட்ச்சு இயக்கப்பட்டுள்ளதா (ஸ்விட்ச் இருந்தால்) எனப் பார்க்கவும். மடிக்கணினிகளில் சில விசைப்பலகை விசைகளை சேர்த்து அழுத்துவதன் மூலம் பயன்படுத்தக்கூடிய ஸ்விட்ச்சுகளைக் கொண்டிருக்கலாம்.</p>
+    </item>
+    <item>
+      <p>Click the system status area on the top bar and select
+      <gui>Wi-Fi</gui>, then select <gui>Wi-Fi Settings</gui>. Make sure that
+      <gui>Wi-Fi</gui> is set to <gui>ON</gui>. You should also check that
+      <link xref="net-wireless-airplane">Airplane Mode</link> is <em>not</em>
+      switched on.</p>
+    </item>
+    <item>
+      <p>Open the Terminal, type <cmd>nmcli device</cmd> and press
+      <key>Enter</key>.</p>
+      <p>This will display information about your network interfaces and
+      connection status. Look down the list of information and see if there is
+      an item related to the wireless network adapter. If the state is
+      <code>connected</code>, it means that the adapter is working and connected
+      to your wireless router.</p>
+    </item>
+  </steps>
+
+  <p>நீங்கள் உங்கள் வயர்லெஸ் ரௌட்டருடன் இணைக்கப்பட்டுள்ளீர்கள், ஆனாலும் இணையத்தை அணுக முடியவில்லை எனில், உங்கள் ரௌட்டர் சரியாக அமைக்கப்படாதிருக்கலாம் அல்லது இணைய சேவை வழங்குநர் (ISP) தரப்பில் ஏதேனும் தொழில்நுட்பக் கோளாறுகள் இருக்கலாம். உங்கள் ரௌட்டர் மற்றும் ISP அமைவு வழிகாட்டிகளைப் பார்த்து உங்கள் அமைவுகள் சரியாக உள்ளதா என உறுதிப்படுத்தவும் அல்லது ஆதரவுக்கு உங்கள் ISP ஐ தொடர்புகொள்ளவும்.</p>
+
+  <p>If the information from <cmd>nmcli device</cmd> did not indicate that you were
+  connected to the network, click <gui>Next</gui> to proceed to the next
+  portion of the troubleshooting guide.</p>
+
+</page>

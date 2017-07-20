@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-wireless-noconnection" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" version="0.2" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Фил Булл (Phil Bull)</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Внимательно проверьте пароль и другие подобные параметры.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Я ввёл правильный пароль, но подключиться не удалось</title>
+
+<p>Если вы уверены, что <link xref="net-wireless-wepwpa">пароль беспроводной сети</link> введён правильно, но подключиться к сети всё равно не удаётся, попробуйте сделать следующее:</p>
+
+<list>
+ <item>
+  <p>Double-check that you have the correct password</p>
+  <p>Пароли чувствительны к регистру (то есть к тому, какие буквы используются: заглавные или строчные), поэтому проверьте, не введена ли одна из букв не в том регистре.</p>
+ </item>
+
+ <item>
+  <p>Попробуйте ASCII или шестнадцатеричный ключ доступа</p>
+  <p>Вводимый пароль также может быть показан по-другому, в виде строки шестнадцатиричных символов (цифры от 0 до 9 и буквы от a до f), называемой ключом доступа. У каждого пароля есть равнозначный ключ доступа. Если у вас есть и ключ доступа и пароль, попробуйте вместо пароля ввести ключ доступа. Проверьте, что в диалоговом окне ввода пароля указан правильный <gui>метод беспроводной защиты</gui> (например, для 40-значного ключа доступа в WEP-защищённой сети выберите <gui>40/128-битный ключ WEP</gui>).</p>
+ </item>
+
+ <item>
+  <p>Попробуйте отключить и снова включить сетевую карту</p>
+  <p>Иногда беспроводные карты зависают или испытывают небольшие проблемы, препятствующие соединению. Попробуйте отключить карту и снова включить, чтобы вернуть её в исходное состояние — подробнее смотрите <link xref="net-wireless-troubleshooting"/>.</p>
+ </item>
+
+ <item>
+  <p>Check that you're using the correct type of wireless security</p>
+  <p>В момент ввода пароля для беспроводной сети можно выбрать метод защиты беспроводной сети. Убедитесь в том, что вы указали именно тот метод, который используется вашим роутером или базовой станцией. Обычно он выбирается по умолчанию, но иногда по каким-то причинам этого не происходит. Если вы не знаете, какой именно метод используется, методом проб и ошибок подберите верный. </p>
+ </item>
+
+ <item>
+  <p>Проверка полноценной поддержки беспроводной карты</p>
+  <p>Некоторые беспроводные карты имеют неполноценную поддержку. Они показывают беспроводное сетевое подключение, но подключиться к сети не могут, т.к. в их драйверах отсутствует нужный функционал. Проверьте, можно ли найти альтернативный беспроводной драйвер или понадобится провести дополнительную настройку (например, установка другой <em>прошивки</em>). Подробности см. здесь: <link xref="net-wireless-troubleshooting"/>.</p>
+ </item>
+
+</list>
+
+</page>

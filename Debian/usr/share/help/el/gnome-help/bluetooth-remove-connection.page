@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-remove-connection" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="bluetooth"/>
+
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-04" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Αφαιρέστε μια συσκευή από τη λίστα των συσκευών Bluetooth.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Αποσύνδεση συσκευής Bluetooth</title>
+
+  <p>Εάν δεν θέλετε να είστε συνδεδεμένοι σε μια συσκευή Bluetooth, μπορείτε να αφαιρέσετε τη σύνδεση. Αυτό είναι χρήσιμο εάν δεν θέλετε να χρησιμοποιήσετε μια συσκευή όπως ένα ποντίκι ή ακουστικά, ή εάν δεν θέλετε πια να μεταφέρετε αρχεία προς ή από τη συσκευή.</p>
+
+  <steps>
+    <item>
+    <if:choose>
+      <if:when test="platform:unity">
+        <p>Κάντε κλικ στο εικονίδιο Bluetooth στη <gui>γραμμή μενού</gui> και επιλέξτε <gui>Ρυθμίσεις Bluetooth</gui>.</p>
+      </if:when>
+      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Bluetooth</gui>.</p>
+    </if:choose>
+    </item>
+    <item>
+    <if:choose>
+      <if:when test="platform:unity">
+        <p>Πατήστε στις <gui>Ρυθμίσεις Bluetooth</gui> για να ανοίξετε τον πίνακα.</p>
+      </if:when>
+      <p>Κάντε κλικ στο <gui>Bluetooth</gui> για να ανοίξετε τον πίνακα.</p>
+    </if:choose>
+    </item>
+    <item>
+      <p>Επιλέξτε τη συσκευή που θέλετε να αποσυνδέσετε από την λίστα.</p>
+    </item>
+    <item>
+      <p>Στο πλαίσιο διαλόγου της συσκευής, αλλάξτε το <gui>Σύνδεση</gui> σε <gui>ΟΧΙ</gui>, ή για να αφαιρέσετε τη συσκευή από τη λίστα <gui>Συσκευές</gui>, κάντε κλικ στο <gui>Αφαίρεση συσκευής</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Μπορείτε να <link xref="bluetooth-connect-device">επανασυνδέσετε μια συσκευή Bluetooth</link> αργότερα εάν θέλετε.</p>
+
+</page>

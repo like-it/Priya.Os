@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="about-diff-private-public" xml:lang="cs">
+  <info>
+    <link type="guide" xref="concepts" group="second"/>
+    <link type="seealso" xref="about-ssh"/>
+
+    <revision pkgversion="3.8" date="2013-02-26" status="incomplete"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Veřejný klíč se používá k zašifrování komunikace. Soukromý klíč k jejímu dešifrování.</desc>
+  </info>
+
+  <title>Veřejný klíč vs. soukromý klíč</title>
+
+  <p>Ačkoliv se o <em>veřejných klíčích</em> i o <em>soukromých klíčích</em> bavíme jako o <em>klíčích</em>, pomůže vám o nich uvažovat trochu odlišně. Zkuste <em>veřejný klíč</em> považovat za něco jako zámek a <em>soukromý klíč</em> za klíč, který tento zámek odemyká.</p>
+
+  <section id="public-private-example">
+    <title>Příklad: odeslání zabalené tajné zprávy</title>
+
+  <p>Pojďme použít příklad, abycho ukázali, jak to funguje. Představte si, že chcete, aby vám přítel poslal tajnou zabalenou zprávu. Mohli byste mu dát bedýnku a zámek, ale jen vy byste měli klíč, kterým lze zámek odemknout.</p>
+
+  <p>Váš přitel by mohl svoji zprávu vložit do bedýnky, zaklapnout zámek a zamčenou bedýnku poslat poštou. Až ji obdržíte, použili byste klíč k jejímu odemknutí.</p>
+
+  <p>To se přesně podobá tomu, jak funguje <em>veřejný klíč</em> a <em>soukromý klíč</em>. <em>Veřejný klíč</em> můžete volně poslat, podobně jako zámek. Kdokoliv díky tomu může snado bezpečně zašifrovat nebo zamknout zprávu, kterou vám chce poslat.</p>
+  
+  <p>Naopak <em>soukromý klíč</em> je podobný skutečnému klíči, kterým byste odemkli zámek. Protože se <em>soukromý klíč</em> používá k dešifrování zabezpečených zpráv, budete jej chtít uchovat v bezpečí.</p>
+  
+  </section>
+
+</page>

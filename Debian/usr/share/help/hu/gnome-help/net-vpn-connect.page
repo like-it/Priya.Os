@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+    <link type="guide" xref="net-wired"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>VPN-kapcsolat beállítása egy helyi hálózathoz az interneten keresztül.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Csatlakozás VPN-hez</title>
+
+<p>A VPN (<em>Virtual Private Network</em>) a helyi hálózatra való interneten keresztüli csatlakozásra szolgál. Ha például üzleti úton van, és a munkahelye helyi hálózatára kell csatlakoznia, akkor ezt VPN használatával megteheti. Valahol (például a szállodában) csatlakoznia kell az internetre, ezután csatlakozhat a munkahelyi VPN-re. A végeredmény olyan, mintha közvetlenül a munkahelyi hálózatra csatlakozna, de a tényleges hálózati kapcsolat a szálloda internetkapcsolatán keresztül történik. A VPN kapcsolatok általában <em>titkosítottak</em>, megakadályozandó a csatlakoztatott helyi hálózat illetéktelenek általi elérését.</p>
+
+<p>Számos különböző típusú VPN létezik. A használt VPN-típustól függően további szoftvercsomagok telepítése lehet szükséges. A VPN üzemeltetőjétől megtudhatja a kapcsolódáshoz szükséges adatokat, és a használandó <em>VPN-kliens</em> típusát. Ezután a szoftvertelepítő alkalmazásban keresse meg a <app>NetworkManager</app> megfelelő bővítményét, és telepítse.</p>
+
+<note>
+ <p>Ha az adott VPN-típushoz nincs NetworkManager csomag, akkor valószínűleg a VPN-szoftver biztosító cégtől kell letöltenie a telepítendő kliensszoftvert. Ennek beüzemeléséhez az itt leírtaktól eltérő lépések lehetnek szükségesek.</p>
+</note>
+
+<p>VPN-kapcsolat beállítása:</p>
+
+  <steps>
+    <item>
+      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Hálózat</gui> szót.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Hálózat</gui> ikonra a panel megnyitásához.</p>
+    </item>
+    <item>
+      <p>Új kapcsolat hozzáadásához a bal oldali lista alján kattintson a <gui>+</gui> gombra.</p>
+    </item>
+    <item>
+      <p>Válassza a <gui>VPN</gui> elemet a csatolók listájából.</p>
+    </item>
+    <item>
+      <p>Válassza ki a használandó VPN-típust.</p>
+    </item>
+    <item>
+      <p>Töltse ki a VPN kapcsolat adatait, majd nyomja meg a <gui>Hozzáadás</gui> gombot.</p>
+    </item>
+    <item>
+      <p>Amikor befejezte a VPN beállítását, nyissa meg a <gui xref="shell-introduction#yourname">rendszer menüt</gui> a felső sávon, válassza a <gui>VPN ki</gui> pontot, majd válassza a <gui>Kapcsolódás</gui> menüpontot. A kapcsolat létrehozása előtt szükség lehet a hozzá tartozó jelszó megadására. A kapcsolat létrejötte után egy lakat alakú ikon jelenik meg a felső sávon.</p>
+    </item>
+    <item>
+      <p>Remélhetőleg sikerül csatlakoznia a VPN-hez. Ellenkező esetben ellenőrizze a megadott VPN-beállításokat. Ezt a kapcsolat létrehozására használt <gui>Hálózat</gui> panelen teheti meg. Válassza ki a VPN-kapcsolatot a listából, majd nyomja meg a <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">beállítások</span></media> gombot a beállítások áttekintéséhez.</p>
+    </item>
+    <item>
+      <p>A VPN-kapcsolat bontásához kattintson a rendszer menüre a felső sávon, és válassza a <gui>Kikapcsolás</gui> menüpontot a VPN-kapcsolat neve alatt.</p>
+    </item>
+  </steps>
+
+</page>

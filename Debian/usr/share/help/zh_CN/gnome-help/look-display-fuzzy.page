@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="look-display-fuzzy" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="hardware-problems-graphics"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>GNOME 文档项目</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>屏幕分辨率可能设置不正确。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>为什么屏幕看着模糊/花屏了？</title>
+
+<p>这可能是因为您设置的屏幕分辨率不正确。</p>
+
+<p>To solve this, open the <gui xref="shell-introduction#activities">Activities</gui>
+overview and start typing <gui>Displays</gui>. Click on <gui>Displays</gui>
+to open the panel. Try some of the <gui>Resolution</gui> options and set the
+one that makes the screen look better.</p>
+
+<section id="multihead">
+  <title>连接多个显示设备</title>
+
+  <p>如果您的计算机连接有两个显示设备(比如，一个普通显示器和一个 投影仪)，它们的分辨率可能不同不同。但是，系统显卡一次只能显示在一个设备上，因此有一个显示会变得模糊。</p>
+
+  <p>You can set it so that the two displays have different resolutions, but
+  you will not be able to display the same thing on both screens
+  simultaneously. In effect, you will have two independent screens connected at
+  the same time. You can move windows from one screen to another, but you
+  cannot show the same window on both screens at once.</p>
+
+  <p>为每个屏幕设置不同的分辨率：</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Displays</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Displays</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>The displays should be listed as <gui>Mirrored</gui>. Select your main
+      display.</p>
+    </item>
+    <item>
+      <p>Select <gui>Primary</gui> in the list of display configurations, and
+      then click <gui style="button">Apply</gui> to save.</p>
+    </item>
+    <item>
+      <p>在<gui>显示</gui>窗口的灰色方框内，依次选中每个显示设备，更改<gui>分辨率</gui>直到它们都显示正常。</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

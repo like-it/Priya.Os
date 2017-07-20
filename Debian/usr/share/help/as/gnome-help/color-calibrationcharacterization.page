@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="as">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>মানাংকন আৰু চৰিত্ৰাঙ্কন সম্পূৰ্ণ পৃথক।</desc>
+
+    <credit type="author">
+      <name>ৰিচাৰ্ড হিউগ্চ</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>মানাংকন আৰু চৰিত্ৰাঙ্কনৰ মাজত পাৰ্থক্য কি?</title>
+  <p>বেছিৰভাগ লেকে আৰম্ভণিত মানাংকন আৰু বৈশিষ্ট্যকৰণৰ পাৰ্থক্য বুজি নাপায়। মানাংকন হল এটা ডিভাইচৰ ৰঙৰ ব্যৱহাৰ পৰিবৰ্তন কৰাৰ প্ৰক্ৰিয়া। ইয়াক সাধাৰণত দুটা পদ্ধতি ব্যৱহাৰ কৰি কৰা হয়:</p>
+  <list>
+    <item><p>ইয়াৰ নিয়ন্ত্ৰণ অথবা অভ্যন্তৰীক সংহতিসমূহ পৰিবৰ্তন কৰা</p></item>
+    <item><p>ইয়াৰ ৰঙৰ চেনেলসমূহলৈ বক্ৰসমূহ প্ৰয়োগ কৰা</p></item>
+  </list>
+  <p>
+    The idea of calibration is to put a device in a defined state with regard
+    to its color response.
+    Often this is used as a day to day means of maintaining reproducible behavior.
+    Typically calibration will be stored in device or systems specific file
+    formats that record the device settings or per-channel calibration curves.
+  </p>
+  <p>
+    Characterization (or profiling) is <em>recording</em> the way
+    a device reproduces or responds to color.
+    Typically the result is stored in a device ICC profile.
+    Such a profile does not in itself modify color in any way.
+    It allows a system such as a CMM (Color Management Module) or a color aware
+    application to modify color when combined with another device profile.
+    Only by knowing the characteristics of two devices, can a way of
+    transferring color from one device representation to another be achieved.
+  </p>
+  <note>
+    <p>মন কৰিব যে এটা বৈশিষ্ট্যকৰণ (আলেখ্য) কেৱল তেতিয়াহে এটা ডিভাইচৰ বাবে বৈধ হব যদি ই বৈশিষ্ট্যকৰণ কৰোতে থকা মানাংকনৰ অৱস্থাত থাকে।</p>
+  </note>
+  <p>
+    In the case of display profiles there is some additional confusion because
+    often the calibration information is stored in the profile for convenience.
+    By convention it is stored in a tag called the <em>vcgt</em> tag.
+    Although it is stored in the profile, none of the normal ICC based tools
+    or applications are aware of it, or do anything with it.
+    Similarly, typical display calibration tools and applications will not be
+    aware of, or do anything with the ICC characterization (profile) information.
+  </p>
+
+</page>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-connect" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="net-wireless" group="#first"/>
+    <link type="seealso" xref="net-wireless-troubleshooting"/>
+    <link type="seealso" xref="net-wireless-disconnecting"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Подключение к Интернету — без проводов.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Подключение к беспроводной сети</title>
+
+<p>Если ваш компьютер оснащён беспроводным сетевым оборудованием, можно подключиться к беспроводной сети, в радиусе действия которой он находится, чтобы выходить в Интернет, просматривать совместно используемые файлы в сети и т.п.</p>
+
+<steps>
+  <item>
+    <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> from the right
+    side of the top bar.</p>
+  </item>
+  <item>
+    <p>Select
+    <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/>
+      Wi-Fi Not Connected</gui>. The Wi-Fi section of the menu will expand.</p>
+  </item>
+  <item>
+    <p>Click <gui>Select Network</gui>.</p>
+  </item>
+  <item>
+    <p>Click the name of the network you want, then click
+    <gui>Connect</gui>.</p>
+    <p>If the name of the network is not in the list, try clicking
+    <gui>More</gui> to see if the network is further down the list. If you 
+    still do not see the network, you may be out of range, or the network
+    <link xref="net-wireless-hidden">might be hidden</link>.</p>
+  </item>
+  <item>
+    <p>Если сеть защищена паролем (<link xref="net-wireless-wepwpa">ключом шифрования</link>), введите пароль по запросу системы и нажмите <gui>Подключиться</gui>.</p>
+    <p>If you do not know the key, it may be written on the underside of the
+    wireless router or base station, or in its instruction manual, or you may
+    have to ask the person who administers the wireless network.</p>
+  </item>
+  <item>
+    <p>Значок сети будет менять свой вид по мере того, как компьютер пытается установить соединение с сетью.</p>
+  </item>
+  <item>
+    <p>If the connection is successful, the icon will change to a dot with
+    several curved bars above it
+    (<media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/>). More bars
+    indicate a stronger connection to the network. Fewer bars mean the
+    connection is weaker and might not be very reliable.</p>
+  </item>
+</steps>
+
+  <p>If the connection is not successful, you may be asked for your password
+  again or it might just tell you that the connection has been disconnected.
+  There are a number of things that could have caused this to happen. You could
+  have entered the wrong password, the wireless signal could be too weak, or
+  your computer's wireless card might have a problem, for example. See
+  <link xref="net-wireless-troubleshooting"/> for more help.</p>
+
+  <p>Более мощное стабильное соединение с беспроводной сетью не обязательно означает более высокую скорость интернет-соединения и высокие скорости закачки. Беспроводное соединение подключает компьютер к <em>устройству, предоставляющему интернет-соединение</em> (например, модем или маршрутизатор), но это два разных соединения, и соответственно, они имеют разные скорости.</p>
+
+</page>

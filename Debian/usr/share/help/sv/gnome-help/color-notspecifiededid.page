@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-notspecifiededid" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="guide" xref="color-gettingprofiles"/>
+    <link type="guide" xref="color-why-calibrate"/>
+    <desc>Standardprofiler för skärmar har inget kalibreringsdatum.</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Varför har inte standardprofilerna för skärmar ett utgångsdatum?</title>
+  <p>Standardfärgprofilen som används för varje skärm genereras automatiskt baserat på skärmens <link href="https://en.wikipedia.org/wiki/Extended_Display_Identification_Data">EDID</link> som sparas i en minneskrets inuti skärmen. EDID ger oss bara en ögonblicksbild av de tillgängliga färgerna som skärmen kunde visa när den tillverkades och innehåller inte mycket information om färgkorrigering.</p>
+
+  <figure>
+    <desc>Eftersom EDID inte kan uppdateras har den inget utgångsdatum.</desc>
+    <media type="image" mime="image/png" src="figures/color-profile-default.png"/>
+  </figure>
+
+  <note style="tip">
+    <p>Att få en profil från skärmtillverkaren eller skapa en profil själv kommer att leda till mer korrekt färgkorrigering.</p>
+  </note>
+
+</page>

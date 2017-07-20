@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-search-folders-conditions" xml:lang="sv">
+
+  <info>
+    <desc>Tillgängliga villkor för att konfigurera sökmappar.</desc>
+
+    <link type="seealso" xref="mail-search-folders"/>
+
+    <revision pkgversion="3.6.4" version="0.4" date="2013-04-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-vfolders.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tillgängliga villkor för <gui>Sök</gui>-mappar</title>
+
+<list>
+
+<!-- As filter and search folder conditions share a fair amount of options, those ones are centrally in one file that's 
+included by XInclude. See http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-filter-vfolder-conditions.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:item)"/>
+
+<item><p>Meddelandeplats:</p>
+<p>Kontrollerar huruvida meddelandet finns i en specifik mapp.</p><p>Notera att som standard är <app>Evolutions</app> <gui>Papperskorg</gui>- och <gui>Skräppost</gui>-mappar <link xref="mail-search-folders"><gui>Sök</gui>-mappar</link> så de kan inte väljas här.</p></item>
+
+<item><p>Matcha alla:</p>
+<p>Tillämpar alltid en åtgärd för vilket meddelande som helst, utan vidare villkor. Detta kan vara användbart i slutet på listan av sökmappar för att täcka de e-postmeddelanden som inte matchat något villkor för de tidigare sökmapparna i listan.</p></item>
+</list>
+</page>

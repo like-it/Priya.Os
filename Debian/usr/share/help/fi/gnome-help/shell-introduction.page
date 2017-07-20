@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-introduction" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="shell-overview" group="#first"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-13" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Johdanto työpöytään, yläpalkkiin ja <gui>Toiminnot</gui>-yleisnäkymään.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Johdanto Gnomeen</title>
+
+  <p>Gnome 3 sisältää täysin uudelleen suunnitellun käyttöliittymän, joka on suunniteltu olemaan poissa käyttäjän tieltä, vähentämään häiriötekijöitä sekä auttamaan asioiden valmiiksi saamisessa. Kun kirjaudut sisään ensimmäisen kerran, näet tyhjän työpöydän ja yläpalkin.</p>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar.png" width="600" if:test="!target:mobile">
+      <p>Gnome-käyttöliittymän yläpalkki</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar-classic.png" width="500" height="40" if:test="!target:mobile">
+      <p>Gnome-käyttöliittymän yläpalkki</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Yläpalkin kautta voit käyttää ikkunoita ja sovelluksia, kalenteria ja tapaamisia, sekä hallita <link xref="status-icons">järjestelmän eri ominaisuuksia</link>, kuten ääntä, verkkoa ja virranhallintaa. Yläpalkissa olevan järjestelmävalikon kautta voit muuttaa tietokoneen asetuksia, hallita verkkoyhteyksiä, tarkistaa akun tilan, kirjautua ulos, vaihtaa käyttäjää tai sammuttaa tietokoneen.</p>
+
+<links type="section"/>
+
+<section id="activities">
+  <title><gui>Toiminnot</gui>-yleisnäkymä</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
+      <p>Toiminnot-painike</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-activities-classic.png" width="108" height="69" style="floatend floatright" if:test="!target:mobile">
+      <p>Toiminnot-painike</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p if:test="!platform:gnome-classic">To access your windows and applications,
+  click the <gui>Activities</gui> button, or just move your mouse pointer to
+  the top-left hot corner. You can also press the
+  <key xref="keyboard-key-super">Super</key> key on your keyboard. You can
+  see your windows and applications in the overview. You can also just start
+  typing to search your applications, files, folders, and the web.</p>
+
+  <p if:test="platform:gnome-classic">To access your windows and applications,
+  click the <gui xref="shell-introduction#activities">Applications</gui> menu
+  at the top left of the screen and select the <gui>Activities Overview</gui>
+  item. You can also press the <key xref="keyboard-key-super">Super</key> key
+  to see your windows and applications in the <gui>Activities</gui> overview. 
+  Just start typing to search your applications, files, and folders.</p>
+
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
+    <p>Telakka</p>
+  </media>
+
+  <p>Yleisnäkymän vasemmassa laidassa on <em>telakka</em>. Telakkassa on suosikkisovelluksesi sekä avoinna olevat sovellukset. Napsauta telakassa olevaa kuvaketta avataksesi sovelluksen. Jos sovellus on jo käynnissä, se näkyy korostettuna telakassa. Tällöin kuvakkeen napsauttaminen tuo esiin viimeksi avoinna olleen ikkunan. Voit myös raahata kuvakkeen yleisnäkymään, tai mihin tahansa oikealla yleisnäkymän oikeassa laidassa näkyvään työtilaan.</p>
+
+  <p>Kuvakkeen napsauttaminen hiiren oikealla avaa valikon, jonka kautta voit valita käynnissä olevan sovelluksen minkä tahansa ikkunan, tai avata uuden ikkunan. Voit myös avata uuden ikkunan haluamastasi sovelluksesta napsauttamalla kuvaketta <key>Ctrl</key>-näppäin pohjassa.</p>
+
+  <p>Kun avaat yleisnäkymän, näet avoinna olevat ikkunat. Kaikki nykyisessä työtilassa avoinna olevat ikkunat esitetään pienoiskuvina. Kohdista haluamaasi ikkunaan napsauttamalla sen kuvaa.</p>
+
+  <p>Napsauta telakan alaosassa olevaa ruudukkopainiketta siirtyäksesi sovellusten yleisnäkymään. Sovellusten yleisnäkymässä näkyy kaikki koneelle asennetut sovellukset. Avaa haluamasi sovellus napsauttamalla sen kuvaketta, tai vetämällä kuvake yleisnäkymän oikeassa laidassa näkyvään työtilaan. Voit lisätä sovelluksen telakkaan vetämällä haluamasi kuvakkeen telakan päälle. Näin sovelluksen kuvake näkyy telakassa, vaikka kyseinen sovellus ei olisi käynnissä.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-apps-open">Lue lisää sovellusten käynnistämisestä.</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-windows">Lue lisää ikkunoista ja työtiloista.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="appmenu">
+  <title>Sovellusvalikko</title>
+  <if:choose>
+    <if:when test="!platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-shell.png" width="250" style="floatend floatright" if:test="!target:mobile">
+        <p>App Menu of <app>Terminal</app></p>
+      </media>
+      <p>Sovellusvalikko, joka sijaitsee <gui>Toiminnot</gui>-painikkeen vieressä, esittää aktiivisena olevan sovelluksen nimen ja kuvakkeen. Sen avulla sovelluksen asetukset ja ohje ovat nopeasti käytettävissä. Valikon sisältö määräytyy sovelluskohtaisesti.</p>
+    </if:when>
+    <if:when test="platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-classic.png" width="154" height="133" style="floatend floatright" if:test="!target:mobile">
+        <p>App Menu of <app>Terminal</app></p>
+      </media>
+      <p>Application menu, located next to the <gui>Applications</gui> and
+      <gui>Places</gui> menus, shows the name of the active application
+      alongside with its icon and provides quick access to application
+      preferences or help. The items that are available in the application menu
+      vary depending on the application.</p>
+    </if:when>
+  </if:choose>
+
+</section>
+
+<section id="clock">
+  <title>Kello, kalenteri ja tapaamiset</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Kello, kalenteri, tapahtumat ja ilmoitukset</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-appts-classic.png" width="373" height="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Kello, kalenteri ja tapaamiset</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Napsauta yläpalkissa olevaa kellonaikaa nähdäksesi kuluvan päivän, kuukausikalenterin, luettelon tulevista tapahtumista ja uudet ilmoitukset. Kalenterin pikanäppäin on You can also open the calendar by pressing <keyseq><key>Super</key><key>M</key></keyseq>. Tätä kautta voit myös muuttaa päivää ja aikaa, tai avata <app>Evolution</app>-kalenterisovelluksen.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="clock-calendar">Lue lisää kalenterista ja tapaamisista.</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-notifications">Lue lisää ilmoituksista ja viestialueesta.</link></p>
+    </item>
+  </list>
+
+</section>
+
+
+<section id="yourname">
+  <title>Sinä ja tietokoneesi</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-exit.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Käyttäjävalikko</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-exit-classic.png" width="250" height="200" style="floatend floatright" if:test="!target:mobile">
+      <p>Käyttäjävalikko</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Napsauta oikeassa yläkulmassa olevaa valikkoa hallitaksesi tietokoneen asetuksia.</p>
+
+<!-- Apparently not anymore. TODO: figure out how to update status.
+  <p>You can quickly set your availability directly from the menu. This will set
+  your status for your contacts to see in instant messaging applications such as
+  <app>Empathy</app>.</p>-->
+
+<!--
+<p>If you set yourself to Unavailable, you won't be bothered by message popups
+at the bottom of your screen. Messages will still be available in the message
+tray when you move your mouse to the bottom-right corner. But only urgent
+messages will be presented, such as when your battery is critically low.</p>
+
+<list style="compact">
+  <item><p><link xref="shell-session-status">Learn more about changing
+  your availability.</link></p></item>
+</list>
+-->
+
+  <p>Kun poistut tietokoneeltasi, voit lukita näytön ja siten estää muita käyttämästä tietokonetta tunnuksellasi. Voit vaihtaa käyttäjien välillä kirjautumatta itse ulos, tai siirtää tietokoneen valmiustilaan tai sammuttaa tietokoneen.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-exit">Lue lisää käyttäjien vaihtamisesta, ulos kirjautumisesta sekä tietokoneen sammuttamisesta.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="lockscreen">
+  <title>Lukitusnäyttö</title>
+
+  <media type="image" src="figures/shell-lock.png" width="250" style="floatend floatright" if:test="!target:mobile">
+    <p>Lukitusnäyttö</p>
+  </media>
+
+  <p>Kun lukitset tietokoneen, tai kun tietokone lukittuu automaattisesti, näytetään lukitusnäyttö. Se estää muita käyttämästä tietokonetta tunnuksellasi. Samalla se näyttää myös tietoa, kuten päivän, ajan, akkutason ja verkon tilan. Kaiken lisäksi voit hallita esimerkiksi musiikkisovellusta suoraan lukitusnäytöltä.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-exit#lock-screen">Lue lisää lukitusnäytöstä.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="window-list">
+  <title>Ikkunaluettelo</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <p>Gnome sisältää erilaisen lähestymistavan avoinna olevien ikkunoiden välillä vaihtamiseen. Tarkoitus on tehostaa työskentelyä vähentämällä mahdollisia häiriötekijöitä.</p>
+    <list style="compact">
+      <item>
+        <p><link xref="shell-windows-switching">Lue lisää ikkunoiden välillä vaihtamisesta. </link></p>
+      </item>
+    </list>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-window-list-classic.png" width="500" height="34" style="floatend floatright" if:test="!target:mobile">
+      <p>Ikkunaluettelo</p>
+    </media>
+    <p>The window list at the bottom of the screen provides access to all your
+    open windows and applications and lets you quickly minimize and restore
+    them.</p>
+    <p>At the right-hand side of the window list, GNOME displays a short
+    identifier for the current workspace, such as <gui>1</gui> for the first
+    (top) workspace. In addition, the identifier also displays the total number
+    of available workspaces. To switch to a different workspace, you can click
+    the identifier and select the workspace you want to use from the menu.</p>
+    <p>If an application or a system component wants to get your attention, it
+    will display a blue icon at the right-hand side of the window list.
+    Clicking the blue icon shows the message tray.</p>
+  </if:when>
+</if:choose>
+
+</section>
+
+</page>

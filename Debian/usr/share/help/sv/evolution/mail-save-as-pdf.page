@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-save-as-pdf" xml:lang="sv">
+
+  <info>
+    <desc>Konvertera e-postmeddelanden till PDF-filer.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+
+    <revision pkgversion="3.5.90" version="0.2" date="2012-08-16" status="review"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Spara meddelanden som PDF</title>
+
+<p>För att spara e-postmeddelanden i filformatet PDF, välj <guiseq><gui>Arkiv</gui><gui>Skriv ut</gui></guiseq> och välj sedan <gui>Skriv ut till fil</gui>. Se <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">skrivbordshjälpen</link> för allmän information om utskrifter.</p>
+
+<note style="advanced">
+<p>Du kan också exportera meddelanden som PDF genom att dra och släppa dem i filhanteraren istället för att släppa dem i mbox-format (text) som standard.</p>
+<list>
+<item><p>Öppna <app>Terminal</app>-programmet.</p></item>
+<item><p>Kör kommandot <cmd>gsettings set org.gnome.evolution.mail drag-and-drop-save-file-format 'pdf'</cmd></p></item>
+</list>
+<p>Du kan också använda programmet <app>dconf-editor</app> för att göra detta.</p>
+</note>
+<!-- As per https://mail.gnome.org/archives/evolution-list/2012-June/msg00174.html -->
+
+</page>

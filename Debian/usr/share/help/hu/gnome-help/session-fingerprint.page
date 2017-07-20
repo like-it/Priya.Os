@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="hardware-auth"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Bejelentkezhet rendszerébe egy támogatott ujjlenyomat-olvasó használatával a jelszó beírása helyett.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Bejelentkezés ujjlenyomattal</title>
+
+  <p>Ha rendszere rendelkezik támogatott ujjlenyomat-olvasóval, akkor rögzítheti ujjlenyomatát, és felhasználhatja bejelentkezésre.</p>
+
+<section id="record">
+  <title>Ujjlenyomat rögzítése</title>
+
+  <p>Mielőtt bejelentkezhetne az ujjlenyomatával, először rögzítenie kell azt, hogy a rendszer azzal azonosíthassa.</p>
+
+  <note style="tip">
+    <p>Ha ujja túl száraz, akkor az ujjlenyomat rögzítése gondot okozhat. Ebben az esetben nedvesítse meg kicsit az ujját, törölje meg egy tiszta, szálmentes ruhával, és próbálja újra.</p>
+  </note>
+
+  <p>A saját fiókjától eltérő fiókok szerkesztéséhez <link xref="user-admin-explain">rendszergazdai jogosultság</link> szükséges.</p>
+
+  <steps>
+    <item>
+      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Felhasználók</gui> szót.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Felhasználók</gui> ikonra a panel megnyitásához.</p>
+    </item>
+    <item>
+      <p>Nyomja meg a <gui>Letiltva</gui> gombot az <gui>Ujjlenyomatos bejelentkezés</gui> mellett egy ujjlenyomat hozzáadásához a kijelölt fiókhoz. Ha az ujjlenyomatot másik felhasználóhoz szeretné adni, akkor előtte nyomja meg a <gui>Feloldás</gui> gombot a panel feloldásához.</p>
+    </item>
+    <item>
+      <p>Válassza ki az ujjlenyomathoz használandó ujjat, majd nyomja meg a <gui>Tovább</gui> gombot.</p>
+    </item>
+    <item>
+      <p>Kövesse az ablak utasításait, és húzza le ujját <em>mérsékelt sebességgel</em> az ujjlenyomat-olvasón. Amikor a számítógép megfelelően rögzítette ujjlenyomatát, akkor megjelenik a <gui>Kész!</gui> üzenet.</p>
+    </item>
+    <item>
+      <p>Nyomja meg a <gui>Tovább</gui> gombot. Megjelenik egy megerősítő üzenet, amely szerint ujjlenyomata sikeresen mentésre került. A befejezéshez nyomja meg a <gui>Bezárás</gui> gombot.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="verify">
+  <title>Ellenőrizze, hogy az ujjlenyomat valóban működik-e</title>
+
+  <p>Most ellenőrizze, hogy az ujjlenyomatos bejelentkezés működik-e. Az ujjlenyomat regisztrálása után továbbra is lehetősége lesz jelszóval bejelentkezni.</p>
+
+  <steps>
+    <item>
+      <p>Mentse munkáját, és <link xref="shell-exit#logout">jelentkezzen ki</link>.</p>
+    </item>
+    <item>
+      <p>A bejelentkezési képernyőn válassza ki a nevét a listából. Megjelenik a jelszóbeviteli mező.</p>
+    </item>
+    <item>
+      <p>A jelszava beírása helyett az ujjlenyomat-olvasón lehúzva ujját is képesnek kell lennie a bejelentkezésre.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.bouncycastle</groupId>
+	<artifactId>bcmail</artifactId>
+	<version>debian</version>
+	<packaging>jar</packaging><properties>
+		
+			<debian.hasPackageVersion/>
+		
+			<debian.mavenRules>org.bouncycastle s/bcmail-jdk15on/bcmail/ * s/.*/debian/ * *</debian.mavenRules>
+		
+			<debian.org.bouncycastle.bcpkix-jdk15on.originalVersion>1.56</debian.org.bouncycastle.bcpkix-jdk15on.originalVersion>
+		
+			<debian.org.bouncycastle.bcprov-jdk15on.originalVersion>1.56</debian.org.bouncycastle.bcprov-jdk15on.originalVersion>
+		
+			<debian.originalVersion>1.56</debian.originalVersion>
+		
+			<debian.package>libbcmail-java</debian.package>
+	</properties>
+	
+	<name>Bouncy Castle S/MIME API</name>
+	<description>The Bouncy Castle Java S/MIME APIs for handling S/MIME protocols. This jar contains S/MIME APIs for JDK 1.5 to JDK 1.8. The APIs can be used in conjunction with a JCE/JCA provider such as the one provided with the Bouncy Castle Cryptography APIs. The JavaMail API and the Java activation framework will also be needed.</description>
+	<dependencies>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov</artifactId>
+			<version>debian</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcpkix</artifactId>
+			<version>debian</version>
+			<type>jar</type>
+		</dependency>
+	</dependencies>
+</project>

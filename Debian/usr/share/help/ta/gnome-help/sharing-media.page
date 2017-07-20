@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-media" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.2" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>மைக்கேல் ஹில்</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Share media on your local network using UPnP.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>உங்கள் இசை, புகைப்படங்கள் மற்றும் வீடியோக்களைப் பகிர்தல்</title>
+
+  <p>நீங்கள் ஃபோன், TV அல்லது கேம் கன்சோல் போன்ற <sys>UPnP</sys> அல்லது <sys>DLNA</sys> செயல்படுத்தப்பட்ட சாதனத்தைப் பயன்படுத்தி உங்கள் கணினியில் உள்ள மீடியாவை உலவலாம், தேடலாம் மற்றும் இயக்கலாம். உங்கள் இசை, புகைப்படங்கள் மற்றும் வீடியோக்களைக் கொண்டுள்ள கோப்புறைகளை அணுக இந்த சாதனங்களை அனுமதிக்க <gui>மீடியா பகிர்தல்</gui> ஐ அமைவாக்கம் செய்யவும்.</p>
+
+  <note style="info package">
+    <p><gui>மீடியா பகிர்தல்</gui> புலப்படும்படி இருக்க நீங்கள் <app>Rygel</app> தொகுப்பை நிறுவியிருக்க வேண்டும்.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:rygel" style="button">Rygel ஐ நிறுவுக</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Sharing</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Sharing</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p><gui>பகிர்தல்</gui> <gui>ஆஃப்</gui> என அமைக்கப்பட்டிருந்தால், அதை <gui>ஆன்</gui> என அமைக்கவும்.</p>
+
+      <note style="info"><p>If the text below <gui>Computer Name</gui> allows
+      you to edit it, you can <link xref="sharing-displayname">change</link>
+      the name your computer displays on the network.</p></note>
+    </item>
+    <item>
+      <p><gui>மீடியா பகிர்தல்</gui> ஐ தேர்ந்தெடுக்கவும்.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Media Sharing</gui> to <gui>ON</gui>.</p>
+    </item>
+    <item>
+      <p>By default, <file>Music</file>, <file>Pictures</file> and 
+      <file>Videos</file> are shared. To remove one of these, click the
+      <gui>X</gui> next to the folder name.</p>
+    </item>
+    <item>
+      <p>To add another folder, click <gui style="button">+</gui> to open the
+      <gui>Choose a folder</gui> window. Navigate <em>into</em> the desired
+      folder and click <gui style="button">Open</gui>.</p>
+    </item>
+    <item>
+      <p>Click <gui style="button">X</gui>. You will now be able to browse
+      or play media in the folders you selected using the external device.</p>
+    </item>
+  </steps>
+
+  <section id="networks">
+  <title>Networks</title>
+
+  <p>The <gui>Networks</gui> section lists the networks to which you are
+  currently connected. Use the <gui>ON | OFF</gui> switch next to each to
+  choose where your media can be shared.</p>
+
+  </section>
+
+</page>

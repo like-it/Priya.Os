@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-switch-tasks" version="1.0 if/1.0" xml:lang="gu">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>જેકબ સ્ટેઇનર</name>
+    </credit>
+    <credit type="author">
+      <name>પેટર કોવર</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="videos"/>
+    <title role="trail" type="link">કાર્યોને બદલો</title>
+    <link type="seealso" xref="shell-windows-switching"/>
+    <title role="seealso" type="link">કાર્યનો બદલવા પર માર્ગદર્શિકા</title>
+    <link type="next" xref="gs-respond-messages"/>
+  </info>
+
+  <title>કાર્યોને બદલો</title>
+
+  <ui:overlay width="812" height="452">
+  <media type="video" its:translate="no" src="figures/gnome-task-switching.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-task-switching.svg"/>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>કાર્યોને બદલી રહ્યા છે</tt:p>
+         </tt:div>
+         <if:if test="!platform:gnome-classic">
+         <tt:div begin="5s" end="8s">
+           <tt:p>સ્ક્રીનની ટોચે ડાબે ખૂણે <gui>પ્રવૃત્તિ</gui> તરફ તમારા માઉસ પોઇંટરને ખસાડો.</tt:p>
+           </tt:div>
+         </if:if>
+         <tt:div begin="9s" end="12s">
+           <tt:p>કાર્યને બદલવા માટે વિન્ડો પર ક્લિક કરો.</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="14s">
+           <tt:p>સ્ક્રીનની ડાબી બાજુ તરફ વિન્ડોને મહત્તમ કરવા માટે, વિન્ડોની શીર્ષકપટ્ટીને લાવો અને ડાબે તેને ખસેડો.</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="16s">
+           <tt:p>જ્યારે અડધી સ્ક્રીન પ્રકાશિત થયેલ હોય, વિન્ડોને પ્રકાશિત કરો.</tt:p>
+         </tt:div>
+         <tt:div begin="16s" end="18">
+           <tt:p>સ્ક્રીનની જમણી બાજુ તરફ વિન્ડોને મહત્તમ કરવા માટે, વિન્ડોની શીર્ષકપટ્ટીને લાવો અને જમણે ખેંચો.</tt:p>
+         </tt:div>
+         <tt:div begin="18s" end="20s">
+           <tt:p>જ્યારે અડધી સ્ક્રીન પ્રકાશિત થયેલ હોય, વિન્ડોને પ્રકાશિત કરો.</tt:p>
+         </tt:div>
+         <tt:div begin="23s" end="27s">
+           <tt:p><gui>વિન્ડો સ્વીચર</gui> ને બતાવવા માટે <keyseq> <key href="help:gnome-help/keyboard-key-super">Super</key><key> Tab</key></keyseq> દબાવો.</tt:p>
+         </tt:div>
+         <tt:div begin="27s" end="29s">
+           <tt:p>આગળની પ્રકાશિત થયેલ વિન્ડોને પસંદ કરવા માટે <key href="help:gnome-help/keyboard-key-super">Super </key> ને પ્રકાશિત કરો.</tt:p>
+         </tt:div>
+         <tt:div begin="29s" end="32s">
+           <tt:p>વિન્ડોને ખોલવાની યાદી મારફતે, <key href="help:gnome-help/keyboard-key-super">Super</key> ને પ્રકાશિત કરો નહિં પરંતુ તેને પકડી રાખો, અને <key>Tab</key> ને દબાવો.</tt:p>
+         </tt:div>
+         <tt:div begin="35s" end="37s">
+           <tt:p><gui>પ્રવૃત્તિ ઝાંખી</gui> ને બતાવવા માટે <key href="help:gnome-help/keyboard-key-super">Super </key> કીને દબાવો.</tt:p>
+         </tt:div>
+         <tt:div begin="37s" end="40s">
+           <tt:p>કાર્યક્રમનાં નામને લખવાનું શરૂ કરો જે તમે બદલવા માંગો છો.</tt:p>
+         </tt:div>
+         <tt:div begin="40s" end="43s">
+           <tt:p>પહેલાં પરિણામ પ્રમાણે જ્યારે કાર્યક્રમ દેખાય, તેને બદલવા માટે <key> Enter</key> દબાવો.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+  <section id="switch-tasks-overview">
+    <title>કાર્યોને બદલો</title>
+
+<if:choose>
+<if:when test="!platform:gnome-classic">
+
+  <steps>
+    <item><p><gui>પ્રવૃત્તિ ઝાંખી</gui> ને બતાવવા માટે સ્ક્રીનની ટોચે ડાબે <gui>પ્રવૃત્તિ</gui> ખૂણામાં તમારા માઉસ પોઇંટરને ખસેડો જ્યાં તમારે નાની વિન્ડો તરીકે દર્શાવેલ હાલમાં ચાલતા કાર્યોને જોઇ શકો છો.</p></item>
+     <item><p>કાર્યને બદલવા માટે વિન્ડો પર ક્લિક કરો.</p></item>
+  </steps>
+
+</if:when>
+<if:when test="platform:gnome-classic">
+
+  <steps>
+    <item><p>તમે સ્ક્રીનની નીચે <gui>વિન્ડો યાદી</gui> ને વાપરીને કાર્યો વચ્ચે બદલી શકો છો. <gui>વિન્ડો યાદી</gui> માં બટન કરીકે ખુલ્લા કાર્યો દેખાય છે.</p></item>
+     <item><p>કાર્યને બદલવા માટે <gui>વિન્ડો યાદી</gui> માં બટન પર ક્લિક કરો.</p></item>
+  </steps>
+
+</if:when>
+</if:choose>
+
+  </section>
+
+  <section id="switching-tasks-tiling">
+    <title>તકતી વિન્ડો</title>
+    
+    <steps>
+      <item><p>સ્ક્રીન બાજુ સાથે વિન્ડોને મહત્તમ કરવા માટે, વિન્ડોની શીર્ષકપટ્ટીને લાવો અને સ્ક્રીનની ડાબે અથવા જમણે તેને ખેંચો.</p></item>
+      <item><p>જ્યારે અડધી સ્ક્રીન પ્રકાશિત થયેલ હોય, સ્ક્રીનની પસંદ થયેલ બાજુ સાથે તેને મહત્તમ કરવા માટે વિન્ડોને પ્રકાશિત કરો.</p></item>
+      <item><p>વિન્ડોની બંને બાજુને મહત્તમ કરવા માટે, બીજી વિન્ડોની શીર્ષકપટ્ટીને લાવો અને સ્ક્રીનની વિરુદ્દ દિશામાં તેને ખેંચો.</p></item>
+       <item><p>જ્યારે અડધી સ્ક્રીન પ્રકાશિત થયેલ હોય તો, સ્ક્રીનની વિરુદ્દ દિશાની સાથે તેને મહત્તમ કરવા માટે વિન્ડોને પ્રકાશિત કરો.</p></item>
+    </steps>
+    
+  </section>
+  
+  <section id="switch-tasks-windows">
+    <title>વિન્ડો વચ્ચે બદલો</title>
+    
+  <steps>
+   <item><p><gui>વિન્ડો સ્વીચર</gui> ને બતાવવા માટે <keyseq><key href="help:gnome-help/keyboard-key-super">Super </key><key>Tab</key></keyseq> ને દબાવો, કે જે હાલની ખુલ્લી વિન્ડોની યાદી કરે છે.</p></item>
+   <item><p><gui>વિન્ડો સ્વીચર</gui> માં આગળની પ્રકાશિત થયેલ વિન્ડોને પસંદ કરવા માટે <key href="help:gnome-help/keyboard-key-super">Super</key> ને પ્રકાશિત કરો.</p>
+   </item>
+   <item><p>વિન્ડોને ખોલવાની યાદી મારફતે, <key href="help:gnome-help/keyboard-key-super">Super</key> ને પ્રકાશિત કરો નહિં પરંતુ તેને પકડી રાખો, અને <key>Tab</key> ને દબાવો.</p></item>
+  </steps>
+
+  </section>
+
+  <section id="switch-tasks-search">
+    <title>કાર્યક્રમોને બદલવા માટે શોધને વાપરો</title>
+    
+    <steps>
+      <item><p><gui>પ્રવૃત્તિ ઝાંખી</gui> ને બતાવવા માટે <key href="help:gnome-help/keyboard-key-super">Super</key> કીને દબાવો.</p></item>
+      <item><p>કાર્યક્રમનાં નામને ફક્ત ટાઇપ કરવાનું શરૂ કરો જે તમે બદલવા માંગો છો. કાર્યક્રમો બંધબેસી રહ્યા છે જે તમે ટાઇપ કર્યુ છે તે દેખાશે.</p></item>
+      <item><p>જ્યારે કાર્યક્રમ પહેલાં પરિણામ પ્રમાણે જ્યારે કાર્યક્રમ દેખાય છે તેને બદલવા માંગો છો, તેને બદલવા માટે <key> Enter</key> દબાવો.</p></item>
+      
+    </steps>
+    
+  </section>
+
+</page>

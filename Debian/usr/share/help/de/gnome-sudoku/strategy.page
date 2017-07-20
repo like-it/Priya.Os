@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="strategy" xml:lang="de">
+	<info>
+          <revision version="3.4" date="2012-03-08" status="final"/>
+	  <link type="guide" xref="index#play"/>
+	  <credit type="author copyright">
+	    <name>Radoslav Asparuhov</name>
+	    <email>rasparuhov@gmail.com</email>
+	  <years>2011</years>
+	  </credit>
+	  <credit type="editor">
+	    <name>Tiffany Antopolski</name>
+	    <email>tiffany.antopolski@gmail.com</email>
+	  </credit>
+	  <license>
+		<p>Creative Commons Share Alike 3.0</p>
+	  </license>
+	
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008, 2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@googlemail.com</mal:email>
+      <mal:years>2011, 2014, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Strategie</title>
+        <p>Es gibt immer nur eine mögliche Ziffer für jedes Kästchen in einem Sudoku-Rätsel. Die folgenden Strategien sollen Ihnen helfen, systematisch die Lösung für jedes der Kästchen zu finden.</p>
+ <section id="strategy1">
+	<title>Strategie 1:</title>
+	  <steps>
+	    <item><p>Wählen Sie die Zeile, die die meisten Ziffern enthält.</p>
+                  <note><p>Sie sollten die Zeile oder Spalte wählen, welche die meisten Ziffern enthält. Zum einfacheren Verständnis beziehen sich diese Anweisungen auf eine Zeile, wobei diese auch für Spalten gelten.</p></note>
+            </item>
+	    <item><p>Ermitteln Sie die fehlenden Ziffern für diese Zeile.</p></item>
+	    <item><p>Wählen Sie eines der leeren Kästchen in dieser Zeile. Ermitteln Sie die fehlenden Ziffern in der Spalte oder im 3x3-Teilfeld.</p></item>
+	    <item><p>Geben Sie als <link xref="notes">Notizen</link> im oberen Bereich die fehlenden Ziffern ein, die sich weder in der Spalte noch im 3x3-Teilfeld befinden. Diese Ziffern sind die »Kandidaten« für dieses Kästchen.</p></item>
+	    <item><p>Gehen Sie zum nächsten Kästchen in dieser Zeile und wiederholen Sie die beschriebene Vorgehensweise für jede Zeile und jede Spalte. Beginnen Sie mit den Spalten und Zeilen mit den wenigsten leeren Kästchen und setzen Sie bis zu jenen mit den meisten leeren Kästchen fort. Achten Sie stets sorgfältig auf die Ziffern und vergessen Sie dabei die 3x3-Teilfelder nicht.</p></item>
+	   </steps>
+            <note><p>Mit dieser Strategie finden Sie die Kästchen, die nur eine mögliche Eintragung haben. Sobald Sie diese Kästchen gefunden haben, füllen Sie sie aus und wiederholen Sie nun die Strategie, bis das Rätsel vollständig gelöst ist.</p></note>
+<figure>
+  <desc>Beispiel für Strategie 1.</desc>
+  <media type="image" mime="image/png" src="figures/strategy1.png" width="400" its:translate="no"/>
+</figure>
+
+</section>
+<section id="strategy2">
+
+	<title>Strategie 2:</title>
+	  <steps>
+	    <item><p>Finden Sie die Ziffer, die am häufigsten vorkommt.</p></item>
+	    <item><p>Schauen Sie nun nach der linken Anordnung der 3x3-Teilfelder und ermitteln Sie die Spalte(n), in welchen diese Ziffer erscheint.</p></item>
+  	    <item><p>Gehen Sie innerhalb der linken Anordnung zu dem 3x3-Teilfeld, welches in keinem der Kästchen diese Ziffer enthält. Geben Sie mit Hilfe von <link xref="notes">Notizen</link> diese Ziffer in jedes leere Kästchen ein, in welchem diese Ziffer nicht erscheint. Falls die Ziffer in der Zeile eines dieser Kästchen bereits enthalten ist, geben Sie sie dort nicht in den Notizbereich ein.</p></item>
+	    <item><p>Wiederholen Sie die letzten beiden Schritte für die mittlere und rechte vertikale Anordnung.</p></item>
+            <item><p>Ermitteln Sie die Ziffer, die am zweithäufigsten vorkommt, und wiederholen Sie diesen Schritt für alle 9 Ziffern.</p></item>
+	  </steps>
+            <note><p>Mit dieser Strategie finden Sie die Kästchen, die nur eine mögliche Eintragung haben. Sobald Sie diese Kästchen gefunden haben, füllen Sie sie aus und wiederholen Sie nun die Strategie, bis das Rätsel vollständig gelöst ist.</p></note>
+<figure>
+  <desc>Beispiel für Strategie 2.</desc>
+  <media type="image" mime="image/png" src="figures/strategy2.png" width="400" its:translate="no"/>
+</figure>
+
+	   <note><p>Falls sich mit keiner der beschriebenen Strategien das Rätsel lösen lässt, können Sie zwischen den Strategien wechseln oder sie kombinieren.</p></note>
+</section>
+</page>

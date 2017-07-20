@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Collaboratori del wiki della documentazione di Ubuntu</name>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Alcuni driver di dispositivi non funzionano molto bene con determinati adattatori WiFi ed è pertanto necessario trovarne di migliori.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Risoluzione dei problemi relativi alle reti senza fili</title>
+
+  <subtitle>Assicurarsi che siano installati driver funzionanti</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>In questo passaggio viene indicato come ottenere driver dispositivi funzionanti per il proprio adattatore WiFi. Un <em>driver dispositivo</em> è un componente software che indica al computer come far funzionare correttamente un dispositivo hardware. Anche se l'adattatore WiFi è stato riconosciuto dal computer, potrebbe non avere driver che funzionano. È possibile trovare differenti driver funzionanti per l'adattatore WiFi. Provare alcune delle opzioni che seguono:</p>
+
+  <list>
+    <item>
+      <p>Check to see if your wireless adapter is on a list of supported
+      devices.</p>
+      <p>Most Linux distributions keep a list of wireless devices that they
+      have support for. Sometimes, these lists provide extra information on how
+      to get the drivers for certain adapters working properly. Go to the list
+      for your distribution (for example,
+      <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>,
+      <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>,
+      <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> or
+      <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>)
+      and see if your make and model of wireless adapter is listed. You may be
+      able to use some of the information there to get your wireless drivers
+      working.</p>
+    </item>
+    <item>
+      <p>Look for restricted (binary) drivers.</p>
+      <p>Many Linux distributions only come with device drivers which are
+      <em>free</em> and <em>open source</em>. This is because they cannot
+      distribute drivers which are proprietary, or closed-source. If the
+      correct driver for your wireless adapter is only available in a non-free,
+      or "binary-only" version, it may not be installed by default. If this is
+      the case, look on the wireless adapter manufacturer's website to see if
+      they have any Linux drivers.</p>
+      <p>Some Linux distributions have a tool that can download restricted
+      drivers for you. If your distribution has one of these, use it to see if
+      it can find any wireless drivers for you.</p>
+    </item>
+    <item>
+      <p>Use the Windows drivers for your adapter.</p>
+      <p>In generale, non è possibile usare un driver dispositivo progettato per un sistema operativo (come Windows) in un altro sistema operativo (come Linux), perché i due sistemi funzionano diversamente. Tuttavia, per gli adattatori WiFi, è possibile installare un emulatore chiamato <em>NDISwrapper</em> che consente di usare alcuni driver WiFi Windows in ambiente Linux. Ciò è utile in quanto sono quasi sempre disponibili driver Windows per adattatori WiFi, mentre i driver Linux non sempre lo sono. È possibile trovare maggiori informazioni sull'utilizzo di NDISwrapper <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">qui</link>. Notare che NDISwrapper non funziona con tutti i driver WiFi.</p>
+    </item>
+  </list>
+
+  <p>If none of these options work, you may want to try a different wireless
+  adapter to see if you can get that working. USB wireless adapters are often
+  quite cheap, and will plug into any computer. You should check that the
+  adapter is compatible with your Linux distribution before buying it,
+  though.</p>
+
+</page>

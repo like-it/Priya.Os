@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="contacts-libreoffice" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#data-migration-and-sync"/>
+
+    <revision pkgversion="3.1.5" version="0.2" date="2012-02-18" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Usar datos de las libretas de direcciones de <app>Evolution</app> en documentos de LibreOffice.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Contactos en LibreOffice</title>
+
+  <p>Puede usar sus libretas de direcciones de <app>Evolution</app> en LibreOffice como fuentes de datos. Los siguientes pasos se conciernen a la versión 3.3.3 de LibreOffice.</p>
+
+  <steps>
+    <item>
+      <p>En la barra de menú pulse <guiseq><gui>Editar</gui><gui>Intercambiar base de datos…</gui></guiseq>. Esto mostrará la caja de diálogo <gui>Intercambiar bases de datos</gui>.</p>
+    </item>
+    <item>
+      <p>En el panel derecho, bajo <gui>Bases de datos disponibles</gui>, <gui>EvolutionLocal</gui> está disponible como fuente. Pulse el pequeño triángulo para obtener la lista de sus libretas de direcciones de <app>Evolution</app>.</p>
+    </item>
+    <item>
+      <p>Seleccione una libreta de direcciones y pulse <gui style="button">Definir</gui>.</p>
+    </item>
+    <item>
+      <p>En caso de que no se liste pulse <gui style="button">Examinar…</gui>. Se abrirá un diálogo de selección de archivos.</p>
+    </item>
+    <item>
+      <p>Ya que <app>Evolution</app> almacena sus datos en una carpeta oculto, pulse <keyseq><key>Ctrl</key><key>L</key></keyseq> para mostrar la barra de direcciones.</p>
+    </item>
+    <item>
+      <p>Vaya a <file>~/.local/share/evolution/addressbook/system/addressbook.db</file> y pulse <gui style="button">Abrir</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Esto hace que la libreta de direcciones de <app>Evolution</app> sea la fuente de datos predeterminada de LibreOffice. Ahora puede seleccionar un campo para insertar en un documento de LibreOffice a través de <guiseq><gui>Insertar</gui><gui>Campos</gui><gui>Otro</gui></guiseq>.</p>
+
+</page>

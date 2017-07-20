@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-rename" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Modifier le nom d'un fichier ou d'un dossier.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Modification d'un nom de fichier ou de dossier</title>
+
+  <p>Comme avec les autres gestionnaires de fichiers, vous pouvez utiliser <app>Fichiers</app> pour modifier le nom d'un fichier ou d'un dossier.</p>
+
+  <steps>
+    <title>Pour renommer un fichier ou un dossier :</title>
+    <item><p>Faites un clic droit sur l'élément et choisissez <gui>Renommer</gui>, ou sélectionnez-le et appuyez sur <key>F2</key>.</p></item>
+    <item><p>Type the new name and press <key>Enter</key> or click
+    <gui>Rename</gui>.</p></item>
+  </steps>
+
+  <p>Vous pouvez aussi modifier le nom d'un fichier dans la fenêtre <link xref="nautilus-file-properties-basic">propriétés</link>.</p>
+
+  <p>Quand vous renommez un fichier, seule la première partie de son nom est sélectionnée, pas l'extension (la partie derrière le dernier <file>.</file>). L'extension décrit normalement le type de fichier (par exemple <file>fichier.pdf</file> est un document PDF) et normalement, vous ne devez pas la modifier. Si malgré tout, vous souhaitez modifier aussi l'extension, sélectionnez le nom complet et modifiez-le.</p>
+
+  <note style="tip">
+    <p>If you renamed the wrong file, or named your file improperly, you can
+    undo the rename. To revert the action, immediately click the menu button in
+    the toolbar and select <gui>Undo Rename</gui>, or press
+    <keyseq><key>Ctrl</key><key>Z</key></keyseq>, to restore the former
+    name.</p>
+  </note>
+
+  <section id="valid-chars">
+    <title>Caractères valides pour les noms de fichier</title>
+
+    <p>Vous pouvez utiliser n'importe quel caractère sauf le <file>/</file> (barre oblique ou slash) dans les noms de fichiers. Certains périphériques utilisent cependant <em>un système de fichiers</em> plus restrictif sur la composition du nom. Par conséquent, il est préférable d'éviter les caractères suivants dans la composition des noms de fichiers : <file>|</file>, <file>\</file>, <file>?</file>, <file>*</file>, <file>&lt;</file>, <file>"</file>, <file>:</file>, <file>&gt;</file>, <file>/</file>.</p>
+
+    <note style="warning">
+    <p>Si vous mettez un <file>.</file> comme premier caractère d'un nom de fichier, le fichier est alors <link xref="files-hidden">caché</link> lorsque vous tentez de l'afficher dans le gestionnaire de fichiers.</p>
+    </note>
+
+  </section>
+
+  <section id="common-probs">
+    <title>Problèmes connus</title>
+
+    <terms>
+      <item>
+        <title>Le nom du fichier est déjà utilisé</title>
+        <p>Il ne peut pas y avoir deux fichiers portant le même nom dans le même dossier. Si vous renommez un fichier en lui donnant un nom de fichier qui existe déjà dans le dossier, le gestionnaire de fichiers ne l'accepte pas.</p>
+        <p>Les noms de fichier et de dossier sont sensibles à la casse donc le nom de fichier <file>Fichier.txt</file> n'est pas le même que <file>fichier.txt</file>. L'utilisation de noms différents de ce type est autorisée, même si cela n'est pas recommandé.</p>
+      </item>
+      <item>
+        <title>Le nom de fichier est trop long</title>
+        <p>Sur certains systèmes, les noms de fichiers ne peuvent pas avoir plus de 255 caractères. Cette limite inclut à la fois le nom du fichier et l'arborescence vers le fichier (par exemple, <file>/home/sylvie/Documents/travail/propositions-de-travail/… </file>), donc évitez si possible d'utiliser des noms de fichiers et de dossiers trop longs.</p>
+      </item>
+      <item>
+        <title>L'option pour renommer est grisée</title>
+        <p>Si l'option <gui>Renommer</gui> est grisée, vous n'avez pas la permission de modifier le nom du fichier. En règle générale, il est préférable de s'abstenir de modifier le nom de fichiers protégés car cela pourrait rendre votre système instable. Consultez <link xref="nautilus-file-properties-permissions"/> pour plus d'informations.</p>
+      </item>
+    </terms>
+
+  </section>
+
+</page>

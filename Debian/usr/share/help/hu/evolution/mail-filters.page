@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters" xml:lang="hu">
+
+  <info>
+    <desc>Szűrőszabályok használata a levelek mappákba rendezésére automatikusan.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+
+    <revision pkgversion="3.0.2" version="0.6" date="2012-02-19" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-filters.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Szűrők használata</title>
+
+<p>Az üzenetszűrők műveleteket hajtanak végre a leveleken az Ön által meghatározott feltételek alapján. Szűrőket megadhat a bejövő és kimenő levelekre egyaránt.</p>
+
+<p>A szűrők automatikusan alkalmazásra kerülnek a helyi fiókokba (például POP) érkező levelekre. A távoli fiókokat (például IMAP) használó levélkiszolgálók ezt közvetlenül a kiszolgálón végzik, mivel így gyorsabb. Ha az <app>Evolution</app> szűrőit távoli fiókokra is szeretné alkalmazni, akkor ezt a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Postafiókok</gui><gui style="button">Szerkesztés</gui><gui>Fogadás beállításai</gui><gui>Beállítások</gui><gui>Szűrők alkalmazása az új levelekre ezen kiszolgáló Beérkezett üzenetek mappájában</gui></guiseq> jelölőnégyzet bejelölésével teheti meg.</p>
+
+<p>A szűrők saját kezű alkalmazásához egy mappa üzeneteire, válassza ki az üzeneteket, majd az <guiseq><gui>Üzenet</gui><gui>Szűrők alkalmazása</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>Y</key></keyseq> kombinációt.</p>
+<p>Egy mappa összes üzenetét kijelölheti a <guiseq><gui>Szerkesztés</gui><gui>Összes kiválasztása</gui></guiseq> menüpont kiválasztásával, vagy a <keyseq><key>Ctrl</key><key>A</key></keyseq> kombináció megnyomásával.</p>
+
+<section id="adding">
+<title>Szűrő létrehozása</title>
+
+<steps>
+<item><p>Válassza a <guiseq><gui>Szerkesztés</gui><gui>Üzenetszűrők</gui></guiseq>, vagy az <guiseq><gui>Üzenet</gui><gui>Létrehozás</gui></guiseq> menüpontot, és adja meg a szűrő alapjául szolgáló feltételeket.</p></item>
+<item><p>Nyomja meg a <gui style="button">Hozzáadás</gui> gombot.</p></item>
+<item><p>Írjon be egy nevet a <gui>Szabály neve</gui> mezőbe.</p></item>
+<item><p>Adja meg a szabály feltételeit. Minden feltételhez elsőként válassza ki a levél ellenőrzendő részét, majd adja meg az összehasonlítást.</p><p>Az elérhető feltételekkel kapcsolatos további információkért lásd a <link xref="mail-filters-conditions">Használható szűrőfeltételek</link> szakaszt.</p></item>
+<item><p>Ha több feltételt szeretne meghatározni, akkor az <gui>Elemek keresése</gui> alatt adja meg, hogy a feltételek közül bármelyiknek vagy mindegyiknek kell-e illeszkednie, nyomja meg a <gui style="button">Feltétel hozzáadása</gui> gombot, és ismételje meg az előző lépést.</p></item>
+<item>
+<p>Válassza ki a szűrő műveleteit az <gui>Azután</gui> szakaszban.</p><p>Az elérhető műveletekkel kapcsolatos további információkért lásd a <link xref="mail-filters-actions">Használható szűrőműveletek</link> szakaszt.</p>
+
+<note style="warning"><p>A szűrők sorrendje nagyon fontos. Az eredeti üzenetre sorrendben kerülnek alkalmazásra, mint egy recept.</p>
+<p>Ha az első szűrője egy <gui>Feldolgozás leállítása</gui> szabályt tartalmaz, akkor az erre illeszkedő összes levélen a következő szűrők már nem lesznek lefuttatva.</p>
+<p>Amikor egy levelet áthelyez egy másik mappába, akkor az „áthelyezés” valójában az üzenet egy másolatának a célmappához fűzését és az eredeti üzenet törlésre való kijelölését jelenti. Emiatt az ezt esetleg követő szűrőszabályok az eredeti üzenetre lesznek alkalmazva, amely most törlésre van kijelölve. Emiatt az üzenet áthelyezése általában a szűrőszabályok sorozatának utolsó eleme kell legyen.</p></note>
+
+</item>
+<item><p>Ha több műveletet szeretne megadni, akkor nyomja meg a <gui style="button">Művelet hozzáadása</gui> gombot, és ismételje meg az előző lépést. Ha például nem szeretné, hogy a további meglévő szűrők alkalmazásra kerüljenek, akkor válassza a <gui>Feldolgozás leállítása</gui> elemet a lista második műveleteként.</p></item>
+<item><p>Nyomja meg az <gui style="button">OK</gui> gombot.</p></item>
+</steps>
+
+</section>
+
+<section id="editing">
+<title>Szűrők szerkesztése</title>
+<steps>
+<item><p>Válassza a <guiseq><gui>Szerkesztés</gui><gui>Üzenetszűrők</gui></guiseq> menüpontot.</p></item>
+<item><p>Válassza ki a szűrőt.</p></item>
+<item><p>Nyomja meg a <gui style="button">Szerkesztés</gui> gombot.</p></item>
+<item><p>Végezze el a kívánt módosításokat, majd nyomja meg az <gui style="button">OK</gui> gombot kétszer.</p></item>
+</steps>
+</section>
+
+<section id="deleting">
+<title>Szűrők törlése</title>
+<steps>
+<item><p>Válassza a <guiseq><gui>Szerkesztés</gui><gui>Üzenetszűrők</gui></guiseq> menüpontot.</p></item>
+<item><p>Válassza ki a szűrőt.</p></item>
+<item><p>Nyomja meg az <gui style="button">Eltávolítás</gui> gombot.</p></item>
+<item><p>Nyomja meg az <gui style="button">OK</gui> gombot.</p></item>
+</steps>
+</section>
+
+
+
+
+	
+</page>

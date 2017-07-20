@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="sr-Latn">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>Kalibracija i karakterizacija su potpuno različite stvari.</desc>
+
+    <credit type="author">
+      <name>Ričards Hjudžiz</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Koja je razlika između kalibracije i karakterizacije?</title>
+  <p>Mnogo ljudi je na početku zbunjeno o razlici između kalibracije i karakterizacije. Kalibracija je proces menjanja ponašanja boje uređaja. Ovo se obično postiže korišćenjem dva načina:</p>
+  <list>
+    <item><p>Menjanjem kontrola ili unutrašnjih podešavanja koja poseduje</p></item>
+    <item><p>Primenom krivih na kanale njegovih boja</p></item>
+  </list>
+  <p>Zamisao kalibracije je postavljanje uređaja u određeno stanje bez uslova na odgovore njegovih boja. Ovo se često koristi kao svakodnevno sredstvo za održavanje ponašanja reprodukcije. Obično kalibracija će biti uskladištena u posebnom formatu datoteke uređaja ili sistema koji snima podešavanja uređaja ili krive kalibracije po kanalu.</p>
+  <p>Karakterizacija (ili profilisanje) je <em>snimanje</em> načina na koji uređaj proizvodi ili odgovara na boju. Obično rezultat je uskladišten u ICC profilu uređaja. Takav profil sam po sebi ne menja boju ni na koji način. On dopušta sistemu kao što je CMM (Modulu za upravljanje bojom) ili programu za opažanje boje da izmeni boju kada je kombinovana sa drugim profilom uređaja. Samo poznajući karakteristike oba uređaja, samo način prenosa boje sa predstavljanja jednog uređaja na drugi može biti ostvaren.</p>
+  <note>
+    <p>Znajte da će karakterizacija (profil) biti ispravna samo za uređaj ako je u istom stanju kalibracije kao kada je bio karakterisan.</p>
+  </note>
+  <p>U slučaju prikaza profila postoje dodatne smetnje zato što su podaci o kalibraciji često smešteni u profilu zbog pogodnosti. Prema dogovoru smeštaju se u oznaci pod nazivom <em>vcgt</em>. Iako su smešteni u profilu, nijedan od alata zasnovanih na ICC-u ili programi nisu o njemu obavešteni, ili da rade nešto s njima. Slično, alati za kalibrisanje ekrana i programi neće biti obavešteni, ili će nešto raditi sa podacima ICC karakterizacije (profila).</p>
+
+</page>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
+
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Почему мой компьютер не выходит из ждущего режима?</title>
+
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
+
+<section id="resume">
+  <title>Компьютер не может выйти из ждущего режима</title>
+  <p>Если нажать клавишу мышки или клавиатуры компьютера, находящегося в ждущем режиме, он должен «проснуться» и показать экран ввода пароля. Если этого не произошло, попробуйте нажать кнопку питания (не удерживать, а просто нажать один раз).</p>
+  <p>Если это не помогло, проверьте, включен ли монитор и попробуйте снова нажать клавишу на клавиатуре.</p>
+  <p>В качестве последнего средства, выключите компьютер, удерживая кнопку питания нажатой 5-10 секунд. При этом вы потеряете все несохранённые результаты работы, но зато сможете потом опять включить компьютер.</p>
+  <p>Если это повторяется каждый раз при переводе компьютера в ждущий режим, то этот режим, возможно, не работает на вашем оборудовании.</p>
+  <note style="warning">
+    <p>Если в электросети пропало напряжение, и компьютер не оборудован альтернативным источником питания (например, аккумулятором), он выключится.</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>Моё беспроводное соединение (или другое устройство) не работает после «пробуждения» компьютера</title>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
+  <p>Если устройство снабжено выключателем питания, попробуйте отключить его и снова включить. В большинстве случаев оно снова начнёт работать. Если устройство подключается через USB или другой подобный кабель, попробуйте отсоединить устройство и подсоединить его снова и посмотрите, заработает ли оно.</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
+</section>
+
+</page>

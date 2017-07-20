@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-displaying-images-in-html" xml:lang="cs">
+
+  <info>
+    <desc>Jak na obrázky vložené v přijaté zprávě ve formátu HTML.</desc>
+
+    <link type="guide" xref="mail-displaying-message"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2011-08-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-read.html.en#usage-mail-getnsend-get-attach-html -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Obrázky ve zprávách formátovaných pomocí HTML</title>
+
+<p>Když vám někdo pošle poštu formátovanou pomocí HTML, která obsahuje v těle zprávy obrázky (např. uvítací zpráva ve složce Příchozí), zobrazí <app>Evolution</app> obrázky uvnitř zprávy.</p>
+
+<section id="loading">
+<title>Načítání obrázků</title>
+<p>Některé obrázky jsou ve zprávě pouze v podobě odkazů, místo aby byly přímo její součástí. <app>Evolution</app> umí tyto obrázky stáhnout z internetu, ale dělá to, pouze pokud ho k tomu vyzvete. To je proto, že vzdálené obrázky se mohou dlouho stahovat a zobrazovat a mohou být dokonce zneužity zasilateli nevyžádané pošty k vysledování toho, kdo e-maily čte. Tím, že obrázky automaticky nenačítá, pomáhá chránit vaše soukromí.</p>
+
+<p>Když chcete načíst obrázky pro jednu zprávu, klikněte na <guiseq><gui>Zobrazit</gui> <gui>Načíst obrázky</gui></guiseq> nebo zmáčkněte <keyseq><key>Ctrl</key><key>I</key></keyseq>.</p>
+
+<p>Pro nastavení výchozí činnosti pro načítání obrázků jděte do <guiseq><gui>Upravit</gui> <gui>Předvolby</gui> <gui>Předvolby pošty</gui> <gui>Zprávy HTML</gui> <gui>Načítání obrázků</gui></guiseq>.</p>
+</section>
+
+<section id="automatically-download">
+<title>Automatické stažení obrázků ve zprávách od lidí, které znáte</title>
+
+<p>Můžete stahovat obrázky ze zpráv, které vám poslal někdo z vašich kontaktů. Pokud tomu tak chcete, jděte do <guiseq><gui>Upravit</gui> <gui>Předvolby pošty</gui> <gui>Zprávy HTML</gui> <gui>Načítání obrázků</gui></guiseq>. Zapněte volbu <gui>Načítat obrázky jen ve zprávách od kontaktů</gui>.</p>
+
+<p>Následně jděte do <guiseq><gui>Upravit</gui> <gui>Předvolby</gui> <gui>Kontakty</gui> <gui>Automatické doplňování</gui></guiseq>. Zapněte automatické doplňování zaškrtnutím políčka <gui>Vždy zobrazovat adresy automaticky doplňovaných kontaktů</gui>.</p>
+</section>
+
+<section id="saving">
+<title>Ukládání obrázků</title>
+<p>Chcete-li uložit obrázek, který je vložený v e-mailů formátovaném pomocí HTML, klikněte na něj pravým tlačítkem a klikněte na <gui>Uložit obrázek…</gui></p>
+<!-- This is available only since version 3.1.5, see https://bugzilla.gnome.org/show_bug.cgi?id=655669 -->
+</section>
+
+</page>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-respond-messages" xml:lang="ja">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">メッセージに返信する</title>
+    <link type="seealso" xref="shell-notifications"/>
+    <title role="seealso" type="link">メッセージへの返事に関するチュートリアル</title>
+    <link type="next" xref="gs-use-windows-workspaces"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2013, 2015, 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>メッセージに返信する</title>
+
+  <ui:overlay width="812" height="452">
+  <media type="video" its:translate="no" src="figures/gnome-responding-to-messages.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-responding-to-messages.svg"/>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="3s">
+           <tt:p>メッセージへの返事</tt:p>
+         </tt:div>
+         <tt:div begin="3s" end="6s">
+           <tt:p>チャットメッセージが画面上部に表示されたら、マウスをメッセージの位置に移動させます。</tt:p>
+           </tt:div>
+         <tt:div begin="6s" end="9s">
+           <tt:p>返信内容を入力したら、<key>Enter</key> を押して送信します。</tt:p>
+         </tt:div>
+         <tt:div begin="9s" end="10s">
+           <tt:p>チャットメッセージを閉じます。</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="14s">
+           <tt:p>あとで返信する</tt:p>
+         </tt:div>
+         <tt:div begin="16s" end="22s">
+           <tt:p>画面上部のチャットメッセージにマウスを移動させなければ、しばらくするとメッセージは画面から消えます。</tt:p>
+         </tt:div>
+         <tt:div begin="22s" end="24s">
+           <tt:p>まだ返信していないメッセージを再表示するには、トップバーの時計をクリックします。</tt:p>
+         </tt:div>
+         <tt:div begin="24s" end="26s">
+           <tt:p>通知リストから、メッセージを選択します。</tt:p>
+         </tt:div>
+         <tt:div begin="26s" end="28s">
+           <tt:p>返事を入力します。</tt:p>
+         </tt:div>
+         <tt:div begin="32s" end="35s">
+           <tt:p>通知リストを表示するには、<keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>V</key></keyseq> を押します。</tt:p>
+         </tt:div>
+         <tt:div begin="35s" end="41s">
+           <tt:p>矢印キーを使い、返信するメッセージを選択して <key>Enter</key> を押します。</tt:p>
+         </tt:div>
+         <tt:div begin="41s" end="44s">
+           <tt:p>返事を入力します。</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+  
+  <section id="respond-to-messages-mouse">
+    <title>マウスを使って、チャットメッセージに返信する</title>
+    
+    <steps>
+      <item><p>チャットメッセージが画面上部に表示されたら、マウスをメッセージの位置に移動させます。</p></item>
+      <item><p>返信内容を入力し、完了したら <key>Enter</key> を押して送信します。</p></item>
+      <item><p>チャットメッセージを閉じるには、メッセージの右上隅にある閉じるボタンを押します。</p></item>
+    </steps>
+    <p/>
+  </section>
+  
+  <section id="respond-to-messages-delayed-mouse">
+    <title>マウスを使って、あとでチャットメッセージに返信する</title>
+    
+    <steps>
+      <item><p>チャットメッセージが画面上部に表示されたあと、マウスをメッセージの位置まで移動させなければ、しばらくするとメッセージが画面から消えます。</p></item>
+      <item><p>まだ返信していないメッセージを再表示するには、トップバーの時計をクリックします。</p></item>
+      <item><p>通知リストから、返信するメッセージを選択してクリックします。</p></item>
+      <item><p>チャットメッセージが表示されたら、返信内容を入力します。</p></item>
+    </steps>
+    
+  </section>
+  
+  <section id="respond-to-messages-delayed-keyboard">
+    <title>キーボードを使って、あとでチャットメッセージに返信する</title>
+    <steps>
+      <item><p>まだ返信していないメッセージを再表示するには、<keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>V</key></keyseq> を押して、未返事の通知リストを表示します。</p>
+      </item>
+      <item><p>矢印キーを使い、返信する通知を選択して、<key>Enter</key> を押します。</p></item>
+      <item><p>チャットメッセージが表示されたら、返信内容を入力します。</p></item>
+    </steps>
+
+  </section>
+
+
+</page>

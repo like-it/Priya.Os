@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Alapvető információk megjelenítése, jogosultságok beállítása és alap alkalmazások kiválasztása.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Fájl tulajdonságai</title>
+
+  <p>Adott fájl vagy mappa információinak megjelenítéséhez kattintson rá a jobb egérgombbal, és válassza a <gui>Tulajdonságok</gui> menüpontot. Ennek alternatívájaként jelölje ki a fájlt, és nyomja meg az <keyseq><key>Alt</key><key>Enter</key></keyseq> kombinációt.</p>
+
+  <p>A fájl tulajdonságai ablak olyan információkat jelenít meg, mint a fájl típusa, mérete és módosításának ideje. Ha gyakran van szüksége ezekre az információkra, akkor megjeleníttetheti ezeket a <link xref="nautilus-list">listanézet oszlopaiban</link> vagy az <link xref="nautilus-display#icon-captions">ikonfeliratokban</link> is.</p>
+
+  <p>Az <gui>Alap</gui> lapon megjelenő információk részletes bemutatása alább található. Elérheti a <gui><link xref="nautilus-file-properties-permissions">Jogosultságok</link></gui> és <gui><link xref="files-open#default">Megnyitás ezzel</link></gui> lapokat is. Bizonyos fájltípusok, például képek és videók esetén egy extra lap is megjelenik, amely a méretekhez, hosszhoz és kodekhez hasonló információkat jelenít meg.</p>
+
+<section id="basic">
+ <title>Alap tulajdonságok</title>
+ <terms>
+  <item>
+    <title><gui>Név</gui></title>
+    <p>A fájlt ezen mező módosításával átnevezheti. A fájlt a tulajdonságok ablakon kívül is átnevezheti, lásd: <link xref="files-rename"/>.</p>
+  </item>
+  <item>
+    <title><gui>Típus</gui></title>
+    <p>Ez segít azonosítani a fájl típusát, például PDF-dokumentum, OpenDocument szöveg vagy JPEG kép. A fájltípus többek közt meghatározza, hogy milyen alkalmazások képesek megnyitni a fájlt. Egy képet például nem fog tudni megnyitni egy zenelejátszóval. További információkért lásd: <link xref="files-open"/>.</p>
+    <p>A fájl <em>MIME-típusa</em> zárójelben jelenik meg. A MIME-típus használatával a számítógépek szabványos módon hivatkozhatnak a fájltípusokra.</p>
+  </item>
+
+  <item>
+    <title>Tartalom</title>
+    <p>Ez a mező csak mappák tulajdonságainak megjelenítésekor látható, és a mappában található elemek számát jelzi. Ha a mappa további mappákat is tartalmaz, akkor minden tartalmazott mappa egy elemnek számít, még ha további elemeket is tartalmaz. Továbbá minden fájl egy elemnek számít. Ha a mappa üres, akkor a tartalom mező a <gui>semmi</gui> szót jeleníti meg.</p>
+  </item>
+
+  <item>
+    <title>Méret</title>
+    <p>Ez a mező akkor jelenik meg, amikor egy fájl (nem pedig mappa) tulajdonságait nyitotta meg. A fájl mérete megadja, hogy az mennyi lemezhelyet foglal el. Ez egyben azt is jelzi, hogy várhatóan meddig fog tartani a fájl letöltése vagy elküldése (például e-mailben): a nagyobb fájlok küldése/fogadása tovább tart.</p>
+    <p>A méret bájtban, KB, MB vagy GB egységben lehet megadva. Az utóbbi három esetén a méret zárójelben bájtban megadva is megjelenik. Technikailag 1 KB 1024 bájt, 1 MB 1024 KB és így tovább.</p>
+  </item>
+
+  <item>
+    <title>Szülőmappa</title>
+    <p>A számítógépén lévő egyes fájlok helyét az <em>abszolút elérési út</em> adja meg. Ez a fájl egyedi „címe” a számítógépén, és azon mappák listájából áll, amelyekbe sorban belépve elérheti a fájlt. Ha például Géza saját mappájában van egy <file>Önéletrajz.pdf</file> nevű fájl, akkor annak szülőmappája a <file>/home/geza</file>, helye pedig a <file>/home/geza/Önéletrajz.pdf</file> lenne.</p>
+  </item>
+
+  <item>
+    <title>Szabad hely</title>
+    <p>Ez csak mappák esetén jelenik meg. Megadja a mappát tároló lemezen elérhető szabad lemezhelyet. Ezzel egyszerűen ellenőrizheti, hogy a merevlemez tele van-e.</p>
+  </item>
+
+  <item>
+    <title>Elérés</title>
+    <p>A fájl utolsó megnyitásának dátuma és ideje.</p>
+  </item>
+
+  <item>
+    <title>Módosítva</title>
+    <p>A fájl utolsó módosításának és mentésének dátuma és ideje.</p>
+  </item>
+ </terms>
+</section>
+
+</page>

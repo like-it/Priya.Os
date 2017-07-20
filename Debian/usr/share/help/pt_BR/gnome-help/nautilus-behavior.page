@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>Faça clique único para abrir arquivos, execute ou veja arquivos de texto executáveis e especifique o comportamento da lixeira.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Preferências de comportamento do gerenciador de arquivos</title>
+<p>Você pode controlar se deve fazer clique único ou clique duplo em arquivos, como arquivos de texto executáveis são manipulados e o comportamento da lixeira. Clique em <gui>Arquivos</gui> na barra superior, clique em <gui>Preferências</gui> e selecione a aba <gui>Comportamento</gui>.</p>
+
+<section id="behavior">
+<title>Comportamento</title>
+<terms>
+ <item>
+  <title><gui>Clique único para abrir itens</gui></title>
+  <title><gui>Clique duplo para abrir itens</gui></title>
+  <p>Por padrão, o clique seleciona arquivos e o clique duplo os abre. Você pode, em vez disso, escolher ter arquivos e pastas abertos ao clicar uma vez neles. Ao usar o modo clique único, você pode manter pressionada a tecla <key>Ctrl</key> enquanto clica para selecionar um ou mais arquivos.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>Arquivos de texto executáveis</title>
+ <p>Um arquivo de texto executável contém um programa que você pode executar. As <link xref="nautilus-file-properties-permissions">permissões do arquivo</link> devem também permitir o arquivo ser executado como um programa. Os mais comuns são os scripts em <sys>Shell</sys>, <sys>Python</sys> e <sys>Perl</sys>. Eles têm as extensões <file>.sh</file>, <file>.py</file> e <file>.pl</file>, respectivamente.</p>
+ 
+ <p>Quando você abre um arquivo de texto executável, você pode escolher entre:</p>
+ 
+ <list>
+  <item>
+    <p><gui>Executar arquivos de texto executáveis quando forem abertos</gui></p>
+  </item>
+  <item>
+    <p><gui>Ver arquivos de texto executáveis quando forem abertos</gui></p>
+  </item>
+  <item>
+    <p><gui>Perguntar a cada vez</gui></p>
+  </item>
+ </list>
+
+ <p>Se <gui>Perguntar a cada vez</gui> estiver selecionado, uma janela vai aparecer perguntando se você deseja executar ou ver o arquivo texto selecionado.</p>
+
+ <p>Arquivos de texto executáveis também são chamados de <em>scripts</em>. Todos os scripts na pasta <file>~/.local/share/nautilus/scripts</file> vão aparecer no menu de contexto por um arquivo sob o submenu <gui style="menuitem">Scripts</gui>. Quando um script é executado de uma pasta local, todos os arquivos selecionados serão colados como parâmetros. Para executar um script em um arquivo:</p>
+
+<steps>
+  <item>
+    <p>Navegue até a pasta desejada.</p>
+  </item>
+  <item>
+    <p>Selecione o dispositivo desejado.</p>
+  </item>
+  <item>
+    <p>Clique com o botão direito do mouse para abrir o menu de contexto e selecione o script desejado para executar a partir do menu <gui style="menuitem">Scripts</gui>.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>Não será passado nenhum parâmetro para um script quando este for executado de uma pasta remota, como, por exemplo, uma pasta mostrando conteúdo da web ou <sys>ftp</sys>.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">Preferências da lixeira do gerenciador de arquivos</title>
+</info>
+<title>Lixeira</title>
+
+<terms>
+ <item>
+  <title><gui>Perguntar antes de esvaziar a lixeira</gui></title>
+  <p>Esta opção está selecionada por padrão. Ao esvaziar a lixeira, uma mensagem vai ser exibida confirmando que você deseja esvaziar a lixeira ou excluir arquivos.</p>
+ </item>
+</terms>
+</section>
+
+</page>

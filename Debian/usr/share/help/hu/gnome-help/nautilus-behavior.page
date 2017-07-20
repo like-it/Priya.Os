@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>Fájlok megnyitása egy kattintással, végrehajtható szövegfájlok futtatása vagy megjelenítése, és a Kuka működése.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Fájlkezelő viselkedésének beállításai</title>
+<p>Befolyásolhatja, hogy egy vagy két kattintás nyissa-e meg a fájlokat, a végrehajtható szövegfájlok kezelését és a Kuka viselkedését. Kattintson a felső sáv <gui>Fájlok</gui> elemére, válassza a <gui>Beállítások</gui> menüpontot, majd a <gui>Viselkedés</gui> lapot.</p>
+
+<section id="behavior">
+<title>Viselkedés</title>
+<terms>
+ <item>
+  <title><gui>Elemek megnyitása egy kattintással</gui></title>
+  <title><gui>Elemek megnyitása dupla kattintással</gui></title>
+  <p>Alapesetben egy kattintás kijelöli, és a dupla kattintás megnyitja a fájlokat. Ehelyett választhatja a fájlok és mappák megnyitását egy kattintással. Az egykattintásos mód használatakor tartsa lenyomva a <key>Ctrl</key> billentyűt több fájl kiválasztásához.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>Végrehajtható szöveges fájlok</title>
+ <p>A végrehajtható szöveges fájl egy futtatható (végrehajtható) programot tartalmazó szövegfájl. A <link xref="nautilus-file-properties-permissions">fájl jogosultságainak</link> is lehetővé kell tenniük a fájl programként való futtatását. A leggyakoribbak a <sys>Shell</sys>, <sys>Python</sys> és <sys>Perl</sys> parancsfájlok. Ezek sorra a <file>.sh</file>, <file>.py</file> és <file>.pl</file> kiterjesztéssel rendelkeznek.</p>
+ 
+ <p>Amikor végrehajtható szövegfájlt nyit meg, a következő lehetőségek közül választhat:</p>
+ 
+ <list>
+  <item>
+    <p><gui>Végrehajtható szöveges fájlok futtatása megnyitáskor</gui></p>
+  </item>
+  <item>
+    <p><gui>Végrehajtható szöveges fájlok futtatása megnyitáskor</gui></p>
+  </item>
+  <item>
+    <p><gui>Kérdés minden alkalommal</gui></p>
+  </item>
+ </list>
+
+ <p>Ha a <gui>Kérdés minden alkalommal</gui> lehetőséget választja, akkor egy ablak meg fogja kérdezni, hogy futtatni vagy megjeleníteni szeretné-e a kijelölt szövegfájlt.</p>
+
+ <p>A végrehajtható fájlokat <em>parancsfájloknak</em> is nevezik. A <file>~/.local/share/nautilus/scripts</file> mappában lévő összes parancsfájl megjelenik a fájlok helyi menüjének <gui style="menuitem">Parancsfájlok</gui> almenüjében. Amikor egy parancsfájlt végrehajt a helyi menüből, akkor az összes kijelölt fájl paraméterként átadásra kerül a parancsfájlnak. Egy parancsfájl végrehajtásához egy fájlon:</p>
+
+<steps>
+  <item>
+    <p>Lépjen be a kívánt mappába.</p>
+  </item>
+  <item>
+    <p>Válassza ki a kívánt fájlt.</p>
+  </item>
+  <item>
+    <p>Kattintson a jobb egérgombbal a fájlra a helyi menü megnyitásához, és válassza ki a végrehajtandó parancsfájlt a <gui style="menuitem">Parancsfájlok</gui> menüből.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>A parancsfájl nem kap paramétereket, ha távoli mappában kerül elindításra, például egy webes vagy <sys>FTP</sys> tartalmat megjelenítő mappa esetén.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">Fájlkezelő Kuka beállításai</title>
+</info>
+<title>Kuka</title>
+
+<terms>
+ <item>
+  <title><gui>Kérdés a Kuka ürítése előtt</gui></title>
+  <p>Ez a beállítás alapesetben be van jelölve. A Kuka ürítésekor egy üzenet jelenik meg, amely a Kuka ürítésének vagy a fájlok törlésének megerősítését kéri.</p>
+ </item>
+</terms>
+</section>
+
+</page>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="es">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Navegar por la Web</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">Un tutorial para explorar la web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2013 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabiola Tortul</mal:name>
+      <mal:email>fabiolatortul@hotmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Navegar por la Web</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>Pulse en el menú de <gui>Aplicaciones</gui> en la parte superior izquierda de la pantalla.</p></item>
+      <item><p>En el menú, seleccione <guiseq><gui>Internet</gui><gui>Firefox</gui> </guiseq>.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>Mueva el cursor del ratón hacia la esquina de <gui>Actividades</gui> en la esquina superior izquierda de la pantalla para mostrar la <gui>Vista de actividades</gui>.</p></item>
+      <item><p>Seleccione el icono del navegador <app>Firefox</app> desde la barra del lado izquierdo de la pantalla.</p></item>
+    </steps>
+
+    <note><p>Alternativamente, puede abrir el navegador <app>Firefox</app> <link xref="gs-use-system-search">simplemente escribiendo</link> el nombre del navegador en la <gui>Vista de actividades</gui>.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>Mueva el cursor del ratón hacia la esquina de <gui>Actividades</gui> en la esquina superior izquierda de la pantalla para mostrar la <gui>Vista de actividades</gui>.</p></item>
+      <item><p>Seleccione el icono del navegador <app>Web</app> desde la barra del lado izquierdo de la pantalla.</p></item>
+    </steps>
+
+    <note><p>Alternativamente, puede abrir el navegador <app>Web</app> <link xref="gs-use-system-search">simplemente escribiendo</link> el nombre del navegador en la <gui>Vista de actividades</gui>.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>Pulse la barra de direcciones que está en la parte superior de la ventana del navegador y comience a escribir en el sitio web que quiera visitar.</p></item>
+      <item><p>Al escribir en un sitio web, comienza la búsqueda de ese sitio en el histórico de navegación y los marcadores, por lo tanto no necesita recordar la dirección exacta.</p>
+        <p>Si el sitio web se encuentra en el histórico o en los marcadores, aparece una lista desplegable debajo de la barra de direcciones.</p></item>
+      <item><p>Desde la lista desplegable, puede seleccionar rápidamente un sitio web con las teclas de flechas.</p>
+      </item>
+      <item><p>Después de haber seleccionado un sitio web, pulse <key>Intro</key> para visitarlo.</p>
+      </item>
+    </steps>
+
+</page>

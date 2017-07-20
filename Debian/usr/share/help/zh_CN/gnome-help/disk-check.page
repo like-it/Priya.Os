@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME 文档项目</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>您可以测试硬盘是否有问题以确保其健康。</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>检查磁盘错误</title>
+
+<section id="disk-status">
+ <title>检查硬盘</title>
+  <p>硬盘中含有一个内置健康检查工具，叫做作 <app>SMART</app>，该工具可以不断检查磁盘的潜在问题。如果磁盘即将发生故障，SMART 还会提出警告，帮助您避免重要数据的丢失。</p>
+
+  <p>虽然 SMART 是自动运行的，您也可以通过运行<app>磁盘</app>工具来检查磁盘健康状况：</p>
+
+<steps>
+ <title>使用磁盘程序来检查磁盘健康状况</title>
+
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to check from the list of storage devices on
+    the left. Information and status of the disk will be shown.</p>
+  </item>
+  <item>
+    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
+    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+  </item>
+  <item>
+    <p>See more information under <gui>SMART Attributes</gui>, or click the
+    <gui style="button">Start Self-test</gui> button to run a self-test.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>如果磁盘不健康怎么办？</title>
+
+  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
+  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
+  to be prepared with a <link xref="backup-why">backup</link> to prevent data
+  loss.</p>
+
+  <p>如果状态显示“即将发生故障 (Pre-Fail)”，磁盘依然相当健康，但是有损坏的迹象出现，可能不久就会出错。如果您的硬盘(或计算机)用了很久，您可能会在一些健康检测中看到这个提示。您应该<link xref="backup-how">定期备份重要数据</link>，并经常检查磁盘状态，注意它是否变坏。</p>
+
+  <p>如果磁盘持续老化，您最好将计算机/硬盘交由专业人员进行进一步诊断或维修。</p>
+
+</section>
+
+</page>

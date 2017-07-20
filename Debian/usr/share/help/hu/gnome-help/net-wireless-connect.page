@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-connect" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="net-wireless" group="#first"/>
+    <link type="seealso" xref="net-wireless-troubleshooting"/>
+    <link type="seealso" xref="net-wireless-disconnecting"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Csatlakozás az internetre vezeték nélkül.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Csatlakozás vezeték nélküli hálózatra</title>
+
+<p>Ha számítógépe tartalmaz vezeték nélküli hálózati kártyát, akkor csatlakozhat a hatókörön belüli vezeték nélküli hálózatokhoz az internet eléréséhez, a helyi hálózaton megosztott fájlok eléréséhez stb.</p>
+
+<steps>
+  <item>
+    <p>Kattintson a <gui xref="shell-introduction#yourname">rendszer menüre</gui> a felső sáv jobb oldalán.</p>
+  </item>
+  <item>
+    <p>Válasza a <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/> Wi-Fi nincs csatlakoztatva</gui> lehetőséget. Ekkor kinyílik a menü Wi-Fi szakasza.</p>
+  </item>
+  <item>
+    <p>Kattintson a <gui>Hálózat kiválasztása</gui> pontra.</p>
+  </item>
+  <item>
+    <p>Kattintson a kívánt hálózat nevére, majd nyomja meg a <gui>Kapcsolódás</gui> gombot.</p>
+    <p>Ha a hálózat neve nincs a listában, akkor próbálja a <gui>Több</gui> menüpont alatt elérhetők között megkeresni. Ha ekkor sem találja a hálózatot, akkor a hálózat hatókörön kívül lehet, vagy <link xref="net-wireless-hidden">rejtett</link>.</p>
+  </item>
+  <item>
+    <p>Ha a hálózatot jelszó (<link xref="net-wireless-wepwpa">titkosítási kulcs</link>) védi, akkor adja meg a jelszót, amikor a program ezt kéri, és nyomja meg a <gui>Kapcsolódás</gui> gombot.</p>
+    <p>Ha nem ismeri a kulcsot, akkor nézze meg a vezeték nélküli router vagy alapállomás alján, vagy azok használati utasításában vagy kérdezze meg a vezeték nélküli hálózat üzemeltetőjétől.</p>
+  </item>
+  <item>
+    <p>A hálózat ikon megjelenése megváltozik, mialatt a számítógép megpróbál csatlakozni a hálózatra.</p>
+  </item>
+  <item>
+    <p>Ha a csatlakozás sikerül, az ikon ívelt sávokat fog ábrázolni egy pont fölött (<media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/>). Több sáv erősebb hálózati kapcsolatot jelez. Kevesebb sáv esetén a kapcsolat gyengébb, és esetleg nem elég megbízható.</p>
+  </item>
+</steps>
+
+  <p>Ha a kapcsolódás nem sikerül, akkor a program bekérheti újra a jelszavát, vagy értesítheti a kapcsolat bontásáról. Ezt számos probléma okozhatja: lehet, hogy rossz jelszót adott meg, a vezeték nélküli jel túl gyenge, vagy a számítógép vezeték nélküli csatolójával van valamilyen probléma. További segítségért lásd a <link xref="net-wireless-troubleshooting"/> fejezetet.</p>
+
+  <p>Az erősebb kapcsolat nem feltétlenül jelenti azt, hogy az internetkapcsolat is gyorsabb, vagy a letöltési sebesség nagyobb lesz. A vezeték nélküli kapcsolat a számítógépet az <em>internetkapcsolatot biztosító eszközhöz</em> (router vagy modem) kapcsolja, de a két kapcsolat nem azonos, emiatt eltérő sebességgel működnek.</p>
+
+</page>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="video-sending" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="media#videos"/>
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.12.1" date="2014-03-30" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.17.90" date="2015-08-30" status="final"/>
+
+    <credit type="author">
+      <name>GNOME 文档项目</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>检查是否正确安装视频编解码器。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>别人不能播放我制作的视频文件</title>
+
+  <p>如果您在 Linux 系统上制作了一个视频，并把它发送到 Windows 或 Mac OS 机子上，您可能会碰到视频播放问题。</p>
+
+  <p>要能够播放您的视频，接收方必须安装正确的<em>编解码器</em>。编解码器是一种小软件，知道如何读取视频并在屏幕上播放该视频。有很多不同的视频格式，每种格式都需要用不同的编码解码器来播放。您可以使用下述方法了解视频的格式：</p>
+
+  <list>
+    <item>
+      <p>Open <app>Files</app> from the
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+    </item>
+    <item>
+      <p>Right-click on the video file and select <gui>Properties</gui>.</p>
+    </item>
+    <item>
+      <p>Go to the <gui>Audio/Video</gui> or <gui>Video</gui> tab and look at
+      which <gui>Codec</gui> are listed under <gui>Video</gui> and
+      <gui>Audio</gui> (if the video also has audio).</p>
+    </item>
+  </list>
+
+  <p>询问对方是否安装了正确的编解码器，也可以在网络中搜索编解码器加上播放器的名称，比如您的视频使用 <em>Theora</em> 格式，您的朋友使用 Windows Media Player 播放器，就可以尝试搜索“theora windows media player”。一般您可以免费下载到合适的解码器。</p>
+
+  <p>如果您还是没有找到恰当的编解码器，可以试一试 <link href="http://www.videolan.org/vlc/">VLC media player</link> 播放器，它既可以运行在 Windows 和 Mac OS 平台上，也可以运行在 Linux 平台上，并且支持各种不同的视频格式。如果还是不行，请尝试将视频转换成其他格式，大多数视频编辑器都可以进行转换操作，详细列出了可用的格式。查看软件的安装程序，看一看哪些是可能的。</p>
+
+  <note>
+    <p>在播放您的视频时，还可能会出现一些别的问题。像视频文件在您发送过程中损坏(有时大文件不能很好地完成复制)，也可能对方的播放器出现问题，或者文件没有正确地创建(在保存时出现了错误)。</p>
+  </note>
+
+</page>

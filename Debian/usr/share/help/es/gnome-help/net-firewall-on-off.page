@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Puede controlar qué programas son accesible en la red. Esto le ayuda a mantener su equipo seguro.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Activar y bloquear el acceso al cortafuegos</title>
+
+  <p>Su sistema debería estar equipado con un <em>cortafuegos</em> que le permita bloquear el acceso a programas otros los usuarios en Internet o en su red. Esto ayuda a que su equipo esté seguro.</p>
+
+  <p>Muchas aplicaciones pueden usar su conexión de red. Por ejemplo, puede compartir archivos o permitir que alguien vea su escritorio de forma remota. Dependiendo de cómo esté configurado su equipo puede necesitar configurar el cortafuegos para permitir que estos servicios funcionen según lo previsto.</p>
+
+  <p>Cada programa que proporciona servicios de red usa un <em>puerto de red</em> específico. Para activar el acceso a los servicios de ese programa, puede que tenga que «abrir» sus puertos asignados en el cortafuegos:</p>
+
+
+  <steps>
+    <item>
+      <p>Vaya a la vista de <gui>Actividades</gui> en la esquina superior izquierda de la pantalla e inicie su aplicación de cortafuegos. Puede necesitar instalar un gestor de cortafuegos (Firestarter o GUFW, por ejemplo) si no encuentra ninguno .</p>
+    </item>
+    <item>
+      <p>Abra o cierre el puerto para su servicio de red, dependiendo de si quiere que la gente puede acceder a él o no. El puerto que debe cambiar <link xref="net-firewall-ports">dependerá del servicio</link></p>
+    </item>
+    <item>
+      <p>Guarde o aplique los cambios, siguiendo las instrucciones adicionales que le proporciona la herramienta del cortafuegos.</p>
+    </item>
+  </steps>
+
+</page>

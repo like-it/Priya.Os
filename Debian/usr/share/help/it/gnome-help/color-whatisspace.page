@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>Uno spazio di colore è una gamma di colori determinata.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Cos'è lo spazio di colore?</title>
+
+  <p>Uno spazio di colore è una gamma di colori determinata. Spazi di colore noti includono  sRGB, AdobeRGB e ProPhotoRGB.</p>
+
+  <p>Il sistema visivo umano non è un semplice sensore RGB, tuttavia è possibile approssimare la risposta visiva con un diagramma di cromaticità CIE 1931 a forma di ferro di cavallo. È possibile osservare come nella visione umana siano rilevate molte più ombre di verde che di blu o di rosso. Con uno spazio di colore tricromatico come RGB i colori sul computer vengono rappresentati usando tre valori, i quali limitano alla codifica un <em>triangolo</em> di colori.</p>
+
+  <note>
+    <p>
+      Using models such as a CIE 1931 chromaticity diagram is a huge
+      simplification of the human visual system, and real gamuts are
+      expressed as 3D hulls, rather than 2D projections.
+      A 2D projection of a 3D shape can sometimes be misleading, so if
+      you want to see the 3D hull, use the <code>gcm-viewer</code>
+      application.
+    </p>
+  </note>
+
+  <figure>
+    <desc>sRGB, AdobeRGB e ProPhotoRGB rappresentati da triangoli bianchi</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>In primo luogo, guardare a sRGB, che è lo spazio più piccolo e che è in grado di codificare il minor numero di colori. È un'approssimazione di un monitor CRT di dieci anni fa e così la maggior parte dei monitor moderni sono facilmente in grado di visualizzare un numero maggiore di colori. sRGB è un <em>minimo comune denominatore</em> standard ed è usato in un gran numero di applicazioni (compresa Internet).</p>
+  <p>AdobeRGB è spesso usato come <em>spazio di modifica</em>. Può codificare più colori rispetto a sRGB e questo significa che è possibile cambiare i colori di una fotografia senza preoccuparsi troppo del clipping sui colori più brillanti o che i neri vengano offuscati.</p>
+  <p>
+    ProPhoto is the largest space available and is frequently used for
+    document archival.
+    It can encode nearly the whole range of colors detected by the human
+    eye, and even encode colors that the eye cannot detect!
+  </p>
+
+  <p>
+    Now, if ProPhoto is clearly better, why don't we use it for everything?
+    The answer is to do with <em>quantization</em>.
+    If you only have 8 bits (256 levels) to encode each channel, then a
+    larger range is going to have bigger steps between each value.
+  </p>
+  <p>Distanze maggiori significano un errore maggiore tra il colore catturato e quello memorizzato, e per alcuni colori questo è un problema significativo. Ne consegue che per i colori chiave, che come quelli della pelle sono molto importanti, anche piccoli errori saranno percepiti da occhi meno allenati come qualcosa di sbagliato nella fotografia.</p>
+  <p>
+    Of course, using a 16 bit image is going to leave many more steps and
+    a much smaller quantization error, but this doubles the size of each
+    image file.
+    Most content in existence today is 8bpp, i.e. 8 bits-per-pixel.
+  </p>
+  <p>La gestione del colore è un processo di conversione da uno spazio di colore a un altro, in cui lo spazio di colore può essere ben definito come sRGB, uno spazio di colore personalizzato come il proprio monitor o stampante.</p>
+
+</page>

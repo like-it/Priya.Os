@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Šon Mek Kens</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Dejvid King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Pregledajte i uređujte datoteke na drugom računaru preko FTP-a, bezbedne školjke, Vindouz deljenja, ili VebDAV-a.</desc>
+
+  </info>
+
+<title>Pretražujte datoteke na serveru ili mrežnom deljenju</title>
+
+<p>Možete da se povežete na server ili na mrežno deljenje da pretražujete i pregledate datoteke na tom serveru, baš kao da su na vašem računaru. Ovo je prikladan način da preuzmete ili postavite datoteke na internet, ili da delite datoteke sa drugima na vašoj lokalnoj mreži.</p>
+
+<p>Da pretražujete datoteke na mreži, otvorite program <app>Datoteke</app> iz pregleda <gui>Aktivnosti</gui>, zatim u bočnoj površi kliknite <gui>Druga mesta</gui>. Upravnik datoteka će pronaći sve računare na vašoj lokalnoj mreži koji poseduju mogućnost posluživanja datoteka. Ako želite da se povežete na server na internetu, ili ako ne vidite računar koji tražite, možete ručno da se povežete na server tako što ćete upisati njegovu internet/mrežnu adresu.</p>
+
+<steps>
+  <title>Povežite se na server datoteka</title>
+  <item><p>U upravniku datoteka, u bočnoj površi kliknite <gui>Druga mesta</gui>.</p>
+  </item>
+  <item><p>U <gui>Poveži se sa serverom</gui>, unesite adresu servera, u obliku <link xref="#urls">adrese</link>. Pojedinosti o podržanim adresama su <link xref="#types">navedene ispod</link>.</p>
+  <note>
+    <p>Ako ste se ranije povezivali na server, možete da kliknete na njega u spisku <gui>Skorašnji serveri</gui>.</p>
+  </note>
+  </item>
+  <item>
+    <p>Kliknite <gui>Poveži se</gui>. Biće prikazane datoteke na serveru. Možete da razgledate datoteke baš kao što razgledate one na vašem ličnom računaru. Server će takođe biti dodat u bočnu površ tako da ćete kasnije moći da mu pristupite vrlo brzo.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>Pisanje adresa</title>
+
+<p><em>Adresa</em>, ili <em>URL</em>, jeste oblik adrese koja upućuje na mesto ili na datoteku na mreži. Adresa je u ovom obliku:</p>
+  <example>
+    <p><sys>shema://nazivservera.primer.com/fascikla</sys></p>
+  </example>
+<p><em>shema</em> određuje protokol ili vrstu servera. Deo adrese <em>primer.com</em> se naziva <em>naziv domena</em>. Ako je potrebno korisničko ime, ono se umeće pre naziva servera:</p>
+  <example>
+    <p><sys>shema://korisničkoime@nazivservera.primer.com/fascikla</sys></p>
+  </example>
+<p>Neke šeme zahtevaju navedeni broj porta. Umetnite ga nakon naziva domena:</p>
+  <example>
+    <p><sys>shema://nazivservera.primer.com:port/fascikla</sys></p>
+  </example>
+<p>Ispod su dati posebni primeri raznih vrsta servera koji su podržani.</p>
+</section>
+
+<section id="types">
+ <title>Vrste servera</title>
+
+<p>Možete da se povežete na različite vrste servera. Neki serveri su javni, i dozvoljavaju svakome da se poveže. Drugi serveri zahtevaju od vas da se prijavite korisničkim imenom i lozinkom.</p>
+<p>Nećete imati ovlašćenja da obavite određene radnje nad datotekama na serveru. Na primer, na javnim FTP sajtovima, verovatno nećete biti u mogućnosti da obrišete datoteke.</p>
+<p>Adresa koju unosite zavisi od protokola koji server koristi za izvoz svojih deljenih datoteka.</p>
+<terms>
+<item>
+  <title>Bezbedna školjka</title>
+  <p>Ako imate nalog <em>bezbedne školjke</em> na serveru, možete da se povežete koristeći ovaj način. Mnogi veb domaćini obezbeđuju članovima naloge bezbedne školjke tako da mogu bezbedno da postavljaju datoteke. Serveri bezbedne školjke uvek zahtevaju da se prijavite.</p>
+  <p>Tipična adresa bezbedne školjke izgleda ovako:</p>
+  <example>
+    <p><sys>ssh://korisničkoime@nazivservera.primer.com/fascikla</sys></p>
+  </example>
+
+  <p>Kada koristite bezbednu školjku, svi podaci koje pošaljete (uključujući i vašu lozinku) su šifrovani tako da ostali korisnici na vašoj mreži ne mogu da ih vide.</p>
+</item>
+<item>
+  <title>FTP (sa prijavom)</title>
+  <p>FTP je popularan način za razmenu datoteka na Internetu. Zato što preko FTP-a podaci nisu šifrovani, mnogi serveri sada obezbeđuju pristup putem bezbedne školjke. Neki serveri, međutim, još uvek dopuštaju ili zahtevaju od vas da koristite FTP za postavljanje ili preuzimanje datoteka. FTP sajtovi sa prijavom će vam obično dopustiti da brišete i postavljate datoteke.</p>
+  <p>Tipična adresa protokola za prenos datoteka izgleda ovako:</p>
+  <example>
+    <p><sys>ftp://korisničkoime@ftp.primer.com/putanja/</sys></p>
+  </example>
+</item>
+<item>
+  <title>Javni FTP</title>
+  <p>Sajtovi koji vam omogućavaju da preuzimate datoteke će ponekad da obezbede javni ili anonimni FTP pristup. Ovi serveri ne zahtevaju korisničko ime i lozinku, i obično vam neće dopustiti da brišete ili postavljate datoteke.</p>
+  <p>Tipična anonimna adresa protokola za prenos datoteka izgleda ovako:</p>
+  <example>
+    <p><sys>ftp://ftp.primer.com/putaǌa/</sys></p>
+  </example>
+  <p>Neki anonimni FTP sajtovi zahtevaju od vas da se prijavite pod javnim korisničkim imenom i lozinkom, ili pod javnim imenom koristeći adresu vaše e-pošte kao lozinku. Za ove servere, koristite <gui>FTP (sa prijavom)</gui>, i koristite punomoćstva koja je odredio FTP sajt.</p>
+</item>
+<item>
+  <title>Vindouz deljenje</title>
+  <p>Vindouz računari koriste vlasnički protokol za deljenje datoteka preko lokalne mreže. Računari na Vindouz mreži su ponekad grupisani u <em>domene</em> zarad organizovanja i boljeg nadzora pristupa. Ako imate prava ovlašćenja na udaljenom računaru, moći ćete da se povežete na Vindouz deljenje iz upravnika datoteka.</p>
+  <p>Tipična adresa Vindouz deljenja izgleda ovako:</p>
+  <example>
+    <p><sys>smb://nazivservera/Deǉeǌe</sys></p>
+  </example>
+</item>
+<item>
+  <title>VebDAV i Bezbedni VebDAV</title>
+  <p>Zasnovan na HTTP protokolu koji se koristi na vebu, VebDAV se ponekad koristi za deljenje datoteka na lokalnoj mreži i za čuvanje datoteka na internetu. Ako server na koji se povezujete podržava bezbedne veze, treba da izaberete ovu opciju. Bezbedni VebDAV koriste jako SSL šifrovanje, tako da ostali korisnici ne mogu videti vašu lozinku.</p>
+  <p>VebDAV adresa izgleda ovako:</p>
+  <example>
+    <p><sys>dav://primer.nazivdomaćina.com/putanja</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS deljenje</title>
+  <p>UNIKS računari tradicionalno koriste protokol mrežnog sistema datoteka za deljenje datoteka putem lokalne mreže. Sa ovim protokolom, bezbednost se zasniva na JIB-u korisnika koji pristupa deljenju, tako da nisu potrebna nikakva uverenja za potvrđivanje identiteta prilikom povezivanja.</p>
+  <p>Tipična adresa NFS deljenja izgleda ovako:</p>
+  <example>
+    <p><sys>nfs://nazivservera/putanja</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

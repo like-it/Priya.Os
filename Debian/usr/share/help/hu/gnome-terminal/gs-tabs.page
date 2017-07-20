@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="gs-tabs" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#getting-started"/>
+    <revision pkgversion="3.8" date="2013-02-17" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-03-07" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013-2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A <app>Terminál</app> lapjainak engedélyezése, hozzáadása, eltávolítása és átrendezése.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2013, 2014, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Attila Hammer</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Lapok használata</title>
+
+  <p>Mielőtt a lapok közt a menük használatával lépkedhetne, ellenőrizze, hogy azok <link xref="pref-tab-window">be vannak-e kapcsolva a beállításokban</link>.</p>
+
+  <p>A lapsáv a több nyitott lapot tartalmazó <app>Terminál</app> ablak tetején jelenik meg, és egy gombsorozatra hasonlít, amelyekre kattintva válthat a lapok között. Több lapot nyithat a <app>Terminálban</app> végzett munkája rendszerezésére. Ez lehetővé teszi több tevékenység végzését, például programok futtatását, könyvtárak tallózását és szövegfájlok szerkesztését egyetlen <app>Terminál</app> ablakban.</p>
+
+  <section id="add-tab">
+    <title>Új lap megnyitása</title>
+
+    <p>Új lap megnyitása az aktuális <app>Terminál</app> ablakban:</p>
+    <steps>
+      <item>
+        <p>Nyomja meg a <keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq> billentyűkombinációt.</p>
+      </item>
+    </steps>
+
+  </section>
+
+<!-- TODO: doesn't work, see bug 720693
+  <section id="rename-tab">
+    <title>Rename a tab</title>
+
+    <p>Each tab has an automatically assigned title. You can rename the tabs
+    individually:</p>
+
+    <steps>
+      <item>
+        <p>Select <guiseq><gui style="menu">Terminal</gui>
+        <gui style="menuitem">Set Title…</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Enter the desired <gui>Title</gui> that you wish to use for the tab.
+        This will overwrite any titles that would be set by terminal commands.
+        </p>
+        <note>
+          <p>It is not possible to set back the automatically set title once it
+          has been set for a tab. To see the title, you need to allow terminal
+          command titles to be shown in the <gui style="menuitem">Profile 
+          Preferences</gui>.</p>
+        </note>
+      </item>
+      <item>
+        <p>Click <gui style="button">OK</gui>.</p>
+      </item>
+    </steps>
+  </section>-->
+
+  <section id="close-tab">
+    <title>Lap eltávolítása</title>
+
+    <p>Meglévő lap bezárása az aktuális <app>Terminál</app> ablakban:</p>
+
+    <steps>
+      <item>
+        <p>Válassza a <guiseq><gui style="menu">Fájl</gui> <gui style="menuitem">Terminál bezárása</gui></guiseq> menüpontot.</p>
+      </item>
+    </steps>
+
+    <p>Ennek alternatívájaként a lap jobb felső sarkában lévő <gui style="button">×</gui> gombra is kattinthat, vagy a lap helyi menüjéből kiválaszthatja a <gui style="menuitem">Terminál bezárása</gui> menüpontot is.</p>
+
+  </section>
+
+  <section id="reorder-tab">
+    <title>Lapok átrendezése</title>
+
+    <p>Lapok sorrendjének megváltoztatásához egy ablakban:</p>
+    <steps>
+      <item>
+        <p>Kattintson, és tartsa lenyomva a bal egérgombot a lapon.</p>
+      </item>
+      <item>
+        <p>Mozgassa a lapot a kívánt helyre a többi lap között.</p>
+      </item>
+      <item>
+        <p>Engedje fel az egérgombot.</p>
+      </item>
+    </steps>
+
+    <p>A lap az elengedési helyhez legközelebbi helyre kerül, közvetlenül a megnyitott lapok mellé.</p>
+
+    <p>Ennek alternatívájaként a lapokat áthelyezheti a lap helyi menüjének <gui style="menuitem">Terminál mozgatása balra</gui> és <gui style="menuitem">Terminál mozgatása jobbra</gui> pontjainak kiválasztásával is. Ezek a lap pozícióját egyszerre egy hellyel fogják megváltoztatni.</p>
+
+  </section>
+
+  <section id="move-tab-another-window">
+    <title>Lap másik <app>Terminál</app> ablakba mozgatása</title>
+
+    <p>Ha egy lapot az egyik ablakból a másikba szeretné mozgatni:</p>
+    <steps>
+      <item>
+        <p>Kattintson, és tartsa lenyomva a bal egérgombot a lapon.</p>
+      </item>
+      <item>
+        <p>Húzza a lapot az új ablakba.</p>
+      </item>
+      <item>
+        <p>Helyezze az új ablakban lévő lapok mellé.</p>
+      </item>
+      <item>
+        <p>Engedje fel az egérgombot.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Egy lapot egyik ablakból másikba mozgathat a lap áthúzásával a <gui>GNOME Shell</gui> <gui>Tevékenységek</gui> sarkába. Ekkor megjelenik az összes nyitott <app>Terminál</app> ablak. Ezután a lapot ráejtheti a kívánt <app>Terminál</app> ablakra.</p>
+    </note>
+  </section>
+
+  <section id="move-tab-create-window">
+    <title>Lap áthelyezése új <app>Terminál</app> ablak létrehozásához</title>
+
+    <p>Új ablak létrehozásához meglévő lapból:</p>
+    <steps>
+      <item>
+        <p>Kattintson, és tartsa lenyomva a bal egérgombot a lapon.</p>
+      </item>
+      <item>
+        <p>Húzza ki az ablakot az aktuális <app>Terminál</app> ablakból.</p>
+      </item>
+      <item>
+        <p>Engedje fel az egérgombot.</p>
+      </item>
+    </steps>
+  </section>
+
+</page>

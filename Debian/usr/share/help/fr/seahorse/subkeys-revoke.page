@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="subkeys-revoke" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="pgp-subkeys#more"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-08-25" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Révoquer une sous-clé compromise ou inutilisée.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Révocation des sous-clés</title>
+
+  <p>Si votre sous-clé est compromise ou inutilisée, il est judicieux de la révoquer pour éviter qu'elle ne soit utilisée de façon malveillante.</p>
+
+  <steps>
+    <title>Révocation d'une sous-clé :</title>
+    <item>
+      <p><link xref="subkeys-examine">Naviguez</link> vers le panneau des <gui>Sous-clés</gui></p>
+    </item>
+    <!--The above step can be replaced with the following, if it's too vague:
+    <item>
+      <p>Select <gui>GnuPG keys</gui> from the panel on the left.</p>
+    </item>
+    <item>
+      <p>Right click on the PGP key and select
+      <guiseq><gui>Properties</gui><gui>Details</gui>.</p>
+    </item>
+    <item>
+      <p>Expand the subkeys panel if required.</p>
+    </item>-->
+    <item>
+      <p>Sélectionnez la sous-clé dans la liste et cliquez sur le bouton <gui style="button">Révoquer</gui>.</p>
+    </item>
+    <item>
+      <p>Dans la nouvelle boîte de dialogue, sélectionnez une raison de révoquer la sous-clé. Facultativement, décrivez la raison plus en détails dans le champ <gui>Description</gui>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton <gui>Révoquer</gui>.</p>
+    </item>
+    <item>
+      <p>Il vous faudra déverrouiller la clé avec sa phrase de passe.</p>
+    </item>
+    <item>
+      <p>L'<gui>État</gui> de la sous-clé devient <gui>Révoquée</gui> dans le panneau des <gui>Sous-clés</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Si vous avez <link xref="pgp-publish">publié</link> la sous-clé, vous devez la <link xref="pgp-sync">synchroniser</link> avec les serveurs de clés après révocation pour appliquer la révocation à toutes les copies de la clé.</p>
+  </note>
+
+</page>

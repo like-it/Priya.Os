@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="user-admin-explain" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Projeto de documentação do GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Você precisa de privilégios administrativos para alterar partes importantes do seu sistema.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Como funcionam os privilégios administrativos?</title>
+
+  <p>As well as the files that <em>you</em> create, your computer has a number
+  of files which are needed by the system for it to work properly. If these
+  important <em>system files</em> are changed incorrectly they can cause
+  various things to break, so they are protected from changes by default.
+  Certain applications also modify important parts of the system, and so are
+  also protected.</p>
+
+  <p>The way that they are protected is by only allowing users with
+  <em>administrative privileges</em> to change the files or use the
+  applications. In day-to-day use, you will not need to change any system files
+  or use these applications, so by default you do not have administrative
+  privileges.</p>
+
+  <p>Em alguns casos, é necessário usar esses aplicativos. Nesses casos, você pode conseguir privilégios administrativos temporariamente para que seja capaz de fazer as alterações desejadas. Se um aplicativo precisa desses privilégios, ele lhe pedirá uma senha. Por exemplo, se quiser instalar algum aplicativo novo, o instalador de programas (ou gerenciador de pacotes) será solicitada a sua senha de administrador para que possa adicionar o novo aplicativo ao sistema. Uma vez que ele tenha terminado, seus privilégios administrativos serão retirados novamente.</p>
+
+  <p>Os privilégios administrativos estão associados à sua conta de usuário. Usuários <gui>Administrador</gui> têm esses privilégios, enquanto usuários <gui>Padrão</gui> não têm. Sem esses privilégios, você não será capaz de instalar programas. Algumas contas de usuários (por exemplo, a conta "root") têm esses privilégios de forma permanente. Você não deveria usar tais privilégios a toda hora, porque poderia acidentalmente alterar alguma coisa que você não tinha intenção (como, excluir um arquivo crítico para o sistema, por exemplo).</p>
+
+  <p>Em resumo, os privilégios administrativos lhe permitem alterar partes importantes do seu sistema quando necessário, mas também evita que faça algo acidentalmente.</p>
+
+  <note>
+    <title>O que significa "superusuário"?</title>
+    <p>Um usuário com privilégios administrativos às vezes é chamado de <em>superusuário</em>. Isso porque ele tem mais privilégios que os usuários normais. Você pode ver pessoas discutindo sobre coisas como <cmd>su</cmd> e <cmd>sudo</cmd>; são programas para lhe dar privilégios de "superusuário" (administrativos) temporariamente.</p>
+  </note>
+
+<section id="advantages">
+  <title>Por que os privilégios administrativos são úteis?</title>
+
+  <p>Exigir que os usuários tenham privilégios administrativos antes de importantes alterações do sistema serem feitas é útil porque ajuda a impedir que seu sistema se quebre (deixe de funcionar adequadamente), intencionalmente ou não.</p>
+
+  <p>Se você tem tais privilégios o tempo todo, pode acidentalmente alterar um arquivo importante ou executar um aplicativo que altera algo importante por engano. Obter os privilégios administrativos apenas temporariamente, quando precisar deles, reduz o risco desses enganos acontecerem.</p>
+
+  <p>Somente alguns usuários de confiança deveriam ter permissão a tais privilégios. Isso evita que outros usuários baguncem o seu computador e façam coisas como desinstalar aplicativos que você precisa, instalar aplicativos que você não queira ou alterar arquivos importantes. Isso é útil do ponto de vista da segurança.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tips-specialchars" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="seealso" xref="keyboard-layouts"/>
+
+    <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+
+    <credit type="author">
+      <name>Шон МакКенс (Shaun McCance)</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Набирайте символы, отсутствующие на клавиатуре, включая символы иностранных алфавитов, математические и другие символы.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ввод специальных символов</title>
+
+  <p>Можно просмотреть и ввести тысячи различных символов из большинства систем письма народов мира, даже если эти символы отсутствуют на клавиатуре. Ниже перечислены несколько различных способов ввода специальных символов.</p>
+
+  <links type="section">
+    <title>Способы ввода символов</title>
+  </links>
+
+  <section id="charmap">
+    <title>Таблица символов</title>
+    <p>В состав GNOME входит приложение «Таблица символов», позволяющая просмотреть все символы в кодировке Unicode. Найдите в таблице нужный символ, а затем скопируйте его и вставьте туда, где он нужен.</p>
+
+    <p><app>Таблицу символов</app> можно найти в <gui>Обзоре</gui>. Дополнительные сведения о таблице символов можно найти в <link href="help:gucharmap">Руководстве по Таблице символов</link>.</p>
+
+  </section>
+
+  <section id="characters">
+    <title>Characters</title>
+    <p>Another useful application shipped with GNOME is <app>Characters</app>.
+    It lets you find and insert unusual characters by browsing character
+    categories or searching for keywords.</p>
+
+    <p>You can launch Characters from the Activities overview. For more
+    information on Characters, see the <link href="help:gnome-characters">
+    Characters Manual</link>.</p>
+
+  </section>
+
+  <section id="compose">
+    <title>Клавиша Compose</title>
+    <p>Клавиша Compose — это специальная клавиша, позволяющая вводить специальные символы с помощью определённых комбинаций клавиш. Например, чтобы ввести символ <em>é</em>, нужно нажать <key>Compose</key>, затем <key>'</key> и <key>e</key>.</p>
+    <p>Клавиши Compose нет на клавиатуре, но можно назначить для выполнения её функций одну из имеющихся клавиш.</p>
+
+    <steps>
+      <title>Назначение клавиши Compose</title>
+      <item>
+        <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+        start typing <gui>Keyboard</gui>.</p>
+      </item>
+      <item>
+        <p>Нажмите <gui>Клавиатура</gui>, чтобы открыть этот раздел настроек.</p>
+      </item>
+      <item><p>Откройте вкладку <gui>Горячие клавиши</gui> и нажмите <gui>Ввод</gui>.</p></item>
+      <item><p>Нажмите на <gui>Клавишу Compose</gui> в правой панели.</p></item>
+      <item><p>Нажмите <gui>Отключено</gui> и выберите в выпадающем меню клавишу, которая должна играть роль клавиши compose. Можно выбрать одну из клавиш <key>Ctrl</key>, правую клавишу <key>Alt</key>, правую клавишу <key>Win</key> или клавишу <key xref="keyboard-key-super">Super</key>, если она есть на клавиатуре, клавишу<key xref="keyboard-key-menu">Menu</key>, клавишу <key>Caps Lock</key>. Любая выбранная клавиша будет в дальнейшем работать только как клавиша compose, и больше не будет выполнять свой первоначальный функционал.</p></item>
+    </steps>
+    <p>С помощью клавиши Compose можно вводить некоторые часто используемые символы, например:</p>
+    <list>
+      <item><p>Нажмите <key>Compose</key>, затем <key>'</key>, затем букву, чтобы ввести букву с диакритическим знаком акут над ней (например, <em>é</em>).</p></item>
+      <item><p>Нажмите <key>Compose</key>, затем <key>`</key> и букву, чтобы ввести букву с диакритическим знаком гравис (например, <em>è</em>).</p></item>
+      <item><p>Нажмите <key>Compose</key>, затем <key>"</key> и букву, чтобы ввести букву со знаком умляут над ней (например, <em>ë</em>).</p></item>
+      <item><p>Нажмите <key>Compose</key>, затем <key>-</key> и букву, чтобы ввести букву со знаком макрон над ней (например, <em>ē</em>).</p></item>
+    </list>
+    <p>Другие комбинации клавиш с участием Сompose можно найти в <link href="http://ru.wikipedia.org/wiki/Compose">статье о клавише Compose в Википедии</link>.</p>
+  </section>
+
+<section id="ctrlshiftu">
+  <title>Коды символов</title>
+
+  <p>Можно ввести любой символ Unicode, набрав на клавиатуре его четырёхзначный код. Чтобы узнать код символа, найдите этот символ в приложении «Таблица символов» и посмотрите на строку состояния или содержимое вкладки <gui>Подробности о символе</gui>. Код символа — это четыре символа после <gui>U+</gui>.</p>
+
+  <p>Чтобы ввести символ по его коду, удерживайте нажатыми клавиши <key>Ctrl</key> и <key>Shift</key> и наберите <key>U</key> и четырёхсимвольный код, затем отпустите клавиши <key>Ctrl</key> и <key>Shift</key>. Если вы часто используете символы, которые сложно ввести другими способами, может быть полезно запомнить коды таких символов, чтобы быстро их вводить.</p>
+
+</section>
+
+  <section id="layout">
+    <title>Раскладки клавиатуры</title>
+    <p>Можно сделать так, чтобы ваша клавиатура вела себя как клавиатура для другого языка, независимо от того, какие буквы изображены на клавишах. Можно даже легко переключаться между различными раскладками клавиатуры, используя значок в верхней панели. О том, как это делать, смотрите <link xref="keyboard-layouts"/>.</p>
+  </section>
+
+<section id="im">
+  <title>Методы ввода</title>
+
+  <p>Метод ввода дополняет предыдущие методы, позволяя вводить символы не только с клавиатуры, но и с помощью любых других устройств ввода. Например, можно вводить символы жестами мыши или вводить японские символы с помощью клавиатуры с латинскими буквами.</p>
+
+  <p>Чтобы выбрать метод ввода, нажмите правой кнопкой на текстовом виджете и в меню <gui>Методы ввода</gui> выберите нужный вам метод. Метод ввода по умолчанию не предусмотрен, поэтому обратитесь к документации по методам ввода, чтобы узнать, как ими пользоваться.</p>
+
+</section>
+
+</page>

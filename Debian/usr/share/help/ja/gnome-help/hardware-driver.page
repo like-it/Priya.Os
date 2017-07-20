@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="hardware-driver" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="hardware" group="more"/>
+
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>GNOME ドキュメンテーションプロジェクト</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A hardware/device driver allows your computer to use devices that are
+    attached to it.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>ドライバーとはなんですか?</title>
+
+<p>デバイスとはコンピューターの物理的な"部品"です。デバイスは<em>外部デバイス</em>であればプリンターやモニター、<em>内部デバイス</em>であればグラフィックカードやオーディオカードのようなものを指します。</p>
+
+<p>これらのデバイスをコンピューターで利用できるようにするには、デバイスとどのように通信するかを知る必要があります。これを<em>デバイスドライバー</em>と呼ばれるソフトウェアが行います。</p>
+
+<p>When you attach a device to your computer, you must have the correct driver
+installed for that device to work. For example, if you plug in a printer but
+the correct driver is not available, you will not be able to use the printer.
+Normally, each model of device uses a driver that is not compatible with any
+other model.</p>
+
+<p>Linuxでは、多くのデバイスドライバーが標準でインストール済みのため、デバイスを接続すれば動作するでしょう。しかし、ドライバーは、手動でインストールしなければならないこともあれば、まったく利用できないこともあります。</p>
+
+<p>In addition, some existing drivers are incomplete or partially
+non-functional. For example, you might find that your printer cannot do
+double-sided printing, but is otherwise completely functional.</p>
+
+</page>

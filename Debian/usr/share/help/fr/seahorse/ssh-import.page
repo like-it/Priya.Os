@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="ssh-import" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor copyright">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Importer des clés SSH à partir de fichiers de clés dans <app>Mots de passe et Clés</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Importation de clés SSH</title>
+
+  <p>Si vous avez reçu un fichier de clé par courriel, vous aurez certainement envie de l'importer dans <app>Mots de passe et Clés</app>. Dans la plupart des cas, <app>Mots de passe et Clés</app> importe automatiquement les clés SSH depuis le répertoire <file>~/.ssh</file> de votre ordinateur, mais vous pouvez aussi importer manuellement des clés.</p>
+
+  <steps>
+    <title>Importation manuelle d'une clé</title>
+    <item>
+      <p>Sélectionnez <guiseq><gui style="menu">Fichier</gui><gui>Importer…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Dans la nouvelle boîte de dialogue, sélectionnez la clé que vous désirez importer. Les clés SSH se terminent par <file>.pub</file>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui style="button">Ouvrir</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Les clés importées sont automatiquement regroupées par type. Ainsi, les clés SSH figurent dans la liste de la section <file>Clés OpenSSH</file>.</p>
+
+</page>

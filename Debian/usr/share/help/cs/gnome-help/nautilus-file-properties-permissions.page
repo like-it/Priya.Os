@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="cs">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="files#faq"/>
+    <link type="seealso" xref="nautilus-file-properties-basic"/>
+
+    <desc>Jak řídit, kdo si může zobrazit a upravit vaše soubory a složky.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+  <title>Nastavení oprávnění souboru</title>
+
+  <p>Můžete použít oprávnění k souborům pro řízení toho, kdo si může vaše soubory zobrazit a upravit je. Když chcete u souboru tato oprávnění nastavit, klikněte na něj pravým tlačítkem a vyberte <gui>Vlastnosti</gui> a pak kartu <gui>Oprávnění</gui>.</p>
+
+  <p>Jaká oprávnění můžete nastavit, najdete níže v <link xref="#files"/> a <link xref="#folders"/>.</p>
+
+  <section id="files">
+    <title>Soubory</title>
+
+    <p>Můžete nastavit oprávnění pro vlastníka souboru, pro skupinu vlastníků souboru a pro všechny ostatní uživatele. U svých souborů, u kterých jste vlastníky, si můžete dát sami sobě oprávnění „jen k čtení“ nebo k „čtení a zápisu“. Pokud nechcete, abyste si soubor náhodně změnili, nastavte si pro něj oprávnění „jen k čtení“.</p>
+
+    <p>Každý uživatel na počítači náleží do nějaké skupiny. Na domácím počítači je běžné, že má každý uživatel vytvořenou svoji vlastní skupinu a skupinová oprávnění se příliš nepoužívají. Ve firemním prostředí jsou skupiny obvykle používány pro oddělení nebo projekty. Obdobně, jako má každý soubor svého vlastníka, tak každý soubor přísluší i nějaké skupině. Tu můžete souboru nastavit a řídit pak oprávnění pro všechny uživatele v této skupině. Souboru můžete nastavit jen skupinu, do které patříte.</p>
+
+    <p>Oprávnění můžete nastavit i pro ostatní uživatele, než je vlastník a ti ve skupině souboru.</p>
+
+    <p>Jestliže je soubor spustitelným programem, například se jedná o skript, musíte vybrat <gui>Povolit spuštění souboru jako programu</gui>, aby šel spustit. I se zapnutou touto volbou může správce souborů soubor otevřít v aplikaci nebo se dotázat, co s ním. Podívejte se na <link xref="nautilus-behavior#executable"/>, kde se dočtete proč.</p>
+  </section>
+
+  <section id="folders">
+    <title>Složky</title>
+    <p>U složek můžete nastavit oprávnění pro vlastníka, skupinu a ostatní uživatele. Vysvětlení, kdo jsou to vlastník, skupina a ostatní uživatelé, viz oprávnění k souboru výše.</p>
+    <p>Oprávnění, která můžete nastavit u složek, se liší od těch, která můžete nastavit u souborů.</p>
+    <terms>
+      <item>
+        <title><gui itst:context="permission">Žádné</gui></title>
+        <p>Uživatel nebude moci vidět, které soubory ve složce jsou.</p>
+      </item>
+      <item>
+        <title><gui>Jen seznam souborů</gui></title>
+        <p>Uživatel bude moci vidět, které soubory ve složce jsou, ale nebude je moci otevřít, vytvořit nebo smazat.</p>
+      </item>
+      <item>
+        <title><gui>Přístup k souborům</gui></title>
+        <p>Uživatel bude moci soubory ve složce otevřít (pokud k tomu bude mít u jednotlivých souborů oprávnění), ale nebude moci vytvářet nové soubory nebo soubory mazat.</p>
+      </item>
+      <item>
+        <title><gui>Vytváření a mazání souborů</gui></title>
+        <p>Uživatel bude mít k souborům ve složce úplný přístup, včetně otevírání, vytváření a mazání souborů.</p>
+      </item>
+    </terms>
+
+    <p>Můžete také rychle změnit oprávnění u všech souborů ve složce kliknutím na <gui>Změnit oprávnění obsaženým souborům</gui>. Použijte rozbalovací seznamy k výběru oprávnění pro soubory a složky, které se v dané složce nachází, a klikněte na <gui>Změnit</gui>. Oprávnění se použijí na soubory a složky i v podsložkách, do libovolné hloubky.</p>
+  </section>
+
+</page>

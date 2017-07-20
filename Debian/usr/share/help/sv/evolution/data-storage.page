@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="data-storage" xml:lang="sv">
+
+  <info>
+    <desc>Var lagrar <app>Evolution</app> mina data på hårddisken?</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+
+    <revision pkgversion="3.5.3" version="0.5" date="2012-06-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Datalagringsplatser</title>
+
+<note style="tip">
+<p>Detta är bara intressant för avancerade användare som vill felsöka problem.</p>
+</note>
+
+<p><app>Evolution</app> 3.6 och senare lagrar sina data enligt <link href="http://www.freedesktop.org/wiki/Specifications/basedir-spec">XDG baskatalogspecifikationen</link>. Som standard innebär detta:</p>
+
+<terms>
+<item>
+<title>Användarens datafiler</title>
+<p><file>$HOME/.local/share/evolution</file></p>
+</item>
+<item>
+<title>Diverse konfigurations- och tillståndsfiler</title>
+<p><file>$HOME/.config/evolution</file></p>
+</item>
+<item>
+<title>Kontoinställningar</title>
+<p><file>$HOME/.config/evolution/sources</file></p>
+</item>
+<item>
+<title>Datacachar som kan slängas</title>
+<p><file>$HOME/.cache/evolution</file></p>
+</item>
+<item>
+<title>Konfigurationsinställningar i GSettings</title>
+<p><file>$HOME/.config/dconf</file></p>
+</item>
+</terms>
+
+</page>

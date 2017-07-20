@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-personal" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.1" date="2013-09-23" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Permitir a otras personas acceder a los archivos de su carpeta <file>Público</file>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Compartir sus archivos personales</title>
+
+  <p>Puede permitir el acceso a la carpeta <file>Público</file> de su <file>Carpeta personal</file> desde otro equipo de la red. Configure la <gui>Compartición de archivos personales</gui> para permitir que otros usuarios accedan al contenido de esta carpeta.</p>
+
+  <note style="info package">
+    <p>Debe tener instalado el paquete <app>gnome-user-share</app> para que la opción de <gui>Compartición de archivos personales</gui> esté visible.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:gnome-user-share" style="button">Instalar gnome-user-share</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Compartición</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse en <gui>Compartición</gui> para abrir el panel.</p>
+    </item>
+    <item>
+      <p>Si la<gui>Compartición</gui> está <gui>Apagada</gui>, <gui>Actívela</gui>.</p>
+
+      <note style="info"><p>Si puede editar el texto de debajo de <gui>Nombre del equipo</gui> puede <link xref="sharing-displayname">cambiar</link> el nombre de su equipo en la red.</p></note>
+    </item>
+    <item>
+      <p>Seleccione <gui>Compartición de archivos personales</gui>.</p>
+    </item>
+    <item>
+      <p>Mueva el deslizador de <gui>Compartición de archivos personalse</gui> a <gui>Encendido</gui>. Esto significa que otros usuarios podrán intentar conectarse a su equipo y acceder a los archivos de su carpeta <file>Público</file>.</p>
+      <note style="info">
+        <p>Se muestra un <em>URI</em> mediante la cual se puede acceder a su carpeta <file>Público</file> desde otros equipos de la red.</p>
+      </note>
+    </item>
+  </steps>
+
+  <section id="security">
+  <title>Seguridad</title>
+
+  <terms>
+    <item>
+      <title>Solicitar contraseña</title>
+      <p>Para solicitar a otras personas que usen una contraseña cuando se accedan a su carpeta <file>Público</file>, <gui>Active</gui> la opción <gui>Requerir contraseña</gui>. Si no usa esta opción, cualquiera puede intentar ver su carpeta <file>Público</file>.</p>
+      <note style="tip">
+        <p>Esta opción está desactivada de forma predeterminada, pero debería activarla y configurar una contraseña segura.</p>
+      </note>
+    </item>
+  </terms>
+  </section>
+
+  <section id="networks">
+  <title>Redes</title>
+
+  <p>La sección <gui>Redes</gui> lista las redes a las que está actualmente conectado. Use el interruptor <gui>Encendido | Apagado</gui> junto a cada una para elegir qué archivos personales se pueden compartir.</p>
+
+  </section>
+
+</page>

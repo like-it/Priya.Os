@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="seealso" xref="net-findip"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Usar un enderezo IP estático pode facer máis doado fornecer servizos de rede desde o seu computador.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Crear unha conexión cunha enderezo IP fixo</title>
+
+  <p>A maioría das redes asignan automaticamente un <link xref="net-what-is-ip-address">enderezo IP</link> e outra información que o seu computador precisa para conectarse á rede. Esta información pode cambiar de forma periódica, porén vostede querer ter un enderezo IP fixo para un computador para que sempre saiba en que enderezo está (por exemplo, un servidor de ficheiros).</p> <p>Buscar o seu enderezo IP externo de Internet:</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Network</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>In the left pane, select the network connection that you want to give
+      a fixed address. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
+    </item>
+    <item>
+      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
+    </item>
+    <item>
+      <p>Enter the <em>Address</em>, <em>Netmask</em>, and <em>Gateway</em>
+      information into the appropriate boxes. How you choose these will depend
+      on your network setup; there are specific rules governing which IP
+      addresses and netmasks are valid for a given network.</p>
+    </item>
+    <item>
+      <p>Se é necesario, escriba os enderezos dos <em>Servidores de nomes de dominio</em> na caixa <gui>servidores DNS</gui>. Estes son os enderezos de servidores que buscan nomes de dominio; a maioría das redes corporativas e fornecedores de internet teñen servidores de DNS adicados.</p>
+    </item>
+    <item>
+      <p>Click <gui>Apply</gui>. The network connection should now have a fixed
+      IP address.</p>
+    </item>
+  </steps>
+
+</page>

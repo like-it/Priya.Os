@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Dokumentacijski projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Seznam map kjer lahko najdete dokumente, datoteke in nastavitve katerih varnostno kopijo boste morda želeli ustvariti.</desc>
+  </info>
+
+  <title>Kje lahko najdem datoteke katerih varnostno kopijo želim ustvariti?</title>
+
+  <p>Odločitev varnostno kopijo katerih datotek želite narediti in njihovo iskanje je najtežji korak pri poskušanju ustvarjanja varnostnih kopij. Spodaj je seznam map, kjer bi morala biti večina vaših pomembnih datotek.</p>
+
+<list>
+ <item>
+  <p>Osebne datoteke (dokumenti, glasba, fotografije in videoposnetki)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Te datoteke so običajno shranjene v vaši domači mapi (<cmd>/home/vaše_ime</cmd>). Lahko so v podmapah kot so Namizje, Dokumenti, Slike, Glasba, Video.</p>
+  <p>If your backup medium has sufficient space (if it is an external hard
+  disk, for example), consider backing up the entire Home folder. You can find
+  out how much disk space your Home folder takes up by using the
+  <app>Disk Usage Analyzer</app>.</p>
+ </item>
+
+ <item>
+  <p>Skrite datoteke</p>
+  <p>Any file or folder name that starts with a period (.) is hidden by
+  default. To view hidden files, click the
+  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
+  button in the toolbar, and then choose <gui>Show Hidden Files</gui>, or press
+  <keyseq><key>Ctrl</key><key>H</key></keyseq>. You can copy these to a
+  backup location like any other file.</p>
+ </item>
+
+ <item>
+  <p>Osebne nastavitve (možnosti namizja, teme in nastavitve programov)</p>
+  <p>Večina programov shrani svoje nastavitve v skrite mape v vaši Domači mapi (glejte zgoraj za podrobnosti o skritih datotekah).</p>
+  <p>Večina vaših nastavitev programov je shranjena v skritih mapah <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file> in <file>.local</file> v vaši Domači mapi.</p>
+ </item>
+
+ <item>
+  <p>Sistemske nastavitve</p>
+  <p>Settings for important parts of the system are not stored in your Home
+  folder. There are a number of locations that they could be stored, but most
+  are stored in the <file>/etc</file> folder. In general, you will not need to
+  back up these files on a home computer. If you are running a server, however,
+  you should back up the files for the services that it is running.</p>
+ </item>
+</list>
+
+</page>

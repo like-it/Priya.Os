@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>En lista över mappar där du kan hitta dokument, filer och inställningar som du kanske vill säkerhetskopiera.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Var kan jag hitta filerna jag vill säkerhetskopiera?</title>
+
+  <p>Att bestämma vilka filer som ska säkerhetskopieras och hitta dem är det svåraste steget när man försöker genomföra en säkerhetskopiering. Nedan finns en lista över de vanligaste platserna där du kan hitta viktiga filer och inställningar som du vill säkerhetskopiera.</p>
+
+<list>
+ <item>
+  <p>Personliga filer (dokument, musik, foto och videor)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Dessa sparas vanligtvis i din hemmapp (<file>/home/your_name</file>). De kan finnas sparade i underkataloger så som Skrivbord, Dokument, Bilder, Musik och Video.</p>
+  <p>Om ditt medium för säkerhetskopiering har tillräckligt med utrymme (om det är en extern hårddisk till exempel), överväg att kopiera hela din Hemmapp. Du kan se hur mycket plats din Hemmapp upptar genom att använda programmet <app>Diskanvändningsanalysator</app>.</p>
+ </item>
+
+ <item>
+  <p>Dolda filer</p>
+  <p>Filer eller kataloger vars namn börjar med en punkt (.) göms som standard. För att se gömda filer klicka <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Visningsalternativ</span></media></gui>-knappen i verktygsfältet, och välj sedan <gui>Visa dolda filer</gui> eller tryck på <keyseq><key>Ctrl</key><key>H</key></keyseq>. Du kan kopiera dessa till en plats för säkerhetskopior precis som vilka andra filer som helst.</p>
+ </item>
+
+ <item>
+  <p>Personliga inställningar (skrivbordsinställningar teman och programinställningar)</p>
+  <p>De flesta programmen sparar sina inställningar i gömda kataloger i din Hemmapp (se ovan för information om gömda filer).</p>
+  <p>De flesta av dina programinställningar kommer att finnas sparade i gömda kataloger <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file> och <file>.local</file> i din Hemmapp.</p>
+ </item>
+
+ <item>
+  <p>Systemomfattande inställningar</p>
+  <p>Inställningar för viktiga delar av systemet finns inte sparade i din Hemmapp. Det finns ett antal platser där de skulle kunna finnas sparade, men de flesta sparas i mappen <file>/etc</file>. Generellt sett så behöver du inte spara dessa filer på en hemdator. Om du kör en server däremot bör du säkerhetskopiera filerna för de tjänster som är igång.</p>
+ </item>
+</list>
+
+</page>

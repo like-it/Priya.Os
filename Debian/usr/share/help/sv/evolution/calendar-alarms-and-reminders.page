@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="calendar-alarms-and-reminders" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#calendar"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2011-08-02" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+     <name its:translate="no">Novell, Inc</name>
+     <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-prefs-cal.html.en#CACHCGCI -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Att ställa in påminnelseaviseringar för möten.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Påminnelser för möten</title>
+
+<section id="general-settings">
+  <title>Allmänna inställningar</title>
+
+  <p>Under <guiseq><gui>Redigera</gui><gui>Inställningar</gui> <gui>Kalender och uppgifter</gui><gui>Påminnelser</gui></guiseq> kan du välja de kalendrar för vilka du vill ta emot påminnelseaviseringar. Om du inte väljer en kalender kommer du inte att få påminnelser för några evenemang i denna kalender. Du kan också definiera huruvida en påminnelse ska visas för varje möte och för varje födelsedag och årsdag.</p>
+
+  <if:choose>
+    <if:when test="platform:gnome-shell">
+      <p>För allmän information om att visa påminnelser, se <link xref="help:gnome-help/shell-notifications" href="https://help.gnome.org/users/gnome-help/stable/shell-notifications">GNOME skrivbordshjälp</link>.</p>
+    </if:when>
+  </if:choose>
+
+</section>
+
+<section id="manual-reminders">
+  <title>Manuella påminnelser</title>
+
+  <p>Förutom de allmänna inställningarna kan du också ställa in påminnelser i mötesredigeraren för specifika möten:</p>
+
+  <steps>
+    <item>
+      <p>Klicka på <guiseq><gui>Alternativ</gui><gui>Påminnelser</gui></guiseq> eller tryck på Påminnelseknappen i verktygsfältet.</p>
+    </item>
+    <item>
+      <p>Från rullgardinsmenyn, välj vilken som av de tillgängliga standardalternativen om när en påminnelseavisering ska visas, eller välj <gui>Anpassa</gui>.</p>
+    </item>
+    <item>
+      <p>I fallet med <gui>Anpassa</gui> kan påminnelsen vara en popup, ett uppspelat ljud eller ett program som körs. Du kan också definiera huruvida påminnelsen ska upprepas.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

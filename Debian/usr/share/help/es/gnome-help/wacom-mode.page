@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-mode" xml:lang="es">
+
+  <info>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <link type="guide" xref="wacom"/>
+
+    <credit type="author copyright">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Cambiar el modo de la tableta entre modo tableta y modo ratón.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Establecer el modo de seguimiento de la tableta Wacom</title>
+
+<p>El <gui>Modo de seguimiento</gui> determina cómo se corresponde el puntero con la pantalla.</p>
+
+<steps>
+  <item>
+    <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Tableta Wacom</gui>.</p>
+  </item>
+  <item>
+    <p>Pulse en <gui>Tableta Wacom</gui> para abrir el panel.</p>
+    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
+    <note style="tip"><p>Si no se detecta ninguna tableta, se le pedirá que <gui>Conecte o encienda su tableta Wacom</gui>. Pulse el enlace <gui>Configuración de Bluetooth</gui> para conectar una tableta inalámbrica</p></note>
+  </item>
+  <item><p>Junto a <gui>Modo de seguimiento</gui>, seleccione <gui>Tableta (absoluto)</gui> o <gui>Touchpad (relativo)</gui>.</p></item>
+</steps>
+
+<note style="info"><p>En el modo <em>absoluto</em> cada punto de la tableta se corresponde con un punto de la pantalla. La esquina superior izquierda de la pantalla, por ejemplo, siempre corresponde con el mismo punto de la tableta.</p>
+ <p>En el modo <em>relativo</em> si deja el puntero fuera de la tableta, y lo pone en un lugar diferente, el cursor de la pantalla no se mueve. Así es como funciona un ratón.</p>
+  </note>
+
+</page>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-several-pop-accounts" xml:lang="fr">
+
+  <info>
+    <desc>Comment séparer et trier les courriels lorsque vous utilisez plus d'un compte local.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-organizing"/>
+    <link type="seealso" xref="mail-receiving-options-pop"/>
+
+    <revision pkgversion="3.5.3" version="0.2" date="2012-06-16" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Séparation de courriel POP lorsque vous avez plus d'un compte</title>
+
+<p>It is not possible to have separate accounts in the accounts and folder list pane. <app>Evolution</app> only has one unique inbox for incoming email.</p>
+<p>Vous pouvez utiliser IMAP au lieu de POP ou déplacer les courriels entrants dans des dossiers différents en <link xref="mail-folders">créant des dossiers</link> et en <link xref="mail-filters">créant des filtres</link> : créez un dossier et deux sous-dossiers (un pour les courriels sortants, l'autre pour ceux envoyés pour ce compte). Ensuite configurez un filtre entrant en utilisant <guiseq><gui>Édition</gui><gui>Filtres de message</gui><gui style="button">Ajouter</gui></guiseq> pour déplacer les courriels entrant dans le dossier des messages entrants en filtrant sur l'adresse du destinataire et configurez un filtre sortant pour déplacer les courriels sortant dans le dossier des messages envoyés en filtrant sur l'adresse de l'expéditeur.</p>
+
+<!-- https://bugzilla.gnome.org/show_bug.cgi?id=273944 -->
+
+</page>

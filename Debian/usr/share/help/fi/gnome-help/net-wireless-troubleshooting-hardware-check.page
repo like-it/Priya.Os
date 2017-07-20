@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="fi">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntun dokumentaatio-wikin tekoon osallistuneet</name>
+    </credit>
+    <credit type="author">
+      <name>Gnomen dokumentointiprojekti</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Vaikka langaton verkkosovitin on yhdistetty, tietokone ei ole välttämättä havainnut sitä.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Langattoman verkon vianselvitys</title>
+  <subtitle>Varmista, että tietokone on tunnistanut langattoman laitteen</subtitle>
+
+  <p>Vaikka langaton verkkosovitin on liitetty tietokoneeseen, tietokone ei välttämättä ole tunnistanut sitä verkkolaitteeksi. Tässä vaiheessa tarkistamme, että laite on havaittu oikealla tavalla.</p>
+
+  <steps>
+    <item>
+      <p>Open a Terminal window, type <cmd>lshw -C network</cmd> and press
+      <key>Enter</key>. If this gives an error message, you may need to install
+      the <app>lshw</app> program on your computer.</p>
+    </item>
+    <item>
+      <p>Tutki tulostetta ja etsi <em>Wireless interface</em> -osio. Jos tietokone on havainnut langattoman verkkosovittimen, tulosteen pitäisi näyttää seuraavanlaiselta (ei kuitenkaan samalta):</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>Jos langaton verkkosovitin löytyy tulosteesta, jatka <link xref="net-wireless-troubleshooting-device-drivers">laitteistoajurien tarkistamiseen</link>.</p>
+      <p>Jos langatonta verkkosovitinta <em>ei</em> löydy tulosteesta, seuraava vaihe riippuu laitteesi tyypistä. Jatka ongelmanratkaisua siirtymällä langattoman verkkosovittimen tyyppiä vastaavaan osioon (<link xref="#pci">sisäinen PCI</link>, <link xref="#usb">USB</link> tai <link xref="#pcmcia">PCMCIA</link>).</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>Sisäinen langaton PCI-sovitin</title>
+
+  <p>Sisäiset PCI-sovittimet ovat kaikista yleisimpiä, ja sellainen löytyy suurimmasta osasta viime vuosina valmistetuista kannettavista tietokoneista. Tarkista, onko tietokone havainnut PCI-sovittimen:</p>
+
+  <steps>
+    <item>
+      <p>Avaa <app>Pääte</app>, kirjoita <cmd>lspci</cmd> ja paina <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Tutki tulostettua laitelistaa ja etsi laitteet, jotka on merkitty tekstillä <code>Network controller</code> tai <code>Ethernet controller</code>. Useampi laite voi olla merkitty verkkolaitteiksi, mutta langatonta verkkosovitinta voidaan kuvailla sanoilla <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> tai <code>802.11</code>. Laitteen rivi voi näyttää esimerkiksi tältä:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Jos langaton verkkosovitin löytyi listasta, jatka <link xref="net-wireless-troubleshooting-device-drivers">laitteistoajurien tarkistamiseen</link>. Jos tulosteesta ei löytynyt mitään viittausta langattomaan verkkosovittimeen, lue <link xref="#not-recognized">ohjeita sivun lopusta</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>Langaton USB-sovitin</title>
+
+  <p>USB-porttiin liitettävät langattomat verkkosovittimet ovat harvinaisempia. Ne voidaan kiinnittää USB-porttiin joko suoraan tai USB-kaapelin välityksellä. Mobiililaajakaistojen nettitikut näyttävät usein samanlaisilta kuin langattomat verkkosovittimet, joten varmista, että USB-sovitin todella on WLAN-sovitin eikä 3G-sovitin.  Tarkista, onko tietokone havainnut langattoman USB-sovittimen:</p>
+
+  <steps>
+    <item>
+      <p>Avaa <app>Pääte</app>, kirjoita <cmd>lsusb</cmd> ja paina <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Tutki tulostettua laitelistaa ja etsi laitteita, jotka vaikuttavat verkkolaitteilta. Langatonta verkkosovitinta voidaan kuvailla sanoilla <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> tai <code>802.11</code>. Laitteen rivi voi näyttää esimerkiksi tältä:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>Jos langaton verkkosovitin löytyi listasta, jatka <link xref="net-wireless-troubleshooting-device-drivers">laitteistoajurien tarkistamiseen</link>. Jos tulosteesta ei löytynyt mitään viittausta langattomaan verkkosovittimeen, lue <link xref="#not-recognized">ohjeita sivun lopusta</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>PCMCIA-laitteiden tarkistaminen</title>
+
+  <p>Langattomat PCMCIA-sovittimet ovat yleensä kannettavan reunaan liitettyjä suorakulmaisia kortteja. Nämä ovat yleisiä vanhemmissa koneissa. Tarkista, onko tietokone havainnut PCMCIA-sovittimen:</p>
+
+  <steps>
+    <item>
+      <p>Käynnistä tietokone siten, <em>ettei</em> langaton verkkosovitin ole kytkettynä.</p>
+    </item>
+    <item>
+      <p>Avaa Pääte, kirjoita alla oleva komento ja paina <key>Enter</key>:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>Kyseinen komento tulostaa tietokoneen laitteistoon liittyviä viestejä ja päivittyy automaattisesti laitteiston muuttuessa.</p>
+    </item>
+    <item>
+      <p>Liitä langaton verkkosovitin PCMCIA-väylään ja tutki pääteikkunaan ilmestynyttä tekstiä. Muutoksiin pitäisi sisältyä tietoja juuri liitetystä langattomasta verkkosovittimesta. Tutki tulostetta ja yritä saada selville laitteen tietoja.</p>
+    </item>
+    <item>
+      <p>Komennon suoritus päätteessä loppuu painamalla <keyseq><key>Ctrl</key><key>C</key></keyseq>. Tämän jälkeen voit sulkea pääteikkunan.</p>
+    </item>
+    <item>
+      <p>Jos löysit tietoa langattomasta verkkosovittimesta, jatka <link xref="net-wireless-troubleshooting-device-drivers">laitteistoajurien tarkistamiseen</link>. Jos et löytynyt mitään viittausta langattomaan verkkosovittimeen, lue <link xref="#not-recognized">ohjeita sivun lopusta</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>Langatonta sovitinta ei tunnistettu</title>
+
+  <p>If your wireless adapter was not recognized, it might not be working
+  properly or the correct drivers may not be installed for it. How you check to
+  see if there are any drivers you can install will depend on which Linux
+  distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
+
+  <p>Tutki jakelupakettisi verkkosivuja saadaksesi tukea jakelun valmistajilta. Tukipalveluihin voi kuulua mm. postituslistat ja verkkokeskustelut, joissa voit kysyä langattomasta verkkosovittimestasi.</p>
+
+</section>
+
+</page>

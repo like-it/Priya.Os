@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters-conditions" xml:lang="cs">
+
+  <info>
+    <desc>Dostupné podmínky pro nastavení filtrování.</desc>
+
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.6.4" version="0.3" date="2013-04-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-filters.html.en#usage-mail-org-filters-new -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dostupné podmínky filtrů</title>
+
+<list>
+
+<!-- As filter and search folder conditions share a fair amount of options, those ones are centrally in one file that's 
+included by XInclude. See http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-filter-vfolder-conditions.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:item)"/>
+
+<item><p>Zdrojový účet:</p>
+<p>Filtruje zprávy podle serveru, z kterých jste je získali. Toto je nejužitečnější, používáte-li účty POP.</p></item>
+
+<item><p>Předat programu:</p>
+<p><app>Evolution</app> může použít ke zpracování zprávy externí program, potom ji zpracovává na základě vrácené hodnoty. Použité příkazy musí vracet celá čísla. Toto je nejčastěji používáno pro přidání externího filtru nevyžádané pošty.</p></item>
+
+<item><p>Test na nevyžádanou poštu:</p>
+<p>Filtry vycházející z výsledků testu <link xref="mail-spam">nevyžádané pošty</link>.</p></item>
+
+<item><p>Vše odpovídá:</p>
+<p>Použije akci vždy na libovolnou zprávu, bez dalších podmínek. To se může hodit na konci seznamu filtrů zpráv, abyste pokryli i ty e-maily, které nevyhovují žádné z podmínek v předchozích filtrech v seznamu.</p></item>
+
+</list>
+</page>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="sr-Latn">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Priložnici vikija Ubuntuove dokumentacije</name>
+    </credit>
+    <credit type="author">
+      <name>Gnomov projekat dokumentacije</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Čak i kada je vaš bežični prilagođivač priključen, može biti da ga računar ne prepozna ispravno.</desc>
+  </info>
+
+  <title>Rešavanje problema bežične veze</title>
+  <subtitle>Proverite da li je prepoznat bežični prilagođivač</subtitle>
+
+  <p>Čak i kada je bežični prilagođivač priključen na računar, može biti da ga računar ne prepoznaje kao mrežni uređaj. U ovom koraku, proverite da li je uređaj ispravno prepoznat.</p>
+
+  <steps>
+    <item>
+      <p>Otvorite prozor terminala, upišite <cmd>lshw -C network</cmd> i pritisnite <key>Unesi</key>. Ako ovo da poruku sa greškom, moraćete da instalirate program <app>lshw</app> na vaš računar.</p>
+    </item>
+    <item>
+      <p>Pregledajte ispis koji će se pojaviti i pronađite odeljak <em>Bežični uređaj</em>. Ako je vaš bežični prilagođivač ispravno otkriven, videćete nešto slično (ali ne i isto) ovome:</p>
+      <code>*-network
+       opis: Wireless interface
+       proizvod: PRO/Wireless 3945ABG [Golan] Network Connection
+       prodavac: Intel Corporation</code>
+    </item>
+    <item>
+      <p>Ako je bežični uređaj na spisku, nastavite na <link xref="net-wireless-troubleshooting-device-drivers">koraku upravljačkih programa uređaja</link>.</p>
+      <p>Ako bežični uređaj <em>nije</em> na spisku, sledeći korak koji ćete preduzeti zavisiće od vrste uređaja koji koristite. Pogledajte odeljak ispod koji se odnosi na vrstu bežičnog prilagođivača koji ima vaš računar (<link xref="#pci">unutrašnji PCI</link>, <link xref="#usb">USB</link>, ili <link xref="#pcmcia">PCMCIA</link>).</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>PCI (unutrašnji) bežični prilagođivač</title>
+
+  <p>Unutrašnji PCI prilagođivači su najuobičajeniji, i nalaze se u većini prenosnih računara napravljenih u poslednjih nekoliko godina. Da proverite da li je vaš PCI bežični prilagođivač prepoznat:</p>
+
+  <steps>
+    <item>
+      <p>Otvorite terminal, upišite <cmd>lspci</cmd> i pritisnite <key>Unesi</key>.</p>
+    </item>
+    <item>
+      <p>Pregledajte spisak uređaja koji će biti prikazan i pronađite one koji su označeni kao <code>Network controller</code> ili <code>Ethernet controller</code>. Nekoliko uređaja može biti označeno na taj način; onaj koji odgovara vašem bežičnom prilagođivaču može da sadrži reči kao što su <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> ili <code>802.11</code>. Evo i jednog primera kako bi stavka mogla da izgleda:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Ako pronađete vaš bežični prilagođivač na spisku, pređite na <link xref="net-wireless-troubleshooting-device-drivers">korak upravljačkih programa uređaja</link>. Ako ne pronađete ništa što se odnosi na vaš bežični prilagođivač, pogledajte <link xref="#not-recognized">uputstva ispod</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>USB bežični prilagođivač</title>
+
+  <p>Bežični prilagođivači koji se priključuju na USB priključnicu na vašem računaru su manje zastupljeni. Mogu da se priključe direktno na USB priključnicu, ili mogu biti povezani USB kablom. 3G/mobilni širokopojasni prilagođivači su po izgledu vrlo slični bežičnim prilagođivačima, tako da ako mislite da imate USB bežični prilagođivač, dva puta proverite da to nije zapravo 3G prilagođivač. Da proverite da li je vaš USB bežični prilagođivač prepoznat:</p>
+
+  <steps>
+    <item>
+      <p>Otvorite terminal, upišite <cmd>lsusb</cmd> i pritisnite <key>Unesi</key>.</p>
+    </item>
+    <item>
+      <p>Pregledajte spisak uređaja koji će biti prikazan i pronađite nešto što izgleda da se odnosi na bežični ili mrežni uređaj. Ono što odgovara vašem bežičnom prilagođivaču može da sadrži reči kao što su <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> ili <code>802.11</code>. Evo i jednog primera kako bi stavka mogla da izgleda:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>Ako pronađete vaš bežični prilagođivač na spisku, pređite na <link xref="net-wireless-troubleshooting-device-drivers">korak upravljačkih programa uređaja</link>. Ako ne pronađete ništa što se odnosi na vaš bežični prilagođivač, pogledajte <link xref="#not-recognized">uputstva ispod</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Proverite PCMCIA uređaj</title>
+
+  <p>PCMCIA bežični prilagođivači su obično pravougaone kartice koje se užlebljuju sa strane na vašem prenosnom računaru. Vrlo često se mogu naći u starijim računarima. Da proverite da li je vaš PCMCIA prilagođivač prepoznat:</p>
+
+  <steps>
+    <item>
+      <p>Pokrenite računar <em>bez</em> priključenog bežičnog prilagođivača.</p>
+    </item>
+    <item>
+      <p>Otvorite terminal i upišite sledeće, zatim pritisnite <key>Unesi</key>:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>Ovo će prikazati spisak poruka koje se odnose na fizičke komponente vašeg računara, i samostalno će se ažurirati ako se izmeni nešto u vezi vaših fizičkih delova.</p>
+    </item>
+    <item>
+      <p>Umetnite bežični prilagođivač u PCMCIA žleb i pogledajte šta se izmenilo u prozoru terminala. Izmene će sadržati neke podatke o vašem bežičnom prilagođivaču. Pregledajte ih i vidite da li možete da ih odredite.</p>
+    </item>
+    <item>
+      <p>Da zaustavite izvršavanje naredbe u terminalu, pritisnite <keyseq><key>Ktrl</key><key>C</key></keyseq>. Nakon ovoga, možete da zatvorite terminal ako želite.</p>
+    </item>
+    <item>
+      <p>Ako ste pronašli neke podatke o vašem bežičnom prilagođivaču, pređite na <link xref="net-wireless-troubleshooting-device-drivers">korak upravljačkih programa uređaja</link>. Ako ne pronađete ništa što se odnosi na vaš bežični prilagođivač, pogledajte <link xref="#not-recognized">uputstva ispod</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>Bežični prilagođivač nije prepoznat</title>
+
+  <p>Ako vaš bežični prilagođivač nije prepoznat, neće moći da radi ispravno ili neće biti instalirani odgovarajući upravljački programi za njega. Kako ćete proveriti da li postoje neki upravljački programi koje možete da instalirate zavisiće od toga koju distribuciju Linuksa koristite (Ubuntu, Arč, Fedoru ili openSuSE).</p>
+
+  <p>Da nabavite određeniju pomoć, pogledajte opcije pomoći na veb sajtu vaše distribucije. Mogle bi da sadrže dopisne liste i veb ćaskanja na kojima biste mogli da pitate o vašem bežičnom prilagođivaču, na primer.</p>
+
+</section>
+
+</page>

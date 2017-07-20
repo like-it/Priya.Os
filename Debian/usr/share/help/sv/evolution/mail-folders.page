@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-folders" xml:lang="sv">
+
+  <info>
+    <desc>Använd mappar för att organisera din e-post.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.0.2" version="0.2" date="2011-07-30" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-folders.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Användning av mappar</title>
+  
+<p><app>Evolution</app>, som de flesta e-postsystem, använder mappar för att spara e-postmeddelanden. Du kan börja med ett fåtal e-postmappar så som inkorg, utkorg och utkast. Du kan dock skapa fler mappar om det behövs.</p>
+
+<section id="create-folder">
+<title>Skapa en mapp</title>
+<p>För att skapa en mapp:</p>
+<steps>
+<item><p>Klicka på <gui>Mappar</gui> och välj <gui>Nytt</gui>. Du kan också högerklicka var som helst i mapplistan och välja alternativet <gui>Ny mapp</gui>.</p></item>
+<item><p>Ange namnet och platsen för mappen.</p></item>
+<item><p>Klicka på <gui>Skapa</gui>-knappen.</p></item>
+</steps>
+<p>Den nya mappen kommer att visas i mappvyn. Du kan sedan flytta meddelanden in i mappen.</p>
+
+<note style="warning">
+<p><gui>Inkorgs</gui>-mapparna på de flesta IMAP-servrar kan inte innehålla både meddelanden och undermappar. När du skapar ytterligare mappar på din IMAP-e-postserver så kommer mapparna att utgå från roten i IMAP-kontot och inte från Inkorgen. Att skapa undermappar i din inkorg kan förhindra dig från att läsa meddelanden som existerar i Inkorgen. Om det händer, flytta mapparna till IMAP-kontot.</p>
+</note>
+
+</section>
+
+<section id="use-folder">
+<title>Flytta meddelanden till nya mappar</title>
+<p>Du kan flytta meddelanden in i mappar genom att använda en av följande metoder:</p>
+<list>
+<item><p>Dra och släpp meddelandena i mappen.</p></item>
+<item><p>Högerklicka på meddelandet och välj alternativet <gui>Flytta till mapp</gui>.</p></item>
+<item><p>Markera ett meddelande och tryck <keyseq><key>Skift</key><key>Ctrl</key><key>V</key></keyseq>.</p></item>
+<item><p>Markera ett meddelande och klicka på <guiseq><gui>Meddelande</gui><gui>Flytta till mapp</gui></guiseq>.</p></item>
+</list>
+
+<p>Stegen för att kopiera är liknande.</p>
+
+<note style="tip"><p>Att flytta filer kan göras automatiskt genom att ställa in <link xref="mail-filters">filter</link>.</p></note>
+
+</section>
+
+<!--Reuse http://library.gnome.org/users/evolution/2.32/usage-mail-organize-folders.html.en and add "Novell, Inc" as an author to this page. Mention the combination with filters (see seealso link)-->
+	
+</page>

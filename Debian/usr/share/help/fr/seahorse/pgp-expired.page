@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-expired" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-07-03" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Puis-je continuer à l'utiliser ? Les dates d'expiration peuvent-elles être modifiées ?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Que se passe-t-il à l'expiration de la clé ?</title>
+
+  <p>Après expiration, la clé devient invalide. Cela signifie que :</p>
+
+  <list>
+    <item>
+      <p>Elle ne peut plus être utilisée pour chiffrer et déchiffrer les messages.</p>
+    </item>
+    <item>
+      <p>Elle ne peut pas signer d'autres clés, ni recevoir de signatures d'autres clés.</p>
+    </item>
+  </list>
+
+  <p>Si vous désirez limiter la validité de votre clé, vous pouvez lui <link xref="pgp-create#advanced">fixer une date d'expiration</link>. Par défaut, <app>Mots de passe et clés</app> définit les clés comme toujours valides. C'est-à-dire qu'elles n'expirent jamais.</p>
+
+  <p>La date d'expiration d'une clé peut être modifiée à tout moment, même après qu'elle ait expiré. Si vous voulez cesser d'utiliser la clé expirée, vous devriez la <link xref="pgp-delete">supprimer</link> ou la <link xref="subkeys-revoke">révoquer</link>.</p>
+
+  <note style="info">
+    <p>Si vous avez des messages chiffrés avec une clé périmée, vous devez modifier la date d'expiration de la clé pour les déchiffrer avant de supprimer ou de révoquer la clé.</p>
+  </note>
+
+</page>

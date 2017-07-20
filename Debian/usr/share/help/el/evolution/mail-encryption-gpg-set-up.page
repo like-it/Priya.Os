@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-gpg-set-up" xml:lang="el">
+
+  <info>
+    <desc>Ρύθμιση GPG για τον λογαριασμό αλληλογραφίας για υπογραφή και/ή κρυπτογράφηση και αποκρυπτογράφηση μηνυμάτων.</desc>
+
+    <link type="guide" xref="mail-encryption#gpg"/>
+
+    <revision pkgversion="3.13.90" version="0.4" date="2015-03-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#encrypt-evo-integ -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009-2010</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ρύθμιση GPG για τον λογαριασμό αλληλογραφίας σας</title>
+<!-- TODO:POST-3-8: Update and rewrite using Seahorse. Needs a rewrite once https://bugzilla.gnome.org/show_bug.cgi?id=745872 and https://bugzilla.gnome.org/show_bug.cgi?id=508744 is fixed. -->
+
+<note style="tip"><p>Χρειάζεστε ένα κλειδί GPG για να το κάνετε αυτό. Εάν δεν έχετε ήδη ένα, παρακαλώ δείτε το <link xref="mail-encryption-gpg-create-key">δημιουργία κλειδιού GPG</link>.</p></note>
+
+<steps>
+<item><p>Επιλέξτε <guiseq><gui>επεξεργασία</gui><gui>προτιμήσεις</gui><gui>λογαριασμοί αλληλογραφίας</gui></guiseq>.</p></item>
+<item><p>Επιλέξτε τον λογαριασμό που θέλετε να χρησιμοποιήσετε με ασφάλεια και πατήστε <gui style="button">επεξεργασία</gui>.</p></item>
+<item><p>Επιλέξτε την καρτέλα <gui>ασφάλεια</gui>.</p></item>
+<item><p>Καθορίστε την ταυτότητα του κλειδιού σας στο πεδίο <gui>Αναγνωριστικό κλειδιού OpenPGP</gui>.</p>
+<note style="tip"><p>Κάτω από το πεδίο μπορείτε νε επιλέξετε εάν θα υπογράφονται πάντα τα εξερχόμενα μηνύματα όταν χρησιμοποιείτε αυτόν τον λογαριασμό και άλλες επιλογές.</p></note>
+</item>
+<item><p>Κλικ στο <gui style="button">Εντάξει</gui>.</p></item>
+<item><p>Κλικ στο <gui style="button">κλείσιμο</gui>.</p></item>
+</steps>
+<p><app>Evolution</app> requires that you know your key ID. If you do not remember it, start <app>Passwords and Keys</app>, go to <gui>GnuPG Keys</gui>, select the preferred GPG key, right-click on it, select <gui>Properties</gui> and copy the <gui>Key ID</gui>. Your key ID is an eight-character string with random numbers and letters.</p>
+
+</page>

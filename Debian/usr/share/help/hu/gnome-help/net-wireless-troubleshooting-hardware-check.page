@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="hu">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Az Ubuntu dokumentációs wiki közreműködői</name>
+    </credit>
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ha a vezeték nélküli csatoló csatlakoztatva is van, a számítógép nem biztos, hogy megfelelően felismerte.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Vezeték nélküli kapcsolatok hibáinak elhárítása</title>
+  <subtitle>Ellenőrizze, hogy a számítógép felismerte a vezeték nélküli csatolót</subtitle>
+
+  <p>Ha a vezeték nélküli csatoló csatlakoztatva is van, a számítógép nem biztos, hogy felismerte hálózati eszközként. Ebben a lépésben ellenőrizheti, hogy az eszköz megfelelően felismerésre került-e.</p>
+
+  <steps>
+    <item>
+      <p>Nyisson meg egy Terminál ablakot, írja be az <cmd>lshw -C network</cmd> parancsot, és nyomja meg az <key>Enter</key> billentyűt. Ha hibaüzenetet kap, akkor telepítse az <app>lshw</app> programot a számítógépére.</p>
+    </item>
+    <item>
+      <p>Olvassa el a megjelent információkat, és keresse meg a <em>Wireless interface</em> szakaszt. Ha a vezeték nélküli adapter felismerése sikerült, akkor a kimenetnek ehhez hasonlónak kell lennie:</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>Ha fel van sorolva egy vezeték nélküli eszköz, akkor folytassa az <link xref="net-wireless-troubleshooting-device-drivers">Illesztőprogramok lépéssel</link>.</p>
+      <p>Ha <em>nincs</em> felsorolva vezeték nélküli eszköz, akkor a következő lépések a használt eszköz típusától függenek. Nézze meg lentebb a számítógépében használt vezeték nélküli adapter típusának (<link xref="#pci">belső PCI</link>, <link xref="#usb">USB</link> vagy <link xref="#pcmcia">PCMCIA</link>) megfelelő szakaszt.</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>PCI (belső) vezeték nélküli csatoló</title>
+
+  <p>A belső PCI adapterek a leggyakoribbak, és az elmúlt néhány évben készült laptopok többségében megtalálhatók. A PCI vezeték nélküli csatoló megfelelő felismerésének ellenőrzéséhez:</p>
+
+  <steps>
+    <item>
+      <p>Nyisson meg egy Terminált, írja be az <cmd>lspci</cmd> parancsot, és nyomja meg az <key>Enter</key> billentyűt.</p>
+    </item>
+    <item>
+      <p>Nézze végig a megjelenő eszközök listáját, és keresse meg a <code>Network controller</code> vagy <code>Ethernet controller</code> jelölésűt. Több eszköz is meg lehet így jelölve, a vezeték nélküli csatolónak megfelelő a <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> vagy <code>802.11</code> kifejezéseket tartalmazhatja. Egy bejegyzés például így nézhet ki:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Ha a vezeték nélküli csatolót megtalálta a listában, akkor folytassa az <link xref="net-wireless-troubleshooting-device-drivers">Illesztőprogramok lépéssel</link>. Ha nem talált semmit a vezeték nélküli csatolóról, akkor nézze meg az <link xref="#not-recognized">alábbi utasításokat</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>USB vezeték nélküli csatoló</title>
+
+  <p>A számítógép USB portjába csatlakoztatható vezeték nélküli csatolók kevésbé gyakoriak. Ezek közvetlenül csatlakoztathatók az USB portba, vagy USB kábellel a számítógéphez. A 3G/mobil széles sávú csatolók hasonlóan néznek ki a vezeték nélküli csatolókhoz, emiatt győződjön meg róla, hogy az nem egy 3G csatoló. Az USB-s vezeték nélküli csatoló felismerésének ellenőrzéséhez:</p>
+
+  <steps>
+    <item>
+      <p>Nyisson meg egy Terminált, írja be az <cmd>lsusb</cmd> parancsot, és nyomja meg az <key>Enter</key> billentyűt.</p>
+    </item>
+    <item>
+      <p>Nézze végig a megjelenő eszközök listáját, és keresse meg a vezeték nélküli vagy hálózati eszközre utaló sort. A vezeték nélküli csatolónak megfelelő a <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> vagy <code>802.11</code> kifejezéseket tartalmazhatja. Egy bejegyzés például így nézhet ki:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>Ha a vezeték nélküli csatolót megtalálta a listában, akkor folytassa az <link xref="net-wireless-troubleshooting-device-drivers">Illesztőprogramok lépéssel</link>. Ha nem talált semmit a vezeték nélküli csatolóról, akkor nézze meg az <link xref="#not-recognized">alábbi utasításokat</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>PCMCIA eszköz keresése</title>
+
+  <p>A PCMCIA vezeték nélküli csatolók általában téglalap alakú kártyák, amelyek a laptop oldalában lévő foglalatba illeszkednek. Leggyakrabban régebbi számítógépekben fordulnak elő. A PCMCIA csatoló felismerésének ellenőrzéséhez:</p>
+
+  <steps>
+    <item>
+      <p>Indítsa el számítógépét a vezeték nélküli csatoló csatlakoztatása <em>nélkül</em>.</p>
+    </item>
+    <item>
+      <p>Nyisson meg egy Terminált, írja be a következő parancsot, és nyomja meg az <key>Enter</key> billentyűt:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>Ez megjeleníti a számítógép hardverével kapcsolatos üzenetek listáját, és automatikusan frissül, amikor a hardverrel kapcsolatos változás történik.</p>
+    </item>
+    <item>
+      <p>Helyezze be a vezeték nélküli csatolót a PCMCIA aljzatba, és figyelje a Terminál ablak változásait. A változásoknak információkat kell tartalmazniuk a vezeték nélküli csatolóról. Próbálja ezek alapján azonosítani a csatolót.</p>
+    </item>
+    <item>
+      <p>A Terminálban futó parancs leállításához nyomja meg a <keyseq><key>Ctrl</key><key>C</key></keyseq> kombinációt. Ezután bezárhatja a Terminált.</p>
+    </item>
+    <item>
+      <p>Ha talált információkat a vezeték nélküli csatolóról, akkor folytassa az <link xref="net-wireless-troubleshooting-device-drivers">Illesztőprogramok lépéssel</link>. Ha nem talált semmit a vezeték nélküli csatolóról, akkor nézze meg az <link xref="#not-recognized">alábbi utasításokat</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>A vezeték nélküli csatoló felismerése sikertelen</title>
+
+  <p>Ha a vezeték nélküli csatoló felismerése sikertelen volt, akkor lehet, hogy nem működik megfelelően, vagy a megfelelő illesztőprogramok nincsenek telepítve. A telepíthető illesztőprogramok keresésének módja az Ön által használt Linux disztribúciótól (mint az Ubuntu, Arch, Fedora vagy openSUSE) függ.</p>
+
+  <p>A konkrét segítségért nézze meg a disztribúció weboldalának támogatási lehetőségeit. Ezek közé levelezőlisták, fórumok és IRC-csatornák tartoznak, ahol a vezeték nélküli csatolóval kapcsolatos kérdéseket tehet fel.</p>
+
+</section>
+
+</page>

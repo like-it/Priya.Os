@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-expired" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-07-03" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Kann ich ihn immer noch einsetzen? Können Ablaufdaten geändert werden?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Was passiert, wenn mein Schlüssel zeitlich verfällt?</title>
+
+  <p>Wenn Ihr Schlüssel abläuft wird er ungültig. Dies hat zur Folge:</p>
+
+  <list>
+    <item>
+      <p>Er kann nicht länger zum Ver- und Entschlüsseln von Nachrichten eingesetzt werden.</p>
+    </item>
+    <item>
+      <p>Er kann keine anderen Schlüssel signieren oder Signaturen von anderen Schlüsseln bekommen.</p>
+    </item>
+  </list>
+
+  <p>Abhängig davon, wie lange Ihr Schlüssel gültig sein soll, <link xref="pgp-create#advanced">legen Sie ein Ablaufdatum fest</link>. Per Voreinstellung sind in <app>Passwörter und Schlüssel</app> alle Schlüssel immer gültig. Das bedeutet, dass die Schlüssel nie verfallen.</p>
+
+  <p>Das Ablaufdatum des Schlüssels kann jederzeit <link xref="pgp-expiration-change">geändert</link> werden, selbst nachdem der Schlüssel abgelaufen ist. Wenn Sie jedoch den abgelaufenen Schlüssel nicht weiter verwenden wollen, so sollten Sie diesen <link xref="pgp-delete">löschen</link> oder <link xref="subkeys-revoke">zurückziehen</link>.</p>
+
+  <note style="info">
+    <p>Wenn Sie mit einem abgelaufenen Schlüssel verschlüsselte Nachrichten haben, so müssen Sie das Ablaufdatum des Schlüssels noch vor dem Löschen oder Zurückziehen ändern, um diese entschlüsseln zu können.</p>
+  </note>
+
+</page>

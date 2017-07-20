@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="lv">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME dokumentācijas projekts</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Pārbaudiet, vai jūsu cietajam diskam nav problēmu, lai pārliecinātos, ka ar to viss ir kārtībā.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Pārbaudiet, vai jūsu cietajam diskam nav problēmu</title>
+
+<section id="disk-status">
+ <title>Pārbaudiet cieto disku</title>
+  <p>Cietajam diskam ir iebūvēts tā veselības pārbaudīšanas instruments - <app>SMART</app> (Self-Monitoring, Analysis, and Reporting Technology), kas pastāvīgi pārbauda diska iespējamās problēmas. SMART arī brīdina, ja diskam iespējama avārija, palīdzot novērst svarīgu datu zaudēšanu.</p>
+
+  <p>Kaut arī SMART darbojas automātiski, jūs varat pārbaudīt diska veselību, palaižot <app>Disku</app> lietotni:</p>
+
+<steps>
+ <title>Pārbaudiet jūsu diska veselību, izmantojot “Disku” lietotni</title>
+
+  <item>
+    <p>Atveriet lietotni <app>Diski</app> no <gui>Aktivitāšu</gui> pārskata.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to check from the list of storage devices on
+    the left. Information and status of the disk will be shown.</p>
+  </item>
+  <item>
+    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
+    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+  </item>
+  <item>
+    <p>See more information under <gui>SMART Attributes</gui>, or click the
+    <gui style="button">Start Self-test</gui> button to run a self-test.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>Ko darīt, ja disks nav veselīgs?</title>
+
+  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
+  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
+  to be prepared with a <link xref="backup-why">backup</link> to prevent data
+  loss.</p>
+
+  <p>Ja statuss paziņo "Pre-fail", tad disks joprojām ir samērā veselīgs, bet ir atklātas nolietošanās pazīmes, kas nozīmē, ka var rasties kļūda tuvākajā nākotnē. Ja cietais disks (vai dators) ir vairākus gadus vecs, jums ir lielāka iespēja redzēt šo ziņojumu vismaz dažās veselības pārbaudēs. Jums regulāri vajadzētu <link xref="backup-how">veidot rezerves kopijas svarīgajām datnēm</link> un periodiski pārbaudīt diska statusu, lai pārliecinātos vai nekļūst sliktāk.</p>
+
+  <p>Ja stāvoklis pasliktinās,ieteicams aiznest datoru/cieto disku profesionālim pilnīgākai diagnostikai vai remontam.</p>
+
+</section>
+
+</page>

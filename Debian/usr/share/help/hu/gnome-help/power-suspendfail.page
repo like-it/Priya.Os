@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Egyes számítógép-alkatrészek felfüggesztési hibákat okoznak.</desc>
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Miért nem kapcsol vissza felfüggesztés után a számítógépem?</title>
+
+<p>Ha számítógépét <link xref="power-suspend">felfüggeszti</link>, majd megpróbálja folytatni a használatát, előfordulhat, hogy ez nem sikerül. Ezt a felfüggesztést nem megfelelően támogató hardver okozhatja.</p>
+
+<section id="resume">
+  <title>A számítógépem nem tér vissza a felfüggesztésből</title>
+  <p>Amikor számítógépének felfüggesztése után megnyom egy billentyűt vagy kattint az egérrel, akkor annak fel kell ébrednie, és meg kell jelenítenie a jelszót kérő képernyőt. Ha ez nem történik meg, akkor próbálja megnyomni a bekapcsológombot (ne tartsa lenyomva, csak egyszer nyomja meg).</p>
+  <p>Ha ez sem segít, akkor győződjön meg róla, hogy a monitor be van kapcsolva, és nyomjon le újra egy billentyűt.</p>
+  <p>Végső esetben kapcsolja ki a számítógépet a bekapcsológombot 5-10 másodpercig lenyomva tartva. Ekkor a nem mentett munkája elvész, azonban újra be tudja kapcsolni a számítógépet.</p>
+  <p>Ha ez minden felfüggesztéskor megtörténik, akkor valószínűleg az adott hardverrel nem működik megfelelően a felfüggesztés.</p>
+  <note style="warning">
+    <p>Ha a számítógép elveszti a tápellátást, és nincs alternatív energiaellátása (például akkumulátora), akkor ki fog kapcsolni.</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>A vezeték nélküli kapcsolat (vagy más hardver) nem működik a számítógép felébresztésekor</title>
+  <p>Ha a számítógépet felfüggeszti, majd újra felébreszti, akkor előfordulhat, hogy az internetkapcsolat, az egér vagy más eszköz nem fog megfelelően működni. Ezt az eszköz illesztőprogramja okozhatja, amely nem támogatja megfelelően a felfüggesztést. Ez az <link xref="hardware-driver">illesztőprogram hibája</link>, és nem az eszközé.</p>
+  <p>Ha az eszközön van ki/be kapcsoló gomb, akkor próbálja meg ki- és bekapcsolni. A legtöbb esetben az eszköz ilyenkor újra működni kezd. Ha USB-kábellel csatlakozik, akkor húzza ki az eszközt, majd dugja vissza újra.</p>
+  <p>Ha nem tudja kikapcsolni vagy kihúzni az eszközt, vagy ez nem használ, akkor indítsa újra számítógépét az eszköz működőképessé tételéhez.</p>
+</section>
+
+</page>

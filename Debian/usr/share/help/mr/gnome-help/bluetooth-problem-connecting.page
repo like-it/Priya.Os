@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="problem" version="1.0 if/1.0" id="bluetooth-problem-connecting" xml:lang="mr">
+
+  <info>
+    <link type="guide" xref="bluetooth#problems"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>अडॅप्टरला बंद करणे शक्य आहे किंवा ड्राइव्हर्स समर्थीत नाही, किंवा ब्लुटुथ बंद किंवा अडवलेले असावे.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>I cannot connect my Bluetooth device</title>
+
+  <p>ब्लुटुथ साधन, जसे कि फोन किंवा होडसेटसह जोडणी न होण्याचे असंख्य कारण आहेत.</p>
+
+  <terms>
+    <item>
+      <title>जोडणी अडवा किंवा अविश्वासु</title>
+      <p>काही ब्लुटुथ साधने जोडणी पूर्वनिर्धारितपणे अडवतात, किंवा जोडणी स्वीकारण्यासाठी सेटिंगमध्ये बदल आवश्यक ठरवतात. तुमचे साधन जोडणी स्वीकारण्यास तयार आहे याची खात्री करा.</p>
+    </item>
+    <item>
+      <title>ब्लुटुथ हार्डवेअर ओळखीचे नाही</title>
+      <p>Your Bluetooth adapter or dongle may not have been recognized by the
+      computer. This could be because
+      <link xref="hardware-driver">drivers</link> for the adapter are not
+      installed. Some Bluetooth adapters are not supported on Linux, so you may
+      not be able to get the right drivers for them. In this case, you will
+      probably have to get a different Bluetooth adapter.</p>
+    </item>
+    <item>
+      <title>Adapter is not switched on</title>
+      <if:choose>
+        <if:when test="platform:unity">
+          <p>ब्लुटुथ अडॅप्टर सुरू आहे याची खात्री करा. <gui>मेन्यु पट्टी</gui>मधील ब्लुटुथ चिन्हावर क्लिक करा आणि ते <link xref="bluetooth-turn-on-off">बंद नाही</link> याची तपासणी करा.</p>
+        </if:when>
+        <p>Make sure that your Bluetooth adapter is switched on. Open the
+        Bluetooth panel and check that it is not
+        <link xref="bluetooth-turn-on-off">disabled</link>.</p>
+      </if:choose>
+    </item>
+    <item>
+      <title>उपकरणाची ब्लुटुथ जोडणी बंद आहे</title>
+      <p>Check that Bluetooth is turned on on the device you are trying to
+      connect to, and that it is <link xref="bluetooth-visibility">discoverable
+      or visible</link>. For example, if you are trying to connect to a phone,
+      make sure that it is not in airplane mode.</p>
+    </item>
+    <item>
+      <title>तुमच्या संगणकामध्ये ब्लुटुथ अडाप्टर नाही</title>
+      <p>अनेक संगणकांमध्ये ब्लुटुथ अडॅप्टर्स नाही. ब्लुटुथचा वापर करायचा असल्यास तुम्ही अडॅप्टर विकत घेऊ शकता.</p>
+    </item>
+  </terms>
+
+</page>

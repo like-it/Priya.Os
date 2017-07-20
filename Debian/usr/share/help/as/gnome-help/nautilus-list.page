@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-list" xml:lang="as">
+
+  <info>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="nautilus-prefs" group="nautilus-list"/>
+
+    <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
+
+    <credit type="author">
+      <name>ফিল বুল</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>মাইকেল হিল</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>একাটেৰিনা গেৰাচিমভা</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>তালিকা দৰ্শনত স্তম্ভসমূহত কি তথ্য দেখুৱা হয় নিয়ন্ত্ৰণ কৰক।</desc>
+  </info>
+
+  <title>Files list columns preferences</title>
+
+  <p>There are eleven columns of information that you can display in the
+  <gui>Files</gui> list view. Click <gui>Files</gui> in the top bar, pick
+  <gui>Preferences</gui> and choose the <gui>List Columns</gui> tab to select
+  which columns will be visible.</p>
+
+  <note style="tip">
+    <p>Use the <gui>Move Up</gui> and <gui>Move Down</gui> buttons to choose
+    the order in which the selected columns will appear. Click <gui>Reset to
+    Default</gui> to undo any changes and return to the default columns.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>নাম</gui></title>
+      <p>The name of folders and files.</p>
+      <note style="tip">
+        <p>The <gui>Name</gui> column cannot be hidden.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>আকাৰ</gui></title>
+      <p>এটা ফোল্ডাৰৰ আকাৰ অন্তৰ্ভুক্ত বস্তুবোৰৰ সংখ্যা ৰূপে দিয়া হয়। এটা ফাইলৰ আকাৰ বাইট, KB, অথবা MB দিয়া হয়।</p>
+    </item>
+    <item>
+      <title><gui>ধৰণ</gui></title>
+      <p>ফোল্ডাৰ ৰূপে, অথবা ফাইল ধৰণ যেনে PDF দস্তাবেজ, JPEG ছবি, MP3 অডিঅ', আৰু অধিক ৰূপে প্ৰদৰ্শিত।</p>
+    </item>
+    <item>
+      <title><gui>পৰিবৰ্তিত</gui></title>
+      <p>Gives the date of the last time the file was modified.</p>
+    </item>
+    <item>
+      <title><gui>গৰাকী</gui></title>
+      <p>ফোল্ডাৰৰ ব্যৱহাৰকাৰী অথবা ফাইলৰ গৰাকীৰ নাম।</p>
+    </item>
+    <item>
+      <title><gui>দল</gui></title>
+      <p>The group the file is owned by. Each user is normally in their own
+      group, but it is possible to have many users in one group. For example, a
+      department may have their own group in a work environment.</p>
+    </item>
+    <item>
+      <title><gui>অনুমতিসমূহ</gui></title>
+      <p>Displays the file access permissions. For example,
+      <gui>drwxrw-r--</gui></p>
+      <list>
+        <item>
+          <p>The first character is the file type. <gui>-</gui> means regular
+          file and <gui>d</gui> means directory (folder). In rare cases, other
+          characters can also be shown.</p>
+        </item>
+        <item>
+          <p>পৰৱৰ্তী তিনিটা আখৰ <gui>rwx</gui> এ ফাইলৰ স্বত্বত থকা ব্যৱহাৰকাৰীৰ অনুমতিবোৰ ধাৰ্য্য কৰে।</p>
+        </item>
+        <item>
+          <p>পৰৱৰ্তী তিনিটা <gui>rw-</gui> ফাইলৰ স্বত্বত থকা দলৰ সকলো সদস্যৰ অনুমতিবোৰ ধাৰ্য্য কৰে।</p>
+        </item>
+        <item>
+          <p>স্তম্ভত শেষৰ তিনিটা আখৰ <gui>r--</gui> এ চিস্টেমত অন্য সকলো ব্যৱহাৰকাৰীৰ বাবে অনুমতিবোৰ ধাৰ্য্য কৰে।</p>
+        </item>
+      </list>
+      <p>Each permission has the following meanings:</p>
+      <list>
+        <item>
+          <p><gui>r</gui>: readable, meaning that you can open the file or
+          folder</p>
+        </item>
+        <item>
+          <p><gui>w</gui>: writable, meaning that you can save changes to it</p>
+        </item>
+        <item>
+          <p><gui>x</gui>: executable, meaning that you can run it if it is a
+          program or script file, or you can access subfolders and files if it
+          is a folder</p>
+        </item>
+        <item>
+          <p><gui>-</gui>: permission not set</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title><gui>MIME ধৰণ</gui></title>
+      <p>বস্তুৰ MIME ধৰণ প্ৰদৰ্শন কৰে।</p>
+    </item>
+    <item>
+      <title><gui>অবস্থান</gui></title>
+      <p>ফাইলৰ অৱস্থানলৈ পথ।</p>
+    </item>
+    <item>
+      <title><gui>Modified – Time</gui></title>
+      <p>ফাইল সৰ্বশেষ পৰিবৰ্তন কৰা সময়ৰ তাৰিখ আৰু সময় প্ৰদান কৰে।</p>
+    </item>
+    <item>
+      <title><gui>অভিগম কৰা হৈছে</gui></title>
+      <p>Gives the date or time of the last time the file was modified.</p>
+    </item>
+  </terms>
+
+</page>

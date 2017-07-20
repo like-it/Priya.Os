@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-userid-primary" xml:lang="de">
+  <info>
+    <link type="guide" xref="pgp-userid#add-remove"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-06-27" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>So ändern Sie Ihre voreingestellte Benutzerkennung</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Wie lautet Ihre Haupt-Benutzerkennung?</title>
+
+  <p>Wenn Sie mehrere Benutzerkennungen haben, ist eine der Benutzerkennungen die primäre Benutzerkennung. Beim Verschlüsseln und Signieren hängt <app>Passwörter und Schlüssel</app> per Vorgabe die primäre Benutzerkennung an Ihre Schlüsselinformationen, es sei denn Sie wählen explizit eine andere Benutzerkennung.</p>
+
+  <steps>
+    <title>So ändern Sie die primäre Benutzerkennung eines PGP-Schlüssels:</title>
+    <item>
+      <p>Wählen Sie den Schlüsselbund <gui>GnuPG-Schlüssel</gui> aus dem linken Bereich.</p>
+    </item>
+    <item>
+      <p>Wählen Sie den <gui>privaten PGP-Schlüssel</gui> in der Liste.</p>
+    </item>
+    <item>
+      <p>Klicken Sie mit der rechten Maustaste auf den gewählten Schlüssel und wählen Sie <guiseq><gui>Eigenschaften</gui><gui>Namen und Signaturen</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Wählen Sie die neue primäre Benutzerkennung in der Liste und klicken Sie anschließend auf <gui style="button">Primär</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Die Benutzerkennung wird zuoberst in die Liste <gui>Namen und Signaturen</gui> verschoben und wird damit zu Ihrer primären Benutzerkennung.</p>
+
+  <note style="tip">
+    <p>Gleichen Sie Ihre Schlüssel nach dem Ändern Ihrer primären Benutzerkennung ab, um entfernte Kopien Ihrer Schlüssel zu aktualisieren.</p>
+  </note>
+
+</page>

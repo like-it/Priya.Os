@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="pgp-create" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys" group="#first"/>
+
+    <revision version="0.5" date="2013-02-16" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Δημιουργήστε και χρησιμοποιήστε κλειδιά GnuPG για να κρυπτογραφήσετε και να υπογράψετε μηνύματα.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα του GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Δημιουργία κλειδιών PGP</title>
+
+  <p>Για να κάνετε ένα νέο κλειδί PGP:</p>
+
+  <steps>
+    <item>
+      <p>Επιλέξτε <guiseq><gui>Αρχείο</gui><gui>Νέο…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε <gui>Κλειδί PGP</gui> από τον κατάλογο και πατήστε <gui style="button">Συνέχεια</gui>.</p>
+    </item>
+    <item>
+      <p>Εισάγετε το πλήρες όνομά σας στο πεδίο <gui>Πλήρες όνομα</gui>.</p>
+    </item>
+    <item>
+      <p>Προαιρετικά, προσθέστε τη διεύθυνση αλληλογραφίας και ένα σχόλιο περιγραφής του κλειδιού.</p>
+    </item>
+    <item>
+      <p>Πατήστε <gui>Δημιουργία</gui>.</p>
+    </item>
+    <item>
+      <p>Στον διάλογο κωδικού πρόσβασης, εισάγετε έναν κωδικό πρόσβασης για το κλειδί. Ξαναπληκτρολογήστε τον κωδικό πρόσβασης για να επιβεβαιώσετε την επιλογή σας.</p>
+    </item>
+    <item>
+      <p>Πατήστε <gui style="button">Εντάξει</gui> για να τελειώσετε.</p>
+    </item>
+  </steps>
+
+  <p>Το <app>Κωδικοί πρόσβασης και κλειδιά</app> θα πάρει κάποιο χρόνο για να δημιουργήσει το κλειδί σας. Ενώ δημιουργείτε το κλειδί σας, μετακινήστε το ποντίκι σας ολόγυρα, πατήστε μερικά κλειδιά στο πληκτρολόγιό σας ή περιηγηθείτε στον ιστό. Αυτό θα βοηθήσει το <app>Κωδικοί πρόσβασης και κλειδιά</app> να δημιουργήσει ένα πραγματικά τυχαίο κλειδί. Το κλειδί θα καταχωριστεί στο <gui>Κλειδιά GnuPG</gui>.</p>
+
+  <note style="tip">
+    <p>Οι λεπτομέρειες <gui>πλήρες όνομα</gui>, <gui>Διεύθυνση αλληλογραφίας</gui> και <gui>Σχόλιο</gui> του κλειδιού GnuPG λέγονται <link xref="pgp-userid">αναγνωριστικό χρήστη</link> του κλειδιού.</p>
+  </note>
+
+<section id="advanced" ui:expanded="false">
+  <title>Προχωρημένες επιλογές κλειδιού PGP</title>
+
+  <p>Επεκτείνετε το φάτνωμα <gui>προχωρημένες επιλογές κλειδιού</gui> για να επιλέξετε προσαρμοσμένες τιμές για τον τύπο κλειδιού, την ισχύ του κλειδιού και την ημερομηνία λήξης του κλειδιού.</p>
+
+  <terms>
+    <item>
+    <title>Τύπος κλειδιού</title>
+      <p>Ανάλογα με τις ανάγκες σας, δημιουργήστε κλειδιά που μπορούν να χρησιμοποιηθούν μόνο για υπογραφή ή και για κρυπτογράφηση και υπογραφή. Οι αλγόριθμοι RSA και DSA-Elgamal δημιουργούν εξίσου ασφαλή κλειδιά.</p>
+    </item>
+    <item>
+    <title>Ισχύς κλειδιού</title>
+      <p>Η ισχύς του κλειδιού μετριέται όσον αφορά το μέγεθος του κλειδιού σε bit. Είναι δύσκολο και περισσότερο χρονοβόρο να σπάσετε ένα ισχυρό κλειδί, αλλά τα ισχυρά κλειδιά θα επιβραδύνουν την διεργασία κρυπτογράφησης και υπογραφής. Θα πρέπει να επιλέξετε την ισχύ του κλειδιού σας στο <app>Κωδικοί πρόσβασης και κλειδιά</app> ανάλογα με τη συχνότητα χρήσης του κλειδιού. Ένα μικρό κλειδί είναι επαρκές για βραχυπρόθεσμη χρήση, ενώ ένα μεγάλο κλειδί είναι πιο κατάλληλο για μακροπρόθεσμη χρήση.</p>
+    </item>
+    <item>
+    <title>Ημερομηνία λήξης</title>
+      <p>Όταν ένα κλειδί λήγει, <link xref="pgp-expired">συγκεκριμένες ενέργειες δεν δουλεύουν πια</link>. Στο <app>Κωδικοί πρόσβασης και κλειδιά</app>, μπορείτε ή να ορίσετε το κλειδί σας σε <gui style="checkbox">Χωρίς λήξη</gui>, ή να επιλέξετε μια ημερομηνία λήξης και χρόνου για αυτό.</p>
+      <p>Συνιστάται να ορίσετε μια ημερομηνία λήξης για την περίπτωση που χάσετε πρόσβαση στο κλειδί. Ακόμα κι αν το κλειδί σας λήξει, μπορείτε να <link xref="pgp-expiration-change">αλλάξετε τη λήξη σε μια μεταγενέστερη ημερομηνία</link>.</p>
+    </item>
+  </terms>
+
+</section>
+
+</page>

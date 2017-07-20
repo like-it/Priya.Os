@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info xmlns="http://projectmallard.org/1.0/">
+
+<item><p>Отправитель:</p>
+<p>The sender's email address or the name of the sender.</p></item>
+
+<item><p>Получатели:</p>
+<p>Получатели сообщения.</p></item>
+
+<item><p>CC:</p>
+<p>Only the CC recipients of the message.</p></item>
+
+<item><p>BCC:</p>
+<p>Only the BCC recipients of the message. Obviously this can only be applied to outgoing filters.</p></item>
+
+<item><p>Sender or Recipients:</p>
+<p>The sender's email address or the name of the sender or the recipients of the message.</p></item>
+
+<item><p>Тема:</p>
+<p>Строка темы сообщения.</p></item>
+
+<item><p>Указанный заголовок:</p>
+<p>Any header including <link xref="mail-composer-custom-header-lines">custom ones</link>.</p>
+<p>If a message uses a header more than once, <app>Evolution</app> pays attention only to the first instance, even if the message defines the header differently the second time. For example, if a message declares the Resent-From: header as "engineering@example.com" and then restates it as "marketing@example.com", <app>Evolution</app> filters as though the second declaration did not occur. To filter on messages that use headers multiple times, use a regular expression.</p></item>
+
+<item><p>Тело сообщения:</p>
+<p>Поиски непосредственно в тексте сообщения.</p></item>
+
+<item><p>Выражение:</p>
+<p>(For programmers only) Match a message according to an expression you write in the Scheme language used to define <link xref="mail-filters">filters</link> in <app>Evolution</app>.</p></item>
+
+<item><p>Free Form Expression:</p>
+<p>(For advanced users only) Combine numerous conditions by using a <link href="https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10">special syntax</link>.</p></item>
+
+<item><p>Date sent:</p>
+<p>Filters messages according to the date on which they were sent. First, choose the conditions you want a message to meet, such as before a given date or after a given date. Then choose the time. The filter compares the message's time stamp to the system clock when the filter is run, or to a specific time and date you choose from a calendar. You can also have it look for a message within a range of time relative to the filter, such as two to four days ago.</p></item>
+
+<item><p>Date received:</p>
+<p>Это работает тем же способом, как параметр Отправлена дата, кроме этого, сравнивается время получения сообщения с датой, вами определённой.</p></item>
+
+<item><p>Метка:</p>
+<p>Messages can have <link xref="mail-labels">labels</link> of Important, Work, Personal, To Do, or Later. You can set labels with other filters or manually.</p></item>
+
+<item><p>Вес:</p>
+<p>Устанавливает "вес" сообщения целым числом, большим нуля. Вы можете одним фильтром установить или изменить вес сообщения, и затем настроить другой фильтр для перемещения оцененных сообщений. Вес сообщения не основывается на чём-то особенном: это просто число, которое вы назначаете сообщениям, чтобы другие фильтры могли совершить над ними действия.</p></item>
+
+<item><p>Size (kB):</p>
+<p>Сортирует, основываясь на размере сообщений в килобайтах.</p></item>
+
+<item><p>Состояние:</p>
+<p>Фильтрует в соответствии с состоянием сообщения. Состоянием может быть Ответ на, Черновик, Важное, Прочитанное или Спам.</p></item>
+
+<item><p>К исполнению:</p>
+<p>Checks whether the message is <link xref="mail-follow-up-flag">flagged for follow-up</link>.</p></item>
+
+<item><p>Completed On:</p></item>
+<!-- TODO: Explain usage of option "Completed On" once https://bugzilla.gnome.org/show_bug.cgi?id=698439 is fixed -->
+
+<item><p>Вложения:</p>
+<p>Checks whether there is an attachment for the email.</p></item>
+
+<item><p>Mailing List:</p>
+<p>Фильтрует, основываясь на списке рассылок, из которого пришло письмо. Этот фильтр может пропустить сообщения из некоторых серверов списков, поскольку он проверяет заголовки X-BeenThere, которые используются для идентификации списков рассылки или других распространителей почты. Почта из серверов рассылок, которые не настроены правильно на X-BeenThere, не могут быть определены этими фильтрами.</p></item>
+
+<item><p>Соответствует рег. выражению:</p>
+<p>(For programmers only) If you know your way around a <link href="https://en.wikipedia.org/wiki/Regular_expression">regex</link>, or regular expression, this option allows you to search for complex patterns of letters, so that you can find, for example, all words that start with "a" and end with "m", and are between six and fifteen letters long, or all messages that declare a particular header twice. For information about how to use regular expressions, check <link href="man:grep">the man page for the <cmd>grep</cmd></link> command.</p></item>
+
+</info>

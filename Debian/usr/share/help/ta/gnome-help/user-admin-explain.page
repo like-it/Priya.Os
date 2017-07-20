@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="user-admin-explain" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>எக்காட்டெரினா ஜெராசிமோவா</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>கணினியின் முக்கிய விஷயங்களை மாற்ற உங்களுக்கு நிர்வாக அனுமதிகள் வேண்டும்.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>நிர்வாக அனுமதிகள் எப்படி வேலை செய்கின்றன?</title>
+
+  <p>As well as the files that <em>you</em> create, your computer has a number
+  of files which are needed by the system for it to work properly. If these
+  important <em>system files</em> are changed incorrectly they can cause
+  various things to break, so they are protected from changes by default.
+  Certain applications also modify important parts of the system, and so are
+  also protected.</p>
+
+  <p>The way that they are protected is by only allowing users with
+  <em>administrative privileges</em> to change the files or use the
+  applications. In day-to-day use, you will not need to change any system files
+  or use these applications, so by default you do not have administrative
+  privileges.</p>
+
+  <p>சில சமயம் நீங்கள் இந்தப் பயன்பாடுகளைப் பயன்படுத்த வேண்டி இருக்கும், ஆகவே அப்போது நீங்கள் சில மாற்றங்கள் செய்வதற்கு அனுமதிக்கப்படுவதற்காக தற்காலிகமாக நிர்வாக அனுமதிகளைப் பெறலாம். ஒரு பயன்பாட்டுக்கு நிர்வாக அனுமதிகள் தேவையெனில், அது உங்களிடம் கடவுச்சொல்லை உள்ளிடக் கேட்கும். உதாரணமாக நீங்கள் ஒரு புதிய மென்பொருளை நிறுவ வேண்டுமானால் மென்பொருள் நிறுவி (தொகுப்பு நிர்வாகி) உங்களிடம் நிர்வாக கடவுச்சொல்லை உள்ளிடக் கேட்கும், அப்போது தான் நீங்கள் கணினியில் புதிய பயன்பாட்டைச் சேர்க்க முடியும். அதை செய்து முடித்ததும் உங்கள் நிர்வாக உரிமை மீண்டும் திரும்பப்பெறப்படும்.</p>
+
+  <p>Administrative privileges are associated with your user account.
+  <gui>Administrator</gui> users are allowed to have these privileges while
+  <gui>Standard</gui> users are not. Without administrative privileges you will
+  not be able to install software. Some user accounts (for example, the "root"
+  account) have permanent administrative privileges. You should not use
+  administrative privileges all of the time, because you might accidentally
+  change something you did not intend to (like delete a needed system file, for
+  example).</p>
+
+  <p>சுருக்கமாக நிர்வாக அனுமதிகள், தேவைப்படும் போது கணினியின் முக்கிய அம்சங்களில் மாற்றம் செய்ய உங்களை அனுமதிக்கிறது, அதே சமயம் நீஙக்ள் தற்செயலாக அதைச் செய்யாமல் தடுக்கிறது.</p>
+
+  <note>
+    <title>"super user" என்றால் என்ன?</title>
+    <p>நிர்வாக அனுமதிகள் கொண்ட ஒரு பயனரை <em>super user</em> என்றும் அழைப்போம். இந்தப் பயனருக்கு மற்ற வழக்கமான பயனர்களை விட கூடுதல் அனுமதிகள் இருப்பதே இதற்குக் காரணம். சிலர்  <cmd>su</cmd> மற்றும் <cmd>sudo</cmd> ஆகியவை பற்றிப் பேசுவதை நீங்கள் கேட்டிருக்கலாம்; இவை உங்களுக்கு தற்காலிகமாக "super user" (நிர்வாக) அனுமதிகளை வழங்கும் நிரல்களாகும்.</p>
+  </note>
+
+<section id="advantages">
+  <title>நிர்வாக அனுமதிகள் ஏன் பயனுள்ளவை?</title>
+
+  <p>கணினியின் முக்கிய மாற்றங்களைச் செய்யும் முன்பு பயனர்கள் நிர்வாக அனுமதி பெற வேண்டும் என்று நிர்ப்பந்திப்பது, கணினியின் முக்கிய விஷயங்கள் தற்செயலாக அல்லது எதிர்பாராமல் பழுதாகாமல் தடுக்க உதவும், ஆகவே அது பயனுள்ளது.</p>
+
+  <p>உங்களுக்கு எல்லா நேரமும் நிர்வாக அனுமதிகள் இருந்தால், நீங்கள் ஏதேனும் முக்கியமான கோப்பை எதிர்பாராமல் மாற்றிவிடலாம் அல்லது முக்கிய மாற்றங்களைச் செய்யும் ஒரு பயன்பாட்டை தவறுதலாக இயக்கிவிடலாம். தேவையான போது மட்டும் தற்காலிகமாக நிர்வாக அனுமதிகளைப் பெறுவது இத்தகைய சிக்கல்கள் ஏற்படும் ஆபத்தைக் குறைக்கிறது.</p>
+
+  <p>நம்பகமான சில குறிப்பிட்ட பயனர்களுக்கு மட்டுமே நிர்வாக அனுமதிகள் வழங்கப்பட வேண்டும். இது மற்ற பயனர்கள் கணினியில் கண்டபடி மாற்றங்கள் செய்வதையும், உங்களுக்கு தேவையான பயன்பாட்டை நிறுவல்நீக்குதல் அல்லது தேவையில்லாத பயன்பாடுகளை நிறுவுதல் அல்லது முக்கிய கோப்புகளில் மாற்றங்கள் செய்தல் போன்ற செயல்களைச் செய்வதையும் தடுக்கும். பாதுகாப்பு நோக்கில் இது மிகப் பயனுள்ளது.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-apps-mozilla" xml:lang="es">
+
+  <info>
+    <desc>Importar datos de Mozilla <app>Thunderbird</app>.</desc>
+    
+    <link type="guide" xref="import-data#import-from-apps"/>
+
+    <revision pkgversion="3.6.4" version="0.5" date="2016-05-13" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mozilla</title>
+<!-- <guiseq><gui>File</gui><gui>Import</gui><gui>Import data and settings from older programs</gui></guiseq> does NOT recognize Outlook and Thunderbird automatically in 3.8." -->
+<!-- TODO: Check https://bugzilla.gnome.org/show_bug.cgi?id=214858 occasionally (Thunderbird automatic mail import) -->
+<!-- TODO: Check https://bugzilla.gnome.org/show_bug.cgi?id=559266 occasionally (Thunderbird mailfilter importer) -->
+<steps>
+<item><p><link href="https://support.mozilla.org/kb/profiles-tb#w_how-to-find-your-profile">Buscar su carpeta de perfil <app>Thunderbird</app>.</link></p></item>
+<item><p>Pulse <guiseq><gui>Archivo</gui><gui>Importar</gui></guiseq>.</p></item>
+<item><p>En la pestaña <gui>Tipo de importador</gui> pulse <gui>Importar un único archivo</gui>.</p></item>
+<item><p>Vaya a la carpeta en la que <app>Thunderbird</app> guarda sus datos. Asegúrese de que <link xref="help:gnome-help/files-hidden#show-hidden" href="https://help.gnome.org/users/gnome-help/stable/files-hidden#show-hidden">muestra los archivos ocultos</link> en el diálogo del selector de archivos.</p></item>
+<item>
+<list>
+<item><p>Si quiere importar el correo de <app>Thunderbird</app> mail, vaya a <file>Mail/carpetas locales</file> (para cuentas de correo local) o <file>ImapMail/servidor</file> (para cuentas de correo remotas). <file>servidor</file> será la dirección del servidor de correo remoto. Los archivos con el nombre incompleto incluyen sus mensajes (no los archivos <file>.msf</file>).</p></item>
+<item><p>Si quiere importar los datos del calendario de <app>Thunderbird/Lightning</app>, puede que sea capaz de exportar sus eventos de <app>Thunderbird</app> primero como un archivo <file>.ical</file>/<file>.ics</file> y luego importar este archivo en <app>Evolution</app>. Esto es necesario ya que <app>Thunderbird</app> guarda los datos del calendario en un formato de base de datos no estándar.</p></item>
+</list>
+<p>Se determinará automáticamente el tipo de archivo.</p></item>
+<item><p>Elija el destino (ej. la carpeta o el calendario en <app>Evolution</app>) para los datos importados.</p></item>
+<item><p>Repita los pasos de importación hasta que haya importado todos sus datos.</p></item>
+</steps>
+</page>

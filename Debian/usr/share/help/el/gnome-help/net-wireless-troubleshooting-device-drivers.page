@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Συντελεστές στην τεκμηρίωση wiki του Ubuntu</name>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Μερικοί οδηγοί συσκευών δεν δουλεύουν πολύ καλά με συγκεκριμένους ασύρματους προσαρμογείς, έτσι μπορεί να χρειαστείτε να βρείτε έναν καλύτερο.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ανιχνευτής προβλημάτων ασύρματου δικτύου</title>
+
+  <subtitle>Βεβαιωθείτε ότι οι οδηγοί της συσκευής είναι εγκατεστημένοι</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>Σε αυτό το βήμα μπορείτε να ελέγξετε να δείτε εάν μπορείτε να κάνετε να δουλέψουν οι οδηγοί της συσκευής για τον ασύρματό σας προσαρμογέα. Ένας <em>οδηγός συσκευής</em> είναι ένα τμήμα λογισμικού που λέει στον υπολογιστή πώς να κάνει μια συσκευή υλικού να δουλέψει κατάλληλα. Ακόμα κι αν ο ασύρματος προσαρμογέας έχει αναγνωριστεί από τον υπολογιστή, ενδέχεται να μην έχει οδηγούς που να δουλεύουν πολύ καλά. Μπορεί να μην μπορέσετε να βρείτε διαφορετικούς οδηγούς για τον ασύρματο προσαρμογέα που να δουλεύουν. Δοκιμάστε κάποια από τις παρακάτω επιλογές:</p>
+
+  <list>
+    <item>
+      <p>Ελέγξετε να δείτε εάν ο ασύρματός σας προσαρμογέας είναι σε μια λίστα υποστηριζόμενων συσκευών.</p>
+      <p>Οι περισσότερες διανομές Linux κρατούν μια λίστα με τις ασύρματες συσκευές που υποστηρίζουν. Μερικές φορές, αυτές οι λίστες παρέχουν επιπλέον πληροφορίες για το πως μπορείτε να εγκαταστήσετε τους οδηγούς λογισμικού για να δουλέψουν σωστά. Πηγαίντε στη λίστα της διανομής σας (για παράδειγμα, <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>, <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>, <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> or <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>) και δείτε αν είναι στη λίστα ο ασύρματος προσαρμογέας σας. Μπορεί να χρησιμοποιήσετε μερικές από τις πληροφορίες για να κάνετε τη συσκευή σας να δουλεύει.</p>
+    </item>
+    <item>
+      <p>Ψάξτε για περιορισμένους (εκτελέσιμους) οδηγούς.</p>
+      <p>Πολλές διανομές Linux έρχονται μόνο με οδηγούς συσκευών που είναι <em>ελεύθερες</em> και <em>ανοικτού κώδικα</em>. Αυτό συμβαίνει επειδή δεν μπορούν να διανείμουν τους οδηγούς που είναι ιδιοταγείς, ή κλειστού κώδικα. Εάν ο σωστός οδηγός για τον ασύρματό σας προσαρμογέα είναι διαθέσιμος μόνο σε μια μη ελεύθερη ή "μόνο εκτελέσιμη" έκδοση, μπορεί να μην είναι εγκατεστημένος από προεπιλογή. Εάν συμβαίνει αυτό, κοιτάξτε στον ιστότοπο του κατασκευαστή του ασύρματου προσαρμογέα για να δείτε εάν έχει οδηγούς Linux.</p>
+      <p>Μερικές διανομές Linux έχουν ένα εργαλείο που μπορεί να κάνει λήψη περιορισμένους οδηγούς για σας. Εάν η διανομή σας έχει ένα τέτοιο εργαλείο, χρησιμοποιήστε το για να δείτε εάν μπορείτε να βρείτε ασύρματους οδηγούς για σας.</p>
+    </item>
+    <item>
+      <p>Χρησιμοποιήστε τους οδηγούς Windows για τον προσαρμογέα σας.</p>
+      <p>Γενικά, δεν μπορείτε να χρησιμοποιήσετε έναν οδηγό συσκευής σχεδιασμένο για ένα λειτουργικό σύστημα (όπως Windows) σε άλλο λειτουργικό σύστημα (όπως Linux). Αυτό συμβαίνει επειδή έχουν διαφορετικούς τρόπους χειρισμού των συσκευών. Για ασύρματους προσαρμογείς, όμως, μπορείτε να εγκαταστήσετε μια στρώση συμβατότητας που λέγεται <em>NDISwrapper</em> που επιτρέπει να χρησιμοποιήσετε κάποιους ασύρματους οδηγούς στο Linux. Αυτό είναι χρήσιμο επειδή οι ασύρματοι προσαρμογείς έχουν σχεδόν πάντα διαθέσιμους οδηγούς Windows, ενώ οι οδηγοί Linux είναι μερικές φορές μη διαθέσιμοι. Μπορείτε να μάθετε περισσότερα για το πώς να χρησιμοποιήσετε NDISwrapper <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">εδώ</link>. Σημειώστε ότι δεν μπορούν όλοι οι ασύρματοι οδηγοί να χρησιμοποιηθούν μέσα από NDISwrapper.</p>
+    </item>
+  </list>
+
+  <p>Εάν δεν δουλέψει καμιά από αυτές τις επιλογές, ίσως να θελήσετε να δοκιμάσετε έναν διαφορετικό ασύρματο προσαρμογέα για να δείτε εάν μπορείτε να τον κάνετε να δουλέψει. Οι ασύρματοι προσαρμογείς USB είναι αρκετά συχνά φτηνοί και συνδέονται σε κάθε υπολογιστή. Θα πρέπει να ελέγξετε ότι ο προσαρμογέας είναι συμβατός με τη διανομή Linux πριν τον αγοράσετε, όμως.</p>
+
+</page>

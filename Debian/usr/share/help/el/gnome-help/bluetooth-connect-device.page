@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-connect-device" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="bluetooth"/>
+    <link type="seealso" xref="sharing-bluetooth"/>
+    <link type="seealso" xref="bluetooth-remove-connection"/>
+
+    <revision pkgversion="3.8" date="2013-05-16" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-22" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ζεύγος συσκευών Bluetooth.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Συνδέστε τον υπολογιστή σας σε μια συσκευή Bluetooth</title>
+
+  <p>Πριν να μπορέσετε να χρησιμοποιήσετε μια συσκευή Bluetooth όπως ένα ποντίκι ή ένα ζευγάρι ακουστικά, πρώτα χρειάζεστε να συνδέσετε τον υπολογιστή σας με τη συσκευή. Αυτό λέγεται επίσης <em>ζεύξη</em> συσκευών Bluetooth.</p>
+
+  <steps>
+    <item>
+      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Bluetooth</gui>.</p>
+    </item>
+    <item>
+      <p>Κάντε κλικ στο <gui>Bluetooth</gui> για να ανοίξετε τον πίνακα.</p>
+    </item>
+    <item>
+      <p>Βεβαιωθείτε ότι το Bluetooth είναι ενεργό: ο διακόπτης της γραμμής τίτλου πρέπει να οριστεί στο <gui>ΝΑΙ</gui>. Με τον πίνακα ανοικτό και τον διακόπτη στο <gui>ΝΑΙ</gui>, ο υπολογιστής σας θα ξεκινήσει την αναζήτηση συσκευών.</p>
+    </item>
+    <item>
+      <p>Κάντε την άλλη συσκευή Bluetooth <link xref="bluetooth-visibility">αντιληπτή ή ορατή</link> και τοποθετήστε την 5-10 μέτρα από τον υπολογιστή σας.</p>
+    </item>
+    <item>
+      <p>Κάντε κλικ στη συσκευή στον κατάλογο <gui>Συσκευές</gui>. Ο πίνακας για τη συσκευή θα ανοίξει.</p>
+    </item>
+    <item>
+      <p>Εάν απαιτείται, επιβεβαιώστε το PIN στην άλλη συσκευή σας. Η συσκευή πρέπει να σας εμφανίσει το PIN που βλέπετε στην οθόνη του υπολογιστή σας. Επιβεβαιώστε το PIN στη συσκευή (μπορεί να χρειαστεί να κάνετε κλικ <gui>Σύζευξη</gui> ή <gui>Επιβεβαίωση</gui>), έπειτα κάντε κλικ στο <gui>Επιβεβαίωση</gui> στον υπολογιστή.</p>
+      <p>Χρειάζεται να τερματίσετε την καταχώρισή σας μέσα σε περίπου 20 δευτερόλεπτα στις περισσότερες συσκευές, ή η σύνδεση δεν θα ολοκληρωθεί. Εάν συμβεί αυτό, επιστρέψτε στη λίστα συσκευών και ξαναξεκινήστε.</p>
+    </item>
+    <item>
+      <p>Η καταχώριση για τη συσκευή στην λίστα <gui>Συσκευές</gui> θα εμφανίσει μια κατάσταση <gui>Συνδεμένο</gui>.</p>
+    </item>
+    <item>
+      <p>Για να επεξεργαστείτε τη συσκευή, κάντε κλικ στην λίστα <gui>Συσκευή</gui>. Θα δείτε ένα ειδικό παράθυρο για τη συσκευή. Μπορεί να εμφανίσει πρόσθετες επιλογές που εφαρμόζονται στον τύπο της συσκευής στον οποίο συνδέεστε.</p>
+    </item>
+    <item>
+      <p>Κλείστε τον πίνακα αφού αλλάξετε τις ρυθμίσεις σας.</p>
+    </item>
+  </steps>
+
+  <media its:translate="no" type="image" src="figures/bluetooth-menu.png" style="floatend">
+    <p its:translate="yes">Το εικονίδιο Bluetooth στην πάνω γραμμή</p>
+  </media>
+  <p>Όταν μία ή περισσότερες συσκευές Bluetooth συνδέονται, το εικονίδιο Bluetooth εμφανίζεται στην περιοχή κατάστασης συστήματος.</p>
+
+</page>

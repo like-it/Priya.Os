@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect-reverse" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <link type="seealso" xref="connect"/>
+    <title type="sort">3</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Σύνδεση με υπολογιστές που δεν βρίσκονται στο τοπικό δίκτυο: παρακάμπτοντας περιορισμούς του τοίχους προστασίας στο απομακρυσμένο σύστημα.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv.dev@gmail.com</mal:email>
+      <mal:years>2011 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Θουκυδίδου</mal:name>
+      <mal:email>marablack3@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title><gui>Ανάστροφες συνδέσεις…</gui></title>
+
+  <p>Μια αντίστροφη σύνδεση χρησιμοποιείται συνήθως για να παρακάμψει περιορισμούς του τοίχους προστασίας σε ανοιχτές θύρες. Ένα τοίχος προστασίας συνήθως φράσσει ανοιχτές θύρες, αλλά όχι εξερχόμενη κίνηση. Σε μια κανονική μπροστινή σύνδεση, ένας πελάτης συνδέεται σε μια ανοιχτή θύρα του διακομιστή. Όμως στην περίπτωση της αντίστροφης σύνδεσης, ο πελάτης ανοίγει μια θύρα όπου συνδέεται ο διακομιστής.</p>
+
+  <section id="enable-reverse-connections">
+    <title>Ενεργοποίηση ανάστροφων συνδέσεων</title>
+
+    <steps>
+      <item>
+        <p>Ανοίξτε <guiseq><gui style="menu">Απομεμακρυσμένη</gui> <gui style="menuitem">αντίστροφες συνδέσεις…</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Επιλέξτε <gui>Ενεργοποίηση αντίστροφων συνδέσεων</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="accessing-behind-firewall">
+    <title>Πρόσβαση ενός υπολογιστή πίσω από τοίχος προστασίας</title>
+
+    <p>Ο απομακρυσμένος υπολογιστής πρέπει να συνδεθεί στο μηχάνημα σας χρησιμοποιώντας τη <em>διεύθυνση σας IP</em> και τον αριθμό θύρας, τα οποία βρίσκονται στον διάλογο <gui>Αντίστροφες συνδέσεις…</gui>, κάτω από την <gui>Συνδεσιμότητα</gui>.</p>
+
+    <note>
+      <p>Αυτή τη στιγμή, το <app>Vino</app>, ο διακομιστής VNC του GNOME, δεν υποστηρίζει αντίστροφες συνδέσεις, γνωστές επίσης και ως "κατάσταση ακρόασης". Κάποιες άλλες εφαρμογές, όπως το <app>UltraVNC</app>, <app>RealVNC</app> και <app>TightVNC</app>, έχουν υποστήριξη για αντίστροφες συνδέσεις.</p>
+    </note>
+
+    <p>Μόλις συνδεθεί ο απομακρυσμένος υπολογιστής στο μηχάνημα σας, το <app>Vinagre</app> θα δημιουργήσει την ανάστροφη σύνδεση.</p>
+
+    <p>Όταν συνδέεστε σε ένα μηχάνημα που δεν βρίσκεται στο τοπικό σας δίκτυο, θα χρειαστεί να παρέχετε την εξωτερικά ορατή διεύθυνση IP σας και τον αριθμό πόρτας στον απομακρυσμένο διακομιστή.</p>
+
+  </section>
+
+</page>

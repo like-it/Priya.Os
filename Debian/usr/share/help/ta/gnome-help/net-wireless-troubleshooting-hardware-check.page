@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="ta">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu documentation wiki இன் பங்களிப்பாளர்கள்</name>
+    </credit>
+    <credit type="author">
+      <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>உங்கள் வயர்லெஸ் அடாப்ட்டர் இணைக்கப்பட்டிருந்தாலும், கணினி அதை சரியாக அடையாளம் காணாமல் விடலாம்.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>வயர்லெஸ் இணைப்பு சிக்கல்தீர்வி</title>
+  <subtitle>வயர்லெஸ் அடாப்ட்டர் அடையாளம் காணப்படுகிறதா எனப் பாருங்கள்</subtitle>
+
+  <p>வயர்லெஸ் அடாப்ட்டர் கணினியில் இணைக்கப்பட்டிருந்தாலும், கணினி அதை பிணைய சாதனமாக அடையாளம் காணாமல் போகக்கூடும். இச்செயல்படியில் நீங்கள் சாதனம் சரியாக அடையாளம் காணப்படுகிறதா என சோதிக்கலாம்.</p>
+
+  <steps>
+    <item>
+      <p>முனைய சாளரத்தைத் திறந்து <cmd>lshw -C network</cmd> ஐ தட்டச்சு செய்து <key>Enter</key> ஐ அழுத்தவும். இது ஒரு பிழைச் செய்தியை வழங்கினால் நீங்கள் உங்கள் கணினியில் <app>lshw</app> நிரலை நிறுவ வேண்டும்.</p>
+    </item>
+    <item>
+      <p>காண்பிக்கப்பட்ட தகவலில் <em>வயர்லெஸ் இடைமுகம்</em> எனும் பிரிவைக் கண்டறியவும். உங்கள் வயர்லெஸ் அடாப்ட்டர் சரியாக அடையாளம் காணப்பட்டால், இதைப்போன்ற (இதுவே அல்ல) ஒன்றை நீங்கள் காண்பீர்கள்:</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>ஒரு வயர்லெஸ் சாதனம் பட்டியலிடப்பட்டிருந்தால், <link xref="net-wireless-troubleshooting-device-drivers">சாதன இயக்கிகள் செயல்படிக்குச்</link> செல்லவும்.</p>
+      <p>ஒரு வயர்லெஸ் சாதனம் <em>பட்டியலிடப்படாவிட்டால்</em>, அடுத்து நீங்கள் செய்ய வேண்டிய செயல்படிகள் நீங்கள் பயன்படுத்தும் சாதனத்தின் வகையைப் பொறுத்து அமையும். உங்கள் கணினியின் வயர்லெஸ் அடாப்ட்டரின் வகை தொடர்பான கீழே உள்ள தலைப்பைப் பார்க்கவும் (<link xref="#pci">அக PCI</link>, <link xref="#usb">USB</link> அல்லது <link xref="#pcmcia">PCMCIA</link>).</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>PCI (அக) வயர்லெஸ் அடாப்ட்டர்</title>
+
+  <p>அக PCI அடாப்ட்டர்களே அதிகம் பயன்படுத்தப்படுபவை, அவையே கடந்த சில ஆண்டுகளில் தயாரிக்கப்பட்ட மடிக்கணினிகள் பெரும்பாலானவற்றில் அதுவே இருக்கும். உங்கள் PCI வயர்லெஸ் அடாப்ட்டர் அடையாளம் காணப்பட்டதா என சோதிக்க:</p>
+
+  <steps>
+    <item>
+      <p>ஒரு முனையத்தைத் திறந்து <cmd>lspci</cmd> என தட்டச்சு செய்து <key>Enter</key> ஐ அழுத்தவும்.</p>
+    </item>
+    <item>
+      <p>அதில் காண்பிக்கப்படும் சாதனங்களின் பட்டியலில் <code>பிணைய கட்டுப்படுத்தி</code> அல்லது <code>ஈத்தர்நெட் கட்டுப்படுத்தி</code> எனக் குறிக்கப்பட்டிருக்கும் உருப்படி ஏதேனும் உள்ளதா எனப் பார்க்கவும். பல சாதனங்கள் இப்படிக் குறிக்கப்பட்டிருக்கும்; உங்கள் வயர்லெஸ் அடாப்ட்டருக்குரிய உருப்படி <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> அல்லது <code>802.11</code> என்பது போன்ற சொற்களைக் கொண்டிருக்கக்கூடும். அவ்வுருப்படி எப்படி இருக்கும் என்பதற்கான உதாரணம் இதோ:</p>
+      <code>பிணைய கட்டுப்படுத்தி: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>நீங்கள் பட்டியலில் உங்கள் வயர்லெஸ் அடாப்ட்டரைக் கண்டால், <link xref="net-wireless-troubleshooting-device-drivers">சாதன இயக்கிகள் செயல்படிக்குச்</link> செல்லவும். வயர்லெஸ் அடாப்ட்டர் தொடர்புடைய எதுவும் இல்லாவிட்டால் <link xref="#not-recognized">கீழே உள்ள அறிவுறுத்தல்களைக்</link> காணவும்.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>USB வயர்லெஸ் அடாப்ட்டர்</title>
+
+  <p>உங்கள் கணினியின் போர்ட்டில் செருகப்படக்கூடிய USB வயர்லெஸ் அடாப்ட்டர்கள் அரிது. அவற்றை நேரடியாக USB போர்ட்டில் செருக முடியும் அல்லது USB கேபிள் மூலம் இணைக்கப்படலாம். 3G/மொபைல் பிராட்பேன்ட் அடாப்ட்டர்கள் வயர்லெஸ் (wifi) அடாப்ட்டர்களைப் போலவே இருக்கும், ஆகவே உங்களிடம் இருப்பது USB வயர்லெஸ் அடாப்ட்டர் என நீங்கள் நினைத்தால், அது உண்மையில்ஒரு 3G அடாப்ட்டர் அல்ல என்பதை உறுதிப்படுத்திக் கொள்ளவும். உங்கள் USB வயர்லெஸ் அடாப்ட்டர் அடையாளம் காணப்பட்டதா என சோதிக்க:</p>
+
+  <steps>
+    <item>
+      <p>ஒரு முனையத்தைத் திறந்து <cmd>lsusb</cmd> என தட்டச்சு செய்து <key>Enter</key> ஐ அழுத்தவும்.</p>
+    </item>
+    <item>
+      <p>அங்கு காண்பிக்கப்படும் பட்டியலில், வயர்லெஸ் அல்லது பிணைய சாதனத்தைக் குறிக்கின்ற உருப்படி ஏதேனும் உள்ளதா எனப் பார்க்கவும். உங்கள் வயர்லெஸ் அடாப்ட்டருக்கு உரிய உருப்படியில் <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> அல்லது <code>802.11</code> என்பது போன்ற சொற்களைக் கொண்டிருக்கக்கூடும். அந்த உருப்படி எப்படி இருக்கும் என்பதன் எடுத்துக்காட்டு இதோ:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>நீங்கள் பட்டியலில் உங்கள் வயர்லெஸ் அடாப்ட்டரைக் கண்டால், <link xref="net-wireless-troubleshooting-device-drivers">சாதன இயக்கிகள் செயல்படிக்குச்</link> செல்லவும். வயர்லெஸ் அடாப்ட்டர் தொடர்புடைய எதுவும் இல்லாவிட்டால் <link xref="#not-recognized">கீழே உள்ள அறிவுறுத்தல்களைக்</link> காணவும்.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>ஒரு PCMCIA சாதனத்தை சோதித்தல்</title>
+
+  <p>PCMCIA வார்லெஸ் அடாப்ட்டர்கள் பொதுவாக செவ்வக வடிவ கார்டுகளாகும், அவை உங்கள் மடிக்கணினியின் பக்கவாட்டில் செருகப்பட்டிருக்கும். அவை பழைய கணினிகளில் அதிகம் காணப்படும். உங்கள் PCMCIA அடாப்ட்டர் அடையாளம் காணப்பட்டதா என சோதிக்க:</p>
+
+  <steps>
+    <item>
+      <p>உங்கள் கணினியை வயர்லெஸ் அடாப்ட்டரை <em>இணைக்காமல்</em> தொடங்கவும்.</p>
+    </item>
+    <item>
+      <p>ஒரு முனையத்தை திறந்து பின்வருவதை தட்டச்சு செய்து <key>Enter</key> ஐ அழுத்தவும்:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>இது உங்கள் கணினியின் வன்பொருள் தொடர்பான செய்திகளின் ஒரு பட்டியலைக் காண்பிக்கும், உங்கள் வன்பொருளில் ஏற்பட்ட மாற்றங்களுக்காக ஏதேனும் புதுப்பிக்க வேண்டி இருந்தால் அதையும் தானாக செய்யும்.</p>
+    </item>
+    <item>
+      <p>உங்கள் வயர்லெஸ் அடாப்ட்டரை PCMCIA துளையில் செருகி, முனைய சாளரத்தில் ஏதேனும் மாறுகிறதா எனப் பார்க்கவும். முனையத்தில் ஏற்படும் மாற்றங்களில் உங்கள் வயர்லெஸ் அடாப்ட்டர் பற்றிய தகவல் சில இருக்கும். அதைப் பார்த்து அடையாளம் காண முயற்சிக்கவும்.</p>
+    </item>
+    <item>
+      <p>முனையத்தில் இந்தக் கட்டளை இயங்குவதை நிறுத்த <keyseq><key>Ctrl</key><key>C</key></keyseq> ஐ அழுத்தவும். அதைச் செய்த பின் விரும்பினால் முனையத்தை மூடிவிடவும்.</p>
+    </item>
+    <item>
+      <p>உங்கள் வயர்லெஸ் அடாப்ட்டர் குறித்து ஏதேனும் தகவலை நீங்கள் கண்டால், <link xref="net-wireless-troubleshooting-device-drivers">சாதன இயக்கிகள் செயல்படிக்குச்</link> செல்லவும். உங்கள் வயர்லெஸ் அடாப்ட்டர் குறித்து தகவல் எதுவும் இல்லாவிட்டால் <link xref="#not-recognized">கீழே உள்ள அறிவுறுத்தல்களைப்</link> பார்க்கவும்.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>வயர்லெஸ் அடாப்ட்டர் அடையாளம் காணப்படவில்லை</title>
+
+  <p>If your wireless adapter was not recognized, it might not be working
+  properly or the correct drivers may not be installed for it. How you check to
+  see if there are any drivers you can install will depend on which Linux
+  distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
+
+  <p>தொடர்புடைய உதவி பெற, உங்கள் விநியோகத்தின் வலைத்தளத்தில் வழங்கப்படும் ஆதரவைப் பார்க்கவும். அவற்றில் அஞ்சல் பட்டியல்களும் வலை அரட்டைகளும் இருக்கலாம், அங்கு நீங்கள் உங்கள் வயர்லெஸ் அடாப்ட்டர் தொடர்பான உதவி கேட்கலாம்.</p>
+
+</section>
+
+</page>

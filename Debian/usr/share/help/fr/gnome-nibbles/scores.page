@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scores" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#play"/>
+
+    <revision pkgversion="3.8" version="0.1" date="2013-03-05" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+    <name>Aruna Sankaranarayanan</name>
+    <email its:translate="no">aruna.evam@gmail.com</email>
+    </credit>
+
+    <desc>Avaler différents bonus pour marquer des points.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2008,2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Marquer des points dans <app>Nibbles</app></title>
+
+    <p>Vous pouvez marquer des points dans <app>Nibbles</app> en dévorant des bonus. Cinq différentes sortes de bonus sont disponibles dans <app>Nibbles</app> :</p>
+    <list>
+      <item>
+        <p>les bonus en forme de beignet <media type="image" its:translate="no" src="figures/donut.svg" height="22" width="22"/> : ce bonus entraîne un accroissement de la longueur du ver. Les points que vous gagnez en mangeant le beignet varient de niveau en niveau et sont un multiple du numéro de niveau. Au niveau 1, le premier beignet vous donnera 1 point, le deuxième beignet vous donnera 2 points, le troisième trois et ainsi de suite. Au niveau 2, le premier beignet vous donnera 2 points, le deuxième quatre et le troisième 6 et ainsi de suite. Au niveau 26, le premier beignet vous donnera 26 points, le deuxième 52 et ainsi de suite".</p>
+	<note style="info">
+	  <p>La valeur du beignet ne dépend pas du nombre de beignets déjà mangés par un ver. Si la partie est au niveau 1 et si le joueur 1 mange le premier beignet, il marque 1 point, le joueur 2 qui mange le deuxième beignet marque 2 points ; un troisième joueur peut décider de ne manger aucun beignet avant le dixième et marquer alors 10 points d'un coup.</p>
+	</note>
+      </item>
+      <item>
+        <p>Le bonus en forme de cœur <media type="image" its:translate="no" src="figures/life.svg" height="22" width="22"/> : ce bonus vous donne une vie supplémentaire n'entraîne pas d'accroissement de la longueur du ver.</p>
+        <note style="info">
+          <p>Le nombre de vies restantes pour un ver est indiqué par le nombre à gauche de la virgule dans le score de ce ver. Si le score d'un ver est 10,005, il reste 10 vies à ce ver.</p>
+	</note>
+	<note style="tip">
+	  <p>Vous ne pouvez pas obtenir de vie supplémentaire au-delà de 10.000 points marqués. Si vous avez marqué 12345 points avec 10 vies restantes, votre score sera 10,12345.</p>
+	</note>
+      </item>
+      <item>
+	<p>Le bonus en forme de diamant <media type="image" its:translate="no" src="figures/diamond.svg" height="22" width="22"/> : ce bonus n'entraîne pas d'allongement du ver et ne vous donne aucun point. Il provoque l'inversion du sens de déplacement de tous les autres vers.</p>
+	<note style="info">
+	  <p>Ce bonus est sans effet dans une partie à un seul joueur.</p>
+	</note>
+      </item>
+      <item>
+	<p>Le bonus en forme de crème glacée <media type="image" its:translate="no" src="figures/ice-cream.svg" height="22" width="22"/> : ce bonus entraîne un allongement du ver plus important que celui du bonus en forme de beignet. Les points donnés par ce bonus dépendent du niveau atteint et de la longueur du ver. Plus ces paramètres sont élevés et plus de points sont marqués en mangeant ce bonus.</p>
+      </item>
+      <item>
+	<p>Le bonus en forme de cerise <media type="image" its:translate="no" src="figures/cherry.svg" height="22" width="22"/> : ce bonus entraîne une diminution de la longueur du ver. Les points donnés par ce bonus dépendent du niveau atteint et de la longueur du ver. Plus ces paramètres sont élevés, et plus de points sont marqués en mangeant ce bonus.</p>
+      </item>
+    </list>
+
+</page>

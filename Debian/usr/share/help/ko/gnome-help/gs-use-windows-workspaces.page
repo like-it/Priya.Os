@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-use-windows-workspaces" xml:lang="ko">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">창과 작업공간 사용하기</title>
+    <link type="seealso" xref="shell-windows-switching"/>
+    <title role="seealso" type="link">창과 작업공간 사용 따라하기</title>
+    <link type="next" xref="gs-use-system-search"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>조성호</mal:name>
+      <mal:email>shcho@gnome.org</mal:email>
+      <mal:years>2014, 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>창과 작업 공간 활용하기</title>
+
+  <ui:overlay width="812" height="452">
+  <media type="video" its:translate="no" src="figures/gnome-windows-and-workspaces.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-windows-and-workspaces.svg"/>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>창과 작업 공간</tt:p>
+         </tt:div>
+         <tt:div begin="6s" end="10s">
+           <tt:p>창을 최대로 확대하려면, 창의 제목 표시줄을 붙잡고 화면 상단으로 끌어 이동하십시오.</tt:p>
+           </tt:div>
+         <tt:div begin="10s" end="13s">
+           <tt:p>화면 전체가 강조 상태가 되면, 창을 내려놓으십시오.</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="20s">
+           <tt:p>창 최대화 상태를 취소하려면, 창의 제목 표시줄을 붙잡고 화면 가장자리로부터 끌어내십시오.</tt:p>
+         </tt:div>
+         <tt:div begin="25s" end="29s">
+           <tt:p>상단 표시줄을 눌러 창을 다른 곳으로 끌어내면 최대화 상태에서 복귀 할 수 있습니다.</tt:p>
+         </tt:div>
+         <tt:div begin="34s" end="38s">
+           <tt:p>화면 좌측으로 창을 최대화하려면, 창의 제목 표시줄을 붙잡고 좌측으로 끌어 이동하십시오.</tt:p>
+         </tt:div>
+         <tt:div begin="38s" end="40s">
+           <tt:p>화면 반쪽이 강조 상태가 되었을 경우 창을 내려놓으십시오.</tt:p>
+         </tt:div>
+         <tt:div begin="41s" end="44s">
+           <tt:p>화면 우측으로 창을 최대화하려면, 창의 제목 표시줄을 붙잡고 우측으로 끌어 이동하십시오.</tt:p>
+         </tt:div>
+         <tt:div begin="44s" end="48s">
+           <tt:p>화면 반쪽이 강조 상태가 되었을 경우 창을 내려놓으십시오.</tt:p>
+         </tt:div>
+         <tt:div begin="54s" end="60s">
+           <tt:p>키보드로 창을 최대화 하려면, <key href="help:gnome-help/keyboard-key-super">Super</key>키를 누른 상태에서 <key>↑</key>키를 누르십시오.</tt:p>
+         </tt:div>
+         <tt:div begin="61s" end="66s">
+           <tt:p>최대화 하지 않은 상태로 창을 되돌리려면 <key href="help:gnome-help/keyboard-key-super">Super</key>키를 누른 채로 <key>↓</key>키를 누르십시오.</tt:p>
+         </tt:div>
+         <tt:div begin="66s" end="73s">
+           <tt:p>화면의 오른편을 따라 창을 최대화하려면,  <key href="help:gnome-help/keyboard-key-super">Super</key>키를 누른 채로 <key>→</key>키를 누르십시오.</tt:p>
+         </tt:div>
+         <tt:div begin="76s" end="82s">
+           <tt:p>화면의 왼편을 따라 창을 최대화하려면 <key href="help:gnome-help/keyboard-key-super">Super</key>키를 누른 채로 <key>←</key>키를 누르십시오.</tt:p>
+         </tt:div>
+         <tt:div begin="83s" end="89s">
+           <tt:p>현재 작업 공간의 하단 작업 공간으로 이동하려면, <keyseq><key href="help:gnome-help/keyboard-key-super">Super </key><key>Page Down</key></keyseq>키 조합을 누르십시오.</tt:p>
+         </tt:div>
+         <tt:div begin="90s" end="97s">
+           <tt:p>현재 작업 공간의 상단 작업 공간으로 이동하려면, <keyseq><key href="help:gnome-help/keyboard-key-super">Super </key><key>Page Up</key></keyseq>키 조합을 누르십시오.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+  
+  <section id="use-workspaces-and-windows-maximize">
+    <title>창 최대화 하고 복귀하기</title>
+    <p/>
+    
+    <steps>
+      <item><p>창을 최대화 하여 데스크톱의 모든 공간을 차지하도록 하려면, 창의 제목 표시줄을 붙잡고 화면 상단으로 끌어 이동하십시오.</p></item>
+      <item><p>화면이 강조 상태가 되면, 창을 내려놓아 최대화 하십시오.</p></item>
+      <item><p>최대화 하지 않은 크기로 창을 되돌리려면, 창의 제목 표시줄을 붙잡고 화면 가장자리로부터 끌어내십시오.</p></item>
+    </steps>
+    
+  </section>
+
+  <section id="use-workspaces-and-windows-tile">
+    <title>창 바둑판 배치</title>
+    <p/>
+    
+    <steps>
+      <item><p>창 가장자리를 따라 창을 최대화하려면 창의 제목 표시줄을 잡고 화면의 왼편 또는 오른편으로 끌어 움직이심시오.</p></item>
+      <item><p>화면 절반이 강조 상태가 되면 창을 놓아 선택한 화면 한쪽 편을 따라 최대화하십시오.</p></item>
+      <item><p>두개의 창을 각각 양편으로 최대화하려면, 두번째 창의 제목 표시줄을 잡고 화면의 반대편으로 끌어 움직이십시오.</p></item>
+       <item><p>화면의 절반이 강조 상태가 되면, 창을 놓아 화면 반대편을 따라 최대화 하십시오.</p></item>
+    </steps>
+    
+  </section>
+  
+  <section id="use-workspaces-and-windows-maximize-keyboard">
+    <title>키보드를 사용하여 창 최대화 하고 복귀하기</title>
+    
+    <steps>
+      <item><p>키보드로 창을 최대화 하려면, <key href="help:gnome-help/keyboard-key-super">Super</key>키를 누른 상태에서 <key>↑</key>키를 누르십시오.</p></item>
+      <item><p>키보드를 사용하여 최대화 하지 않은 크기로 창을 되돌리려면 <key href="help:gnome-help/keyboard-key-super">Super</key>키를 누른 상태에서 <key>↓</key>키를 누르십시오.</p></item>
+    </steps>
+    
+  </section>
+  
+  <section id="use-workspaces-and-windows-tile-keyboard">
+    <title>키보드를 사용하여 창 바둑판 배치하기</title>
+    
+    <steps>
+      <item><p>화면의 오른편을 따라 창을 최대화하려면,  <key href="help:gnome-help/keyboard-key-super">Super</key>키를 누른 채로 <key>→</key>키를 누르십시오.</p></item>
+      <item><p>화면의 왼편을 따라 창을 최대화하려면 <key href="help:gnome-help/keyboard-key-super">Super</key>키를 누른 채로 <key>←</key>키를 누르십시오.</p></item>
+    </steps>
+    
+  </section>
+  
+  <section id="use-workspaces-and-windows-workspaces-keyboard">
+    <title>키보드를 사용하여 작업공간 전환하기</title>
+    
+    <steps>
+    
+    <item><p>현재 작업공간의 하단으로 이동하려면, <keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>Page Down</key></keyseq>.키 조합을 누르십시오.</p></item>
+    <item><p>현재 작업공간의 상단으로 이동하려면, <keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>Page Up</key></keyseq> 키 조합을 누르십시오.</p></item>
+
+    </steps>
+    
+  </section>
+
+</page>

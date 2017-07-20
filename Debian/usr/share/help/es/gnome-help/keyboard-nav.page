@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="keyboard-nav" xml:lang="es">
+  <info>
+    <link type="guide" xref="keyboard" group="a11y"/>
+    <link type="guide" xref="a11y#mobility" group="keyboard"/>
+    <link type="seealso" xref="shell-keyboard-shortcuts"/>
+
+    <revision pkgversion="3.7.5" version="0.2" date="2013-02-23" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
+
+    <credit type="author">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+       <name>Julita Inca</name>
+       <email>yrazes@gmail.com</email>
+    </credit>
+    <credit type="author copyright">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+       <name>Ekaterina Gerasimova</name>
+       <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Usar aplicaciones y el escritorio sin ratón.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Navegación con el teclado</title>
+
+  <p>En esta página se detalla la navegación con el teclado para personas que no pueden usar un ratón u otro dispositivo apuntador, o que quiere usar el teclado lo más posible. Para ver los atajos de teclado, útiles para todos los usuarios, consulte la <link xref="shell-keyboard-shortcuts"/> en su lugar.</p>
+
+  <note style="tip">
+    <p>Si no puede usar un dispositivo apuntado como un ratón, puede controlar el puntero del ratón usando el teclado numérico de su teclado. Consulte la <link xref="mouse-mousekeys"/> para obtener más detalles.</p>
+  </note>
+
+<table frame="top bottom" rules="rows">
+  <title>Navegar por las interfaces de usuario</title>
+  <tr>
+    <td><p><key>Tab</key> y <keyseq><key>Ctrl</key><key>Tab</key></keyseq></p></td>
+    <td>
+      <p>Mover el foco del teclado entre diferentes controles. <keyseq><key>Ctrl</key> <key>Tab</key></keyseq> lo mueve entre grupos de controles, por ejemplo de una barra lateral al contenido principal. <keyseq><key>Ctrl</key><key>Tab</key></keyseq> también puede salir de un control que use <key>Tab</key> por sí mismo, como un área de texto.</p>
+      <p>Mantenga pulsada la tecla <key>Mayús</key> para mover el foco en orden inverso.</p>
+    </td>
+  </tr>
+  <tr>
+    <td><p>Teclas de flechas</p></td>
+    <td>
+      <p>Mover la selección entre elementos de un único control, o entre un conjunto de controles relacionados. Use las teclas de flechas para dar el foco a los botones, seleccionar elementos en una vista de lista o de iconos o para seleccionar un botón de radio en un grupo.</p>
+      <p>En la vista de árbol, use las teclas de flechas derecha e izquierda para contraer y expandir los elementos con hijos.</p>
+    </td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key>Teclas de flechas</keyseq></p></td>
+    <td><p>En la vista de lista o de iconos, mover el foco del teclado a otro elemento sin cambiar el elemento que está seleccionado.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Mayús</key>Teclas de flechas</keyseq></p></td>
+    <td><p>En la vista de lista o de iconos, seleccionar todos los elementos desde el elemento seleccionado actualmente hasta el nuevo elemento con el foco.</p></td>
+  </tr>
+  <tr>
+    <td><p><key>Espacio</key></p></td>
+    <td><p>Activar un elemento que tenga el foco, como un botón, una casilla o un elemento de una lista.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Espacio</key></keyseq></p></td>
+    <td><p>En la vista de lista o de iconos, seleccionar o deseleccionar el elemento con el foco sin deseleccionar el resto de elementos.</p></td>
+  </tr>
+  <tr>
+    <td><p><key>Alt</key></p></td>
+    <td><p>Mantenga pulsada la tecla <key>Alt</key> para mostrar los <em>aceleradores</em>: teclas subrayadas en elementos de menú, botones y otros controles. Pulse <key>Alt</key>+ la tecla subrayada para activar el control, como si hubiera pulsado sobre él.</p></td>
+  </tr>
+  <tr>
+    <td><p><key>Esc</key></p></td>
+    <td><p>Salir de un menú, menú emergente, selector o ventana de diálogo.</p></td>
+  </tr>
+  <tr>
+    <td><p><key>F10</key></p></td>
+    <td><p>Abrir el primer elemento de un menú en la barra de menú de una ventana. Use las teclas de flechas para navegar por los menús.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key xref="keyboard-key-super">Super</key> <key>F10</key></keyseq></p></td>
+    <td><p>Abrir el menú de la aplicación en la barra superior.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Mayús</key><key>F10</key></keyseq> o <key xref="keyboard-key-menu">Menú</key></p></td>
+    <td>
+      <p>Mostrar el menú contextual para la selección actual, como si hubiera pulsado con el botón derecho.</p>
+    </td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>F10</key></keyseq></p></td>
+    <td><p>En el gestor de archivos, mostrar el menú contextual para la carpeta actual, como si hubiera pulsado con el botón derecho sobre el fondo y no sobre un elemento.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Re Pág</key></keyseq> y <keyseq><key>Ctrl</key><key>Av. Pág</key></keyseq></p></td>
+    <td><p>En la interfaz con pestañas, cambiar a la pestaña de la izquierda o a la de la derecha.</p></td>
+  </tr>
+</table>
+
+<table frame="top bottom" rules="rows">
+  <title>Navegar por el escritorio</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="alt-f1"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-tab"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-tick"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="ctrl-alt-tab"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-updown"/>
+  <tr>
+    <td><p><keyseq><key>Alt</key><key>F6</key></keyseq></p></td>
+    <td><p>Moverse entre las ventanas de la misma aplicación. Mantenga pulsada la tecla <key>Alt</key> y pulse <key>F6</key> hasta que se resalte la ventana que quiere, y entonces suelte la tecla <key>Alt</key>. Esto es similar a la característica <keyseq><key>Alt</key><key>`</key></keyseq>.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Alt</key><key>Esc</key></keyseq></p></td>
+    <td><p>Rotar a través de todas las ventanas abiertas en un espacio de trabajo.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
+    <td><p><link xref="shell-notifications#messagetray">Abrir la bandeja de mensajes</link>. Pulse <key>Esc</key> para cerrarla.</p></td>
+  </tr>
+</table>
+
+<table frame="top bottom" rules="rows">
+  <title>Navegar por las ventanas</title>
+  <tr>
+    <td><p><keyseq><key>Alt</key><key>F4</key></keyseq></p></td>
+    <td><p>Cerrar la ventana actual.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Alt</key><key>F5</key></keyseq> o <keyseq><key>Super</key><key>↓</key></keyseq></p></td>
+    <td><p>Restaurar una ventana maximizada a su tamaño original. Use <keyseq><key>Alt</key> <key>F10</key></keyseq> para maximizar. <keyseq><key>Alt</key><key>F10</key></keyseq> maximiza y restaura.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Alt</key><key>F7</key></keyseq></p></td>
+    <td><p>Mover la ventana actual. Pulse <keyseq><key>Alt</key><key>F7</key></keyseq> y use las teclas de flechas para mover la ventana. Pulse <key>Intro</key> para dejar de mover la ventana, o <key>Esc</key> para devolverla a su ubicación original.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Alt</key><key>F8</key></keyseq></p></td>
+    <td><p>Redimensionar la ventana actual. Pulse <keyseq><key>Alt</key><key>F8</key></keyseq> y use las teclas de flechas para redimensionar la ventana. Pulse <key>Intro</key> para dejar de redimensionar la ventana, o <key>Esc</key> para devolverla a su tamaño original.</p></td>
+  </tr>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-updown"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-left"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-right"/>
+  <tr>
+    <td><p><keyseq><key>Alt</key><key>F10</key></keyseq> o <keyseq><key>Super</key><key>↑</key></keyseq></p>
+    </td>
+    <td><p><link xref="shell-windows-maximize">Maximizar</link> una ventana. Pulse <keyseq><key>Alt</key><key>F10</key></keyseq> o <keyseq><key>Super</key><key>↓</key></keyseq> para restaurar una ventana maximizada a su tamaño original.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Super</key><key>H</key></keyseq></p></td>
+    <td><p>Minimizar una ventana</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Super</key><key>←</key></keyseq></p></td>
+    <td><p>Maximizar una ventana a lo largo de la parte izquierda de la pantalla. Pulse otra vez para restaurar la ventana a su tamaño original. Pulse <keyseq><key>Super</key><key>→</key></keyseq> para cambiar ambos lados.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Super</key><key>→</key></keyseq></p></td>
+    <td><p>Maximizar una ventana a lo largo de la parte derecha de la pantalla. Pulse otra vez para restaurar la ventana a su tamaño original. Pulse <keyseq><key>Super</key><key>←</key></keyseq> para cambiar ambos lados</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Alt</key><key>Espacio</key></keyseq></p></td>
+    <td><p>Mostrar el menú de la ventana, como si hubiera pulsado con el botón derecho sobre la barra de título.</p></td>
+  </tr>
+</table>
+
+</page>

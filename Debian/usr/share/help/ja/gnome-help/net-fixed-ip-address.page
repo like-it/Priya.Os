@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="seealso" xref="net-findip"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>静的 IP アドレスを使用すると、コンピューターから簡単にネットワークサービスを提供することができます。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>固定 IP アドレスの接続を作成</title>
+
+  <p>ほとんどのネットワークでは、ネットワーク接続を行うとユーザーのコンピューターに対して<link xref="net-what-is-ip-address">IP アドレス</link>とその他の詳細が自動的に割り当てられます。こうした情報は定期的に変更することができますが、アドレスを常に認識しておけるようコンピューターに固定の IP アドレスを持たせたい場合があります (たとえば、コンピューターがファイルサーバーなどの場合)。</p> <p>コンピューターに固定 (静的) IP アドレスを与える:</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
+    </item>
+    <item>
+      <p><gui>ネットワーク</gui>を選択して設定パネルを開きます。</p>
+    </item>
+    <item>
+      <p>In the left pane, select the network connection that you want to give
+      a fixed address. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
+    </item>
+    <item>
+      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
+    </item>
+    <item>
+      <p>Enter the <em>Address</em>, <em>Netmask</em>, and <em>Gateway</em>
+      information into the appropriate boxes. How you choose these will depend
+      on your network setup; there are specific rules governing which IP
+      addresses and netmasks are valid for a given network.</p>
+    </item>
+    <item>
+      <p>必要であれば、<em>ドメインネームサーバー</em>のアドレスを <gui>DNS サーバー</gui>のボックスに入力します。これはドメイン名を検索するサーバーの IP アドレスになります。企業ネットワークやインターネットプロバイダーの場合、ほとんどが専用の DNS サーバーを持っています。</p>
+    </item>
+    <item>
+      <p>Click <gui>Apply</gui>. The network connection should now have a fixed
+      IP address.</p>
+    </item>
+  </steps>
+
+</page>

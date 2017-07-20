@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>A színtér a színek meghatározott tartománya.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mi az a színtér?</title>
+
+  <p>A színtér a színek meghatározott tartománya. Jól ismert színterek például az sRGB, AdobeRGB és ProPhotoRGB.</p>
+
+  <p>Az emberi látórendszer nem egy egyszerű RGB-érzékelő, de a szem reakciója megbecsülhető egy CIE 1931 színességdiagrammal, amely az emberi vizuális választ egy patkóformával jeleníti meg. Látható, hogy az emberi látás sokkal több zöld árnyalatot különböztet meg, mint kéket vagy vöröset. Három színű színtér, például RGB használatakor a színeket a számítógépen három értékkel ábrázoljuk, ami legfeljebb a színek egy <em>háromszögének</em> kódolását teszi lehetővé.</p>
+
+  <note>
+    <p>A CIE 1931 színességdiagramhoz hasonló modellek használata az emberi látórendszer óriási egyszerűsítése, és a valódi színskálák 3D felületekként vannak kifejezve, nem pedig 2D vetületekként. A 3D alakzat 2D vetülete néha félrevezető lehet, ezért ha a 3D felületet szeretné látni, akkor használja a <code>gcm-viewer</code> alkalmazást.</p>
+  </note>
+
+  <figure>
+    <desc>Az sRGB, AdobeRGB és ProPhotoRGB fehér háromszögekként jelennek meg</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>Elsőként vegyük az sRGB-t, ez a legkisebb színtér, és a legkevesebb színt képes kódolni. Ez egy 10 éves CRT kijelző becslése, és a legtöbb korszerű monitor ennél több színt tud megjeleníteni. Az sRBG egy <em>legkisebb közös nevező</em> szabvány, és sok felhasználási terület használja, beleértve az internetet.</p>
+  <p>Az AdobeRGB gyakran <em>szerkesztési színtérként</em> használatos. Több színt tud kódolni, mint az sRGB, emiatt úgy módosíthatja egy fénykép színeit, hogy nem kell aggódnia a legélénkebb vagy legsötétebb színek elvesztése miatt.</p>
+  <p>A ProPhoto a legnagyobb elérhető színtér, és gyakran használatos dokumentumarchiválásra. Képes kódolni az emberi szem által érzékelt színek majdnem teljes körét, és még a szem által nem érzékelhető színeket is.</p>
+
+  <p>Ha a ProPhoto egyértelműen a legjobb, miért nem azt használjuk mindenre? A válasznak a <em>kvantáláshoz</em> van köze. Ha az egyes csatornák kódolására csak 8 bit (256 szint) áll rendelkezésre, akkor a nagyobb tartomány az egyes értékek között nagyobb lépéseket jelent.</p>
+  <p>A nagyobb lépések nagyobb hibákat jelentenek a rögzített és a tárolt szín között, és néhány szín esetén ez jelentős problémát jelent. Egyes kulcsszínek, például a bőrszín nagyon fontosnak bizonyulnak, és a gyakorlatlan szemlélők az apró hibák miatt is észreveszik, hogy valami nincs rendben a fényképen.</p>
+  <p>Természetesen egy 16 bites kép használata sokkal több lépést és sokkal kisebb kvantálási hibát tenne lehetővé, de ez megduplázza minden képfájl méretét. A ma létező legtöbb tartalom képpontonként 8 bites.</p>
+  <p>A színkezelés az egyik színtérről másikra konvertálás folyamata, ahol a színtér egy jól ismert színtér lehet (mint az sRGB), vagy egyéni színtér, mint a monitorának vagy nyomtatójának profilja.</p>
+
+</page>

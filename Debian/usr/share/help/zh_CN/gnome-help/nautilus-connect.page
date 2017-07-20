@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>通过 FTP、SSH、Windows 共享或 WebDAV，查看和编辑另一台计算机上的文件。</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>浏览服务器或网络共享中的文件</title>
+
+<p>您可以连接到一个服务器或网络共享文件夹上，浏览和查看里面的文件，就像是查看本地计算机一样。这在互联网中下载和上传文件很方便，或者在局域网中跟其他人共享文件。</p>
+
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
+
+<steps>
+  <title>连接到一台文件服务器</title>
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
+   sidebar.</p>
+  </item>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
+  <note>
+    <p>如果您之前连接过那个服务器，还可以点击<gui>最近的服务器</gui>列表。</p>
+  </note>
+  </item>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>输入 URL 网址</title>
+
+<p><em>URL</em> 或 <em>统一资源定位符</em>，是一个指向网络位置或文件的地址，网址格式如下：</p>
+  <example>
+    <p><sys>scheme://servername.example.com/folder</sys></p>
+  </example>
+<p>The <em>scheme</em> specifies the protocol or type of server. The
+  <em>example.com</em> portion of the address is called the <em>domain name</em>.
+  If a username is required, it is inserted before the server name:</p>
+  <example>
+    <p><sys>scheme://username@servername.example.com/folder</sys></p>
+  </example>
+<p>一些服务需要指定端口号，插在域名之后。</p>
+  <example>
+    <p><sys>scheme://servername.example.com:port/folder</sys></p>
+  </example>
+<p>下面列出了支持的各种服务类型范例。</p>
+</section>
+
+<section id="types">
+ <title>服务器类型</title>
+
+<p>You can connect to different types of servers. Some servers are public,
+   and allow anybody to connect. Other servers require you to log in with a
+   username and password.</p>
+<p>在服务器上您可能没有权限去执行特定的操作，比如在一个公共 FTP 站点上，您不大可能被允许删除文件。</p>
+<p>您输入的网址，取决于服务器使用的文件共享方式。</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>如果您有服务器的<em>SSH</em>帐号，您可以使用它来连接。许多网络主机提供 SSH 帐户，成员可以安全上传文件，SSH 服务器总是需要用户登录。</p>
+  <p>典型的 SSH 网址如下所示：</p>
+  <example>
+    <p><sys>ssh://username@servername.example.com/folder</sys></p>
+  </example>
+
+  <p>在使用 SSH 时，您发送的所有数据(包括密码)都是经过加密的，因此网络中的其他人不能截获它。</p>
+</item>
+<item>
+  <title>FTP (需登录)</title>
+  <p>使用 FTP 是一种在因特网上传输文件的流行方法。因为通过 FTP 传输的数据未经加密，所以许多服务器现在都提供 SSH 访问。但是，对某些服务器仍可以或要求使用 FTP 上传或下载文件。通过要求登录的 FTP 站点，通常可以删除和上载文件。</p>
+  <p>典型的 FTP 网址如下所示：</p>
+  <example>
+    <p><sys>ftp://username@ftp.example.com/path/</sys></p>
+  </example>
+</item>
+<item>
+  <title>公开的 FTP</title>
+  <p>Sites that allow you to download files will sometimes provide
+  public or anonymous FTP access. These servers do not require a
+  username and password, and will usually not allow you to delete
+  or upload files.</p>
+  <p>典型的匿名 FTP 服务器网址如下所示：</p>
+  <example>
+    <p><sys>ftp://ftp.example.com/path/</sys></p>
+  </example>
+  <p>Some anonymous FTP sites require you to log in with a
+  public username and password, or with a public username using
+  your email address as the password. For these servers, use the
+  <gui>FTP (with login)</gui> method, and use the credentials
+  specified by the FTP site.</p>
+</item>
+<item>
+  <title>Windows 共享</title>
+  <p>Windows 系统使用一个私有协议在局域网上共享文件，Windows 网络中的计算机有用<em>域</em>来分组，用于更好地组织和控制访问。如果您有访问远程计算机的权限，您可以通过文件管理器来连接一个 Windows 共享。</p>
+  <p>典型的 Windows 共享网址如下所示：</p>
+  <example>
+    <p><sys>smb://servername/Share</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV 和安全 WebDAV</title>
+  <p>WebDAV 基于 HTTP 协议，它有时用于局域网中共享文件，或者在互联网中存储文件。如果您连接的服务器支持加密连接，您可以选中此项。安全 WebDAV 使用更强的 SSL 加密，因此他人无法查看您的密码。</p>
+  <p>A WebDAV URL looks like this:</p>
+  <example>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

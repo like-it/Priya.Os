@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-apps-open" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak spustit aplikaci z přehledu <gui>Činnosti</gui>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Spouštění aplikací</title>
+
+  <p if:test="!platform:gnome-classic">Najeďte ukazatelem myši do rohu <gui>Činnosti</gui> v levé horní části obrazovky, aby se vám zobrazil přehled <link xref="shell-introduction#activities">činností</link>. V něm můžete najít všechny své aplikace. Otevřít jej můžete také zmáčknutím klávesy <key xref="keyboard-key-super">Super</key>.</p>
+  
+  <p if:test="platform:gnome-classic">Aplikaci můžete spustit z nabídky <gui xref="shell-introduction#activities">Aplikace</gui> v levé horní části obrazovky nebo za použití přehledu <gui>Činnosti</gui> po zmáčknutí klávesy <key xref="keyboard-key-super">Super</key>.</p>
+
+  <p>Když jste v přehledu <gui>Činností</gui>, máte k dispozici několik způsobů, jak otevřít aplikaci:</p>
+
+  <list>
+    <item>
+      <p>Začněte psát název aplikace a hledání ihned započne. (Pokud ne, klepněte na vyhledávací pole vpravo nahoře a až potom začněte psát.) Jestliže přesný název aplikace neznáte, zkuste napsat nějaké slovo vztahující se k aplikaci. Vyhledanou aplikaci spustíte kliknutím na její ikonu.</p>
+    </item>
+    <item>
+      <p>Některé aplikace mají svoji ikonu v <em>Oblíbených</em>, což je svisly pruhu ikon na levém okraji přehledu <gui>Činností</gui>. Kliknutím na některou z ikon spustíte příslušnou aplikaci.</p>
+      <p>Používáte-li některou aplikaci často, můžete  si ji <link xref="shell-apps-favorites">do oblíbených přidat</link>.</p>
+    </item>
+    <item>
+      <p>Klikněte na tlačítko s mřížkou v dolní části oblíbených. Když je zapnuté zobrazení <gui style="button">Časté</gui>, uvidíte často používané aplikace. Jestliže chcete spustit novou aplikaci, zmáčkněte v dolní části tlačítko <gui style="button">Všechny</gui>, abyste viděli všechny aplikace. Kliknutím na příslušnou ikonu aplikaci spustíte.</p>
+    </item>
+    <item>
+      <p>Aplikaci můžete spustit na samostatné <link xref="shell-workspaces">pracovní ploše</link> tím, že přetáhnete její ikonu z oblíbených na jednu z pracovních ploch v postranním panelu vpravo na obrazovce. Aplikace se pak otevře na této pracovní ploše.</p>
+      <p>Aplikaci můžete spustit na <em>nové</em> pracovní ploše tím, že přetáhnete její ikonu na prázdnou pracovních plochu v dolní části přepínače pracovních ploch nebo na malou mezeru mezi dvěma pracovními plochami.</p>
+    </item>
+  </list>
+
+  <note style="tip">
+    <title>Rychlé spuštění příkazu</title>
+    <p>Jiným způsobem spouštění aplikací je zmáčknout <keyseq><key>Alt</key><key>F2</key></keyseq>, napsat její <em>spouštěcí příkaz</em> a následně zmáčknout <key>Enter</key>.</p>
+    <p>Například spuštění přehrávače <app>Rhythmbox</app> se provede tak, že zmáčknete <keyseq><key>Alt</key><key>F2</key></keyseq> a napíšete „<cmd>rhythmbox</cmd>“ (bez uvozovek). Název aplikace je příkaz, který spustí program.</p>
+  </note>
+
+</page>

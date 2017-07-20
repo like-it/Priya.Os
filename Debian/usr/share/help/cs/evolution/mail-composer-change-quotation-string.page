@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-composer-change-quotation-string" xml:lang="cs">
+
+  <info>
+    <desc>Není možné změnit předznamenání citace přidané při odpovídání na zprávu.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-composer-reply"/>
+    <link type="seealso" xref="mail-composer-forward"/>
+
+    <revision pkgversion="3.13.90" version="0.5" date="2015-03-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Změna textu „Osoba píše v datum:“ při odpovídání na zprávu</title>
+
+<p>Pokročilí uživatelé si mohou tento text změnit.</p>
+
+<list>
+<item><p>Otevřete aplikaci <app>dconf-editor</app>.</p></item>
+<item><p>Přejděte na <code>org.gnome.evolution.mail</code>.</p></item>
+<item><p>Zadejte požadovaný řetězec citace jako hodnotu v klíči <code>composer-message-attribution</code>.</p></item>
+</list>
+
+<!-- Translators: Do NOT translate the variable names inside the brackets! -->
+<p>Výchozím řetězcem je pro češtinu <code>${Sender} píše v ${AbbrevWeekdayName} ${Day}. ${Month}. ${Year} v ${24Hour}:${Minute} ${TimeZone}:</code> (a pro angličtinu <code>"On ${AbbrevWeekdayName}, ${Year}-${Month}-${Day} at ${24Hour}:${Minute} ${TimeZone}, ${Sender} wrote:"</code>).</p>
+
+<p>K dispozici jsou následující zástupné proměnné:</p>
+<list>
+<item><p><code its:translate="no">{Sender}</code></p></item>
+<item><p><code its:translate="no">{SenderName}</code></p></item>
+<item><p><code its:translate="no">{SenderEMail}</code></p></item>
+<item><p><code its:translate="no">{AbbrevWeekdayName}</code></p></item>
+<item><p><code its:translate="no">{WeekdayName}</code></p></item>
+<item><p><code its:translate="no">{AbbrevMonthName}</code></p></item>
+<item><p><code its:translate="no">{MonthName}</code></p></item>
+<item><p><code its:translate="no">{Day}</code> (formát: 01 – 31)</p></item>
+<item><p><code its:translate="no">{ Day}</code> (formát: 1 – 31)</p></item>
+<item><p><code its:translate="no">{24Hour}</code></p></item>
+<item><p><code its:translate="no">{12Hour}</code></p></item>
+<item><p><code its:translate="no">{AmPmUpper}</code></p></item>
+<item><p><code its:translate="no">{AmPmLower}</code></p></item>
+<item><p><code its:translate="no">{DayOfYear}</code> (formát: 1 – 366)</p></item>
+<item><p><code its:translate="no">{Month}</code> (formát: 01 – 12)</p></item>
+<item><p><code its:translate="no">{Minute}</code></p></item>
+<item><p><code its:translate="no">{Seconds}</code></p></item>
+<item><p><code its:translate="no">{2DigitYear}</code> (např. 15 pro rok 2015)</p></item>
+<item><p><code its:translate="no">{Year}</code></p></item>
+<item><p><code its:translate="no">{TimeZone}</code></p></item>
+</list>
+
+<note style="info package">
+  <p>Abyste mohli tyto kroky provést, bude možná muset nejdříve nainstalovat balíček <sys>dconf-editor</sys>.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:dconf-editor" href="http://ftp.gnome.org/pub/gnome/sources/dconf/" style="button">Nainstalovat dconf-editor</link></p>
+    </if:when>
+  </if:choose>
+</note>
+
+</page>

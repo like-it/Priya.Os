@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A laptopok az energiafelhasználás csökkentése érdekében alvó állapotba kerülnek, amikor lezárja a fedelüket.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Miért kapcsol ki a számítógépem, amikor lezárom a fedelét?</title>
+
+  <p>Amikor lezárja a laptop fedelét, a számítógép az energiafelhasználás csökkentése érdekében <link xref="power-suspend"><em>felfüggeszti</em></link> működését. Ez azt jelenti, hogy a számítógép ténylegesen nem kapcsol ki – csak alvó állapotba kerül. A fedél felnyitásával folytathatja a számítógép használatát. Ha ez nem történik meg, akkor próbáljon kattintani az egérrel, vagy nyomjon meg egy billentyűt. Ha ez sem működik, akkor nyomja meg a bekapcsoló gombot.</p>
+
+  <p>Egyes számítógépek nem képesek megfelelően felfüggeszteni a működésüket, mivel az operációs rendszer nem támogatja teljes mértékben a hardverüket (például a Linux illesztőprogramok befejezetlenek). Ebben az esetben lehet, hogy nem tudja folytatni a számítógép használatát, miután lezárta a fedelét. Megpróbálhatja <link xref="power-suspendfail">megoldani a felfüggesztés hibáját</link>, vagy megakadályozhatja, hogy a számítógép megpróbálja felfüggeszteni a működését a fedél lezárásakor.</p>
+
+<section id="nosuspend">
+  <title>A számítógép a fedél lezárásakor való felfüggesztésének tiltása</title>
+
+  <note style="important">
+    <p>Ezek az utasítások csak akkor használhatók, ha a <app>systemd</app>-t használja. További információkért nézze meg a disztribúciója dokumentációját.</p>
+  </note>
+
+  <note style="important">
+    <p>Ezen beállítás módosításához telepítve kell lennie a <app>Finomhangoló eszköznek</app> a számítógépre.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">A <app>Finomhangoló eszköz</app> telepítése</link></p>
+    </if:if>
+  </note>
+
+  <p>Ha nem akarja, hogy a számítógép felfüggessze a működését, amikor lezárja a fedelét, akkor megváltoztathatja ezt a viselkedést.</p>
+
+  <note style="warning">
+    <p>Legyen nagyon óvatos, ha ezt a beállítást megváltoztatja. Egyes laptopok túlmelegedhetnek, ha lezárt tetővel bekapcsolva hagyja azokat, különösen olyan zárt helyeken, mint egy hátizsák.</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Finomhangoló eszköz</gui> szót.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Finomhangoló eszköz</gui> ikonra az alkalmazás megnyitásához.</p>
+    </item>
+    <item>
+      <p>Kattintson az <gui>Energiagazdálkodás</gui> lapra.</p>
+    </item>
+    <item>
+      <p>Kapcsolja <gui>BE</gui> a <gui>Ne függessze fel a fedél lezárásakor</gui> lehetőséget.</p>
+    </item>
+    <item>
+      <p>Zárja be a <gui>Finomhangoló eszköz</gui> ablakot.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

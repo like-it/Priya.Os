@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-rename" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Cambiar el nombre de un archivo o de una carpeta</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Renombrar un archivo o una carpeta</title>
+
+  <p>Al igual que con otros gestores de archivos, puede usar <app>Archivos</app> para cambiar el nombre de un archivo o de una carpeta.</p>
+
+  <steps>
+    <title>Para renombrar un archivo o una carpeta:</title>
+    <item><p>Pulse con el botón derecho sobre un archivo o carpeta y seleccione <gui>Renombrar</gui>, o seleccione el archivo y pulse <key>F2</key>.</p></item>
+    <item><p>Escriba el nombre nuevo y pulse <key>Intro</key> o pulse en <gui>Renombrar</gui>.</p></item>
+  </steps>
+
+  <p>También puede renombrar un archivo desde la ventana de <link xref="nautilus-file-properties-basic">propiedades</link>.</p>
+
+  <p>Cuando renombra un archivo, solo se selecciona la primera parte del nombre de ese archivo, sin la extensión (la parte que va después del <file>.</file>). La extensión normalmente representa el tipo de archivo (p.ej <file>archivo.pdf</file> es un documento PDF), y normalmente no querrá cambiarla. Si necesita cambiar la extensión también, seleccione el nombre completo del archivo y cámbielo.</p>
+
+  <note style="tip">
+    <p>Si cambia el nombre del archivo incorrecto, o asigna un nombre equivocado al archivo, puede deshacer el renombrado. Para revertir esta acción inmediatamente, pulse el botón del menú en la barra de herramientas y elija <gui>Deshacer renombrado</gui>, o pulse <keyseq><key>Ctrl</key><key>Z</key></keyseq> para restaurar el nombre.</p>
+  </note>
+
+  <section id="valid-chars">
+    <title>Caracteres válidos para nombres de archivo</title>
+
+    <p>Puede usar cualquier carácter en los nombres de archivos, excepto la barra inclinada <file>/</file>. Algunos dispositivos, sin embargo, usan <em>sistemas de archivos</em> con más restricciones en los nombres de archivos. Por lo tanto, es recomendable evitar los siguientes caracteres: <file>|</file>, <file>\</file>, <file>?</file>, <file>*</file>, <file>&lt;</file>, <file>"</file>, <file>:</file>, <file>&gt;</file>, <file>/</file></p>
+
+    <note style="warning">
+    <p>Si nombra a un archivo con un <file>.</file> como primer carácter, el archivo estará <link xref="files-hidden">oculto</link> cuando intente verlo en el gestor de archivos.</p>
+    </note>
+
+  </section>
+
+  <section id="common-probs">
+    <title>Problemas comunes</title>
+
+    <terms>
+      <item>
+        <title>El nombre del archivo ya está en uso</title>
+        <p>No puede tener dos archivos o carpetas con el mismo nombre en la misma carpeta. Si al cambiar el nombre a un archivo intenta asignarle uno que ya existe en la carpeta donde está trabajando, el gestor de archivos no se lo permitirá.</p>
+        <p>Los nombres de archivos y carpetas son sensibles a mayúsculas, por lo que el nombre <file>Archivo.txt</file> no es lo mismo que <file>ARCHIVO.txt</file>. Usar nombres diferentes como estos está permitido, pero no es recomendable.</p>
+      </item>
+      <item>
+        <title>El nombre de archivo demasiado largo</title>
+        <p>En algunos sistemas de archivos, los nombres de los archivos no pueden tener más de 255 caracteres. Este límite de 255 caracteres incluye tanto el nombre del archivo como la ruta del archivo (ej. <file>/home/wanda/Documentos/trabajo/propuestas-trabajo/…</file>), por lo que debería evitar nombres largos en archivos y carpetas siempre que sea posible.</p>
+      </item>
+      <item>
+        <title>La opción para renombrar está en gris</title>
+        <p>Si la opción <gui>Renombrar</gui> aparece en color gris, es que no tiene los permisos necesarios para renombrar el archivo. Debe tener cuidado al tratar de renombrar estos archivos, ya que cambiar el nombre a archivos protegidos puede causar problemas o hacer que su sistema se vuelva inestable. Consulte la <link xref="nautilus-file-properties-permissions"/> para obtener más información.</p>
+      </item>
+    </terms>
+
+  </section>
+
+</page>

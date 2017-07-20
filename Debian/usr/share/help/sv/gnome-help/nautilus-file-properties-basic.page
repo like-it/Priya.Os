@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Visa grundläggande filinformation, ställa in rättigheter och välja standardprogram.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Filegenskaper</title>
+
+  <p>För att visa information om en fil eller mapp, högerklicka på den och välj <gui>Egenskaper</gui>. Du kan också markera filen och trycka <keyseq><key>Alt</key><key>Retur</key></keyseq>.</p>
+
+  <p>Fönstret filegenskaper visa dig information som filtyp, filstorlek och när du senast modifierade den. Om du behöver denna information ofta kan du låta visa det i <link xref="nautilus-list">listvykolumer</link> eller <link xref="nautilus-display#icon-captions">ikonrubriker</link>.</p>
+
+  <p>Informationen som finns på fliken <gui>Grundläggande</gui> förklaras nedan. De finns också flikar för <gui><link xref="nautilus-file-properties-permissions">Rättigheter</link></gui> och <gui><link xref="files-open#default">Öppna med</link></gui>. För vissa typer av filer, exempelvis för bilder och videor, så kommer det att finnas en extra flik med information så som dimensioner, längd och kodek.</p>
+
+<section id="basic">
+ <title>Grundläggande egenskaper</title>
+ <terms>
+  <item>
+    <title><gui>Namn</gui></title>
+    <p>Du kan byta namn på filen genom att ändra detta fält. Du kan också byta namn på en fil utanför egenskapsfönstret. Se <link xref="files-rename"/>.</p>
+  </item>
+  <item>
+    <title><gui>Typ</gui></title>
+    <p>Detta hjälper dig att identifiera filens typ, exempelvis PDF-dokument, OpenDocument-text eller JPEG-bild. Filtypen bestämmer bland annat vilket program som kan öppna filen. Du kan till exempel inte öppna en bild med en musikspelare. Se <link xref="files-open"/> för mer information om detta.</p>
+    <p>Filens <em>MIME-typ</em> visas i parenteser; MIME-typ är en standardmetod som datorer använder för att hänvisa till filtypen.</p>
+  </item>
+
+  <item>
+    <title>Innehåll</title>
+    <p>Det här fältet visas om du tittar på egenskaperna för en mapp istället för en fil. Det hjälper dig att se antal objekt i mappen. Om mappen innehåller andra mappar kommer varje underliggande mapp räknas som ett objekt, även om det innehåller andra objekt. Varje fil räknas också som ett objekt. Om mappen är tom kommer Innehåll visa <gui>ingenting</gui>.</p>
+  </item>
+
+  <item>
+    <title>Storlek</title>
+    <p>Detta fält visas om du tittar på en fil (inte en mapp). Storleken för en fil berättar för dig hur mycket diskutrymme den upptar. Det är också en indikator på hur lång tid det tar att hämta ner en fil eller skicka den i ett e-postmeddelande (stora filer ta längre tid att skicka/ta emot).</p>
+    <p>Storlekar kan anges i byte, KB, MB eller GB; i fallet med de sista tre så anges storleken i byte också inom parenteser. Tekniskt är 1KB 1024 byte, 1MB är 1024 KB och så vidare.</p>
+  </item>
+
+  <item>
+    <title>Föräldramapp</title>
+    <p>Platsen för varje fil på din dator anges av dess <em>absoluta sökväg</em>. Detta är en unik ”adress” för filen på din dator, som utgörs av en lista av mappar som du måste gå in i för att hitta filen. Om Maria till exempel hade en fil som heter <file>Resume.pdf</file> i sin Hemmapp, skulle dess föräldramapp bli <file>/home/maria</file> och dess plats att bli <file>/home/maria/Resume.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Ledigt utrymme</title>
+    <p>Detta visas bara för mappar. Det visar hur mycket diskutrymme som finns tillgängligt på disken som mappen finns på. Detta gör det lättare att se om hårddisken är full.</p>
+  </item>
+
+  <item>
+    <title>Åtkommen</title>
+    <p>Tid och datum då filen senast öppnades.</p>
+  </item>
+
+  <item>
+    <title>Ändrad</title>
+    <p>Tid och datum när filen senast ändrades och sparades.</p>
+  </item>
+ </terms>
+</section>
+
+</page>

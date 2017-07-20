@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-gpg-set-up" xml:lang="fr">
+
+  <info>
+    <desc>Configurer le chiffrement GPG pour votre compte de messagerie pour signer et/ou chiffrer et déchiffrer les messages.</desc>
+
+    <link type="guide" xref="mail-encryption#gpg"/>
+
+    <revision pkgversion="3.13.90" version="0.4" date="2015-03-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#encrypt-evo-integ -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Configuration du chiffrement GPG pour votre compte de messagerie</title>
+<!-- TODO:POST-3-8: Update and rewrite using Seahorse. Needs a rewrite once https://bugzilla.gnome.org/show_bug.cgi?id=745872 and https://bugzilla.gnome.org/show_bug.cgi?id=508744 is fixed. -->
+
+<note style="tip"><p>Vous avez besoin d'une clé GPG pour faire ce qui suit. Si vous n'en avez pas encore une, référez-vous à la section <link xref="mail-encryption-gpg-create-key">Création d'une clé GPG</link>.</p></note>
+
+<steps>
+<item><p>Choisissez <guiseq><gui>Édition</gui><gui>Préférences</gui><gui>Comptes de messagerie</gui></guiseq>.</p></item>
+<item><p>Sélectionnez le compte que vous voulez utiliser de manière sécurisée, puis cliquez sur <gui style="button">Modifier</gui>.</p></item>
+<item><p>Cliquez sur l'onglet <gui>Sécurité</gui>.</p></item>
+<item><p>Indiquez votre identifiant de clé dans le champ <gui>ID de la clé OpenPGP</gui>.</p>
+<note style="tip"><p>En dessous de ce champ, vous pouvez choisir de toujours signer les messages sortants lors de l'utilisation de ce compte, et d'autres options.</p></note>
+</item>
+<item><p>Cliquez sur <gui style="button">Valider</gui>.</p></item>
+<item><p>Cliquez sur <gui style="button">Fermer</gui>.</p></item>
+</steps>
+<p><app>Evolution</app> requires that you know your key ID. If you do not remember it, start <app>Passwords and Keys</app>, go to <gui>GnuPG Keys</gui>, select the preferred GPG key, right-click on it, select <gui>Properties</gui> and copy the <gui>Key ID</gui>. Your key ID is an eight-character string with random numbers and letters.</p>
+
+</page>

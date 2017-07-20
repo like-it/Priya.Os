@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="task" id="txt-search" xml:lang="fi">
+
+  <info>
+    <revision version="0.1" date="2013-03-03" status="candidate"/>
+    <link type="guide" xref="index#textoutput"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc><app>Päätteen</app> tulosteesta hakeminen.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sami Jaktholm</mal:name>
+      <mal:email>sjakthol@outlook.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title><gui style="menuitem">Hakutoiminnon</gui> käyttäminen</title>
+
+  <p><app>Päätteen</app> tulosteesta voi etsiä tekstinpätkiä seuraavasti:</p>
+
+  <steps>
+    <item>
+      <p>Valitse <guiseq><gui style="menu">Etsi</gui> <gui style="menuitem">Etsi…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Anna hakusana ja paina <gui style="button">Etsi</gui>. Haun voi peruuttaa <gui style="button">Sulje</gui>-painikkeella.</p>
+    </item>
+  </steps>
+
+  <p>Hakutuloksia voi rajata seuraavin valinnoin:</p>
+
+  <terms>
+    <item>
+      <title><gui style="checkbox">Huomioi kirjainkoko</gui></title>
+      <p>Haku ottaa kirjainten koon huomioon. Tämä rajaa tulokset niihin vastaavuuksiin, jossa jokainen kirjain on samankokoinen.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Etsi kokonaista sanaa</gui></title>
+      <p><app>Pääte</app> etsii koko hakusanaa ja sivuuttaa vastaavuudet, jotka eivät vastaa hakusanaa täysin. Jos esimerkiksi haetaan sanalla "gnome", <app>Pääte</app> näyttää vain ne tulokset, jotka täsmäävät tarkasti hakusanaan ja jättää huomiotta muut tulokset, kuten "gnome-terminal".</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Etsi säännöllisenä lausekkeena</gui></title>
+      <p>Hakulausekkeessa voi käyttää säännöllisiä lausekkeita. <app>Pääte</app> näyttää tulokset, jotka täsmäävät hakusanaan.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Etsi taaksepäin</gui></title>
+      <p><app>Pääte</app> etsii alimmasta tulosterivistä alkaen ja jatkaa hakua ylöspäin. Tätä asetusta kannattaa käyttää haun nopeuttamiseksi, jos etsitään sanaa, joka on mahdollisesti esiintynyt tulosteessa hiljattain.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Jatka alusta</gui></title>
+      <p><app>Pääte</app> suorittaa haun tulosteen nykyisestä kohdasta sen loppuun ja jatkaa hakua tulosteen alusta.</p>
+    </item>
+  </terms>
+
+  <note style="tip">
+    <p>If you expect to work with a lot of <app>Terminal</app> output, increase
+    the <link xref="pref-scrolling#lines">scrollback lines</link> to
+    a higher limit to allow <app>Terminal</app> to search further back.</p>
+  </note>
+
+</page>

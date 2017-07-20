@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-initial-check" xml:lang="zh-CN">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-hardware-info"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu wiki 文档贡献者</name>
+    </credit>
+    <credit type="author">
+      <name>GNOME 文档项目</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>确保网络设置是正确的，然后继续下面一些解决步骤。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>无线网络故障排除</title>
+  <subtitle>执行最初的连接检查</subtitle>
+
+  <p>在这一步，您将要检查无线网络连接的基本信息。这确保您的网络问题不是一些简单错误引起的，比如无线连接被关闭，然后准备到下面的故障排除步骤。</p>
+
+  <steps>
+    <item>
+      <p>确保您的笔记本没有连接<em>有线</em>网络连接。</p>
+    </item>
+    <item>
+      <p>如果您有外部无线适配器(如无线 USB 适配器或 PCMCIA 卡)，请确保已将其插入您计算机上的相应插槽中。</p>
+    </item>
+    <item>
+      <p>如果您的无线卡是<em>内置</em>的，确保无线网卡开关是打开的。笔记本一般可以通过按一个组合键来切换。</p>
+    </item>
+    <item>
+      <p>Click the system status area on the top bar and select
+      <gui>Wi-Fi</gui>, then select <gui>Wi-Fi Settings</gui>. Make sure that
+      <gui>Wi-Fi</gui> is set to <gui>ON</gui>. You should also check that
+      <link xref="net-wireless-airplane">Airplane Mode</link> is <em>not</em>
+      switched on.</p>
+    </item>
+    <item>
+      <p>Open the Terminal, type <cmd>nmcli device</cmd> and press
+      <key>Enter</key>.</p>
+      <p>This will display information about your network interfaces and
+      connection status. Look down the list of information and see if there is
+      an item related to the wireless network adapter. If the state is
+      <code>connected</code>, it means that the adapter is working and connected
+      to your wireless router.</p>
+    </item>
+  </steps>
+
+  <p>如果您已连接到无线路由器，但仍无法访问网络，则您的路由器设置可能错误或互联网服务提供商 (ISP) 可能遇到了一些技术问题。请复核您的路由器和 ISP 安装指南，或与您的 ISP 联系以获取支持。</p>
+
+  <p>If the information from <cmd>nmcli device</cmd> did not indicate that you were
+  connected to the network, click <gui>Next</gui> to proceed to the next
+  portion of the troubleshooting guide.</p>
+
+</page>

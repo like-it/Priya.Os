@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Grundlegende Dateiinformationen einsehen, Zugriffsrechte festlegen und Standardanwendungen auswählen.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dateieigenschaften</title>
+
+  <p>Um Informationen zu einer Datei oder einem Ordner anzuzeigen, klicken Sie mit der rechten Maustaste darauf und wählen Sie <gui>Eigenschaften</gui> Sie können die Datei auch auswählen und <keyseq><key>Alt</key><key>Eingabetaste</key></keyseq> drücken.</p>
+
+  <p>Das Dateieigenschaften-Fenster zeigt Ihnen Informationen wie den Dateityp, die Dateigröße und wann Sie die Datei zuletzt geändert haben. Wenn Sie diese Informationen häufig brauchen, können Sie sie in den <link xref="nautilus-list">Spalten der Listenansicht</link> oder <link xref="nautilus-display#icon-captions">Symbolbeschriftungen</link> anzeigen lassen.</p>
+
+  <p>Die im Reiter <gui>Grundlegend</gui> präsentierten Informationen werden im Folgenden erklärt. Daneben gibt es noch die Reiter <gui><link xref="nautilus-file-properties-permissions">Zugriffsrechte</link></gui> und <gui><link xref="files-open#default">Öffnen mit</link></gui>. Bei bestimmten Dateitypen, wie Bildern und Videos, gibt es noch einen weiteren Reiter, der über Eigenschaften wie Ausmaße, Länge und Codec informiert.</p>
+
+<section id="basic">
+ <title>Grundlegende Eigenschaften</title>
+ <terms>
+  <item>
+    <title><gui>Name</gui></title>
+    <p>Sie können die Datei umbenennen, indem Sie dieses Feld ändern. Sie können eine Datei auch außerhalb des Dateieigenschaften-Fensters umbenennen. Siehe <link xref="files-rename"/>.</p>
+  </item>
+  <item>
+    <title><gui>Typ</gui></title>
+    <p>Damit können Sie den Dateityp leichter feststellen, etwa dass es ein PDF-Dokument, OpenDocument-Text oder JPEG-Bild ist. Der Dateityp bestimmt unter anderem, welche Anwendung die Datei öffnen kann. Zum Beispiel können Sie ein Bild nicht mit der Musikwiedergabe öffnen. Siehe <link xref="files-open"/> für weitere Informationen darüber.</p>
+    <p>Der <em>MIME-Typ</em> der Datei wird in Klammern angezeigt; der MIME-Typ ist eine standardisierte Beschreibung des Dateityps, die von Rechnern verwendet wird. </p>
+  </item>
+
+  <item>
+    <title>Inhalt</title>
+    <p>Dieses Feld wird angezeigt, wenn Sie die Eigenschaften nicht einer Datei, sondern eines Ordners betrachten. Es zeigt Ihnen die Anzahl der Objekte im Ordner. Wenn er Unterordner enthält, wird jeder Unterordner als ein Objekt gezählt, selbst wenn der Unterordner weitere Objekte beinhaltet. Ebenso wird Jede Datei als ein Objekt gezählt. Wenn der Ordner leer ist, wird als Inhalt <gui>nichts</gui> angegeben.</p>
+  </item>
+
+  <item>
+    <title>Größe</title>
+    <p>Dieses Feld wird gezeigt, wenn Sie eine Datei betrachten (und nicht einen Ordner). Die Größe der Datei verrät Ihnen, wie viel Platz sie auf dem Datenträger einnimmt. Das dient auch als Hinweis, wie lange es braucht, die Datei herunterzuladen oder per E-Mail zu verschicken (große Dateien brauchen zum Verschicken/Empfangen länger).</p>
+    <p>Die Größe kann in Bytes, kB, MB oder GB angegeben sein; in den letzten drei Fällen wird die Größe in Bytes zusätzlich in Klammern angegeben. Technisch gesehen entspricht 1 kB 1024 Bytes, 1 MB entspricht 1024 kB usw.</p>
+  </item>
+
+  <item>
+    <title>Übergeordneter Ordner</title>
+    <p>Der Ort jeder Datei auf Ihrem Rechner wird als <em>absoluter Pfad</em> angegeben. Das ist eine eindeutige »Adresse« der Datei auf Ihrem Computer, bestehend aus einer Reihe von Ordnern, die Sie durchgehen müssten, um zu der Datei zu gelangen. Wenn zum Beispiel Sophie eine Datei namens <file>Lebenslauf.pdf</file> in ihrem persönlichen Ordner hat, dann lautet der Ort <file>/home/sophie/Lebenslauf.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Freier Speicherplatz</title>
+    <p>Dies wird nur bei Ordnern angezeigt. Es gibt den noch verfügbaren Speicherplatz auf dem Datenträger an, auf dem sich der Ordner befindet. Dies ist nützlich, um zu überprüfen, ob die Festplatte voll ist.</p>
+  </item>
+
+  <item>
+    <title>Zugriffsdatum</title>
+    <p>Das Datum und die Zeit, wann die Datei zum letzten Mal geöffnet wurde.</p>
+  </item>
+
+  <item>
+    <title>Änderungsdatum</title>
+    <p>Das Datum und die Zeit, wann die Datei zum letzten Mal geändert und gespeichert wurde.</p>
+  </item>
+ </terms>
+</section>
+
+</page>

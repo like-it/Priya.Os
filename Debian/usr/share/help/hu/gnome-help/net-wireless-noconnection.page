@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-wireless-noconnection" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" version="0.2" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Ellenőrizze újra a jelszót, és más lehetőségek</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>A megfelelő jelszót adtam meg, de így sem tudok csatlakozni</title>
+
+<p>Ha biztos benne, hogy a megfelelő <link xref="net-wireless-wepwpa">vezeték nélküli jelszót</link> adta meg, de így sem tud csatlakozni a vezeték nélküli hálózathoz, akkor próbálkozzon a következőkkel:</p>
+
+<list>
+ <item>
+  <p>Ellenőrizze újra, hogy a megfelelő jelszóval rendelkezik</p>
+  <p>A jelszavak megkülönböztetik a kis- és nagybetűket, emiatt ellenőrizze, hogy nem írt-e véletlenül egy kisbetű helyett nagyot vagy fordítva.</p>
+ </item>
+
+ <item>
+  <p>Próbálja ki a hexadecimális vagy ASCII jelszókulcsot</p>
+  <p>A megadott jelszó másként is leírható – hexadecimális karakterek (0–9, a-f) jelszókulcsnak hívott sorozataként. Minden jelszóhoz tartozik egy azzal egyenértékű jelszókulcs. Ha hozzáfér a jelszó/jelmondat mellett a jelszókulcshoz is, akkor próbálja meg beírni a jelszókulcsot. Győződjön meg róla, hogy a megfelelő <gui>vezeték nélküli biztonsági</gui> beállítást választja ki, amikor a program bekéri a jelszót (például válassza a <gui>WEP 40/128 bites kulcsot</gui>, ha a 40 karakteres jelszókulcsot írja be egy WEP-titkosítású kapcsolathoz).</p>
+ </item>
+
+ <item>
+  <p>Próbálja meg vezeték nélküli csatolóját ki, majd újra bekapcsolni</p>
+  <p>Néha a vezeték nélküli csatolók beragadnak, vagy olyan kisebb problémát észlelnek, ami miatt nem csatlakoznak. Próbálja meg a csatolót ki, majd újra bekapcsolni – további információkért lásd: <link xref="net-wireless-troubleshooting"/>.</p>
+ </item>
+
+ <item>
+  <p>Ellenőrizze, hogy a megfelelő vezeték nélküli biztonsági szolgáltatást használja</p>
+  <p>Amikor a program a vezeték nélküli biztonsági szolgáltatás jelszavát kéri, akkor kiválaszthatja a használandó vezeték nélküli biztonsági szolgáltatás típusát. Győződjön meg róla, hogy a router vagy vezeték nélküli bázisállomás által használtat választja. Ez általában alapesetben ki van választva, de néha nem sikerül a felismerése. Ha nem tudja, melyik a megfelelő beállítás, akkor próbálgassa végig a lehetőségeket.</p>
+ </item>
+
+ <item>
+  <p>Ellenőrizze, hogy vezeték nélküli csatolója megfelelően támogatott-e</p>
+  <p>Néhány vezeték nélküli csatoló nem megfelelően támogatott. Ezek megjelennek vezeték nélküli kapcsolatként, de nem tudnak a hálózathoz csatlakozni, mert illesztőprogramjuk képtelen erre. Próbáljon meg alternatív illesztőprogramot keresni, vagy további beállításokat végrehajtani (például egy másik <em>firmware</em> telepítése). További információkért lásd: <link xref="net-wireless-troubleshooting"/>.</p>
+ </item>
+
+</list>
+
+</page>

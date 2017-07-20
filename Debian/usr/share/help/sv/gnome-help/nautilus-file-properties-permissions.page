@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="sv">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="files#faq"/>
+    <link type="seealso" xref="nautilus-file-properties-basic"/>
+
+    <desc>Kontrollera vem som kan titta på och redigera dina filer och mappar.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Ange filrättigheter</title>
+
+  <p>Du kan använda filrättigheter för att kontrollera vem som kan titta på och redigera filer som du äger. För att visa och ställa in rättigheterna för en fil, högerklicka på den och välj <gui>Egenskaper</gui> och välj sedan fliken <gui>Rättigheter</gui>.</p>
+
+  <p>Se <link xref="#files"/> och <link xref="#folders"/> nedanför för detaljerad information om de typer av rättigheter du kan ange.</p>
+
+  <section id="files">
+    <title>Filer</title>
+
+    <p>Du kan ställa in rättigheter för filägaren, gruppägaren och alla andra användare på systemet. För dina filer är du ägaren och du kan ge dig själv skrivskydd eller rättighet att både läsa och skriva. Ställ in en fil att vara skrivskyddad om du inte vill råka ändra den av misstag.</p>
+
+    <p>Varje användare på din dator tillhör en grupp. På hemdatorer är det vanligt att varje användare har en egen grupp och grupprättigheter används sällan. I företagsmiljöer används grupper ibland för avdelningar eller projekt. Förutom att ha en ägare tillhör varje fil en grupp. Du kan ställa in filens grupp och kontrollera rättigheterna för alla användare i den gruppen. Du kan bara ställa in filens grupp till att vara en grupp som du tillhör.</p>
+
+    <p>Du kan också ange rättigheter för andra användare än ägaren och användarna i filens grupp.</p>
+
+    <p>Om filen är ett program, till exempel ett skript, måste du markera <gui>Tillåt körning av filen som ett program</gui> för att köra det. Även med det här alternativet markerat kan filhanteraren fortfarande öppna filen i ett program eller fråga dig hur du vill göra. Se <link xref="nautilus-behavior#executable"/> för vidare information.</p>
+  </section>
+
+  <section id="folders">
+    <title>Mappar</title>
+    <p>Du kan ställa in rättigheter på mappar för ägaren, gruppen och andra användare. Se detaljerna kring filrättigheter ovan för en förklaring av ägare, grupp och andra användare.</p>
+    <p>Rättigheterna som kan tilldelas för en mapp skiljer sig från de du kan tilldela för en fil.</p>
+    <terms>
+      <item>
+        <title><gui itst:context="permission">Ingen</gui></title>
+        <p>Användaren kommer inte ens kunna se vilka filer som finns i mappen.</p>
+      </item>
+      <item>
+        <title><gui>Lista endast filer</gui></title>
+        <p>Användarna kan se vilka filer som finns i mappen, men kommer inte att kunna öppna, skapa eller ta bort filer.</p>
+      </item>
+      <item>
+        <title><gui>Komma åt filer</gui></title>
+        <p>Användaren kan bara öppna filer i mappen (givet att de har rättigheter att göra så för den specifika filen), men kommer inte att kunna skapa nya filer eller ta bort filer.</p>
+      </item>
+      <item>
+        <title><gui>Skapa och ta bort filer</gui></title>
+        <p>Användaren kommer att ha fullständig tillgång till mappen, inklusive att öppna, skapa och ta bort filer.</p>
+      </item>
+    </terms>
+
+    <p>Du kan också snabbt ställa in filrättigheterna för alla filer i en mapp genom att klicka på <gui>Ändra rättigheter på berörda filer</gui>. Använd rullgardinsmenyn för att justera rättigheterna för de ingående filerna eller mapparna och klicka på <gui>Ändra</gui>. Rättigheterna gäller för filer och mappar i undermappar också, till vilket djup som helst.</p>
+  </section>
+
+</page>

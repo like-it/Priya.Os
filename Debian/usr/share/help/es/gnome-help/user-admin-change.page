@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-admin-change" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+    <link type="seealso" xref="user-admin-explain"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Puede permitir a los usuarios hacer cambios en el sistema dándoles privilegios de administrador.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Cambiar quién tiene privilegios de administrador</title>
+
+  <p>Los privilegios de administrador son una manera de decidir quién puede hacer cambios a ciertas partes importantes del sistema. Puede cambiar qué usuarios tienen privilegios de administrador y cuáles no. Esto es una buena manera de mantener su sistema seguro y evitar posibles daños por cambios no autorizados.</p>
+
+  <p>Necesita <link xref="user-admin-change">privilegios de administrador</link> para cambiar los tipos de las cuentas.</p>
+
+  <steps>
+    <item>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Usuarios</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse en <gui>Usuarios</gui> para abrir el panel.</p>
+    </item>
+    <item>
+      <p>Pulse <gui style="button">Desbloquear</gui> en la esquina superior derecha e introduzca su contraseña cuando se le pida.</p>
+    </item>
+    <item>
+      <p>Seleccione el usuario cuyos privilegios quiere cambiar.</p>
+    </item>
+    <item>
+      <p>Pulse en la etiqueta <gui>Estándar</gui> junto a <gui>Tipo de cuenta</gui> y seleccione <gui>Administrador</gui>.</p>
+    </item>
+    <item>
+      <p>Los privilegios del usuario se cambiarán la próxima vez que inicie la sesión.</p>
+    </item>
+  </steps>
+
+  <note>
+    <p>La primera cuenta de usuario en el sistema es generalmente la que tiene privilegios de administrador. Esta es la cuenta de usuario que se creó cuando instaló el sistema por primera vez.</p>
+    <p>No es recomendable tener demasiados usuarios con privilegios de <gui>Administrador</gui> en un sistema.</p>
+  </note>
+
+</page>

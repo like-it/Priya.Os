@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-apps-open" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Lanzar aplicaciones desde la vista de <gui>Actividades</gui>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Iniciar aplicaciones</title>
+
+  <p if:test="!platform:gnome-classic">Mueva el puntero de su ratón a la esquina de <gui>Actividades</gui> en la parte superior izquierda de la pantalla para mostrar la vista de <gui xref="shell-introduction#activities">Actividades</gui>. Aquí es donde puede encontrar todas sus aplicaciones. También puede abrir la vista pulsando la tecla <link xref="keyboard-key-super">Super</link>.</p>
+  
+  <p if:test="platform:gnome-classic">Puede iniciar aplicaciones desde el <gui xref="shell-introduction#activities">Aplicaciones</gui> en la parte superior izquierda de la pantalla, o pude usar la vista de <gui>Actividades</gui> pulsando la tecla <key xref="keyboard-key-super">Super</key>.</p>
+
+  <p>Hay varias maneras de abrir una aplicación una vez que está en la vista de <gui>Actividades</gui>:</p>
+
+  <list>
+    <item>
+      <p>Comience a escribir el nombre de una aplicación; la búsqueda comenzará al instante. (Si esto no sucede, pulse en la barra de búsqueda en la parte superior de la pantalla y comience a escribir.) Si no conoce el nombre exacto de la aplicación, pruebe a escribir un término relacionado. Pulse en el icono de la aplicación para iniciarla.</p>
+    </item>
+    <item>
+      <p>Algunas aplicaciones tienen iconos en el <em>tablero</em>, la franja vertical de los iconos en el lado izquierdo de la vista de <gui>actividades</gui>. Pulse en uno de ellos para iniciar la aplicación correspondiente.</p>
+      <p>Si tiene aplicaciones que usa muy frecuentemente, puede <link xref="shell-apps-favorites">añadirlas al tablero</link>.</p>
+    </item>
+    <item>
+      <p>Pulse el botón de la rejilla en la parte inferior del tablero. Verá las aplicaciones usadas frecuentemente si la vista de <gui style="button">Frecuentes</gui> está activada. Si quiere ejecutar una aplicación nueva, pulse el botón <gui style="button">Todas</gui> en la parte inferior para ver todas las aplicaciones. Pulse sobre una aplicación para iniciarla.</p>
+    </item>
+    <item>
+      <p>Puede iniciar una aplicación en un <link xref="shell-workspaces">área de trabajo</link> independiente arrastrando el icono de la aplicación desde el tablero, y colocándolo en una de las áreas de trabajo en la parte derecha de la pantalla. La aplicación se abrirá en el área de trabajo que elija.</p>
+      <p>Puede lazar una aplicación en un área de trabajo <em>nueva</em>arrastrando su icono a un área de trabajo vacía en la parte inferior del intercambiador de áreas de trabajo, o al pequeño hueco entre dos áreas de trabajo.</p>
+    </item>
+  </list>
+
+  <note style="tip">
+    <title>Ejecutar rápidamente un comando</title>
+    <p>Otra manera de ejecutar una aplicación es pulsar <keyseq><key>Alt</key><key>F2</key></keyseq>, introduciendo el <em>nombre del comando</em> y pulsando la tecla <key>Intro</key>.</p>
+    <p>Por ejemplo, para lanzar <app>Rhythmbox</app>, pulse <keyseq><key>Alt</key><key>F2</key></keyseq> y escriba «<cmd>rhythmbox</cmd>» (sin las comillas). El nombre de la aplicación es el comando para lanzar el programa.</p>
+  </note>
+
+</page>

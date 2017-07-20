@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="hu">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="files#faq"/>
+    <link type="seealso" xref="nautilus-file-properties-basic"/>
+
+    <desc>Adja meg, ki láthatja és szerkesztheti fájljait és mappáit.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+  <title>Fájljogosultságok beállítása</title>
+
+  <p>A fájljogosultságok segítségével felügyelheti, hogy ki jelenítheti meg és szerkesztheti az Ön fájljait. Egy fájl jogosultságainak megjelenítéséhez és szerkesztéséhez kattintson rá a jobb egérgombbal, válassza a <gui>Tulajdonságok</gui> menüpontot, majd a <gui>Jogosultságok</gui> lapot.</p>
+
+  <p>A beállítható jogosultságokkal kapcsolatos részletekért lásd a <link xref="#files"/> és <link xref="#folders"/> részeket alább.</p>
+
+  <section id="files">
+    <title>Fájlok</title>
+
+    <p>Beállíthatja a fájl tulajdonosának, a fájl tulajdonoscsoportjának és a rendszer minden más felhasználójának jogosultságait. Saját fájljai esetén Ön a tulajdonos, és adhat magának csak olvasási vagy írási és olvasási jogosultságot is. Akkor tegyen egy fájlt írásvédetté, ha nem szeretné véletlenül módosítani.</p>
+
+    <p>Minden felhasználó egy csoporthoz tartozik. Otthoni számítógépek esetén gyakran minden felhasználóhoz saját csoport tartozik, és a csoportjogosultságok nincsenek használatban. Vállalati környezetben a csoportok gyakran osztályoknak vagy projekteknek felelnek meg. Azon túl, hogy a fájloknak van tulajdonosuk, egy csoporthoz is tartoznak. Beállíthatja a fájl csoportját, és az adott csoport minden felhasználójának a fájlra vonatkozó jogosultságait. A fájl csoportját csak olyan csoportra állíthatja, amelynek Ön is tagja.</p>
+
+    <p>Beállíthatja a fájl tulajdonosán és a fájl csoportjának tagjain kívüli többi felhasználó jogosultságait is.</p>
+
+    <p>Ha a fájl egy program, például parancsfájl, akkor a futtatásához be kell jelölnie a <gui>Fájl végrehajtásának engedélyezése programként</gui> négyzetet. Ha ez a lehetőség be is van jelölve, a fájlkezelő továbbra is megnyithatja a fájlt egy alkalmazásban, vagy rákérdezhet a teendőre. További információkért lásd: <link xref="nautilus-behavior#executable"/>.</p>
+  </section>
+
+  <section id="folders">
+    <title>Mappák</title>
+    <p>Mappák esetén is a tulajdonos, csoport és egyéb felhasználók jogosultságait állíthatja be. A tulajdonosok, csoportok és egyéb felhasználók leírását lásd fent a fájljogosultságok részben.</p>
+    <p>A mappák esetén beállítható jogosultságok eltérnek a fájlok esetén beállíthatóktól.</p>
+    <terms>
+      <item>
+        <title><gui itst:context="permission">Nincs</gui></title>
+        <p>A felhasználó a mappában lévő fájlokat sem láthatja.</p>
+      </item>
+      <item>
+        <title><gui>Csak fájlok listázása</gui></title>
+        <p>A felhasználó láthatja a mappában lévő fájlokat, de nem nyithat meg, hozhat létre vagy törölhet fájlokat.</p>
+      </item>
+      <item>
+        <title><gui>Fájlok elérése</gui></title>
+        <p>A felhasználó megnyithatja a mappában lévő fájlokat (amennyiben van erre jogosultsága az adott fájl esetén), de nem hozhat létre vagy törölhet fájlokat.</p>
+      </item>
+      <item>
+        <title><gui>Fájlok létrehozása és törlése</gui></title>
+        <p>A felhasználónak teljes hozzáférése van a mappához, beleértve a fájlok megnyitását, létrehozását és törlését.</p>
+      </item>
+    </terms>
+
+    <p>Gyorsan beállíthatja az adott mappában a fájljogosultságokat a <gui>Jogosultságok alkalmazása a tartalmazott fájlokra</gui> gomb megnyomásával. A legördülő listák használatával állítsa be a tartalmazott fájlok vagy mappák jogosultságainak módosításához, és nyomja meg a <gui>Módosítás</gui> gombot. A jogosultságok az almappákban lévő fájlokra és mappákra is alkalmazásra kerülnek, a mappaszerkezet teljes mélységében.</p>
+  </section>
+
+</page>

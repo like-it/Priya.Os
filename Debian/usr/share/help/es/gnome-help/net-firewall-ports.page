@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Para que un programa pueda usar un puerto de red, a través de su cortafuegos, debe especificar el puerto de red correcto para activar y desactivar el acceso a la red.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Puertos de red usados frecuentemente</title>
+
+  <p>Esta es una lista de los puertos usados habitualmente por aplicaciones que proporcionan servicios de red, como compartición de archivos o visualización de escritorios remotos. Puede cambiar el cortafuegos de su sistema para que <link xref="net-firewall-on-off">permita o deniegue el acceso</link> a estas aplicaciones. Hay cientos de puertos en uso, por lo que la tabla no está completa.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>Puerto</p>
+	</td>
+	<td>
+	  <p>Nombre</p>
+	</td>
+	<td>
+	  <p>Descripción</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>Permite a los sistemas encontrarse unos a otros y describir su oferta de servicios, sin tener que configurar los detalles manualmente.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>Imprimir</p>
+	</td>
+	<td>
+	  <p>Le permite enviar trabajos de impresión a una impresora de red.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>Imprimir</p>
+	</td>
+	<td>
+	  <p>Le permite compartir su impresora con otras personas en la red.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>Presencia</p>
+	</td>
+	<td>
+	  <p>Le permite anunciar su estado en mensajería instantánea a otras personas en su red, como por ejemplo «en línea» u «ocupado».</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>Escritorio remoto</p>
+	</td>
+	<td>
+	  <p>Le permite compartir su escritorio para que otras personas puedan verlo o proporcionarle asistencia remota.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>Compartir música (DAAP)</p>
+	</td>
+	<td>
+	  <p>Le permite compartir su colección de música con otros en su red.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="gu">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu દસ્તાવેજીકરણ વિકિ માટે ફાળકો</name>
+    </credit>
+    <credit type="author">
+      <name>GNOME દસ્તાવેજીકરણ પ્રોજેક્ટ</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>છતાંપણ તમારું વાયરલેસ ઍડપ્ટર જોડાયેલ છે, તે કમ્પ્યૂટર દ્દારા ઓળખાયુ નથી.</desc>
+  </info>
+
+  <title>વાયરલેસ જોડાણ મુશ્કેલીનિવારક</title>
+  <subtitle>ચકાસો કે વાયરલેસ ઍડપ્ટર એ ઓળખાયુ હતુ</subtitle>
+
+  <p>છતાંપણ વાયરલેસ ઍડપ્ટર એ કમ્પ્યૂટર સાથે જોડાયેલ છે, તે કમ્પ્યૂટર દ્દારા નેટવર્ક ઉપકરણ તરીકે ઓળખાઇ શકતુ નથી. આ તબક્કામાં, તમે ચકાસશો ક્યાંતો ઉપકરણ યોગ્ય ઓળખાયેલ હતુ.</p>
+
+  <steps>
+    <item>
+      <p>ટર્મિનલ વિન્ડોને ખોલો, <cmd>lshw -C network</cmd> ને ટાઇપ કરો અને <key>Enter</key> ને દબાવો. જો આ ભૂલ સંદેશો આપે તો, તમારે તમારાં કમ્પ્યૂટર પર <app>lshw</app> કાર્યક્રમને સ્થાપિત કરવાની જરૂર પડી શકે છે.</p>
+    </item>
+    <item>
+      <p>જાણકારી મારફતે જુઓ કે જે દેખાય છે અને <em>વાયરલેસ ઇન્ટરફેસ</em> ને શોધો. જો તમારું વાયરલેસ ઍડપ્ટર યોગ્ય રીતે શોધેલ ન હોય તો, તમારે એનાં જેવુ જ જોવુ જોઇએ (પરંતુ તે તેનાં જેવુ નથી):</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>જો વાયરલેસ ઉપકરણ યાદી થયેલ ન હોય તો, <link xref="net-wireless-troubleshooting-device-drivers">ઉપકરણ ડ્રાઇવર પગલાં</link> ને ચાલુ રાખો.</p>
+      <p>જો વાયરલેસ ઉપકરણ એ યાદી થયેલ <em>ના</em> હોય તો, આગળનો તબક્કા તમે ઉપકરણનાં પ્રકાર પર આધાર રાખશે કે જે તમે વાપરો. નીચે વિભાગનો સંદર્ભ લો કે જે વાયરલેસ ઍડપ્ટરનાં પ્રકારને સંબંધિત છે કે જે તમારાં કમ્પ્યૂટર પાસે (<link xref="#pci">આંતરિક PCI</link>, <link xref="#usb">USB</link>, or <link xref="#pcmcia">PCMCIA</link>) છે.</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>PCI (આંતરિક) વાયરલેસ ઍડપ્ટર</title>
+
+  <p>ઇન્ટરનેટ PCI ઍડપ્ટર મોટાભાગની સામાન્ય છે, અને ભૂતકાળનાં અમુક વર્ષોમાં બનેલ મોટાભાગનાં લેપટોપમાં મળ્યુ હતુ. ચકાસવા માટે જો તમારું PCI વાયરલેસ ઍડપ્ટર ઓળખાયેલ હતુ:</p>
+
+  <steps>
+    <item>
+      <p>ટર્મિનલને ખોલો, <cmd>lspci</cmd> ટાઇપ કરો અને <key>Enter</key> દબાવો.</p>
+    </item>
+    <item>
+      <p>ઉપકરણોની યાદી મારફતે જુઓ કે જે બતાવેલ છે અને કોઇપણ શોધો કે <code>નેટવર્ક નિયંત્રણ</code> અથવા <code>ઇથરનેટ નિયંત્રણ</code> તરીકે ચિહ્નિત થયેલ છે. ઘણાં ઉપકરણો એ આ રીતે ચિહ્નિત થઇ શકે છે; તમારાં વાયરલેસ ઍડપ્ટરથી સંકળાયેલ એક શબ્દો જેવાં કે <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> અથવા <code>802.11</code> જેવું લાગી શકે છે. કઇ નોંધણી આનાં જેવી લાગે છે તેનું ઉદાહરણ અહિંયા છે:</p>
+      <code>નેટવર્ક નિયંત્રક: Intel Corporation PRO/Wireless 3945ABG [Golan] નેટવર્ક જોડાણ</code>
+    </item>
+    <item>
+      <p>જો યાદીમાં તમને તમારું વાયરલેસ ઍડપ્ટર મળ્યુ ન હોય તો, <link xref="net-wireless-troubleshooting-device-drivers">ઉપકરણ ડ્રાઇવર તબક્કા</link> માં આગળ ધપાવો. જો તમારે તમારું વાયરલેસ ઍડપ્ટરને સંબંધિત કંઇપણ શોધ્યુ ન હોય તો, <link xref="#not-recognized">નીચે સૂચનાઓ</link> જુઓ.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>USB વાયરલેસ ઍડપ્ટર</title>
+
+  <p>વાયરલેસ ઍડપ્ટર કે જે તમારાં કમ્પ્યૂટર પર USB પોર્ટમાં પ્લગ કરવું ઓછુ સામાન્ય છે. તેઓને સીધુ USB પોર્ટમાં પ્લગ કરી શકાય છે, અથવા USB કૅબલ દ્દારા જોડાયેલ છે. 3G/મોબાઇલ બ્રોડબેન્ડ ઍડપ્ટર એ વાયરલેસ (wifi) ઍડપ્ટરનાં જેવુ લાગી શકે છે, તેથી જો તમે વિચારો કે તમારી પાસે USB વાયરલેસ ઍડપ્ટર હોય તો, બે વાર ચકાસો તે વાસ્તવિક રીતે 3G ઍડપ્ટર નથી. ચકાસવા માટે જો તમારું USB વાયરલેસ ઍડપ્ટર એ ઓળખાયેલ ન હોય તો:</p>
+
+  <steps>
+    <item>
+      <p>ટર્મિનલને ખોલો, <cmd>lsusb</cmd> ટાઇપ કરો અને <key>Enter</key> ને દબાવો.</p>
+    </item>
+    <item>
+      <p>ઉપકરણોની યાદી મારફતે જુઓ કે જે બતાવેલ છે અને કોઇપણ શોધો કે વાયરલેસ અથવા નેટવર્ક ઉપકરણનો સંદર્ભ લે છે તેવું લાગે છે. તમારાં વાયરલેસ ઍડપ્ટરથી સંકળાયેલ એક જેવાં કે <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> અથવા <code>802.11</code> જેવું લાગી શકે છે. કઇ નોંધણી આનાં જેવી લાગે છે તેનું ઉદાહરણ અહિંયા છે:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>જો યાદીમાં તમને તમારું વાયરલેસ ઍડપ્ટર મળ્યુ ન હોય તો, <link xref="net-wireless-troubleshooting-device-drivers">ઉપકરણ ડ્રાઇવર તબક્કા</link> માં આગળ ધપાવો. જો તમારે તમારું વાયરલેસ ઍડપ્ટરને સંબંધિત કંઇપણ શોધ્યુ ન હોય તો, <link xref="#not-recognized">નીચે સૂચનાઓ</link> જુઓ.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>PCMCIA ઉપકરણને ચકાસી રહ્યા છે</title>
+
+  <p>PCMCIA વાયરલેસ ઍડપ્ટર એ ખાસ કરીને લંબચોરસ કાર્ડ છે કે જે તમારાં લેપટોપની બાજુમાં સ્લોટ છે. તેઓ સામાન્ય રીતે જૂનાં કમ્પ્યૂટરમાં મળ્યા છે. ચકાસવા માટે જો તમારું PCMCIA ઍડપ્ટર ઓળખાયેલ હતુ:</p>
+
+  <steps>
+    <item>
+      <p>વાયરલેસ ઍડપ્ટર પ્લગ થયા <em>વગર</em> તમારાં કમ્પ્યૂટરને શરૂ કરો.</p>
+    </item>
+    <item>
+      <p>ટર્મિનલને ખોલો અને નીચેનાંનુ ટાઇપ કરો, પછી <key>Enter</key> ને દબાવો:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>આ તમારાં કમ્પ્યૂટરનાં હાર્ડવેરને સંબંધિત સંદેશાની યાદીને દર્શાવશે, અને આપમેળે સુધારશે જો તમારાં હાર્ડવેર ફેરફારો સાથે કંઇ પણ કરે તો.</p>
+    </item>
+    <item>
+      <p>PCMCIA સ્લોટમાં તમારાં વાયરલેસ ઍડપ્ટરને દાખલ કરો અને જુઓ ટર્મિનલ વિન્ડોમાં શું ફેરફાર થાય છે તે જુઓ. ફેરફારો એ તમારાં વાયરલેસ ઍડપ્ટર વિશે જાણકારીને સમાવવી જોઇએ. તેઓ મારફતે જુઓ અને જુઓ જો તમે તેને ઓળખી શકો.</p>
+    </item>
+    <item>
+      <p>ટર્મિનલમાં આદેશને ચાલવાનું બંધ કરવા માટે, <keyseq><key>Ctrl</key><key>C</key></keyseq> ને દબાવો. તમે તેને પૂર્ણ કર્યા પછી, તમે ટર્મિનલને બંધ કરી શકો છો જો તમને ગમે તો.</p>
+    </item>
+    <item>
+      <p>જો તમે તમારાં વાયરલેસ ઍડપ્ટર વિશે કોઇપણ જાણકારી શોધી ન હોય તો, <link xref="net-wireless-troubleshooting-device-drivers">ઉપકરણ ડ્રાઇવર તબક્કા</link> માં આગળ વધો. જો તમે તમારા વાયરલેસ ઍડપ્ટરને સંબંધિત કંઇપણ ન શોધ્યુ હોય તો, <link xref="#not-recognized">નીચે સૂચનાઓ</link> ને જુઓ.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>વાયરલેસ ઍડપ્ટરને ઓળખાયુ ન હતુ</title>
+
+  <p>If your wireless adapter was not recognized, it might not be working
+  properly or the correct drivers may not be installed for it. How you check to
+  see if there are any drivers you can install will depend on which Linux
+  distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
+
+  <p>ખાસ મદદ મેળવવા માટે, તમારી વિતરણની વેબસાઇટ પર આધાર વિકલ્પોને જુઓ. આ મેઇલીંગ યાદી અને વેબ વાર્તાલાપોને સમાવે છે જ્યાં તમે તમારા વાયરલેસ ઍડપ્ટર વિશે પૂછી શકો છો, ઉદાહરણ તરીકે.</p>
+
+</section>
+
+</page>

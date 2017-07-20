@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-desktop" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.14" date="2015-01-25" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Džim Kembel</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Dopustite drugima da pregledaju i posreduju sa vašom radnom površi koristeći VNC.</desc>
+  </info>
+
+  <title>Delite radnu površ</title>
+
+  <p>Možete da dopustite drugima da pregledaju i upravljaju vašom radnom površinom sa drugog računara sa programom za pregled radne površi. Podesite <gui>Deljenje ekrana</gui> da dozvolite drugima da pristupe vašoj radnoj površi i da podese postavke bezbednosti.</p>
+
+  <note style="info package">
+    <p>Morate imati instalran paket <app>Vino</app> da bi <gui>Deljenje ekrana</gui> bilo vidljivo.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:vino" style="button">Instalirajte Vino</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Deljenje</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknite na <gui>Deljenje</gui> da otvorite panel.</p>
+    </item>
+    <item>
+      <p>Ako je <gui>Deljenje</gui> <gui>ISKLJ.</gui>, prebacite ga na <gui>UKLJ.</gui>.</p>
+
+      <note style="info"><p>Ako vam tekst ispod <gui>naziva računara</gui> dopušta da ga uređujete, možete da <link xref="sharing-displayname">izmenite</link> naziv pod kojim se vaš računar prikazuje na mreži.</p></note>
+    </item>
+    <item>
+      <p>Izaberite <gui>Deljenje ekrana</gui>.</p>
+    </item>
+    <item>
+      <p>Da pustite druge da pregledaju vašu radnu površ, prebacite <gui>Deljenje ekrana</gui> na <gui>UKLJ.</gui>. Ovo znači da će neko drugi biti u mogućnosti da pokuša da se poveže na vaš računar i da pregleda šta se nalazi na vašem ekranu.</p>
+    </item>
+    <item>
+      <p>Da pustite druge da posreduju sa vašom radnom površi, prebacite <gui>Omogući udaljeno upravljanje</gui> na <gui>UKLJ.</gui>. Ovo može da omogući drugoj osobi da pomera vašeg miša, pokreće programe, i razgleda datoteke na vašem računaru, u zavisnosti od bezbednosnih podešavanja koja trenutno koristite.</p>
+
+      <note style="tip">
+        <p>Ova mogućnost je unapred uključena kada je <gui>Deljenje ekrana</gui> na <gui>UKLJ.</gui>.</p>
+      </note>
+
+    </item>
+  </steps>
+
+  <section id="security">
+  <title>Bezbednost</title>
+
+  <p>Vrlo je važno da razmotrite čitav obim svake bezbednosne opcije pre nego li je izmenite.</p>
+
+  <terms>
+    <item>
+      <title>Nove veze moraju da zatraže pristup</title>
+      <p>Ako želite da budete u mogućnosti da odlučite da li ćete dozvoliti nekome da pristupi vašoj radnoj površi, uključite <gui>Nove veze moraju da zatraže pristup</gui>. Ako isključite ovu opciju, nećete biti upitani da li želite da dozvolite nekome da se poveže na vaš računar.</p>
+      <note style="tip">
+        <p>Ova opcija je unapred izabrana.</p>
+      </note>
+    </item>
+    <item>
+      <title>Zahtevajte lozinku</title>
+      <p>Da zahtevate da drugi ljudi koriste lozinku prilikom povezivanja na vašu radnu površ, uključite <gui>Zahtevaj lozinku</gui>. Ako ne koristite ovu opciju, svako može da pokuša da vidi vašu radnu površ.</p>
+      <note style="tip">
+        <p>Ova opcija je unapred isključena, ali biste trebali da je uključite i da postavite bezbednosnu lozinku.</p>
+      </note>
+    </item>
+<!-- TODO: check whether this option exists.
+    <item>
+      <title>Allow access to your desktop over the Internet</title>
+      <p>If your router supports UPnP Internet Gateway Device Protocol and it
+      is enabled, you can allow other people who are not on your local network
+      to view your desktop. To allow this, select <gui>Automatically configure
+      UPnP router to open and forward ports</gui>. Alternatively, you can
+      configure your router manually.</p>
+      <note style="tip">
+        <p>This option is disabled by default.</p>
+      </note>
+    </item>
+-->
+  </terms>
+  </section>
+
+  <section id="networks">
+  <title>Mreže</title>
+
+  <p>Odeljak <gui>Mreže</gui> navodi mreže na koje ste trenutno povezani. Koristite prekidač <gui>UKLJ. | ISKLJ.</gui> pored savke od njih da izaberete na kojima vaša radna površ može biti deljena.</p>
+  </section>
+
+  <section id="notification-icon">
+  <title>Zaustavite deljenje radne površi</title>
+
+  <p>Možete da prekinete vezu sa nekim ko pregleda vašu radnu površ koristeći <gui>ikonicu obaveštenja</gui> u fioci poruka. Da to uradite:</p>
+    <steps>
+      <item><p>Otvorite fioku poruka tako što ćete pritisnuti <keyseq><key>Super</key><key>M</key></keyseq> ili pomerite pokazivač miša na samo dno vašeg ekrana.</p></item>
+      <item><p>Pritisnite na ikonicu <gui>radne površi</gui> u <gui>fioci poruka</gui>. Ovo će otvoriti panel <app>deljenja</app>.</p>
+      </item>
+      <item><p>Izaberite <gui>Deljenje ekrana</gui>.</p></item>
+      <item><p>Prebacite klizač <gui>deljenja ekrana</gui> na <gui>Isklj.</gui>.</p></item>
+    </steps>
+
+  </section>
+
+
+</page>

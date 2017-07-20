@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-initial-check" xml:lang="hu">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-hardware-info"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Az Ubuntu dokumentációs wiki közreműködői</name>
+    </credit>
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Győződjön meg róla, hogy az egyszerű hálózati beállítások helyesek, és készüljön fel a következő néhány hibaelhárítási lépésre.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Vezeték nélküli hálózatok hibáinak elhárítása</title>
+  <subtitle>Kezdésként ellenőrizze a kapcsolatot</subtitle>
+
+  <p>Ebben a lépésben a vezeték nélküli hálózati kapcsolat néhány alapvető adatát kell ellenőrizni. Ezzel kizárható, hogy a hálózati problémát nem valami triviális gond okozza, például nincs bekapcsolva a vezeték nélküli kapcsolat, és a következő néhány hibaelhárítási lépésre is felkészíti.</p>
+
+  <steps>
+    <item>
+      <p>Győződjön meg róla, hogy a laptopja nem csatlakozik egy <em>vezetékes</em> internetkapcsolathoz.</p>
+    </item>
+    <item>
+      <p>Ha külső vezeték nélküli csatolóval (például USB csatoló vagy a laptopba csúsztatható PCMCIA-kártya) rendelkezik, akkor győződjön meg róla, hogy az stabilan, a megfelelő csatlakozóba van behelyezve.</p>
+    </item>
+    <item>
+      <p>Ha a vezeték nélküli kártya a számítógép <em>belsejében</em> található, akkor győződjön meg róla, hogy a vezeték nélküli csatoló kapcsolója (ha van ilyen) be van kapcsolva. A laptopok vezeték nélküli kapcsolóit gyakran egy billentyűkombináció megnyomásával lehet aktiválni.</p>
+    </item>
+    <item>
+      <p>Kattintson a rendszerállapot-területre a felső sávon, és válassza a <gui>Wi-Fi</gui> lehetőséget, majd a <gui>Wi-Fi beállítások</gui> pontot. Győződjön meg róla, hogy a <gui>Wi-Fi</gui> menüpont <gui>BE</gui> van kapcsolva. Ellenőrizze azt is, hogy a <link xref="net-wireless-airplane">repülő mód</link> <em>nincs-e</em> bekapcsolva.</p>
+    </item>
+    <item>
+      <p>Nyisson meg egy Terminált, írja be az <cmd>nmcli device</cmd> parancsot, és nyomja meg az <key>Enter</key> billentyűt.</p>
+      <p>Ez információkat jelenít meg a hálózati csatolókról és a kapcsolat állapotáról. Nézze meg, hogy a megjelenő információkban van-e a vezeték nélküli csatolóval kapcsolatos elem. Ha az állapot <code>connected</code>, akkor a csatoló működik, és kapcsolódott a vezeték nélküli routerhez.</p>
+    </item>
+  </steps>
+
+  <p>Ha csatlakozott a vezeték nélküli routeréhez, de így sem éri el az internetet, akkor vagy a router nincs beállítva megfelelően, vagy az internetszolgáltatónál merültek fel ideiglenes problémák. Nézze meg a router és a szolgáltató beállítási útmutatóit, és ellenőrizze a beállítások helyességét, vagy keresse meg az internetszolgáltató terméktámogatását.</p>
+
+  <p>Ha az <cmd>nmcli device</cmd> által megjelenített információk nem jelezték, hogy csatlakozva lenne a hálózatra, akkor kattintson a <gui>Következő</gui> hivatkozásra a hibaelhárítási útmutató következő részére ugráshoz.</p>
+
+</page>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-capacity" xml:lang="fr">
+  <info>
+    <link type="guide" xref="disk"/>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.3" date="2012-06-15" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Se servir de l'<gui>Analyseur d'utilisation des disques</gui> ou du <gui>Moniteur système</gui> pour vérifier l'espace et la capacité.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Vérification de l'espace disque libre</title>
+
+  <p>Vous pouvez vérifier l'espace libre restant sur le disque avec l'<app>analyseur d'utilisation des disques</app> ou le <app>moniteur système</app>.</p>
+
+<section id="disk-usage-analyzer">
+<title>Vérification avec l'analyseur d'utilisation des disques</title>
+
+  <p>Pour vérifier l'espace libre et la capacité du disque en utilisant l'<app>analyseur d'utilisation des disques</app> :</p>
+
+  <list>
+    <item>
+      <p>Ouvrez <app>Analyseur d'utilisation des disques</app> dans la vue d'ensemble des <gui>Activités</gui>. La fenêtre affiche une liste des emplacements des fichiers avec l'utilisation et la capacité de chacun d'eux.</p>
+    </item>
+    <item>
+      <p>Cliquez sur un des éléments de la liste pour afficher les informations détaillées sur son utilisation. Cliquez sur le bouton menu puis sur <gui>Analyser le dossier…</gui> ou sur <gui>Analyser le dossier distant…</gui> pour analyser des emplacements différents.</p>
+    </item>
+  </list>
+  <p>Les informations affichées sont <gui>Dossier</gui>, <gui>Taille</gui>, <gui>Contenu</gui> et <gui>Modifié le</gui> pour la dernière fois. Pour plus de détails, consultez <link href="help:baobab"><app>Analyseur d'utilisation des disques</app></link>.</p>
+
+</section>
+
+<section id="system-monitor">
+
+<title>Vérification avec le moniteur système</title>
+
+  <p>Pour vérifier l'espace libre et la capacité du disque avec le <app>moniteur système</app> :</p>
+
+<steps>
+ <item>
+  <p>ouvrez l'application <app>Moniteur système</app> en utilisant la vue d'ensemble des <gui>Activités</gui>,</p>
+ </item>
+ <item>
+  <p>cliquez sur l'onglet <gui>Systèmes de fichiers</gui> pour afficher les partitions du système et l'utilisation de l'espace disque. Les informations affichées concernent l'espace <gui>Total</gui>, <gui>Libre</gui>, <gui>Disponible</gui> et <gui>Utilisé</gui>.</p>
+ </item>
+</steps>
+</section>
+
+<section id="disk-full">
+
+<title>En cas de disque trop plein</title>
+
+  <p>Si le disque est trop plein, il faut :</p>
+
+ <list>
+  <item>
+   <p>effacer les fichiers qui ne sont pas importants ou que vous n'utiliserez plus,</p>
+  </item>
+  <item>
+   <p>faire une <link xref="backup-why">sauvegarde</link> des fichiers importants que vous ne prévoyez pas d'utiliser avant un bon moment et les effacer du disque dur.</p>
+  </item>
+ </list>
+</section>
+
+</page>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="strategy" xml:lang="sv">
+	<info>
+		<link type="guide" xref="index#tips"/>
+		<include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+		<desc>Strategier för att spela Hitori.</desc>
+	
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Erik Sköldås</mal:name>
+      <mal:email>erik.skoldas@tele2.se</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+	<title>Spelstrategier</title>
+
+	<p>Hitori är ganska likt spelet Sudoku, genom att det krävs logisk slutledning för att räkna ut vilka celler att tona ner. En strategi är att använda <key>Skift</key>-klickning för att markera alla de upprepade siffrorna i varje <em>kolumn</em>, och sedan använda <key>Ctrl</key>-klickning för att markera alla de upprepade siffrorna i varje <em>rad</em>.</p>
+	<p>När detta är gjort för hela brädet, är de celler som har blivit markerade i båda riktningarna goda kandidater för att tonas ned, men inte alltid. När man tonar ned en cell, avmarkeras de andra cellerna med samma nummer i samma rad och kolumn som den cellen, vilket är ett bra sätt att hålla reda på de celler som fortfarande bryter mot <link xref="game">regel 1 i Hitori</link>.</p>
+	<p>Ha alltid i beaktande att regel 2 i Hitori innebär att två angränsande celler inte båda kan tonas ned. <app>Hitori</app> kommer markera de cellerna som bryter mot regel 2 med rött. På samma sätt kommer grupper av celler som bryter mot regel 3 genom att de separerar en eller flera icke-nedtonade celler från andra icke-nedtonade celler att markeras i rött.</p>
+
+	<p>Om du fastnar på något ställe, välj <guiseq><gui style="menu">Spel</gui><gui style="menuitem">Tips</gui></guiseq> för att <app>Hitori</app> ska flagga en cell som ska tonas ned eller ta bort en nedtoning för att komma närmare en lösning.</p>
+</page>

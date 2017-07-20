@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>Barvni prostor je definiran razpon barv.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Kaj je barvni prostor?</title>
+
+  <p>Barvni prostor je definiran razpon barv. Dobro znani barvni prostori so sRGB, AdobeRGB in ProPhotoRGB.</p>
+
+  <p>Človeški vidni sistem ni enostaven senzor RGB, vendar lahko ocenimo kako se oko odzove z diagramom kromatičnosti CIE 1931, ki prikazuje človeški vidni odziv v obliki konjske podkve. Vidite lahko, da človeški vid zazna več sence zelene kot modre ali rdeče. S trikromatskim barvnim prostorom kot je RGB predstavimo barve na računalniku s tremi vrednostmi, kar omeji kodiranje na <em>trikotnik</em> barv.</p>
+
+  <note>
+    <p>Uporaba modelov kot je diagram kromatičnosti CIE 1931 je ogromna poenostavitev človeškega vidnega sistema in pravi gamuti so izraženi kot 3D trup namesto 2D projekcije. 2D projekcija 3D oblike je lahko včasih zavajajoča, zato za ogled 3D oblike uporabite program <code>gcm-viewer</code>.</p>
+  </note>
+
+  <figure>
+    <desc>sRGB, AdobeRGB in ProPhotoRGB predstavljeni z belimi trikotniki</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>Barvi prostor sRGB je najmanjši prostor, ki lahko kodira najmanj barv. Je ocena 10 let starega zaslona CRT, zato lahko večina modernih zaslonov z lahko prikaže več barv. sRGB je <em>najmanjši skupni standard</em>, ki se uporablja v veliko primerih (vključno z Internetom).</p>
+  <p>AbodeRGB se pogosto uporablja kot <em>urejevalni prostor</em>. Kodira lahko več barv kot sRGB. To pomeni, da lahko barve na fotografiji prilagodite brez skrbi o odstranitvi najbolj živih barv ali črnine.</p>
+  <p>ProPhoto je največji razpoložljivi prostor, ki se pogosto uporablja za arhiviranje dokumentov. Kodira lahko skoraj celoten obseg barv, ki jih lahko zazna človeško oko in tudi barve, ki jih človeško oko ne more zaznati.</p>
+
+  <p>Zakaj se ProPhoto ne uporablja za povsod, če je najboljši? Odgovor je <em>kvantizacija</em>. Če imate samo 8 bitov (256 stopenj) za kodiranje vsakega kanala, potem ima večji obseg večje korake med posameznimi vrednostmi.</p>
+  <p>Večji koraki pomenijo večjo napako med zajeto in shranjeno barvo, kar je za nekatere barve velika težava. Za nekatere ključne barve kot so kožne barve bodo že majhne napake opazne.</p>
+  <p>Uporaba 16 bitne slike bo zagotovila več korakov in veliko manjšo napako zaradi kvantizacije slike, vendar to podvoji velikost vsake slikovne datoteke. Večina današnje vsebine vsebuje 8 bitov za točko.</p>
+  <p>Upravljenje barv je opravilo pretvarjanja iz enega barvnega prostora v drugega, kjer je barvni prostor lahko splošno določen kot je sRGB ali osebni profil kot je profil vašega zaslona ali tiskalnika.</p>
+
+</page>

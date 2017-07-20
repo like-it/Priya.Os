@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-receiving-options-pop" xml:lang="hu">
+
+  <info>
+    <desc>Fogadás beállításai POP fiókokhoz.</desc>
+
+    <link type="guide" xref="mail-receiving-options#common-server-types"/>
+    <link type="guide" xref="mail-account-manage-pop#receiving-email"/>
+    <revision pkgversion="3.1.5" version="0.5" date="2013-06-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Barbara Tobias</name>
+      <email its:translate="no">barbtobias09@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mainwindow-starting.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>POP fogadási beállításai</title>
+
+<section id="receiving-email-pop">
+<title>Levelek fogadása</title>
+
+<p>A <gui>Levelek fogadása</gui> oldalon (<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Postafiókok</gui><gui style="button">Szerkesztés</gui><gui>Levelek fogadása</gui></guiseq>):</p>
+
+<list>
+<item><p>Adja meg az e-mail kiszolgáló nevét a <gui>Kiszolgáló</gui> mezőben, és adja meg a kiszolgálón használt felhasználónevét.</p></item>
+<item><p>Válassza ki, hogy használni kíván-e biztonságos kapcsolatot (SSL vagy TLS).</p><p>Engedélyezze ezt a beállítást, ha a kiszolgáló támogatja.</p>
+<note style="tip"><p>Az ingyenes webes levelezők általában megadják, hogy ezen beállítások közül melyek használhatók. Ha céges környezetben van, akkor a rendszergazdától kaphat további információkat.</p></note></item>
+<item><p>Válassza ki a hitelesítés típusát a Hitelesítés listából, vagy nyomja meg a <gui style="button">Támogatott típusok lekérdezése</gui> gombot, és az <app>Evolution</app> meghatározza a támogatott hitelesítési mechanizmusokat. Egyes kiszolgálók nem teszik közzé az általuk támogatott hitelesítési mechanizmusokat, így a gomb megnyomása nem garantálja, hogy az elérhető mechanizmusok ténylegesen működni fognak.</p></item>
+<item><p>Döntse el, hogy az <app>Evolution</app> megjegyezze-e a jelszavát.</p></item>
+</list>
+
+</section>
+
+<section id="receiving-options-pop">
+<title>Fogadás beállításai</title>
+
+<p>A <gui>Fogadás beállításai</gui> oldalon (<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Postafiókok</gui><gui style="button">Szerkesztés</gui><gui>Fogadás beállításai</gui></guiseq>):</p>
+
+<list>
+<item><p>Ha azt szeretné, hogy az <app>Evolution</app> automatikusan keresse az új üzeneteket, akkor jelölje be az <gui>Új levelek automatikus lekérdezése … percenként</gui> négyzetet, és adja meg a gyakoriságot percben.</p></item>
+<item><p>Ha szeretné, hogy a levelek a kiszolgálón maradjanak egy ideig, akkor jelölje be az <gui>Üzenetek megtartása a kiszolgálón</gui> és a <gui>Törlés ... nap után</gui> jelölőnégyzetet, és válassza ki a napok számát, amíg az üzeneteknek a kiszolgálón kell maradniuk.</p></item>
+<item><p>A <gui>Minden POP3-kiterjesztés tiltása</gui> beállítás csak akkor hasznos, ha régi vagy rosszul beállított levélkiszolgálót használ. A <link href="https://tools.ietf.org/html/rfc2449">POP3 kiterjesztések</link> bővített funkciókat kínálnak, de csak néhány kiszolgáló támogatja ezeket. Amennyiben problémát okoz a levelek fogadása, ezen beállítás engedélyezése segíthet.</p></item>
+</list>
+
+</section>
+
+</page>

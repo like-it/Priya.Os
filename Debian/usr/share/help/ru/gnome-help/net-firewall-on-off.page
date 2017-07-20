@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Управление тем, какие программы могут получать доступ к сети. Это помогает обеспечить безопасность компьютера.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Управление доступом к сети с помощью межсетевого экрана</title>
+
+  <p>Ваша система должна быть оснащена <em>межсетевым экраном</em>, который позволяет защищать программы от доступа посторонних людей через Интернет или локальную сеть. Это помогает сделать компьютер более защищённым.</p>
+
+  <p>Многие приложения используют подключение к сети. Например, вы можете предоставить общий доступ к своим файлам в сети или позволить кому-либо удалённо просматривать ваш рабочий стол. В зависимости от настроек компьютера, возможно, вам понадобится настроить межсетевой экран, чтобы обеспечить нормальную работу этих сетевых сервисов.</p>
+
+  <p>Каждая предоставляющая сетевые услуги программа использует определённый <em>сетевой порт</em>. Чтобы разрешить другим компьютерам в сети доступ к услуге, может понадобиться «открыть» этот порт в межсетевом экране:</p>
+
+
+  <steps>
+    <item>
+      <p>Зайдите в <gui>Обзор</gui> в верхнем левом углу экрана и запустите приложение для работы с межсетевым экраном. Если его там нет, нужно будет установить одно из таких приложений (например, Firestarter или GUFW).</p>
+    </item>
+    <item>
+      <p>Откройте или закройте порт сетевой службы, в зависимости от того, хотите ли вы, чтобы другие люди имели к ней доступ. Доступность какого порта нужно изменить, будет <link xref="net-firewall-ports">зависеть от службы</link>.</p>
+    </item>
+    <item>
+      <p>Сохраните или примените изменения, следуя дополнительным инструкциям, предоставленным программой для управления межсетевым экраном.</p>
+    </item>
+  </steps>
+
+</page>

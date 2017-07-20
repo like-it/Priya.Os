@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="problem-permissions" xml:lang="da">
+  <info>
+    <link type="guide" xref="index#problems"/>
+    <revision pkgversion="3.12" date="2014-01-25" status="review"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jeg ser fejlmeddelelsen <gui>Kunne ikke skanne /… eller visse af mapperne indeholdt i</gui> ved skanning.</desc>
+
+  </info>
+
+  <title>Fejl under skanning</title>
+
+  <p>Under skanning ser du måske meddelelsen <gui>Kunne ikke skanne /… eller visse af mapperne indeholdt i</gui> øverst i vinduet <app>Diskforbrugsanalyse</app>. Denne fejl vises fordi du ikke har de nødvendige adgangsrettigheder til nogle af filerne, på grund af restriktioner på målsystemet. Filerne, du ikke har adgang til, bliver ikke brugt til at udregne <link xref="pref-view-chart">diagrammet</link>, der viser diskforbruget. Resultatet kan derfor være forkert.</p>
+
+  <p>Det er helt normalt ikke at have adgang til alle filer og mapper, så du kan ikke gøre noget ved denne fejl.</p>
+
+  <note style="info"><p><app>Diskforbrugsanalyse</app> bruger kommandoen <cmd>du</cmd> til at skabe den detaljerede visning af lagerforbruget, og har brug for læserettigheder til filer og eksekveringsrettigheder til mapper.</p>
+
+  <p>Modsat bruges kommandoen <cmd>df</cmd> til at finde filsystemets diskforbrug i hovedvinduet, hvilket afhænger af filsystemet og ikke af filrettigheder.</p></note>
+</page>

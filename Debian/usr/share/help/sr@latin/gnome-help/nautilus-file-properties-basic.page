@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tifani Antopoloski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Šon Mek Kens</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Dejvid King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Pogledajte osnovne podatke o datoteci, podesite ovlašćenja, i izaberite osnovne programe.</desc>
+
+  </info>
+
+  <title>Svojstva datoteke</title>
+
+  <p>Da pogledate podatke o datoteci ili fascikli, kliknite desnim tasterom miša na nju i izaberite <gui>Osobine</gui>. Možete takođe da izaberete datoteku i da pritisnete <keyseq><key>Alt</key><key>Unesi</key></keyseq>.</p>
+
+  <p>Prozor osobina datoteke će vam pokazati podatke kao što je vrsta datoteke, veličina, i kada ste je poslednji put izmenili. Ako su vam često potrebni ovi podaci, možete da ih prikažete u <link xref="nautilus-list">kolonama pregleda spiskom</link> ili u <link xref="nautilus-display#icon-captions">natpisu ikonice</link>.</p>
+
+  <p>Podaci dati u jezičku <gui>Osnovno</gui> su objašnjeni ispod. Pored njega imate takođe i jezičke <gui><link xref="nautilus-file-properties-permissions">Ovlašćenja</link></gui> i <gui><link xref="files-open#default">Otvori pomoću</link></gui>. Za određene vrste datoteka, kao što su slike i snimci, biće prikazan dodatni jezičak koji će obezbeđivati podatke o veličini, trajanju, i kodeku.</p>
+
+<section id="basic">
+ <title>Osnovna svojstva</title>
+ <terms>
+  <item>
+    <title><gui>Naziv</gui></title>
+    <p>Možete da preimenujete datoteku menjajući sadržaj ovog polja. Možete takođe da preimenujete datoteku izvan prozora osobina. Pogledajte <link xref="files-rename"/>.</p>
+  </item>
+  <item>
+    <title><gui>Vrsta</gui></title>
+    <p>Ovo će vam pomoći da odredite vrstu datoteke, kao što je PDF dokument, tekst Otvorenog dokumenta, ili JPEG slika. Vrsta datoteke određuje koji programi mogu da otvore datoteku, uz druge stvari. Na primer, ne možete da otvorite sliku programom za puštanje muzike. Pogledajte <link xref="files-open"/> za više podataka o ovome.</p>
+    <p><em>MIME vrsta</em> datoteke je prikazana u zagradi; MIME vrsta je uobičajeni način koji računari koriste da bi obavestili o vrsti datoteke.</p>
+  </item>
+
+  <item>
+    <title>Sadržaj</title>
+    <p>Ovo polje se prikazuje ako razgledate osobine fascikle umesto datoteke. Pomaže vam da vidite broj stavki u fascikli. Ako fascikla sadrži druge fascikle, svaka unutrašnja fascikla se broji kao jedna stavka, čak i ako sadrži dodatne stavke. Svaka datoteka se takođe broji kao jedna stavka. Ako je fascikla prazna, sadržaj će prikazati <gui>ništa</gui>.</p>
+  </item>
+
+  <item>
+    <title>Veličina</title>
+    <p>Ovo polje se prikazuje ako posmatrate datoteku (a ne fasciklu). Veličina datoteke vam govori o tome koliko zauzima prostora na disku. Ovo vam takođe pokazuje koliko vremena će biti potrebno za preuzimanje datoteke ili slanje putem e-pošte (velikim datotekama je potrebno više vremena za slanje/prijem).</p>
+    <p>Veličine mogu biti date u bajtovima, KB, MB, ili GB; u slučaju poslednja tri, veličina u bajtovima će takođe biti data u zagradi. Tehnički, 1 KB je 1024 bajta, 1 MB je 1024 KB i tako redom.</p>
+  </item>
+
+  <item>
+    <title>Roditeljska fascikla</title>
+    <p>Putanja svake datoteke na vašem računaru je data njenom <em>apsolutnom putanjom</em>. To je jedinstvena „adresa“ datoteke na vašem računaru, koju čini spisak fascikli kroz koje ćete morati da prođete da biste pronašli datoteku. Na primer, ako Pera ima datoteku pod nazivom <file>Plate.pdf</file> u svojoj ličnoj fascikli, njena roditeljska fascikla biće <file>/home/pera</file> a njena putanja biće <file>/home/pera/Plate.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Slobodan prostor</title>
+    <p>Ovo se prikazuje samo za fascikle. Prikazuje iznos prostora diska dostupnog na disku na kome se nalazi fascikla. Ovo je korisno prilikom provere zauzeća čvrstog diska.</p>
+  </item>
+
+  <item>
+    <title>Pristupljen</title>
+    <p>Datum i vreme kada je datoteka bila otvorena poslednji put.</p>
+  </item>
+
+  <item>
+    <title>Izmenjeno</title>
+    <p>Datum i vreme kada je datoteka bila poslednji put izmenjena i sačuvana.</p>
+  </item>
+ </terms>
+</section>
+
+</page>

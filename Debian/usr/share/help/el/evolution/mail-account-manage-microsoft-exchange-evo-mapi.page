@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="mail-account-manage-microsoft-exchange-evo-mapi" xml:lang="el">
+
+  <info>
+    <desc>Add and edit a Microsoft Exchange MAPI account in <app>Evolution</app>.</desc>
+
+    <link type="guide" xref="mail-account-manage-microsoft-exchange"/>
+
+    <revision pkgversion="3.7" version="0.7" date="2013-06-22" status="candidate"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009-2010</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ρυθμίσεις λογαριασμού ανταλλαγής MAPI</title>
+
+<section id="account-editor">
+<title>Επεξεργαστής λογαριασμού</title>
+<p>Λογαριασμοί αλληλογραφίας μπορούν να προστεθούν επιλέγοντας <guiseq><gui>αρχείο</gui><gui>νέο</gui><gui>λογαριασμός αλληλογραφίας</gui></guiseq> ή μέσα από <guiseq><gui>επεξεργασία</gui><gui>προτιμήσεις</gui><gui>λογαριασμοί αλληλογραφίας</gui><gui style="button">προσθήκη</gui></guiseq>. Τα βήματα είναι βασικά τα ίδια όπως για το <link xref="intro-first-run">βοηθός πρώτης εκτέλεσης</link>, εκτός από ότι δεν σας ζητείται εάν θα εισάγετε δεδομένα από άλλες εφαρμογές ή εάν θα επαναφέρετε από εφεδρικό αρχείο.</p>
+<p>Λογαριασμοί αλληλογραφίας μπορούν να επεξεργαστούν μέσα από <guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</gui><gui>Λογαριασμοί αλληλογραφίας</gui><gui style="button">Επεξεργασία</gui></guiseq> ή με δεξιοπατώντας στον αντίστοιχο κόμβο κορυφαίου επιπέδου στον κατάλογο φακέλων και επιλέγοντας <gui>Ιδιότητες</gui>.</p>
+<p>Οι παρακάτω ρυθμίσεις είναι διαθέσιμες όταν επεξεργαζόσαστε έναν υπάρχοντα λογαριασμό:</p>
+
+<!-- As the "Identity" section is identical in all account pages, it is centrally in one file included 
+via XInclude. See +http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-mail-account-identity.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:section)"/>
+
+<section id="receiving-email">
+<info>
+  <title type="link">Λήψη αλληλογραφίας και επιλογές λήψης (λογαριασμοί MAPI Exchange)</title>
+</info>
+<title>Επιλογές λήψης αλληλογραφίας</title>
+</section>
+
+<section id="defaults">
+<info>
+  <title type="link">Προεπιλογές (λογαριασμοί MAPI Exchange)</title>
+</info>
+<title>Προεπιλογές</title>
+</section>
+
+<section id="exchange-settings">
+<title>Ρυθμίσεις Exchange</title>
+<p>Σε αυτήν την ενότητα μπορείτε να δείτε το μέγεθος όλων των φακέλων Exchange.</p>
+</section>
+
+<section id="security">
+<info>
+  <title type="link">Ασφάλεια (λογαριασμοί MAPI Exchange)</title>
+</info>
+<title>Ασφάλεια</title>
+</section>
+
+</section> <!-- end "account editor" section, now list any account settings stuff related to this account type outside of it -->
+
+<!-- <section id="other-settings">
+<info>
+  <title type="link">Other settings (Exchange MAPI accounts)</title>
+</info>
+<title>Other settings</title>
+<p>Other account related settings that are not located in the <gui>Account Editor</gui>:</p>
+</section> -->
+
+</page>

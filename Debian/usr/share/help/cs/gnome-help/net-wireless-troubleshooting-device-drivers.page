@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Přispěvatelé do wiki s dokumentací k Ubuntu</name>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Některé ovladače zařízení nefungují úplně nejlépe s některými bezdrátovými adaptéry, takže možná budete muset najít jiný lepší.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Řešení problémů s bezdrátovými sítěmi</title>
+
+  <subtitle>Zkontrolujte, že je nainstalován funkční ovladač zařízení</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>V tomto kroku se zkusíte podívat, jestli váš bezdrátový adaptér půjde rozchodit. <em>Ovladač zařízení</em> je kus softwaru, který počítači říká, jak správně používat hardwarové zařízení. I když je bezdrátový adaptér počítačem rozpoznán, ještě nemusí mít funkční ovladač. Možná budete schopni najít jiný ovladač, se kterým fungovat bude. Vyzkoušejte následující možnosti:</p>
+
+  <list>
+    <item>
+      <p>Zkontrolujte, jestli je váš bezdrátový adaptér na seznamu podporovaných zařízení.</p>
+      <p>Většina linuxových distribucí udržuje seznam bezdrátových zařízení, která podporují. Někdy tyto seznamy poskytují i další informace, jak získat ovladače pro daný adaptér, aby fungoval. Najděte si seznam od své distribuce (např. <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>, <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>, <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> nebo <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSuSE</link>) a podívejte se, jestli je bezdrátový adaptér příslušné značky a modelu na seznamu. Možná budete moci použít některé informace tam uvedené k jeho rozchození.</p>
+    </item>
+    <item>
+      <p>Podívejte se po nesvobodných (binárních) ovladačích.</p>
+      <p>Hodně linuxových distribucí je dodáváno jen s ovladači zařízení, které jsou <em>svobodné</em> a s <em>otevřeným kódem</em>. Je to proto, že nemohou být šířeny s patentovaným a uzavřeným softwarem. Pokud je funkční ovladač pro vás bezdrátový adaptér k dispozici jen v nesvobodné nebo „jen binární“ verzi, nemusí být nainstalován ve výchozím stavu. V takovém případě se podívejte na stránky výrobce bezdrátového adaptéru, jestli nemá ovladače pro Linux.</p>
+      <p>Některé linuxové distribuce mají nástroje, které se postarají za vás o stažení ovladačů s omezeními. Pokud vaše distribuce nějaký takovýto nástroj má, podívejte se, jestli vám nedokáže ovladač najít.</p>
+    </item>
+    <item>
+      <p>Použijte ovladače pro Windows.</p>
+      <p>Obecně nelze použít ovladač zařízení napsaný pro jeden operační systém (jako třeba Windows) v jiném operačním systému (jako třeba Linuxu). Je to dáno tím, že mají různé způsoby obsluhy zařízení. Avšak pro bezdrátové adaptéry můžete nainstalovat mezivrstvu zajišťující kompatibilitu. Nazývá se <em>NDISwrapper</em> a umožňuje požít některé bezdrátové ovladače pro Windows na Linuxu. To je užitečné, protože bezdrátové adaptéry většinou vždy mají ovladač pro Windows, ale ovladač pro Linux je ne vždy dostupný. Jak použít NDISwrapper se můžete dočíst <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">zde</link>. Upozorňujeme ale, že ne úplně všechny bezdrátové ovladače je možné použít skrze NDISwrapper.</p>
+    </item>
+  </list>
+
+  <p>V případě, že selžou všechny zmíněné možnosti, asi byste měli vyzkoušet jiný bezdrátový adaptér, jestli vám bude fungovat. Bezdrátové adaptéry do USB jsou obvykle velmi levné a jdou připojit do kteréhokoliv počítače. Před jeho koupí byste si ale měli předem ověřit, jestli je s vaší linuxovou distribucí kompatibilní.</p>
+
+</page>

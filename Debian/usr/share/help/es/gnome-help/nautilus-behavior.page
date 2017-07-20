@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>Una sola pulsación para abrir archivos, ejecutar o ver archivos de texto ejecutables, y especificar el comportamiento de la papelera.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Preferencias de comportamiento del gestor de archivos</title>
+<p>Puede controlar si hace una pulsación simple o doble a los archivos, cómo se manejan los archivos de texto ejecutables y el comportamiento de la papelera. Pulse <gui>Archivos</gui> en la barra superior, elija <gui>Preferencias</gui> y seleccione la pestaña <gui>Comportamiento</gui>.</p>
+
+<section id="behavior">
+<title>Comportamiento</title>
+<terms>
+ <item>
+  <title><gui>Una sola pulsación para abrir elementos</gui></title>
+  <title><gui>Una doble pulsación para abrir elementos</gui></title>
+  <p>De manera predeterminada, al pulsar una vez se seleccionan archivos, y pulsando dos veces se abren. Puede optar por abrir archivos y carpetas pulsándolos una sola vez. En el modo de una sola pulsación, puede mantener apretada la tecla <key>Ctrl</key> mientras pulsa con el ratón para seleccionar uno o más archivos.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>Archivos de texto ejecutables</title>
+ <p>Un archivo de texto ejecutable es un archivo que contiene un programa que puede ejecutar. Los <link xref="nautilus-file-properties-permissions">permisos del archivo</link> también deben permitir que el archivo pueda ejecutarse como un programa. Los más frecuentes suelen ser scripts de <src>Shell</src>, <src>Python</src> y <src>Perl</src>. Tienen extensiones <file>.sh</file>, <file>.py</file> y <file>.pl</file> respectivamente.</p>
+ 
+ <p>Cuando abre un archivo de texto ejecutable, puede elegir entre:</p>
+ 
+ <list>
+  <item>
+    <p><gui>Ejecutar archivos de texto ejecutables cuando se abren</gui></p>
+  </item>
+  <item>
+    <p><gui>Ver archivos de texto ejecutables cuando se abren</gui></p>
+  </item>
+  <item>
+    <p><gui>Preguntar cada vez</gui></p>
+  </item>
+ </list>
+
+ <p>Si <gui>Preguntar cada vez</gui> está seleccionada, aparecerá un diálogo preguntando si quiere ejecutar o ver el archivo de texto seleccionado.</p>
+
+ <p>Los archivos de texto ejecutables también se llaman <em>scripts</em>. Todos los scripts de la carpeta <file>~/.local/share/nautilus/scripts</file> aparecerán en el menú contextual para un archivo en el submenú <gui style="menuitem">Scripts</gui>. Cuando se ejecuta un script desde una carpeta local, todos los archivos seleccionados se pasarán el script como parámetros. Para ejecutar un script sobre un archivo:</p>
+
+<steps>
+  <item>
+    <p>Navegue hasta la carpeta que quiere.</p>
+  </item>
+  <item>
+    <p>Seleccione el archivo que quiere.</p>
+  </item>
+  <item>
+    <p>Pulse con el botón derecho sobre el archivo para abrir el menú contextual y seleccione el script que ejecutar del menú<gui style="menuitem">Scripts</gui>.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>Un script no se pasará como parámetros cuando se ejecute desde una carpeta remota, como una carpeta que muestra contenido web o <sys>ftp</sys>.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">Preferencias de la papelera del gestor de archivos</title>
+</info>
+<title>Papelera</title>
+
+<terms>
+ <item>
+  <title><gui>Preguntar antes de vaciar la papelera</gui></title>
+  <p>Esta opción está seleccionada de forma predeterminada. Cuando se va a vaciar la papelera, aparece un mensaje confirmando si quiere vaciar la papelera o eliminar los archivos.</p>
+ </item>
+</terms>
+</section>
+
+</page>

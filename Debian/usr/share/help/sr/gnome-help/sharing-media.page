@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-media" xml:lang="sr">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.2" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Мајкл Хил</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Делите медије на вашој месној мрежи користећи УПнП.</desc>
+  </info>
+
+  <title>Делите вашу музику, фотографије и видео записе</title>
+
+  <p>Можете да разгледате, тражите и да пуштате медије на вашем рачунару користећи <sys>УПнП</sys> или <sys>ДЛНА</sys> укључене уређаје као што је телефон, ТВ или играчка постава. Подесите <gui>Дељење медија</gui> да дозволи тим уређајима да приступе фасциклама које садрже вашу музику, фотографије и видео снимке.</p>
+
+  <note style="info package">
+    <p>Морате имати инсталран пакет <app>Ригел</app> да би <gui>Дељење медија</gui> било видљиво.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:rygel" style="button">Инсталирајте Ригел</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Отворите преглед <gui xref="shell-introduction#activities">Активности</gui> и почните да куцате <gui>Дељење</gui>.</p>
+    </item>
+    <item>
+      <p>Кликните на <gui>Дељење</gui> да отворите панел.</p>
+    </item>
+    <item>
+      <p>Ако је <gui>Дељење</gui> <gui>ИСКЉ.</gui>, пребаците га на <gui>УКЉ.</gui>.</p>
+
+      <note style="info"><p>Ако вам текст испод <gui>назива рачунара</gui> допушта да га уређујете, можете да <link xref="sharing-displayname">измените</link> назив под којим се ваш рачунар приказује на мрежи.</p></note>
+    </item>
+    <item>
+      <p>Изаберите <gui>Дељење медија</gui>.</p>
+    </item>
+    <item>
+      <p>Пребаците <gui>Дељење медија</gui> на <gui>УКЉ.</gui>.</p>
+    </item>
+    <item>
+      <p>По основи, деле се фасцикле <file>музике</file>, <file>слика</file> и <file>видеа</file>. Да уклоните једну од њих, притисните <gui>X</gui> поред назива фасцикле.</p>
+    </item>
+    <item>
+      <p>Да додате неку другу фасциклу, притисните <gui style="button">+</gui> да отворите прозор за <gui>бирање фасцикле</gui>. Идите <em>до</em> жељене фасцикле и притисните дугме <gui style="button">Отвори</gui>.</p>
+    </item>
+    <item>
+      <p>Притисните <gui style="button">Х</gui>. Сада ћете бити у могућности да разгледате или пуштате медије из фасцикли које сте изабрали користећи спољни уређај.</p>
+    </item>
+  </steps>
+
+  <section id="networks">
+  <title>Мреже</title>
+
+  <p>Одељак <gui>Мреже</gui> наводи мреже на које сте тренутно повезани. Користите прекидач <gui>УКЉ. | ИСКЉ.</gui> поред савке од њих да изаберете на којима ваши медији могу бити дељени.</p>
+
+  </section>
+
+</page>

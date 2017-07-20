@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Seznam složek, ve kterých můžete najít dokumenty, soubory a nastavení, která byste mohli chtít zálohovat.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Kde mohu najít soubory, které chci zálohovat?</title>
+
+  <p>Nejtěžším krokem na zálohování je, rozhodnout se, které soubory a kam zálohovat. Níže jsou uvedena obvyklá umístění důležitých souborů a nastavení, které byste mohli chtít zálohovat.</p>
+
+<list>
+ <item>
+  <p>Osobní soubory (dokumenty, hudba, fotografie a videa)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Většinou jsou uchovány ve vaší domovské složce (<file>/home/vaše_jméno</file>). Měly by být v podsložkách jako jsou <file>Plocha</file>, <file>Dokumenty</file>, <file>Obrázky</file> a <file>Videa</file>.</p>
+  <p>V případě, že máte na zálohovacím médiu dostatek místa (například na externím pevném disku), zvažte zálohování celé domovské složky. Kolik místa domovská složka zabírá můžete zjistit pomocí <app>Analyzátoru využití disku</app>.</p>
+ </item>
+
+ <item>
+  <p>Skryté soubory</p>
+  <p>Názvy některých souborů a složek začínají tečkou (.). Takovéto soubory a složky jsou normálně skryté. Abyste si je zobrazili, klikněte na tlačítko <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Volby zobrazení</span></media></gui> na nástrojové liště a zvolte <gui>Zobrazovat skryté soubory</gui> nebo zmáčkněte <keyseq><key>Ctrl</key><key>H</key></keyseq>. Tyto soubory můžete zkopírovat do místa zálohy stejně, jako kterékoliv jiné soubory.</p>
+ </item>
+
+ <item>
+  <p>Osobní nastavení (předvolby uživatelského prostředí, motivy a nastavení softwaru)</p>
+  <p>Většina aplikací ukládá svá nastavení ve skrytých složkách v rámci domovské složky (viz informace výše o skrytých souborech).</p>
+  <p>Většina nastavení aplikací bude uložena ve skrytých složkách <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file> a <file>.local</file> ve vaší domovské složce.</p>
+ </item>
+
+ <item>
+  <p>Celosystémová nastavení</p>
+  <p>Nastavení důležitých částí systémů se nenachází v domovské složce. Existuje řada umístění, kdy mohou být uchována, ale většina jich je ve složce <file>/etc</file>. Z obecného hlediska na domácím počítači tyto soubory nepotřebujete zálohovat. Pokud ale provozujete server, měli byste tyto soubory zálohovat kvůli službám, které na něm běží.</p>
+ </item>
+</list>
+
+</page>

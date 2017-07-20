@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-apps-outlook" xml:lang="hu">
+
+  <info>
+    <desc>Importálás Microsoft Outlookból.</desc>
+    
+    <link type="guide" xref="import-data#import-from-apps"/>
+
+    <revision pkgversion="3.0.2" version="0.5" date="2011-09-02" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/outlook-migration-mail.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Outlook</title>
+<!-- "Import data and settings from older programs" cannot recognize Outlook, as there obviously is no default storage location for Outlook *under Linux* -->
+
+<p>Ezek a lépések helyileg tárolt adatokra, például POP postafiókokra vonatkoznak. Távoli adatok (például IMAP) esetén ez nem szükséges, mivel az adatok még mindig a kiszolgálón vannak, és nincs szükség a saját kezűleg történő átvitelükre. Ilyen esetben csak állítsa be a megfelelő fiókot az <app>Evolutionben</app>, és az adatok letöltésre kerülnek.</p>
+
+<section id="prerequisites">
+<title>Előfeltételek Windows alatt</title>
+<p>Első lépésként a Microsoft Windows használata során készítse elő üzeneteit importálásra:</p>
+<steps>
+<item><p>Keresse meg az Outlook fájljait (ezek általában <file>.pst</file> vagy <file>.ost</file> kiterjesztésűek):</p>
+<table frame="all" rules="all">
+  <tr>
+    <td/><td><p>Windows 7, Windows Vista</p></td><td><p>Windows XP</p></td>
+  </tr>
+  <tr>
+    <td><p>Outlook 2010</p></td><td><p><file>C:\Users\felhasználónév\Dokumentumok\Outlook Fájlok</file></p></td><td><p><file>C:\Documents and Settings\felhasználónév\Dokumentumok\Outlook Fájlok</file></p></td>
+  </tr>
+  <tr>
+    <td><p>Outlook 2007 és korábbi</p></td><td><p><file>C:\Users\felhasználónév\AppData\Local\Microsoft\Outlook</file></p></td><td><p><file>C:\Documents and Settings\felhasználónév\AppData\Local\Microsoft\Outlook</file></p></td>
+  </tr>
+</table>
+<p>(A „felhasználónév” helyett saját felhasználónevét használja.)</p>
+</item>
+<!-- File locations taken from http://support.microsoft.com/kb/2291280 and http://answers.microsoft.com/en-us/windows/forum/windows_7-files/where-is-location-of-outlookpst-file-in-windows-7/3a4c03c3-e8ad-4912-9e37-f1c62057d1f9 -->
+<item><p>Másolja az Outlook fájlokat arra a rendszerre vagy partícióra, amelyen az <app>Evolution</app> telepítve van.</p>
+<p>Mivel a Windows merevlemeze valószínűleg NTFS formátumú, egyes Linux rendszerek nem képesek azt további szoftverek nélkül olvasni. Egyszerűbb lehet a levélmappákat USB-meghajtóra vagy CD-re másolni.</p></item>
+</steps>
+</section>
+
+<section id="importing">
+<title>Importálás az <app>Evolutionbe</app></title>
+<steps>
+<item><p>Az utolsó lépéstől függően csatlakoztassa az adatokat tartalmazó lemezt vagy USB-meghajtót, és várjon amíg a fájlkezelő ablaka megnyílik, vagy csatolja a Windows rendszert tartalmazó meghajtóját.</p></item>
+<item><p>Másolja át az összes levélfájlt a saját mappájába, vagy más kényelmesen elérhető helyre.</p></item>
+<item><p>Indítsa el az <app>Evolutiont</app>.</p></item>
+<item><p>Elhagyható: válassza a <guiseq><gui>Fájl</gui><gui>Új</gui><gui>Levélmappa</gui></guiseq> menüpontot a kívánt <link xref="mail-folders">mappák</link> létrehozásához.</p></item>
+
+<item><p>Válassza a <guiseq><gui>Fájl</gui><gui>Importálás</gui></guiseq> menüpontot.</p></item>
+<item><p>Az <gui>Importáló típusa</gui> lapon válassza az <gui>Egyetlen fájl importálása</gui> menüpontot.</p></item>
+<item><p>Válassza ki az importálni kívánt Outlook (.pst) fájlt.</p><p>A fájl típusa automatikusan meghatározásra kerül.</p>
+<note style="tip"><p>Ha az Outlook személyes mappák (.pst fájlok) importálására szolgáló lehetőség nem érhető el a <guiseq><gui>Fájl</gui><gui>Importálás</gui><gui>Egyetlen fájl importálása</gui><gui>Fájltípus</gui></guiseq> alatt, akkor a disztribúciója nem kapcsolta be ezt a funkciót.</p></note>
+</item>
+<item><p>Válassza ki az importált adatok célját (például a mappát az <app>Evolutionben</app>).</p></item>
+<item><p>Ismételje az importálási lépéseket, amíg nem importálta az összes adatát.</p></item>
+</steps>
+
+</section>
+
+</page>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect-reverse" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <link type="seealso" xref="connect"/>
+    <title type="sort">3</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Anslut till datorer som inte finns på ditt lokala nätverk: förbigår brandväggsbegränsningar på fjärrvärd.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title><gui>Omvända anslutningar…</gui></title>
+
+  <p>En omvänd anslutning används vanligtvis för att förbigå brandväggsbegränsningar för öppna portar. En brandvägg blockerar vanligtvis öppna portar, men blockerar inte utgående trafik. I en normal framåtanslutning så ansluter en klient till en öppen port på servern. Men i fallet med en omvänd anslutning så öppnar klienten en port som servern kan ansluta till.</p>
+
+  <section id="enable-reverse-connections">
+    <title>Aktivera omvända anslutningar</title>
+
+    <steps>
+      <item>
+        <p>Välj <guiseq><gui style="menu">Fjärr</gui> <gui style="menuitem">Omvända anslutningar…</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Kryssa i <gui>Aktivera omvända anslutningar</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="accessing-behind-firewall">
+    <title>Tillgång till en dator bakom en brandvägg</title>
+
+    <p>Fjärrmaskinen behöver ansluta till din maskin via din <em>IP-adress</em> och ditt portnummer, vilka kan hittas i dialogen <gui>Omvända anslutningar…</gui> under <gui>Anslutning</gui>.</p>
+
+    <note>
+      <p>För närvarande stöder <app>Vino</app>, GNOME:s VNC-server, inte omvända anslutningar, också kallade ”lyssningsläge”. Vissa andra program så som <app>UltraVNC</app>, <app>RealVNC</app> och <app>TightVNC</app> har dock stöd för omvända anslutningar.</p>
+    </note>
+
+    <p>När fjärrdatorn ansluter till din maskin kommer <app>Fjärrskrivbordsvisare</app> att etablera den omvända anslutningen.</p>
+
+    <p>När du ansluter till en maskin som inte är på ditt lokala nätverk kommer du att behöva tillhandahålla din externt synliga IP-adress och ditt portnummer till fjärrservern.</p>
+
+  </section>
+
+</page>

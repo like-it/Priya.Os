@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="task" id="txt-search" xml:lang="es">
+
+  <info>
+    <revision version="0.1" date="2013-03-03" status="candidate"/>
+    <link type="guide" xref="index#textoutput"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Buscar en la salida de la <app>Terminal</app>.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@gnome.org</mal:email>
+      <mal:years>2001-2006</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Use <gui style="menuitem">Buscar</gui></title>
+
+  <p>Puede buscar texto en la salida de la <app>Terminal</app>:</p>
+
+  <steps>
+    <item>
+      <p>Seleccione <guiseq><gui style="menu">Buscar</gui> <gui style="menuitem">Buscar…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Escriba la palabra que quiere buscar y pulse <gui style="button">Buscar</gui>. Para cancelar, pulse <gui style="button">Cerrar</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Puede buscar usando las siguientes opciones para reducir los resultados:</p>
+
+  <terms>
+    <item>
+      <title><gui style="checkbox">Coincidir con capitalización</gui></title>
+      <p>Hacer la búsqueda sensible a la capitalización: esto restringe los resultados de la búsqueda a aquellos que coinciden con la capitalización de la palabra buscada.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Coincidir sólo con la palabra entera</gui></title>
+      <p>La <app>Terminal</app> buscará la palabra completa e ignorará los resultados que coincidan con ella parcialmente. Por ejemplo, si busca la palabra «gnome», la <app>Terminal</app> sólo mostrará los resultados que coincidan con esta palabra exactamente y omitirá los resultados como «gnome-terminal».</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Coincidir con expresión regular</gui></title>
+      <p>Puede usar patrones de expresiones regulares en sus palabras de búsqueda. La <app>Terminal</app> mostrará los resultados que coincidan con esos patrones de búsqueda.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Buscar hacia atrás</gui></title>
+      <p>La <app>Terminal</app> buscará la palabra desde la última salida hacia atrás. Esta opción es la recomendada cuando está buscando una palabra que podría haberse mostrado recientemente, permitiéndole encontrarla rápidamente.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Volver al principio</gui></title>
+      <p>La <app>Terminal</app> busca desde su ubicación actual en el desplazamiento hacia atrás hasta el final de la salida de la terminal disponible y luego vuelve a buscar desde el principio.</p>
+    </item>
+  </terms>
+
+  <note style="tip">
+    <p>Si cree que va a trabajar con mucha salida en la <app>Terminal</app>, aumente las <link xref="pref-scrolling#lines">líneas de desplazamiento hacia atrás</link> para permitir que la <app>Terminal</app> pueda buscar hacia atrás.</p>
+  </note>
+
+</page>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-publish" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-06-18" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>So veröffentlichen Sie Ihre öffentlichen Schlüssel auf Schlüssel-Servern, oder <link xref="pgp-export">exportieren</link> diese und versenden sie per E-Mail.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ihre öffentlichen Schlüssel mit anderen teilen</title>
+
+  <p>Wenn Personen mit Ihnen verschlüsselt kommunizieren sollen, so müssen Sie Ihren <gui>GnuPG-Schlüssel</gui> mit diesen teilen. <link xref="pgp-export">Exportieren</link> Sie ihn und versenden Sie die Schlüsseldatei per E-Mail, um den Schlüssel mit gewählten Personen zu teilen. Veröffentlichen Sie Ihren öffentlichen Schlüssel auf Schlüssel-Servern, damit Dritte diesen <link xref="pgp-retrieve-remote">abrufen</link> und einsetzen können.</p>
+
+  <steps>
+    <title>Wie veröffentliche ich meinen Schlüssel auf einem Schlüssel-Server?</title>
+    <item>
+      <p>Wählen Sie <gui>GnuPG-Schlüssel</gui> aus dem linken Bereich.</p>
+    </item>
+    <item>
+      <p>Wählen Sie den <gui>privaten PGP-Schlüssel</gui> in der Liste, der veröffentlicht werden soll.</p>
+    </item>
+    <item>
+      <p>Wählen Sie <guiseq><gui style="menu">Entfernt</gui><gui style="menuitem">Schlüssel abgleichen und veröffentlichen …</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf den Knopf <gui style="button">Schlüssel-Server</gui>, um eine Liste der Schlüssel-Server zu erhalten, auf die Sie Ihren öffentlichen Schlüssel veröffentlichen können.</p>
+    </item>
+    <item>
+      <p>Wählen Sie den Schlüssel-Server im Menü <gui>Schlüssel veröffentlichen bei</gui> in der Liste, um Ihren Schlüssel auf einem Schlüssel-Server zu veröffentlichen.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui style="button">Schließen</gui>, um zu dem vorherigen Dialog zurückzukehren.</p>
+    </item>
+    <item>
+      <p>Klicken Sie zum Abschließen auf <gui style="button">Abgleichen</gui>.</p>
+    </item>
+   <!-- <item>
+      <p>Tick the
+      <gui style="checkbox">Automatically retrieve keys from key servers</gui>
+      checkbox to retrieve any key that is published on the server you have
+      selected in the previous step. You can also tick the
+      <gui style="checkbox">Automatically sync modified keys with key servers</gui>
+      checkbox to ensure that any modifications to a key on the key server,
+      like a signature, are updated on your copy of the key too.</p>
+      Not sure about this - Aruna 18/08/2013
+    </item>-->
+  </steps>
+
+  <note style="important">
+    <p>Sie müssen mit dem Internet verbunden sein, um Ihre Schlüssel zu veröffentlichen.</p>
+  </note>
+
+  <note style="info">
+    <title>Was ist ein Schlüssel-Server?</title>
+    <p>Schlüssel-Servern sind Rechner, die Kopien von eingesendeten öffentlichen kryptografischen Schlüsseln speichern. Sie teilen diese Kopien mit anderen Schlüssel-Servern über das Internet.</p>
+  </note>
+
+</page>

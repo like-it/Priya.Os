@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="problem-permissions" xml:lang="de">
+  <info>
+    <link type="guide" xref="index#problems"/>
+    <revision pkgversion="3.12" date="2014-01-25" status="review"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Beim Einlesen erscheint eine Nachricht der Form <gui>Ordner konnte nicht analysiert werden /… oder darin enthaltene Unterordner konnten nicht analysiert werden</gui>.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008, 2012, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Fehler beim Einlesen</title>
+
+  <p>Beim Einlesen kann eine Nachricht der Form <gui>Ordner konnte nicht analysiert werden /… oder darin enthaltene Unterordner konnten nicht analysiert werden</gui> oben im Fenster der <app>Festplattenbelegungsanalyse</app> erscheinen. Dieser Fehler gibt an, dass Sie aufgrund von Beschränkungen auf dem Zielsystem nicht die notwendigen Berechtigungen zum Zugriff auf einige Dateien haben. Die Dateien ohne Zugriffsberechtigung werden nicht in die Berechnung des <link xref="pref-view-chart">Diagramms</link> der Festplattenbelegung einbezogen. Der Ergebnisbericht kann dann falsch sein.</p>
+
+  <p>Fehlende Berechtigungen für einige Dateien und Ordner sind absolut normal und sinnvoll. Sie können an diesem Problem nichts ändern.</p>
+
+  <note style="info"><p>Die <app>Festplattenbelegungsanalyse</app> verwendet den Befehl <cmd>du</cmd> zum Erstellen einer detaillierten Ansicht der Speicherbelegung und setzt voraus, dass Sie Leseberechtigungen für Dateien und Ausführungsberechtigungen für Ordner haben.</p>
+
+  <p>Andererseits wird für die Dateisystembelegung im Hauptfenster der Befehl <cmd>df</cmd> verwendet, welcher das Dateisystem auswertet und nicht von Dateiberechtigungen abhängt.</p></note>
+</page>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="printing-booklet-singlesided" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="printing-booklet"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>டிஃபானி அன்ட்டொபோல்ஸ்கி</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>பேட்ர் கோவார்</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Print a booklet from a PDF using a single-sided printer.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>ஒற்றைப் பக்க அச்டுப்பொறியில் ஒரு புக்லெட்டை அச்சிடுதல்</title>
+
+  <note>
+    <p>இந்த வழிமுறைகள் ஒரு PDF ஆவணத்திலிருந்து ஒரு புக்லெட்டை அச்சிடுவதை விவரிக்கிறது.</p>
+    <p><app>LibreOffice</app> ஆவணத்திலிருந்து ஒரு புக்லெட்டை அச்சிட, முதலில் <guiseq><gui>கோப்பு</gui><gui>PDF ஆக ஏற்றுமதி செய்…</gui></guiseq> ஐ தேர்வு செய்து அதை ஒரு PDF ஆக ஏற்றுமதி செய்யவும். உங்கள் ஆவணத்தின் பக்கங்களின் எண்ணிக்கை 4 இன் மடங்காக இருக்க வேண்டும் (4, 8, 12, 16,…). 3 வரையிலான காலி பக்கங்களைச் சேர்க்க வேண்டி இருக்கலாம்.</p>
+  </note>
+
+  <p>அச்சிட:</p>
+
+  <steps>
+    <item>
+      <p>அச்சிடு உரையாடலைத் திறக்கவும். மெனுவில் உள்ள <gui style="menuitem">அச்சிடு</gui> என்பதை தேர்ந்தெடுத்து அல்லது <keyseq><key>Ctrl</key><key>P</key></keyseq> விசைப்பலகை குறுக்குவழியைப் பயன்படுத்தி இதைத் திறக்கலாம்.</p>
+    </item>
+    <item>
+      <p>Click the <gui>Properties...</gui> button </p>
+      <p>In the <gui>Orientation</gui> drop-down list, make sure that
+      <gui>Landscape</gui> is selected.</p>
+      <p>Click <gui>OK</gui> to go back to the print dialog.</p>
+    </item>
+    <item>
+      <p>Under <gui>Range and Copies</gui>, choose <gui>Pages</gui>.</p>
+      <p>இந்த வரிசையில் பக்கங்களின் எண்ணிக்கையை தட்டச்சு செய்யவும் (n என்பது மொத்த பக்கங்களின் எண்ணிக்கை, மற்றும் 4 இன் மடங்கு):</p>
+      <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
+      <p>…அனைத்துப் பக்கங்களையும் தட்டச்சு செய்யும் வரை.</p>
+    <note>
+      <p>எடுத்துக்காட்டுகள்:</p>
+      <p>4 பக்க புக்லெட்: <input>4,1,2,3</input> என தட்டச்சு செய்யவும்</p>
+      <p>8 பக்க புக்லெட்: <input>8,1,2,7,6,3,4,5</input> என தட்டச்சு செய்யவும்</p>
+      <p>12 பக்க புக்லெட்: <input>12,1,2,11,10,3,4,9,8,5,6,7</input> என தட்டச்சு செய்யவும்</p>
+      <p>16 பக்க புக்லெட்: <input>16,1,2,15,14,3,4,13,12,5,6,11,10,7,8,9</input> என தட்டச்சு செய்யவும்</p>
+      <p>20 பக்க புக்லெட்: <input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input> என தட்டச்சு செய்யவும்</p>
+     </note>
+    </item>
+    <item>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Front sides / right pages</gui>.</p>
+    </item>
+    <item>
+      <p><gui>அச்சிடு</gui> ஐ சொடுக்கவும்.</p>
+    </item>
+    <item>
+      <p>அனைத்து பக்கங்களும் அச்சிடப்பட்ட பிறகு, பக்கங்களை திருப்பி அவற்றை மீண்டும் அச்சுப்பொறியில் வைக்கவும்.</p>
+    </item>
+    <item>
+      <p>அச்சிடு உரையாடலைத் திறக்கவும். மெனுவில் உள்ள <gui style="menuitem">அச்சிடு</gui> என்பதை தேர்ந்தெடுத்து அல்லது <keyseq><key>Ctrl</key><key>P</key></keyseq> விசைப்பலகை குறுக்குவழியைப் பயன்படுத்தி இதைத் திறக்கலாம்.</p>
+    </item>
+    <item>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Back sides / left pages</gui>.</p>
+    </item>
+    <item>
+      <p><gui>அச்சிடு</gui> ஐ சொடுக்கவும்.</p>
+    </item>
+  </steps>
+
+</page>

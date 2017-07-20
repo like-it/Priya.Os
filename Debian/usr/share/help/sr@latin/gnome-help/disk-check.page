@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="sr-Latn">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Gnomov projekat dokumentacije</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalija Ruz Lejva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Ispitajte vaš čvrsti disk za problemima da se uverite da je ispravan.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Proverite vaš čvrsti disk za problemima</title>
+
+<section id="disk-status">
+ <title>Proverite čvrsti disk</title>
+  <p>Čvrsti diskovi imaju ugrađeni alat za proveru ispravnosti pod nazivom <app>SMART</app> (Tehnologija samo-nadgledanja, ispitivanja, i izveštavanja), koji neprestano proverava disk za mogućim problemima. SMART vas takođe upozorava ako će disk uskoro prestati da radi, pomažući vam da izbegnete gubljenje važnih podataka.</p>
+
+  <p>Iako se SMART pokreće samostalno, vi možete takođe da proverite stanje vašeg diska pokretanjem programa <app>Diskovi</app>:</p>
+
+<steps>
+ <title>Proverite stanje vašeg diska koristeći program Diskovi</title>
+
+  <item>
+    <p>Otvorite program <app>Diskovi</app> iz pregleda <gui>Aktivnosti</gui>.</p>
+  </item>
+  <item>
+    <p>Izaberite disk koji želite da proverite sa spiska skladišnih uređaja na levoj strani. Biće prikazani podaci i stanje diska.</p>
+  </item>
+  <item>
+    <p>Kliknite na dugme izbornika i izaberite <gui>SMART podaci i samo-probe…</gui>. <gui>Zbirna procena</gui> bi trebala reći „Disk je u redu“.</p>
+  </item>
+  <item>
+    <p>Vidite više podataka pod <gui>SMART osobinama</gui>, ili pritisnite dugme <gui style="button">Započni samoprobu</gui> da pokrenete samoprobu.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>Šta ako disk nije ispravan?</title>
+
+  <p>Čak i ako <gui>zbirna procena</gui> ukaže na to da disk <em>nije</em> ispravan, to nije razlog za paniku. Međutim, bolje je biti spreman sa <link xref="backup-why">rezervom</link> zarad sprečavanja gubitka podataka.</p>
+
+  <p>Ako stanje pokaže „Pred kvarom“, disk je još uvek razumljivo ispravan ali su otkriveni znaci slabosti što znači da se može pokvariti u bliskoj budućnosti. Ako je vaš čvrsti disk (ili računar) star nekoliko godina, verovatno ćete videti ovu poruku na barem nekoj od provera ispravnosti. Trebali biste da <link xref="backup-how">napravite rezerve vaših važnih datoteka redovno</link> i da povremeno proveravate stanje diska da vidite da li se pogoršava.</p>
+
+  <p>Ako se pogoršava, možete odneti računar ili čvrsti disk u servis za daljne provere ili popravku.</p>
+
+</section>
+
+</page>

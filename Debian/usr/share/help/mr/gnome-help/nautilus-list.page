@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-list" xml:lang="mr">
+
+  <info>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="nautilus-prefs" group="nautilus-list"/>
+
+    <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>सूची अवलोकनमध्ये स्तंभमध्ये कोणती माहिती दाखवली जाते, ते नियंत्रीत करा.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Files list columns preferences</title>
+
+  <p>There are eleven columns of information that you can display in the
+  <gui>Files</gui> list view. Click <gui>Files</gui> in the top bar, pick
+  <gui>Preferences</gui> and choose the <gui>List Columns</gui> tab to select
+  which columns will be visible.</p>
+
+  <note style="tip">
+    <p>Use the <gui>Move Up</gui> and <gui>Move Down</gui> buttons to choose
+    the order in which the selected columns will appear. Click <gui>Reset to
+    Default</gui> to undo any changes and return to the default columns.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>नाव</gui></title>
+      <p>The name of folders and files.</p>
+      <note style="tip">
+        <p>The <gui>Name</gui> column cannot be hidden.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>आकार</gui></title>
+      <p>फोल्डरचा आकार फोल्डरमधील समाविष्टीत घटकांची संख्या म्हणून दाखवले जाते. फाइलचे आकार बाइट्स, KB, किंवा MB असे दाखवले जाते.</p>
+    </item>
+    <item>
+      <title><gui>प्रकार</gui></title>
+      <p>फोल्डर, किंवा फाइल प्रकार जसे कि PDF दस्तऐवज, JPEG प्रतिमा, MP3 ऑडिओ, आणि आणखी असे दाखवले जाते.</p>
+    </item>
+    <item>
+      <title><gui>बदललेले</gui></title>
+      <p>Gives the date of the last time the file was modified.</p>
+    </item>
+    <item>
+      <title><gui>मालक</gui></title>
+      <p>फोल्डर किंवा फाइलची मालकी असलेल्या वापरकर्ताचे नाव.</p>
+    </item>
+    <item>
+      <title><gui>गट</gui></title>
+      <p>The group the file is owned by. Each user is normally in their own
+      group, but it is possible to have many users in one group. For example, a
+      department may have their own group in a work environment.</p>
+    </item>
+    <item>
+      <title><gui>परवानगी</gui></title>
+      <p>Displays the file access permissions. For example,
+      <gui>drwxrw-r--</gui></p>
+      <list>
+        <item>
+          <p>The first character is the file type. <gui>-</gui> means regular
+          file and <gui>d</gui> means directory (folder). In rare cases, other
+          characters can also be shown.</p>
+        </item>
+        <item>
+          <p>पुढील तीन अक्षरे वापरकर्त्याच्या मालकीचे असलेल्या फाइलची <gui>rwx</gui> परवानगी निर्देशीत करते.</p>
+        </item>
+        <item>
+          <p>पुढील तीन गटातील सर्व सदस्यांकरिता मालकीचे असलेल्या फाइलची <gui>rw-</gui> परवानगी निर्देशीत करते.</p>
+        </item>
+        <item>
+          <p>स्तंभातील शेवटचे तीन अक्षरे प्रणालीवरील इतर वापरकर्त्याचे <gui>r--</gui> परवानगी निर्देशीत करते.</p>
+        </item>
+      </list>
+      <p>Each permission has the following meanings:</p>
+      <list>
+        <item>
+          <p><gui>r</gui>: readable, meaning that you can open the file or
+          folder</p>
+        </item>
+        <item>
+          <p><gui>w</gui>: writable, meaning that you can save changes to it</p>
+        </item>
+        <item>
+          <p><gui>x</gui>: executable, meaning that you can run it if it is a
+          program or script file, or you can access subfolders and files if it
+          is a folder</p>
+        </item>
+        <item>
+          <p><gui>-</gui>: permission not set</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title><gui>एमआयएमई प्रकार</gui></title>
+      <p>घटकाचे MIME प्रकार दाखवतो.</p>
+    </item>
+    <item>
+      <title><gui>स्थळ</gui></title>
+      <p>फाइलच्या ठिकाणाकरिता मार्ग.</p>
+    </item>
+    <item>
+      <title><gui>Modified – Time</gui></title>
+      <p>फाइल शेवटच्यावेळी संपादित केली ते दिनांक आणि वेळ.</p>
+    </item>
+    <item>
+      <title><gui>वापरलेले</gui></title>
+      <p>Gives the date or time of the last time the file was modified.</p>
+    </item>
+  </terms>
+
+</page>

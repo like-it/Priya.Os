@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="gu">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>રંગ જગ્યા એ રંગોની સીમાને વ્યાખ્યાયિત થયેલ છે.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>રંગ સ્થાન શુ છે?</title>
+
+  <p>રંગ સ્થાન એ વ્યાખ્યાયિત થયેલ રંગોની સીમા છે. જાણીતી રંગ સ્થાનો એ sRGB, AdobeRGB અને ProPhotoRGB સમાવે છે.</p>
+
+  <p>
+    The human visual system is not a simple RGB sensor, but we can
+    approximate how the eye responds with a CIE 1931 chromaticity diagram
+    that shows the human visual response as a horse-shoe shape.
+    You can see that in human vision there are many more shades of green
+    detected than blue or red.
+    With a trichromatic color space like RGB we represent the colors
+    on the computer using three values, which restricts up to encoding
+    a <em>triangle</em> of colors.
+  </p>
+
+  <note>
+    <p>
+      Using models such as a CIE 1931 chromaticity diagram is a huge
+      simplification of the human visual system, and real gamuts are
+      expressed as 3D hulls, rather than 2D projections.
+      A 2D projection of a 3D shape can sometimes be misleading, so if
+      you want to see the 3D hull, use the <code>gcm-viewer</code>
+      application.
+    </p>
+  </note>
+
+  <figure>
+    <desc>sRGB, AdobeRGB અને ProPhotoRGB એ સફેદ ત્રિકોણો દ્દારા રજૂ થયેલ છે</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>પ્રથમ, sRGB ને જોઇ રહ્યા છે, કે જે નાનામાં નાની જગ્યા છે અને ઓછામાં ઓછા રંગોની સંખ્યાને એનકોડ કરી શકાય છે. તે આશરે 10 વર્ષ જૂનું CRT દર્શાવ છે. અને મોટાભાગનાં પ્રાચીન મોનિટરો આનાં કરતા વધારે રંગોને દર્શાવે છે. sRGB એ <em>ઓછામાં ઓછુ સામાન્ય ભાજક</em> મૂળભૂત છે અને કાર્યક્રમોની વિશાળ સંખ્યામાં વાપરેલ છે (ઇન્ટરનેટને સમાવી રહ્યા છે).</p>
+  <p>
+    AdobeRGB is frequently used as an <em>editing space</em>.
+    It can encode more colors than sRGB, which means you can change
+    colors in a photograph without worrying too much that the most vivid
+    colors are being clipped or the blacks crushed.
+  </p>
+  <p>ProPhoto એ વિસાળ જગ્યા ઉપલબ્ધ છે અને વારંવાર દસ્તાવેજ પેટી માટે વાપરેલ છે. તે માણસ દ્દારા શોધેલ વિશાળ રંગોની સીમાને એનકોડ કરી શકે છે, અને એનકોડ રંગો કે આંખ શોધી શકતી નથી!</p>
+
+  <p>હવે, જો ProPhoto સારી રીતે દેખાતુ હોય તો, બધા માટે તેને શા માટે આપણે વાપરવું? <em>પરિમાણીકરણ</em> સાથે કરવાનો જવાબ છે. જો તમારી પાસે ફક્ત દરેક ચેનલને એનકોડ કરવા માટે 8 બીટ (256 સ્તરો) હોય તો, પછી વિશાળ સીમા એ દરેક કિંમત વચ્ચે મોટા પગલાં રાખી રહ્યુ છે.</p>
+  <p>
+    Bigger steps mean a larger error between the captured color and the
+    stored color, and for some colors this is a big problem.
+    It turns out that key colors, like skin colors are very important,
+    and even small errors will make untrained viewers notice that something
+    in a photograph looks wrong.
+  </p>
+  <p>
+    Of course, using a 16 bit image is going to leave many more steps and
+    a much smaller quantization error, but this doubles the size of each
+    image file.
+    Most content in existence today is 8bpp, i.e. 8 bits-per-pixel.
+  </p>
+  <p>રંગ સંચાલન એ એક રંગ જગ્યાથી બીજીમાં રૂપાંતર કરવા માટેની પ્રક્રિયા છે, જ્યાં રંગ જગ્યા એ સારી રીતે જાણીતી વ્યાખ્યાયિત થયેલ જગ્યા જેમ કે sRGB હોઇ શકે છે, અથવા વૈવિધ્ય જગ્યા કે તમારું મોનિટર અથવા પ્રિન્ટર રૂપરેખા.</p>
+
+</page>

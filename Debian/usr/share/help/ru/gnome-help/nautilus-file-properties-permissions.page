@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="ru">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="files#faq"/>
+    <link type="seealso" xref="nautilus-file-properties-basic"/>
+
+    <desc>Настройка возможности просмотра и редактирования ваших файлов и папок другими пользователями.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Шон МакКенс (Shaun McCance)</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+  <title>Настройка прав доступа к файлам</title>
+
+  <p>Права доступа можно использовать, чтобы управлять тем, у кого из пользователей будет возможность просматривать и редактировать принадлежащие вам файлы. Чтобы просмотреть и задать права доступа к файлу, нажмите на него правой кнопкой и выберите <gui>Свойства</gui>, затем откройте вкладку <gui>Права</gui>.</p>
+
+  <p>Подробнее о типах прав, которые вы можете задать, смотрите <link xref="#files"/> и <link xref="#folders"/> ниже.</p>
+
+  <section id="files">
+    <title>Файлы</title>
+
+    <p>Можно задать права доступа для владельца файла, владеющей файлом группы, и всех остальных пользователей системы. Вы являетесь владельцем своих файлов и можете дать себе права доступа к ним только на чтение или на чтение и запись. Установите для файла право доступа только на чтение, если не хотите случайно изменить его.</p>
+
+    <p>Каждый пользователь на компьютере принадлежит к определённой группе. На домашних компьютерах для каждого пользователя обычно имеется своя собственная группа, и групповые права доступа используются редко. В организациях иногда создаются группы для каждого отдела и проекта. Каждый файл принадлежит не только своему владельцу, но и группе. Можно задать группу, владеющую файлом, чтобы управлять правами доступа сразу для всех пользователей в этой группе. В качестве группы, владеющей файлом вы можете выбрать только ту группу, к которой принадлежите сами.</p>
+
+    <p>Также можно задать права доступа для остальных пользователей, которые не являются владельцами файла и не принадлежат к группе, владеющей файлом.</p>
+
+    <p>Если файл является программой, например, сценарием, можно включить <gui>Разрешить выполнение файла как программы</gui> для его запуска. Даже если эта опция включена, менеджер файлов всё равно может открыть файл в приложении или спросить вас, что с ним нужно делать. Подробнее смотрите <link xref="nautilus-behavior#executable"/>.</p>
+  </section>
+
+  <section id="folders">
+    <title>Папки</title>
+    <p>Можно задать права доступа к папкам для владельца, группы и других пользователей. Подробнее о владельцах, группах и других пользователях смотрите в описании прав доступа выше.</p>
+    <p>Права, которые можно задать для папки, отличаются от прав, которые можно задать для файла.</p>
+    <terms>
+      <item>
+        <title><gui itst:context="permission">None</gui></title>
+        <p>Пользователь даже не сможет увидеть, какие файлы содержатся в папке.</p>
+      </item>
+      <item>
+        <title><gui>Только перечисление файлов</gui></title>
+        <p>Пользователь сможет увидеть, какие файлы содержатся в папке, но не сможет открывать, создавать или удалять их.</p>
+      </item>
+      <item>
+        <title><gui>Доступ к файлам</gui></title>
+        <p>Пользователь сможет открывать файлы в папке (если это позволяют права доступа к данному конкретному файлу), но не сможет удалять файлы или создавать новые файлы.</p>
+      </item>
+      <item>
+        <title><gui>Создание и удаление файлов</gui></title>
+        <p>Пользователь будет иметь полный доступ к папке, включая открытие, создание и удаление файлов.</p>
+      </item>
+    </terms>
+
+    <p>Можно также быстро установить права доступа для всех файлов в папке, нажав <gui>Изменить права на вложенные файлы</gui>. Используйте выпадающие списки для настройки прав доступа к вложенным файлам или папкам, затем нажмите <gui>Изменить</gui>. Права доступа будут установлены как для файлов и папок, так и для вложенных папок до любой глубины вложенности.</p>
+  </section>
+
+</page>

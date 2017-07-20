@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="pgp-create" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys" group="#first"/>
+
+    <revision version="0.5" date="2013-02-16" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Crear y usar claves GnuPG para cifrar y firmar correos electrónicos.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Crear claves PGP</title>
+
+  <p>Para crear una clave PGP nueva:</p>
+
+  <steps>
+    <item>
+      <p>Seleccione <guiseq><gui>Archivo</gui><gui>Nuevo…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Seleccione <gui>clave PGP</gui> en la lista y pulse <gui style="button">Continuar</gui>.</p>
+    </item>
+    <item>
+      <p>Introduzca su nombre completo en el campo <gui>Nombre completo</gui>.</p>
+    </item>
+    <item>
+      <p>Opcionalmente, puede añadir su dirección de correo-e y un comentario para describir la clave.</p>
+    </item>
+    <item>
+      <p>Pulse <gui>Crear</gui>.</p>
+    </item>
+    <item>
+      <p>En el diálogo de contraseñas, introduzca una contraseña para la clave. Vuelva a escribir la contraseña para confirmarla.</p>
+    </item>
+    <item>
+      <p>Pulse <gui style="button">Aceptar</gui> para terminal.</p>
+    </item>
+  </steps>
+
+  <p><app>Contraseñas y claves</app> tardará un tiempo en generar su clave. Mientras se crea su clave, mueva el ratón, pulse algunas teclas o navegue por la web. Esto ayudará a que <app>Contraseñas y claves</app> genere una clave verdaderamente aleatoria. La clave se mostrará en <gui>claves GnuPG</gui>.</p>
+
+  <note style="tip">
+    <p>El <gui>Nombre completo</gui>, la <gui>Dirección de correo-e</gui> y los <gui>Comentarios</gui> de una clave GnuPG se denominan <link xref="pgp-userid">ID de usuario</link> de la clave.</p>
+  </note>
+
+<section id="advanced" ui:expanded="false">
+  <title>Opciones avanzadas de claves PGP</title>
+
+  <p>Expanda el panel de <gui>Opciones avanzadas de clave</gui> para elegir los valores personalizados para el tipo, fortaleza y fecha de caducidad de la clave.</p>
+
+  <terms>
+    <item>
+    <title>Tipo de clave</title>
+      <p>Dependiendo de sus necesidades, cree claves que se pueden usar sólo para firmar o para firmar y cifrar. Los algoritmos RSA y DSA-Elgamal generan claves igualmente seguras.</p>
+    </item>
+    <item>
+    <title>Fortaleza de la clave</title>
+      <p>La fortaleza de una clave se mide en términos del tamaño de la clave en bits. Es más difícil y lleva más tiempo romper una clave fuerte, pero las claves fuertes ralentizan el proceso de cifrado y de firmado. Debe elegir la fortaleza de su clave en <app>Contraseñas y claves</app> dependiendo de cuánto tiempo vaya a usar su clave. Una clave pequeña es suficiente para usarla poco tiempo, mientras que una clave más larga es más adecuada para un uso más prolongado.</p>
+    </item>
+    <item>
+    <title>Fecha de caducidad</title>
+      <p>Cuando una clave caduca, <link xref="pgp-expired">ciertas acciones dejan de funcionar</link>. En <app>Contraseñas y claves</app>, puede establecer que su clave <gui style="checkbox">No caduque nunca</gui>, o seleccionar una fecha y hora de expiración.</p>
+      <p>Se recomienda que configure una fecha de caducidad por si acaso pierde el acceso a la clave. Aunque la clave haya caducado, puede <link xref="pgp-expiration-change">cambiar su fecha de caducidad a una fecha posterior</link>.</p>
+    </item>
+  </terms>
+
+</section>
+
+</page>

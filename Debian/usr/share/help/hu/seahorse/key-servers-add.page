@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="key-servers-add" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+    <link type="seealso" xref="pgp-sync"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-08-18" status="draft"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>A kulcskiszolgálók listájának bővítése a <app>Jelszavak és kulcsok</app> alkalmazásban.</desc>
+  </info>
+
+  <title>Kulcskiszolgáló hozzáadása</title>
+    <p>Alapértelmezésben a <app>Jelszavak és kulcsok</app> alkalmazás a következő kulcskiszolgálókat ismeri:</p>
+
+    <list>
+      <item>
+        <p>hkp://pool.sks-keyservers.net</p>
+      </item>
+      <item>
+        <p>ldap://keyserver.pgp.com</p>
+      </item>
+    </list>
+
+  <steps>
+    <title>Új kulcskiszolgáló hozzáadásához</title>
+    <item>
+      <p>Válassza ki a <guiseq><gui style="menu">Szerkesztés</gui><gui style="menuitem">Beállítások</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Nyomja meg a <gui style="button">Hozzáadás</gui> gombot.</p>
+    </item>
+    <item>
+      <p>A megjelenő ablakban válassza ki a <gui>Kulcskiszolgáló típusát</gui>. A kulcskiszolgálókat a kommunikációhoz használt protokoll segítségével lehet azonosítani. A kulcskiszolgáló típusának azonosításához tehát az internetes URL-ben szereplő első néhány betűt használhatja.</p>
+    </item>
+    <item>
+      <p>Ezt követően illessze be a <gui style="input">Gép</gui> mezőbe kulcskiszolgálója URL-címét. A kulcskiszolgáló dokumentációjában ellenőrizze a kiszolgáló által használt port számát. Ha ez nem az alapértelmezett port, akkor illessze be a számot a „:” után. Ha bizonytalan, akkor hagyja üresen a „:” utáni szövegmezőt.</p>
+    </item>
+    <item>
+      <p>A befejezéshez kattintson az <gui style="button">OK</gui> gombra.</p>
+    </item>
+  </steps>
+
+</page>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-rename" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Gnomov projekat dokumentacije</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Šon Mek Kens</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Džim Kembel</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Dejvid King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Izmenite naziv datoteke ili fascikle.</desc>
+  </info>
+
+  <title>Preimenujte datoteku ili fasciklu</title>
+
+  <p>Kao i sa drugim upravnicima datoteka, možete da koristite <app>Datoteke</app> da izmenite naziv datoteke ili fascikle.</p>
+
+  <steps>
+    <title>Da preimenujete datoteku ili fasciklu:</title>
+    <item><p>Kliknite desnim tasterom miša na stavku i izaberite <gui>Preimenuj</gui>, ili izaberite datoteku i pritisnite <key>F2</key>.</p></item>
+    <item><p>Upišite novi naziv i pritisnite <key>Unesi</key> ili pritisnite na <gui>Preimenuj</gui>.</p></item>
+  </steps>
+
+  <p>Možete takođe da preimenujete datoteku i u prozoru <link xref="nautilus-file-properties-basic">osobina</link>.</p>
+
+  <p>Kada preimenujete datoteku, samo prvi deo naziva datoteke je izabran, a ne i proširenje datoteke (deo posle poslednje <file>.</file>). Proširenje obično označava koja je to vrsta datoteke (npr. <file>datoteka.pdf</file> je PDF dokument), i ovo ne biste trebali da menjate. Ako baš morate da izmenite proširenje, izaberite čitav naziv datoteke i izmenite ga.</p>
+
+  <note style="tip">
+    <p>Ako ste preimenovali pogrešnu datoteku, ili ste nekoj datoteci dali neodgovarajući naziv, možete da opozovete promenu naziva. Da povratite radnju, odmah pritisnite dugme izbornika na gornjoj traci i izaberite <gui>Opozovi preimenovanje</gui>, ili pritisnite <keyseq><key>Ktrl</key><key>Z</key></keyseq>, da povratite prethodni naziv.</p>
+  </note>
+
+  <section id="valid-chars">
+    <title>Ispravni znaci za nazive datoteka</title>
+
+    <p>Možete da koristite bilo koji znak osim znaka <file>/</file> (kosa crta) u nazivima datoteka. Neki uređaji, međutim, koriste <em>sistem datoteka</em> koji ima više ograničenja na nazive datoteka. Stoga je najbolje da izbegavate sledeće znakove u nazivima vaših datoteka: <file>|</file>, <file>\</file>, <file>?</file>, <file>*</file>, <file>&lt;</file>, <file>"</file>, <file>:</file>, <file>&gt;</file>, <file>/</file>.</p>
+
+    <note style="warning">
+    <p>Ako u nazivu datoteke kao prvi znak upotrebite <file>.</file>, ista će biti <link xref="files-hidden">skrivena</link> kada budete pokušali da je vidite u upravniku datoteka.</p>
+    </note>
+
+  </section>
+
+  <section id="common-probs">
+    <title>Opšti problemi</title>
+
+    <terms>
+      <item>
+        <title>Naziv datoteke je već upotrebljen</title>
+        <p>Ne možete imati dve datoteke ili fascikle sa istim nazivom u istoj fascikli. Ako pokušate da preimenujete datoteku nazivom koji već postoji u fascikli u kojoj radite, upravnik datoteka to neće dopustiti.</p>
+        <p>Nazivi datoteka i fascikli su osetljivi na veličinu slova, tako da naziv <file>Datoteka.txt</file> nije isto što i <file>DATOTEKA.txt</file>. Korišćenje ovakvih različitih naziva datoteka je dopušteno, iako nije preporučljivo.</p>
+      </item>
+      <item>
+        <title>Naziv datoteke je predug</title>
+        <p>Na nekim sistemima datoteka, nazivi datoteka ne mogu da imaju više od 255 znakova u svojim nazivima. U ograničenje ovih 255 znakova spadaju i naziv datoteke i putanja do datoteke (npr. <file>/home/đole/Dokumenti/posao/poslovi-koje-treba-izbegavati/…</file>), zato biste trebali da izbegavate duge nazive datoteka i fascikli gde je to moguće.</p>
+      </item>
+      <item>
+        <title>Opcija za preimenovanje je zasivljena</title>
+        <p>Ako je zasivljena opcija <gui>Preimenuj</gui>, to znači da nemate ovlašćenje da preimenujete datoteku. Trebate biti vrlo oprezni kada preimenujete takve datoteke, jer preimenovanje nekih zaštićenih datoteka može da dovede do nestabilnosti sistema. Pogledajte <link xref="nautilus-file-properties-permissions"/> za više podataka.</p>
+      </item>
+    </terms>
+
+  </section>
+
+</page>

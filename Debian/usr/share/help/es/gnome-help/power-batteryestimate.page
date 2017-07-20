@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="power-batteryestimate" xml:lang="es">
+
+  <info>
+
+    <link type="guide" xref="power#faq"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
+
+    <desc>La duración de la batería mostrada cuando pulsa sobre el <gui>icono de la batería</gui> es solo estimada.</desc>
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>La duración estimada de la batería no es correcta</title>
+
+<p>Cuando compruebe el nivel de carga restante de la batería, puede que observe que el tiempo restante muestra un valor diferente de lo que dura realmente la batería. Esto se debe a que el nivel de carga restante de la batería solo puede estimarse, aunque las estimaciones van mejorando con el tiempo.</p>
+
+<p>Para poder estimar el nivel de batería restante, se deben tener en cuenta varios factores. Uno es la cantidad de energía que el equipo está usando actualmente: el consumo de energía varía en función de cuántos programas tenga abiertos, qué dispositivos tiene conectados, y de si está ejecutando tareas intensivas (como ver un vídeo en alta definición o convertir archivos de música, por ejemplo). Esto cambia de un momento a otro, y es difícil de predecir.</p>
+
+<p>Otro factor es cómo se descarga la batería. Algunas baterías pierden su carga más rápidamente de lo que reciben. Sin un conocimiento preciso de cómo se descarga la batería, solo se podrá hacer una estimación aproximada del nivel de batería restante.</p>
+
+<p>A medida que la batería se descarga, el gestor de energía se irá haciendo una idea de sus propiedades de descarga y aprenderá a mejorar sus estimaciones sobre el nivel de la batería, aunque nunca serán completamente precisas.</p>
+
+<note>
+  <p>Si obtiene una estimación completamente ridícula del nivel de la batería (digamos, cientos de días), probablemente es que el Gestor de energía no tenga los datos necesarios para hacer una estimación coherente.</p>
+  <p>Si desenchufa la alimentación, trabaja con el portátil usando la batería durante un tiempo, y luego vuelve a enchufar la alimentación y deja que se recargue de nuevo, el gestor de energía debería poder obtener los datos que necesita.</p>
+</note>
+
+</page>

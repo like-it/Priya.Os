@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="color-import-windows" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <link type="seealso" xref="color-gettingprofiles"/>
+    <desc>Importieren eines existierenden ICC-Profils auf einem Windows-System.</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ein ICC-Profil unter Microsoft Windows importieren</title>
+  <p>Die Methode der Zuweisung eines Profils zu einem Gerät und auch die Verwendung der enthaltenen Kalibrierungskurven unterscheidet sich für die verschiedenen Versionen von Microsoft Windows.</p>
+  <section id="xp">
+    <title>Windows XP</title>
+    <p>Klicken Sie mit der rechten Maustaste auf das Profil im Windows Explorer und klicken Sie anschließend auf <gui>Profil installieren</gui>. Dadurch wird das Profil automatisch in den richtigen Ordner kopiert.</p>
+    <p>Dann öffnen Sie <guiseq><gui>Kontrollzentrum</gui><gui>Farbe</gui></guiseq> und fügen Sie das Profil zu einem Gerät hinzu.</p>
+    <note style="warning">
+      <p>Falls Sie unter Windows XP ein bestehendes Profil ersetzen, funktioniert der vorstehend beschriebene Schnellzugriff nicht. Die Profile müssen manuell nach <file>C:\Windows\system32\spool\drivers\color</file> kopiert werden, um das Originalprofil zu ersetzen.</p>
+    </note>
+    <p>Windows XP benötigt ein Programm, das beim Start ausgeführt werden muss, um die Kalibrierungskurven des Profils in die Grafikkarte zu kopieren. Dies können Programme wie <app>Adobe Gamma</app>, <app>LUT Loader</app> oder das kostenlose <app href="https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=12714">Microsoft Color Control Panel Applet</app>. Mit letzterem fügen Sie ein neues Objekt <gui>Farbe</gui> zu den Systemeinstellungen hinzu, welches die einfache Zuordnung der beim Start zu ladenden Kalibrierungskurven ermöglicht.</p>
+  </section>
+
+  <section id="vista">
+    <title>Windows Vista</title>
+    <p>Microsoft Windows Vista löscht fehlerhafterweise die Kalibrierungskurve aus der Video-LUT nach dem Anmelden, der Bereitschaft oder wenn das UAC-Fenster erscheint. Dies bedeutet, dass Sie möglicherweise das ICC-Profil der Kalibrierungskurve aktualisieren müssen. Wenn Sie Profile mit eingebetteten Kalibrierungskurven nutzen, müssen Sie sehr vorsichtig sein, weil der Kalibrierungsstatus nicht bereinigt wurde.</p>
+  </section>
+
+  <section id="7">
+    <title>Windows 7</title>
+    <p>Windows 7 unterstützt eine ähnliches Schema wie Linux, sodass die Möglichkeit besteht, Profile systemweit oder für einen bestimmten Benutzer zu installieren. Diese werden dabei an der gleichen Stelle abgespeichert. Klicken Sie dazu mit der rechten Maustaste auf ein Profil im Windows Explorer und klicken Sie auf <gui>Profil installieren</gui> oder kopieren Sie die .icc-Profile nach <file>C:\Windows\system32\spool\drivers\color</file>.</p>
+    <p>Öffnen Sie <guiseq><gui>Kontrollzentrum</gui><gui>Farbeinstellung</gui></guiseq> und fügen Sie das Profil zum System hinzu, indem Sie auf <gui>Hinzufügen</gui> klicken. Klicken Sie auf den Reiter<gui>Fortgeschritten</gui> und suchen Sie nach <gui>Bildschirmkalibrierung</gui>. Das Laden der Kalibrierungskurve aktivieren Sie durch das Ankreuzfeld <gui>Windows Bildschirmkalibrierung benutzen</gui>. Dies können Sie aktivieren, indem sie auf <gui>Systemvorgabe ändern</gui> klicken und zum Reiter <gui>Fortgeschritten</gui> zurückkehren und auf das Ankreuzfeld klicken.</p>
+    <p>Schließen Sie den Dialog und klicken Sie auf <gui>Aktuelle Kalibrierungskurven aktualisieren</gui>, um die Gamma-Rampen einzustellen. Die Profilkalibrierungskurve sollte nun für jeden Systemstart eingestellt sein.</p>
+  </section>
+
+</page>

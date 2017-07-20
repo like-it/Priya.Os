@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="hardware-auth"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Du kan logga in på ditt system med hjälp av en stödd fingeravtrycksläsare istället för att skriva in ett lösenord.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Logga in med ett fingeravtryck</title>
+
+  <p>Om ditt system har en fingeravtrycksläsare med stöd kan du spela in ditt fingeravtryck och använda det för att logga in.</p>
+
+<section id="record">
+  <title>Spela in ett fingeravtryck</title>
+
+  <p>Innan du kan logga in med ditt fingeravtryck måste du spela in det så att systemet kan använda det för att identifiera dig.</p>
+
+  <note style="tip">
+    <p>Om ditt finger är allt för torrt, kan du ha problem att registrera ditt fingeravtryck. Om detta händer fukta ditt finger lätt, torka av det med en ren, luddfri trasa och försök igen.</p>
+  </note>
+
+  <p>Du behöver <link xref="user-admin-explain">administratörsbehörighet</link> för att redigera användarkonton andra än ditt eget.</p>
+
+  <steps>
+    <item>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Användare</gui>.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Användare</gui> för att öppna panelen.</p>
+    </item>
+    <item>
+      <p>Tryck på <gui>Inaktiverad</gui>, intill <gui>Fingeravtrycksinloggning</gui> för att lägga till ett fingeravtryck för det valda kontot. Om du lägger till ett fingeravtryck för en annan användare kommer du först att vara tvungen att klicka på knappen <gui>Lås upp</gui> för att låsa upp panelen.</p>
+    </item>
+    <item>
+      <p>Välj fingret som du vill använda för fingeravtrycket och klicka sedan på <gui style="button">Nästa</gui>.</p>
+    </item>
+    <item>
+      <p>Följ instruktionerna i dialogrutan och svep ditt finger i <em>lagom hastighet</em> över din fingeravtrycksläsare. När datorn har en bra inspelning av ditt fingeravtryck kommer du att se meddelande <gui>Färdig!</gui>.</p>
+    </item>
+    <item>
+      <p>Välj <gui>Nästa</gui>. Du kommer att se ett bekräftelsemeddelande att ditt fingeravtryck sparats ordentligt. Välj <gui>Stäng</gui> för att avsluta.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="verify">
+  <title>Kontrollera att ditt fingeravtryck fungerar</title>
+
+  <p>Kontrollera nu om din nya fingeravtrycksinloggning fungerar. Om du registrerar ett fingeravtryck kommer du fortfarande att ha alternativet att logga in med lösenord.</p>
+
+  <steps>
+    <item>
+      <p>Spara allt osparat arbete och <link xref="shell-exit#logout">logga ut</link>.</p>
+    </item>
+    <item>
+      <p>På inloggningsskärmen, välj ditt namn från listan. Formuläret för lösenordsinmatning visas.</p>
+    </item>
+    <item>
+      <p>Istället för att skriva in ditt lösenord, bör du kunna svepa ditt finger över fingeravtrycksläsaren.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-rename" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Projeto de documentação do GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Altere o nome do arquivo ou da pasta.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Renomeando um arquivo ou uma pasta</title>
+
+  <p>Assim como em outros gerenciadores de arquivos, você pode usar o <app>Arquivos</app> para alterar o nome de um arquivo ou pasta.</p>
+
+  <steps>
+    <title>Para renomear um arquivo ou pasta:</title>
+    <item><p>Clique com o botão direito em um item e selecione <gui>Renomear</gui> ou selecione o arquivo e pressione <key>F2</key>.</p></item>
+    <item><p>Digite o novo nome e pressione <key>Enter</key> ou clique em <gui>Renomear</gui>.</p></item>
+  </steps>
+
+  <p>Você também pode renomear um arquivo pela janela de <link xref="nautilus-file-properties-basic">propriedades</link>.</p>
+
+  <p>Quando você renomeia um arquivo, apenas a primeira parte do nome do arquivo é selecionada; a sua extensão não (a parte depois do <file>.</file>). A extensão normalmente identifica que é o tipo de arquivo (exemplo: <file>arquivo.pdf</file> é um documento PDF), e normalmente você não quer alterar isso. Se precisar alterar a extensão também, selecione o nome completo do arquivo e mude-o.</p>
+
+  <note style="tip">
+    <p>Se você renomeou o arquivo incorreto ou renomeou incorretamente o arquivo certo, você pode desfazer esta ação. Para revertê-la, clique imediatamente no botão de menu na barra de ferramentas e selecione <gui>Desfazer renomeação</gui> ou <keyseq><key>Ctrl</key><key>Z</key></keyseq> para restaurar o nome anterior.</p>
+  </note>
+
+  <section id="valid-chars">
+    <title>Caracteres válidos para nomes de arquivos</title>
+
+    <p>Você pode usar qualquer caractere, exceto <file>/</file> (barra), nos nomes de arquivos. Contudo, alguns dispositivos usam um <em>sistema de arquivos</em> que tem mais restrições nos nomes de arquivos. Portanto, a melhor prática para evitar os seguintes caracteres nos nomes dos arquivos:<file>|</file>, <file>\</file>, <file>?</file>, <file>*</file>, <file>&lt;</file>, <file>"</file>, <file>:</file>, <file>&gt;</file>, <file>/</file>.</p>
+
+    <note style="warning">
+    <p>Se você nomear um arquivo com um <file>.</file> sendo o primeiro caractere, o arquivo ficará <link xref="files-hidden">oculto</link> quando você tentar visualizá-lo no gerenciador de arquivos.</p>
+    </note>
+
+  </section>
+
+  <section id="common-probs">
+    <title>Problemas comuns</title>
+
+    <terms>
+      <item>
+        <title>O nome de arquivo já está em uso</title>
+        <p>Você não pode ter dois arquivos ou pastas com o mesmo nome em uma mesma pasta. Se tentar renomear um arquivo com um nome que já exista na pasta em que está trabalhando, o gerenciador de arquivos não permitirá.</p>
+        <p>Nomes de arquivos e pastas são sensíveis à maiusculização. Por exemplo, <file>Arquivo.txt</file> não é a mesma coisa que <file>ARQUIVO.txt</file>. Usar nome de arquivo assim é permitido, embora não seja recomendável.</p>
+      </item>
+      <item>
+        <title>O nome do arquivo é muito longo</title>
+        <p>Em alguns sistemas de arquivos, nomes de arquivos não podem ter mais do que 255 caracteres. Essa limitação de 255 caracteres inclui tanto o nome do arquivo quanto o caminho para o arquivo (ex.: <file>/home/wanda/Documentos/trabalho/propostas-comerciais/…</file>), motivo pelo qual deve-se evitar arquivos e pastas com nomes extensos, na medida do possível.</p>
+      </item>
+      <item>
+        <title>A opção para renomear está acinzentada</title>
+        <p>Se <gui>Renomear</gui> estiver acinzentado, você não tem permissão para renomear o arquivo. Você deveria ter cuidado ao renomear tais arquivos, pois renomear alguns arquivos protegidos pode causar instabilidade no seu sistema. Veja <link xref="nautilus-file-properties-permissions"/> para mais informações.</p>
+      </item>
+    </terms>
+
+  </section>
+
+</page>

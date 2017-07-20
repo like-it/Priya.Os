@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak zobrazit základní informace o souboru, jak nastavit oprávnění a jak změnit výchozí aplikace.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Vlastnosti souboru</title>
+
+  <p>Kdy se chcete podívat na informace o souboru nebo složce, klikněte na ně pravým tlačítkem a zvolte <gui>Vlastnosti</gui>. Můžete také soubor vybrat a zmáčknout <keyseq><key>Alt</key> <key>Enter</key></keyseq>.</p>
+
+  <p>Okno s vlastnostmi souboru zobrazuje informace, jako je typ souboru, jeho velikost a kdy byl naposled změněn. Pokud tyto informace potřebujete často, můžete je mít zobrazené přímo ve <link xref="nautilus-list">sloupcích seznamového zobrazení</link> nebo v <link xref="nautilus-display#icon-captions">popisech ikon</link>.</p>
+
+  <p>Informace z karty <gui>Základní</gui> jsou vysvětleny níže. Dále najdete karty <gui><link xref="nautilus-file-properties-permissions">Oprávnění</link></gui> a <gui><link xref="files-open#default">Otevřít pomocí</link></gui>. Pro některé typy souborů, jako jsou obrázky nebo videa, se objeví ještě další karty poskytující informace typu rozměry, doba a kodeky.</p>
+
+<section id="basic">
+ <title>Základní vlastnosti</title>
+ <terms>
+  <item>
+    <title><gui>Název</gui></title>
+    <p>Změnou tohoto pole můžete soubor přejmenovat. Přejmenování lze provést i jinde, než v okně s podrobnostmi, viz <link xref="files-rename"/>.</p>
+  </item>
+  <item>
+    <title><gui>Typ</gui></title>
+    <p>Pomáhá vám rozpoznat typ souboru, jako je dokument PDF, text OpenDocument nebo obrázek JPEG. Typ souboru mimo jiné určuje, kterými aplikacemi půjde otevřít. Například nemůžete otevřít obrázek pomocí hudebního přehrávače. Více informací na toto téma viz <link xref="files-open"/>.</p>
+    <p>V závorkách je zobrazen <em>typ MIME</em> souboru. Typ MIME je standardizovaný způsob, kterým počítače označují typ souboru.</p>
+  </item>
+
+  <item>
+    <title>Obsah</title>
+    <p>Toto pole se zobrazí, když se díváte na vlastnosti složky, u souboru schází. Pomůže vám zjistit počet položek ve složce. Pokud složka obsahuje další složky, jsou jednotlivé vnitřní složky počítány jako jedna položka, i když samy obsahují další položky. Rovněž každý soubor je počítán jako jedna položka. Pokud je složka prázdná, zobrazí se u obsahu údaj <gui>nic</gui>.</p>
+  </item>
+
+  <item>
+    <title>Velikost</title>
+    <p>Toto pole se zobrazuje, když se díváte na soubor (ne složku). Velikost souboru vám říká, kolik místa na disku zabírá. Dá se podle toho také odhadnou, jak dlouho bude trvat jeho stažení nebo odeslání e-mailem (u velkých souborů to trvá déle).</p>
+    <p>Velikost může být udána v bajtech, kB, MB nebo GB. U posledních tří jmenovaných je navíc uvedena v závorce i v bajtech. Z technického hlediska 1 kB znamená 1 024 bajtů, 1 MB je 1 024 kB atd.</p>
+  </item>
+
+  <item>
+    <title>Rodičovská složka</title>
+    <p>Umístění jednotlivých souborů v počítači je dáno jejich <em>absolutní cestou</em>. Jedná se o jedinečnou „adresu“ souboru v počítači, která sestává ze seznamu složek, kterými musíte projít, abyste se k souboru dostali. Například, když má Honza v domovské složce soubor s názvem <file>Výsledky.pdf</file>, je jeho rodičovskou složkou <file>/home/honza</file> a jeho umístění je <file>/home/honza/Výsledky.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Volné místo</title>
+    <p>Zobrazuje se jen u složek. Uvádí množství volného místa, které je dostupné na disku, na kterém se složka nachází. Hodí se pro přehled, jestli není disk plný.</p>
+  </item>
+
+  <item>
+    <title>Použitý</title>
+    <p>Datum a čas, kdy byl soubor naposledy otevřen.</p>
+  </item>
+
+  <item>
+    <title>Změněný</title>
+    <p>Datum a čas, kdy byl soubor naposledy změněn a uložen.</p>
+  </item>
+ </terms>
+</section>
+
+</page>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="guide" id="exchange-connectors-overview" xml:lang="de">
+
+  <info>
+    <desc>Welche zusätzlichen Pakete installiert werden sollten, um mit Exchange-Servern zu verbinden.</desc>
+
+    <link type="guide" xref="exchange-placeholder"/>
+
+    <revision pkgversion="3.7.5" version="0.7" date="2013-01-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Die richtige Anbindung wählen</title>
+
+<p>Abhängig von der Version des Microsoft Exchange-Servers, zu dem Sie eine Verbindung herstellen wollen, müssen Sie sicherstellen, dass ein zusätzliches Paket installiert ist, welches diese Funktionalität bereitstellt.</p>
+
+<p>Für Microsoft Exchange 2007 und 2010 wird das Paket <sys>evolution-ews</sys> empfohlen.</p>
+<if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+  <if:when test="action:install">
+    <note style="info package">
+      <p><link action="install:evolution-ews" href="https://wiki.gnome.org/Apps/Evolution#Get_the_Source_Code" style="button">Evolution-ews installieren</link></p>
+    </note>
+  </if:when>
+</if:choose>
+
+
+<p>Bei älteren Versionen von Microsoft Exchange, oder wenn <sys>evolution-ews</sys> nicht gut funktioniert, versuchen Sie bitte <sys>evolution-mapi</sys>. Es verwendet Microsofts Messaging API, das auch von Microsoft Outlook verwendet wird. <sys>evolution-mapi</sys> erfordert jedoch die Installation von <sys>OpenChange</sys> und <sys>Samba 4</sys> und ist nicht so schnell wie <sys>evolution-ews</sys>.</p>
+
+<if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+  <if:when test="action:install">
+    <note style="info package">
+      <p><link action="install:evolution-mapi" href="https://wiki.gnome.org/Apps/Evolution#Get_the_Source_Code" style="button">Evolution-mapi installieren</link></p>
+    </note>
+  </if:when>
+</if:choose>
+
+<note style="tip"><p>Falls Sie die Version des Microsoft Exchange-Servers nicht kennen, so fragen Sie Ihren Administrator.</p></note>
+
+<!-- TODO:POST-3-4: <mbarnes> actually, a table in the docs would make it crystal clear  (Exchange version x Evolution backend); <seanius> also, a feature matrix of what works in the particular releases might be helpful, though maybe hard to visualize in a compact manner
+-->
+
+</page>

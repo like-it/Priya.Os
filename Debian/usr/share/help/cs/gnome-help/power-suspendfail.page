@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Některý hardware způsobuje problémy s uspáním do paměti.</desc>
+
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Proč se můj počítač nechce znovu zapnout po jeho uspání?</title>
+
+<p>Když svůj počítač <link xref="power-suspend">uspíte do paměti</link>, a pak jej zkusíte probudit, můžete zjistit, že nepracuje, jak by měl. To může být způsobené tím, že příslušný režim uspání váš hardware správně nepodporuje.</p>
+
+<section id="resume">
+  <title>Můj počítač se uspí a už se neprobudí</title>
+  <p>Když počítač uspíte do paměti a pak zmáčknete klávesu nebo kliknete myší, měl by se probudit a zobrazit obrazovku s dotazem na heslo. Pokud se tak nestane, zkuste zmáčknout tlačítko napájení (nedržte jej, jen krátce zmáčkněte).</p>
+  <p>Pokud to stále nepomůže, ujistěte se, že je zapnutý monitor a zkuste znovu zmáčknout klávesu na klávesnici.</p>
+  <p>Jako poslední možnosti vypněte počítač podržením napájecího tlačítka po dobu 5 až 10 vteřin, ale počítejte s tím, že při tom přijdete o rozdělanou práci. Pak byste měli být schopni počítač normálně zapnout.</p>
+  <p>Jestliže tato situace nastane pokaždé, když počítač uspíte do paměti, nejspíše funkce uspání s vaším hardwarem nefunguje správně.</p>
+  <note style="warning">
+    <p>Když váš počítač ztratí napájení a nemá alternativní zdroj energie (jako třeba funkční nabitou baterii), tak se vypne.</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>Moje bezdrátové připojeni (nebo jiný hardware) nefunguje, když můj počítač probudím</title>
+  <p>Když uspíte svůj počítač do paměti a pak jej opět probudíte, můžete zjistit, že nefunguje správně internetové připojení, myš nebo jiné zařízení. To může být tím, že ovladač zařízení nepodporuje správně uspávání. Je to čistě <link xref="hardware-driver">problém ovladače</link> a ne zařízení samotného.</p>
+  <p>Pokud má zařízení vypínač napájení, zkuste jej vypnout a pak zapnout. Ve většině případů začne znovu fungovat. Pokud je připojeno přes kabel USB nebo podobný, odpojte je a pak znovu připojte a podívejte se, jestli funguje.</p>
+  <p>Pokud nemůžete vypnout/odpojit zařízení nebo zařízení nefunguje, můžete zkusit počítač restartovat a tím zařízení znovu přivést k činnosti.</p>
+</section>
+
+</page>

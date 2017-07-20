@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="ssh-connect-remote" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+    </credit>
+
+    <desc>Jak použít klíč SSH pro přihlášení k jinému počítači bez zadávání hesla.</desc>
+  </info>
+
+  <title>Připojení k jinému počítači</title>
+
+  <p><app>Hesla a klíče</app> můžete použít k instalaci svých klíčů SSH na vzdálený počítač, na kterém běží server SSH. Můžete také <link xref="ssh-create#ssh-create-key-and-set-up">v průběhu vytváření nastavit klíč SSH pro vzdálené přihlašování</link>.</p>
+
+  <steps>
+    <item>
+      <p>Klikněte pravým tlačítkem na <gui>Klíč SSH</gui> a vyberte <gui>Nastavit klíč pro SSH…</gui></p>
+    </item>
+    <item>
+      <p>V dialogovém okně, které se otevře, zadejte <gui>Adresu serveru</gui>, kterou normálně používáte pro přihlášení ke vzdálenému počítači přes SSH a zmáčkněte <gui>Nastavit</gui>.</p>
+    </item>
+    <item>
+      <p>Program se nyní pokusí připojit na zadanou <gui>Adresu serveru</gui> se zadaným <gui>Přihlašovacím jménem</gui>. Pokud se vyskytne nějaký problém s přístupem ke vzdálenému serveru, objeví se okno s vysvětlením problému a vy to můžete zkusit znovu. Ujistěte se, že jste připojeni k síti a že je vzdálený server dostupný.</p>
+    </item>
+    <item>
+      <p>Pokud se podaří úspěšně spojit se vzdáleným počítačem, objeví se dialogové okno s dotazem na <gui>Heslo</gui>, které používáte pro přihlášení ke vzdálenému počítači. Zadejte své heslo a zmáčkněte <gui style="button">Budiž</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Nyní byste měli být schopni se přihlásit ke vzdálenému počítači přes SSH bez zadávání hesla.</p>
+
+</page>

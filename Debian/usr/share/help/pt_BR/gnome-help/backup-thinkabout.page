@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Projeto de documentação do GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Uma lista de pastas onde você pode achar documentos, arquivos e configurações que talvez queira fazer cópia de segurança.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Onde posso achar os arquivos que quero fazer cópia de segurança?</title>
+
+  <p>Decidir quais arquivos serão guardados e localizá-los é o passo mais difícil quando se tenta realizar uma cópia de segurança. Estão listados abaixo os locais mais comuns de arquivos e configurações importantes que talvez você queira fazer cópia de segurança.</p>
+
+<list>
+ <item>
+  <p>Arquivos pessoais (documentos, músicas, fotografias e vídeos)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Estes costumam estar armazenados em sua pasta pessoal (<file>/home/seu_nome</file>). Eles podem estar em subpastas como Área de trabalho, Documentos, Imagens, Música e Vídeos.</p>
+  <p>Se sua mídia de cópia de segurança tiver espaço o bastante (se for um disco rígido externo, por exemplo), pondere sobre fazer uma cópia de segurança de toda a pasta pessoal. Você pode descobrir quanto de espaço em disco sua pasta pessoal ocupa usando o <app>Analisador de uso de disco</app>.</p>
+ </item>
+
+ <item>
+  <p>Arquivos ocultos</p>
+  <p>Qualquer arquivo ou pasta cujo nome comece com um ponto (.) é ocultado por padrão. Para ver arquivos escondidos, clique no botão <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Opções de visualização</span></media></gui> na barra de ferramentas e, então, escolha <gui>Mostrar arquivos ocultos</gui> ou pressione <keyseq><key>Ctrl</key><key>H</key></keyseq>. Você pode copiar esses arquivos para um local de cópia de segurança como qualquer outro arquivo.</p>
+ </item>
+
+ <item>
+  <p>Configurações pessoais (preferências do ambiente, temas e configurações de programas)</p>
+  <p>A maioria dos aplicativos armazenam suas configurações em pastas ocultas dentro de sua pasta pessoal (veja acima sobre arquivos ocultos).</p>
+  <p>A maioria das configurações dos aplicativos serão armazenados nas pastas ocultas <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file> e <file>.local</file> dentro de sua pasta pessoal.</p>
+ </item>
+
+ <item>
+  <p>Configurações do sistema</p>
+  <p>As configurações de partes importantes do sistema não estão armazenadas na sua pasta pessoal. Existem vários locais onde possam estar armazenadas, mas a maioria se encontra na pasta <file>/etc</file>. Em geral, você não precisa fazer cópia desses arquivos em um computador pessoal. Contudo, se estiver em um servidor, você deveria fazer cópia de segurança dos arquivos relacionados aos serviços que ele esteja executando.</p>
+ </item>
+</list>
+
+</page>

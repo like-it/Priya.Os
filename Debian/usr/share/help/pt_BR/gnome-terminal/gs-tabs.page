@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="gs-tabs" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#getting-started"/>
+    <revision pkgversion="3.8" date="2013-02-17" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-03-07" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013–2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Adicione, remova e reorganize as abas do <app>Terminal</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luciana Bastos de Freitas Menezes</mal:name>
+      <mal:email>lubfm@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andrius da Costa Ribas</mal:name>
+      <mal:email>andriusmao@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2009, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Felipe Braga</mal:name>
+      <mal:email>fbobraga@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Usando abas</title>
+
+  <p>Para que você possa navegar pelas abas pelos menus, você precisa verificar se <link xref="pref-tab-window">elas estão habilitadas em suas preferências</link>.</p>
+
+  <p>A barra de abas aparece na parte superior da janela do <app>Terminal</app> quando ela possui abas abertas (ela se parece com uma fileira de botões). Clique em uma aba para alternar para ela. Você pode abrir várias abas para gerenciar seu trabalho no <app>Terminal</app>. Isto permite que você efetue várias atividades simultaneamente, como executar programas, navegar por diretórios ou editar de arquivos, numa única janela do <app>Terminal</app>.</p>
+
+  <section id="add-tab">
+    <title>Abrindo uma nova aba</title>
+
+    <p>Para abrir uma nova aba dentro da janela atual do <app>Terminal</app>:</p>
+    <steps>
+      <item>
+        <p>Pressione as teclas <keyseq><key>Shift</key><key>Ctrl</key><key>T</key></keyseq>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+<!-- TODO: doesn't work, see bug 720693
+  <section id="rename-tab">
+    <title>Rename a tab</title>
+
+    <p>Each tab has an automatically assigned title. You can rename the tabs
+    individually:</p>
+
+    <steps>
+      <item>
+        <p>Select <guiseq><gui style="menu">Terminal</gui>
+        <gui style="menuitem">Set Title…</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Enter the desired <gui>Title</gui> that you wish to use for the tab.
+        This will overwrite any titles that would be set by terminal commands.
+        </p>
+        <note>
+          <p>It is not possible to set back the automatically set title once it
+          has been set for a tab. To see the title, you need to allow terminal
+          command titles to be shown in the <gui style="menuitem">Profile 
+          Preferences</gui>.</p>
+        </note>
+      </item>
+      <item>
+        <p>Click <gui style="button">OK</gui>.</p>
+      </item>
+    </steps>
+  </section>-->
+
+  <section id="close-tab">
+    <title>Fechando uma aba</title>
+
+    <p>Para fechar uma aba dentro da janela atual do <app>Terminal</app>:</p>
+
+    <steps>
+      <item>
+        <p>Selecione <guiseq><gui style="menu">Arquivo</gui> <gui style="menuitem">Fechar terminal</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <p>Como alternativa, você pode clicar no <gui style="button">x</gui> no canto superior direito da aba ou clicar com o botão direito do mouse na aba e selecionar <gui style="menuitem">Fechar o terminal</gui>.</p>
+
+  </section>
+
+  <section id="reorder-tab">
+    <title>Ordenando abas</title>
+
+    <p>Para alterar a ordem das abas em uma janela:</p>
+    <steps>
+      <item>
+        <p>Clique e segure o botão esquerdo do mouse na aba.</p>
+      </item>
+      <item>
+        <p>Mova a aba para a posição desejada entre as outras abas.</p>
+      </item>
+      <item>
+        <p>Solte o botão do mouse.</p>
+      </item>
+    </steps>
+
+    <p>A aba será colocada na posição mais próxima de onde você a soltar, ao lado de outras abas abertas.</p>
+
+    <p>Como alternativa, você pode reordenar as abas clicando com o botão direito do mouse em uma aba e selecionando <gui style="menuitem">Mover terminal para a esquerda</gui> para mover a aba para a esquerda ou <gui style="menuitem">Mover terminal para a direita</gui> para mover a aba para a direita. Isto irá reordenar as abas, movendo uma posição por vez.</p>
+
+  </section>
+
+  <section id="move-tab-another-window">
+    <title>Movendo a aba para outra janela do <app>Terminal</app></title>
+
+    <p>Se você deseja mover uma aba de uma janela para outra:</p>
+    <steps>
+      <item>
+        <p>Clique e segure o botão esquerdo do mouse na aba.</p>
+      </item>
+      <item>
+        <p>Arraste a aba para a nova janela.</p>
+      </item>
+      <item>
+        <p>Posicione-a entre as outras abas na nova janela.</p>
+      </item>
+      <item>
+        <p>Solte o botão do mouse.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Você pode mover uma aba de uma janela para outra, arrastando a guia para o canto do panorama de <gui>Atividades</gui> do <gui>GNOME Shell</gui>. Isto irá mostrar as janelas abertas do <app>Terminal</app>. Você pode liberar a aba que você está segurando sobre a janela <app>Terminal</app> desejada.</p>
+    </note>
+  </section>
+
+  <section id="move-tab-create-window">
+    <title>Movendo a aba para criar uma nova janela do <app>Terminal</app></title>
+
+    <p>Para criar um nova janela a partir de uma aba existente:</p>
+    <steps>
+      <item>
+        <p>Clique e segure o botão esquerdo do mouse na aba.</p>
+      </item>
+      <item>
+        <p>Arraste a aba para fora da janela do <app>Terminal</app>.</p>
+      </item>
+      <item>
+        <p>Solte o botão do mouse.</p>
+      </item>
+    </steps>
+  </section>
+
+</page>

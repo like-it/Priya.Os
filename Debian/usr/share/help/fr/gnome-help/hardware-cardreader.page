@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="hardware-cardreader" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="media#photos"/>
+    <link type="guide" xref="hardware#problems"/>
+
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Résoudre les problèmes de lecteurs de cartes de données</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Problèmes de lecteurs de cartes de données</title>
+
+<p>Beaucoup d'ordinateurs sont équipés de lecteurs de cartes aux formats SD, MMC, SM, MS, CF et autres médias de stockage. Ceux-ci sont normalement détectés et <link xref="disk-partitions">montés</link> automatiquement. S'ils ne le sont pas, voici quelques conseils de dépannage :</p>
+
+<steps>
+<item>
+<p>Vérifiez que la carte est correctement insérée. Beaucoup de cartes ont l'air d'être à l'envers lorsqu'elles sont correctement insérées. Vérifiez aussi que la carte soit fermement positionnée dans son logement ; il faut parfois forcer un peu pour insérer certaines cartes, surtout les CF (attention de ne pas trop forcer ! Si vous butez sur quelque chose de dur, arrêtez).</p>
+</item>
+
+<item>
+  <p>Open <app>Files</app> from the
+  <gui xref="shell-introduction#activities">Activities</gui> overview. Does the inserted
+  card appear in the <gui>Devices</gui> list in the left sidebar? Sometimes the
+  card appears in this list but is not mounted; click it once to mount. (If the
+  sidebar is not visible, press <key>F9</key> or click <gui style="menu">Files</gui> in
+  the top bar and select the <gui style="menuitem">Sidebar</gui>.)</p>
+</item>
+
+<item>
+  <p>Si votre carte ne s'affiche pas dans le panneau latéral, appuyez sur <keyseq><key>Ctrl</key><key>L</key></keyseq>, saisissez <input>computer:///</input> et faites <key>Entrée</key>. Si votre lecteur de carte est correctement configuré, il doit y apparaître soit sous forme d'un lecteur vide, soit sous forme de la carte elle-même si elle est montée.</p>
+</item>
+
+<item>
+<p>Si vous voyez le lecteur de carte vide sans la carte, le problème est peut-être dû à la carte. Essayez avec une autre carte ou vérifiez la carte avec un autre lecteur si possible.</p>
+</item>
+</steps>
+
+<p>S'il n'y a ni lecteur ni carte affiché dans le dossier <gui>Poste de travail</gui>, il se peut que votre lecteur de carte ne fonctionne pas avec Linux à cause d'un problème de pilote. S'il s'agit d'un lecteur de carte interne (à l'intérieur de votre ordinateur et non externe), c'est sans doute l'origine du problème. La meilleure solution est de connecter directement votre périphérique (appareil photo, téléphone cellulaire, etc.) à un port USB de votre ordinateur. Il y a aussi des lecteurs de cartes USB externes qui sont beaucoup mieux pris en charge par Linux.</p>
+
+</page>

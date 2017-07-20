@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>டிஃபானி அன்ட்டொபோல்ஸ்கி</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>மைக்கேல் ஹில்</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>நீங்கள் மறுபிரதியெடுக்க விரும்பக்கூடிய ஆவணங்கள், கோப்புகள் மற்றும் அமைவுகளைக் காட்டும் கோப்புறைகளின் பட்டியல்.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>நான் மறுபிரதியெடுக்க விரும்பக்கூடிய கோப்புகள் எங்கிருக்கும்?</title>
+
+  <p>மறுபிரதியெடுக்கும் செயலில், மறுபிரதியெடுக்க வேண்டிய கோப்புகளைத் தேர்ந்தெடுப்பதும் அவை எங்குள்ளன என இடமறிவதுமே மிக கடினமான செயல். வழக்கமாக நீங்கள் மறுபிரதியெடுக்க விரும்பக்கூடிய முக்கியமான கோப்புகள்  மற்றும் அமைவுகளின் பொதுவான இடத் தகவல்கள் கீழே கொடுக்கப்பட்டுள்ளன.</p>
+
+<list>
+ <item>
+  <p>தனிப்பட்ட கோப்புகள் (ஆவணங்கள், இசை, புகைப்படங்கள் மற்றும் வீடியோக்கள்)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">வழக்கமாக இவை உங்கள் இல்லக் கோப்புறையில் சேமிக்கப்பட்டிருக்கும் (<file>/home/your_name</file>). அவை Desktop, Documents, Pictures, Music மற்றும்Videos போன்ற உப கோப்புறைகளில் இருக்கும்.</p>
+  <p>If your backup medium has sufficient space (if it is an external hard
+  disk, for example), consider backing up the entire Home folder. You can find
+  out how much disk space your Home folder takes up by using the
+  <app>Disk Usage Analyzer</app>.</p>
+ </item>
+
+ <item>
+  <p>மறைவான கோப்புகள்</p>
+  <p>Any file or folder name that starts with a period (.) is hidden by
+  default. To view hidden files, click the
+  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
+  button in the toolbar, and then choose <gui>Show Hidden Files</gui>, or press
+  <keyseq><key>Ctrl</key><key>H</key></keyseq>. You can copy these to a
+  backup location like any other file.</p>
+ </item>
+
+ <item>
+  <p>தனிப்பட்ட அமைவுகள் (பணிமேசை முன்னுரிமைகள், தீம்கள் மற்றும் மென்பொருள் அமைவுகள்)</p>
+  <p>பெரும்பாலான பயன்பாடுகள் அவற்றின் அமைவுகளை உங்கள் இல்லக் கோப்புறையில் உள்ள மறைந்துள்ள கோப்புறைகளில் சேமித்து வைத்திருக்கும் (மறைந்துள்ள கோப்புகள் பற்றிய தகவல் மேலே கொடுக்கப்பட்டுள்ளது).</p>
+  <p>பெரும்பாலான உங்கள் பயன்பாடுகளின் அமைவுகள் உங்கள் இல்லக் கோப்புறையில் உள்ள <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file>, மற்றும் <file>.local</file> ஆகிய மறைந்துள்ள கோப்புறைகளில் சேமித்து வைக்கப்பட்டிருக்கும்.</p>
+ </item>
+
+ <item>
+  <p>கணினியளவிலான அமைவுகள்</p>
+  <p>Settings for important parts of the system are not stored in your Home
+  folder. There are a number of locations that they could be stored, but most
+  are stored in the <file>/etc</file> folder. In general, you will not need to
+  back up these files on a home computer. If you are running a server, however,
+  you should back up the files for the services that it is running.</p>
+ </item>
+</list>
+
+</page>

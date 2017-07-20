@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-switching" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-windows"/>
+    <link type="guide" xref="shell-overview#apps"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-07" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Шобха Тьяги (Shobha Tyagi)</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Нажмите <keyseq><key>Super</key><key>Tab</key></keyseq>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Переключение между окнами</title>
+
+  <p>You can see all the running applications that have a graphical user
+  interface in the <em>window switcher</em>. This makes
+  switching between tasks a single-step process and provides a full picture of
+  which applications are running.</p>
+
+  <p>На рабочем месте:</p>
+
+  <steps>
+    <item>
+      <p>Чтобы активировать <gui>переключатель окон</gui>, нажмите комбинацию клавиш <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Отпустите клавишу <key xref="keyboard-key-super">Super</key>, чтобы выбрать следующее окно в переключателе.</p>
+    </item>
+    <item>
+      <p>Или, продолжая удерживать клавишу <key xref="keyboard-key-super">Super</key>, нажимайте <key>Tab</key> для циклического просмотра открытых окон, или <keyseq><key>Shift</key><key>Tab</key></keyseq> для просмотра в обратном порядке.</p>
+    </item>
+  </steps>
+
+  <p if:test="platform:gnome-classic">Для доступа к открытым окнам и для переключения между ними, можно также использовать доступ к списку окон на нижней панели.</p>
+
+  <note style="tip" if:test="!platform:gnome-classic">
+    <p>Окна в переключателе окон группируются по приложениям. Миниатюры приложений с несколькими окнами создают выпадающий список по мере нажатий на них мышкой. Чтобы пройти по списку, нажимайте клавишу <key>`</key> (то есть клавишу над клавишей <key>Tab</key>), удерживая при этом нажатой клавишу <key xref="keyboard-key-super">Super</key>, пока не будет выбрано нужное окно.</p>
+  </note>
+
+  <note if:test="!platform:gnome-classic">
+    <p>Окна приложений, находящиеся на разных рабочих местах, в переключателе окон разделяются вертикальными линиями.</p>
+  </note>
+
+  <p>С помощью клавиш со стрелками <key>→</key> и <key>←</key> в переключателе окон можно перемещаться между значками приложений. Значок приложения также можно выбрать с помощью мыши.</p>
+
+  <p>Миниатюры приложений, у которых имеется только одно окно, можно показать с помощью клавиши <key>↓</key>.</p>
+
+  <p>Чтобы переключиться на <link xref="shell-windows">окно</link>, откройте <gui>Обзор</gui> и нажмите на это окно. Если у вас открыто несколько <link xref="shell-windows#working-with-workspaces">рабочих мест</link>, вы можете нажать на любое рабочее место, чтобы посмотреть, какие окна открыты на этом рабочем месте.</p>
+
+</page>

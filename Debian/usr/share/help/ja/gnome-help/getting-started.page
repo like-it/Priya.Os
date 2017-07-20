@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:e="http://projectmallard.org/experimental/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="getting-started" version="1.0 if/1.0" xml:lang="ja">
+
+<info>
+    <link type="guide" xref="index" group="#gs"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <desc>GNOME は初めてですか? 使い方を一通り身に付けられます。</desc>
+    <title type="link">GNOME を初めて使う方へ</title>
+    <title type="text">初めて使う方へ</title>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2013, 2015, 2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>初めて使う方へ</title>
+
+<if:choose>
+<if:when test="!platform:gnome-classic">
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-launching-applications.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-launching-apps.svg">
+      <ui:caption its:translate="yes"><desc style="center">アプリケーションを起動する</desc></ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>アプリケーションの起動</tt:p>
+         </tt:div>
+         <tt:div begin="5s" end="7.5s">
+           <tt:p>マウスポインターを画面左上隅の<gui>アクティビティ</gui>まで移動させます。</tt:p>
+           </tt:div>
+         <tt:div begin="7.5s" end="9.5s">
+           <tt:p><gui>アプリケーションを表示する</gui>アイコンをクリックします。</tt:p>
+         </tt:div>
+         <tt:div begin="9.5s" end="11s">
+           <tt:p>起動するアプリケーション、例えばヘルプ、をクリックします。</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="21s">
+           <tt:p>他の方法もあります。キーボードから <key href="help:gnome-help/keyboard-key-super">Super</key> キーを押して<gui>アクティビティ画面</gui>を開きます。</tt:p>
+         </tt:div>
+         <tt:div begin="22s" end="29s">
+           <tt:p>起動するアプリケーション名をキーボードでタイプします。</tt:p>
+         </tt:div>
+         <tt:div begin="30s" end="33s">
+           <tt:p><key>Enter</key> を押すと、アプリケーションが起動します。</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+</if:when>
+<if:when test="platform:gnome-classic">
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-windows-and-workspaces.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-windows-and-workspaces.svg">
+          <ui:caption its:translate="yes"><desc style="center">ウィンドウとワークスペースを使用する</desc></ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>ウィンドウとワークスペース</tt:p>
+         </tt:div>
+         <tt:div begin="6s" end="10s">
+           <tt:p>ウィンドウを最大化するには、ウィンドウのタイトルバーをつかんで画面の上端までドラッグします。</tt:p>
+           </tt:div>
+         <tt:div begin="10s" end="13s">
+           <tt:p>画面がハイライト表示されたら、ウィンドウを離します。</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="20s">
+           <tt:p>ウィンドウを元のサイズに戻すには、ウィンドウのタイトルバーをつかみ、ドラッグして画面の上端から引き離します。</tt:p>
+         </tt:div>
+         <tt:div begin="25s" end="29s">
+           <tt:p>トップバーをつかみ、ウィンドウを引き離して元のサイズに戻すこともできます。</tt:p>
+         </tt:div>
+         <tt:div begin="34s" end="38s">
+           <tt:p>ウィンドウを画面左半分に最大化するには、ウィンドウのタイトルバーをつかんで左端までドラッグします。</tt:p>
+         </tt:div>
+         <tt:div begin="38s" end="40s">
+           <tt:p>画面半分がハイライト表示されたら、ウィンドウを離します。</tt:p>
+         </tt:div>
+         <tt:div begin="41s" end="44s">
+           <tt:p>ウィンドウを画面右半分に最大化するには、ウィンドウのタイトルバーをつかんで右端までドラッグします。</tt:p>
+         </tt:div>
+         <tt:div begin="44s" end="48s">
+           <tt:p>画面半分がハイライト表示されたら、ウィンドウを離します。</tt:p>
+         </tt:div>
+         <tt:div begin="54s" end="60s">
+           <tt:p>キーボードを使ってウィンドウを最大化するには、<key href="help:gnome-help/keyboard-key-super">Super</key> キーを押しながら、<key>↑</key> キーを押します。</tt:p>
+         </tt:div>
+         <tt:div begin="61s" end="66s">
+           <tt:p>キーボードを使ってウィンドウを元のサイズに戻すには、<key href="help:gnome-help/keyboard-key-super">Super</key> キーを押しながら、<key>↓</key> キーを押します。</tt:p>
+         </tt:div>
+         <tt:div begin="66s" end="73s">
+           <tt:p>キーボードを使ってウィンドウを画面右半分に最大化するには、<key href="help:gnome-help/keyboard-key-super">Super</key> キーを押しながら、<key>→</key> キーを押します。</tt:p>
+         </tt:div>
+         <tt:div begin="76s" end="82s">
+           <tt:p>キーボードを使ってウィンドウを画面左半分に最大化するには、<key href="help:gnome-help/keyboard-key-super">Super</key> キーを押しながら、<key>←</key> キーを押します。</tt:p>
+         </tt:div>
+         <tt:div begin="83s" end="89s">
+           <tt:p>ひとつ下のワークスペースに切り替えるには、<keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>Page Down</key></keyseq> を押します。</tt:p>
+         </tt:div>
+         <tt:div begin="90s" end="97s">
+           <tt:p>ひとつ上のワークスペースに切り替えるには、<keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>Page Up</key></keyseq> を押します。</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+</if:when>
+</if:choose>
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-task-switching.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-task-switching.svg">
+        <ui:caption its:translate="yes"><desc style="center">タスクを切り替える</desc></ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>タスクの切り替え</tt:p>
+         </tt:div>
+         <if:if test="!platform:gnome-classic">
+         <tt:div begin="5s" end="8s">
+           <tt:p>マウスポインターを画面左上隅の<gui>アクティビティ</gui>まで移動させます。</tt:p>
+           </tt:div>
+         </if:if>
+         <tt:div begin="9s" end="12s">
+           <tt:p>ウィンドウをクリックすると、そのタスクに切り替わります。</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="14s">
+           <tt:p>ウィンドウを画面左半分に最大化するには、ウィンドウのタイトルバーをつかんで左端までドラッグします。</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="16s">
+           <tt:p>画面半分がハイライト表示されたら、ウィンドウを離します。</tt:p>
+         </tt:div>
+         <tt:div begin="16s" end="18">
+           <tt:p>ウィンドウを画面右半分に最大化するには、ウィンドウのタイトルバーをつかんで右端までドラッグします。</tt:p>
+         </tt:div>
+         <tt:div begin="18s" end="20s">
+           <tt:p>画面半分がハイライト表示されたら、ウィンドウを離します。</tt:p>
+         </tt:div>
+         <tt:div begin="23s" end="27s">
+           <tt:p><keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>Tab</key></keyseq> を押して、ウィンドウスイッチャーを表示します。</tt:p>
+         </tt:div>
+         <tt:div begin="27s" end="29s">
+           <tt:p>次のウィンドウがハイライト表示され、<key href="help:gnome-help/keyboard-key-super">Super</key> キーを離すと、そのウィンドウが選択されます。</tt:p>
+         </tt:div>
+         <tt:div begin="29s" end="32s">
+           <tt:p>開いているウィンドウを順に切り替えるには、<key href="help:gnome-help/keyboard-key-super">Super</key> を離さずに押したままで <key>Tab</key> を押します。</tt:p>
+         </tt:div>
+         <tt:div begin="35s" end="37s">
+           <tt:p><key href="help:gnome-help/keyboard-key-super">Super</key> キーを押して<gui>アクティビティ画面</gui>を開きます。</tt:p>
+         </tt:div>
+         <tt:div begin="37s" end="40s">
+           <tt:p>切り替え先のアプリケーション名をキーボードでタイプします。</tt:p>
+         </tt:div>
+         <tt:div begin="40s" end="43s">
+           <tt:p>アプリケーションが検索結果の先頭に表示されたら、<key>Enter</key> を押すと、そのアプリケーションに切り替わります。</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-responding-to-messages.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-responding-to-messages.svg">
+            <ui:caption its:translate="yes"><desc style="center">メッセージに返信する</desc>
+            </ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="3s">
+           <tt:p>メッセージへの返事</tt:p>
+         </tt:div>
+         <tt:div begin="3s" end="6s">
+           <tt:p>チャットメッセージが画面上部に表示されたら、マウスをメッセージの位置に移動させます。</tt:p>
+           </tt:div>
+         <tt:div begin="6s" end="9s">
+           <tt:p>返信内容を入力したら、<key>Enter</key> を押して送信します。</tt:p>
+         </tt:div>
+         <tt:div begin="9s" end="10s">
+           <tt:p>チャットメッセージを閉じます。</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="14s">
+           <tt:p>あとで返信する</tt:p>
+         </tt:div>
+         <tt:div begin="16s" end="22s">
+           <tt:p>画面上部のチャットメッセージにマウスを移動させなければ、しばらくするとメッセージは画面から消えます。</tt:p>
+         </tt:div>
+         <tt:div begin="22s" end="24s">
+           <tt:p>まだ返信していないメッセージを再表示するには、トップバーの時計をクリックします。</tt:p>
+         </tt:div>
+         <tt:div begin="24s" end="26s">
+           <tt:p>通知リストから、メッセージを選択します。</tt:p>
+         </tt:div>
+         <tt:div begin="26s" end="28s">
+           <tt:p>返事を入力します。</tt:p>
+         </tt:div>
+         <tt:div begin="32s" end="35s">
+           <tt:p>通知リストを表示するには、<keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>V</key></keyseq> を押します。</tt:p>
+         </tt:div>
+         <tt:div begin="35s" end="41s">
+           <tt:p>矢印キーを使い、返信するメッセージを選択して <key>Enter</key> を押します。</tt:p>
+         </tt:div>
+         <tt:div begin="41s" end="44s">
+           <tt:p>返事を入力します。</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+
+<links type="topic" style="grid" groups="tasks">
+<title style="heading">よく行う作業</title>
+</links>
+
+<links type="guide" style="heading nodesc">
+<title/>
+</links>
+
+<!--
+<note style="plain">
+  <title>New in GNOME 3.8</title>
+  <p>New features described here.</p>
+</note>
+-->
+
+</page>

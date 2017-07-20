@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>Väriavaruus on määritelty alue värejä.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mitä väriavaruus tarkoittaa?</title>
+
+  <p>Väriavaruus on määritelty värien vaihteluväli. Tunnettuja väriavaruuksia ovat sRGB, AdobeRGB ja ProPhotoRGB.</p>
+
+  <p>Ihmissilmä ei ole yksinkertainen RGB-tunnistin, mutta ihmissilmän havaitsemia värejä voi arvioida CIE 1931 -väridiagrammilla. Se näyttää ihmissilmän vastineen hevosenkengän muotoisena. Kyseisen väridiagrammin avulla on mahdollista huomata, että ihmissilmä havaitsee paljon enemmän vihreän sävyjä kuin sinisen tai punaisen sävyjä. Kolmivärisessä väriavaruudessa, kuten RGB:ssä, värit esitetään tietokoneella käyttäen kolmea arvoa, josta aiheutuu värien kolmikulmainen määritys.</p>
+
+  <note>
+    <p>
+      Using models such as a CIE 1931 chromaticity diagram is a huge
+      simplification of the human visual system, and real gamuts are
+      expressed as 3D hulls, rather than 2D projections.
+      A 2D projection of a 3D shape can sometimes be misleading, so if
+      you want to see the 3D hull, use the <code>gcm-viewer</code>
+      application.
+    </p>
+  </note>
+
+  <figure>
+    <desc>sRGB, AdobeRGB ja ProPhotoRGB kuvattuina valkoisilla kolmioilla</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>Tarkastellaan ensimmäisenä sRGB:tä, joka on suppein avaruus ja kykenee tuottamaan vähiten eri värejä. Se on likiarvo 10-vuotiaasta putkinäytöstä, joten useimmat uudet näytöt voivat näyttää sitä enemmän värejä. sRGB on standardina <em>pienin yhteinen nimittäjä</em>, ja sitä käytetään useissa eri käyttökohteissa (mukaan lukien internet).</p>
+  <p>AdobeRGB on yleisesti käytetty <em>editointiavaruus</em>. Se kykenee käsittelemään enemmän värejä kuin sRGB, eli valokuvissa olevia värejä voi vaihtaa melko huolettomasti ilman pelkoa, että kaikkein elävimmät värit leikkautuvat pois tai mustan sävyt sekoittuvat.</p>
+  <p>ProPhoto on suurin saatavilla oleva väriavaruus, ja sitä käytetään usein asiakirjojen arkistointiin. Sillä voidaan koodata lähes koko ihmissilmän havaitsema värimaailma, ja myös joitain värejä joita silmä ei voi havaita.</p>
+
+  <p>Jos ProPhoto on selvästi paras vaihtoehto, miksi sitä ei sitten käytetä kaikkialla? Vastaus kiteytyy termiin <em>kvantisointi</em>. Jos kanavaa kohden on käytettävissä vain kahdeksan bittiä (256 tasoa), suurempi vaihteluväli sisältää eri arvojen välillä suuremmat askeleet.</p>
+  <p>Isommat askeleet tarkoittavat suurempia virheitä kuvauksessa kaapatun värin ja tallennetun värin välillä, ja joillain väreillä tämä on iso ongelma. Jotkin värit, kuten ihon sävyt, ovat hyvin tärkeitä. Näissä tavalliset kuvien katselijat huomaavat pienetkin virheitä, ikään kuin valokuvassa olisi jotain vialla.</p>
+  <p>16-bittisten kuvien käyttö antaa käytettäväksi huomattavasti useampia askeleita ja paljon pienemmän kvantisointivirheen, mutta samalla kuvan koko kaksinkertaistuu. Suurin osa nykyisestä sisällöstä sisältää kahdeksan bittiä kuvapisteen väriä kohden.</p>
+  <p>Värinhallinta on prosessi, jossa värit muutetaan yhdestä väriavaruudesta toiseen. Väriavaruus voi olla hyvin tunnettu määritelty väriavaruus, kuten sRGB, tai oman monitorisi tai tulostimesi muokattu väriavaruus.</p>
+
+</page>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="problem-permissions" xml:lang="ko">
+  <info>
+    <link type="guide" xref="index#problems"/>
+    <revision pkgversion="3.12" date="2014-01-25" status="review"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>검사 중 <gui>/… 폴더를 검사할 수 없습니다 또는 /… 에 들어 있는 폴더 중에 검사할 수 없는 폴더가 있습니다</gui> 오류 메시지를 봤습니다.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>조성호</mal:name>
+      <mal:email>shcho@gnome.org</mal:email>
+      <mal:years>2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>검사 오류 발생</title>
+
+  <p>검사를 진행할 때 <app>디스크 사용량 분석</app> 창의 상단에 <gui>/… 폴더를 검사할 수 없습니다 또는 /… 에 들어 있는 폴더 중에 검사할 수 없는 폴더가 있습니다</gui> 메시지가 뜨는 경우가 있습니다. 이 오류는 대상 시트메의 제한 설정으로 인해 일부 파일 접근에 필요한 권한이 없기 때문입니다. 접근할 수 없는 파일은 디스크 사용량을 나타내는 <link xref="pref-view-chart">차트</link>를 계산할 때 활용하지 않으므로 결과가 잘못될 수도 있습니다.</p>
+
+  <p>모든 파일 및 디렉터리에 접근하지 못하는게 일반적이라 간주하므로 이 오류에 여러분이 할 수 있는 조치는 없습니다.</p>
+
+  <note style="info"><p><app>디스크 사용량 분석</app>은 <cmd>du</cmd> 명령을 활용하여 저장소 사용량의 세부 보기 항목을 만들며, 파일의 읽기 권한과 디렉터리의 실행 권한이 필요합니다.</p>
+
+  <p>반면에 메인 창에 나타내는 파일 시스템 디스크 사용량은 <cmd>df</cmd> 명령을 활용하며 파일 시스템에 따른 결과를 출력하지 파일 권한과는 관계 없습니다.</p></note>
+</page>

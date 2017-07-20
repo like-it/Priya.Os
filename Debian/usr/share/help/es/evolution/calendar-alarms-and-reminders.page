@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="calendar-alarms-and-reminders" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#calendar"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2011-08-02" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+     <name its:translate="no">Novell, Inc</name>
+     <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-prefs-cal.html.en#CACHCGCI -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Establecer notificaciones de recordatorios para citas.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Recordatorios para citas</title>
+
+<section id="general-settings">
+  <title>Configuración general</title>
+
+  <p>Bajo <guiseq><gui>Editar</gui><gui>Preferencias</gui><gui>Calendario y tareas</gui><gui>Recordatorios</gui></guiseq> puede seleccionar esos calendarios para los que quiere recibir notificaciones de recordatorios. Si no selecciona un calendario no recibirá recordatorios para ningún evento en ese calendario. También puede definir si quiere mostrar un recordatorio para cada cita  para cada cumpleaños y aniversario.</p>
+
+  <if:choose>
+    <if:when test="platform:gnome-shell">
+      <p>Consulte <link xref="help:gnome-help/shell-notifications" href="https://help.gnome.org/users/gnome-help/stable/shell-notifications">la ayuda del escritorio GNOME</link> para obtener información sobre cómo mostrar recordatorios.</p>
+    </if:when>
+  </if:choose>
+
+</section>
+
+<section id="manual-reminders">
+  <title>Recordatorios manuales</title>
+
+  <p>Además de la configuración general, también puede establecer recordatorios manuales en el editor de citas, solo para cierto tipo de citas:</p>
+
+  <steps>
+    <item>
+      <p>Pulse <guiseq><gui>Opciones</gui><gui>Recordatorios</gui></guiseq> o pulse el botón Recordatorio en la barra de herramientas.</p>
+    </item>
+    <item>
+      <p>Del menú desplegable, elija una de las opciones predeterminadas disponibles para mostrar un recordatorio de notificación, o elija <gui>Personalizar</gui>.</p>
+    </item>
+    <item>
+      <p>En caso de <gui>Personalizar</gui>, el recordatorio puede ser una ventana emergente, la reproducción de un sonido o la ejecución de un programa. También puede definir si se debe repetir el recordatorio.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="ssh-create" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys" group="first"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="incomplete"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Créer des clés SSH pour se connecter à d'autres ordinateurs.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Création d'une nouvelle clé SSH</title>
+
+  <p>Une clé SSH vous aide à créer une connexion sécurisée entre ordinateurs. La création d'une clé SSH génère une clé <em>publique</em> et une clé <em>privée</em>. Voici comment créer une nouvelle clé :</p>
+
+    <steps>
+      <item><p>Sélectionnez <guiseq><gui style="menu">Fichier</gui> <gui style="menuitem">Nouveau…</gui></guiseq>.</p></item>
+      <item><p>Sélectionnez <gui>Clé de shell sécurisé</gui> puis cliquez sur <gui>Continuer</gui>.</p></item>
+      <item><p>Saisissez une description de la clé. Cette description vous aidera à identifier la clé ultérieurement. Vous pouvez, par exemple, saisir la date du jour, quelques mots sur le rôle de la clé, ou le nom du serveur sur lequel vous avez l'intention d'installer la clé. Ce champ de description est facultatif, et la façon de décrire la clé ne tient qu'à vous.</p></item>
+      <item><p>Vous pouvez modifier les paramètres par défaut concernant le type de chiffrement ou la force de la clé en développant le panneau <gui>Options avancées de clé</gui>.</p></item>
+    </steps>
+
+  <p>À ce stade, vous pouvez ne créer que la clé, ou bien créer la clé et l'installer sur un ordinateur distant pour autoriser la connexion sans mot de passe.</p>
+
+  <section id="ssh-just-create-key" ui:expanded="false">
+    <title>Création de la clé sans configuration de la connexion distante</title>
+    <p>Vous pouvez créer la clé SSH, et choisir de la configurer plus tard.</p>
+
+    <steps>
+      <item>
+	<p>Cliquez sur le bouton <gui style="button">Créer seulement</gui> la clé.</p>
+      </item>
+      <item>
+	<p>Saisissez une phrase de passe pour la clé SSH et cliquez sur <gui style="button">Valider</gui>.</p>
+      </item>
+      <item>
+	<p>Saisissez à nouveau la phrase de passe et cliquez sur <gui style="button">Valider</gui>.</p>
+      </item>
+    </steps>
+
+    <p>La clé SSH figure maintenant dans le trousseau <gui>Clés OpenSSH</gui>.</p>
+
+    <note style="tip">
+      <p>Quand vous tentez d'utiliser la clé SSH, le système d'exploitation vous demande la phrase de passe produite lors de la création. Cela garantit que si quelqu'un prend possession de votre clé SSH, il ne pourra pas l'utiliser sans la phrase de passe.</p>
+    </note>
+
+  </section>
+
+  <section id="ssh-create-key-and-set-up" ui:expanded="false">
+    <title>Création de la clé et installation sur un ordinateur distant</title>
+    <p>Un des plus gros avantages à posséder une clé SSH est la possibilité d'installer la clé publique sur un ordinateur distant. Cela vous permet de vous connecter à un ordinateur distant sans avoir besoin de saisir un mot de passe à chaque fois.</p>
+
+    <steps>
+      <item>
+	<p>Cliquez sur le bouton <gui style="button">Créer et configurer</gui>, et suivre les instructions ci-dessus pour saisir une phrase de passe.</p>
+      </item>
+      <item>
+	<p>Dans la fenêtre de dialogue qui s'ouvre, saisissez l'<gui>adresse du serveur</gui> que vous utilisez habituellement pour vous connecter à l'ordinateur distant via SSH.</p>
+      </item>
+      <item>
+	<p>Assurez-vous que l'<gui>identifiant de connexion</gui> que vous utilisez sur l'ordinateur distant est correct, et cliquez sur <gui>Configurer</gui>.</p>
+      </item>
+      <item>
+	<p>Le programme tente alors de se connecter à l'<gui>adresse du serveur</gui> spécifiée avec l'<gui>identifiant de connexion</gui> saisi. Si un problème survient lors de la connexion à l'ordinateur distant, une fenêtre d'avertissement vous expose le problème, et vous pouvez recommencer. Assurez vous que vous êtes bien connecté au réseau et que l'ordinateur distant est actif et accessible.</p>
+      </item>
+      <item>
+	<p>Si la connexion à l'ordinateur distant réussit, une boîte de dialogue s'affiche, vous demandant le <gui>mot de passe</gui> que vous utilisez pour la connexion à cet ordinateur. Saisissez le mot de passe, et cliquez sur <gui style="button">Valider</gui>.</p>
+      </item>
+    </steps>
+
+    <p>La partie publique de la clé SSH sélectionnée est installée sur l'ordinateur distant et configurée pour autoriser une connexion sans mot de passe. Vous devriez pouvoir maintenant vous connecter à l'ordinateur distant via SSH sans mot de passe.</p>
+
+    <note style="tip">
+      <p>Si l'authentification par clé SSH échoue et vous ne pouvez utiliser l'authentification par mot de passe, demandez de l'aide à l'administrateur du service.</p>
+    </note>
+  </section>
+</page>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-rename" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Byt namn på fil eller mapp.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Byt namn på en fil eller mapp</title>
+
+  <p>Som med andra filhanterare kan du använda <app>Filer</app> för att byta namn på en fil eller mapp.</p>
+
+  <steps>
+    <title>För att byta namn på en fil eller mapp:</title>
+    <item><p>Högerklicka på objektet och välj <gui>Byt namn</gui> eller markera filen och tryck på <key>F2</key>.</p></item>
+    <item><p>Ange det nya namnet och tryck på <key>Retur</key> eller klicka på <gui>Byt namn</gui>.</p></item>
+  </steps>
+
+  <p>Du kan också byta namn på en fil från fönstret<link xref="nautilus-file-properties-basic">egenskaper</link>.</p>
+
+  <p>När du byter namn på en fil kommer bara första delen av namnet på filen att markeras, inte filändelsen (delen efter sista <file>.</file>). Filändelsen betecknar vanligtvis vilken typ av fil det är (till exempel är <file>file.pdf</file> ett PDF-dokument) och du vill vanligtvis inte ändra den. Om du behöver ändra filändelsen också så välj hela filnamnet och ändra det.</p>
+
+  <note style="tip">
+    <p>Om du bytt namn på fel fil eller gav filen fel namn kan du ångra namnbytet. För att ångra åtgärden tryck omedelbart på menyknappen i verktygsfältet och välj <gui>Ångra namnbyte</gui>, eller tryck <keyseq><key>Ctrl</key><key>Z</key></keyseq> för att återställa det gamla namnet.</p>
+  </note>
+
+  <section id="valid-chars">
+    <title>Giltiga tecken för filnamn</title>
+
+    <p>Du kan använda vilket tecken som helst i filnamn förutom tecknet <file>/</file> (snedstreck). Vissa enheter använder dock ett <em>filsystem</em> som har fler restriktioner på filnamnen. Därför är det bäst att undvika följande tecken i dina filnamn: <file>|</file>, <file>\</file>, <file>?</file>, <file>*</file>, <file>&lt;</file>, <file>"</file>, <file>:</file>, <file>&gt;</file>, <file>/</file>.</p>
+
+    <note style="warning">
+    <p>Om du namnger en fil med en <file>.</file> som första tecken kommer filen att bli <link xref="files-hidden">dold</link> när du försöker visa den i filhanteraren.</p>
+    </note>
+
+  </section>
+
+  <section id="common-probs">
+    <title>Vanliga problem</title>
+
+    <terms>
+      <item>
+        <title>Filnamnet används redan</title>
+        <p>Du kan inte ha två filer eller mappar med samma namn i samma mapp. Om du försöker att byta namn på en fil till ett namn som redan existerar i mappen du arbetar i kommer filhanteraren inte att tillåta det.</p>
+        <p>Fil- och mappnamn är skiftlägeskänsliga, så filnamnet <file>File.txt</file> är inte detsamma som <file>FILE.txt</file>. Att använda olika filnamn på detta sätt är tillåtet, men det är inte rekommenderat.</p>
+      </item>
+      <item>
+        <title>Filnamnet är för långt</title>
+        <p>På vissa filsystem kan filnamn inte har mer än 255 tecken. Denna 255-teckensbegränsning inkluderar både filnamnet och sökvägen till filen (till exempel <file>/home/maria/Dokument/arbete/affärsförslag/…</file>), så du bör undvika långa fil- och mappnamn där det går.</p>
+      </item>
+      <item>
+        <title>Alternativet att byta namn är inaktiverat</title>
+        <p>Om <gui>Byt namn</gui> är inaktiverat har du inte rättighet att byta namn på filen. Du bör vara aktsam med att byta namn på sådana filer, eftersom namnbyte på vissa skyddade filer kan orsaka att systemet blir instabilt. Se <link xref="nautilus-file-properties-permissions"/> för vidare information.</p>
+      </item>
+    </terms>
+
+  </section>
+
+</page>

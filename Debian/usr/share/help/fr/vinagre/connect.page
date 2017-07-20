@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <title type="sort">1</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Se connecter à un autre ordinateur sur le réseau local.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mise en place d'une connexion</title>
+
+  <p>Vous pouvez vous connecter à d'autres ordinateurs sur votre réseau local grâce au <app>Visionneur de bureau distant</app>.</p>
+
+  <steps>
+    <item>
+      <p>Choisissez <guiseq><gui style="menu">Distant</gui><gui style="menuitem">Se connecter</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Choisissez le <gui>Protocole</gui> et l'<gui>Hôte</gui> pour la connexion.</p>
+      <note>
+        <p>Certains protocoles vous permettent de voir quels sont les ordinateurs présents sur votre réseau local en cliquant sur le bouton<gui style="button">Rechercher</gui>. Sans la prise en charge d'<app>Avahi</app>, ce bouton ne s'affiche pas.</p>
+      </note>
+    </item>
+    <item>
+      <p>Sélectionnez les options que vous voulez activer quand la connexion sera réalisée. Les options dépendent du protocole utilisé.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton <gui style="button">Se connecter</gui>.</p>
+      <p>À ce moment, le bureau distant peut avoir besoin de confirmer la connexion. Si c'est le cas, l'afficheur restera noir jusqu'à ce que la connexion soit confirmée.</p>
+      <note>
+        <p>Certains ordinateurs peuvent nécessiter une connexion sécurisée : une boîte de dialogue d'authentification s'affiche alors, réclamant les informations d'authentification. Le type d'informations dépend de l'hôte distant ; il peut s'agir d'un nom d'utilisateur et d'un mot de passe. Si vous sélectionnez <gui>Se souvenir de l'information d'identification</gui>, le <app>Visionneur de bureau distant</app> stockera cette information en utilisant l'application <app>Trousseau de clés GNOME</app>.</p>
+      </note>
+    </item>
+  </steps>
+
+  <p>Si la connexion a été utilisée précédemment, vous pouvez y accéder en utilisant le menu <guiseq><gui style="menu">Distant</gui><gui style="menuitem">Connexions récentes</gui></guiseq>.</p>
+
+  <p>Pour fermer une connexion, choisissez <guiseq><gui style="menu">Distant</gui> <gui style="menuitem">Fermer</gui></guiseq> ou cliquez sur le bouton <gui style="button">Fermer</gui>.</p>
+
+</page>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="status-icons" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="shell-overview#apps"/>
+
+    <revision version="0.1" date="2013-02-23" status="review"/>
+
+    <credit type="author copyright">
+      <name>Monica Kochofar</name>
+      <email>monicakochofar@gmail.com</email>
+      <years>2012</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Explica el significado de los iconos de la parte derecha de la barra superior.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>¿Qué significan los iconos de la barra superior?</title>
+<p>Esta sección explica el significado de los iconos que se encuentran en la esquina superior derecha de la pantalla, especialmente todas las variaciones posibles proporcionadas por GNOME de estos iconos.</p>
+
+<if:choose>
+<if:when test="!platform:gnome-classic">
+<media type="image" src="figures/top-bar-icons.png" style="floatend">
+  <p>Barra superior de GNOME Shell</p>
+</media>
+</if:when>
+<if:when test="platform:gnome-classic">
+<media type="image" src="figures/top-bar-icons-classic.png" width="395" height="70" style="floatend">
+  <p>Barra superior de GNOME Shell</p>
+</media>
+</if:when>
+</if:choose>
+
+<links type="section"/>
+
+<section id="universalicons">
+<title>Iconos del menú de acceso universal</title>
+
+ <table shade="rows">
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/preferences-desktop-accessibility-symbolic.svg"/></td>
+      <td><p>Lleva a un menú que activa las distintas configuraciones de accesibilidad.</p></td>
+    </tr>
+    
+  </table>
+</section>
+
+
+<section id="audioicons">
+<title>Iconos del control de volumen</title>
+
+ <table shade="rows">
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-high-symbolic.svg"/></td>
+      <td><p>El volumen está muy alto.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-medium-symbolic.svg"/></td>
+      <td><p>El volumen está a la mitad.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-low-symbolic.svg"/></td>
+      <td><p>El volumen está muy bajo.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-muted-symbolic.svg"/></td>
+      <td><p>El volumen está silenciado.</p></td>
+    </tr>
+  </table>
+</section>
+
+
+<section id="bluetoothicons">
+<title>Iconos del gestor de Bluetooth</title>
+
+ <table shade="rows">
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/></td>
+      <td><p>El Bluetooth se ha activado.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-disabled-symbolic.svg"/></td>
+      <td><p>El Bluetooth se ha desactivado.</p></td>
+    </tr>
+  </table>
+</section>
+
+<section id="networkicons">
+<title>Iconos del gestor de la red</title>
+<p/>
+<p><app>Conexión móvil</app></p>
+ <table shade="rows">
+
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-3g-symbolic.svg"/></td>
+      <td><p>Conectado a una red 3G.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-4g-symbolic.svg"/></td>
+      <td><p>Conectado a una red 4G.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-edge-symbolic.svg"/></td>
+      <td><p>Conectado a una red EDGE.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-gprs-symbolic.svg"/></td>
+      <td><p>Conectado a una red GPRS.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-umts-symbolic.svg"/></td>
+      <td><p>Conectado a una red UMTS.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-connected-symbolic.svg"/></td>
+      <td><p>Conectado a una red móvil.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-acquiring-symbolic.svg"/></td>
+      <td><p>Obteniendo conexión de red móvil.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg"/></td>
+      <td><p>Intensidad de la señal muy alta.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-good-symbolic.svg"/></td>
+      <td><p>Intensidad de la señal alta.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-ok-symbolic.svg"/></td>
+      <td><p>Intensidad de la señal media.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-weak-symbolic.svg"/></td>
+      <td><p>Intensidad de la señal baja.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-none-symbolic.svg"/></td>
+      <td><p>Intensidad de la señal extremadamente baja.</p></td>
+    </tr></table>
+
+
+
+
+<p><app>Conexiones de red de área local (LAN)</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-error-symbolic.svg"/></td>
+      <td><p>Hubo un error al buscar la red.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-idle-symbolic.svg"/></td>
+      <td><p>La red está inactiva.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-no-route-symbolic.svg"/></td>
+      <td><p>No se ha encontrado una ruta para la red.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-offline-symbolic.svg"/></td>
+      <td><p>La red está desconectada.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-receive-symbolic.svg"/></td>
+      <td><p>La red está recibiendo datos.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-receive-symbolic.svg"/></td>
+      <td><p>La red está transmitiendo y recibiendo datos.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-symbolic.svg"/></td>
+      <td><p>La red está transmitiendo datos.</p></td>
+    </tr>
+</table>
+
+
+
+<p><app>Conexión a una red privada virtual (VPN)</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-acquiring-symbolic.svg"/></td>
+      <td><p>Obteniendo conexión de red.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-symbolic.svg"/></td>
+      <td><p>Conectado a una red VPN.</p></td>
+    </tr>
+</table>
+
+
+<p><app>Conexión cableada</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-acquiring-symbolic.svg"/></td>
+      <td><p>Obteniendo conexión de red.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-disconnected-symbolic.svg"/></td>
+      <td><p>Desconectado de la red.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-symbolic.svg"/></td>
+      <td><p>Conectado a una red cableada.</p></td>
+    </tr>
+</table>
+
+
+<p><app>Conexión inalámbrica</app></p>
+ <table shade="rows">
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-acquiring-symbolic.svg"/></td>
+      <td><p>Obteniendo conexión inalámbrica.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-encrypted-symbolic.svg"/></td>
+      <td><p>La red inalámbrica está cifrada.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-connected-symbolic.svg"/></td>
+      <td><p>Conectado a una red inalámbrica.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg"/></td>
+      <td><p>Intensidad de la señal muy alta.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-good-symbolic.svg"/></td>
+      <td><p>Intensidad de la señal alta.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-ok-symbolic.svg"/></td>
+      <td><p>Intensidad de la señal media.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-weak-symbolic.svg"/></td>
+      <td><p>Intensidad de la señal baja.</p></td>
+    </tr>
+<tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-none-symbolic.svg"/></td>
+      <td><p>Intensidad de la señal muy baja.</p></td>
+    </tr>
+
+  </table>
+</section>
+
+<section id="batteryicons">
+<title>Iconos del gestor de energía</title>
+
+ <table shade="rows">
+   <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-symbolic.svg"/></td>
+      <td><p>La batería está completamente cargada.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-symbolic.svg"/></td>
+      <td><p>La batería está parcialmente vacía.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-symbolic.svg"/></td>
+      <td><p>La batería está baja.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-symbolic.svg"/></td>
+      <td><p>Advertencia: la batería está muy baja.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-symbolic.svg"/></td>
+      <td><p>La batería está extremadamente baja.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-missing-symbolic.svg"/></td>
+      <td><p>La batería está desenchufada.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-charged-symbolic.svg"/></td>
+      <td><p>La batería está cargada completamente.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-charging-symbolic.svg"/></td>
+      <td><p>La batería está completa y cargándose.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-charging-symbolic.svg"/></td>
+      <td><p>La batería está parcialmente completa y cargándose.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-charging-symbolic.svg"/></td>
+      <td><p>La batería está baja y cargándose.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-charging-symbolic.svg"/></td>
+      <td><p>La batería está muy baja y cargándose.</p></td>
+    </tr>
+    <tr>
+      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-charging-symbolic.svg"/></td>
+      <td><p>La batería está vacía y cargándose.</p></td>
+    </tr>
+  </table>
+</section>
+
+
+</page>

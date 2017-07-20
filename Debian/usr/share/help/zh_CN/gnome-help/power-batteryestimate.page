@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="power-batteryestimate" xml:lang="zh-CN">
+
+  <info>
+
+    <link type="guide" xref="power#faq"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
+
+    <desc>单击<gui>电池图标</gui>时所显示的电量只是粗略估计值。</desc>
+
+    <credit type="author">
+      <name>GNOME 文档项目</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>估计的电池剩余时间有误</title>
+
+<p>检查剩余电池寿命时，您可能发现它报告的<em>剩余时间</em>与电池<em>实际</em>持续的时间不同。这是因为系统只能对剩余的电池寿命量进行估计。但是，随着时间的推移，估计会越来越准确。</p>
+
+<p>In order to estimate the remaining battery life, a number of factors must be
+taken into account. One is the amount of power currently being used by the
+computer: power consumption varies depending on how many programs you have
+open, which devices are plugged in, and whether you are running any intensive
+tasks (like watching high-definition video or converting music files, for
+example). This changes from moment to moment, and is difficult to predict.</p>
+
+<p>其他因素像电池如何放电，一些电池放电很快，没有准确的电池放电资料，只有一些粗略的剩余电量估算。</p>
+
+<p>电池放电时，电源管理器将算出其放电属性并了解如何对电池寿命进行更好的估计。但是，这样的估计无法做到完全准确。</p>
+
+<note>
+  <p>如果您获取了一个不合情理的电池续航时间估计值(几百天)，则电源管理器可能无法探测到部分需要的数据。</p>
+  <p>如果您拔下电源插头并使用电池运行笔记本电脑一会儿，然后插上电源并将其继续充电，则电源管理器应该可以重新获取到其需要的数据。</p>
+</note>
+
+</page>

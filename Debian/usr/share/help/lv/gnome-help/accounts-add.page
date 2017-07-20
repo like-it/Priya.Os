@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-add" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="accounts" group="add"/>
+
+    <revision pkgversion="3.5.5" date="2012-08-14" status="draft"/>
+    <revision pkgversion="3.9.92" date="2012-09-18" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2015</years>
+    </credit>
+
+    <desc>Allow applications to access your accounts online for photos,
+    contacts, calendars, and more.</desc>
+</info>
+
+  <title>Pievienot kontu</title>
+
+  <p>Konta pievienošana palīdzēs saistīt jūsu tiešsaistes kontus ar jūsu GNOME darbvirsmu. Tādējādi jūsu e-pasta, tērzēšanas programmas un citas saistītās lietotnes tiks iestatītas jūsu vietā.</p>
+
+  <steps>
+    <item>
+      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Tiešsaistes konti</gui>.</p>
+    </item>
+    <item>
+      <p>Spiediet <gui>Tiešsaistes konti</gui>, lai atvērtu paneli.</p>
+    </item>
+    <item>
+      <p>Spiediet <gui>+</gui> pogu loga apakšējajā kreisajā stūrī.</p>
+    </item>
+    <item>
+      <p>Izvēlieties konta veidu, kuru vēlaties pievienot.</p>
+    </item>
+    <item>
+      <p>A small website window or dialog will open where you can enter your
+      online account credentials. For example, if you are setting up a Google
+      account, enter your Google username and password. Some providers allow
+      you to create a new account from the login dialog.</p>
+    </item>
+    <item>
+      <p>Ja esat ievadījis jūsu akreditācijas datus korekti, jums tiks vaicāts atļaut GNOME pieeju jūsu tiešsaistes kontam. Lai turpinātu, sankcionējiet piekļuvi.</p>
+    </item>
+    <item>
+      <p>All services that are offered by an account provider will be enabled
+      by default. <link xref="accounts-disable-service">Switch</link>
+      individual services to <gui>OFF</gui> to disable them.</p>
+    </item>
+  </steps>
+
+  <p>After you have added accounts, applications can use those accounts for
+  the services you have chosen to allow. See <link xref="accounts-disable-service"/>
+  for information on controlling which services to allow.</p>
+
+  <note style="tip">
+    <p>Many online services provide an authorization token which GNOME stores
+    instead of your password. If you remove an account, you should also revoke
+    that certificate in the online service. See <link xref="accounts-remove"/>
+    for more information.</p>
+  </note>
+
+</page>

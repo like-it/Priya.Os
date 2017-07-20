@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" version="1.0 if/1.0" id="shell-workspaces" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces" group="#first"/>
+
+    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10.3" date="2014-01-26" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Proxecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Os espazos de traballo son a forma de agrupar xanelas no seu escritorio.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Que é un espazo de traballo e como poden axudarme?</title>
+
+    <media type="image" src="figures/shell-workspaces.png" width="162" height="434" style="floatend floatright">
+        <p>Selector de espazos de traballo</p>
+    </media>
+
+  <p if:test="!platform:gnome-classic">Os espazos de traballo refírense á agrupación de xanelas no seu escritorio. Vostede pode crear cantos espazos de traballo desexe, os cales actúan como escritorios virtuais. Os espazos de traballo úsanse para reducir a desorde e facer o escritorio máis sinxelo de navegar.</p>
+
+  <p if:test="platform:gnome-classic">Os espazos de traballo refírense á agrupación de xanelas no seu escritorio. Vostede pode usar múltiples espazos de traballo, os cales actúan como escritorios virtuais. Os espazos de traballo úsanse para reducir a desorde e facer o escritorio máis sinxelo de navegar.</p>
+
+  <p>Podería empregar as áreas de traballo para organizar o seu traballo. Por exemplo, podería ter todas as súas xanelas de comunicación, tales como o correo electrónico e o seu programa de chat nun área de traballo e o traballo que está facendo nun área de traballo diferente. O seu xestor de música podería estar nun terceiro área de traballo.</p>
+
+<p>Usando espazos de traballo:</p>
+
+<list>
+  <item>
+    <p if:test="!platform:gnome-classic">In the
+    <gui xref="shell-introduction#activities">Activities</gui> overview, move your cursor
+    to the right-most side of the screen.</p>
+    <p if:test="platform:gnome-classic">Prema a tecla <key xref="keyboard-key-super">Super</key> para abrir a vista de <gui>Actividades</gui> e logo mova o seu cursor á parte dereita da pantalla.</p>
+  </item>
+  <item>
+    <p if:test="!platform:gnome-classic">A vertical panel will appear showing
+    workspaces in use, plus an empty workspace. This is the
+    workspace selector.</p>
+    <p if:test="platform:gnome-classic">A vertical panel will appear showing
+    available workspaces. This is the workspace selector.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>To add a workspace, drag and drop a window from an existing workspace
+    onto the empty workspace in the workspace selector. This workspace now
+    contains the window you have dropped,
+    and a new empty workspace will appear below it.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>Para eliminar un espazo de traballo simplemente peche todas as xanelas do mesmo ou move as xanelas ao espazo de traballo anterior.</p>
+  </item>
+</list>
+
+<p if:test="!platform:gnome-classic">Hai cando menos un espazo de traballo.</p>
+
+</page>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-code-assistance" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>  
+    <revision version="3.4" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Průběžně zvýrazňovat chyby pro podporované jazyky.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Pomocník s kódem</title>
+  
+  <!-- NOTE: This is draft documentation. It is not yet ready for translation. 
+  Thank you! -->
+
+  <p>Zásuvný modul <app>Pomocník s kódem</app> poskytuje v reálném čase zvýrazňování chyb pro C, C++ a Objective-C. Pokud chcete zásuvný modul povolit, vyberte <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Předvolby</gui><gui>Zásuvné moduly</gui><gui>Pomocník s kódem</gui></guiseq>.</p>
+  
+  <!--
+  <section id="code-assistance-features">
+    <title>Code assistance features</title>
+    <list>
+      <item><p>Feature #1</p></item>
+      <item><p>Feature #2</p></item>
+      <item><p>Feature #3</p></item>
+      <item><p>Feature #4</p></item>
+    </list>
+  </section>
+  -->
+  
+<section id="how-gedit-code-assistance-works">
+  <title>Jak zásuvný modul Pomocník s kódem funguje</title>
+  
+  <p>Zásuvný modul v současnosti spoléhá na informace v souboru makefile, aby zjistil pravidla pro zvýrazňování chyb překladače Clang. Zkoumá pravidla <code its:translate="no">make</code> a určuje, které cíle závisí na souboru, který je analyzován. Nakonec zásuvný modul získá přepínače kompilátoru pomocí simulace spuštění těchto cílů.</p>
+
+  <p>To není tak bláznivé, jak se může zdát. V budoucnu bude zásuvný modul umožňovat ručně určit přepínače kompilátoru.</p>
+
+</section>
+
+</page>

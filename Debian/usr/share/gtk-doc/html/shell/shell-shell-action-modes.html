@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>shell-action-modes: Shell Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Shell Reference Manual">
+<link rel="up" href="ch06.html" title="Integration helpers and utilities">
+<link rel="prev" href="shell-shell-global.html" title="shell-global">
+<link rel="next" href="shell-shell-wm.html" title="shell-wm">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#shell-shell-action-modes.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch06.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="shell-shell-global.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="shell-shell-wm.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="shell-shell-action-modes"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="shell-shell-action-modes.top_of_page"></a>shell-action-modes</span></h2>
+<p>shell-action-modes</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="shell-shell-action-modes.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="shell-shell-action-modes.html#ShellActionMode" title="enum ShellActionMode">ShellActionMode</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="shell-shell-action-modes.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="shell-shell-action-modes.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="shell-shell-action-modes.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ShellActionMode"></a><h3>enum ShellActionMode</h3>
+<p>Controls in which GNOME Shell states an action (like keybindings and gestures)
+should be handled.</p>
+<div class="refsect3">
+<a name="ShellActionMode.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="SHELL-ACTION-MODE-NONE:CAPS"></a>SHELL_ACTION_MODE_NONE</p></td>
+<td class="enum_member_description">
+<p>block action</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SHELL-ACTION-MODE-NORMAL:CAPS"></a>SHELL_ACTION_MODE_NORMAL</p></td>
+<td class="enum_member_description">
+<p>allow action when in window mode,
+    e.g. when the focus is in an application window</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SHELL-ACTION-MODE-OVERVIEW:CAPS"></a>SHELL_ACTION_MODE_OVERVIEW</p></td>
+<td class="enum_member_description">
+<p>allow action while the overview
+    is active</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SHELL-ACTION-MODE-LOCK-SCREEN:CAPS"></a>SHELL_ACTION_MODE_LOCK_SCREEN</p></td>
+<td class="enum_member_description">
+<p>allow action when the screen
+    is locked, e.g. when the screen shield is shown</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SHELL-ACTION-MODE-UNLOCK-SCREEN:CAPS"></a>SHELL_ACTION_MODE_UNLOCK_SCREEN</p></td>
+<td class="enum_member_description">
+<p>allow action in the unlock
+    dialog</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SHELL-ACTION-MODE-LOGIN-SCREEN:CAPS"></a>SHELL_ACTION_MODE_LOGIN_SCREEN</p></td>
+<td class="enum_member_description">
+<p>allow action in the login screen</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SHELL-ACTION-MODE-SYSTEM-MODAL:CAPS"></a>SHELL_ACTION_MODE_SYSTEM_MODAL</p></td>
+<td class="enum_member_description">
+<p>allow action when a system modal
+    dialog (e.g. authentification or session dialogs) is open</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SHELL-ACTION-MODE-LOOKING-GLASS:CAPS"></a>SHELL_ACTION_MODE_LOOKING_GLASS</p></td>
+<td class="enum_member_description">
+<p>allow action in looking glass</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SHELL-ACTION-MODE-POPUP:CAPS"></a>SHELL_ACTION_MODE_POPUP</p></td>
+<td class="enum_member_description">
+<p>allow action while a shell menu is open</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SHELL-ACTION-MODE-ALL:CAPS"></a>SHELL_ACTION_MODE_ALL</p></td>
+<td class="enum_member_description">
+<p>always allow action</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25.1</div>
+</body>
+</html>

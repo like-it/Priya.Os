@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-personal" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.1" date="2013-09-23" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ļaujiet citiem piekļūt datnēm mapē <file>Publiskie</file>.</desc>
+  </info>
+
+  <title>Dalīties ar personīgajām datnēm</title>
+
+  <p>You can allow access to the <file>Public</file> folder in your
+  <file>Home</file> folder from another computer on the network. Configure
+  <gui>Personal File Sharing</gui> to allow others to access the contents of
+  the folder.</p>
+
+  <note style="info package">
+    <p>Lai <gui>Personiskā datņu koplietošana</gui> būtu redzama, jābūt uzinstalētai pakotnei <app>gnome-user-share</app>.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:gnome-user-share" style="button">Instalēt gnome-user-share</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Koplietošana</gui>.</p>
+    </item>
+    <item>
+      <p>Spiediet <gui>Koplietošana</gui>, lai atvērtu paneli.</p>
+    </item>
+    <item>
+      <p>Ja <gui>Koplietošana</gui> ir <gui>◯</gui>, pārslēdziet to uz <gui>|</gui>.</p>
+
+      <note style="info"><p>Ja teksts zem <gui>Datora nosaukuma</gui> jums to ļauj rediģēt, jūs varat <link xref="sharing-displayname">mainīt</link> nosaukumu, ar kādu dators būs redzams tīklā.</p></note>
+    </item>
+    <item>
+      <p>Izvēlies <gui>Personiskā datņu koplietošana</gui>.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Personal File Sharing</gui> to <gui>ON</gui>. This means
+      that other people on your current network will be able to attempt to
+      connect to your computer and access files in your <file>Public</file>
+      folder.</p>
+      <note style="info">
+        <p>A <em>URI</em> is displayed by which your <file>Public</file> folder
+        can be accessed from other computers on the network.</p>
+      </note>
+    </item>
+  </steps>
+
+  <section id="security">
+  <title>Drošība</title>
+
+  <terms>
+    <item>
+      <title>Pieprasīt paroli</title>
+      <p>Lai citiem cilvēkiem būtu jāievada parole, kad piekļūst jūsu mapei <file>Publiskie</file>, pārslēdziet <gui>Prasīt paroli</gui> uz <gui>|</gui>. Ja neizmantosiet šo opciju, jebkurš var mēģināt skatīt jūsu mapi <file>Publiskie</file>.</p>
+      <note style="tip">
+        <p>Pēc noklusējuma šī iespēja nav ieslēgta, bet jums vajadzētu to ieslēgt un iestatīt drošu paroli.</p>
+      </note>
+    </item>
+  </terms>
+  </section>
+
+  <section id="networks">
+  <title>Tīkli</title>
+
+  <p>The <gui>Networks</gui> section lists the networks to which you are
+  currently connected. Use the <gui>ON | OFF</gui> switch next to each to
+  choose where your personal files can be shared.</p>
+
+  </section>
+
+</page>

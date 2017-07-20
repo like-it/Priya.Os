@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="fr">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Tester votre disque dur pour être certain qu'il n'est pas défectueux.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Vérification d'éventuels problèmes de disque dur</title>
+
+<section id="disk-status">
+ <title>Vérification du disque dur</title>
+  <p>Les disques durs disposent d'un outil incorporé de surveillance des défauts appelé <app>SMART</app> (Self-Monitoring, Analysis, and Reporting Technology), qui explore en permanence le disque dur à la recherche de problèmes potentiels. SMART vous avertira si le disque est sur le point de tomber en panne, vous permettant ainsi d'éviter des pertes de données importantes.</p>
+
+  <p>Bien que SMART fonctionne automatiquement, vous pouvez aussi vérifier l'intégrité du disque avec l'application <app>Disques</app> :</p>
+
+<steps>
+ <title>Vérification de l'intégrité du disque en utilisant l'application <app>Disques</app>.</title>
+
+  <item>
+    <p>Ouvrez <app>Disques</app> à partir de la vue d'ensemble des <gui>Activités</gui>.</p>
+  </item>
+  <item>
+    <p>Choisissez le disque dans la liste des périphériques de stockage. Les informations sur le disque et son état s'affichent.</p>
+  </item>
+  <item>
+    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
+    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+  </item>
+  <item>
+    <p>Consultez les informations supplémentaires dans <gui>Attributs SMART</gui>, ou cliquez sur <gui style="button">Démarrer l'auto-test</gui>.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>Que faire si le disque n'est pas sain ?</title>
+
+  <p>Même si l'<gui>Estimation globale</gui> indique que le disque <em>n'est pas</em> sain, il n'y a pas lieu de s'inquiéter outre mesure. Néanmoins, mieux vaut en effectuer une <link xref="backup-why">sauvegarde</link> pour éviter des pertes de données.</p>
+
+  <p>Si l'état signale « Pre-fail » (panne possible), c'est que le disque est encore raisonnablement sain, mais qu'il présente des signes d'usure annonciateurs de panne. Si votre disque (ou ordinateur) est un peu âgé, il est vraisemblable que vous aurez ce message lors d'un examen d'intégrité. Vous devriez <link xref="backup-how">sauvegarder vos fichiers importants régulièrement</link> et vérifier l'état du disque périodiquement pour voir s'il y a aggravation.</p>
+
+  <p>S'il y a aggravation, il vaut mieux emporter l'ordinateur ou le disque dur chez un professionnel pour un diagnostic complet ou une réparation.</p>
+
+</section>
+
+</page>

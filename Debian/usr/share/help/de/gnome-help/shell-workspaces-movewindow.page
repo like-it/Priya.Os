@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-workspaces-movewindow" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces"/>
+    <link type="seealso" xref="shell-workspaces"/>
+
+    <revision pkgversion="3.8" version="0.3" date="2013-05-10" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-04" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Wechseln Sie in die <gui>Aktivitäten</gui>-Übersicht und ziehen Sie das Fenster auf eine andere Arbeitsfläche</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Fenster auf eine andere Arbeitsfläche verschieben</title>
+
+  <steps>
+    <title>Mit der Maus:</title>
+    <item>
+      <p if:test="!platform:gnome-classic">Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht.</p>
+      <p if:test="platform:gnome-classic">Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht im <gui xref="shell-introduction#activities">Anwendungs</gui>menü in der linken oberen Ecke des Bildschirms.</p>
+    </item>
+    <item>
+      <p>Ziehen Sie das Fenster an die rechte Seite des Bildschirms und legen Sie es dort ab.</p>
+    </item>
+    <item>
+      <p>Der <em xref="shell-workspaces">Arbeitsflächenumschalter</em> erscheint daraufhin.</p>
+    </item>
+    <item>
+      <p if:test="!platform:gnome-classic">Legen Sie das Fenster in der leeren Arbeitsfläche ab. Diese Arbeitsfläche enthält nun das abgelegte Fenster und eine neue leere Arbeitsfläche erscheint am unteren Rand des <em>Arbeitsflächenumschalters</em>.</p>
+      <p if:test="platform:gnome-classic">Legen Sie das Fenster in eine leere Arbeitsfläche ab. Diese Arbeitsfläche enthält nun das abgelegte Fenster.</p>
+    </item>
+  </steps>
+
+  <steps>
+    <title>Mit der Tastatur:</title>
+    <item>
+      <p>Wählen Sie das zu verschiebende Fenster aus (beispielsweise mit dem <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>-<link xref="shell-terminology">Fensterwechsler</link>).</p>
+    </item>
+    <item>
+      <p>Drücken Sie <keyseq><key>Super</key><key>Umschalttaste</key><key>↑</key></keyseq>, um das Fenster auf eine Arbeitsfläche zu verschieben, die sich über der aktuellen Arbeitsfläche im <em>Arbeitsflächenumschalter</em> befindet.</p>
+      <p>Drücken Sie <keyseq><key>Super</key><key>Umschalttaste</key><key>Umschalttaste</key><key>↓</key></keyseq>, um das Fenster auf eine Arbeitsfläche zu verschieben, die sich unter der aktuellen Arbeitsfläche im <em>Arbeitsflächenumschalter</em> befindet.</p>
+    </item>
+  </steps>
+
+</page>

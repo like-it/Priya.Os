@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Du kan behöva mata in nätverksinställningar om de inte tilldelas automatiskt.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ange nätverksinställningar manuellt</title>
+
+  <p>Om ditt nätverk inte automatiskt tilldelar nätverksinställningar till din dator, kan du själv behöva mata in inställningar manuellt. Detta ämne förutsätter att du redan vet vilka de korrekta inställningarna är. Om inte kan du behöva fråga din nätverksadministratör eller titta på inställningarna för din router eller nätverksswitch.</p>
+
+  <steps>
+    <title>För att manuellt ange dina nätverksinställningar:</title>
+    <item>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Nätverk</gui>.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Nätverk</gui> för att öppna panelen.</p>
+    </item>
+    <item>
+      <p>I vänstra panelen, välj nätverksanslutningen som du vill ställa in manuellt. Om du ansluter till nätverket med en kabel, klicka på <gui>Trådbundet</gui> och klicka sedan på <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">inställningar</span></media>-knappen i det nedre högra hörnet i panelen. För en <gui>Trådlös</gui>-anslutning kommer <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">inställningar</span></media>-knappen att finnas intill det aktiva nätverket.</p>
+      <p>Säkerställ att ditt trådlösa kort är påslaget eller att nätverkskabeln är ansluten.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>IPv4</gui> och ändra <gui>Adresser</gui> till <gui>Manuell</gui>.</p>
+    </item>
+    <item>
+      <p>Skriv in <gui>Adress</gui> och <gui>Gateway</gui> samt en lämplig <gui>Nätmask</gui>.</p>
+      <p>Dessa måste vara <em>IP-adresser</em>: det vill säga, de måste vara fyra nummer separerade av punkter (till exempel 123.45.6.78).</p>
+    </item>
+    <item>
+      <p>I avsnittet <gui>DNS</gui>, slå om <gui>Automatisk</gui> till <gui>AV</gui>. Mata in IP-adressen för en DNS-server som du vill använda. Mata in ytterligare DNS-serveradresser via <gui>+</gui>-knappen.</p>
+    </item>
+    <item>
+      <p>I avsnittet <gui>Rutter</gui>, slå om <gui>Automatisk</gui> till <gui>AV</gui>. Mata in <gui>Adress</gui>, <gui>Nätmask</gui>, <gui>Rutt</gui> och <gui>Metrisk</gui> för en rutt du vill använda. Mata in ytterligare rutter via <gui>+</gui>-knappen.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Verkställ</gui>. Om du inte ansluts till nätverket, klicka på systemstatusområdet på statusraden och anslut. Prova nätverksinställningarna genom att till exempel försöka besöka en webbplats eller titta på delade filer på nätverket.</p>
+    </item>
+  </steps>
+
+</page>

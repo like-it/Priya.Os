@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://debian.org/debian/6">
+    <short-id>debian6</short-id>
+    <short-id>debiansqueeze</short-id>
+    <name>Debian Squeeze</name>
+    <name xml:lang="ca">Debian Squeeze</name>
+    <name xml:lang="de">Debian Squeeze</name>
+    <name xml:lang="es">Debian Squeeze</name>
+    <name xml:lang="fr">Debian Squeeze</name>
+    <name xml:lang="ja">Debian Squeeze</name>
+    <name xml:lang="pl">Debian Squeeze</name>
+    <name xml:lang="pt_BR">Debian Squeeze</name>
+    <name xml:lang="uk">Debian Squeeze</name>
+    <version>6</version>
+    <vendor>Debian Project</vendor>
+    <vendor xml:lang="ca">Projecte Debian</vendor>
+    <vendor xml:lang="de">Debian-Projekt</vendor>
+    <vendor xml:lang="es">Debian Project</vendor>
+    <vendor xml:lang="fr">Debian Project</vendor>
+    <vendor xml:lang="ja">Debian プロジェクト</vendor>
+    <vendor xml:lang="pl">Projekt Debian</vendor>
+    <vendor xml:lang="pt_BR">Projeto Debian</vendor>
+    <vendor xml:lang="uk">Проект Debian</vendor>
+    <family>linux</family>
+    <distro>debian</distro>
+    <upgrades id="http://debian.org/debian/5"/>
+    <derives-from id="http://debian.org/debian/5"/>
+
+    <release-date>2011-02-06</release-date>
+    <eol-date>2016-02-29</eol-date>
+
+    <devices>
+      <device id="http://usb.org/usb/80ee/0021"/>
+    </devices>
+
+    <resources arch="all">
+      <minimum>
+        <cpu>1000000000</cpu>
+        <n-cpus>1</n-cpus>
+        <ram>134217728</ram>
+        <storage>5368709120</storage>
+      </minimum>
+      <recommended>
+        <cpu>1000000000</cpu>
+        <ram>536870912</ram>
+        <storage>5368709120</storage>
+      </recommended>
+    </resources>
+
+    <media arch="i686">
+      <url>http://cdimage.debian.org/mirror/cdimage/archive/6.0.10/i386/iso-dvd/debian-6.0.10-i386-DVD-1.iso</url>
+      <iso>
+        <volume-id>Debian 6.0.1?\d i386 1</volume-id>
+      </iso>
+      <kernel>install.386/vmlinuz</kernel>
+      <initrd>install.386/initrd.gz</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://cdimage.debian.org/mirror/cdimage/archive/6.0.10/amd64/iso-dvd/debian-6.0.10-amd64-DVD-1.iso</url>
+      <iso>
+        <volume-id>Debian 6.0.1?\d amd64 1</volume-id>
+      </iso>
+      <kernel>install.amd/vmlinuz</kernel>
+      <initrd>install.amd/initrd.gz</initrd>
+    </media>
+
+    <media live="true" arch="i686">
+      <url>http://cdimage.debian.org/mirror/cdimage/archive/6.0.10-live/i386/iso-hybrid/debian-live-6.0.10-i386-gnome-desktop.iso</url>
+      <iso>
+        <volume-id>Debian squeeze.*</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>install/vmlinuz</kernel>
+      <initrd>install/initrd.gz</initrd>
+    </media>
+    <media live="true" arch="x86_64">
+      <url>http://cdimage.debian.org/mirror/cdimage/archive/6.0.10-live/amd64/iso-hybrid/debian-live-6.0.10-amd64-gnome-desktop.iso</url>
+      <iso>
+        <volume-id>Debian squeeze.*</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>install/vmlinuz</kernel>
+      <initrd>install/initrd.gz</initrd>
+    </media>
+
+    <installer>
+      <script id='http://debian.org/debian/preseed/jeos'/>
+    </installer>
+  </os>
+</libosinfo>

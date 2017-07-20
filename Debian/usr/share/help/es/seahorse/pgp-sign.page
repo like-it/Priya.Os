@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="pgp-sign" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision pkgversion="3.9" date="2013-08-29" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Si confía en una clave, puede firmarla.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Firmar claves</title>
+
+  <p>Para demostrar que confía y garantiza la autenticidad de la clave de alguien, puede firmarla. La clave de una persona sólo debe firmarse después de comparar el <link xref="pgp-userid">ID del usuario</link> de la clave con una prueba válida de su identidad, como puede ser el pasaporte, el carnet de identidad o de conducir o similar. Si los ID coinciden, se dice que la clave es confiable.</p>
+
+  <steps>
+    <title>Para firmar una clave:</title>
+    <item>
+      <p>Importe la <link xref="pgp-retrieve-remote">clave remota</link> o el <link xref="pgp-import">archivo de la clave</link> que contiene la clave que firmar en <app>Contraseñas y claves</app>.</p>
+    </item>
+    <item>
+      <p>En la lista de <gui>claves GnuPG</gui> seleccione la clave importada.</p>
+    </item>
+    <item>
+      <p>Pulse con el botón derecho sobre la clave y elija <guiseq><gui>Propiedades</gui><gui>Confiar</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Pulse el botón <gui style="button">Firmar esta clave</gui>.</p>
+    </item>
+    <item>
+      <p>Dependiendo de cómo se haya verificado la clave, elija <gui style="radiobutton">Ninguno</gui>, <gui style="radiobutton">Casualmente</gui> o <gui style="radiobutton">Muy cuidadosamente</gui>.</p>
+    </item>
+    <item>
+      <p>Decida si quiere revocar su firma a una fecha posterior y si quiere hacer pública su firma, marcando las casillas proporcionadas.</p>
+    </item>
+    <item>
+      <p>Cuando tiene más de una clave PGP, seleccione la clave con la que quiere firmar de la lista junto a <gui>Firmante</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse el botón <gui style="button">Firmar</gui> para terminar.</p>
+    </item>
+  </steps>
+
+  <note style="info">
+    <title>¿Puedo firmar mis propias claves?</title>
+    <p>Cuando <link xref="pgp-create">crea</link> una <gui>clave GnuPG</gui> nueva, esta se firma automáticamente. Cualquier subclave nueva <link xref="subkeys-add">creada</link> usando una <gui>clave GnuPG</gui>, también se firmará automáticamente.</p>
+  </note>
+
+</page>

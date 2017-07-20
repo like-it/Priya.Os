@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-search-folders-add" xml:lang="fr">
+
+  <info>
+    <desc>Paramétrer un dossier de recherche.</desc>
+    
+    <link type="guide" xref="mail-search-folders"/>
+
+    <revision pkgversion="3.0.2" version="0.1" date="2011-07-30" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-vfolders.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Création d'un dossier de recherche</title>
+
+<steps>
+<item><p>Cliquez sur <guiseq><gui>Édition</gui><gui>Dossiers de recherche</gui></guiseq> ou cliquez sur <guiseq><gui>Message</gui><gui>Créer une règle</gui></guiseq> et sélectionnez le critère sur lequel sera basé le dossier de recherche, ou si vous avez lancé une recherche, cliquez sur <guiseq><gui>Recherche</gui><gui>Créer un dossier de recherche à partir d'une recherche</gui></guiseq>.</p></item>
+<item><p>Cliquez sur <gui style="button">Ajouter</gui>.</p></item>
+<item><p>Saisissez un nom dans le champ <gui>Nom de la règle</gui>.</p></item>
+<item><p>Définissez les conditions de la règle. Pour chaque condition, sélectionnez d'abord la partie du message qui sera contrôlée puis définissez la règle de comparaison.</p><p>Pour plus d'informations sur les conditions disponibles, consultez <link xref="mail-search-folders-conditions">Conditions disponibles pour les dossiers de recherche</link>.</p></item>
+<item><p>Si vous voulez définir plusieurs conditions, définissez sous <gui>Trouver les éléments</gui> si une seule condition ou toutes doivent être remplies et cliquez sur <gui style="button">Ajouter une condition</gui> et répétez les étapes précédentes.</p></item>
+<item><p>Sélectionnez les dossiers qui seront utilisés comme dossier de recherche dans la section <gui>Sources de dossier de recherche</gui>. Les options sont :</p>
+<list>
+  <item><p>Tous les dossiers locaux :</p>
+  <p>Utilise tous les dossiers locaux comme source pour le dossier de recherche, en plus des dossiers individuels sélectionnés.</p></item>
+
+  <item><p>Tous les dossiers actifs distants :</p>
+  <p>Les dossiers distants sont considérés actifs si vous êtes connecté au serveur ; vous devez être connecté au serveur de messagerie pour que le dossier de recherche inclue tout message de cette source, en plus des dossiers individuels sélectionnés.</p></item>
+
+  <item><p>Tous les dossiers locaux et actifs distants :</p>
+  <p>Utilise tous les dossiers locaux et distants actifs comme source du dossier de recherche, en plus des dossiers individuels sélectionnés.</p></item>
+
+  <item><p>Uniquement les dossiers spécifiques :</p>
+  <p>Utilise des dossiers individuels comme source du dossier de recherche. Dans ce cas, cliquez sur <gui style="button">Ajouter</gui> pour sélectionner les dossiers.</p></item>
+</list>
+</item>
+<item><p>Cliquez sur <gui style="button">Valider</gui>.</p></item>
+</steps>
+
+</page>

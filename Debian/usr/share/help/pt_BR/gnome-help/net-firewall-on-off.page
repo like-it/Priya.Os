@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Você pode controlar quais programas podem acessar a rede. Isso ajuda a manter o seu computador seguro.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Habilitando ou bloqueando acesso no firewall</title>
+
+  <p>O seu sistema deve estar equipado com um <em>firewall</em> que permite bloquear programas de serem acessados por outras pessoas na internet ou em sua rede. Isso ajuda a manter seu computador seguro.</p>
+
+  <p>Muitos aplicativos podem usar a sua conexão de rede. Por exemplo, você pode compartilhar arquivos ou deixa alguém ver a sua área de trabalho remotamente quando conectado a uma rede. Dependendo de como o seu computador está configurado, você pode precisar ajustar o firewall para permitir que esses serviços funcionem como desejado.</p>
+
+  <p>Cada programa que oferece serviços de rede usa uma <em>porta de rede</em> específica. Para permitir que outros computadores na rede acessem um serviço, pode precisar "abrir" a porta atribuída no firewall:</p>
+
+
+  <steps>
+    <item>
+      <p>Vá em <gui>Atividades</gui> no canto esquerdo superior da tela e inicie seu aplicativo de firewall. Você pode precisar instalar um gerenciador de firewall, se você não encontrar um (por exemplo, Firestarter ou GUFW).</p>
+    </item>
+    <item>
+      <p>Abra ou desabilite a porta do seu serviço de rede, dependendo se você deseja que as pessoas sejam capazes de acessá-lo ou não. A porta que você precisa alterar vai <link xref="net-firewall-ports">depender do serviço</link>.</p>
+    </item>
+    <item>
+      <p>Salve ou aplique as alterações, seguindo de quaisquer instruções adicionais fornecidas pela ferramenta de firewall.</p>
+    </item>
+  </steps>
+
+</page>

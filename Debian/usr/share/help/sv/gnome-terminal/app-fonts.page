@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="task" id="app-fonts" xml:lang="sv">
+
+  <info>
+    <revision version="0.1" date="2013-02-22" status="candidate"/>
+    <link type="guide" xref="index#appearance"/>
+    <link type="guide" xref="profile"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Använd systemtypsnitt eller välj ett anpassat typsnitt för din terminal.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015, 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ändra typsnitt och stil</title>
+
+  <p>Då du arbetar med mycket text i <app>Terminal</app> kan du vilja ändra standardtypsnittet till något du föredrar. Du har följande alternativ:</p>
+
+  <section id="system-font">
+  <title>Systemets typsnitt med fast bredd</title>
+
+  <p>För att använda systemets standardtypsnitt:</p>
+
+  <steps>
+    <item>
+      <p>Välj <guiseq><gui style="menu">Redigera</gui> <gui style="menuitem"> Profilinställningar</gui> <gui style="tab">Allmänt</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Välj <gui style="checkbox">Använd systemets typsnitt med fast bredd</gui>.</p>
+    </item>
+  </steps>
+
+  </section>
+
+  <section id="custom-font">
+  <title>Ställ in ett anpassat typsnitt</title>
+
+  <p>För att ställa in ett anpassat typsnitt och storlek:</p>
+
+  <steps>
+    <item>
+      <p>Välj <guiseq><gui style="menu">Redigera</gui> <gui style="menuitem">Profilinställningar</gui> <gui style="tab">Allmänt</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Säkerställ att alternativet <gui>Använd systemets typsnitt med fast bredd</gui> ej är ikryssat.</p>
+    </item>
+    <item>
+      <p>Klicka på knappen intill <gui>Typsnitt</gui>.</p>
+    </item>
+    <item>
+      <p>Skriv in namnet på ditt önskade typsnitt i sökfältet eller bläddra i listan över typsnitt.</p>
+    </item>
+    <item>
+      <p>Dra skjutreglaget som är under typsnittslistan för att ställa in typsnittsstorleken. Alternativt kan du skriva in typsnittsstorleken i fältet intill skjutreglaget, eller klicka på <gui style="button">+</gui> för att öka typsnittsstorleken eller <gui style="button">-</gui> för att minska vald typsnittsstorlek.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui style="button">Välj</gui> för att verkställa dina ändringar. För att förkasta ändringar och gå tillbaka till föregående dialogruta, klicka på <gui style="button">Avbryt</gui>.</p>
+    </item>
+  </steps>
+
+  </section>
+
+  <section id="bold-fonts">
+  <title>Fet text</title>
+
+  <p><app>Terminal</app> låter ditt skal bearbeta text som prompten, katalognamn eller rubriker för manualsidor så att de visas i fetstil.</p>
+
+  <steps>
+    <item>
+      <p>Gå till <guiseq><gui style="menu">Redigera</gui> <gui style="menuitem">Profilinställningar</gui> <gui style="tab">Allmänt</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Välj <gui style="checkbox">Tillåt fet text</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="important">
+    <p><gui style="checkbox">Tillåt fet text</gui> är en skalspecifik funktion. Om du använder ett annat skal än bash så kan beteendet se annorlunda ut.</p>
+  </note>
+
+  </section>
+
+</page>

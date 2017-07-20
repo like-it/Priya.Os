@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="ssh-create" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys" group="first"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="incomplete"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Jak vytvořit klíče SSH pro přihlášení k jinému počítači.</desc>
+  </info>
+
+  <title>Vytvoření nového klíče SSH</title>
+
+  <p>Klíč SSH vám pomůže vytvořit bezpečné spojení mezi počítači. Vytvořením klíče SSH vytvoříte jak <em>veřejný</em>, tak <em>soukromý</em> klíč. Zde je postup, jak nový klíč vytvořit:</p>
+
+    <steps>
+      <item><p>Vyberte <guiseq><gui>Soubor</gui><gui>Nový…</gui></guiseq></p></item>
+      <item><p>Vyberte <gui>Klíč SSH</gui> a klikněte na <gui>Pokračovat</gui>.</p></item>
+      <item><p>Zadejte popis klíče. Popis vám pomůže později klíč rozpoznat. Například můžete zadat datum vytvoření, nějaké informace k použití klíče nebo název serveru, pro nejž je klíč zamýšlen. Pole s popisem je volitelné, a jak si klíč popíšete, záleží jen na vás.</p></item>
+      <item><p>Po rozbalení panelu <gui>Pokročilé volby</gui> můžete změnit výchozí nastavení pro typ šifrování a sílu klíče.</p></item>
+    </steps>
+
+  <p>V tuto chvíli můžete buď jen vytvořit klíč nebo vytvořit klíč a nainstalovat jej na vzdálený počítač, abyste se mohli přihlašovat bez zadávání hesla.</p>
+
+  <section id="ssh-just-create-key" ui:expanded="false">
+    <title>Vytvoření klíče bez nastavení pro vzdálené přihlašování</title>
+    <p>Můžete vytvořit klíč SSH a zvolit, že jej nastavíte později.</p>
+
+    <steps>
+      <item>
+	<p>Zmáčkněte tlačítko <gui style="button">Pouze vytvořit klíč</gui>.</p>
+      </item>
+      <item>
+	<p>Napište heslovou frázi pro svůj klíč SSH a zmáčkněte <gui style="button">Budiž</gui>.</p>
+      </item>
+      <item>
+	<p>Napište znovu heslovou frázi a zmáčknutím <gui style="button">Budiž</gui> vše dokončete.</p>
+      </item>
+    </steps>
+
+    <p>Klíč SSH bude nyní uveden v klíčence <gui>Klíče OpenSSH</gui>.</p>
+
+    <note style="tip">
+      <p>Když zkusíte použí svůj klíč SSH, dotáže se vás operační systém na heslovou frázi použitou při vytváření. To zajišťuje, že i když se někdo dostane k vašemu klíči SSH, nemůže jej bez znalosti heslové fráze použít.</p>
+    </note>
+
+  </section>
+
+  <section id="ssh-create-key-and-set-up" ui:expanded="false">
+    <title>Vytvoření klíče a nastavení pro vzdálené přihlašování</title>
+    <p>Jednou z nejužitečnějších věcí na pořízení klíče SSH je, že můžete nainstalovat veřejný klíč na vzdálený počítač. Když tak učiníte, můžete se přihlašovat na vzdálený počítač přes SSH bez potřeby pokaždé zadávat své heslo.</p>
+
+    <steps>
+      <item>
+	<p>Zmáčkněte tlačítko <gui style="button">Vytvořit a nastavit</gui> a pokračujte podle instrukcí ohledně zadání heslové fráze.</p>
+      </item>
+      <item>
+	<p>V dialogovém okně, které se otevře, zadejte <gui>Adresu serveru</gui>, kterou normálně používáte k přihlášení přes SSH na vzdáleném počítači.</p>
+      </item>
+      <item>
+	<p>Ujistěte se, že <gui>Přihlašovací jméno</gui>, které používáte na vzdáleném počítači je správné a zmáčkněte <gui>Nastavit</gui>.</p>
+      </item>
+      <item>
+	<p>Program se nyní pokusí připojit na zadanou <gui>Adresu serveru</gui> se zadaným <gui>Přihlašovacím jménem</gui>. Pokud se vyskytne nějaký problém s přístupem ke vzdálenému serveru, objeví se okno s vysvětlením problému a vy to můžete zkusit znovu. Ujistěte se, že jste připojeni k síti a že je vzdálený server dostupný.</p>
+      </item>
+      <item>
+	<p>Pokud se podaří úspěšně spojit se vzdáleným počítačem, objeví se dialogové okno s dotazem na <gui>Heslo</gui>, které používáte pro přihlášení ke vzdálenému počítači. Zadejte své heslo a zmáčkněte <gui style="button">Budiž</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Veřejná část vybraného klíče SSH je nyní nainstalovaná na vzdáleném počítači a nastavená pro umožnění přihlášení k SSH bez hesla. Nyní se můžete přihlásit ke vzdálenému počitači přes SSH, aniž budete muset zadávat heslo.</p>
+
+    <note style="tip">
+      <p>V případě, že ověření klíčem SSH selže a nemůžete použít ověření heslem, kontaktujte ohledně další pomoci správce služby.</p>
+    </note>
+  </section>
+</page>

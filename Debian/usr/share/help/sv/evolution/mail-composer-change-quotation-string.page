@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-composer-change-quotation-string" xml:lang="sv">
+
+  <info>
+    <desc>Det är inte möjligt att ändra citatintroduktionen som läggs till vid svar på e-post.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-composer-reply"/>
+    <link type="seealso" xref="mail-composer-forward"/>
+
+    <revision pkgversion="3.13.90" version="0.5" date="2015-03-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Ändra strängen ”datum skrev person:” vid svar</title>
+
+<p>Avancerade användare kan ändra denna sträng.</p>
+
+<list>
+<item><p>Öppna programmet <app>dconf-editor</app>.</p></item>
+<item><p>Navigera till <code>org.gnome.evolution.mail</code>.</p></item>
+<item><p>Skriv in den önskade citatsträngen som ett värde för nyckeln <code>composer-message-attribution</code>.</p></item>
+</list>
+
+<!-- Translators: Do NOT translate the variable names inside the brackets! -->
+<p>På svenska är standardsträngen: <code>”${AbbrevWeekdayName} ${Year}-${Month}-${Day} klockan ${24Hour}:${Minute} ${TimeZone} skrev ${Sender}:”</code></p>
+
+<p>Följande platshållare finns tillgängliga:</p>
+<list>
+<item><p><code its:translate="no">{Sender}</code></p></item>
+<item><p><code its:translate="no">{SenderName}</code></p></item>
+<item><p><code its:translate="no">{SenderEMail}</code></p></item>
+<item><p><code its:translate="no">{AbbrevWeekdayName}</code></p></item>
+<item><p><code its:translate="no">{WeekdayName}</code></p></item>
+<item><p><code its:translate="no">{AbbrevMonthName}</code></p></item>
+<item><p><code its:translate="no">{MonthName}</code></p></item>
+<item><p><code its:translate="no">{Day}</code> (format: 01-31)</p></item>
+<item><p><code its:translate="no">{ Day}</code> (format: 1-31)</p></item>
+<item><p><code its:translate="no">{24Hour}</code></p></item>
+<item><p><code its:translate="no">{12Hour}</code></p></item>
+<item><p><code its:translate="no">{AmPmUpper}</code></p></item>
+<item><p><code its:translate="no">{AmPmLower}</code></p></item>
+<item><p><code its:translate="no">{DayOfYear}</code> (format: 1-366)</p></item>
+<item><p><code its:translate="no">{Month}</code> (format: 01-12)</p></item>
+<item><p><code its:translate="no">{Minute}</code></p></item>
+<item><p><code its:translate="no">{Seconds}</code></p></item>
+<item><p><code its:translate="no">{2DigitYear}</code> (t.ex. 15 för året 2015)</p></item>
+<item><p><code its:translate="no">{Year}</code></p></item>
+<item><p><code its:translate="no">{TimeZone}</code></p></item>
+</list>
+
+<note style="info package">
+  <p>Du kan behöva installera paketet <sys>dconf-editor</sys> för att genomföra dessa steg.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:dconf-editor" href="http://ftp.gnome.org/pub/gnome/sources/dconf/" style="button">Installera dconf-editor</link></p>
+    </if:when>
+  </if:choose>
+</note>
+
+</page>

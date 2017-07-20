@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://microsoft.com/win/2k12r2">
+    <short-id>win2k12r2</short-id>
+    <name>Microsoft Windows Server 2012 R2</name>
+    <name xml:lang="ca">Microsoft Windows Server 2012 R2</name>
+    <name xml:lang="fr">Microsoft Windows Server 2012 R2</name>
+    <name xml:lang="pl">Microsoft Windows Server 2012 R2</name>
+    <name xml:lang="pt_BR">Microsoft Windows Server 2012 R2</name>
+    <name xml:lang="uk">Microsoft Windows Server 2012 R2</name>
+    <version>6.3</version>
+    <vendor>Microsoft Corporation</vendor>
+    <vendor xml:lang="ca">Microsoft Corporation</vendor>
+    <vendor xml:lang="de">Microsoft Corporation</vendor>
+    <vendor xml:lang="es">Microsoft Corporation</vendor>
+    <vendor xml:lang="fr">Microsoft Corporation</vendor>
+    <vendor xml:lang="ja">Microsoft Corporation</vendor>
+    <vendor xml:lang="pl">Microsoft Corporation</vendor>
+    <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>
+    <vendor xml:lang="uk">Корпорація Microsoft</vendor>
+    <family>winnt</family>
+    <distro>win</distro>
+    <derives-from id="http://microsoft.com/win/2k12"/>
+    <upgrades id="http://microsoft.com/win/2k12"/>
+
+    <variant id="storage">
+      <name>Windows Server 2012 R2 Storage</name>
+      <name xml:lang="fr">Windows Server 2012 R2 Storage</name>
+    </variant>
+    <variant id="hyperv">
+      <name>Windows Server 2012 R2 for HyperV</name>
+      <name xml:lang="fr">Windows Server 2012 R2 pour HyperV</name>
+    </variant>
+    <variant id="essentials">
+      <name>Windows Server 2012 R2 Essentials</name>
+      <name xml:lang="fr">Windows Server 2012 R2 Essentials</name>
+    </variant>
+    <variant id="volume-license">
+      <name>Windows Server 2012 R2 Volume License</name>
+      <name xml:lang="fr">Windows Server 2012 R2 Volume License</name>
+    </variant>
+
+    <release-date>2013-10-18</release-date>
+
+    <media arch="x86_64">
+      <iso>
+        <volume-id>(IRM_SSS_X64FRE|IRM_SSS_X64CHK|IR3_SSS_X64FRE|IR5_SSS_X64FRE)_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+    <media arch="x86_64">
+      <variant id="essentials"/>
+      <iso>
+        <volume-id>(IRM_SSSO_X64CHK|IR5_SSSO_X64FRE|IRM_SSSO_X64FRE)_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+    <media arch="x86_64">
+      <variant id="hyperv"/>
+      <iso>
+        <volume-id>(IRM_SHV_X64CHK|IRM_SHV_X64FRE)_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+    <media arch="x86_64">
+      <variant id="volume-licence"/>
+      <iso>
+        <volume-id>(IR5_SSS_X64FREV|IR2_SSS_X64FREV)_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+    <media arch="x86_64">
+      <variant id="storage"/>
+      <iso>
+        <volume-id>(IRM_SFST_X64FREO|IR5_SFST_X64FREO)_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+  </os>
+</libosinfo>

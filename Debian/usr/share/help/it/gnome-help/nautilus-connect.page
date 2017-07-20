@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Visualizzare e modificare file su un altro computer tramite FTP, SSH, condivisione file di Windows o WebDAV.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Esplorare file su un server o una condivisione di rete</title>
+
+<p>È possibile connettersi a un server o a una condivisione di rete per esplorarne e visualizzarne i file come se fossero sul proprio computer. Un modo comodo per scaricare o caricare file tramite Internet o per condividerli con altre persone sulla rete locale.</p>
+
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
+
+<steps>
+  <title>Connettersi a un server di file</title>
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
+   sidebar.</p>
+  </item>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
+  <note>
+    <p>If you have connected to the server before, you can click on it in the
+    <gui>Recent Servers</gui> list.</p>
+  </note>
+  </item>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>Writing URLs</title>
+
+<p>A <em>URL</em>, or <em>uniform resource locator</em>, is a form of address
+ that refers to a location or file on a network. The address is formatted like this:</p>
+  <example>
+    <p><sys>scheme://servername.example.com/folder</sys></p>
+  </example>
+<p>The <em>scheme</em> specifies the protocol or type of server. The
+  <em>example.com</em> portion of the address is called the <em>domain name</em>.
+  If a username is required, it is inserted before the server name:</p>
+  <example>
+    <p><sys>scheme://username@servername.example.com/folder</sys></p>
+  </example>
+<p>Some schemes require the port number to be specified. Insert it after the domain name:</p>
+  <example>
+    <p><sys>scheme://servername.example.com:port/folder</sys></p>
+  </example>
+<p>Below are specific examples for the various server types that are supported.</p>
+</section>
+
+<section id="types">
+ <title>Tipi di server</title>
+
+<p>You can connect to different types of servers. Some servers are public,
+   and allow anybody to connect. Other servers require you to log in with a
+   username and password.</p>
+<p>È possibile non avere i permessi per compiere determinate azioni sui file di un server. Per esempio, è molto probabile che su server FTP pubblici non sia possibile eliminare file.</p>
+<p>The URL you enter depends on the protocol that the
+  server uses to export its file shares.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>If you have a <em>secure shell</em> account on a server, you
+  can connect using this method. Many web hosts provide SSH accounts
+  to members so they can securely upload files. SSH servers always
+  require you to log in.</p>
+  <p>A typical SSH URL looks like this:</p>
+  <example>
+    <p><sys>ssh://username@servername.example.com/folder</sys></p>
+  </example>
+
+  <p>Quando si usa SSH, tutti i dati inviati (inclusa la password iniziale) sono cifrati, in modo che altri utenti sulla rete non riescano a intercettarli.</p>
+</item>
+<item>
+  <title>FTP (con login)</title>
+  <p>FTP è un metodo popolare per lo scambio di file su Internet. Poiché il traffico FTP non è cifrato, diversi server forniscono accesso tramite SSH. Altri, tuttavia, permettono ancora, o addirittura richiedono, l'uso di FTP per il caricamento e lo scaricamento di dati. Server FTP con credenziali di accesso permettono solitamente l'eliminazione e il caricamento di file.</p>
+  <p>A typical FTP URL looks like this:</p>
+  <example>
+    <p><sys>ftp://username@ftp.example.com/path/</sys></p>
+  </example>
+</item>
+<item>
+  <title>FTP pubblico</title>
+  <p>Sites that allow you to download files will sometimes provide
+  public or anonymous FTP access. These servers do not require a
+  username and password, and will usually not allow you to delete
+  or upload files.</p>
+  <p>A typical anonymous FTP URL looks like this:</p>
+  <example>
+    <p><sys>ftp://ftp.example.com/path/</sys></p>
+  </example>
+  <p>Some anonymous FTP sites require you to log in with a
+  public username and password, or with a public username using
+  your email address as the password. For these servers, use the
+  <gui>FTP (with login)</gui> method, and use the credentials
+  specified by the FTP site.</p>
+</item>
+<item>
+  <title>Condivisione Windows</title>
+  <p>I computer Windows utilizzano un protocollo proprietario per condividere file su una rete locale. Computer collegati a una rete Windows sono solitamente raggruppati in <em>domini</em> per una migliore gestione e organizzazione degli accessi. Se sono a disposizione i permessi corretti sul computer remoto, è possibile connettersi a una condivisione file di Windows dal gestore di file.</p>
+  <p>A typical Windows share URL looks like this:</p>
+  <example>
+    <p><sys>smb://servername/Share</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV e WebDAV sicuro</title>
+  <p>Basato sul protocollo HTTP, utilizzato largamente sul web, WebDAV è spesso utilizzato per condividere file su una rete locale o per memorizzarli su un server Internet. Se il server a cui si è connessi supporta connessioni cifrate, è meglio selezionare quest'ultima opzione. WebDAV sicuro utilizza un robusto sistema di cifratura SSL per nascondere la password agli altri utenti.</p>
+  <p>A WebDAV URL looks like this:</p>
+  <example>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

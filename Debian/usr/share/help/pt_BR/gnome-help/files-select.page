@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-select" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Pressione <keyseq><key>Ctrl</key><key>S</key></keyseq> para selecionar múltiplos arquivos que tenham nomes similares.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Selecionando arquivos por um padrão</title>
+
+  <p>Você pode selecionar arquivos em uma pasta usando um padrão de nome do arquivo. Pressione <keyseq><key>Ctrl</key><key>S</key></keyseq> para surgir a janela <gui>Selecionar itens coincidentes</gui>. Digite um padrão usando as partes em comum dos nomes de arquivos mais caracteres curingas. Existem dois desses caracteres disponíveis:</p>
+
+  <list style="compact">
+    <item><p><file>*</file> coincide com qualquer quantidade de quaisquer caracteres, até mesmo nenhum.</p></item>
+    <item><p><file>?</file> coincide com exatamente um caractere qualquer.</p></item>
+  </list>
+
+  <p>Por exemplo:</p>
+
+  <list>
+    <item><p>Se você tem um arquivo OpenDocument Text, um arquivo PDF e uma imagem que tenham, todos eles, um mesmo nome base <file>Fatura</file>, selecione todos os três utilizando o padrão</p>
+    <example><p><file>Fatura.*</file></p></example></item>
+
+    <item><p>Se você tem fotos que tenham nomes como <file>Férias-001.jpg</file>, <file>Férias-002.jpg</file>, <file>Férias-003.jpg</file>; selecione todas elas com o padrão</p>
+    <example><p><file>Férias-???.jpg</file></p></example></item>
+
+    <item><p>Se você tem fotos como as do caso anterior, mas você editou algumas e adicionou <file>-editada</file> no final do nome dos arquivos das fotos que você editou, selecione essas fotos editadas com</p>
+    <example><p><file>Férias-???-editada.jpg</file></p></example></item>
+  </list>
+
+</page>

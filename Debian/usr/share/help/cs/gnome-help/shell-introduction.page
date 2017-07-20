@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-introduction" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="shell-overview" group="#first"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-13" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Obrázkový úvod do plochy, horní lišty a přehledu <gui>Činnosti</gui>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Úvod do GNOME</title>
+
+  <p>GNOME 3 přichází se zcela novým pohledem na uživatelské prostředí, které je navrženo tak, aby nepřekáželo, nerušilo a umožňovalo efektivní práci. Po prvním přihlášení uvidíte prázdnou plochu a horní lištu.</p>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar.png" width="600" if:test="!target:mobile">
+      <p>Horní lišta GNOME Shellu</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar-classic.png" width="500" height="40" if:test="!target:mobile">
+      <p>Horní lišta GNOME Shellu</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Horní lišta poskytuje přístup k aplikacím a jejich oknům, ke kalendáři a k událostem a také k <link xref="status-icons">systémovým záležitostem</link>, jako je zvuk, síť a napájení. Ve stavové nabídce v horním panelu můžete měnit hlasitost nebo jas obrazovky, upravovat údaje připojení přes <gui>Wi-Fi</gui>, kontrolovat stav baterie, odhlašovat nebo přepínat uživatele a vypnut počítač.</p>
+
+<links type="section"/>
+
+<section id="activities">
+  <title>Přehled <gui>Činností</gui></title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
+      <p>Tlačítko Činnosti</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-activities-classic.png" width="108" height="69" style="floatend floatright" if:test="!target:mobile">
+      <p>Tlačítko Činnosti</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p if:test="!platform:gnome-classic">Přístup k oknům a aplikacím získáte po kliknutí na tlačítko <gui>Činnosti</gui> nebo prostým najetím ukazatelem myši do citlivého levého horního rohu. Případně můžete zmáčknout klávesu <key xref="keyboard-key-super">Super</key> na klávesnici. Uvidíte přehled svých oken a aplikací. Můžete také začít psát a tím se začnou vyhledávat aplikace, soubory, složky a weby.</p>
+
+  <p if:test="platform:gnome-classic">Přístup k oknům a aplikacím získáte po kliknutí na nabídku <gui xref="shell-introduction#activities">Aplikace</gui> v levém horním rohu obrazovky a volbou položky <gui>Přehled činností</gui>. Případně můžete zmáčknout klávesu <key xref="keyboard-key-super">Super</key> na klávesnici. Uvidíte přehled svých oken a aplikací v přehledu <gui>Činnosti</gui>. Stačí začít psát a začnou se vyhledávat aplikace, soubory a složky.</p>
+
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
+    <p>Lišta Oblíbených</p>
+  </media>
+
+  <p>Na levé straně přehledu činností se nachází lišta s aplikacemi zvaná <em>Oblíbené</em>. V Oblíbených jsou umístěny vaše vybrané a běžící aplikace. Kliknutím na některou z ikon otevřete příslušnou aplikaci. Běžící aplikace jsou zvýrazněny. Kliknutí na ikonu běžící aplikace vás přenese na její naposledy použité okno. Ikonu můžete také přetáhnou do přehledu nebo na některou z pracovních ploch na pravé straně.</p>
+
+  <p>Kliknutím pravým tlačítkem na některou z ikon zobrazíte nabídku, pomocí které můžete přeskočit na některé z oken aplikace nebo otevřít okno nové. Otevření nového okna lze též provést kliknutím na ikonu za současného držení <key>Ctrl</key>.</p>
+
+  <p>Když vstoupíte do přehledu, uvidíte nejdříve přehled oken. Ten obsahuje živé náhledy všech oken na aktuální pracovní ploše.</p>
+
+  <p>Kliknutím na tlačítko s mřížkou úplně dole v oblíbených si zobrazíte přehled aplikací. Ten obsahuje všechny aplikace nainstalované ve vašem počítači. Kliknutím na kteroukoliv z aplikací ji spustíte. Případně můžete aplikaci přetáhnout do přehledu nebo na náhled pracovní plochy. Také ji můžete přetáhnout do oblíbených, kde zůstane, i když nebude spuštěná a získáte k ní tak rychlý přístup.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-apps-open">Zjistěte si více o spouštění aplikací.</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-windows">Zjistěte si více o oknech a plochách.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="appmenu">
+  <title>Nabídka aplikace</title>
+  <if:choose>
+    <if:when test="!platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-shell.png" width="250" style="floatend floatright" if:test="!target:mobile">
+        <p>Nabídka aplikace <app>Terminál</app></p>
+      </media>
+      <p>Nabídka aplikace nacházející se vedle tlačítka <gui>Činnosti</gui> zobrazuje název zaměřené aplikace spolu s její ikonou a poskytuje rychlý přístup k předvolbám aplikace, její nápovědě apod. Položky v této nabídce jsou značně závislé na dané aplikaci.</p>
+    </if:when>
+    <if:when test="platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-classic.png" width="154" height="133" style="floatend floatright" if:test="!target:mobile">
+        <p>Nabídka aplikace <app>Terminál</app></p>
+      </media>
+      <p>Nabídka aplikace nacházející se vedle nabídek <gui>Aplikace</gui> a <gui>Místa</gui> zobrazuje název zaměřené aplikace spolu s její ikonou a poskytuje rychlý přístup k předvolbám aplikace, její nápovědě apod. Položky v této nabídce je značně závislé na dané aplikaci.</p>
+    </if:when>
+  </if:choose>
+
+</section>
+
+<section id="clock">
+  <title>Hodiny, kalendář a události</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Hodiny, kalendář, události a upozornění</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-appts-classic.png" width="373" height="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Hodiny, kalendář a události</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Po kliknutí na hodiny na horní liště uvidíte aktuální datum, měsíční kalendář a seznam blížících se událostí a nová upozornění. Můžete také otevřít kalendář zmáčknutím <keyseq><key>Super</key> <key>M</key></keyseq>. Získáte přístup k nastavení data a času a k otevření celého kalendáře v aplikaci <app>Evolution</app> přímo z nabídky.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="clock-calendar">Zjistěte si více o kalendáři a událostech.</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-notifications">Zjistěte si více o upozorněních a pořadači zpráv.</link></p>
+    </item>
+  </list>
+
+</section>
+
+
+<section id="yourname">
+  <title>Vy a váš počítač</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-exit.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Nabídka uživatele</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-exit-classic.png" width="250" height="200" style="floatend floatright" if:test="!target:mobile">
+      <p>Nabídka uživatele</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Klikněte na systémovou nabídku v pravém horním rohu, abyste mohli spravovat systémová nastavení a svůj počítač.</p>
+
+<!-- Apparently not anymore. TODO: figure out how to update status.
+  <p>You can quickly set your availability directly from the menu. This will set
+  your status for your contacts to see in instant messaging applications such as
+  <app>Empathy</app>.</p>-->
+
+<!--
+<p>If you set yourself to Unavailable, you won't be bothered by message popups
+at the bottom of your screen. Messages will still be available in the message
+tray when you move your mouse to the bottom-right corner. But only urgent
+messages will be presented, such as when your battery is critically low.</p>
+
+<list style="compact">
+  <item><p><link xref="shell-session-status">Learn more about changing
+  your availability.</link></p></item>
+</list>
+-->
+
+  <p>Odcházíte-li od svého počítače, můžete uzamknout obrazovku a tím zabránit v jeho používání jiným lidem. Můžete také rychle bez odhlašování přepnout uživatele a dát tím tak přístup k počítači někomu jinému. Nebo můžete z nabídky počítač uspat nebo vypnout.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-exit">Zjistěte si více o přepínání uživatelů, odhlašování se a vypínání počítače.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="lockscreen">
+  <title>Zamykací obrazovka</title>
+
+  <media type="image" src="figures/shell-lock.png" width="250" style="floatend floatright" if:test="!target:mobile">
+    <p>Zamykací obrazovka</p>
+  </media>
+
+  <p>Když zamknete svoji obrazovku, případně se zamkne automaticky, zobrazí se zamykací obrazovka. Mimo ochrany vašeho sezení po dobu, co jste od počítač pryč, zobrazuje datum a čas a také informace o stavu baterie a sítě. Rovněž na ní můžete ovládat přehrávání multimédií.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-exit#lock-screen">Zjistěte si více o zamykání obrazovky.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="window-list">
+  <title>Seznam oken</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <p>GNOME mám odlišný přístup k přepínání oken, než je trvale viditelný seznam oken, jaký najdete v jiných pracovních prostředích. Tento nový přístup vám umožní zaměřit se na svůj úkol bez zbytečného rozptylování.</p>
+    <list style="compact">
+      <item>
+        <p><link xref="shell-windows-switching">Zjistěte si více o přepínání oken.</link></p>
+      </item>
+    </list>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-window-list-classic.png" width="500" height="34" style="floatend floatright" if:test="!target:mobile">
+      <p>Seznam oken</p>
+    </media>
+    <p>Seznam oken ve spodní části obrazovky poskytuje přístup ke všem otevřeným oknům a aplikacím a umožňuje vám je rychle minimalizovat a obnovit do původní velikosti.</p>
+    <p>Na pravé straně seznamu oken zobrazuje GNOME krátkou identifikaci aktuální pracovní plochy, např. <gui>1</gui> pro první (horní) pracovní plochu. Navíc zobrazuje identifikátor také celkový počet dostupných pracovních ploch. Když se chcete přepnout na jinou pracovní plochu, stačí kliknout na identifikátor a vybrat z nabídky pracovní plochu, kterou chcete.</p>
+    <p>V případě, že si chce některá aplikace nebo systémová komponenta získat vaši pozornost, zobrazí modrou ikonu v pravém postranním panelu v seznamu oken. Kliknutím na tuto ikonu se zobrazí pořadač zpráv.</p>
+  </if:when>
+</if:choose>
+
+</section>
+
+</page>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-delete" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-24" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Eliminar copias locales de sus claves o las claves de las personas con las que se comunica.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Eliminar una clave existente</title>
+
+  <p>Si ya no se va a comunicar con alguien, puede eliminar la copia de su clave GnuPG de su equipo usando <app>Contraseñas y claves</app>. También puede eliminar permanentemente una clave de la que sea propietario siempre que no se haya publicado en un servidor de claves. Eliminar una clave GnuPG elimina tanto la clave pública como la clave privada.</p>
+
+  <steps>
+    <title>Para eliminar una clave:</title>
+    <item>
+      <p>Seleccione la clave. (Puede necesitar mostrar todas las claves, con <guiseq> <gui style="menu">Mostrar</gui><gui style="menuitem">Mostrar cualquiera</gui> </guiseq>)</p>
+    </item>
+    <item>
+      <p>Pulse con el botón derecho y elija <gui>Eliminar</gui>. Alternativamente puede elegir <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Eliminar</gui></guiseq> para eliminar la clave.</p>
+      <note style="important">
+        <p>Cuando eliminar una clave GnuPG que se ha publicado en un servidor de claves, sólo elimina la clave en su depósito GnuPG ya que la copia de la clave pública seguirá estando en algún servidor de claves</p>
+        <p>Si eliminar su clave GnuPG, esto significa que su clave privada se eliminará permanentemente, incluso aunque su clave pública se pueda seguir <link xref="pgp-retrieve-remote">obteniendo</link> de un servidor de claves y usar para cifrar mensajes que no podrá leer. Para evitar que esta clave se use, obtenga la clave y revóquela. La clave revocada se podrá entonces <link xref="pgp-sync">sincronizar</link> con el servidor de claves para evitar que la gente la consiga y la use.</p>
+        <!-- or when you <link xref="misc-key-revoke">revoke</link> it.- No
+        revoking feature yet for SSH keys/PGP master keys-->
+      </note>
+    </item>
+    <item>
+      <p>En el nuevo diálogo, confirme la eliminación marcando la casilla <gui style="checkbox">Entiendo que esta clave secreta se eliminará permanentemente</gui>, y pulse el botón <gui style="button">Eliminar</gui> para terminar.</p>
+    </item>
+  </steps>
+
+
+</page>

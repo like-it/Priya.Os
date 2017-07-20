@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Másik gépen lévő fájlok megjelenítése és szerkesztése FTP, SSH, Windows-megosztás vagy WebDAV használatával.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Fájlok tallózása egy kiszolgálón vagy hálózati megosztáson</title>
+
+<p>Csatlakozhat egy kiszolgálóhoz vagy hálózati megosztáshoz az adott kiszolgálón lévő fájlok tallózásához és megjelenítéséhez úgy, mintha azok a saját gépén lennének. Ez kényelmes módszer fájlok le- és feltöltéséhez az internetről vagy internetre, vagy fájlok megosztásához a helyi hálózatának felhasználóival.</p>
+
+<p>A fájlok hálózaton keresztüli tallózásához nyissa meg a <app>Fájlok</app> alkalmazást a <gui>Tevékenységek</gui> áttekintésből, és kattintson az oldalsáv <gui>Más helyek</gui> elemére. A fájlkezelő megkeresi a helyi hálózaton található, megosztott mappákkal rendelkező számítógépeket. Ha egy, az interneten lévő kiszolgálóhoz szeretne kapcsolódni, vagy nem látja a keresett számítógépet, akkor annak internetes vagy hálózati címét beírva is kapcsolódhat egy kiszolgálóhoz.</p>
+
+<steps>
+  <title>Kapcsolódás fájlkiszolgálóhoz</title>
+  <item><p>A fájlkezelőben kattintson az oldalsávon a <gui>Más helyek</gui> menüpontra.</p>
+  </item>
+  <item><p>A <gui>Kapcsolódás kiszolgálóhoz</gui> ablakban adja meg a kiszolgáló címét egy <link xref="#urls">URL</link> formájában. A támogatott URL-címekkel kapcsolatos információk <link xref="#types">alább olvashatók</link>.</p>
+  <note>
+    <p>Ha korábban már csatlakozott a kiszolgálóhoz, akkor kiválaszthatja a <gui>Legutóbbi kiszolgálók</gui> listából.</p>
+  </note>
+  </item>
+  <item>
+    <p>Nyomja meg a <gui>Kapcsolódás</gui> gombot. Megjelennek a kiszolgáló fájljai. A fájlokat ugyanúgy tallózhatja, ahogyan azt a számítógépén lévő fájlokkal és mappákkal tenné. A kiszolgáló felvételre kerül az oldalsávba, így a jövőben gyorsan elérheti.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>URL-címek írása</title>
+
+<p>Az <em>URL</em> (<em>uniform resource locator</em>) egy címformátum, amely egy hálózaton elérhető helyre vagy fájlra hivatkozik. A cím a következőképpen áll össze:</p>
+  <example>
+    <p><sys>séma://kiszolgáló.példa.hu/mappa</sys></p>
+  </example>
+<p>A <em>séma</em> megadja a protokollt vagy a kiszolgáló típusát. A cím <em>példa.hu</em> részét <em>tartománynévnek</em> nevezzük. Ha felhasználónév szükséges, akkor az a kiszolgálónév elé szúrható be:</p>
+  <example>
+    <p><sys>séma://felhasználó@kiszolgáló.példa.hu/mappa</sys></p>
+  </example>
+<p>Egyes sémák megkövetelik a portszám megadását. Ezt a tartománynév után lehet beszúrni:</p>
+  <example>
+    <p><sys>séma://kiszolgáló.példa.hu:port/mappa</sys></p>
+  </example>
+<p>Alább a különböző támogatott kiszolgálótípusokkal kapcsolatos konkrét információkat láthat.</p>
+</section>
+
+<section id="types">
+ <title>Kiszolgálótípusok</title>
+
+<p>Különböző típusú kiszolgálókhoz kapcsolódhat. Egyes kiszolgálók nyilvánosak, és bárkinek engedélyezik a kapcsolódást. Más kiszolgálók felhasználónévvel és jelszóval való bejelentkezést követelhetnek meg.</p>
+<p>Adott kiszolgálókon lehet, hogy nincs jogosultsága bizonyos fájlműveletek elvégzésére. Például nyilvános FTP-kiszolgálókon valószínűleg nem lesz képes fájlok törlésére.</p>
+<p>A megadandó URL a kiszolgáló által a fájlmegosztásainak exportálására használt protokolltól függ.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>Ha egy kiszolgálón rendelkezik SSH-fiókkal, akkor kapcsolódhat ezen módszer használatával. Sok webszolgáltató biztosít SSH-fiókot ügyfeleinek, így azok biztonságosan tölthetnek fel fájlokat. Az SSH-kiszolgálók mindig megkövetelik a bejelentkezést.</p>
+  <p>Egy tipikus SSH URL a következőképpen néz ki:</p>
+  <example>
+    <p><sys>ssh://felhasználó@kiszolgáló.példa.hu/mappa</sys></p>
+  </example>
+
+  <p>SSH használatakor minden elküldött adat (beleértve a jelszavát is) titkosítva van, így hálózatának más felhasználói nem láthatják azt.</p>
+</item>
+<item>
+  <title>FTP (bejelentkezéssel)</title>
+  <p>Az FTP népszerű módszer fájlok kicserélésére az interneten. Mivel az FTP-n küldött adatok nem titkosítottak, sok kiszolgáló ma már SSH használatával biztosít elérést. Néhány kiszolgáló azonban továbbra is lehetővé teszi vagy megköveteli az FTP használatát fájlok fel- vagy letöltésére. A bejelentkezéssel elérhető FTP-kiszolgálók általában megengedik a fájlok törlését és feltöltését.</p>
+  <p>Egy tipikus FTP URL a következőképpen néz ki:</p>
+  <example>
+    <p><sys>ftp://felhasználó@ftp.példa.hu/útvonal</sys></p>
+  </example>
+</item>
+<item>
+  <title>Nyilvános FTP</title>
+  <p>A fájlok letöltését lehetővé tevő kiszolgálók néha nyilvános vagy névtelen FTP-elérést is biztosítanak. Ezek a kiszolgálók nem kérnek felhasználónevet és jelszót, és általában nem engedélyezik fájlok törlését vagy feltöltését.</p>
+  <p>Egy tipikus névtelen FTP URL a következőképpen néz ki:</p>
+  <example>
+    <p><sys>ftp://ftp.példa.hu/útvonal</sys></p>
+  </example>
+  <p>Egyes névtelen FTP-szolgáltatók megkövetelik egy nyilvános felhasználónévvel és jelszóval, vagy nyilvános felhasználónévvel és jelszóként az Ön e-mail címének használatával való bejelentkezést. Az ilyen kiszolgálókhoz használja az <gui>FTP (bejelentkezéssel)</gui> lehetőséget, és használja az FTP-szolgáltató által megadott hitelesítési adatokat.</p>
+</item>
+<item>
+  <title>Windows-megosztás</title>
+  <p>A windowsos számítógépek zárt protokollt használnak fájlok megosztására a helyi hálózaton. A Windows-hálózaton lévő számítógépek gyakran <em>tartományokba</em> vannak csoportosítva a rendszerezés és jobb hozzáférés-felügyelet érdekében. Ha megfelelő jogosultságai vannak a távoli számítógépen, akkor a fájlkezelőből kapcsolódhat a Windows-megosztáshoz.</p>
+  <p>Egy tipikus Windows megosztás URL a következőképpen néz ki:</p>
+  <example>
+    <p><sys>smb://kiszolgálónév/megosztás</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV és biztonságos WebDAV</title>
+  <p>A weben használt HTTP protokollon alapuló WebDAV néha használatos fájlok megosztására a helyi hálózaton, és fájlok tárolására az interneten. Ha biztonságos kapcsolatokat támogató kiszolgálóhoz kapcsolódik, akkor válassza ezt a lehetőséget. A biztonságos WebDAV erős SSL-titkosítást használ, így jelszavát és adatait mások nem láthatják.</p>
+  <p>Egy tipikus WebDAV URL a következőképpen néz ki:</p>
+  <example>
+    <p><sys>dav://példa.gépnév.hu/útvonal</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS megosztás</title>
+  <p>A UNIX számítógépek hagyományosan a Network File System (Hálózati fájlrendszer, NFS) protokollt használják fájlok megosztására a helyi hálózaton. Az NFS használatakor a biztonság a megosztást elérő felhasználó azonosítószámán alapul, így nincs szükség hitelesítési adatokra a csatlakozáskor.</p>
+  <p>Egy tipikus NFS megosztás URL a következőképpen néz ki:</p>
+  <example>
+    <p><sys>nfs://kiszolgálónév/megosztás</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

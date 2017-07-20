@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tips-specialchars" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="seealso" xref="keyboard-layouts"/>
+
+    <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Digitare caratteri non presenti sulla propria tastiera, inclusi alfabeti stranieri, simboli matematici e dingbat.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Inserire caratteri speciali</title>
+
+  <p>È possibile digitare e visualizzare migliaia di caratteri dalla maggior parte dei sistemi di scrittura del mondo, anche quelli non direttamente presenti sulla tastiera. In questa pagina vengono presentati alcuni diversi modi per inserire questi caratteri.</p>
+
+  <links type="section">
+    <title>Metodi per inserire caratteri</title>
+  </links>
+
+  <section id="charmap">
+    <title>Tabella caratteri</title>
+    <p>Per esplorare tutti i caratteri presenti nello standard Unicode è disponibile un'applicazione apposita, chiamata Tabella caratteri. Questa applicazione può essere utilizzata per trovare il carattere richiesto, quindi copiarlo e incollarlo dove necessario.</p>
+
+    <p>You can find <app>Character Map</app> in the <gui>Activities</gui>
+    overview. For more information on the character map, see the
+    <link href="help:gucharmap">Character Map Manual</link>.</p>
+
+  </section>
+
+  <section id="characters">
+    <title>Characters</title>
+    <p>Another useful application shipped with GNOME is <app>Characters</app>.
+    It lets you find and insert unusual characters by browsing character
+    categories or searching for keywords.</p>
+
+    <p>You can launch Characters from the Activities overview. For more
+    information on Characters, see the <link href="help:gnome-characters">
+    Characters Manual</link>.</p>
+
+  </section>
+
+  <section id="compose">
+    <title>Tasto Compose</title>
+    <p>Un tasto compose (o di composizione) è un tasto speciale che consente di premere diversi tasti uno dopo l'altro per ottenere un carattere speciale. Per esempio, per digitare la lettera accentata <em>é</em>, è possibile premere <key>compose</key> quindi <key>'</key> e poi <key>e</key>.</p>
+    <p>Le tastiere non presentano tasti compose specifici. È invece possibile definire uno dei tasti presenti sulla tastiera come un tasto compose.</p>
+
+    <steps>
+      <title>Definire un tasto compose</title>
+      <item>
+        <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+        start typing <gui>Keyboard</gui>.</p>
+      </item>
+      <item>
+        <p>Click on <gui>Keyboard</gui> to open the panel.</p>
+      </item>
+      <item><p>Select the <gui>Shortcuts</gui> tab and click
+      <gui>Typing</gui>.</p></item>
+      <item><p>Click on <gui>Compose Key</gui> in the right pane.</p></item>
+      <item><p>Click on <gui>Disabled</gui> and select the key you would like to
+      behave as a compose key from the drop-down menu. You can choose either of
+      the <key>Ctrl</key> keys, the right <key>Alt</key> key, the right
+      <key>Win</key> or <key xref="keyboard-key-super">Super</key> key if
+      you have one, the <key xref="keyboard-key-menu">Menu</key> key or
+      <key>Caps Lock</key>. Any key you select will then only work as a compose
+      key, and will no longer work for its original purpose.</p></item>
+    </steps>
+    <p>È possibile digitare molti caratteri comuni usando il tasto compose, per esempio:</p>
+    <list>
+      <item><p>Premere <key>compose</key> quindi <key>'</key> e poi una lettera per porre un accento acuto sulla lettera, come <em>é</em>.</p></item>
+      <item><p>Premere <key>compose</key> quindi <key>`</key> e poi una lettera per porre un accento grave sulla lettera, come <em>è</em>.</p></item>
+      <item><p>Premere <key>compose</key> quindi <key>"</key> e poi una lettera per porre un umlaut sulla lettera, come <em>ë</em>.</p></item>
+      <item><p>Premere <key>compose</key> quindi <key>-</key> e poi una lettera per porre un macron (sengo di vocale lunga) sulla lettera, come <em>ē</em>.</p></item>
+    </list>
+    <p>Per altre sequenze di compose consultare la <link href="http://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations">pagina del tasto compose su Wikipedia</link>.</p>
+  </section>
+
+<section id="ctrlshiftu">
+  <title>Code point</title>
+
+  <p>È possibile inserire ogni carattere Unicose usando solo la tastiera attraverso il code point numerico del carattere. Ogni carattere è identificato da un code point costituito da quattro caratteri. Per trovare il code point di un carattere, trovare il carattere nell'applicazione tabella caratteri e guardare nella barra di stato o nella scheda <gui>Dettagli carattere</gui>. Il code point è costituito dai quattro caratteri dopo <gui>U+</gui>.</p>
+
+  <p>To enter a character by its code point, hold down <key>Ctrl</key> and
+  <key>Shift</key>, type <key>U</key> followed by the four-character code
+  point, then release <key>Ctrl</key> and <key>Shift</key>. If you often use
+  characters that you can't easily access with other methods, you might find
+  it useful to memorize the code point for those characters so you can enter
+  them quickly.</p>
+
+</section>
+
+  <section id="layout">
+    <title>Disposizioni di tastiera</title>
+    <p>È possibile fare in modo che la propria tastiera si comporti come quella impostata per un'altra lingua, indifferentemente dalle lettere indicate sui tasti. È anche possibile passare in modo semplice da una disposizione a un'altra usando una icona bella barra superiore. Per maggiori informazioni, consultare <link xref="keyboard-layouts"/>.</p>
+  </section>
+
+<section id="im">
+  <title>Metodi di input</title>
+
+  <p>An Input Method expands the previous methods by allowing to enter
+  characters not only with keyboard but also any input devices. For instance
+  you could enter characters with a mouse using a gesture method, or enter
+  Japanese characters using a Latin keyboard.</p>
+
+  <p>Per scegliere un metodo di input, fare clic col pulsante destro del mouse in un'area di testo, scegliere <gui>Metodi di input</gui> e quindi il metodo da utilizzare. Non esiste un metodo di input predefinito nel sistema, per maggiori informazioni sull'utilizzo di uno di questi metodi consultare l'apposita documentazione.</p>
+
+</section>
+
+</page>

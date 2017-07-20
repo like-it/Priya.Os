@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="files-copy" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-15" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Cristopher Thomas</name>
+      <email>crisnoh@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak zkopírovat nebo přesunout položky do nové složky.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Kopírování a přesun souborů a složek</title>
+
+ <p>Soubory a složky můžete kopírovat nebo přesouvat na nové místo pomocí tažení a upuštění myší, použitím příkazů kopírovat a vložit nebo pomocí klávesových zkratek.</p>
+
+ <p>Například můžete chtít zkopírovat prezentaci na flashdisk, když si ji potřebujete vzít na pracovní cestu. Nebo můžete chtít udělat kopii dokumentu, než v něm provedete nějaké změny (a původní kopii pak použít, když se změny ukážou nesprávné).</p>
+
+ <p>Stejný postup se používá pro soubory i složky. Soubory i složky se kopírují a přesouvají tím samým způsobem.</p>
+
+<steps ui:expanded="false">
+<title>Kopírování a vkládání souborů</title>
+<item><p>Jedním kliknutím vyberte soubor, který chcete kopírovat.</p></item>
+<item><p>Klikněte pravým tlačítkem a vyberte <gui>Kopírovat</gui> nebo zmáčkněte <keyseq><key>Ctrl</key><key>C</key></keyseq>.</p></item>
+<item><p>Přejděte do jiné složky, kam chcete soubor zkopírovat.</p></item>
+<item><p>Kliknutím na tlačítko s nabídkou a zvolením <gui>Vložit</gui> kopírování souboru dokončíte. Nebo můžete zmáčknout <keyseq><key>Ctrl</key> <key>V</key></keyseq>. Nyní budete mít stejné kopie souboru v původní a další složce.</p></item>
+</steps>
+
+<steps ui:expanded="false">
+<title>Vyjmutí a vložení souboru, aby se přesunul</title>
+<item><p>Jedním kliknutím vyberte soubor, který chcete přesunout.</p></item>
+<item><p>Klikněte pravým tlačítkem a vyberte <gui>Vyjmout</gui> nebo zmáčkněte <keyseq><key>Ctrl</key><key>X</key></keyseq>.</p></item>
+<item><p>Přejděte do jiné složky, kam chcete soubor přesunout.</p></item>
+<item><p>Kliknutím na tlačítko s nabídkou a zvolením <gui>Vložit</gui> přesun souboru dokončíte. Nebo můžete zmáčknout <keyseq><key>Ctrl</key> <key>V</key></keyseq>. Soubor se z původní složky odebere a přesune se do jiné složky.</p></item>
+</steps>
+
+<steps ui:expanded="false">
+<title>Kopírování a přesun souborů přetažením</title>
+<item><p>Otevřete správce souborů a přejděte do složky, která obsahuje soubor, který chcete kopírovat.</p></item>
+<item><p>Klikněte na <gui>Soubory</gui> na horní liště a vyberte <gui>Nové okno</gui> (nebo zmáčkněte <keyseq><key>Ctrl</key> <key>N</key></keyseq>), aby se otevřelo druhé okno. V novém okně přejděte do složky, do které chcete soubor přesunout nebo zkopírovat.</p></item>
+<item>
+ <p>Klikněte na soubor a přetáhněte jej do jiného okna. Pokud je cílová složka na <em>stejném</em> zařízení, soubor se <em>přesune</em>, pokud je na <em>jiném</em> zařízení, soubor se <em>zkopíruje</em>.</p>
+ <p>Například, když přetáhnete soubor z flashdisku do své domovské složky, soubor se zkopíruje, protože se jedná o dvě různá zařízení.</p>
+ <p>Během přetahování můžete vynutit, aby byl soubor zkopírován, pomocí držení klávesy <key>Ctrl</key>, nebo aby byl přesunut, pomocí držení klávesy <key>Shift</key>.</p>
+ </item>
+</steps>
+
+<note>
+  <p>Není možné kopírovat nebo přesouvat soubory do složky, která je <em>jen ke čtení</em>. Některé složky jsou jen ke čtení, aby se zabránilo změnám v jejich obsahu. Měnit věci, aby nebyly jen ke čtení, lze pomocí <link xref="nautilus-file-properties-permissions">změny oprávnění k souboru</link>.</p>
+</note>
+
+</page>

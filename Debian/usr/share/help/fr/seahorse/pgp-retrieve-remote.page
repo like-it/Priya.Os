@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-retrieve-remote" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-18" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Si vous souhaitez envoyer un message chiffré urgent à quelqu'un, mais que vous ne possédez pas sa clé publique, vous pouvez la récupérer à partir d'un serveur de clé distant.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Récupération de clés distantes</title>
+
+  <p>Il est possible de récupérer la clé publique GnuPG de quelqu'un par Internet et de l'enregistrer dans <app>Mots de passe et Clés</app>.</p>
+
+  <steps>
+    <title>Récupération d'une clé distante :</title>
+    <item>
+      <p>Sélectionnez <guiseq><gui style="menu">Distant</gui> <gui style="menuitem">Chercher des clés distantes…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Saisissez, dans le champ fourni, les informations sur la clé que vous souhaitez récupérer. Des données telles que l'identifiant de clé ou l'adresse électronique du propriétaire de la clé donnent de meilleurs résultats que le nom du propriétaire de la clé.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton<gui style="button">Chercher</gui>.</p>
+    </item>
+    <item>
+      <p>Dans la liste des résultats de la recherche, sélectionnez la clé à importer, faites un clic droit dessus et sélectionnez <gui style="menuitem">Importer</gui>. Vous pouvez aussi cliquer sur le bouton<gui style="button">Importer</gui> en haut de la boîte de dialogue, après avoir sélectionné la clé.</p>
+    </item>
+  </steps>
+
+  <p>La clé importée figurera dans la liste du trousseau <gui>Clés GnuPG</gui>.</p>
+
+  <note style="tip">
+  <p>Si la clé récupérée n'est pas visible, activez l'option <guiseq><gui>Affichage</gui><gui>Tout voir</gui></guiseq>.</p>
+  </note>
+
+  <note style="tip">
+    <p>Si vous voulez plus d'informations sur une clé, avant de l'importer, sélectionnez-la et cliquez sur le bouton des propriétés en haut de la boîte de dialogue. Vous pouvez également faire un clic droit sur la clé et sélectionner <gui style="menuitem">Propriétés</gui>. Cela ouvre une nouvelle fenêtre qui affiche des informations comme l'identifiant de clé, l'empreinte de la clé, le niveau de confiance, le nom du propriétaire, etc.</p>
+  </note>
+
+</page>

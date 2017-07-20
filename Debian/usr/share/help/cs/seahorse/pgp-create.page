@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="pgp-create" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys" group="#first"/>
+
+    <revision version="0.5" date="2013-02-16" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Jak vytvořit a používat klíče GnuPG pro šifrování a podepisování e-mailů.</desc>
+  </info>
+
+  <title>Vytvoření klíčů PGP</title>
+
+  <p>Když chcete vytvořit nový klíč PGP:</p>
+
+  <steps>
+    <item>
+      <p>Vyberte <guiseq><gui>Soubor</gui><gui>Nový…</gui></guiseq></p>
+    </item>
+    <item>
+      <p>V seznamu vyberte <gui>Klíč PGP</gui> a zmáčkněte <gui style="button">Pokračovat</gui>.</p>
+    </item>
+    <item>
+      <p>Do pole <gui>Celé jméno</gui> zadejte své celé jméno.</p>
+    </item>
+    <item>
+      <p>Volitelně můžete zadat svoji e-mailovou adresu a komentář popisující účel klíče.</p>
+    </item>
+    <item>
+      <p>Zmáčkněte <gui>Vytvořit</gui>.</p>
+    </item>
+    <item>
+      <p>V dialogovém okně hesla zadejte heslo pro klíč. Svoji volbu potvrďte opětovým zadáním hesla.</p>
+    </item>
+    <item>
+      <p>Celou operaci dokončete zmáčknutím <gui style="button">Budiž</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Aplikaci <app>Hesla a klíče</app> může vygenerování klíče zabrat nějaký čas. Po dobu, co je klíč generován, pohybujte myší nebo mačkejte nějaké klávesy na klávesnici nebo brouzdejte po webu. Tím pomůžete <app>Heslům a klíčům</app> vytvořit opravdu náhodný klíč. Klíč bude uveden v části <gui>Klíče GnuPG</gui>.</p>
+
+  <note style="tip">
+    <p>Podrobné údaje <gui>Celé jméno</gui>, <gui>E-mailová adresa</gui> a <gui>Poznámka</gui> u klíče GnuPG se nazývají <link xref="pgp-userid">ID uživatele</link> klíče.</p>
+  </note>
+
+<section id="advanced" ui:expanded="false">
+  <title>Pokročilé volby klíče PGP</title>
+
+  <p>Rozbalte panel <gui>Pokročilé volby</gui>, abyste mohli zvolit vlastní hodnoty pro typ klíče, sílu klíče a datum vypršení platnosti klíče.</p>
+
+  <terms>
+    <item>
+    <title>Typ klíče</title>
+      <p>V závislosti na svých potřebách vytvořte klíče, které můžete použít jen pro podepisování nebo pro šifrování i podepisování. Algoritmy RSA a DSA-Elgamal generují klíče s obdobnou úrovní bezpečnosti.</p>
+    </item>
+    <item>
+    <title>Síla klíče</title>
+      <p>Síla klíče se měří jako velikost klíče v bitech. Je obtížné a časově náročné nabourat silný klíč, ale na druhou stranu silný klíč zpomaluje postup šifrování a podepisování. Sílu klíče byste v aplikaci <app>Hesla a klíče</app> měli volit s ohledem na to, jak dlouho chcete klíč používat. Malé klíče jsou postačující na krátkodobé použití, zatímco dlouhé klíče jsou vhodné pro dlouhodobé použití.</p>
+    </item>
+    <item>
+    <title>Datum vypršení vlastnosti:</title>
+      <p>Když vyprší platnost klíče, <link xref="pgp-expired">některé činnosti nebudou nadále fungovat</link>. V aplikaci <app>Hesla a klíče</app> můžete buď nastavit platnost na <gui style="checkbox">Nikdy nevyprší</gui> nebo vybrat datum a čas jeho vypršení.</p>
+      <p>Doporučuje se nastavit datum vypršení platnosti s ohledem na možnost, že ztratíte přístup ke klíči. I když vašemu klíči vyprší platnost, můžete <link xref="pgp-expiration-change">změnit vypršení na pozdější datum</link>.</p>
+    </item>
+  </terms>
+
+</section>
+
+</page>

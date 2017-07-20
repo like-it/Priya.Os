@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-sorting-message-list" xml:lang="el">
+
+  <info>
+    <desc>Ταξινόμηση του καταλόγου μηνυμάτων ενός φακέλου. αλληλογραφίας.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+    <link type="guide" xref="mail-layout-changing"/>
+
+    <revision pkgversion="3.3.91" version="0.7" date="2012-03-07" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-columns.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009-2010</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ταξινόμηση του καταλόγου μηνυμάτων</title>
+  
+<p><app>Evolution</app> lets you organize your emails by letting you sort messages in the <link xref="intro-main-window#e-mail">message list</link>.</p>
+
+<section id="email-threads">
+<title>Ταξινόμηση αλληλογραφίας σε θέματα αλληλογραφίας</title>
+<p>Μπορείτε να χρησιμοποιήσετε μια θεματική προβολή μηνύματος για ταξινόμηση μηνυμάτων. Για ενεργοποίηση αυτού του γνωρίσματος, κλικ στο <guiseq><gui>προβολή</gui><gui>ομαδοποίηση κατά θέματα</gui></guiseq> ή πατήστε <keyseq><key>Ctrl</key><key>Τ</key></keyseq>.</p>
+<p>Αυτό το γνώρισμα, όταν ενεργοποιηθεί, ομαδοποιεί απαντήσεις με το αρχικό μήνυμα και επιτρέπει την παρακολούθηση της ροής της συζήτησης από ένα μήνυμα στο επόμενο.</p>
+<p>Όταν ένα νέο μήνυμα φτάνει, θα προστεθεί κάτω από το γονικό μήνυμα. Τα θέματα ταξινομούνται και εμφανίζονται με βάση την ημερομηνία του πιο πρόσφατου μηνύματος που δεχτήκατε.</p>
+<note style="tip"><p>Για προχωρημένους χρήστες: Υπάρχει ένα πλήκτρο GSettings που επιτρέπει την εναλλαγή μεταξύ της συμπτυγμένης και της εκτεταμένης κατάστασης των νημάτων αλληλογραφίας. Η συμπτυγμένη κατάσταση ενεργοποιείται από προεπιλογή. Μπορεί να αλλαχθεί ξεκινώντας την εφαρμογή <app>τερματικού</app> και εκτελώντας την εντολή <cmd>gsettings set org.gnome.evolution.mail thread-expand true</cmd></p>
+<list>
+<item><p>Άνοιγμα της εφαρμογής του <app>τερματικού</app>.</p></item>
+<item><p>Εκτέλεση της εντολής <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd></p></item>
+</list>
+</note>
+</section>
+
+<section id="column-headers">
+<title>Ταξινόμηση αλληλογραφίας με τις κεφαλίδες στηλών</title>
+<p>Ο κατάλογος μηνυμάτων εμφανίζει στήλες που δείχνουν κατά πόσο ένα μήνυμα έχει αναγνωσθεί, αν έχει συνημμένα, πόσο σημαντικό είναι και τον αποστολέα, την ημερομηνία και το θέμα. Για αλλαγή των χρησιμοποιούμενων στηλών στον κατάλογο μηνυμάτων, μπορείτε να κάνετε ένα από τα παρακάτω:</p>
+<list>
+<item><p>Σύρσιμο και απόθεση των γραμμών κεφαλίδας στήλης</p></item>
+<item><p>Δεξί κλικ στην κεφαλίδα.</p></item>
+<item><p>Επιλέξτε την επιλογή <gui>αφαίρεση αυτής της στήλης</gui> ή <gui>προσθήκη στήλης</gui>.</p></item>
+</list>
+
+<p><app>Evolution</app> allows you to sort your messages using these columns. Just click on the column label to sort the emails. The direction of the arrow next to the label indicates the direction of the sort.</p>
+</section>
+
+<section id="sort-options">
+<title>Χρήση άλλων επιλογών ταξινόμησης</title>
+<p><app>Evolution</app> provides other ways for sorting email messages. You can use Sort By, Sort Ascending, Sort Descending, or Reset sort.</p>
+	<section id="sort-options-by">
+	<title>Ταξινόμηση κατά</title>
+		<p>Μπορείτε επίσης να ταξινομήσετε τα μηνύματα αλληλογραφίας χρησιμοποιώντας τον κατάλογο <gui>Ταξινόμηση κατά</gui>.</p>
+		<steps>
+		<item><p>Δεξιοπατήστε στις κεφαλίδες στήλης του καταλόγου μηνυμάτων.</p></item>
+		<item><p>Διαλέξτε την επιλογή <gui>ταξινόμηση κατά</gui>.</p><p>Αυτό εμφανίζει αυτόν τον κατάλογο των κριτηρίων για ταξινόμηση μηνυμάτων αλληλογραφίας:</p>
+			<list>
+			<item><p>Θέμα - μειωμένο</p></item>
+			<item><p>Ετικέτες</p></item>
+			<item><p>Παραλήπτες</p></item>
+			<item><p>Αποστολέας</p></item>
+			<item><p>Τοποθεσία</p></item>
+			<item><p>Λήξη</p></item>
+			<item><p><link xref="mail-follow-up-flag">παρακολούθηση σημαίας</link></p></item>
+			<item><p>Κατάσταση σημαίας</p></item>
+			<item><p>Μέγεθος</p></item>
+			<item><p>Προς</p></item>
+			<item><p>Λήψη</p></item>
+			<item><p>Ημερομηνία</p></item>
+			<item><p>Θέμα</p></item>
+			<item><p>Από</p></item>
+			<item><p>Συνημμένο</p></item>
+			<item><p>Με σημαία</p></item>
+			<item><p>Κατάσταση</p></item>
+			<item><p>Προσαρμοσμένο</p></item>
+			</list>
+		</item>
+		<item><p>Επιλέξτε την επιθυμητή επιλογή για χρήση στην ταξινόμηση μηνυμάτων αλληλογραφίας.</p></item>
+		</steps>
+	</section>
+
+	<section id="sort-options-ascending">
+	<title>Αύξουσα ταξινόμηση</title>
+		<steps>
+		<item><p>Δεξιοπατήστε στις κεφαλίδες στήλης του καταλόγου μηνυμάτων.</p></item>
+		<item><p>Διαλέξτε την επιλογή <gui>αύξουσα ταξινόμηση</gui>.</p></item>
+		</steps>
+		<p>Τα μηνύματα θα εμφανίζονται με τα πιο πρόσφατα στο τέλος.</p>
+	</section>
+
+	<section id="sort-options-descending">
+	<title>Φθίνουσα ταξινόμηση</title>
+		<steps>
+		<item><p>Δεξιοπατήστε στις κεφαλίδες στήλης του καταλόγου μηνυμάτων.</p></item>
+		<item><p>Διαλέξτε την επιλογή <gui>φθίνουσα ταξινόμηση</gui>.</p></item>
+		</steps>
+		<p>Τα μηνύματα θα εμφανίζονται με τα πιο πρόσφατα στην κορυφή.</p>
+	</section>
+
+	<section id="sort-options-unsort">
+	<title>Reset sort</title>
+		<steps>
+		<item><p>Δεξιοπατήστε στις κεφαλίδες στήλης του καταλόγου μηνυμάτων.</p></item>
+		<item><p>Select the <gui>Reset sort</gui> option.</p></item>
+		</steps>
+		<p>Αυτό αφαιρεί την ταξινόμηση από αυτή τη στήλη, επαναφέροντας στη σειρά τα μηνύματα όπως προστέθηκαν στο φάκελο.</p>
+	</section>
+</section>
+
+</page>

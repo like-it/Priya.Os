@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-lost" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-windows"/>
+
+    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Examiner la vue d'ensemble des <gui>Activités</gui> ou d'autres espaces de travail.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Recherche d'une fenêtre perdue</title>
+
+  <p>A window on a different workspace, or hidden behind another window, is
+  easily found using the <gui xref="shell-introduction#activities">Activities</gui>
+  overview:</p>
+
+  <list>
+    <item>
+      <p>ouvrez la vue d'ensemble des <gui>Activités</gui> et vérifiez que la vue <gui>Fenêtres</gui> est sélectionnée. Si la fenêtre égarée est sur l'<link xref="shell-windows#working-with-workspaces">espace de travail</link> actuel, elle sera affichée sous la forme d'un aperçu. Cliquez tout simplement sur l'aperçu pour afficher à nouveau la fenêtre,</p>
+    </item>
+    <item>
+      <p>Click different workspaces in the
+      <link xref="shell-workspaces">workspace selector</link> at the
+      right-hand side of the screen to try to find your window, or</p>
+    </item>
+    <item>
+      <p>ou encore cliquez avec le bouton droit sur l'application dans le dash et les fenêtres ouvertes correspondantes sont listées. Cliquez sur une fenêtre dans la liste pour basculer vers elle.</p>
+    </item>
+  </list>
+
+  <p>En utilisant le sélecteur de fenêtre :</p>
+
+  <list>
+    <item>
+      <p>Press
+      <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
+      to display the <link xref="shell-windows-switching">window switcher</link>.
+      Continue to hold down the <key>Super</key> key and press <key>Tab</key>
+      to cycle through the open windows, or
+      <keyseq><key>Shift</key><key>Tab</key> </keyseq> to cycle backwards.</p>
+    </item>
+    <item if:test="!platform:gnome-classic">
+      <p>Si une application possède plusieurs fenêtres, tenez enfoncée la touche <key>Logo</key> et appuyez sur la touche <key>`</key> (ou la touche au dessus de la touche <key>Tab</key>) pour les parcourir.</p>
+    </item>
+  </list>
+
+</page>

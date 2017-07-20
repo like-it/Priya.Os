@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="video-sending" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="media#videos"/>
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.12.1" date="2014-03-30" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.17.90" date="2015-08-30" status="final"/>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Vérifiez qu'ils ont installé les codecs vidéos nécessaires.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>D'autres personnes ne parviennent pas à lire les vidéos que j'ai réalisées</title>
+
+  <p>Si vous avez créé une vidéo sur votre ordinateur Linux et que vous l'envoyez à quelqu'un utilisant Windows ou Mac OS, il se peut qu'il ait des problèmes pour lire la vidéo.</p>
+
+  <p>Pour lire votre vidéo, la personne à qui vous l'envoyez doit disposer des bons <em>codecs</em>. Un codec est un petit morceau de logiciel qui sait comment lire et afficher une vidéo à l'écran. Il existe un grand nombre de formats vidéo différents et chacun nécessite un codec spécifique pour être lu. Vous pouvez vérifier le format de votre vidéo de la manière suivante :</p>
+
+  <list>
+    <item>
+      <p>Open <app>Files</app> from the
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+    </item>
+    <item>
+      <p>Faites un clic-droit sur le fichier vidéo et sélectionnez <gui>Propriétés</gui>.</p>
+    </item>
+    <item>
+      <p>Allez dans l'onglet <gui>Audio/Vidéo</gui> ou <gui>Vidéo</gui> et regardez quels <gui>Codecs</gui> sont listés dans <gui>Vidéo</gui> et <gui>Audio</gui> (si la vidéo comporte aussi du son).</p>
+    </item>
+  </list>
+
+  <p>Demandez aux personnes qui ont des problèmes pour lire votre vidéo si elles ont les codecs nécessaires installés sur leur ordinateur. Il peut être utile de rechercher sur le Web le nom du codec suivi du nom du lecteur vidéo. Par exemple, si votre vidéo utilise le format <em>Theora</em> et que vous avez un ami qui essaie de la lire avec Windows Media Player, recherchez « theora windows media player ». Vous pourrez probablement télécharger le codec correct gratuitement s'il n'est pas déjà installé.</p>
+
+  <p>Si vous ne trouvez pas le codec nécessaire, essayez le <link href="http://www.videolan.org/vlc/">lecteur multimédia VLC</link>. Il fonctionne aussi bien sous Windows, Mac OS que Linux et supporte un grand nombre de formats vidéo. Si malgré tout, cela ne fonctionne pas, essayez de convertir votre vidéo dans un autre format. La plupart des logiciels vidéo peuvent faire ça et il existe aussi des logiciels dédiés à la conversion. Utilisez votre gestionnaire de paquets pour trouver les logiciels disponibles.</p>
+
+  <note>
+    <p>Il y a quelques autres problèmes qui peuvent empêcher une personne de lire votre vidéo. La vidéo a pu être corrompue lors de la transmission (parfois les gros fichiers ne sont pas copiés parfaitement), la personne peut rencontrer des problèmes avec son application de lecture vidéo, ou encore la vidéo n'a pas été créée proprement (il y a peut-être eu des erreurs lors de l'enregistrement).</p>
+  </note>
+
+</page>

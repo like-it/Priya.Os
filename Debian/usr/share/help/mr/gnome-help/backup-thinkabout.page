@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="mr">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>GNOME डॉक्युमेंटेशन प्रकल्प</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>फोल्डर्सची सूची जेथे तुम्ही दस्तऐवज, फाइल्स आणि बॅकअप करण्याजोगी सेटिंग्ज शोधू शकता.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>बॅकअप करण्याजोगी फाइल्स कुठे आढळतील?</title>
+
+  <p>बॅकअप करताना कोणत्या फाइल्स्चे बॅकअप घ्यायचे, आणि त्यांना शोधणे, सर्वात कठिण टप्पा आहे. खालील सर्वात महत्वाच्या फाइल्सचे ठिकाण आणि बॅकअपजोगी सेटिंग्जची सूची आहे.</p>
+
+<list>
+ <item>
+  <p>व्यक्तिगत फाइल्स (दस्तऐवज, संगीत, फोटोज आणि व्हिडीओज)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">त्यांना सहसा होम फोल्डरमध्ये साठवले जाते (<file>/home/your_name</file>). ते उपफोल्डर्समध्ये जसे कि डेस्कटॉप, दस्तऐवज, चित्र, संगीत आणि व्हिडीओजमध्ये देखील असू शकतात.</p>
+  <p>If your backup medium has sufficient space (if it is an external hard
+  disk, for example), consider backing up the entire Home folder. You can find
+  out how much disk space your Home folder takes up by using the
+  <app>Disk Usage Analyzer</app>.</p>
+ </item>
+
+ <item>
+  <p>लपवलेल्या फाइल्स</p>
+  <p>Any file or folder name that starts with a period (.) is hidden by
+  default. To view hidden files, click the
+  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
+  button in the toolbar, and then choose <gui>Show Hidden Files</gui>, or press
+  <keyseq><key>Ctrl</key><key>H</key></keyseq>. You can copy these to a
+  backup location like any other file.</p>
+ </item>
+
+ <item>
+  <p>वैयक्तिक सेटिंग (डेस्कटॉप पसंती, थीम, आणि सॉफ्टवेअर सेटिंग)</p>
+  <p>अनेक ॲप्लिकेशन्स होम फोल्डर अंतर्गत त्यांच्या सेटिंग्ज छुप्या फोल्डर्समध्ये साठवतात (छुप्या फाइल्सविषयी अधिक माहितीकरिता वरील पहा).</p>
+  <p>बहुतांश ॲप्लिकेशन सेटिंग्ज होम फोल्डर अंतर्गत <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file>, आणि <file>.local</file> छुप्या फोल्डर्समध्ये साठवले जातील.</p>
+ </item>
+
+ <item>
+  <p>सिस्टीम-विस्तृत सेटिंग</p>
+  <p>Settings for important parts of the system are not stored in your Home
+  folder. There are a number of locations that they could be stored, but most
+  are stored in the <file>/etc</file> folder. In general, you will not need to
+  back up these files on a home computer. If you are running a server, however,
+  you should back up the files for the services that it is running.</p>
+ </item>
+</list>
+
+</page>

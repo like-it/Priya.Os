@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>ஃபில் புல்</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>ஜிம் காம்ப்பெல்</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>மைக்கேல் ஹில்</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>கோப்புகளை பெயர், அளவு, வகை அல்லது அவை மாற்றப்பட்ட நேரம் ஆகியவற்றின் படி வரிசைப்படுத்தல்.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+<title>கோப்புகள் மற்றும் கோப்புறைகளை வரிசைப்படுத்துதல்</title>
+
+<p>நீங்கள் ஒரு கோப்புறையில் உள்ள கோப்புகளை வெவ்வேறு வழிகளில் வரிசைப்படுத்த முடியும், உதாரணமாக தேதி அல்லது கோப்பின் அளவு படி வரிசைப்படுத்தலாம். கோப்புகளை வரிசைப்படுத்த பொதுவான வழிகளின் பட்டியலைக் காண கீழே உள்ள <link xref="#ways"/> ஐப் பார்க்கவும். முன்னிருப்பு வரிசைப்படுத்தல் வரிசையை எப்படி மாற்றுவது என்பது பற்றிய தகவலுக்கு <link xref="nautilus-views"/> ஐப் பார்க்கவும்.</p>
+
+<p>நீங்கள் கோப்புகளை எப்படியெல்லாம் வரிசைப்படுத்த முடியும் என்பது, நீங்கள் பயன்படுத்தும் <em>கோப்புறை காட்சியைப்</em> பொறுத்தது. கருவிப்பட்டியில் உள்ள பட்டியல் அல்லது சின்னம் பொத்தான்களைப் பயன்படுத்தி தற்போதைய காட்சி வகையை மாற்ற முடியும்.</p>
+
+<section id="icon-view">
+  <title>சின்னக் காட்சி</title>
+
+  <p>To sort files in a different order, click the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
+  Date</gui>.</p>
+
+  <p>ஒரு உதாரணமாக, நீங்கள் <gui>பெயரின் படி</gui> என்பதைத் தேர்ந்தெடுத்தால், கோப்புகள் அவற்றின் பெயர்கலின் படி அகரவரிசையில் வரிசைப்படுத்தப்படும். மற்ற விருப்பங்களுக்கு <link xref="#ways"/> ஐப் பார்க்கவும்.</p>
+
+  <p>You can sort in the reverse order by selecting <gui>Reversed Order</gui>
+  from the menu.</p>
+
+</section>
+
+<section id="list-view">
+  <title>பட்டியல் காட்சி</title>
+
+  <p>கோப்புகளை வேறு வகையில் வரிசைப்படுத்த, கோப்பு மேலாளரின் நிரல் தலைப்பில் ஒன்றை சொடுக்கவும். உதாரணமாக, கோப்புகளை கோப்பு வகையின் படி வரிசைப்படுத்த <gui>வகை</gui> என்பதை சொடுக்கவும். எதிர்த்திசை வரிசையில் வரிசைப்படுத்த மீண்டும் நெடுவரிசை தலைப்பை சொடுக்கவும்.</p>
+  <p>In list view, you can show columns with more attributes and sort on those
+  columns. Click the view options button in the toolbar, pick <gui>Visible
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  Columns…</gui> and select the columns that you want to be visible. You will
+  then be able to sort by those columns. See <link xref="nautilus-list"/> for
+  descriptions of available columns.</p>
+
+</section>
+
+<section id="ways">
+  <title>கோப்புகளை வரிசைப்படுத்தும் வழிகள்</title>
+
+  <terms>
+    <item>
+      <title>பெயர்</title>
+      <p>கோப்பின் பெயரின் அகரவரிசைப்படி வரிசைப்படுத்தும்.</p>
+    </item>
+    <item>
+      <title>அளவு</title>
+      <p>கோப்பின் அளவின் படி (அது எவ்வளவு வட்டு இடத்தை எடுத்துக்கொள்கிறது என்பதைப் பொறுத்து) வரிசைப்படுத்தும். முன்னிருப்பக அசிறிய அளவிலிருந்து பெரிய அளவு வரை என வரிசைப்படுத்தும்.</p>
+    </item>
+    <item>
+      <title>வகை</title>
+      <p>கோப்பின் வகையின் படி அகரவரிசையில் வரிசைப்படுத்தும். ஒரே வகை கோப்புகள் குழுப்படுத்தப்பட்டு, அதன் பின்னர் பெயரின் படி வரிசைப்படுத்தப்படும்.</p>
+    </item>
+    <item>
+      <title>Last Modified</title>
+      <p>ஒரு கோப்பு கடைசியாக மாற்றப்பட்ட தேதி மற்றும் நேரத்தின் படி வரிசைப்படுத்தப்படும். முன்னிருப்பாக பழையதில் இருந்து புதியது வரை என வரிசைப்படுத்தும்.</p>
+    </item>
+  </terms>
+
+</section>
+
+</page>

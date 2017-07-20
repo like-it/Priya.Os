@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="hi">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">वेब ब्राउज़ करें</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">A tutorial on browsing the web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  </info>
+
+  <title>वेब ब्राउज़ करें</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p><gui>अनुप्रयोग</gui> मेन्यू को स्क्रीन के शीर्ष बायीं ओर क्लिक करें.</p></item>
+      <item><p>मेन्यू से, <guiseq><gui>Internet</gui><gui>Firefox</gui> </guiseq> से चुनें.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>अपने मॉउस पॉइंटर को <gui>गतिविधि</gui> कोने में स्क्रीन के शीर्ष पर <gui>गतिविधि सारांश</gui> ले जाएँ.</p></item>
+      <item><p><app>फ़ायरफ़ॉक्स</app> ब्राउज़र चिह्न को पट्टी से चुनें स्क्रीन की बायीं ओर.</p></item>
+    </steps>
+
+    <note><p>वैकल्पिक रूप से, आप ब्राउज़र को <link xref="gs-use-system-search">लॉन्च कर सकते हैं महज</link> <app>फ़ायरफ़ॉक्स</app> को <gui>गतिविधि सारांश</gui> में टाइप करके.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>अपने मॉउस पॉइंटर को <gui>गतिविधि</gui> कोने में स्क्रीन के शीर्ष पर <gui>गतिविधि सारांश</gui> ले जाएँ.</p></item>
+      <item><p><app>वेब</app> ब्राउज़र चिह्न को पट्टी से चुनें स्क्रीन की बायीं ओर.</p></item>
+    </steps>
+
+    <note><p>वैकल्पिक रूप से, आप ब्राउज़र को <link xref="gs-use-system-search">लॉन्च कर सकते हैं महज</link> <em>web</em> को <gui>गतिविधि सारांश</gui> में टाइप करके.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>ब्राउज़र विंडो के शीर्ष पर पता पट्टी को क्लिक करें और वेबसाइट में टाइप करना आरंभ करें जिसे आप देखना चाहते हैं.</p></item>
+      <item><p>किसी वेबसाइट में टाइप करना ब्राउज़र इतिहास और पुस्तचिह्न में इसे खोजना होता है ताकि आप सटीक पता याद रखने की जरूरत न रहे.</p>
+        <p>यदि वेबसाइट इतिहास या पुस्तचिह्न में पाया जाता है, तो एक ड्रॉप डाउन सूची पता पट्टी के नीचे दिखाया जाता है.</p></item>
+      <item><p>लटकती सूची से, तीर कुँजी का उपयोग करने वाली वेबसाइट को आप आसानी से चुन सकते हैं.</p>
+      </item>
+      <item><p>वेबसाइट चुने जाने के बाद, <key>Enter</key> को इसे देखने के लिए दबाएँ.</p>
+      </item>
+    </steps>
+
+</page>

@@ -1,0 +1,11 @@
+[Unit]
+Description=Tracker metadata extractor
+
+[Service]
+Type=dbus
+BusName=org.freedesktop.Tracker1.Miner.Extract
+ExecStart=/usr/lib/tracker/tracker-extract
+Restart=on-failure
+# Don't restart after tracker daemon -k (aka tracker-control -k)
+# Don't restart after seccomp raises SIGSYS either
+RestartPreventExitStatus=SIGKILL SIGSYS

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>Открытие файлов одинарным нажатием, запуск или просмотр исполняемых текстовых файлов и настройка поведения корзины.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Шон МакКенс (Shaun McCance)</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Синдху С (Sindhu S)</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Дэвид Кинг (David King)</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Параметры вкладки <gui>Поведение</gui> менеджера файлов</title>
+<p>Можно настроить способ открытия файлов (одинарным или двойным нажатием), действие для исполняемых текстовых файлов и поведение корзины. Нажмите <gui>Nautilus</gui> в верхней панели, выберите <gui>Параметры</gui> и откройте вкладку <gui>Поведение</gui>.</p>
+
+<section id="behavior">
+<title>Поведение</title>
+<terms>
+ <item>
+  <title><gui>Открывать объекты одним нажатием</gui></title>
+  <title><gui>Открывать объекты двойным нажатием</gui></title>
+  <p>По умолчанию нажатие выбирает файлы, а двойное нажатие открывает их. Можно сделать так, чтобы файлы и папки открывались при одинарном нажатии на них. Чтобы в этом режиме выбрать один или несколько файлов, можно удерживать клавишу <key>Ctrl</key> во время нажатия.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>Исполняемые текстовые файлы</title>
+ <p>Исполняемый текстовый файл — это файл, содержащий программу, которую можно запустить (исполнить). Чтобы запустить файл, как программу, должны быть также установлены соответствующие <link xref="nautilus-file-properties-permissions">права доступа</link>. Типичные примеры подобных файлов — это сценарии сценарии <sys>Shell</sys>, <sys>Python</sys> и <sys>Perl</sys>. Они имеют расширения <file>.sh</file>, <file>.py</file> и <file>.pl</file>, соответственно.</p>
+ 
+ <p>При открытии исполняемого текстового файла есть несколько возможностей:</p>
+ 
+ <list>
+  <item>
+    <p><gui>Запускать исполняемые текстовые файлы при открытии</gui></p>
+  </item>
+  <item>
+    <p><gui>Показывать содержимое исполняемых текстовых файлов при открытии</gui></p>
+  </item>
+  <item>
+    <p><gui>Каждый раз спрашивать</gui></p>
+  </item>
+ </list>
+
+ <p>При выборе параметра <gui>Каждый раз спрашивать</gui> будет показано диалоговое окно с вопросом, запустить или просмотреть выбранный текстовый файл.</p>
+
+ <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
+
+<steps>
+  <item>
+    <p>Переход в нужную папку</p>
+  </item>
+  <item>
+    <p>Выберите нужный файл.</p>
+  </item>
+  <item>
+    <p>Нажмите правой клавишей мышки на файле, чтобы открыть контекстное меню и выбрать нужный для выполнения сценарий из меню <gui style="menuitem">Сценарии</gui>.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>Сценарию, расположенному в удалённой папке, доступной например по протоколу <sys>HTTP</sys> или <sys>FTP</sys>, нельзя передать никаких параметров.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">Параметры корзины в файловом менеджере</title>
+</info>
+<title>Корзина</title>
+
+<terms>
+ <item>
+  <title><gui>Ask before emptying the Trash</gui></title>
+  <p>Эта опция включена по умолчанию. При очистке корзины будет появляться сообщение, позволяющее подтвердить, что вы хотите очистить корзину и удалить содержавшиеся в ней файлы.</p>
+ </item>
+</terms>
+</section>
+
+</page>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="preferences" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <desc><link xref="preferences#view">Bildvisning</link>, <link xref="preferences#slideshow">bildspel</link> och <link xref="preferences#plugins">insticksmoduler</link>.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-06" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons DelaLika 3.0</p>
+    </license>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Henrik Löwendahl</mal:name>
+      <mal:email>henrik.lowendahl@purplescout.se</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Inställningar</title>
+<p>Detta ämne förklarar alla inställningar du kan ändra i bildvisaren. Klicka på <guiseq><gui>Redigera</gui><gui>Inställningar</gui></guiseq> för att börja ändra inställningarna.</p>
+
+<links type="section"/>
+
+<section id="view">
+<title>Bildvisarinställningar</title>
+<media type="image" src="figures/image-view-prefs.png" style="floatend" width="300"/>
+<terms>
+  <item>
+    <title>Bildförbättringar</title>
+    <p>Välj <gui>Mjuka upp bilder när de är utzoomade</gui> för att aktivera <em>bildutjämning</em> när du zoomar in och ut. Detta får lågupplösta (pixelerade) bilder att se bättre ut genom att utjämna taggiga kanter.</p>
+    <p>Om du aktiverar <gui>Automatisk orientering</gui> kommer bilder automatiskt att roteras enligt deras <em>Exif-metadata</em>. Detta är information om en bild som automatiskt infogas av en digitalkamera och kan inkludera detaljer om hur kamerans hölls när bilden togs. När automatisk orientering är aktiverat kommer till exempel porträttfoton automatiskt att roteras så att de är stående. Rotationen sparas inte förrän du <link xref="flip-rotate#rotate">sparar den roterade bilden</link>.</p> 
+    <p>Automatisk orientering fungerar inte med alla bilder; bara bilder som tagits med en kamera som sparar Exif-metadata med orientering kommer att roteras.</p>
+  </item>
+  <item>
+    <title>Genomskinliga delar</title>
+     <p>Välj en av följande alternativ för att bestämma hur de genomskinliga delarna av en bild ska visas, om sådana finns:</p>
+    <list>
+      <item>
+       <p><gui>Som rutmönster:</gui></p>
+       <p>Visar alla genomskinliga delar av bilden i ett rutnätsmönster.</p>
+      </item>
+      <item>
+       <p><gui>Som anpassad färg:</gui></p>
+       <p>Visar genomskinliga delar av bilden med en enda färg som du anger genom att klicka på färgväljarknappen.</p>
+      </item>
+      <item>
+       <p><gui>Som bakgrund:</gui></p>
+       <p>Visar genomskinliga delar av bilden som <gui>Bakgrundsfärg</gui> om <gui>Som anpassad färg</gui> under <gui>Bakgrund</gui> är ikryssad. Annars kommer standardbakgrundsfärgen att användas.</p>
+      </item>
+    </list>
+  </item>
+ </terms>
+</section>
+
+
+<section id="slideshow">
+<title>Bildspelsinställningar</title>
+<media type="image" src="figures/slideshow-prefs.png" style="floatend" width="300"/> 
+<p>Anpassa bildspelsinställningar:</p>
+<list>
+ <item>
+  <p>Under <gui>Bildzoomning</gui> kan du välja om du vill att bilder som är mindre än skärmen ska expanderas så att de anpassas till skärmen.</p>
+ </item>
+ <item>
+  <p>Under <gui>Sekvens</gui> kan du välja hur många sekunder varje bild bör visas under (mellan 1 och 100) innan nästa bild visas.</p>
+ </item>
+ <item>
+  <p>Kryssa i <gui>Slingsekvens</gui> om du vill att bildspelet ska repetera kontinuerligt. Om ej ikryssad kommer bildspelet att starta med bilden som du valt och avslutas med den sista bilden i mappen.</p>
+ </item>
+</list>
+</section>
+
+
+<section id="plugins">
+<title>Insticksmodulsinställningar</title>
+
+<media type="image" src="figures/plugins-all.png" width="300" style="floatend"/>
+<media type="image" src="figures/prefs-plugins.png" width="300" style="floatstart"/>
+
+<p>Här kan du kryssa i/kryssa ur vilka ytterligare funktioner du vill aktivera eller inaktivera. Bilden till vänster visar insticksmodulerna som är tillgängliga som standard.</p>
+
+<p>Du kan också vilja installera paketet <link xref="plugins">eog-plugins</link> som innehåller insticksmoduler som tillhandahåller ett antal extra funktioner. Efter att du installerat det kan du aktivera <link xref="index#plugins">ytterligare insticksmoduler</link> så som de som visas i bilden till höger.</p>
+</section>
+
+</page>

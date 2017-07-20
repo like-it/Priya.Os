@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Meg kell adnia a megfelelő hálózati portot egy program hálózati elérésének engedélyezéséhez vagy letiltásához a tűzfalon.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Gyakran használt hálózati portok</title>
+
+  <p>Alább látható a hálózati szolgáltatásokat, például fájlmegosztást vagy távoli asztalmegjelenítést nyújtó alkalmazások által gyakran használt hálózati portok listája. A rendszer tűzfalán <link xref="net-firewall-on-off">blokkolhatja vagy engedélyezheti</link> ezen alkalmazások elérését. Mivel több ezer port van használatban, ez a lista nem teljes.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>Port</p>
+	</td>
+	<td>
+	  <p>Név</p>
+	</td>
+	<td>
+	  <p>Leírás</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>Használatával a rendszerek anélkül találhatják meg egymást és írhatják le az általuk biztosított szolgáltatásokat, hogy a részletek saját kezűleg kellene megadnia.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>Nyomtatás</p>
+	</td>
+	<td>
+	  <p>Használatával nyomtatási feladatokat küldhet hálózati nyomtatóknak.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>Nyomtatás</p>
+	</td>
+	<td>
+	  <p>Használatával megoszthatja nyomtatóját a hálózaton.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>Jelenlét</p>
+	</td>
+	<td>
+	  <p>Használatával közzéteheti az azonnali üzenőkön az elérhetőségi állapotát, mint például „elérhető” vagy „elfoglalt”.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>Távoli asztal</p>
+	</td>
+	<td>
+	  <p>Használatával megoszthatja másokkal asztalát, illetve segítséget kérhet és nyújthat.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>Zenemegosztás (DAAP)</p>
+	</td>
+	<td>
+	  <p>Használatával megoszthatja zenegyűjteményét a hálózat más felhasználóival.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

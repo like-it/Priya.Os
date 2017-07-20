@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# list all installed extensions. --bundled, --shared and non-shared
+/usr/lib/libreoffice/program/unopkg list --bundled >&3
+/usr/lib/libreoffice/program/unopkg list --shared >&3
+/usr/lib/libreoffice/program/unopkg list >&3
+
+# experimental stuff enabled?
+echo "" >&3
+echo "Experimental features enabled:" >&3
+#_lo_profile_ver=`echo 5.2 | cut -d. -f1`
+_lo_profile_ver=4
+if [ -d "$HOME/.config/libreoffice/$_lo_profile_ver" ]; then
+        grep ExperimentalMode $HOME/.config/libreoffice/$_lo_profile_ver/user/registrymodifications.xcu >&3
+fi
+
+# installed VCLplugs
+echo "" >&3
+echo "Installed VCLplugs:" >&3
+dpkg -l libreoffice-gtk2 libreoffice-gtk3 libreoffice-kde >&3

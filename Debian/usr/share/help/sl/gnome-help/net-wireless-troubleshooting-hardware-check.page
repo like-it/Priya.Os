@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="sl">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Sodelavci wiki dokumentacije Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Dokumentacijski projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Čeprav je brezžična kartica priključena na računalnik, je računalnik morda ne prepozna kot omrežno napravo.</desc>
+  </info>
+
+  <title>Odpravljanje težav z brezžičnimi povezavami</title>
+  <subtitle>Preverite, da je bila brezžična kartica prepoznana</subtitle>
+
+  <p>Čeprav je brezžična kartica priključena na računalnik, je računalnik morda ne prepozna kot omrežno napravo. V tem koraku boste preverili ali je bila naprava pravilno prepoznana.</p>
+
+  <steps>
+    <item>
+      <p>Odprite okno Terminala, vnesite <cmd>lshw -C network</cmd> in pritisnite <key>Enter</key>. Če vam da to sporočilo o napaki, boste morali morda na svoj računalnik namestiti program <app>lshw</app>.</p>
+    </item>
+    <item>
+      <p>Preberite izhod tega ukaza in preverite odsek <em>Brezžični vmesnik</em>. V primeru da je vaša brezžična kartica zaznana, bi moral izhod videti podoben temu:</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>V primeru da je brezžična naprava izpisana, nadaljujte na <link xref="net-wireless-troubleshooting-device-drivers">stran z gonilniki naprav</link>.</p>
+      <p>Če brezžična naprava <em>mi</em> na seznamu, bodo naslednji koraki odvisni od vrste naprave, ki jo uporabljate. Oglejte si odsek, ki je pomemben za vrsto brezžične kartice, ki jo uporabljate: PCI(notranja), USB ali PCMCIA.</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>Preverjanje za PCI (notranjo) brezžično napravo</title>
+
+  <p>Najbolj pogoste so notranje kartice PCI, ki jih je mogoče najti na prenosnikih, ki so bili narejeni v zadnjih nekaj letih. </p>
+
+  <steps>
+    <item>
+      <p>Odprite Terminal, vtipkajte <cmd>lscpi</cmd> in pritisnite <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Oglejte si prikazan seznam naprav in najdite vrstice z <code>Network controller</code> ali <code>Ethernet controller</code>. Na ta način je lahko označenih več naprav. Tista, ki ustreza vaši brezžični kartici lahko vključuje besede kot so <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> ali <code>802.11</code>. Tukaj je primer kako je vnos morda videti:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>V primeru da je prejšnji ukaz prepoznal vašo napravo, čestitamo. Nadaljujte na strani <link xref="net-wireless-troubleshooting-device-drivers">Gonilniki naprav</link>. V primeru da zgornji ukaz ne pokaže izpisa povezanega z vašim brezžičnim gonilnikom, si oglejte <link xref="#not-recognized">navodila spodaj</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>USB brezžična kartica</title>
+
+  <p>Brezžične kartice, ki jih vklopite v vrata USB, so manj pogoste. Vklopite jih lahko neposredno v vrata USB ali pa jih povežete preko kabla USB. Kartice 3G/mobilnega širokopasovnega interneta so videti precej podobno kot brezžične (wifi) kartice, zato dvakrat preverite, da nimate 3G kartice. Za preverjanje ali je bila USB brezžična kartica prepoznana:</p>
+
+  <steps>
+    <item>
+      <p>Odprite Terminal, vtipkajte <cmd>lsusb</cmd> in pritisnite <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Oglejte si prikazan seznam naprav in poskusite najti karkoli, kar se nanaša na brezžično ali omrežno napravo. Vrstica, ki se nanaša na brezžično kartico, morda vključuje besede kot so <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> ali <code>802.11</code>. Tukaj je primer kako so lahko videti:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>V primeru da je prejšnji ukaz prepoznal vašo napravo, čestitamo. Nadaljujte na strani <link xref="net-wireless-troubleshooting-device-drivers">Gonilniki naprav</link>. V primeru da zgornji ukaz ne pokaže izpisa povezanega z vašim brezžičnim gonilnikom, si oglejte <link xref="#not-recognized">navodila spodaj</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Preverjanje za napravo PCMCIA</title>
+
+  <p>Brezžične kartice PCMCIA so običajno pravokotne kartice, ki ustrezajo reži na strani vašega prenosnika. Pogosto jih lahko najdete v starejših računalnikih. Za preverjanje, če je bila kartica PCMCIA prepoznana:</p>
+
+  <steps>
+    <item>
+      <p>Zaženite svoj računalnik <em>brez</em> vklopljenega brezžičnega prilagodilnika.</p>
+    </item>
+    <item>
+      <p>Odprite Terminal in vpišite naslednje in pritisnite <key>Enter</key>.</p>
+      <code>tail -f /var/log/messages</code>
+      <p>To bo prikazalo seznam sporočil, povezanih s strojno opremo vašega računalnika, ki se bo samodejno posodobil, če se kaj na vaši strojni opremi spremeni.</p>
+    </item>
+    <item>
+      <p>Vstavite svojo brezžično kartico v režo PCMCIA in preverite kaj se spremeni v oknu Terminala. Spremembe bi morale vsebovati podatke o vaši brezžični kartici. Oglejte si jih in preverite, če lahko določite, katero brezžično kartico imate.</p>
+    </item>
+    <item>
+      <p>Za zaustavitev poganjanja ukaza iz Terminala pritisnite <keyseq><key>Ctrl</key><key>C</key></keyseq>. Ko ste to storili, lahko Terminal zaprete.</p>
+    </item>
+    <item>
+      <p>V primeru da je prejšnji ukaz prepoznal vašo napravo, čestitamo. Nadaljujte na strani <link xref="net-wireless-troubleshooting-device-drivers">Gonilniki naprav</link>. V primeru da zgornji ukaz ne pokaže izpisa povezanega z vašim brezžičnim gonilnikom, si oglejte navodila na dnu te strani.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>Brezžična kartica ni bila prepoznana</title>
+
+  <p>If your wireless adapter was not recognized, it might not be working
+  properly or the correct drivers may not be installed for it. How you check to
+  see if there are any drivers you can install will depend on which Linux
+  distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
+
+  <p>Za podrobnejšo pomoč si oglejte možnosti podpore na spletišču svoje distribucije. Te morda vključujejo dopisne seznama in spletne klepete kjer lahko na primer vprašate o svoji brezžični kartici.</p>
+
+</section>
+
+</page>

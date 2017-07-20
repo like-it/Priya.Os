@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="net-security-tips" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="net-general"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-21" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Steven Richards</name>
+      <email>steven.richardspc@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Astuces générales à retenir sur l'utilisation d'Internet.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Être en sécurité sur Internet</title>
+
+  <p>Une raison possible qui vous fait utiliser Linux est sans doute sa solide réputation de sécurité. La raison qui fait que Linux est assez épargné par les virus et les logiciels malveillants, est le petit nombre d'utilisateurs. Les virus sont programmés pour atteindre des systèmes d'exploitation comme Windows, qui sont largement utilisés par le plus grand nombre. Ce qui contribue aussi à la sécurité de Linux, c'est son architecture libre qui permet à tout expert de modifier et améliorer les éléments de sécurité de chaque distribution.</p>
+
+  <p>Malgré toutes les dispositions prises pour que votre installation Linux soit sécurisée, il existe toujours des vulnérabilités. En tant qu'utilisateur moyen d'Internet, vous pouvez être encore à la merci des :</p>
+
+  <list>
+    <item>
+      <p>escroqueries à l'hameçonnage (sites Web et courriels qui tentent d'obtenir des informations sensibles par tromperie),</p>
+    </item>
+    <item>
+      <p><link xref="net-email-virus">transferts de courriels suspects</link>,</p>
+    </item>
+    <item>
+      <p><link xref="net-antivirus">applications ayant de mauvaises intentions (virus)</link>,</p>
+    </item>
+    <item>
+      <p><link xref="net-wireless-wepwpa">Unauthorized remote/local network
+      access</link></p>
+    </item>
+  </list>
+
+  <p>Pour rester à l'écart de tentatives de tromperies en ligne, gardez en mémoire les conseils suivants :</p>
+
+  <list>
+    <item>
+      <p>Méfiez-vous des courriels, pièces jointes ou liens qui vous sont envoyés par des gens que vous ne connaissez pas.</p>
+    </item>
+    <item>
+      <p>Si l'offre d'un site Web vous paraît trop belle pour être vraie, ou si un site vous demande des informations personnelles qui ne vous paraissent pas justifiées, alors réfléchissez à deux fois sur ce que vous transmettez et sur les conséquences que cela pourrait avoir en matière d'usurpation d'identité ou d'autres crimes.</p>
+    </item>
+    <item>
+      <p>Be careful in providing
+      <link xref="user-admin-explain">root level permissions</link> to any
+      application, especially ones that you have not used before or which are
+      not well-known. Providing anyone or anything with root level permissions
+      puts your computer at high risk to exploitation.</p>
+    </item>
+    <item>
+      <p>Assurez-vous de n'avoir activé que les services à distance nécessaires. Laisser tourner SSH ou VNC en permanence peut être utile, mais cela laisse les ports de votre ordinateur ouverts à toutes tentatives d'intrusion s'ils ne sont pas sécurisés correctement. Pensez à utiliser un <link xref="net-firewall-on-off">pare-feu</link> pour vous protéger de tentatives d'intrusions.</p>
+    </item>
+  </list>
+
+</page>

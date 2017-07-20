@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="files-copy" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-15" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Cristopher Thomas</name>
+      <email>crisnoh@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Copiar o mover elementos a una carpeta nueva.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Copiar o mover archivos y carpetas</title>
+
+ <p>Es posible copiar o mover un archivo o carpeta en una nueva ubicación arrastrando y soltando con el ratón, usando los comandos de copiar y pegar, o mediante combinaciones de teclas.</p>
+
+ <p>Por ejemplo, es posible que quiera copiar una presentación en una tarjeta de memoria para trabajar con ella. O bien, podría hacer una copia de seguridad de un documento antes de realizar cambios en el mismo (y luego utilizar la copia antigua no le gustan los cambios).</p>
+
+ <p>Estas instrucciones se aplican tanto a los archivos como a las carpetas. Copia y mueve archivos y carpetas de la misma forma.</p>
+
+<steps ui:expanded="false">
+<title>Copiar y pegar archivos</title>
+<item><p>Seleccione el archivo que quiera copiar,pulsándolo una sola vez.</p></item>
+<item><p>Pulse con el botón derecho y elija <gui>Copiar</gui>, o pulse <keyseq><key>Ctrl</key><key>C</key></keyseq>.</p></item>
+<item><p>Vaya a otra carpeta donde quiera poner la copia del archivo.</p></item>
+<item><p>Pulse el botón del menú y elija <gui>Pegar</gui> para finalizar la copia del archivo, o pulse <keyseq><key>Ctrl</key><key>V</key></keyseq>. Ahora habrá una copia del archivo en la carpeta original y en la otra carpeta.</p></item>
+</steps>
+
+<steps ui:expanded="false">
+<title>Cortar y pegar archivos para moverlos</title>
+<item><p>Seleccione el archivo que quiere mover pulsándolo una sola vez.</p></item>
+<item><p>Pulse con el botón derecho y elija <gui>Cortar</gui>, o pulse <keyseq><key>Ctrl</key><key>X</key></keyseq>.</p></item>
+<item><p>Vaya a otra carpeta donde quiera mover el archivo.</p></item>
+<item><p>Pulse el botón del menú y elija <gui>Pegar</gui> para finalizar la copia del archivo, o pulse <keyseq><key>Ctrl</key><key>V</key></keyseq>. El archivo se moverá desde su ubicación original hasta la otra carpeta.</p></item>
+</steps>
+
+<steps ui:expanded="false">
+<title>Arrastrar archivos para copiarlos o moverlos</title>
+<item><p>Abra el gestor de archivos y vaya a la carpeta que contenga el elemento que quiere copiar.</p></item>
+<item><p>Pulse <gui>Archivo</gui> en la barra superior, elija <gui>Ventana nueva</gui> (o pulse <keyseq><key>Ctrl</key><key>N</key></keyseq>) para abrir una segunda ventana. En la ventana nueva, navegue hasta la carpeta donde quiere copiar o mover el elemento.</p></item>
+<item>
+ <p>Pulse y arrastre el elemento de una ventana a la otra. Esto lo <em>moverá</em> si el destino está en el <em>mismo</em> dispositivo, o lo <em>copiará</em> si el destino está en un dispositivo <em>diferente</em>.</p>
+ <p>Por ejemplo, si arrastra un archivo de una memoria USB a su carpeta personal éste se copiará porque lo está arrastrando desde un dispositivo a otro.</p>
+ <p>Para forzar a que se copie el archivo manteniendo pulsada la tecla <key>Ctrl</key> mientras arrastra el archivo, o forzar mover el archivo manteniendo pulsada la tecla <key>Mayús</key> mientras arrastra el archivo.</p>
+ </item>
+</steps>
+
+<note>
+  <p>No puede copiar o mover un archivo a una carpeta de <em>solo lectura</em>. Algunas carpetas son de solo lectura para impedir que pueda hacer cambios en su contenido. Puede hacer que deje de ser de solo lectura <link xref="nautilus-file-properties-permissions">cambiando los permisos del archivo</link>.</p>
+</note>
+
+</page>

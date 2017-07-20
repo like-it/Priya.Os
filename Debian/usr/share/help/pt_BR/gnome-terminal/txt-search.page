@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="task" id="txt-search" xml:lang="pt-BR">
+
+  <info>
+    <revision version="0.1" date="2013-03-03" status="candidate"/>
+    <link type="guide" xref="index#textoutput"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Procure por texto no <app>Terminal</app>.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luciana Bastos de Freitas Menezes</mal:name>
+      <mal:email>lubfm@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andrius da Costa Ribas</mal:name>
+      <mal:email>andriusmao@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2009, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Felipe Braga</mal:name>
+      <mal:email>fbobraga@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Usando o <gui style="menuitem">Localizar</gui></title>
+
+  <p>Você pode procurar textos na saída do <app>Terminal</app>:</p>
+
+  <steps>
+    <item>
+      <p>Selecione <guiseq><gui style="menu">Pesquisar</gui> <gui style="menuitem">Localizar…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Digite o texto de pesquisa e pressione <gui style="button">Localizar</gui>. Para cancelar, pressione <gui style="button">Fechar</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Você pode pesquisar usando as seguintes opções para refinar os resultados:</p>
+
+  <terms>
+    <item>
+      <title><gui style="checkbox">Diferenciar maiúsculas/minúsculas</gui></title>
+      <p>Faz a busca sensível à casa: restringe os resultados à apenas aqueles que correspondem às maiúsculas/minúsculas de seu texto de pesquisa.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Coincidir apenas com palavra completa</gui></title>
+      <p>O <app>Terminal</app> vai ignorar os resultados que correspondem parcialmente a seu texto de pesquisa. Por exemplo, se você procurou "gnome", o <app>Terminal</app> irá mostrar apenas os resultados que correspondem a esta palavra inteira e omitir resultados como "gnome-terminal".</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Coincidir como expressão regular</gui></title>
+      <p>Você pode usar padrões de expressões regulares em seus textos de busca. O <app>Terminal</app> exibirá os resultados que correspondem a estes termos de busca.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Pesquisar para trás</gui></title>
+      <p>O <app>Terminal</app> irá procurar o texto na da última saída e continuar a busca para cima. Essa opção é recomendada quando você está à procura de um texto que pode ter ocorrido recentemente, fazendo com que você encontre o texto rapidamente.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Voltar ao início</gui></title>
+      <p>O <app>Terminal</app> pesquisa da posição atual na rolagem até o fim da saída do disponível e, em seguida, reinicia a busca a partir do topo.</p>
+    </item>
+  </terms>
+
+  <note style="tip">
+    <p>Se você espera trabalhar com um monte de saída do <app>Terminal</app>, aumente a quantidade de <link xref="pref-scrolling#lines">linhas para trás</link> para permitir o <app>Terminal</app> buscar mais para trás.</p>
+  </note>
+
+</page>

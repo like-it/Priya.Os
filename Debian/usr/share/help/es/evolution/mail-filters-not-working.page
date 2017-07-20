@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters-not-working" xml:lang="es">
+
+  <info>
+    <desc>Solucionar problems con los filtros de correo que no ordenan ni organizan el correo como se espera.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.9.3" version="0.5" date="2013-06-24" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Los filtros de correo no funcionan</title>
+
+<section id="order">
+<title>Orden de los filtros</title>
+<p>El orden de los filtros es muy importante. Se aplican sobre el correo original en secuencia, como una receta.</p>
+<p>Si su primer filtro tiene una regla <gui>Parar de procesar</gui>, entonces todos los mensajes de correo que coincidan con este filtro ignorarán los siguientes filtros.</p>
+<p>Cuando mueve un correo a otra carpeta, «mover» realmente significa crear una copia del mensaje en la carpeta de destino y marcar el correo original para su eliminación. De tal forma que cualquier subsiguiente regla se aplicará al correo original que ahora está marcado para su eliminación. Por ello, mover un correo debería ser la última regla en un filtro.</p>
+<p>Para comprobar las reglas y su orden en un filtro ya existente, revise sus acciones en la sección <gui>Después</gui> <link xref="mail-filters#editing">editando el filtro</link>.</p>
+</section>
+
+<section id="several-clients">
+<title>Usar varios clientes de correo</title>
+<p>También debe tener en cuenta que los filtros dependen del estado de «nuevo» que se establece cuando un correo en particular se obtiene del servidor. Puede que sus filtros no funcionen correctamente si usa otro cliente de correo además de <app>Evolution</app>.</p>
+</section>
+
+<section id="filter-log">
+<title>Registro de las acciones de los filtros</title>
+<p>Si todavía no tiene claro por qué los filtros no funcionan como esperaba, puede activar el registro de las acciones de los filtros.</p>
+<list>
+<item><p>Cerrar <app>Evolution</app>.</p></item>
+<item><p>Abra la aplicación <app>Terminal</app>.</p></item>
+<item><p>Ejecute el comando <cmd>gsettings set org.gnome.evolution.mail filters-log-actions true</cmd></p></item>
+<item><p>Ejecute el comando <cmd>gsettings set org.gnome.evolution.mail filters-log-file "/home/usuario/registro-filtro"</cmd> y reemplace <cmd>usuario</cmd> por su nombre de usuario. Esto creará un archivo de texto llamado <file>registro-filtro</file> en su carpeta personal. Tenga en cuenta que se debe introducir una ruta absoluta al nombre del archivo; la sintaxis tipo <sys>~</sys> o <sys>$HOME</sys> no funcionará.</p></item><!-- this is explained in https://bugzilla.gnome.org/show_bug.cgi?id=669471 -->
+<item><p>Inicie <app>Evolution</app>.</p></item>
+<item><p>Reciba el correo para aplicar los filtros.</p></item>
+<item><p>Abra el archivo <file>registro-filtro</file> con un editor de texto para ver qué acciones de filtrado se han aplicado.</p></item>
+</list>
+
+<p>Tenga en cuenta que puede desactivar el registro del filtro usando el comando <cmd>gsettings set org.gnome.evolution.mail filters-log-actions false</cmd></p>
+
+<p>También puede usar la aplicación <gui>dconf-editor</gui> para hacer esto.</p>
+</section>
+
+</page>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tips-specialchars" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="seealso" xref="keyboard-layouts"/>
+
+    <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Kirjoita erikoismerkkejä, joita ei löydy näppäimistöstäsi, kuten ulkomaalaisia aakkosia, matemaattisia symboleja ja muita erikoismerkkejä.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Erikoismerkkien käyttäminen</title>
+
+  <p>Voit kirjoittaa tai katsella tuhansilla eri merkeillä, joita esiintyy maailman eri kirjoitusjärjestelmissä. Myös niillä, joita ei näppäimistöstäsi löydy. Tämä sivu kuvaa eri tapoja erikoismerkkien käyttöön.</p>
+
+  <links type="section">
+    <title>Merkkien kirjoitustapoja</title>
+  </links>
+
+  <section id="charmap">
+    <title>Merkkikartta</title>
+    <p>Merkkikartan avulla voit selata Unicode-järjestelmän kaikkia merkkejä. Etsi haluamasi merkki käyttäen merkkikarttaa, sitten kopioi ja liitä se toiseen sovellukseen.</p>
+
+    <p>You can find <app>Character Map</app> in the <gui>Activities</gui>
+    overview. For more information on the character map, see the
+    <link href="help:gucharmap">Character Map Manual</link>.</p>
+
+  </section>
+
+  <section id="characters">
+    <title>Characters</title>
+    <p>Another useful application shipped with GNOME is <app>Characters</app>.
+    It lets you find and insert unusual characters by browsing character
+    categories or searching for keywords.</p>
+
+    <p>You can launch Characters from the Activities overview. For more
+    information on Characters, see the <link href="help:gnome-characters">
+    Characters Manual</link>.</p>
+
+  </section>
+
+  <section id="compose">
+    <title>Compose-näppäin</title>
+    <p>Compose-näppäin on erikoisnäppäin, jonka avulla voi painaa useampaa näppäintä ja näin tuottaa erikoismerkin. Esimerkiksi merkin <em>é</em> saa luotua painamalla <key>compose</key>-näppäintä, sitten <key>'</key> ja lopuksi <key>e</key>.</p>
+    <p>Valtaosassa näppäimistöjä ei ole erillistä compose-näppäintä. Sen sijaan voit määrittää jonkin näppäimistösi näppäimistä compose-näppäimeksi.</p>
+
+    <steps>
+      <title>Määritä compose-näppäin</title>
+      <item>
+        <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+        start typing <gui>Keyboard</gui>.</p>
+      </item>
+      <item>
+        <p>Napsauta <gui>Näppäimistö</gui>.</p>
+      </item>
+      <item><p>Select the <gui>Shortcuts</gui> tab and click
+      <gui>Typing</gui>.</p></item>
+      <item><p>Click on <gui>Compose Key</gui> in the right pane.</p></item>
+      <item><p>Click on <gui>Disabled</gui> and select the key you would like to
+      behave as a compose key from the drop-down menu. You can choose either of
+      the <key>Ctrl</key> keys, the right <key>Alt</key> key, the right
+      <key>Win</key> or <key xref="keyboard-key-super">Super</key> key if
+      you have one, the <key xref="keyboard-key-menu">Menu</key> key or
+      <key>Caps Lock</key>. Any key you select will then only work as a compose
+      key, and will no longer work for its original purpose.</p></item>
+    </steps>
+    <p>Voit kirjoittaa monia yleisiä merkkejä compose-näppäintä käyttäen. Alla esimerkkejä:</p>
+    <list>
+      <item><p>Paina <key>compose</key>, sitten <key>'</key> ja lopuksi kirjainta, jonka päälle haluat asettaa akuutin. Jos painat e-kirjainta, lopputuloksena on <em>é</em>.</p></item>
+      <item><p>Paina <key>compose</key>, sitten <key>`</key> ja lopuksi kirjainta, jonka päälle haluat asettaa graviksen. Jos painat e-kirjainta, lopputuloksena on <em>è</em>.</p></item>
+      <item><p>Paina <key>compose</key>, sitten <key>"</key> ja lopuksi kirjainta, jonka päälle haluat asettaa treeman. Jos painat e-kirjainta, lopputuloksena on <em>ë</em>.</p></item>
+      <item><p>Paina <key>compose</key>, sitten <key>-</key> ja lopuksi kirjainta, jonka päälle haluat asettaa pituusmerkin. Jos painat e-kirjainta, lopputuloksena on <em>ē</em>.</p></item>
+    </list>
+    <p>Lisätietoja compose-näppäimen yhdistelmistä on <link href="http://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations">compose-näppäimen Wikipedia-sivulla</link>.</p>
+  </section>
+
+<section id="ctrlshiftu">
+  <title>Koodiarvot</title>
+
+  <p>Voit kirjoittaa minkä tahansa Unicode-merkin käyttäen näppäimistöäsi ja ns. koodiarvoja. Jokaisella merkillä on oma nelimerkkinen koodiarvo. Etsi haluamasi merkin koodiarvo avaamalla <app>Merkkikartta</app> ja valitsemalla haluamasi merkki. Näet kyseisen merkin koodiarvon ikkunan vasemmassa alakulmassa tai <gui>Merkin yksityiskohdat</gui> -välilehdeltä. Koodiarvo on merkinnän <gui>U+</gui> jälkeen näkyvät neljä merkkiä.</p>
+
+  <p>To enter a character by its code point, hold down <key>Ctrl</key> and
+  <key>Shift</key>, type <key>U</key> followed by the four-character code
+  point, then release <key>Ctrl</key> and <key>Shift</key>. If you often use
+  characters that you can't easily access with other methods, you might find
+  it useful to memorize the code point for those characters so you can enter
+  them quickly.</p>
+
+</section>
+
+  <section id="layout">
+    <title>Näppäimistöasettelut</title>
+    <p>You can make your keyboard behave like the keyboard for another language,
+    regardless of the letters printed on the keys. You can even easily switch
+    between different keyboard layouts using an icon in the top bar. To learn
+    how, see <link xref="keyboard-layouts"/>.</p>
+  </section>
+
+<section id="im">
+  <title>Syöttötavat</title>
+
+  <p>An Input Method expands the previous methods by allowing to enter
+  characters not only with keyboard but also any input devices. For instance
+  you could enter characters with a mouse using a gesture method, or enter
+  Japanese characters using a Latin keyboard.</p>
+
+  <p>Valitse syöttötapa napsauttamalla hiiren oikealla painikkeella mitä tahansa tekstikenttää ja napsauta avautuvan valikon <gui>Syöttötavat</gui>-alivalikosta haluamaasi syöttötapaa. Yhtäkään syöttötapaa ei tarjota oletuksena, joten lue lisätietoja haluamastasi syöttötavasta sen omasta ohjeesta.</p>
+
+</section>
+
+</page>

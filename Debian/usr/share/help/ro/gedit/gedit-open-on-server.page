@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-on-server" xml:lang="ro">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="sixth"/>
+    <desc>Access files that are stored on a different computer.</desc>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Laurențiu Cristian Ion</mal:name>
+      <mal:email>ionlaurentiucristian@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Șerbănescu</mal:name>
+      <mal:email>daniel [at] serbanescu [dot] dk</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Deschiderea unui fișier care se află pe un server</title>
+
+  <p>Înainte de a deschide un fișier de pe un server din cadrul <app>gedit</app>, trebuie să știți unele informații tehnice despre server. De exemplu, va trebui să știți adresa IP sau URL-ul serverului, și poate fi necesar să știți ce fel de server este (de exemplu, HTTP, FTP, etc.).</p>
+
+  <p>De asemenea, unele tipuri de servere impun restricții în ceea ce puteți face cu fișierele stocate pe server. De exemplu, puteți să deschideți un fișier de pe un server, dar poate fi necesar să salvați modificările în fișier la nivel local, pe propriul computer.</p>
+
+  <p>Cu aceste limitări în minte, efectuați următorii pași pentru a deschide un fișier de pe un server folosind <app>gedit</app>:</p>
+
+    <steps>
+      <item><p>Alegeți <guiseq><gui>Fișier</gui><gui>Deschide</gui></guiseq> pentru a afișa caseta de dialog <gui>Deschide fișiere</gui>.</p></item>
+      <item><p>Alegeți iconița <gui>creion</gui> de lângă partea de sus a dialogului <gui>Deschide fișiere</gui>.</p></item>
+      <item><p>Introduceți adresa IP sau URL-ul serverului corespunzător.</p></item>
+      <item><p>Găsiți și alegeți fișierul pe care doriți să-l deschideți.</p></item>
+      <item><p>Folosiți lista de selecție de codificare caractere pentru a selecta codificarea de caractere corespunzătoare.</p></item>
+      <item><p>Apăsați <gui>Deschide</gui>.</p></item>
+    </steps>
+
+  <p>Tipurile valide de URI includ http:, ftp:, file:, și toate metodele acceptate de <app>gvfs</app>.</p>
+
+  <note>
+    <p>Fișierele de la unele tipuri de URI sunt deschise doar în citire, iar modificările trebuie salvate într-o altă locație. De exemplu, HTTP permite numai citirea fișierelor. Fișierele deschise din FTP sunt doar-în-citire, deoarece nu toate serverele FTP ar putea să funcționeze corect cu salvarea fișierelor la distanță.</p>
+  </note>
+
+</page>

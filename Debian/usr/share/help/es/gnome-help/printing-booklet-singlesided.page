@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="printing-booklet-singlesided" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="printing-booklet"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Imprimir un folleto desde un PDF en una impresora de una sola cara.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Imprimir un folleto en una impresora de una sola cara</title>
+
+  <note>
+    <p>Estas instrucciones son para imprimir un folleto a partir de un documento PDF.</p>
+    <p>Si quiere imprimir un folleto desde un documento de <app>LibreOffice</app>, tendrá que exportarlo primero a PDF eligiendo <guiseq><gui>Archivo</gui><gui>Exportar como PDF…</gui></guiseq>. Su documento debe tener un número de páginas múltiplo de 4 (4, 8, 12, 16,...). Es posible que tenga que añadir hasta 3 páginas en blanco.</p>
+  </note>
+
+  <p>Para imprimir:</p>
+
+  <steps>
+    <item>
+      <p>Abra el diálogo de impresión. Esto se puede hacer normalmente mediante el elemento de menú <gui style="menuitem">Imprimir</gui> o usando el atajo del teclado <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Pulse el botón <gui>Propiedades...</gui>.</p>
+      <p>En la lista desplegable <gui>Orientación</gui>, asegúrese de que la opción <gui>Apaisado</gui> está seleccionada</p>
+      <p>Pulse <gui>Aceptar</gui> para volver al diálogo de impresión.</p>
+    </item>
+    <item>
+      <p>En <gui>Rango y copias</gui>, elija <gui>Páginas</gui>.</p>
+      <p>Escriba los números de las páginas en este orden (n es el número total de páginas, múltiplo de 4):</p>
+      <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
+      <p>...hasta que haya escrito todas las páginas.</p>
+    <note>
+      <p>Ejemplos:</p>
+      <p>Folleto de 4 páginas: escriba <input>4,1,2,3</input></p>
+      <p>Folleto de 8 páginas: escriba <input>8,1,2,7,6,3,4,5</input></p>
+      <p>Folleto de 12 páginas: escriba <input>12,1,2,11,10,3,4,9,8,5,6,7</input></p>
+      <p>Folleto de 16 páginas: escriba <input>16,1,2,15,14,3,4,13,12,5,6,11,10,7,8,9</input></p>
+      <p>Folleto de 20 páginas: escriba <input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input></p>
+     </note>
+    </item>
+    <item>
+      <p>Seleccione la pestaña <gui>Configuración de página</gui>.</p>
+      <p>En <gui>Distribución</gui>, elija <gui>Folleto</gui>.</p>
+      <p>En <gui>Caras</gui>, en la lista desplegable <gui>Incluir</gui>, elija <gui>Caras frontales / páginas de la derecha</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse <gui>Imprimir</gui>.</p>
+    </item>
+    <item>
+      <p>Cuando todas las páginas estén impresas, dé la vuelta a las páginas y colóquelas en la impresora.</p>
+    </item>
+    <item>
+      <p>Abra el diálogo de impresión. Esto se puede hacer normalmente mediante el elemento de menú <gui style="menuitem">Imprimir</gui> o usando el atajo del teclado <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Seleccione la pestaña <gui>Configuración de página</gui>.</p>
+      <p>En <gui>Caras</gui>, en la lista desplegable <gui>Incluir</gui>, elija <gui>Caras traseras / páginas de la izquierda</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse <gui>Imprimir</gui>.</p>
+    </item>
+  </steps>
+
+</page>

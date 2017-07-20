@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Contributeurs au wiki de la documentation Ubuntu</name>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Certains pilotes de périphériques ne fonctionnent pas bien avec certains adaptateurs sans fil, vous devez donc en trouver un meilleur.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dépannage du réseau sans fil</title>
+
+  <subtitle>Assurez-vous d'avoir des pilotes de périphériques fonctionnels installés</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>À cette étape, vérifiez que vous pouvez obtenir des pilotes de périphérique fonctionnels pour votre adaptateur sans fil. Un <em>pilote de périphérique</em> est un petit logiciel qui indique à votre ordinateur comment faire fonctionner correctement ce périphérique. Même si l'adaptateur sans fil a été reconnu par l'ordinateur, il n'a peut-être pas de pilotes qui fonctionnent parfaitement. Il vous est possible de trouver différents pilotes qui soient fonctionnels avec votre adaptateur sans fil. Essayez ces différentes possibilités :</p>
+
+  <list>
+    <item>
+      <p>Vérifiez que votre adaptateur sans fil figure sur la liste des périphériques pris en charge.</p>
+      <p>Most Linux distributions keep a list of wireless devices that they
+      have support for. Sometimes, these lists provide extra information on how
+      to get the drivers for certain adapters working properly. Go to the list
+      for your distribution (for example,
+      <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>,
+      <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>,
+      <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> or
+      <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>)
+      and see if your make and model of wireless adapter is listed. You may be
+      able to use some of the information there to get your wireless drivers
+      working.</p>
+    </item>
+    <item>
+      <p>Recherchez des pilotes propriétaires (binaires).</p>
+      <p>Beaucoup de distributions Linux sont livrées avec des pilotes de périphérique <em>gratuits</em> et <em>libres</em>. La raison est qu'elles n'ont pas le droit de distribuer des pilotes propriétaires ou dont le code source est fermé. Si le pilote adéquat pour votre adaptateur sans fil n'existe qu'en version propriétaire ou « binaire », il n'est pas installé par défaut. Dans ce cas, recherchez sur le site du fabricant de votre adaptateur sans fil pour vérifier s'il y a un pilote disponible compatible avec Linux.</p>
+      <p>Quelques distributions Linux proposent un outil pour télécharger des pilotes restreints à votre place. Si c'est le cas avec votre distribution, utilisez-le pour trouver vos pilotes sans fil.</p>
+    </item>
+    <item>
+      <p>Utilisez les pilotes Windows pour votre adaptateur.</p>
+      <p>En général, il n'est pas possible d'utiliser un pilote de périphérique développé pour un type de système d'exploitation (comme Windows) avec un autre (comme Linux), car chacun a sa propre procédure de gestion des périphériques. Cependant, pour les adaptateurs sans fil, vous pouvez installer une couche compatible appelée <em>NDISwrapper</em> qui vous permet d'utiliser des pilotes Windows sous Linux. Cela est utile car pratiquement tous les adaptateurs ont des pilotes Windows disponibles, alors que ce n'est pas le cas pour Linux. Pour en savoir plus sur NDISwrapper, consultez <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">ceci</link>. Notez que tous les adaptateurs ne fonctionnent pas sous NDISwrapper.</p>
+    </item>
+  </list>
+
+  <p>Si aucune de ces options ne fonctionne, essayez un autre adaptateur sans fil pour résoudre le problème. Les adaptateurs USB sans fil sont relativement bon marché et se branchent sur n'importe quel ordinateur. Vérifiez néanmoins qu'il soit compatible avec votre distribution Linux avant d'en acheter un.</p>
+
+</page>

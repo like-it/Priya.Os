@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-send-file" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="bluetooth"/>
+    <link type="guide" xref="sharing"/>
+    <link type="seealso" xref="files-share"/>
+
+    <revision pkgversion="3.8" date="2013-05-16" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Compartir archivos entre dispositivos Bleutooth, como su teléfono.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Enviar archivos a un dispositivo Bluetooth</title>
+
+<if:choose>
+  <if:when test="platform:unity">
+    <p>Puede enviar archivos a los dispositivos Bluetooth conectados, tales como algunos teléfonos móviles u otros equipos. Algunos tipos de dispositivos no permiten la transferencia de archivos, o de tipos de archivos específicos. Puede enviar archivos de tres maneras: usando el icono de Bluetooth en la barra de menú, desde la ventana de configuración de Bluetooth o directamente desde el gestor de archivos.</p>
+  </if:when>
+  <p>Puede enviar archivos a los dispositivos Bluetooth conectados, tales como algunos teléfonos móviles u otros equipos. Algunos tipos de dispositivos no permiten la transferencia de archivos, o tipos de archivos específicos. Puede enviar archivos usando la ventana de configuración de Bluetooth.</p>
+</if:choose>
+
+  <steps>
+    <item>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Bluetooth</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse en <gui>Bluetooth</gui> para abrir el panel.</p>
+    </item>
+    <item>
+      <p>Asegúrese de que el Bluetooth está activado: el deslizador en la barra de título debe estar <gui>Encendido</gui>.</p>
+    </item>
+    <item>
+      <p>En la lista de <gui>Dispositivos</gui>, seleccione el dispositivo al que enviar los archivos. Si el dispositivo no aparece en la lista como <gui>Conectado</gui>, deberá <link xref="bluetooth-connect-device">conectarse</link> a él.</p>
+      <p>Aparece un panel específico para el dispositivo externo.</p>
+    </item>
+    <item>
+      <p>Pulse en <gui>Enviar archivos...</gui> y aparecerá el selector de archivos.</p>
+    </item>
+    <item>
+      <p>Seleccione el archivo que quiera enviar y pulse <gui>Seleccionar</gui>.</p>
+      <p>(Para enviar más de un archivo en una carpeta, mantenga pulsado <key>Ctrl</key> al seleccionar cada archivo.</p>
+    </item>
+    <item>
+      <p>El propietario del dispositivo receptor normalmente tiene que pulsar un botón para aceptar el archivo. Cuando lo acepte, se mostrará la barra de progreso de la <gui>Transferencia de archivos por Bluetooth</gui>. Pulse <gui>Cerrar</gui> cuando se complete la transferencia.</p>
+    </item>
+  </steps>
+
+</page>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect-reverse" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <link type="seealso" xref="connect"/>
+    <title type="sort">3</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Se connecter à des ordinateurs en dehors de votre réseau local : en outrepassant les restrictions du pare-feu de l'hôte distant.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title><gui>Connexions inverses…</gui></title>
+
+  <p>Une connexion inverse est habituellement utilisée pour outrepasser les restrictions du pare-feu sur les ports ouverts. Un pare-feu bloque généralement les ports ouverts, mais ne bloque pas le trafic sortant. Dans une connexion directe normale, un client se connecte à un serveur à travers le port ouvert du serveur, tandis que, dans une connexion inverse, le client ouvre le port auquel le serveur se connecte.</p>
+
+  <section id="enable-reverse-connections">
+    <title>Activation des connexions inverses</title>
+
+    <steps>
+      <item>
+        <p>Ouvrez <guiseq><gui style="menu">Distant</gui><gui style="menuitem">Connexions inverses…</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Cochez <gui>Activer les connexions inverses</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="accessing-behind-firewall">
+    <title>Accès à un ordinateur derrière un pare-feu</title>
+
+    <p>L'ordinateur distant doit se connecter à votre machine en utilisant votre <em>adresse IP</em> et votre numéro de port, qui s'affichent dans la boîte de dialogue <gui>Connexions inverses…</gui> à la rubrique <gui>Connectivité</gui>.</p>
+
+    <note>
+      <p>Actuellement, <app>Vino</app>, le serveur VNC de GNOME ne prend pas en charge les connexions inverses (également connues sous le nom de « mode écoute »). D'autres applications, telles que <app>UltraVNC</app>, <app>RealVNC</app> et <app>TightVNC</app>, les prennent en charge.</p>
+    </note>
+
+    <p>Dès que l'ordinateur distant se connecte à votre machine, le <app>Visionneur de bureau distant</app> établit la connexion inverse.</p>
+
+    <p>Lors de la connexion à une machine en dehors de votre réseau local, il est nécessaire de fournir au serveur distant votre adresse IP visible à l'extérieur ainsi que votre numéro de port.</p>
+
+  </section>
+
+</page>

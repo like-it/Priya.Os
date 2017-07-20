@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="sv">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Ta bort alla filer och mappar från en extern hårddisk eller USB-enhet genom att formatera den.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Ta bort allt från en flyttbar disk</title>
+
+  <p>Om du har en flyttbar disk, exempelvis en USB-minne eller en extern hårddisk kan du ibland vilja att ta bort alla filer och mappar helt från den. Du kan göra detta genom att <em>formatera</em> disken - detta tar bort alla filer på disken och gör den tom.</p>
+
+<steps>
+  <title>Att formatera en flyttbar disk</title>
+  <item>
+    <p>Öppna <app>Diskar</app> från översiktsvyn <gui>Aktiviteter</gui>.</p>
+  </item>
+  <item>
+    <p>Välj disken du vill rensa från listan över lagringsenheter till vänster.</p>
+
+    <note style="warning">
+      <p>Säkerställ att du har valt rätt disk! Om du väljer fel disk så kommer alla filer på den andra disken att tas bort!</p>
+    </note>
+  </item>
+  <item>
+    <p>I verktygsfältet under avsnittet <gui>Volymer</gui>, klicka på menyknappen. Klicka sedan på <gui>Formatera…</gui>.</p>
+  </item>
+  <item>
+    <p>I fönstret som visas, välj en <gui>Typ</gui> av filsystem för disken.</p>
+   <p>Om du använder disken med datorer som kör Windows och Mac OS utöver att använda den med Linux-datorer så välj <gui>FAT</gui>. Om du bara använder den med Windows kan <gui>NTFS</gui> vara ett bättre alternativ. En kort beskrivning av <gui>filsystemstypen</gui> kommer att presenteras som en etikett.</p>
+  </item>
+  <item>
+    <p>Ge disken ett namn och klicka på <gui>Formatera…</gui> för att fortsätta och visa ett bekräftelsefönster. Kontrollera detaljerna noggrant och klicka på <gui>Formatera</gui> för att rensa disken.</p>
+  </item>
+  <item>
+    <p>När formateringen har avslutats, klicka på utmatningsikonen för att göra en säker borttagning av disken. Den bör nu vara tom och redo att användas igen.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Att formatera en disk tar inte bort dina filer säkert</title>
+  <p>Att formatera en disk är inte ett helt säkert sätt att ta bort all dess data. En formaterad disk kommer att se ut som om den inte har filer på sig, men det är möjligt att speciella återskapningsprogram kan återställa filerna. Om du behöver ta bort filer på ett säkert sätt kommer du att behöva använda ett kommandoradsverktyg som <app>shred</app>.</p>
+</note>
+
+</page>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="problem-permissions" xml:lang="el">
+  <info>
+    <link type="guide" xref="index#problems"/>
+    <revision pkgversion="3.12" date="2014-01-25" status="review"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Βλέπω το μήνυμα σφάλματος <gui>Αδύνατη η σάρωση /… ή κάποιων από τους φακέλους που περιέχει</gui> κατά τη σάρωση.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2012-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Σφάλμα κατά τη σάρωση</title>
+
+  <p>Όταν σαρώνετε μπορεί να δείτε ένα μήνυμα <gui>Αδύνατη η σάρωση /… ή κάποιων από τους φακέλους που περιέχει</gui> στην κορυφή του παραθύρου <app>Αναλυτής χρήσης δίσκων</app>. Αυτό το σφάλμα εμφανίζεται, επειδή δεν έχετε τα απαιτούμενα δικαιώματα πρόσβασης κάποιων αρχείων λόγω περιορισμών που ορίστηκαν στο σύστημα προορισμού. Τα αρχεία που δεν μπορείτε να προσπελάσετε δεν θα χρησιμοποιηθούν για να υπολογίσουν την παρουσίαση <link xref="pref-view-chart">διάγραμμα</link> της χρήσης δίσκου, συνεπώς το αναφερόμενο αποτέλεσμα μπορεί να είναι εσφαλμένο.</p>
+
+  <p>Η έλλειψη πρόσβασης σε όλα τα αρχεία και καταλόγους είναι αρκετά συνηθισμένο, έτσι δεν υπάρχει κάτι που μπορείτε να κάνετε για αυτό το σφάλμα.</p>
+
+  <note style="info"><p>Ο <app>Αναλυτής χρήσης δίσκων</app> χρησιμοποιεί την εντολή <cmd>du</cmd> για να δημιουργήσει μια λεπτομερή προβολή χρήσης του αποθηκευτικού χώρου και χρειάζεται να έχετε δικαίωμα ανάγνωσης σε αρχεία άδεια εκτέλεσης σε καταλόγους.</p>
+
+  <p>Από την άλλη μεριά, η χρήση δίσκου του συστήματος αρχείων με την εντολή χρήσης <cmd>df</cmd> στο κυρίως παράθυρο, βασίζεται στο σύστημα αρχείων και όχι στα δικαιώματα αρχείου.</p></note>
+</page>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters" xml:lang="el">
+
+  <info>
+    <desc>Χρησιμοποιήστε κανόνες φίλτρου για ταξινόμηση της αλληλογραφίας αυτόματα σε φακέλους.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+
+    <revision pkgversion="3.0.2" version="0.6" date="2012-02-19" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-filters.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009-2010</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Χρήση φίλτρων</title>
+
+<p>Τα φίλτρα μηνυμάτων εφαρμόζουν ενέργειες στα μηνύματα με βάση τα κριτήρια που έχετε καθορίσει. Μπορείτε να ορίσετε φίλτρα και για τα εισερχόμενα και για τα εξερχόμενα μηνύματα.</p>
+
+<p>Filters will be automatically applied to incoming messages for local accounts (such as POP). Mail servers for remote accounts (such as IMAP) often already filter mail directly on the server as this is faster. If you want to apply your <app>Evolution</app> filters to remote accounts, you can enable this under <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Mail Accounts</gui><gui style="button">Edit</gui><gui>Receiving Options</gui><gui>Options</gui><gui>Apply filters to new messages in Inbox on this server</gui></guiseq>.</p>
+
+<p>Για χειροκίνητη εφαρμογή φίλτρων σε μηνύματα σε έναν φάκελο, επιλέξτε τα μηνύματα και κλικ στο <guiseq><gui>μήνυμα</gui><gui>εφαρμογή φίλτρων</gui></guiseq> ή πατήστε <keyseq><key>Ctrl</key><key>Υ</key></keyseq>.</p>
+<p>Μπορείτε να επιλέξετε όλα τα μηνύματα σε έναν φάκελο με κλικ στο <guiseq><gui>επεξεργασία</gui><gui>επιλογή όλων</gui></guiseq> ή πατώντας <keyseq><key>Ctrl</key><key>Α</key></keyseq>.</p>
+
+<section id="adding">
+<title>Δημιουργία φίλτρου</title>
+
+<steps>
+<item><p>Click <guiseq><gui>Edit</gui><gui>Message Filters</gui></guiseq>, or click <guiseq><gui>Message</gui><gui>Create</gui></guiseq> and select the criterion the filter will be based on.</p></item>
+<item><p>Κλικ στο <gui style="button">προσθήκη</gui>.</p></item>
+<item><p>Εισάγετε ένα όνομα στο πεδίο <gui>όνομα κανόνα</gui>.</p></item>
+<item><p>Ορίστε τα κριτήρια για τον κανόνα. Για κάθε κριτήριο, επιλέξτε πρώτα ποιο μέρος του μηνύματος θα σημειωθεί και έπειτα ορίστε τη σύγκριση.</p><p>Για περισσότερες πληροφορίες για τα διαθέσιμα κριτήρια δείτε <link xref="mail-filters-conditions">διαθέσιμα κριτήρια φίλτρων</link>.</p></item>
+<item><p>Εάν θέλετε να καθορίσετε πολλαπλά κριτήρια, ορίστε στο <gui>στοιχεία εύρεσης</gui> εάν υπάρχουν ή εάν όλα τα κριτήρια πρέπει να εφαρμοστούν και κλικ <gui style="button">προσθήκη κριτηρίου</gui> και επαναλάβετε το προηγούμενο βήμα.</p></item>
+<item>
+<p>Επιλέξτε τις ενέργειες για αυτό το φίλτρο στην ενότητα <gui>έπειτα</gui>.</p><p>Για περισσότερες πληροφορίες για τις διαθέσιμες ενέργειες δείτε <link xref="mail-filters-actions">διαθέσιμες ενέργειες φίλτρων</link>.</p>
+
+<note style="warning"><p>Η σειρά των φίλτρων είναι πολύ σημαντική. Τα φίλτρα εφαρμόζονται στο αρχικό μήνυμα σε αλληλουχία, όπως σε συνταγή.</p>
+<p>Εάν το πρώτο σας φίλτρο έχει έναν κανόνα <gui>παύσης διεργασίας</gui>, τότε όλα τα μηνύματα αλληλογραφίας που συμφωνούν με αυτό το φίλτρο θα αγνοήσουν όλα τα επόμενα φίλτρα.</p>
+<p>Όταν μετακινείτε ένα μήνυμα σε άλλο φάκελο, η "μετακίνηση" στην πραγματικότητα σημαίνει προσάρτηση ενός αντιγράφου του μηνύματος στον φάκελο προορισμού και σημειώνει το αρχικό μήνυμα για διαγραφή. Έτσι κάθε επόμενος κανόνας φίλτρου θα εφαρμοστεί στο αρχικό μήνυμα που είναι σημειωμένο τώρα για διαγραφή. Συνεπώς η μετακίνηση ενός μηνύματος πρέπει συνήθως να εμφανίζεται τελευταία στην αλληλουχία των κανόνων φίλτρων.</p></note>
+
+</item>
+<item><p>Εάν θέλετε να ορίσετε πολλαπλές ενέργειες, κλικ στο <gui style="button">προσθήκη ενέργειας</gui> και επανάληψη του προηγούμενου βήματος. Για παράδειγμα, εάν δεν θέλετε κανένα υπάρχον φίλτρο να εφαρμοστεί επιλέξτε <gui>παύση διεργασίας</gui> ως τη δεύτερη ενέργεια στον κατάλογο.</p></item>
+<item><p>Κλικ στο <gui style="button">Εντάξει</gui>.</p></item>
+</steps>
+
+</section>
+
+<section id="editing">
+<title>Επεξεργασία φίλτρων</title>
+<steps>
+<item><p>Κλικ στο <guiseq><gui>επεξεργασία</gui><gui>μήνυμα φίλτρων</gui></guiseq>.</p></item>
+<item><p>Επιλογή του φίλτρου.</p></item>
+<item><p>Κλικ στο <gui style="button">επεξεργασία</gui>.</p></item>
+<item><p>Κάντε τις επιθυμητές διορθώσεις και πατήστε δύο φορές <gui style="button">εντάξει</gui>.</p></item>
+</steps>
+</section>
+
+<section id="deleting">
+<title>Διαγραφή φίλτρων</title>
+<steps>
+<item><p>Κλικ στο <guiseq><gui>επεξεργασία</gui><gui>μήνυμα φίλτρων</gui></guiseq>.</p></item>
+<item><p>Επιλογή του φίλτρου.</p></item>
+<item><p>Κλικ στο <gui style="button">αφαίρεση</gui>.</p></item>
+<item><p>Κλικ στο <gui style="button">Εντάξει</gui>.</p></item>
+</steps>
+</section>
+
+
+
+
+	
+</page>

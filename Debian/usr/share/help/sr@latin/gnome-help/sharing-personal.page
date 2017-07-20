@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-personal" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.1" date="2013-09-23" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Dopustite drugima da pristupe datotekama u vašoj fascikli <file>Javno</file>.</desc>
+  </info>
+
+  <title>Delite vaše lične datoteke</title>
+
+  <p>Možete da dozvolite pristup fascikli <file>Javno</file> u vašoj fascikli <file>Lično</file> sa drugog računara na mreži. Podesite <gui>Deljenje ličnih datoteka</gui> da dozvolite drugima da pristupe sadržaju fascikle.</p>
+
+  <note style="info package">
+    <p>Morate imati instalran paket <app>gnome-user-share</app> da bi <gui>Deljenje ličnih datoteka</gui> bilo vidljivo.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:gnome-user-share" style="button">Instalirajte „gnome-user-share“</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Deljenje</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknite na <gui>Deljenje</gui> da otvorite panel.</p>
+    </item>
+    <item>
+      <p>Ako je <gui>Deljenje</gui> <gui>ISKLJ.</gui>, prebacite ga na <gui>UKLJ.</gui>.</p>
+
+      <note style="info"><p>Ako vam tekst ispod <gui>naziva računara</gui> dopušta da ga uređujete, možete da <link xref="sharing-displayname">izmenite</link> naziv pod kojim se vaš računar prikazuje na mreži.</p></note>
+    </item>
+    <item>
+      <p>Izaberite <gui>Deljenje ličnih datoteka</gui>.</p>
+    </item>
+    <item>
+      <p>Prebacite <gui>Deljenje ličnih datoteka</gui> na <gui>UKLJ.</gui>. Ovo znači da će neko drugi na vašoj tekućoj mreži biti u mogućnosti da pokuša da se poveže na vaš računar i da pristupi datotekama u vašoj fascikli <file>Javno</file>.</p>
+      <note style="info">
+        <p>Biće prikazana <em>putanja</em> sa koje može biti pristupljeno vašoj fascikli <file>Javno</file> sa drugih računara na mreži.</p>
+      </note>
+    </item>
+  </steps>
+
+  <section id="security">
+  <title>Bezbednost</title>
+
+  <terms>
+    <item>
+      <title>Zahtevajte lozinku</title>
+      <p>Da zahtevate da drugi ljudi koriste lozinku prilikom pristupa vašoj fascikli <file>Javno</file>, prebacite <gui>Zahtevaj lozinku</gui> <gui>UKLJ.</gui>. Ako ne koristite ovu opciju, svako može da pokuša da vidi vašu fasciklu <file>Javno</file>.</p>
+      <note style="tip">
+        <p>Ova opcija je unapred isključena, ali biste trebali da je uključite i da postavite bezbednosnu lozinku.</p>
+      </note>
+    </item>
+  </terms>
+  </section>
+
+  <section id="networks">
+  <title>Mreže</title>
+
+  <p>Odeljak <gui>Mreže</gui> navodi mreže na koje ste trenutno povezani. Koristite prekidač <gui>UKLJ. | ISKLJ.</gui> pored savke od njih da izaberete na kojima vaše lične datoteke mogu biti deljene.</p>
+
+  </section>
+
+</page>

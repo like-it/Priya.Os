@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="seealso" xref="net-findip"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>ஜிம் காம்ப்பெல்</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>எக்காட்டெரினா ஜெராசிமோவா</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>மைக்கேல் ஹில்</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>ஒரு நிலையான IP முகவரியைப் பயன்படுத்தினால், உங்கள் கணினியில் இருந்து சில பிணைய சேவைகளை எளிதாக வழங்க முடியும்.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>ஒரு நிலையான IP முகவரியுடனான ஒரு இணைப்பை உருவாக்குதல்</title>
+
+  <p>பெரும்பாலான பிணையங்கள், நீங்கள் பிணையத்தில் கணினியை இணைக்கும் போதே, தானாக ஒரு <link xref="net-what-is-ip-address">IP முகவரி</link> மற்றும் பிற விவரங்களை உங்கள் கணினிக்கு அமைக்கும். இந்த விவரங்கள் அவ்வப்போது மாறலாம். ஆனால் உங்கள் கணினியின் IP முகவரி என்ன என்பதை எப்போதுமே அறிந்திருக்க விரும்பினால் (உதாரணமாக அது ஒரு கோப்பு சேவையகமாக இருந்தால்), அதற்கு ஒரு நிலையான IP முகவரியை அமைக்க விரும்பலாம்.</p> <p>உங்கள் கணினிக்கு ஒரு நிலையான IP முகவரியை அமைக்க:</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Network</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>In the left pane, select the network connection that you want to give
+      a fixed address. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
+    </item>
+    <item>
+      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
+    </item>
+    <item>
+      <p>Enter the <em>Address</em>, <em>Netmask</em>, and <em>Gateway</em>
+      information into the appropriate boxes. How you choose these will depend
+      on your network setup; there are specific rules governing which IP
+      addresses and netmasks are valid for a given network.</p>
+    </item>
+    <item>
+      <p>தேவைப்பட்டால், <gui>DNS சேவையகங்கள்</gui> பெட்டியில் ஒரு <em>டொமைன் பெயர் சேவையக</em> முகவரியை உள்ளிடவும். இது டொமைன் பெயர்களைத் தேடி அறியும் சேவையகத்தின் IP முகவரியாகும்; பெரும்பாலான நிறுவன பிணையங்களுக்கும் இணைய வழங்குநர்களுக்கும் அவர்களுக்கென்று தனி DNS சேவையகங்கள் இருக்கும்.</p>
+    </item>
+    <item>
+      <p>Click <gui>Apply</gui>. The network connection should now have a fixed
+      IP address.</p>
+    </item>
+  </steps>
+
+</page>

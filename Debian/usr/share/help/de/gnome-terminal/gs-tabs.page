@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="gs-tabs" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#getting-started"/>
+    <revision pkgversion="3.8" date="2013-02-17" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-03-07" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013-2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc><app>Terminal</app>-Reiter aktivieren, hinzufügen, entfernen und neu anordnen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2010, 2012-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Reiter verwenden</title>
+
+  <p>Bevor Sie die Reiter mit Hilfe des Menüs navigieren können, stellen Sie sicher, dass sie <link xref="pref-tab-window">in den Einstellungen aktiviert sind</link>.</p>
+
+  <p>Die Reiterleiste erscheint oben als eine Reihe von Knöpfen in allen <app>Terminal</app>-Fenstern, die mehrere Reiter offen haben. Klicken Sie auf einen Knopf, um zu dem entsprechenden Reitern zu wechseln. Es können mehrere Reiter geöffnet werden, um Ihr Arbeiten mit <app>Terminal</app> zu erleichtern. Dies ermöglicht es Ihnen, gleichzeitig mehrere Aufgaben wie das Ausführen von Programmen, Durchsuchen von Ordnern und Bearbeiten von Textdateien in einem einzigen <app>Terminal</app>-Fenster zu erledigen.</p>
+
+  <section id="add-tab">
+    <title>Einen neuen Reiter öffnen</title>
+
+    <p>So öffnen Sie einen neuen Reiter im aktuellen <app>Terminal</app>fenster:</p>
+    <steps>
+      <item>
+        <p>Drücken Sie <keyseq><key>Strg</key><key>Umschalt</key><key>T</key></keyseq>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+<!-- TODO: doesn't work, see bug 720693
+  <section id="rename-tab">
+    <title>Rename a tab</title>
+
+    <p>Each tab has an automatically assigned title. You can rename the tabs
+    individually:</p>
+
+    <steps>
+      <item>
+        <p>Select <guiseq><gui style="menu">Terminal</gui>
+        <gui style="menuitem">Set Title…</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Enter the desired <gui>Title</gui> that you wish to use for the tab.
+        This will overwrite any titles that would be set by terminal commands.
+        </p>
+        <note>
+          <p>It is not possible to set back the automatically set title once it
+          has been set for a tab. To see the title, you need to allow terminal
+          command titles to be shown in the <gui style="menuitem">Profile 
+          Preferences</gui>.</p>
+        </note>
+      </item>
+      <item>
+        <p>Click <gui style="button">OK</gui>.</p>
+      </item>
+    </steps>
+  </section>-->
+
+  <section id="close-tab">
+    <title>Einen Reiter entfernen</title>
+
+    <p>So schließen Sie einen offenen Reiter im aktuellen <app>Terminal</app>-Fenster:</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui style="menu">Datei</gui> <gui style="menuitem">Terminal schließen</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <p>Alternativ können Sie auf das <gui style="button">×</gui> in der oberen rechten Ecke eines Reiters klicken, oder mit der rechten Maustaste auf den Reiter klicken und <gui style="menuitem">Terminal schließen</gui> wählen.</p>
+
+  </section>
+
+  <section id="reorder-tab">
+    <title>Reiter neu anordnen</title>
+
+    <p>So ändern Sie die Reihenfolge von Reitern in einem Fenster:</p>
+    <steps>
+      <item>
+        <p>Klicken Sie mit der linken Maustaste auf den Reiter und halten Sie diese gedrückt.</p>
+      </item>
+      <item>
+        <p>Verschieben Sie den Reiter an die gewünschte Position zwischen die anderen Reiter.</p>
+      </item>
+      <item>
+        <p>Lassen Sie die Maustaste los.</p>
+      </item>
+    </steps>
+
+    <p>Der Reiter wird am nächsten zu der Position platziert, wo Sie den Reiter ablegen, unmittelbar neben anderen geöffneten Reitern.</p>
+
+    <p>Alternativ können Sie einen Reiter neu anordnen, indem Sie mit der rechten Maustaste auf den Reiter klicken und <gui style="menuitem">Terminal nach links verschieben</gui> wählen, um den Reiter nach links zu verschieben, oder <gui style="menuitem">Terminal nach rechts verschieben</gui> wählen, um den Reiter nach rechts zu verschieben. Dadurch wird die Position des Reiters jeweils um eine Position verschoben. </p>
+
+  </section>
+
+  <section id="move-tab-another-window">
+    <title>Einen Reiter in ein anderes <app>Terminal</app>-Fensters verschieben</title>
+
+    <p>So verschieben Sie einen Reiter von einem Fenster in ein anderes Fenster:</p>
+    <steps>
+      <item>
+        <p>Klicken Sie mit der linken Maustaste auf den Reiter und halten Sie diese gedrückt.</p>
+      </item>
+      <item>
+        <p>Ziehen Sie den Reiter in ein neues Fenster.</p>
+      </item>
+      <item>
+        <p>Setzen Sie ihn neben andere Reiter im neuen Fenster.</p>
+      </item>
+      <item>
+        <p>Lassen Sie die Maustaste los.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Sie können einen Reiter von einem Fenster in ein anderes verschieben, indem Sie den Reiter mit der Maus auf <gui>Aktivitäten</gui> in der linken oberen Ecke der <gui>GNOME Shell</gui> ziehen. So wird jedes der offenen <app>Terminal</app>-Fenster angezeigt. Legen Sie den Reiter auf dem gewünschten <app>Terminal</app>-Fenster ab.</p>
+    </note>
+  </section>
+
+  <section id="move-tab-create-window">
+    <title>Einen Reiter zum Öffnen eines neuen <app>Terminal</app>-Fensters verschieben</title>
+
+    <p>So erstellen Sie ein neues Fenster aus einem vorhandenen Reiter:</p>
+    <steps>
+      <item>
+        <p>Klicken Sie mit der linken Maustaste auf den Reiter und halten Sie diese gedrückt.</p>
+      </item>
+      <item>
+        <p>Ziehen Sie den Reiter mit der Maus aus dem aktuellen <app>Terminal</app>-Fenster heraus.</p>
+      </item>
+      <item>
+        <p>Lassen Sie die Maustaste los.</p>
+      </item>
+    </steps>
+  </section>
+
+</page>

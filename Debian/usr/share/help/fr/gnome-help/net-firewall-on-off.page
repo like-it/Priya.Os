@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Vous pouvez contrôler quels programmes ont accès au réseau. Ceci contribue à la sécurité de votre ordinateur.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Autorisation ou blocage de l'accès au pare-feu</title>
+
+  <p>Votre système devrait être protégé par un <em>pare-feu</em> qui permet d'interdire l'accès à certains programmes par d'autres personnes sur Internet ou sur votre réseau. Ceci contribue à la sécurité de votre ordinateur.</p>
+
+  <p>Beaucoup d'applications peuvent utiliser votre connexion réseau. Par exemple, vous pouvez partager des fichiers, ou permettre à quelqu'un d'avoir accès à votre ordinateur à distance lorsque vous êtes connecté à un réseau. En fonction de la configuration de votre ordinateur, il vous faut régler les paramètres de votre pare-feu pour permettre à ces services de fonctionner comme voulu.</p>
+
+  <p>Chaque programme fournissant des services réseau utilise un <em>port réseau</em>. Pour autoriser les autres ordinateurs du réseau à accéder à un service, il vous faut « ouvrir » le port correspondant dans le pare-feu :</p>
+
+
+  <steps>
+    <item>
+      <p>Ouvrez <gui>Activités</gui> dans le coin actif en haut à gauche de l'écran et lancez votre application pare-feu. Si vous ne la trouvez pas, il vous faut en installer une (par exemple Firestarter ou GUFW).</p>
+    </item>
+    <item>
+      <p>Ouvrez ou désactivez le port de votre service réseau, en fonction des autorisations que vous souhaitez accorder à certaines personnes. Le port que vous devez modifier <link xref="net-firewall-ports">dépend du service</link>.</p>
+    </item>
+    <item>
+      <p>Enregistrez ou appliquez les modifications en suivant les instructions de votre application pare-feu.</p>
+    </item>
+  </steps>
+
+</page>

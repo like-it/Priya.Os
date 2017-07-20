@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-sort" xml:lang="uk">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jcampbell@gnome.org</email>
+  </credit>
+  <credit type="editor">
+    <name>Sindhu S</name>
+    <email>sindhus@live.in</email>
+  </credit>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  <desc>Sort lines of text into alphabetical order.</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Максим Дзюманенко</mal:name>
+      <mal:email>dziumanenko@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Назарій Ріттер</mal:name>
+      <mal:email>nazariy.ritter@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Сортування</title>
+
+  <p>Плагін «Сортування» впорядковує виділені текстові рядки в алфавітному порядку.</p>
+
+  <note style="warning">
+    <p>Виправити операцію «<gui>Сортування</gui>» за допомогою команди «<gui>Скасувати</gui>» – неможливо. Тому рекомендуємо зберігати файл безпосередньо перед сортуванням. Якщо при сортуванні було допущено помилку, можна відновити попередньо збережену версію файлу, вибравши <guiseq><gui>«Файл»</gui><gui>«Відновити»</gui></guiseq>.</p>
+</note>
+
+  <section id="enable-sort">
+    <title>Увімкнення плагіну «Сортування»</title>
+
+    <p>Щоб увімкнути плагін «<app>Сортування</app>»:</p>
+
+    <steps>
+      <item>
+        <p>Виберіть <guiseq><gui style="menu">«gedit»</gui> <gui style="menuitem">«Параметри»</gui> <gui style="tab">«Плагіни»</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Виберіть «<gui style="menuitem">Сортування</gui>», щоб увімкнути плагін.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="using-sort">
+    <title>Використання плагіну «Сортування»</title>
+
+    <p>Щоб використовувати плагін «<gui>Сортування</gui>»:</p>
+
+    <steps>
+      <item>
+        <p>Перемістіть та виберіть потрібні текстові рядки.</p>
+      </item>
+      <item>
+        <p>Виберіть <guiseq><gui style="menu">«gedit»</gui> <gui style="menuitem">«Сортування»</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Відкриється діалогове вікно «<gui>Сортування</gui>», дозволяючи вибрати між декількома варіантами сортування:</p>
+        <list>
+          <item>
+            <p>«<gui>У зворотньому порядку</gui>» відсортує текст у зворотньому алфавітному порядку.</p>
+          </item>
+          <item>
+            <p>«<gui>Видалити дублікати</gui>» видалить дублікати зі списку.</p>
+          </item>
+          <item>
+            <p>«<gui>Без врахування регістру</gui>» буде ігнорувати регістр.</p>
+            <note style="tip">
+              <p>Щоб при сортуванні не враховувались символи на початку рядків, встановіть перший символ для використання при сортуванні в полі лічильника «<gui>Починати з</gui>».</p>
+            </note>
+          </item>
+        </list>
+      </item>
+      <item>
+        <p>Для запуску операції сортування, клацніть на «<gui>Сортувати</gui>».</p>
+      </item>
+    </steps>
+  </section>
+
+</page>

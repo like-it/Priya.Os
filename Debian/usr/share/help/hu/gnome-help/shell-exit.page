@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="power"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name>Alexandre Franke</name>
+      <email>afranke@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A felhasználói fiók elhagyása kijelentkezéssel, felhasználóváltással stb.</desc>
+    <!-- Should this be a guide which links to other topics? -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Kijelentkezés, kikapcsolás vagy felhasználóváltás</title>
+
+  <p>Miután befejezte számítógépének használatát, kikapcsolhatja, felfüggesztheti (energiatakarékossági okból) vagy a kijelentkezés után bekapcsolva is hagyhatja.</p>
+
+<section id="logout">
+  <title>Kijelentkezés vagy felhasználóváltás</title>
+
+  <p>Hogy más felhasználók is használhassák számítógépét, kijelentkezhet, vagy bejelentkezve maradhat és megváltoztathatja a felhasználót. Ha felhasználót vált, akkor minden alkalmazása továbbra is futni fog, és a következő bejelentkezéskor minden ugyanott lesz, ahol hagyta.</p>
+
+  <p>A <gui>Kijelentkezéshez</gui> vagy <gui>Felhasználóváltáshoz</gui> kattintson a <link xref="shell-introduction#yourname">rendszer menüre</link> a felső sáv jobb oldalán, kattintson a nevére, és válassza ki a megfelelő lehetőséget.</p>
+
+  <note if:test="!platform:gnome-classic">
+    <p>A <gui>Kijelentkezés</gui> és <gui>Felhasználóváltás</gui> bejegyzések csak akkor jelennek meg a menüben, ha a rendszeren több felhasználói fiók is van.</p>
+  </note>
+
+  <note if:test="platform:gnome-classic">
+    <p>A <gui>Felhasználóváltás</gui> bejegyzés csak akkor jelenik meg a menüben, ha a rendszeren több felhasználói fiók is van.</p>
+  </note>
+
+</section>
+
+<section id="lock-screen">
+  <info>
+    <link type="seealso" xref="session-screenlocks"/>
+  </info>
+
+  <title>Képernyő zárolása</title>
+
+  <p>Ha számítógépét elhagyja egy rövid időre, akkor zárolja a képernyőt. Ezzel megakadályozhatja, hogy mások hozzáférjenek fájljaihoz vagy alkalmazásokat futtassanak. Amikor visszatér, emelje fel a <link xref="shell-lockscreen">zároló képernyő</link> függönyét, és adja meg jelszavát a bejelentkezéshez. Ha nem zárolja képernyőjét, akkor az egy idő után automatikusan megtörténik.</p>
+
+  <p>A képernyő zárolásához kattintson a rendszer menüre a felső sáv jobb oldalán, és válassza a Képernyő zárolása menüpontot a menü alján.</p>
+
+  <p>Amikor képernyője zárolva van, más felhasználók bejelentkezhetnek a saját fiókjukba a jelszó képernyőn a <gui>Bejelentkezés más felhasználóként</gui> gombra kattintva. Amikor végeztek, visszaválthat a saját munkamenetére.</p>
+
+</section>
+
+<section id="suspend">
+  <info>
+    <link type="seealso" xref="power-suspend"/>
+  </info>
+
+  <title>Felfüggesztés</title>
+
+  <p>Energiatakarékossági okból függessze fel számítógépét, ha nem használja azt. Ha laptopot használ, akkor a GNOME alapesetben automatikusan felfüggeszti a számítógépét, amikor lecsukja a fedelet. Ez elmenti a munkamenet állapotát a számítógép memóriájába, és kikapcsolja a számítógép legtöbb funkcióját. A felfüggesztés alatt a számítógép kis mennyiségű áramot használ.</p>
+
+  <p>A számítógép saját kezűleg történő felfüggesztéséhez kattintson a rendszer menüre a felső sáv jobb oldalán, és tartsa lenyomva az <key>Alt</key> billentyűt. A Kikapcsolás menüpont átváltozik Felfüggesztéssé. Válassza ezt a menüpontot.</p>
+
+</section>
+
+<section id="shutdown">
+<!--<info>
+  <link type="seealso" xref="power-off"/>
+</info>-->
+
+  <title>Kikapcsolás vagy újraindítás</title>
+
+  <p>Ha teljesen ki szeretné kapcsolni számítógépét, vagy újra szeretné indítani, kattintson a rendszer menüre a felső sáv jobb oldalán, válassza a Kikapcsolás menüpontot a menü alján. Megjelenik egy ablak, amely felkínálja az <gui>Újraindítást</gui> vagy a <gui>Kikapcsolást</gui>.</p>
+
+  <p>Ha más felhasználók is be vannak jelentkezve, akkor nem biztos, hogy ki tudja kapcsolni vagy újra tudja indítani a számítógépet, mert ez befejezné az ő munkameneteiket is. Ha rendelkezik rendszergazdai jogosultsággal, akkor a rendszer bekérheti a jelszavát a leállításhoz.</p>
+
+  <note style="tip">
+    <p>A számítógép kikapcsolására akkor lehet szükség, ha át szeretné helyezni, de nincs akkumulátora, vagy az gyenge vagy már nem képes töltés tárolására. A kikapcsolt számítógép a felfüggesztettel szemben <link xref="power-batterylife">nem használ energiát</link>.</p>
+  </note>
+
+</section>
+
+</page>

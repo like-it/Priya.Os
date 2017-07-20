@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-spam-settings" xml:lang="cs">
+
+  <info>
+    <desc>Jak nastavit zpracování nechtěné/nevyžádané pošty.</desc>
+
+    <link type="guide" xref="mail-spam"/>
+    <link type="seealso" xref="mail-spam-marking"/>
+
+    <revision pkgversion="3.12.9" version="0.11" date="2015-03-15" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Patrick O'Callaghan</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Pete Biggs</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-prefs-mail.html.en#mail-prefs-junk -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Nastavení nevyžádané pošty</title>
+
+<section id="junk-tools">
+<title>Nástroje</title>
+<p><app>Evolution</app> nabízí kontrolu, jestli pošta není nechtěná nebo nevyžádaná, pomocí nástrojů <app>Bogofilter</app> nebo <app>SpamAssassin</app>. Abyste mohli tyto nástroje používat, musíte je mít nainstalované přes správu softwaru své distribuce.</p>
+
+<note style="info package">
+  <p>Možná budete potřebovat nainstalovat <app>Bogofilter</app> nebo <app>SpamAssassin</app>, abyste mohli tyto kroky provést.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:bogofilter" href="http://bogofilter.sourceforge.net/" style="button">Nainstalovat bogofilter</link></p>
+      <p><link action="install:spamassassin" href="http://spamassassin.apache.org/" style="button">Nainstalovat spamassassin</link></p>
+    </if:when>
+  </if:choose>
+</note>
+
+<p>SpamAssassin pracuje pomocí sady předdefinovaných pravidel, takže dokáže určit nevyžádanou poštu přímočarým způsobem. Bogofilter není šířen s výchozí sadou kritérií pro rozpoznání nevyžádané pošty, takže po instalaci automaticky nic nenajde. Nejdříve jej musíte <link xref="mail-spam-marking">natrénovat</link>. Ale i SpamAssassin umí svá pravidla měnit pomocí trénování.</p>
+</section>
+
+<section id="junk-folder">
+<title>Složka nevyžádané pošty</title>
+<p>Zprávy, které jsou označené jako nevyžádané (ať už ručně nebo automaticky pomocí nástrojů SpamAssassin nebo Bogofilter) budou přesunuty do poštovní složky <gui>Nevyžádané</gui>.</p>
+</section>
+
+<section id="preferences">
+<title>Nastavení nevyžádané pošty</title>
+<note style="tip"><p>Volby týkající se nevyžádané pošty rozebírané na této stránce se týkají jen účtů POP a místního doručování. Ohledně nevyžádané pošty u účtů IMAP se podívejte na nastavení <guiseq><gui>Upravit</gui><gui>Předvolby</gui><gui>Poštovní účty</gui><gui style="button">Upravit</gui><gui>Volby příjmu</gui></guiseq>.</p></note>
+<p>V předvolbách nevyžádané pošty můžete nastavit, jak má <app>Evolution</app> s nevyžádanou poštou zacházet:</p>
+<steps>
+<item><p>Klikněte na <guiseq><gui>Upravit</gui><gui>Předvolby</gui></guiseq> nebo zmáčkněte <keyseq><key>Shift</key><key>Ctrl</key><key>S</key></keyseq>.</p></item>
+<item><p>Vyberte <gui>Nastavení pošty</gui>.</p></item>
+<item><p>Klikněte na kartu <gui>Nevyžádaná</gui> a můžete určit následující věci:</p>
+<list>
+<item><p>Kontrolování nevyžádaných zprávy v příchozí poště.</p></item>
+<item><p>Mazání nevyžádaných zpráv při ukončení, a jak často se mají mazat.</p></item>
+<item><p>Označování zpráv, že nejsou nevyžádané, pokud je odesílatel v mém adresáři.</p></item>
+<item><p>Kontrolování nevyžádaných zpráv podle vlastních hlaviček (přidaných vaším poštovním serverem).</p></item>
+</list>
+</item>
+</steps>
+
+<note style="tip"><p>Více informací a otázky týkající se konkrétních věcí ohledně filtrů Bogofilter nebo SpamAssassin zkuste vyhledat v častých dotazech a odpovědích <link href="http://bogofilter.sourceforge.net/faq.shtml">Bogofilter</link> resp. <link href="http://wiki.apache.org/spamassassin/FrequentlyAskedQuestions">SpamAssassin</link>.</p></note>
+</section>
+
+</page>

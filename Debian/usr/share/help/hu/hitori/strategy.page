@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="strategy" xml:lang="hu">
+	<info>
+		<link type="guide" xref="index#tips"/>
+		<include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+		<desc>Stratégiák a Hitori játékhoz.</desc>
+	
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+	<title>Játékmenet stratégiák</title>
+
+	<p>A Hitori meglehetősen hasonló a Sudokuhoz, amennyiben logikai következtetéssel lehet meghatározni a kifestendő cellákat. Az egyik stratégia szerint a <key>Shift</key> használatával kiemeljük az ismétlődő számokat az egyes <em>oszlopokban</em>, majd a <key>Ctrl</key> használatával kiemeljük az ismétlődő számokat az egyes <em>sorokban</em>.</p>
+	<p>Miután ez megvan a teljes táblán, a mindkét módon kiemelt cellák jó jelöltek a kifestéshez, noha nem mindig. Egy cella kifestésekor az ugyanabban a sorban és oszlopban azonos számot tartalmazó cellák kiemelésének megszüntetése jó módszer azon cellák nyilvántartására, amelyek még mindig megsértik a <link xref="game">Hitori 1. szabályát</link>.</p>
+	<p>Mindig tartsa szem előtt a Hitori 2. szabályát, miszerint két szomszédos cella nem lehet egyszerre kifestve. A <app>Hitori</app> vörössel emeli ki a 2. szabályt megsértő cellákat. Hasonlóan a 3. szabályt a kifestetlen cellák többi kifestetlen cellától való elválasztásával megsértő cellák is vörössel lesznek kiemelve.</p>
+
+	<p>Ha bármikor elakad, válassza a <guiseq><gui style="menu">Játék</gui> <gui style="menuitem">Tipp</gui></guiseq> menüpontot, hogy a <app>Hitori</app> kiemeljen egy cellát, amelynek kifestésével vagy kifestésének törlésével közelebb lehet jutni a megoldáshoz.</p>
+</page>

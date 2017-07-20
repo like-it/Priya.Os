@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="problem-permissions" xml:lang="es">
+  <info>
+    <link type="guide" xref="index#problems"/>
+    <revision pkgversion="3.12" date="2014-01-25" status="review"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Sale el mensaje de error <gui>No se pudo analizar /… o alguna de las carpetas que contiene</gui> al analizar.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2008.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Montse Fernández Dopacio</mal:name>
+      <mal:email>mfernandez@igalia.com</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Error al escanear</title>
+
+  <p>Al analizar puede ver el mensaje <gui>No se pudo analizar /… o alguna de las carpetas que contiene</gui> en la parte superior de la ventana del <app>Analizador de uso del disco</app>. Este error aparece porque no tiene los permisos necesarios para acceder a algunos archivos debido a restricciones en el sistema objetivo. Los archivos a los que no puede acceder no se tendrán en cuenta en el <link xref="pref-view-chart">gráfico</link> que representa el uso del disco, por lo que el resultado final puede no ser correcto.</p>
+
+  <p>No tener acceso a todos los archivos y carpetas es perfectamente normal y no hay nada que pueda hacer para solventar este error.</p>
+
+  <note style="info"><p>El <app>Analizador de uso del disco</app> usa el comando <cmd>du</cmd> para crear una vista detallada del uso del almacenamiento, y necesita que tenga permisos de lectura sobre los archivos y de ejecución sobre las carpetas.</p>
+
+  <p>Por otro lado, el uso del sistema de archivos se conoce con el comando <cmd>df</cmd> sobre el sistema de archivos de la ventana principal, y no sobre los permisos de los archivos.</p></note>
+</page>

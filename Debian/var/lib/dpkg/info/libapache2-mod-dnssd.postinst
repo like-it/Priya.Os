@@ -1,0 +1,64 @@
+#! /bin/sh
+
+# postinst script
+#
+# see: dh_installdeb(1)
+
+set -e
+
+# summary of how this script can be called:
+#       * <postinst> `configure' <most-recently-configured-version>
+#       * <old-postinst> `abort-upgrade' <new version>
+#       * <conflictor's-postinst> `abort-remove' `in-favour' <package>
+#         <new-version>
+#       * <deconfigured's-postinst> `abort-deconfigure' `in-favour'
+#         <failed-install-package> <version> `removing'
+#         <conflicting-package> <version>
+#
+# for details, see http://www.debian.org/doc/debian-policy/ or
+# the debian-policy package
+#
+
+case "$1" in
+        configure)
+                if dpkg --compare-versions "$2" lt "0.6-3.1" ; then
+                        for CONF in /etc/apache2/mods-enabled/mod-dnssd.conf /etc/apache2/mods-enabled/mod-dnssd.load ; do
+                                if [ -L $CONF ] ; then
+                                        target=$(readlink -e "$CONF") || true
+                                        sitename=$(basename "$CONF")
+                                        if [ -z "$target" ] ; then
+                                                rm -f $CONF
+                                                # a2enmod may not be installed. In that case don't bother to enable the link
+                                                # again, as the environment is special.
+                                                a2enmod -m -q "$sitename" || true
+                                        fi
+                                fi
+                        done
+                fi
+                ;;
+        abort-upgrade|abort-remove|abort-deconfigure)
+                ;;
+        *)
+                echo "postinst called with unknown argument \`$1'" >&2
+                exit 1
+                ;;
+esac
+
+# Automatically added by dh_apache2
+if true; then
+	if [ -e /usr/share/apache2/apache2-maintscript-helper ] ; then
+		. /usr/share/apache2/apache2-maintscript-helper
+		for conf in dnssd  ; do
+			apache2_invoke enmod $conf  || exit $?
+		done
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper mv_conffile /etc/apache2/mods-available/mod-dnssd.conf /etc/apache2/mods-available/dnssd.conf -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper mv_conffile /etc/apache2/mods-available/mod-dnssd.load /etc/apache2/mods-available/dnssd.load -- "$@"
+# End automatically added section
+
+

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="pref-profiles" xml:lang="ru">
+
+  <info>
+    <revision pkgversion="3.8" date="2013-03-03" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-09-08" status="candidate"/>
+    <link type="guide" xref="index#preferences"/>
+    <link type="guide" xref="pref"/>
+
+    <credit type="author copyright">
+      <name>С. Синдху (Sindhu S)</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013-2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Создание, настройка и удаление профилей.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Сергей В. Миронов</mal:name>
+      <mal:email>sergo@bk.ru</mal:email>
+      <mal:years>2007.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Управление профилями</title>
+
+  <p>Профиль — это набор настроек <app>Терминала</app>. <app>Терминал</app> поддерживает более одного профиля. Профили <app>Терминала</app> можно настроить на <link xref="pref-custom-command">запуск конкретной команды или запуск командного интерпретатора</link>, настроить профиль исключительно на подключение к удалённым компьютерам с помощью SSH, или же настроить профиль, запускающий сеанс <app>GNU Screen</app>.</p>
+
+  <p>Доступные настройки <app>Терминала</app>:</p>
+
+  <list>
+    <item>
+      <p>Название профиля.</p>
+    </item>
+    <item>
+      <p>Цвета шрифтов и фона.</p>
+    </item>
+    <item>
+      <p><gui style="tab">Совместимость</gui> с клавишами <key>Backspace</key> и <key>Delete</key>.</p>
+    </item>
+    <item>
+      <p><gui style="tab">Прокрутка</gui>.</p>
+    </item>
+  </list>
+
+  <p>Профиль по умолчанию загружается при запуске нового терминала, за исключением случаев когда был выбран другой профиль. Все изменения, сделанные в настройках, будут сохранены в текущем профиле.</p>
+
+  <section id="set-default" style="task">
+    <title>Указать профиль по умолчанию</title>
+
+    <p>Профиль по умолчанию — это набор настроек профиля, применяемых во время запуска каждого нового окна или новой вкладки <app>Терминала</app>.</p>
+
+    <steps>
+      <item>
+        <p>Выберите <guiseq><gui style="menu">Правка</gui> <gui style="menuitem">Параметры</gui> <gui style="tab">Профили</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Выберите профиль, который нужно установить как профиль по умолчанию, из выпадающего списка <gui>Профиль, используемый при запуске нового терминала</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="select-profile" style="task">
+    <title>Выбор профиля</title>
+
+    <p>Сменить профиль в текущей вкладке <app>Терминала</app> можно, выбрав профиль из меню <guiseq><gui style="menu">Терминал</gui> <gui style="menuitem">Сменить профиль</gui></guiseq>.</p>
+
+  </section>
+
+  <section id="new-profile" style="task">
+    <title>Создание нового профиля</title>
+
+    <p>Любые изменения в новом профиле сохраняются автоматически. Чтобы создать новый профиль:</p>
+
+    <steps>
+      <item>
+        <p>Выберите <guiseq><gui style="menu">Файл</gui> <gui style="menuitem">Создать профиль</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Введите название нового профиля в поле рядом с <gui style="input">Названием профиля</gui>.</p>
+      </item>
+      <item>
+        <p>Выберите <link xref="app-fonts">шрифт</link>, <link xref="app-cursor">форму курсора</link> и <link xref="app-terminal-sizes">размер окна</link> во вкладке <gui style="tab">Общие</gui>.</p>
+      </item>
+      <item>
+        <p>Set your preferred behavior for the
+        <link xref="pref-custom-exit"><cmd>exit</cmd> command</link>.
+        You can also set a
+        <link xref="pref-custom-command">custom shell</link> in the
+        <gui style="tab">Command</gui> tab.</p>
+      </item>
+      <item>
+        <p>Настройте предпочтительную <link xref="app-colors">тему и цвета</link> во вкладке <gui style="tab">Цвета</gui>.</p>
+      </item>
+      <item>
+        <p>Укажите <link xref="pref-scrolling">настройки прокрутки</link> во вкладке <gui style="tab">Прокрутка</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="create-profile-from-existing" style="task">
+    <title>Создание нового профиля на основе существующего</title>
+
+    <p>Можно создать новый профиль на основе настроек существующего:</p>
+
+    <steps>
+      <item>
+        <p>Выберите профиль, который нужно изменить, из меню <guiseq><gui style="menu">Терминал</gui> <gui style="menuitem">Изменить профиль</gui> <gui style="menuitem"><var>Название профиля</var></gui></guiseq>, где <var>Название профиля</var> — это названия профиля, который нужно изменить. Также можно выбрать<guiseq> <gui style="menu">Файл</gui> <gui style="menuitem">Новый профиль</gui></guiseq> для копирования текущего профиля.</p>
+      </item>
+      <item>
+        <p>Настройте желаемые <link xref="#edit-profile">параметры профиля</link>. Они будут сохранены автоматически. Если не изменять <gui>Название профиля</gui> во вкладке <gui style="tab">Общие</gui>, то новый профиль не будет перезаписывать профиль, на базе которого он был создан.</p>
+      </item>
+    </steps>
+
+    <p>Как вариант, можно создать копию существующего профиля и затем изменить профиль:</p>
+
+    <steps>
+      <item>
+        <p>Выберите <guiseq><gui style="menu">Правка</gui> <gui style="menuitem">Параметры</gui> <gui style="tab">Профили</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Выберите нужный профиль.</p>
+      </item>
+      <item>
+        <p>Нажмите <gui style="button">Клонировать</gui>.</p>
+      </item>
+      <item>
+        <p>Настройте желаемые <link xref="#edit-profile">параметры профиля</link>. Они будут сохранены автоматически. Если не изменять название профиля, то новый профиль не будет перезаписывать профиль, на базе которого он был создан.</p>
+      </item>
+    </steps>
+
+    <note>
+      <p>Создание нового профиля из существующего профиля не повлияет на настройки существующего профиля. Все изменения настроек сохраняются в новом профиле.</p>
+    </note>
+
+  </section>
+
+  <section id="edit-profile" style="task">
+    <title>Редактирование профиля</title>
+
+    <note style="warning">
+      <p>Если был изменён профиль по умолчанию, то его невозможно будет восстановить. Если никаких других профилей <app>Терминала</app> не было создано, и былизменён профиль по умолчанию, то <app>Терминал</app> <em>может</em> стать неудобен для использования, если какие-то из настроек будут создавать проблемы. Рекомендуется <link xref="#create-profile-from-existing">создать копию профиля по умолчанию</link> и затем изменить эту копию для создания другого профиля.</p>
+    </note>
+
+    <p>Существующие профили можно изменять. Чтобы редактировать профиль выберите <guiseq><gui style="menu">Правка</gui> <gui style="menuitem">Параметры профиля</gui></guiseq>.</p>
+
+    <steps>
+      <item>
+        <p>Выберите <link xref="app-fonts">шрифт</link>, <link xref="app-cursor">форму курсора</link> и <link xref="app-terminal-sizes">размер <app>Терминала</app></link>.</p>
+      </item>
+      <item>
+        <p>Также можно изменить поведение <app>Терминала</app> при <link xref="pref-custom-exit">выходе из команды</link>, настроить <link xref="pref-login-shell">другую командную оболочку с регистрацией</link> или изменить <link xref="pref-scrolling">настройки прокрутки</link>.</p>
+      </item>
+      <item>
+        <p>Чтобы узнать, как изменить цвета фона и текста <app>Терминала</app>, см. <link xref="app-colors">цветовые схемы <app>Терминала</app></link>.</p>
+      </item>
+      <item>
+        <p>Изменения в профиле применяются сразу же. Чтобы вернуться в <app>Терминал</app>, нажмите <gui style="button">Закрыть</gui>.</p>
+      </item>
+    </steps>
+
+    <note style="important">
+      <p>Чтобы быть уверенным, что изменяется именно нужный вам профиль, выберите профиль из меню <guiseq><gui style="menu">Терминал</gui> <gui style="menuitem">Изменить профиль</gui></guiseq>.</p>
+    </note>
+
+  </section>
+
+  <section id="rename-profile" style="task">
+    <title>Переименование существующего профиля</title>
+
+    <p>Существующие профили можно переименовать, включая профиль по умолчанию:</p>
+
+    <steps>
+      <item>
+        <p>Выберите <guiseq><gui style="menu">Правка</gui> <gui style="menuitem">Параметры</gui> <gui style="tab">Профили</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Выберите профиль, который нужно переименовать.</p>
+      </item>
+      <item>
+        <p>Нажмите <gui style="button">Правка</gui>. Откроется диалог настроек выбранного профиля.</p>
+      </item>
+      <item>
+        <p>В поле ввода <gui>Название профиля</gui> введите название нового профиля.</p>
+      </item>
+      <item>
+        <p>Нажмите <gui style="button">Закрыть</gui> чтобы вернуться.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="delete-profile" style="task">
+    <title>Удаление профиля</title>
+  
+    <p>Чтобы удалить профиль:</p>
+
+    <steps>
+      <item>
+        <p>Выберите <guiseq><gui style="menu">Правка</gui> <gui style="menuitem">Параметры</gui> <gui style="tab">Профили</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Выберите профиль, который нужно удалить.</p>
+      </item>
+      <item>
+        <p>Нажмите <gui style="button">Удалить</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+</page>

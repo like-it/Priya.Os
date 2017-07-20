@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>Krāsu telpa ir noteikts krāsu apgabals.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Kas ir krāsu telpa?</title>
+
+  <p>Krāsu telpa ir noteikts krāsu apgabals. Labāk zināmās krāsu telpas ir sRGB, AdobeRGB un ProPhotoRGB.</p>
+
+  <p>Cilvēka redzes sistēma nav vienkāršs RGB sensors, bet mēs varam aptuveni noteikt kā cilvēka acs atbild ar CIE 1931 hromatisma diagrammu, kas rāda cilvēka redzes atbildi uz zirga pakava formu. Jūs varat redzēt, ka cilvēks vairāk nosaka zaļās krāsas pustoņus nekā zilu vai sarkanu. Ar trihromatisku krāsu telpu kā RGB mēs reprezentējam krāsas uz datora, izmantojot trīs vērtības, kas tiek pēc tam iekodēts krāsu <em>trijstūrī</em>.</p>
+
+  <note>
+    <p>Izmantojot tādus modeļus kā CIE 1931, hromatisma diagrammu ir liela cilvēka redzes sistēmas vienkāršošana, un īsti gamuti tiek izteikti kā 3D izliekumi, nekā 2D projekcijas. 2D projekcija 3D objektam var dažkārt būt maldinoša, tāpēc, ja vēlaties redzēt 3D izliekumu, izmantojiet <code>gcm-viewer</code> lietotni.</p>
+  </note>
+
+  <figure>
+    <desc>sRGB, AdobeRGB and ProPhotoRGB kā balti trijstūri</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>Vispirms, aplūkojot sRGB, kas ir mazākā telpa un var iekodēt vismazāko krāsu skatu. Tas ir tuvinājums 10 gadus vecam CRT ekrānam, un vairums mūsdienīgo monitoru var viegli parādīt vēl vairāk krāsu. sRGB ir <em>mazākā kopīgā dalītāja</em> standarts, un to lieto daudzās lietotnēs (tai skaitā internetā).</p>
+  <p>AdobeRGB tiek bieži izmantota kā <em>rediģēšanas telpa</em>. Tā var iekļaut vairāk krāsu kā sRGB, kas nozīmē, ka varat fotogrāfijā mainīt krāsas neuztraucoties, ka spilgtās krāsas varētu apgriezt vai saspiest melnos toņus.</p>
+  <p>ProPhoto ir lielākā pieejamā krāsu telpa un to bieži izmanto arhivēšanai. Tā var iekodēt gandrīz visas krāsas, ko redz cilvēka acs un arī tādas, ko acs nevar saskatīt.</p>
+
+  <p>Ja reiz ProPhoto ir daudz labāks, kāpēc to neizmantot visam? Atbilde ir saistīta ar <em>kvantēšanu</em>. Ja jums ir tikai 8 biti (256 līmeņi), lai iekodētu katru kanālu, tad lielākam apgabalam ir lielāka atstarpe starp katru vērtību.</p>
+  <p>Lielāka atstarpe nozīmē lielāku kļūdu krāsu noteikšanā un glabāšanā, un dažām krāsām tā ir liela problēma. Izrādās, ka svarīgākās krāsas, piemēram, ādas krāsa, ir ļoti svarīgas un pat mazas kļūdas ļaus netrenētam vērotājam pamanīt, ka fotogrāfijā kaut kas izskatās nepareizi.</p>
+  <p>Protams, 16 bitu krāsas dotu daudz vairāk vietas soļiem un daudz mazākas kvantificēšanas kļūdas, bet tas dubultotu katras attēla datnes izmēru. Vairums mūsdienās esošo attēlu izmanto 8bpp, jeb 8 bitus uz pikseli.</p>
+  <p>Krāsu pārvaldība ir process, kurā viena krāsu telpa tiek pārveidota uz otru. Šajā procesā viena var būt labi zināma telpa, piemēram sRGB vai pielāgota, piemēram, jūsu monitora vai printera profils.</p>
+
+</page>

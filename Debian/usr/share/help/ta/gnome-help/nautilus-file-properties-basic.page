@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>டிஃபானி அன்ட்டொபோல்ஸ்கி</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>ஷான் மெக்கேன்ஸ்</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>அடிப்படை கோப்பு தகவலை காணவும், அனுமதிகளை அமைக்கவும் மற்றும் முன்னிருப்பு பயன்பாடுகளைத் தேர்வு செய்யவும்.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>கோப்பு பண்புகள்</title>
+
+  <p>ஒரு கோப்பு அல்லது கோப்புறை பற்றி தகவலைக் காண, அதை வலது சொடுக்கம் செய்து <gui>பண்புகள்</gui> ஐ தேர்ந்தெடுக்கவும். நீங்கள் கோப்பைத் தேர்ந்தெடுத்துவிட்டு <keyseq><key>Alt</key><key>Enter</key></keyseq> ஐ அழுத்தியும் பண்புகளைக் காணலாம்.</p>
+
+  <p>கோப்பு பண்புகள் சாளரத்தில் நீங்கள் கோப்பு வகை, கோப்பு அளவு மற்றும் நீங்கள் கடைசியாக அதை எப்போது மாற்றியமைத்தீர்கள் என்பது போன்ற தகவல்களைக் காணலாம். உங்களுக்கு இந்த தகவல் அடிக்கடி வேண்டும் என்றால், நீங்கள் அதை <link xref="nautilus-list">பட்டியல் காட்சி நெடுவரிசைகள்</link> அல்லது <link xref="nautilus-display#icon-captions">சின்ன தலைப்புகள்</link> இல் காண்பிக்கும்படி அமைக்கலாம்.</p>
+
+  <p><gui>அடிப்படை</gui> தாவலில் கொடுக்கப்படும் தகவல் கீழே விளக்கப்பட்டுள்ளது. <gui><link xref="nautilus-file-properties-permissions">அனுமதிகள்</link></gui> மற்றும் <gui><link xref="files-open#default">இதைக் கொண்டு திற</link></gui> தாவல்களும் உள்ளன. படங்கள் மற்றும் வீடியோக்கள் போன்ற சில வகையான கோப்புகளுக்கு,  பரிமாணங்கள், காலம் மற்றும் கோடெக் போன்ற தகவல்களை வழங்கும் கூடுதல் தாவலும் இருக்கும்.</p>
+
+<section id="basic">
+ <title>அடிப்படை பண்புகள்</title>
+ <terms>
+  <item>
+    <title><gui>Name</gui></title>
+    <p>நீங்கள் இந்த புலத்தை மாற்றுவதன் மூலம் கோப்பை மறுபெயரிட முடியும். நீங்கள் பண்புகள் சாளரத்திற்கு வெளியேயும் ஒரு கோப்பை மறுபெயரிட முடியும். <link xref="files-rename"/> ஐப் பார்க்கவும்.</p>
+  </item>
+  <item>
+    <title><gui>Type</gui></title>
+    <p>PDF ஆவணம், OpenDocument உரை அல்லது JPEG படம் போன்று, கோப்பு வகையை அடையாளம் காண இது உதவுகிறது. மற்ற அம்சங்களுடன், ஒரு கோப்பை எந்தப் பயன்பாடுகள் திறக்க முடியும் என்பதையும் கோப்பு வகையே தீர்மானிக்கிறது. உதாரணமாக, நீங்கள் ஒரு மியூசிக் பிளேயர் மூலம் ஒரு படத்தை திறக்க முடியாது. இது குறித்த மேலும் தகவலுக்கு <link xref="files-open"/> ஐப் பார்க்கவும்.</p>
+    <p>கோப்பின் <em>MIME வகை</em> அடைப்புக்குறிக்குள் காட்டப்படும்; MIME வகை என்பது கணினிகள் கோப்பு வகையைக் குறிக்க பயன்படுத்தும் ஒரு தரநிலையான வழியாகும்.</p>
+  </item>
+
+  <item>
+    <title>உள்ளடக்கம்</title>
+    <p>நீங்கள் ஒரு கோப்பை அன்றி ஒரு கோப்புறையின் பண்புகளில் பார்த்தால் இந்த புலம் காட்டப்படும். இது கோப்புறையில் உள்ள உருப்படிகளின் எண்ணிக்கையைக் காண உதவுகிறது. கோப்புறையில் மற்ற கோப்புறைகள் இருந்தால், உள்ளே உள்ள ஒவ்வொரு கோப்புறையும் ஒரு உருப்படியாகக் கணக்கில் எடுத்துக்கொள்ளப்படுகிறது. அவையும் உருப்படிகளைக் கொண்டிருந்தால், அவையும் கணக்கில் எடுத்துக்கொள்ளப்படுகின்றன. கோப்புறை காலியாக இருந்தால், உள்ளடக்கம் <gui>எதுவும் இல்லை</gui> எனக் காண்பிக்கும்.</p>
+  </item>
+
+  <item>
+    <title>அளவு</title>
+    <p>நீங்கள் ஒரு கோப்பைப் (கோப்புறையல்ல) பார்த்தால் இந்த புலம் காட்டப்படும். ஒரு கோப்பின் அளவு என்பது அது எவ்வளவு வட்டு இடத்தை எடுத்துக்கொள்கிறது எனக் கூறுகிறது. இது ஒரு கோப்பை பதிவிறக்க அல்லது மின்னஞ்சலில் அனுப்ப எவ்வளவு நேரம் ஆகும் என்பதையும் காட்டுவதாக உள்ளது, (பெரிய கோப்புகளை பெற/அனுப்ப அதிக நேரம் ஆகும்).</p>
+    <p>அளவானது KB, MB அல்லது GB இல் காட்டப்படும்; கடைசி மூன்று வடிவங்களில் காண்பிக்கப்பட்டால், அடைப்புக்குறிக்குள் அளவு பைட்டுகளாகவும் காண்பிக்கப்படும். 1 KB என்பது 1024 பைட், 1 MB என்பது 1024 KB ஆகும். இதே போல் கணக்கீடு தொடர்கிறது.</p>
+  </item>
+
+  <item>
+    <title>Parent Folder</title>
+    <p>The location of each file on your computer is given by its <em>absolute
+    path</em>. This is a unique "address" of the file on your computer, made up
+    of a list of the folders that you would need to go into to find the file.
+    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
+    folder, its parent folder would be <file>/home/jim</file> and its location
+    would be <file>/home/jim/Resume.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>காலி இடம்</title>
+    <p>இந்த கோப்புறைகளுக்கு மட்டுமே காட்டப்படும். இது அந்தக் கோப்புறை உள்ள வட்டில் கிடைக்கக்கூடிய மீதமுள்ள வட்டு இடத்தின் அளவைக் குறிக்கிறது. இது வன் வட்டு நிரம்பிவிட்டதா எனப் பார்க்க பயனுள்ளதாக இருக்கும்.</p>
+  </item>
+
+  <item>
+    <title>அணுகப்பட்டது</title>
+    <p>கோப்பு கடைசியாக திறக்கப்பட்ட தேதி மற்றும் நேரம்.</p>
+  </item>
+
+  <item>
+    <title>மாற்றப்பட்டது</title>
+    <p>கோப்பு கடைசியாக மாற்றம் செய்து சேமிக்கப்பட்ட தேதி மற்றும் நேரம்.</p>
+  </item>
+ </terms>
+</section>
+
+</page>

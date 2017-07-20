@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="printing-booklet-singlesided" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="printing-booklet"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ein PDF als eine Broschüre auf einem einseitigen Drucker ausgeben.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Eine Broschüre auf einem einseitigen Drucker ausgeben</title>
+
+  <note>
+    <p>Diese Anweisungen beziehen sich auf das Drucken einer Broschüre aus einem PDF-Dokument.</p>
+    <p>Falls Sie eine Broschüre aus einem <app>LibreOffice</app>-Dokument erstellen wollen, müssen Sie dieses zunächst in ein PDF umwandeln. Wählen Sie im Menü <guiseq><gui>Datei</gui><gui>Als PDF exportieren …</gui></guiseq>. Die Seitenzahl Ihres Dokuments muss ein Vielfaches von 4 sein (4, 8, 12, 16, …), wobei Sie bis zu drei leere Seiten hinzufügen müssen.</p>
+  </note>
+
+  <p>So drucken Sie:</p>
+
+  <steps>
+    <item>
+      <p>Öffnen Sie den Druckdialog. Das geschieht normalerweise über den Menüeintrag <gui style="menuitem">Drucken</gui> oder mit der Tastenkombination <keyseq><key>Strg</key><key>P</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf den Knopf <gui>Eigenschaften …</gui>.</p>
+      <p>Wählen Sie in der Auswahlliste <gui>Ausrichtung</gui> den Punkt <gui>Querformat</gui>.</p>
+      <p>Klicken Sie auf <gui>OK</gui>, um zum Druckdialog zurückzukehren.</p>
+    </item>
+    <item>
+      <p>Wählen Sie <gui>Seiten</gui> unter <gui>Bereich und Kopien</gui>.</p>
+      <p>Geben Sie die Seitennummern in dieser Reihenfolge ein, wobei n die Gesamtzahl der Seiten und ein Vielfaches von 4 ist:</p>
+      <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11 …</p>
+      <p>… bis Sie alle Seiten eingegeben haben.</p>
+    <note>
+      <p>Beispielsweise:</p>
+      <p>4-seitige Broschüre: Geben Sie <input>4,1,2,3</input> ein</p>
+      <p>8-seitige Broschüre: Geben Sie <input>8,1,2,7,6,3,4,5</input> ein</p>
+      <p>12-seitige Broschüre: Geben Sie <input>12,1,2,11,10,3,4,9,8,5,6,7</input> ein</p>
+      <p>16-seitige Broschüre: Geben Sie <input>16,1,2,15,14,3,4,13,12,5,6,11,10,7,8,9</input> ein</p>
+      <p>20-seitige Broschüre: Geben Sie <input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input> ein</p>
+     </note>
+    </item>
+    <item>
+      <p>Wählen Sie den Reiter <gui>Seite einrichten</gui>.</p>
+      <p>Wählen Sie <gui>Broschüre</gui> unter <gui>Layout</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Front sides / right pages</gui>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Drucken</gui>.</p>
+    </item>
+    <item>
+      <p>Sobald alle Seiten gedruckt wurden, drehen Sie den Papierstapel um und legen ihn wieder in den Drucker ein.</p>
+    </item>
+    <item>
+      <p>Öffnen Sie den Druckdialog. Das geschieht normalerweise über den Menüeintrag <gui style="menuitem">Drucken</gui> oder mit der Tastenkombination <keyseq><key>Strg</key><key>P</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Wählen Sie den Reiter <gui>Seite einrichten</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Back sides / left pages</gui>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Drucken</gui>.</p>
+    </item>
+  </steps>
+
+</page>

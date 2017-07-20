@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="backup-restore" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#data-migration-and-sync"/>
+    <link type="seealso" xref="data-storage"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2014-03-23" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Az <app>Evolution</app> adatainak és beállításainak mentése és visszaállítása.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Biztonsági mentés és visszaállítás</title>
+
+  <p>Biztonsági mentést készíthet az <app>Evolution</app> adatairól. A biztonsági mentés beállításait, leveleit, névjegyeit, feladatait, feljegyzéseit és naptárait tartalmazza, és gzip tömörítésű tar archívumként kerül tárolásra.</p>
+
+<section id="backup">
+  <title>Mentés</title>
+
+  <list>
+    <item>
+      <p>Válassza az <guiseq><gui>Fájl</gui> <gui>Evolution adatainak mentése</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Válasszon egy fájlnevet és mappát, amelybe a biztonsági másolatot menteni kívánja, majd kattintson a <gui style="button">Mentés</gui> gombra.</p>
+    </item>
+    <item>
+      <p>A program megkéri az <app>Evolution</app> bezárására. Nyomja meg az <gui style="button">Igen</gui> gombot.</p>
+    </item>
+  </list>
+
+  <note style="warning">
+    <p>Ne feledje, hogy a <link xref="mail-spam">levélszemét-szűrési</link> beállításait nem tartalmazza a biztonsági mentés fájlja, mivel ezeket a beállításokat nem az <app>Evolution</app> felügyeli, és mert a levélszemétszűrő eszközök fejlesztői megváltoztathatnak implementációs részleteket. Ha a Bogofiltert használja, akkor a <file>~/.bogofilter/</file> rejtett könyvtárról kell másolatot készítenie, ha pedig a SpamAssassint, akkor a <file>~/.spamassassin/</file> rejtett könyvtárról.</p>
+  </note>
+
+</section>
+
+<section id="restore">
+  <title>Visszaállítás</title>
+
+  <list>
+    <item>
+      <p>Válassza a <guiseq><gui>Fájl</gui> <gui>Evolution adatainak visszaállítása</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Zárja be a fájlt, és nyomja meg a <gui style="button">Megnyitás</gui> gombot.</p>
+    </item>
+    <item>
+      <p>A program megkéri az <app>Evolution</app> bezárására. Nyomja meg az <gui style="button">Igen</gui> gombot.</p>
+    </item>
+  </list>
+
+  <note style="tip">
+    <p>A <link xref="intro-first-run">fiókvarázslóban</link> visszaállíthatja az <app>Evolution</app> adatait a biztonsági mentésből.</p>
+  </note>
+
+</section>
+
+</page>

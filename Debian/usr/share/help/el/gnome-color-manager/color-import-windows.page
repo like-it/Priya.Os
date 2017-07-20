@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="color-import-windows" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <link type="seealso" xref="color-gettingprofiles"/>
+    <desc>Πως να εισάγετε ένα υπάρχον προφίλ ICC χρησιμοποιώντας ένα σύστημα με Windows.</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Εγκαθιστώντας ένα προφίλ ICC σε Microsoft Windows</title>
+  <p>Η μέθοδος της ανάθεσης του προφίλ σε μια συσκευή και χρησιμοποιώντας επίσης τις ενσωματωμένες καμπύλες βαθμονόμησης είναι διαφορετική για κάθε έκδοση των Microsoft Windows.</p>
+  <section id="xp">
+    <title>Windows XP</title>
+    <p>Στον Windows Explorer κάντε δεξί κλικ στο προφίλ και πατήστε <gui>Εγκατάσταση προφίλ</gui>. Αυτό αντιγράφει αυτόματα το προφίλ στο σωστό κατάλογο.</p>
+    <p>Μετά ανοίξτε το <guiseq><gui>Κέντρο ελέγχου</gui><gui>Χρώμα</gui></guiseq> και προσθέστε το προφίλ στη συσκευή.</p>
+    <note style="warning">
+      <p>Αν αντικαθίσταται ένα υπάρχον προφίλ στα Windows XP, η παραπάνω συντόμευση δεν λειτουργεί. Τα προφίλ πρέπει να αντιγραφούν χειροκίνητα στο <file>C:\Windows\system32\spool\drivers\color</file> για να αντικατασταθεί το αρχικό προφίλ.</p>
+    </note>
+    <p>Τα Windows XP απαιτούν την έναρξη ενός προγράμματος κατά την εκκίνηση τους για να αντιγράψουν τις καμπύλες βαθμονόμησης στη κάρτα βίντεο. Αυτό μπορεί να γίνει χρησιμοποιώντας το <app>Adobe Gamma</app>, <app>LUT Loader</app> ή χρησιμοποιώντας το δωρεάν <app href="https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=12714"> Microsoft Color Control Panel Applet</app>. Χρησιμοποιώντας το τελευταίο θα προστέθει ένα νέο αντικείμενο <gui>Χρώμα</gui> στο πίνακα ελέγχου που επιτρέπει, σε κάθε εκκίνηση, την εύκολη ρύθμιση των καμπύλων βαθμονόμησης από το προεπιλεγμένο προφίλ.</p>
+  </section>
+
+  <section id="vista">
+    <title>Windows Vista</title>
+    <p>Τα Microsoft Windows Vista αφαιρούν κατά λάθος τις καμπύλες βαθμονόμησης από το βίντεο LUT μετά τη σύνδεση, μετά την αναμονή, και όταν εμφανίζεται το παράθυρο διαλόγου UAC. Αυτό σημαίνει πως μπορεί να χρειαστεί να επαναφορτωθούν οι καμπύλες βαθμονόμησης του ICC προφίλ. Αν χρησιμοποιείτε προφίλ με ενσωματωμένες καμπύλες βαθμονόμησης πρέπει να είστε πολύ προσεκτικοί διότι η κατάσταση βαθμονόμησης μπορεί να μην έχει καθαριστεί.</p>
+  </section>
+
+  <section id="7">
+    <title>Windows 7</title>
+    <p>Τα Windows 7 υποστηρίζουν ένα παρόμοιο σχήμα χρώματος με το Linux, αυτά τα προφίλ μπορούν να εγκατασταθούν καθολικά για το σύστημα ή για ένα συγκεκριμένο χρήστη. Αποθηκεύονται ωστόσο στο ίδιο μέρος. Στον Windows Explorer κάντε δεξί κλικ στο προφίλ και πατήστε <gui>Εγκατάσταση προφίλ</gui> ή αντιγράψτε το προφίλ .icc στο <file>C:\Windows\system32\spool\drivers\color</file>.</p>
+    <p>Ανοίξτε το <guiseq><gui>Κέντρο ελέγχου</gui><gui>Διαχείριση χρωμάτων</gui></guiseq> και προσθέστε το προφίλ στο σύστημα κάνοντας κλικ στο κουμπί <gui>Προσθήκη</gui>. Πατήστε στη καρτέλα <gui>Προχωρημένα</gui> και ψάξτε για τη <gui>Βαθμονόμηση οθόνης</gui>. Η φόρτωση της καμπύλης βαθμονόμησης είναι ενεργοποιημένη από το κουτί επιλογής <gui>Χρήση βαθμονόμησης οθόνης των Windows</gui> αλλά δεν είναι επεξεργάσιμο. Μπορεί να ενεργοποιηθεί κάνοντας κλικ στο <gui>Αλλαγή προπιλεγμένων του συστήματος</gui> να επιστρέψετε στη καρτέλα <gui>Προχωρημένα</gui> και μετά να κάνετε κλικ στο κουτί επιλογής.</p>
+    <p>Κλείστε το παράθυρο διαλόγου και κάντε κλικ στο κουμπί <gui>Ανανέωση τωρινών βαθμονομήσεων</gui> για να ρυθμίσετε τις ράμπες γάμμα. Οι καμπύλες βαθμονόμησης του προφίλ θα πρέπει τώρα να έχουν οριστεί για κάθε εκκίνηση.</p>
+  </section>
+
+</page>

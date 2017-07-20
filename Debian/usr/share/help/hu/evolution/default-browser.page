@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="default-browser" xml:lang="hu">
+
+  <info>
+    <desc>E-mailben kapott hivatkozások megnyitása böngészőben, és a levélszerkesztő megnyitása a weboldalakon lévő e-mail hivatkozásokról.</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+
+    <revision pkgversion="3.8.3" version="0.8" date="2013-07-19" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Hivatkozások megnyitása webböngészőben/-ből</title>
+
+<!-- For GNOME2 the steps are to define the gconf keys /desktop/gnome/url-handlers/http and /https -->
+
+<section id="browser-to-use">
+<title>A webhelyeket megnyitó webböngésző megváltoztatása</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-shell !platform:gnome-classic !platform:unity">
+<p>Ha az <app>Evolutiont</app> nem GNOME környezetben használja,</p>
+ <steps>
+   <item>
+     <p>Nyisson meg egy terminál alkalmazást.</p>
+   </item>
+   <item>
+<p>Keresse meg a kívánt böngésző <cmd>.desktop</cmd> fájljának nevét. A böngészőtől és a disztribúciótól függően ez lehet <cmd>epiphany.desktop</cmd>, <cmd>firefox.desktop</cmd>, <cmd>google-chrome.desktop</cmd>, <cmd>konqbrowser.desktop</cmd> vagy<cmd>opera-browser.desktop</cmd>. Ha nem biztos a dolgában, akkor a legtöbb <cmd>.desktop</cmd> fájl a <cmd>/usr/share/applications/</cmd> könyvtárban található.</p>
+   </item>
+   <item>
+     <p>Írja be ezt a parancsot, a <cmd>browser.desktop</cmd> helyére pedig a tényleges fájlnevet, és nyomja meg az <key>Entert</key>:</p>
+     <p><cmd its:translate="no">
+       xdg-settings set default-url-scheme-handler https browser.desktop
+     </cmd></p>
+   </item>
+   <item>
+     <p>Írja be ezt a parancsot, a <cmd>browser.desktop</cmd> helyére pedig a tényleges fájlnevet, és nyomja meg az <key>Entert</key>:</p>
+     <p><cmd its:translate="no">
+       xdg-settings set default-url-scheme-handler http browser.desktop
+     </cmd></p>
+   </item>
+   <item>
+     <p>Az <app>Evolutiont</app> lehet, hogy újra kell indítani a beállítások életbe lépéséhez.</p>
+   </item>
+ </steps>
+<note style="tip">
+  <p>Ha az „xdg-settings: a parancs nem található” hibaüzenet jelenik meg, akkor telepítenie kell az <sys>xdg-utils</sys> csomagot.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:xdg-utils" style="button">Az xdg-utils telepítése</link></p>
+    </if:when>
+  </if:choose>
+</note>
+  </if:when>
+<p>Lásd a <link xref="help:gnome-help/net-default-browser" href="https://help.gnome.org/users/gnome-help/stable/net-default-browser">GNOME asztali környezet súgóját</link>.</p>
+
+<p>Ha a kívánt böngésző be van állítva alapértelmezett alkalmazásként, de nem működik megfelelően, akkor keresse meg a disztribúciója támogatói fórumát vagy küldjön nekik hibajelentést.</p>
+
+<note style="tip">
+  <p>Ha a „Nem nyitható meg a hivatkozás: a művelet nem támogatott” hibaüzenet jelenik meg, akkor telepítenie kell a <sys>gvfs</sys> csomagot.</p>
+  <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+    <if:when test="action:install">
+      <p><link action="install:gvfs" href="http://ftp.gnome.org/pub/gnome/sources/gvfs/" style="button">A gvfs telepítése</link></p>
+    </if:when>
+  </if:choose>
+</note>
+</if:choose>
+</section>
+
+
+<section id="email-application-to-use">
+<title>Az e-mailek írására használt levelezőkliens megváltoztatása</title>
+
+<p>Lásd a <link xref="help:gnome-help/net-default-email" href="https://help.gnome.org/users/gnome-help/stable/net-default-email">GNOME asztali környezet súgóját</link>.</p>
+
+</section>
+
+<section id="advanced-options">
+<title>Speciális beállítások</title>
+<note style="advanced"><p>Ha van ilyen irányú tapasztalata, akkor a beállításokat a <file>$HOME/.local/share/applications/mimeapps.list</file> fájlban sémakezelők megadásával finomhangolhatja.</p></note>
+</section>
+
+</page>

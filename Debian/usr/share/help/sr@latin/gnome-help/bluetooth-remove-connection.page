@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-remove-connection" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="bluetooth"/>
+
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-04" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Džim Kembel</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Pol V. Frilds</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Dejvid King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Uklonite uređaj sa spiska Blutut uređaja.</desc>
+  </info>
+
+  <title>Isključite blutut uređaj</title>
+
+  <p>Ako više ne želite da budete povezani na Blutut uređaj, možete da uklonite vezu. Ovo je korisno ako više ne želite da koristite uređaj kao što je miš ili slušalice sa mikrofonom, ili ako više ne želite da prebacujete datoteke na ili sa uređaja.</p>
+
+  <steps>
+    <item>
+    <if:choose>
+      <if:when test="platform:unity">
+        <p>Kliknite na ikonicu Blututa na <gui>traci izbornika</gui> i izaberite <gui>Podešavanja blututa</gui>.</p>
+      </if:when>
+      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Blutut</gui>.</p>
+    </if:choose>
+    </item>
+    <item>
+    <if:choose>
+      <if:when test="platform:unity">
+        <p>Izaberite <gui>Podešavanja blututa</gui> da otvorite panel.</p>
+      </if:when>
+      <p>Kliknite na <gui>Blutut</gui> da otvorite panel.</p>
+    </if:choose>
+    </item>
+    <item>
+      <p>Izaberite uređaj koji želite da isključite sa spiska.</p>
+    </item>
+    <item>
+      <p>U prozorčetu uređaja, prebacite <gui>Veza</gui> na <gui>ISKLJ.</gui>, ili da uklonite uređaj sa spiska <gui>Uređaji</gui>, kliknite <gui>Ukloni uređaj</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Kasnije, ako želite, možete <link xref="bluetooth-connect-device">ponovo da povežete Blutut uređaj</link>.</p>
+
+</page>

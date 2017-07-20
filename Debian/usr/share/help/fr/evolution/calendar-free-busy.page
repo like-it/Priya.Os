@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-free-busy" xml:lang="fr">
+
+  <info>
+
+    <link type="guide" xref="calendar-sharing-information"/>
+
+    <revision pkgversion="3.1.5" version="0.5" date="2012-02-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en
+	   and
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en#usage-calendar-freebusy
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Utiliser l'affichage libre/occupé pour paramétrer vos réunions sur un serveur collaboratif.</desc>
+    <!-- TODO: Really split this into Exchange/Groupware section and normal people section -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Information Libre/Occupé</title>
+
+  <p>Vous pouvez utiliser la recherche Libre/Occupé pour les rendez-vous pour déterminer la disponibilité de vos invités.</p>
+
+  <p>En plus des outils standard de planification de réunion, vous pouvez utiliser l'affichage Libre/Occupé pour vérifier à l'avance si certaines personnes sont disponibles. La fonctionnalité Libre/Occupé est habituellement réservée aux utilisateurs de serveurs collaboratifs comme Microsoft Exchange ou Novell GroupWise. Cependant, vous pouvez aussi publier les informations de disponibilité en ligne et accéder à de telles informations publiées ailleurs. Si les personnes avec qui vous collaborez ne publient pas toutes des données de disponibilité, vous pouvez tout de même utiliser les <link xref="calendar-meetings-sending-invitation">invitations à des événements</link> pour coordonner la planification d'événements avec d'autres personnes.</p>
+
+  <p>Pour accéder à l'affichage Libre/Occupé :</p>
+
+  <steps>
+    <item>
+      <p>Cliquez sur <guiseq><gui>Fichier</gui><gui>Nouveau</gui><gui>Rendez-vous</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui style="button">Ajouter</gui> pour ajouter les adresses électroniques des personnes que vous souhaitez inviter.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton <gui>Libre/Occupé</gui> dans la barre d'outils ou choisissez <guiseq><gui>Options</gui><gui>Libre/Occupé</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Affinez les horaires de la réunion, soit en glissant les bords de la réunion, soit en utilisant les boutons de <gui>choix automatique</gui> pour choisir automatiquement une période, puis cliquez sur <gui style="button">Fermer</gui>. Sur un serveur Exchange, le rendez-vous se met automatiquement à jour pour les participants invités ; dans les autres cas, un courriel de notification de mise à jour est envoyé aux participants.</p>
+    </item>
+  </steps>
+
+  <list>
+    <item>
+      <p>Liste des participants :</p>
+      <p>La liste des participants montre les personnes invitées à la réunion.</p>
+    </item>
+    <item>
+      <p>Grille horaire :</p>
+      <p>La grille horaire affiche les informations Libre/Occupé des personnes invitées. Cela vous permet de comparer les agendas pour trouver une période libre pour organiser la réunion. Les données de disponibilité des individus ne sont disponibles que si elles se trouvent sur un même serveur Novell GroupWise ou Microsoft Exchange que vous (c'est-à-dire, si les personnes font partie de la même organisation que vous), ou si ces données sont publiées à un URL accessible et que vous avez saisi cette adresse Web pour le contact particulier dans <link xref="contacts-usage-edit-contact">l'éditeur de contact</link> sous <guiseq><gui>Informations personnelles</gui><gui>Adresses Web</gui><gui>Libre/Occupé</gui></guiseq>.</p>
+    </item>
+  </list>
+
+  <p>Vous pouvez publier des informations d'agenda ou de disponibilité sur un serveur WebDAV ou FTP, ou sur une machine distante via SSH ou encore sur un serveur Web prenant en charge HTTP PUT.</p>
+
+  <p>In corporate environments you can publish Calendar and Free/Busy
+  information to an Exchange or Groupwise server. Note that you must use the
+  top-level Exchange calendar if you want others to be able to access your
+  Free/Busy information when inviting you to a meeting.</p> <p>Le serveur par défaut peut être défini sous <guiseq><gui>Édition</gui><gui>Préférences</gui><gui>Agenda et tâches</gui><gui>Publication d'informations</gui><gui>Serveur Libre/Occupé par défaut</gui></guiseq>.</p>
+
+  <!-- This is the location since 3.1.5, see bug
+       https://bugzilla.gnome.org/show_bug.cgi?id=655666 -->
+
+<section id="no-groupware">
+  <title>Accès aux données de disponibilité sans serveur collaboratif</title>
+
+  <p>Si une personne vous donne un URL vers ses données de disponibilité ou vers son agenda Web, vous pouvez ajouter l'URL sous <guiseq><gui>Informations personnelles</gui><gui>Sites Web</gui></guiseq> dans <link xref="contacts-usage-edit-contact">l'éditeur des contacts</link>. Dès lors, lorsque vous planifiez une réunion avec elle, <app>Evolution</app> consulte son agenda et l'affiche dans les informations de disponibilité.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-photoid" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-24" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Συμπεριλάβετε ένα αναγνωριστικό φωτογραφίας με τα υπάρχοντα κλειδιά έτσι ώστε τα άτομα να μπορούν να σας αναγνωρίσουν εύκολα.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα του GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Επισυνάψτε μια φωτογραφία στο κλειδί σας</title>
+
+  <p>Μπορείτε να επισυνάψετε μια φωτογραφία στα κλειδιά σας PGP έτσι ώστε ο καθένας να μπορεί να επιβεβαιώσει την ιδιοκτησία των κλειδιών σας αφού κοιτάξει τη φωτογραφία σας. Αν και ένα κλειδί με μια συνημμένη φωτογραφία θα παράσχει ένα λίγο καλύτερο επίπεδο ασφάλειας από ένα κλειδί χωρίς φωτογραφία, σημειώνοντας τη φωτογραφία σε ένα κλειδί δεν είναι εξίσου ασφαλές με τη σημείωση <link xref="misc-key-fingerprint">δακτυλικού αποτυπώματος του κλειδιού</link> επειδή οποιοσδήποτε που έχει τις φωτογραφίες σας μπορεί να δημιουργήσει ένα κλειδί με το αναγνωριστικό της φωτογραφίας σας, ενώ το δακτυλικό αποτύπωμα του κλειδιού δεν μπορεί να απομιμηθεί.</p>
+
+  <note style="info">
+    <p>Αντίθετα με τους περιορισμούς στο <app>GPG</app>, το αναγνωριστικό φωτογραφίας που θέλετε να μεταφορτώσετε δεν απαιτείται να είναι σε μορφή <file>JPEG</file>. Το <app>Κωδικοί πρόσβασης και κλειδιά</app> σας επιτρέπει να αποστείλετε τη φωτογραφία σας σε <file>png</file>, <file>jpg</file> και αρκετές άλλες κοινές μορφές εικόνας.</p>
+  </note>
+
+  <steps>
+    <title>Για να επισυνάψετε ένα αναγνωριστικό φωτογραφίας σε ένα κλειδί PGP:</title>
+    <item>
+      <p>Επιλέξτε <gui>κλειδιά GnuPG</gui> από το αριστερό πλευρικό παράθυρο.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε το κλειδί PGP.</p>
+    </item>
+    <item>
+      <p>Κάντε δεξί κλικ το επιλεγμένο κλειδί και επιλέξτε <guiseq><gui style="menuitem">Ιδιότητες</gui> <gui>Κάτοχος</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Πατήστε το σημειωμένο πλήκτρο με ένα <gui style="button">+</gui> στα αριστερά για να προσθέσετε μια φωτογραφία.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε τη φωτογραφία από τον υπολογιστή σας.</p>
+    </item>
+    <item>
+      <p>Πατήστε <gui style="button">Κλείσιμο</gui> για να τελειώσετε.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Οι φωτογραφίες που επιλέγετε πρέπει να είναι μικρές σε μέγεθος, κατά προτίμηση περίπου 120 επί 150 εικονοστοιχεία. Αφού ένα αναγνωριστικό φωτογραφίας επισυνάπτεται πάντα στο κλειδί του, μια μεγάλη φωτογραφία θα αυξήσει το μέγεθος του κλειδιού και θα επιβραδύνει όλες τις λειτουργίες που χρησιμοποιεί το κλειδί. Το <app>Κωδικοί πρόσβασης και κλειδιά</app> προσαρμόζει τις μεγάλες φωτογραφίες στο βέλτιστο μέγεθος μετά την ερώτηση για την επιβεβαίωσή σας.</p>
+  </note>
+
+</page>

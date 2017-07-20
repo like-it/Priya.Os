@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="scores" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#play"/>
+
+    <revision pkgversion="3.8" version="0.1" date="2013-04-03" status="draft"/>
+    <revision pkgversion="3.11.90" date="2014-03-22" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">safincrazy@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Rachel Dunstan</name>
+      <email its:translate="no">dunstanrc@gmail.com</email>
+    </credit>
+
+    <desc>Poängräkning i <app>Robotar</app></desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Erik Sköldås</mal:name>
+      <mal:email>erik.skoldas@tele2.se</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Poäng</title>
+
+  <p>Det finns två typer av fiender i <app>Robotar</app>: farliga fiender som ger dig 20 poäng när de dör och mindre farliga fiender som ger dig 10 poäng när de dör.</p>
+
+<section id="high-low-risk">
+  <title>Hög- och lågriskfiender efter tema</title>
+
+  <p>Fienderna i ett spel beror på vilket <link xref="appearance">speltema</link> du valt.</p>
+
+  <table frame="top bottom" rules="rows">
+    <thead>
+    <tr>
+    <td><p>Speltema</p></td>
+    <td><p>Farlig fiende (20 poäng)</p></td>
+    <td><p>Mindre farlig fiende (10 poäng)</p></td></tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><p>myrstackar</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/anthills-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Farlig myrstack</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/anthills-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Mindre farlig myrstack</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>spöke</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/boo-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Farlig fladdermus</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/boo-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Mindre farligt spöke</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>kor</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/cows-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Farlig ko</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/cows-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Mindre farlig ko</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>ägg</p></td>
+    <td><p>
+    <media type="image" its:translate="no" src="figures/eggs-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Farligt ägg</span></media></p></td>
+    <td><p>
+    <media type="image" its:translate="no" src="figures/eggs-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Mindre farligt ägg</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>tomtar</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/gnomes-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Farlig tomte</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/gnomes-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Mindre farlig tomte</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>möss</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/mice-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Farlig mus</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/mice-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Mindre farlig mus</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>robotar</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/robots-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Farlig robot</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/robots-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Mindre farlig robot</span></media></p></td>
+    </tr>
+    <tr><td><p>droppar</p></td>
+    <td><p>
+    <media type="image" its:translate="no" src="figures/spills-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Farlig droppe</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/spills-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Mindre farlig droppe</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>stormmoln</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/stormclouds-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Farligt stormmoln</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/stormclouds-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Mindre farligt stormmoln</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>brödrostar</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/toasters-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Farlig brödrost</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/toasters-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Mindre farlig brödrost</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>ufo</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/ufo-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Farligt Ufo</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/ufo-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Mindre farligt Ufo</span></media></p></td>
+    </tr>
+  </tbody>
+  </table>
+
+</section>
+
+<section id="high-scores">
+  <title>Poänglistan</title>
+
+  <p>Välj <guiseq><gui style="menu">Spel</gui><gui style="menuitem">Poäng</gui></guiseq> för att visa poänglistan.</p>
+
+  <p>Poäng registreras separat för varje kombination av <link xref="game-types">speltyp och alternativ för säker flyttning</link>. Använd rullgardinsmenyn bredvid <gui>Bana</gui> för att se poängen för de olika speltyperna och alternativen för säkra förflyttningar.</p>
+
+</section>
+
+</page>

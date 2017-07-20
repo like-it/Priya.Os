@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-desktop" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.14" date="2015-01-25" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Permettre à d'autres personnes de voir et d'interagir avec votre bureau en utilisant VNC.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Partage de votre bureau</title>
+
+  <p>Vous pouvez permettre à d'autres personnes d'afficher et contrôler votre bureau à partir d'un autre ordinateur avec une application de visualisation de bureau. Configurez <app>Partage de l'écran</app> pour autoriser d'autres personnes à accéder à votre bureau et paramétrer les préférences de sécurité.</p>
+
+  <note style="info package">
+    <p>Le paquet <app>Vino</app> doit être installé pour que <gui>Partage de l'écran</gui> soit visible.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:vino" style="button">Installer Vino</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Sharing</gui>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Partage</gui> pour ouvrir le panneau.</p>
+    </item>
+    <item>
+      <p>Si l'interrupteur <gui>Partage</gui> est sur <gui>Désactivé</gui>, basculez-le sur <gui>Activé</gui>.</p>
+
+      <note style="info"><p>Si le texte sous <gui>Nom de l'ordinateur</gui> le permet, vous pouvez <link xref="sharing-displayname">changer</link> le nom que votre ordinateur affiche sur le réseau.</p></note>
+    </item>
+    <item>
+      <p>Choisissez <gui>Partage de l'écran</gui>.</p>
+    </item>
+    <item>
+      <p>Pour autoriser d'autres personnes à voir votre bureau, basculez <gui>Partage d'écran</gui> sur <gui>Activé</gui>. Maintenant, d'autres personnes peuvent tenter de se connecter à votre ordinateur pour voir ce qu'il y a d'affiché.</p>
+    </item>
+    <item>
+      <p>Pour laisser d'autres personnes interagir avec votre bureau, basculez <gui>Autoriser le contrôle à distance</gui> sur <gui>Activé</gui>. Cette action permet à un utilisateur distant de déplacer le pointeur de votre souris, de lancer des applications et de consulter des fichiers sur votre ordinateur en fonction des paramètres de sécurité que vous avez définis.</p>
+
+      <note style="tip">
+        <p>Cette option est activée par défaut quand <gui>Partage d'écran</gui> est <gui>Activé</gui>.</p>
+      </note>
+
+    </item>
+  </steps>
+
+  <section id="security">
+  <title>Sécurité</title>
+
+  <p>Il est important que vous mesuriez et compreniez la portée de chaque option de sécurité avant de la modifier.</p>
+
+  <terms>
+    <item>
+      <title>Les nouvelles connexions doivent demander une autorisation d'accès</title>
+      <p>Si vous souhaitez contrôler et décider de laisser ou non l'accès à quelqu'un à votre bureau, basculez <gui>Les nouvelles connexions doivent demander une autorisation d'accès</gui> sur <gui>Activé</gui>. Si vous désactivez cette fonction, il ne vous sera pas demandé d'autorisation pour laisser quelqu'un se connecter à votre ordinateur.</p>
+      <note style="tip">
+        <p>Cette option est activée par défaut.</p>
+      </note>
+    </item>
+    <item>
+      <title>Demande d'un mot de passe</title>
+      <p>Pour obliger un autre utilisateur à s'identifier par mot de passe pour se connecter à votre ordinateur, basculez <gui>Demander un mot de passe</gui> sur <gui>Activé</gui>. Si vous ne le faites pas, n'importe qui peut essayer de voir votre bureau.</p>
+      <note style="tip">
+        <p>Cette option est désactivée par défaut, mais vous devriez l'activer et définir un mot de passe sûr.</p>
+      </note>
+    </item>
+<!-- TODO: check whether this option exists.
+    <item>
+      <title>Allow access to your desktop over the Internet</title>
+      <p>If your router supports UPnP Internet Gateway Device Protocol and it
+      is enabled, you can allow other people who are not on your local network
+      to view your desktop. To allow this, select <gui>Automatically configure
+      UPnP router to open and forward ports</gui>. Alternatively, you can
+      configure your router manually.</p>
+      <note style="tip">
+        <p>This option is disabled by default.</p>
+      </note>
+    </item>
+-->
+  </terms>
+  </section>
+
+  <section id="networks">
+  <title>Réseaux</title>
+
+  <p>La section <gui>Réseaux</gui> affiche les réseaux auquels vous êtes actuellement connectés. Basculez l'interrupteur correspondant à chacun d'entre eux sur <gui>Activé</gui> ou sur <gui>Désactivé</gui> pour décider avec qui votre ordinateur peut être partagé.</p>
+  </section>
+
+  <section id="notification-icon">
+  <title>Arrêt du partage de votre bureau</title>
+
+  <p>Pour déconnecter quelqu'un en train de visualiser votre bureau avec l'<gui>icône de notifications</gui> du tiroir de messagerie :</p>
+    <steps>
+      <item><p>ouvrez le tiroir de messagerie en appuyant sur <keyseq><key>Logo</key><key>M</key></keyseq> ou en plaquant le curseur de votre souris contre le bas de l'écran,</p></item>
+      <item><p>cliquez sur l'icône <gui>Bureau</gui> du <gui>Tiroir de messagerie</gui> pour ouvrir le panneau <gui>Partage</gui>,</p>
+      </item>
+      <item><p>Choisissez <gui>Partage de l'écran</gui>.</p></item>
+      <item><p>Toggle the <gui>Screen Sharing</gui> slider to <gui>Off</gui>.
+      </p></item>
+    </steps>
+
+  </section>
+
+
+</page>

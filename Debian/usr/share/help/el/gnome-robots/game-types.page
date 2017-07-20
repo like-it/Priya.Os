@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="game-types" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+    <revision pkgversion="3.8" version="0.1" date="2013-05-21" status="draft"/>
+    <revision pkgversion="3.11.90" date="2014-03-26" status="review"/>
+    <revision pkgversion="3.14" date="2015-01-25" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">safincrazy@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Rachel Dunstan</name>
+      <email its:translate="no">dunstanrc@gmail.com</email>
+    </credit>
+
+    <desc>Αλλάξτε το επίπεδο δυσκολίας στα <app>Ρομπότ</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Τύπος παιχνιδιού</title>
+
+  <p>Μπορείτε να παίξετε το <app>Ρομπότ</app> με διαφορετικούς τρόπους επιλέγοντας ένα διαφορετικό τύπο παιχνιδιού. Αυτό αλλάζει το επίπεδο δυσκολίας στα <app>Ρομπότ</app>.</p>
+
+  <steps>
+    <title>Για να αλλάξετε το επίπεδο δυσκολίας:</title>
+    <item>
+      <p>Επιλέξτε <guiseq> <gui style="menu">Ρυθμίσεις</gui><gui>Προτιμήσεις</gui><gui>Παιχνίδι</gui> </guiseq>.</p>
+    </item>
+    <item>
+      <p>Από το πτυσσόμενο μενού δίπλα στο <gui>Τύπος παιχνιδιού</gui>, επιλέξτε την επιλογή σας.</p>
+      <table frame="top bottom" rules="rows">
+      <thead>
+      <tr>
+        <td><p>Τύπος παιχνιδιού</p></td>
+        <td><p>Αρχικά ασφαλείς <link xref="moves#teleport">τηλεμεταφορές</link></p>
+        </td>
+        <td><p>Initial
+        <link xref="scores#high-low-risk">low-risk enemy
+        robots</link></p></td>
+        <td><p>Αρχικά <link xref="scores#high-low-risk">υψηλού κινδύνου εχθρικά ρομπότ</link></p></td>
+        <td><p>Κάντε ασφαλείς τηλεμεταφορές αυξάνοντας σε διαδοχικά επίπεδα;</p></td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><p><gui>εφιάλτης</gui></p></td>
+        <td><p>2</p></td>
+        <td><p>2</p></td>
+        <td><p>8</p></td>
+        <td><p>Ναι</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>ρομπότ με ασφαλή τηλεμεταφορά</gui></p></td>
+        <td><p>0</p></td>
+        <td><p>10</p></td>
+        <td><p>0</p></td>
+        <td><p>Ναι, αλλά μόνο αν τα ρομπότ σκοτώνονται κατά την <link xref="moves#wait">αναμονή</link></p></td>
+      </tr>
+      <tr>
+        <td><p><gui>ρομπότ2</gui></p></td>
+        <td><p>1</p></td>
+        <td><p>8</p></td>
+        <td><p>2</p></td>
+        <td><p>Ναι, αλλά μόνο αν τα ρομπότ σκοτώνονται κατά την <link xref="moves#wait">αναμονή</link></p></td>
+      </tr>
+      <tr>
+        <td><p><gui>εύκολα ρομπότ2</gui></p></td>
+        <td><p>3</p></td>
+        <td><p>8</p></td>
+        <td><p>2</p></td>
+        <td><p>Ναι</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>κλασικά ρομπότ</gui></p></td>
+        <td><p>0</p></td>
+        <td><p>10</p></td>
+        <td><p>0</p></td>
+        <td><p>Όχι</p></td>
+      </tr>
+      </tbody>
+    </table>
+    </item>
+    <item>
+      <p>Αν επιλέξετε το πλαίσιο επιλογής <gui style="checkbox">Χρήση ασφαλών κινήσεων</gui>, το παιχνίδι θα σας περιορίσει από το να μετακινηθείτε εάν η κίνηση αυτή προκαλέσει κάποιο ρομπότ να σας σκοτώσει,εκτός εάν ο μόνος τρόπος να επιζήσετε είναι η τηλεμεταφορά. Αν επιλέξετε το πλαίσιο ελέγχου <gui style="checkbox">Χρήση υπερ-ασφαλών κινήσεων</gui>, το παιχνίδι θα σας αποτρέψει από οποιαδήποτε κίνηση, ώστε είστε αναγκασμένοι για τηλεμεταφορά. Αυτό μειώνει το επίπεδο της δυσκολίας. Μπορείτε πάντα να τα αποεπιλέξετε αν βρείτε το παιχνίδι υπερβολικά εύκολο.</p>
+    </item>
+  </steps>
+
+</page>

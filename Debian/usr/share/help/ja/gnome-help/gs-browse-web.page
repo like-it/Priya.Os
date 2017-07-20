@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="ja">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Web を閲覧する</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">A tutorial on browsing the web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2013, 2015, 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Web を閲覧する</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>画面左上の<gui>アプリケーション</gui>メニューを開きます。</p></item>
+      <item><p>メニューから、<guiseq><gui>インターネット</gui><gui>Firefox</gui></guiseq> を選択します。</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>マウスポインターを画面左上隅の<gui>アクティビティ</gui>まで移動させ、<gui>アクティビティ画面</gui>を開きます。</p></item>
+      <item><p>画面左端のバーから、<app>Firefox</app> のアイコンを選択します。</p></item>
+    </steps>
+
+    <note><p>あるいは、<gui>アクティビティ画面</gui>で <em>Firefox</em> と<link xref="gs-use-system-search">入力</link>してブラウザーを起動することもできます。</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>マウスポインターを画面左上隅の<gui>アクティビティ</gui>まで移動させ、<gui>アクティビティ画面</gui>を開きます。</p></item>
+      <item><p>画面左端のバーから、<app>Web</app> ブラウザーのアイコンを選択します。</p></item>
+    </steps>
+
+    <note><p>あるいは、<gui>アクティビティ画面</gui>で <em>web</em> と<link xref="gs-use-system-search">入力</link>してブラウザーを起動することもできます。</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>ブラウザーウィンドウ上部のアドレスバーを選択し、アクセスしたい Web サイトを入力します。</p></item>
+      <item><p>Web サイトを入力すると、閲覧履歴やブックマークから該当するサイトが検索されます。そのため、サイトの正確なアドレスを覚えておく必要はありません。</p>
+        <p>サイトが履歴やブックマークに見つかると、ドロップダウンリストがアドレスバーの下に表示されます。</p></item>
+      <item><p>ドロップダウンリストから、矢印キーを使って簡単にサイトを選択できます。</p>
+      </item>
+      <item><p>サイトを選択して <key>Enter</key> を押すと、そのサイトにアクセスします。</p>
+      </item>
+    </steps>
+
+</page>

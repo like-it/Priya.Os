@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Bärbara datorer försätts i strömsparläge när du stänger locket för att spara ström.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Varför stängs min dator av när jag stänger locket?</title>
+
+  <p>När du stänger locket på din bärbara dator kommer din dator att <link xref="power-suspend"><em>försättas i vänteläge</em></link> för att spara ström. Detta innebär att datorn egentligen inte är avstängd - den sover bara. Du kan väcka den igen genom att öppna locket. Om den inte väcks upp, prova att klicka med musen eller trycka på en tangent. Om det inte heller fungerar, tryck på strömknappen.</p>
+
+  <p>Vissa datorer kan inte försättas i vänteläge korrekt, vanligtvis eftersom deras hårdvara inte har komplett stöd av operativsystemet (till exempel kan Linux-drivrutinerna sakna stöd). I detta fallet kan du upptäcka att du inte kan väcka upp din dator efter att du har stängt locket. Du kan prova att <link xref="power-suspendfail">fixa problemet med vänteläge</link> eller så kan du undvika att datorn försätts i vänteläge när du stänger locket.</p>
+
+<section id="nosuspend">
+  <title>Förhindra datorn från att försättas i vänteläge när locket stängs</title>
+
+  <note style="important">
+    <p>Dessa instruktioner kommer bara att fungera om du använder <app>systemd</app>. Kontakta din distribution för mer information.</p>
+  </note>
+
+  <note style="important">
+    <p>Du måste ha <app>Justeringsverktyg</app> installerat på din dator för att ändra denna inställning.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">Installera <app>Justeringsverktyg</app></link></p>
+    </if:if>
+  </note>
+
+  <p>Om du inte vill att datorn ska försättas i vänteläge när du stänger locket kan du ändra inställningarna för det beteendet.</p>
+
+  <note style="warning">
+    <p>Var aktsam när du ändrar denna inställning. Vissa bärbara datorer kan överhettas om de lämnas körandes med locket stängt, speciellt om de befinner sig i ett slutet utrymme som till exempel en ryggsäck.</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Justeringsverktyg</gui>.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Justeringsverktyg</gui> för att öppna panelen.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Ström</gui>-fliken.</p>
+    </item>
+    <item>
+      <p>Slå om <gui>Försätt inte i vänteläge då locket stängs</gui> till <gui>PÅ</gui>.</p>
+    </item>
+    <item>
+      <p>Stäng fönstret <gui>Justeringsverktyg</gui>.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

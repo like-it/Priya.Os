@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info xmlns="http://projectmallard.org/1.0/">
+
+<item><p>Odesílatel:</p>
+<p>E-mailová adresa nebo jméno odesílatele.</p></item>
+
+<item><p>Příjemci:</p>
+<p>Příjemci zprávy.</p></item>
+
+<item><p>Kopie:</p>
+<p>Pouze příjemci zprávy, kteří jsou v kopii.</p></item>
+
+<item><p>Skrytá kopie:</p>
+<p>Pouze příjemci zprávy, kteří jsou ve skryté kopii. Tato podmínka může být logicky použita pouze v obchozích filtrech.</p></item>
+
+<item><p>Odesílatel nebo příjemci:</p>
+<p>E-mailová adresa nebo jméno odesílatele či příjemce zprávy.</p></item>
+
+<item><p>Předmět:</p>
+<p>Předmět zprávy.</p></item>
+
+<item><p>Určitá hlavička:</p>
+<p>Jakákoliv hlavička včetně <link xref="mail-composer-custom-header-lines">vlastních</link>.</p>
+<p>Pokud zpráva používá hlavičku více než jedenkrát, <app>Evolution</app> se jí zabývá pouze v první instanci, dokonce i když zpráva definuje podruhé hlavičku jinak. Např. pokud zpráva deklaruje hlavičku Resent-From: jako "engineering@example.com" a potom ji zopakuje jako "marketing@example.com", <app>Evolution</app> ji filtruje, jakoby se druhá deklarace neobjevila. Pro filtrování zpráv, které používají hlavičky vícekrát, použijte regulární výrazy. </p></item>
+
+<item><p>Tělo zprávy:</p>
+<p>Prohledává text zprávy.</p></item>
+
+<item><p>Výraz:</p>
+<p>(pouze pro programátory) Porovnává zprávy podle výrazu, který napíšete v jazyce Scheme, používaného v aplikaci <app>Evolution</app> k definování <link xref="mail-filters">filtrů</link>.</p></item>
+
+<item><p>Výraz ve volné tvaru:</p>
+<p>(Jen pro pokročilé uživatele) Kombinujte několik podmínek pomocí <link href="https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10">speciální syntaxe</link>.</p></item>
+
+<item><p>Datum odeslání:</p>
+<p>Filtruje zprávy podle data, kdy byly odeslány. Prvně vyberte podmínky, které chcete, aby zpráva splnila, jako před určitým datem nebo po určitém datu. Potom zvolte čas. Filtr porovnává časové razítko zprávy se systémovými hodinami, když filtr běží, nebo s určitým časem a datem, které vyberete v kalendáři. Můžete jej také nechat, aby se podíval po zprávách v určitém časovém rozmezí jako před dvěma až čtyřmi dny.</p></item>
+
+<item><p>Datum přijetí:</p>
+<p>Toto funkce stejným způsobem jako volba Datum odeslání až na to, že to porovnává datum, kdy jste zprávu přijali, s datem, které jste zadali.</p></item>
+
+<item><p>Štítek:</p>
+<p>Zprávy mohou mít <link xref="mail-labels">štítky</link> Důležité, Pracovní, Osobní, Rozpracované, Později. Štítky můžete nastavit jinými filtry nebo ručně.</p></item>
+
+<item><p>Skóre:</p>
+<p>Nastaví zprávě skóre na jakékoliv celé číslo větší než 0. Můžete mít jeden filtr na nastavení nebo skóre zprávy změnit ručně a potom nastavit jiný filtr k přesouvání zpráv, které jste ohodnotili. Skóre zprávy není založeno na ničem konkrétním: je to jednoduše číslo, které můžete zprávě přidělit tak, aby je mohly jiné filtry zpracovat.</p></item>
+
+<item><p>Velikost (kB):</p>
+<p>Třídí na základě velikosti zpráv v kilobajtech.</p></item>
+
+<item><p>Stav:</p>
+<p>Filtruje podle stavu zprávy. Stav může být Zodpovězeno, Koncept, Důležité, Přečteno nebo Nevyžádaná pošta.</p></item>
+
+<item><p>K vyřízení:</p>
+<p>Kontroluje, zda není zpráva <link xref="mail-follow-up-flag">označena k vyřízení</link>.</p></item>
+
+<item><p>Dokončeno:</p></item>
+<!-- TODO: Explain usage of option "Completed On" once https://bugzilla.gnome.org/show_bug.cgi?id=698439 is fixed -->
+
+<item><p>Přílohy:</p>
+<p>Kontroluje, zda e-mail obsahuje přílohu.</p></item>
+
+<item><p>Poštovní konference:</p>
+<p>Filtruje na základě toho, z které poštovní konference zpráva přišla. Tento filtr může opomenout zprávy z některých serverů, protože kontroluje hlavičku X-BeenThere, která se používá pro identifikaci poštovních konferencí nebo jiných redistributorů pošty. Pošta ze serverů, které nenastavují X-BeenThere správně, nemůže být tímto filtrem zachycena.</p></item>
+
+<item><p>Odpovídající regulárnímu výrazu:</p>
+<p>(pouze pro programátory) Pokud víte, jak zacházet se vzory <link href="https://en.wikipedia.org/wiki/Regular_expression">regex</link>, respektive regulárními výrazy, umožní vám tato volba vyhledávat komplexní vzory znaků, takže můžete např. najít všechna slova, které začínají na „a“ a končí na „m“ a jsou dlouhé 6 až 15 znaků nebo všechny zprávy, které deklarují určité hlavičky dvakrát. Více informací o tom, jak používat regulární výrazy, se dočtete v <link href="man:grep">the man page for the <cmd>grep</cmd></link>.</p></item>
+
+</info>

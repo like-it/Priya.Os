@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-switching" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-windows"/>
+    <link type="guide" xref="shell-overview#apps"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-07" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Appuyer sur <keyseq><key>Logo</key><key>Tab</key></keyseq>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Basculement entre fenêtres</title>
+
+  <p>You can see all the running applications that have a graphical user
+  interface in the <em>window switcher</em>. This makes
+  switching between tasks a single-step process and provides a full picture of
+  which applications are running.</p>
+
+  <p>À partir d'un espace de travail :</p>
+
+  <steps>
+    <item>
+      <p>Appuyez sur <keyseq><key xref="keyboard-key-super">Logo</key><key>Tab</key></keyseq> pour faire apparaître le <gui>sélecteur de fenêtre</gui>.</p>
+    </item>
+    <item>
+      <p>Relâchez la touche <key xref="keyboard-key-super">Logo</key> pour sélectionner la prochaine fenêtre (mise en surbrillance) dans le sélecteur.</p>
+    </item>
+    <item>
+      <p>Sinon, tout en maintenant enfoncée la touche <key xref="keyboard-key-super">Logo</key>, appuyez sur <key>Tab</key> pour parcourir en boucle la liste des fenêtres ouvertes ou <keyseq><key>Maj</key><key>Tab</key></keyseq> pour revenir en arrière.</p>
+    </item>
+  </steps>
+
+  <p if:test="platform:gnome-classic">Vous pouvez aussi utiliser la liste des fenêtres ouvertes dans la barre inférieure pour y accéder et naviguer entre elles.</p>
+
+  <note style="tip" if:test="!platform:gnome-classic">
+    <p>Les fenêtres dans le sélecteur de fenêtre sont regroupées par application. Des aperçus pour les applications possédant plusieurs fenêtres apparaissent en dessous lorsque vous passez dessus. Tenez enfoncée la touche <key xref="keyboard-key-super">Logo</key> et appuyez sur la touche <key>`</key> (ou la touche au dessus de la touche <key>Tab</key>) pour parcourir la liste.</p>
+  </note>
+
+  <note if:test="!platform:gnome-classic">
+    <p>Dans le sélecteur de fenêtre, les applications appartenant à des espaces de travail différents sont séparées par des barres verticales.</p>
+  </note>
+
+  <p>Vous pouvez aussi vous déplacer parmi les icônes des applications dans le sélecteur de fenêtre avec les touches <key>→</key> ou <key>←</key> ou en cliquant à l'aide de la souris sur une fenêtre pour la sélectionner.</p>
+
+  <p>Les aperçus des applications possédant une seule fenêtre peuvent être affichés avec la touche <key>↓</key>.</p>
+
+  <p>Dans la vue d'ensemble des <gui>Activités</gui>, cliquez sur une <link xref="shell-windows">fenêtre</link> pour basculer vers elle et quitter la vue d'ensemble. Si vous avez plusieurs <link xref="shell-windows#working-with-workspaces">espaces de travail</link> ouverts, vous pouvez cliquer sur chaque espace de travail pour afficher les fenêtres ouvertes dans chacun d'eux.</p>
+
+</page>

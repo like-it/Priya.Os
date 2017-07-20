@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-initial-check" xml:lang="as">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-hardware-info"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu তথ্যচিত্ৰ ৱিকিৰ অৱদানকাৰীসকল</name>
+    </credit>
+    <credit type="author">
+      <name>GNOME তথ্যচিত্ৰ প্ৰকল্প</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>সুনিশ্চিত কৰক যে সাধাৰণ নেটৱাৰ্ক সংহতিসমূহ সঠিক আছে আৰু পৰৱৰ্তী কেইটিমান সমস্যামুক্তি স্তৰবোৰৰ বাবে প্ৰস্তুত হওক।</desc>
+  </info>
+
+  <title>বেতাঁৰ নেটৱাৰ্ক সমস্যামুক্তক</title>
+  <subtitle>এটা আৰম্ভণি সংযোগ নিৰীক্ষণ পৰিৱেশন কৰক</subtitle>
+
+  <p>এই স্তৰ আপুনি আপোনাৰ বেতাঁৰ নেটৱাৰ্কৰ বিষয়ে কিছুমান মৌলিক তথ্য নিৰীক্ষণ কৰিব। ই সুনিশ্চিত কৰিবলে যে আপোনাৰ নেটৱাৰ্কিং সমস্যা এটা সাধাৰণ সমস্যাৰ বাবে হোৱা নাই, যেনে বেতাঁৰ সংযোগ বন্ধ কৰা, আৰু পিছৰ কিছুমান সমস্যামুক্তি স্তৰৰ বাবে প্ৰস্তুত হোৱা।</p>
+
+  <steps>
+    <item>
+      <p>সুনিশ্চিত কৰক যে আপোনাৰ লেপটপ এটা <em>তাঁৰযুক্ত</em> ইন্টাৰনেট সংযোগৰ সৈতে সংযুক্ত নহয়।</p>
+    </item>
+    <item>
+      <p>যদি আপোনাৰ এটা বহিৰ্তম বেতাঁৰ এডাপ্টাৰ আছে (যেনে এটা USB এডাপ্টাৰ, অথবা এটা PCMCIA যি আপোনাৰ লেপটপত প্লাগ হয়), সুনিশ্চিত কৰক যে ই আপোনাৰ কমপিউটাৰৰ সঠিক স্লটত সুমুৱা হৈছে।</p>
+    </item>
+    <item>
+      <p>যদি আপোনাৰ বেতাঁৰ কাৰ্ড আপোনাৰ কমপিউটাৰৰ <em>ভিতৰ</em> ত আছে, সুনিশ্চিত কৰক যে বেতাঁৰ চুইচ অন কৰা আছে (যদি ইয়াৰ এটা আছে)। লেপটপসমূহৰ সাধাৰণত বেতাঁৰ চুইচ থাকে যাক আপুনি সংযুক্তি কি'সমূহ টিপি টগল কৰিব পাৰিব।</p>
+    </item>
+    <item>
+      <p>Click the system status area on the top bar and select
+      <gui>Wi-Fi</gui>, then select <gui>Wi-Fi Settings</gui>. Make sure that
+      <gui>Wi-Fi</gui> is set to <gui>ON</gui>. You should also check that
+      <link xref="net-wireless-airplane">Airplane Mode</link> is <em>not</em>
+      switched on.</p>
+    </item>
+    <item>
+      <p>Open the Terminal, type <cmd>nmcli device</cmd> and press
+      <key>Enter</key>.</p>
+      <p>This will display information about your network interfaces and
+      connection status. Look down the list of information and see if there is
+      an item related to the wireless network adapter. If the state is
+      <code>connected</code>, it means that the adapter is working and connected
+      to your wireless router.</p>
+    </item>
+  </steps>
+
+  <p>যদি আপুনি আপোনাৰ বেতাঁৰ ৰাউটাৰৰ সৈতে সংযুক্ত আছে, কিন্তু আপুনি তথাপিও ইন্টাৰনেট অভিগম কৰিব পৰা নাই, আপোনাৰ ৰাউটাৰ সঠিকভাৱে সংস্থাপন হোৱা নাই, অথবা আপোনাৰ ইন্টাৰনেট সেৱা প্ৰদানকাৰী (ISP) এ কিছুমান কাৰিকৰি সমস্যা অনুভৱ কৰি আছে। সংহতিসমূহ সঠিক আছে নে সুনিশ্চিত কৰিবলৈ আপোনাৰ ৰাউটাৰ আৰু ISP সংস্থাপন সহায়কসমূহ পুনৰদৰ্শন কৰক, অথবা সমৰ্থনৰ বাবে আপোনাৰ ISP ক যোগাযোগ কৰক।</p>
+
+  <p>If the information from <cmd>nmcli device</cmd> did not indicate that you were
+  connected to the network, click <gui>Next</gui> to proceed to the next
+  portion of the troubleshooting guide.</p>
+
+</page>

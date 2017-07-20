@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="sr">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>Извршите један клик да отворите датотеке, покренете или погледате извршне текстуалне датотеке, и да одредите понашање смећа.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Тифани Антополоски</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Шон Мек Кенс</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Мајкл Хил</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Синдху С</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Дејвид Кинг</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Поставке понашања управника датотека</title>
+<p>Можете да одредите да ли ћете извршити један или два клика над датотеком, како ће бити руковано извршним текстуалним датотекама, као и понашање смећа. Кликните <gui>Датотеке</gui> на горњој траци, изаберите <gui>Поставке</gui> а затим језичак <gui>Понашање</gui>.</p>
+
+<section id="behavior">
+<title>Понашање</title>
+<terms>
+ <item>
+  <title><gui>Једноструки клик за отварање ставки</gui></title>
+  <title><gui>Двоклик за отварање ставки</gui></title>
+  <p>По основи, један клик бира датотеке а двоклик их отвара. Уместо овога можете да изаберете да се и датотеке и фасцикле отворе када на њих кликнете једном. Када користите режим једног клика, можете да држите притиснутим тастер <key>Ктрл</key> док кликате да изаберете једну или више датотека.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>Извршне текстуалне датотеке</title>
+ <p>Извршна текстуална датотека је датотека која садржи програм који можете да покренете (извршите). <link xref="nautilus-file-properties-permissions">Овлашћења датотеке</link> морају такође да допуштају да датотека буде покренута као програм. Најчешће су скрипте <sys>Шкољке</sys>, <sys>Питона</sys> и <sys>Перла</sys>. Њихова проширења су редом <file>.sh</file>, <file>.py</file> и <file>.pl</file>.</p>
+ 
+ <p>Када отворите извршну текстуалну датотеку, можете да изаберете:</p>
+ 
+ <list>
+  <item>
+    <p><gui>Покрени извршне текстуалне датотеке при отварању</gui></p>
+  </item>
+  <item>
+    <p><gui>Прегледај извршне текстуалне датотеке при отварању</gui></p>
+  </item>
+  <item>
+    <p><gui>Питај сваки пут</gui></p>
+  </item>
+ </list>
+
+ <p>Ако је изабрано <gui>Питај сваки пут</gui>, појавиће се прозорче које ће вас питати да ли желите да покренете или да прегледате изабрану текстуалну датотеку.</p>
+
+ <p>Извршне текстуалне датотеке се такође називају <em>скриптама</em>. Све скрипте у фасцикли <file>~/.local/share/nautilus/scripts</file> ће се појавити у приручном изборнику за датотеку под подизборником <gui style="menuitem">Скрипте</gui> submenu. Када се скрипта изврши из месне фасцикле, све изабране датотеке ће јој бити прослеђене као параметри. Да извршите скрипту над датотеком:</p>
+
+<steps>
+  <item>
+    <p>Идите до жељене фасцикле.</p>
+  </item>
+  <item>
+    <p>Изаберите жељену датотеку.</p>
+  </item>
+  <item>
+    <p>Кликните десним тастером миша над датотеком да отворите приручни изборник и изаберите жељену скрипту за извршавање из изборника <gui style="menuitem">Скрипте</gui>.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>Скрипти неће бити прослеђени никакви параметри када се извршава из удаљене фасцикле као што је фасцикла која показује веб или <sys>фтп</sys> садржај.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">Поставке смећа управника датотека</title>
+</info>
+<title>Смеће</title>
+
+<terms>
+ <item>
+  <title><gui>Питај пре избацивања смећа</gui></title>
+  <p>Ова опција је изабрана по основи. Када празните смеће, биће приказана порука која ће потврдити да желите да испразните смеће или да избришете датотеке.</p>
+ </item>
+</terms>
+</section>
+
+</page>

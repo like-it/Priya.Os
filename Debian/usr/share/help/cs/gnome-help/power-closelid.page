@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovář</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Noteboky se po zavření víka uspávají, aby ušetřily energii.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Proč se můj počítač vypne, když zavřu víko?</title>
+
+  <p>Když zavřete víko svého notebooku, počítač se <link xref="power-suspend"><em>uspí do paměti</em></link>, aby šetřil energií. To znamená, že počítač není přímo vypnutý – prostě jen spí. Probudit jej můžete otevřením víka. Pokud se neprobudí, zkuste kliknout myší nebo zmáčknout klávesu. Pokud se stále neprobouzí, zmáčkněte tlačítko napájení.</p>
+
+  <p>Některé počítač se nedokáží správně uspat, protože jejich hardware není zcela podporován operačním systémem (například jsou linuxové ovladače neúplné). V takovémto případě můžete zjistit, že po uspání počítače zavřením víka jej již nedokážete probudit. Můžete zkusit <link xref="power-suspendfail">problém s uspáváním opravit</link> nebo počítači zakázat pokoušet se uspat při zavření víka.</p>
+
+<section id="nosuspend">
+  <title>Zabránění počítači v uspání při zavření víka</title>
+
+  <note style="important">
+    <p>Tyto rady jsou platné, jen když používáte <app>systemd</app>. Více informací získáte u autorů své distribuce.</p>
+  </note>
+
+  <note style="important">
+    <p>Abyste mohli změnit tato nastavení, musíte mít v počítači nainstalován <app>Vylaďovací nástroj</app>.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">Nainstalovat <app>Vylaďovací nástroj</app></link></p>
+    </if:if>
+  </note>
+
+  <p>Jestliže nechcete, aby se váš počítač uspával při zavření víka, můžete změnit nastavení pro toto chování.</p>
+
+  <note style="warning">
+    <p>Při změně tohoto nastavení buďte obezřetní. Některé notebooky se mohou přehřívat, když zůstanou běžet se zavřeným víkem, hlavně když jsou v uzavřeném prostoru, třeba v batohu.</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Vylaďovací nástroj</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknutím na <gui>Vylaďovací nástroj</gui> otevřete aplikaci.</p>
+    </item>
+    <item>
+      <p>Klikněte na kartu <gui>Napájení</gui>.</p>
+    </item>
+    <item>
+      <p>Přepněte vypínač <gui>Neuspávat při zavření víka</gui> na <gui>❙</gui> (zapnuto).</p>
+    </item>
+    <item>
+      <p>Zavřete okno <gui>Vylaďovací nástroj</gui>.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

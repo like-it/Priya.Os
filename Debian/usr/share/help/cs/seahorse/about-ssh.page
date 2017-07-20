@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="about-ssh" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="concepts" group="first"/>
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Jak použít klíče SSH k přihlášení ke vzdálenému počítači, ke kterému bylo vytvořeno zabezpečené spojení.</desc>
+  </info>
+
+  <title>Co je to klíč Secure Shell?</title>
+
+  <p><em>Klíč Secure Shell</em>, často nazývaný jen <em>klíč SSH</em> vám pomáhá vytvářet zabezpečená spojení přes nezabezpečenou síť.</p>
+
+  <list>
+    <title>Klíč SSH se prakticky skládá ze dvou částí:</title>
+    <item><p>Veřejného klíče, který je běžné dostupný.</p></item>
+    <item><p>Soukromého klíče, který je držen v tajnosti. Soukromý klíč se používá k odemknutí zpráv zašifrovaných odpovídajícím veřejným klíčem.</p></item>
+  </list>
+
+  <p>Přínosem použití <em>klíče SSH</em> je vytvoření spojení mezi počítači, které potřebuje poslat přes síť jen <em>veřejný klíč</em>. Vysílání šifrované takovýmto <em>veřejným klíčem</em> je možné dekódovat jen příslušným <em>soukromým kličem</em> a heslem. Ale protože přes síť je poslán jen veřejný klíč, je heslo klíče uchováno v tajnosti.</p>
+
+</page>

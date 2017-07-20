@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="calendar-alarms-and-reminders" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#calendar"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2011-08-02" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+     <name its:translate="no">Novell, Inc</name>
+     <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-prefs-cal.html.en#CACHCGCI -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Emlékeztetők beállítása értekezletekhez.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Emlékeztetők értekezletekre</title>
+
+<section id="general-settings">
+  <title>Általános beállítások</title>
+
+  <p>A <guiseq><gui>Szerkesztés</gui> <gui>Beállítások</gui><gui>Naptár és feladatok</gui><gui>Emlékeztetők</gui></guiseq> alatt kiválaszthatja azokat a naptárakat, amelyekhez emlékeztető értesítéseket szeretne kapni. Ha nem választ ki naptárat, akkor nem fog emlékeztetőket kapni az adott naptár eseményeihez. Megadhatja azt is, hogy megjelenjen-e emlékeztető minden értekezlethez, születésnaphoz és évfordulóhoz.</p>
+
+  <if:choose>
+    <if:when test="platform:gnome-shell">
+      <p>Az emlékeztetők megjelenítésével kapcsolatos általános információkért lásd <link xref="help:gnome-help/shell-notifications" href="https://help.gnome.org/users/gnome-help/stable/shell-notifications">a GNOME asztali környezet súgóját</link>.</p>
+    </if:when>
+  </if:choose>
+
+</section>
+
+<section id="manual-reminders">
+  <title>Kézi emlékeztetők</title>
+
+  <p>Az általános beállításokon túl bizonyos értekezletekhez beállíthat emlékeztetőket az értekezletszerkesztőben is:</p>
+
+  <steps>
+    <item>
+      <p>Válassza a <guiseq><gui>Beállítások</gui><gui>Emlékeztetők</gui></guiseq> menüpontot, vagy nyomja meg az Emlékeztető gombot az eszköztáron.</p>
+    </item>
+    <item>
+      <p>A legördülő menüben válassza az egyik elérhető alapbeállítást az emlékeztető értesítés megjelenítéséhez, vagy válassza a <gui>Testreszabás</gui> menüpontot.</p>
+    </item>
+    <item>
+      <p>A <gui>Testreszabás</gui> menüpont esetén az emlékeztető lehet egy felbukkanó ablak, lejátszott hang, vagy program futtatása. Megadhatja azt is, hogy az emlékeztető ismétlődjön-e.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

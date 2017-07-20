@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="gs-tabs" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#getting-started"/>
+    <revision pkgversion="3.8" date="2013-02-17" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-03-07" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>С. Синдху (Sindhu S)</name>
+      <email its:translate="no">sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013–2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Включение, добавление, удаление и перемещение вкладок <app>Терминала</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Сергей В. Миронов</mal:name>
+      <mal:email>sergo@bk.ru</mal:email>
+      <mal:years>2007.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Использование вкладок</title>
+
+  <p>Прежде чем перемещаться по вкладкам с помощью меню, проверьте, <link xref="pref-tab-window">включены ли вкладки в параметрах</link>.</p>
+
+  <p>Панель вкладок расположена в верхней части окна <app>Терминала</app>, (это выглядит как ряд кнопок). Нажмите на вкладку, чтобы перейти на неё с другой вкладки. Вы можете открывать несколько вкладок в <app>Терминале</app>, это позволяет одновременно работать с различными задачами в одном окне <app>Терминала</app>: запускать программы, просматривать каталоги¸ редактировать текстовые файлы и т.п.</p>
+
+  <section id="add-tab">
+    <title>Открыть новую вкладку</title>
+
+    <p>Чтобы открыть новую вкладку в окне <app>Терминала</app>:</p>
+    <steps>
+      <item>
+        <p>Нажмите <keyseq><key>Shift</key><key>Ctrl</key><key>T</key></keyseq>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+<!-- TODO: doesn't work, see bug 720693
+  <section id="rename-tab">
+    <title>Rename a tab</title>
+
+    <p>Each tab has an automatically assigned title. You can rename the tabs
+    individually:</p>
+
+    <steps>
+      <item>
+        <p>Select <guiseq><gui style="menu">Terminal</gui>
+        <gui style="menuitem">Set Title…</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Enter the desired <gui>Title</gui> that you wish to use for the tab.
+        This will overwrite any titles that would be set by terminal commands.
+        </p>
+        <note>
+          <p>It is not possible to set back the automatically set title once it
+          has been set for a tab. To see the title, you need to allow terminal
+          command titles to be shown in the <gui style="menuitem">Profile 
+          Preferences</gui>.</p>
+        </note>
+      </item>
+      <item>
+        <p>Click <gui style="button">OK</gui>.</p>
+      </item>
+    </steps>
+  </section>-->
+
+  <section id="close-tab">
+    <title>Удаление вкладки</title>
+
+    <p>Чтобы закрыть существующую вкладку в текущем окне <app>Терминала</app>:</p>
+
+    <steps>
+      <item>
+        <p>Выберите <guiseq><gui style="menu">Файл</gui><gui style="menuitem">Закрыть терминал</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <p>Или можно нажать на значок <gui style="button">×</gui> в правом верхнем углу вкладки или нажать правую кнопку мыши на вкладке и выбрать <gui style="menuitem">Закрыть терминал</gui>.</p>
+
+  </section>
+
+  <section id="reorder-tab">
+    <title>Изменение порядка вкладок</title>
+
+    <p>Чтобы изменить порядок вкладок окна:</p>
+    <steps>
+      <item>
+        <p>Нажмите и удерживайте левую клавишу мыши на вкладке.</p>
+      </item>
+      <item>
+        <p>Перетащите вкладку на желаемую позицию среди других вкладок</p>
+      </item>
+      <item>
+        <p>Отпустите клавишу мыши.</p>
+      </item>
+    </steps>
+
+    <p>Вкладка будет размещена на позиции, наиболее близкой к тому месту, где её отпустили, рядом с другими открытыми вкладками.</p>
+
+    <p>Или можно нажать правую кнопку мыши на вкладке и выбрать <gui style="menuitem">Переместить терминал влево</gui>, чтобы переместить вкладку влево, или <gui style="menuitem">Переместить вкладку вправо</gui>, чтобы переместить вкладку вправо.</p>
+
+  </section>
+
+  <section id="move-tab-another-window">
+    <title>Перемещение вкладки в другое окно <app>Терминала</app></title>
+
+    <p>Если нужно переместить вкладку из одного окна в другое:</p>
+    <steps>
+      <item>
+        <p>Нажмите и удерживайте левую клавишу мыши на вкладке.</p>
+      </item>
+      <item>
+        <p>Перетащите вкладку в другое окно.</p>
+      </item>
+      <item>
+        <p>Разместите её рядом с другими вкладками этого окна.</p>
+      </item>
+      <item>
+        <p>Отпустите клавишу мыши.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Можно переместить вкладку из одного окна в другое, перетащив её в угол в меню <gui>Обзор</gui> в <gui>GNOME Shell</gui>. Таким образом можно увидеть каждое из открытых окон <app>Терминала</app>. Отпустите удерживаемую вкладку над желаемым окном  <app>Терминала</app>.</p>
+    </note>
+  </section>
+
+  <section id="move-tab-create-window">
+    <title>Перемещение вкладки для создания нового окна <app>Терминала</app></title>
+
+    <p>Чтобы создать новое окно из существующей вкладки:</p>
+    <steps>
+      <item>
+        <p>Нажмите и удерживайте левую клавишу мыши на вкладке.</p>
+      </item>
+      <item>
+        <p>Переместите вкладку из текущего окна <app>Терминала</app> в пустое пространство рабочего стола.</p>
+      </item>
+      <item>
+        <p>Отпустите клавишу мыши.</p>
+      </item>
+    </steps>
+  </section>
+
+</page>

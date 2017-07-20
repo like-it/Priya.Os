@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="mail-account-manage-microsoft-exchange-evo-mapi" xml:lang="cs">
+
+  <info>
+    <desc>Jak přidat a upravit účet Microsoft Exchange MAPI v aplikaci <app>Evolution</app>.</desc>
+
+    <link type="guide" xref="mail-account-manage-microsoft-exchange"/>
+
+    <revision pkgversion="3.7" version="0.7" date="2013-06-22" status="candidate"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Nastavení účtu Exchange MAPI</title>
+
+<section id="account-editor">
+<title>Editor účtu</title>
+<p>Poštovní účet je možné přidat pomocí <guiseq><gui>Soubor</gui> <gui>Nový</gui> <gui>Poštovní účet</gui></guiseq> nebo <guiseq><gui>Upravit</gui> <gui>Předvolby</gui> <gui>Poštovní účty</gui> <gui style="button">Přidat</gui></guiseq>. Kroky jsou z větší části stejné jako u <link xref="intro-first-run">průvodce prvním spuštěním</link>, akorát nebudete dotázání, jestli chcete importovat data z jiné aplikace nebo je obnovit ze zálohy.</p>
+<p>Poštovní účet je možné upravit pomocí <guiseq><gui>Upravit</gui> <gui>Předvolby</gui> <gui>Poštovní účty</gui> <gui style="button">Upravit</gui></guiseq> nebo kliknutím pravým tlačítkem na příslušném uzlu nejvyšší úrovně v seznamu složek a zvolením <gui>Vlastnosti</gui>.</p>
+<p>Následující nastavení jsou k dispozici, když upravujete stávající účet:</p>
+
+<!-- As the "Identity" section is identical in all account pages, it is centrally in one file included 
+via XInclude. See +http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-mail-account-identity.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:section)"/>
+
+<section id="receiving-email">
+<info>
+  <title type="link">Příjem pošty a volby příjmu (účty Exchange MAPI)</title>
+</info>
+<title>Příjem pošty a volby příjmu</title>
+</section>
+
+<section id="defaults">
+<info>
+  <title type="link">Výchozí hodnoty (účty Exchange MAPI)</title>
+</info>
+<title>Výchozí hodnoty</title>
+</section>
+
+<section id="exchange-settings">
+<title>Nastavení Exchange</title>
+<p>V této části můžete vidět velikosti všech složek Exchange.</p>
+</section>
+
+<section id="security">
+<info>
+  <title type="link">Zabezpečení (účty Exchange MAPI)</title>
+</info>
+<title>Zabezpečení</title>
+</section>
+
+</section> <!-- end "account editor" section, now list any account settings stuff related to this account type outside of it -->
+
+<!-- <section id="other-settings">
+<info>
+  <title type="link">Other settings (Exchange MAPI accounts)</title>
+</info>
+<title>Other settings</title>
+<p>Other account related settings that are not located in the <gui>Account Editor</gui>:</p>
+</section> -->
+
+</page>

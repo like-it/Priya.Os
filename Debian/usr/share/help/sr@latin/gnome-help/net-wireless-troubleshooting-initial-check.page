@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-initial-check" xml:lang="sr-Latn">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-hardware-info"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Priložnici vikija Ubuntuove dokumentacije</name>
+    </credit>
+    <credit type="author">
+      <name>Gnomov projekat dokumentacije</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Uverite se da su jednostavna mrežna podešavanja ispravna i pripremite se za nekoliko sledećih koraka rešavanja problema.</desc>
+  </info>
+
+  <title>Rešavanje problema bežične mreže</title>
+  <subtitle>Izvršite proveru početka veze</subtitle>
+
+  <p>U ovom koraku proverićete neke osnovne podatke o vašoj vezi bežične mreže. Ovime ćete da se uverite da vaš problem umrežavanja nije izazvan nekim jednostavnim problemom, kao što je isključena bežična mreža, i da se pripremite za nekoliko sledećih koraka u rešavanju problema.</p>
+
+  <steps>
+    <item>
+      <p>Uverite se da vaš prenosni računar nije povezan na <em>žičanu</em> internet vezu.</p>
+    </item>
+    <item>
+      <p>Ako imate spoljni bežični prilagođivač (kao što je USB prilagođivač, ili PCMCIA kartica koji se priključuju na prenosni računar), uverite se da je čvrsto umetnut u odgovarajućem žlebu na vašem računaru.</p>
+    </item>
+    <item>
+      <p>Ako je vaša bežična kartica <em>unutar</em> vašeg računara, uverite se da je bežični prekidač postavljen na upaljeno (ako postoji). Prenosni računari često imaju bežične prekidače koje možete da uključite/isključite pritiskom na kombinaciju tastera na tastaturi.</p>
+    </item>
+    <item>
+      <p>Klinite na oblast stanja sistema na gornjoj traci i izaberite <gui>Bežična</gui>, zatim izaberite <gui>Podešavanja bežične</gui>. Uverite se da je <gui>Bežična</gui> postavljena na <gui>UKLJ.</gui>. Takođe treba da proverite da <link xref="net-wireless-airplane">Režim u avionu</link> <em>nije</em> uključen.</p>
+    </item>
+    <item>
+      <p>Otvorite terminal, upišite <cmd>nmcli device</cmd> i pritisnite <key>Unesi</key>.</p>
+      <p>Ovo će prikazati podatke o vašim mrežnim uređajima i stanjima veze. Pogledajte pri dnu spiska podataka da li postoji odeljak koji se odnosi na bežični mrežni prilagođivač. Ako je prikazano da je <code>povezan</code>, to znači da prilagođivač radi i da je povezan na vaš bežični usmerivač.</p>
+    </item>
+  </steps>
+
+  <p>Ako ste povezani na vaš bežični usmerivač, ali još uvek ne možete da pristupite internetu, vaš usmerivač nije ispravno podešen, ili je vaš dostavljač internet usluga (ISP) naišao na tehničke probleme. Pregledajte vaš usmerivač i vodič ISP podešavanja da se uverite da su podešavanja ispravna, ili potražite pomoć od vašeg ISP-a.</p>
+
+  <p>Ako podatak od <cmd>nmcli device</cmd> nije ukazao da ste bili povezani na mrežu, kliknite <gui>Dalje</gui> da nastavite do sledećeg dela vodiča za rešavanje problema.</p>
+
+</page>

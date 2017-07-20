@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-composer-change-quotation-string" xml:lang="de">
+
+  <info>
+    <desc>Es ist nicht möglich, die Zitat-Einleitung beim Beantworten einer E-Mail zu ändern.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-composer-reply"/>
+    <link type="seealso" xref="mail-composer-forward"/>
+
+    <revision pkgversion="3.13.90" version="0.5" date="2015-03-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Ändern der Meldung »Am &lt;Datum&gt; schrieb &lt;Name&gt;:« beim Antworten</title>
+
+<p>Fortgeschrittene Anwender können diese Zeichenkette ändern.</p>
+
+<list>
+<item><p>Öffnen Sie die Anwendung <app>dconf-editor</app>.</p></item>
+<item><p>Gehen Sie zu <code>org.gnome.evolution.mail</code>.</p></item>
+<item><p>Geben Sie die gewünschte Zitat-Meldung als Wert für den Schlüssel <code>composer-message-attribution</code> an.</p></item>
+</list>
+
+<!-- Translators: Do NOT translate the variable names inside the brackets! -->
+<p>Die vorgegebene Zeichenkette in Englisch lautet: <code>"On ${AbbrevWeekdayName}, ${Year}-${Month}-${Day} at ${24Hour}:${Minute} ${TimeZone}, ${Sender} wrote:"</code></p>
+
+<p>Die folgenden Platzhalter sind verfügbar:</p>
+<list>
+<item><p><code its:translate="no">{Sender}</code></p></item>
+<item><p><code its:translate="no">{SenderName}</code></p></item>
+<item><p><code its:translate="no">{SenderEMail}</code></p></item>
+<item><p><code its:translate="no">{AbbrevWeekdayName}</code></p></item>
+<item><p><code its:translate="no">{WeekdayName}</code></p></item>
+<item><p><code its:translate="no">{AbbrevMonthName}</code></p></item>
+<item><p><code its:translate="no">{MonthName}</code></p></item>
+<item><p><code its:translate="no">{Day}</code> (Format: 01-31)</p></item>
+<item><p><code its:translate="no">{ Day}</code> (Format: 1-31)</p></item>
+<item><p><code its:translate="no">{24Hour}</code></p></item>
+<item><p><code its:translate="no">{12Hour}</code></p></item>
+<item><p><code its:translate="no">{AmPmUpper}</code></p></item>
+<item><p><code its:translate="no">{AmPmLower}</code></p></item>
+<item><p><code its:translate="no">{DayOfYear}</code> (Format: 1-366)</p></item>
+<item><p><code its:translate="no">{Month}</code> (Format: 01-12)</p></item>
+<item><p><code its:translate="no">{Minute}</code></p></item>
+<item><p><code its:translate="no">{Seconds}</code></p></item>
+<item><p><code its:translate="no">{2DigitYear}</code> (z.B. »15« für das Jahr 2015)</p></item>
+<item><p><code its:translate="no">{Year}</code></p></item>
+<item><p><code its:translate="no">{TimeZone}</code></p></item>
+</list>
+
+<note style="info package">
+  <p>Gegebenenfalls müssen Sie das Paket <sys>dconf-editor</sys> installieren, um diese Schritte auszuführen.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:dconf-editor" href="http://ftp.gnome.org/pub/gnome/sources/dconf/" style="button">dconf-editor installieren</link></p>
+    </if:when>
+  </if:choose>
+</note>
+
+</page>

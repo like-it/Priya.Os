@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-hidden" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Anslut till ett trådlöst nätverk som inte visas i nätverkslistan.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Anslut till ett dolt, trådlöst nätverk</title>
+
+<p>Det är möjligt att ställa in ett trådlöst nätverk så att det är ”dolt”. Dolda nätverk visas inte i listan över trådlösa nätverk som visas i inställningarna under <gui>Nätverk</gui>. För att ansluta till ett dolt nätverk:</p>
+
+<steps>
+  <item>
+    <p>Öppna <gui xref="shell-introduction#yourname">systemmenyn</gui> på högersidan av systemraden.</p>
+  </item>
+  <item>
+    <p>Välj <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/> Trådlöst nätverk inte anslutet</gui>. Då expanderas delen om trådlösa nätverk av menyn.</p>
+  </item>
+  <item>
+    <p>Klicka på <gui>Inställningar för trådlösa nätverk</gui>.</p>
+  </item>
+  <item><p>Klicka på knappen <gui>Anslut till dolt nätverk…</gui>.</p></item>
+ <item>
+  <p>I fönstret som visas, välj ett tidigare anslutet dolt nätverk via rullgardinsmenyn <gui>Anslutning</gui> eller <gui>Ny</gui> för en ny.</p>
+ </item>
+ <item>
+  <p>För en ny anslutning, skriv nätverkets namn och välj typen av trådlös säkerhet från rullgardinsmenyn <gui>Trådlös säkerhet</gui>.</p>
+ </item>
+ <item>
+  <p>Mata in lösenordet eller andra säkerhetsdetaljer.</p>
+ </item>
+ <item>
+  <p>Klicka på <gui>Anslut</gui>.</p>
+ </item>
+</steps>
+
+  <p>Du kan vara tvungen att kontrollera inställningarna på den trådlösa accesspunkten eller routern för att se vad nätverkets namn är. Om du inte har nätverksnamnet (SSID) kan du använda <em>BSSID</em> (Basic Service Set Identifier, accesspunktens MAC-adress), som ser ut något i stil med <gui>02:00:01:02:03:04</gui> och kan vanligtvis hitta på undersidan av accesspunkten.</p>
+
+  <p>Du bör också kontrollera säkerhetsinställningarna för den trådlösa accesspunkten. Leta efter ord som WEP och WPA.</p>
+
+<note>
+ <p>Du kanske tror att dölja ditt trådlösa nätverk kommer att förbättra säkerheten genom att förhindra personer som inte känner till det från att ansluta. I praktiken är detta inte fallet. Nätverket blir svårare att hitta men är fortfarande möjligt att hitta.</p>
+</note>
+
+</page>

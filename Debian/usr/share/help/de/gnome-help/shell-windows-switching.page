@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-switching" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-windows"/>
+    <link type="guide" xref="shell-overview#apps"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-07" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Drücken Sie <keyseq><key>Super</key><key>Tab</key></keyseq></desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Wechseln zwischen Fenstern</title>
+
+  <p>Durch die Anzeige aller laufenden Anwendungen mit grafischer Oberfläche im <gui>Fensterwechsler</gui> wird aus dem Wechsel zwischen Aufgaben ein einziger Vorgang, der als komplette Darstellung aller laufenden Anwendungen erscheint.</p>
+
+  <p>In einer Arbeitsfläche:</p>
+
+  <steps>
+    <item>
+      <p>Drücken Sie <keyseq><key xref="keyboard-key-super">Super</key></keyseq>, um den <gui>Fensterwechsler</gui> anzuzeigen.</p>
+    </item>
+    <item>
+      <p>Lassen Sie die <key xref="keyboard-key-super">Super</key>-Taste los, um das nächste (hervorgehobene) Fenster im Fensterwechsler zu wählen.</p>
+    </item>
+    <item>
+      <p>Anderenfalls, bei noch gehaltener <key xref="keyboard-key-super">Super</key>-Taste, drücken Sie die <key>Tabulatortaste</key>, um durch die Liste der geöffneten Fenster zu blättern, oder <keyseq><key>Tabulatortaste</key><key>Umschalttaste</key></keyseq>, um rückwärts zu blättern.</p>
+    </item>
+  </steps>
+
+  <p if:test="platform:gnome-classic">Sie können auch die Fensterliste in der unteren Leiste verwenden, um auf alle Ihre geöffneten Fenster zugreifen und schnell zwischen ihnen wechseln zu können.</p>
+
+  <note style="tip" if:test="!platform:gnome-classic">
+    <p>Fenster im Fensterwechsler werden anwendungsweise gruppiert. Vorschauen auf Anwendungen mit mehreren Fenstern klappen nach unten aus, sobald diese angeklickt werden. Halten Sie <key xref="keyboard-key-super">Super</key> gedrückt und drücken Sie <key>`</key> (oder die Taste oberhalb von <key>Tab</key>), um sich durch die Liste zu bewegen.</p>
+  </note>
+
+  <note if:test="!platform:gnome-classic">
+    <p>Im Fensterwechsler werden Anwendungen anderer Arbeitsflächen durch senkrechte Trenner unterschieden.</p>
+  </note>
+
+  <p>Sie können sich innerhalb der Anwendungssymbole im Fensterwechsler mit den Tasten <key>→</key> oder <key>←</key> oder durch Klicken mit der Maus bewegen.</p>
+
+  <p>Vorschauen auf Anwendungen mit einem einzelnen Fenster werden nur dann angezeigt, wenn die Taste <key>↓</key> explizit gedrückt wird.</p>
+
+  <p>Klicken Sie in der <gui>Aktivitäten</gui>-Übersicht auf ein <link xref="shell-windows">Fenster</link>, um zu diesem zu wechseln und damit die Übersicht zu verlassen. Falls mehrere <link xref="shell-windows#working-with-workspaces">Arbeitsflächen</link> geöffnet sind, können Sie auf jede der Arbeitsflächen klicken, um die geöffneten Fenster der jeweiligen Arbeitsfläche zu sehen.</p>
+
+</page>

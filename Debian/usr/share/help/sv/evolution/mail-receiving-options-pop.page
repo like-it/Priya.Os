@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-receiving-options-pop" xml:lang="sv">
+
+  <info>
+    <desc>Mottagningsalternativ för POP-konton.</desc>
+
+    <link type="guide" xref="mail-receiving-options#common-server-types"/>
+    <link type="guide" xref="mail-account-manage-pop#receiving-email"/>
+    <revision pkgversion="3.1.5" version="0.5" date="2013-06-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Barbara Tobias</name>
+      <email its:translate="no">barbtobias09@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mainwindow-starting.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mottagningsalternativ för POP</title>
+
+<section id="receiving-email-pop">
+<title>Mottagande av e-post</title>
+
+<p>På sidan <gui>Ta emot e-post</gui> (tillgänglig via <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>E-postkonton</gui><gui style="button">Redigera</gui><gui>Ta emot e-post</gui></guiseq>):</p>
+
+<list>
+<item><p>Skriv in adressen för e-postservern i fältet <gui>Server</gui> och skriv in ditt användarnamn för den servern.</p></item>
+<item><p>Välj om du vill använda en säker anslutning (SSL eller TLS).</p><p>Du bör aktivera detta alternativ om din server har stöd för det.</p>
+<note style="tip"><p>Leverantörer som erbjuder gratis e-post via webben tillhandahåller ofta information om vilka av dessa alternativ som kan användas. Om du är i en organisationsmiljö kanske du måste kontakta din systemadministratör för vidare information.</p></note></item>
+<item><p>Välj din autentiseringstyp i listan autentisering eller klicka på <gui style="button">Kontrollera vilka typer som stöds</gui> för att låta <app>Evolution</app> kontrollera vilka autentiseringsmekanismer som stöds. Vissa servrar annonserar inte vilka autentiseringsmekanismer som de har stöd för så att klicka på denna knapp är ingen garanti för att tillgängliga mekanismer verkligen fungerar.</p></item>
+<item><p>Välj om du vill att <app>Evolution</app> ska komma ihåg ditt lösenord.</p></item>
+</list>
+
+</section>
+
+<section id="receiving-options-pop">
+<title>Alternativ för mottagning</title>
+
+<p>På sidan <gui>Alternativ för mottagning</gui> (tillgänglig via <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>E-postkonton</gui><gui style="button">Redigera</gui><gui>Alternativ för mottagning</gui></guiseq>):</p>
+
+<list>
+<item><p>Om du vill att <app>Evolution</app> automatiskt ska leta efter nya meddelanden, klicka på alternativet <gui>Leta efter nya meddelanden var … minut</gui> och välj frekvensen i minuter.</p></item>
+<item><p>Om du vill att meddelanden ska bibehållas på servern under en tid, klicka på alternativet <gui>Lämna kvar meddelanden på servern</gui> och sedan på alternativet <gui>Ta bort efter … dagar</gui> och välj antalet dagar som meddelanden ska bibehållas på servern.</p></item>
+<item><p>Alternativet <gui>Inaktivera stöd för alla POP3-tillägg</gui> är bara användbart när man använder gamla eller felkonfigurerade e-postservrar. <link href="https://tools.ietf.org/html/rfc2449">POP3-tillägg</link> tillhandahåller utökad funktionalitet, men bara vissa servrar har stöd för dem. Om det blir problem vid e-postmottagning, så kan aktivering av denna inställning hjälpa.</p></item>
+</list>
+
+</section>
+
+</page>

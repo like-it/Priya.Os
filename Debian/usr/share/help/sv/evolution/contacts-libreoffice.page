@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="contacts-libreoffice" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#data-migration-and-sync"/>
+
+    <revision pkgversion="3.1.5" version="0.2" date="2012-02-18" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Använda data från adressböckerna i <app>Evolution</app> i LibreOffice-dokument.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Kontakter i LibreOffice</title>
+
+  <p>Du kan använda dina adressböcker i <app>Evolution</app> som en datakälla i LibreOffice. Följande steg fungerar med LibreOffice version 3.3.3.</p>
+
+  <steps>
+    <item>
+      <p>Klicka på <guiseq><gui>Redigera</gui><gui>Exchange-databas…</gui></guiseq> i menyfältet. Det kommer att visa dialogrutan <gui>Exchange-databaser</gui>.</p>
+    </item>
+    <item>
+      <p>I högerpanelen under <gui>Tillgängliga databaser</gui> finns <gui>EvolutionLocal</gui> tillgänglig som en källa. Klicka på den lilla triangeln för att få en lista över dina <app>Evolution</app>-adressböcker.</p>
+    </item>
+    <item>
+      <p>Välj en adressbok och klicka på <gui style="button">Definiera</gui>.</p>
+    </item>
+    <item>
+      <p>Om den inte redan finns listad, klicka på <gui style="button">Bläddra…</gui>. En filväljardialog öppnas.</p>
+    </item>
+    <item>
+      <p>Då <app>Evolution</app> lagrar sina data i en dold katalog, tryck på <keyseq><key>Ctrl</key><key>L</key></keyseq> för att visa platsfältet.</p>
+    </item>
+    <item>
+      <p>Gå till <file>~/.local/share/evolution/addressbook/system/addressbook.db</file> och klicka på <gui style="button">Öppna</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Detta gör <app>Evolution</app>-adressboken till standarddatakällan för LibreOffice. Du kan nu välja ett fält att infoga i ett LibreOffice-dokument via <guiseq><gui>Infoga</gui><gui>Fält</gui><gui>Annat</gui></guiseq>.</p>
+
+</page>

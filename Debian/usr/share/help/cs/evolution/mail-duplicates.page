@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-duplicates" xml:lang="cs">
+
+  <info>
+    <desc>Co dělat s duplicitními zprávami v poště.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+
+    <revision pkgversion="3.7.4" version="0.6" date="2013-01-23" status="final"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Pošta se stahuje duplicitně</title>
+
+<section id="remove">
+<title>Odstranění zdvojené pošty</title>
+<p>Když chcete odstranit duplicitní poštu ve složce, vyberte více zpráv (nebo vyberte úplně všechny kliknutím na <guiseq><gui>Upravit</gui> <gui>Vybrat vše</gui></guiseq> nebo zmáčknutím <keyseq><key>Ctrl</key> <key>A</key></keyseq>) a klikněte na <guiseq><gui>Zpráva</gui> <gui>Odstranit duplicitní zprávy</gui></guiseq>.</p>
+<!-- available by default since 2.91, as per http://mail.gnome.org/archives/evolution-list/2011-August/msg00000.html -->
+</section>
+
+<section id="reasons">
+<title>Důvody</title>
+<p>Duplicitní stahování pošty se může dít z následujících důvodů:</p>
+<list>
+<item><p>V poštovní schránce se nachází více kopií té samé zprávy.</p></item>
+<item><p><app>Evolution</app> má problém s rozšířením UIDL.</p></item>
+<item><p>Nelze zapisovat do souborů mezipaměti, které se nachází v <file>$HOME/.local/share/evolution/mail/local/</file>.</p></item>
+</list>
+</section>
+
+</page>

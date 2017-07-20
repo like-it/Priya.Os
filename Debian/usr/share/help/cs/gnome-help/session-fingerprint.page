@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="hardware-auth"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak se přihlásit do systému pomocí podpory snímání otisků prstů místo psaní hesla.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Přihlašování pomocí otisku prstu</title>
+
+  <p>V případě, že váš systém podporuje snímač otisků prstů, můžete nahrát svůj otisk prstu a použít jej k přihlašování.</p>
+
+<section id="record">
+  <title>Zaznamenání otisku prstu</title>
+
+  <p>Dříve, než se můžete přihlašovat svým otiskem prstu, potřebujete jej nahrát, aby jej systém mohl používat k vaší identifikaci.</p>
+
+  <note style="tip">
+    <p>V případě, že máte příliš suchou pokožku na prstech, můžete mít problém s registrací vašeho otisku prstu. V takové situaci si prsty lehce navlhčete, osušte čistým hadříkem, který nepouští chlupy, a zkuste to znovu.</p>
+  </note>
+
+  <p>Abyste mohli měnit jiný, než svůj, uživatelský účet, potřebujete <link xref="user-admin-explain">oprávnění správce</link>.</p>
+
+  <steps>
+    <item>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Uživatelé</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknutím na <gui>Uživatelé</gui> otevřete příslušný panel.</p>
+    </item>
+    <item>
+      <p>Zmáčkněte <gui>Zakázáno</gui> vedle <gui>Přihlášení otiskem prstu</gui>, abyste přidali otisk prstu pro vybraný účet. V případě, že přidáváte otisk pro jiného uživatele, musíte panel nejprve <gui>Odemknout</gui>.</p>
+    </item>
+    <item>
+      <p>Vyberte prst, který chcete pro otisk použít, a zmáčkněte <gui style="button">Následující</gui>.</p>
+    </item>
+    <item>
+      <p>Postupujte podle pokynů v dialogovém okně a přejeďte prstem <em>pomalu a plynule</em> přes čtečku otisků prstů. Jakmile bude mít počítač váš otisk prstu správně zaznamenán, uvidíte zprávu <gui>Hotovo!</gui>.</p>
+    </item>
+    <item>
+      <p>Vyberte <gui>Další</gui>. Uvidíte potvrzovací zprávu, že se váš otisk prstu úspěšně uložil. Pro dokončení vyberte <gui>Zavřít</gui>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="verify">
+  <title>Kontrola, že otisky prstů fungují</title>
+
+  <p>Nyní zkontrolujte, jestli přihlášením s vaším novým otiskem prstu funguje. I když máte zaregistrovaný otisk prstu, stále máte na výběr přihlášení pomocí svého hesla.</p>
+
+  <steps>
+    <item>
+      <p>Uložte případnou rozdělanou práci a pak se <link xref="shell-exit#logout">odhlaste</link>.</p>
+    </item>
+    <item>
+      <p>Na přihlašovací obrazovce vyberte v seznamu své jméno. Objeví se pole pro zadání hesla.</p>
+    </item>
+    <item>
+      <p>Místo zadávání hesla by vám mělo fungovat přejetí prstem přes čtečku otisků prstů.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

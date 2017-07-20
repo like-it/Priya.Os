@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="subkeys-add" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="pgp-subkeys#more"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-28" status="draft"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>A további részkulcsok biztonságosabbá teszik a mesterkulcsát.</desc>
+  </info>
+
+<title>További részkulcsok hozzáadása</title>
+
+  <p>Ugyanazon mesterkulcshoz több részkulcsot is társíthat. Ha így dönt, akkor aláíráshoz vagy titkosításhoz minden egyes alkalommal ki kell válassza a helyes részkulcsot.</p>
+
+  <steps>
+    <title>További részkulcsok hozzáadása PGP-kulcshoz:</title>
+      <item>
+        <p>Válassza ki a <gui>GnuPG kulcsok</gui> bejegyzést a bal oldali sávból.</p>
+      </item>
+      <item>
+	<p>A GnuPG kulcsok listájából válassza ki a megfelelő <gui>Személyes PGP-kulcsot</gui>.</p>
+      </item>
+      <item>
+	<p>Kattintson a jobb egérgombbal a kijelölt kulcsra, majd válassza a <guiseq><gui>Tulajdonságok</gui><gui>Részletek</gui></guiseq> menüpontot.</p>
+      </item>
+      <item>
+	<p>Ha nem látható, akkor a kulcs tulajdonságai között bontsa ki a <gui>Részkulcsok</gui> lapot.</p>
+      </item>
+      <item>
+	<p>Egy új részkulcs hozzáadásához kattintson a <gui style="button">Hozzáadás</gui> gombra.</p>
+      </item>
+      <item>
+	<p>Határozza meg a kulcs megfelelő tulajdonságait a <gui>Kulcstípus</gui>, a <gui>Kulcshossz</gui> és a <gui>Lejárati idő</gui> segítségével, majd kattintson az <gui style="button">OK</gui> gombra.</p>
+      </item>
+  </steps>
+
+  <note style="tip">
+    <p>Győződjön meg arról, hogy a részkulcs a mesterkulcs előtt jár le, mivel a részkulcsok használhatatlanok, ha a mesterkulcs már lejárt.</p>
+  </note>
+
+
+</page>

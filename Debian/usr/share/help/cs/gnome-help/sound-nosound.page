@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="sound-nosound" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="sound-broken"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Zkontrolujte, jestli zvuk není ztišený, kabel je správně zastrčený a zvuková karta detekovaná.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Neslyším z počítače žádný zvuk</title>
+
+  <p>Když z počítače, například při přehrávání hudby, neslyšíte žádný zvuk, zkuste si projít následující tipy k řešení problému.</p>
+
+<section id="mute">
+  <title>Ujistěte se, že zvuk není ztišený</title>
+
+  <p>Otevřete <gui xref="shell-introduction#yourname">systémovou nabídku</gui> a ujistěte se, že zvuk není ztišený nebo nastavený na příliš nízkou hlasitost.</p>
+
+  <p>Některé notebooky mají na ztišení speciální vypínač nebo klávesy na klávesnici – zkuste je použít, jestli se ztišení nezruší.</p>
+
+  <p>Měli byste také zkontrolovat, jestli nemáte zvuk ztišený v aplikaci, kterou používáte k přehrávání (například přehrávač hudby nebo filmů). Aplikace mohou mít tlačítka pro ztišení a ovládání hlasitosti přímo v hlavním okně, takže zkontrolujte i tyto.</p>
+
+  <p>Můžete také zkontrolovat kartu <gui>Aplikace</gui> v panelu <gui>Zvuk</gui>:</p>
+  <steps>
+    <item>
+    <p>Z přehledu <gui>Činnosti</gui> otevřete <app>Nastavení</app>.</p>
+    </item>
+    <item>
+      <p>Klikněte na <gui>Zvuk</gui>.</p>
+    </item>
+    <item>
+      <p>Přejděte na kartu <gui>Aplikace</gui> a zkontrolujte, že vaše aplikace není ztišená.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="speakers">
+  <title>Ujistěte se, že jsou reproduktory zapnuté a správně připojené</title>
+  <p>V případě, kdy má počítač externí reproduktory, zkontrolujte, jestli jsou zapnuté a mají vytaženou hlasitost. Ujistěte se, že kabel od reproduktoru je pořádně zastrčený do zvukové zdířky „výstup“ na počítači. Zdířka má obvykle bledě zelenou barvu.</p>
+
+  <p>Některé zvukové karty umí přepínat, která zdířka se má použít pro výstup (např. do reproduktorů), a která pro vstup (např. z mikrofonu). Výstupní zdířky se tak mohou lišit při běhu pod Linuxem, Windows nebo Mac OS. Zkuste připojit kabel reproduktorů do jiné zvukové zdířky na počítači, abyste viděli, jestli nebude fungovat.</p>
+
+ <p>Poslední věcí, která se dá zkontrolovat, je, jestli je zvukový kabel pořádně zapojený na zadní straně reproduktorů. Také některé reproduktory mají více vstupů.</p>
+</section>
+
+<section id="device">
+  <title>Zkontrolujte, že je vybráno správné zvukové zařízení</title>
+
+  <p>Některé počítače mají nainstalováno více „zvukových zařízení“. Některé jsou schopné vydávat zvuk a jiné ne, takže zkontrolujte, jestli máte vybráno správné. Můžete to provést stylem pokus – omyl.</p>
+
+  <steps>
+    <item>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Zvuk</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknutím na <gui>Zvuk</gui> otevřete příslušný panel.</p>
+    </item>
+    <item>
+      <p>Na kartě <gui>Výstup</gui> změňte nastavení <gui>Profilu</gui> pro vybrané zařízení a zkuste přehrát zvuk, abyste viděli, jestli to funguje. Možná budete muset projít celý seznam a zkusit všechny profily.</p>
+
+      <p>Pokud to nefunguje, můžete zkusit udělat do stejné s jiným zařízením v seznamu.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="hardware-detected">
+
+ <title>Zkontrolujte, že zvuková karta byla správně nalezena</title>
+
+  <p>Může se stát, že počítač správně nedetekuje přítomnost zvukové karty, protože nejsou nainstalovány ovladače pro tuto kartu. V takovém případě budete možná muset ovladače nainstalovat ručně. Jak, to záleží na kartě, kterou máte.</p>
+
+  <p>Spusťte v terminálu příkaz <cmd>lspci</cmd>, abyste zjistili, jakou máte zvukovou kartu:</p>
+  <steps>
+    <item>
+      <p>Jděte do přehledu <gui>Činnosti</gui> a otevřete <app>Terminál</app>.</p>
+    </item>
+    <item>
+      <p>Spusťte jako <link xref="user-admin-explain">superuživatel</link> příkaz <cmd>lspci</cmd>, tzn. buď napsat <cmd>sudo lspci</cmd> a zadat heslo, nebo napsat <cmd>su</cmd>, zadat heslo uživatele <em>root</em> (správce) a pak napsat <cmd>lspci</cmd>.</p>
+    </item>
+    <item>
+      <p>Podívejte se, jestli je v seznamu uveden <em>audio controller</em> nebo <em>audio device</em>: pokud ano, měli byste vidět výrobce a modelové označení zvukové karty. Navíc si pomocí <cmd>lspci -v</cmd> může vypsat podrobnější informace.</p>
+    </item>
+  </steps>
+
+  <p>Možná se vám zadaří najít a nainstalovat ovladače pro svoji grafickou kartu. Nejlepší je dotázat se na fóru podpory (nebo jiném místě) své linuxové distribuce ohledné instrukcí.</p>
+
+  <p>Pokud nemůžete pro svoji zvukovou kartu sehnat ovladač, možná by stálo za úvahu pořídit novou. Pořídit lze jak karty, které se namontují dovnitř počítače, tak externí zvukové karty do USB.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="fr">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Navigation sur le Web</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">Un tutoriel pour naviguer sur la toile</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonor Palazzo</mal:name>
+      <mal:email>leonor.palazzo@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jean-Baptiste Holcroft</mal:name>
+      <mal:email>jean-baptiste@holcroft.fr</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Navigation sur le Web</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>Cliquez sur le menu <gui>Applications</gui> dans le coin supérieur gauche de l'écran.</p></item>
+      <item><p>Depuis le menu, sélectionnez <guiseq><gui>Internet</gui><gui>Firefox</gui> </guiseq>.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>Déplacez le pointeur de votre souris vers le coin supérieur gauche de l'écran pour afficher la vue d'ensemble des <gui>Activités</gui>.</p></item>
+      <item><p>Cliquez sur l'icône du navigateur <app>Firefox</app> située dans la barre à gauche de l'écran.</p></item>
+    </steps>
+
+    <note><p>Vous pouvez aussi lancer le navigateur <app>Firefox</app> en <link xref="use-system-search">saisissant</link> son nom dans la vue d'ensemble des <gui>Activités</gui>.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>Déplacez le pointeur de votre souris vers le coin supérieur gauche de l'écran pour afficher la vue d'ensemble des <gui>Activités</gui>.</p></item>
+      <item><p>Cliquez sur l'icône du navigateur <app>Web</app> située dans la barre à gauche de l'écran.</p></item>
+    </steps>
+
+    <note><p>Vous pouvez aussi lancer le navigateur <app>Web</app> en <link xref="use-system-search">saisissant</link> <em>web</em> dans la vue d'ensemble des <gui>Activités</gui>.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>Cliquez dans le champ de saisie du navigateur et commencez à saisir l'adresse du site Web que vous souhaitez visiter.</p></item>
+      <item><p>La saisie d'une adresse Web démarre une recherche dans l'historique du navigateur et dans les marque-pages. Vous n'avez donc pas besoin de mémoriser l'adresse exacte.</p>
+        <p>Si le site Web voulu se trouve dans l'historique, il s'affiche en bas du champ d'adresse avec des propositions dans une liste déroulante.</p></item>
+      <item><p>Déplacez-vous dans la liste à l'aide des touches fléchées pour choisir l'adresse désirée.</p>
+      </item>
+      <item><p>Appuyez ensuite sur <key>Entrée</key> pour vous y rendre.</p>
+      </item>
+    </steps>
+
+</page>

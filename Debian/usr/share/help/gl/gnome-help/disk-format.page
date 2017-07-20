@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="gl">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Proxecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Quitar todos os ficheiros e cartafoles dunha unidade de disco duro externo ou memoria flash USB formateándoa.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Limpar todo nun disco extraíbel</title>
+
+  <p>Se ten un disco extraíbel, como unha memoria USB ou un disco duro externo, é posíbel que queira eliminar por completo todos os ficheiros que ten aí. Pode facer isto <em>formateando</em> o disco; isto elimina todos os ficheiros no disco ou déixao baleiro.</p>
+
+<steps>
+  <title>Formatar un disco extraíbel</title>
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to wipe from the list of storage devices on the
+    left.</p>
+
+    <note style="warning">
+      <p>Asegúrese de que seleccionou o disco correcto. Se elixe o disco equivocado, eliminaranse todos os ficheiros no outro disco.</p>
+    </note>
+  </item>
+  <item>
+    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
+    menu button. Then click <gui>Format…</gui>.</p>
+  </item>
+  <item>
+    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
+    disk.</p>
+   <p>Se quere usar o disco en computadores Windows ou Mac OS así como en GNU/Linux, seleccione <gui>FAT</gui>. Se só quere usalo con Windows, <gui>NTFS</gui> pode ser a mellor opción. Mostrarase unha pequena descrición dos <gui>tipos de sistema de ficheiro</gui> como unha etiqueta.</p>
+  </item>
+  <item>
+    <p>Give the disk a name and click <gui>Format…</gui> to continue and show a
+    confirmation window. Check the details carefully, and click
+    <gui>Format</gui> to wipe the disk.</p>
+  </item>
+  <item>
+    <p>Once the formatting has finished, click the eject icon to safely remove
+    the disk. It should now be blank and ready to use again.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Formatar un disco non eliminará de forma segura os seus ficheiros</title>
+  <p>Formatar un disco non é unha maneira completamente segura de limpar todos os seus datos. Un disco formatado parecerá que non contén ficheiros, pero é posíbel obter os ficheiros cun programa especial de recuperación. Se precisa eliminar os ficheiros con seguranza, deberá usar unha ferramenta de liña de ordes como <app>shred</app>.</p>
+</note>
+
+</page>

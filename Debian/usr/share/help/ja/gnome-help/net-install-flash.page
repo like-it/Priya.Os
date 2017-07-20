@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-install-flash" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="net-browser"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>YouTube など、動画やインタラクティブなページを提供するウェブサイトを表示するには、Flash のインストールが必要になる場合があります。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Flash プラグインのインストール</title>
+
+  <p><app>Flash</app> は、ウェブブラウザーの<em>プラグイン</em>で、一部のウェブサイトの動画を試聴したり、インタラクティブなページを操作したりできるようになります。Flash  がなければ表示できないウェブサイトがあります。</p>
+
+  <p>Flash が必要になるページを閲覧したときに Flash がインストールされていない場合、おそらくその旨のメッセージが表示されます。Flash は、ほとんどのウェブブラウザー向けに無料で (ただしオープンソースではありせん) ダウンロードできます。たいていの Linux ディストリビューションでは、そのソフトウェアインストーラー (パッケージマネージャー) 経由で Flash をインストールできます。</p>
+
+  <steps>
+    <title>パッケージマネージャーからインストールできる場合の Flash の利用手順は、次のとおりです。</title>
+    <item>
+      <p>パッケージマネージャーを起動し、<input>flash</input> で検索します。</p>
+    </item>
+    <item>
+      <p><gui>Adobe Flash plug-in</gui> や <gui>Adobe Flash Player</gui> など類似のものを探し、クリックしてインストールします。</p>
+    </item>
+    <item>
+      <p>ウェブブラウザーのウィンドウを開いている場合は、一度ウィンドウを閉じて開き直します。ウェブブラウザーを開き直すと、Flash がインストールされたことが検出され、Flash を使用するウェブサイトを閲覧できるようになります。</p>
+    </item>
+  </steps>
+
+  <steps>
+    <title>パッケージマネージャーからインストールできない場合の Flash の利用手順は、次のとおりです。</title>
+    <item>
+      <p><link href="http://get.adobe.com/flashplayer">Flash Player のダウンロードサイト</link> にアクセスします。お使いのブラウザーとオペレーティングシステムの種類が自動的に検出されます。</p>
+    </item>
+    <item>
+      <p><gui>ダウンロードするバージョンを選択してください</gui>と書かれた場所をクリックし、お使いの Linux ディストリビューションに合ったもの選択します。どれを使えばよいかわからない場合は、<file>.tar.gz</file> を選択してください。</p>
+    </item>
+    <item>
+      <p>お使いのウェブブラウザー用のインストール方法については、<link href="http://kb2.adobe.com/cps/153/tn_15380.html">Flash のインストール手順を</link>参照してください。</p>
+    </item>
+  </steps>
+
+<section id="alternatives">
+  <title>Flash のオープンソースによる代替実装</title>
+
+  <p>ほんのわずかですが、Flash のフリーでオープンソースの代替実装が提供されています。これらは、いくつかの点 (たとえば、サウンド再生のハンドリング) においては、Flash プラグインよりも優秀な傾向がありますが、それ以外の点 (たとえば、複雑な Flash ページによっては表示できないなど) では、Flash プラグインよりも劣ります。</p>
+
+  <p>Flash Player に満足できなかったり、可能なかぎりオープンソースソフトウェアを使用したい場合は、これらを試してみるとよいでしょう。選択肢としては次のものがあります。</p>
+
+  <list style="compact">
+    <item>
+      <p>LightSpark</p>
+    </item>
+    <item>
+      <p>Gnash</p>
+    </item>
+  </list>
+
+</section>
+
+</page>

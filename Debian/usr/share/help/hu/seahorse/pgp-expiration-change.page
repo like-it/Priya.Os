@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-expiration-change" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision pkgversion="3.9" version="0.1" date="2013-07-22" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Kulcsai lejárati idejének előbbre hozatala vagy elhalasztása.</desc>
+  </info>
+
+  <title>Kulcsai lejárati idejének megváltoztatása</title>
+
+  <p>Ha egy PGP-kulcs érvényességét veszítette, de továbbra is szeretné használni, akkor megváltoztathatja a lejárati határidőt. Ezt a határidőt úgy is megváltoztathatja, hogy a kulcs hamarabb lejárjon, mint az eredetileg be lett állítva.</p>
+
+  <steps>
+    <title>PGP-kulcs lejárati idejének megváltoztatásához:</title>
+    <item>
+      <p>Válassza ki a PGP-kulcsot a listából.</p>
+    </item>
+    <item>
+      <p>Kattintson a jobb egérgombbal a kijelölt kulcsra, és válassza ki a <gui>Tulajdonságok</gui> menüpontot.</p>
+    </item>
+    <item>
+      <p>A megjelenő ablakban válassza a <gui>Részletek</gui> lapot.</p>
+    </item>
+    <item>
+      <list>
+        <item>
+	  <p>A fő kulcs lejárati idejének megváltoztatásához kattintson a kis naptárt ábrázoló gombra a <gui>Lejár</gui> bejegyzés mellett, az ablak jobb oldalán. Ezt követően a naptár segítségével kiválaszthatja az új lejárati határidőt.</p>
+        </item>
+        <item>
+	  <p>Egy <link xref="pgp-subkeys">részkulcs</link> lejárati idejének megváltoztatásához bontsa ki a <gui>Részkulcsok</gui> panelt, majd válassza ki a listából a kívánt részkulcsot. Kattintson a <gui style="button">Lejárat</gui> gombra a panel bal oldalán, és határozza meg az új lejárati időt.</p>
+	</item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="important">
+    <p>Ha egy közzétett kulcs lejárati idejét megváltoztatja, akkor a változtatások végrehajtása után a kulcsot <link xref="pgp-sync">szinkronizálnia</link> kell a kulcskiszolgálóval.</p>
+  </note>
+
+</page>

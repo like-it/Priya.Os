@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-connect" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="net-wireless" group="#first"/>
+    <link type="seealso" xref="net-wireless-troubleshooting"/>
+    <link type="seealso" xref="net-wireless-disconnecting"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Nå internet - trådlöst.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Anslut till ett trådlöst nätverk</title>
+
+<p>Om du har en dator med trådlöst nätverk kan du ansluta till ett trådlöst nätverk som är inom räckhåll för att få internetåtkomst, titta på delade filer på nätverket, och så vidare.</p>
+
+<steps>
+  <item>
+    <p>Öppna <gui xref="shell-introduction#yourname">systemmenyn</gui> på högersidan av systemraden.</p>
+  </item>
+  <item>
+    <p>Välj <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/> Trådlöst nätverk inte anslutet</gui>. Då expanderas delen om trådlösa nätverk av menyn.</p>
+  </item>
+  <item>
+    <p>Klicka på <gui>Välj nätverk</gui>.</p>
+  </item>
+  <item>
+    <p>Klicka på namnet på nätverket som du vill använda, klicka sedan <gui>Anslut</gui>.</p>
+    <p>Om namnet på nätverket inte finns i listan, prova att klicka på <gui>Mer</gui> för att se om nätverket finns längre ner på listan. Om du fortfarande inte ser nätverket, kan du vara utom räckhåll för nätverket eller så är nätverket <link xref="net-wireless-hidden">dolt</link>.</p>
+  </item>
+  <item>
+    <p>Om nätverket är skyddat av ett lösenord (<link xref="net-wireless-wepwpa">krypteringsnyckel</link>), mata in lösenordet när du blir tillfrågad och klicka på <gui>Anslut</gui>.</p>
+    <p>Om du inte känner till nyckeln, så kan den finnas på undersidan av den trådlösa routern eller basstationen, eller i dess instruktionsmanual eller så kan du vara tvungen att fråga personen som administrerar det trådlösa nätverket.</p>
+  </item>
+  <item>
+    <p>Nätverksikonen kommer att ändra utseende under tiden som datorn försökt ansluta till nätverket.</p>
+  </item>
+  <item>
+    <p>Om anslutningen lyckas, kommer ikonen att ändras till en punkt med flera böjda streck ovanför sig (<media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/>). Fler streck indikerar en starkare anslutning till nätverket. Färre streck innebär att anslutningen är svagare och kanske inte är så tillförlitlig.</p>
+  </item>
+</steps>
+
+  <p>Om anslutningen misslyckad kan du bli tillfrågad om lösenordet igen eller så berättar den bara för dig att anslutningen har kopplats ifrån. Det finns ett antal olika saker som kan ha orsakat detta. Du kan till exempel ha matat in fel lösenord, den trådlösa signalen kan vara alltför svag, eller så har din dators trådlösa kort problem. Se <link xref="net-wireless-troubleshooting"/> för vidare hjälp.</p>
+
+  <p>En starkare anslutning till ett trådlöst nätverk betyder inte nödvändigtvis att du har en snabbare internetanslutning eller att du kommer att få snabbare hämtningstider. Den trådlösa anslutningen ansluter din dator till <em>enheten som tillhandahåller internetanslutning</em> (som en router eller ett modem), men de två anslutningarna är olika, och kan därför köra på olika hastigheter.</p>
+
+</page>

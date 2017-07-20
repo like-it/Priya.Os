@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="misc-key-fingerprint" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="concepts"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Az ujjlenyomat minden egyes kulcs egyedi azonosítója, amit gyakran a kulcs tulajdonosának az ellenőrzésére szoktak használni</desc>
+  </info>
+
+  <title>Mit jelent a kulcs ujjlenyomata?</title>
+
+  <p>Egy kulcs ujjlenyomata a kulcs azonosításához használt betűk és számok egyedi sorozata. Az emberek ujjlenyomatához hasonlóan nem létezik két azonos ujjlenyomattal rendelkező kulcs. Egy bizonyos kulcs azonosításának legjobb módszere az ujjlenyomat ellenőrzése.</p>
+
+  <p>Egy kulcs többféle tulajdonsággal rendelkezik, mint pl. a kulcs tulajdonosának neve és e-mail címe, a kulcs típusa, vagy a kulcs lejárati ideje. Ha egy nyilvános kulcs keresése több, azonos tulajdonságokkal rendelkező kulcsot eredményez, az Ön által keresett kulcsot kizárólag az ujjlenyomatok összehasonlításával lehet azonosítani.</p>
+
+  <p>Egy távoli gépre <link xref="index#ssh-keys">SSH</link> segítségével való bejelentkezés során is a kulcs ujjlenyomata kerül ellenőrzésre. Egy <link xref="index#pgp-keys">PGP</link> kulcs aláírásakor mindig ellenőriznie kell a kulcs ujjlenyomatát és a kulcs tulajdonosának az azonosságát annak érdekében, hogy a helyes kulcsot írja alá.</p>
+
+<section id="fingerprint-ui">
+  <title>Ujjlenyomatok a <app>Jelszavak és kulcsok</app> alkalmazásban.</title>
+
+    <p>A <app>Jelszavak és kulcsok</app> alkalmazásban egy kulcs ujjlenyomatát az adott kulcs tulajdonságai között tekintheti meg.</p>
+
+    <steps>
+      <title>Egy kulcs ujjlenyomatának ellenőrzéséhez:</title>
+        <item>
+	  <p>Válassza ki a <gui>GnuPG kulcsok</gui> bejegyzést a bal oldali sávból.</p>
+        </item>
+        <item>
+          <p>Válassza ki a PGP-kulcsot a listából.</p>
+        </item>
+        <item>
+          <p>Kattintson a jobb egérgombbal a kulcsra, majd válassza a <gui style="menuitem">Tulajdonságok</gui> menüpontot.</p>
+	</item>
+        <item>
+          <p>A megjelenő ablakban válassza a <gui>Részletek</gui> lapot.</p>
+        </item>
+        <item>
+          <p>A kulcs ujjlenyomatát a bal oldalon tekintheti meg.</p>
+        </item>
+    </steps>
+
+  <!-- stefw: Suggest documenting that the key fingerprint is the
+  only way to uniquely tell the difference between two keys.
+
+  Two keys may have the same name and description. The label or name
+  is no guarantee that the key represents the person described in the label.
+
+  The way to guarantee that you have a given key is to compare the
+  fingerprint with the person who owns the key.
+
+  For SSH keys this is done when you initially connect to a server.
+
+  For PGP keys this is usually done through the web of trust. Where someone
+  you know signs a key, and vouches that the key with a given fingerprint
+  is owned by the person noted on the label.
+  -->
+</section>
+
+</page>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-notspecifiededid" xml:lang="te">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="guide" xref="color-gettingprofiles"/>
+    <link type="guide" xref="color-why-calibrate"/>
+    <desc>అప్రమేయ మానిటర్ ప్రొఫైల్స్ కాలిబ్రేషన్ తేదీ కలిగిలేవు.</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Praveen Illa</mal:name>
+      <mal:email>mail2ipn@gmail.com</mal:email>
+      <mal:years>2011, 2014. </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>కృష్ణబాబు క్రొత్తపల్లి</mal:name>
+      <mal:email>kkrothap@redhat.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>అప్రమేయ మానిటర్ ప్రొఫైల్స్ కాలిబ్రేషన్ కాలపరిమితి ఎందుకు కలిగిలేవు?</title>
+  <p>
+    The default color profile used for each monitor is generated
+    automatically based on the display 
+    <link href="https://en.wikipedia.org/wiki/Extended_Display_Identification_Data">
+    EDID</link> which is stored in a memory chip inside the monitor.
+    The EDID only gives us a snapshot of the available colors the monitor
+    was capable of displaying when it was manufactured, and does not
+    contain much other information for color correction.
+  </p>
+
+  <figure>
+    <desc>EDID నవీకరించలేని కారణంగా, అది గడువుతీరి తేదీ కలిగిలేదు.</desc>
+    <media type="image" mime="image/png" src="figures/color-profile-default.png"/>
+  </figure>
+
+  <note style="tip">
+    <p>మానిటర్ అమ్మకందారు నుండి ప్రొఫైల్ పొందుట లేదా మీ అంతటమీరే ప్రొఫైల్ సృష్టించుట మరింత ఖచ్చితమైన రంగు దిద్దుబాటుకు దారితీయును.</p>
+  </note>
+
+</page>

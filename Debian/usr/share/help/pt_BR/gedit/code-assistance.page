@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-code-assistance" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>  
+    <revision version="3.4" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Destaque de erros em tempo real para linguagens suportadas.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Assistência de código</title>
+  
+  <!-- NOTE: This is draft documentation. It is not yet ready for translation. 
+  Thank you! -->
+
+  <p>O plugin <app>gedit-code-assistance</app> provê destaque de erros em tempo real para C, C++ e Objective-C. Para habilitar esse plug-in, selecione <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferências</gui><gui>Plug-ins</gui><gui>Assistência de código</gui></guiseq>.</p>
+  
+  <!--
+  <section id="code-assistance-features">
+    <title>Code assistance features</title>
+    <list>
+      <item><p>Feature #1</p></item>
+      <item><p>Feature #2</p></item>
+      <item><p>Feature #3</p></item>
+      <item><p>Feature #4</p></item>
+    </list>
+  </section>
+  -->
+  
+<section id="how-gedit-code-assistance-works">
+  <title>Como a assistência de código funciona</title>
+  
+  <p>O plug-in conta atualmente com informações do makefile para deduzir as regras de destaque de erros de Clang. Ele examina as regras do <code its:translate="no">make</code>  e determina quais alvos dependem do arquivo que está sendo analisado. O plug-in então extrai as bandeiras do compilador através da simulação de uma execução desses alvos.</p>
+
+  <p>Isso não é totalmente à prova de erros, é claro. No futuro, o plug-in vai permitir que você especifique manualmente as bandeiras de compilação.</p>
+
+</section>
+
+</page>

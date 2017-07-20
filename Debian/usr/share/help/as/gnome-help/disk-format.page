@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="as">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME তথ্যচিত্ৰ প্ৰকল্প</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>এটা বহিৰ্তম হাৰ্ড ডিস্ক অথবা USB ফ্লেশ্ব ড্ৰাইভ ফৰমেট কৰি সকলো ফাইল আৰু ফোল্ডাৰ আতৰাওক।</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>এটা আতৰাব পৰা ডিস্কৰ পৰা সকলো মচি পেলাওক</title>
+
+  <p>যদি আপোনাৰ এটা আতৰাব পৰা ডিস্ক আছে, যেনে এটা USB মেমৰি স্টিক অথবা এটা বহিৰ্তম হাৰ্ড ডিস্ক, আপুনি কেতিয়া ইয়াৰ সকলো ফাইল আৰু ফোল্ডাৰ আতৰাব বিচাৰিব পাৰে। আপুনি এনেকুৱা ডিস্কক <em>ফৰমেট</em> কৰি কৰিব পাৰিব - ই ডিস্কৰ সকলো ফাইল মচি পেলায় আৰু ডিস্কক খালি কৰি দিয়ে।</p>
+
+<steps>
+  <title>এটা আতৰাব পৰা ডিস্ক ফৰমেট কৰক</title>
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to wipe from the list of storage devices on the
+    left.</p>
+
+    <note style="warning">
+      <p>আপুনি সঠিক ডিস্ক নিৰ্বাচন কৰিছে নে সুনিশ্চিত কৰক! যদি আপুনি ভুল ডিস্ক নিৰ্বাচন কৰে, অন্য ডিস্কৰ সকলো ফাইল মচি যাব!</p>
+    </note>
+  </item>
+  <item>
+    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
+    menu button. Then click <gui>Format…</gui>.</p>
+  </item>
+  <item>
+    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
+    disk.</p>
+   <p>যদি আপুনি ডিস্কক Linux কমপিউটৰাসমূহৰ অতিৰিক্তে Windows আৰু Mac OS কমপিউটাৰসমূহত ব্যৱহাৰ কৰে, <gui>FAT</gui> বাছিব। যদি আপুনি ইয়াক কেৱল Windows ত ব্যৱহাৰ কৰে, <gui>NTFS</gui> অধিক ভাল বিকল্প হব। <gui>ফাইল চিস্টেম ধৰণ</gui> ৰ এটা সমু বিৱৰণ এটা লেবেল ৰূপে দেখুৱা হব।</p>
+  </item>
+  <item>
+    <p>Give the disk a name and click <gui>Format…</gui> to continue and show a
+    confirmation window. Check the details carefully, and click
+    <gui>Format</gui> to wipe the disk.</p>
+  </item>
+  <item>
+    <p>Once the formatting has finished, click the eject icon to safely remove
+    the disk. It should now be blank and ready to use again.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>এটা ডিস্ক ফৰমেট কৰিলে আপোনাৰ ফাইলসমূহ সুৰক্ষিতভাৱে মচ নাখায়</title>
+  <p>Formatting a disk is not a completely secure way of wiping all of its
+ data. A formatted disk will not appear to have files on it, but it is
+ possible that special recovery software could retrieve the files. If you
+ need to securely delete the files, you will need to use a command-line
+ utility, such as <app>shred</app>.</p>
+</note>
+
+</page>

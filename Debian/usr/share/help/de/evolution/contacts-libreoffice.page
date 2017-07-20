@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="contacts-libreoffice" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#data-migration-and-sync"/>
+
+    <revision pkgversion="3.1.5" version="0.2" date="2012-02-18" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>So verwenden Sie Daten aus Adressbüchern von <app>Evolution</app> in LibreOffice-Dokumenten.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Kontakte in LibreOffice</title>
+
+  <p>Sie können Ihre <app>Evolution</app>-Adressbücher in LibreOffice als Datenquelle nutzen. Die folgenden Schritte beziehen sich auf LibreOffice 3.3.3.</p>
+
+  <steps>
+    <item>
+      <p>Klicken Sie in der Menüleiste auf <guiseq><gui>Bearbeiten</gui><gui>Exchange-Datenbank…</gui></guiseq>. Daraufhin öffnet sich der Dialog <gui>Exchange-Datenbank</gui>.</p>
+    </item>
+    <item>
+      <p>In der rechten Leiste ist unter <gui>Verfügbare Datenbasis</gui> <gui>EvolutionLocal</gui> als Quelle verfügbar. Klicken Sie auf das kleine Dreieck, um die Liste Ihrer <app>Evolution</app>-Adressbücher einzusehen.</p>
+    </item>
+    <item>
+      <p>Wählen Sie ein Adressbuch und klicken Sie auf <gui style="button">Definieren</gui>.</p>
+    </item>
+    <item>
+      <p>Falls es dort nicht schon aufgeführt ist, klicken Sie auf <gui style="button">Durchsuchen …</gui>. Daraufhin öffnet sich ein Dateiwähler.</p>
+    </item>
+    <item>
+      <p>Weil <app>Evolution</app> seine Daten in einem versteckten Ordner speichert, drücken Sie <keyseq><key>Strg</key><key>L</key></keyseq>, um zur Ortsleiste zu gelangen.</p>
+    </item>
+    <item>
+      <p>Suchen Sie nach <file>~/.local/share/evolution/addressbook/system/addressbook.db</file> und klicken Sie auf <gui style="button">Öffnen</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Damit wird das <app>Evolution</app>-Adressbuch die vorausgewählte Datenquelle für LibreOffice. Sie können nun ein Feld wählen, um es in ein LibreOffice-Dokument einzufügen mit <guiseq><gui>Einfügen</gui><gui>Felder</gui><gui>Andere</gui></guiseq>.</p>
+
+</page>

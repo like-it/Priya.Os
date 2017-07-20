@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>ஃபில் புல்</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>மைக்கேல் ஹில்</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>You may have to enter network settings if they don't get assigned
+    automatically.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>பிணைய அமைவுகளை கைமுறையாக அமைத்தல்</title>
+
+  <p>உங்கள் பிணையம் உங்கள் கணினிக்கு பிணைய அமைவுகளை தானாகவே அமைக்காவிட்டால், நீங்கள் அமைவுகளை கைமுறையாக உள்ளிட வேண்டி இருக்கும். உங்களுக்கு பயன்படுத்த வேண்டிய சரியான அமைவுகள் முன்பே தெரியும் என்று கருத்தில் கொண்டு இந்த தலைப்பு பின்வரும் விஷயங்களை விவரிக்கிறது. இல்லை என்றால், நீங்கள் உங்கள் பிணைய நிர்வாகியைக் கேட்கவும் அல்லது உங்கள் ரௌட்டர் அல்லது பிணைய சுவிட்ச் அமைவுகளைப் பார்க்கவும்.</p>
+
+  <steps>
+    <title>உங்கள் பிணைய அமைவுகளை கைமுறையாக அமைக்க:</title>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Network</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>In the left pane, select the network connection that you want to set
+      up manually. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
+      <p>உங்கள் வயர்லெஸ் கார்டு இயக்கப்பட்டுள்ளதா என்று அல்லது பிணைய கேபிள் இணைக்கப்பட்டுள்ளதா என உறுதிப்படுத்தவும்.</p>
+    </item>
+    <item>
+      <p>Click <gui>IPv4</gui> and change <gui>Addresses</gui> to
+      <gui>Manual</gui>.</p>
+    </item>
+    <item>
+      <p>Type in the <gui>Address</gui> and <gui>Gateway</gui>, as well as the
+      appropriate <gui>Netmask</gui>.</p>
+      <p>These must be <em>IP addresses</em>; that is, they must be four
+      numbers separated by periods (e.g. 123.45.6.78).</p>
+    </item>
+    <item>
+      <p>In the <gui>DNS</gui> section, switch <gui>Automatic</gui> to
+      <gui>OFF</gui>. Enter the IP address of a DNS server you want to use.
+      Enter additional DNS server addresses using the <gui>+</gui> button.</p>
+    </item>
+    <item>
+      <p>In the <gui>Routes</gui> section, switch <gui>Automatic</gui> to
+      <gui>OFF</gui>. Enter the <gui>Address</gui>, <gui>Netmask</gui>,
+      <gui>Gateway</gui> and <gui>Metric</gui> for a route you want to use.
+      Enter additional routes using the <gui>+</gui> button.</p>
+    </item>
+    <item>
+      <p>Click <gui>Apply</gui>. If you are not connected to the network, click
+      the system status area on the top bar and connect. Test the network
+      settings by trying to visit a website or look at shared files on the
+      network, for example.</p>
+    </item>
+  </steps>
+
+</page>

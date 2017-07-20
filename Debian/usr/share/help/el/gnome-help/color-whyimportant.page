@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whyimportant" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="color"/>
+    <desc>Η διαχείριση χρώματος είναι σημαντική για σχεδιαστές, φωτογράφους και καλλιτέχνες.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Γιατί είναι σημαντική η διαχείριση του χρώματος;</title>
+  <p>Η διαχείριση χρώματος είναι η διαδικασία λήψης ενός χρώματος χρησιμοποιώντας μια συσκευή εισόδου, η εμφάνιση της σε μια οθόνη και η εκτύπωσή της ενώ διαχειρίζεστε τα ακριβή χρώματα και την περιοχή των χρωμάτων σε κάθε μέσο.</p>
+
+  <p>Η ανάγκη για χρωματική διαχείριση εξηγείται προφανώς άριστα με μια φωτογραφία ενός πουλιού σε πια παγωμένη ημέρα του χειμώνα.</p>
+
+  <figure>
+    <desc>Ένα πουλί σε έναν παγωμένο τοίχο όπως φαίνεται στην κάμερα εύρεσης προβολής</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-camera.png"/>
+  </figure>
+
+  <p>Εμφανίζει τυπικά υπερκορεσμένο το γαλάζιο κανάλι, κάνοντας τις εικόνες να δείχνουν κρύες.</p>
+
+  <figure>
+    <desc>Αυτό βλέπει ο χρήστης σε μια τυπική οθόνη επαγγελματικού φορητού υπολογιστή</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-display.png"/>
+  </figure>
+
+  <p>Σημειώστε πώς το λευκό δεν είναι 'λευκό χαρτιού' και το μαύρο του ματιού είναι τώρα ένα καφέ λάσπης.</p>
+
+  <figure>
+    <desc>Αυτό βλέπει ο χρήστης όταν τυπώσει σε έναν τυπικό εκτυπωτή ψεκασμού</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-printer.png"/>
+  </figure>
+
+  <p>Το βασικό πρόβλημα που έχουμε εδώ είναι ότι κάθε συσκευή μπορεί να χειριστεί μια διαφορετική περιοχή χρωμάτων. Έτσι ενώ μπορείτε να πάρετε μια φωτογραφία ηλεκτρικού γαλάζιου, οι περισσότεροι εκτυπωτές δεν πρόκειται να μπορέσουν να το αναπαράγουν.</p>
+  <p>Οι περισσότερες συσκευές λήψης εικόνας σε RGB (κόκκινο, πράσινο, γαλάζιο) πρέπει να μετατραπούν σε CMYK (κυανό, ματζέντα, κίτρινο και μαύρο) για να εκτυπώσουν. Ένα άλλο πρόβλημα είναι ότι δεν μπορείτε να έχετε <em>λευκό</em> μελάνι και έτσι η λευκότητα μπορεί να είναι τόσο καλή όσο το χρώμα του χαρτιού.</p>
+
+  <p>Ένα άλλο πρόβλημα είναι οι μονάδες. Χωρίς ορισμό της κλίμακας στην οποία μετριέται ένα χρώμα, δεν ξέρουμε εάν το 100% κόκκινο είναι κοντά στο υπέρυθρο ή απλά το πιο βαθύ κόκκινο μελάνι στον εκτυπωτή. Αυτό που είναι 50% κόκκινο σε μια εμφάνιση είναι πιθανόν κάτι σαν 62% σε μια άλλη εμφάνιση. Είναι σαν να λέτε σε ένα άτομο ότι έχετε οδηγήσει 7 μονάδες απόστασης, χωρίς να ξέρετε εάν είναι 7 χιλιόμετρα ή 7 μέτρα.</p>
+
+  <p>Σε χρώμα, αναφερόμαστε σε μονάδες ως φάσμα. Φάσμα είναι βασικά η περιοχή των χρωμάτων που μπορούν να αναπαραχθούν. Μια συσκευή όπως μια κάμερα DSLR πρέπει να έχει ένα πολύ μεγάλο φάσμα, για να μπορεί να συλλάβει όλα τα χρώματα σε ένα ηλιοβασίλεμα, αλλά ένας προβολέας έχει ένα πολύ μικρό φάσμα και όλα τα χρώματα πρόκειται να δείχνουν "ξεθωριασμένα".</p>
+
+  <p>Σε μερικές περιπτώσεις μπορούμε να <em>διορθώσουμε</em> την έξοδο της συσκευής αλλάζοντας τα δεδομένα που στέλνουμε σε αυτή, αλλά σε άλλες περιπτώσεις όπου αυτό δεν είναι δυνατό (δεν μπορείτε να εκτυπώσετε ηλεκτρικό γαλάζιο) χρειαζόμαστε να εμφανίσουμε στον χρήστη πώς πρόκειται να φαίνεται το αποτέλεσμα.</p>
+
+  <p>Για φωτογραφίες έχει νόημα να χρησιμοποιήσετε την πλήρη τονική περιοχή μιας χρωματικής συσκευής, για να μπορεί να κάνει ομαλές αλλαγές σε χρώμα. Για άλλα γραφικά, μπορεί να θέλετε να ταιριάσετε το χρώμα ακριβώς, που είναι σημαντικό εάν προσπαθείτε να εκτυπώσετε μια προσαρμοσμένη κούπα με τον λογότυπο κόκκινου καπέλου που <em>πρέπει</em> να είναι το ακριβές κόκκινο καπέλο.</p>
+
+</page>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="backup-how" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="backup-why"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit>
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Используйте Déjà Dup (или другое приложение для резервного копирования), чтобы создать копии важных данных и предотвратить их возможную потерю.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Как создать резервную копию</title>
+
+  <p>Простейший способ создания резервной копии файлов и настроек — использовать специальное приложение, которое сделает эту работу за вас. Существует много различных приложений для резервного копирования, например, <app>Déjà Dup</app>.</p>
+
+  <p>Справка по выбранному вами приложению для резервного копирования проведёт вас через процесс настройки параметров создания резервной копии, а также расскажет, как восстановить ваши данные.</p>
+
+  <p>Альтернативный вариант — <link xref="files-copy">скопировать свои данные</link> в безопасное место, например, внешний жёсткий диск, другой компьютер в сети или USB-носитель. Ваши <link xref="backup-thinkabout">личные файлы</link> и настройки находятся в вашей домашней папке, так что вы можете скопировать их оттуда.</p>
+
+  <p>Количество данных, которые можно включить в резервную копию, ограничено вместимостью устройства хранения. Если на целевом устройстве достаточно свободного места, лучше скопировать домашнюю папку целиком со следующими исключениями:</p>
+
+<list>
+ <item><p>Файлы, резервные копии которых уже имеются где-то ещё, например, на CD, DVD или других съёмных носителях.</p></item>
+ <item><p>Files that you can recreate easily. For example, if you are a
+ programmer, you do not have to back up the files that get produced when you
+ compile your programs. Instead, just make sure that you back up the original
+ source files.</p></item>
+ <item><p>Любые файлы из папки «Корзина». Содержимое корзины можно найти в <file>~/.local/share/Trash</file>.</p></item>
+</list>
+
+</page>

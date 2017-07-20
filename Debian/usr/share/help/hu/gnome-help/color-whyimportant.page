@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whyimportant" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="color"/>
+    <desc>A színkezelés tervezők, fényképészek és művészek számára fontos.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Miért fontos a színkezelés?</title>
+  <p>A színkezelés folyamata alatt egy szín bemeneti eszközzel történő rögzítését, képernyőn való megjelenítését és kinyomtatását értjük, mialatt minden médiumon kezeljük a pontos színeket és színtartományokat.</p>
+
+  <p>A színkezelés szükségességét valószínűleg egy fényképpel lehet legjobban bemutatni.</p>
+
+  <figure>
+    <desc>Egy madár a fagyos falon a fényképezőgép keresőjében</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-camera.png"/>
+  </figure>
+
+  <p>A kijelzők általában túltelítik a kék csatornát, a képeket hideggé téve.</p>
+
+  <figure>
+    <desc>A felhasználó ezt láthatja egy átlagos noteszgép kijelzőjén</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-display.png"/>
+  </figure>
+
+  <p>Figyelje meg, hogy a fehér nem „papírfehér”, és a szem feketéje most inkább barna.</p>
+
+  <figure>
+    <desc>Ezt láthatja a felhasználó a képet tipikus tintasugaras nyomtatón kinyomtatva</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-printer.png"/>
+  </figure>
+
+  <p>Az alapvető probléma, hogy minden eszköz színek más-más tartományát képes kezelni. Így hiába tud fényképet készíteni egy „elektromos kék” árnyalatban, a legtöbb nyomtató nem lesz képes reprodukálni azt.</p>
+  <p>A legtöbb képrögzítő eszköz RGB (vörös, zöld, kék) skálán rögzít, az ilyen képet át kell alakítani CMYK (cián, magenta, sárga és fekete) skálára a nyomtatáshoz. Újabb problémát jelent, hogy nem létezik <em>fehér</em> festék, így a fehérség csak a papír színének megfelelő lehet.</p>
+
+  <p>Újabb problémát jelentenek a mértékegységek. A szín mérésére használt skála megadása nélkül nem tudhatjuk, hogy a 100% vörös közel infravöröst jelent, vagy a legmélyebb vörös festéket a nyomtatóban. Ami az egyik kijelzőn 50% vörös, a másikon 62% lehet. Ez olyan, mintha azt mondanánk, hogy 7 távolságegységet utaztunk: nem tudhatjuk, hogy ez 7 kilométer vagy 7 méter volt.</p>
+
+  <p>Színek esetén az egységeket színskálának nevezzük. A színskála alapvetően a reprodukálható színek tartománya. Egy DSLR fényképezőgéphez hasonló eszköz rendelkezhet nagyon nagy színskálával, képes lehet egy naplemente majdnem minden színének rögzítésére, de egy projektor nagyon kicsi színskálával rendelkezik, és az ezen megjelenített kép színei „kimosottnak” fognak tűnni.</p>
+
+  <p>Egyes esetekben <em>javítható</em> az eszköz kimenete az annak küldött adatok megváltoztatásával, de más esetekben ez nem lehetséges. A felhasználónak azt kell megjeleníteni, ahogyan az eredmény is ki fog nézni.</p>
+
+  <p>Fényképek esetén van értelme használni az eszköz teljes színtartományát, mert így a színeken apró változtatásokat lehet végrehajtani. Más grafikák esetén a színeket pontosan kell megfeleltetni, ami akkor fontos, ha például egy céglogóval ellátott egyedi bögrét szeretne nyomtatni – a színeknek <em>pontosan</em> a logó színeinek kell lenniük.</p>
+
+</page>

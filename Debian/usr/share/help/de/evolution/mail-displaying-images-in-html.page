@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-displaying-images-in-html" xml:lang="de">
+
+  <info>
+    <desc>Informationen über eingebettete Bilder in empfangenen HTML-Nachrichten.</desc>
+
+    <link type="guide" xref="mail-displaying-message"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2011-08-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-read.html.en#usage-mail-getnsend-get-attach-html -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Bilder in HTML-Nachrichten</title>
+
+<p>Wenn Ihnen jemand eine in HTML formatierte E-Mail schickt, die ein Bild in der Nachricht enthält (zum Beispiel die Willkommens-Nachricht in Ihrem Eingangsordner), so stellt <gui>Evolution</gui> das Bild in der Nachricht dar.</p>
+
+<section id="loading">
+<title>Bilder laden</title>
+<p>Einige Bilder sind Verweise in einer Nachricht und nicht Teil der Nachricht selbst. <gui>Evolution</gui> kann diese Bilder aus dem Internet herunterladen, tut dies aber nicht ohne Ihren Willen. Dies geschieht, da das Herunterladen von Bildern langsam sein kann, und da diese Funktion von Spammern genutzt werden kann, um zu erfahren, dass die E-Mail geöffnet und gelesen wurde, und Ihre E-Mail-Adresse existiert. Das nicht-automatische Laden von Bildern hilft Ihnen, Ihre Privatsphäre zu schützen.</p>
+
+<p>Klicken Sie zum Laden der Bilder einer Nachricht auf <guiseq><gui>Ansicht</gui><gui>Bilder laden</gui></guiseq> oder drücken Sie <keyseq><key>Strg</key><key>I</key></keyseq>.</p>
+
+<p>Um per Voreinstellung immer Bilder laden zu lassen, öffnen Sie <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui><gui>E-Mail-Einstellungen</gui><gui>HTML-Nachrichten</gui><gui>Bilder laden</gui></guiseq>.</p>
+</section>
+
+<section id="automatically-download">
+<title>Automatisch Bilder in E-Mails von bekannten Personen herunterladen</title>
+
+<p>Sie können Bilder von E-Mails Ihrer Kontakte herunterladen. Wählen Sie dazu <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui><gui>E-Mail-Einstellungen</gui><gui>HTML-Nachrichten</gui><gui>Bilder laden</gui></guiseq>. Aktivieren Sie die Option <gui>Bilder nur in Nachrichten von Kontakten laden</gui>.</p>
+
+<p>Wählen Sie danach <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui><gui>Kontakte</gui><gui>Allgemein</gui></guiseq>. Aktivieren Sie automatische Vervollständigung durch Ankreuzen des Feldes <gui>Immer Adresse des automatisch vervollständigten Kontakts anzeigen</gui>.</p>
+</section>
+
+<section id="saving">
+<title>Bilder speichern</title>
+<p>Zum Speichern eines Bildes, das in einer HTML-E-Mail eingebettet ist, klicken Sie mit der rechten Maustaste auf das Bild und wählen Sie <gui>Bild speichern …</gui>.</p>
+<!-- This is available only since version 3.1.5, see https://bugzilla.gnome.org/show_bug.cgi?id=655669 -->
+</section>
+
+</page>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="seealso" xref="net-findip"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Se si utilizza un indirizzo IP statico è più semplice fornire alcuni servizi di rete dal proprio computer.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Creare una connessione con un indirizzo IP statico</title>
+
+  <p>La maggior parte delle reti assegneranno automaticamente al computer un <link xref="net-what-is-ip-address">indirizzo IP</link> e altri dettagli appena verrà stabilita una connessione a Internet. Questi dettagli possono cambiare periodicamente, ma si potrebbe preferire avere un indirizzo IP statico per sapere sempre qual'è l'indirizzo del computer (per esempio, se si tratta di un server di file).</p> <p>Per assegnare al computer un indirizzo IP statico:</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Network</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>In the left pane, select the network connection that you want to give
+      a fixed address. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
+    </item>
+    <item>
+      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
+    </item>
+    <item>
+      <p>Enter the <em>Address</em>, <em>Netmask</em>, and <em>Gateway</em>
+      information into the appropriate boxes. How you choose these will depend
+      on your network setup; there are specific rules governing which IP
+      addresses and netmasks are valid for a given network.</p>
+    </item>
+    <item>
+      <p>Se necessario, inserire un indirizzo <em>Domain Name Server</em> nella casella <gui>Server DNS</gui>. Questo è l'indirizzo IP di un server che controlla i nomi del dominio; la maggior parte delle reti aziendali e dei provider Internet hanno server DNS dedicati.</p>
+    </item>
+    <item>
+      <p>Click <gui>Apply</gui>. The network connection should now have a fixed
+      IP address.</p>
+    </item>
+  </steps>
+
+</page>

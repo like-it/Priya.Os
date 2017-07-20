@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="clock-calendar" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="clock"/>
+    <link type="guide" xref="shell-overview#desktop"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-04" status="review"/>
+    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Gnomov projekat dokumentacije</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Prikažite vaše sastanke u oblasti kalendara na vrhu ekrana.</desc>
+  </info>
+
+ <title>Sastanci kalendara</title>
+
+  <note>
+    <p>Ovo zahteva da koristite kalendar <app>Evolucije</app> ili da imate podešen nalog na mreži koji <gui>Kalendar</gui> podržava.</p>
+    <p>Na većini distribucija <app>Evolucija</app> je već podrazumevano instalirana. Ako na vašoj nije, moraćete da je instalirate koristeći upravnika paketa vaše distribucije.</p>
+ </note>
+
+  <p>Da pogledate vaše sastanke:</p>
+  <steps>
+    <item>
+      <p>Kliknite na sat na gornjoj traci.</p>
+    </item>
+    <item>
+      <p>U kalendaru kliknite na datum za koji želite da vidite vaše sastanke.</p>
+
+    <note>
+       <p>Tačka se prikazuje ispod svakog datuma koji ima sastanak.</p>
+    </note>
+
+      <p>Postojeći sastanci biće prikazani sa leve strane kalendara. Kada dodate sastanke u kalendar <app>Evolucije</app>, isti se pojavljuju na spisku sastanaka u satu.</p>
+    </item>
+  </steps>
+
+ <if:choose>
+ <if:when test="!platform:gnome-classic">
+ <media type="image" src="figures/shell-appts.png" width="500">
+  <p>Sat, kalendar, i sastanci</p>
+ </media>
+ </if:when>
+ <if:when test="platform:gnome-classic">
+ <media type="image" src="figures/shell-appts-classic.png" width="373" height="250">
+  <p>Sat, kalendar, i sastanci</p>
+ </media>
+ </if:when>
+ </if:choose>
+
+</page>

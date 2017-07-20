@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="id">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Projek Dokumentasi GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Uji hard disk Anda apakah bermasalah untuk memastikan itu sehat.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Periksa hard disk Anda apakah bermasalah</title>
+
+<section id="disk-status">
+ <title>Memeriksa hard disk</title>
+  <p>Hard disk memiliki alat uji kesehatan bawaan bernama <app>SMART</app> (Self-Monitoring, Analysis, and Reporting Technology; Teknologi Pemantauan Mandiri, Analisis, dan Pelaporan), yang secara terus-menerus memeriksa disk tentang masalah-masalah potensial. SMART juga memperingatkan Anda bila disk akan gagal, membantu Anda menghindari kehilangan data yang penting.</p>
+
+  <p>Walaupun SMART berjalan secara otomatis, Anda juga dapat memeriksa kesehatan disk Anda dengan menjalankan aplikasi <app>Disk</app>:</p>
+
+<steps>
+ <title>Memeriksa kesehatan disk Anda memakai aplikasi Disk</title>
+
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to check from the list of storage devices on
+    the left. Information and status of the disk will be shown.</p>
+  </item>
+  <item>
+    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
+    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+  </item>
+  <item>
+    <p>See more information under <gui>SMART Attributes</gui>, or click the
+    <gui style="button">Start Self-test</gui> button to run a self-test.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>Bagaimana bila disk tak sehat?</title>
+
+  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
+  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
+  to be prepared with a <link xref="backup-why">backup</link> to prevent data
+  loss.</p>
+
+  <p>If the status says "Pre-fail", the disk is still reasonably healthy but
+ signs of wear have been detected which mean it might fail in the near future.
+ If your hard disk (or computer) is a few years old, you are likely to see
+ this message on at least some of the health checks. You should
+ <link xref="backup-how">backup your important files regularly</link> and check
+ the disk status periodically to see if it gets worse.</p>
+
+  <p>Bila itu semakin buruk, Anda mungkin ingin membawa komputer/hard disk ke seorang profesional untuk diagnosis atau perbaikan lebih lanjut.</p>
+
+</section>
+
+</page>

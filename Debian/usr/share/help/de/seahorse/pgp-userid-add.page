@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-userid-add" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="pgp-userid#add-remove"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-27" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Viele Benutzerkennungen ermöglichen, denselben Schlüssel zur Kommunikation mit verschiedenen Personen zu verwenden.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Zusätzliche Benutzerkennungen einem Schlüssel hinzufügen</title>
+
+  <p>Ein Schlüssel kann mehrere Benutzerkennungen haben. Dies ist nützlich, wenn Sie mit demselben Schlüssel mit verschiedenen Personen kommunizieren wollen und einer von diesen z.B. die E-Mail-Adresse in Ihrer Benutzerkennung nicht kennt. Diese Person könnte sich dazu entscheiden Ihren öffentlichen Schlüssel nicht zu importieren, weil er unbekannte Informationen enthält. In solchen Fällen können Sie eine neue Benutzerkennung Ihrem vorhandenen Schlüssel hinzufügen, wenn Sie keinen neuen Schlüssel mit einer anderen Benutzerkennung erstellen wollen.</p>
+
+  <steps>
+    <title>So fügen Sie eine zusätzliche Benutzerkennung hinzu:</title>
+    <item>
+      <p>Wählen Sie den Schlüsselbund <gui>GnuPG-Schlüssel</gui> aus dem linken Bereich.</p>
+    </item>
+    <item>
+      <p>Wählen Sie den <gui>privaten PGP-Schlüssel</gui> Ihrer Wahl in der Liste.</p>
+    </item>
+    <item>
+      <p>Klicken Sie mit der rechten Maustaste auf den Schlüssel und wählen Sie <guiseq><gui>Eigenschaften</gui><gui>Namen und Signaturen</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf den Knopf <gui style="button">Name hinzufügen</gui>, um eine neue Benutzerkennung hinzuzufügen.</p>
+    </item>
+    <item>
+      <p>Geben Sie im neuen Dialog die Angaben für <gui>Vollständige Name</gui>, <gui>E-Mail-Adresse</gui> und <gui>Schlüsselkommentar</gui> für die neue Benutzerkennung ein.</p>
+    </item>
+    <item>
+      <p>Geben Sie das richtige Passwort ein und klicken Sie zum Abschließen auf <gui style="button">OK</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Ihre neue Benutzerkennung ist nun in der Leiste <gui>Namen und Signaturen</gui> aufgeführt.</p>
+
+  <note style="tip">
+    <p>Wenn Ihr Schlüssel auf einem Schlüssel-Server veröffentlicht wurde, <link xref="pgp-sync">gleichen</link> Sie ihn zum Aktualisieren der entfernten Kopie ab, nachdem eine neue Benutzerkennung hinzugefügt wurde.</p>
+  </note>
+
+</page>

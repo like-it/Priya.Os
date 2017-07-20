@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="disk-benchmark" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="disk"/>
+
+    <revision pkgversion="3.6.2" version="0.2" date="2012-11-16" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+   <credit type="editor">
+     <name>Michael Hill</name>
+     <email>mdhillca@gmail.com</email>
+   </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Effectuez des tests de performance sur votre disque dur pour connaître sa vitesse.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Test de la performance de votre disque dur</title>
+
+  <p>Pour tester la vitesse de votre disque dur :</p>
+
+  <steps>
+    <item>
+      <p>Open <app>Disks</app> from the
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+    </item>
+    <item>
+      <p>Sélectionnez le disque dans la liste du panneau de gauche.</p>
+    </item>
+    <item>
+      <p>Click the menu button and select <gui>Benchmark disk…</gui> from the
+      menu.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Lancer le test de performance…</gui> et réglez le <gui>Taux de transfert</gui> et le <gui>Temps d'accès</gui> selon votre désir.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Lancer le test de performance</gui> pour savoir à quelle vitesse les données sont lues sur le disque. <link xref="user-admin-explain">Des privilèges administrateurs</link> peuvent être requis. Saisissez votre mot de passe ou le mot de passe du compte administrateur demandé.</p>
+      <note>
+        <p>Si <gui>Faire un test de performance-écriture</gui> est coché, le test vérifiera les vitesses de lecture et d'écriture sur le disque. Ce sera plus long à réaliser.</p>
+      </note>
+    </item>
+  </steps>
+
+  <p>Quand le test est terminé, les résultats sont affichés sur le graphique. Les points verts et les lignes de connexion indiquent les échantillons prélevés ; ils correspondent à l'axe droit, montrant le temps d'accès, en fonction de l'axe du bas, représentant le pourcentage de temps écoulé pendant le test de performance. La ligne bleue représente les taux de lecture, tandis que la ligne rouge représente les taux d'écriture : ils sont affichés en tant que taux d'accès aux données sur l'axe de gauche, en fonction du pourcentage de disque exploré, de l'extérieur vers l'axe de rotation du disque, sur l'axe du bas.</p>
+
+  <p>Sous le graphique s'affichent les valeurs minimum, maximum, moyenne des taux de lecture et d'écriture, le temps d'accès moyen et la durée écoulée depuis le dernier test de performance.</p>
+
+</page>

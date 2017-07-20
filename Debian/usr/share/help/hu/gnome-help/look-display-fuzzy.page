@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="look-display-fuzzy" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="hardware-problems-graphics"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A képernyő felbontása helytelen lehet.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Miért homályos/pixeles a kép?</title>
+
+<p>Ennek általában az az oka, hogy a beállított felbontás nem megfelelő a képernyőhöz.</p>
+
+<p>Ennek megoldásához nyissa meg a <gui xref="shell-introduction#activities"> Tevékenységek</gui> áttekintést, és kezdje el beírni a <gui>Kijelzők</gui> szót. A panel megnyitásához kattintson a <gui>Kijelzők</gui> ikonra. A <gui>Felbontás</gui> listából válasszon néhány lehetőséget, és állítsa be azt, amellyel a kijelző képe a legjobb.</p>
+
+<section id="multihead">
+  <title>Több kijelző csatlakoztatásakor</title>
+
+  <p>Ha a számítógéphez két kijelző csatlakozik, például egy normál monitor és egy projektor, akkor a kijelzőknek eltérő felbontásaik lehetnek. Azonban a számítógép videokártyája a képet egyszerre csak egy felbontásban képes megjeleníteni, így az egyik kijelző képe homályos lehet.</p>
+
+  <p>Beállíthatja, hogy a két kijelző eltérő felbontást használjon, de ekkor nem jelenítheti meg ugyanazt a képet egyszerre a két kijelzőn. Így gyakorlatilag két független képernyő fog egyszerre csatlakozni a számítógéphez. A kijelzők között mozgathatja az ablakokat, de egyszerre nem jelenítheti meg ugyanazt az ablakot mindkét kijelzőn.</p>
+
+  <p>A kijelzők beállítása egyedi felbontások használatára:</p>
+
+  <steps>
+    <item>
+      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Kijelzők</gui> szót.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Kijelzők</gui> ikonra a panel megnyitásához.</p>
+    </item>
+    <item>
+      <p>A kijelzőknek <gui>Tükrözött</gui> állapotúként kell megjelenniük. Válassza ki az elsődleges kijelzőt.</p>
+    </item>
+    <item>
+      <p>Válassza a kijelzőkonfigurációk listájából az <gui>Elsődleges</gui> lehetőséget, majd nyomja meg az <gui style="button">Alkalmaz</gui> gombot a mentéshez.</p>
+    </item>
+    <item>
+      <p>Válassza ki egymás után a kijelzőket a <gui>Kijelzők</gui> ablak felső részén lévő szürke mezőben. Módosítsa a <gui>Felbontás</gui> értékét, amíg a kijelző képe megfelelően nem jelenik meg.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

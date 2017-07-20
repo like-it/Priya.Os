@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-personal" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.1" date="2013-09-23" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Låt andra personer nå filerna i din <file>Publikt</file>-mapp.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dela ut dina personliga filer</title>
+
+  <p>Du kan tillåta åtkomst till <file>Publikt</file>-mappen i din <file>Hem</file>-mapp från en annan dator på nätverket. Konfigurerar <gui>Personlig fildelning</gui> för att låta andra komma åt innehållet i mappen.</p>
+
+  <note style="info package">
+    <p>Du måste ha paketet <app>gnome-user-share</app> installerat för att <gui>Personlig fildelning</gui> ska vara synligt.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:gnome-user-share" style="button">Installera gnome-user-share</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Dela</gui>.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Dela</gui> för att öppna panelen.</p>
+    </item>
+    <item>
+      <p>Om <gui>Dela</gui> är <gui>AV</gui>, slå om den till <gui>PÅ</gui>.</p>
+
+      <note style="info"><p>Om texten nedanför <gui>Datornamn</gui> låter dig redigera den, kan du <link xref="sharing-displayname">ändra</link> namnet din dator visar på nätverket.</p></note>
+    </item>
+    <item>
+      <p>Välj <gui>Personlig fildelning</gui>.</p>
+    </item>
+    <item>
+      <p>Slå om <gui>Personlig fildelning</gui> till <gui>PÅ</gui>. Detta innebär att andra personer på ditt aktuella nätverk kan försöka ansluta till din dator och nå filerna i din <file>Publikt</file>-mapp.</p>
+      <note style="info">
+        <p>En <em>URI</em> visas genom vilken din <file>Publikt</file>-mapp kan nås från andra datorer på nätverket.</p>
+      </note>
+    </item>
+  </steps>
+
+  <section id="security">
+  <title>Säkerhet</title>
+
+  <terms>
+    <item>
+      <title>Kräva lösenord</title>
+      <p>För att kräva att andra personer använder ett lösenord när de använder din <file>Publikt</file>-mapp, slå om <gui>Begär lösenord</gui> till <gui>PÅ</gui>. Om du inte använder detta alternativ kan vem som helst försöka visa din <file>Publikt</file>-mapp.</p>
+      <note style="tip">
+        <p>Detta alternativ är inaktiverat som standard, men du bör aktivera det och ställa in ett säkert lösenord.</p>
+      </note>
+    </item>
+  </terms>
+  </section>
+
+  <section id="networks">
+  <title>Nätverk</title>
+
+  <p>Sektionslistan <gui>Nätverk</gui> listar nätverken som du för närvarande är ansluten till. Använd <gui>ON | OFF</gui>-knappen intill respektive för att välja var dina personliga filer kan delas.</p>
+
+  </section>
+
+</page>

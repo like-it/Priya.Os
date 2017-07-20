@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="color-import-windows" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <link type="seealso" xref="color-gettingprofiles"/>
+    <desc>Olemassa olevien ICC-profiilien tuonti Windows-järjestelmällä.</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sami Jaktholm</mal:name>
+      <mal:email>sjakthol@outlook.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>ICC-profiilin asentaminen Microsoft Windowsilla</title>
+  <p>Profiilin liittäminen laitteeseen ja kalibrointikäyrien käyttäminen riippuu Microsoft Windowsin versiosta.</p>
+  <section id="xp">
+    <title>Windows XP</title>
+    <p>Napsauta profiilia hiiren oikealla painikkeella resurssienhallinnassa ja napsauta <gui>Asenna profiili</gui>. Tämä kopioi profiilin automaattisesti oikeaan kansioon.</p>
+    <p>Avaa <guiseq><gui>Ohjauspaneeli</gui><gui>Värit</gui></guiseq> ja lisää profiili laitteelle.</p>
+    <note style="warning">
+      <p>Jos olemassa olevaa profiilia korvataan Windows XP:ssä, yllä oleva oikotie ei toimi. Profiilit täytyy kopioida manuaalisesti kansioon <file>C:\Windows\system32\spool\drivers\color</file>, jotta alkuperäinen profiili korvattaisiin.</p>
+    </note>
+    <p>Windows XP tarvitsee aina tietokoneen käynnistyessä ohjelman kopioimaan kalibrointikäyrät videokortille. Tämä onnistuu muun muassa ohjelmilla <app>Adobe Gamma</app>, <app>LUT Loader</app> tai ilmaisella <app href="https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=12714">Microsoft Color Control Panel Applet</app> -sovelluksella. Viimeisin lisää uuden <gui>Väri</gui>-kohteen ohjauspaneeliin ja se helpottaa oletusprofiilin kalibrointikäyrien asettamista käynnistyksen yhteydessä.</p>
+  </section>
+
+  <section id="vista">
+    <title>Windows Vista</title>
+    <p>Microsoft Windows Vista poistaa kalibrointikäyrät videokortin LUT:stä kirjautumisen, valmiustilan ja UAC-ruudun näyttämisen jälkeen. Tämä tarkoittaa, että ICC-proliilin kalibrointikäyrät voi joutua uudelleenlataamaan käsin. Ole siis varovainen, ettei kalibrointia nollata, jos kalibrointikäyrät sisältyvät väriprofiileihin.</p>
+  </section>
+
+  <section id="7">
+    <title>Windows 7</title>
+    <p>Windows 7:n väriprofiilit toimivat Linuxista tutulla tavalla eli ne voivat olla kaikille käyttäjille yhteisiä tai käyttäjäkohtaisia. Ne kuitenkin säilytetään samassa paikassa. Napsauta profiilia hiiren oikealla painikkeella resurssienhallinnassa ja valitse <gui>Asenna profiili</gui> tai kopioi .icc-profiili kansioon <file>C:\Windows\system32\spool\drivers\color</file>.</p>
+    <p>Avaa <guiseq><gui>Ohjauspaneeli</gui><gui>Värien hallinta</gui></guiseq> ja lisää profiili napsauttamalla <gui>Lisää</gui>-painiketta. Siirry <gui>Edistynyt</gui>-välilehdelle ja etsi kohtaa <gui>Näytön kalibrointi</gui>. Kalibrointikäyrien lataaminen otetaan käyttöön <gui>Käytä Windowsin näytönkalibrointia</gui> -valintaruudusta mutta sitä ei voi valita. Ongelma voidaan korjata painamalla <gui>Vaihda järjestelmän oletusasetuksia</gui>, palaamalla <gui>Edistynyt</gui>-välilehdelle ja valitsemalla edellä mainittu valintaruutu.</p>
+    <p>Sulje ikkuna ja napsauta <gui>Lataa nykyiset kalibroinnin uudelleen</gui> asettaaksesi gamma rampit. Profiilin kalibrointikäyrät otetaan käyttöön joka käynnistyksen yhteydessä.</p>
+  </section>
+
+</page>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-composer-message-templates-variables" xml:lang="es">
+
+  <info>
+   <desc>Configurar las variables en plantillas y reutilizar los elementos del mensaje al que responde</desc>
+   
+   <link type="guide" xref="mail-composer-message-templates#options"/>
+
+ <revision pkgversion="3.5.90" version="0.3" date="2012-08-17" status="draft"/>
+ <credit type="author">
+   <name its:translate="no">Andre Klapper</name>
+   <email its:translate="no">ak-47@gmx.net</email>
+ </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/b1dlaazl.html.en -->
+ </credit>
+ 
+ <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+     
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Usar variables en plantillas</title>
+
+<section id="configure">	
+<title>Configurar variables para plantillas de mensajes</title>
+<steps>
+<item><p>Seleccione <guiseq><gui>Editar</gui><gui>Complementos</gui></guiseq>.</p></item>
+<item><p>Pulse <gui>Plantilas</gui>.</p></item>
+<item><p>Pulse la pestaña <gui>Configuración</gui>.</p></item>
+<item><p>Puede añadir, editar o quitar los pares de claves y valores. Puede especificar cualquier número de pares de claves y valores.</p></item>
+</steps>
+ <p>La aparición de la cada $key en cualquier plantilla se reemplaza con el valor que tiene en la configuración. Por ejemplo, si establece la clave a Director y el valor a Tomás, cualquier aparición de $Director se reemplaza con Tomás en el mensaje.</p>
+ <p>Asuma que tiene 1.000 plantillas de mensajes con el nombre actual de su jefe como referencia en ellas. Cuando el jefe actual cambia, no es fácil reemplazar manualmente el nombre del jefe en las 1.000 plantillas. Si los mensajes tienen un valor de clave $Jefe, puede cambiar el valor en la pestaña Configuración de este complemento.</p>
+ <p>De forma predeterminada todas las variables de entorno se usan como pares de claves-valores. Una aparición de $env_variable se reemplaza por el valor que lleva. Por ejemplo, una aparición de $PATH en su plantilla se reemplaza por su valor al usar la plantilla.</p>
+ <p>El proceso de reemplazo usa el siguiente orden de precedencia:</p>
+ <steps>
+  <item>
+<p>$key se reemplaza por el valor ajustado para ello en la pestaña Configuración del complemento Plantillas.</p>
+  </item>
+  <item>
+<p>Si no se encuentra la clave, se reemplaza con el valor de su variable de entorno.</p>
+  </item>
+  <item>
+<p>Si la clave no es una opción de configuración ni una variable de entorno, entonces no se hacen cambios.</p>
+  </item>
+ </steps>
+</section>
+
+<!-- as per https://bugzilla.gnome.org/show_bug.cgi?id=641845 - available since 3.2-->
+<section id="reply-variables">
+<title>Usar elementos de un mensaje en una plantilla al responder</title>
+<p>Las plantillas pueden contener más <link xref="#configure">parejas clave-valor</link> que las predefinidos. También puede obtener cualquier valor de una cabecera de mensaje del correo al que está aplicando la plantilla, además del cuerpo completo del mensaje.</p>
+
+<!-- TRANSLATORS: Do NOT translate "$ORIG[subject]" and "$ORIG[body]" in this sentence. -->
+<p its:locNote="TO TRANSLATORS: Do NOT translate $ORIG[subject] and $ORIG[body] in this sentence!">Para hacer esto, use el formato <code>$ORIG[nombre_cabecera]</code> y reemplace la variable <code>nombre_cabecera</code> por la cabecera actual. Por ejemplo, si quiere insertar el asunto en el mensaje al que está respondiendo, use <code>$ORIG[subject]</code>. Para insertar el cuerpo completo, use <code>$ORIG[body]</code>.</p>
+
+<!-- TRANSLATORS: Do NOT translate "$ORIG[body]" and "$ORIG[reply-to]" in this sentence. -->
+<p its:locNote="TO TRANSLATORS: Do NOT translate $ORIG[body] and $ORIG[reply-to] in this sentence!">Si no se encuentra un reemplazo para la variable, la variable no se quita (excepto <code>$ORIG[body]</code>), pero se deja para que pueda ver que hubo un error. Esto podría pasar al intentar usar cabeceras que no siempre están disponibles en el mensaje original (por ejemplo, <code>$ORIG[reply-to]</code>).</p>
+</section>
+
+</page>

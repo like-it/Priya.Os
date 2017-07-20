@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="lv">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu dokumentācijas viki veidotāji</name>
+    </credit>
+    <credit type="author">
+      <name>GNOME dokumentācijas projekts</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Pat ja bezvadu adapters ir pieslēgts, dators to var neatpazīt pareizi.</desc>
+  </info>
+
+  <title>Bezvadu tīkla savienojumu problēmu risināšana</title>
+  <subtitle>Pārbaudiet vai bezvadu tīkla adapters ir atpazīts</subtitle>
+
+  <p>Kaut arī bezvadu adapters ir savienots ar datoru, dators to var neatpazīt kā tīkla ierīci. Šajā solī jūs pārbaudīsiet, vai ierīce ir atpazīta pareizi.</p>
+
+  <steps>
+    <item>
+      <p>Atveriet termināļa logu, ierakstiet <cmd>lshw -C network</cmd> un spiediet <key>Enter</key>. Ja tiek izvadīts kļūdas paziņojums, iespējams, jums vajadzēs datoram uzinstalēt <app>lshw</app> programmu.</p>
+    </item>
+    <item>
+      <p>Informācijā, kas parādījās, meklējiet <em>Wireless interface</em> sadaļu. Ja jūsu bezvadu tīkla adapters tika noteikts pareizi, jums vajadzētu redzēt kaut ko līdzīgu (bet ne identisku) šim:</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>Ja bezvadu ierīce ir sarakstā, dodieties uz <link xref="net-wireless-troubleshooting-device-drivers">Ierīču draiveru soli</link>.</p>
+      <p>Ja bezvadu tīkla ierīce <em>nav</em> sarakstā, jūsu nākamais solis būs atkarīgs no jūsu izmantotās ierīces tipa. Skatiet zemāk esošo sadaļu, kas attiecas uz bezvadu tīkla adapteri, kāds ir jūsu datorā (<link xref="#pci">iekšējais PCI</link>, <link xref="#usb">USB</link>, vai <link xref="#pcmcia">PCMCIA</link>).</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>PCI (iekšējais) bezvadu tīkla adapters</title>
+
+  <p>Iekšējais PCI adapters ir visizplatītākais, un tāds ir daudzos portatīvajos datoros, kas ir ražoti pēdējajos gados. Lai pārbaudītu vai jūsu PCI bezvadu tīkla adapters tika atpazīts:</p>
+
+  <steps>
+    <item>
+      <p>Atveriet termināli, ierakstiet <cmd>lspci</cmd> un spiediet <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Izskatiet sarakstu ar ierīcēm, kas ir parādītas un atrodiet to, kas ir atzīmēta kā <code>Network controller</code> vai <code>Ethernet controller</code>. Vairākas ierīces var būt apzīmētas tādā veidā. Tā, kas atbilst jūsu bezvadu tīkla adapteram, varētu saturēt tādus vārdus kā: <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> vai <code>802.11</code>. Lūk, piemērs kā tas varētu izskatīties:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Ja šajā sarakstā atrodat bezvadu tīkla adapteri, dodieties uz <link xref="net-wireless-troubleshooting-device-drivers">ierīču draiveru soli</link>. Ja jūs neatradāt savu bezvadu tīkla adapteri, skatiet <link xref="#not-recognized">instrukcijas zemāk</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>USB bezvadu tīkla adapters</title>
+
+  <p>Bezvadu tīkla adapteri, ko var ievietot jūsu datora USB portā, ir mazāk izplatīti. Tos var iespraust tieši USB portā vai pievienot USB kabelim. 3G/mobilais platjoslu adapteri izskatās līdzīgi bezvadu tīkla (WiFi) adapteriem, tādēļ, ja jūs uzskatāt, ka jums ir USB bezvadu tīkla adapters, vēlreiz pārbaudiet, vai tas patiesībā nav 3G adapters. Lai pārbaudītu, vai USB bezvadu tīkla adapters tika atpazīts:</p>
+
+  <steps>
+    <item>
+      <p>Atveriet termināli, ierakstiet <cmd>lsusb</cmd> un spiediet <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Meklējiet izmantoto ierīču sarakstā, kas tiks parādīts, un atrodiet kaut ko, kas šķiet ka attiecas uz bezvadu adapteri vai tīkla iekārtu. Tas, kas atbilst jūsu bezvadu tīkla adapteram, var saturēt vārdus <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> vai <code>802.11</code>. Lūk, piemērs, kā šis ieraksts varētu izskatīties:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>Ja šajā sarakstā atrodat bezvadu tīkla adapteri, dodieties uz <link xref="net-wireless-troubleshooting-device-drivers">ierīču draiveru soli</link>. Ja jūs neatradāt savu bezvadu tīkla adapteri, skatiet <link xref="#not-recognized">instrukcijas zemāk</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Pārbaudiet PCMCIA ierīces</title>
+
+  <p>PCMCIA bezvadu tīkla adapteri parasti ir taisnstūra kartes, kas vietu portatīvā datora sānā. Tie vairāk ir sastopami vecākiem datoriem. Lai pārbaudītu, vai PCMCIA adapters tika atzīts:</p>
+
+  <steps>
+    <item>
+      <p>Startējiet datoru <em>bez</em> bezvadu tīkla adaptera.</p>
+    </item>
+    <item>
+      <p>Atveriet termināli un ievadiet sekojošo, tad spiediet <key>Enter</key>:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>Tas parādīs sarakstu ar ziņojumiem, kas attiecas uz datora aparatūru un to automātiski atjauninās, ja kaut kas ar aparatūru izmainās.</p>
+    </item>
+    <item>
+      <p>Ievietojiet savu bezvadu tīkla adapteri PCMCIA slotā un aplūkojiet izmaiņas termināļa logā. Izmaiņām vajadzētu saturēt informāciju par jūsu bezvadu tīkla adapteri. Apskatiet tās un mēģiniet tās identificēt.</p>
+    </item>
+    <item>
+      <p>Lai apturētu komandu, kas darbojas terminālī, spiediet <keyseq><key>Ctrl</key><key>C</key></keyseq>. Kad esat pabeidzis, varat aizvērt termināli, ja vēlaties.</p>
+    </item>
+    <item>
+      <p>Ja jūs atradāt informāciju par savu bezvadu tīkla adapteri, dodieties uz  <link xref="net-wireless-troubleshooting-device-drivers">ierīču draiveru soli</link>. Ja jūs neatradāt neko, kas saistīts ar jūsu bezvadu tīkla adapteri, apskatiet <link xref="#not-recognized">instrukcijas zemāk</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>Bezvadu tīkla adapters netika atpazīts</title>
+
+  <p>If your wireless adapter was not recognized, it might not be working
+  properly or the correct drivers may not be installed for it. How you check to
+  see if there are any drivers you can install will depend on which Linux
+  distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
+
+  <p>Lai saņemtu specifisku palīdzību, aplūkojiet atbalsta iespējas sava distributīva tīmekļa vietnē. Tās var ietvert adresātu sarakstu (vēstkopu) un tīmekļa tērzēšanu, kur jūs, piemēram, varat pajautāt par savu bezvadu tīkla adapteri.</p>
+
+</section>
+
+</page>

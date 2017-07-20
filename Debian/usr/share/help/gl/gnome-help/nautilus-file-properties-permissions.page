@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="gl">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="files#faq"/>
+    <link type="seealso" xref="nautilus-file-properties-basic"/>
+
+    <desc>Controle quen pode ver e editar os seus ficheiros e cartafoles.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+  <title>Estabelecer os permisos dun ficheiro</title>
+
+  <p>Pode usar os permisos do ficheiro para controlar quen pode ver e editar os ficheiros que posúe. Para ver e estabelecer os permisos dun ficheiro, prema co botón dereito e seleccione <gui>Propiedades</gui>, logo seleccione a lapela <gui>Permisos</gui>.</p>
+
+  <p>Para obter detalles sobre os tipos de permisos que pode estabelecer, consulte a <link xref="#files"/> e a <link xref="#folders"/> embaixo.</p>
+
+  <section id="files">
+    <title>Ficheiros</title>
+
+    <p>Pode estabelecer os permisos para o propietario do ficheiro, o grupo do propietario e calquera outro usuario do sistema. Para os seus ficheiros, vostede é o propietario e pode darlle a vostede mesmo permisos de só lectura ou lectura e escritura. Estabeleza un ficheiro a só lectura se non quere que se cambie de forma accidental.</p>
+
+    <p>Cada usuario no seu computador pertence a un grupo. Nos computadores persoais, o máis común é que cada usurio teña o seu propio grupo, e os permisos do grupo non son usados con frecuencia. Pola contra en contornas corporativas, os grupos úsanse moi a miúdo nos departamentos ou en proxectos. Así como teñen un propietario, os ficheiros pertencen a un grupo. Pode estabelecer o grupo do ficheiro e os permisos para o grupo e controlar os permisos para todos os usuarios en dito grupo. Só pode estabelecer o grupo dun ficheiro a un grupo ao que pertenza.</p>
+
+    <p>Tamén pode estabelecer os permisos para outros usuarios distintos ao propietario e aqueles no grupo do ficheiro.</p>
+
+    <p>Se o ficheiro é un programa, como un script, pode estabelecer <gui>Permitir a execución do ficheiro como un programa</gui> para executalo. Incluso se esta opción está seleccionada, o xestor de ficheiros pode continuar abrindo o ficheiro nun aplicativo ou preguntarlle que facer. Vexa <link xref="nautilus-behavior#executable"/> para obter máis información.</p>
+  </section>
+
+  <section id="folders">
+    <title>Cartafoles</title>
+    <p>Pode estabelecer os permisos en cartafoles para o propietario, grupo e outros usuarios. Vexa os detalles dos permisos dos ficheiros abrira para obter máis información sobre os propietarios, grupos e outros usuarios.</p>
+    <p>Os permisos que pode estabelecer para un cartafol son distintos dos que pode estabelecer para un ficheiro.</p>
+    <terms>
+      <item>
+        <title><gui itst:context="permission">None</gui></title>
+        <p>O usuario nin sequera será capaz de ver que ficheiros están no cartafol.</p>
+      </item>
+      <item>
+        <title><gui>Só mostrar ficheiros</gui></title>
+        <p>O usuario será capaz de ver os ficheiros que hai dentro dun cartafol, pero non será capaz de abrir, crear ou eliminar ficheiros.</p>
+      </item>
+      <item>
+        <title><gui>Acceso a ficheiros</gui></title>
+        <p>O usuario poderá abrir ficheiros nun cartafol (tendo en conta que ten permisos para facelo para un ficheiro en particular), pero non poderá crear novos ficheiros ou eliminar ficheiros.</p>
+      </item>
+      <item>
+        <title><gui>Crear e eliminar ficheiros</gui></title>
+        <p>O usuario terá acceso completo ao cartafol, incluíndo a apertura, creación e eliminación de ficheiros.</p>
+      </item>
+    </terms>
+
+    <p>Tamén pode estabelecer de forma rápida os permisos de ficheiro para todos os ficheiros nun cartafol premendo <gui>Cambiar os permisos para os ficheiros internos</gui>. Use as listas despregábeis para axustar os permisos dos ficheiros e cartafoles internos, e prema <gui>Cambiar</gui>. Os permisos aplicaranse aos ficheiros e cartafoles nos subcartafoles, en calquera profundidade.</p>
+  </section>
+
+</page>

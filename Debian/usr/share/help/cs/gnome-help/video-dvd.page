@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="video-dvd" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="media#videos"/>
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.12.1" date="2014-03-30" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Možná nemáte nainstalované správné kodeky nebo může být DVD pro nesprávný region.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Proč se nechtějí DVD přehrávat?</title>
+
+  <p>Pokud vložíte do počítače DVD a ono nehraje, možná nemáte nainstalovány správné <em>kodeky</em> pro DVD nebo může být DVD pro jiný <em>region</em>.</p>
+
+<section id="codecs">
+  <title>Instalace správného kodeku pro přehrávání DVD</title>
+
+  <p>Aby šla přehrávat DVD, potřebujete mít nainstalované <em>kodeky</em>. Kodek je kus softwaru, který umožňuje aplikacím číst formáty zvuku a videa. Když váš přehrávač filmů nemůže najít správný kodek, může vám jeho instalaci nabídnout. Pokud tak neučiní, musíte jej nainstalovat ručně sami. Jak to udělat se poptejte na příklad v diskuzním fóru podpory vaší linuxové distribuce.</p>
+
+  <p>Navíc mohou být DVD <em>chráněna proti kopírování</em> systémem nazývaným CSS. Ten brání kopírování DVD, ale tím i jeho přehrávání, pokud k tomu nemáte správný software. Ten je dostupný pro řadu linuxových distribucí, ale protože ne ve všech zemích je jeho použití legální, nebývá často v hlavním repozitáři pro instalaci softwaru. Můžete to také řešit koupí komerčního dekoderu DVD <link href="http://fluendo.com/shop/product/oneplay-dvd-player/">Fluendo</link>, který umí s chráněnými DVD pracovat. V Linuxu funguje dobře a jeho použití je legální ve všech zemích.</p>
+
+  </section>
+
+<section id="region">
+  <title>Kontrola regionu DVD</title>
+
+  <p>DVD mívají <em>regionální kód</em> (region code), který říká, v které části světa mohou být přehrány. Jedná se o způsob omezování ze strany vydavatelských společností. Pokud region nastavený v přehrávači DVD v počítači neodpovídá regionu DVD, které zkoušíte přehrát, přehrát nepůjde. Například, když máte v přehrávači DVD region 2, budete moci přehrávat jen DVD pro Evropu a blízký východ.</p>
+
+  <p>Většinou je sice možné region používaný přehrávačem DVD změnit, ale počet změn bývá omezen a po vyčerpání počtu změn se poslední nastavení trvale uzamkne. Ke změně regionu v mechanice DVD použijte <link href="http://linvdr.org/projects/regionset/">regionset</link>.</p>
+
+  <p>Můžete si najít <link href="https://cs.wikipedia.org/wiki/DVD_region_code">více informací o regionech DVD na Wikipedii</link>.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Manche Hardware-Komponenten verursachen Probleme mit dem Versetzen in Bereitschaft.</desc>
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Warum wacht mein Rechner nicht mehr auf, nachdem ich ihn in Bereitschaft versetzt habe?</title>
+
+<p>Wenn Sie Ihren Rechner in <link xref="power-suspend">Bereitschaft</link>) versetzen und dann versuchen, ihn wieder aufzuwecken, kann es sein, dass das nicht so funktioniert wie erwartet. Das könnte daran liegen, dass die Bereitschaft von Ihrer Hardware nicht richtig unterstützt wird.</p>
+
+<section id="resume">
+  <title>Mein Rechner ist in Bereitschaft und wacht nicht mehr auf</title>
+  <p>Wenn Sie Ihren Rechner in den Schlafmodus (Bereitschaft) versetzt haben und danach eine Taste drücken oder mit der Maus klicken, sollte er aufwachen und einen Bildschirm anzeigen, der nach Ihrem Passwort fragt. Wenn das nicht passiert, versuchen Sie die Ein-/Ausschalttaste zu drücken (nicht gedrückt halten, nur einmal drücken).</p>
+  <p>Wenn das noch immer nicht hilft, stellen Sie sicher, dass Ihr Monitor eingeschaltet ist, und versuchen Sie es noch einmal mit einem Tastendruck auf der Tastatur.</p>
+  <p>Als letzten Ausweg schalten Sie den Rechner aus, indem Sie die Ein-/Ausschalttaste für 5 bis 10 Sekunden gedrückt halten. Dadurch werden Sie nicht gespeicherte Arbeit verlieren, aber Sie sollten dann wieder in der Lage sein, den Rechner einzuschalten.</p>
+  <p>Falls das jedes Mal passiert, wenn Sie den Rechner in den Schlafmodus schicken, dann funktioniert wohl die Bereitschaft nicht mit Ihrer Hardware.</p>
+  <note style="warning">
+    <p>Falls Ihr Rechner keinen Strom mehr erhält und keine alternative Stromversorgung bereitsteht (zum Beispiel ein funktionierender Akku), dann wird er ausgeschaltet.</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>Meine kabellose Verbindung (oder andere Hardware) funktioniert nicht, wenn ich meinen Rechner aufwecke</title>
+  <p>Wenn Sie Ihren Rechner in Bereitschaft versetzen und dann wieder aufwecken, kann es sein, dass die Internetverbindung, die Maus oder irgendein anderes Gerät nicht richtig funktioniert. Das könnte daran liegen, dass der Gerätetreiber Bereitschaft nicht richtig unterstützt. Das ist ein <link xref="hardware-driver">Problem mit dem Treiber</link> und nicht mit dem Gerät selbst.</p>
+  <p>Wenn das Gerät eine Ein-/Ausschalttaste hat, versuchen Sie es auszuschalten und dann wieder einzuschalten. In den meisten Fällen wird das Gerät wieder funktionieren. Wenn es mit einem USB-Kabel oder Ähnlichem angeschlossen ist, stecken Sie das Gerät aus und dann wieder ein und sehen Sie, ob es wieder funktioniert.</p>
+  <p>Wenn Sie das Gerät nicht ausschalten oder ausstecken können oder wenn das nicht geholfen hat, müssen Sie den Rechner gegebenenfalls neu starten, um das Gerät wieder in Gang zu bringen.</p>
+</section>
+
+</page>

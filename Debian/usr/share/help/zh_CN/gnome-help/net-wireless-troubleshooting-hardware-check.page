@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="zh-CN">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu wiki 文档贡献者</name>
+    </credit>
+    <credit type="author">
+      <name>GNOME 文档项目</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>甚至虽然您的无线网卡显示是连接的，也有可能没有被系统正确识别。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>无线网路连接故障排除</title>
+  <subtitle>检查无线连接适配器是否被系统识别</subtitle>
+
+  <p>甚至虽然您的无线网卡显示是连接的，也有可能没有被系统正确识别为网络设备。在这一步里，您要检查设备是否被正确识别。</p>
+
+  <steps>
+    <item>
+      <p>打开一个终端窗口，输入 <cmd>lshw -C network</cmd>，然后按<key>回车键</key>。如果给出了错误信息，您可能需要安装 <app>lshw</app> 程序。</p>
+    </item>
+    <item>
+      <p>检查命令的输出内容，然后检查 <em>Wireless interface</em> 部分。如果检测到您的无线适配器，则输出应类似于：</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>如果列出了无线设备，则继续转入<link xref="net-wireless-troubleshooting-device-drivers">设备驱动程序</link>页面。</p>
+      <p>如果无线设备<em>没有</em>列出，下一步的操作要根据您使用的设备，接下来的内容跟您使用的无线网卡密切相关：(<link xref="#pci">PCI 内置</link>、<link xref="#usb">USB</link> 或者 <link xref="#pcmcia">PCMCIA</link>)。</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>PCI(内置)无线网卡</title>
+
+  <p>内部 PCI 适配器最常见，在过去几年间已大规模内置在笔记本电脑中。PCMCIA 适配器是外置的卡式适配器，在旧式笔记本电脑上使用较多。</p>
+
+  <steps>
+    <item>
+      <p>打开终端，输入 <cmd>aplay -l</cmd>，然后按<key>回车键</key>。</p>
+    </item>
+    <item>
+      <p>查看显示的设备列表，找到标记 <code>Network controller</code> 或 <code>Ethernet controller</code> 的网络控制器。许多设备通过这种方法来标记，相应的无线设备可能包含像 <code>wireless</code>、<code>WLAN</code>、<code>wifi</code> 或 <code>802.11</code> 这些词。</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>如果您的设备通过上述命令可以识别，接下来进入<link xref="net-wireless-troubleshooting-device-drivers">设备驱动</link>页面。如果上述命令没有显示出您的无线网卡，那么参阅<link xref="#not-recognized">下一页的指导</link>。</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>USB 无线适配器</title>
+
+  <p>插入 USB 端口的无线适配器很少见，它们可以直接插入 USB 端口，或者可以连接到 USB 插座上。3G/移动宽带适配器看着跟无线(wifi)很相似，因此如果您有一个 USB 无线适配器，双击检查它是否确实是一个 3G 适配器，要检查 USB 适配器是否被识别：</p>
+
+  <steps>
+    <item>
+      <p>打开一个终端，输入 <cmd>lsusb</cmd>，然后按<key>回车键</key>。</p>
+    </item>
+    <item>
+      <p>查看显示的设备列表，找到相关的无线或网络设备，相应的无线适配器可能包含像 <code>wireless</code>、<code>WLAN</code>、<code>wifi</code> 或 <code>802.11</code>这些词。这儿有一个例子参考一下：</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>如果您的设备通过上述命令可以识别，接下来进入<link xref="net-wireless-troubleshooting-device-drivers">设备驱动</link>页面。如果上述命令没有显示出您的无线网卡，那么参阅<link xref="#not-recognized">下一页的指导</link>。</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>检测 PCMCIA 设备</title>
+
+  <p>PCMCIA 无线适配器是典型的长方形卡，插入到您笔记本的一边。它们通常在老式笔记本上存在。要检查 PCMCIA 卡是否被识别：</p>
+
+  <steps>
+    <item>
+      <p>先<em>不</em>插入无线网卡启动计算机。</p>
+    </item>
+    <item>
+      <p>打开一个终端，输入下面的内容，然后按<key>回车键</key>：</p>
+      <code>tail -f /var/log/messages</code>
+      <p>这将显示您计算机中硬件设备的列表信息，如果硬件发生变化会自动更新。</p>
+    </item>
+    <item>
+      <p>插入无线适配器到 PCMCIA 插槽，查看终端窗口有何变化，应当出现一些无线适配器相关的信息。找到它们看看能否标记它。</p>
+    </item>
+    <item>
+      <p>要停止终端中正在运行的命令，按 <keyseq><key>Ctrl</key><key>C</key></keyseq> 键，然后就可以关闭终端窗口了。</p>
+    </item>
+    <item>
+      <p>如果之前的命令可以识别您的设备，请继续转到<link xref="net-wireless-troubleshooting-device-drivers">设备驱动程序</link>页面。如果上述命令不显示与您的无线适配器相关的任何输出，请查看本页底部的说明。</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>未能识别无线适配器</title>
+
+  <p>If your wireless adapter was not recognized, it might not be working
+  properly or the correct drivers may not be installed for it. How you check to
+  see if there are any drivers you can install will depend on which Linux
+  distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
+
+  <p>要获得帮助，请查看您所用发行版的帮助信息。这包括对应的邮件列表、网络聊天室等。</p>
+
+</section>
+
+</page>

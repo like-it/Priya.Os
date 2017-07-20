@@ -1,0 +1,464 @@
+[     4.032] 
+X.Org X Server 1.19.2
+Release Date: 2017-03-02
+[     4.033] X Protocol Version 11, Revision 0
+[     4.033] Build Operating System: Linux 3.16.0-4-amd64 i686 Debian
+[     4.034] Current Operating System: Linux (none) 4.9.0-3-686 #1 SMP Debian 4.9.30-2 (2017-06-12) i686
+[     4.034] Kernel command line: BOOT_IMAGE=/install.386/vmlinuz vga=788 initrd=/install.386/gtk/initrd.gz --- quiet 
+[     4.036] Build Date: 03 March 2017  03:15:51PM
+[     4.038] xorg-server 2:1.19.2-1 (https://www.debian.org/support) 
+[     4.039] Current version of pixman: 0.34.0
+[     4.041] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[     4.041] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[     4.048] (==) Log file: "/var/log/Xorg.0.log", Time: Tue Jul 18 19:15:32 2017
+[     4.049] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[     4.050] (==) No Layout section.  Using the first Screen section.
+[     4.050] (==) No screen section available. Using defaults.
+[     4.050] (**) |-->Screen "Default Screen Section" (0)
+[     4.050] (**) |   |-->Monitor "<default monitor>"
+[     4.050] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[     4.050] (==) Automatically adding devices
+[     4.050] (==) Automatically enabling devices
+[     4.050] (==) Automatically adding GPU devices
+[     4.050] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[     4.050] (==) FontPath set to:
+	built-ins
+[     4.050] (==) ModulePath set to "/usr/lib/xorg/modules"
+[     4.050] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[     4.050] (II) Loader magic: 0x8022a580
+[     4.050] (II) Module ABI versions:
+[     4.050] 	X.Org ANSI C Emulation: 0.4
+[     4.050] 	X.Org Video Driver: 23.0
+[     4.050] 	X.Org XInput driver : 24.1
+[     4.050] 	X.Org Server Extension : 10.0
+[     4.051] (--) PCI:*(0:0:1:0) 1002:9998:1462:7721 rev 0, Mem @ 0xc0000000/268435456, 0xfeb00000/262144, I/O @ 0x0000f000/256, BIOS @ 0x????????/131072
+[     4.051] (==) Matched ati as autoconfigured driver 0
+[     4.051] (==) Matched modesetting as autoconfigured driver 1
+[     4.051] (==) Matched fbdev as autoconfigured driver 2
+[     4.051] (==) Matched vesa as autoconfigured driver 3
+[     4.051] (==) Assigned the driver to the xf86ConfigLayout
+[     4.051] (II) LoadModule: "ati"
+[     4.051] (WW) Warning, couldn't open module ati
+[     4.051] (II) UnloadModule: "ati"
+[     4.051] (II) Unloading ati
+[     4.051] (EE) Failed to load module "ati" (module does not exist, 0)
+[     4.051] (II) LoadModule: "modesetting"
+[     4.051] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[     4.051] (II) Module modesetting: vendor="X.Org Foundation"
+[     4.051] 	compiled for 1.19.2, module version = 1.19.2
+[     4.051] 	Module class: X.Org Video Driver
+[     4.051] 	ABI class: X.Org Video Driver, version 23.0
+[     4.051] (II) LoadModule: "fbdev"
+[     4.051] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[     4.051] (II) Module fbdev: vendor="X.Org Foundation"
+[     4.051] 	compiled for 1.19.0, module version = 0.4.4
+[     4.051] 	Module class: X.Org Video Driver
+[     4.051] 	ABI class: X.Org Video Driver, version 23.0
+[     4.051] (II) LoadModule: "vesa"
+[     4.051] (WW) Warning, couldn't open module vesa
+[     4.051] (II) UnloadModule: "vesa"
+[     4.051] (II) Unloading vesa
+[     4.051] (EE) Failed to load module "vesa" (module does not exist, 0)
+[     4.051] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[     4.051] (II) FBDEV: driver for framebuffer: fbdev
+[     4.051] (--) using VT number 5
+
+[     4.058] (EE) open /dev/dri/card0: No such file or directory
+[     4.058] (WW) Falling back to old probe method for modesetting
+[     4.058] (EE) open /dev/dri/card0: No such file or directory
+[     4.058] (II) Loading sub module "fbdevhw"
+[     4.058] (II) LoadModule: "fbdevhw"
+[     4.058] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[     4.058] (II) Module fbdevhw: vendor="X.Org Foundation"
+[     4.058] 	compiled for 1.19.2, module version = 0.0.2
+[     4.058] 	ABI class: X.Org Video Driver, version 23.0
+[     4.059] (**) FBDEV(1): claimed PCI slot 0@0:1:0
+[     4.059] (II) FBDEV(1): using default device
+[     4.059] (EE) Screen 0 deleted because of no matching config section.
+[     4.059] (II) UnloadModule: "modesetting"
+[     4.059] (II) FBDEV(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 16/16
+[     4.059] (==) FBDEV(0): Depth 16, (==) framebuffer bpp 16
+[     4.059] (==) FBDEV(0): RGB weight 565
+[     4.059] (==) FBDEV(0): Default visual is TrueColor
+[     4.059] (II) FBDEV(0): hardware: VESA VGA (video memory: 1950kB)
+[     4.059] (II) FBDEV(0): checking modes against framebuffer device...
+[     4.059] (II) FBDEV(0): checking modes against monitor...
+[     4.059] (--) FBDEV(0): Virtual size is 800x600 (pitch 800)
+[     4.059] (**) FBDEV(0):  Built-in mode "current": 48.0 MHz, 46.9 kHz, 75.1 Hz
+[     4.059] (II) FBDEV(0): Modeline "current"x0.0   48.00  800 832 928 1024  600 604 608 624 -hsync -vsync -csync (46.9 kHz b)
+[     4.059] (==) FBDEV(0): DPI set to (96, 96)
+[     4.059] (II) Loading sub module "fb"
+[     4.059] (II) LoadModule: "fb"
+[     4.059] (II) Loading /usr/lib/xorg/modules/libfb.so
+[     4.059] (II) Module fb: vendor="X.Org Foundation"
+[     4.059] 	compiled for 1.19.2, module version = 1.0.0
+[     4.059] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     4.059] (**) FBDEV(0): using shadow framebuffer
+[     4.059] (II) Loading sub module "shadow"
+[     4.059] (II) LoadModule: "shadow"
+[     4.059] (II) Loading /usr/lib/xorg/modules/libshadow.so
+[     4.059] (II) Module shadow: vendor="X.Org Foundation"
+[     4.059] 	compiled for 1.19.2, module version = 1.1.0
+[     4.059] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     4.059] (II) FBDEV(0): FBIOBLANK: Invalid argument (Screen blanking not supported by kernel - disabling)
+[     4.059] (==) FBDEV(0): Backing store disabled
+[     4.059] (WW) FBDEV(0): The fbdev driver didn't call xf86SetGamma() to initialise
+	the gamma values.
+[     4.059] (WW) FBDEV(0): PLEASE FIX THE `fbdev' DRIVER!
+[     4.059] (==) FBDEV(0): DPMS enabled
+[     4.059] (==) RandR enabled
+[     4.085] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=3 (/dev/input/event0)
+[     4.085] (II) No input driver specified, ignoring this device.
+[     4.085] (II) This device may have been added with another device file.
+[     4.086] (II) config/udev: Adding input device Logitech USB Keyboard (/dev/input/event6)
+[     4.086] (**) Logitech USB Keyboard: Applying InputClass "evdev keyboard catchall"
+[     4.086] (II) LoadModule: "evdev"
+[     4.086] (II) Loading /usr/lib/xorg/modules/input/evdev_drv.so
+[     4.086] (II) Module evdev: vendor="X.Org Foundation"
+[     4.086] 	compiled for 1.19.1, module version = 2.10.5
+[     4.086] 	Module class: X.Org XInput Driver
+[     4.086] 	ABI class: X.Org XInput driver, version 24.1
+[     4.086] (II) Using input driver 'evdev' for 'Logitech USB Keyboard'
+[     4.086] (**) Logitech USB Keyboard: always reports core events
+[     4.086] (**) evdev: Logitech USB Keyboard: Device: "/dev/input/event6"
+[     4.086] (--) evdev: Logitech USB Keyboard: Vendor 0x46d Product 0xc31c
+[     4.086] (--) evdev: Logitech USB Keyboard: Found keys
+[     4.086] (II) evdev: Logitech USB Keyboard: Configuring as keyboard
+[     4.086] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:10.0/usb1/1-2/1-2:1.0/0003:046D:C31C.0001/input/input9/event6"
+[     4.086] (II) XINPUT: Adding extended input device "Logitech USB Keyboard" (type: KEYBOARD, id 6)
+[     4.086] (**) Option "xkb_rules" "evdev"
+[     4.087] (II) config/udev: Adding input device Logitech USB Keyboard (/dev/input/event7)
+[     4.087] (**) Logitech USB Keyboard: Applying InputClass "evdev keyboard catchall"
+[     4.087] (II) Using input driver 'evdev' for 'Logitech USB Keyboard'
+[     4.087] (**) Logitech USB Keyboard: always reports core events
+[     4.087] (**) evdev: Logitech USB Keyboard: Device: "/dev/input/event7"
+[     4.087] (--) evdev: Logitech USB Keyboard: Vendor 0x46d Product 0xc31c
+[     4.087] (--) evdev: Logitech USB Keyboard: Found absolute axes
+[     4.087] (II) evdev: Logitech USB Keyboard: Forcing absolute x/y axes to exist.
+[     4.087] (--) evdev: Logitech USB Keyboard: Found keys
+[     4.087] (II) evdev: Logitech USB Keyboard: Forcing relative x/y axes to exist.
+[     4.087] (II) evdev: Logitech USB Keyboard: Configuring as mouse
+[     4.087] (II) evdev: Logitech USB Keyboard: Configuring as keyboard
+[     4.087] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:10.0/usb1/1-2/1-2:1.1/0003:046D:C31C.0002/input/input10/event7"
+[     4.087] (II) XINPUT: Adding extended input device "Logitech USB Keyboard" (type: KEYBOARD, id 7)
+[     4.087] (**) Option "xkb_rules" "evdev"
+[     4.087] (II) evdev: Logitech USB Keyboard: initialized for absolute axes.
+[     4.087] (**) Logitech USB Keyboard: (accel) keeping acceleration scheme 1
+[     4.087] (**) Logitech USB Keyboard: (accel) acceleration profile 0
+[     4.087] (**) Logitech USB Keyboard: (accel) acceleration factor: 2.000
+[     4.087] (**) Logitech USB Keyboard: (accel) acceleration threshold: 4
+[     4.088] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/event8)
+[     4.088] (**) Logitech USB Optical Mouse: Applying InputClass "evdev pointer catchall"
+[     4.088] (II) Using input driver 'evdev' for 'Logitech USB Optical Mouse'
+[     4.088] (**) Logitech USB Optical Mouse: always reports core events
+[     4.088] (**) evdev: Logitech USB Optical Mouse: Device: "/dev/input/event8"
+[     4.148] (--) evdev: Logitech USB Optical Mouse: Vendor 0x46d Product 0xc077
+[     4.148] (--) evdev: Logitech USB Optical Mouse: Found 12 mouse buttons
+[     4.148] (--) evdev: Logitech USB Optical Mouse: Found scroll wheel(s)
+[     4.148] (--) evdev: Logitech USB Optical Mouse: Found relative axes
+[     4.148] (--) evdev: Logitech USB Optical Mouse: Found x and y relative axes
+[     4.148] (II) evdev: Logitech USB Optical Mouse: Configuring as mouse
+[     4.148] (II) evdev: Logitech USB Optical Mouse: Adding scrollwheel support
+[     4.148] (**) evdev: Logitech USB Optical Mouse: YAxisMapping: buttons 4 and 5
+[     4.148] (**) evdev: Logitech USB Optical Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[     4.148] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb5/5-4/5-4:1.0/0003:046D:C077.0003/input/input11/event8"
+[     4.148] (II) XINPUT: Adding extended input device "Logitech USB Optical Mouse" (type: MOUSE, id 8)
+[     4.148] (II) evdev: Logitech USB Optical Mouse: initialized for relative axes.
+[     4.148] (**) Logitech USB Optical Mouse: (accel) keeping acceleration scheme 1
+[     4.148] (**) Logitech USB Optical Mouse: (accel) acceleration profile 0
+[     4.148] (**) Logitech USB Optical Mouse: (accel) acceleration factor: 2.000
+[     4.148] (**) Logitech USB Optical Mouse: (accel) acceleration threshold: 4
+[     4.148] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/mouse0)
+[     4.148] (II) No input driver specified, ignoring this device.
+[     4.148] (II) This device may have been added with another device file.
+[     4.149] (II) config/udev: Adding input device HD-Audio Generic Front Mic (/dev/input/event1)
+[     4.149] (II) No input driver specified, ignoring this device.
+[     4.149] (II) This device may have been added with another device file.
+[     4.149] (II) config/udev: Adding input device HD-Audio Generic Rear Mic (/dev/input/event2)
+[     4.149] (II) No input driver specified, ignoring this device.
+[     4.149] (II) This device may have been added with another device file.
+[     4.149] (II) config/udev: Adding input device HD-Audio Generic Line (/dev/input/event3)
+[     4.149] (II) No input driver specified, ignoring this device.
+[     4.149] (II) This device may have been added with another device file.
+[     4.149] (II) config/udev: Adding input device HD-Audio Generic Line Out (/dev/input/event4)
+[     4.149] (II) No input driver specified, ignoring this device.
+[     4.149] (II) This device may have been added with another device file.
+[     4.150] (II) config/udev: Adding input device HD-Audio Generic Front Headphone (/dev/input/event5)
+[     4.150] (II) No input driver specified, ignoring this device.
+[     4.150] (II) This device may have been added with another device file.
+[    18.873] (II) config/udev: removing device Logitech USB Keyboard
+[    18.900] (II) evdev: Logitech USB Keyboard: Close
+[    18.900] (II) UnloadModule: "evdev"
+[    18.900] (II) config/udev: Adding input device Logitech USB Keyboard (/dev/input/event7)
+[    18.900] (**) Logitech USB Keyboard: Applying InputClass "evdev keyboard catchall"
+[    18.900] (II) Using input driver 'evdev' for 'Logitech USB Keyboard'
+[    18.900] (**) Logitech USB Keyboard: always reports core events
+[    18.900] (**) evdev: Logitech USB Keyboard: Device: "/dev/input/event7"
+[    18.900] (--) evdev: Logitech USB Keyboard: Vendor 0x46d Product 0xc31c
+[    18.900] (--) evdev: Logitech USB Keyboard: Found absolute axes
+[    18.900] (II) evdev: Logitech USB Keyboard: Forcing absolute x/y axes to exist.
+[    18.900] (--) evdev: Logitech USB Keyboard: Found keys
+[    18.900] (II) evdev: Logitech USB Keyboard: Forcing relative x/y axes to exist.
+[    18.900] (II) evdev: Logitech USB Keyboard: Configuring as mouse
+[    18.900] (II) evdev: Logitech USB Keyboard: Configuring as keyboard
+[    18.900] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:10.0/usb1/1-2/1-2:1.1/0003:046D:C31C.0002/input/input10/event7"
+[    18.900] (II) XINPUT: Adding extended input device "Logitech USB Keyboard" (type: KEYBOARD, id 7)
+[    18.900] (**) Option "xkb_rules" "evdev"
+[    18.900] (**) Option "xkb_model" "pc105"
+[    18.900] (**) Option "xkb_layout" "us"
+[    18.900] (WW) Option "xkb_variant" requires a string value
+[    18.900] (WW) Option "xkb_options" requires a string value
+[    18.900] (II) evdev: Logitech USB Keyboard: initialized for absolute axes.
+[    18.901] (**) Logitech USB Keyboard: (accel) keeping acceleration scheme 1
+[    18.901] (**) Logitech USB Keyboard: (accel) acceleration profile 0
+[    18.901] (**) Logitech USB Keyboard: (accel) acceleration factor: 2.000
+[    18.901] (**) Logitech USB Keyboard: (accel) acceleration threshold: 4
+[    18.901] (II) config/udev: removing device Logitech USB Keyboard
+[    18.932] (II) evdev: Logitech USB Keyboard: Close
+[    18.932] (II) UnloadModule: "evdev"
+[    18.932] (II) config/udev: Adding input device Logitech USB Keyboard (/dev/input/event6)
+[    18.932] (**) Logitech USB Keyboard: Applying InputClass "evdev keyboard catchall"
+[    18.932] (II) Using input driver 'evdev' for 'Logitech USB Keyboard'
+[    18.932] (**) Logitech USB Keyboard: always reports core events
+[    18.932] (**) evdev: Logitech USB Keyboard: Device: "/dev/input/event6"
+[    18.932] (--) evdev: Logitech USB Keyboard: Vendor 0x46d Product 0xc31c
+[    18.932] (--) evdev: Logitech USB Keyboard: Found keys
+[    18.932] (II) evdev: Logitech USB Keyboard: Configuring as keyboard
+[    18.932] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:10.0/usb1/1-2/1-2:1.0/0003:046D:C31C.0001/input/input9/event6"
+[    18.932] (II) XINPUT: Adding extended input device "Logitech USB Keyboard" (type: KEYBOARD, id 6)
+[    18.932] (**) Option "xkb_rules" "evdev"
+[    18.932] (**) Option "xkb_model" "pc105"
+[    18.932] (**) Option "xkb_layout" "us"
+[    18.932] (WW) Option "xkb_variant" requires a string value
+[    18.932] (WW) Option "xkb_options" requires a string value
+[    18.933] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/mouse0)
+[    18.933] (II) No input driver specified, ignoring this device.
+[    18.933] (II) This device may have been added with another device file.
+[    18.933] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=3 (/dev/input/event0)
+[    18.933] (II) No input driver specified, ignoring this device.
+[    18.933] (II) This device may have been added with another device file.
+[    18.933] (II) config/udev: removing device Logitech USB Optical Mouse
+[    18.968] (II) evdev: Logitech USB Optical Mouse: Close
+[    18.968] (II) UnloadModule: "evdev"
+[    18.968] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/event8)
+[    18.968] (**) Logitech USB Optical Mouse: Applying InputClass "evdev pointer catchall"
+[    18.968] (II) Using input driver 'evdev' for 'Logitech USB Optical Mouse'
+[    18.968] (**) Logitech USB Optical Mouse: always reports core events
+[    18.968] (**) evdev: Logitech USB Optical Mouse: Device: "/dev/input/event8"
+[    19.028] (--) evdev: Logitech USB Optical Mouse: Vendor 0x46d Product 0xc077
+[    19.028] (--) evdev: Logitech USB Optical Mouse: Found 12 mouse buttons
+[    19.028] (--) evdev: Logitech USB Optical Mouse: Found scroll wheel(s)
+[    19.028] (--) evdev: Logitech USB Optical Mouse: Found relative axes
+[    19.028] (--) evdev: Logitech USB Optical Mouse: Found x and y relative axes
+[    19.028] (II) evdev: Logitech USB Optical Mouse: Configuring as mouse
+[    19.028] (II) evdev: Logitech USB Optical Mouse: Adding scrollwheel support
+[    19.028] (**) evdev: Logitech USB Optical Mouse: YAxisMapping: buttons 4 and 5
+[    19.028] (**) evdev: Logitech USB Optical Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[    19.028] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb5/5-4/5-4:1.0/0003:046D:C077.0003/input/input11/event8"
+[    19.028] (II) XINPUT: Adding extended input device "Logitech USB Optical Mouse" (type: MOUSE, id 8)
+[    19.028] (II) evdev: Logitech USB Optical Mouse: initialized for relative axes.
+[    19.028] (**) Logitech USB Optical Mouse: (accel) keeping acceleration scheme 1
+[    19.028] (**) Logitech USB Optical Mouse: (accel) acceleration profile 0
+[    19.028] (**) Logitech USB Optical Mouse: (accel) acceleration factor: 2.000
+[    19.028] (**) Logitech USB Optical Mouse: (accel) acceleration threshold: 4
+[    19.028] (II) config/udev: Adding input device HD-Audio Generic Front Mic (/dev/input/event1)
+[    19.028] (II) No input driver specified, ignoring this device.
+[    19.028] (II) This device may have been added with another device file.
+[    19.029] (II) config/udev: Adding input device HD-Audio Generic Rear Mic (/dev/input/event2)
+[    19.029] (II) No input driver specified, ignoring this device.
+[    19.029] (II) This device may have been added with another device file.
+[    19.029] (II) config/udev: Adding input device HD-Audio Generic Line (/dev/input/event3)
+[    19.029] (II) No input driver specified, ignoring this device.
+[    19.029] (II) This device may have been added with another device file.
+[    19.030] (II) config/udev: Adding input device HD-Audio Generic Line Out (/dev/input/event4)
+[    19.030] (II) No input driver specified, ignoring this device.
+[    19.030] (II) This device may have been added with another device file.
+[    19.030] (II) config/udev: Adding input device HD-Audio Generic Front Headphone (/dev/input/event5)
+[    19.030] (II) No input driver specified, ignoring this device.
+[    19.030] (II) This device may have been added with another device file.
+[    44.342] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/mouse0)
+[    44.342] (II) No input driver specified, ignoring this device.
+[    44.342] (II) This device may have been added with another device file.
+[    44.344] (II) config/udev: removing device Logitech USB Keyboard
+[    44.368] (II) evdev: Logitech USB Keyboard: Close
+[    44.368] (II) UnloadModule: "evdev"
+[    44.368] (II) config/udev: Adding input device Logitech USB Keyboard (/dev/input/event6)
+[    44.368] (**) Logitech USB Keyboard: Applying InputClass "evdev keyboard catchall"
+[    44.368] (II) Using input driver 'evdev' for 'Logitech USB Keyboard'
+[    44.368] (**) Logitech USB Keyboard: always reports core events
+[    44.368] (**) evdev: Logitech USB Keyboard: Device: "/dev/input/event6"
+[    44.368] (--) evdev: Logitech USB Keyboard: Vendor 0x46d Product 0xc31c
+[    44.368] (--) evdev: Logitech USB Keyboard: Found keys
+[    44.368] (II) evdev: Logitech USB Keyboard: Configuring as keyboard
+[    44.368] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:10.0/usb1/1-2/1-2:1.0/0003:046D:C31C.0001/input/input9/event6"
+[    44.368] (II) XINPUT: Adding extended input device "Logitech USB Keyboard" (type: KEYBOARD, id 6)
+[    44.368] (**) Option "xkb_rules" "evdev"
+[    44.368] (**) Option "xkb_model" "pc105"
+[    44.368] (**) Option "xkb_layout" "us"
+[    44.368] (WW) Option "xkb_variant" requires a string value
+[    44.368] (WW) Option "xkb_options" requires a string value
+[    44.369] (II) config/udev: removing device Logitech USB Keyboard
+[    44.408] (II) evdev: Logitech USB Keyboard: Close
+[    44.408] (II) UnloadModule: "evdev"
+[    44.408] (II) config/udev: Adding input device Logitech USB Keyboard (/dev/input/event7)
+[    44.408] (**) Logitech USB Keyboard: Applying InputClass "evdev keyboard catchall"
+[    44.408] (II) Using input driver 'evdev' for 'Logitech USB Keyboard'
+[    44.408] (**) Logitech USB Keyboard: always reports core events
+[    44.408] (**) evdev: Logitech USB Keyboard: Device: "/dev/input/event7"
+[    44.408] (--) evdev: Logitech USB Keyboard: Vendor 0x46d Product 0xc31c
+[    44.408] (--) evdev: Logitech USB Keyboard: Found absolute axes
+[    44.408] (II) evdev: Logitech USB Keyboard: Forcing absolute x/y axes to exist.
+[    44.408] (--) evdev: Logitech USB Keyboard: Found keys
+[    44.408] (II) evdev: Logitech USB Keyboard: Forcing relative x/y axes to exist.
+[    44.408] (II) evdev: Logitech USB Keyboard: Configuring as mouse
+[    44.408] (II) evdev: Logitech USB Keyboard: Configuring as keyboard
+[    44.408] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:10.0/usb1/1-2/1-2:1.1/0003:046D:C31C.0002/input/input10/event7"
+[    44.408] (II) XINPUT: Adding extended input device "Logitech USB Keyboard" (type: KEYBOARD, id 7)
+[    44.408] (**) Option "xkb_rules" "evdev"
+[    44.408] (**) Option "xkb_model" "pc105"
+[    44.408] (**) Option "xkb_layout" "us"
+[    44.408] (WW) Option "xkb_variant" requires a string value
+[    44.408] (WW) Option "xkb_options" requires a string value
+[    44.408] (II) evdev: Logitech USB Keyboard: initialized for absolute axes.
+[    44.408] (**) Logitech USB Keyboard: (accel) keeping acceleration scheme 1
+[    44.408] (**) Logitech USB Keyboard: (accel) acceleration profile 0
+[    44.408] (**) Logitech USB Keyboard: (accel) acceleration factor: 2.000
+[    44.408] (**) Logitech USB Keyboard: (accel) acceleration threshold: 4
+[    44.409] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=3 (/dev/input/event0)
+[    44.409] (II) No input driver specified, ignoring this device.
+[    44.409] (II) This device may have been added with another device file.
+[    44.409] (II) config/udev: removing device Logitech USB Optical Mouse
+[    44.456] (II) evdev: Logitech USB Optical Mouse: Close
+[    44.456] (II) UnloadModule: "evdev"
+[    44.456] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/event8)
+[    44.456] (**) Logitech USB Optical Mouse: Applying InputClass "evdev pointer catchall"
+[    44.456] (II) Using input driver 'evdev' for 'Logitech USB Optical Mouse'
+[    44.456] (**) Logitech USB Optical Mouse: always reports core events
+[    44.456] (**) evdev: Logitech USB Optical Mouse: Device: "/dev/input/event8"
+[    44.516] (--) evdev: Logitech USB Optical Mouse: Vendor 0x46d Product 0xc077
+[    44.516] (--) evdev: Logitech USB Optical Mouse: Found 12 mouse buttons
+[    44.516] (--) evdev: Logitech USB Optical Mouse: Found scroll wheel(s)
+[    44.516] (--) evdev: Logitech USB Optical Mouse: Found relative axes
+[    44.516] (--) evdev: Logitech USB Optical Mouse: Found x and y relative axes
+[    44.516] (II) evdev: Logitech USB Optical Mouse: Configuring as mouse
+[    44.516] (II) evdev: Logitech USB Optical Mouse: Adding scrollwheel support
+[    44.516] (**) evdev: Logitech USB Optical Mouse: YAxisMapping: buttons 4 and 5
+[    44.516] (**) evdev: Logitech USB Optical Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[    44.516] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb5/5-4/5-4:1.0/0003:046D:C077.0003/input/input11/event8"
+[    44.516] (II) XINPUT: Adding extended input device "Logitech USB Optical Mouse" (type: MOUSE, id 8)
+[    44.516] (II) evdev: Logitech USB Optical Mouse: initialized for relative axes.
+[    44.516] (**) Logitech USB Optical Mouse: (accel) keeping acceleration scheme 1
+[    44.516] (**) Logitech USB Optical Mouse: (accel) acceleration profile 0
+[    44.516] (**) Logitech USB Optical Mouse: (accel) acceleration factor: 2.000
+[    44.516] (**) Logitech USB Optical Mouse: (accel) acceleration threshold: 4
+[    44.517] (II) config/udev: Adding input device HD-Audio Generic Front Mic (/dev/input/event1)
+[    44.517] (II) No input driver specified, ignoring this device.
+[    44.517] (II) This device may have been added with another device file.
+[    44.517] (II) config/udev: Adding input device HD-Audio Generic Line Out (/dev/input/event4)
+[    44.517] (II) No input driver specified, ignoring this device.
+[    44.517] (II) This device may have been added with another device file.
+[    44.517] (II) config/udev: Adding input device HD-Audio Generic Line (/dev/input/event3)
+[    44.517] (II) No input driver specified, ignoring this device.
+[    44.517] (II) This device may have been added with another device file.
+[    44.518] (II) config/udev: Adding input device HD-Audio Generic Front Headphone (/dev/input/event5)
+[    44.518] (II) No input driver specified, ignoring this device.
+[    44.518] (II) This device may have been added with another device file.
+[    44.518] (II) config/udev: Adding input device HD-Audio Generic Rear Mic (/dev/input/event2)
+[    44.518] (II) No input driver specified, ignoring this device.
+[    44.518] (II) This device may have been added with another device file.
+[   155.280] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=3 (/dev/input/event0)
+[   155.280] (II) No input driver specified, ignoring this device.
+[   155.280] (II) This device may have been added with another device file.
+[   155.281] (II) config/udev: removing device Logitech USB Keyboard
+[   155.300] (II) evdev: Logitech USB Keyboard: Close
+[   155.300] (II) UnloadModule: "evdev"
+[   155.300] (II) config/udev: Adding input device Logitech USB Keyboard (/dev/input/event6)
+[   155.300] (**) Logitech USB Keyboard: Applying InputClass "evdev keyboard catchall"
+[   155.300] (II) Using input driver 'evdev' for 'Logitech USB Keyboard'
+[   155.300] (**) Logitech USB Keyboard: always reports core events
+[   155.300] (**) evdev: Logitech USB Keyboard: Device: "/dev/input/event6"
+[   155.300] (--) evdev: Logitech USB Keyboard: Vendor 0x46d Product 0xc31c
+[   155.300] (--) evdev: Logitech USB Keyboard: Found keys
+[   155.300] (II) evdev: Logitech USB Keyboard: Configuring as keyboard
+[   155.300] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:10.0/usb1/1-2/1-2:1.0/0003:046D:C31C.0001/input/input9/event6"
+[   155.300] (II) XINPUT: Adding extended input device "Logitech USB Keyboard" (type: KEYBOARD, id 6)
+[   155.300] (**) Option "xkb_rules" "evdev"
+[   155.300] (**) Option "xkb_model" "pc105"
+[   155.300] (**) Option "xkb_layout" "us"
+[   155.300] (WW) Option "xkb_variant" requires a string value
+[   155.300] (WW) Option "xkb_options" requires a string value
+[   155.301] (II) config/udev: removing device Logitech USB Keyboard
+[   155.336] (II) evdev: Logitech USB Keyboard: Close
+[   155.336] (II) UnloadModule: "evdev"
+[   155.336] (II) config/udev: Adding input device Logitech USB Keyboard (/dev/input/event7)
+[   155.336] (**) Logitech USB Keyboard: Applying InputClass "evdev keyboard catchall"
+[   155.336] (II) Using input driver 'evdev' for 'Logitech USB Keyboard'
+[   155.336] (**) Logitech USB Keyboard: always reports core events
+[   155.336] (**) evdev: Logitech USB Keyboard: Device: "/dev/input/event7"
+[   155.336] (--) evdev: Logitech USB Keyboard: Vendor 0x46d Product 0xc31c
+[   155.336] (--) evdev: Logitech USB Keyboard: Found absolute axes
+[   155.336] (II) evdev: Logitech USB Keyboard: Forcing absolute x/y axes to exist.
+[   155.336] (--) evdev: Logitech USB Keyboard: Found keys
+[   155.336] (II) evdev: Logitech USB Keyboard: Forcing relative x/y axes to exist.
+[   155.336] (II) evdev: Logitech USB Keyboard: Configuring as mouse
+[   155.336] (II) evdev: Logitech USB Keyboard: Configuring as keyboard
+[   155.336] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:10.0/usb1/1-2/1-2:1.1/0003:046D:C31C.0002/input/input10/event7"
+[   155.336] (II) XINPUT: Adding extended input device "Logitech USB Keyboard" (type: KEYBOARD, id 7)
+[   155.336] (**) Option "xkb_rules" "evdev"
+[   155.336] (**) Option "xkb_model" "pc105"
+[   155.336] (**) Option "xkb_layout" "us"
+[   155.336] (WW) Option "xkb_variant" requires a string value
+[   155.336] (WW) Option "xkb_options" requires a string value
+[   155.336] (II) evdev: Logitech USB Keyboard: initialized for absolute axes.
+[   155.336] (**) Logitech USB Keyboard: (accel) keeping acceleration scheme 1
+[   155.336] (**) Logitech USB Keyboard: (accel) acceleration profile 0
+[   155.336] (**) Logitech USB Keyboard: (accel) acceleration factor: 2.000
+[   155.336] (**) Logitech USB Keyboard: (accel) acceleration threshold: 4
+[   155.337] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/mouse0)
+[   155.337] (II) No input driver specified, ignoring this device.
+[   155.337] (II) This device may have been added with another device file.
+[   155.337] (II) config/udev: removing device Logitech USB Optical Mouse
+[   155.368] (II) evdev: Logitech USB Optical Mouse: Close
+[   155.368] (II) UnloadModule: "evdev"
+[   155.368] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/event8)
+[   155.368] (**) Logitech USB Optical Mouse: Applying InputClass "evdev pointer catchall"
+[   155.368] (II) Using input driver 'evdev' for 'Logitech USB Optical Mouse'
+[   155.368] (**) Logitech USB Optical Mouse: always reports core events
+[   155.368] (**) evdev: Logitech USB Optical Mouse: Device: "/dev/input/event8"
+[   155.428] (--) evdev: Logitech USB Optical Mouse: Vendor 0x46d Product 0xc077
+[   155.428] (--) evdev: Logitech USB Optical Mouse: Found 12 mouse buttons
+[   155.428] (--) evdev: Logitech USB Optical Mouse: Found scroll wheel(s)
+[   155.428] (--) evdev: Logitech USB Optical Mouse: Found relative axes
+[   155.428] (--) evdev: Logitech USB Optical Mouse: Found x and y relative axes
+[   155.428] (II) evdev: Logitech USB Optical Mouse: Configuring as mouse
+[   155.428] (II) evdev: Logitech USB Optical Mouse: Adding scrollwheel support
+[   155.428] (**) evdev: Logitech USB Optical Mouse: YAxisMapping: buttons 4 and 5
+[   155.428] (**) evdev: Logitech USB Optical Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[   155.428] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb5/5-4/5-4:1.0/0003:046D:C077.0003/input/input11/event8"
+[   155.428] (II) XINPUT: Adding extended input device "Logitech USB Optical Mouse" (type: MOUSE, id 8)
+[   155.428] (II) evdev: Logitech USB Optical Mouse: initialized for relative axes.
+[   155.428] (**) Logitech USB Optical Mouse: (accel) keeping acceleration scheme 1
+[   155.428] (**) Logitech USB Optical Mouse: (accel) acceleration profile 0
+[   155.428] (**) Logitech USB Optical Mouse: (accel) acceleration factor: 2.000
+[   155.428] (**) Logitech USB Optical Mouse: (accel) acceleration threshold: 4
+[   155.429] (II) config/udev: Adding input device HD-Audio Generic Rear Mic (/dev/input/event2)
+[   155.429] (II) No input driver specified, ignoring this device.
+[   155.429] (II) This device may have been added with another device file.
+[   155.429] (II) config/udev: Adding input device HD-Audio Generic Front Mic (/dev/input/event1)
+[   155.429] (II) No input driver specified, ignoring this device.
+[   155.429] (II) This device may have been added with another device file.
+[   155.430] (II) config/udev: Adding input device HD-Audio Generic Line Out (/dev/input/event4)
+[   155.430] (II) No input driver specified, ignoring this device.
+[   155.430] (II) This device may have been added with another device file.
+[   155.430] (II) config/udev: Adding input device HD-Audio Generic Line (/dev/input/event3)
+[   155.430] (II) No input driver specified, ignoring this device.
+[   155.430] (II) This device may have been added with another device file.
+[   155.430] (II) config/udev: Adding input device HD-Audio Generic Front Headphone (/dev/input/event5)
+[   155.430] (II) No input driver specified, ignoring this device.
+[   155.430] (II) This device may have been added with another device file.

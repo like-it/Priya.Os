@@ -1,0 +1,247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Examples</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="DVDAuthor"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="DVDAuthor"
+HREF="index.html"><LINK
+REL="NEXT"
+TITLE="Creating a title"
+HREF="ex-title.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>DVDAuthor</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="index.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="ex-title.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="EXAMPLES"
+></A
+>Chapter 1. Examples</H1
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="EX-TOOLS"
+>1.1. Running the tools</A
+></H1
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN7"
+>1.1.1. Creating the DVD filesystem with dvdauthor</A
+></H2
+><P
+>In these examples, <B
+CLASS="COMMAND"
+>dvdauthor</B
+> is run as:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>rm -r test &#38;&#38; dvdauthor -o test -x dvdauthor.xml</PRE
+><P
+>It will create or append to the directory specified, so it is a
+good idea to remove the directory before running
+<B
+CLASS="COMMAND"
+>dvdauthor</B
+>, otherwise the resulting structure will
+not be playable.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN14"
+>1.1.2. Adding subtitles with spumux</A
+></H2
+><P
+><B
+CLASS="COMMAND"
+>spumux</B
+> takes an mpeg2 program stream as input and spits one back out, with subtitles multiplexed in.  It is run as:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>spumux spumux.xml &lt; input.mpg &gt; output.mpg</PRE
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN19"
+>1.1.3. Creating a movie source from video and audio with mplex</A
+></H2
+><P
+><B
+CLASS="COMMAND"
+>mplex</B
+> comes from the mjpegtools package,
+available at http://mjpeg.sourceforge.net.  It can take independent
+video and audio streams and create a single mpeg2 stream.</P
+><PRE
+CLASS="PROGRAMLISTING"
+>mplex -f 8 -o output.mpg video.m2v audio.m2a</PRE
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN24"
+>1.1.4. Creating video from bitmap images with mpeg2enc</A
+></H2
+><P
+>When creating menus, it is necessary to create an mpeg2 video stream from one or more bitmap images.  For NTSC you can do:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>ppmtoy4m | mpeg2enc -a 2 -n n -f 8 -o output.m2v</PRE
+><P
+>and for PAL you can do:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>ppmtoy4m | mpeg2enc -a 2 -n p -f 8 -o output.m2v</PRE
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN30"
+>1.1.5. Creating a blank audio track with toolame</A
+></H2
+><P
+>When creating menus with no sound, it is necessary to multiplex
+in an empty sound file.  At 48kHz, NTSC has 1601.6 audio samples per
+frame while PAL has 1920 audio samples per frame.  Determine how many
+samples you need, and run:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>dd if=/dev/zero bs=4 count=<TT
+CLASS="REPLACEABLE"
+><I
+>number-of-samples</I
+></TT
+> | toolame -b 128 -s 48 /dev/stdin output.m2a</PRE
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="ex-title.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>DVDAuthor</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Creating a title</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

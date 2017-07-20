@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-publish" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-06-18" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Publiez vos clés publiques sur les serveurs de clés, ou <link xref="pgp-export">exportez-les</link> et envoyez-les par courrier à vos amis.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Partage de vos clés publiques</title>
+
+  <p>Si vous voulez que des personnes vous envoient des messages chiffrés, vous devez partager votre clé <gui>GnuPG</gui> avec elles. Pour partager votre clé avec un nombre limité de personnes, <link xref="pgp-export">exportez-la</link>, et envoyez par courrier le fichier de clé résultant. Pour permettre à quiconque de <link xref="pgp-retrieve-remote">récupérer</link> et d'utiliser votre clé publique, publiez-la sur un serveur de clés.</p>
+
+  <steps>
+    <title>Publication de ma clé sur un serveur de clés</title>
+    <item>
+      <p>Sélectionnez <gui>Clés GnuPG</gui> dans le panneau de gauche.</p>
+    </item>
+    <item>
+      <p>Dans la liste, sélectionnez la <gui>Clé personnelle PGP</gui> que vous désirez publier.</p>
+    </item>
+    <item>
+      <p>Sélectionnez <guiseq><gui style="menu">Distant</gui> <gui style="menuitem">Synchroniser et publier des clés…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton <gui style="button">Serveurs de clés</gui> pour afficher la liste des serveurs.</p>
+    </item>
+    <item>
+      <p>Sélectionnez le serveur de clés dans le menu <gui>Publier les clés sur</gui>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui style="button">Fermer</gui> pour revenir à la boîte de dialogue précédente.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui style="button">Synchroniser</gui> pour terminer.</p>
+    </item>
+   <!-- <item>
+      <p>Tick the
+      <gui style="checkbox">Automatically retrieve keys from key servers</gui>
+      checkbox to retrieve any key that is published on the server you have
+      selected in the previous step. You can also tick the
+      <gui style="checkbox">Automatically sync modified keys with key servers</gui>
+      checkbox to ensure that any modifications to a key on the key server,
+      like a signature, are updated on your copy of the key too.</p>
+      Not sure about this - Aruna 18/08/2013
+    </item>-->
+  </steps>
+
+  <note style="important">
+    <p>Vous devez être connecté à Internet lors de la publication de vos clés.</p>
+  </note>
+
+  <note style="info">
+    <title>Définition de la notion de serveur de clés</title>
+    <p>Les serveurs de clés sont des ordinateurs qui enregistrent les copies de clés de chiffrement publiques qui leur sont envoyées, et qui partagent ces copies avec d'autres serveurs à travers Internet.</p>
+  </note>
+
+</page>

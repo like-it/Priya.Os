@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="pgp-sign" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision pkgversion="3.9" date="2013-08-29" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Wenn Sie einem Schlüssel vertrauen, so können Sie diesen signieren.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Schlüssel signieren</title>
+
+  <p>Signieren Sie den Schlüssel einer Person, um damit zu zeigen, dass Sie der Echtheit des Schlüssels trauen und dafür einstehen. Der Schlüssel einer Person darf nur nach dem Vergleich der <link xref="pgp-userid">Benutzerkennung</link> mit einem gültigen Nachweis der Identität (Pass, Führerschein etc.) signiert werden. Wenn die beiden Kennungen übereinstimmen spricht man von einem vertrauenswürdigen Schlüssel.</p>
+
+  <steps>
+    <title>So signieren Sie einen Schlüssel:</title>
+    <item>
+      <p>Importieren Sie den <link xref="pgp-retrieve-remote">entfernten Schlüssel</link> oder die <link xref="pgp-import">Schlüsseldatei</link> mit dem zu signierenden Schlüssel in <app>Passwörter und Schlüssel</app>.</p>
+    </item>
+    <item>
+      <p>Wählen Sie den importierten Schlüssel aus der Liste der <gui>GnuPG-Schlüssel</gui>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie mit der rechten Maustaste auf den Schlüssel und wählen Sie <guiseq><gui>Eigenschaften</gui><gui>Vertrauen</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf den Knopf <gui style="button">Diesen Schlüssel signieren</gui>.</p>
+    </item>
+    <item>
+      <p>Abhängig davon, wie sorgsam Sie den Schlüssel geprüft haben, wählen Sie eine von <gui style="radiobutton">Überhaupt nicht</gui>, <gui style="radiobutton">Mäßig</gui> oder <gui style="radiobutton">Sehr sorgfältig</gui>.</p>
+    </item>
+    <item>
+      <p>Entscheiden Sie, ob Sie Ihre Signatur zu einem späteren Zeitpunkt zurückziehen wollen, und ob Sie Ihre Signatur veröffentlichen wollen, indem Sie die entsprechenden Ankreuzfelder anwählen.</p>
+    </item>
+    <item>
+      <p>Wenn Sie mehr als einen PGP-Schlüssel besitzen, so wählen Sie den Schlüssel aus der Liste neben <gui>Signierer</gui>, mit dem Sie signieren wollen.</p>
+    </item>
+    <item>
+      <p>Klicken Sie zum Abschließen auf <gui style="button">Signieren</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="info">
+    <title>Kann ich meinen eigenen Schlüssel signieren?</title>
+    <p>Wenn Sie einen neuen <gui>GnuPG-Schlüssel</gui> <link xref="pgp-create">erstellen</link>, so wird dieser automatisch von Ihnen signiert. Jeder von einem <gui>GnuPG-Schlüssel</gui> neue <link xref="subkeys-add">erstellte</link> Unterschlüssel von wird auch automatisch signiert.</p>
+  </note>
+
+</page>

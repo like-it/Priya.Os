@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Za omogočitev/onemogočitev dostopa do omrežja za program s požarnim zidom morate navesti prava omrežna vrata.</desc>
+  </info>
+
+  <title>Pogosto uporabljena vrata omrežja</title>
+
+  <p>To je seznam omrežnih vrat, ki jih običajno uporabljajo programi, ki zagotavljajo omrežne storitve kot sta izmenjava datotek ali ogled oddaljenega namizja. Svoj sistemski požarni zid lahko spremenite, da <link xref="net-firewall-on-off">blokira ali omogoči dostop</link> do teh programov. V uporabi je na tisoče vrat, zato ta preglednica ni popolna.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>Vrata</p>
+	</td>
+	<td>
+	  <p>Ime</p>
+	</td>
+	<td>
+	  <p>Opis</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>Omogoča sistemom, da lahko najdejo drug drugega in opišejo, katero storitev ponujajo ne da bi vam bilo treba ročno navesti podrobnosti.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>Tiskanje</p>
+	</td>
+	<td>
+	  <p>Omogoča pošiljanje tiskalniških poslov na tiskalnik preko omrežja.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>Tiskanje</p>
+	</td>
+	<td>
+	  <p>Omogoča souporabo tiskalnika z drugimi osebami preko omrežja.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>Prisotnost</p>
+	</td>
+	<td>
+	  <p>Omogoča vam oglaševanje vašega stanja hipnega sporočanja z drugimi ljudmi v omrežju kot so "na voljo" ali "zaposleno".</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>Oddaljeno namizje</p>
+	</td>
+	<td>
+	  <p>Omogoča vam, da delite svoje namizje, tako da si ga lahko drugi ljudje ogledajo ali pomagajo na daljavo.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>Souporaba glasbe (DAAP)</p>
+	</td>
+	<td>
+	  <p>Omogoča vam, da delite svojo glasbeno knjižnico z drugimi v omrežju.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

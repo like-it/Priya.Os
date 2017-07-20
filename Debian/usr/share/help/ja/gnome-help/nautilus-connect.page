@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>FTP、SSH、Windows 共有、あるいは WebDAV を使って 他のコンピューターのファイルを表示、編集します</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>サーバーや共有ディスクのファイルを閲覧する</title>
+
+<p>ファイルサーバーや共有ディスクに接続し、ちょうど手元のコンピューターのファイルにアクセスするのと同じように、ネットワーク上のファイルにアクセスできます。インターネット上でファイルのダウンロードやアップロードをしたり、ローカルネットワーク内のユーザーとファイルを共有したりするときに、この機能は便利です。</p>
+
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
+
+<steps>
+  <title>ファイルサーバーに接続する</title>
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
+   sidebar.</p>
+  </item>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
+  <note>
+    <p>以前に接続したサーバーがあれば、<gui>最近使用したサーバー</gui>の一覧からそのサーバーを選択できます。</p>
+  </note>
+  </item>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>URL の書式</title>
+
+<p><em>URL</em> (<em>Uniform Resource Locator</em>, ユニフォームリソースロケーター) とは、ネットワーク上のファイルの場所を参照するためのアドレスの記述方法です。アドレスは次のような書式で記述します。</p>
+  <example>
+    <p><sys>scheme://servername.example.com/folder</sys></p>
+  </example>
+<p><em>scheme</em> (スキーム) には、プロトコルあるいやサーバーの種類を指定します。<em>example.com</em> の部分は、<em>ドメイン名</em>と呼ばれます。ユーザー名を指定する必要があれば、サーバー名の前に挿入します。書式は次のとおりです。</p>
+  <example>
+    <p><sys>scheme://username@servername.example.com/folder</sys></p>
+  </example>
+<p>スキームによっては、ポート番号を指定する必要があります。書式は次のとおりです。</p>
+  <example>
+    <p><sys>scheme://servername.example.com:port/folder</sys></p>
+  </example>
+<p>以下は、サポートするサーバー種類に応じた書式の例です。</p>
+</section>
+
+<section id="types">
+ <title>サーバーの種類</title>
+
+<p>さまざまな種類のサーバーに接続できます。サーバーによっては、誰でも接続できるよう公開されているものもあれば、ユーザー名とパスワードを使ってログインしなければならないものもあります。</p>
+<p>権限がなく、サーバーのファイルにたいする特定の操作ができないこともあります。たとえば、公開 FTP サイトでは、ファイルの削除はおそらくできないでしょう。</p>
+<p>入力する URL は、共有ファイルを提供するためにサーバーが使用するプロトコルによって変わります。</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>サーバーに <em>Secure Shell</em> アカウントがあれば、この方法で接続できます。多くの web ホストは、メンバー向けの SSH アカウントを提供しており、安全にファイルのアップロードができます。SSH サーバーを利用するには、サーバーにログインする必要があります。</p>
+  <p>典型的な SSH の URL は次のような書式になります。</p>
+  <example>
+    <p><sys>ssh://username@servername.example.com/folder</sys></p>
+  </example>
+
+  <p>SSH を使用する場合、すべての送信データ (パスワードを含む) は暗号化されるので、ネットワークの他のユーザーがその内容を盗聴することはできません。</p>
+</item>
+<item>
+  <title>FTP (要ログイン)</title>
+  <p>FTP はインターネット上でファイルを交換するポピュラーな方法です。FTP ではデータは暗号化されないため、多くのサーバーが SSH によるアクセスを提供しています。しかしながら、ファイルのアップロードやダウンロードをするのに、FTP が使える、あるいは使わなければならないサイトは、まだ存在します。ログインした FTP サイトでは、通常ファイルの削除やアップロードが可能です。</p>
+  <p>典型的な FTP の URL は次のような書式になります。</p>
+  <example>
+    <p><sys>ftp://username@ftp.example.com/path/</sys></p>
+  </example>
+</item>
+<item>
+  <title>公開 FTP</title>
+  <p>ファイルのダウンロードが可能なサイトは、ときどき一般に公開されていたり、匿名 (Anonymous) での FTP アクセスができることがあります。こうしたサーバーでは、ユーザー名やパスワードは不要ですが、ファイルの削除やアップロードは通常できません。</p>
+  <p>典型的な匿名 FTP の URL は次のような書式になります。</p>
+  <example>
+    <p><sys>ftp://ftp.example.com/path/</sys></p>
+  </example>
+  <p>匿名 FTP サイトによっては、パブリックなユーザー名とパスワード、あるいはパブリックなユーザー名とパスワードとしてあなたのメールアドレスを使ったログインが必要になることもあります。こうしたサーバーにアクセスする場合は、<gui>FTP (要ログイン)</gui> を選択し、接続先 FTP サイトが指定する認証情報を使用してください。</p>
+</item>
+<item>
+  <title>Windows 共有</title>
+  <p>Windows コンピューターは、プロプライエタリのプロトコルを使って LAN 上でファイル共有を行います。Windows ネットワークのコンピューターは、組織化し、より適切にアクセス制御するために、<em>ドメイン</em>にグルーピングされることがときどきあります。リモートのコンピューターへの適切な権限があれば、ファイルマネージャーから Windows の共有ファイルにアクセスできます。</p>
+  <p>典型的な Windows 共有 の URL は次のような書式になります。</p>
+  <example>
+    <p><sys>smb://servername/Share</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV および Secure WebDAV</title>
+  <p>Web で使われる HTTP プロトコルをベースにして、ローカルネットワーク上でファイルを共有したり、インターネット上にファイルを保存したりするのに、WebDAV がときどき使用されます。サーバーがセキュアな接続をサポートする場合は、それを利用した方がよいでしょう。Secure WebDAV は強力な SSL 暗号を使用しており、他のユーザーがあなたのパスワードを覗き見ることはできません。</p>
+  <p>A WebDAV URL looks like this:</p>
+  <example>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

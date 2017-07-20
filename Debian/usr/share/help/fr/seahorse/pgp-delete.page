@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-delete" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-24" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Supprimer les copies locales de vos clés et les clés des personnes avec lesquelles vous communiquez.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Suppression d'une clé existante</title>
+
+  <p>Si vous ne communiquez plus avec une personne, vous pouvez supprimer la copie de sa clé de votre ordinateur en utilisant <app>Mots de passe et clés</app>. Vous pouvez également supprimer définitivement une de vos propres clés tant qu'elle n'a pas été publiée sur un serveur. La suppression d'une clé GnuPG supprime à la fois la clé publique et la clé privée.</p>
+
+  <steps>
+    <title>Suppression d'une clé :</title>
+    <item>
+      <p>Sélectionnez la clé. (Il vous faudra peut-être passer par <guiseq> <gui style="menu">Affichage</gui><gui style="menuitem">Tout voir</gui> </guiseq> pour toutes les voir)</p>
+    </item>
+    <item>
+      <p>Faites un clic droit et choisissez <gui>Supprimer</gui> dans le menu contextuel. Vous pouvez aussi sélectionner <guiseq><gui style="menu">Édition</gui> <gui style="menuitem">Supprimer</gui></guiseq>.</p>
+      <note style="important">
+        <p>Si vous supprimez une clé publiée sur un serveur de clés, vous ne faites que supprimer la clé de votre trousseau GnuPG car une copie de la clé reste présente sur le serveur.</p>
+        <p>Si vous supprimez une clé GnuPG, cela signifie que votre clé privée est définitivement supprimée alors que votre clé publique peut toujours être <link xref="pgp-retrieve-remote">récupérée</link> depuis un serveur de clés et utilisée par d'autres pour chiffrer des messages que vous serez incapable de lire ! Pour empêcher qu'une telle clé soit utilisée, récupérez-la et révoquez-la. La clé révoquée peut alors être <link xref="pgp-sync">synchronisée</link> avec un serveur de clé, ce qui évitera qu'elle ne soit récupérée et utilisée par quelqu'un.</p>
+        <!-- or when you <link xref="misc-key-revoke">revoke</link> it.- No
+        revoking feature yet for SSH keys/PGP master keys-->
+      </note>
+    </item>
+    <item>
+      <p>Dans la nouvelle boîte de dialogue, confirmez la suppression en cochant la case <gui style="checkbox">Je comprends que tous les éléments vont être supprimés définitivement.</gui> et cliquez sur le bouton <gui style="button">Supprimer</gui> pour terminer.</p>
+    </item>
+  </steps>
+
+
+</page>

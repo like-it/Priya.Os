@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-initial-check" xml:lang="de">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-hardware-info"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Mitwirkende im Dokumentations-Wiki von Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Stellen Sie sicher, dass die einfachen Netzwerkeinstellungen richtig sind, und bereiten Sie sich auf die nächsten Schritte zur Fehlerbeseitigung vor.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Problemlösungen für Funknetzwerke</title>
+  <subtitle>Ausführen einer erstmaligen Verbindungsüberprüfung</subtitle>
+
+  <p>In diesem Schritt erhalten Sie einige grundlegende Informationen zu Funknetzwerkverbindungen. So wird ausgeschlossen, dass Ihr Netzwerkproblem durch einen relativ einfachen Fehler zu Stande kommt, wie eine deaktivierte Funkverbindung, und zur Vorbereitung auf die nächsten Schritte zur Fehlerbeseitigung.</p>
+
+  <steps>
+    <item>
+      <p>Stellen Sie sicher, dass Ihr Laptop nicht über ein <em>Kabel</em> mit dem Internet verbunden ist.</p>
+    </item>
+    <item>
+      <p>Falls Sie einen externen Funk-Adapter verwenden (wie einen USB-Adapter oder eine PCMCIA-Karte, die Sie an Ihren Laptop anschließen), stellen Sie sicher, dass er fest im dafür vorgesehenen Anschluss Ihres Rechners sitzt.</p>
+    </item>
+    <item>
+      <p>Falls sich die Funknetzwerkkarte <em>in</em> Ihrem Rechner befindet, überprüfen Sie, ob der Funknetzwerk-Schalter eingeschaltet ist (falls vorhanden). Laptops verfügen oft über Funknetzwerk-Schalter, die Sie über eine Tastenkombination aktivieren.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf den Systemstatusbereich in der oberen Leiste und wählen Sie <gui>WLAN</gui> und anschließend <gui>Drahtlos-Einstellungen</gui>. Stellen Sie sicher, dass <gui>WLAN</gui> auf <gui>AN</gui> geschaltet ist. Sie sollten auch überprüfen, dass der <link xref="net-wireless-airplane">Flugzeugmodus nicht eingeschaltet</link> ist.</p>
+    </item>
+    <item>
+      <p>Öffnen Sie ein Terminal, geben Sie <cmd>nmcli device</cmd> ein und drücken Sie die <key>Eingabetaste</key>.</p>
+      <p>Dadurch werden Informationen über Ihre Netzwerkhardware und den Verbindungsstatus angezeigt. Suchen Sie diese Informationsliste nach unten durch, ob sie einen Abschnitt über den Funknetzwerkadapter enthält. Die Informationen zu jedem einzelnen Netzwerkgerät sind durch eine Reihe von Gedankenstrichen voneinander getrennt. Wenn Sie im Abschnitt über Ihren Funknetzwerkadapter die Angabe <code>connected</code> finden, bedeutet das, dass er funktioniert und mit Ihrem WLAN-Router verbunden ist.</p>
+    </item>
+  </steps>
+
+  <p>Wenn Sie mit Ihrem WLAN-Router verbunden sind, aber dennoch nicht ins Internet können, könnte Ihr Router nicht richtig eingestellt sein oder Ihr Internet-Dienstanbieter hat gerade technische Probleme. Gehen Sie die Anleitungen für Ihren Router und Ihres Internet-Dienstanbieters durch und stellen Sie sicher, dass die Einstellungen korrekt sind, oder wenden Sie sich an den Support Ihres Internet-Dienstanbieters.</p>
+
+  <p>Falls die von <cmd>nmcli device</cmd> gelieferten Informationen keinen Hinweis darauf ergeben haben, dass Sie mit dem Netzwerk verbunden sind, klicken Sie auf <gui>Weiter</gui>, um zum nächsten Schritt dieser Anleitung zu gelangen.</p>
+
+</page>

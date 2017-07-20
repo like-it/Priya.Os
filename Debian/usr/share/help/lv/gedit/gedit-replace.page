@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-replace" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-search"/>
+    <desc>Aizvietot daļu teksta datnē.</desc>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-05" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-11-28" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Young Li</name>
+      <email>li.young1618@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Teksta aizvietošana</title>
+
+  <p>Teksta rediģēšana var būt laikietilpīga. Lai ietaupītu laiku, <app>gedit</app> ir <app>Aizvietot</app> funkcija, kas palīdz atrast un aizvietot teksta daļas.</p>
+
+  <steps>
+    <title>Teksta aizvietošana <app>gedit</app></title>
+    <item>
+      <p>Atveriet <gui>Aizvietošanas</gui> rīku, spiežot <guiseq><gui style="button">Izvēlnes pogu</gui><gui style="menuitem">Meklēt un aizvietot…</gui></guiseq> vai nospiežot <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Ievietojiet aizvietojamo tekstu lauciņā <gui>Meklēt:</gui></p>
+    </item>
+    <item>
+      <p>Ievietojiet jauno tekstu lauciņā <gui>Aizvietot ar:</gui></p>
+    </item>
+    <item>
+      <p>Kad ievadīts sākotnējais un vēlamais teksts, jūs varat pievienot papildu meklēšanas parametrus. Varat arī izvēlēties, ko vēlaties aizvietot:</p>
+      <list>
+        <item>
+          <p>Lai aizvietotu <em>tikai</em> nākamo atrasto teksta fragmentu, spiediet <gui>Aizvietot</gui>.</p>
+        </item>
+        <item>
+          <p>Lai aizvietotu meklēto tekstu <em>visās vietās</em>, kur tas atrasts, spiediet <gui>Aizvietot visus</gui>.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="warning">
+    <p>Izmantojiet iespēju <gui>Aizvietot visu</gui> ar piesardzību. <gui>Aizvietot visus</gui> strādā visā teksta datnē un nepiedāvā izvēlēties teksta daļas, kurās notiks aizvietošana.</p>
+  </note>
+
+<section id="replace-options">
+  <title>Vairāk iespēju</title>
+
+  <p>Ja vēlaties, varat pievienot papildu parametrus savam meklējumam:</p>
+
+  <terms>
+    <item>
+      <title>Reģistrjutīgs</title>
+      <p><em>Reģistrjutīgums</em> nosaka, vai atrastā teksta reģistram (mazie vai drukātie burti) jāsaskan ar meklētās frāzes reģistru. Ja šī iespēja ir atzīmēta, meklēšana būs reģistrjūtīga. Ja nav - meklēšana neņems vērā teksta reģistru.</p>
+    </item>
+    <item>
+      <title>Atlasīt tikai veselus vārdus</title>
+      <p>Izmantojiet šo opciju, lai meklētu atsevišķus vārdus, kas nav citu vārdu fragmenti. Piemēram, meklējot vārdu 'te', kad atzīmēta šī iespēja, vārds 'te' tiktu atrasts, bet vārdi 'kar<em>te</em>' un 'bar<em>te</em>rs' netiktu atrasti.</p>
+    </item>
+    <item>
+      <title>Meklēt pretējā virzienā</title>
+      <p>Šī komanda darbojas tāpat kā komanda Atrast iepriekšējo. Ja vēlaties doties cauri meklēšanas rezultātiem virzienā no beigām uz sākumu, izvēlieties šo opciju.</p>
+    </item>
+    <item>
+      <title>Apliekt (apskatīt visu datni)</title>
+      <p>Ja ieslēgta <app>apliekšanas</app> opcija, <app>gedit</app> atsāks meklēšanas/aizvietošanas darbību no datnes sākuma, kad sasniegtas datnes beigas. Tas nodrošina, ka meklēšanas/aizvietošanas darbība ir veikta visā datnē.</p>
+    </item>
+  </terms>
+
+</section>
+
+<section id="escape-sequences">
+  <title>Izmantot atsoļa virknes</title>
+
+  <p>Jūs varat izmantot <em>atsoļu virknes</em>, lai meklētu pāriešanu jaunā rindā, kursora atgriešanu un tabulācijas.</p>
+
+  <terms>
+    <item>
+      <title>\n</title>
+      <p>Jauna rinda</p>
+    </item>
+    <item>
+      <title>\r</title>
+      <p>Kursora atgriešanās</p>
+    </item>
+    <item>
+      <title>\t</title>
+      <p>Tabulācija</p>
+    </item>
+  </terms>
+
+  <p>Ja vēlaties meklēt pašu <output>\</output> (atpakaļvērstā slīpsvītra) vai kādu no atsoļa virknēm paša tekstā, jums vajadzēs veikt atsoli atpakaļvērstajai slīpsvītrai, lai iegūtu vēl vienu atpakaļvērstu slīpsvītru. Piemēram, lai meklētu <input>\</input>, jums jāievada <input>\\</input> meklēšanas vai aizvietošanas laukā. Jūs varat meklēt atsoļa virknes tādā pat veidā — lai meklētu vai aizvietotu <input>\n</input>, lietojiet termu <input>\\n</input>.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="printing-booklet-duplex" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="printing-booklet"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tifani Antopoloski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Štampajte presavijene knjižice (kao što je knjiga ili letak) iz PDF-a koristeći normalan papir veličine A4 ili pisma.</desc>
+  </info>
+
+  <title>Štampajte knjižicu na dvostranom štampaču</title>
+
+  <p>Možete da napravite presavijenu knjižicu (kao što je mala knjiga ili letak) tako što ćete odštampati stranice dokumenta posebnim redom i izmeniti nekoliko opcija štampanja.</p>
+
+  <p>Ova uputstva su za štampanje presavijene knjižice iz PDF dokumenta.</p>
+
+  <p>Ako želite da odštampate knjižicu iz dokumenta <app>Libre Ofisa</app>, kao prvo izvezite ga u PDF tako što ćete izabrati <guiseq><gui>Datoteka</gui><gui>Izvezi kao PDF…</gui></guiseq>. Vaš dokument mora da ima ukupan broj stranica koji je deljiv sa 4 (4, 8, 12, 16,…). Moraćete da dodate do 3 prazne stranice.</p>
+
+  <p>Da štampate knjižicu:</p>
+
+  <steps>
+    <item>
+      <p>Otvorite prozorče štampanja. Ovo obično možete da uradite klikom na stavku <gui style="menuitem">Štampaj</gui> u izborniku koristeći prečicu sa tastature <keyseq><key>Ktrl</key><key>P</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Pritisnite dugme <gui>Svojstva...</gui> button</p>
+      <p>Na padajućem spisku <gui>Usmerenje</gui>, uverite se da je izabrano <gui>Položeno</gui>.</p>
+      <p>U padajućem spisku <gui>Dvostrano</gui>, izaberite <gui>Po kraćoj strani</gui>.</p>
+      <p>Pritisnite <gui>U redu</gui> da se vratite na prozorče štampanja.</p>
+    </item>
+    <item>
+      <p>Pod <gui>Opseg i primerci</gui>, izaberite <gui>Stranice</gui>.</p>
+    </item>
+    <item>
+      <p>Upišite broj stranica ovim redom (n je ukupan broj stranica, i umnožak broja 4):</p>
+      <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
+      <p>Primeri:</p>
+      <list>
+        <item><p>Knjižica od 4 stranice: Upišite <input>4,1,2,3</input></p></item>
+        <item><p>Knjižica od 8 stranica: Upišite <input>8,1,2,7,6,3,4,5</input></p></item>
+        <item><p>Knjižica od 20 stranica: Upišite <input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input></p></item>
+      </list>
+    </item>
+    <item>
+      <p>Izaberite jezičak <gui>Raspored strane</gui>.</p>
+      <p>Pod <gui>Raspored</gui>, izaberite <gui>Knjižica</gui>.</p>
+      <p>Pod <gui>Strane stranice</gui>, u padajućem spisku <gui>Obuhvati</gui>, izaberite <gui>Sve stranice</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknite <gui>Štampaj</gui>.</p>
+    </item>
+  </steps>
+
+</page>

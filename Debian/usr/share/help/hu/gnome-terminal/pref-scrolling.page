@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="pref-scrolling" xml:lang="hu">
+
+  <info>
+    <revision pkgversion="3.8" date="2013-02-25" status="draft"/>
+    <revision pkgversion="3.12" date="2014-09-08" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+    <link type="guide" xref="profile"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013-2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A kimenet görgetésének és a görgetősáv viselkedésének módosítása.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2013, 2014, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Attila Hammer</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Görgetősáv beállításai</title>
+
+  <p>Amikor nagyon sok kimenet kerül kiírásra a terminálképernyőre, hasznos lehet a terminál viselkedésének beállítása olyanra, amely könnyíti a munkát.</p>
+
+  <section id="visibility">
+    <title>Görgetősáv láthatósága</title>
+
+    <p>A görgetősáv kikapcsolható:</p>
+
+    <steps>
+      <item>
+        <p>Válassza a <guiseq><gui style="menu">Szerkesztés</gui> <gui style="menuitem">Profil beállításai</gui> <gui style="tab">Görgetés</gui></guiseq> lapot.</p>
+      </item>
+      <item>
+        <p>Törölje a <gui>Görgetősáv megjelenítése</gui> négyzetet.</p>
+      </item>
+    </steps>
+
+    <p>A beállítás azonnal mentésre kerül.</p>
+
+  </section>
+
+  <section id="on-output">
+    <title>Görgetés új kimenet kiírásakor</title>
+
+    <p>Lehetősége van a görgetés zárolására, így a parancsok végrehajtása során mindig a legújabb kimenet jelenik meg.</p>
+
+    <steps>
+      <item>
+        <p>Válassza a <guiseq><gui style="menu">Szerkesztés</gui> <gui style="menuitem">Profil beállításai</gui> <gui style="tab">Görgetés</gui></guiseq> lapot.</p>
+      </item>
+      <item>
+        <p>Jelölje be a <gui style="checkbox">Görgetés új kimenet kiírásakor</gui> négyzetet.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="on-keystroke">
+    <title>Görgetés új bemenet esetén</title>
+
+    <p>Beállítható, hogy a terminál automatikusan az ablak aljára görgessen, amikor szöveget ír be az adott parancsértelmezőbe.</p>
+
+    <steps>
+      <item>
+        <p>Válassza a <guiseq><gui style="menu">Szerkesztés</gui> <gui style="menuitem">Profil beállításai</gui> <gui style="tab">Görgetés</gui></guiseq> lapot.</p>
+      </item>
+      <item>
+        <p>Jelölje be a <gui style="checkbox">Görgetés új kimenet kiírásakor</gui> négyzetet.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="lines">
+    <title>Visszagörgethető sorok</title>
+
+    <p>Korlátozható a memóriában tárolt terminálkimeneti sorok száma. Ez akkor hasznos, ha ritkán indítja újra a terminált, így korlátozható a visszagörgetés által használt memória.</p>
+
+    <steps>
+      <item>
+        <p>Válassza a <guiseq><gui style="menu">Szerkesztés</gui> <gui style="menuitem">Profil beállításai</gui> <gui style="tab">Görgetés</gui></guiseq> lapot.</p>
+      </item>
+      <item>
+        <p>Jelölje be a <gui>Visszagörgetés korlátozása</gui> négyzetet, és írja be a sorok 0-tól nagyobb számát, amelyre korlátozni szeretné a visszagörgetést.</p>
+      </item>
+      <item>
+        <p>A sorok számát a <gui style="button">+</gui> és <gui style="button">-</gui> gombokra kattintva is növelheti illetve csökkentheti.</p>
+      </item>
+    </steps>
+
+    <note style="warning">
+      <p>A végtelen visszagörgetés használata a <app>Terminált</app> lelassíthatja görgetés közben!</p>
+    </note>
+
+  </section>
+
+</page>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-receiving-options-imap-plus" xml:lang="sv">
+
+  <info>
+    <desc>Mottagningsalternativ för IMAP+-konton.</desc>
+
+    <link type="guide" xref="mail-receiving-options#common-server-types"/>
+    <link type="guide" xref="mail-account-manage-imap-plus#receiving-email"/>
+    <revision pkgversion="3.12.9" version="0.3" date="2015-02-15" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mainwindow-starting.html.en#bstggh0 -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mottagningsalternativ för IMAP+</title>
+
+<section id="receiving-email-imap-plus">
+<title>Mottagande av e-post</title>
+
+<p>På sidan <gui>Ta emot e-post</gui> (tillgänglig via <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>E-postkonton</gui><gui style="button">Redigera</gui><gui>Ta emot e-post</gui></guiseq>):</p>
+
+<list>
+<item><p>Skriv in adressen för e-postservern i fältet <gui>Server</gui> och skriv in ditt användarnamn för den servern.</p></item>
+<item><p>Välj om du vill använda en säker anslutning (SSL eller TLS).</p><p>Du bör aktivera detta alternativ om din server har stöd för det.</p>
+<note style="tip"><p>Leverantörer som erbjuder gratis e-post via webben tillhandahåller ofta information om vilka av dessa alternativ som kan användas. Om du är i en organisationsmiljö kanske du måste kontakta din systemadministratör för vidare information.</p></note></item>
+<item><p>Välj din autentiseringstyp i listan autentisering eller klicka på <gui style="button">Kontrollera vilka typer som stöds</gui> för att låta <app>Evolution</app> kontrollera vilka autentiseringsmekanismer som stöds. Vissa servrar annonserar inte vilka autentiseringsmekanismer som de har stöd för så att klicka på denna knapp är ingen garanti för att tillgängliga mekanismer verkligen fungerar.</p></item>
+<item><p>Välj om du vill att <app>Evolution</app> ska komma ihåg ditt lösenord.</p></item>
+</list>
+
+</section>
+
+<section id="receiving-options-imap-plus">
+<title>Alternativ för mottagning</title>
+
+<p>På sidan <gui>Alternativ för mottagning</gui> (tillgänglig via <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>E-postkonton</gui><gui style="button">Redigera</gui><gui>Alternativ för mottagning</gui></guiseq>):</p>
+
+<list>
+<item><p>Om du vill att <app>Evolution</app> automatiskt ska leta efter nya meddelanden, klicka på alternativet <gui>Leta efter nya meddelanden var … minut</gui> och välj frekvensen i minuter.</p></item>
+<item><p>Välj <gui>Använd snabb omsynkronisering</gui> om IMAP-servern har stöd för <link href="http://tools.ietf.org/html/rfc5162">IMAP4-tillägg för snabb omsynkronisering av brevlåda</link>.</p></item>
+<!-- https://bugzilla.gnome.org/show_bug.cgi?id=730460 -->
+<item><p>Om e-postservern in har tillåter multipla samtidiga anslutningar från <app>Evolution</app> till servern (till exempel när du har mer än ett konto på den servern), ställ in <gui>Antal samtidiga anslutningar att använda</gui> till 1.</p></item>
+<item><p>Du kan också välja om <app>Evolution</app> letar efter nya meddelanden i alla mappar, eller bara i prenumererade mappar.</p></item>
+<item><p>Välj om du vill att <app>Evolution</app> endast ska visa <link xref="mail-imap-subscriptions">prenumererade mappar</link>.</p></item>
+<item><p>Välj om du vill att <link xref="mail-filters">filter</link> automatiskt ska tillämpas för e-postmeddelanden som du tar emot, om <link xref="mail-spam-marking">skräppost</link> bör filtreras automatiskt och om <link xref="mail-working-offline">e-postmeddelanden på servern bör synkroniseras med din lokala kopia för frånkopplad tillgång till dem</link>.</p></item></list>
+
+</section>
+
+</page>

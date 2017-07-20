@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-commander" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/> 
+    <revision version="3.4" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Χρήση διεπαφής τερματικού για προχωρημένη επεξεργασία.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnom.org</mal:email>
+      <mal:years>2012, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Commander</title>
+
+  <p>Το πρόσθετο <app>Commander</app> είναι ένα πρόσθετο για προχωρημένους χρήστες του <app>gedit</app> που επιτρέπει την εκτέλεση ενεργειών γραμμής εντολών στο τρέχον αρχείο. Για να ενεργοποιήσετε το πρόσθετο, επιλέξτε <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Προτιμήσεις</gui> <gui>Πρόσθετα</gui><gui>Commander</gui></guiseq>.</p>
+
+  <p>Αφού έχετε ενεργοποιήσει το πρόσθετο, το θέτετε σε λειτουργία πατώντας τα <keyseq><key> Ctrl</key><key>.</key></keyseq>.</p>
+  
+  <note style="tip">
+    <p>Το τελευταίο πλήκτρο στον παραπάνω συνδυασμό πλήκτρων είναι μια τελεία.</p>
+  </note>
+
+  <table frame="all" rules="all">
+    <thead>
+      <tr>
+        <td><p>Ενέργεια</p></td>
+	<td><p>Συντόμευση πληκτρολογίου</p></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><p>Δείτε μια επισκόπηση των διαθέσιμων εντολών</p></td>
+	<td><p><keyseq><key>Tab</key><key>Tab</key></keyseq></p></td>
+      </tr>
+      <tr>
+        <td><p>Εύρεση μιας λέξης μέσα στο τρέχον έγγραφο</p></td>
+	<td>
+	  <p><key>/</key> <input>foo</input></p>
+          <p>Αυτό θα βρει τη λέξη <input>foo</input>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Αντικατάσταση μιας λέξης στο τρέχον αρχείο</p></td>
+	<td>
+	  <p><keyseq><key>/</key><key>/</key></keyseq> <input>foo bar</input></p>
+          <p>Αυτό θα αντικαταστήσει το <input>foo</input> με το <input>bar</input>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Μετακινήστε το δρομέα σε ένα συγκεκριμένο αριθμό γραμμής στο αρχείο σας</p></td>
+        <td>
+	  <p>πηγαίνετε στο <input>[αριθμός γραμμής]</input> <em>ή</em> απλά <key>G</key> <input>[line number]</input></p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>Εναλλαγή της ένδειξης σελιδοδείκτη για την τρέχουσα γραμμή</p></td>
+        <td><p>ορίστε ως σελιδοδείκτη <em>ή</em> απλά <key>B</key></p></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <note style="tip">
+    <p>Μερικές εντολές, όπως η <app>προσθήκη σελιδοδείκτη</app> απαιτούν το κατάλληλο πρόσθετο να είναι εγκατεστημένο και ενεργοποιημένο. Αν δεν έχετε το πρόσθετο, θα δείτε ένα μήνυμα λάθους.</p>
+  </note>
+
+</page>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-list" xml:lang="pt-BR">
+
+  <info>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="nautilus-prefs" group="nautilus-list"/>
+
+    <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Controle que informação é exibida nas colunas na visão de lista.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Preferências de colunas da lista do arquivos</title>
+
+  <p>Há onze colunas de informação que você pode exibir na visão de lista do <gui>Arquivos</gui>. Clique em <gui>Arquivos</gui> na barra superior, selecione <gui>Preferências</gui> e escolha a aba <gui>Colunas da lista</gui> para selecionar quais colunas estarão visíveis.</p>
+
+  <note style="tip">
+    <p>Use os botões <gui>Subir</gui> e <gui>Descer</gui> para escolher a ordem em que as colunas selecionadas vão aparecer. Clique em <gui>Restaurar para padrão</gui> para desfazer qualquer alteração e retornar às colunas padrões.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Nome</gui></title>
+      <p>O nome das pastas e arquivos.</p>
+      <note style="tip">
+        <p>A coluna <gui>Nome</gui> não pode ser ocultada.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Tamanho</gui></title>
+      <p>O tamanho de uma pasta é dada como o número de itens contidos na pasta. O tamanho de um arquivo é dado em bytes KB ou MB.</p>
+    </item>
+    <item>
+      <title><gui>Tipo</gui></title>
+      <p>Exibido como pasta ou um tipo de arquivo, como um documento PDF, imagem JPEG, áudio MP3 e mais.</p>
+    </item>
+    <item>
+      <title><gui>Modificado</gui></title>
+      <p>Informa a data da última vez em que o arquivo foi modificado.</p>
+    </item>
+    <item>
+      <title><gui>Dono</gui></title>
+      <p>O nome do usuário dono da pasta ou arquivo.</p>
+    </item>
+    <item>
+      <title><gui>Grupo</gui></title>
+      <p>O grupo dono do arquivo. Cada usuário está normalmente dentro de seu próprio grupo, mas é possível ter muitos usuários dentro de um grupo. Por exemplo, um departamento pode ter seu próprio grupo em um ambiente de trabalho.</p>
+    </item>
+    <item>
+      <title><gui>Permissões</gui></title>
+      <p>Exibe as permissões de acesso de arquivos. Por exemplo, <gui>drwxrw-r--</gui></p>
+      <list>
+        <item>
+          <p>O primeiro caractere é o tipo de arquivo. <gui>-</gui> significa arquivo comum e <gui>d</gui> significa diretório (pasta). Em casos raros, outros caracteres podem ser mostrados.</p>
+        </item>
+        <item>
+          <p>Os próximos três caracteres <gui>rwx</gui> especificam permissões para o usuário que é dono do arquivo.</p>
+        </item>
+        <item>
+          <p>Os próximos três <gui>rw-</gui> especificam permissões para todos os membros do grupo de que é dono do arquivo.</p>
+        </item>
+        <item>
+          <p>Os últimos três caracteres da coluna <gui>r--</gui> especificam permissões para todos os usuários no sistema.</p>
+        </item>
+      </list>
+      <p>Cada permissão tem seu significado, listado abaixo:</p>
+      <list>
+        <item>
+          <p><gui>r</gui>: legível, significa que você pode abrir o arquivo ou pasta</p>
+        </item>
+        <item>
+          <p><gui>w</gui>: gravável/escrevível, significa que você pode salvar alterações nele</p>
+        </item>
+        <item>
+          <p><gui>x</gui>: executável, significa que você pode executá-lo se for um programa ou arquivo de script, ou que você pode acessar subpastas ou arquivos se for uma pasta</p>
+        </item>
+        <item>
+          <p><gui>-</gui>: permissão não definida</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title><gui>Tipo MIME</gui></title>
+      <p>Exibe o tipo MIME do item.</p>
+    </item>
+    <item>
+      <title><gui>Local</gui></title>
+      <p>O caminho do local do arquivo.</p>
+    </item>
+    <item>
+      <title><gui>Modificado – Hora</gui></title>
+      <p>Informa a data e hora da última vez em que o arquivo foi modificado.</p>
+    </item>
+    <item>
+      <title><gui>Acessado</gui></title>
+      <p>Informa a data ou hora da última vez em que o arquivo foi modificado.</p>
+    </item>
+  </terms>
+
+</page>

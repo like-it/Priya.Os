@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Tali</application>">
+<!ENTITY appname "Tali">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sv">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Handbok för <application>Tali</application></title>
+    <abstract role="description">
+      <para>Tali är som Yatzy för GNOME eller poker med tärningar. Spelaren kastar tärningar för att försöka få de bästa möjliga kombinationerna, som fyrtal, liten stege och kåk. Spelaren har tre kast per omgång och kan behålla önskade tärningar efter varje kast.</para>
+    </abstract>
+    <copyright><year>2001</year> <holder>Scott D. Heavner</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Dokumentationsprojekt för GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Tillstånd att kopiera, distribuera och/eller modifiera detta dokument ges under villkoren i GNU Free Documentation License (GFDL), version 1.1 eller senare, utgivet av Free Software Foundation utan standardavsnitt och omslagstexter.  En kopia av GFDL finns att hämta på denna <ulink type="help" url="help:fdl">länk</ulink> eller i filen COPYING-DOCS som medföljer denna handbok.</para>
+         <para>Denna handbok utgör en av flera GNOME-handböcker som distribueras under villkoren i GFDL.  Om du vill distribuera denna handbok separat från övriga handböcker kan du göra detta genom att lägga till en kopia av licensavtalet i handboken enligt instruktionerna i avsnitt 6 i licensavtalet.</para>
+
+	<para>Flera namn på produkter och tjänster är registrerade varumärken. I de fall dessa namn förekommer i GNOME-dokumentation - och medlemmarna i GNOME-dokumentationsprojektet är medvetna om dessa varumärken - är de skrivna med versaler eller med inledande versal.</para>
+
+	<para>DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET TILLHANDAHÅLLS UNDER VILLKOREN I GNU FREE DOCUMENTATION LICENSE ENDAST UNDER FÖLJANDE FÖRUTSÄTTNINGAR: <orderedlist>
+		<listitem>
+		  <para>DOKUMENTET TILLHANDAHÅLLS I "BEFINTLIGT SKICK" UTAN NÅGRA SOM HELST GARANTIER, VARE SIG UTTRYCKLIGA ELLER UNDERFÖRSTÅDDA, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, GARANTIER ATT DOKUMENTET ELLER EN MODIFIERAD VERSION AV DOKUMENTET INTE INNEHÅLLER NÅGRA FELAKTIGHETER, ÄR LÄMPLIGT FÖR ETT VISST ÄNDAMÅL ELLER INTE STRIDER MOT LAG. HELA RISKEN VAD GÄLLER KVALITET, EXAKTHET OCH UTFÖRANDE AV DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET LIGGER HELT OCH HÅLLET PÅ ANVÄNDAREN. OM ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT SKULLE VISA SIG INNEHÅLLA FELAKTIGHETER I NÅGOT HÄNSEENDE ÄR DET DU (INTE DEN URSPRUNGLIGA SKRIBENTEN, FÖRFATTAREN ELLER NÅGON ANNAN MEDARBETARE) SOM FÅR STÅ FÖR ALLA EVENTUELLA KOSTNADER FÖR SERVICE, REPARATIONER ELLER KORRIGERINGAR. DENNA GARANTIFRISKRIVNING UTGÖR EN VÄSENTLIG DEL AV DETTA LICENSAVTAL. DETTA INNEBÄR ATT ALL ANVÄNDNING AV ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT BEVILJAS ENDAST UNDER DENNA ANSVARSFRISKRIVNING;</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGA OMSTÄNDIGHETER ELLER INOM RAMEN FÖR NÅGON LAGSTIFTNING, OAVSETT OM DET GÄLLER KRÄNKNING (INKLUSIVE VÅRDSLÖSHET), KONTRAKT ELLER DYLIKT, SKA FÖRFATTAREN, DEN URSPRUNGLIGA SKRIBENTEN ELLER ANNAN MEDARBETARE ELLER ÅTERFÖRSÄLJARE AV DOKUMENTET ELLER AV EN MODIFIERAD VERSION AV DOKUMENTET ELLER NÅGON LEVERANTÖR TILL NÅGON AV NÄMNDA PARTER STÄLLAS ANSVARIG GENTEMOT NÅGON FÖR NÅGRA DIREKTA, INDIREKTA, SÄRSKILDA ELLER OFÖRUTSEDDA SKADOR ELLER FÖLJDSKADOR AV NÅGOT SLAG, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, SKADOR BETRÄFFANDE FÖRLORAD GOODWILL, HINDER I ARBETET, DATORHAVERI ELLER NÅGRA ANDRA TÄNKBARA SKADOR ELLER FÖRLUSTER SOM KAN UPPKOMMA PÅ GRUND AV ELLER RELATERAT TILL ANVÄNDNINGEN AV DOKUMENTET ELLER MODIFIERADE VERSIONER AV DOKUMENTET, ÄVEN OM PART SKA HA BLIVIT INFORMERAD OM MÖJLIGHETEN TILL SÅDANA SKADOR.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"><firstname>Scott D</firstname> <surname>Heavner</surname> <affiliation> <address> <email>sdh@po.cwru.edu</email> </address> </affiliation></author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision><revnumber>Handbok för Tali v2.8</revnumber> <date>September 2004</date> <revdescription> 
+	  <para role="author">Scott D Heavner <email>sdh@po.cwru.edu</email></para>
+	  <para role="publisher">Dokumentationsprojekt för GNOME</para>
+	</revdescription></revision> 
+    </revhistory> 
+
+    <releaseinfo>Den här handboken beskriver version 2.12 av Tali.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Återkoppling</title> 
+      <para>För att rapportera ett fel eller komma med ett förslag angående spelet <application>Tali</application> eller denna handbok, följ anvisningarna på <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME:s återkopplingssida</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Daniel Nylander</firstname>
+      </personname>
+      <email>po@danielnylander.se</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2007</year>
+      
+        <year>2009</year>
+      
+      <holder>Daniel Nylander</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Anders Jonsson</firstname>
+      </personname>
+      <email>anders.jonsson@norsjovallen.se</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2016</year>
+      
+      <holder>Anders Jonsson</holder>
+    </copyright>
+  </articleinfo>
+
+  <indexterm zone="index"><primary>GNOME Tali</primary></indexterm>
+
+ <!-- ============= Document Body ============================= -->
+
+  <sect1 id="intro">
+    <title>Introduktion</title>
+
+    <para><application>GNOME Tali</application> är en typ av poker med tärningar och mindre pengar. Du kastar fem tärningar tre gånger och försöker skapa den bästa <quote>handen</quote>. Dina två omkast kan inkludera någon eller alla av dina tärningar.</para>
+    <para><application>GNOME Tali</application> är väldigt likt tärningsspelet Yahtzee som är ett varumärke som tillhör Hasbro, Inc.</para>
+
+    <para>För att köra <application>GNOME Tali</application>, välj <menuchoice> <guisubmenu>Spel</guisubmenu> <guimenuitem>GNOME Tali</guimenuitem> </menuchoice> från <guimenu>Huvudmenyn</guimenu> eller skriv <command>gtali</command> på kommandoraden.</para>
+
+    <para><application>GNOME Tali</application> är inkluderat i paketet <filename>gnome-games</filename>, vilket är en del av skrivbordsmiljön GNOME. Detta dokument beskriver version 2.8 av <application>GNOME Tali</application>.</para>
+  </sect1>
+
+  <sect1 id="playing">
+    <title>Spela GNOME Tali</title>
+
+    <figure id="shot1">
+      <title>GNOME Tali i arbete</title>
+      <screenshot>
+	 <mediaobject><imageobject> <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="Trevor Curtis"/> </imageobject> <textobject> <phrase>Skärmbild över huvudfönstret för GNOME Tali.</phrase> </textobject></mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>När spelet börjar ser du resultatet av ditt första tärningskast.</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Klicka på tärningar som du vill kasta igen.</para>
+        </listitem>
+        <listitem>
+          <para>Tryck på knappen <guibutton>Kasta!</guibutton> då du har valt alla tärningar som du vill kasta om.</para>
+        </listitem>
+        <listitem>
+	  <para>Då du har en hand du gillar eller har slut på tärningskast, klicka på en rad som motsvarar vad du tror är din bästa poängkombination. Poängen noll är fullt möjlig, och om du klickar på fel rad kommer du att få poäng i enlighet med detta. (Till exempel om du får yatzy -- femtal -- och klickar på raden för stor stege, så kommer du att få en nolla i ditt poäng för stor stege.)</para>
+      </listitem>
+    </orderedlist>
+
+    <para>Du kan endast använda varje kombination en gång, d.v.s. då du har matat in något i en rad så kan du inte ändra poängen senare om du får en bättre hand.</para>
+
+    <para>Det finns ett undantag till den här regeln, om du kastar yatzy en andra gång kan du lägga den i yatzyraden igen för femtio extra poäng. Du kan fortsätta göra detta varje gång du får en yatzy. Vid spelets slut kommer du tilldelas extrakast för att fylla de andra raderna. Observera att om du får noll i din yatzyrad (d.v.s. du fyllde den raden med något som inte var en yatzy) så kan du inte lägga i en yatzy sedan, du kommer sluta på noll.</para>
+
+    <para>Det finns också en bonus på 35 poäng om du får 63 poäng eller mer i de översta sex raderna.</para>
+
+    <sect2 id="keyboard">
+    <title>Använda tangentbordet</title> 
+
+      <para>Som ett alternativ till att använda musen växlar tangenterna 1 till 5 tärningarna som om du hade klickat på dem. Tangenten 1 motsvarar den första tärningen och så vidare. Använd de vanliga kontrollerna för att kasta tärningarna och välja en rad, d.v.s. använd tabb för att växla mellan knappen Kasta och poängområdet, använd piltangenterna för att navigera upp och ner för raderna och använd mellanslag för att välja.</para>
+    
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="options">
+    <title>Spelalternativ</title>
+
+    <figure id="shot2">
+      <title>Inställningar för GNOME Tali</title>
+      <screenshot>
+	 <mediaobject><imageobject> <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Trevor Curtis"/> </imageobject> <textobject> <phrase>Dialogruta för inställningar för GNOME Tali.</phrase> </textobject></mediaobject>
+      </screenshot>
+    </figure>
+      <variablelist><title>Mänskliga spelare</title>
+	<varlistentry>
+	  <term><guimenuitem>Antal spelare</guimenuitem></term>
+	  <listitem>
+            <para>Väljer antalet mänskliga spelare. Som beskrivet ovan tillåts totalt bara sex spelare</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>  
+      
+    <variablelist><title>Datormotståndare</title>
+      <varlistentry>
+        <term><guimenuitem>Fördröjning mellan kast</guimenuitem></term>
+	<listitem>
+	  <para>Få datormotståndarna att pausa mellan tärningskast så att du kan se vad de gör. Detta saktar ner spelet något.</para>
+        </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenuitem>Antal motståndare</guimenuitem></term>
+	  <listitem>
+            <para>Välj antalet datormotståndare. Du kan ha totalt sex mänskliga spelare och datorspelare. Om du försöker öka detta nummer nära gränsen så kommer antalet mänskliga spelare minskas så att det bara finns sex spelare totalt.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>
+      
+    <variablelist><title>Speltyp</title>
+      <varlistentry>
+        <term><guimenuitem>Spelversion att spela</guimenuitem></term>
+	<listitem>
+	  <para>Spela antingen den vanliga versionen (liknande Yatzy) eller versionen med färger (liknande Kismet). Då du ändrar speltyp måste du starta om spelet för att se den nya speltypen.</para>
+        </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	<varlistentry>
+	    <term><guimenuitem>Spelarnamn</guimenuitem></term>
+	    <listitem>
+	      <para>Skriv bara in nya namn i rutorna för att byta namn på spelarna.</para>
+	    </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect1>
+
+    <sect1 id="strategy">
+      <title>Spelstrategi</title>
+      <para>De 63 poäng som krävs för bonusen i den övre halvan motsvarar att få tre av varje tärningstyp i varje rad. Om du får mer än tre tärningar i raderna för femmor och sexor har du råd att placera ett dåligt kast i antingen raden för ettor eller tvåor och fortfarande få bonusen. I färgversionen får du en bonus på 55 om din total i den övre halvan är mellan 71 och 77, och en bonus på 75 om din total i den övre halvan är större än 77.</para>
+      <para>Glöm inte flera yatzy. Om du får en andra yatzy kan du lägga även den i yatzyraden för ännu fler poäng. Detta gäller endast för det vanliga spelet.</para>
+    </sect1>	
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. 
+      
+      Better to leave this section out than to say something unhelpful. 
+-->
+
+ <sect1 id="bugs">
+  <title>Kända fel och begränsningar</title>
+  <para>Då du växlar speltyp använder spelet inte de nya tärningarna förrän du startar om gtali. Det bör fungera korrekt med ”fel” tärningar.</para>
+ </sect1>
+
+
+ <sect1 id="glossary">
+   <title>Ordlista</title>
+   <note>
+     <para>Kom ihåg att tärningarnas ordning är oviktig.</para>
+   </note>
+   <glossary>
+       <glossentry id="threeofakind"><glossterm>Tretal</glossterm>
+         <glossdef><para>Tre av tärningarna har samma siffra. Poängen är summan av alla tärningarna, t.ex. 1, 2, 2, 2, 5.</para></glossdef>
+       </glossentry>
+       <glossentry id="fourofakind"><glossterm>Fyrtal</glossterm>
+         <glossdef><para>Fyra av tärningarna har samma siffra. Poängen är summan av alla tärningar, t.ex. 2, 5, 5, 5, 5. I Färgspelet är poängen 25 plus summan av alla tärningarna.</para></glossdef>
+       </glossentry>
+       <glossentry id="yahtzee"><glossterm>Femtal</glossterm>
+         <glossdef><para>Fem identiska tärningar, t.ex. 3, 3, 3, 3, 3. I Färgspelet är poängen 50 plus summan av alla tärningarna.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhouse"><glossterm>Kåk</glossterm>
+         <glossdef><para>Fem tärningar som består av två grupper: En grupp av tre med samma nummer och en annan grupp av två med samma nummer. Till exempel:1, 1, 1, 4, 4. I Färgspelet är poängen 15 plus summan av alla tärningar.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhousesamecolor"><glossterm>Färg</glossterm>
+         <glossdef><para>Denna kategori används endast i Färgspelet. Fem tärningar bestående av två grupper: en grupp av tre med samma siffror och en annan grupp av två med samma siffror. Siffrorna måste alla vara av samma färg. Exempelvis 3, 3, 3, 4, 4. Två tärningar har samma färg om deras summa är 7. Siffrorna 1 och 6 är svarta, 2 och 5 är röda, och 3 och 4 är gröna. Poängen är 20 plus totalen av alla tärningarna.</para></glossdef>
+       </glossentry>
+       <glossentry id="twopairsamecolor"><glossterm>Tvåpar i samma färg</glossterm>
+         <glossdef><para>Denna kategori används endast i Färgspelet. Fem tärningar bestående av två grupper: en grupp av två med samma siffror och en annan grupp av två med samma siffror. Paren måste alla vara av samma färg. Exempelvis 3, 3, 4, 4. Två tärningar har samma färg om deras summa är 7. Siffrorna 1 och 6 är svarta, 2 och 5 är röda, och 3 och 4 är gröna. Den femte träningen kan ha vilket värde som helst. Poängen är totalen av alla tärningarna.</para></glossdef>
+       </glossentry>
+       <glossentry id="flush"><glossterm>Stege</glossterm>
+         <glossdef><para>Denna kategori används endast i Färgspelet. Fem tärningar som alla har samma ”färg”. Två tärningar har samma färg om deras summa är 7. Siffrorna 1 och 6 är svarta, 2 och 5 är röda, och 3 och 4 är gröna. Poängen är 35 poäng.</para></glossdef>
+       </glossentry>
+       <glossentry id="largestraight"><glossterm>Stor stege</glossterm>
+         <glossdef><para>Fem tärningar med löpande numrering. Till exempel: 2, 3, 4, 5, 6. Poängen är 40 poäng.</para></glossdef>
+       </glossentry>
+       <glossentry id="smallstraight"><glossterm>Liten stege</glossterm>
+         <glossdef><para>Fyra tärningar med löpande numrering. Den femte tärningen kan vara valfri siffra. Till exempel: 2, 3, 4, 5, 5. Denna kategori används endast i det vanliga spelet. Poängen är 30 poäng.</para></glossdef>
+       </glossentry>
+   </glossary>
+ </sect1>
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Upphovsmän</title>
+  <para><application>GNOME Tali</application> skrevs av Scott Heavner (<email>sdh@po.cwru.edu</email>) och Orest Zborowski. Den här handboken skrevs av Scott D Heavner (<email>sdh@po.cwru.edu</email>) med extramaterial från Callum McKenzie (<email>callum@physics.otago.ac.nz</email>). För att rapportera ett fel eller föreslå någonting angående det här programmet eller den här handboken, följ anvisningarna i det här <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentet</ulink>.</para>
+
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licens</title>
+  <para>Detta program är fri programvara. Du kan distribuera det och/eller modifiera det under villkoren i <ulink type="help" url="help:gpl"> <citetitle>GNU General Public License</citetitle></ulink>, publicerad av Free Software Foundation, antingen version 2 eller (om du så vill) någon senare version.</para>
+  <para>Det här programmet distribueras i hopp om att det ska vara användbart, men UTAN GARANTIER; även utan garanti för SÄLJBARHET eller LÄMPLIGHET FÖR ETT SPECIFIKT ÄNDAMÅL. Se <citetitle>GNU General Public License</citetitle> för mer information.</para>
+  <para>En kopia av <citetitle>GNU General Public License</citetitle> finns inkluderad som en bilaga till <citetitle>Användarguide för GNOME</citetitle>. Du kan även få en kopia av <citetitle>GNU General Public License</citetitle> från Free Software Foundation genom att besöka <ulink type="http" url="http://www.fsf.org">deras webbplats</ulink> eller genom att skriva till <address>
+    Free Software Foundation, Inc.
+    <street>59 Temple Place</street> - Suite 330
+    <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode>
+    <country>USA</country>
+   </address></para>
+ </sect1>
+</article>

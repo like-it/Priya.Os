@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="pref-profiles" xml:lang="fi">
+
+  <info>
+    <revision pkgversion="3.8" date="2013-03-03" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-09-08" status="candidate"/>
+    <link type="guide" xref="index#preferences"/>
+    <link type="guide" xref="pref"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013-2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Luo, muokkaa ja poista profiileja.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sami Jaktholm</mal:name>
+      <mal:email>sjakthol@outlook.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Profiilien hallinta</title>
+
+  <p>Profiili on joukko <app>Päätteen</app> asetuksia. <app>Pääte</app> tukee useita profiileja. <app>Päätteen</app> profiilien avulla voi muun muassa <link xref="pref-custom-command">ajaa mukautettuja komentoja tai komentotulkkeja</link>, ottaa yhteyttä etätietokoneisiin SSH:n avulla tai käynnistää <app>GNU Screen</app> -istunnon.</p>
+
+  <p>Profiileihin liitettävät <app>Päätteen</app> asetuksiin sisältyy:</p>
+
+  <list>
+    <item>
+      <p>Profiilin nimi.</p>
+    </item>
+    <item>
+      <p>Fontin ja taustan värit.</p>
+    </item>
+    <item>
+      <p><gui style="tab">Yhteensopivuus</gui> <key>Askelpalauttimen</key> ja <key>Delete</key>-näppäimen kanssa.</p>
+    </item>
+    <item>
+      <p><gui style="tab">Vierityksen</gui>.</p>
+    </item>
+  </list>
+
+  <p>Oletusprofiilia käytetään aina, kun uusi pääteikkuna avataan ellei muuta profiilia ole valittu. Kaikki asetusmuutokset tallennetaan käytössä olevaan profiiliin.</p>
+
+  <section id="set-default" style="task">
+    <title>Oletusprofiilin asettaminen</title>
+
+    <p>Oletusprofiili on profiili, jonka asetukset otetaan käyttöön aina, kun uusi välilehti tai ikkuna avataan.</p>
+
+    <steps>
+      <item>
+        <p>Valitse <guiseq><gui style="menu">Muokkaa</gui> <gui style="menuitem">Asetukset</gui> <gui style="tab">Profiilit</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Valitse profiili oletukseksi pudotusvalikosta <gui>Uutta päätettä käynnistäessä käytetty profiili</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="select-profile" style="task">
+    <title>Profiilin valitseminen</title>
+
+    <p>Avoinna olevan välilehden tai ikkunan profiilia voi vaihtaa valitsemalla <guiseq><gui style="menu">Pääte</gui> <gui style="menuitem">Vaihda profiilia</gui></guiseq>.</p>
+
+  </section>
+
+  <section id="new-profile" style="task">
+    <title>Uuden profiilin luominen</title>
+
+    <p>Muutokset uuteen profiiliin tallennetaan automaattisesti. Luodaksesi uuden profiilin:</p>
+
+    <steps>
+      <item>
+        <p>Valitse <guiseq><gui style="menu">Tiedosto</gui> <gui style="menuitem">Uusi profiili</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Anna profiilille nimi <gui style="input">Profiilin nimi</gui> -kenttään.</p>
+      </item>
+      <item>
+        <p>Valitse <gui style="tab">Yleistä</gui>-välilehdeltä <link xref="app-fonts">fontti</link>, <link xref="app-cursor">kohdistin</link> ja <link xref="app-terminal-sizes">ikkunan koko</link>.</p>
+      </item>
+      <item>
+        <p>Set your preferred behavior for the
+        <link xref="pref-custom-exit"><cmd>exit</cmd> command</link>.
+        You can also set a
+        <link xref="pref-custom-command">custom shell</link> in the
+        <gui style="tab">Command</gui> tab.</p>
+      </item>
+      <item>
+        <p>Valitse <link xref="app-colors">teema ja värit</link> <gui style="tab">Värit</gui>-välilehdeltä.</p>
+      </item>
+      <item>
+        <p>Muuta <link xref="pref-scrolling">vieritysasetuksia</link> <gui style="tab">Vieritys</gui>-välilehdeltä.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="create-profile-from-existing" style="task">
+    <title>Uuden profiilin luominen olemassa olevan profiilin pohjalta</title>
+
+    <p>Jo olemassa olevan profiilin asetusten pohjalta voi luoda uuden profiilin seuraavasti:</p>
+
+    <steps>
+      <item>
+        <p>Valitse muokattava profiili valikosta <guiseq><gui style="menu">Pääte</gui> <gui style="menuitem">Vaihda profiilia</gui> <gui style="menuitem"><var>Profiili</var></gui></guiseq>, jossa <var>Profiili</var> on muokattavan profiilin nimi.</p>
+      </item>
+      <item>
+        <p>Aseta haluamasi <link xref="#edit-profile">profiiilin asetukset</link>. Nämä tallennetaan automaattisesti. Jos et päivitä <gui>Profiilin nimeä</gui> <gui style="tab">Yleistä </gui> -välilehdellä, uusi profiili ei korvaa vanhaa profiilia.</p>
+      </item>
+    </steps>
+
+    <p>Vaihtoehtoisesti luo kopio olemassa olevasta profiilista ja muokkaa profiilia jälkikäteen:</p>
+
+    <steps>
+      <item>
+        <p>Valitse <guiseq><gui style="menu">Muokkaa</gui> <gui style="menuitem">Asetukset</gui> <gui style="tab">Profiilit</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Valitse haluttu profiili.</p>
+      </item>
+      <item>
+        <p>Napsauta <gui style="button">Monista</gui>.</p>
+      </item>
+      <item>
+        <p>Aseta haluamasi <link xref="#edit-profile">profiiilin asetukset</link>. Nämä tallennetaan automaattisesti. Jos et päivitä profiilin nimeä, uusi profiili ei korvaa vanhaa profiilia.</p>
+      </item>
+    </steps>
+
+    <note>
+      <p>Luodessasi uutta profiilia jo olemassa olevasta profiilista asetusmuutokset eivät vaikuta millään tavalla vanhaan profiiliin. Kaikki muutokset tallennetaan uuteen profiiliin.</p>
+    </note>
+
+  </section>
+
+  <section id="edit-profile" style="task">
+    <title>Profiilin muokkaaminen</title>
+
+    <note style="warning">
+      <p>Jos oletusprofiilia muokataan, oletusasetuksia ei voi palauttaa! Jos muita profiileja ei ole olemassa ja oletusprofiilia on muokattu, <app>Pääte</app> <em>saattaa</em> mennä rikki, jos jokin asetus aiheuttaa ongelmia. On suositeltavaa <link xref="#create-profile-from-existing">luoda kopio oletusprofiilista</link> ja muokata oletusprofiilin kopiota.</p>
+    </note>
+
+    <p>Olemassa olevien profiilien asetuksia voi myös muokata. Profiileja voi muokata valitsemalla <guiseq><gui style="menu">Muokkaa</gui> <gui style="menuitem">Profiilin asetukset</gui></guiseq>.</p>
+
+    <steps>
+      <item>
+        <p>Valitse <link xref="app-fonts">fontti</link>, <link xref="app-cursor">kohdistin</link> ja <link xref="app-terminal-sizes"><app>Päätteen</app> koko</link>.</p>
+      </item>
+      <item>
+        <p>Voit myös muuttaa <app>Päätteen</app> <link xref="pref-custom-exit">lopettamiskomentoa</link>, <link xref="pref-login-shell">komentotulkkia</link> tai <link xref="pref-scrolling">vieritysasetuksia</link>.</p>
+      </item>
+      <item>
+        <p>Lue <link xref="app-colors"><app>Päätteen</app> väriteemoista</link> muuttaaksesi <app>Päätteen</app> taustan ja tekstin värejä.</p>
+      </item>
+      <item>
+        <p>Tehdyt muutokset tallennetaan automaattisesti. Palaa <app>Päätteeseen</app> <gui style="button">Sulje</gui>-painikkeella.</p>
+      </item>
+    </steps>
+
+    <note style="important">
+      <p>Varmistaaksesi, että muokkaat oikeaa profiilia, valitse se valikosta <guiseq><gui style="menu">Pääte</gui> <gui style="menuitem">Vaihda profiilia</gui></guiseq>.</p>
+    </note>
+
+  </section>
+
+  <section id="rename-profile" style="task">
+    <title>Profiilin uudelleen nimeäminen</title>
+
+    <p>Olemassa olevien profiilien nimiä voi muuttaa oletusprofiili mukaanlukien:</p>
+
+    <steps>
+      <item>
+        <p>Valitse <guiseq><gui style="menu">Muokkaa</gui> <gui style="menuitem">Asetukset</gui> <gui style="tab">Profiilit</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Valitse uudelleen nimettävä profiili.</p>
+      </item>
+      <item>
+        <p>Napsauta <gui style="button">Muokkaa</gui>. Tämä avaa valitun profiilin asetusikkunan.</p>
+      </item>
+      <item>
+        <p>Kirjoita uusi nimi <gui>Profiilin nimi</gui> -tekstikenttään.</p>
+      </item>
+      <item>
+        <p>Napsauta <gui style="button">Sulje</gui> jatkaaksesi.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="delete-profile" style="task">
+    <title>Profiilin poistaminen</title>
+  
+    <p>Profiilin voi poistaa seuraavasti:</p>
+
+    <steps>
+      <item>
+        <p>Valitse <guiseq><gui style="menu">Muokkaa</gui> <gui style="menuitem">Asetukset</gui> <gui style="tab">Profiilit</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Valitse poistettava profiili.</p>
+      </item>
+      <item>
+        <p>Napsauta <gui style="button">Poista</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+</page>

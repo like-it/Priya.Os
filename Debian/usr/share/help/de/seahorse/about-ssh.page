@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="about-ssh" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="concepts" group="first"/>
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Mit SSH-Schlüsseln melden Sie sich an entfernten Rechnern an, sobald eine sichere Verbindung aufgebaut wurde.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Was ist ein Secure Shell-Schlüssel?</title>
+
+  <p>Ein <em>Secure Shell-Schlüssel</em>, oft auch <em>SSH-Schlüssel</em> genannt, ermöglicht eine sichere Verbindung über ein unsicheres Netz.</p>
+
+  <list>
+    <title>Ein SSH-Schlüssel besteht in Realität aus zwei Teilen:</title>
+    <item><p>Einem öffentlichen Schlüssel, der allgemein verfügbar ist.</p></item>
+    <item><p>Einem privaten Schlüssel, der stets geheim gehalten wird. Der Private Schlüssel wird zum Entsperren verschlüsselter Nachrichten verwendet, die mit dem entsprechenden öffentlichen Schlüssel verschlüsselt wurden.</p></item>
+  </list>
+
+  <p>Der Vorteil beim Einsatz eines <em>SSH-Schlüssels</em> zum Aufbauen einer Verbindung zwischen zwei Rechnern ist, dass nur der <em>öffentliche Schlüssel</em> über das Netz übertragen werden muss. Mit einem <em>öffentlichen Schlüssel</em> verschlüsselte Übertragungen können nur entschlüsselt werden, indem diese mit dem entsprechenden <em>privaten Schlüssel</em> und einem Passwort entschlüsselt werden. Weil nur der öffentliche Schlüssel über das Netz versendet wurde bleibt das Passwort des Schlüssels geheim.</p>
+
+</page>

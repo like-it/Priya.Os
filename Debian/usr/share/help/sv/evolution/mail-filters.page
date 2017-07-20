@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters" xml:lang="sv">
+
+  <info>
+    <desc>Använd filterregler för att automatiskt sortera din e-post i mappar.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+
+    <revision pkgversion="3.0.2" version="0.6" date="2012-02-19" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-filters.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Användning av filter</title>
+
+<p>Meddelandefilter tillämpar åtgärder på meddelanden baserat på villkor som du har definierat. Du kan definiera filter för både inkommande och utgående e-postmeddelanden.</p>
+
+<p>Filter kommer att automatiskt tillämpas för inkommande meddelanden för lokala konton (så som POP). E-postservrar för fjärrkonton (så som IMAP) filtrerar ofta redan e-post direkt på servern eftersom detta är snabbare. Om du vill tillämpa dina <app>Evolution</app>-filter för fjärrkonton kan du aktivera detta under <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>E-postkonton</gui><gui style="button">Redigera</gui><gui>Alternativ för mottagning</gui><gui>Alternativ</gui><gui>Tillämpa filtren på nya meddelanden i inkorgen på denna server</gui></guiseq>.</p>
+
+<p>För att manuellt tillämpa filter på meddelanden i en mapp, välj meddelandena och klicka <guiseq><gui>Meddelande</gui><gui>Tillämpa filter</gui></guiseq> eller tryck <keyseq><key>Ctrl</key><key>Y</key></keyseq>.</p>
+<p>Du kan markera alla meddelanden i en mapp genom att klicka på <guiseq><gui>Redigera</gui><gui>Markera alla</gui></guiseq> eller trycka <keyseq><key>Ctrl</key><key>A</key></keyseq>.</p>
+
+<section id="adding">
+<title>Skapa ett filter</title>
+
+<steps>
+<item><p>Klicka på <guiseq><gui>Redigera</gui><gui>Meddelandefilter</gui></guiseq>, eller klicka på <guiseq><gui>Meddelande</gui><gui>Skapa</gui></guiseq> och välj kriteriet som filtret ska baseras på.</p></item>
+<item><p>Klicka på <gui style="button">Lägg till</gui>.</p></item>
+<item><p>Ange ett namn i fältet <gui>Regelnamn</gui>.</p></item>
+<item><p>Definiera villkoren för regeln. För varje villkor måste du först välja vilken del av meddelandet som ska kontrolleras och sedan definiera jämförelsen.</p><p>För ytterligare information om tillgängliga villkor, se <link xref="mail-filters-conditions">Tillgängliga filtervillkor</link>.</p></item>
+<item><p>Om du vill definiera multipla villkor, definiera under <gui>Hitta objekt</gui> om något eller om alla villkor måste uppfyllas och klicka på <gui style="button">Lägg till villkor</gui> och upprepa föregående steg.</p></item>
+<item>
+<p>Välj åtgärderna för filtret i avsnittet <gui>Sedan</gui>.</p><p>För ytterligare information om tillgängliga åtgärder, se <link xref="mail-filters-actions">Tillgängliga filteråtgärder</link>.</p>
+
+<note style="warning"><p>Ordningen på filtren är viktig. Filter tillämpas för originalmeddelandet i sekvens, som ett recept.</p>
+<p>Om ditt första filter har en regel <gui>Stoppa behandling</gui> så kommer alla e-postmeddelanden som matchar detta filter att ignorera alla efterföljande filter.</p>
+<p>När du flyttar ett meddelande till en annan mapp, innebär ”flytta” att faktiskt lägga till en kopia av meddelanden i slutet på destinationsmappen och att markera originalmeddelandet för borttagning. Så påföljande filterregler kommer att tillämpas på originalmeddelandet som nu är märkt för borttagning. Därför bör flyttning av ett meddelande vanligtvis finnas sist i en sekvens av filterregler.</p></note>
+
+</item>
+<item><p>Om du vill definiera multipla åtgärder, klicka på <gui style="button">Lägg till åtgärd</gui> och upprepa föregående steg. Om du till exempel vill att inget annat existerande filter ska tillämpas, välj <gui>Stoppa behandling</gui> som den andra åtgärden i listan.</p></item>
+<item><p>Klicka på <gui style="button">OK</gui>.</p></item>
+</steps>
+
+</section>
+
+<section id="editing">
+<title>Redigera filter</title>
+<steps>
+<item><p>Klicka på <guiseq><gui>Redigera</gui><gui>Meddelandefilter</gui></guiseq>.</p></item>
+<item><p>Markera filtret.</p></item>
+<item><p>Klicka på <gui style="button">Redigera</gui>.</p></item>
+<item><p>Utför de önskade rättningarna, klicka sedan på <gui style="button">OK</gui> två gånger.</p></item>
+</steps>
+</section>
+
+<section id="deleting">
+<title>Ta bort filter</title>
+<steps>
+<item><p>Klicka på <guiseq><gui>Redigera</gui><gui>Meddelandefilter</gui></guiseq>.</p></item>
+<item><p>Markera filtret.</p></item>
+<item><p>Klicka på <gui style="button">Ta bort</gui>.</p></item>
+<item><p>Klicka på <gui style="button">OK</gui>.</p></item>
+</steps>
+</section>
+
+
+
+
+	
+</page>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="calendar-alarms-and-reminders" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#calendar"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2011-08-02" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+     <name its:translate="no">Novell, Inc</name>
+     <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-prefs-cal.html.en#CACHCGCI -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Paramétrer les notifications de rappel pour les rendez-vous.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Rappels de rendez-vous</title>
+
+<section id="general-settings">
+  <title>Paramètres généraux</title>
+
+  <p>Sous <guiseq><gui>Édition</gui><gui>Préférences</gui><gui>Agenda et tâches</gui><gui>Rappels</gui></guiseq> vous pouvez sélectionner les agendas pour lesquels vous voulez recevoir des notifications de rappel. Si vous ne sélectionnez pas d'agenda, vous ne recevrez aucun rappel pour tous les événements de cet agenda. Vous pouvez choisir d'afficher un rappel pour tous les rendez-vous et pour toutes les dates de naissance et les anniversaires.</p>
+
+  <if:choose>
+    <if:when test="platform:gnome-shell">
+      <p>Pour des informations générales sur les rappels, reportez-vous à l'<link xref="help:gnome-help/shell-notifications" href="https://help.gnome.org/users/gnome-help/stable/shell-notifications">aide du bureau GNOME</link>.</p>
+    </if:when>
+  </if:choose>
+
+</section>
+
+<section id="manual-reminders">
+  <title>Rappels manuels</title>
+
+  <p>En plus des paramètres généraux, vous pouvez aussi configurer des rappels dans l'éditeur de rendez-vous pour certains rendez-vous seulement :</p>
+
+  <steps>
+    <item>
+      <p>Cliquez sur <guiseq><gui>Options</gui><gui>Rappels</gui></guiseq> ou cliquez sur le bouton Rappel dans la barre d'outils.</p>
+    </item>
+    <item>
+      <p>Dans le menu déroulant, choisissez soit l'une des options disponibles par défaut concernant l'affichage d'un rappel de notification ou choisissez <gui>Personnaliser</gui>.</p>
+    </item>
+    <item>
+      <p>Si vous cliquez sur <gui>Personnaliser</gui>, le rappel peut être l'apparition d'une fenêtre, la lecture d'un son ou le lancement d'un programme. Vous pouvez aussi définir si le rappel doit être répété.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Fil Bul</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Ako mrežna podešavanja ne budu samostalno dodeljena, moraćete da ih unesete sami.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Ručno podesite mrežna podešavanja</title>
+
+  <p>Ako vaša mreža samostalno ne dodeli mrežna podešavanja vašem računaru, moraćete sami ručno da unesete podešavanja. Ova tema pretpostavlja da već znate tačna podešavanja za korišćenje. Ako ne, moraćete da pitate administratora vaše mreže ili da pogledate u podešavanjima vašeg usmerivača ili mrežnog prebacivača.</p>
+
+  <steps>
+    <title>Da ručno podesite mrežna podešavanja:</title>
+    <item>
+      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Mreža</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknite na <gui>Mreža</gui> da otvorite panel.</p>
+    </item>
+    <item>
+      <p>U levom oknu, izaberite mrežnu vezu koju želite ručno da podesite. Ako se kablom priključite na mrežu, kliknite <gui>Žičana</gui>, zatim kliknite na dugme <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">podešavanja</span></media> u donjem desnom uglu panela. Za <gui>Bežičnu</gui> vezu, dugme <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">podešavanja</span></media> će se nalaziti pored radne mreže.</p>
+      <p>Uverite se da je vaša bežična kartica uključena ili da je mrežni kabal priključen.</p>
+    </item>
+    <item>
+      <p>Kliknite <gui>IPv4</gui> i izmenite <gui>Adrese</gui> na <gui>Ručno</gui>.</p>
+    </item>
+    <item>
+      <p>Ukucajte <gui>Adresu</gui> i <gui>Mrežni prolaz</gui>, kao i odgovarajuću <gui>Mrežnu masku</gui>.</p>
+      <p>To moraju biti <em>IP adrese</em>; tako je, moraju biti u vidu četiri broja razdvojena tačkama (npr. 123.45.6.78).</p>
+    </item>
+    <item>
+      <p>U odeljku <gui>DNS</gui>, prebacite <gui>Samostalno</gui> na <gui>ISKLJ.</gui>. Unesite IP adresu DNS servera koji želite da koristite. Unesite dodatne adrese DNS servera koristeći dugme <gui>+</gui>.</p>
+    </item>
+    <item>
+      <p>U odeljku <gui>Rute</gui>, prebacite <gui>Samostalno</gui> na <gui>ISKLJ.</gui>. Unesite <gui>Adresu</gui>, <gui>Mrežnu masku</gui>, <gui>Mrežni prolaz</gui> i <gui>Metrički</gui> za rutu koju želite da koristite. Unesite dodatne rute koristeći dugme <gui>+</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknite <gui>Primeni</gui>. Ako niste povezani na mrežu, kliknite na oblast stanja sistema na gornjoj traci i povežite se. Isprobajte podešavanja mreže tako što ćete pokušati da posetite veb sajt ili da pogledate deljene datoteke na mreži, na primer.</p>
+    </item>
+  </steps>
+
+</page>

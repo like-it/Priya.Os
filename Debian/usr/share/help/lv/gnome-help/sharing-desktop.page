@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-desktop" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.14" date="2015-01-25" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ļaut citiem cilvēkiem skatīt un mijiedarboties ar jūsu darbvirsmu, izmantojot VNC.</desc>
+  </info>
+
+  <title>Koplietot savu darbvirsmu</title>
+
+  <p>Jūs varat dod citiem cilvēkiem pieeju jūsu darbvirsmai un kontroli pār to ar darbvirsmas skatīšanas lietotnes starpniecību. Konfigurējiet <gui>ekrāna koplietošanu</gui>, lai ļautu citiem piekļūt jūsu darbvirsmai un noteiktu drošības iestatījumus.</p>
+
+  <note style="info package">
+    <p>Lai <gui>Ekrāna koplietošana</gui> būtu redzama, jābūt uzinstalētai pakotnei <app>Vino</app>.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:vino" style="button">Instalēt vino</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Koplietošana</gui>.</p>
+    </item>
+    <item>
+      <p>Spiediet <gui>Koplietošana</gui>, lai atvērtu paneli.</p>
+    </item>
+    <item>
+      <p>Ja <gui>Koplietošana</gui> ir <gui>◯</gui>, pārslēdziet to uz <gui>|</gui>.</p>
+
+      <note style="info"><p>Ja teksts zem <gui>Datora nosaukuma</gui> jums to ļauj rediģēt, jūs varat <link xref="sharing-displayname">mainīt</link> nosaukumu, ar kādu dators būs redzams tīklā.</p></note>
+    </item>
+    <item>
+      <p>Izvēlies <gui>Ekrāna koplietošana</gui>.</p>
+    </item>
+    <item>
+      <p>Lai rādītu citiem savu darbvirsmu, pārslēdziet <gui>Ekrāna koplietošana</gui> uz <gui>|</gui>. Tad citi cilvēki varēs mēģināt izveidot savienojumu ar jūsu datoru, lai redzētu jūsu ekrānā notiekošo.</p>
+    </item>
+    <item>
+      <p>Lai dotu citiem iespēju mijiedarboties ar savu darbvirsmu, pārslēdziet <gui>Atļaut attālināto vadību</gui> uz <gui>|</gui>. Tad otrs cilvēks varēs kustināt jūsu peles rādītāju, palaist lietotnes un pārlūkot datnes jūsu datorā, atkarībā no aktīvajiem drošības iestatījumiem.</p>
+
+      <note style="tip">
+        <p>Pēc noklusējuma šī iespēja ir ieslēgta, kad <gui>Ekrāna koplietošana</gui> ir uz <gui>|</gui>.</p>
+      </note>
+
+    </item>
+  </steps>
+
+  <section id="security">
+  <title>Drošība</title>
+
+  <p>Ir svarīgi nopietni apdomāt katra drošības iestatījuma nozīmi, pirms to mainīt.</p>
+
+  <terms>
+    <item>
+      <title>Jaunajiem savienojumiem ir jālūdz pieeja</title>
+      <p>Ja vēlaties paturēt iespēju izvēlēties, vai kāds drīkst piekļūt jūsu datoram, ieslēdziet <gui>Jauniem savienojumiem jālūdz pieeja</gui>. Ja atslēgsiet šo iespēju, jums nejautās, vai atļaut kādam pieslēgties jūsu datoram.</p>
+      <note style="tip">
+        <p>Pēc noklusējuma šī iespēja ir ieslēgta.</p>
+      </note>
+    </item>
+    <item>
+      <title>Pieprasīt paroli</title>
+      <p>Lai citiem cilvēkiem būtu jāievada parole, veidojot savienojumu ar jūsu darbvirsmu, ieslēdziet <gui>Prasīt paroli</gui>. Ja atļausiet koplietošanu bez šīs iespējas, jebkurš var mēģināt skatīt jūsu darbvirsmu.</p>
+      <note style="tip">
+        <p>Pēc noklusējuma šī iespēja nav ieslēgta, bet jums vajadzētu to ieslēgt un iestatīt drošu paroli.</p>
+      </note>
+    </item>
+<!-- TODO: check whether this option exists.
+    <item>
+      <title>Allow access to your desktop over the Internet</title>
+      <p>If your router supports UPnP Internet Gateway Device Protocol and it
+      is enabled, you can allow other people who are not on your local network
+      to view your desktop. To allow this, select <gui>Automatically configure
+      UPnP router to open and forward ports</gui>. Alternatively, you can
+      configure your router manually.</p>
+      <note style="tip">
+        <p>This option is disabled by default.</p>
+      </note>
+    </item>
+-->
+  </terms>
+  </section>
+
+  <section id="networks">
+  <title>Tīkli</title>
+
+  <p>The <gui>Networks</gui> section lists the networks to which you are
+  currently connected. Use the <gui>ON | OFF</gui> switch next to each to
+  choose where your desktop can be shared.</p>
+  </section>
+
+  <section id="notification-icon">
+  <title>Apturēt savas darbvirsmas koplietošanu</title>
+
+  <p>You can disconnect someone who is viewing your desktop using the
+  <gui>notification icon</gui> in the message Tray. To do so:</p>
+    <steps>
+      <item><p>Open the message tray by pressing
+      <keyseq><key>Super</key><key>M</key></keyseq>, or by moving your mouse
+      pointer to the very bottom of your screen.</p></item>
+      <item><p>Click on the <gui>Desktop</gui> icon in the
+      <gui>Message Tray</gui>. This will open the <app>Sharing</app> panel.</p>
+      </item>
+      <item><p>Izvēlies <gui>Ekrāna koplietošana</gui>.</p></item>
+      <item><p>Toggle the <gui>Screen Sharing</gui> slider to <gui>Off</gui>.
+      </p></item>
+    </steps>
+
+  </section>
+
+
+</page>

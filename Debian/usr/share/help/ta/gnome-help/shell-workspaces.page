@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" version="1.0 if/1.0" id="shell-workspaces" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces" group="#first"/>
+
+    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10.3" date="2014-01-26" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>பணியிடங்கள் உங்கள் பணிமேசையில் உள்ள சாளரங்களைக் குழுப்படுத்த உதவுகின்றன.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+<title>பணியிடம் என்றால் என்ன, அது எப்படி எனக்கு உதவும்?</title>
+
+    <media type="image" src="figures/shell-workspaces.png" width="162" height="434" style="floatend floatright">
+        <p>பணியிடப் தேர்வி</p>
+    </media>
+
+  <p if:test="!platform:gnome-classic">உங்கள் பணிமேசையில் உள்ள சாளரங்களின் குழுக்களே பணியிடங்கள் ஆகும். நீங்கள் பல பணியிடங்களை உருவாக்கலாம், அவை ஒவ்வொன்றும் ஒரு பணிமேசை போல செயல்படும். பணிமேசை நிரம்பியில்லாமல் இருக்கவும் பணிமேசையில் எளிதாக நகரவும் வழி செய்யவே பணியிடங்கள் உருவாக்கப்பட்டன.</p>
+
+  <p if:test="platform:gnome-classic">உங்கள் பணிமேசையில் உள்ள சாளரங்களின் குழுக்களே பணியிடங்கள் ஆகும். நீங்கள் பல பணியிடங்களைப் பயன்படுத்தலாம், அவை ஒவ்வொன்றும் ஒரு பணிமேசை போல செயல்படும். பணிமேசை நிரம்பியில்லாமல் இருக்கவும் பணிமேசையில் எளிதாக நகரவும் வழி செய்யவே பணியிடங்கள் உருவாக்கப்பட்டன.</p>
+
+  <p>பணியிடங்கள் உங்கள் பணியை ஒழுங்கமைக்கப் பயன்படும். உதாரனமாக நீங்கள் மின்னஞ்சல், அரட்டை பயன்பாடு போன்ற தகவல் தொடர்பு சாளரங்கள் அனைத்தையும் ஒரு பணியிடத்திலும், நீங்கள் வேலை செய்யும் சாளரத்தை வேறொரு பணியிடத்திலும் வைத்துக்கொள்ள முடியும். உங்கள் இசை நிர்வாகி மூன்றாவது பணியிடத்தில் வைக்கப்படலாம்.</p>
+
+<p>பணியிடங்களைப் பயன்படுத்துதல்:</p>
+
+<list>
+  <item>
+    <p if:test="!platform:gnome-classic">In the
+    <gui xref="shell-introduction#activities">Activities</gui> overview, move your cursor
+    to the right-most side of the screen.</p>
+    <p if:test="platform:gnome-classic"><gui>செயல்பாடுகள்</gui> மேலோட்டத்தைத் திறக்க <key xref="keyboard-key-super">Super</key> விசையை அழுத்தி திரையின் வலது விளிம்புக்கு உங்கள் சுட்டியைக் கொண்டு செல்லவும்.</p>
+  </item>
+  <item>
+    <p if:test="!platform:gnome-classic">A vertical panel will appear showing
+    workspaces in use, plus an empty workspace. This is the
+    workspace selector.</p>
+    <p if:test="platform:gnome-classic">A vertical panel will appear showing
+    available workspaces. This is the workspace selector.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>To add a workspace, drag and drop a window from an existing workspace
+    onto the empty workspace in the workspace selector. This workspace now
+    contains the window you have dropped,
+    and a new empty workspace will appear below it.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>ஒரு பணியிடத்தை நீக்க, அனைத்து சாளரங்களையும் மூடலாம் அல்லது அவற்றை வேறு பணியிடங்களுக்கு நகர்த்தலாம்.</p>
+  </item>
+</list>
+
+<p if:test="!platform:gnome-classic">எப்போதும் குறைந்தது ஒரு பணியிடம் இருக்கும்.</p>
+
+</page>

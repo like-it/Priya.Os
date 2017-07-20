@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-supported-file-formats" xml:lang="ca">
+
+  <info>
+    <desc>Supported file formats for importing data.</desc>
+    
+    <link type="guide" xref="import-data"/>
+
+    <revision pkgversion="3.0.2" version="0.3" date="2011-10-13" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/importing-mail-and-settings.html.en#importing-mail -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jordi Mas i Hernàndez</mal:name>
+      <mal:email>jmas@softcatala.org</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Formats de fitxers compatibles</title>
+
+<p><app>Evolution</app> can import the following types of files:</p>
+
+<section id="mail">
+<title>Correu</title>
+<list>
+<item><p>
+Berkeley Mailbox (.mbox or no extension):</p>
+<p>The email format used by <app>Mozilla</app>, <app>Netscape</app>, <app>Evolution</app> (for local folders until version 2.32), <app>Eudora</app>, and many other email clients.
+</p></item>
+<item><p>
+Maildir (no extension):</p>
+<p>The format used by <app>Evolution</app> (for local folders since version 3.0). There is no need to import Maildir files as you can <link xref="mail-account-manage-maildir-format-directories">configure a Maildir account</link> in <app>Evolution</app> and point to the folder where the Maildir files are stored.
+</p></item>
+<item><p>Carpetes personals de l'Outlook Express 5/6 (.dbx):</p>
+<p>The email file format used by <app>Microsoft Outlook Express 5/6</app>. For newer versions PST import is recommended.
+</p></item>
+</list>
+</section>
+
+<section id="calendar">
+<title>Calendari</title>
+<list>
+<item><p>
+vCalendar (.vcs):</p>
+<p>A format for storing calendar files, which is generally used by <app>Evolution</app>, <app>Microsoft Outlook</app>, <app>Sunbird</app>, and <app>Korganizer</app>.
+</p></item>
+<item><p>
+iCalendar or iCal (.ics):</p>
+<p>A format for storing calendar files. iCalendar is used by <app>Evolution</app>, <app>Microsoft Outlook</app>, Palm OS handhelds, and others.
+</p></item>
+</list>
+</section>
+
+<section id="contacts">
+<title>Contactes</title>
+<list>
+<item><p>Format d'intercanvi de dades LDAP (.ldif):</p>
+<p>A standard data format for contact cards.
+</p></item>
+<item><p>vCard (.vcf, .gcrd):</p>
+<p>The address book format used by the GNOME, KDE, and many other contact management applications. You should be able to export to vCard format from any address book application.
+</p></item>
+</list>
+</section>
+
+<section id="misc">
+<title>Miscel·lània</title>
+<list>
+<item><p>
+<app>Evolution</app>/Mozilla/Outlook CSV/Tab (.csv, .tab):</p>
+<p>CSV (Comma-separated values) or Tabulator files saved by using <app>Evolution</app>, <app>Microsoft Outlook</app> and <app>Mozilla</app>.
+</p></item>
+<item><p>Carpetes personals de l'Outlook (.pst):</p>
+<p>A file format used to store local copies of messages, calendar events, and other items within Microsoft software such as <app>Microsoft Exchange Client</app>, <app>Windows Messaging</app>, and <app>Microsoft Outlook</app>. It is also called "Personal Storage Table".
+</p></item>
+</list>
+</section>
+
+</page>

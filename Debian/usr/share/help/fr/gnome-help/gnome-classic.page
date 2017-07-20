@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="question" version="1.0 if/1.0" id="gnome-classic" xml:lang="fr">
+
+  <info>
+<!--    <link type="guide" xref="shell-overview#desktop" />-->
+
+    <revision pkgversion="3.10.1" date="2013-10-28" status="review"/>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Envisagez de passer à GNOME Classic si vous préférez une ambiance plus traditionnelle.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Qu'est-ce que GNOME Classic ?</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+  <p><em>GNOME Classic</em> est une présentation de GNOME sous un aspect plus traditionnel. Il est basé sur les technologies de <em>GNOME 3</em> et offre de nombreux changements dans l'interface utilisateur, comme les menus <gui>Applications</gui> et <gui>Emplacements</gui> dans la barre supérieure, ainsi qu'une liste des fenêtres en bas de l'écran.</p>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+<p><em>GNOME Classic</em> is a feature for users who prefer a more traditional
+  desktop experience. While <em>GNOME Classic</em> is based on <em>GNOME 3</em>
+  technologies, it provides a number of changes to the user interface, such as
+  the <gui xref="shell-introduction#activities">Applications</gui> and
+  <gui>Places</gui> menus on the top bar, and a window
+  list at the bottom of the screen.</p>
+  </if:when>
+</if:choose>
+
+<p>You can use the <gui>Applications</gui> menu on the top bar to launch
+ applications. The <gui xref="shell-introduction#activities">Activities</gui>
+ overview is available by selecting the <gui>Activities
+ Overview</gui> item from the menu.</p>
+
+<p>Pour accéder à la <em>vue d'ensemble des <gui>Activités</gui></em>, vous pouvez aussi appuyer sur la touche <key xref="keyboard-key-super">Logo</key>.</p>
+
+<section id="gnome-classic-window-list">
+<title>Liste des fenêtres</title>
+
+<p>La liste des fenêtres en bas de l'écran donne accès à toutes les fenêtres et applications ouvertes et permet de les réduire et de les restaurer rapidement.</p>
+
+<p>À droite de la liste des fenêtres, GNOME affiche un identifiant du bureau actuel, par exemple <gui>1</gui> si vous êtes dans le premier bureau. Cet identifiant montre aussi le nombre total de bureaux disponibles. Pour passer à un autre bureau, cliquez sur l'identifiant et choisissez le bureau voulu dans le menu.</p>
+
+<p>Si une application ou un composant du système veut attirer votre attention, il affiche une icône bleue à la droite de la liste des fenêtres. En cliquant sur cette icône bleue, vous faites apparaître le <link xref="shell-notifications">tiroir de messagerie</link>, qui donne accès à toutes les notifications.</p>
+
+</section>
+
+<section id="gnome-classic-switch">
+<title>Aller et retour à GNOME Classic</title>
+
+<note if:test="!platform:gnome-classic" style="important">
+<p>Gnome Classic n'est disponible que sur les systèmes dotés de certaines extensions. Sur quelques distributions Linux, ces extensions peuvent ne pas être disponibles, ou ne pas être installées par défaut.</p>
+</note>
+
+  <steps>
+    <title>Pour passer de <em>GNOME</em> à <em>GNOME Classic</em> :</title>
+    <item>
+      <p>Enregistrer vos travaux en cours et fermez votre session. Cliquez sur le menu système dans la partie droite de la barre supérieure, cliquez sur votre nom et choisissez la bonne option.</p>
+    </item>
+    <item>
+      <p>Un message de confirmation apparaît. Sélectionnez <gui>Fermer la session</gui> pour confirmer. </p>
+    </item>
+    <item>
+      <p>À l'écran de connexion, sélectionnez votre nom dans la liste. </p>
+    </item>
+    <item>
+      <p>Saisissez votre mot de passe dans le champ adéquat.</p>
+    </item>
+    <item>
+      <p>Cliquez sur l'icône qui se situe à gauche de <gui>Se connecter</gui> et choisissez <gui>GNOME Classic</gui>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton <gui>Se connecter</gui>.</p>
+    </item>
+  </steps>
+
+  <steps>
+    <title>Pour passer de <em>GNOME Classic</em> à <em>GNOME</em> :</title>
+    <item>
+      <p>Enregistrer vos travaux en cours et fermez votre session. Cliquez sur le menu système dans la partie droite de la barre supérieure, cliquez sur votre nom et choisissez la bonne option.</p>
+    </item>
+    <item>
+      <p>Un message de confirmation apparaît. Sélectionnez <gui>Fermer la session</gui> pour confirmer. </p>
+    </item>
+    <item>
+      <p>À l'écran de connexion, sélectionnez votre nom dans la liste. </p>
+    </item>
+    <item>
+      <p>Saisissez votre mot de passe dans le champ adéquat.</p>
+    </item>
+    <item>
+      <p>Cliquez sur l'icône d'options qui se situe à gauche du bouton <gui>Se connecter</gui> et choisissez <gui>GNOME</gui>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton <gui>Se connecter</gui>.</p>
+    </item>
+  </steps>
+  
+</section>
+
+</page>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="seealso" xref="net-findip"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>使用静态 IP 地址可简化一些网络服务的管理。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>创建一个固定 IP 地址的连接</title>
+
+  <p>当您连接到网络时，多数网络会自动为您的计算机分配 I P 地址和其他信息。这些信息可能会定期更改，但您可能要为计算机设置固定的 IP 地址，以便时刻了解您计算机的 IP 地址(例如当该计算机被用于文件服务器时)。</p> <p>要为计算机提供固定(静态)IP 地址：</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Network</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>In the left pane, select the network connection that you want to give
+      a fixed address. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
+    </item>
+    <item>
+      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
+    </item>
+    <item>
+      <p>Enter the <em>Address</em>, <em>Netmask</em>, and <em>Gateway</em>
+      information into the appropriate boxes. How you choose these will depend
+      on your network setup; there are specific rules governing which IP
+      addresses and netmasks are valid for a given network.</p>
+    </item>
+    <item>
+      <p>如有必要，请在 <gui>DNS 服务器</gui> 框中输入 <em>DNS 服务器</em> 地址。这是查找 DNS 服务器的 IP 地址；多数公司网络和 Internet 提供商会提供专用的 DNS 服务器。</p>
+    </item>
+    <item>
+      <p>Click <gui>Apply</gui>. The network connection should now have a fixed
+      IP address.</p>
+    </item>
+  </steps>
+
+</page>

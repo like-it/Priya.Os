@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="game-types" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+    <revision pkgversion="3.8" version="0.1" date="2013-05-21" status="draft"/>
+    <revision pkgversion="3.11.90" date="2014-03-26" status="review"/>
+    <revision pkgversion="3.14" date="2015-01-25" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">safincrazy@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Rachel Dunstan</name>
+      <email its:translate="no">dunstanrc@gmail.com</email>
+    </credit>
+
+    <desc>So ändern Sie den Schwierigkeitsgrad in <app>Robots</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Florian Purucker</mal:name>
+      <mal:email>florian@purucker.net</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008, 2009, 2012, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014,2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Spieltyp</title>
+
+  <p>Man kann <app>Robots</app> auf verschiedene Weisen durch Wahl eines anderen Spieltyps spielen. Somit ändert sich auch der Schwierigkeitsgrad beim Spielen von <app>Robots</app>.</p>
+
+  <steps>
+    <title>So ändern Sie den Schwierigkeitsgrad:</title>
+    <item>
+      <p>Wählen Sie <guiseq><gui style="menu">Einstellungen</gui><gui>Einstellungen</gui><gui>Spiel</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Wählen Sie die gewünschte Option im Auswahlmenü neben <gui>Spieltyp</gui>.</p>
+      <table frame="top bottom" rules="rows">
+      <thead>
+      <tr>
+        <td><p>Spieltyp</p></td>
+        <td><p>Anfangs sicheres <link xref="moves#teleport">teleportieren</link> </p>
+        </td>
+        <td><p>Anfangs <link xref="scores#high-low-risk">risikoarme feindliche Roboter</link></p></td>
+        <td><p>Anfangs <link xref="scores#high-low-risk">risikoreiche feindliche Roboter</link></p></td>
+        <td><p>Erhöhen sich sichere Teleportierungen in folgenden Spielstufen?</p></td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><p><gui>Albtraum</gui></p></td>
+        <td><p>2</p></td>
+        <td><p>2</p></td>
+        <td><p>8</p></td>
+        <td><p>Ja</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>Robots mit sicherem Teleport</gui></p></td>
+        <td><p>0</p></td>
+        <td><p>10</p></td>
+        <td><p>0</p></td>
+        <td><p>Ja, aber nur wenn Roboter beim <link xref="moves#wait">Warten</link> getötet werden</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>Robots 2</gui></p></td>
+        <td><p>1</p></td>
+        <td><p>8</p></td>
+        <td><p>2</p></td>
+        <td><p>Ja, aber nur wenn Roboter beim <link xref="moves#wait">Warten</link> getötet werden</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>Robots 2 einfach</gui></p></td>
+        <td><p>3</p></td>
+        <td><p>8</p></td>
+        <td><p>2</p></td>
+        <td><p>Ja</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>Klassisches Robots</gui></p></td>
+        <td><p>0</p></td>
+        <td><p>10</p></td>
+        <td><p>0</p></td>
+        <td><p>Nein</p></td>
+      </tr>
+      </tbody>
+    </table>
+    </item>
+    <item>
+      <p>Wählen Sie das Ankreuzfeld <gui style="checkbox">Sichere Züge verwenden</gui> auswählen, dann hindert Sie das Spiel an einem Spielzug, nach dem Sie ein Roboter vernichten würde, abgesehen von einem Teleport. Wenn Sie das Ankreuzfeld <gui style="checkbox">Extrem sichere Züge verwenden</gui> wählen, dann wird Sie das Spiel in einem solchen Fall an allen Zügen hindern, so dass Sie gezwungen werden zu teleportieren. Damit wird der Schwierigkeitsgrad vermindert. Sie können diese Einstellungen jederzeit abwählen, wenn das Spiel für Sie zu einfach ist.</p>
+    </item>
+  </steps>
+
+</page>

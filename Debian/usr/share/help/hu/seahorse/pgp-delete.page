@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-delete" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-24" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Saját, vagy a más emberekkel való kommunikációhoz használt kulcsok helyi másolatának törlése.</desc>
+  </info>
+
+  <title>Meglévő kulcs törlése</title>
+
+  <p>Ha valakivel már nincs kapcsolatban, akkor törölheti az illető GnuPG kulcsát a számítógépéről a <app>Jelszavak és kulcsok</app> segítségével. Saját kulcsot véglegesen is tud törölni, ha még nem tette közzé kulcskiszolgálón. A GnuPG kulcs törlése egyaránt törli a nyilvános és a személyes kulcsot.</p>
+
+  <steps>
+    <title>Kulcs törléséhez:</title>
+    <item>
+      <p>Válassza ki a kívánt kulcsot (szükség lehet a teljes lista megjelenítésére a <guiseq><gui style="menu">Nézet</gui><gui style="menuitem">Összes megjelenítése</gui></guiseq> kiválasztásával).</p>
+    </item>
+    <item>
+      <p>Kattintson a jobb egérgombbal a kiválasztott kulcsra, majd válassza ki a <gui>Törlés</gui> bejegyzést. A kulcs törlését a <guiseq><gui style="menu">Szerkesztés</gui><gui style="menuitem">Törlés</gui></guiseq> menüponttal is elvégezheti.</p>
+      <note style="important">
+        <p>A kulcskiszolgálón közzétett GnuPG kulcsot csak a helyileg tárolt GnuPG kulcstartón törölheti, mert a nyilvános kulcs egy másolata továbbra is megtalálható lesz a kulcskiszolgálón.</p>
+        <p>Ha törli a GnuPG kulcsát, akkor a személyes kulcs örökre elvesz. A nyilvános kulcs <link xref="pgp-retrieve-remote">letöltése</link> a kulcskiszolgálóról és ezzel az Önnek szánt üzenetek titkosítása továbbra is lehetséges, bár Ön képtelen lesz ezeket az üzeneteket elolvasni! Az ilyen kulcsok használatát a kulcs letöltése és visszavonása által előzheti meg. A visszavont kulcsot <link xref="pgp-sync">szinkronizálhatja</link> a kulcskiszolgálóval, ezáltal megóvhat másokat a kulcs letöltésétől és használatától.</p>
+        <!-- or when you <link xref="misc-key-revoke">revoke</link> it.- No
+        revoking feature yet for SSH keys/PGP master keys-->
+      </note>
+    </item>
+    <item>
+      <p>A megjelenő ablakban aktiválja a <gui style="checkbox">Megértettem, hogy ez a személyes kulcs véglegesen törlésre kerül</gui> jelölőnégyzetet, majd a befejezéshez kattintson a <gui style="button">Törlés</gui> gombra.</p>
+    </item>
+  </steps>
+
+
+</page>

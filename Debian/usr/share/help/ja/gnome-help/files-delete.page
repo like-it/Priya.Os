@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-delete" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="seealso" xref="files-recover"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-16" status="review"/>
+    <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
+    <revision pkgversion="3.16" date="2015-02-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Cristopher Thomas</name>
+      <email>crisnoh@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>不要なファイルやフォルダーを削除します。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>ファイル、フォルダーを削除する</title>
+
+  <p>If you do not want a file or folder any more, you can delete it. When you
+  delete an item it is moved to the <gui>Trash</gui> folder, where it is stored
+  until you empty the trash. You can <link xref="files-recover">restore
+  items</link> in the <gui>Trash</gui> folder to their original location if you
+  decide you need them, or if they were accidentally deleted.</p>
+
+  <steps>
+    <title>ファイルをゴミ箱へ移す方法は次のとおりです。</title>
+    <item><p>ゴミ箱に配置するアイテムをシングルクリックで選択します。</p></item>
+    <item><p>Press <key>Delete</key> on your keyboard. Alternatively, drag the
+    item to the <gui>Trash</gui> in the sidebar.</p></item>
+  </steps>
+
+  <p>The file will be moved to the trash, and you'll be presented with an
+  option to <gui>Undo</gui> the deletion. The <gui>Undo</gui> button will appear
+  for a few seconds. If you select <gui>Undo</gui>, the file will be restored
+  to its original location.</p>
+
+  <p>ファイルを完全に削除し、コンピューターのディスクスペースを解放するには、ゴミ箱を空にします。ゴミ箱を空にするには、サイドバーの<gui>ゴミ箱</gui>を右クリックし、<gui>ゴミ箱を空にする</gui>を選んでください。</p>
+
+  <section id="permanent">
+    <title>ファイルを完全に削除する</title>
+    <p>ゴミ箱へ移さずに、直接ファイルを完全に削除することができます。</p>
+
+  <steps>
+    <title>ファイルを完全に削除する方法は次のとおりです。</title>
+    <item><p>削除するファイルを選択します。</p></item>
+    <item><p>キーボードで <key>Shift</key> キーを押したまま、<key>Delete</key> キーを押します。</p></item>
+    <item><p>この操作は元に戻すことができないため、そのファイルやフォルダーを削除してもよいかどうかを確認するメッセージが表示されます。</p></item>
+  </steps>
+
+  <note><p><link xref="files#removable">リムーバブルデバイス</link>で削除したファイルは、Windows や Mac OS など他のオペレーティングシステムでは見えることがあります。そうしたファイルは、まだそこに残っており、コンピューターにデバイスを挿し直せばまた使用できます。</p></note>
+
+  </section>
+
+</page>

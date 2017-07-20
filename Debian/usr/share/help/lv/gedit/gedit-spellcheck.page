@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-spellcheck" xml:lang="lv">
+  
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/> 
+    <desc>Pārbaudiet savas datnes uz pareizrakstības kļūdām.</desc>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+  </info>
+  
+  <title>Pārbaudīt dokumenta pareizrakstību</title>
+  <section id="enable-spell-check">
+    <title>Ieslēgt pareizrakstības pārbaudi</title>
+    <p>Pareizrakstības pārbaudi nodrošina <app>gedit</app> spraudnis, kuru var pēc vajadzības aktivēt. Lai aktivētu spraudni:</p>
+
+    <steps>
+      <item>
+        <p>Izvēlieties <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Iestatījumi</gui><gui>Spraudņi</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Izvēlieties <gui style="menuitem">Pareizrakstības pārbaudītājs</gui>, lai aktivētu spraudni.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="spell-check">
+    <title>Pārbaudīt dokumenta pareizrakstību</title>
+
+    <p>Lai dokumentā meklētu nepareizi uzrakstītus vārdus:</p>
+
+    <steps>
+      <item>
+        <p>Izvēlieties <guiseq><gui style="menu">Rīki</gui><gui style="menuitem">Pārbaudīt pareizrakstību</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Lai <app>gedit</app> automātiski izceltu dokumentā nepareizi uzrakstītos vārdus rakstīšanas laikā, izvēlieties <guiseq><gui style="menu">Rīki</gui><gui style="menuitem">Izcelt nepareizi uzrakstītos vārdus</gui></guiseq>.</p>
+    </note>
+  </section>
+
+  <section id="use-spell-check">
+    <title>Izmanto pareizrakstības pārbaudi</title>
+
+    <p>Nepareizi uzrakstītiem vārdiem jūs varat izvēlēties labojumus, izmantojot pareizrakstības pārbaudes dialoglodziņu. Pareizrakstības pārbaudītājā nepareizi uzrakstītie vārdi ir izcelti treknrakstā pie <gui>Nepareizi uzrakstītie vārdi:</gui>. Jūs varat izvēlēties no šīm korekcijas darbībām:</p>
+
+    <list>
+      <item>
+        <p><gui style="input">Mainīt uz:</gui> ļauj jums ievadīt vārdu un izmantot <gui style="button">Pārbaudīt vārdu</gui>, lai pārbaudītu pareizrakstību.</p>
+      </item>
+      <item>
+        <p><gui style="menu">Ieteikumi:</gui> uzskaita pieejamos vārda labojumus.</p>
+      </item>
+      <item>
+        <p><gui style="button">Ignorēt</gui> ļauj jums izlaist pareizrakstības pārbaudi <em>šai</em> vārda instancei.</p>
+      </item>
+      <item>
+        <p><gui style="button">Ignorēt visus</gui> ļauj jums izlaist pareizrakstības pārbaudi <em>visām</em> vārda instancēm.</p>
+      </item>
+      <item>
+        <p><gui style="button">Mainīt</gui> aizvieto <em>vienu</em> nepareizi uzrakstīto vai neatpazīto vārdu ar izvēlētu aizvietojumu no <gui style="menuitem">Ieteikumi:</gui> saraksta.</p>
+      </item>
+      <item>
+        <p><gui style="button">Mainīt visus</gui> aizvieto <em>visus</em> nepareizi uzrakstītos vai neatpazītos vārdus ar izvēlētu aizvietojumu no <gui style="menuitem">Ieteikumi:</gui> saraksta.</p>
+      </item>
+      <item>
+        <p><gui style="button">Pievienot vārdu</gui> ļauj jums pievienot aktuālo vārdu <app>gedit</app> lietotnes <gui>lietotāja vārdnīcai</gui>. Pielāgotu vārdu pievienošana <gui>lietotāja vārdnīcai</gui> ļaus <app>gedit</app> atpazīt vārdus dokumentā un tie netiks izcelti kā nepareizi uzrakstīti.</p>
+      </item>
+    </list>
+
+  </section>
+
+  <section id="define-spell-check-language">
+    <title>Noteikt, kuru valodu izmantot pareizrakstības pārbaudei</title>
+    <p>Pēc noklusējuma <app>gedit</app> izmantos jūsu pašreizējo valodu, lai pārbaudītu pareizrakstību dokumentā. Ja jums ir jāizmanto cita valoda, izvēlieties <guiseq><gui style="menu">Rīki</gui><gui style="menuitem">Iestatīt valodu…</gui></guiseq>, tad izvēlieties valodu, ko izmantot.</p>
+  </section>
+
+  <section id="dict">
+    <title>Vārdnīcas</title>
+
+    <p><app>gedit</app> pareizrakstības pārbaudīšanai izmanto <link href="http://www.abisource.com/projects/enchant/">Enchant</link> – maza sistēmas utilītprogramma. Enchant var izmantot vairākas dažādas vārdnīcas, lai pārbaudītu pareizrakstību. <em>Hunspell</em> un <em>Aspell</em> ir piemēri atbalstītiem vārdnīcu nodrošinātājiem.</p>
+
+    <p>Ja jums vajadzīgā valoda nav pieejama <app>gedit</app> lietotnē, izmantojiet datora programmatūras instalētāju vai pakotņu pārvaldnieku, lai uzinstalētu vajadzīgo vārdnīcu nodrošinātāju.</p>
+  </section>
+</page>

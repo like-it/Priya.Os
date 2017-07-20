@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="offline" xml:lang="es">
+
+  <info>
+    <desc>Conectar <app>Evolution</app> otra vez.</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+    <link type="seealso" xref="mail-working-offline"/>
+
+    <revision pkgversion="3.13.4" version="0.4" date="2015-02-15" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Brian Grohe</name>
+      <email its:translate="no">grohe43@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Patrick O'Callaghan</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+<title>¿Por qué el componente de correo de <app>Evolution</app> está desconectado?</title>
+<p>Puede que haya iniciado <app>Evolution</app> con la opción de línea de comandos <cmd>--offline</cmd> para forzar el modo desconectado.</p>
+
+<p>Si este no es el caso y <app>Evolution</app> normalmente funciona, pero se ha desconectado de repente, puede que haya pulsado sin querer en el icono de conexión en la esquina inferior izquierda. Cuando está conectado, el icono simula dos enchufes unidos. Si los enchufes están separados, no hay conexión (y el botón de <gui style="button">Enviar/Recibir</gui> está sombreado). Pulse en el icono para cambiar su estado.</p>
+
+<p>Si el problema persiste y está seguro de que no ha pulsado el icono, pero puede usar la red con otras aplicaciones de su sistema (navegadores, FTP, SSH, ping, etc) puede ser que su conexión de red no esté bien configurada. Para obtener más información, consulte la <link xref="help:gnome-help/net-problem" href="https://help.gnome.org/users/gnome-help/stable/net-problem">ayuda del escritorio</link> o busque ayuda en los foros de soporte de su distribución, listas de correo, etc.</p>
+
+<!-- from https://bugzilla.gnome.org/show_bug.cgi?id=728604 -->
+<p>Si quiere forzar a <app>Evolution</app> a estar en modo conectado, asegúrese de que no está en ejecución, abra una ventana de la <app>Terminal</app> y escriba el siguiente comando:</p>
+     <p><cmd its:translate="no">
+         GIO_USE_NETWORK_MONITOR=base evolution
+     </cmd></p>
+
+<note style="warning"><p>El modo desconectado de <app>Evolution</app> sólo se refiere al correo y no se aplica a los contactos ni a los calendarios.</p></note>
+
+</page>

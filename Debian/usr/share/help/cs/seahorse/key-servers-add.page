@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="key-servers-add" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+    <link type="seealso" xref="pgp-sync"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-08-18" status="draft"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Jak rozšířit seznam serverů s klíči v <app>Heslech a klíčích</app>.</desc>
+  </info>
+
+  <title>Přidání serveru s klíči</title>
+    <p><app>Hesla a klíče</app> mají ve svém výchozím seznamu následující servery s klíči:</p>
+
+    <list>
+      <item>
+        <p>hkp://pool.sks-keyservers.net</p>
+      </item>
+      <item>
+        <p>ldap://keyserver.pgp.com</p>
+      </item>
+    </list>
+
+  <steps>
+    <title>Přidání serveru s klíči</title>
+    <item>
+      <p>Vyberte <guiseq><gui style="menu">Upravit</gui> <gui style="menuitem">Předvolby</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Zmáčkněte tlačítko <gui style="button">Přidat</gui>.</p>
+    </item>
+    <item>
+      <p>V novém dialogovém okně vyberte příslušný <gui>Typ serveru s klíči</gui>. Server s klíči je dán protokolem, který používá ke komunikaci. Dívejte se po pár prvních písmenech v internetové adrese URL serveru.</p>
+    </item>
+    <item>
+      <p>Do pole <gui style="input">Server</gui> vložte internetovou adresu URL serveru s klíči. Podívejte se do dokumentace příslušného serveru, jestli nepracuje na nějakém nestandardním portu. Pokud ano, zadejte port za dvojtečku. Jestli si nejste jisti, ponechte pole za „:“ prázdné.</p>
+    </item>
+    <item>
+      <p>Celou operaci dokončete zmáčknutím <gui style="button">Budiž</gui>.</p>
+    </item>
+  </steps>
+
+</page>

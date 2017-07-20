@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "0.11.5">
+<!ENTITY manrevision "2.0.3">
+<!ENTITY date "May 2008">
+<!ENTITY app "Rhythmbox Music Player">
+<!ENTITY mdash "&#8212;">
+]>
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.2
+  Last modified: October 02, 2002
+  Maintainers:
+               Mark Finlay <sisob@eircom.net>
+	       Mark Humphreys <marquee@users.sourceforge.net>
+-->
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.3
+  Last modified: August 08, 2003
+  Maintainers:
+	       Mark Humphreys <marquee@users.sourceforge.net>
+-->
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.4
+  Last modified: October 01, 2005
+  Maintainers:
+	       Baptiste Mille-Mathias <baptiste.millemathias@gmail.com>
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sv">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Rhythmbox musikspelare</title>
+	<copyright><year>2002</year> <holder>Mark Finlay</holder></copyright>
+        <copyright><year>2002</year> <year>2002</year> <holder>Mark Humphreys</holder></copyright>
+	<copyright><year>2005</year> <year>2006</year> <holder>Baptiste Mille-Mathias</holder></copyright>
+	<copyright><year>2006</year> <holder>Victor Osadci</holder></copyright>
+	<copyright><year>2008</year> <holder>Dean Sas</holder></copyright>
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+  -->
+<!-- An address can be added to the publisher information.  If a role is
+     not specified, the publisher/author is the same for all versions of the
+     document.  -->
+	<publisher>
+	 	<publishername>Dokumentationsprojekt för GNOME</publishername>
+	</publisher>
+
+   
+
+  <legalnotice id="legalnotice">
+	<para>Tillstånd att kopiera, distribuera och/eller modifiera detta dokument ges under villkoren i GNU Free Documentation License (GFDL), version 1.1 eller senare, utgivet av Free Software Foundation utan standardavsnitt och omslagstexter.  En kopia av GFDL finns att hämta på denna <ulink type="help" url="help:fdl">länk</ulink> eller i filen COPYING-DOCS som medföljer denna handbok.</para>
+         <para>Denna handbok utgör en av flera GNOME-handböcker som distribueras under villkoren i GFDL.  Om du vill distribuera denna handbok separat från övriga handböcker kan du göra detta genom att lägga till en kopia av licensavtalet i handboken enligt instruktionerna i avsnitt 6 i licensavtalet.</para>
+
+	<para>Flera namn på produkter och tjänster är registrerade varumärken. I de fall dessa namn förekommer i GNOME-dokumentation - och medlemmarna i GNOME-dokumentationsprojektet är medvetna om dessa varumärken - är de skrivna med versaler eller med inledande versal.</para>
+
+	<para>DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET TILLHANDAHÅLLS UNDER VILLKOREN I GNU FREE DOCUMENTATION LICENSE ENDAST UNDER FÖLJANDE FÖRUTSÄTTNINGAR: <orderedlist>
+		<listitem>
+		  <para>DOKUMENTET TILLHANDAHÅLLS I "BEFINTLIGT SKICK" UTAN NÅGRA SOM HELST GARANTIER, VARE SIG UTTRYCKLIGA ELLER UNDERFÖRSTÅDDA, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, GARANTIER ATT DOKUMENTET ELLER EN MODIFIERAD VERSION AV DOKUMENTET INTE INNEHÅLLER NÅGRA FELAKTIGHETER, ÄR LÄMPLIGT FÖR ETT VISST ÄNDAMÅL ELLER INTE STRIDER MOT LAG. HELA RISKEN VAD GÄLLER KVALITET, EXAKTHET OCH UTFÖRANDE AV DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET LIGGER HELT OCH HÅLLET PÅ ANVÄNDAREN. OM ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT SKULLE VISA SIG INNEHÅLLA FELAKTIGHETER I NÅGOT HÄNSEENDE ÄR DET DU (INTE DEN URSPRUNGLIGA SKRIBENTEN, FÖRFATTAREN ELLER NÅGON ANNAN MEDARBETARE) SOM FÅR STÅ FÖR ALLA EVENTUELLA KOSTNADER FÖR SERVICE, REPARATIONER ELLER KORRIGERINGAR. DENNA GARANTIFRISKRIVNING UTGÖR EN VÄSENTLIG DEL AV DETTA LICENSAVTAL. DETTA INNEBÄR ATT ALL ANVÄNDNING AV ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT BEVILJAS ENDAST UNDER DENNA ANSVARSFRISKRIVNING;</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGA OMSTÄNDIGHETER ELLER INOM RAMEN FÖR NÅGON LAGSTIFTNING, OAVSETT OM DET GÄLLER KRÄNKNING (INKLUSIVE VÅRDSLÖSHET), KONTRAKT ELLER DYLIKT, SKA FÖRFATTAREN, DEN URSPRUNGLIGA SKRIBENTEN ELLER ANNAN MEDARBETARE ELLER ÅTERFÖRSÄLJARE AV DOKUMENTET ELLER AV EN MODIFIERAD VERSION AV DOKUMENTET ELLER NÅGON LEVERANTÖR TILL NÅGON AV NÄMNDA PARTER STÄLLAS ANSVARIG GENTEMOT NÅGON FÖR NÅGRA DIREKTA, INDIREKTA, SÄRSKILDA ELLER OFÖRUTSEDDA SKADOR ELLER FÖLJDSKADOR AV NÅGOT SLAG, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, SKADOR BETRÄFFANDE FÖRLORAD GOODWILL, HINDER I ARBETET, DATORHAVERI ELLER NÅGRA ANDRA TÄNKBARA SKADOR ELLER FÖRLUSTER SOM KAN UPPKOMMA PÅ GRUND AV ELLER RELATERAT TILL ANVÄNDNINGEN AV DOKUMENTET ELLER MODIFIERADE VERSIONER AV DOKUMENTET, ÄVEN OM PART SKA HA BLIVIT INFORMERAD OM MÖJLIGHETEN TILL SÅDANA SKADOR.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+   other legal stuff such as "NO WARRANTY" statement. Please do not change
+   any of this. -->
+   <authorgroup>
+   		<author><firstname>Mark</firstname> <surname>Finlay</surname> <affiliation> <orgname>Dokumentationsprojektet för GNOME</orgname> <address><email>sisob@eircom.net</email></address> </affiliation></author>
+		<author><firstname>Mark</firstname> <surname>Humphreys</surname> <affiliation> <orgname>Dokumentationsprojektet för GNOME</orgname> <address><email>marquee@users.sourceforge.net</email></address> </affiliation></author>		
+		<author role="maintainer"><firstname>Baptiste</firstname> <surname>Mille-Mathias</surname> <affiliation> <orgname>Dokumentationsprojektet för GNOME</orgname> <address><email>baptiste.millemathias@gmail.com</email></address> </affiliation></author>
+		<author><firstname>Victor</firstname> <surname>Osadci</surname> <affiliation> <orgname>Dokumentationsprojektet för GNOME</orgname> <address><email>Victor.Osadci.GNOME@xhtml.md</email></address> </affiliation></author>
+		<author><firstname>Dean</firstname> <surname>Sas</surname> <affiliation> <orgname>Dokumentationsprojektet för Ubuntu</orgname> <address><email>dean@deansas.org</email></address> </affiliation></author>
+   </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+   <revhistory>
+      <revision><revnumber>Handbok för Rhythmbox musikspelare V0.0.2</revnumber> <date>Oktober 2002</date> <revdescription> 
+	  		<para role="author">Mark Finlay</para>
+	  		<para role="publisher">Dokumentationsprojekt för GNOME</para>
+		</revdescription></revision> 
+      <revision><revnumber>Handbok för Rhythmbox musikspelare V0.0.3</revnumber> <date>Augusti 2003</date> <revdescription> 
+	  		<para role="author">Mark Humphreys</para>
+	  		<para role="publisher">Dokumentationsprojekt för GNOME</para>
+		</revdescription></revision> 
+      <revision><revnumber>Handbok för Rhythmbox musikspelare V0.0.4</revnumber> <date>Oktober 2005</date> <revdescription> 
+	  		<para role="author">Baptiste Mille-Mathias</para>
+	  		<para role="publisher">Dokumentationsprojekt för GNOME</para>
+		</revdescription></revision> 
+      <revision><revnumber>Handbok för Rhythmbox musikspelare V2.0.2</revnumber> <date>April 2006</date> <revdescription> 
+	  		<para role="author">Luca Ferretti</para>
+	  		<para role="publisher">Dokumentationsprojekt för GNOME</para>
+		</revdescription></revision> 
+	  <revision><revnumber>Handbok för Rhythmbox musikspelare V2.0.3</revnumber> <date>Maj 2008</date> <revdescription>
+			<para role="author">Dean Sas</para>
+			<para role="publisher">Dokumentationsprojekt för GNOME</para>
+        </revdescription></revision>
+    </revhistory> 
+
+    <releaseinfo>Denna handbok beskriver version 0.11.5 av musikspelaren Rhythmbox.</releaseinfo> 
+    <legalnotice> 
+      <title>Återkoppling</title> 
+      <para>För att rapportera ett fel eller föreslå någonting angående programmet Rhythmbox musikspelare eller denna handbok, följ riktlinjerna i <ulink url="ghelp:gnome-feedback" type="help">GNOME:s återkopplingssida</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+
+   <abstract role="description">
+     <para>Rhythmbox är en fullfjädrad musikspelare för GNOME-skrivbordet.</para>
+   </abstract>
+
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Daniel Nylander</firstname>
+      </personname>
+      <email>po@danielnylander.se</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2006</year>
+      
+        <year>2009</year>
+      
+      <holder>Daniel Nylander</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Josef Andersson</firstname>
+      </personname>
+      <email>josef.andersson@fripost.org</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2015</year>
+      
+      <holder>Josef Andersson</holder>
+    </copyright>
+  </articleinfo> 
+
+
+  <indexterm zone="index"><primary>Rhythmbox</primary></indexterm>
+  <indexterm zone="index"><primary>rhythmbox</primary></indexterm>
+  <indexterm zone="index"><primary>Musikspelare</primary></indexterm>
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="introduction">
+    <title>Introduktion</title>
+      <para><application>Rhythmbox musikspelare</application> är en musikspelare och bibliotek för taggade filer, som har stöd för olika musikformat.</para>
+      <para>Nuvarande versionen av <application>Rhythmbox musikspelare</application> innehåller funktioner som:</para>
+      	<itemizedlist>
+          <listitem>
+            <para>Spela olika format av musikfiler från ditt taggorganiserade bibliotek.</para>
+          </listitem>
+          <listitem>
+            <para>Visa information om låtarna genom läsning av metadata.</para>
+          </listitem>
+          <listitem>
+            <para>Visa låtar på ett organiserat sätt.</para>
+          </listitem>
+          <listitem>
+            <para>Skapa statiska spellistor genom drag-och-släpp från biblioteksvyn.</para>
+          </listitem>
+          <listitem>
+            <para>Skapa automatiska spellistor efter kriterier.</para>
+          </listitem>
+          <listitem>
+            <para>Sök efter låtar i källistorna som bibliotek eller spellistor.</para>
+          </listitem>
+          <listitem>
+            <para>Lyssna på Internetradiokanaler.</para>
+          </listitem>
+          <listitem>
+            <para>Läs ljud-cd-skivor och hämta information som exempelvis spårtitel från Internet.</para>
+          </listitem>
+          <listitem>
+            <para>Bränn ljud-cd-skivor från spellistor.</para>
+          </listitem>
+          <listitem>
+            <para>Överför musik till iPod, MTP och musikspelare med USB-masslagringssystem.</para>
+          </listitem>
+        </itemizedlist>
+  </sect1>
+  <sect1 id="rb-getting-started">
+  	<title>Kom igång</title>
+	
+		<sect2 id="rb-launch">
+			<title>För att starta <application>Rhythmbox musikspelare</application></title>
+			<para>Du kan starta <application>Rhythmbox musikspelare</application> på följande sätt: <variablelist>
+					<varlistentry>
+						<term><guimenu>Program</guimenu>-menyn</term>
+						<listitem>
+							<para>Välj <menuchoice><guisubmenu>Ljud och video</guisubmenu><guimenuitem>Rhythmbox musikspelare</guimenuitem></menuchoice>.</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Kommandorad</term>
+						<listitem>
+							<para>Skriv <command>rhythmbox</command> och tryck på <keycap>Retur</keycap>.</para>
+						</listitem>
+					</varlistentry>
+				</variablelist></para>
+		</sect2>
+		<sect2 id="rb">
+			<title>Körning av guiden</title>
+			<para>Första gången du startar <application>Rhythmbox musikspelare</application> kommer en guide att hjälpa dig att importera din musik. På andra panelen för guiden, tryck på knappen <guibutton>Bläddra</guibutton> och välj den mapp där din musik finns lagrad.</para>
+		</sect2>
+  </sect1>
+  <sect1 id="rb-window">
+    <title>Rhythmbox-fönstret</title>
+    <sect2 id="rb-window-intro">
+      <title>Översikt</title>
+      	<para>Fönstret i <application>Rhythmbox musikspelare</application> låter dig bläddra och spela upp din favoritmusik. <xref linkend="fig-rb-window"/> visar gränssnittet för <application>Rhythmbox musikspelare</application> med dess huvudkomponenter.</para>
+      	<figure id="fig-rb-window">
+        <title>Fönstret i <application>Rhythmbox musikspelare</application></title>
+        <screenshot>
+          <mediaobject><imageobject> <imagedata fileref="figures/rb-window.png" format="PNG"/> </imageobject> <textobject> <phrase>Visa fönstret för <application>Rhythmbox musikspelare</application> som visar de olika delarna av gränssnittet i <application>Rhythmbox musikspelare</application>. Förklaring: menyrad, spelarområde, bläddrare, sidopanel, statusrad. </phrase> </textobject></mediaobject>
+        </screenshot>
+      </figure>
+      <para>Tabell 1 beskriver komponenterna i <application>Rhythmbox musikspelare</application>.</para>
+      <table frame="topbot" id="table-rb-window">
+        <title>Fönsterkomponenter i <application>Rhythmbox musikspelare</application></title>
+        <tgroup cols="3" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <colspec colname="COLSPEC2"/>
+          <thead>
+            <row rowsep="1">
+              <entry valign="top">Id</entry>
+              <entry valign="top">Komponent</entry>
+              <entry valign="top">Beskrivning</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry valign="top">1</entry>
+              <entry valign="top">Menyrad</entry>
+              <entry valign="top">Innehåller menyer du kan använda för att utföra uppgifter i fönstret för <application>Rhythmbox musikspelare</application>.</entry>
+            </row>
+            <row>
+              <entry valign="top">2</entry>
+              <entry valign="top">Verktygsfält</entry>
+              <entry valign="top">Ger åtkomst till uppspelningsfunktioner och detaljer om det spår som för närvarande spelas upp.</entry>
+            </row>
+            <row>
+              <entry valign="top">3</entry>
+              <entry valign="top">Tidsreglage</entry>
+              <entry valign="top">Visar position för uppspelningen av spåret; den tillåter att man hoppar till en annan del av spåret.</entry>
+            </row>
+            <row>
+              <entry valign="top">4</entry>
+              <entry valign="top">Sidopanel</entry>
+              <entry valign="top">Visar en lista på tillgängliga källor.</entry>
+
+            </row>
+            <row>
+              <entry valign="top">5</entry>
+              <entry valign="top">Bläddrare</entry>
+              <entry valign="top">Gör det möjligt att bläddra och filtrera spåren i biblioteket efter Genre, Artist- eller Albumnamn. Bläddraren tillhandahåller även en sökfunktion för att endast visa spår som matchar dina kriterier.</entry>
+            </row>
+            <row>
+              <entry valign="top">6</entry>
+              <entry valign="top">Spårlista</entry>
+              <entry valign="top">Listar spåren som tillhör den valda källan.</entry>
+            </row>
+            <row>
+              <entry valign="top">7</entry>
+              <entry valign="top">Statusrad</entry>
+              <entry valign="top">Visar information om källan som valts i sidopanelen.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="intro-sourcelist">
+      <title>Sidopanelen</title>
+      <para>Sidopanelen är där du kan komma åt ditt musikbibliotek, internetradio, dina spellistor och ljud-cd-skivor. Sidopanelen kan innehålla följande källor: <itemizedlist>
+				  <listitem><para>Biblioteket i <application>Rhythmbox musikspelare</application> där alla de importerade spåren syns.</para></listitem>
+				  <listitem><para>iRadio-källan, med alla Internetradiostationer.</para></listitem>
+				  <listitem><para>Poddsändningar.</para></listitem>
+				  <listitem><para>Alla spellistor (vanliga och automatiska).</para></listitem>
+				  <listitem><para>Ljud-cd-skivor inmatade i datorns cd-enheter.</para></listitem>
+				  <listitem><para>Bärbara spelare såsom iPod som är anslutna till din dator.</para></listitem>
+				  <listitem><para>DAAP-musikutdelningar som hittades på det lokala nätverket.</para></listitem>
+				  <listitem><para>Musikaffärer som Jamendo och Magnatune.</para></listitem>
+				</itemizedlist></para>
+      	<para>Visningen av sidopanelen kan växlas på eller av genom att välja <menuchoice><guimenu>Visa</guimenu><guimenuitem>Sidopanel</guimenuitem></menuchoice>.</para>
+    </sect2>
+    <sect2 id="player-toolbar">
+      <title>Spelarens verktygsfält</title>
+      <para>Verktygsfältet ger åtkomst till detaljer om spåret som för närvarande spelas upp. När inget spår spelas upp kommer det här området inte att visa någon information. När ett spår spelas upp kommer spårnamnet att visas, och under det, artisten och albumnamnen.</para>
+      <para>En bevakare kommer även att visas, som visar förloppet för det uppspelade spåret. När bevakaren har fokus, kan piltangenterna användas för att snabbspola eller spela tillbaka det uppspelade spåret.</para>
+      <screenshot>
+        <mediaobject><imageobject> <imagedata fileref="figures/rb-toolbar.png" format="PNG"/> </imageobject> <textobject> <phrase>Visar spelarområde</phrase> </textobject></mediaobject>
+      </screenshot>
+      <tip>
+        <para>Om du använder en mus med ett rullhjul kan du justera volymen genom att rulla upp eller ner när muspekaren är över volymknappen.</para>
+      </tip>
+    </sect2>
+    <sect2 id="status-area">
+      <title>Statusraden</title>
+      <para>Statusraden innehåller ytterligare information om antalet låtar som speltiden för den valda källan. Visningen av statusraden kan växlas på eller av genom att välja <menuchoice><guimenu>Visa</guimenu><guimenuitem>Statusrad</guimenuitem></menuchoice>.</para>
+      <screenshot>
+        <mediaobject><imageobject> <imagedata fileref="figures/rb-statusbar.png" format="PNG"/> </imageobject> <textobject> <phrase>Visar statusraden</phrase> </textobject></mediaobject>
+      </screenshot>
+    </sect2>
+    <sect2 id="rb-window-small">
+      <title>Minimerat fönster av <application>Rhythmbox musikspelare</application></title>
+      <para><application>Rhythmbox musikspelare</application> kommer med ett minimerat läge. Det här läget tillåter endast åtkomst till menyraden och uppspelningsfunktionen för <application>Rhythmbox musikspelare</application>.</para>
+      <para>Välj <menuchoice><guimenu>Visa</guimenu><guimenuitem>Liten visning</guimenuitem></menuchoice> för att växla till liten visning.</para>
+      <screenshot>
+        <mediaobject><imageobject> <imagedata fileref="figures/rb-window-small.png" format="PNG"/> </imageobject> <textobject> <phrase>Visar <application>Rhythmbox musikspelare</application> i litet visningsläge</phrase> </textobject></mediaobject>
+      </screenshot>
+    </sect2>
+  </sect1>
+  <sect1 id="Usage">
+    <title>Använda Rhythmbox musikspelare</title>
+    <sect2 id="Playing">
+      <title>Uppspelning av musik</title>
+      <para>För att spela upp ett spår, välj <menuchoice><guimenu>Kontroll</guimenu><guimenuitem>Spela</guimenuitem></menuchoice>, eller välj spåret och tryck på knappen <guibutton>Spela</guibutton> på verktygsfältet, eller dubbelklicka helt enkelt på spåret för att starta uppspelningen.</para>
+      <para>När spåret slutar hoppar <application>Rhythmbox musikspelare</application> till att spela upp nästa spår i listan som visas i vypanelen.</para>
+      <para>I biblioteket kan du spela upp alla låtar från en viss artist eller ett enda album genom att helt enkelt välja posten <guilabel>Album</guilabel> eller <guilabel>Artist</guilabel> i <link linkend="library-filter-browser">biblioteksbläddraren</link>.</para>
+      <sect3 id="next-previous">
+        <title>Nästa/Spela/Föregående</title>
+        <para>Knapparna <guibutton>Nästa</guibutton> och <guibutton>Föregående</guibutton> kan användas för att hoppa mellan spår vid uppspelning. Om ett spår spelas upp kommer föregående-knappen att starta om uppspelningen av spåret. Tryck på knappen <guibutton>Spela</guibutton> kommer att starta uppspelningen av aktuellt spår. <screenshot>
+				<mediaobject><imageobject> <imagedata fileref="figures/rb-toolbar-prevplaynext.png" format="PNG"/> </imageobject> <textobject> <phrase>Visar knapparna <guibutton>Föregående</guibutton>, <guibutton>Uppspelning</guibutton> och <guibutton>Nästa</guibutton> i verktygsfältet.</phrase> </textobject></mediaobject>
+			</screenshot></para>
+      </sect3>
+      <sect3 id="repeat">
+        <title>Upprepa</title>
+        <para>Alternativet <guibutton>Upprepa</guibutton> gör att <application>Rhythmbox musikspelare</application> börjar om från början av listan när den har spelat det sista spåret.</para>
+        <para>För att aktivera upprepning, välj <menuchoice><guimenu>Kontroll</guimenu><guimenuitem>Upprepa</guimenuitem></menuchoice>, eller tryck på knappen <guibutton>Upprepa</guibutton> i verktygsfältet. <screenshot>
+				<mediaobject><imageobject> <imagedata fileref="figures/rb-toolbar-repeat.png" format="PNG"/> </imageobject> <textobject> <phrase>Visar upprepningsknappen i statusraden.</phrase> </textobject></mediaobject>
+			</screenshot></para>
+      </sect3>
+      <sect3 id="shuffle">
+        <title>Blanda</title>
+        <para>Alternativet <guibutton>Blanda</guibutton> gör att <application>Rhythmbox musikspelare</application> spelar upp spår i en slumpmässig ordning.</para>
+        <para>För att aktivera blandning av spår, välj <menuchoice><guimenu>Kontroll</guimenu><guimenuitem>Blanda</guimenuitem></menuchoice>, eller tryck på knappen <guibutton>Blanda</guibutton> i verktygsfältet. <screenshot>
+				<mediaobject><imageobject> <imagedata fileref="figures/rb-toolbar-shuffle.png" format="PNG"/> </imageobject> <textobject> <phrase>Visar blandaknappen i statusraden.</phrase> </textobject></mediaobject>
+			</screenshot></para>
+      </sect3>
+      <sect3 id="volume">
+        <title>Volymkontroll</title>
+        <para>Volymkontrollen finns på högra sidan av verktygsfältet. Tryck på högtalarikonen för att visa volymreglaget. Att dra det uppåt och nedåt kommer att höja och sänka volymen. Högtalarikonen kommer att ändras för att representera den aktuella ljudnivån. <screenshot><mediaobject><imageobject><imagedata fileref="figures/rb-volume-changer.png" format="PNG"/></imageobject><textobject><phrase>Visar volymreglaget i verktygsfältet. </phrase></textobject></mediaobject></screenshot></para>
+        <tip>
+          <para>Du kan justera volymen genom att använda musens rullhjul över högtalarikonen.</para>
+        </tip>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="library">
+    <title>Bibliotek som källa</title>
+    	<para>Biblioteket är huvudkällan i <application>Rhythmbox musikspelare</application>, det är databasen som innehåller alla musikfiler som du importerar in i <application>Rhythmbox musikspelare</application> (Biblioteket lagrar endast sökvägarna för att komma åt dina musikfiler, inte själva filerna).</para>
+    	<para>Biblioteket kan inte bara innehålla musikfiler som fysiskt finns på din dator (i din hemkatalog till exempel), men det kan även innehålla musikfiler som finns tillgängliga via nätverkstjänster. Några exempel på nätverkstjänster som stöds är: <itemizedlist>
+				<listitem>
+					<para>Publik FTP</para>
+				</listitem>
+				<listitem>
+					<para>Autentiserad FTP</para>
+				</listitem>
+				<listitem>
+					<para>NFS</para>
+				</listitem>
+				<listitem>
+					<para>Windows-utdelning</para>
+				</listitem>
+			</itemizedlist></para>
+    	<para>Filerna som importeras till biblioteket visas i spårlistan med informationen (som artist- eller albumnamnet) lagrad i inbäddade taggar i spåren. <application>Rhythmbox musikspelare</application> använder dessa taggar för att visa spåren på ett organiserat sätt. <tip>
+				<para>Taggar kan modifieras genom att välja <menuchoice><guimenu>Musik</guimenu><guimenuitem>Egenskaper</guimenuitem></menuchoice> och fylla i detaljerna i fönstret som visas.</para>
+			</tip></para>
+    <sect2 id="library-tracks-add">
+      <title>Lägg till spår i biblioteket</title>
+      		<para>Följ någon av dessa metoder för att lägga till spår till biblioteket: <itemizedlist>
+					<listitem>
+						<para>För att importera ett enda spår, välj <menuchoice><guimenu>Musik</guimenu><guimenuitem>Importera fil</guimenuitem></menuchoice> från menyn, välj sedan filen i filväljaren och tryck på knappen <guibutton>Öppna</guibutton>.</para>
+					</listitem>
+					<listitem>
+						<para>Om du vill importera flera musikfiler som finns i en mapp, välj <menuchoice><guimenu>Musik</guimenu><guimenuitem>Importera mapp</guimenuitem></menuchoice> från menyn, välj sedan mappen i filväljaren och tryck på knappen <guibutton>Öppna</guibutton>. Alla musikfiler som finns i mappen och dess undermappar kommer att importeras.</para>
+					</listitem>
+					<listitem>
+						<para>Dra och släpp filer från filhanteraren (som <application>Nautilus</application>) över Rhythmbox-fönstret.</para>
+					</listitem>
+				</itemizedlist></para>
+      	<tip>
+       		<para>Om du har aktiverat funktionen för att bevaka katalog (se <xref linkend="prefs-library"/>) kommer alla musikfiler som lagras under den valda katalogen att läggas till i biblioteket. Nya filer som läggs till senare kommer också att läggas till.</para>
+      	</tip>
+    </sect2>
+    <sect2 id="library-tracks-del">
+    	<title>Ta bort spår från biblioteket</title>
+      	<para>För att ta bort ett spår från biblioteket men lämna kvar det på disken, välj menyn <menuchoice><guimenu>Redigera</guimenu><guimenu>Ta bort</guimenu></menuchoice>. Spåret och dess egenskaper (som betyg eller antal gånger spelad) kommer att tas bort från Rhythmbox-databasen.</para>
+      	<para>För att ta bort ett spår från biblioteket och även från din disk, välj menyn <menuchoice><guimenu>Redigera</guimenu><guimenuitem>Flytta till papperskorgen</guimenuitem></menuchoice>. Spåret kommer att tas bort på samma sätt som tidigare, men filen kommer att flyttas till filhanterarens papperskorg.</para>
+    </sect2>
+    <sect2 id="library-filter-search">
+    	<title>Hitta spår via sökning</title>
+      	<para>Rhythmbox kommer med en sökfunktion som låter dig söka och filtrera spår genom att använda ett sökvillkor.</para>
+      	<para>Ange en text i sökrutan, och när du matar in text kommer endast de spår som matchar den inmatade texten att visas. Sökfunktionen gör uppslag i alla taggar för de spår som finns lagrade i biblioteket.</para>
+		<para>För att genomföra en mer träffsäker sökning kan du välja att endast slå upp specifika taggar <guilabel>Artister</guilabel>, <guilabel>Album</guilabel> eller <guilabel>Titlar</guilabel>.</para>
+    </sect2>
+    <sect2 id="library-filter-browser">
+    	<title>Hitta spår med bläddraren</title>
+      	<para>Bläddraren är ett annat bekvämt sätt att hitta spår. Bläddraren är en två- eller trepanelsvy som låter dig navigera bland musikgenrer, artister och album och visa spår som matchar det valda kriteriet.</para>
+      	<para>För att visa bläddraren, välj <menuchoice><guimenu>Visa</guimenu><guimenuitem>Bläddrare</guimenuitem></menuchoice>. Välj artist, album och genre, och när du väljer kommer endast de spår som matchar ditt val att visas i spårlistan. Kriteriet för kolumnerna verkställs från vänster till höger.</para>
+      	<tip>
+        	<para>Du kan välja flera kriterier av samma kategori genom att använda tangenten <keycombo><keycap>Ctrl</keycap></keycombo>.</para>
+      	</tip>
+      		<para>Du kan även söka från ett markerat spår i spårlistan, alla spåren inom samma genre, artist- eller albumnamn. Välj ett spår i spårlistan, högerklicka på det och välj <guilabel>Bläddra i denna genre/artist/album</guilabel>. Bläddraren kommer då att filtrera spåren med det valda kriteriet.</para>
+  	</sect2>
+  </sect1>
+  <sect1 id="radio">
+  	<title>Radio som källa</title>
+    <para>Internetradiobläddraren kan användas för att lyssna på strömmande ljudfiler över ett nätverk, lokalt eller Internet.</para>
+    <figure id="fig-iradio">
+      <title>Internetradio i <application>Rhythmbox musikspelare</application></title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+	    <imagedata format="PNG" fileref="figures/rb-iradio-main.png"/>
+	  </imageobject>
+	</mediaobject>
+      </screenshot>
+    </figure>
+    <sect2 id="iradio-adding">
+      	<title>Lägg till en station</title>
+      	<para>För att lägga till en ny station till Internetradiobläddraren, välj <menuchoice><guimenu>Musik</guimenu><guimenuitem>Ny Internetradiostation</guimenuitem></menuchoice>, ange sedan url:en till Internetradion, tryck sedan på knappen <guibutton>Lägg till</guibutton>.</para>
+    </sect2>
+    <sect2 id="iradio-modify">
+      	<title>Visa och ändra inställningar för en station</title>
+      	<para>Du kan visa och redigera inställningarna för en Internetradiostation med menyn <menuchoice><guimenu>Musik</guimenu><guimenuitem>Egenskaper</guimenuitem></menuchoice>.</para>
+      	<para>Du kan även ändra egenskaperna för en station genom att högerklicka på stationen och sedan välja <guimenuitem>Egenskaper</guimenuitem>.</para>
+      	<para>När du kommer åt egenskaperna för en radioström kan du ändra dess titel och dess genre; du kan även ändra adressen för strömmen och sätta ett betyg på den.</para>
+    </sect2>
+    <sect2 id="iradio-delete">
+    	<title>Ta bort en station</title>
+      	<para>För att ta bort en radiostation från listan över radiostationer, välj <menuchoice><guimenu>Redigera</guimenu><guimenuitem>Ta bort</guimenuitem></menuchoice>; du kan även högerklicka på stationen och välja <guimenuitem>Ta bort</guimenuitem>.</para>
+    </sect2>
+  </sect1>
+  <sect1 id="podcast">
+  	<title>Poddsändning som källa</title>
+    <para>Poddsändning är ett nytt sätt att sända ut ljudinnehåll över webben; när en upphovsman publicerar ett avsnitt kommer prenumeranterna av poddsändningen att informeras via en XML-kanal.</para>
+    <para>Rhythmbox låter dig prenumerera på poddsändningskanaler, så du kommer att informeras när ett nytt avsnitt finns tillgängligt. Rhythmbox kommer även att ta hem avsnittet och spela upp det.</para>
+    <tip>
+      	<para>Du kan hitta mer information om poddsändningar och poddsändning genom att besöka definitionen för <ulink url="http://sv.wikipedia.org/wiki/Poddradio">poddsändning</ulink> på webbplatsen <ulink url="http://sv.wikipedia.org/">Wikipedia</ulink>.</para>
+    </tip>
+    <para>
+      <figure>
+        <title>Poddsändningsgränssnittet</title>
+        <mediaobject><imageobject> <imagedata fileref="figures/rb-podcast-main.png" format="PNG"/> </imageobject> <textobject> <phrase>Poddsändningsgränssnittet med några registrerade poddsändningar</phrase> </textobject></mediaobject>
+      </figure>
+    </para>
+    <sect2 id="podcast-management">
+      <title>Hantera poddsändning</title>
+      <sect3 id="podcast-feed-add">
+        <title>Lägg till en poddsändning</title>
+        <para>För att registrera en poddsändning, välj <menuchoice><guimenu>Musik</guimenu><guimenuitem>Ny poddsändningskanal</guimenuitem></menuchoice>, ange sedan url:en till poddsändningskanalen i det nya fönstret. Rhythmbox kommer att hämta listan över avsnitt och det senaste avsnittet kommer att hämtas ner till din hårddisk.</para>
+        <para>För att lägga till en ny poddsändningskanal kan du även högerklicka på källan <guimenuitem>Poddsändningar</guimenuitem>, och välja <guimenuitem>Ny poddsändningskanal</guimenuitem>.</para>
+      </sect3>
+      <sect3 id="podcast-feed-del">
+        <title>Ta bort en poddsändning</title>
+        <para>För att ta bort en poddsändning, högerklicka på poddsändningens namn i bläddraren och välj <menuchoice><guimenuitem>Ta bort poddsändning</guimenuitem></menuchoice>, välj sedan <menuchoice><guimenuitem>Ta endast bort kanal</guimenuitem></menuchoice> om du vill behålla poddsändningens avsnitt, eller välj <menuchoice><guimenuitem>Ta bort kanal och fil</guimenuitem></menuchoice> om du vill ta bort kanalen och alla dess relaterade avsnitt.</para>
+      </sect3>
+      <sect3 id="podcast-feed-update">
+        <title>Uppdatera kanaler</title>
+        <para>Om du vill kontrollera om nya avsnitt har publicerats för en poddsändning kan du högerklicka på poddsändningens namn i bläddraren och välja <menuchoice><guimenuitem>Uppdatera poddsändning</guimenuitem></menuchoice>. Om nya avsnitt har publicerats kommer de att dyka upp i avsnittslistan.</para>
+        <tip>
+          <para>Rhythmbox musikspelare kontrollerar regelbundet, på egen hand, om poddsändningen har uppdaterats.</para>
+        </tip>
+        <para>Du kan även kontrollera alla poddsändningar genom att högerklicka på källan <menuchoice><guimenuitem>Poddsändningar</guimenuitem></menuchoice> och välja <menuchoice><guimenuitem>Uppdatera alla kanaler</guimenuitem></menuchoice>.</para>
+      </sect3>
+      <sect3 id="podcast-feed-show">
+        <title>Egenskaper för poddsändningskanalen</title>
+        <para>För att visa kanalens egenskaper, högerklicka på kanalens namn och välj <menuchoice><guimenuitem>Egenskaper</guimenuitem></menuchoice>. <itemizedlist><listitem><para>Under fliken <guilabel>Enkel</guilabel> kan du se poddsändningens <guilabel>Titel</guilabel>, <guilabel>Upphovsman</guilabel>, datumet då den blev <guilabel>Senast uppdaterad</guilabel> och <guilabel>Beskrivning</guilabel>.</para></listitem><listitem><para>Under fliken <guilabel>Detaljer</guilabel> kan du se kanalens <guilabel>Källa</guilabel>, <guilabel>Språk</guilabel>, och <guilabel>Copyright</guilabel>.</para></listitem></itemizedlist> Du kan visa egenskaperna och även redigera betyget.</para>
+      </sect3>
+    </sect2>
+    <sect2 id="episode-management">
+      <title>Avsnittshantering</title>
+      <sect3 id="podcast-episode-download">
+        <title>Hämta ett poddsändningsavsnitt</title>
+        <para>För att hämta ner ett avsnitt till din hårddisk, högerklicka på avsnittet och välj <menuchoice><guimenuitem>Hämta avsnitt</guimenuitem></menuchoice>, Rhythmbox kommer att påbörja hämtningen av avsnittet till den plats som har angivits i inställningarna. Du kan se förloppet för en hämtning i kolumnen <guilabel>Status</guilabel>.</para>
+        <tip>
+          <para>Poddsändningar hämtas och sparas som standard i mappen <filename class="directory">Podcasts/</filename> i din hemkatalog. Se <xref linkend="prefs-podscast"/> för att ändra platsen.</para>
+        </tip>
+      </sect3>
+      <sect3 id="podcast-episode-read">
+        <title>Spela ett poddsändningsavsnitt</title>
+        <para>För att spela upp ett poddsändningsavsnitt, välj avsnittet som du vill spela upp och välj sedan <menuchoice><guimenu>Kontroll</guimenu><guimenuitem>Spela</guimenuitem></menuchoice>; du kan även trycka på knappen <guibutton>Spela</guibutton>.</para>
+        <para>Avsnittet måste hämtas innan det kan spelas upp, se <xref linkend="podcast-episode-download"/> för att få reda på hur man hämtar ner ett poddsändningsavsnitt.</para>
+      </sect3>
+      <sect3 id="podcast-episode-delete">
+        <title>Ta bort ett poddsändningsavsnitt</title>
+        <para>För att ta bort ett avsnitt från en poddsändning, högerklicka på avsnittet och välj <menuchoice><guimenuitem>Ta bort</guimenuitem></menuchoice>, välj sedan <menuchoice><guimenuitem>Ta endast bort avsnittet</guimenuitem></menuchoice> om du vill behålla avsnittsfilen på din hårddisk, eller välj <guibutton>Ta bort avsnitt och filen</guibutton> om du vill ta bort avsnittet från listan och ta bort filen från din hårddisk.</para>
+        <warning>
+          <para>När du tar bort ett avsnitt kommer det inte längre vara tillgängligt i avsnittslistan, även om du uppdaterar poddsändningen.</para>
+        </warning>
+      </sect3>
+      <sect3>
+        <title>Visa egenskaper för poddsändningsavsnitt</title>
+        <para>För att visa avsnittets egenskaper, högerklicka på avsnittet och välj <menuchoice><guimenuitem>Egenskaper</guimenuitem></menuchoice>. <itemizedlist><listitem><para>Under fliken <guilabel>Enkel</guilabel> kan du se poddsändningens <guilabel>Titel</guilabel>, <guilabel>Kanal</guilabel>, <guilabel>Data</guilabel> för publiceringen och dess <guilabel>Beskrivning</guilabel>.</para></listitem><listitem><para>Under fliken <guilabel>Detaljer</guilabel> kan du se poddsändningens <guilabel>Källa</guilabel>, <guilabel>Speltid</guilabel>, <guilabel>Bithastighet</guilabel>, datumet då den blev <guilabel>Senast spelad</guilabel>, <guilabel>Antal spelningar</guilabel> och dess <guilabel>Betyg</guilabel>.</para></listitem></itemizedlist></para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="playqueue">
+  	<title>Uppspelningskö som källa</title>
+	<para>Spelkö är en källa som är designad för att temporärt lagra de nästkommande spåren som du vill spela upp. När du lägger till ett spår i spelkön kommer <application>Rhythmbox musikspelare</application> automatiskt att växla till den här källan, efter att spåren har spelats upp.</para>
+	<para>När ett spår har spelats upp kommer det automatiskt att tas bort från Spelkö-källan. När spelkön är tom kommer <application>Rhythmbox musikspelare</application> att spela upp källan som tidigare blev uppspelad.</para>
+		<sect2 id="playqueue-track-add">
+			<title>Lägg till ett spår i spelkön</title>
+			<para>För att lägga till ett spår: <orderedlist>
+					<listitem>
+						<para>Välj spåret som du vill spela upp, i valfri källa.</para>
+					</listitem>
+					<listitem>
+						<para>Välj <menuchoice><guimenu>Redigera</guimenu><guimenuitem>Lägg till i spelkö</guimenuitem></menuchoice>.</para>
+					</listitem>
+				</orderedlist></para>
+		</sect2>
+		<sect2 id="playqueue-track-del">
+			<title>Ta bort ett spår i spelkön</title>
+			<para>För att ta bort ett spår som lagras i spelkön: <orderedlist>
+					<listitem>
+						<para>Välj spåret som du vill ta bort i källan Spelkö.</para>
+					</listitem>
+					<listitem>
+						<para>Välj <menuchoice><guimenu>Redigera</guimenu><guimenuitem>Ta bort</guimenuitem></menuchoice>.</para>
+					</listitem>
+				</orderedlist></para>
+		</sect2>
+  </sect1>
+  
+  <sect1 id="playlist">
+  	<title>Spellistor som källa</title>
+    <para>Spellistor är källor som skapas från tillgängliga spår i biblioteket. De gör att spår kan samlas in av en specifik "genre", en specifik grupp av artister, eller till och med spår som ger en specifik "sinnesstämning", eller vad du vill.</para>
+    <para>Rhythmbox musikspelare har 2 typer av spellistor: <itemizedlist>
+				<listitem>
+					<para>Statiska spellistor</para>
+				</listitem>
+				<listitem>
+					<para>Automatiska spellistor</para>
+				</listitem>
+			</itemizedlist></para>
+    <para>Rhythmbox låter dig bränna spåren i dina spellistor till en ljud-cd.</para>
+    <sect2 id="playlist-static">
+    	<title>Statiska spellistor</title>
+      	<para>Statiska spellistor är spellistor som byggs från spår som släpps från biblioteket.</para>
+      <sect3 id="playlist-static-new">
+        <title>Skapa en statisk spellista</title>
+        <para>För att skapa en ny spellista, välj <menuchoice><guimenu>Musik</guimenu><guisubmenu>Spellista</guisubmenu><guimenuitem>Ny spellista</guimenuitem></menuchoice>. En tom spellista utan namn kommer att dyka upp i sidopanelen. Ange ett namn för spellistan och tryck på <keycombo><keycap>Retur</keycap></keycombo>.</para>
+      </sect3>
+      <sect3 id="playlist-static-tracks-add">
+        <title>Lägg till spår till en spellista</title>
+        <para>För att lägga till spår till en spellista, välj spåren från spårlistan i biblioteket och dra och släpp dem över spellisteikonen i sidopanelen.</para>
+        <para>Du kan även släppa en genre, artist eller ett albumnamn från bläddaren över en spellista, och alla spår som tillhör den valda kategorin kommer att läggas till i spellistan.</para>
+        <tip>
+          <para>Du kan skapa en spellista med spår med en enda åtgärd. Välj spåren från <guilabel>Spårlista</guilabel>, eller en eller flera kategorier direkt från bläddraren (<guilabel>Genre</guilabel>, <guilabel>Artist</guilabel> eller <guilabel>Album</guilabel>) och släpp markeringen över <guilabel>Sidopanel</guilabel>. Det kommer automatiskt att skapa en namngiven spellista.</para>
+        </tip>
+      </sect3>
+      <sect3 id="playlist-static-tracks-del">
+        <title>Ta bort spår från en spellista</title>
+        <para>För att ta bort spår från en spellista, välj först spåren att ta bort och sedan har du två metoder: <itemizedlist><listitem><para>Välj <menuchoice><guimenu>Redigera</guimenu><guimenuitem>Ta bort</guimenuitem></menuchoice>.</para></listitem><listitem><para>Högerklicka på markeringen och välj <guimenuitem>Ta bort</guimenuitem>.</para></listitem></itemizedlist> Den här åtgärden tar endast bort spåret från spellistan och inte från biblioteket.</para>
+      </sect3>
+      <sect3 id="playlist-static-del">
+        <title>Ta bort en statisk spellista</title>
+        <para>För att ta bort en statisk spellista, välj spellistan att ta bort och sedan har du två sätt att ta bort den på: <itemizedlist><listitem><para>Välj <menuchoice><guimenu>Redigera</guimenu><guimenuitem>Ta bort</guimenuitem></menuchoice>.</para></listitem><listitem><para>Högerklicka på spellistan och välj <guimenuitem>Ta bort</guimenuitem>.</para></listitem></itemizedlist> Den här åtgärden tar endast bort spellistan och inte spåren som lagrats i spellistan.</para>
+      </sect3>
+    </sect2>
+    <sect2 id="playlist-smart">
+      <title>Automatiska spellistor</title>
+      <para>Automatiska spellistor är spellistor som byggts från kriterier, så deras innehåll byggs dynamiskt; alla spår som matchar kriterier kommer att läggas till i spellistan.</para>
+      <sect3 id="playlist-smart-new">
+        <title>Skapa en automatisk spellista</title>
+        <para>För att skapa en ny spellista: <orderedlist><listitem><para>Välj <menuchoice><guimenu>Musik</guimenu><guisubmenu>Spellista</guisubmenu><guimenuitem>Ny automatisk spellista</guimenuitem></menuchoice>.</para></listitem><listitem><para>Redigera kriterierna för spellistan genom sökredigeraren.</para></listitem><listitem><para>När du har valt dina kriterier, klicka på <guibutton>Ny</guibutton> för att skapa sökningen.</para></listitem></orderedlist></para>
+      </sect3>
+      <sect3 id="playlist-smart-edit">
+        <title>Redigera en automatisk spellista</title>
+        <para>Redigera en automatisk spellista låter dig ändra det inställda kriteriet för den här spellistan. För att redigera en automatisk spellista, välj den automatiska spellistan och välj <menuchoice><guimenu>Musik</guimenu><guisubmenu>Spellista</guisubmenu><guimenuitem>Redigera</guimenuitem></menuchoice>, och redigera kriterierna. När du är klar, välj <guibutton>Stäng</guibutton>.</para>
+      </sect3>
+      <sect3 id="playlist-smart-del">
+        <title>Ta bort en automatisk spellista</title>
+        <para>För att ta bort en automatisk spellista, välj spellistan att ta bort och sedan har du två sätt att ta bort den på: <itemizedlist><listitem><para>Välj <menuchoice><guimenu>Redigera</guimenu><guimenuitem>Ta bort</guimenuitem></menuchoice>.</para></listitem><listitem><para>Högerklicka på spellistan och välj <guimenuitem>Ta bort</guimenuitem>.</para></listitem></itemizedlist></para>
+      </sect3>
+      <sect3 id="playlist-smart-query-use">
+        <title>Använd sökredigeraren</title>
+        <para>Välj kriteriet att verkställa för regeln. Om du behöver ytterligare ett kriterium, klicka på knappen <guibutton>Lägg till</guibutton> och en ny rad dyker upp där du kan ställa in ett nytt kriterium.</para>
+        <para>Om du vill begränsa antal spåret i spellistan, klicka på <guilabel>Begränsa till:</guilabel>, och välj din begränsning. Du kan begränsa per spår, total storlek (i <guilabel>MB</guilabel> eller <guilabel>GB</guilabel>), eller efter speltid (uttryckt i <guilabel>Minuter</guilabel>).</para>
+        <para>När du är klar med inställningen för kriteriet för spellistan, välj <guibutton>Ny</guibutton>; sökredigeraren för spellistan kommer att stängas och spellistan visar de spår som matchar dina kriterier.</para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="AudioCD">
+    <title>Ljud-cd som källa</title>
+	<para><application>Rhythmbox musikspelare</application> kan även hantera ljud-cd-skivor; den kan spela dem men låter dig även bränna dina egna skivor.</para>
+    <sect2 id="cd-playing">
+      <title>Uppspelning</title>
+      <para>När en ljud-cd har matats in i cd-enheten kommer den att visas i sidopanelen, och spåren på skivan visas i huvudfönstret i <application>Rhythmbox musikspelare</application>. Om du är ansluten till Internet kommer cd-detaljer att hämtas och visas.</para>
+      <para>För att spela upp och göra paus i uppspelningen, eller för att hoppa fram eller tillbaka, använd samma kontroller som används för uppspelning från biblioteket.</para>
+    </sect2>
+    <sect2 id="cd-import">
+      <title>Importera ljud-cd</title>
+      <para>Om du önskar att behålla spåren på dina ljud-cd-skivor på din dator kan du importera dem.</para>
+      <para>För att importera ljud-cd-spår, välj <menuchoice><guimenu>Musik</guimenu><guimenuitem>Importera ljud-cd</guimenuitem></menuchoice>, det kommer att starta upp <application>Sound-Juicer</application>, ett program som är dedicerat till att importera ljud-cd-skivor. För att få mer information om <application>Sound-Juicer</application> kan du läsa <ulink url="ghelp:sound-juicer">handboken för Sound-Juicer</ulink>.</para>
+      <tip>
+        <para>För att automatiskt få de importerade spåren från Sound-Juicer tillagda i ditt bibliotek kan du konfigurera Sound-Juicer att extrahera spåren direkt till platsen för ditt bibliotek, Rhythmbox-funktionen för katalogbevakning måste vara aktiverad; referera till <ulink url="ghelp:sound-juicer#preferences">Inställningar för Sound-Juicer</ulink> och <link linkend="prefs-library">inställningar för biblioteket</link>.</para>
+      </tip>
+    </sect2>
+    <sect2 id="cd-burning">
+      <title>Skapa ljud-cd</title>
+      <para>Rhythmbox låter dig skapa dina egna ljud-cd-skivor med musiken som lagras i biblioteket.</para>
+      <para>För att skapa en ljud-cd: <orderedlist><listitem><para>Skapa en spellista, statisk eller automatisk (se <xref linkend="playlist"/>) och lägg till spår.</para></listitem>
+                <listitem><para>Välj <menuchoice><guimenu>Musik</guimenu><guisubmenu>Spellista</guisubmenu><guimenuitem>Skapa ljud-cd</guimenuitem></menuchoice></para></listitem>
+                <listitem><para>Mata in en tom cd-skiva.</para></listitem>
+                <listitem><para>Klicka på knappen <guibutton>Skapa</guibutton> och bränningsprocessen startar.</para></listitem>
+                </orderedlist></para>
+    </sect2>
+  </sect1>
+  <sect1 id="portable-audio-player">
+    <title>Portabel ljudspelare som källa</title>
+    <para><application>Rhythmbox</application> kan detektera när en portabel ljudspelare har anslutits till din dator, och kan läsa spåren som finns lagrade på den. <application>Rhythmbox musikspelare</application> bör kunna hantera de flesta sorters portabla ljudspelare såsom Apples iPod.</para>
+    <para>När du ansluter en bärbar ljudspelare kommer en ikon för den bärbara ljudspelaren att läggas till i sidopanelen. Denna källa fungerar på samma sätt som för biblioteket.</para>
+	<tip><para>Om <application>Rhythmbox musikspelare</application> inte identifierar din enhet som en bärbar ljudspelare kan du skapa en tom fil kallad <filename>.is_audio_player</filename> i roten på din spelares filsystem.</para></tip>
+  </sect1>
+  <sect1 id="daap">
+    <title>DAAP-utdelning som källa</title>
+    <para>DAAP är ett nätverksprotokoll som tillåter utdelning av musik som lagras i Rhythmbox. DAAP står för Digital Audio Access Protocol.</para>
+    <para>Eftersom DAAP är ett standardprotokoll för musikdelning kan du lyssna och dela ut musik till andra användare som använder Rhythmbox men även med andra användare som använder DAAP-kompatibel programvara såsom iTunes.</para>
+    <para>När du startar Rhythmbox kommer den att leta efter alla DAAP-utdelningar som är publicerade på ditt lokala nätverk (på ditt hemnätverk eller kontor, inte hela Internet) av andra användare och kommer att visa dem i sidopanelen. Om utdelning är aktiverad, kommer Rhythmbox på samma gång att publicera ditt bibliotek och dina spellistor så att du kan spela upp musik som lagras på dina vänners datorer och de kan lyssna på din musik.</para>
+    <para>För att inaktivera funktionen för DAAP-utdelning i Rhythmbox, se <xref linkend="prefs-sharing"/> i inställningarna.</para>
+  </sect1>
+  <sect1 id="notification">
+    <title>Aviseringsyta</title>
+    <sect2 id="notification-overview">
+      <title>Översikt</title>
+      <para>Aviseringsytan är en GNOME-funktion som lägger till en liten ikon i panelen när programmet kör; det här gör att du kan kontrollera <application>Rhythmbox musikspelare</application> från din bricka, och ta emot information när gränssnittet i <application>Rhythmbox musikspelare</application> inte är synligt.</para>
+      <figure id="fig-notification-zone">
+        <title><application>Rhythmbox musikspelare</application> i aviseringsytan</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata format="PNG" fileref="figures/rb-notification-zone.png"/>
+	    </imageobject>
+	  </mediaobject>
+        </screenshot>
+      </figure>
+    </sect2>
+    <sect2 id="notification-info-receive">
+      <title>Hämta information</title>
+      <sect3 id="notification-info-tooltip">
+        <title>Inforutetips</title>
+        <para>När du rör muspekaren över ikonen för <application>Rhythmbox musikspelare</application> kan du se spårets artist, spårets namn och tidspositionen.</para>
+      </sect3>
+      <sect3 id="notification-info-window">
+        <title>Aviseringsfönster</title>
+        <para>Varje gång spåret ändras eller att ett poddsändningskanalsavsnitt har hämtats ner kan <application>Musikspelaren Rhythmbox</application> informera dig; den visar ett aviseringsfönster på skrivbordet med innehållande information.</para>
+        <figure id="fig-notification-window">
+          <title>Aviseringsfönstret i <application>Musikspelaren Rhythmbox</application></title>
+          <screenshot>
+            <mediaobject>
+              <imageobject>
+                <imagedata format="PNG" fileref="figures/rb-notification-window.png"/>
+	      </imageobject>
+	    </mediaobject>
+          </screenshot>
+        </figure>
+        <tip>
+          <para>Aviseringsfönstret kan inaktiveras genom att avmarkera alternativet <guilabel>Visa aviseringar</guilabel> från sammanhangsmenyn för ikonen i aviseringsytan.</para>
+        </tip>
+      </sect3>
+    </sect2>
+    <sect2 id="notification-control">
+      <title>Kontrollera Rhythmbox</title>
+      <para>Följande kommandon kan skickas till programmet via ikonen för <application>Rhythmbox musikspelare</application> i aviseringsytan:</para>
+      <figure id="fig-notification-menu">
+        <title>Aviseringsyta (visar menyn)</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata format="PNG" fileref="figures/rb-notification-area-menu.png"/>
+            </imageobject>
+           </mediaobject>
+        </screenshot>
+      </figure>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para><guibutton>Spela</guibutton> — Om vald, spelar upp den för närvarande markerade låten.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Föregående</guibutton> — Hoppa till föregående låt i den valda källan.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Nästa</guibutton> — Hoppa till nästa låt i den valda källan.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Visa fönsterspelaren</guibutton> — Välj huruvida fönstret för <application>Rhythmbox musikspelaren</application> ska synas på skrivbordet eller inte.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Visa aviseringar</guibutton> — Välj huruvida <application>Rhythmbox musikspelare</application> ska avisera dig om spårändringar och annan information eller inte.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Avsluta</guibutton> — Avsluta <application>Rhythmbox musikspelare</application>.</para>
+          </listitem>
+        </itemizedlist>
+        <tip>
+        	<para>Om du använder en mus med ett rullhjul kan du justera volymen genom att rulla upp eller ner när muspekaren är över panelprogrammet.</para>
+          <para>Du kan snabbt växla Spela/Paus genom att tryck på mittenmusknappen.</para>
+        </tip>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="customize">
+    <title>Anpassa Rhythmbox musikspelare</title>
+    <para>Detta avsnitt beskriver hur du kan anpassa komponenterna i <application>Rhythmbox musikspelare</application> för att passa dina krav och föredragna inställningar.</para>
+    <sect2 id="prefs">
+      <title>Ställ in dina inställningar</title>
+      <para>Använd dialogrutan <guilabel>Inställningar</guilabel> för att anpassa utseendet och beteendet för <application>Rhythmbox musikspelare</application> så att det passar dig. För att visa dialogrutan <guilabel>Inställningar</guilabel>, välj <menuchoice><guimenu>Redigera</guimenu><guimenuitem>Inställningar</guimenuitem></menuchoice>.</para>
+      <sect3 id="prefs-general">
+      	<title>Allmänt</title>
+		<para>Välj det sätt som <guilabel>Bläddringsvy</guilabel> ska visas på. Du kan välja att använda två eller tre paneler och vad panelerna ska visa.</para>
+      	<para>Välj de <guilabel>Synliga kolumner</guilabel> som du vill visa i <application>Rhythmbox musikspelare</application>. Det här alternativet är globalt och påverkar följande källor: <itemizedlist>
+				<listitem><para>Bibliotek</para></listitem>
+				<listitem><para>Ljud-cd</para></listitem>
+				<listitem><para>Portabla spelare</para></listitem>
+				<listitem><para>Spellistor</para></listitem>
+				<listitem><para>DAAP-musikutdelningar</para></listitem>
+			</itemizedlist></para>
+      </sect3>
+      <sect3 id="prefs-library">
+        <title>Musik</title>
+        <itemizedlist>
+          <listitem>
+            <para><guilabel>Plats för bibliotek</guilabel> är en mapp som <application>Rhythmbox musikspelare</application> kommer att övervaka för att hitta nya låtar. När du lägger till nya ljudfiler i den mappen eller dess undermappar med en filbläddrare (såsom Nautilus), kommer <application>Rhythmbox musikspelare</application> att upptäcka dem och automatiskt lägga till dem i biblioteket.</para>
+            <warning>
+            	<para>Undvik att ställa in din <filename class="directory">Hemmapp</filename> som plats för biblioteket därför att den funktionen konsumerar mycket processorkraft.</para>
+            </warning>
+            <para>För att inaktivera bevakningsfunktionen kan du avmarkera <guilabel>Bevaka mitt bibliotek efter nya filer</guilabel>.</para>
+            <tip>
+            	<para>Om du vill lägga till fler än en mapp att bevaka, använd <application>gconf-editor</application> och lägg till den till listan /app/rhythmbox/library_locations</para>
+            </tip>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-podscast">
+        <title>Poddsändningar</title>
+        <itemizedlist>
+          <listitem>
+            <para><guilabel>Plats att hämta till</guilabel> för poddsändningar är definierad som standard till mappen <filename class="directory">Podcasts/</filename> i din hemkatalog.</para>
+            <para>Om den här platsen inte passar dina behov kan du välja en annan mapp i rullgardinslistan eller välja <guilabel>Annan</guilabel> för att visa filväljaren.</para>
+          </listitem>
+          <listitem>
+            <para>Välj uppdateringsfrekvens som <application>Rhythmbox musikspelare</application> ska använda för att leta efter nya poddsändningsavsnitt.</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-sharing">
+        <title>Utdelning</title>
+        <para><application>Rhythmbox musikspelare</application> kan dela innehållet i ditt bibliotek över ditt lokala nätverk till andra användare med <application>Rhythmbox musikspelare</application> och Apples iTunes.</para>
+        <itemizedlist>
+          <listitem>
+            <para>Välj <guilabel>Dela ut min musik</guilabel> för att tillåta att användarna på ditt nätverk kan se och lyssna på dina låtar.</para>
+          </listitem>
+          <listitem>
+            <para>Ange namnet som du vill ska synas på nätverket i fältet <guilabel>Namn på delad musik</guilabel>.</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-lastfm">
+        <title>Last.fm-profil</title>
+        <para>Insticksmodulen för Last.fm-profiler samlar in information om låtarna som du lyssnar på och skickar den till webbplatsen <ulink url="http://www.last.fm/">Last.fm</ulink>, som bygger upp en profil för dina lyssningsvanor. Med den här profilen kan du: <itemizedlist>
+				<listitem>
+					<para>konsultera statistiken, såsom de mest spelade låtarna eller mest spelade artisterna.</para>
+				</listitem>
+				<listitem>
+					<para>ta emot rekommendationer om artister som du kanske gillar.</para>
+				</listitem>
+			</itemizedlist></para>
+        <warning>
+          <para>Du måste ha ett konto på Last.fm för att kunna använda insticksmodulen. Om du inte redan har ett kan du gå till <ulink url="http://www.last.fm/signup.php">Last.fm</ulink> och skapa ett konto. Ange dina kontodetaljer för Last.fm i fälten <guilabel>Användarnamn</guilabel> och <guilabel>Lösenord</guilabel> i konfigurationsfönstret för insticksmodulen.</para>
+        </warning>
+		<para>Konfigurationsfönstret för insticksmodulen visar även statusinformation. Om din Last.fm-profilsida visar att din profil inte uppdateras kan informationen som visas här hjälpa dig att analysera problemet.</para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="shortcuts">
+    <title>Genvägar</title>
+    <sect2 id="keyboard-keys">
+      <title>Tangentbordsgenvägar</title>
+      <table frame="topbot" id="rb-shorcuts-1">
+	  	<title>Genvägar i spelaren</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry>Genvägar</entry>
+              <entry>Åtgärder</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>p</keycap> </keycombo></entry>
+              <entry>
+                <para>Spela / Paus</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>Vänster</keycap> </keycombo></entry>
+              <entry>
+                <para>Hoppa till föregående spår / Tillbaka till början av spåret</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>Höger</keycap> </keycombo></entry>
+              <entry>
+                <para>Hoppa till nästa spår</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>Upp</keycap> </keycombo></entry>
+              <entry>
+                <para>Höj uppspelningsvolymen</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>Ned</keycap> </keycombo></entry>
+              <entry>
+                <para>Sänk uppspelningsvolymen</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>R</keycap> </keycombo></entry>
+              <entry>
+                <para>Aktivera / Inaktivera upprepad uppspelning</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>U</keycap> </keycombo></entry>
+              <entry>
+                <para>Aktivera / Inaktivera blandad uppspelning</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table frame="topbot" id="rb-shorcuts-2">
+	  	<title>Allmänna genvägar</title>
+		<tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry>Genvägar</entry>
+              <entry>Åtgärder</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>A</keycap> </keycombo></entry>
+              <entry>
+                <para>Markera alla</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Skift</keycap> <keycap>Ctrl</keycap> <keycap>A</keycap> </keycombo></entry>
+              <entry>
+                <para>Avmarkera alla</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>J</keycap> </keycombo></entry>
+              <entry>
+                <para>Hoppa till spelande låt</para>
+              </entry>
+	    </row>
+	    <!--
+            <row>
+              <entry>
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Y</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Clear the search field text and remove all filters in the browser</para>
+              </entry>
+	    </row>
+            -->
+            <row>
+              <entry><keycombo> <keycap>Alt</keycap> <keycap>S</keycap> </keycombo></entry>
+              <entry>
+                <para>Hoppa till sökfältet</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Alt</keycap> <keycap>Retur</keycap> </keycombo></entry>
+              <entry>
+                <para>Visa spåregenskaper</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table frame="topbot" id="rb-shorcuts-3">
+	  	<title>Fönstergenvägar</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry>Genvägar</entry>
+              <entry>Åtgärder</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>Q</keycap> </keycombo></entry>
+              <entry>
+                <para>Avsluta <application>Rhythmbox musikspelare</application></para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>B</keycap> </keycombo></entry>
+              <entry>
+                <para>Visa / Dölj bläddraren</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>F9</keycap> </keycombo></entry>
+              <entry>
+                <para>Visa / Dölj sidopanelen</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>K</keycap> </keycombo></entry>
+              <entry>
+                <para>Visa / Dölj kösidopanelen</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>F11</keycap> </keycombo></entry>
+              <entry>
+                <para>Växla / Avväxla helskärmsläge</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="multimedia-keys">
+      <title>Multimediatangenter</title>
+      <para><application>Rhythmbox musikspelare</application> har stöd för tangenterna på multimediatangentbord, om de har konfigurerats i din skrivbordsmiljö.</para>
+      <table frame="none">
+	  	<title>Fönstergenvägar</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <thead>
+            <row>
+              <entry>Genvägar</entry>
+              <entry>Åtgärder</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycap>Stopp</keycap></entry>
+              <entry>
+                <para>Stopp</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycap>Pausa / Spela</keycap></entry>
+              <entry>
+                <para>Paus / Spela</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycap>Föreg</keycap></entry>
+              <entry>
+                <para>Föregående spelat spår</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycap>Nästa</keycap></entry>
+              <entry>
+                <para>Nästa spår</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="lirc">
+      <title>Infraröd fjärrkontroll för Linux (LIRC)</title>
+      <para><application>Rhythmbox musikspelare</application> inkluderar en insticksmodul som erbjuder stöd för Linux Infrared Remote Control (LIRC). Följande kommandosträngar stöds, med programnamnet "rhythmbox":</para>
+      <table frame="none">
+	  	<title>Fönstergenvägar</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <thead>
+            <row>
+              <entry>Kommandosträng</entry>
+              <entry>Åtgärd</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycap>spela</keycap></entry>
+              <entry> <para>Starta uppspelning</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>pausa</keycap></entry>
+              <entry> <para>Pausa uppspelning</para> </entry>
+            </row>
+	    <row>
+	      <entry><keycap>spelpaus</keycap></entry>
+	      <entry> <para>Växla mellan uppspelning och paus</para> </entry>
+	    </row>
+            <row>
+              <entry><keycap>blanda</keycap></entry>
+              <entry> <para>Växla blandad uppspelning</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>upprepa</keycap></entry>
+              <entry> <para>Växla upprepad uppspelning</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>nästa</keycap></entry>
+              <entry> <para>Hoppa till nästa spår</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>föregående</keycap></entry>
+              <entry> <para>Hoppa till föregående spår</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>sök_framåt</keycap></entry>
+              <entry> <para>Hoppa 10 sekunder framåt i det uppspelade spåret</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>sök_bakåt</keycap></entry>
+              <entry> <para>Hoppa 10 sekunder bakåt i det uppspelade spåret</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>volym_upp</keycap></entry>
+              <entry> <para>Höj uppspelningsvolymen med 10%</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>volym_ned</keycap></entry>
+              <entry> <para>Sänk uppspelningsvolymen med 10%</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>dämpa</keycap></entry>
+              <entry> <para>Tysta uppspelningen</para> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+  </sect1>
+</article>

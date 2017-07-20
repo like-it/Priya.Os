@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="pref-scrolling" xml:lang="es">
+
+  <info>
+    <revision pkgversion="3.8" date="2013-02-25" status="draft"/>
+    <revision pkgversion="3.12" date="2014-09-08" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+    <link type="guide" xref="profile"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013–2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Cambiar el comportamiento del desplazamiento de la salida y de la barra de desplazamiento.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@gnome.org</mal:email>
+      <mal:years>2001-2006</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Preferencias de la barra de desplazamiento</title>
+
+  <p>Cuando se muestra mucha salida en la pantalla de la terminal, puede ser útil hacer que la terminal se comporte de una manera específica, para que sea más fácil trabajar con ella.</p>
+
+  <section id="visibility">
+    <title>Visibilidad de la barra de desplazamiento</title>
+
+    <p>Puede desactivar la barra lateral:</p>
+
+    <steps>
+      <item>
+        <p>Seleccione <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Preferencias del perfil</gui> <gui style="tab">Desplazamiento</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Desmarque <gui>Mostrar barra de desplazamiento</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Sus preferencias se guardarán automáticamente.</p>
+
+  </section>
+
+  <section id="on-output">
+    <title>Desplazar en salida</title>
+
+    <p>Puede bloquear el desplazamiento para que siempre se muestre la salida nueva cuando se ejecute un comando.</p>
+
+    <steps>
+      <item>
+        <p>Seleccione <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Preferencias del perfil</gui> <gui style="tab">Desplazamiento</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Seleccione <gui style="checkbox">Desplazar en salida</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="on-keystroke">
+    <title>Desplazar en entrada</title>
+
+    <p>Puede configurar la terminal para que se desplace automáticamente a la parte inferior de la ventana cuando introduce texto en el símbolo del sistema.</p>
+
+    <steps>
+      <item>
+        <p>Seleccione <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Preferencias del perfil</gui> <gui style="tab">Desplazamiento</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Seleccione <gui style="checkbox">Desplazar al pulsar tecla</gui>.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="lines">
+    <title>Líneas de desplazamiento hacia atrás</title>
+
+    <p>Puede limitar el número de líneas de la salida de la terminal que se guardan en memoria. Puede querer hacer esto si raramente reinicia la terminal, para que haya un límite en la memoria que el desplazamiento hacia atrás puede usar.</p>
+
+    <steps>
+      <item>
+        <p>Seleccione <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Preferencias del perfil</gui> <gui style="tab">Desplazamiento</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Marque la opción <gui>Limitar desplazamiento a</gui> e introduzca el número de líneas superior a 0 para limitar el desplazamiento.</p>
+      </item>
+      <item>
+        <p>Opcionalmente, puede pulsar el botón <gui style="button">+</gui> para aumentar y <gui style="button">-</gui> para reducir el número de líneas.</p>
+      </item>
+    </steps>
+
+    <note style="warning">
+      <p>Usar un desplazamiento hacia atrás ilimitado puede hacer que la <app>Terminal</app> vaya lenta al desplazarse.</p>
+    </note>
+
+  </section>
+
+</page>

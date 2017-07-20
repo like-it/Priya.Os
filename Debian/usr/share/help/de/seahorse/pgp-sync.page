@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-sync" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-07-03" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>So gleichen Sie Informationen auf Ihrem lokalen Schlüssel mit dem zugehörigen Schlüssel auf einem Schlüssel-Server ab.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ihre Schlüssel abgleichen</title>
+
+  <p>PGP-Schlüssel in Ihrem Schlüsselbund müssen mit einem Schlüssel-Server abgeglichen werden, um sicher zu stellen, dass alle Änderungen an dem Schlüssel auf dem Schlüssel-Server (wie z.B. eine neue Signatur) in Ihre lokale Kopie übernommen werden. Wenn Sie analog Informationen in Ihrer lokalen Kopie des Schlüssels ändern, wie z.B. das Ablaufdatum oder einen anderen Schlüssel signieren, so sollten Sie die Schlüssel mit der Kopie auf dem Schlüssel-Server abgleichen. Zum Abgleichen Ihrer Schlüssel brauchen Sie eine funktionierende Verbindung mit dem Internet.</p>
+
+  <steps>
+    <title>Wie kann ich einen Schlüssel abgleichen?</title>
+    <item>
+      <p>Wählen Sie den PGP-Schlüssel, den Sie abgleichen wollen.</p>
+    </item>
+    <item>
+      <p>Wählen Sie <guiseq><gui style="menu">Entfernt</gui><gui style="menuitem">Schlüssel abgleichen und veröffentlichen …</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie zum Abgleichen Ihres Schlüssels auf <gui style="button">Abgleichen</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="important">
+    <title>Warum kann ich nicht auf den Knopf <gui style="button">Abgleichen</gui> klicken?</title>
+    <p>Nur PGP-Schlüssel, die auf einem Schlüssel-Server veröffentlicht wurden, können abgeglichen werden. Prüfen Sie, ob der Schlüssel auf einem Schlüssel-Server veröffentlicht wurde, wenn der Knopf <gui style="button">Abgleichen</gui> deaktiviert ist. Veröffentlichen Sie im Falls Ihrer eigenen Schlüssel zuerst diese, bevor Sie diese abgleichen.</p>
+  </note>
+
+</page>

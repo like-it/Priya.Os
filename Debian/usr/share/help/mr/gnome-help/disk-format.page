@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="mr">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME डॉक्युमेंटेशन प्रकल्प</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>रूपण करून बाहेरिल हार्ड डिस्क किंवा USB फ्लॅश ड्राइव्हपासून फाइल्स आणि फोल्डर्स काढून टाका.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>निघण्यासारखे उपकरणामधून सगळं पुसून टाका</title>
+
+  <p>काढून टाकण्याजोगी डिस्क असल्यास, जसे कि USB मेमरि डिस्क किंवा बाहेरील हार्ड डिस्क, तुम्ही सर्व फाइल्स आणि फोल्डर्स काढून टाकू शकता. असे तुम्ही डिस्कचे  <em>रूपण</em> करून शकता - यामुळे डिस्कवरील सर्व फाइल्स नष्ट होतात आणि डिस्क रिकामी होते.</p>
+
+<steps>
+  <title>निघण्यासारखे उपकरण फॉरमॅट करा</title>
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to wipe from the list of storage devices on the
+    left.</p>
+
+    <note style="warning">
+      <p>तुम्ही योग्य डिस्क नीवडली आहे याची खात्री करा! चुकिची डिस्क निवडली असल्यास, इतर डिस्कवरील सर्व फाइल्स नष्ट केली जाईल!</p>
+    </note>
+  </item>
+  <item>
+    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
+    menu button. Then click <gui>Format…</gui>.</p>
+  </item>
+  <item>
+    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
+    disk.</p>
+   <p>Linux संगणकाच्या व्यतिरिक्त Windows आणि Mac OS संगणकावरील डिस्कचे वापर करत असल्यास, <gui>FAT</gui> पसंत करा. फक्त Windows वर आढळत असल्यास, <gui>NTFS</gui> उत्तम पर्याय असू शकते. <gui>फाइल प्रणाली प्रकार</gui>चे संक्षिप्त वर्णन लेबल म्हणून प्रस्तुत केले जाईल.</p>
+  </item>
+  <item>
+    <p>डिस्कला नाव द्या आणि सुरू ठेवण्याकरिता <gui>रूपण…</gui> क्लिक करा आणि खात्रीपूर्वक पटल दाखवा. तपशील काळजीपूर्वक तपासा, आणि डिस्क संपूर्णतया खोडून काढण्याकरिता <gui>रूपण</gui> क्लिक करा.</p>
+  </item>
+  <item>
+    <p>Once the formatting has finished, click the eject icon to safely remove
+    the disk. It should now be blank and ready to use again.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>डिस्क फॉरमॅट केल्यामुळे तुमच्या फाइल्स सुरक्षितरित्या निघत नाहीत</title>
+  <p>डिस्कला पूर्णपणे रूपांतरीत करणे डाटा काढून टाकण्याचा सुरक्षित पर्याय नाही. रूपण केलेल्या डिस्कवर फाइल्स राहणार नाही, परंतु विशेष रिकव्हरि सॉफ्टवेअर फाइल्सची प्राप्ति करू शकतो. सुरक्षितपणे फाइल्स नष्ट करायचे असल्यास, तुम्हाला आदेश-ओळ युटिलिटिचा वापर करावा लागेल, जसे कि <app>shred</app>.</p>
+</note>
+
+</page>

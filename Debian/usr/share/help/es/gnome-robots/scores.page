@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="scores" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#play"/>
+
+    <revision pkgversion="3.8" version="0.1" date="2013-04-03" status="draft"/>
+    <revision pkgversion="3.11.90" date="2014-03-22" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">safincrazy@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Rachel Dunstan</name>
+      <email its:translate="no">dunstanrc@gmail.com</email>
+    </credit>
+
+    <desc>Puntuación en <app>Robots</app></desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Puntuación</title>
+
+  <p>Hay dos tipos de enemigos en <app>Robots</app>: los de alto riesgo, que le dan 20 puntos cuando mueren y los de bajo riesgo, que le dan 10 puntos.</p>
+
+<section id="high-low-risk">
+  <title>Enemigos de alto y bajo riesgo por tema</title>
+
+  <p>Los enemigos de una partida dependen del <link xref="appearance">tema del juego</link> elegido.</p>
+
+  <table frame="top bottom" rules="rows">
+    <thead>
+    <tr>
+    <td><p>Tema del juego</p></td>
+    <td><p>Enemigos de alto riesgo (20 puntos)</p></td>
+    <td><p>Enemigos de riesgo bajo(10 puntos)</p></td></tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><p>hormigueros</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/anthills-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Hormiguero de alto riesgo</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/anthills-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Hormiguero de riesgo bajo</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>boo</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/boo-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Murciélago de alto riesgo</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/boo-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Fantasma de riesgo bajo</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>vacas</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/cows-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Vaca de alto riesgo</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/cows-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Vaca de riesgo bajo</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>huevos</p></td>
+    <td><p>
+    <media type="image" its:translate="no" src="figures/eggs-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Huevo de alto riesgo</span></media></p></td>
+    <td><p>
+    <media type="image" its:translate="no" src="figures/eggs-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Huevo de riesgo bajo</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>gnomos</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/gnomes-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Gnomo de alto riesgo</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/gnomes-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Gnomo de riesgo bajo</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>ratones</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/mice-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Ratón de alto riesgo</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/mice-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Ratón de riesgo bajo</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>robots</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/robots-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Robot de alto riesgo</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/robots-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Robot de riesgo bajo</span></media></p></td>
+    </tr>
+    <tr><td><p>vertidos</p></td>
+    <td><p>
+    <media type="image" its:translate="no" src="figures/spills-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Vertido de alto riesgo</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/spills-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Vertido de riesgo bajo</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>tormentas</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/stormclouds-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Tormentas de alto riesgo</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/stormclouds-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Tormentas de riesgo bajo</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>tostadoras</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/toasters-high-risk.png" height="20" width="20">
+    <span its:translate="yes">Tostadora de alto riesgo</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/toasters-low-risk.png" height="20" width="20">
+    <span its:translate="yes">Tostadora de riesgo bajo</span></media></p></td>
+    </tr>
+    <tr>
+    <td><p>ovni</p></td>
+    <td><p><media type="image" its:translate="no" src="figures/ufo-high-risk.png" height="20" width="20">
+    <span its:translate="yes">OVNI de alto riesgo</span></media></p></td>
+    <td><p><media type="image" its:translate="no" src="figures/ufo-low-risk.png" height="20" width="20">
+    <span its:translate="yes">OVNI de riesgo bajo</span></media></p></td>
+    </tr>
+  </tbody>
+  </table>
+
+</section>
+
+<section id="high-scores">
+  <title>Puntuación más alta</title>
+
+  <p>Seleccione <guiseq><gui style="menu">Juego</gui> <gui style="menuitem">Puntuación</gui></guiseq> para ver la puntuación más alta.</p>
+
+  <p>La puntuación se guarda por separado para cada combinación de <link xref="game-types">tipo de juego y opción de movimiento seguro</link>. Use le menú desplegable junto a <gui>Mapa</gui> para ver la puntuación de una combinación de un tipo de juego en concreto y una opción de movimiento seguro.</p>
+
+</section>
+
+</page>

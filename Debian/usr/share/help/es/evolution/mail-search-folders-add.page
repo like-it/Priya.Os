@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-search-folders-add" xml:lang="es">
+
+  <info>
+    <desc>Configurar una carpeta de búsqueda.</desc>
+    
+    <link type="guide" xref="mail-search-folders"/>
+
+    <revision pkgversion="3.0.2" version="0.1" date="2011-07-30" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-vfolders.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Crear una carpeta de búsqueda</title>
+
+<steps>
+<item><p>Pulse <guiseq><gui>Editar</gui><gui>Carpetas de búsqueda</gui></guiseq> o pulse <guiseq><gui>Mensaje</gui><gui>Crear regla</gui></guiseq> y seleccione el criterio en el que se basará la carpeta de búsqueda o si ha ejecutado una búsqueda, pulse <guiseq><gui>Buscar</gui><gui>Crear una carpeta de búsqueda desde la búsqueda…</gui></guiseq>.</p></item>
+<item><p>Pulse <gui style="button">Añadir</gui>.</p></item>
+<item><p>Introduzca un nombre en el campo <gui>Nombre de la regla</gui>.</p></item>
+<item><p>Defina las condiciones para la regla. Para cada condición debe seleccionar primero qué parte del mensaje se comprobará y después definir la comparación.</p><p>Para obtener más información acerca de las condiciones disponibles, consulte <link xref="mail-search-folders-conditions">condiciones disponibles para las carpetas de búsqueda</link>.</p></item>
+<item><p>Si quiere definir varias condiciones, defínalas bajo <gui>Buscar elementos</gui> si se debe aplicar una o todas las condiciones y pulse <gui style="button">Añadir condición</gui> y repita el paso anterior.</p></item>
+<item><p>Seleccione qué carpetas usará la carpeta de búsqueda en la sección <gui>Orígenes de las carpetas de búsqueda</gui>. Las opciones son:</p>
+<list>
+  <item><p>Todas las carpetas locales:</p>
+  <p>Usa todas las carpetas locales para la fuente de la carpeta de búsqueda, además de las carpetas individuales seleccionadas.</p></item>
+
+  <item><p>Todas las carpetas remotas activas:</p>
+  <p>Las carpetas remotas se consideran activas mientras está conectado al servidor; debe conectarse al servidor de correo de su carpeta de búsqueda para poder incluir cualquier mensaje de dicho origen además de las carpetas individuales seleccionadas.</p></item>
+
+  <item><p>Todas las carpetas locales y remotas activas:</p>
+  <p>Usa todas las carpetas activas remotas y locales para la fuente de la carpeta de búsqueda, además de las carpetas individuales seleccionadas.</p></item>
+
+  <item><p>Únicamente carpetas especificadas:</p>
+  <p>Usa carpetas individuales para la fuente de la carpeta de búsqueda. En este caso, pulse <gui style="button">Añadir</gui> para seleccionar las carpetas.</p></item>
+</list>
+</item>
+<item><p>Pulse <gui style="button">Aceptar</gui>.</p></item>
+</steps>
+
+</page>

@@ -1,0 +1,361 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Creating a title</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="DVDAuthor"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Examples"
+HREF="examples.html"><LINK
+REL="PREVIOUS"
+TITLE="Examples"
+HREF="examples.html"><LINK
+REL="NEXT"
+TITLE="Language Codes"
+HREF="languages.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>DVDAuthor</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="examples.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Chapter 1. Examples</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="languages.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="EX-TITLE"
+>1.2. Creating a title</A
+></H1
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN37"
+>1.2.1. One chapter, one source</A
+></H2
+><P
+>This forms the most basic DVD.  THe DVD player will start playing the movie when the disc is inserted and will stop at the end.</P
+><PRE
+CLASS="PROGRAMLISTING"
+>&#60;dvdauthor&#62;
+    &#60;vmgm /&#62;
+    &#60;titleset&#62;
+        &#60;titles&#62;
+            &#60;pgc&#62;
+                &#60;vob file="video.mpg" /&#62;
+            &#60;/pgc&#62;
+        &#60;/titles&#62;
+    &#60;/titleset&#62;
+&#60;/dvdauthor&#62;</PRE
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN41"
+>1.2.2. Two chapters, two sources</A
+></H2
+><P
+>Adding a second chapter is quite simple if it is in a separate file.</P
+><PRE
+CLASS="PROGRAMLISTING"
+>&#60;dvdauthor&#62;
+    &#60;vmgm /&#62;
+    &#60;titleset&#62;
+        &#60;titles&#62;
+            &#60;pgc&#62;
+                &#60;vob file="video1.mpg" /&#62;
+                &#60;vob file="video2.mpg" /&#62;
+            &#60;/pgc&#62;
+        &#60;/titles&#62;
+    &#60;/titleset&#62;
+&#60;/dvdauthor&#62;</PRE
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN45"
+>1.2.3. One chapter, two sources</A
+></H2
+><P
+><SPAN
+CLASS="APPLICATION"
+>DVDAuthor</SPAN
+> normally creates one
+chapter per file.  This can be overridden using
+<TT
+CLASS="LITERAL"
+>chapters="<TT
+CLASS="REPLACEABLE"
+><I
+>foo</I
+></TT
+>"</TT
+>.  The
+parameter is a comma separated list of timestamps of the form
+<TT
+CLASS="LITERAL"
+>[[<TT
+CLASS="REPLACEABLE"
+><I
+>HH</I
+></TT
+>:]<TT
+CLASS="REPLACEABLE"
+><I
+>MM</I
+></TT
+>:]<TT
+CLASS="REPLACEABLE"
+><I
+>SS</I
+></TT
+></TT
+>.</P
+><PRE
+CLASS="PROGRAMLISTING"
+>&#60;dvdauthor&#62;
+    &#60;vmgm /&#62;
+    &#60;titleset&#62;
+        &#60;titles&#62;
+            &#60;pgc&#62;
+                &#60;vob file="video1.mpg" chapters="0" /&#62;
+                &#60;vob file="video2.mpg" /&#62;
+            &#60;/pgc&#62;
+        &#60;/titles&#62;
+    &#60;/titleset&#62;
+&#60;/dvdauthor&#62;</PRE
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN56"
+>1.2.4. Two chapters, one source</A
+></H2
+><P
+>This will create a movie with two chapters, one at the beginning (which is always required) and one five minutes into the video.</P
+><PRE
+CLASS="PROGRAMLISTING"
+>&#60;dvdauthor&#62;
+    &#60;vmgm /&#62;
+    &#60;titleset&#62;
+        &#60;titles&#62;
+            &#60;pgc&#62;
+                &#60;vob file="video1.mpg" chapters="0,5:00" /&#62;
+            &#60;/pgc&#62;
+        &#60;/titles&#62;
+    &#60;/titleset&#62;
+&#60;/dvdauthor&#62;</PRE
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN60"
+>1.2.5. Looping</A
+></H2
+><P
+>Having <TT
+CLASS="LITERAL"
+>&lt;post&gt;</TT
+>commands will alter what happens when playback reaches the end of your title.  You can repeat the current title by jumping to the first chapter.</P
+><PRE
+CLASS="PROGRAMLISTING"
+>&#60;dvdauthor&#62;
+    &#60;vmgm /&#62;
+    &#60;titleset&#62;
+        &#60;titles&#62;
+            &#60;pgc&#62;
+                &#60;vob file="video1.mpg" /&#62;
+                &#60;post&#62;
+                    jump chapter 1;
+                &#60;/post&#62;
+            &#60;/pgc&#62;
+        &#60;/titles&#62;
+    &#60;/titleset&#62;
+&#60;/dvdauthor&#62;</PRE
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AEN65"
+>1.2.6. Pausing</A
+></H2
+><P
+>Having <TT
+CLASS="LITERAL"
+>pause="<TT
+CLASS="REPLACEABLE"
+><I
+>foo</I
+></TT
+>"</TT
+>
+will cause playback to pause for either the specified number of
+seconds or indefinitely (<TT
+CLASS="LITERAL"
+>inf</TT
+>).  This can be used
+either at the end of the title (by supplying it as an attribute to
+<TT
+CLASS="LITERAL"
+>pgc</TT
+> or at the end of a particular source, as an
+attribute to <TT
+CLASS="LITERAL"
+>vob</TT
+>.  The following will pause
+indefinitely at the end of the title:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>&#60;dvdauthor&#62;
+    &#60;vmgm /&#62;
+    &#60;titleset&#62;
+        &#60;titles&#62;
+            &#60;pgc pause="inf"&#62;
+                &#60;vob file="video1.mpg" /&#62;
+            &#60;/pgc&#62;
+        &#60;/titles&#62;
+    &#60;/titleset&#62;
+&#60;/dvdauthor&#62;</PRE
+><P
+>while the following will pause for 5 seconds after the first chapter:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>&#60;dvdauthor&#62;
+    &#60;vmgm /&#62;
+    &#60;titleset&#62;
+        &#60;titles&#62;
+            &#60;pgc&#62;
+                &#60;vob file="video1.mpg" pause="5" /&#62;
+                &#60;vob file="video2.mpg" /&#62;
+            &#60;/pgc&#62;
+        &#60;/titles&#62;
+    &#60;/titleset&#62;
+&#60;/dvdauthor&#62;</PRE
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="examples.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="languages.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Examples</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="examples.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Language Codes</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

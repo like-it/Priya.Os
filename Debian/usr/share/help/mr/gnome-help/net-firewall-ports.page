@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="mr">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>फायरवॉलच्या सहायाने प्रोग्रामकरिता नेटवर्क प्रवेश सुरू किंवा बंद करण्यासाठी उजवे नेटवर्क पोर्ट निर्देशीत करा.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>सामान्यपणे वापरले जाणारे नेटवर्क पोर्टस्</title>
+
+  <p>नेटवर्क सर्व्हिसेस, जसे कि फाइल शेअरिंग किंवा रिमोट डेस्कटॉप व्युइंग, पुरवणाऱ्या ॲप्लिकेशन्सतर्फे हे सामान्यरित्या वापरले जाणारे नेटवर्क पोर्ट्सची सूची आहे. ह्या ॲप्लिकेशन्सना <link xref="net-firewall-on-off">ब्लॉक किंवा प्रवेश स्वीकारण्यासाठी</link> तुम्ही प्रणालीचे फायरवॉल बदलू शकता. वापरकरिता हजारो पोर्ट्स उपलब्ध आहेत, ज्यामुळे हा तक्ता पूर्ण होत नाही.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>पोर्ट</p>
+	</td>
+	<td>
+	  <p>नाव</p>
+	</td>
+	<td>
+	  <p>वर्णन</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>प्रणालींना एकमेकांना शोधण्यास मदत करते, आणि पुरण्याजोगी सर्व्हिसचे वर्णन करते, स्वःहून तपशील निर्देशीत न करता.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>छापणे</p>
+	</td>
+	<td>
+	  <p>नेटवर्कवरील छपाईयंत्रकरिता छपाई जॉब्ज पाठवण्यास तुम्हाला परवानगी देतो.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>छापणे</p>
+	</td>
+	<td>
+	  <p>नेटवर्कवरील वापरकर्त्यांसह छपाईयंत्र शेअर करण्यास तुम्हाला परवानगी देतो.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>अस्तित्व</p>
+	</td>
+	<td>
+	  <p>नेटवर्क, जसे कि "online" किंवा "busy" वरील इतर वापरकर्त्यांकरिता त्वरित संदेश स्थिती जाहिर करण्यास परवानगी देतो.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>रिमोट डेस्कटॉप</p>
+	</td>
+	<td>
+	  <p>इतर वापरकर्त्यांना अवलोकन किंवा दूरस्त सहायताकरिता तुमच्या डेस्कटॉपला शेअर करण्यास परवानगी देतो.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>संगीत शेरिंग (डीएएपी)</p>
+	</td>
+	<td>
+	  <p>नेटवर्कवरील वापरकर्त्यांसह संगीत लाइब्ररि शेअर करण्यास तुम्हाला परवानगी देतो.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

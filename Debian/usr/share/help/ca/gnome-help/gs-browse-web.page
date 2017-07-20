@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="ca">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Navegueu per la web</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">A tutorial on browsing the web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Manel Vidal</mal:name>
+      <mal:email>verduler@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Navegueu per la web</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>Feu clic al menú <gui>Aplicacions</gui> situat a la part superior esquerra de la pantalla.</p></item>
+      <item><p>En el menú seleccioneu <guiseq><gui>Internet</gui><gui>Firefox</gui></guiseq>.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>Moveu el ratolí fins a la cantonada d'<gui>Activitats</gui> situat a la part superior esquerra de la pantalla per visualitzar la <gui>Vista general de les activitats</gui>.</p></item>
+      <item><p>A la barra situada a part esquerra de la pantalla, feu clic a la icona del navegador d'Internet <app>Firefox</app>.</p></item>
+    </steps>
+
+    <note><p>També podeu executar el navegador <link xref="gs-use-system-search">simplement teclejant</link> <em>Firefox</em> a la <gui>Vista general de les activitats</gui>.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>Moveu el ratolí fins a la cantonada d'<gui>Activitats</gui> situat a la part superior esquerra de la pantalla per visualitzar la <gui>Vista general de les activitats</gui>.</p></item>
+      <item><p>A la barra situada a la part esquerra de la pantalla, feu clic a la icona del navegador d'Internet <app>Web</app>.</p></item>
+    </steps>
+
+    <note><p>També podeu executar el navegador <link xref="gs-use-system-search">simplement teclejant</link> <em>web</em> a la <gui>Vista general de les activitats</gui>.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>Feu clic a la barra d'adreces situada a la part superior de la finestra del navegador i comenceu a escriure l'adreça del lloc web que voleu visitar.</p></item>
+      <item><p>Des del moment que comenceu a escriure l'adreça d'un lloc web, el navegador el comença a cercar a l'historial i a les adreces d'interès, d'aquesta manera no cal que recordeu quina és l'adreça exacta.</p>
+        <p>En cas que l'adreça del lloc web estigui a l'historial o a les adreces d'interès apareixerà una llista desplegable just a sota de la barra d'adreces.</p></item>
+      <item><p>A la llista desplegable podreu seleccionar ràpidament un lloc web mitjançant les tecles de desplaçament.</p>
+      </item>
+      <item><p>Un cop seleccionada, premeu la tecla de <key>Retorn</key> per visitar-la.</p>
+      </item>
+    </steps>
+
+</page>

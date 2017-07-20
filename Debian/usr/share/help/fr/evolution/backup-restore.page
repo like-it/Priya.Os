@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="backup-restore" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#data-migration-and-sync"/>
+    <link type="seealso" xref="data-storage"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2014-03-23" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>"Archiver et restaurer vos données et paramètres d'<app>Evolution</app>."</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Archivage et restauration</title>
+
+  <p>Vous pouvez archiver vos données d'<app>Evolution</app>. La sauvegarde enregistre vos paramètres, courriels, contacts, mémos et agendas. Elle sera stockée dans un fichier archive tar compressé au format gzip.</p>
+
+<section id="backup">
+  <title>Archivage</title>
+
+  <list>
+    <item>
+      <p>Choisissez <guiseq><gui>Fichier</gui><gui>Archiver les données d'<app>Evolution</app></gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Choisissez un nom de fichier et le dossier dans lequel vous voulez enregistrer le fichier d'archive et cliquez sur <gui style="button">Enregistrer</gui>.</p>
+    </item>
+    <item>
+      <p>Il vous sera demandé de fermer <app>Evolution</app>. Répondez par <gui style="button">Oui</gui>.</p>
+    </item>
+  </list>
+
+  <note style="warning">
+    <p>Notez que vos paramètres de <link xref="mail-spam">filtre de pourriels</link> ne sont pas inclus dans le fichier archive parce que ces paramètres ne sont pas contrôlés par <app>Evolution</app> et que les développeurs de filtres de pourriels pourraient modifier des détails de leur application. Si vous utilisez Bogofilter, vous devez archiver le fichier <file>~/.bogofilter/</file>. Si vous utilisez SpamAssassin, vous devez archiver le fichier <file>~/.spamassassin/</file>.</p>
+  </note>
+
+</section>
+
+<section id="restore">
+  <title>Restauration</title>
+
+  <list>
+    <item>
+      <p>Choisissez <guiseq><gui>Fichier</gui><gui>Restaurer les données d'<app>Evolution</app>...</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Choisissez le fichier et cliquez sur <gui style="button">Ouvrir</gui>.</p>
+    </item>
+    <item>
+      <p>Il vous sera demandé de fermer <app>Evolution</app>. Répondez par <gui style="button">Oui</gui>.</p>
+    </item>
+  </list>
+
+  <note style="tip">
+    <p>Dans l'<link xref="intro-first-run">assistant de premier démarrage</link>, vous pouvez restaurer les données d'<app>Evolution</app> à partir d'un fichier de sauvegarde.</p>
+  </note>
+
+</section>
+
+</page>

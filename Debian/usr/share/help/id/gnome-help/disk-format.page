@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="id">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Projek Dokumentasi GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Hapus semua berkas dan folder dari suatu hard disk eksternal atau flash drive USB dengan memformatnya.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Hapus segalanya dari disk lepas pasang</title>
+
+  <p>Bila Anda punya disk lepas pasang, misalnya stik memori USB atau hard disk eksternal, kadang Anda mungkin ingin menghapus seluruh berkas dan foldernya. Anda dapat melakukan ini dengan <em>memformat</em> disk - ini menghapus semua berkas pada disk dan membiarkannya kosong.</p>
+
+<steps>
+  <title>Format disk yang dapat dilepas pasang</title>
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to wipe from the list of storage devices on the
+    left.</p>
+
+    <note style="warning">
+      <p>Pastikan bahwa Anda telah memilih diska yang benar! Bila Anda memilih diska yang salah, semua berkas pada diska tersebut akan dihapus!</p>
+    </note>
+  </item>
+  <item>
+    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
+    menu button. Then click <gui>Format…</gui>.</p>
+  </item>
+  <item>
+    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
+    disk.</p>
+   <p>Bila Anda memakai diska pada komputer Windows dan Mac OS selain pada komputer Linux, pilihlah <gui>FAT</gui>. Bila Anda hanya memakainya pada Windows, <gui>NTFS</gui> mungkin merupakan opsi yang lebih baik. Deskripsi singkat tentang <gui>tipe sistem berkas</gui> akan disajikan sebagai suatu label.</p>
+  </item>
+  <item>
+    <p>Give the disk a name and click <gui>Format…</gui> to continue and show a
+    confirmation window. Check the details carefully, and click
+    <gui>Format</gui> to wipe the disk.</p>
+  </item>
+  <item>
+    <p>Once the formatting has finished, click the eject icon to safely remove
+    the disk. It should now be blank and ready to use again.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Memformat suatu disk tidak menghapus berkas Anda secara aman</title>
+  <p>Memformat suatu disk bukan merupakan cara yang sepenuhnya aman untuk menghapus semua datanya. Suatu disk yang diformat tak nampak memiliki berkas padanya, tapi mungkin bahwa suatu perangkat lunak pemulihan khusus dapat mengambil berkas-berkas tersebut. Bila Anda perlu untuk menghapus berkas secara aman, Anda akan perlu memakai suatu utilitas baris perintah, seperti misalnya <app>shred</app>.</p>
+</note>
+
+</page>

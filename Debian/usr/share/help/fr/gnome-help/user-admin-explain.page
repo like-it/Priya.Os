@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="user-admin-explain" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Les privilèges administrateur sont requis pour modifier des parties importantes du système.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Comment les privilèges administrateur fonctionnent-ils ?</title>
+
+  <p>As well as the files that <em>you</em> create, your computer has a number
+  of files which are needed by the system for it to work properly. If these
+  important <em>system files</em> are changed incorrectly they can cause
+  various things to break, so they are protected from changes by default.
+  Certain applications also modify important parts of the system, and so are
+  also protected.</p>
+
+  <p>Cette protection consiste à permettre seulement aux utilisateurs disposant de <em>privilèges administrateur</em> de modifier ce type de fichiers ou d'utiliser ces applications. Dans le cadre d'une utilisation classique, il n'est pas nécessaire de modifier les fichiers système ni d'utiliser ces applications, c'est pourquoi les comptes utilisateur ne disposent pas de privilèges administrateur par défaut.</p>
+
+  <p>Il peut arriver que vous ayez besoin d'utiliser ces applications, vous pouvez donc obtenir des privilèges administrateur provisoires pour vous permettre de faire des changements. Si des privilèges administrateurs sont requis pour accéder à une application, un mot de passe vous sera demandé. Si par exemple vous souhaitez installer un nouveau logiciel, le programme d'installation du logiciel (gestionnaire de paquets) vous demande votre mot de passe administrateur pour pouvoir ajouter le nouveau logiciel au système. Une fois terminé, les privilèges administrateur sont à nouveau désactivés.</p>
+
+  <p>Les privilèges administrateur sont associés à votre compte utilisateur. Les utilisateurs <gui>Administrateurs</gui> ont ces privilèges alors que les utilisateurs <gui>Standard</gui> ne les ont pas. Sans les privilèges administrateur, il est impossible d'installer des logiciels. Certains comptes utilisateur (par exemple le compte « root ») possèdent des privilèges administrateur en permanence. Il n'est pas recommandé d'utiliser les privilèges administrateur en permanence car vous pourriez accidentellement un jour faire une fausse manœuvre (comme par exemple supprimer un fichier système essentiel).</p>
+
+  <p>En bref, les privilèges administrateur permettent de modifier des parties importantes du système si besoin, mais vous empêchent de les modifier par inadvertance.</p>
+
+  <note>
+    <title>Que signifie « super utilisateur » ?</title>
+    <p>Un utilisateur qui possède des privilèges d'administrateur est parfois appelé <em>super utilisateur</em>. C'est simplement parce qu'il a plus de privilèges qu'un utilisateur normal. Vous entendrez peut-être parler de <cmd>su</cmd> ou de <cmd>sudo</cmd> ; ce sont des programmes qui permettent de donner provisoirement à un utilisateur des privilèges (administratifs) de super utilisateur.</p>
+  </note>
+
+<section id="advantages">
+  <title>À quoi servent les privilèges administratifs ?</title>
+
+  <p>Exiger le statut d'administrateur pour toute modification importante du système aide à éviter qu'il ne soit corrompu, volontairement ou non.</p>
+
+  <p>Si vous aviez ce statut administrateur en permanence, vous risqueriez d'effectuer par erreur des modifications importantes, ou d'exécuter une application qui modifierait quelque chose d'important par accident. Un statut d'administrateur provisoire, seulement quand vous en avez besoin, limite ce risque.</p>
+
+  <p>Il est conseillé de n'accorder le statut d'administrateur qu'à certains utilisateurs dignes de confiance. Cela évite que d'autres utilisateurs ne se mêlent de supprimer des applications dont vous avez besoin, d'ajouter des applications indésirables, ou de modifier des fichiers importants. C'est une question de sécurité.</p>
+
+</section>
+
+</page>

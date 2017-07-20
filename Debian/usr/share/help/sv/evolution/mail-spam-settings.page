@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-spam-settings" xml:lang="sv">
+
+  <info>
+    <desc>Hur man ställer in hantering av oönskad skräppost.</desc>
+
+    <link type="guide" xref="mail-spam"/>
+    <link type="seealso" xref="mail-spam-marking"/>
+
+    <revision pkgversion="3.12.9" version="0.11" date="2015-03-15" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Patrick O'Callaghan</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Pete Biggs</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-prefs-mail.html.en#mail-prefs-junk -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Inställningar för skräppost</title>
+
+<section id="junk-tools">
+<title>Verktyg</title>
+<p><app>Evolution</app> låter dig leta efter oönskad skräppost genom att använda verktyget <app>Bogofilter</app> eller <app>SpamAssassin</app>. För att använda dessa verktyg måste du säkerställa att de är installerade via din distributions programhanteringsverktyg.</p>
+
+<note style="info package">
+  <p>Du kan behöva installera <app>Bogofilter</app> eller <app>SpamAssassin</app> för att utföra dessa steg.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:bogofilter" href="http://bogofilter.sourceforge.net/" style="button">Installera bogofilter</link></p>
+      <p><link action="install:spamassassin" href="http://spamassassin.apache.org/" style="button">Installera spamassassin</link></p>
+    </if:when>
+  </if:choose>
+</note>
+
+<p>SpamAssassin arbetar efter en uppsättning av fördefinierade regler, därför kan det hitta skräppost omedelbart. Bogofilter levereras inte med en standarduppsättning av kriterier för skräppost så det kommer inte automatiskt att filtrera någonting efter installation. Du måste först <link xref="mail-spam-marking">träna det</link> för att det ska fungera. Du kan även modifiera SpamAssassins åtgärder genom att träna det.</p>
+</section>
+
+<section id="junk-folder">
+<title>Mapp för skräppost</title>
+<p>Meddelanden som markeras som skräppost (antingen manuellt av användaren eller automatiskt av SpamAssassin eller Bogofilter) kommer att flyttas till e-postmappen <gui>Skräppost</gui>.</p>
+</section>
+
+<section id="preferences">
+<title>Inställningar för skräppost</title>
+<note style="tip"><p>Alternativen för skräppost som diskuteras på denna sida gäller endast för POP-konton och konton med lokal leverans. För hantering av skräppost för IMAP-konton, se <app>Evolution</app>-inställningar under <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>E-postkonton</gui><gui style="button">Redigera</gui><gui>Alternativ för mottagning</gui></guiseq>.</p></note>
+<p>Du kan modifiera hur <app>Evolution</app> hanterar skräppost genom att ändra inställningarna för skräppost:</p>
+<steps>
+<item><p>Klicka på <guiseq><gui>Redigera</gui><gui>Inställningar</gui></guiseq> eller tryck på <keyseq><key>Skift</key><key>Ctrl</key><key>S</key></keyseq>.</p></item>
+<item><p>Välj <gui>E-postinställningar</gui>.</p></item>
+<item><p>Klicka på fliken <gui>Skräppost</gui>. Här kan du ange följande:</p>
+<list>
+<item><p>Kontrollera inkommande meddelanden efter skräppost.</p></item>
+<item><p>Ta bort skräppostmeddelanden vid avslut, och hur ofta skräppostmeddelanden ska tas bort.</p></item>
+<item><p>Markera inte meddelanden som skräppost om avsändaren finns i adressboken.</p></item>
+<item><p>Kontrollera anpassade rubriker (tillagda av din e-postserver) efter skräppost.</p></item>
+</list>
+</item>
+</steps>
+
+<note style="tip"><p>För vidare information och specifika frågor kring konfiguration av Bogofilter eller SpamAssassin rekommenderas det att titta på sidan för ofta ställda frågor (Frequently Asked Questions) för <link href="http://bogofilter.sourceforge.net/faq.shtml">Bogofilter</link> respektive <link href="http://wiki.apache.org/spamassassin/FrequentlyAskedQuestions">SpamAssassin</link>.</p></note>
+</section>
+
+</page>

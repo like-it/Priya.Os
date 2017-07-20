@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect-reverse" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <link type="seealso" xref="connect"/>
+    <title type="sort">3</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Csatlakozás nem helyi hálózaton lévő számítógépekhez: tűzfalkorlátozások megkerülése a távoli számítógépen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>n0m4dm4n</mal:name>
+      <mal:email>n0m4dm4n at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title><gui>Fordított kapcsolatok</gui></title>
+
+  <p>A fordított kapcsolat felülbírálja a tűzfal nyitott portokra vonatkozó korlátozásait. A tűzfalak általában blokkolják a nyitott portokat, de a kimenő forgalmat nem. Normális kapcsolat esetén a kliens gép kapcsolódik a kiszolgáló egyik nyitott portjához. Fordított kapcsolat esetén azonban a kliens nyit meg egy portot, hogy a kiszolgáló kapcsolódni tudjon hozzá.</p>
+
+  <section id="enable-reverse-connections">
+    <title>Fordított kapcsolatok engedélyezése</title>
+
+    <steps>
+      <item>
+        <p>Válassza a <guiseq><gui style="menu">Távoli</gui> <gui style="menuitem">Fordított kapcsolatok</gui></guiseq> menüpontot.</p>
+      </item>
+      <item>
+        <p>Jelölje be a <gui>Fordított kapcsolatok engedélyezése</gui> négyzetet.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="accessing-behind-firewall">
+    <title>Tűzfal mögötti számítógép elérése</title>
+
+    <p>A távoli számítógépnek az Ön gépéhez kapcsolódáshoz a <gui>Fordított kapcsolatok</gui> ablak <gui>Összekapcsolhatóság</gui> mezőjében megtalálható <em>IP-címet</em> és portszámot kell használnia.</p>
+
+    <note>
+      <p>Jelenleg a <app>Vino</app>, a GNOME VNC-kiszolgálója nem támogatja a fordított kapcsolatokat. Más alkalmazások, például az <app>UltraVNC</app>, <app>RealVNC</app> és <app>TightVNC</app> azonban igen.</p>
+    </note>
+
+    <p>Amikor egy távoli számítógép az Önéhez csatlakozik, a <app>Távoli asztalok megjelenítése</app> létrehozza a fordított kapcsolatot.</p>
+
+    <p>Ha nem a helyi hálózaton lévő géphez csatlakozik, akkor meg kell adnia a külső IP-címet és a portszámot.</p>
+
+  </section>
+
+</page>

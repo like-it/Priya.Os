@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="color-import-windows" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <link type="seealso" xref="color-gettingprofiles"/>
+    <desc>Como importar um perfil ICC já existente utilizando um sistema Windows.</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Instalando um perfil ICC no Microsoft Windows</title>
+  <p>O método para atribuir o perfil a um dispositivo e ainda utilizar curvas de calibração incorporadas é diferente para cada versão do Microsoft Windows.</p>
+  <section id="xp">
+    <title>Windows XP</title>
+    <p>Dê um clique com o botão direito do mouse no perfil no Windows Explorer e clique em <gui>Instalar perfil</gui>. Isto faz com que o perfil seja copiado automaticamente para a pasta correta.</p>
+    <p>Então abra o <guiseq><gui>Centro de controle</gui><gui>Cor</gui></guiseq> e adicione o perfil ao dispositivo.</p>
+    <note style="warning">
+      <p>Se você está substituindo um perfil já existente no Windows XP, o atalho acima não irá funcionar. Os perfis precisam ser copiados manualmente para <file>C:\Windows\system32\spool\drivers\color</file>, para que o perfil original seja substituído. (Nota do tradutor: Caso sua instalação do Windows não esteja na unidade <file>C:\</file>, substitua pela letra correta da sua unidade de sistema, ex: <file>D:\</file>, <file>E:\</file>, etc...)</p>
+    </note>
+    <p>O Windows XP precisa de um programa a ser executado na inicialização de programas para copiar o perfil de curvas de calibração para a placa de vídeo. Isto pode ser feito usando o aplicativo <app>Adobe Gamma</app>, <app>LUT Loader</app> ou usando o <app href="https://www.microsoft.com/en-us/download/details.aspx?id=12714">Miniaplicativo "Cores" do Painel de Controle</app>, gratuito da Microsoft. Ao utilizar o último, adiciona-se um novo ítem <gui>Cores</gui> ao painel de controle e permite que as curvas de calibração do perfil padrão sejam facilmente definidas a cada inicialização.</p>
+  </section>
+
+  <section id="vista">
+    <title>Windows Vista</title>
+    <p>Por engano, o Microsoft Windows Vista remove as curvas de calibração de vídeo do LUT após fazer logon, suspender e quando a tela de UAC aparece. Isto significa que você precisa recarregar manualmente o perfil ICC de curvas de calibração. Se você está usando perfis com curvas de calibração incorporadas, você precisa ser bem cuidadoso para que o estado de calibração não seja apagado.</p>
+  </section>
+
+  <section id="7">
+    <title>Windows 7</title>
+    <p>O WIndows 7 suporta um esquema parecido com o Linux, estes perfis podem ser instalados em todo o sistema ou especificamente para o usuário. Contudo, eles são armazenados no mesmo local. Clique com o botão direito sob o perfil no Windows Explorer e clique em <gui>Instalar perfil</gui> ou copie o perfil .icc para <file>C:\Windows\system32\spool\drivers\color</file>. Nota do tradutor: Caso seu Windows não esteja em <file>C:\</file>, basta substituir pela letra correta de sua unidade de sistema.</p>
+    <p>Abra o <guiseq><gui>Centro de controle</gui><gui>Gerenciamento de cores</gui></guiseq> e então adicione o perfil ao sistema, clicando no botão <gui>Adicionar</gui>. Clique na aba <gui>Avançado</gui> e procure por <gui>Calibragem de vídeo</gui>. O carregamento da curva de calibração é ativado pela caixa de seleção <gui>Usar a calibragem de vídeo do Windows</gui>, porém ela não é sensível. Ela pode ser ativada ao clicar em <gui>Alterar configurações do sistema</gui> e então retornar a aba <gui>Avançado</gui> e por fim clicar na caixa de seleção.</p>
+    <p>Feche a janela de diálogo e clique em <gui>Recarregar calibragens atuais</gui> para definir as curvas de gama. Agora, as curvas de calibração do perfil foram ajustadas para cada inicialização.</p>
+  </section>
+
+</page>

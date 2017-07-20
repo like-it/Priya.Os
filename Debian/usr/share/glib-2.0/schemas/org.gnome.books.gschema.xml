@@ -1,0 +1,34 @@
+<schemalist gettext-domain="gnome-documents">
+  <schema id="org.gnome.books" path="/org/gnome/books/">
+    <key name="view-as" enum="org.gnome.Documents.GdMainViewType">
+      <default>'icon'</default>
+      <summary>View as</summary>
+      <description>View as type</description>
+    </key>
+    <key name="sort-by" enum="org.gnome.Documents.GdMainColumns">
+      <default>'mtime'</default>
+      <summary>Sort by</summary>
+      <description>Sort by type</description>
+    </key>
+    <key name="window-size" type="ai">
+      <default>[768, 600]</default>
+      <summary>Window size</summary>
+      <description>Window size (width and height).</description>
+    </key>
+    <key name="window-position" type="ai">
+      <default>[]</default>
+      <summary>Window position</summary>
+      <description>Window position (x and y).</description>
+    </key>
+    <key name="window-maximized" type="b">
+      <default>true</default>
+      <summary>Window maximized</summary>
+      <description>Window maximized state</description>
+    </key>
+    <key name="night-mode" type="b">
+      <default>false</default>
+      <summary>Night mode</summary>
+      <description>Whether the application is in night mode.</description>
+    </key>
+  </schema>
+</schemalist>

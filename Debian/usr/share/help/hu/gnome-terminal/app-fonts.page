@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="task" id="app-fonts" xml:lang="hu">
+
+  <info>
+    <revision version="0.1" date="2013-02-22" status="candidate"/>
+    <link type="guide" xref="index#appearance"/>
+    <link type="guide" xref="profile"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Rendszer- vagy egyéni betűkészletek használata a terminálban.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2013, 2014, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Attila Hammer</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Betűkészlet és stílus módosítása</title>
+
+  <p>Ha a <app>Terminálban</app> sok szöveggel dolgozik, akkor megváltoztathatja a betűkészletet a kedvencére. A következő lehetőségei vannak:</p>
+
+  <section id="system-font">
+  <title>A rendszer rögzített szélességű betűkészlete</title>
+
+  <p>A rendszer alapértelmezett betűkészleteinek használata:</p>
+
+  <steps>
+    <item>
+      <p>Válassza a <guiseq><gui style="menu">Szerkesztés</gui> <gui style="menuitem">Profil beállításai</gui> <gui style="tab">Általános</gui></guiseq> lapot.</p>
+    </item>
+    <item>
+      <p>Jelölje be <gui style="checkbox">A rendszer rögzített szélességű betűkészletének használata</gui> négyzetet.</p>
+    </item>
+  </steps>
+
+  </section>
+
+  <section id="custom-font">
+  <title>Egyéni betűkészlet választása</title>
+
+  <p>Egyéni betűkészlet és -méret beállítása:</p>
+
+  <steps>
+    <item>
+      <p>Válassza a <guiseq><gui style="menu">Szerkesztés</gui> <gui style="menuitem">Profil beállításai</gui> <gui style="tab">Általános</gui></guiseq> lapot.</p>
+    </item>
+    <item>
+      <p>Törölje <gui>A rendszer rögzített szélességű betűkészletének használata</gui> négyzetet.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Betűkészlet</gui> melletti gombra.</p>
+    </item>
+    <item>
+      <p>Írja be a kívánt betűkészlet nevét a keresőmezőbe, vagy válassza ki a betűkészletek listájából.</p>
+    </item>
+    <item>
+      <p>A betűkészletlista alatti csúszka húzásával állítsa be a betűméretet. Ennek alternatívájaként be is írhatja a betűméretet a csúszka melletti mezőbe, vagy a <gui style="button">+</gui> gomb megnyomásával növelheti, a <gui style="button">-</gui> gomb megnyomásával csökkentheti a kijelölt betűkészlet méretét.</p>
+    </item>
+    <item>
+      <p>Nyomja meg a <gui style="button">Kiválasztás</gui> gombot a változtatások alkalmazásához. A változtatások eldobásához és az előző ablakhoz visszalépéshez nyomja meg a <gui style="button">Mégse</gui> gombot.</p>
+    </item>
+  </steps>
+
+  </section>
+
+  <section id="bold-fonts">
+  <title>Félkövér szöveg</title>
+
+  <p>A <app>Terminál</app> lehetővé teszi a parancsértelmezőnek a folyamatszövegek, például a prompt, a könyvtárnevek vagy kézikönyvoldal-címsorok félkövér stílusú megjelenítését.</p>
+
+  <steps>
+    <item>
+      <p>Válassza a <guiseq><gui style="menu">Szerkesztés</gui> <gui style="menuitem">Profil beállításai</gui> <gui style="tab">Általános</gui></guiseq> lapot.</p>
+    </item>
+    <item>
+      <p>Jelölje be a <gui style="checkbox">Félkövér betűk engedélyezése</gui> négyzetet.</p>
+    </item>
+  </steps>
+
+  <note style="important">
+    <p>A <gui style="checkbox">Félkövér betűk engedélyezése</gui> egy parancsértelmezőtől függő funkció. Ha nem a Bash parancsértelmezőt használja, akkor a leírt viselkedés eltérő lehet.</p>
+  </note>
+
+  </section>
+
+</page>

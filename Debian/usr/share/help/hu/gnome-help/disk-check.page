@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="hu">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>A merevlemez hibáinak keresésével meggyőződhet a lemez megfelelő állapotáról.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Hibák keresése a merevlemezen</title>
+
+<section id="disk-status">
+ <title>A merevlemez ellenőrzése</title>
+  <p>A merevlemezekbe be van építve egy <em>SMART</em> nevű állapot-ellenőrző eszköz. Ez folyamatosan keresi az esetleges problémákat, és képes figyelmeztetni, ha a lemez meghibásodása bekövetkezhet. Ez a fontos adatok elvesztésének megakadályozásához hasznos.</p>
+
+  <p>Noha a SMART automatikusan fut, a lemez állapotát a <app>Lemezek</app> alkalmazás segítségével is ellenőrizheti:</p>
+
+<steps>
+ <title>A lemez állapotának ellenőrzése a Lemezek alkalmazással</title>
+
+  <item>
+    <p>Nyissa meg a <app>Lemezeket</app> a <gui>Tevékenységek</gui> áttekintésből.</p>
+  </item>
+  <item>
+    <p>Válassza ki a lemezt a tárolóeszközök bal oldali listájából. Megjelennek a lemezzel és állapotával kapcsolatos információk.</p>
+  </item>
+  <item>
+    <p>Kattintson a menü gombra, és válassza a <gui>SMART adatok és öntesztek</gui> menüpontot. Az <gui>Átfogó felmérés</gui> alatt az „A lemez jó” állapotnak kell megjelennie.</p>
+  </item>
+  <item>
+    <p>További információkat a <gui>SMART attribútumok</gui> alatt láthat, vagy kattintson az <gui style="button">Önellenőrzés indítása</gui> gombra egy önteszt indításához.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>Mi a teendő, ha a lemez nem egészséges?</title>
+
+  <p>Még ha az <gui>Átfogó felmérés</gui> azt is jelzi, hogy a lemez <em>nem</em> egészséges, sem kell megijedni. Azonban az adatvesztés megelőzése érdekében jobb <link xref="backup-why">mentéssel</link> készülni.</p>
+
+  <p>Ha az állapot „Pre-fail”, akkor a lemez még elfogadható állapotban van, de a fáradás jelei észlelhetők, azaz a közeljövőben meghibásodhat. Ha a merevlemez (vagy számítógép) már néhány éves, akkor valószínűbb, hogy találkozhat ezzel az üzenettel legalább néhány ellenőrzés esetén. Ebben az esetben <link xref="backup-how">mentse rendszeresen a fontos fájljait</link>, és ellenőrizze rendszeresen a lemez állapotát, hogy kiderüljön, romlik-e a helyzet.</p>
+
+  <p>Ha az állapota romlik, akkor vigye a számítógépet/merevlemezt szervizbe további vizsgálatra vagy javításra.</p>
+
+</section>
+
+</page>

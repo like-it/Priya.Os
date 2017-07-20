@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="task" id="txt-search" xml:lang="cs">
+
+  <info>
+    <revision version="0.1" date="2013-03-03" status="candidate"/>
+    <link type="guide" xref="index#textoutput"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Vyhledávajte ve výstupech <app>Terminálu</app>.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2008, 2009, 2010, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2010, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Jak použít <gui style="menuitem">hledání</gui></title>
+
+  <p>Ve výstupu <app>Terminálu</app> můžete vyhledávat text:</p>
+
+  <steps>
+    <item>
+      <p>Vyberte <guiseq><gui style="menu">Hledat</gui> <gui style="menuitem">Najít</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Napište hledané slovo a zmáčkněte <gui style="button">Najít</gui>. Zmáčknutím <gui style="button">Zavřít</gui> akci zrušíte.</p>
+    </item>
+  </steps>
+
+  <p>Ke zúžení výsledků hledání můžete využít následující volby:</p>
+
+  <terms>
+    <item>
+      <title><gui style="checkbox">Rozlišovat velikost písmen</gui></title>
+      <p>Hledání bude citlivé na velikost písmen: tím se omezí výsledky hledání jen na shodu slov se stejně velkými písmeny.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Hledat pouze celá slova</gui></title>
+      <p><app>Terminál</app> bude hledat pouze celá slova a bude ignorovat výsledky, kdy vaše hledané slovo tvoří pouze část jiného. Například když budete hledat „gnome“, zobrazí se pouze výsledky přesně s tímto slovem a třeba „gnome-terminal“ se vynechá.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Porovnávat jako regulární výraz</gui></title>
+      <p>Při hledání můžete používat vzory regulárních výrazů, často označované zkráceně regex. <app>Terminál</app> zobrazí výsledky, které odpovídají hledanému vzoru.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Hledat pozpátku</gui></title>
+      <p>Aplikace <app>Terminál</app> bude hledat slova od místa posledního výstupu směrem nahoru. Tato volba je doporučována, když hledáte slovo, které se ve výstupu objevilo nedávno, protože bude nalezeno rychleji.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Pokračovat od začátku</gui></title>
+      <p><app>Terminál</app> hledá od aktuálního místa do konce dostupného výstupu a při zapnutí této volby pak pokračuje od začátku terminálového výstupu.</p>
+    </item>
+  </terms>
+
+  <note style="tip">
+    <p>Pokud plánujete práci s velkým množstvím terminálového výstupu, zvyšte počet <link xref="pref-scrolling#lines">zapamatovaných řádků</link>, čímž umožníte <app>Terminálu</app> vrátit se při hledání více zpět do historie výstupu.</p>
+  </note>
+
+</page>

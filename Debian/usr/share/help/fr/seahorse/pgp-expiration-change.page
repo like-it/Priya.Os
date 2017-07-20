@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-expiration-change" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision pkgversion="3.9" version="0.1" date="2013-07-22" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Avancer ou reporter la date d'expiration de vos clés.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Modification de la date d'expiration des clés</title>
+
+  <p>Si une de vos clés a expiré mais que vous désirez continuer à l'utiliser, vous pouvez reculer sa date d'expiration. Vous pouvez aussi modifier les paramètres d'expiration pour que la clé expire plus tôt.</p>
+
+  <steps>
+    <title>Modification de la date d'expiration d'une clé PGP :</title>
+    <item>
+      <p>Sélectionnez la clé PGP dans la liste.</p>
+    </item>
+    <item>
+      <p>Faites un clic droit sur la clé sélectionnée et choisissez <gui>Propriétés</gui>.</p>
+    </item>
+    <item>
+      <p>Dans la nouvelle boîte de dialogue, sélectionnez l'onglet <gui>Détails</gui></p>
+    </item>
+    <item>
+      <list>
+        <item>
+	  <p>Pour modifier la date d'expiration d'une clé maîtresse, cliquez sur le petit bouton représentant un petit calendrier près de <gui>Expire</gui>, sur la droite de la boîte de dialogue. Vous pouvez alors choisir une nouvelle date d'expiration dans le calendrier.</p>
+        </item>
+        <item>
+	  <p>Pour modifier la date d'expiration d'une <link xref="pgp-subkeys">sous-clé</link>, développez le panneau <gui>Sous-clés</gui> et sélectionnez la sous-clé dans la liste. Cliquez sur le bouton <gui style="button">Expire</gui> sur la gauche du panneau et choisissez la nouvelle date d'expiration.</p>
+	</item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="important">
+    <p>Si vous modifiez la date d'expiration d'une clé publiée, vous devez <link xref="pgp-sync">synchroniser</link> la clé avec le serveur de clés après avoir effectué les modifications souhaitées.</p>
+  </note>
+
+</page>

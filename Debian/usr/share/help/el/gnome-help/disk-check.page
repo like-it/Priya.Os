@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="el">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Έργο Τεκμηρίωσης GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Ελέγξτε τον σκληρό σας δίσκο για προβλήματα για να βεβαιωθείτε ότι είναι υγιής.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Έλεγχος του σκληρού σας δίσκου για προβλήματα</title>
+
+<section id="disk-status">
+ <title>Έλεγχος του σκληρού δίσκου</title>
+  <p>Οι σκληροί δίσκοι έχουν ένα ενσωματωμένο εργαλείο ελέγχου υγείας που λέγεται <app>SMART</app> (τεχνολογία αυτοπαρακολούθησης, ανάλυσης και αναφοράς), που ελέγχει συνεχώς τον δίσκο για δυνητικά προβλήματα. Το SMART επίσης προειδοποιεί εάν ο δίσκος πρόκειται να αστοχήσει, βοηθώντας την αποφυγή απώλειας σημαντικών δεδομένων.</p>
+
+  <p>Αν και το SMART εκτελείται αυτόματα, μπορείτε επίσης να ελέγξετε την υγεία του δίσκου σας εκτελώντας την εφαρμογή <app>Δίσκοι</app>:</p>
+
+<steps>
+ <title>Ελέγξτε την υγεία του δίσκου σας χρησιμοποιώντας την εφαρμογή δίσκοι</title>
+
+  <item>
+    <p>Ανοίξτε το <app>Δίσκοι</app> από την επισκόπηση <gui>Δραστηριότητες</gui>.</p>
+  </item>
+  <item>
+    <p>Επιλέξτε τον δίσκο που θέλετε να ελέγξετε από την λίστα συσκευών αποθήκευσης στα αριστερά σας. Θα εμφανιστούν οι πληροφορίες και η κατάσταση του δίσκου.</p>
+  </item>
+  <item>
+    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
+    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+  </item>
+  <item>
+    <p>Δείτε περισσότερες πληροφορίες στο <gui>Χαρακτηριστικά SMART</gui>, ή κάντε κλικ στο πλήκτρο <gui style="button">Έναρξη αυτοδιαγνωστικού ελέγχου</gui> για να εκτελέσετε τον έλεγχο.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>Τι γίνεται εάν ο δίσκος δεν είναι υγιής;</title>
+
+  <p>Ακόμα κι αν η <gui>Συνολική αξιολόγηση</gui> δείχνει ότι ο δίσκος <em>δεν είναι</em> υγιής, ίσως να μην υπάρχει λόγος ανησυχίας. Ωστόσο, είναι καλύτερο να προετοιμαστείτε με ένα <link xref="backup-why">αντίγραφο ασφαλείας</link> για να αποτρέψετε την απώλεια δεδομένων.</p>
+
+  <p>Εάν η κατάσταση λέει «προαποτυχία», τότε ο δίσκος είναι ακόμα αρκετά υγιής αλλά σημάδια φθοράς έχουν ανιχνευθεί που σημαίνει ότι μπορεί να αστοχήσει στο κοντινό μέλλον. Εάν ο σκληρός σας δίσκος (ή υπολογιστής) είναι σχετικά πρόσφατος, είναι πιθανό να δείτε αυτό το μήνυμα τουλάχιστον σε μερικούς από τους ελέγχους υγείας. Θα πρέπει <link xref="backup-how">να αντιγράφετε τα σημαντικά σας αρχεία συχνά</link> και να ελέγχετε την κατάσταση του δίσκου περιοδικά για να δείτε εάν χειροτερεύει.</p>
+
+  <p>Εάν χειροτερεύσει, ίσως θελήσετε να πάτε τον υπολογιστή/σκληρό δίσκο σε έναν επαγγελματία για παραιτέρω διάγνωση ή επισκευή.</p>
+
+</section>
+
+</page>

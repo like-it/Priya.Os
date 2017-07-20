@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Skatiet un rediģējiet datnes citā datorā caur FTP, SSH, Windows koplietojumiem vai WebDAV.</desc>
+
+  </info>
+
+<title>Pārlūkojiet datnes uz servera vai tīkla koplietojumā</title>
+
+<p>Jūs varat savienoties ar serveri vai tīkla koplietojumu, lai pārlūkotu un skatītu datnes šajā serverī tieši tāpat, kā tas būtu jūsu datorā. Tas ir ērts veids, lai internetā lejupielādētu vai augšupielādētu datnes, vai dalītos ar tām starp cilvēkiem jūsu lokālajā tīkla.</p>
+
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
+
+<steps>
+  <title>Savienoties ar datņu serveri</title>
+  <item><p>Datņu pārvaldniekā spiediet <gui>Citas vietas</gui> sānu joslā.</p>
+  </item>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
+  <note>
+    <p>Ja jau esat savienojies ar šo serveri iepriekš, jūs varat spiest uz tā <gui>Neseno serveru</gui> sarakstā.</p>
+  </note>
+  </item>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>Rakstīšanas URL</title>
+
+<p><em>URL</em> jeb <em>vienotais resursu vietrādis</em> ir adreses forma, kas norāda uz vietu vai datni tīklā. Adrese tiek formatēta šādi:</p>
+  <example>
+    <p><sys>shēma://servera_nosaukums.piemērs.lv/mape</sys></p>
+  </example>
+<p><em>shēma</em> norāda protokolu jeb servera tipu. <em>piemērs.lv</em> adreses daļa tiek saukta par <em>domēna nosaukumu</em>. Ja ir jānorāda lietotājvārds, to ievieto pirms servera nosaukuma:</p>
+  <example>
+    <p><sys>shēma://lietotājvārds@servera_nosaukums.piemērs.lv/mape</sys></p>
+  </example>
+<p>Dažām shēmām ir jānorāda porta numurs. Ievietojiet to aiz domēna nosaukuma:</p>
+  <example>
+    <p><sys>shēma://servera_nosaukums.piemērs.lv:ports/mape</sys></p>
+  </example>
+<p>Zemāk it daži specifiski piemēri dažādiem serveru veidiem, kas ir atbalstīti.</p>
+</section>
+
+<section id="types">
+ <title>Serveru veidi</title>
+
+<p>Jūs varat savienoties ar vairāku veidu serveriem. Daži serveri ir publiski un ļauj jebkuram ar to savienoties. Citi serveri pieprasa pieteikties ar lietotājvārdu un paroli.</p>
+<p>Jums var nebūt atļaujas, lai serverī veiktu darbības ar datnēm. Piemēram, publiskajās FTP vietnēs droši vien nevarēsiet dzēst datnes.</p>
+<p>Jūsu ievadītais URL ir atkarīgs no protokola, ko izmanto serveris, lai eksportētu tā datņu koplietojumus.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>Ja uz servera ir <em>drošās čaulas</em> konts, jūs varat pieslēgties, izmantojot šo metodi. Daudzi tīmekļa serveri nodrošina SSH kontus dalībniekiem, tāpēc tie var droši augšupielādēt datnes. SSH serveri vienmēr pieprasa ierakstīties.</p>
+  <p>Tipisks SSH URL izskatās šādi:</p>
+  <example>
+    <p><sys>ssh://lietotājvārds@servera_nosaukums.piemērs.lv/mape</sys></p>
+  </example>
+
+  <p>Kad lietojat SSH, visi dati, ko nosūtat (ieskaitot paroli), ir šifrēti, un citi tīkla lietotāji tos nevar uzzināt.</p>
+</item>
+<item>
+  <title>FTP (ar pieteikšanos)</title>
+  <p>FTP ir populārs veids, kā internetā apmainītos ar datnēm. Tā kā dati FTP nav šifrēti, daudzi serveri tagad nodrošina pieeju caur SSH. Daži serveri atļauj vai pieprasa lietot FTP, lai augšupielādētu vai lejupielādētu datnes. FTP vietnes ar pieteikšanos parasti atļauj dzēst vai augšupielādēt datnes.</p>
+  <p>Tipisks FTP URL izskatās šādi:</p>
+  <example>
+    <p><sys>ftp://lietotājvārds@ftp.piemērs.lv/ceļš</sys></p>
+  </example>
+</item>
+<item>
+  <title>Publiskais FTP</title>
+  <p>Vietnes, kas atļauj jums lejuplādēt datnes, dažreiz paredz publisku vai anonīmu FTP piekļuvi. Šie serveri nepieprasa lietotājvārdu un paroli, un parasti neļaus jums dzēst vai augšupielādēt datnes.</p>
+  <p>Tipisks anonīmais FTP URL izskatās šādi:</p>
+  <example>
+    <p><sys>ftp://ftp.piemērs.lv/ceļš</sys></p>
+  </example>
+  <p>Dažas anonīmas FTP vietnes pieprasa pieteikties ar publisku lietotājvārdu un paroli vai ar publisku lietotājvārdu un e-pasta adresi kā paroli. Šādiem serveriem izmanto <gui>FTP (ar pieteikšanos)</gui> metodi un izmanto FTP vietnes norādītos akreditācijas datus.</p>
+</item>
+<item>
+  <title>Windows koplietojums</title>
+  <p>Windows datori izmanto īpašniek–protokolu, lai dalītos ar datnēm caur lokālo tīklu. Datori Windows tīklā dažreiz ir grupēti organizāciju <em>domēnos</em>, lai labāk kontrolētu piekļuvi. Ja jums ir pareizās atļaujas attālinātajā datorā, jūs varat savienoties ar Windows caur datņu pārvaldnieku.</p>
+  <p>Tipisks Windows koplietojuma URL izskatās šādi:</p>
+  <example>
+    <p><sys>smb://servera_nosaukums/Koplietojums</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV un drošais WebDAV</title>
+  <p>Balstīts uz HTTP protokolu, ko izmanto tīmeklī, WebDAV dažreiz tiek lietots, lai lokālajos tīklos dalītos ar datnēm un glabātu datnes internetā.  Ja serveris, ar ko savienojaties, ļauj veikt drošu savienojumu, jums vajadzētu izvēlēties šo iespēju. Drošais WebDAV lieto SSL šifrēšanu, lai citi lietotāji nevarētu uzzināt jūsu paroli.</p>
+  <p>WebDAV URL izskatās šādi:</p>
+  <example>
+    <p><sys>dav://piemērs.datora_nosaukums.lv/ceļš</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS koplietojums</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>Tipisks NFS koplietojuma URL izskatās šādi:</p>
+  <example>
+    <p><sys>nfs://servera_nosaukums/ceļš</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME ドキュメンテーションプロジェクト</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>ラップトップは蓋を閉めると節電のためスリープ状態に入ります。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>コンピューターの蓋を閉めるとオフになるのはなぜですか?</title>
+
+  <p>ラップトップの蓋を閉めると節電のため<link xref="power-suspend"><em>サスペンド</em></link>します。これは、実際に電源オフになったわけではなく、スリープ状態に入っただけです。蓋を開けると再開します。再開しない場合はマウスをクリックするか何かのキーを押してみてください。それでも再開しない場合は電源ボタンを押してください。</p>
+
+  <p>コンピューターによっては、サスペンドが正しく動作しない場合があります。一般的には、オペレーティングシステムがそのハードウェアを完全にサポートしていないことが原因です (Linux ドライバーが不完全など)。このような場合、蓋を閉めたあとコンピューターを再開できないという問題に遭遇する可能性があります。<link xref="power-suspendfail">サスペンドに関する問題を修正する</link>か、蓋を閉じた場合にサスペンドしないようにします。</p>
+
+<section id="nosuspend">
+  <title>Stop the computer from suspending when the lid is closed</title>
+
+  <note style="important">
+    <p>These instructions will only work if you are using <app>systemd</app>.
+    Contact your distribution for more information.</p>
+  </note>
+
+  <note style="important">
+    <p>You need to have the <app>Tweak Tool</app> installed on your computer to
+    change this setting.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">Install
+      <app>Tweak Tool</app></link></p>
+    </if:if>
+  </note>
+
+  <p>If you do not want the computer to suspend when you close the lid, you can
+  change the setting for that behavior.</p>
+
+  <note style="warning">
+    <p>Be very careful if you change this setting. Some laptops can overheat
+    if they are left running with the lid closed, especially if they are in
+    a confined place like a backpack.</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Tweak Tool</gui>.</p>
+    </item>
+    <item>
+      <p>Click <gui>Tweak Tool</gui> to open the application.</p>
+    </item>
+    <item>
+      <p>Click the <gui>Power</gui> tab.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Don't suspend on lid close</gui> to <gui>ON</gui>.</p>
+    </item>
+    <item>
+      <p>Close the <gui>Tweak Tool</gui> window.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

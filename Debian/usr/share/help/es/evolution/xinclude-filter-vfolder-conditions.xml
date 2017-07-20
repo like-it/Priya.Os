@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info xmlns="http://projectmallard.org/1.0/">
+
+<item><p>Remitente:</p>
+<p>La dirección de correo electrónico del remitente o el nombre del remitente.</p></item>
+
+<item><p>Destinatarios:</p>
+<p>Los destinatarios del mensaje.</p></item>
+
+<item><p>Cc:</p>
+<p>Sólo los destinatarios Cc del correo.</p></item>
+
+<item><p>Cco:</p>
+<p>Sólo los destinatarios con Cco de este mensaje. Obviamente esto sólo se puede aplicar a filtros salientes.</p></item>
+
+<item><p>Remitente o destinatarios:</p>
+<p>La dirección de correo electrónico del remitente, el nombre del remitente or de los destinatarios del correo.</p></item>
+
+<item><p>Asunto:</p>
+<p>La línea asunto del mensaje.</p></item>
+
+<item><p>Cabecera específica:</p>
+<p>Cualquier cabecera, incluyendo <link xref="mail-composer-custom-header-lines">las personalizadas</link>.</p>
+<p>Si en un mensaje aparece más de una vez la misma cabecera, <app>Evolution</app> sólo se fija en la primera, aunque en la segunda el contenido sea diferente. Por ejemplo, si un mensaje declara la cabecera Reenviado-De: con «ingeniero@ejemplo.es» y a continuación la redefine como «marketing@ejemplo.es», <app>Evolution</app> aplicará el filtro como si la segunda declaración no apareciera. Para filtrar mensajes que utilizan varias cabeceras varias veces use una expresión regular.</p></item>
+
+<item><p>Cuerpo del mensaje:</p>
+<p>Busca en el texto efectivo del mensaje.</p></item>
+
+<item><p>Expresión:</p>
+<p>(Sólo para programadores) busca un mensaje que corresponda a una expresión escrita en lenguaje Scheme, usado para definir <link xref="mail-filters">filtros</link> en <app>Evolution</app>.</p></item>
+
+<item><p>Expresión libre de forma:</p>
+<p>(Sólo para usuarios avanzados) Combinar varias condiciones usando una <link href="https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10">sintaxis especial</link>.</p></item>
+
+<item><p>Fecha de envío:</p>
+<p>Filtra los mensajes en función de la fecha de envío. En primer lugar, defina las condiciones que desea ver cumplidas con un mensaje, tales como antes de una fecha determinada o después de de ella, etc. A continuación, especifique la fecha y hora. La fecha y hora del mensaje se compara con la hora del sistema al ejecutarse el filtro, o con una hora y fecha específica elegida en el calendario. Es posible incluso buscar mensajes dentro de un intervalo de tiempo relativo, por ejemplo, buscar mensajes en los últimos cuatro días.</p></item>
+
+<item><p>Fecha de recepción:</p>
+<p>Funciona del mismo modo que la opción Fecha de envío, excepto que compara la fecha y hora de recepción del mensaje con las fechas especificadas.</p></item>
+
+<item><p>Etiqueta:</p>
+<p>Los mensajes pueden tener las <link xref="mail-labels">etiquetas</link> Importante, Trabajo, personal, Tareas pendientes o Más tarde. Puede establecer etiquetas con otros filtros o manualmente.</p></item>
+
+<item><p>Puntuación:</p>
+<p>Establece la puntuación del mensaje con un número entero mayor que 0. Puede tener un filtro ajustado o cambiar la puntuación de un mensaje, y después configurar otro filtro par amover los mensajes que ha puntuado. La puntuación de un mensaje no está basada en nada en particular: es simplemente un número que puede asignar a mensajes para que otros filtros puedan procesarlos.</p></item>
+
+<item><p>Tamaño (KB):</p>
+<p>Ordenación basada en el tamaño del mensaje, en kilobytes.</p></item>
+
+<item><p>Estado:</p>
+<p>Filtros de acuerdo al estado de un mensaje. El estado puede ser Responder a, Borrador, Importante, Leído o SPAM.</p></item>
+
+<item><p>Seguimiento:</p>
+<p>Comprueba si el mensaje está <link xref="mail-follow-up-flag">marcado para seguimiento</link>.</p></item>
+
+<item><p>Completado en:</p></item>
+<!-- TODO: Explain usage of option "Completed On" once https://bugzilla.gnome.org/show_bug.cgi?id=698439 is fixed -->
+
+<item><p>Adjuntos:</p>
+<p>Comprueba si existe un adjunto para el correo.</p></item>
+
+<item><p>Lista de correo:</p>
+<p>Filtros basados en mensajes que provienen de listas de correo. Este filtro puede perder mensajes de algunos servidores de listas, porque comprueba la cabecera X-BeenThere, que se usa para identificar listas de correo u otras redistribuciones de correo. El correo proveniente de servidores de listas que no establezca adecuadamente la cabecera X-BeenThere no será filtrado.</p></item>
+
+<item><p>Coincide con la expresión regular:</p>
+<p>(Sólo para programadores) Si sabe lo que se hace con las <link href="https://en.wikipedia.org/wiki/Regular_expression">regex</link>, o expresiones regulares, esta opción le permite hacer búsquedas de patrones complejos de letras de manera que, por ejemplo, podría encontrar todas las palabras que empiezan con «a» y acaban con «m» y tienen entre seis y quince letras de longitud, o distinguir todos los mensajes que tengan duplicada una determinada cabecera. Para saber cómo usar las expresiones regulares examine la página del manual del comando <link href="man:grep">the man page for the <cmd>grep</cmd></link>.</p></item>
+
+</info>

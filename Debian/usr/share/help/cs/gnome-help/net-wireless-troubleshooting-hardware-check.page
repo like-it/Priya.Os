@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="cs">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Přispěvatelé do wiki s dokumentací k Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>I když je váš bezdrátový adaptér připojen, nemusí být počítačem správně rozpoznán.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Řešení problémů s bezdrátovým připojením</title>
+  <subtitle>Zkontrolujte, jestli byl bezdrátový adaptér rozpoznán</subtitle>
+
+  <p>I když je bezdrátový adaptér připojen k počítači, neznamená to, že jím byl správně rozpoznán jako bezdrátové zařízení.</p>
+
+  <steps>
+    <item>
+      <p>Otevřete <app>Terminál</app>, napište <cmd>lshw -C network</cmd> a zmáčkněte <key>Enter</key>. V případě, že se objeví chybová zpráva, budete možná muset program <app>lshw</app> na svůj počítač nejprve nainstalovat.</p>
+    </item>
+    <item>
+      <p>Projděte si údaje, které se objeví a najděte části <em>Bezdrátové rozhraní</em>. Jestliže byl váš bezdrátový adaptér správně rozpoznán, mělo by to vypadat nějak (ale ne nutně zcela stejně) takto:</p>
+      <code>*-network
+       popis: Wireless interface
+       výrobek: PRO/Wireless 3945ABG [Golan] Network Connection
+       výrobce: Intel Corporation</code>
+    </item>
+    <item>
+      <p>Když bezdrátové zařízení v seznamu <em>je</em>, pokračujte <link xref="net-wireless-troubleshooting-device-drivers">krokem s ovladači zařízení</link>.</p>
+      <p>Když bezdrátové zařízení v seznamu <em>není</em>, bude následující krok záviset typu zařízení, které používáte. Podívejte se do té části níže, které odpovídá typu bezdrátového adaptéru ve vašem počítači (<link xref="#pci">interní PCI</link>, <link xref="#usb">USB</link> nebo <link xref="#pcmcia">PCMCIA</link>).</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>Bezdrátový adaptér do PCI (interní)</title>
+
+  <p>Interní adaptéry do sběrnice PCI jsou nejběžnější a najdete je u většiny počítačů vyrobených v posledních několika letech. Jestli byl bezdrátový adaptér do PCI rozpoznán, zjistíte následovně:</p>
+
+  <steps>
+    <item>
+      <p>Otevřete Terminál, napište <cmd>lspci</cmd> a zmáčkněte <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Projděte si seznam zařízení, který se zobrazí a najděte takové, které je označené <code>Network controller</code> nebo <code>Ethernet controller</code>. Může tak být označeno i více zařízení. To, které odpovídá vašem bezdrátovému adaptéru nejspíše bude obsahovat slova jako <code>wireless</code>, <code>WLAN</code>, <code>WiFi</code> nebo <code>802.11</code>. Zde je příklad, jak takový záznam může vypadat:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Pokud najdete svůj bezdrátový adaptér v seznamu, pokračujte <link xref="net-wireless-troubleshooting-device-drivers">krokem Ovladače zařízení</link>. Pokud nenajdete nic, co by se vztahovalo k vašemu bezdrátovému adaptéru, podívejte se na <link xref="#not-recognized">instrukce níže</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>Bezdrátový adaptér do USB</title>
+
+  <p>Bezdrátové adaptéry Wi-Fi, které se zasouvají do portu USB jsou méně běžné. Mohou být do portu připojené přímo nebo přes kabel. Adaptéry pro širokopásmové mobilní přípojení (3G/LTE) vypadají velmi podobně, takže se opravdu dvakrát ujistěte, že máte bezdrátový adaptér Wi-Fi. Jestli byl bezdrátový adaptér do USB rozpoznán, zjistíte následovně:</p>
+
+  <steps>
+    <item>
+      <p>Otevřete Terminál, napište <cmd>lsusb</cmd> a zmáčkněte <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Projděte si zobrazená zařízení a hledejte něco, co vypadá jako bezdrátové nebo síťové zařízení. To, které odpovídá vašemu bezdrátovému adaptéru nejspíše bude obsahovat slova jako <code>wireless</code>, <code>WLAN</code>, <code>WiFi</code> nebo <code>802.11</code>. Zde je příklad, jak takový záznam může vypadat:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>Pokud najdete svůj bezdrátový adaptér v seznamu, pokračujte <link xref="net-wireless-troubleshooting-device-drivers">krokem Ovladače zařízení</link>. Pokud nenajdete nic, co by se vztahovalo k vašemu bezdrátovému adaptéru, podívejte se na <link xref="#not-recognized">instrukce níže</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Kontrola zařízení PCMCIA</title>
+
+  <p>Bezdrátové adaptéry do PCMCIA jsou typicky obdélníkové karty, které se zasouvají zboku do notebooků. Běžně je najdete ve starších typech počítačů. Jestli byl bezdrátový adaptér do PCMCIA rozpoznán, zjistíte následovně:</p>
+
+  <steps>
+    <item>
+      <p>Spusťte počítač <em>bez</em> zasunutého bezdrátového adaptéru.</p>
+    </item>
+    <item>
+      <p>Otevřete Terminál, napište následující příkaz a zmáčkněte <key>Enter</key>.</p>
+      <code>tail -f /var/log/messages</code>
+      <p>Zobrazí se seznam zpráv vztahujících se k hardwaru počítače a bude automaticky aktualizován, když v sestavě hardwaru dojde k nějaké změně.</p>
+    </item>
+    <item>
+      <p>Zasuňte svůj bezdrátový adaptér do slotu PCMCIA a sledujte změny v okně terminálu. Změny by měly zahrnovat informace o vašem bezdrátovém adaptéru. Projděte si je a zkuste jej identifikovat.</p>
+    </item>
+    <item>
+      <p>Příkaz běžící v terminálu můžete ukončit zmáčknutím <keyseq><key>Ctrl</key><key>C</key></keyseq> a terminál pak v případě potřeby zavřít.</p>
+    </item>
+    <item>
+      <p>Pokud v seznamu najdete nějaké údaje o svém bezdrátovém adaptéru, pokračujte <link xref="net-wireless-troubleshooting-device-drivers">krokem Ovladače zařízení</link>. Pokud nenajdete nic, co by se vztahovalo k vašemu bezdrátovému adaptéru, podívejte se na <link xref="#not-recognized">instrukce níže</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>Bezdrátový adaptér nebyl rozpoznán</title>
+
+  <p>Jestliže váš bezdrátový adaptér nebyl rozpoznán, možná není plně funkční nebo pro něj nejsou nainstalovány správné ovladače. Postup, jak zkontrolovat, jestli jsou nějaké ovladače nainstalované závisí na tom, kterou distribuci Linuxu používáte (Ubuntu, Arch, Fedora, openSuSE…).</p>
+
+  <p>Na konkrétnější nápovědu se podívejte do možností podpory na webu své distribuce. Může mít například podobu poštovní konference nebo webové diskuze, kde se na svůj bezdrátový adaptér zeptáte.</p>
+
+</section>
+
+</page>

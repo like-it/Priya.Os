@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-list" xml:lang="hu">
+
+  <info>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="nautilus-prefs" group="nautilus-list"/>
+
+    <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A listanézet oszlopaiban megjelenő információk beállítása.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>A Fájlok listaoszlopainak beállításai</title>
+
+  <p>A <gui>Fájlok</gui> alkalmazás listanézetében 11 információs oszlopot jeleníthet meg. Válassza a <gui>Fájlok</gui> ikont a felső sávon, majd a <gui>Beállítások</gui> menüpontot, majd a <gui>Listaoszlopok</gui> lapot a látható oszlopok kiválasztásához.</p>
+
+  <note style="tip">
+    <p>Használja a <gui>Fel</gui> és <gui>Le</gui> gombokat a kijelölt oszlop megjelenési sorrendjének kiválasztásához. Kattintson az <gui>Alapbeállítás</gui> gombra a módosítások visszavonásához és az alapértelmezett oszlopokhoz való visszatéréshez.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Név</gui></title>
+      <p>A mappák és fájlok nevei.</p>
+      <note style="tip">
+        <p>A <gui>Név</gui> oszlop nem rejthető el.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Méret</gui></title>
+      <p>Egy mappa mérete a mappában lévő elemek száma. Egy fájl mérete bájtban, KB-ban vagy MB-ban kerül megadásra.</p>
+    </item>
+    <item>
+      <title><gui>Típus</gui></title>
+      <p>A típus mint „mappa”, vagy mint konkrét fájltípus (például PDF-dokumentum, JPEG-kép, MP3-hang) jelenik meg.</p>
+    </item>
+    <item>
+      <title><gui>Módosítva</gui></title>
+      <p>A fájl utolsó módosításának dátumát adja meg.</p>
+    </item>
+    <item>
+      <title><gui>Tulajdonos</gui></title>
+      <p>A fájlt vagy mappát birtokló felhasználó neve.</p>
+    </item>
+    <item>
+      <title><gui>Csoport</gui></title>
+      <p>A fájlt birtokló csoport. Minden felhasználó általában a saját csoportjában van, de lehetőség van egy csoportba több felhasználó elhelyezésére is. Például munkahelyi környezetben egy osztály rendelkezhet saját csoporttal.</p>
+    </item>
+    <item>
+      <title><gui>Jogosultságok</gui></title>
+      <p>A fájl hozzáférési jogosultságai, például: <gui>drwxrw-r--</gui></p>
+      <list>
+        <item>
+          <p>Az első karakter a fájl típusa. A <gui>-</gui> normális fájlt jelent, a <gui>d</gui> pedig mappát. Ritkán más karakterek is megjelenhetnek.</p>
+        </item>
+        <item>
+          <p>A következő három karakter, az <gui>rwx</gui> a fájlt birtokló felhasználó jogosultságait adja meg.</p>
+        </item>
+        <item>
+          <p>A következő három, az <gui>rw-</gui> a fájlt birtokló csoport összes tagjának jogosultságait adja meg.</p>
+        </item>
+        <item>
+          <p>Az utolsó három karakter, az <gui>r--</gui> a rendszer minden más felhasználójának jogosultságait adja meg.</p>
+        </item>
+      </list>
+      <p>Minden jogosultság a következő jelentéssel bír:</p>
+      <list>
+        <item>
+          <p><gui>r</gui>: olvasható, azaz a fájl vagy mappa megnyitható</p>
+        </item>
+        <item>
+          <p><gui>w</gui>: írható, azaz a változtatásokat elmentheti ide</p>
+        </item>
+        <item>
+          <p><gui>x</gui>: végrehajtható, azaz ha program vagy parancsfájl, akkor futtathatja, illetve elérheti az almappáit vagy fájljait, ha mappa.</p>
+        </item>
+        <item>
+          <p><gui>-</gui>: a jogosultság nincs beállítva</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title><gui>MIME-típus</gui></title>
+      <p>Az elem MIME-típusa.</p>
+    </item>
+    <item>
+      <title><gui>Hely</gui></title>
+      <p>A fájl helyének elérési útvonala.</p>
+    </item>
+    <item>
+      <title><gui>Módosítva – Idő</gui></title>
+      <p>A fájl utolsó módosításának dátumát és idejét adja meg.</p>
+    </item>
+    <item>
+      <title><gui>Elérés</gui></title>
+      <p>A fájl utolsó módosításának dátumát vagy idejét adja meg.</p>
+    </item>
+  </terms>
+
+</page>

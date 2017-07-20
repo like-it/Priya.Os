@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="pgp-sign" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision pkgversion="3.9" date="2013-08-29" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Jak podepsat klíč, kterému věříte.</desc>
+  </info>
+
+  <title>Podepsání klíče</title>
+
+  <p>Abyste projevili svoji důvěru a potvrdili pravost něčího klíče, můžete daný klíč podepsat. Klíč patřící něčí osobě můžete podepsat až po té, co porovnáte <link xref="pgp-userid">ID uživatele</link> u klíče s nějakým průkazným ověřením totožnosti dané osoby, jako je pas, řidičský průkaz apod. Když si tyto dvě identifikace odpovídají, říká to, že klíč je důvěryhodný.</p>
+
+  <steps>
+    <title>Když chcete podepsat klíč:</title>
+    <item>
+      <p>Naimportujte <link xref="pgp-retrieve-remote">vzdálený klíč</link> nebo <link xref="pgp-import">soubor s klíči</link> obsahující klíč, který chcete v aplikaci <app>Hesla a klíče</app> podepsat.</p>
+    </item>
+    <item>
+      <p>V seznamu <gui>Klíče GnuPG</gui> vyberte naimportovaný klíč.</p>
+    </item>
+    <item>
+      <p>Klikněte pravým tlačítkem a vyberte <guiseq><gui>Vlastnosti</gui> <gui>Důvěra</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Zmáčkněte tlačítko <gui style="button">Podepsat klíč</gui>.</p>
+    </item>
+    <item>
+      <p>V závislosti na tom, jak pečlivě jste klíč zkontrolovali, zvolte <gui style="radiobutton">Vůbec</gui>, <gui style="radiobutton">Zběžně</gui> nebo <gui style="radiobutton">Velmi pečlivě</gui>.</p>
+    </item>
+    <item>
+      <p>Zaškrtnutím příslušných políček se rozdhodněte, jestli chcete odvolat svůj podpis s dřívějším datem a jestli chcete, aby byl váš podpis veřejný.</p>
+    </item>
+    <item>
+      <p>V případě, že máte více než jeden klíč PGP, vyberte klíč, kterým chcete podepisovat, v seznamu vedle <gui>Autor podpisu</gui>.</p>
+    </item>
+    <item>
+      <p>Operaci dokončíte zmáčknutím tlačítka <gui style="button">Podepsat</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="info">
+    <title>Mohu podepsat své vlastní klíče?</title>
+    <p>Když <link xref="pgp-create">vytvoříte</link> nový <gui>klíč GnuPG</gui>, je automaticky podepsán vámi. Nově <link xref="subkeys-add">vytvořené</link> podklíče používající <gui>klíč GnuPG</gui> budou rovněž podepsány automaticky.</p>
+  </note>
+
+</page>

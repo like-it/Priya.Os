@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Projeto de documentação do GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Teste se seu disco rígido tem problemas para se assegurar que está saudável.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Verificando problemas no seu disco rígido</title>
+
+<section id="disk-status">
+ <title>Verificando o disco rígido</title>
+  <p>Discos rígidos têm embutida uma ferramenta de verificação de sua saúde chamada <app>SMART</app> (sigla em inglês para Tecnologia de Automonitoramento, Análise e Relato), que confere continuamente potenciais problemas no disco. SMART também lhe avisa se o disco está parar falhar, ajudando a evitar perda de dados importantes.</p>
+
+  <p>Embora SMART execute automaticamente, você também pode verificar a saúde do seu disco executando o aplicativo <app>Discos</app>:</p>
+
+<steps>
+ <title>Verificar a saúde do seu disco usando o aplicativo Discos</title>
+
+  <item>
+    <p>Abra <app>Discos</app> no panorama de <gui>Atividades</gui>.</p>
+  </item>
+  <item>
+    <p>Selecione o disco que queira verificar a partir da lista de dispositivos à esquerda. As informações e o estado do disco serão mostrados.</p>
+  </item>
+  <item>
+    <p>Clique ícone de menu e selecione <gui>Dados do SMART e testes…</gui>. A <gui>Avaliação geral</gui> deveria dizer "O disco está OK".</p>
+  </item>
+  <item>
+    <p>Veja mais informações sob <gui>Atributos SMART</gui> ou clique no botão <gui style="button">Iniciar auto-teste</gui> para executar um auto-teste.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>E se a unidade não estiver bem?</title>
+
+  <p>Mesmo que o <gui>Avaliação geral</gui> indique que o disco <em>não esteja</em> saudável, talvez não haja motivo para se alarmar. Entretanto, é melhor estar preparado com uma <link xref="backup-why">cópia de segurança</link> para evitar perda de dados.</p>
+
+  <p>Se o status diz "Pré-falha", o disco ainda está razoavelmente bem, mas foram detectados sinais de desgaste, o que significa que ele pode falhar em um futuro próximo. Se seu disco rígido (ou computador) tem uns poucos anos de idade, você provavelmente verá esta mensagem pelo menos algumas das verificações. Você deveria <link xref="backup-how">fazer cópia de segurança dos arquivos importantes regularmente</link> e verificar o estado do disco periodicamente para ver se ele piorou.</p>
+
+  <p>Se piorar, talvez você deva levar o computador/disco rígido a um profissional para mais diagnósticos ou reparos.</p>
+
+</section>
+
+</page>

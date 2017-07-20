@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="sr-Latn">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="files#faq"/>
+    <link type="seealso" xref="nautilus-file-properties-basic"/>
+
+    <desc>Odredite ko može da pregleda i uređuje vaše datoteke i fascikle.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tifani Antopoloski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Šon Mek Kens</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  <title>Podesite ovlašćenja nad datotekom</title>
+
+  <p>Možete da koristite ovlašćenja datoteke da odredite ko može da pregleda i uređuje datoteke koje vi posedujete. Da prikažete i podesite ovlašćenja nad datotekom, kliknite desnim tasterom miša i izaberite <gui>Osobine</gui>, zatim izaberite jezičak <gui>Ovlašćenja</gui>.</p>
+
+  <p>Pogledajte <link xref="#files"/> i <link xref="#folders"/> za pojedinosti o vrstama ovlašćenja koja možete da podesite.</p>
+
+  <section id="files">
+    <title>Datoteke</title>
+
+    <p>Možete da podesite ovlašćenja za vlasnika datoteke, vlasnika grupe, i za sve ostale korisnike na sistemu. Za vaše datoteke, vi ste vlasnik, i možete sami sebi da date ovlašćenje samo za čitanje ili za čitanje i upisivanje. Podesite datoteku na samo za čitanje ako ne želite slučajno da je izmenite.</p>
+
+    <p>Svaki korisnik na vašem računaru pripada grupi. Na kućnim računarima, uobičajeno je da svaki korisnik ima svoju sopstvenu grupu, a ovlašćenja grupe nisu često korišćena. U okruženjima udruženja, grupe su ponekad korišćene za odeljenja ili projekte. Kao što ima vlasnika, svaka datoteka pripada grupi. Možete da podesite grupu datoteke i da odredite ovlašćenja za sve korisnike u toj grupi. Možete jedino da podesite grupu datoteke na grupu kojoj vi pripadate.</p>
+
+    <p>Možete takođe da podesite ovlašćenja za korisnike pored vlasnika i za one u grupi datoteke.</p>
+
+    <p>Ako je datoteka program, kao skripta, morate da izaberete <gui>Dozvoli pokretanje datoteke kao programa</gui> da biste je pokrenuli. Čak i sa ovom opcijom izabranom, upravnik datoteka može još uvek da otvori datoteku u programu ili da vas pita šta da radi. Pogledajte <link xref="nautilus-behavior#executable"/> za više podataka.</p>
+  </section>
+
+  <section id="folders">
+    <title>Fascikle</title>
+    <p>Možete da podesite ovlašćenja nad fasciklama za vlasnika, grupu, i ostale korisnike. Pogledajte pojedinosti o ovlašćenjima datoteke za objašnjenje o vlasnicima, grupama, i ostalim korisnicima.</p>
+    <p>Ovlašćenja koja možete da podesite za fasciklu se razlikuju od onih koja možete da podesite za datoteku.</p>
+    <terms>
+      <item>
+        <title><gui itst:context="permission">Ništa</gui></title>
+        <p>Korisnik neće biti čak ni u mogućnosti da vidi koje se datoteke nalaze u fascikli.</p>
+      </item>
+      <item>
+        <title><gui>Samo prikaz datoteka</gui></title>
+        <p>Korisnik će biti u mogućnosti da vidi koje se datoteke nalaze u fascikli, ali neće biti u mogućnosti da otvori, napravi, ili da obriše datoteke.</p>
+      </item>
+      <item>
+        <title><gui>Pristup datotekama</gui></title>
+        <p>Korisnik će biti u mogućnosti da otvara datoteke u fascikli (pod uslovom da ima ovlašćenje da uradi ovo nad posebnom datotekom), ali neće biti u mogućnosti da pravi nove ili da briše postojeće datoteke.</p>
+      </item>
+      <item>
+        <title><gui>Stvaranje i brisanje datoteka</gui></title>
+        <p>Korisnik će imati puni pristup fascikli, uključujući otvaranje, stvaranje i brisanje datoteka.</p>
+      </item>
+    </terms>
+
+    <p>Možete takođe brzo da podesite ovlašćenja datoteke za sve datoteke u fascikli tako što ćete kliknuti na <gui>Izmeni ovlašćenja za sadržane datoteke</gui>. Koristite padajuće spiskove da podesite ovlašćenja za sadržane datoteke ili fascikle, i kliknite <gui>Izmeni</gui>. Ovlašćenja bivaju primenjena takođe na datoteke i fascikle u podfasciklama, do bilo koje dubine.</p>
+  </section>
+
+</page>

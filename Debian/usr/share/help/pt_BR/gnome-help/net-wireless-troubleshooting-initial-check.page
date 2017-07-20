@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-initial-check" xml:lang="pt-BR">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-hardware-info"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Contribuidores para o wiki de documentação do Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Projeto de documentação do GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Certifique-se de que as configurações simples de rede estão corretas e prepare para as próximas etapas de diagnóstico.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Solução de problemas de rede sem fio</title>
+  <subtitle>Realizando uma verificação inicial da conexão</subtitle>
+
+  <p>Nesta etapa você vai verificar algumas informações básicas sobre sua conexão de rede sem fim. É para se certificar de que seu problema de conectividade não é causado por uma questão relativamente simples, como uma conexão de rede sem fio estar desligada, ou para preparar para as próximas etapas de diagnóstico.</p>
+
+  <steps>
+    <item>
+      <p>Certifique-se de que seu notebook não está conectado a uma conexão <em>com fio</em>.</p>
+    </item>
+    <item>
+      <p>Se você tem um adaptador de rede sem fio externo (tal como um adaptador USB, ou uma placa PCMCIA que é inserido em seu notebook), certifique-se de que ele está inserido firmemente na slot adequado em seu computador.</p>
+    </item>
+    <item>
+      <p>Se sua placa de rede sem fio está <em>dentro</em> de seu computador, certifique-se de que o botão da rede sem fio está ligada (se houver). Notebooks geralmente possuem botões de rede sem fio, os quais você pode desativar pressionando uma combinação de teclas no teclado.</p>
+    </item>
+    <item>
+      <p>Clique na área de status do sistema na barra superior e selecione <gui>Wi-Fi</gui> e, então, selecione <gui>Configurações de Wi-Fi</gui>. Certifique-se de que <gui>Wi-Fi</gui> esteja em <gui>ON</gui>. Você também deveria se certificar de que o <link xref="net-wireless-airplane">Modo avião</link> <em>não</em> está ligado.</p>
+    </item>
+    <item>
+      <p>Abra o Terminal, digite <cmd>nmcli device</cmd> e pressione <key>Enter</key>.</p>
+      <p>Isso vai exibir informações sobre suas interfaces de rede e status de conexão. Procure na lista de informações e veja se há um item relacionado ao adaptador de rede sem fio. Se o estado estiver <code>conectado</code>, significa que o adaptador está funcionando e conectado a seu roteador de rede sem fio.</p>
+    </item>
+  </steps>
+
+  <p>Se você está conectado no seu roteador de rede sem fio, mas você ainda não consegue acessar a internet, seu roteador pode ser estar configurado corretamente, ou seu provedor de internet (ISP) pode estar tendo alguns problemas técnicos. Reveja os guias de configuração de seu roteador e ISP para se certificar de que as configurações estejam corretas, ou contate o suporte do seu ISP.</p>
+
+  <p>Se a informação de <cmd>nmcli device</cmd> não indica que você estava conectado à rede, clique em <gui>Próximo</gui> para continuar com os próximos passos do guia de diagnóstico.</p>
+
+</page>

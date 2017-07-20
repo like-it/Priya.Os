@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-mode" xml:lang="ru">
+
+  <info>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <link type="guide" xref="wacom"/>
+
+    <credit type="author copyright">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Переключение между режимом планшета и режимом мыши.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Настройка режима слежения для планшета Wacom</title>
+
+<p><gui>Режим слежения</gui> определяет, как курсор отображается на экране.</p>
+
+<steps>
+  <item>
+    <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+    start typing <gui>Wacom Tablet</gui>.</p>
+  </item>
+  <item>
+    <p>Нажмите <gui>Планшет Wacom</gui>, чтобы открыть этот раздел настроек.</p>
+    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
+    <note style="tip"><p>Если планшет не обнаружен, вы увидите сообщение <gui>Подключите или включите планшет Wacom</gui>. Нажмите <gui>Настройки Bluetooth</gui> чтобы подключить беспроводной планшет.</p></note>
+  </item>
+  <item><p>Рядом с полем <gui>Режим слежения</gui> выберите <gui>Планшет (абсолютный)</gui> или <gui>Сенсорная панель (относительный)</gui>.</p></item>
+</steps>
+
+<note style="info"><p>В <em>абсолютном</em> режиме каждая точка на планшете соответствует точке на экране. Например, левый верхний угол экрана всегда соответствует тому же углу планшета.</p>
+ <p>In <em>relative</em> mode, if you lift the pointer off the tablet and put it
+ down in a different position, the cursor on the screen doesn't move. This is
+    the way a mouse operates.</p>
+  </note>
+
+</page>

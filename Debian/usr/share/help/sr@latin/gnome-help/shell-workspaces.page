@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" version="1.0 if/1.0" id="shell-workspaces" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces" group="#first"/>
+
+    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10.3" date="2014-01-26" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Gnomov projekat dokumentacije</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Radni prostori predstavljaju način grupisanja prozora na radnoj površi.</desc>
+  </info>
+
+<title>Šta je to radni prostro, i kako će mi pomoći?</title>
+
+    <media type="image" src="figures/shell-workspaces.png" width="162" height="434" style="floatend floatright">
+        <p>Birač radnog prostora</p>
+    </media>
+
+  <p if:test="!platform:gnome-classic">Radni prostori se odnose na grupisanje prozora na vašoj radnoj površi. Možete da napravite više radnih prostora, koji će delovati kao virtuelne radne površi. Radni prostori su zamišljeni da smanje nered i da olakšaju kretanje po radnoj površi.</p>
+
+  <p if:test="platform:gnome-classic">Radni prostori se odnose na grupisanje prozora na vašoj radnoj površi. Možete da koristite više radnih prostora, koji će delovati kao virtuelne radne površi. Radni prostori su zamišljeni da smanje nered i da olakšaju kretanje po radnoj površi.</p>
+
+  <p>Radni prostori mogu biti korišćeni za organizovanje vašeg rada. Na primer, možete imati sve vaše prozore komunikacija, kao što je program e-pošte i ćaskanja, na jednom radnom prostoru, a ono na čemu trenutno radite na drugom. Vaš upravnik muzike može biti otvoren na trećem radnom prostoru.</p>
+
+<p>Korišćenje radnih prostora:</p>
+
+<list>
+  <item>
+    <p if:test="!platform:gnome-classic">U pregledu <gui xref="shell-introduction#activities">Aktivnosti</gui>, pomerite pokazivač miša na krajnju desnu stranu ekrana.</p>
+    <p if:test="platform:gnome-classic">Pritisnite taster <key xref="keyboard-key-super">Super</key> da otvorite pregled <gui>Aktivnosti</gui> i zatim pomerite pokazivač miša na krajnju desnu stranu ekrana.</p>
+  </item>
+  <item>
+    <p if:test="!platform:gnome-classic">Pojaviće se uspravni panel na kome će biti prikazani radni prostori u upotrebi, kao i jedan prazan radni prostor. To je birač radnih prostora.</p>
+    <p if:test="platform:gnome-classic">Pojaviće se uspravni panel na kome će biti prikazani dostupni radni prostori. To je birač radnih prostora.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>Da dodate radni prostor, prevucite i otpustite prozor iz jednog postojećeg radnog prostora u prazan radni prostor u biraču radnih prostora. Ovaj radni prostor će sada sadržati prozor koji ste u njega otpustili, a novi prazan radni prostor će se pojaviti ispod njega.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>Da uklonite radni prostor, jednostavno zatvorite sve njegove prozore ili ih premestite na druge radne prostore.</p>
+  </item>
+</list>
+
+<p if:test="!platform:gnome-classic">Najmanje jedan radni prostor uvek mora da postoji.</p>
+
+</page>

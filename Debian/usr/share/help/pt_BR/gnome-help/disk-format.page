@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Projeto de documentação do GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Remova todos os arquivos e pastas de um disco rígido externo ou um pendrive USB formatando-o.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Limpando tudo de uma unidade removível</title>
+
+  <p>Se você tem uma unidade removível, como um pendrive USB ou um disco rígido externo, você às vezes quer remover completamente todos os seus arquivos e pastas. É possível fazer isso <em>formatando</em> a unidade: excluir todos os arquivos da unidade e deixá-la vazia.</p>
+
+<steps>
+  <title>Formatar um disco removível</title>
+  <item>
+    <p>Abra <app>Discos</app> no panorama de <gui>Atividades</gui>.</p>
+  </item>
+  <item>
+    <p>Selecione a unidade que deseja esvaziar na lista de dispositivos de armazenamento à esquerda.</p>
+
+    <note style="warning">
+      <p>Certifique-se de que você selecionou a unidade correta! Se escolher a errada, todos os arquivos de outra unidade serão excluídos!</p>
+    </note>
+  </item>
+  <item>
+    <p>Na barra de ferramentes sob a seção <gui>Volumes</gui>, clique no ícone de menu. Então, clique em <gui>Formatar…</gui>.</p>
+  </item>
+  <item>
+    <p>Na janela que aparecer, escolha um <gui>Tipo</gui> de sistema de arquivos para a unidade.</p>
+   <p>Se você usa a unidade em computadores Windows ou Mac OS além dos computadores Linux, escolha <gui>FAT</gui>. Se você a usa apenas no Windows, <gui>NTFS</gui> talvez seja uma melhor opção. Uma breve descrição do <gui>tipo de sistema de arquivos</gui> será apresentado como um rótulo.</p>
+  </item>
+  <item>
+    <p>Forneça à unidade um nome e clique <gui>Formatar…</gui> para continuar e mostrar uma janela de confirmação. Verifique os detalhes cuidadosamente e clique em <gui>Formatar</gui> para limpar o disco.</p>
+  </item>
+  <item>
+    <p>Uma vez que a formatação tenha acabado, clique no ícone de ejetar para remover a unidade com segurança. Ela deveria estar em branco agora e pronta para ser usada novamente.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Formatar uma unidade não exclui com segurança seus arquivos</title>
+  <p>Formatar uma unidade não é uma maneira completamente segura de limpar todos os seus dados. Uma unidade formata aparentará não ter arquivos nela, mas é possível que um programa especial para recuperação possa recuperar os arquivos. Se você precisa excluir com segurança os arquivos, você precisará usar um utilitário de linha de comando, como o <app>shred</app>.</p>
+</note>
+
+</page>

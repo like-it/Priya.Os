@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="task" id="app-fonts" xml:lang="ru">
+
+  <info>
+    <revision version="0.1" date="2013-02-22" status="candidate"/>
+    <link type="guide" xref="index#appearance"/>
+    <link type="guide" xref="profile"/>
+
+    <credit type="author copyright">
+      <name>С. Синдху (Sindhu S)</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Использовать системный шрифт или выбрать другой шрифт для терминала.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Сергей В. Миронов</mal:name>
+      <mal:email>sergo@bk.ru</mal:email>
+      <mal:years>2007.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Изменение шрифта и стиля</title>
+
+  <p>Если вы много работаете с текстовым выводом <app>Терминала</app>, то вам может понадобиться изменить шрифт по умолчанию на другой. Существуют следующие возможности:</p>
+
+  <section id="system-font">
+  <title>Системный моноширинный шрифт</title>
+
+  <p>Чтобы использовать системный шрифт по умолчанию:</p>
+
+  <steps>
+    <item>
+      <p>Выберите <guiseq><gui style="menu">Правка</gui> <gui style="menuitem"> Параметры профиля</gui> <gui style="tab">Общие</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Выберите <gui style="checkbox">Использовать системный моноширинный шрифт</gui>.</p>
+    </item>
+  </steps>
+
+  </section>
+
+  <section id="custom-font">
+  <title>Выбор другого шрифта</title>
+
+  <p>Чтобы выбрать другой шрифт и его размер:</p>
+
+  <steps>
+    <item>
+      <p>Выберите <guiseq><gui style="menu">Правка</gui> <gui style="menuitem">Параметры профиля</gui> <gui style="tab">Общие</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Убедитесь что пункт <gui>Использовать системный моноширинный шрифт</gui> не отмечен.</p>
+    </item>
+    <item>
+      <p>Нажмите на кнопку рядом с пунктом <gui>Шрифт</gui>.</p>
+    </item>
+    <item>
+      <p>Введите название нужного шрифта в строку поиска или просмотрите список шрифтов.</p>
+    </item>
+    <item>
+      <p>Передвигайте бегунок, расположенный под списком шрифтов, чтобы установить размер шрифта. Также можно ввести размер шрифта в поле рядом с бегунком или же нажать на <gui style="button">+</gui> или <gui style="button">-</gui> чтобы соответственно увеличить или уменьшить размер шрифта.</p>
+    </item>
+    <item>
+      <p>Для применения изменений нажмите <gui style="button">Выбрать</gui>. Чтобы сбросить изменения и вернуться в предыдущее диалоговое окно, нажмите <gui style="button">Отменить</gui>.</p>
+    </item>
+  </steps>
+
+  </section>
+
+  <section id="bold-fonts">
+  <title>Полужирный текст</title>
+
+  <p><app>Терминал</app> позволяет командному интерпретатору обрабатывать текст приглашения командной строки, названия каталогов или заголовков страниц так, чтобы они показывались полужирным шрифтом.</p>
+
+  <steps>
+    <item>
+      <p>Выберите <guiseq><gui style="menu">Правка</gui> <gui style="menuitem">Параметры профиля</gui> <gui style="tab">Общие</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Выберите <gui style="checkbox">Разрешать полужирный текст</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="important">
+    <p><gui style="checkbox">Разрешать полужирный текст</gui> — это особенность командного интерпретатора. Если вы используете командный интерпретатор, отличный от Bash, то его поведение может не совпадать с описанным.</p>
+  </note>
+
+  </section>
+
+</page>

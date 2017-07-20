@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Si la configuración de red no se le asigna automáticamente, deberá introducirla manualmente.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Establecer la configuración de la red manualmente</title>
+
+  <p>Si la red no asigna automáticamente la configuración de red a su equipo, puede que la tenga que introducir manualmente. Se asume que ya conoce la configuración correcta que debe de usar. Si no, puede que tenga que pedirla a su administrador de red o mirar la configuración de su enrutador o switch.</p>
+
+  <steps>
+    <title>ParaeEstablecer la configuración de la red manualmente:</title>
+    <item>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Red</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse en <gui>Red</gui> para abrir el panel.</p>
+    </item>
+    <item>
+      <p>En el panel de la izquierda, seleccione la conexión de red que quiere configurar manualmente. Si se conecta a la red por cable, pulse en <gui>Cableada</gui>, y luego pulse el botón <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">configuración</span></media> en la esquina inferior derecha del panel. Para una conexión <gui>Inalámbrica</gui>, el botón de <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">configuración</span></media> se situará junto a la red activa.</p>
+      <p>Asegúrese de que su tarjeta inalámbrica está encendida o que el cable de red está conectado.</p>
+    </item>
+    <item>
+      <p>Pulse en <gui>IPv4</gui> y cambie las <gui>Direcciones</gui> a <gui>Manual</gui>.</p>
+    </item>
+    <item>
+      <p>Escriba la <gui>Dirección</gui> y la <gui>Puerta de enlace</gui>, así como la <gui>Máscara de red</gui> apropiada.</p>
+      <p>Estas tres direcciones deben ser <em>direcciones IP</em>; esto es, deben ser cuatro números separados por puntos (ej. 123.45.6.78).</p>
+    </item>
+    <item>
+      <p>En la sección <gui>DNS</gui> cambie <gui>Automático</gui> a <gui>Apagado</gui>. Introduzca la dirección IP de los servidores DNS que quiere usar. Introduzca direcciones de servidores DNS adicionales usando el botón <key>+</key>.</p>
+    </item>
+    <item>
+      <p>En la sección <gui>Rutas</gui>, cambie la opción la opción <gui>Automático</gui> a <gui>Apagado</gui> . Introduzca la <gui>Dirección</gui>, la <gui>Máscara de red</gui>, la <gui>Puerta de enlace</gui> y la <gui>Métrica</gui> para la ruta que quiera usar. Puede añadir más rutas usando el botón <key>+</key>.</p>
+    </item>
+    <item>
+      <p>Pulse <gui>Aplicar</gui>. Si no está conectado a la red,pulse en el área de estado del sistema en la barra superior y conéctese. Compruebe los ajustes de red intentando ver por ejemplo un sitio web o examinando los archivos compartidos en la red.</p>
+    </item>
+  </steps>
+
+</page>

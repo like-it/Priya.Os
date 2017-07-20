@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="guide" id="exchange-connectors-overview" xml:lang="hu">
+
+  <info>
+    <desc>Mely további csomagokat kell telepíteni az Exchange kiszolgálókhoz csatlakozáshoz?</desc>
+
+    <link type="guide" xref="exchange-placeholder"/>
+
+    <revision pkgversion="3.7.5" version="0.7" date="2013-01-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Megfelelő csatlakozó kiválasztása</title>
+
+<p>Azon Microsoft Exchange kiszolgáló verziójától függően, amelyhez csatlakozni szeretne, telepítenie kell az adott funkcionalitást biztosító csomagot.</p>
+
+<p>Microsoft Exchange 2007 és 2010 és újabb esetén az <sys>evolution-ews</sys> csomag használata javasolt.</p>
+<if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+  <if:when test="action:install">
+    <note style="info package">
+      <p><link action="install:evolution-ews" href="https://wiki.gnome.org/Apps/Evolution#Get_the_Source_Code" style="button">Az evolution-ews telepítése</link></p>
+    </note>
+  </if:when>
+</if:choose>
+
+
+<p>A Microsoft Exchange régebbi verziói esetén, vagy ha az <sys>evolution-ews</sys> nem működik jól, próbálja ki az <sys>evolution-mapi</sys> csomagot. Ez a Microsoft Messaging API-t használja, mint a Microsoft Outlook. Azonban az <sys>evolution-mapi</sys> az <sys>OpenChange</sys> és a <sys>Samba 4</sys> telepítését igényli, és nem olyan jó a teljesítménye, mint az <sys>evolution-ews</sys>-é.</p>
+
+<if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+  <if:when test="action:install">
+    <note style="info package">
+      <p><link action="install:evolution-mapi" href="https://wiki.gnome.org/Apps/Evolution#Get_the_Source_Code" style="button">Az evolution-mapi telepítése</link></p>
+    </note>
+  </if:when>
+</if:choose>
+
+<note style="tip"><p>Ha nem tudja, hogy melyik Microsoft Exchange verziót válassza, akkor a rendszergazdától kaphat további információkat.</p></note>
+
+<!-- TODO:POST-3-4: <mbarnes> actually, a table in the docs would make it crystal clear  (Exchange version x Evolution backend); <seanius> also, a feature matrix of what works in the particular releases might be helpful, though maybe hard to visualize in a compact manner
+-->
+
+</page>

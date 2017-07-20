@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="problem-permissions" xml:lang="hu">
+  <info>
+    <link type="guide" xref="index#problems"/>
+    <revision pkgversion="3.12" date="2014-01-25" status="review"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Könyvtár vizsgálatakor a következő hibaüzenetet látom: <gui>Egy mappa, vagy néhány almappájának vizsgálata nem sikerült.</gui></desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Attila Hammer</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Hiba a vizsgálatkor</title>
+
+  <p>Egy mappa vagy távoli hely vizsgálatakor előfordulhat, hogy a következő hibaüzenetet látja a <app>Lemezhasználat-elemző</app> ablak tetején: <gui>Egy mappa, vagy néhány almappájának vizsgálata nem sikerült.</gui> Ez a hibaüzenet általában azért jelenik meg, mert a célrendszeren néhány fájl eléréséhez nem rendelkezik a szükséges jogosultságokkal. Azok a fájlok, melyekhez nem fér hozzá, nem lesznek beleszámolva a lemezhasználatot megjelenítő <link xref="pref-view-chart">diagramba</link>, így a megjelenített eredmény téves lehet.</p>
+
+  <p>Az, hogy nem minden fájlhoz és könyvtárhoz van hozzáférési jogosultsága a biztonság szempontjából egy bevett gyakorlat, így ezzel a hibaüzenettel kapcsolatban nem tud mit tenni.</p>
+
+  <note style="info"><p>A <app>Lemezhasználat-elemző</app> a <cmd>du</cmd> parancsot használja a lemezhasználat részletes meghatározásához, ezért a fájlokra olvasási, a könyvtárakra végrehajtási jogosultsággal kell rendelkeznie.</p>
+
+  <p>Ezzel szemben a főablakban a <cmd>df</cmd> parancs által megjelenített fájlrendszer-kihasználtsági érték a fájlrendszertől függ, nem a fájlok jogosultsági szintjétől.</p></note>
+</page>

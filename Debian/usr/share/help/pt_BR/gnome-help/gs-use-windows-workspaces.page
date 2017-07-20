@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-use-windows-workspaces" xml:lang="pt-BR">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Usando janelas e espaços de trabalho</title>
+    <link type="seealso" xref="shell-windows-switching"/>
+    <title role="seealso" type="link">Um tutorial sobre o uso de janelas e espaços de trabalho</title>
+    <link type="next" xref="gs-use-system-search"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Felipe Braga</mal:name>
+      <mal:email>fbobraga@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2013, 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Usando janelas e espaços de trabalho</title>
+
+  <ui:overlay width="812" height="452">
+  <media type="video" its:translate="no" src="figures/gnome-windows-and-workspaces.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-windows-and-workspaces.svg"/>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>Janelas e espaços de trabalho</tt:p>
+         </tt:div>
+         <tt:div begin="6s" end="10s">
+           <tt:p>Para maximizar uma janela, arraste a barra de títulos da janela e solte-a ao topo da tela.</tt:p>
+           </tt:div>
+         <tt:div begin="10s" end="13s">
+           <tt:p>Quando a tela for destacada, solte a janela.</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="20s">
+           <tt:p>Para desmaximizar uma janela, arraste a barra de título da janela e solte-a para longe das bordas da tela.</tt:p>
+         </tt:div>
+         <tt:div begin="25s" end="29s">
+           <tt:p>Você também pode clicar na barra superior para arrastar a janela para fora e desmaximizá-la.</tt:p>
+         </tt:div>
+         <tt:div begin="34s" end="38s">
+           <tt:p>Para maximizar uma janela ao lado esquerdo da tela, arraste a barra de título da janela e solte-a à esquerda.</tt:p>
+         </tt:div>
+         <tt:div begin="38s" end="40s">
+           <tt:p>Quando metade da tela for destacada, solte a janela.</tt:p>
+         </tt:div>
+         <tt:div begin="41s" end="44s">
+           <tt:p>Para maximizar uma janela no lado direito da tela, arraste a barra de título da janela e solte-a à direita.</tt:p>
+         </tt:div>
+         <tt:div begin="44s" end="48s">
+           <tt:p>Quando metade da tela for destacada, solte a janela.</tt:p>
+         </tt:div>
+         <tt:div begin="54s" end="60s">
+           <tt:p>Para maximizar uma janela usando o teclado, mantenha pressionada a tecla <key href="help:gnome-help/keyboard-key-super">Super</key> e pressione <key>↑</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="61s" end="66s">
+           <tt:p>Para restaurar a janela ao seu tamanho desmaximizado, mantenha pressionada a tecla <key href="help:gnome-help/keyboard-key-super">Super</key> e pressione <key>↓</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="66s" end="73s">
+           <tt:p>Para maximizar uma janela ao longo do lado direito da tela, mantenha pressionada a tecla <key href="help:gnome-help/keyboard-key-super">Super</key> e pressione <key>→</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="76s" end="82s">
+           <tt:p>Para maximizar uma janela ao longo do lado esquerdo da tela, mantenha pressionada a tecla <key href="help:gnome-help/keyboard-key-super">Super</key> e pressione <key>←</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="83s" end="89s">
+           <tt:p>Para mover para um espaço de trabalho que está abaixo do espaço de trabalho atual, pressione <keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>Page Down</key></keyseq>.</tt:p>
+         </tt:div>
+         <tt:div begin="90s" end="97s">
+           <tt:p>Para mover para um espaço de trabalho que está acima do espaço de trabalho atual, pressione <keyseq><key href="help:gnome-help/keyboard-key-super">Super</key> <key>Page Up</key></keyseq>.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+  
+  <section id="use-workspaces-and-windows-maximize">
+    <title>Maximizando e desmaximizando janelas</title>
+    <p/>
+    
+    <steps>
+      <item><p>Para maximizar uma janela de forma que ela tome todo o espaço da tela do seu ambiente, pegue a barra de título da janela e arraste-a para o topo.</p></item>
+      <item><p>Quando a tela for destacada, solte a janela para maximizá-la.</p></item>
+      <item><p>Para restaurar uma janela para seu tamanho não maximizado, segure a barra de título da janela e arraste-a para longe das bordas da tela.</p></item>
+    </steps>
+    
+  </section>
+
+  <section id="use-workspaces-and-windows-tile">
+    <title>Janelas lado a lado</title>
+    <p/>
+    
+    <steps>
+      <item><p>Para maximizar uma janela junto a um lado da tela, segure a barra de título de janela e arraste-a para o lado esquerdo ou direito da tela.</p></item>
+      <item><p>Quando metade da tela estiver destacada, solte a janela para maximizá-la ao longo do lado selecionado da tela.</p></item>
+      <item><p>Para maximizar duas janelas lado a lado, agarre a barra de título da segunda janela e arraste-a para o lado oposto da tela.</p></item>
+       <item><p>Quando metade da tela estiver destacada, solte a janela para maximizá-la ao longo do lado oposto da tela.</p></item>
+    </steps>
+    
+  </section>
+  
+  <section id="use-workspaces-and-windows-maximize-keyboard">
+    <title>Maximizando e desmaximizando janelas usando o teclado</title>
+    
+    <steps>
+      <item><p>Para maximizar uma janela usando o teclado, mantenha pressionada a tecla <key href="help:gnome-help/keyboard-key-super">Super</key> e pressione <key>↑</key>.</p></item>
+      <item><p>Para desmaximizar uma janela usando o teclado, mantenha pressionada a tecla <key href="help:gnome-help/keyboard-key-super">Super</key> e pressione a tecla <key>↓</key>.</p></item>
+    </steps>
+    
+  </section>
+  
+  <section id="use-workspaces-and-windows-tile-keyboard">
+    <title>Tornando janelas lado a lado usando o teclado</title>
+    
+    <steps>
+      <item><p>Para maximizar uma janela ao longo do lado direito da tela, mantenha pressionada a tecla <key href="help:gnome-help/keyboard-key-super">Super</key> e pressione <key>→</key>.</p></item>
+      <item><p>Para maximizar uma janela ao longo do lado esquerdo da tela, mantenha pressionada a tecla <key href="help:gnome-help/keyboard-key-super">Super</key> e pressione <key>←</key>.</p></item>
+    </steps>
+    
+  </section>
+  
+  <section id="use-workspaces-and-windows-workspaces-keyboard">
+    <title>Alternando entre espaços de trabalho usando o teclado</title>
+    
+    <steps>
+    
+    <item><p>Para mover para um espaço de trabalho que está abaixo do espaço de trabalho atual, pressione <keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>Page Down</key></keyseq>.</p></item>
+    <item><p>Para mover para um espaço de trabalho que está acima do espaço de trabalho atual, pressione <keyseq><key href="help:gnome-help/keyboard-key-super">Super</key> <key>Page Up</key></keyseq>.</p></item>
+
+    </steps>
+    
+  </section>
+
+</page>

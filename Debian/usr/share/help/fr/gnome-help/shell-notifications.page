@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-notifications" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="shell-overview#desktop"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
+
+    <credit type="author">
+      <name>Marina Zhurakhinskaya</name>
+      <email>marinaz@redhat.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013, 2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Les messages apparaissent dans un menu déroulant en haut de l'écran, pour avertir d'un événement.</desc> 
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Notifications et tiroir de messagerie</title>
+
+<section id="what">
+  <title>Qu'est-ce qu'une notification ?</title>
+
+  <p>Si une application ou un composant du système veut attirer votre attention, une notification s'affiche en haut de l'écran.</p>
+
+  <p>For example, if you get a new chat message or a new email, you will get a
+  notification informing you.</p>
+
+<!--  <p>To minimize distraction, some notifications first appear as a single line.
+  You can move your mouse over them to see their full content.</p>-->
+
+  <p>Les autres notifications ont des boutons d'options sélectionnables. Pour fermer l'une de ces notifications sans sélectionner une de ses options, cliquez sur le bouton fermer.</p>
+
+<!--  <media type="image" width="500" src="figures/notification-buttons.png"/>-->
+
+  <p>En cliquant sur fermer, certaines notifications disparaissent, tandis que d'autres (comme celles de Rythmbox ou d'applications de discussion) restent masquées dans le tiroir de messagerie.</p>
+
+</section>
+
+<section id="messagetray">
+
+  <title>Le tiroir de messagerie</title>
+
+  <p if:test="!platform:gnome-classic">Le tiroir de messagerie vous permet de récupérer vos notifications quand bon vous semble. Il apparaît lorsque vous cliquez sur l'horloge, ou lorsque vous appuyez sur <keyseq><key xref="keyboard-key-super">Logo</key><key>M</key></keyseq>. Il contient toutes les notifications sur lesquelles vous n'avez pas encore agi ou qui y résident en permanence.</p>
+
+  <p if:test="platform:gnome-classic">Le tiroir de messagerie vous permet de récupérer vos notifications quand bon vous semble. Il apparaît lorsque vous déplacez votre souris dans le coin inférieur droit de l'écran, lorsque vous appuyez sur <keyseq><key xref="keyboard-key-super">Logo</key><key>M</key></keyseq>, ou encore en cliquant sur l'icône bleue qui apparaît à droite de la liste des fenêtres. Il contient toutes les notifications sur lesquelles vous n'avez pas encore agi ou qui y résident en permanence.</p>
+
+  <p>Vous pouvez afficher les notifications en cliquant sur les éléments du tiroir de messagerie. Ce sont en général des messages envoyés par des applications. Néanmoins, les notifications de discussion reçoivent un traitement spécial et sont représentées par les contacts individuels qui vous ont envoyé les messages.</p>
+
+  <p>Pour fermer le tiroir de messagerie, appuyez de nouveau sur <keyseq><key>Logo</key><key>M</key></keyseq> ou sur <key>Échap</key>.</p>
+
+</section>
+
+<section id="hidenotifications">
+
+  <title>Masquage des notifications</title>
+
+  <p>Si vous travaillez sur quelque chose et ne voulez pas être dérangé, vous pouvez désactiver les notifications.</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Notifications</gui>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Notifications</gui> pour ouvrir le panneau.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Notification Banners</gui> to <gui>OFF</gui>.</p>
+    </item>
+  </steps>
+
+  <p if:test="!platform:gnome-classic">When switched off, most notifications
+  will not pop up at the top of the screen. <!--Very important notifications, such
+  as when your battery is critically low, will still pop up.--> Notifications will
+  still be available in the message tray when you display it (by clicking on
+  the clock, or by pressing <keyseq><key>Super</key><key>M</key></keyseq>), and
+  they will start popping up again when you switch the toggle to <gui>ON</gui>
+  again.</p>
+
+  <p>You can also disable or re-enable notifications for individual
+  applications from the <gui>Notifications</gui> panel.</p>
+
+  <p if:test="platform:gnome-classic">When switched off, most notifications will
+  not pop up at the bottom of the screen. Very important notifications, such as
+  when your battery is critically low, will still pop up. Notifications will
+  still be available in the message tray when you display it (by moving your mouse
+  to the bottom-right corner of the screen, or by pressing <keyseq><key>Super</key>
+  <key>M</key></keyseq>), and they will start popping up again when you switch the
+  toggle to <gui>ON</gui> again.</p>
+
+</section>
+
+</page>

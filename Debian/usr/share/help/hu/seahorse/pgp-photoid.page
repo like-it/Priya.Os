@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-photoid" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-24" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Meglévő kulcsai beazonosítását megkönnyítheti mások számára egy azonosító fénykép hozzáadásával.</desc>
+  </info>
+
+  <title>Fénykép csatolása a kulcsához</title>
+
+  <p>PGP-kulcsaihoz azonosító fényképeket is hozzáadhat, így bárki egyszerűen ellenőrizheti a kulcs tulajdonosát. Bár egy fényképpel ellátott kulcs valamelyest növeli a biztonságot a fénykép nélküli kulcsokhoz viszonyítva, a fénykép ellenőrzése nem egyenértékű a <link xref="misc-key-fingerprint">kulcs ujjlenyomatának</link> ellenőrzésével, hiszen mindenki, akinek van Önről egy fényképe, könnyedén beillesztheti ezt egy kulcsba, míg egy kulcs ujjlenyomatát nem lehet utánozni.</p>
+
+  <note style="info">
+    <p>A <app>GPG</app> korlátozásaitól eltérően a feltöltendő fotónak nem kell <file>JPEG</file> formátumúnak lennie. A <app>Jelszavak és kulcsok</app> alkalmazás lehetővé teszi a <file>png</file>, <file>jpg</file> és számos más formátumú kép használatát.</p>
+  </note>
+
+  <steps>
+    <title>Azonosító fénykép PGP-kulcshoz csatolásához:</title>
+    <item>
+      <p>Válassza ki a <gui>GnuPG kulcsok</gui> bejegyzést a bal oldali sávból.</p>
+    </item>
+    <item>
+      <p>Válassza ki a PGP-kulcsot.</p>
+    </item>
+    <item>
+      <p>Kattintson a jobb egérgombbal a kulcsra, majd válassza a <guiseq><gui style="menuitem">Tulajdonságok</gui> <gui>Tulajdonos</gui></guiseq> lapot.</p>
+    </item>
+    <item>
+      <p>A fénykép hozzáadásához kattintson a bal oldali <gui style="button">+</gui> gombra.</p>
+    </item>
+    <item>
+      <p>Válasszon ki egy fényképet a számítógépről.</p>
+    </item>
+    <item>
+      <p>A befejezéshez kattintson a <gui style="button">Bezárás</gui> gombra.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Ajánlatos a kis méretű fényképek választása, például 120x150 képpont méretűeké. Mivel az azonosító fénykép a kulcs része, egy nagy méretű fénykép növeli a kulcs méretét és minden, a kulcsot használó folyamatot lelassít. Jóváhagyás kérése után a <app>Jelszavak és kulcsok</app> alkalmazás megfelelően átméretezi a nagy méretű fényképeket.</p>
+  </note>
+
+</page>

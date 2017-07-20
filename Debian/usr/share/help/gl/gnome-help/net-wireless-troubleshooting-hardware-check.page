@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="gl">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Contribuíntes da wiki de documentación de Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Proxecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Aínda que o seu adaptador de rede sen fíos estea conectado, podería non recoñecerse correctamente polo seu computador.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Resolución de erros das conexións sen fíos</title>
+  <subtitle>Comprobe que a súa tarxeta sen fíos foi recoñecida</subtitle>
+
+  <p>Aínda que o seu adaptador de rede sen fíos estea conectado ao seu computador podería non recoñecerse como un dispositivo de rede polo seu computador. Neste paso, comprobará se o dispositivo foi recoñecido correctamente.</p>
+
+  <steps>
+    <item>
+      <p>Abra unha xanela de Terminal, escriba <cmd>lshw -C network</cmd> e prema <key>Intro</key>. Se isto lle mostra unha mensaxe de erro, debe instalar o programa <app>lshw</app> no seu computador.</p>
+    </item>
+    <item>
+      <p>Busque na información que aparece para atopar a sección <em>Wireless interface</em>. Se o seu adaptador sen fíos foi detectado correctamente, debería ver algo similar (máis non idéntico) a isto.</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>Se se mostra un dispositivo sen fíos, continúe á páxina de Controladores de dispositivos</p>
+      <p>Se un dispositivo de rede se fíos <em>non</em> está na lista, os seguintes pasos que tome dependerán do tipo de dispositivo que use. Vaia á sección de embaixo que é relevanto ao tipo de adaptador de rede se fíos que o seu computador ten (<link xref="#pci">internal PCI</link>, <link xref="#usb">USB</link>, ou <link xref="#pcmcia">PCMCIA</link>).</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>Adaptador sen fíos PCI (interno)</title>
+
+  <p>Os adaptadores PCI internos son os máis comúns, e atópanse en portátiles fabricados desde fai algúns anos. Os adaptadores PCI son adaptadores externos de tipo tarxeta e máis comúns en portatis antigos.</p>
+
+  <steps>
+    <item>
+      <p>Abra o terminal, escriba <cmd>lspci</cmd> e prema <key>Intro</key>.</p>
+    </item>
+    <item>
+      <p>Olle a lista de dispositivos que se mostra e busque calquera que este marcado como <code>Network controller</code> ou <code>Ethernet controller</code>. Algúns dispositivos poderían estar marcados deste xeito. O que corresponda co seu adaptador sen fíos podería incluír as palabras como <code>sen fíos</code>, <code>WLAN</code>, <code>wifi</code> ou <code>802.11</code>. A continuación móstrase un exemplo de entrada á que se podería parecer:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Se atopou o seu dispositivo na lista, proceda co <link xref="net-wireless-troubleshooting-device-drivers">paso de controladores de dispositivos</link>. Se non atopou nada relativo aso seu adaptador sen fíos, consulte <link xref="#not-recognized">as instrucións de máis embaixo</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>Adaptador sen fíos USB</title>
+
+  <p>Os adaptadoes sen fíos que se conectan a un porto USB no seu equipo son menos comúns. Pódense conectar directamente a un porto USB, ou pódense conectar mediante un cable USB. Os adaptadores de banda larga móbil 3G son moi similares aos adaptadores sen fíos (wifi), así que se pensa que ten un adaptador sen fíos USB, comprobe que non é unha ralidade un adaptador 3G. Para comprobar se o seu adaptador sen fíos USB se recoñeceu:</p>
+
+  <steps>
+    <item>
+      <p>Abra o terminal, escriba <cmd>aplay -l</cmd> e prema <key>Intro</key>.</p>
+    </item>
+    <item>
+      <p>Observe a lista de dispositivos que se mostran e busque calquera que se refira a unha rede sen fíos. O correspondente ao seu adaptador sen fíos debe incluír palabras tales como <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> ou <code>802.11</code>. Aquí ten un exemplo de como pode ser a entrada:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>Se atopou o seu dispositivo na lista, proceda co <link xref="net-wireless-troubleshooting-device-drivers">paso de controladores de dispositivos</link>. Se non atopou nada relativo aso seu adaptador sen fíos, consulte <link xref="#not-recognized">as instrucións de máis embaixo</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Comprobar un dispositivo PCMCIA</title>
+
+  <p>Os adaptadores PCMCIA sen fíos soen ser tarxetas rectangulares que se encaixan nunha ranura lateral do seu equipo portátil. Son máis comúns en equipos antigos. Para comprobar se o seu adaptador PCMCIA recoñeceuse:</p>
+
+  <steps>
+    <item>
+      <p>Arrinque o seu computador <em>sen</em> conectar o adaptador sen fíos.</p>
+    </item>
+    <item>
+      <p>Abra o terminal e escriba o seguinte, logo prema <key>Intro</key>.</p>
+      <code>tail -f /var/log/messages</code>
+      <p>Isto mostrará unha lista de mensaxes relacionados co hardware do seu computador, e actualizarase automaticamente se algo relacionado co seu hardware cambia.</p>
+    </item>
+    <item>
+      <p>Introduza o seu adaptador sen fíos n aranura PCMCIA e comprobe que cambia na xanela do terminal. Os cambios deerían incluir algunha información sobre o seu adaptador sen fíos. Míreos e vexa se pode identificalos.</p>
+    </item>
+    <item>
+      <p>Para deter a orde que se está executando na terminal, prema <keyseq><key>Ctrl</key><key>C</key></keyseq>. Feito isto, pode pechar a terminal se quere.</p>
+    </item>
+    <item>
+      <p>Se atopou algunha información sobre o seu adaptador de rede sen fíos, proceda ao <link xref="net-wireless-troubleshooting-device-drivers">paso Controladores de dispositivo</link>. Se non atopou ningunha información relacionada ao seu adaptador de rede sen fíos, vexa <link xref="#not-recognized">as instrucións de embaixo</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>O adaptador sen fíos non se recoñeceu</title>
+
+  <p>If your wireless adapter was not recognized, it might not be working
+  properly or the correct drivers may not be installed for it. How you check to
+  see if there are any drivers you can install will depend on which Linux
+  distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
+
+  <p>Para obter axuda específica vexa as opcións de asistencia no sitio web da súa distribución. Hai distintas opcións que podería incluír desde roldas de correo electrónico até chats en liña onde poida preguntar sobre o seu adaptador de rede, por exemplo.</p>
+
+</section>
+
+</page>

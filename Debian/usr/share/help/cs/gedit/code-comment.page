@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-code-comment" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>  
+    <revision version="3.4" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Zkomentovat nebo odkomentovat blok kódu.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Komentování kódu</title>
+
+  <p>Komentář kódu je část textu, která lidem usnadní pochopit daný programový kód, ale nemá vliv na fungování programu. Komentáře jsou od ostatních částí programu odděleny speciálními znaky.</p>
+  
+  <p>Zásuvný modul <app>Komentování kódu</app> dělá vytváření komentářů a jejich rušení snadnou a rychlou činností. Pokud chcete zásuvný modul povolit, vyberte <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Předvolby</gui><gui>Zásuvné moduly</gui><gui>Komentování kódu</gui></guiseq>.</p>
+  
+  <steps>
+    <title>Když chcete vytvořit nebo zrušit komentář:</title>
+    <item>
+      <p>Označte část textu, kde chcete přidat nebo zrušit komentář.</p>
+    </item>
+    <item>
+      <p>Pro přidání komentáře klikněte na <guiseq><gui style="menu">Upravit</gui><gui>Zakomentovat kód</gui></guiseq> nebo zmáčkněte <keyseq><key>Ctrl</key><key>M</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Pro zrušení komentáře klikněte na <guiseq><gui style="menu">Upravit</gui><gui>Odkomentovat kód</gui></guiseq> nebo zmáčkněte <keyseq><key>Shift</key> <key>Ctrl</key><key>M</key></keyseq>.</p>
+    </item>
+  </steps>
+  
+  <note style="tip">
+    <p><app>gedit</app> bude automaticky používat správný styl komentářů podle jazyka nebo syntaxe souboru. Pokud sem mu nepodaří určit jazyk nebo syntax, můžete jej vybrat ručně ze seznamu jazyků na spodní <gui>Stavové liště</gui>.</p>
+  </note>
+
+</page>

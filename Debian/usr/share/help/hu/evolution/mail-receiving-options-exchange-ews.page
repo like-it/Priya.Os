@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-receiving-options-exchange-ews" xml:lang="hu">
+
+  <info>
+    <desc>Fogadás beállításai Webes Exchange-szolgáltatások fiókokhoz.</desc>
+
+    <link type="guide" xref="mail-receiving-options#corporate-server-types"/>
+    <link type="guide" xref="mail-account-manage-microsoft-exchange-evo-ews#receiving-email"/>
+    <revision pkgversion="3.12.9" version="0.3" date="2015-02-15" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Webes Exchange-szolgáltatások fogadási beállításai</title>
+
+<section id="receiving-email-exchange-ews">
+<title>Levelek fogadása</title>
+
+<p>A <gui>Levelek fogadása</gui> oldalon (<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Postafiókok</gui><gui style="button">Szerkesztés</gui><gui>Levelek fogadása</gui></guiseq>):</p>
+
+<list>
+<item><p>Írja be a kiszolgálón használt felhasználónevét.</p></item>
+<item><p>Vagy adja meg saját kezűleg a Gép URL-t és az OAB URL-t, vagy nyomja meg az <gui style="button">URL lekérése</gui> gombot, amely bekéri a jelszavát és megpróbálja automatikusan kitölteni az értékeket.</p>
+<note style="tip"><p>Ha céges környezetben van, akkor a rendszergazdától kaphat további információkat.</p></note></item>
+<item><p>Válassza ki a hitelesítés típusát a Hitelesítés listából, vagy nyomja meg a <gui style="button">Támogatott típusok lekérdezése</gui> gombot, és az <app>Evolution</app> meghatározza a támogatott hitelesítési mechanizmusokat. Egyes kiszolgálók nem teszik közzé az általuk támogatott hitelesítési mechanizmusokat, így a gomb megnyomása nem garantálja, hogy az elérhető mechanizmusok ténylegesen működni fognak.</p></item>
+</list>
+
+</section>
+
+<section id="receiving-options-exchange-ews">
+<title>Fogadás beállításai</title>
+
+<p>A <gui>Fogadás beállításai</gui> oldalon (<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Postafiókok</gui><gui style="button">Szerkesztés</gui><gui>Fogadás beállításai</gui></guiseq>):</p>
+
+<list>
+<item><p>Ha azt szeretné, hogy az <app>Evolution</app> automatikusan keresse az új üzeneteket, akkor jelölje be az <gui>Új levelek automatikus lekérdezése … percenként</gui> négyzetet, és adja meg a gyakoriságot percben.</p></item>
+<item><p>Megadhatja azt is, hogy az <app>Evolution</app> minden mappában keressen-e új leveleket.</p></item>
+<item><p>Ha szeretné a kiszolgálón lévő címjegyzéket kapcsolat nélküli módban is elérni, akkor a <gui>Kapcsolat nélküli címjegyzék gyorsítótárazása</gui> engedélyezésével, és a <gui style="button">Lista letöltése</gui> gomb megnyomásával, majd a kívánt címjegyzék kiválasztásával készíthet másolatot.</p></item>
+<item><p>Jelölje be, hogy szeretné-e, hogy a <link xref="mail-filters">szűrők</link> automatikusan alkalmazásra kerüljenek az érkező levelekre, a <link xref="mail-spam-marking">levélszemét</link> automatikusan szűrésre kerüljön, és hogy a <link xref="mail-working-offline">kiszolgálón lévő levelek szinkronizálásra kerüljenek-e a helyi másolatokkal a kapcsolat nélküli eléréshez</link>.</p></item>
+</list>
+
+</section>
+
+</page>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-autorun" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="media#photos"/>
+    <link type="guide" xref="media#videos"/>
+    <link type="guide" xref="media#music"/>
+    <link type="guide" xref="files#removable"/>
+
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
+    <revision pkgversion="3.9.92" date="2013-10-04" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <credit type="author">
+      <name>Έργο Τεκμηρίωσης GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Εκτελέστε αυτόματα εφαρμογές για CD και DVD, κάμερες, αναπαραγωγείς μουσικής, και άλλες συσκευές και μέσα.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <!-- TODO: fix bad UI strings, then update help -->
+  <title>Άνοιγμα εφαρμογών για συσκευές ή δίσκους</title>
+
+  <p>Μπορείτε να έχετε μια εφαρμογή να ξεκινά αυτόματα όταν συνδέετε μια συσκευή ή εισάγετε ένα δίσκο ή κάρτα μέσων. Για παράδειγμα, μπορεί να θέλετε ο οργανωτής φωτογραφιών σας να ξεκινά όταν συνδέετε μια ψηφιακή κάμερα. Μπορείτε επίσης να το απενεργοποιείτε, έτσι ώστε να μην συμβεί τίποτα όταν συνδέετε κάτι.</p>
+
+  <p>Για να αποφασίσετε ποιες εφαρμογές πρέπει να ξεκινούν όταν συνδέετε ποικίλες συσκευές:</p>
+
+<steps>
+  <item>
+    <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Λεπτομέρειες</gui>.</p>
+  </item>
+  <item>
+    <p>Κάντε κλικ στο <gui>Λεπτομέρειες</gui> για να ανοίξετε τον πίνακα.</p>
+  </item>
+  <item>
+    <p>Κάντε κλικ στο <gui>Αφαιρούμενα μέσα</gui>.</p>
+  </item>
+  <item>
+    <p>Βρείτε την επιθυμητή συσκευή ή τύπο μέσων και έπειτα επιλέξτε μια εφαρμογή ή ενέργεια για αυτόν τον τύπο μέσων. Δείτε παρακάτω μια περιγραφή των διαφορετικών τύπων συσκευών και μέσων.</p>
+    <p>Αντί να ξεκινήσετε μια εφαρμογή, μπορείτε επίσης να την ορίσετε έτσι ώστε η συσκευή να εμφανίζεται στον διαχειριστή αρχείων, με την επιλογή <gui>Άνοιγμα φακέλου</gui>. Όταν αυτό συμβαίνει, θα ερωτηθείτε τι να κάνετε αλλιώς αυτόματα δεν θα συμβεί τίποτα.</p>
+  </item>
+  <item>
+    <p>Εάν δεν βλέπετε τη συσκευή ή τον τύπο των μέσων που θέλετε να αλλάξετε στη λίστα (όπως δίσκους Blu-ray ή αναγνώστες ηλεκτρονικών βιβλίων), κάντε κλικ στο <gui>Άλλα μέσα…</gui> για να δείτε μια λεπτομερή λίστα συσκευών. Επιλέξτε τον τύπο της συσκευής ή μέσου από την πτυσσόμενη λίστα <gui>Τύπος</gui> και την εφαρμογή ή ενέργεια από τη λίστα <gui>Ενέργεια</gui>.</p>
+  </item>
+</steps>
+
+  <note style="tip">
+    <p>Εάν δεν θέλετε να ανοίγει αυτόματα καμία εφαρμογή, ότι κι αν συνδέετε, επιλέξτε <gui>Να μη γίνεται ποτέ ερώτηση ή εκκίνηση προγραμμάτων κατά την εισαγωγή πολυμέσων</gui> στο κάτω μέρος του παραθύρου <gui>Λεπτομέρειες</gui>.</p>
+  </note>
+
+<section id="files-types-of-devices">
+  <title>Τύποι συσκευών και μέσων</title>
+<terms>
+  <item>
+    <title>Δίσκοι ήχου</title>
+    <p>Επιλέξτε την αγαπημένη σας εφαρμογή μουσικής ή τον εξαγωγέα μουσικών CD για τη διαχείριση CD ήχου. Εάν χρησιμοποιείτε ηχητικά DVD (DVD-A), επιλέξτε πώς θα τα ανοίξετε στο <gui>Άλλα μέσα…</gui>. Εάν ανοίγετε έναν ηχητικό δίσκο με τον διαχειριστή αρχείων, τα κομμάτια θα εμφανίζονται ως αρχεία WAV, τα οποία μπορείτε να παίξετε σε οποιαδήποτε εφαρμογή αναπαραγωγής ήχου.</p>
+  </item>
+  <item>
+    <title>Δίσκοι βίντεο</title>
+    <p>Επιλέξτε την αγαπημένη σας εφαρμογή βίντεο για επεξεργασία βίντεο DVD. Χρησιμοποιήστε το κουμπί <gui>Άλλα μέσα…</gui> για να ορίσετε μια εφαρμογή για Blu-ray, HD DVD, βίντεο CD (VCD) και υπερβίντεο CD (SVCD). Εάν τα DVD ή άλλοι δίσκοι βίντεο δεν δουλεύουν σωστά όταν τα εισάγετε, δείτε <link xref="video-dvd"/>.</p>
+  </item>
+  <item>
+    <title>Κενοί δίσκοι</title>
+    <p>Χρησιμοποιήστε το κουμπί <gui>Άλλα μέσα…</gui> για να επιλέξετε μια εφαρμογή εγγραφής δίσκου για κενά CD, DVD, δίσκους Blu-ray και HD DVD.</p>
+  </item>
+  <item>
+    <title>Κάμερες και φωτογραφίες</title>
+    <p>Χρησιμοποιήστε την αναπτυσσόμενη λίστα <gui>Φωτογραφίες</gui> για να επιλέξετε μια εφαρμογή διαχείρισης φωτογραφίας για εκτέλεση όταν συνδέετε την ψηφιακή σας κάμερα, ή όταν εισάγετε μια κάρτα μέσων από μια κάμερα, όπως κάρτα CF, SD, MMC, ή MS. Μπορείτε επίσης απλά να περιηγηθείτε τις φωτογραφίες σας χρησιμοποιώντας τον διαχειριστή αρχείων.</p>
+    <p>Στο μενού <gui>Άλλα μέσα…</gui>, μπορείτε να επιλέξετε μια εφαρμογή για να ανοίξετε CD εικόνων Kodak, όπως αυτές που μπορεί να έχετε κάνει σε ένα κατάστημα. Αυτά είναι τυπικά δεδομένα CD με εικόνες JPEG σε έναν φάκελο που λέγεται <file>Εικόνες</file>.</p>
+  </item>
+  <item>
+    <title>Αναπαραγωγείς μουσικής</title>
+    <p>Επιλέξτε μια εφαρμογή για διαχείριση της μουσικής βιβλιοθήκης στον φορητό αναπαραγωγέα μουσικής, ή διαχειριστείτε τα αρχεία ο ίδιος χρησιμοποιώντας τον διαχειριστή αρχείων.</p>
+    </item>
+    <item>
+      <title>Αναγνώστες ηλεκτρονικών βιβλίων</title>
+      <p>Χρησιμοποιήστε το κουμπί <gui>Άλλα μέσα…</gui> για να επιλέξετε μια εφαρμογή διαχείρισης των βιβλίων στον αναγνώστη ηλεκτρονικών βιβλίων, ή διαχειριστείτε τα αρχεία οι ίδιοι χρησιμοποιώντας τον διαχειριστή αρχείων.</p>
+    </item>
+    <item>
+      <title>Λογισμικό</title>
+      <p>Μερικοί δίσκοι και αφαιρούμενα μέσα περιέχουν λογισμικό που υποτίθεται εκτελούνται αυτόματα όταν εισάγονται τα μέσα. Χρησιμοποιήστε την επιλογή <gui>Λογισμικό</gui> για να ελέγξετε τι θα κάνετε όταν μέσα με λογισμικό αυτόματης εκτέλεσης εισάγονται. Θα σας ζητηθεί πάντα μια επιβεβαίωση πριν την εκτέλεση του λογισμικού.</p>
+      <note style="warning">
+        <p>Να μην εκτελείτε ποτέ λογισμικό από μέσα που δεν εμπιστεύεστε.</p>
+      </note>
+   </item>
+</terms>
+
+</section>
+
+</page>

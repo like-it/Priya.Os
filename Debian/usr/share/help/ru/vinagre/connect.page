@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <title type="sort">1</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Connect to another computer on your local network.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Установка подключения</title>
+
+  <p>You can connect to other computers on your local network using
+  <app>Remote Desktop Viewer</app>.</p>
+
+  <steps>
+    <item>
+      <p>Select <guiseq><gui style="menu">Remote</gui>
+      <gui style="menuitem">Connect</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Выберите <gui>Протокол</gui> и <gui>Узел</gui> для подключения.</p>
+      <note>
+        <p>Some protocols allow you to see all available computers on your
+        local network by clicking the <gui style="button">Find</gui> button.
+        This buttons will not be displayed if you do not have <app>Avahi</app>
+        support.</p>
+      </note>
+    </item>
+    <item>
+      <p>Select the options which you want enabled when the connection is
+      made. Options will vary depending on the protocol that you use.</p>
+    </item>
+    <item>
+      <p>Click the <gui style="button">Connect</gui> button.</p>
+      <p>На этом шаге, возможно, потребуется подтверждение подключения от удалённого рабочего стола. Если это так, то окно просмотра может оставаться чёрным, пока подключение не будет подтверждено.</p>
+      <note>
+        <p>Some computers may require a secure connection: an authentication
+        dialog will be displayed, asking for the credentials. The type of
+        credentials depend on the remote host; it may be a password and a
+        username. If you select <gui>Remember this credential</gui>,
+        <app>Remote Desktop Viewer</app> will store the information using
+        <app>GNOME Keyring</app>.</p>
+      </note>
+    </item>
+  </steps>
+
+  <p>If the connection has been used previously, you can also access it
+  through <guiseq><gui style="menu">Remote</gui>
+  <gui style="menuitem">Recent Connections</gui></guiseq>.</p>
+
+  <p>To close a connection, choose <guiseq><gui style="menu">Remote</gui>
+  <gui style="menuitem">Close</gui></guiseq> or click the
+  <gui style="button">Close</gui> button.</p>
+
+</page>

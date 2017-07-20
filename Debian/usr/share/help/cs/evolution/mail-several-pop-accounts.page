@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-several-pop-accounts" xml:lang="cs">
+
+  <info>
+    <desc>Jak rozdělit a roztřídit poštu, když používáte více než jeden místní účet.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-organizing"/>
+    <link type="seealso" xref="mail-receiving-options-pop"/>
+
+    <revision pkgversion="3.5.3" version="0.2" date="2012-06-16" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Oddělení pošty POP pro více než jeden účet</title>
+
+<p>Není možné mít oddělené účty v panelu účtů a složek. <app>Evolution</app> má jen jedinou schránku pro příchozí poštu.</p>
+<p>Buď můžete místo protokolu POP použít IMAP nebo přesouvat příchozí poštu do různých složek tak, že si <link xref="mail-folders">vytvoříte složky</link> a <link xref="mail-filters">filtry</link>. Vytvořte novou složku a v ní dvě podsložky (pro příchozí a odeslanou poštu daného účtu). Nyní nastavte filtr příchozí pošty přes <guiseq><gui>Upravit</gui> <gui>Filtry zpráv</gui> <gui style="button">Přidat</gui></guiseq>, který bude přesouvat příchozí poštu do příslušné složky příchozí podle adresy příjemce a filtr odchozí pošty, který bude přesouvat odeslanou poštu do příslušné složky odchozí podle adresy odesilatele.</p>
+
+<!-- https://bugzilla.gnome.org/show_bug.cgi?id=273944 -->
+
+</page>

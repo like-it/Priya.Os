@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Eine Liste von Ordnern, wo Sie Dokumente, Dateien und Einstellungen finden, die Sie möglicherweise sichern wollen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Wo finde ich die Dateien, die ich sichern will?</title>
+
+  <p>Die Entscheidung, welche Dateien zu sichern sind und wo diese gefunden werden können, ist der schwierigste Schritt bei der Ausführung einer Datensicherung. Nachfolgend finden Sie die üblichen Speicherorte für wichtige Dateien und Einstellungen, die Sie sichern wollen.</p>
+
+<list>
+ <item>
+  <p>Persönliche Dateien (Dokumente, Musik, Fotos und Videos)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Diese werden üblicherweise in Ihrem persönlichen Ordner gespeichert (<file>/home/Ihr_Name</file>). Sie könnten sich auch in dessen Unterordnern wie Schreibtisch, Dokumente, Bilder, Musik und Videos befinden.</p>
+  <p>Falls Ihr Sicherungsmedium über genügend Platz verfügt (zum Beispiel eine externe Festplatte), sollten Sie erwägen, den gesamten persönlichen Ordner zu sichern. Mit der <app>Festplattenbelegungsanalyse</app> können Sie herausfinden, wie viel Speicherplatz Ihr persönlicher Ordner belegt.</p>
+ </item>
+
+ <item>
+  <p>Verborgene Dateien</p>
+  <p>Jede Datei oder jeder Ordner, dessen Name mit einem Punkt ».« beginnt, ist standardmäßig verborgen. Um verborgene Dateien anzuzeigen, klicken Sie auf den Knopf <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Ansichtseinstellungen</span></media></gui> in der Werkzeugleiste und wählen Sie <gui>Verborgene Dateien anzeigen</gui> oder drücken Sie <keyseq><key>Strg</key><key>H</key></keyseq>. Sie können diese wie jede andere Datei auch an den Ort der Sicherung kopieren.</p>
+ </item>
+
+ <item>
+  <p>Persönliche Einstellungen (Schreibtischeinstellungen, Themen und Softwareeinstellungen)</p>
+  <p>Die meisten Anwendungen speichern ihre Einstellungen in verborgenen Ordnern in Ihrem persönlichen Ordner (siehe oben für Informationen zu verborgenen Dateien).</p>
+  <p>Die meisten Ihrer Anwendungseinstellungen werden in den verborgenen Ordnern <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file> und <file>.local</file> in Ihrem persönlichen Ordner gespeichert.</p>
+ </item>
+
+ <item>
+  <p>Systemweite Einstellungen</p>
+  <p>Einstellungen für wichtige Systembestandteile werden nicht in Ihrem persönlichen Ordner gespeichert. Es gibt eine Reihe von Speicherorten dafür, wobei sich die meisten im Ordner <file>/etc</file> befinden. Im Allgemeinen sollte es nicht erforderlich sein, diese Dateien auf einem Heimrechner in eine Sicherung einzubeziehen. Sollten Sie jedoch einen Server betreiben, sollten Sie die Dateien der laufenden Dienste sichern.</p>
+ </item>
+</list>
+
+</page>

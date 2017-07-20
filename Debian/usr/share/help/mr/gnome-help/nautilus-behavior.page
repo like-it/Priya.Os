@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="mr">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>फाइल्स उघडे करण्यासाठी एकदा-क्लिक करा, एक्जिक्युटेबल मजकूर फाइल्स चालवा किंवा अवलोकन करा, आणि कचरापेटी वर्तन निर्देशीत करा.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>फाइल व्यवस्थापक वर्तन प्राधान्यता</title>
+<p>तुम्ही फाइल्स एकदा क्लिक किंवा दोनवेळा क्लिक करू शकता, एक्जिक्युटेबल मजकूर फाइल्स, आणि कचरापेटीचे वर्तन कसे हाताळले जातात, हे नियंत्रीत करणे शक्य आहे. शीर्ष पट्टीमध्ये <gui>फाइल्स</gui> क्लिक करा, <gui>प्राधान्यता</gui> पसंत करा आणि <gui>वर्तन</gui> टॅब निवडा.</p>
+
+<section id="behavior">
+<title>वागणुक</title>
+<terms>
+ <item>
+  <title><gui>घटक उघडण्यासाठी क्लिक करा</gui></title>
+  <title><gui>घटक उघडण्यासाठी डबल क्लिक करा</gui></title>
+  <p>पूर्वनिर्धारितपणे, फाइल्स क्लिक करून आणि दोनवेळा क्लिक केल्यावर त्यास उघडले जाते. त्याऐवजी एकदाचे त्यावर क्लिक केल्यास तुम्ही फाइल्स आणि फोल्डर्स उघडण्याचा निर्णय घेऊ शकता. सिंगल-क्लिक मोडचा वापर करताना, एक किंवा त्यापेक्षा जास्त फाइल्स निवडताना <key>Ctrl</key> कि दाबून ठेवा.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>एक्सिक्युटेबल मजकुर फाइल्स</title>
+ <p>एक्जिक्युटेबल मजकूर फाइल म्हणजे चालवण्याजोगी (एक्जिक्युट) प्रोग्राम समाविष्टीत असणारे फाइल. फाइलकरिता <link xref="nautilus-file-properties-permissions">फाइल परवानगी</link> असल्यास प्रोग्राम म्हणून चालवणे शक्य व्हायला हवे. सर्वात सामान्य म्हणजे <sys>शेल</sys>, <sys>पायथन</sys> आणि <sys>पर्ल</sys> स्क्रिप्ट्स. त्यांचे विस्तार खालील <file>.sh</file>, <file>.py</file> आणि <file>.pl</file>, प्रमाणे आहे.</p>
+ 
+ <p>एक्जिक्युटेबल मजकूर फाइल उघडल्यानंतर, तुम्ही खालीलपैकी निवडू शकता:</p>
+ 
+ <list>
+  <item>
+    <p><gui>उघडल्यानंतर एक्जिक्युटेबल मजकूर फाइल्स चालवा</gui></p>
+  </item>
+  <item>
+    <p><gui>उघडल्यानंतर एक्जिक्युटेबल मजकूर फाइल्सचे अवलोकन करा</gui></p>
+  </item>
+  <item>
+    <p><gui>दरवेळी विचारा</gui></p>
+  </item>
+ </list>
+
+ <p><gui>प्रत्येकवेळी विचारा</gui> नीवडल्यास, संवाद पॉपअप होईल जे तुम्हाला निवडलेली मजकूर फाइल चालवण्यास किंवा अवलोकनकरिता विचारते.</p>
+
+ <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
+
+<steps>
+  <item>
+    <p>इच्छित फोल्डरकडे मार्गदर्शन करा.</p>
+  </item>
+  <item>
+    <p>इच्छित फाइल निवडा.</p>
+  </item>
+  <item>
+    <p>संदर्भ मेन्यु उघडण्याकरिता फाइलवर उजवी क्लिक द्या आणि <gui style="menuitem">स्क्रिप्ट्स</gui> मेन्युपासून चालवण्यारकरिता पसंतीची स्क्रिप्ट चालवा.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>दूरस्त फोल्डरपासून जसे कि वेब किंवा <sys>ftp</sys> अंतर्भुत माहिती दाखवणारे फोल्डर चालवताना स्क्रिप्टकरिता बाबी पुरवले जाणार नाही.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">फाइल व्यवस्थापक कचरापेटी पसंती</title>
+</info>
+<title>कचरा कुंडी</title>
+
+<terms>
+ <item>
+  <title><gui>Ask before emptying the Trash</gui></title>
+  <p>हा पर्याय पूर्वनिर्धारितपणे निवडले जाते. कचरापेटी रिकामे करतेवेळी, कचरापेटी रिकामे करा किंवा फाइल्स नष्ट करा, याची खात्री करणारे एक संदेश दाखवले जाईल.</p>
+ </item>
+</terms>
+</section>
+
+</page>

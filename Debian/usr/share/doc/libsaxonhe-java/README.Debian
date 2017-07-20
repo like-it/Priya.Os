@@ -1,0 +1,68 @@
+Some source java files from upstream were removed. Namely all files from
+directory:
+
+  net/sf/saxon/xqj/*
+
+indeed:
+
+saxonhe-9.4.0.7\src\main\java\javax\xml\xquery\*:
+    Copyright # 2003, 2004, 2005, 2006, 2007, 2008 Oracle.  All rights
+    reserved.
+
+are licensed under non-free terms:
+
+[...]
+(c)
+does not modify, subset, superset or otherwise extend those public
+class or interface declarations whose names begin with "Java"
+[...]
+
+ref:
+http://lists.alioth.debian.org/pipermail/pkg-java-maintainers/2013-September/043308.html
+
+full text:
+
+---------- Forwarded message ----------
+From: Michael Kay <mike@saxonica.com>
+Date: Mon, Sep 2, 2013 at 11:24 PM
+Subject: Re: Saxon-HE copyright
+To: Eugene Zhukov <jevgeni.zh@gmail.com>
+
+
+These Java interface definitions are taken from the XQJ specification,
+JSR 225, which you can find here:
+
+http://jcp.org/aboutJava/communityprocess/final/jsr225/index.html
+
+along with the licensing terms.
+
+An extract of the license is:
+
+In addition, to the extent that an implementation of the Specification
+would be considered
+a derivative work under applicable law requiring a license grant from
+the holder of the
+copyright in the Specification, the Spec Lead grants a copyright
+license solely for the
+purpose of making and/or distributing an implementation of the
+Specification that: (a)
+except for the RI code licensed from Oracle under the RI License which
+is attached
+hereto as Exhibit B, does not include or otherwise make any use of the
+RI; (b) fully
+implements the Specification including all of its required interfaces
+and functionality; (c)
+does not modify, subset, superset or otherwise extend those public
+class or interface
+declarations whose names begin with “java;” and (d) passes the TCK.
+
+In other words: Saxon, as an implementation of the XQJ specification,
+takes advantage
+of the copyright license granted by Oracle, and satisfies the terms
+of this license insofar
+as it is a complete implementation of the specification and passes the TCK.
+
+NOTE: I am not a lawyer and this is not legal advice.
+
+Michael Kay
+Saxonica

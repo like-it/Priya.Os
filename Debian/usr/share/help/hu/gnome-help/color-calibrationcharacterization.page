@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="hu">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>A kalibrálás és a karakterizálás teljesen különböző dolgok.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mi a különbség a kalibrálás és a karakterizálás között?</title>
+  <p>A legtöbben kezdetben összezavarodnak a kalibrálás és a karakterizálás közti különbségtől. A kalibrálás az eszköz színekkel kapcsolatos viselkedésének módosítása. Ez általában két módszerrel történik:</p>
+  <list>
+    <item><p>A vezérlőelemeinek vagy belső beállításainak módosítása</p></item>
+    <item><p>Görbék alkalmazása a színcsatornáira</p></item>
+  </list>
+  <p>A kalibrálás lényege, hogy az eszközt egy adott állapotba visszük a színekkel kapcsolatos viselkedését tekintve. Ez gyakran a reprodukálható viselkedés fenntartásának napi eszköze. A kalibrálási adatok tipikusan az eszköz- vagy rendszerspecifikus fájlformátumokban kerülnek tárolásra, amelyek rögzítik az eszközbeállításokat vagy a csatornánkénti kalibrációs görbéket.</p>
+  <p>A karakterizálás (vagy profilozás) a színek eszköz általi reprodukálásának vagy azokra adott válaszának <em>rögzítése</em>. Általában az eredmény egy eszközre jellemző ICC-profilban kerül tárolásra. Az ilyen profilok önmagukban semmilyen módon nem változtatják meg a színeket. Ehelyett egy másik eszközprofillal kombinálva lehetővé teszik egy színkezelő modul (CMM) vagy színkezelésre felkészített alkalmazás számára a színek módosítását. Csak a két eszköz karakterisztikájának ismerete teszi lehetővé a színek átvitelét az egyik eszköz reprezentációjából a másikéba.</p>
+  <note>
+    <p>Ne feledje, hogy egy karakterizáció (profil) csak akkor lesz érvényes az eszközhöz, ha a karakterizáláskor használt kalibrálási állapotban van.</p>
+  </note>
+  <p>A kijelzőprofilok esetén további zavart okoz, hogy a kalibrálási információk kényelmi okból gyakran a profilban vannak tárolva. Megállapodás szerint ezt a <em>vcgt</em> nevű címke tárolja. Noha ez a profil része, a normál ICC-alapú eszközök vagy alkalmazások nem ismerik vagy kezelik. Hasonlóan a tipikus kijelzőkalibráló eszközök és alkalmazások nem fogják ismerni vagy kezelni az ICC-karakterizálási (profil) információkat.</p>
+
+</page>

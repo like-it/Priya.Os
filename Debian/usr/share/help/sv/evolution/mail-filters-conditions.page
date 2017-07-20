@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters-conditions" xml:lang="sv">
+
+  <info>
+    <desc>Tillgängliga åtgärder för att ställa in filtrering.</desc>
+
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.6.4" version="0.3" date="2013-04-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-filters.html.en#usage-mail-org-filters-new -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tillgängliga filtervillkor</title>
+
+<list>
+
+<!-- As filter and search folder conditions share a fair amount of options, those ones are centrally in one file that's 
+included by XInclude. See http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-filter-vfolder-conditions.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:item)"/>
+
+<item><p>Källkonto:</p>
+<p>Filtrera meddelanden enligt servern du fick dem från. Detta är särskilt användbart om du använder flera POP-e-postkonton.</p></item>
+
+<item><p>Skicka till program:</p>
+<p><app>Evolution</app> kan använda ett externt kommando för att behandla ett meddelande, sedan hantera det baserat på returvärdet. Kommandon som används på detta sätt måste returnera ett heltal. Det används vanligen för att lägga till ett externt skräppostfilter.</p></item>
+
+<item><p>Skräptest:</p>
+<p>Filtrerar baserat på resultatet från <link xref="mail-spam">skräppost</link>-testet.</p></item>
+
+<item><p>Matcha alla:</p>
+<p>Tillämpar alltid en åtgärd för vilket meddelande som helst, utan ytterligare villkor. Detta kan vara användbart i slutet på listan över meddelandefilter för att täcka de e-postmeddelanden som inte matchat villkoren för de föregående filtren i listan.</p></item>
+
+</list>
+</page>

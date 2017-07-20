@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="ru">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Люди, делающие вклад в wiki документации для Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Даже если беспроводной адаптер подсоединён, он может быть неправильно распознан компьютером.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Устранение неполадок с беспроводными устройствами</title>
+  <subtitle>Проверьте, распознаётся ли беспроводной адаптер</subtitle>
+
+  <p>Даже если беспроводной адаптер подсоединён к компьютеру, он может не распознаваться компьютером, как сетевое устройство. На этом этапе вы проверите, правильно ли распознано устройство.</p>
+
+  <steps>
+    <item>
+      <p>Откройте окно терминала, наберите <cmd>lshw -C network</cmd> и нажмите <key>Enter</key>. Если команда выдаст сообщение об ошибке, вам может понадобиться установить программу <app>lshw</app> на компьютер.</p>
+    </item>
+    <item>
+      <p>Просмотрите показанную информацию и найдите раздел <em>Wireless interface</em>. Если ваш беспроводной адаптер распознан правильно, вы увидите что-то наподобие:</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>Если беспроводное устройство присутствует в списке, переходите к шагу <link xref="net-wireless-troubleshooting-device-drivers">Драйверы устройства</link>.</p>
+      <p>Если беспроводного устройства <em>нет</em> в списке, следующие шаги будут зависеть от типа используемого вами устройства. Обратитесь к расположенному ниже разделу, который соответствует вашему типу беспроводного адаптера (<link xref="#pci">внутренний PCI</link>, <link xref="#usb">USB</link> или <link xref="#pcmcia">PCMCIA</link>).</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>Беспроводные PCI адаптеры (внутренние)</title>
+
+  <p>Внутренние PCI адаптеры являются самыми распространёнными, их можно найти в большинстве ноутбуков, произведённых в последние несколько лет. Чтобы проверить, распознаётся ли ваш беспроводной PCI адаптер:</p>
+
+  <steps>
+    <item>
+      <p>Откройте терминал, наберите <cmd>lspci</cmd> и нажмите <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Взгляните, содержатся ли в отображённом списке устройства, помеченные как <code>Network controller</code> или <code>Ethernet controller</code>. Эти надписи могут соответствовать нескольким типам устройств; те, которые соответствуют беспроводным адаптерам, могут содержать слова типа <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> или <code>802.11</code>. Вот пример подобной строки:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Если ваш беспроводной адаптер присутствует в списке, переходите к шагу <link xref="net-wireless-troubleshooting-device-drivers">Драйверы устройства</link>. Если информация о беспроводном адаптере отсутствует, см. <link xref="#not-recognized">инструкции ниже</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>Беспроводные USB адаптеры</title>
+
+  <p>Беспроводные адаптеры, подключаемые в порт USB на компьютере, менее распространены. Они могут вставляться непосредственно в порт USB или подключаться кабелем USB. Адаптеры 3G или мобильные широкополосные адаптеры выглядят очень похоже на беспроводные (WiFi) адаптеры, поэтому, если вы думаете, что у вас беспроводной USB адаптер, проверьте, не является ли он в действительности адаптером 3G. Чтобы проверить, распознаётся ли ваш беспроводной USB адаптер:</p>
+
+  <steps>
+    <item>
+      <p>Откройте терминал, наберите <cmd>lsusb</cmd> и нажмите <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Просмотрите показанный список устройств и найдите информацию, которая может относиться к беспроводным или сетевым устройствам. Информация о беспроводном адаптере может содержать слова типа <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> или <code>802.11</code>. Вот пример подобной записи:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>Если ваш беспроводной адаптер присутствует в списке, переходите к шагу <link xref="net-wireless-troubleshooting-device-drivers">Драйверы устройства</link>. Если информация о беспроводном адаптере отсутствует, см. <link xref="#not-recognized">инструкции ниже</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Проверка устройства PCMCIA</title>
+
+  <p>Беспроводные адаптеры PCMCIA обычно имеют вид прямоугольных карточек, которые вставляются в щель на боковой стороне ноутбука. Их чаще можно встретить на старых компьютерах. Чтобы проверить, распознан ли PCMCIA-адаптер:</p>
+
+  <steps>
+    <item>
+      <p>Включите компьютер <em>не подключая</em> к нему беспроводной адаптер.</p>
+    </item>
+    <item>
+      <p>Откройте Терминал и введите следующее, затем нажмите <key>Enter</key>:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>Эта команда выведет список сообщений, связанных с аппаратным обеспечением вашего компьютера, и будет автоматически обновлять его при каких-либо изменениях устройств.</p>
+    </item>
+    <item>
+      <p>Вставьте беспроводной адаптер в гнездо PCMCIA и посмотрите, что изменилось в окне терминала. Изменения должны включать в себя некоторые сведения о вашем беспроводном адаптере. Посмотрите, сможете ли вы его идентифицировать.</p>
+    </item>
+    <item>
+      <p>Чтобы остановить команду, запущенную из терминала, нажмите <keyseq><key>Ctrl</key><key>C</key></keyseq>. После этого можно закрыть терминал.</p>
+    </item>
+    <item>
+      <p>Если вы обнаружили информацию о своём беспроводном адаптере, переходите к шагу <link xref="net-wireless-troubleshooting-device-drivers">Драйверы устройства</link>. В противном случае см. <link xref="#not-recognized">инструкции ниже</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>Беспроводной адаптер не распознан</title>
+
+  <p>If your wireless adapter was not recognized, it might not be working
+  properly or the correct drivers may not be installed for it. How you check to
+  see if there are any drivers you can install will depend on which Linux
+  distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
+
+  <p>Чтобы получить помощь, посмотрите, какие варианты поддержки доступны на веб-сайте вашего дистрибутива. Это могут быть, например, почтовые рассылки или веб-чаты, в которых вы можете задать вопрос о своём беспроводном адаптере.</p>
+
+</section>
+
+</page>

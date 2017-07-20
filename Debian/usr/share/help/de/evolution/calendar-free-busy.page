@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-free-busy" xml:lang="de">
+
+  <info>
+
+    <link type="guide" xref="calendar-sharing-information"/>
+
+    <revision pkgversion="3.1.5" version="0.5" date="2012-02-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en
+	   and
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en#usage-calendar-freebusy
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Die Verfügbarkeitsansicht auf einem Groupware-Server zum Planen von Besprechungen benutzen.</desc>
+    <!-- TODO: Really split this into Exchange/Groupware section and normal people section -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Verfügbarkeitsinformationen</title>
+
+  <p>Verwenden Sie die Verfügbarkeitssuche für Besprechungen, um die zeitliche Verfügbarkeit von Eingeladenen zu ersehen.</p>
+
+  <p>Zusätzlich zu den anderen Werkzeugen zum Planen können Sie in der Verfügbarkeitsansicht vor dem Ansetzen einer Besprechung nachschauen, ob bestimmte Personen verfügbar sein werden. Die Verfügbarkeitsfunktion ist eigentlich eine Funktion bestimmter Groupware-Server wie Microsoft Exchange und Novell Groupwise. Aber auch ohne diese Server können Verfügbarkeitsinformationen online gestellt und anderswo aufgerufen werden. Falls nicht jeder Verfügbarkeitsinformationen veröffentlicht, mit dem Sie zusammen arbeiten, so können Sie immer noch <link xref="calendar-meetings-sending-invitation">Besprechungseinladungen</link> versenden, um Ihre Planung mit anderen Personen abzustimmen.</p>
+
+  <p>Um die Verfügbarkeit einzusehen:</p>
+
+  <steps>
+    <item>
+      <p>Klicken Sie auf <guiseq><gui>Datei</gui><gui>Neu</gui><gui>Besprechung</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui style="button">Hinzufügen</gui>, um die E-Mail-Adressen der Personen hinzuzufügen, die Sie einladen möchten.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf den Knopf <gui>Verfügbarkeit</gui> in der Werkzeugleiste, oder klicken Sie auf <guiseq><gui>Optionen</gui><gui>Verfügbarkeit</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Bestimmen Sie die Besprechungszeit, indem Sie entweder im Planungsgitter die Besprechungszeit per Maus verändern oder indem Sie den <gui>Auto-Auswählen</gui>-Knopf benutzen, um automatisch eine Zeit auszuwählen. Klicken Sie dann auf <gui style="button">Schließen</gui>. Für Teilnehmer auf einem Exchange-Server wird der Termin automatisch aktualisiert; alle anderen erhalten eine E-Mail-Benachrichtigung über jegliche Änderungen in der Planung.</p>
+    </item>
+  </steps>
+
+  <list>
+    <item>
+      <p>Teilnehmer-Liste:</p>
+      <p>Die Teilnehmer-Liste zeigt die Personen an, die für den Termin eingeladen wurden.</p>
+    </item>
+    <item>
+      <p>Planungsgitter:</p>
+      <p>Das Planungsgitter zeigt die Verfügbarkeitsinformationen der Personen an, die Sie eingeladen haben. Hier können Sie die Kalender verschiedener Personen vergleichen, um Zeit für ein gemeinsames Treffen zu finden. Verfügbarkeitsinformationen einzelner können nur eingesehen werden, wenn diese den selben Novell GroupWise- oder Microsoft Exchange-Server verwenden wie Sie (z.B. in der gleichen Firma), oder falls die Person ihre Verfügbarkeitsinformationen unter einer Web-Adresse veröffentlicht, auf die Sie zugreifen können und welche Sie bereits im Evolution-Adressbuch in die jeweiligen <link xref="contacts-usage-edit-contact">Kontaktinformationen</link> eingegeben haben unter <guiseq><gui>Persönliche Angaben</gui><gui>Web-Adressen</gui><gui>Verfügbarkeitsinformationen</gui></guiseq>.</p>
+    </item>
+  </list>
+
+  <p>Sie können Kalender- oder Verfügbarkeitsinformationen auf einem WebDAV-, einem FTP-Server, oder auf einer entfernten Maschine per Secure Shell (SSH) oder einem anderen Web-Server per HTTP-PUT veröffentlichen.</p>
+
+  <p>In Firmenumgebungen können Sie Kalender- und Verfügbarkeitsinformationen in einem Exchange- oder Groupwise-Server veröffentlichen. Bedenken Sie, dass Sie den übergeordneten Exchange-Kalender verwenden müssen, wenn Sie möchten, dass andere Ihre Verfügbarkeit einsehen können, wenn jene Sie zu einer Besprechung einladen.</p> <p>Der Vorgabe-Server wird unter <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui><gui>Kalender und Aufgaben</gui><gui>Informationen zur Veröffentlichung</gui><gui>Vorgabe-Verfügbarkeits-Server</gui></guiseq> eingestellt.</p>
+
+  <!-- This is the location since 3.1.5, see bug
+       https://bugzilla.gnome.org/show_bug.cgi?id=655666 -->
+
+<section id="no-groupware">
+  <title>Verfügbarkeitsinformationen abrufen ohne einen GroupWare-Server</title>
+
+  <p>Falls jemand Ihnen eine Internet-Adresse (URL) für seine Verfügbarkeits- oder Kalenderinformationen gibt, können Sie diese als <guiseq><gui>Persönliche Informationen</gui><gui>Web-Adressen</gui></guiseq> im <link xref="contacts-usage-edit-contact">Kontakteditor</link> eintragen. Wenn Sie dann ein Treffen mit dieser Person planen, zeigt <app>Evolution</app> automatisch die Verfügbarkeitsinformationen dieses Kontakts.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Befolyásolhatja, hogy mely programok érhetik el a hálózatot. Ez segít biztonságban tartani a számítógépét.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tűzfal-hozzáférés engedélyezése és blokkolása</title>
+
+  <p>A rendszere tartalmaz egy <em>tűzfalat</em>, amely lehetővé teszi a programok más internetes vagy helyi hálózati felhasználók általi elérésének blokkolását. Ez segít biztonságban tartani a számítógépét.</p>
+
+  <p>Sok alkalmazás képes a hálózati kapcsolat használatára. Megoszthat például tartalmakat, vagy megengedheti asztala távoli megjelenítését, ha csatlakozik egy hálózathoz. A számítógép beállításától függően ezen szolgáltatások megfelelő működéséhez szükség lehet a tűzfal beállításainak módosítására, hogy ezek a szolgáltatások a terveknek megfelelően működhessenek.</p>
+
+  <p>Minden, szolgáltatásokat biztosító program egy adott <em>hálózati portot</em> használ. Egy szolgáltatás elérhetővé tételéhez más számítógépek számára szükség lehet a hozzá tartozó port „kinyitására” a tűzfalon:</p>
+
+
+  <steps>
+    <item>
+      <p>Nyissa meg a <gui>Tevékenységek</gui> áttekintést a bal felső sarokban, és indítsa el a tűzfalalkalmazást. Ha nem talál ilyet, akkor telepítsen egyet saját kezűleg, például a Firestartert vagy a GUFW-t.</p>
+    </item>
+    <item>
+      <p>Nyissa meg vagy zárja le a hálózati szolgáltatás portját, attól függően, hogy elérhetővé kívánja-e tenni azt mások számára vagy sem. A módosítandó port száma a <link xref="net-firewall-ports">szolgáltatástól függ</link>.</p>
+    </item>
+    <item>
+      <p>Mentse vagy alkalmazza a változtatásokat, és kövesse a tűzfalbeállító eszköz által adott további utasításokat.</p>
+    </item>
+  </steps>
+
+</page>

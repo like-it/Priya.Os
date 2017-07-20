@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="fi">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Gnomen dokumentointiprojekti</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Testaa kiintolevysi varmistaaksesi, että se on kunnossa.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Tarkista kiintolevysi ongelmien varalta</title>
+
+<section id="disk-status">
+ <title>Kiintolevyn tarkistaminen</title>
+  <p>Kiintolevyissä on sisäänrakennettu toiminta-analysaattori nimeltään <app>SMART</app> (Self-Monitoring, Analysis, and Reporting Technology), joka jatkuvasti tarkistaa levyä ongelmien varalta. SMART myös varoittaa sinua, jos levysi on rikkoutumassa välttääksesi tärkeän tiedon menettämistä.</p>
+
+  <p>Vaikka SMART-testit suoritetaan automaattisesti, levyn kunnon voi tarkastaa <app>Levyt</app>-ohjelmalla:</p>
+
+<steps>
+ <title>Levyn kunnon tarkastaminen Levyt-ohjelmalla</title>
+
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to check from the list of storage devices on
+    the left. Information and status of the disk will be shown.</p>
+  </item>
+  <item>
+    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
+    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+  </item>
+  <item>
+    <p>See more information under <gui>SMART Attributes</gui>, or click the
+    <gui style="button">Start Self-test</gui> button to run a self-test.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>Mitä jos kiintolevy ei ole kunnossa?</title>
+
+  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
+  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
+  to be prepared with a <link xref="backup-why">backup</link> to prevent data
+  loss.</p>
+
+  <p>Jos tila sanoo "Pre-fail", levy on vielä kohtalaisen hyväkuntoinen mutta kulumisen merkkejä alkaa näkymään, joka saattaa tarkoittaa sen rikkoutumista tulevaisuudessa. Jos kiintolevysi (tai tietokoneesi) on muutaman vuoden ikäinen, tämän viestin näkyminen on todennäköisempää ainakin joissain testeissä. Sinun tulisi <link xref="backup-how">varmuuskopioida tärkeät tiedot säännöllisesti</link> ja tarkistaa levyn tila nähdäksesi, huononeeko se.</p>
+
+  <p>Jos se huononee, sinun kannattaa viedä tietokone/kiintolevy ammattilaiselle tarkempiin testeihin tai korjaukseen.</p>
+
+</section>
+
+</page>

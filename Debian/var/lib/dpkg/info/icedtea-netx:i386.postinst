@@ -1,0 +1,131 @@
+#! /bin/sh
+
+set -e
+
+multiarch=i386-linux-gnu
+priority6=1061
+base6dir=/usr/lib/jvm/java-6-openjdk-i386
+man6dir=$base6dir/jre/man
+priority7=1060
+base7dir=/usr/lib/jvm/java-7-openjdk-i386
+man7dir=$base7dir/jre/man
+priority8=1081
+base8dir=/usr/lib/jvm/java-8-openjdk-i386
+man8dir=$base8dir/jre/man
+tools='javaws itweb-settings policyeditor'
+srcext=1.gz
+dstext=1.gz
+
+case "$1" in
+configure)
+   if [ -z "$2" ]; then
+        update_alternatives=y
+    fi
+    if [ -n "$multiarch" ] && [ -n "$2" ]; then
+        for i in $tools; do
+            if [ -z "$(update-alternatives --list $i 2>/dev/null | grep ^$base7dir/)" ]; then
+                update_alternatives=y
+                break
+            fi
+        done
+    fi
+    if [ "$update_alternatives" != y ] && [ $priority6 -gt 1060 ]; then
+        for i in $tools; do
+            oldp=$(update-alternatives --query java | awk -v b=$base6dir '/^Alternative:/ && $2~b {p=1} /^Priority:/ && p {print $2; exit}')
+            if [ -n "$oldp" ] && [ "$oldp" -le 1060 ]; then
+                update_alternatives=y
+                break
+            fi
+        done
+    fi
+
+    if [ "$update_alternatives" = y ]; then
+	if [ -n "$multiarch" ] && [ "$DPKG_MAINTSCRIPT_ARCH" != $(dpkg --print-architecture) ]; then
+            priority6=$(expr $priority6 - 1)
+            priority7=$(expr $priority7 - 1)
+            priority8=$(expr $priority8 - 1)
+	fi
+
+	if [ -f $base6dir/jre/bin/javaws ]; then
+	    for i in $tools; do
+		unset slave1 || true
+		if [ -e $mandir/man1/$i.$srcext ]; then
+		    slave1="--slave \
+                        /usr/share/man/man1/$i.$dstext \
+                        $i.$dstext \
+                        $man6dir/man1/$i.$srcext"
+		fi
+		update-alternatives \
+		    --install \
+		    /usr/bin/$i \
+		    $i \
+		    $base6dir/jre/bin/$i \
+		    $priority6 \
+		    $slave1
+	    done
+	fi
+      
+	if false && [ -f $base7dir/jre/bin/javaws ]; then
+	    for i in $tools; do
+		unset slave1 || true
+		if [ -e $man7dir/man1/$i.$srcext ]; then
+		    slave1="--slave \
+                        /usr/share/man/man1/$i.$dstext \
+                        $i.$dstext \
+                        $man7dir/man1/$i.$srcext"
+		fi
+		update-alternatives \
+		    --install \
+		    /usr/bin/$i \
+		    $i \
+		    $base7dir/jre/bin/$i \
+		    $priority7 \
+		    $slave1
+
+		# FIXME ...
+		# 6's priority is higher, but 6 is not installed, set it to 7
+		#if [ $priority6 -gt $priority7 ] && [ ! -f $base7dir/jre/bin/$i ]; then
+		#    update-alternatives --set $i $base7dir/jre/bin/$i
+		#fi
+
+		# 7's priority is higher, but 7 is not installed, set it to 6
+		#if [ $priority7 -gt $priority6 ] && [ ! -f $base6dir/jre/bin/$i ]; then
+		#    update-alternatives --set $i $base6dir/jre/bin/$i
+		#fi
+	    done
+	fi
+
+	if [ -f $base8dir/jre/bin/javaws ]; then
+	    for i in $tools; do
+		unset slave1 || true
+		if [ -e $man8dir/man1/$i.$srcext ]; then
+		    slave1="--slave \
+                        /usr/share/man/man1/$i.$dstext \
+                        $i.$dstext \
+                        $man8dir/man1/$i.$srcext"
+		fi
+		update-alternatives \
+		    --install \
+		    /usr/bin/$i \
+		    $i \
+		    $base8dir/jre/bin/$i \
+		    $priority8 \
+		    $slave1
+		
+		update-alternatives --set $i $base8dir/jre/bin/$i
+
+		# 7's priority is higher, but 7 is not installed, set it to 8
+		#if [ $priority7 -gt $priority8 ] && [ ! -f $base8dir/jre/bin/$i ]; then
+		#    update-alternatives --set $i $base8dir/jre/bin/$i
+		#fi
+
+		# 8's priority is higher, but 8 is not installed, set it to 7
+		#if [ $priority8 -gt $priority7 ] && [ ! -f $base7dir/jre/bin/$i ]; then
+		#    update-alternatives --set $i $base7dir/jre/bin/$i
+		#fi
+	    done
+	fi
+    fi # update_alternatives
+esac
+
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="hardware-cardreader" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="media#photos"/>
+    <link type="guide" xref="hardware#problems"/>
+
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>GNOME 文档项目</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>读卡器故障排除</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>读卡器问题</title>
+
+<p>许多计算机带有读卡器，像  SD、MMC、SM、MS、CF 和其他设备存储卡的读卡器。它们应该会被自动检测并<link xref="disk-partitions">挂载</link>。如果没有自动挂载，请尝试以下步骤来解决：</p>
+
+<steps>
+<item>
+<p>确保卡放置正确。许多卡正确插入时反面朝上。同时确保卡牢固地插在卡槽里；某些卡，尤其是 CF卡，需要略用力来插紧。(小心用力不要过大！如果觉得有很大阻力，不要硬插。)</p>
+</item>
+
+<item>
+  <p>Open <app>Files</app> from the
+  <gui xref="shell-introduction#activities">Activities</gui> overview. Does the inserted
+  card appear in the <gui>Devices</gui> list in the left sidebar? Sometimes the
+  card appears in this list but is not mounted; click it once to mount. (If the
+  sidebar is not visible, press <key>F9</key> or click <gui style="menu">Files</gui> in
+  the top bar and select the <gui style="menuitem">Sidebar</gui>.)</p>
+</item>
+
+<item>
+  <p>If your card does not show up in the sidebar, press
+  <keyseq><key>Ctrl</key><key>L</key></keyseq>, then type
+  <input>computer:///</input> and press <key>Enter</key>. If your card reader
+  is correctly configured, the reader should come up as a drive when no card is
+  present, and the card itself when the card has been mounted.</p>
+</item>
+
+<item>
+<p>如果您看到了读卡器但没看到卡，问题可能在卡上。尝试其他卡或试试另一个读卡器。</p>
+</item>
+</steps>
+
+<p>If no cards or drives are shown when browsing the <gui>Computer</gui>
+location, it is possible that your card reader does not work with Linux due to
+driver issues. If your card reader is internal (inside the computer instead of
+sitting outside) this is more likely. The best solution is to directly connect
+your device (camera, cell phone, etc.) to a USB port on the computer. USB
+external card readers are also available, and are far better supported by
+Linux.</p>
+
+</page>

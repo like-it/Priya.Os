@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="user-admin-explain" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Necesita privilegios de administrador para cambiar partes importantes de su sistema.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>¿Cómo funcionan los privilegios de administrador?</title>
+
+  <p>De la misma manera que tiene los archivos que <em>usted</em> crea, su equipo también tiene un número de archivos que necesita el sistema para trabajar adecuadamente. Si estos <em>archivos del sistema</em> importantes se cambian incorrectamente, puede causar varios tipos de problemas y es por esto que, de manera predeterminada, están protegidos de los cambios. Ciertas aplicaciones también modifican partes importantes del sistema y por eso también están protegidas.</p>
+
+  <p>La manera en la que están protegidos es permitiendo solo a los usuarios con <em>privilegios administrativos</em> cambiar los archivos o usar las aplicaciones, En el uso diario, no necesitará cambiar ningún archivo de sistema o usar estas aplicaciones, así que de manera predeterminada no tendrá privilegios administrativos.</p>
+
+  <p>A veces es necesario utilizar estas aplicaciones, por lo que puede obtener temporalmente privilegios de administrador para poder realizar los cambios. Si una aplicación necesita privilegios de administrador, se le pedirá su contraseña. Por ejemplo, si quiere instalar un software nuevo, el instalador de software (gestor de paquetes) le pedirá su contraseña de administrador para que pueda añadir la aplicación nueva al sistema. Una vez que haya terminado, sus privilegios de administrador se le quitarán de nuevo.</p>
+
+  <p>Los privilegios de administrador están asociados con su cuenta de usuario. Los usuarios <gui>administradores</gui> tienen estos privilegios, mientras que los usuarios <gui>estándar</gui> no. Sin privilegios de administrador no podrá instalar software. Algunas cuentas de usuario (por ejemplo, la cuenta de «root») tiene privilegios de administrador permanentemente. No debería usar los privilegios de administrador todo el tiempo porque, accidentalmente, puede cambiar un archivo importante (por ejemplo, eliminar un archivo del sistema necesario).</p>
+
+  <p>En resumen, los privilegios de administrador le permiten cambiar partes importantes de su sistema cuando lo necesite, pero le impiden hacerlo accidentalmente.</p>
+
+  <note>
+    <title>¿Qué significa «superusuario»?</title>
+    <p>Un usuario con privilegios de administrador a veces se denomina <em>superusuario</em>. Esto se debe simplemente a que el usuario tiene más privilegios que los usuarios normales. Puede ver a la gente discutir sobre <cmd>su</cmd> y <cmd>sudo</cmd>, que son programas para darle temporalmente privilegios de «superusuario» (administrador).</p>
+  </note>
+
+<section id="advantages">
+  <title>¿Por qué son útiles los privilegios de administrador?</title>
+
+  <p>Exigir a los usuarios tener privilegios de administrador antes de realizar cambios importantes del sistema es útil, porque ayuda a evitar que su sistema se rompa, de manera intencionada o accidental.</p>
+
+  <p>Si tuviera privilegios de administrador todo el tiempo, podría cambiar accidentalmente un archivo importante, o ejecutar por error una aplicación que cambia algo importante. Tener privilegios de administrador de manera temporal, cuando los necesita, reduce el riesgo de que sucedan estos errores.</p>
+
+  <p>Solo se debe permitir a algunos usuarios de confianza tener privilegios de administrador. Esto impide que otros usuarios puedan manipular el equipo y hacer cosas como desinstalar aplicaciones que usted necesita, instalar aplicaciones que no quiere, o cambiar los archivos importantes. Esto es útil desde el punto de vista de la seguridad.</p>
+
+</section>
+
+</page>

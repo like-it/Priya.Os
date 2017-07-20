@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="mr">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>मुळ फाइल माहितीचे अवलोकन, परवानगी सेट करा, आणि पूर्वनिर्धारित ॲप्लिकेशन्स निवडा.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>फाइल गुणधर्म</title>
+
+  <p>फाइल किंवा फोल्डरविषयी माहिती पहाण्याकरिता, उजवी क्लिक द्या आणि <gui>गुणधर्म</gui> निवडा. तुम्ही फाइल निवडू शकता आणि <keyseq><key>Alt</key><key>Enter</key></keyseq> दाबा.</p>
+
+  <p>फाइल गुणधर्म पटल तुम्हाला फाइलचे प्रकार, फाइलचे आकार, आणि शेवटच्यावेळी फाइल संपादित केल्याची माहिती दाखवतो. ही माहिती वेळोवेळी पाहिजे असल्यास, त्यास <link xref="nautilus-list">लिस्ट व्युउ कॉलमन्स</link> किंवा <link xref="nautilus-display#icon-captions">चिन्ह कॅपशन्स</link> मध्ये दाखवा.</p>
+
+  <p><gui>मुख्य</gui> टॅबवरील दिलेली माहिती. <gui><link xref="nautilus-file-properties-permissions">परवानगी</link></gui> आणि <gui><link xref="files-open#default">यासह उघडा</link></gui> टॅब्स देखील उपलब्ध आहेत. ठराविक फाइल्स प्रकारकरिता, जसे कि प्रतिमा आणि व्हिडीओज, आकारमान, मर्यादा, आणि कोडेक सारखी माहिती पुरवणारे अगाउ टॅब असेल.</p>
+
+<section id="basic">
+ <title>आवश्यक गुणधर्म</title>
+ <terms>
+  <item>
+    <title><gui>Name</gui></title>
+    <p>ह्या क्षेत्रमध्ये बदल करून फाइलला पुन्हा नाव देणे शक्य आहे. गुणधर्म पटलच्या बाहेर फाइलला पुन्हा नाव देणे शक्य आहे. <link xref="files-rename"/> पहा.</p>
+  </item>
+  <item>
+    <title><gui>Type</gui></title>
+    <p>ह्यामुळे फाइल प्रकार, जसे कि PDF दस्तऐवज, OpenDocument मजकूर, किंवा JPEG प्रतिमा, ओळखणे शक्य होते. इतर गोष्टींबरोबरच, फाइल प्रकार कोणत्या ॲप्लिकेशन्स फाइल उघडू शकतात ते ठरवते. उदाहरणार्थ, संगीत वादकसह तुम्ही संगीत वादकसह चित्र उघडू शकत नाही. ह्याविषयी अधिक माहितीकरिता <link xref="files-open"/> पहा.</p>
+    <p>फाइलचे <em>MIME प्रकार</em> पॅरंथेसिसमध्ये दाखवले जाते; MIME प्रकार फाइल प्रकारकरिता संगणकातर्फे वारण्याजोगी मानक आहे.</p>
+  </item>
+
+  <item>
+    <title>आशय</title>
+    <p>फोल्डर ऐवजी फाइलचे गुणधर्म पहात असल्यास हे क्षेत्र दाखवले जाते. हे फोल्डरमधील घटकांची संख्या पहण्यास मदत करते. फोल्डरमध्ये इतर फोल्डर्स समाविष्टीत असल्यास, प्रत्येक आंतरिक फोल्डरला एक घटक, अशी गणना केली जाईल, त्यामध्ये घटक समाविष्टीत असेल तरी. प्रत्येक फाइलची एक घटक म्हणून गणना केली जाते. फोल्डर रिकामे असल्यास, अंतर्भुत माहिती <gui>काहीच दाखवणार नाही</gui>.</p>
+  </item>
+
+  <item>
+    <title>आकार</title>
+    <p>तुम्ही फाइल (फोल्डर नाही) करिता पहात असल्यास हे क्षेत्र दाखवले जाईल. फाइलचा आकार तुम्हाला डिस्क जागा व्याप्तिविषयी माहिती पुरवते. हे फाइल डाउनलोड व्हायला किंवा ईमेलतर्फे पाठवण्यास किती वेळ लागला, हेही निर्देशीत करते (मोठ्या फाइल्स पाठवणे किंवा प्राप्तिकरिता जास्त वेळ घेते).</p>
+    <p>आकार बाइट्स, KB, MB, किंवा GB मध्ये असू शकते; शेवटच्या तीन घटनांमध्ये, बाइट्समधील आकार पॅरेंथेसिसमध्ये देखील दाखवले जातील. तांत्रिकदृष्ट्या , 1 KB म्हणजे 1024 बाइट्स, 1 MB म्हणजे 1024 KB आणि अशा तऱ्हेने पुढे.</p>
+  </item>
+
+  <item>
+    <title>Parent Folder</title>
+    <p>The location of each file on your computer is given by its <em>absolute
+    path</em>. This is a unique "address" of the file on your computer, made up
+    of a list of the folders that you would need to go into to find the file.
+    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
+    folder, its parent folder would be <file>/home/jim</file> and its location
+    would be <file>/home/jim/Resume.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>मोकळी जागा</title>
+    <p>हे फक्त फोल्डर्सकरिता दाखवले जाते. ते डिस्कवरील फोल्डरकरिता उपलब्ध डिस्क जागा दाखवते. हे हार्ड डिस्क भरले आहे किं नावी याच्या तापसणी करिता उपयोगी ठरते.</p>
+  </item>
+
+  <item>
+    <title>वापरलेले</title>
+    <p>फाइल शेवटच्यावेळी उघडले ते दिनांक आणि वेळ.</p>
+  </item>
+
+  <item>
+    <title>बदललेले</title>
+    <p>फाइल शेवटच्यावेळी उघडले आणि साठवले ते दिनांक आणि वेळ.</p>
+  </item>
+ </terms>
+</section>
+
+</page>

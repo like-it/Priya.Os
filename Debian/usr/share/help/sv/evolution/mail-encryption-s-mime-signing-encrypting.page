@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-s-mime-signing-encrypting" xml:lang="sv">
+
+  <info>
+    <desc>Signering eller kryptering via S/MIME av meddelanden du skickar.</desc>
+
+    <link type="guide" xref="mail-encryption#s-mime"/>
+
+    <revision pkgversion="3.13.90" version="0.3" date="2015-03-09" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#bsqbdkv -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Signera eller kryptera meddelanden</title>
+
+<p>Efter att du har <link xref="mail-encryption-s-mime-manage">lagt till dina certifikat</link> kan du signera eller kryptera ett meddelande genom att välja <guiseq><gui>Alternativ</gui><gui>S/MIME-signera</gui></guiseq> eller <gui>S/MIME-kryptera</gui>.</p>
+<note style="tip"><p>Ämnesraden för meddelandet kommer inte att krypteras och bör inte användas för känslig information.</p></note>
+
+<p>För att få varje meddelande signerat eller krypterat:</p>
+<steps>
+<item><p>Välj <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>E-postkonton</gui></guiseq>.</p></item>
+<item><p>Välj e-postkontot som meddelande ska krypteras för.</p></item>
+<item><p>Klicka på <gui style="button">Redigera</gui>.</p></item>
+<item><p>Klicka på fliken <gui>Säkerhet</gui>.</p></item>
+<item><p>I avsnittet <gui>Secure MIME (S/MIME)</gui>, klicka på <gui style="button">Välj</gui> intill <gui>Certifikat för signering</gui> och ange sökvägen till ditt signeringscertifikat, eller klicka på <gui style="button">Välj</gui> intill <gui>Krypteringscertifikat</gui> och ange sökvägen till ditt krypteringscertifikat.</p></item>
+<item><p>Välj lämpliga alternativ.</p></item>
+<item><p>Klicka på <gui style="button">OK</gui>.</p></item>
+</steps>
+</page>

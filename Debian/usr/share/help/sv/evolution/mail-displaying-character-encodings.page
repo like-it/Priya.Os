@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-displaying-character-encodings" xml:lang="sv">
+
+  <info>
+    <desc>När bokstäver i ett e-postmeddelande inte visas korrekt eller saknas.</desc>
+
+    <link type="guide" xref="mail-displaying-message"/>
+    <link type="guide" xref="index#mail-composing-advanced"/>
+
+    <revision pkgversion="3.3.91" version="0.4" date="2012-02-18" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Teckenkodningar</title>
+
+<section id="received-messages">
+<title>Mottaget e-postmeddelande</title>
+
+<p>Om avsändarens e-postprogram är trasigt eller felkonfigurerat kanske e-postmeddelanden med vanlig text inte inkluderar information om vilken teckenkodning som använts. Om du tar emot sådana meddelanden, välj <guiseq><gui>Visa</gui><gui>Teckenkodning</gui></guiseq> från huvudmenyn och ändra den valda teckenkodningen till en lämplig som kanske är den kodning som avsändaren använt. Du måste göra denna ändring varje gång du visar meddelandet.</p>
+<p>För att göra detta till standardinställningen gå till <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>E-postinställningar</gui><gui>Allmänt</gui><gui>Meddelandevisning</gui><gui>Standardteckenkodning</gui></guiseq>.</p>
+
+</section>
+
+<section id="sending-messages">
+<title>Sändning av e-post</title>
+
+<p>I det osannolika fallet att du vill ändra standardteckenkodningen för meddelanden som du skickar, gå till <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>Redigerarinställningar</gui><gui>Standardbeteende</gui><gui>Teckenkodning</gui></guiseq>.</p>
+<note style="tip"><p>Denna inställning gäller bara för meddelanden med vanlig text eftersom <link xref="mail-composer-html">HTML-meddelanden</link> alltid använder UTF-8-kodning.</p></note>
+
+</section>
+
+</page>

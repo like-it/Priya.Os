@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="mr">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>कोणते प्रोग्राम्स नेटवर्ककरिता प्रवेश प्राप्त करू शकतात ते नियंत्रीत करणे शक्य आहे. यामुळे संगणक सुरक्षित राहते.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>फायरवॉल परवानगी लागू करा किंवा अडवा</title>
+
+  <p>तुमची प्रणाली <em>फायरवॉल</em> सह सुसज्ज पाहिजे ज्यामुळे इंटरनेट किंवा नेटवर्कवरील इतर व्यक्तिंतर्फे प्रोग्राम्सला प्रवेश ब्लॉक करण्यास मदत प्राप्त होते . यामुळे तुमचे संगणक सुरक्षित राहण्यास मदत प्राप्त होते.</p>
+
+  <p>अनेक ॲप्लिकेशन्स नेटवर्क जोडणीचा वापर करू शकतात. उदाहरणार्थ, फाइल्स शेअर करणे किंवा नेटवर्कशी जोडणी केल्यानंतर इतरांना दूरस्तरित्या तुमचे डेस्कटॉप पहाण्यास परवानगी द्या. संगणक कशा प्रकारे सेटअप केले आहे, त्यावर आधारित, तुम्हाला आवश्यकताप्रमाणे फायरवॉल सुस्थीत करावे लागेल.</p>
+
+  <p>नेटवर्क सर्व्हिसेस पुरवणारे प्रत्येक प्रोग्राम ठराविक <em>नेटवर्क पोर्टचा</em> वापर करतात. सर्व्हिसकरिता प्रवेशसाठी नेटवर्कवरील संगणकांना समर्थीत करण्याकरिता, तुम्हाला फायरवॉलवरील लागू केलेले पोर्ट "open" करावे लागेल:</p>
+
+
+  <steps>
+    <item>
+      <p>पडद्याच्या डाव्या कोपऱ्यातील <gui>कृती</gui> कडे जा आणि तुमचे फायरवॉल ॲप्लिकेशन सुरू करा. कोणतेही न आढळल्यास तुम्हाला फायरवॉल व्यवस्थापक इंस्टॉल करावे लागेल (उदाहरणार्थ, फयरस्टार्टर किंवा GUFW).</p>
+    </item>
+    <item>
+      <p>वापरकर्त्यांना प्रवेश शक्य किंवा अशक्य करायचे, यावर आधारित नेटवर्क सर्व्हिसकरिता, पोर्ट उघडा किंवा बंद करा. <link xref="net-firewall-ports">सर्व्हिसवर आधारित</link> बदलण्याजोगी पोर्ट निवडा.</p>
+    </item>
+    <item>
+      <p>बदल साठवा किंवा लागू करा, फायरवॉल साधनतर्फे दिलेल्या अगाऊ सूचनांच्या पाठोपाठ.</p>
+    </item>
+  </steps>
+
+</page>

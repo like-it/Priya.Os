@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="sv">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Surfa på webben</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">En handledning i att surfa på nätet</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Surfa på nätet</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>Klicka på menyn <gui>Program</gui> längst upp till vänster på skärmen.</p></item>
+      <item><p>Från menyn, välj <guiseq><gui>Internet</gui><gui>Firefox</gui> </guiseq>.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>Flytta din musmarkör till <gui>Aktivitetshörnet</gui> längst upp till vänster på skärmen för att visa <gui>Aktivitetsöversikt</gui>.</p></item>
+      <item><p>Välj webbläsarikonen <app>Firefox</app> i raden till vänster på skärmen.</p></item>
+    </steps>
+
+    <note><p>Alternativt kan du starta webbläsaren genom att <link xref="gs-use-system-search">bara skriva</link> <em>Firefox</em> i <gui>Aktivitetsöversikt</gui>.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>Flytta din musmarkör till <gui>Aktivitetshörnet</gui> längst upp till vänster på skärmen för att visa <gui>Aktivitetsöversikt</gui>.</p></item>
+      <item><p>Välj <app>Webb</app>-läsarikonen  från raden på vänster sida av skärmen.</p></item>
+    </steps>
+
+    <note><p>Alternativt kan du starta webbläsaren genom att <link xref="gs-use-system-search">bara skriva</link> <em>webb</em> i <gui>Aktivitetsöversikt</gui>.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>Klicka på adressfältet längst upp i webbläsarens fönster och skriv in adressen till den webbplats du vill besöka.</p></item>
+      <item><p>När en webbplats skrivs in börjar webbläsaren söka efter den bland historik och bokmärken, så du behöver inte komma ihåg den exakta adressen.</p>
+        <p>Om webbplatsen hittas bland historiken eller bokmärkena kommer en rullgardinslista att visas nedanför adressraden.</p></item>
+      <item><p>Från rullgardinslistan kan du snabbt välja en webbplats genom att använda piltangenterna.</p>
+      </item>
+      <item><p>Efter att du har valt en webbplats, tryck på <key>Retur</key> för att besöka sidan.</p>
+      </item>
+    </steps>
+
+</page>

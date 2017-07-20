@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-desktop" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.14" date="2015-01-25" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Anderen Personen erlauben, Ihre Arbeitsumgebung via VNC zu betrachten und zu verwenden.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ihre Arbeitsumgebung freigeben</title>
+
+  <p>Sie können anderen Personen erlauben, mit Hilfe einer Anwendung für entfernte Bildschirme Ihren Bildschirm von einem anderen Rechner aus zu betrachten und zu bedienen. Konfigurieren Sie <app>Freigabe des Bildschirms</app>, um anderen Personen Zugriff auf Ihre Arbeitsumgebung zu gewähren und die Sicherheitseinstellungen zu setzen.</p>
+
+  <note style="info package">
+    <p>Das Paket <app>Vino</app> muss installiert sein, damit die <gui>Bildschirmfreigabe</gui> angezeigt wird.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:vino" style="button">Vino installieren</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Freigabe</gui> ein.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Freigabe</gui>, um das Panel zu öffnen.</p>
+    </item>
+    <item>
+      <p>Wenn <gui>Freigabe</gui> auf <gui>AUS</gui> gestellt ist, so schalten Sie diese <gui>An</gui>.</p>
+
+      <note style="info"><p>Wenn sich der Text unterhalb von <gui>Rechnername</gui> bearbeiten lässt, können Sie den Namen <link xref="sharing-displayname">ändern</link>, unter dem Ihr Rechner im Netzwerk angezeigt wird.</p></note>
+    </item>
+    <item>
+      <p>Wählen Sie <gui>Bildschirmfreigabe</gui>.</p>
+    </item>
+    <item>
+      <p>Um Anderen das Betrachten Ihres Bildschirms zu erlauben, stellen Sie die Option <gui>Bildschirmfreigabe</gui> auf <gui>AN</gui>. Dies bedeutet, dass Anderen der Versuch erlaubt wird, sich mit Ihrem Rechner zu verbinden und den Bildschirm anzusehen.</p>
+    </item>
+    <item>
+      <p>Um zu erlauben, dass Andere mit Ihrem Bildschirm interagieren, schalten Sie <gui>Entfernte Steuerung zulassen</gui> auf <gui>AN</gui>. Dies ermöglicht anderen, Ihren Mauszeiger zu steuern, Anwendungen zu starten und die Dateien Ihres Rechners zu durchsuchen. Die Möglichkeiten hängen von den aktuell verwendeten Sicherheitseinstellungen ab.</p>
+
+      <note style="tip">
+        <p>Dieses Funktionsmerkmal ist per Voreinstellung aktiv wenn <gui>Bildschirmfreigabe</gui> auf <gui>AN</gui> steht.</p>
+      </note>
+
+    </item>
+  </steps>
+
+  <section id="security">
+  <title>Sicherheit</title>
+
+  <p>Es ist wichtig, dass Sie sich der vollen Tragweite jeder Sicherheitseinstellung bewusst sind, bevor Sie sie ändern.</p>
+
+  <terms>
+    <item>
+      <title>Neue Verbindungen müssen zum Zugriff berechtigt werden</title>
+      <p>Wenn Sie bestimmen wollen, ob Sie jemandem Zugriff auf Ihren Bildschirm gewähren wollen, so wählen Sie <gui>Neue Verbindungen müssen zum Zugriff berechtigt werden</gui>. Wenn Sie diese Option deaktivieren, werden Sie nicht gefragt, ob Sie jemandem die Verbindung mit Ihren Rechner erlauben wollen.</p>
+      <note style="tip">
+        <p>Diese Option ist standardmäßig aktiviert.</p>
+      </note>
+    </item>
+    <item>
+      <title>Ein Passwort verlangen</title>
+      <p>Damit andere Personen ein Passwort eingeben müssen, wenn sie sich mit Ihrem Bildschirm verbinden wollen, aktivieren Sie <gui>Passwort verlangen</gui>. Wenn Sie diese Option nicht verwenden, kann jeder versuchen, Ihren Bildschirm zu betrachten.</p>
+      <note style="tip">
+        <p>Diese Option ist standardmäßig deaktiviert, aber Sie sollten sie aktivieren und ein sicheres Passwort festlegen.</p>
+      </note>
+    </item>
+<!-- TODO: check whether this option exists.
+    <item>
+      <title>Allow access to your desktop over the Internet</title>
+      <p>If your router supports UPnP Internet Gateway Device Protocol and it
+      is enabled, you can allow other people who are not on your local network
+      to view your desktop. To allow this, select <gui>Automatically configure
+      UPnP router to open and forward ports</gui>. Alternatively, you can
+      configure your router manually.</p>
+      <note style="tip">
+        <p>This option is disabled by default.</p>
+      </note>
+    </item>
+-->
+  </terms>
+  </section>
+
+  <section id="networks">
+  <title>Netzwerke</title>
+
+  <p>Der Abschnitt <gui>Netzwerke</gui> listet die Netzwerke auf, mit denen Sie gegenwärtig verbunden sind. Verwenden Sie den <gui>AN | AUS</gui>-Schalter neben jedem der Einträge, um zu wählen, wo Ihre Arbeitsumgebung freigegeben werden kann.</p>
+  </section>
+
+  <section id="notification-icon">
+  <title>Freigabe der Arbeitsumgebung beenden</title>
+
+  <p>Sie können mit einem <gui>Benachrichtigungssymbol</gui> die Verbindung zu jemandem trennen, der Ihre Arbeitsumgebung betrachtet:</p>
+    <steps>
+      <item><p>Öffnen Sie das Benachrichtigungsfeld, indem Sie <keyseq><key>Super</key><key>M</key></keyseq> drücken oder den Mauszeiger an den unteren Rand des Bildschirms bewegen.</p></item>
+      <item><p>Klicken Sie auf das <gui>Schreibtisch</gui>-Symbol im <gui>Benachrichtigungsfeld</gui>. Das <app>Freigabe</app>-Panel wird geöffnet.</p>
+      </item>
+      <item><p>Wählen Sie <gui>Bildschirmfreigabe</gui>.</p></item>
+      <item><p>Stellen Sie den Regler für <gui>Bildschirmfreigabe</gui> auf <gui>AUS</gui>.</p></item>
+    </steps>
+
+  </section>
+
+
+</page>

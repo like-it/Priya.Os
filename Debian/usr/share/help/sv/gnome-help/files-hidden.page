@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-hidden" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-29" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Gör en fil osynlig så att du inte kan se den i filhanteraren.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Dölj en fil</title>
+
+  <p>Filhanteraren <app>Filer</app> ger dig möjligheten att dölja och visa filer efter dina önskemål. När en fil är dold syns den inte i filhanteraren men den finns fortfarande i mappen.</p>
+
+  <p>För att dölja en fil <link xref="files-rename">byt namn på den</link> med en <file>.</file> i början på dess namn. För att till exempel dölja en fil med namnet <file>example.txt</file> ska du byta namn på den till <file>.example.txt</file>.</p>
+
+<note>
+  <p>Du kan dölja mappar på samma sätt som du kan dölja filer. Dölj en mapp genom att placera en <file>.</file> i början på mappens namn.</p>
+</note>
+
+<section id="show-hidden">
+ <title>Visa alla dolda filer</title>
+
+  <p>Om du vill se alla dolda filer i en mapp, gå till den mappen och klicka antingen på visningsalternativknappen i verktygsfältet och välj <gui>Visa dolda filer</gui> eller tryck på <keyseq><key>Ctrl</key><key>H</key></keyseq>. Du kommer att se alla dolda filer tillsammans med filer som inte är dolda.</p>
+
+  <p>För att dölja dessa filer igen, klicka antingen på visningsalternativknappen i verktygsfältet och välj <gui>Visa dolda filer</gui> eller tryck <keyseq><key>Ctrl</key><key>H</key></keyseq> igen.</p>
+
+</section>
+
+<section id="unhide">
+ <title>Synliggör en fil</title>
+
+  <p>För att göra en fil synlig, gå till mappen som innehåller den dolda filen och klicka på knappen visningsalternativ i verktygsfältet och välj <gui>Visa dolda filer</gui>. Leta sedan upp den dolda filen och byt namn på den så att den inte har en <file>.</file> i början på sitt namn. För att till exempel synliggöra en fil med namnet <file>.example.txt</file> ska du byta namn på den till <file>example.txt</file>.</p>
+
+  <p>När du har bytt namn på filen så kan du antingen klicka på knappen för visningsalternativ i verktygsfältet och välja <gui>Visa dolda filer</gui> eller trycka på <keyseq><key>Ctrl</key><key>H</key></keyseq> för att åter dölja andra dolda filer.</p>
+
+  <note><p>Som standard ser du bara dolda filer i filhanteraren tills du stänger filhanteraren. För att ändra den inställningen så att filhanteraren alltid visar dolda filer, se <link xref="nautilus-views"/>.</p></note>
+
+  <note><p>De flesta dolda filer kommer att ha en <file>.</file> i början på sina namn, men andra kan ha en <file>~</file> i slutet på namnet istället. Dessa filer är säkerhetskopierade filer. Se <link xref="files-tilde"/> för vidare information.</p></note>
+
+</section>
+
+</page>

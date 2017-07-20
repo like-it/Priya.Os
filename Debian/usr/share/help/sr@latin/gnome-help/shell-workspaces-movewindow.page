@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-workspaces-movewindow" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces"/>
+    <link type="seealso" xref="shell-workspaces"/>
+
+    <revision pkgversion="3.8" version="0.3" date="2013-05-10" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-04" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Gnomov projekat dokumentacije</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Idite na pregled <gui>aktivnosti</gui> i prevucite prozor na drugi radni prostor.</desc>
+  </info>
+
+  <title>Premestite prozor na drugi radni prostor</title>
+
+  <steps>
+    <title>Koristeći miša:</title>
+    <item>
+      <p if:test="!platform:gnome-classic">Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui>.</p>
+      <p if:test="platform:gnome-classic">Otvorite <gui xref="shell-introduction#activities">Pregled aktivnosti</gui> iz izbornika <gui xref="shell-introduction#activities">Programi</gui> u gornjem levom uglu ekrana.</p>
+    </item>
+    <item>
+      <p>Kliknite i prevucite prozor prema desnoj strani ekrana.</p>
+    </item>
+    <item>
+      <p>Pojaviće se <em xref="shell-workspaces">birač radnih prostora</em>.</p>
+    </item>
+    <item>
+      <p if:test="!platform:gnome-classic">Otpustite prozor u prazan radni prostor. Ovaj radni prostor će sada sadržati prozor koji ste u njega otpustili, i novi prazan radni prostor će se pojaviti pri dnu <em>birača radnih prostora</em>.</p>
+      <p if:test="platform:gnome-classic">Otpustite prozor u prazan radni prostor. Ovaj radni prostor će sada sadržati prozor koji ste u njega otpustili.</p>
+    </item>
+  </steps>
+
+  <steps>
+    <title>Koristeći tastaturu:</title>
+    <item>
+      <p>Izaberite prozor koji želite da premestite (na primer, koristeći <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> <em xref="shell-windows-switching">prebacivač prozora</em>).</p>
+    </item>
+    <item>
+      <p>Pritisnite <keyseq><key>Super</key><key>Šift</key><key>Stranica gore</key></keyseq> da premestite prozor na radni prostor koji se nalazi iznad tekućeg radnog prostora u <em>biraču radnih prostora</em>.</p>
+      <p>Pritisnite <keyseq><key>Super</key><key>Šift</key><key>Stranica dole</key></keyseq> da premestite prozor na radni prostor koji se nalazi ispod tekućeg radnog prostora u <em>biraču radnih prostora</em>.</p>
+    </item>
+  </steps>
+
+</page>

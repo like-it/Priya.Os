@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-s-mime-signing-encrypting" xml:lang="fr">
+
+  <info>
+    <desc>Signer et chiffrer les messages que vous envoyez via S/MIME.</desc>
+
+    <link type="guide" xref="mail-encryption#s-mime"/>
+
+    <revision pkgversion="3.13.90" version="0.3" date="2015-03-09" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#bsqbdkv -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Signature et chiffrement des messages</title>
+
+<p>Après avoir <link xref="mail-encryption-s-mime-manage">ajouté votre certificat</link>, vous pouvez signer ou chiffrer un message en choisissant <guiseq><gui>Options</gui><gui>Signer avec S/MIME</gui></guiseq> ou <gui>Chiffrer avec S/MIME</gui> dans le menu de l'éditeur de messages ou en cliquant sur l'icône correspondante dans la barre d'outils.</p>
+<note style="tip"><p>La ligne de sujet du message n'est pas chiffrée et ne doit pas contenir d'information sensible.</p></note>
+
+<p>Pour que tous les messages soient signés ou chiffrés :</p>
+<steps>
+<item><p>Choisissez <guiseq><gui>Édition</gui><gui>Préférences</gui><gui>Comptes de messagerie</gui></guiseq>.</p></item>
+<item><p>Sélectionnez le compte de messagerie pour lequel vous souhaitez chiffrer les messages.</p></item>
+<item><p>Cliquez sur <gui style="button">Édition</gui>.</p></item>
+<item><p>Cliquez sur l'onglet <gui>Sécurité</gui>.</p></item>
+<item><p>Dans la section <gui>Secure MIME (S/MIME)</gui>, cliquez sur <gui style="button">Sélectionner</gui> à côté du <gui>Certificat de signature</gui> et spécifiez le chemin de votre certificat de signature ou cliquez sur le bouton <gui style="button">Sélectionner</gui> à côté du <gui>Certificat de chiffrement</gui> et spécifiez le chemin de votre certificat de chiffrement.</p></item>
+<item><p>Cochez les options adéquates.</p></item>
+<item><p>Cliquez sur <gui style="button">Valider</gui>.</p></item>
+</steps>
+</page>

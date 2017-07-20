@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="hardware-auth"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
+
+    <credit type="author">
+      <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>பால் W. ஃப்ரியெல்ட்ஸ்</name>
+      <email>stickster@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <credit type="author editor">
+      <name>எக்காட்டெரினா ஜெராசிமோவா</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>ஜிம் காம்ப்பெல்</name>
+      <email>jcampbell@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>You can log in to your system using a supported fingerprint scanner
+    instead of typing in your password.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>விரல் ரேகை மூலம் புகுபதிவு செய்தல்</title>
+
+  <p>உங்கள் கணினியில் ஆதரவுள்ள ஒரு விரல் ரேகை ஸ்கேனர் இருந்தால், நீங்கள் உங்கள் விரல் ரேகையைப் பதிவு செய்து, கணினியில் புகுபதிவு செய்ய அதைப் பயன்படுத்தலாம்.</p>
+
+<section id="record">
+  <title>Record a fingerprint</title>
+
+  <p>Before you can log in with your fingerprint, you need to record it so that
+  the system can use it to identify you.</p>
+
+  <note style="tip">
+    <p>உங்கள் விரல் மிக உலர்ந்திருந்தால், உங்கள் விரல் ரேகையைப் பதிவு செய்வது சிரமமாகலாம். இப்படி நடந்தால் விரலை லேசாக ஈரப்பதமாக்கி சுத்தமான, இழைகளற்ற துணியால் துடைத்துவிட்டு மீண்டும் முயற்சிக்கவும்.</p>
+  </note>
+
+  <p>You need <link xref="user-admin-explain">administrator privileges</link>
+  to edit user accounts other than your own.</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Users</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Users</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>Press on <gui>Disabled</gui>, next to <gui>Fingerprint Login</gui> to
+      add a fingerprint for the selected account. If you are adding the
+      fingerprint for a different user, you will first need to
+      <gui>Unlock</gui> the panel.</p>
+    </item>
+    <item>
+      <p>Select the finger that you want to use for the fingerprint, then
+      <gui style="button">Next</gui>.</p>
+    </item>
+    <item>
+      <p>Follow the instructions in the dialog and swipe your finger at a
+      <em>moderate speed</em> over your fingerprint reader. Once the computer
+      has a good record of your fingerprint, you will see a <gui>Done!</gui>
+      message.</p>
+    </item>
+    <item>
+      <p>Select <gui>Next</gui>. You will see a confirmation message that
+      your fingerprint was saved successfully. Select <gui>Close</gui> to
+      finish.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="verify">
+  <title>Check that your fingerprint works</title>
+
+  <p>இப்போது உங்கள் புதிய விரல்ரேகை புகுபதிவு வேலை செய்கிறதா என்று சரிபார்க்கவும். நீங்கள் ஒரு விரல் ரேகையைப் பதிவு செய்தாலும், நீங்கள் உங்கள் கடவுச்சொல்லை கொண்டும் புகுபதிவு செய்ய முடியும்.</p>
+
+  <steps>
+    <item>
+      <p>Save any open work, and then <link xref="shell-exit#logout">log
+      out</link>.</p>
+    </item>
+    <item>
+      <p>புகுபதிவு திரையில், பட்டியலில் இருந்து உங்கள் பெயரைத் தேர்ந்தெடுக்கவும். கடவுச்சொல் உள்ளிடும் படிவம் தோன்றும்.</p>
+    </item>
+    <item>
+      <p>Instead of typing your password, you should be able to swipe your
+      finger on the fingerprint reader.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

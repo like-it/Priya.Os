@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="de">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Alle Dateien und Ordner von einer externen Festplatte oder einem USB-Stick durch Formatieren entfernen.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Alles von einem Wechseldatenträger löschen</title>
+
+  <p>Sollten Sie einmal alle Daten von einem USB-Stick oder einer externen Festplatte löschen wollen, dann sollten Sie diesen Datenträger <em>formatieren</em>. Dadurch werden alle Dateien und Ordner gelöscht, so dass der Datenträger völlig geleert wird.</p>
+
+<steps>
+  <title>Formatieren eines Wechseldatenträgers</title>
+  <item>
+    <p>Öffnen Sie <app>Laufwerke</app> in der <gui>Aktivitäten</gui>-Übersicht.</p>
+  </item>
+  <item>
+    <p>Wählen Sie das zu löschende Laufwerk links in der Liste der Speichergeräte aus.</p>
+
+    <note style="warning">
+      <p>Stellen Sie unbedingt sicher, dass Sie das richtige Medium gewählt haben! Falls Sie das falsche gewählt haben, werden alle Dateien auf diesem Medium gelöscht!</p>
+    </note>
+  </item>
+  <item>
+    <p>Klicken Sie in der Werkzeugleiste unterhalb des Abschnitts <gui>Datenträger</gui> auf den Menü-Knopf. Klicken Sie dann auf <gui>Formatieren …</gui>.</p>
+  </item>
+  <item>
+    <p>Wählen Sie im daraufhin erscheinenden Fenster einen <gui>Typ</gui> für das Dateisystem des Laufwerks aus.</p>
+   <p>Wenn Sie das Laufwerk außer auf Linux-Systemen auch auf Rechnern mit Windows oder Mac OS verwenden, wählen Sie <gui>FAT</gui>. Wenn Sie es nur auf Windows verwenden, dürfte <gui>NTFS</gui> die bessere Wahl sein. Eine kurze Beschreibung des <gui>Dateisystemtyps</gui> wird angezeigt.</p>
+  </item>
+  <item>
+    <p>Geben Sie dem Datenträger einen Namen und klicken Sie zum Fortsetzen auf <gui>Formatieren …</gui>. Daraufhin wird ein Bestätigungsfenster angezeigt. Überprüfen Sie alle Angaben sorgfältig und klicken Sie auf <gui>Formatieren</gui>, um den Datenträger zu löschen.</p>
+  </item>
+  <item>
+    <p>Sobald das Formatieren abgeschlossen ist, klicken Sie auf den Auswurfknopf, um den Datenträger sicher zu entfernen. Er sollte nun leer und verwendungsbereit sein.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Formatieren einer Festplatte löscht Ihre Dateien nicht sicher</title>
+  <p>Das Formatieren eines Datenträgers ist keine 100-prozentig sichere Methode, alle Daten zu löschen. Ein formatierter Datenträger scheint keine Dateien zu enthalten, aber darauf spezialisierte Software könnte die Dateien wiederherzustellen. Wenn Sie die Dateien verlässlich löschen müssen, sollten Sie ein Befehlszeilenprogramm verwenden, wie etwa <app>shred</app>.</p>
+</note>
+
+</page>

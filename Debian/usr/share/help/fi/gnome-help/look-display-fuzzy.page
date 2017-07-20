@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="look-display-fuzzy" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="hardware-problems-graphics"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Gnomen dokumentointiprojekti</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Näytön resoluutio on saatettu asettaa virheellisesti.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Miksi näytöllä olevat kohteet näyttävät sumeilta tai kulmikkailta?</title>
+
+<p>Tämä voi johtua siitä, ettei asetettu näytön tarkkuus, eli resoluutio, ole näytöllesi sopivin.</p>
+
+<p>To solve this, open the <gui xref="shell-introduction#activities">Activities</gui>
+overview and start typing <gui>Displays</gui>. Click on <gui>Displays</gui>
+to open the panel. Try some of the <gui>Resolution</gui> options and set the
+one that makes the screen look better.</p>
+
+<section id="multihead">
+  <title>Useiden näyttöjen ollessa yhdistettynä</title>
+
+  <p>Jos tietokoneeseen on liitetty kaksi näyttöä (esimerkiksi tavallinen näyttö ja videotykki), niillä saattaa olla eri resoluutiot. Näytönohjain kuitenkin pystyy kerrallaan näyttämään yhden resoluution joten toisen näytön kuva saattaa olla epätarkka.</p>
+
+  <p>You can set it so that the two displays have different resolutions, but
+  you will not be able to display the same thing on both screens
+  simultaneously. In effect, you will have two independent screens connected at
+  the same time. You can move windows from one screen to another, but you
+  cannot show the same window on both screens at once.</p>
+
+  <p>Asettaaksesi näytöille eri tarkkuuden:</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Displays</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Displays</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>The displays should be listed as <gui>Mirrored</gui>. Select your main
+      display.</p>
+    </item>
+    <item>
+      <p>Select <gui>Primary</gui> in the list of display configurations, and
+      then click <gui style="button">Apply</gui> to save.</p>
+    </item>
+    <item>
+      <p><gui>Näytöt</gui> ikkunan harmaasta laatikosta valitse vuorotellen jokainen näyttö. Muuta sen <gui>Resoluutio</gui> oikeille asetuksille.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

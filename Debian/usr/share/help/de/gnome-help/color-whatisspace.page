@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>Ein Farbraum ist ein definierter Bereich von Farben.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Was ist ein Farbraum?</title>
+
+  <p>Ein Farbraum ist ein definierter Bereich von Farben. Weithin bekannte Farbräume sind sRGB, AdobeRGB und ProPhotoRGB.</p>
+
+  <p>Die menschliche Netzhaut ist zwar kein einfacher RGB-Sensor, aber das Verhalten des Auges kann in etwa mit einem CIE-1931-Farbdiagramm verglichen werden, das die visuellen Reaktionen als hufeisenförmiges Diagramm darstellt. Darin erkennen Sie, dass das menschliche visuelle System weit mehr Schattierungen von Grün als Blau oder Rot unterscheidet. Mit einem trichromatischen Farbraum wie RGB stellen wir die Farben auf einem Rechner mit drei Werten dar, was uns auf ein <em>Dreieck</em> von Farben einschränkt.</p>
+
+  <note>
+    <p>Die Verwendung solcher Modelle wie der CIE-1931-Farbspezifikation ist eine radikale Vereinfachung des menschlichen Sehens. Reale Gamuts werden als 3D-Hülsen ausgedrückt, im Gegensatz zu zweidimensionalen Projektionen. Eine 2D-Darstellung einer 3D-Form kann unter Umständen zu Irrtümern führen. Wenn Sie also die 3D-Hülse sehen wollen, sollten Sie die Anwendung <code>gcm-viewer</code> benutzen.</p>
+  </note>
+
+  <figure>
+    <desc>sRGB, AdobeRGB and ProPhotoRGB durch weiße Dreiecke dargestellt</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>Zunächst ist sRGB der kleinste Farbraum und kann eine verhältnismäßig geringe Zahl von Farben kodieren. Es ist eine Schätzung für einen 10 Jahre alten Röhrenmonitor, und die meisten modernen Bildschirme können weitaus mehr Farben darstellen. Es ist der Standard des <em>kleinsten gemeinsamen Nenners</em> und wird in einer großen Zahl von Anwendungen verwendet, auch im Internet.</p>
+  <p>AdobeRGB wird häufig als <em>Bearbeitungsfeld</em> benutzt. Es kann mehr Farben kodieren als RGB, so dass Sie Farben in einem Foto anpassen können, ohne befürchten zu müssen, dass die hellsten Farben bzw. die schwarzen Bereiche an Zeichnung verlieren.</p>
+  <p>ProPhoto ist der größte verfügbare Farbraum und wird häufig für Dokumentarchivierung verwendet. Fast der gesamte Bereich der vom menschlichen Auge erfassbaren Farben können kodiert werden, sowie weitere, menschlich nicht erkennbare Farben.</p>
+
+  <p>Da nun ProPhoto so viel besser zu sein scheint, warum nutzen wir es nicht allgemein für alle Zwecke? Dies hat mit <em>Quantisierung</em> zu tun. Falls Sie nur 8 Bit (256 Stufen) für die Kodierung jedes Kanals zur Verfügung haben, dann verursacht ein größerer Bereich größere Abstufungen zwischen den einzelnen Werten.</p>
+  <p>Größere Abstufungen verursachen einen größeren Versatz zwischen der aufgenommenen und der gespeicherten Farbe. Für einige Farben ist das ein großes Problem. Es ergibt sich, dass gewisse Schlüsselfarben, wie beispielsweise Hauttöne besonders bedeutsam sind und unvoreingenommene Betrachter meinen, dass die Farben in der Fotografie unecht aussehen.</p>
+  <p>Natürlich liefert ein 16-Bit-Bild viel mehr Abstufungen und verursacht einen weitaus kleineren Quantisierungsfehler, allerdings wird auch die Größe jeder Bilddatei verdoppelt. Die meisten heute verwendeten Inhalte liegen in 8 bpp vor, d.h. 8 Bit pro Pixel.</p>
+  <p>Farbverwaltung ist ein Prozess der Umwandlung eines Farbraums in einen anderen. Ein Farbraum kann dabei ein bekannter Farbraum sein, wie sRGB, oder ein benutzerdefinierter Farbraum wie das Profil Ihres Bildschirms oder Druckers.</p>
+
+</page>

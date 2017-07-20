@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-initial-check" xml:lang="es">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-hardware-info"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Contribuyentes al wiki de documentación de Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Asegúrese de que la configuración básica de red es correcta y prepárese para los siguientes pasos en la resolución de problemas.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Solucionador de problemas de red inalámbrica</title>
+  <subtitle>Realizar una comprobación inicial de la conexión</subtitle>
+
+  <p>En este paso va a comprobar alguna información básica acerca de su conexión de red inalámbrica. Esto es para asegurarse de que su problema en la red no es causado por un problema relativamente simple, como que la conexión inalámbrica está apagada y se va a preparar para los próximos pasos para solucionar algunos problemas.</p>
+
+  <steps>
+    <item>
+      <p>Asegúrese que su portátil no está conectado a una conexión de Internet <em>cableada</em>-</p>
+    </item>
+    <item>
+      <p>Si tiene un adaptador inalámbrico externo (como un adaptador inalámbrico USB o una tarjeta PCMCIA enchufada en su portátil), asegúrese de que está insertada en la ranura correcta en el equipo.</p>
+    </item>
+    <item>
+      <p>Si su tarjeta inalámbrica está <em>dentro</em> de su equipo, asegúrese que de el conmutador del adaptador inalámbrico está encendido (si tiene uno). Los portátiles frecuentemente tienen conmutadores que puede usar pulsando una combinación de teclas.</p>
+    </item>
+    <item>
+      <p>Pulse en el área de estado del sistema en la barra superior, seleccione <gui>Inalámbrica</gui> y pulse en <gui>Configuración inalámbrica</gui>. Asegúrese de que <gui>Inalámbrica</gui> está <gui>Activada</gui>. También debe comprobar que el <link xref="net-wireless-airplane">modo avión</link> <em>no</em> está activado.</p>
+    </item>
+    <item>
+      <p>Abra la terminal, teclee <cmd>nmcli dispositivo</cmd> y pulse <key>Intro</key>.</p>
+      <p>Esto mostrará información sobre susinterfaces de red y el estado de la conexión. Consulte en la lista de información si hay una sección relacionada con el adaptador de red inalámbrica. Si el estado es <code>conectado</code> en la sección de su adaptador inalámbrico, significa que está funcionando y conectado a su enrutador inalámbrico.</p>
+    </item>
+  </steps>
+
+  <p>Si está conectado a su enrutador inalámbrico, pero sigue sin poder acceder a Internet, su enrutador puede estar mal configurado o su proveedor de servicios de Internet (ISP) puede tener problemas técnicos. Revise su enrutador y las guías de configuración de su ISP, o contacte con el soporte de su ISP.</p>
+
+  <p>Si la información desde <cmd>nmcli dispositivo</cmd> no indica que esté conectado a la red, pulse <gui>Siguiente</gui> para continuar con la siguiente parte de la guía de resolución de problemas.</p>
+
+</page>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="sr">
+
+  <info>
+    <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Гномов пројекат документације</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author editor">
+      <name>Екатерина Герасимова</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Петр Ковар</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Преносни рачунар се успављује када спустите поклопац, да би сачувао енергију.</desc>
+  </info>
+
+  <title>Зашто се мој рачунар гаси када спустим поклопац?</title>
+
+  <p>Када спустите поклопац вашег преносног рачунара, ваш рачунар ће <link xref="power-suspend"><em>обуставити</em></link> рад како би сачувао енергију. То значи да рачунар заправо није угашен — само се успавао. Можете да га повратите подизањем поклопца. Ако се не поврати, пробајте да кликнете мишем или да притиснете неки тастер. Ако и овако не проради, притисните дугме за напајање.</p>
+
+  <p>Неки рачунари не могу исправно да обуставе рад, обично зато што њихове компоненте нису у потпуности подржане оперативним системом (на пример, управљачки програми Линукса нису потпуни). У том случају, можете увидети да нисте у могућности да повратите ваш рачунар након што сте спустили поклопац. Можете да пробате да <link xref="power-suspendfail">исправите проблем са обуставом</link>, или можете да спречите рачунар да покуша да обустави рад када спустите поклопац.</p>
+
+<section id="nosuspend">
+  <title>Не дозволите рачунару да обустави рад када спустите поклопац</title>
+
+  <note style="important">
+    <p>Ова упутства ће радити само ако користите <app>systemd</app>. Обратите се вашој дистрибуцији за више података.</p>
+  </note>
+
+  <note style="important">
+    <p>Треба да сте инсталирали програм <app>Алат за лицкање</app> на вашем рачунару да бисте могли да измените ово подешавање.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">Инсталирајте <app>Алат за лицкање</app></link></p>
+    </if:if>
+  </note>
+
+  <p>Ако не желите да рачунар обустави рад када затворите поклопац, можете да измените подешавање тог понашања.</p>
+
+  <note style="warning">
+    <p>Будите веома пажљиви ако мењате ово подешавање. Неки преносни рачунари мог да се прегреју ако су остављени да раде са спуштеним поклопцем, поготово ако су у затвореном простору као што је ранац.</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>Отворите преглед <gui xref="shell-introduction#activities">Активности</gui> и почните да куцате <gui>Детаљи</gui>.</p>
+    </item>
+    <item>
+      <p>Притисните на <gui>Алат за лицкање</gui> да га отворите.</p>
+    </item>
+    <item>
+      <p>Притисните на језичак <gui>Напајање</gui>.</p>
+    </item>
+    <item>
+      <p>Пребаците <gui>Не обустављај при спуштању поклопца</gui> на <gui>УКЉ.</gui>.</p>
+    </item>
+    <item>
+      <p>Затворите прозор <gui>Алата за лицкање</gui>.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

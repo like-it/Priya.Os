@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-free-busy" xml:lang="cs">
+
+  <info>
+
+    <link type="guide" xref="calendar-sharing-information"/>
+
+    <revision pkgversion="3.1.5" version="0.5" date="2012-02-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en
+	   and
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en#usage-calendar-freebusy
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak použít zobrazení volných/obsazených termínů na serveru pro týmovou spolupráci k plánování schůzky.</desc>
+    <!-- TODO: Really split this into Exchange/Groupware section and normal people section -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Informace o volném/obsazeném čase</title>
+
+  <p>U schůzek můžete použít vyhledávání informací o volném/obsazeném čase zvaných, abyste věděli jestli budou v době schůzky k dispozici.</p>
+
+  <p>Kromě standardních nástrojů pro plánování schůzek můžete využít také zobrazení Volno/obsazeno, chcete-li dopředu zjistit, zda mají lidé čas. Funkce Volno/obsazeno je normálně funkcí vyhrazených serverů pro týmovou spolupráci (groupware) jako je Microsoft Exchange a Novell GroupWise. Nicméně můžete publikovat informace o volném/obsazeném čase také online a přistupovat k nim pak odkudkoliv. Pokud ne každý, s kým spolupracujete, zveřejňuje údaje o volném/obsazeném čase, můžete pořád použít <link xref="calendar-meetings-sending-invitation">pozvánku na událost</link>, chcete-li plány koordinovat s ostatními.</p>
+
+  <p>Pro přístup k zobrazení volno/obsazeno:</p>
+
+  <steps>
+    <item>
+      <p>Klikněte na <guiseq><gui>Soubor</gui> <gui>Nový</gui> <gui>Schůzka</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Klikněte na <gui style="button">Přidat</gui>, abyste přidali e-mailové adresy lidí, které chcete pozvat.</p>
+    </item>
+    <item>
+      <p>Klikněte na tlačítko <gui>Volno/obsazeno</gui> na nástrojové liště nebo na <guiseq><gui>Volby</gui> <gui>Volno/obsazeno</gui></guiseq>. </p>
+    </item>
+    <item>
+      <p>Upravte čas schůzky buď přetažením hranic schůzky nebo použitím tlačítka <gui>Automatický výběr</gui>, které vybere čas automaticky, a potom klikněte na <gui style="button">Zavřít</gui>. Účastníci na serveru Exchange mají událost aktualizovanou automaticky, ostatní obdrží upozornění na jakoukoliv změnu plánů e-mailem.</p>
+    </item>
+  </steps>
+
+  <list>
+    <item>
+      <p>Seznam účastníků:</p>
+      <p>Seznam účastníků ukazuje lidi, kteří byly na událost pozvaní.</p>
+    </item>
+    <item>
+      <p>Rastr rozvrhu:</p>
+      <p>Rastr rozvrhu zobrazuje zveřejněné informace o volnu/obsazenu lidí, které jste pozvali. Je to místo, kde můžete srovnávat rozvrhy, abyste nalezli volný čas pro naplánování schůzky. Jednotlivci mají viditelné informace o rozvrhu pouze, když používají stejný server Novell GroupWise nebo Microsoft Exchange jako vy (to je, když jsou ve stejné organizaci jako vy) nebo když zveřejňují informace o volnu/obsazenu na webové adreswe (URL), ke které máte přístup a máte ji vloženu u příslušného kontaktu v <link xref="contacts-usage-edit-contact">editoru kontaktů</link> v pod <guiseq><gui>Osobní údaje</gui> <gui>Webové adresy</gui> <gui>Volno/obsazeno</gui></guiseq>.</p>
+    </item>
+  </list>
+
+  <p>Můžete zveřejňovat informace kalendáře a o volném/obsazeném čase na servery WebDAV a FTP nebo na vzdálený počítač skrze SSH nebo na ostatní webové servery s podporou HTTP PUT.</p>
+
+  <p>Ve firemním prostředí můžete zveřejnit kalendář a informace o volném/obsazeném čase na server Exchange nebo Groupwise. Upozorňujeme, že aby ostatní měli přístup k vašim informacím o volném/obsazeném čase, musíte použít kalendář Exchange v nejvyšší úrovni.</p> <p>Výchozí server lze určit v <guiseq><gui>Upravit</gui> <gui>Předvolby</gui> <gui>Kalendář a úkoly</gui> <gui>Zveřejňování informací</gui> <gui>Výchozí server volno/obsazeno</gui></guiseq>.</p>
+
+  <!-- This is the location since 3.1.5, see bug
+       https://bugzilla.gnome.org/show_bug.cgi?id=655666 -->
+
+<section id="no-groupware">
+  <title>Přístup k datům Volno/obsazeno bez serveru pro týmovou spolupráci</title>
+
+  <p>Pokud vám jednotlivci dávají adresu URL pro údaje o volném/obsazeném čase nebo pro svůj webový kalendář, můžete URL zadat do <guiseq><gui>Osobní údaje</gui> <gui>Webové adresy</gui></guiseq> v <link xref="contacts-usage-edit-contact">Editoru kontaktů</link>. Když s nimi budete později plánovat schůzku, vyhledá <app>Evolution</app> příslušný rozvrh a zobrazí jej v datech o volném/obsazeném čase.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scores" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#play"/>
+
+    <revision pkgversion="3.8" version="0.1" date="2013-03-05" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+    <name>Aruna Sankaranarayanan</name>
+    <email its:translate="no">aruna.evam@gmail.com</email>
+    </credit>
+
+    <desc>Tragarse diferentes bonificaciones para conseguir puntos.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2008.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Puntuación en <app>Nibbles</app></title>
+
+    <p>Puede conseguir puntos en <app>Nibbles</app> comiendo bonificaciones. Hay 5 tipos de bonificaciones en Nibbles:</p>
+    <list>
+      <item>
+        <p>La bonificación en forma de donut <media type="image" its:translate="no" src="figures/donut.svg" height="22" width="22"/>: esta bonificación hace aumente la longitud del gusano. Los puntos que obtiene al comerse un donut varía en cada nivel y hay varios en cada nivel. En el nivel 1, el primer donut le dará un punto, el segundo 2 puntos, el tercero tres puntos, y así sucesivamente. En el nivel 2, el primer donut le dará 2 puntos, el segundo 4 puntos, el tercero 6 puntos, y así sucesivamente. Por lo tanto, en el nivel el primer donut le dará 26 puntos, el segundo 52 y así sucesivamente.</p>
+	<note style="info">
+	  <p>El contador de donuts no depende del número de donuts que ya se haya comido un gusano. Si la partida está en el nivel 1 y si el jugador 1 se come el primer donut, consigue un punto; si el jugador 2 se come el segundo donut, consigue 2 puntos; un tercer jugador puede elegir no comerse ningún donut hasta que llegue el décimo, para conseguir 10 puntos de una vez.</p>
+	</note>
+      </item>
+      <item>
+        <p>La bonificación en forma de corazón <media type="image" its:translate="no" src="figures/life.svg" height="22" width="22"/> : esta bonificación le da vida adicional y no hace que el gusano aumente de longitud.</p>
+        <note style="info">
+          <p>El número de vidas de un gusano está dado por el número a la izquierda de la coma en la puntuación del gusano. Si la puntuación de un gusano es 10,005, el gusano tiene 10 vidas restantes.</p>
+	</note>
+	<note style="tip">
+	  <p>No puede conseguir vidas adicionales consiguiendo 10.000 o más puntos. si ha conseguido 12.345 puntos con 10 vidas restantes, su puntuación será de 1.012.345.</p>
+	</note>
+      </item>
+      <item>
+	<p>La bonificación en forma de diamante <media type="image" its:translate="no" src="figures/diamond.svg" height="22" width="22"/>: esta bonificación no hace que el gusano aumente de longitud y no le da ningún punto. Hace que se invierta el movimiento de todos los gusanos de la partida.</p>
+	<note style="info">
+	  <p>Esta bonificación no tiene efecto en el modo de un solo jugador.</p>
+	</note>
+      </item>
+      <item>
+	<p>La bonificación en forma de helado <media type="image" its:translate="no" src="figures/ice-cream.svg" height="22" width="22"/>: esta bonificación hace que se aumente la longitud del gusano más de lo que la aumenta la bonificación en forma de donut. Los puntos conseguidos por esta bonificación dependen del nivel y de la longitud del gusano. Cuanto más alto sea el nivel y más largo sea el gusano, más puntos se conseguirán al comerse esta bonificación.</p>
+      </item>
+      <item>
+	<p>La bonificación en forma de cerezas <media type="image" its:translate="no" src="figures/cherry.svg" height="22" width="22"/>: esta bonificación hace que el gusano disminuya de longitud. Los puntos conseguidos por esta bonificación dependen del nivel y de la longitud del gusano. Cuanto más alto sea el nivel y más largo sea el gusano, más puntos se conseguirán al comerse esta bonificación.</p>
+      </item>
+    </list>
+
+</page>

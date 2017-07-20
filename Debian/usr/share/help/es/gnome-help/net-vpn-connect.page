@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+    <link type="guide" xref="net-wired"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Aprenda cómo configurar una conexión VPN a una red local mediante Internet.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Conectar a una VPN</title>
+
+<p>Una VPN (o <em>Virtual Private Network</em>, «Red Privada Virtual») es una forma de conectarse a una red local a través de Internet. Por ejemplo, suponga que quiere conectarse a la red local de su trabajo mientras está en un viaje de negocios. Tendrá que buscar una conexión a Internet en alguna parte (como en un hotel) y luego conectarse a la VPN de su trabajo. Sería como si se estuviera conectando directamente a la red de su trabajo, pero la conexión de red real sería a través de la conexión a Internet del hotel. Las conexiones VPN normalmente van <em>cifradas</em> para evitar que la gente pueda acceder a la red local a la que está conectándose sin autenticarse.</p>
+
+<p>Hay diferentes tipos de VPN. Puede que tenga que instalar algún software adicional dependiendo de a qué tipo de VPN se conecta. Busque los detalles de conexión de quien está a cargo de la VPN y consulte qué <em>cliente VPN</em> tiene que usar. Luego, vaya al instalador de software y busque el paquete <app>NetworkManager</app> que funciona con su VPN (si lo hay) e instálelo.</p>
+
+<note>
+ <p>Si no hay ningún paquete de NetworkManager para su tipo de VPN, probablemente tendrá que descargar e instalar algún programa cliente de la empresa que proporcione el software VPN. Probablemente tendrá que seguir algunas instrucciones distintas para hacer que funcione.</p>
+</note>
+
+<p>Para configurar una conexión VPN:</p>
+
+  <steps>
+    <item>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Red</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse en <gui>Red</gui> para abrir el panel.</p>
+    </item>
+    <item>
+      <p>En la parte inferior de la lista, a la izquierda, pulse el botón <gui>+</gui> para añadir una conexión nueva.</p>
+    </item>
+    <item>
+      <p>Elija <gui>VPN</gui> en la lista de interfaces.</p>
+    </item>
+    <item>
+      <p>Seleccione qué tipo de conexión VPN tiene.</p>
+    </item>
+    <item>
+      <p>Rellene los detalles de la conexión VPN y pulse <gui>Añadir</gui> cuando haya terminado.</p>
+    </item>
+    <item>
+      <p>Cuando termine de configurar la VPN, abra el <gui xref="shell-introduction#yourname">menú del sistema</gui> en la parte derecha de la barra superior, pulse en <gui>VPN apagada</gui> y seleccione <gui>Conectar</gui>. Es posible que deba introducir una contraseña antes de establecer la conexión. Cuando la conexión se establezca, verá un icono de un candado en la barra superior.</p>
+    </item>
+    <item>
+      <p>Si todo va bien, se conectará correctamente a la VPN. De lo contrario, puede que necesite volver a comprobar la configuración VPN que introdujo. Puede hacerlo pulsando desde el panel de <gui>Red</gui> que usó para crear la conexión, seleccionando la conexión VPN en la lista y pulsando el botón <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">configuración</span></media> para revisar la configuración.</p>
+    </item>
+    <item>
+      <p>Para desconectarse de la VPN, pulse en el menú del sistema en la barra superior y pulse <gui>Apagar</gui> bajo el nombre de su conexión VPN.</p>
+    </item>
+  </steps>
+
+</page>

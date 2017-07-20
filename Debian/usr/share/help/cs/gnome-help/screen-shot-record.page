@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="screen-shot-record" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="tips"/>
+
+    <revision pkgversion="3.6.1" date="2012-11-10" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.14.0" date="2015-01-14" status="review"/>
+
+    <credit type="author copyright">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak pořídit snímek nebo videonahrávku toho, co se děje na obrazovce.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Snímky a videonahrávky obrazovky</title>
+
+  <p>Můžete pořídit obrázek se svojí obrazovkou (<em>snímek obrazovky</em>) nebo videonahrávku s tím, co se na obrazovce děje (<em>nahrávka obrazovky</em>). To se hodí například, když chcete někomu ukázat, jak má něco na počítači udělat. Snímky a nahrávky obrazovky jsou ve skutečnosti normální soubory s obrázky a videi, takže je můžete posílat e-mailem nebo sdílet na webu.</p>
+
+<section id="screenshot">
+  <title>Pořídit snímek obrazovky</title>
+
+  <steps>
+    <item>
+      <p>Z přehledu <gui xref="shell-introduction#activities">Činnosti</gui> otevřete aplikaci <app>Snímek obrazovky</app>.</p>
+    </item>
+    <item>
+      <p>V okně <app>Snímek obrazovky</app> vyberte, jestli chcete zachytit celou obrazovku, aktuální okno nebo nějakou oblast obrazovky. Nastavte si prodlevu v případě, že potřebujete čas na vybrání okna nebo nějaké nastavení uživatelského prostředí před pořízením snímku. Dále může zvolit některé z efektů.</p>
+    </item>
+    <item>
+       <p>Klikněte na <gui>Zachytit snímek obrazovky</gui>.</p>
+       <p>Pokud jste vybrali <gui>Vybrat zachytávanou oblast</gui>, změní se ukazatel na nitkový kříž. Kliknutím a táhnutím vyberte oblast, kterou chcete na snímku zachytit.</p>
+    </item>
+    <item>
+      <p>V okně <gui>Uložení snímku obrazovky</gui> zadejte název souboru a zvolte složku. Nakonec klikněte na <gui>Uložit</gui>.</p>
+      <p>Případně můžete snímek obrazovky přímo naimportovat do aplikace pro úpravu obrázků, aniž byste jej nejdříve ukládali. Klikněte na <gui>Kopírovat do schránky</gui> a následně obrázek vložte do jiné aplikace nebo do ní přetáhněte náhled snímku.</p>
+    </item>
+  </steps>
+
+  <section id="keyboard-shortcuts">
+    <title>Klávesové zkratky</title>
+
+    <p>K rychlému pořízení snímku obrazovky, okna nebo nějaké oblasti můžete kdykoliv použít globální klávesovou zkratku:</p>
+
+    <list style="compact">
+      <item>
+        <p><key>Prt Scrn</key> pořídí snímek celé obrazovky.</p>
+      </item>
+      <item>
+        <p><keyseq><key>Alt</key><key>Prt Scrn</key></keyseq> pořídí snímek okna.</p>
+      </item>
+      <item>
+        <p><keyseq><key>Shift</key><key>Prt Scrn</key></keyseq> pořídí snímek oblasti, kterou vyberete.</p>
+      </item>
+    </list>
+
+    <p>Když používáte klávesové zkratky, ukládají se obrázky automaticky do složky <file>Obrázky</file> ve vaší domovské složce. Název souboru začíná <file>Snímek obrazovky</file> a obsahuje datum a čas pořízení.</p>
+    <note style="note">
+      <p>V případě, že nemáte složku <file>Obrázky</file>, budou obrázky místo toho uloženy ve vaší domovské složce.</p>
+    </note>
+    <p>S kteroukoliv z výše uvedených klávesových zkratek můžete navíc držet současně zmáčknutou klávesu <key>Ctrl</key>. Snímek obrazovky se pak místo uložení zkopíruje do schránky.</p>
+  </section>
+
+</section>
+
+<section id="screencast">
+  <title>Pořízení nahrávky obrazovky</title>
+
+  <p>Můžete vytvořit video s nahrávkou toho, co se děje na obrazovce:</p>
+
+  <steps>
+    <item>
+      <p>Zmáčknutím <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> začněte nahrávat, co se děje na vaší obrazovce.</p>
+      <p>Během probíhajícího nahrávání bude v pravém horním rohu obrazovky zobrazeno červené kolečko.</p>
+    </item>
+    <item>
+      <p>Až budete hotovi, zmáčkněte znovu <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> a nahrávání se zastaví.</p>
+    </item>
+    <item>
+      <p>Video se automaticky uloží do složky <file>Videa</file> ve vaší domovské složce, s názvem souboru začínajícím <file>Nahrávka obrazovky</file> a zahrnujícím datum a čas pořízení nahrávky.</p>
+    </item>
+  </steps>
+
+  <note style="note">
+    <p>V případě, že nemáte složku <file>Videa</file>, budou videa místo toho uloženy ve vaší domovské složce.</p>
+  </note>
+
+</section>
+
+</page>

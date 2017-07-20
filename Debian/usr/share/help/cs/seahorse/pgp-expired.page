@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-expired" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-07-03" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Mohu takový klíč dále používat? Lze datum vypršení platnosti změnit?</desc>
+  </info>
+
+  <title>Co se stane po vypršení platnosti klíče?</title>
+
+  <p>Když vašemu klíči vyprší platnosti, stane se neplatným. To znamená:</p>
+
+  <list>
+    <item>
+      <p>Nelze jej nadále používat k šifrování a dešifrování zpráv.</p>
+    </item>
+    <item>
+      <p>Nelze jím podepisovat ostatní klíče nebo přijímat podpisy od ostatních klíčů.</p>
+    </item>
+  </list>
+
+  <p>V závislosti na tom, jak dlouho chcete, aby byl klíč platný, můžete <link xref="pgp-create#advanced">nastavit datum vypršení platnosti</link>. Standardně nastavují <app>Hesla a klíče</app> platnost na trvalo. To znamená, že platnost klíče nikdy nevyprší.</p>
+
+  <p>Datum vypršení platnosti klíče můžete kdykoliv <link xref="pgp-expiration-change">změnit</link>, i po té co už vypršela. Avšak, pokud chcete zamezit používání klíče, jehož platnost vypršela, měli byste jej <link xref="pgp-delete">smazat</link> nebo <link xref="subkeys-revoke">odvolat</link>.</p>
+
+  <note style="info">
+    <p>V případě, že máte zprávy zašifrované klíčem, jehož platnost vypršela, musíte datum vypršení změnit, abyste mohli zprávy dešifrovat před tím, než klíč smažete nebo odvoláte.</p>
+  </note>
+
+</page>

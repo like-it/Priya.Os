@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="gl">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Proxecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Pode probar o seu disco duro para buscar problemas e asegurarse de que está san.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Comprobar os problemas do disco duro</title>
+
+<section id="disk-status">
+ <title>Comprobar o disco duro</title>
+  <p>Os discos duros dispoñen dun verificador interno de saúde denominado <app>SMART</app> (Tecnoloxía de automonitorización, análise e informe, «Self-Monitoring, Analysis, and Reporting Technology»), o cal está continuamente buscando posíbeis problemas e pode avisarlle cando o disco estea a punto de fallar. Isto resulta útil para evitar futuras perdas de datos importantes.</p>
+
+  <p>Aínda que SMART execútase automaticamente, tamén pode comprobar a saúde do seu disco executando o aplicativo <app>Utilidade de discos</app>:</p>
+
+<steps>
+ <title>Comprobe a saúde do seu disco usando o aplicativo «Discos»</title>
+
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to check from the list of storage devices on
+    the left. Information and status of the disk will be shown.</p>
+  </item>
+  <item>
+    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
+    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+  </item>
+  <item>
+    <p>See more information under <gui>SMART Attributes</gui>, or click the
+    <gui style="button">Start Self-test</gui> button to run a self-test.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>Que pasa se o disco non está san?</title>
+
+  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
+  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
+  to be prepared with a <link xref="backup-why">backup</link> to prevent data
+  loss.</p>
+
+  <p>Se o estado dí «Pre-fail», o disco está razoabelmente san pero detectáronse signos de desgaste, o que significa que podería fallar nun futuro cercano. Se o seu disco duro (ou computador) ten uns cantos anos de antigüidade, é probábel que vexa esta mensaxe nalgunhas das comprobacións de saúde. Debería <link xref="backup-how">facer unha copia de respaldo dos seus ficheiros importantes con regularidade</link> e comprobar periodicamente o estado do disco para ver se empeora.</p>
+
+  <p>Se empeora, pode querer levar o computador ou o disco duro a un profesional para un mellor análise ou reparación.</p>
+
+</section>
+
+</page>

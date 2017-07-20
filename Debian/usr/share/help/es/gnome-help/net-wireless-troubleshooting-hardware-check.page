@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="es">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Contribuyentes al wiki de documentación de Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Aunque su adaptador inalámbrico esté conectado, puede que el equipo no lo haya reconocido correctamente.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Resolución de problemas en conexiones inalámbricas</title>
+  <subtitle>Compruebe que su equipo ha reconocido el adaptador inalámbrico</subtitle>
+
+  <p>A pesar de que el adaptador inalámbrico se conecta al equipo, es posible que el equipo no lo haya reconocido como un dispositivo de red. En este paso comprobará si el dispositivo se ha reconocido correctamente.</p>
+
+  <steps>
+    <item>
+      <p>Abra una ventana de terminal, teclee <cmd>lshw -C network</cmd> y pulse <key>Intro</key>. Si le da un mensaje de error, puede que necesite instalar el programa <app>lshw</app> en su equipo.</p>
+    </item>
+    <item>
+      <p>Lea la información que aparece y busque la sección <em>Interfaz inalámbrica</em>. Si su adaptador inalámbrico se ha detectado adecuadamente, deberá ver algo similar (pero no idéntico) a esto:</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>Si aparece un dispositivo inalámbrico, continúe en la <link xref="net-wireless-troubleshooting-device-drivers">página de controladores de dispositivos</link>.</p>
+      <p>Si un dispositivo inalámbrico <em>no</em> está listado, los siguientes pasos que tomará dependrán del tipo de dispositivo que use. Consulte la siguiente sección, relativa al tipo de adaptador inalámbrico que tienen su equipo (<link xref="#pci">PCI interno</link>, <link xref="#usb">USB</link>, o <link xref="#pcmcia">PCMCIA</link>).</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>Adaptador inalámbrico PCI (interno)</title>
+
+  <p>Los adaptadores PCI internos son los más comunes, y se encuentran en portátiles fabricados desde hace algunos años. Los adaptadores PCI son adaptadores externos de tipo tarjeta y más comunes en portátiles antiguos.</p>
+
+  <steps>
+    <item>
+      <p>Abra una terminal y escriba <cmd>lspci</cmd> y pulse <key>Intro</key>.</p>
+    </item>
+    <item>
+      <p>Observe la lista de dispositivos que se muestran y busque el que está marcado como <code>Network controller</code> o <code>Ethernet controller</code>. Algunos dispositivos pueden estar marcados así; el correspondiente a su adaptador inalambrico debe incluir palabras tales como <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> o <code>802.11</code>. Aquí tiene un ejemplo de que tipo de entrada puede ver:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Si encontró su dispositivo en la lista, proceda con el <link xref="net-wireless-troubleshooting-device-drivers">paso de controladores de dispositivos</link>. Si no encontró nada relativo a su adaptador inalámbrico, consulte <link xref="#not-recognized">las instrucciones de más abajo</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>Adaptador inalámbrico USB</title>
+
+  <p>Los adaptadores inalámbricos que se conectan a un puerto USB en su equipo son menos comunes. Se pueden conectar directamente a un puerto USB, o se pueden conectar mediante un cable USB. Los adaptadores de banda ancha móvil 3G son muy similares a los adaptadores inalámbricos (wifi), así que si piensa que tiene un adaptador inalámbrico USB, compruebe que no es en realidad un adaptador 3G. Para comprobar si su adaptador inalámbrico USB se ha reconocido:</p>
+
+  <steps>
+    <item>
+      <p>Abra una terminal y escriba <cmd>lsusb</cmd> y pulse <key>Intro</key>.</p>
+    </item>
+    <item>
+      <p>Observe la lista de dispositivos que se muestran y busque cualquiera que se refiera a una red inalámbrica. El correspondiente a su adaptador inalámbrico debe incluir palabras tales como <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> o <code>802.11</code>. Aquí tiene un ejemplo de como puede ser la entrada:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>Si encontró su dispositivo en la lista, proceda con el <link xref="net-wireless-troubleshooting-device-drivers">paso de controladores de dispositivos</link>. Si no encontró nada relativo a su adaptador inalámbrico, consulte <link xref="#not-recognized">las instrucciones de más abajo</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Comprobar un dispositivo PCMCIA</title>
+
+  <p>Los adaptadores PCMCIA inalámbricos suelen ser tarjetas rectangulares que se encajan en una ranura lateral de su equipo portátil. Son más comunes en equipos antiguos. Para comprobar si su adaptador PCMCIA se ha reconocido:</p>
+
+  <steps>
+    <item>
+      <p>Arranque su equipo <em>sin</em> conectar el adaptador inalámbrico.</p>
+    </item>
+    <item>
+      <p>Abra una terminal y teclee lo siguiente, luego pulse <key>Intro</key>:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>Esto mostrará una lista de mensajes relacionados con el hardware de su equipo, y se actualizará automáticamente si algo relacionado con su hardware cambia.</p>
+    </item>
+    <item>
+      <p>Introduzca su adaptador inalámbrico en la ranura PCMCIA y compruebe qué cambia en la ventana del terminal. Los cambios deberían incluir alguna información acerca de su adaptador inalámbrico. Mírelos y vea si puede identificarlos.</p>
+    </item>
+    <item>
+      <p>Para detener el comando que se está ejecutando en la terminal, pulse <keyseq><key>Ctrl</key><key>C</key></keyseq>. Una vez hecho, puede cerrar la terminal si quiere.</p>
+    </item>
+    <item>
+      <p>Si el comando anterior encontró información acerca de su adaptador inalámbrico, proceda con los <link xref="net-wireless-troubleshooting-device-drivers">controladores de dispositivos</link>. Si el comando anterior no encontró nada relacionado con su adaptador inalámbrico, consulte las <link xref="#not-recognized">instrucciones más abajo</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>El adaptador inalámbrico no se ha reconocido</title>
+
+  <p>Si no se ha reconocido su adaptador inalámbrico, es posible que no funcione correctamente o que los controladores adecuados no estén instalados. Cómo se comprueba si hay controladores que puede instalar, dependerá de la distribución de GNU/Linux que está usando (tales como Ubuntu, Fedora, Arch u openSUSE).</p>
+
+  <p>Para obtener ayuda específica, consulte las opciones de soporte en la página web de su distribución. Por ejemplo, pueden incluir listas de correo y chats en línea donde puede preguntar acerca de su adaptador inalámbrico.</p>
+
+</section>
+
+</page>

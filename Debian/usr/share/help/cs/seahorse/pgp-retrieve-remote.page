@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-retrieve-remote" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-18" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Jak poslat spěšnou šifrovanou zprávu někomu, od něhož nemáte jeho klíč. Jak takovýto klíč získat ze vzdáleného serveru s klíči.</desc>
+  </info>
+
+  <title>Získání vzdálených klíčů</title>
+
+  <p>Něčí veřejný klíč GnuPG můžete získat na Internetu a uložit si jej do aplikace <app>Hesla a klíče</app>.</p>
+
+  <steps>
+    <title>Když chcete získat vzdálený klíč:</title>
+    <item>
+      <p>Vyberte <guiseq><gui style="menu">Vzdálené</gui> <gui style="menuitem">Hledat vzdálené klíče…</gui></guiseq></p>
+    </item>
+    <item>
+      <p>V příslušném poli zadejte údaje o klíči, který si přejete získat. Podrobnosti, jako je ID klíče nebo e-mailová adresa vlastníka klíče zajistí daleko přesnější výsledky než jen jméno vlastníka klíče.</p>
+    </item>
+    <item>
+      <p>Zmáčkněte tlačítko <gui style="button">Hledat</gui>.</p>
+    </item>
+    <item>
+      <p>Ze seznamu s výsledky hledání vyberte klíč, který chcete naimportovat, klikněte na něj pravým tlačítkem a vyberte <gui style="menuitem">Importovat</gui>. Případně můžete zmáčknout tlačítko <gui style="button">Importovat</gui>, které se objeví v horní části dialogového okna pro vybrání klíče.</p>
+    </item>
+  </steps>
+
+  <p>Importovaný klíč se objeví v klíčence <gui>Klíče GnuPG</gui>.</p>
+
+  <note style="tip">
+  <p>Pokud získaný klíč nevidíte, použijte <guiseq><gui>Zobrazit</gui> <gui>Zobrazit všechny</gui></guiseq>.</p>
+  </note>
+
+  <note style="tip">
+    <p>Jestli chcete o klíči více informací dříve, než jej naimportujete, vyberte jej a zmáčkněte tlačítko <gui style="button">Vlastnosti</gui> nacházející se v horní části dialogového okna. Případně můžete na klíč kliknout pravým tlačítkem a zvolit <gui style="menuitem">Vlastnosti</gui>. Tím se otevře nové okno, které zobrazí údaje, jako je ID klíče, otisk klíče, úroveň důvěry, jméno vlastníka atd.</p>
+  </note>
+
+</page>

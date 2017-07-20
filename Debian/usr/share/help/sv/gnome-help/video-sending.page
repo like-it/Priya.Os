@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="video-sending" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="media#videos"/>
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.12.1" date="2014-03-30" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.17.90" date="2015-08-30" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Kontrollera att de har de korrekta videokodekarna installerade.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Andra personer kan inte spela upp videorna jag gjort</title>
+
+  <p>Om du har gjort en video på din Linux-dator och skickat den till någon som använder Windows eller Mac OS kan du komma att upptäcka att de har svårt att spela videon.</p>
+
+  <p>För att kunna spela din video, måste personen du skickat den till ha de korrekta <em>kodekarna</em> installerade. En kodek är en liten bit programvara som vet hur man tar en video och visar den på skärmen. Det finns många olika video format och vart och ett kräver en egen kodek för att spela upp det. Du kan kontrollera vilket format dina videor har genom att:</p>
+
+  <list>
+    <item>
+      <p>Öppna <app>Filer</app> från översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui>.</p>
+    </item>
+    <item>
+      <p>Högerklicka på videofilen och välj <gui>Egenskaper</gui>.</p>
+    </item>
+    <item>
+      <p>Gå till fliken <gui>Ljud/Video</gui>- eller <gui>Video</gui>-fliken och se vilken <gui>Kodek</gui> som listas under <gui>Video</gui> och <gui>Ljud</gui> (om videon också har Ljud).</p>
+    </item>
+  </list>
+
+  <p>Fråga personen som har problem med uppspelning om de har en rätta kodeken installerad. Det kan vara bra att leta på nätet efter namnet på kodeken samt namnet på deras videouppspelningsprogram. Om din video till exempel använder <em>Theora</em> och du har en kompis som använder Windows Media Player för att söka titta på den, sök då efter ”theora windows media player”. Du kommer ofta att kunna hämta ner den rätta kodeken gratis om den inte finns installerad.</p>
+
+  <p>Om du inte kan hitta rätt kodek, prova <link href="http://www.videolan.org/vlc/">mediaspelaren VLC</link>. Den fungerar på Windows och Mac OS förutom Linux och har stöd för en mängd olika videoformat. Om det också misslyckas, prova att konvertera din video till ett annat format. De flesta videoredigerare kan göra detta och det finns också specifika program för videokonvertering. Kontrollera programmet för programvaruinstallation för att se vad som finns tillgängligt.</p>
+
+  <note>
+    <p>Det finns ett par andra problem som kan förhindra någon från att spela upp din video. Videon kan ha blivit skadad när du skickade den till dem (ibland kopieras stora filer inte helt korrekt), de kan ha problem med sitt videouppspelningsprogram eller så kan videon inte ha skapats korrekt (de kan ha blivit fel när du sparade videon).</p>
+  </note>
+
+</page>

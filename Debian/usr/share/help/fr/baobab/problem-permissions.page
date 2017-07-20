@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="problem-permissions" xml:lang="fr">
+  <info>
+    <link type="guide" xref="index#problems"/>
+    <revision pkgversion="3.12" date="2014-01-25" status="review"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Lors de l'analyse, le message <gui>Impossible d'analyser le dossier /… ou certains de ses sous-dossiers</gui> apparaît.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2006-2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fievez Yoann</mal:name>
+      <mal:email>yoann.fievez@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Erreur lors de l'analyse</title>
+
+  <p>Lors de l'analyse, le message <gui>Impossible d'analyser le dossier /… ou certains de ses sous-dossiers</gui> peut apparaître en haut de la fenêtre. Cette erreur survient lorsque vous n'avez pas les permissions d'accéder à certains fichiers, à cause des restrictions du système. Les fichiers auxquels vous ne pouvez accéder ne seront pas pris en compte lors du calcul du <link xref="pref-view-chart">graphique</link> de l'utilisation du disque, les résultats donnés peuvent ainsi être faussés.</p>
+
+  <p>Un accès limité aux fichiers et aux dossiers n'est pas anormal, vous ne pouvez généralement pas remédier à cette erreur.</p>
+
+  <note style="info"><p>L'<app>analyseur d'utilisation des disques</app> exécute la commande <cmd>du</cmd> pour créer une vue détaillée de l'utilisation des disques, et nécessite les permissions de lecture des fichiers et d'exécution des dossiers.</p>
+
+  <p>En revanche, l'utilisation du disque dans la fenêtre principale exécute la commande <cmd>df</cmd> qui dépend du système de fichier et non des permissions des fichiers.</p></note>
+</page>

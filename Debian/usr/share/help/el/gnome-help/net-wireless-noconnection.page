@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-wireless-noconnection" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" version="0.2" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Διπλοελέγξτε τον κωδικό πρόσβασης και άλλα πράγματα για να τα δοκιμάσετε.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Έχω εισάγει τον σωστό κωδικό πρόσβασης, αλλά δεν μπορώ να συνδεθώ</title>
+
+<p>Εάν είσαστε σίγουρος ότι εισάγατε το σωστό <link xref="net-wireless-wepwpa">κωδικό πρόσβασης του ασύρματου</link>, αλλά δεν μπορείτε να συνδεθείτε με επιτυχία σε ένα ασύρματο δίκτυο, δοκιμάστε κάποιο από τα ακόλουθα:</p>
+
+<list>
+ <item>
+  <p>Ελέγξτε προσεκτικά ότι έχετε τον σωστό κωδικό πρόσβασης</p>
+  <p>Οι κωδικοί πρόσβασης εξαρτώνται από πεζά/κεφαλαία (έχει σημασία εάν έχετε κεφαλαία ή πεζά γράμματα), γι' αυτό ελέγξετε ότι δεν υπάρχει λάθος γράμμα.</p>
+ </item>
+
+ <item>
+  <p>Δοκιμάστε το δεκαεξαδικό ή το κλειδί πρόσβασης ASCII</p>
+  <p>Ο κωδικός πρόσβασης που εισάγετε μπορεί επίσης να παρουσιάζεται με διαφορετικό τρόπο - ως συμβολοσειρά χαρακτήρων σε δεκαεξαδική μορφή (αριθμοί 0-9 και γράμματα a-f) που λέγεται κωδικός πρόσβασης. Κάθε κωδικός έχει ένα ισοδύναμο κλειδί πρόσβασης. Εάν μπορείτε να προσπελάσετε το κλειδί πρόσβασης καθώς και τη λέξη πρόσβασης/συνθηματικό, δοκιμάστε την πληκτρολόγηση του κλειδιού πρόσβασης. Βεβαιωθείτε ότι επιλέξατε την σωστή επιλογή <gui>ασύρματης ασφάλειας</gui> όταν σας ζητούν τον κωδικό πρόσβασης (για παράδειγμα, επιλέξτε το <gui>κλειδί WEP 40/128-δυαδικών</gui> εάν πληκτρολογείτε το κλειδί πρόσβασης 40 χαρακτήρων για μια κρυπτογραφημένη σύνδεση WEP).</p>
+ </item>
+
+ <item>
+  <p>Δοκιμάστε να απενεργοποιήσετε την ασύρματη κάρτα σας και μετά ενεργοποιήστε την πάλι</p>
+  <p>Μερικές φορές οι ασύρματες κάρτες κολλάνε ή εμφανίζουν μικροπροβλήματα που σημαίνει ότι δεν συνδέονται. Δοκιμάστε να απενεργοποιήσετε την κάρτα και έπειτα ενεργοποιήστε την πάλι - για περισσότερες πληροφορίες δείτε <link xref="net-wireless-troubleshooting"/>.</p>
+ </item>
+
+ <item>
+  <p>Σημειώστε ότι χρησιμοποιείτε τον σωστό τύπο ασφάλειας ασυρμάτου</p>
+  <p>Όταν σας ζητηθεί ο κωδικός πρόσβασης ασφάλειας του ασυρμάτου σας, μπορείτε να επιλέξετε ποιον τύπο ασφάλειας ασυρμάτου να χρησιμοποιήσετε. Βεβαιωθείτε ότι επιλέξατε αυτόν που χρησιμοποιείται από τον δρομολογητή ή τον ασύρματο σταθμό βάσης. Αυτό πρέπει να επιλεγεί από προεπιλογή, αλλά μερικές φορές δεν θα συμβεί για κάποιο λόγο. Εάν δεν ξέρετε ποιος είναι, δοκιμάστε εμπειρικά για να διερευνήσετε τις διαφορετικές επιλογές.</p>
+ </item>
+
+ <item>
+  <p>Ελέγξετε ότι η ασύρματη κάρτα σας υποστηρίζεται κατάλληλα</p>
+  <p>Μερικές ασύρματες κάρτες δεν υποστηρίζονται πολύ καλά. Εμφανίζουν μια ασύρματη σύνδεση, αλλά δεν μπορούν να συνδεθούν με ένα δίκτυο επειδή οι οδηγοί τους δεν είναι ικανοί να το κάνουν. Δείτε εάν μπορείτε να πάρετε έναν εναλλακτικό ασύρματο οδηγό, ή εάν χρειάζεστε να κάνετε κάποια πρόσθετη ρύθμιση (όπως εγκατάσταση ενός διαφορετικού <em>υλικολογισμικό</em>). Για περισσότερες πληροφορίες δείτε <link xref="net-wireless-troubleshooting"/>.</p>
+ </item>
+
+</list>
+
+</page>

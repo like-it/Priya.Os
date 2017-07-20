@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-apps-outlook" xml:lang="cs">
+
+  <info>
+    <desc>Jak importovat data z aplikace Microsoft Outlook.</desc>
+    
+    <link type="guide" xref="import-data#import-from-apps"/>
+
+    <revision pkgversion="3.0.2" version="0.5" date="2011-09-02" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/outlook-migration-mail.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Outlook</title>
+<!-- "Import data and settings from older programs" cannot recognize Outlook, as there obviously is no default storage location for Outlook *under Linux* -->
+
+<p>Tyto kroky se týkají místně uložených dat, například u účtů POP. Pro vzdálená data (jako je IMAP) to není zapotřebí, protože data jsou stále uchovaná na serveru a není nutné je ručně přenášet. Stačí v pošťáku <app>Evolution</app> nastavit příslušný účet a data se sama načtou.</p>
+
+<section id="prerequisites">
+<title>Příprava pod Windows</title>
+<p>Nejdříve, dokud ještě používáte Microsoft Windows, připravte své zprávy k importu:</p>
+<steps>
+<item><p>Najděte soubory aplikace Outlook (normálně to jsou soubory končící <file>.pst</file> nebo <file>.ost</file>):</p>
+<table frame="all" rules="all">
+  <tr>
+    <td/><td><p>Windows 7, Windows Vista</p></td><td><p>Windows XP</p></td>
+  </tr>
+  <tr>
+    <td><p>Outlook 2010</p></td><td><p><file>C:\Users\uživatelské_jméno\My Documents\Outlook Files</file></p></td><td><p><file>C:\Documents and Settings\uživatelské_jméno\My Documents\Outlook Files</file></p></td>
+  </tr>
+  <tr>
+    <td><p>Outlook 2007 a starší</p></td><td><p><file>C:\Users\uživatelské_jméno\AppData\Local\Microsoft\Outlook</file></p></td><td><p><file>C:\Documents and Settings\uživatelské_jméno\AppData\Local\Microsoft\Outlook</file></p></td>
+  </tr>
+</table>
+<p>(„uživatelské_jméno“ nahraďte svým skutečným uživatelským jménem.)</p>
+</item>
+<!-- File locations taken from http://support.microsoft.com/kb/2291280 and http://answers.microsoft.com/en-us/windows/forum/windows_7-files/where-is-location-of-outlookpst-file-in-windows-7/3a4c03c3-e8ad-4912-9e37-f1c62057d1f9 -->
+<item><p>Zkopírujte soubory do systému nebo oddílu, kde je nainstalován <app>Evolution</app>.</p>
+<p>Protože váš pevný disk s Windows je pravděpodobně naformátován na NTFS, nemusí jej některé linuxové systémy číst bez instalace dodatečného softwaru. V takovém případě může být jednodušším řešením nakopírovat složku s poštou na USB disk nebo vypálit na CD.</p></item>
+</steps>
+</section>
+
+<section id="importing">
+<title>Import do aplikace <app>Evolution</app></title>
+<steps>
+<item><p>Podle toho, jak jste postupovali v posledním kroku, buď připojte USB disk nebo vložte CD s daty a počkejte, až se otevřou v okně správce souborů, nebo připojte svůj disk s Windows.</p></item>
+<item><p>Zkopírujte všechny soubory s poštou do vašeho domovského adresáře nebo do jiné příhodné složky.</p></item>
+<item><p>Spusťte <app>Evolution</app>.</p></item>
+<item><p>Volitelně vyberte <guiseq><gui>Soubor</gui> <gui>Nový</gui> <gui>Složka pošty</gui></guiseq>, abyste vytvořili <link xref="mail-folders">složku</link>, kterou potřebujete.</p></item>
+
+<item><p>Klikněte na <guiseq><gui>Soubor</gui> <gui>Importovat</gui></guiseq>.</p></item>
+<item><p>Na kartě <gui>Typ importu</gui> klikněte na <gui>Importovat jeden soubor</gui>.</p></item>
+<item><p>Zvolte soubor .pst, který chcete importovat.</p><p>Typ souboru bude určen automaticky.</p>
+<note style="tip"><p>V případě, že volba pro import osobních složek Outlook (soubory .pst) není pod <guiseq><gui>Soubor</gui> <gui>Import</gui> <gui>Importovat jeden soubor</gui> <gui>Typ souboru</gui></guiseq> přístupná, nemá vaše distribuce tuto funkcionali možná zprovozněnou.</p></note>
+</item>
+<item><p>Zvolte cíl (tj. složku v aplikaci <app>Evolution</app>) pro importovaná data.</p></item>
+<item><p>Opakujte kroky importu, dokud nebudete mít naimportována všechna data.</p></item>
+</steps>
+
+</section>
+
+</page>

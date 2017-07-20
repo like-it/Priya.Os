@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" version="1.0 ui/1.0" id="shell-keyboard-shortcuts" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="guide" xref="keyboard"/>
+    <link type="guide" xref="shell-overview#apps"/>
+    <link type="seealso" xref="keyboard-key-super"/>
+
+    <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ta sig runt på skrivbordet med hjälp av tangentbordet.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Användbara tangentbordsgenvägar</title>
+
+<p>Denna visa tillhandahåller en översikt över kortkommandon som kan hjälpa dig att använda ditt skrivbord och program mer effektivt. Om du inte kan använda en mus eller ett pekdon alls, se <link xref="keyboard-nav"/> för vidare information om hur man navigerar i användargränssnittet enbart med tangentbordet.</p>
+
+<table rules="rows" frame="top bottom" ui:expanded="true">
+<title>Ta sig runt på skrivbordet</title>
+  <tr xml:id="alt-f1">
+    <td><p><keyseq><key>Alt</key><key>F1</key></keyseq> eller <key xref="keyboard-key-super">Super</key>-tangenten</p></td>
+    <td><p>Växla mellan översiktsvyn <gui>Aktiviteter</gui> och skrivbordet. I översiktsvyn kan du börja skriva för att omedelbart söka bland dina program, kontakter och dokument.</p></td>
+  </tr>
+  <tr xml:id="alt-f2">
+    <td><p><keyseq><key>Alt</key><key>F2</key></keyseq></p></td>
+    <td><p>Visa kommandofönstret (för att snabbt köra kommandon)</p></td>
+  </tr>
+  <tr xml:id="super-tab">
+    <td><p><keyseq><key>Super</key><key>Tabb</key></keyseq></p></td>
+    <td><p><link xref="shell-windows-switching">Växla snabbt mellan fönster</link>. Håll ner <key>Skift</key> för omvänd ordning.</p></td>
+  </tr>
+  <tr xml:id="super-tick">
+    <td><p><keyseq><key>Super</key><key>`</key></keyseq></p></td>
+    <td>
+      <p>Växla mellan fönster från samma program, eller från det markerade programmet efter <keyseq><key>Super</key><key>Tabb</key></keyseq>.</p>
+      <p>Detta kortkommando använder <key>`</key> på amerikanska tangentbord, där tangenten <key>`</key> sitter ovanför <key>Tabb</key>. På alla andra tangentbord är kortkommandot <key>Super</key> samt tangenten ovanför <key>Tabb</key>.</p>
+    </td>
+  </tr>
+  <tr xml:id="ctrl-alt-tab">
+    <!-- To be updated to <key>Tab</key> in the future. -->
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Tabb</key></keyseq></p></td>
+    <td>
+      <p>Ge systemraden tangentbordsfokus. I översiktsvyn <gui>Aktiviteter</gui>, växla tangentbordsfokus mellan systemraden, snabbstartspanelen, fönsteröversiktsvyn, programlistan, sökfältet och meddelandefältet. Använd piltangenterna för att navigera.</p>
+    </td>
+  </tr>
+  <tr xml:id="super-a">
+    <td><p><keyseq><key>Super</key><key>A</key></keyseq></p></td>
+    <td><p>Visa listan över program.</p></td>
+  </tr>
+  <tr xml:id="super-updown">
+    <td><p><keyseq><key>Super</key><key>Page Up</key></keyseq> och <keyseq><key>Super</key><key>Page Down</key></keyseq></p></td>
+    <td><p><link xref="shell-workspaces-switch">Växla mellan arbetsytor</link>.</p></td>
+  </tr>
+  <tr xml:id="super-shift-updown">
+    <td><p><keyseq><key>Super</key><key>Skift</key><key>Page Up</key></keyseq> och <keyseq><key>Super</key><key>Skift</key><key>Page Down</key></keyseq></p></td>
+    <td><p><link xref="shell-workspaces-movewindow">Flytta det aktuella fönstret till en annan arbetsyta</link>.</p></td>
+  </tr>
+  <tr xml:id="super-shift-left">
+    <td><p><keyseq><key>Super</key><key>Skift</key><key>←</key></keyseq></p></td>
+    <td><p>Flytta aktuellt fönster en skärm åt vänster.</p></td>
+  </tr>
+  <tr xml:id="super-shift-right">
+    <td><p><keyseq><key>Super</key><key>Skift</key><key>→</key></keyseq></p></td>
+    <td><p>Flytta aktuellt fönster en skärm åt höger.</p></td>
+  </tr>
+  <tr xml:id="ctrl-alt-Del">
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Delete</key></keyseq></p></td>
+    <td><p><link xref="shell-exit">Stäng av</link>.</p></td>
+  </tr>
+  <tr xml:id="ctrl-alt-l">
+    <td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
+    <td><p><link xref="shell-exit#lock-screen">Lås skärmen.</link></p></td>
+  </tr>
+  <tr xml:id="super-m">
+    <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
+    <td><p>Öppna <link xref="shell-notifications#messagetray">meddelandefältet</link>. Tryck <keyseq><key>Super</key><key>M</key></keyseq> igen eller <key>Esc</key> för att stänga.</p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>Vanliga redigeringsgenvägar</title>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td>
+    <td><p>Markera all text eller alla objekt i en lista.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>X</key></keyseq></p></td>
+    <td><p>Klipp ut markerad text eller objekt och placera dem i urklipp.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>C</key></keyseq></p></td>
+    <td><p>Kopiera markerad text eller objekt till urklipp.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>V</key></keyseq></p></td>
+    <td><p>Klistra in innehållet i urklipp.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Z</key></keyseq></p></td>
+    <td><p>Ångra senaste åtgärden.</p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>Fånga från skärmen</title>
+  <tr>
+    <td><p><key>Prnt Scrn</key></p></td>
+    <td><p><link xref="screen-shot-record#screenshot">Ta en skärmbild.</link></p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Alt</key><key>Prnt Scrn</key></keyseq></p></td>
+    <td><p><link xref="screen-shot-record#screenshot">Ta en skärmbild av ett fönster.</link></p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Skift</key><key>Prnt Scrn</key></keyseq></p></td>
+    <td><p><link xref="screen-shot-record#screenshot">Ta en skärmbild av ett område av skärmen.</link> Markören ändras till hårkors. Klicka och dra för att välja ett område.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Skift</key><key>R</key></keyseq></p></td>
+    <td><p><link xref="screen-shot-record#screencast">Påbörja och avsluta en skärminspelning.</link></p></td>
+  </tr>
+</table>
+
+</page>

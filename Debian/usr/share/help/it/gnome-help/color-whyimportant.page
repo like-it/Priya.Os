@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whyimportant" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="color"/>
+    <desc>La gestione del colore è importante per designer, fotografi e artisti.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Perché la gestione del colore è importante?</title>
+  <p>La gestione del colore è il processo di cattura di un colore attraverso l'uso di un dispositivo d'ingresso, la sua successiva visualizzazione a schermo e la stampa dello stesso mantenendo sempre inalterate le caratteristiche del colore in tutti i dispositivi.</p>
+
+  <p>La necessità di una corretta gestione del colore è probabilmente meglio illustrata attraverso l'uso di una fotografia, in questo caso di un uccello in una giornata invernale.</p>
+
+  <figure>
+    <desc>Un uccello su un muro ghiacciato come visto dal mirino della fotocamera</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-camera.png"/>
+  </figure>
+
+  <p>In genere, i monitor saturano eccessivamente il canale blu facendo sembrare fredde le immagini.</p>
+
+  <figure>
+    <desc>Questo è quello che un utente vede sullo schermo di un tipico computer portatile da lavoro</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-display.png"/>
+  </figure>
+
+  <p>Notare come il bianco non sia "bianco carta" e il nero dell'occhio sia ora un marrone smorto.</p>
+
+  <figure>
+    <desc>Questo è ciò che un utente vede stampando con una tipica stampante a getto d'inchiostro</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-printer.png"/>
+  </figure>
+
+  <p>Il problema essenziale è che ogni dispositivo è capace di gestire un diversa gamma di colori così che, mentre potrebbe essere possibile scattare una foto di un blu elettrico, la maggior parte delle stampanti non è in grado di riprodurlo.</p>
+  <p>La maggior parte dei dispositivi cattura l'immagine in RGB (Red, Green, Blue) e deve convertirla in CMYK (Cyan, Magenta, Yellow, Black) per stamparla. Un altro problema è che non è possibile avere inchiostro <em>bianco</em> così che la massima bianchezza ottenibile è quella del colore della carta.</p>
+
+  <p>Un altro problema sono le unità: senza specificare la scala su cui un colore è misurato, non è possibile sapere se rosso 100% sia vicino all'infrarosso o solo all'inchiostro rosso della stampante più scuro. Quello che è rosso al 50% su un display è probabilmente qualcosa come 62% su un altro display. È come dire a una persona che si è appena guidato per 7 unità di distanza: senza conoscere l'unità non è possibile sapere se siano 7 chilometri o 7 metri.</p>
+
+  <p>Nell'ambito del colore, ci si riferisce alle unità come gamme cromatiche, che sono essenzialmente l'insieme dei colori che può essere riprodotto. È possibile che un dispositivo come un fotocamera DSLR abbia una gamma cromatica molto vasta, essendo in grado di catturare tutti i colori di un tramonto, ma un proiettore invece ha una gamma cromatica molto piccola, rendendo tutti i colori "slavati".</p>
+
+  <p>In alcuni casi è possibile <em>correggere</em> l'uscita del dispositivo alterando i dati inviati ad esso, ma in altri casi in cui questo non è possibile (non si può stampare il blu elettrico) è necessario mostrare all'utente come sarà il risultato.</p>
+
+  <p>Per le fotografie è sensato usare l'intera gamma tonale di un dispositivo del colore affinché sia possibile effettuare modifiche omogenee al colore. Per altre immagini, è possibile che si voglia far corrispondere il colore esattamente, il che è importante nel caso in cui si tenti di stampare il logo Red Hat su una tazza personalizzata, esso <em>deve</em> essere del rosso Red Hat esatto.</p>
+
+</page>

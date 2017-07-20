@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="game-types" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+    <revision pkgversion="3.8" version="0.1" date="2013-05-21" status="draft"/>
+    <revision pkgversion="3.11.90" date="2014-03-26" status="review"/>
+    <revision pkgversion="3.14" date="2015-01-25" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">safincrazy@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Rachel Dunstan</name>
+      <email its:translate="no">dunstanrc@gmail.com</email>
+    </credit>
+
+    <desc>Jak změnit úroveň obtížnosti hry <app>Roboti</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Typ hry</title>
+
+  <p><app>Roboty</app> můžete hrát různými způsoby podle toho, jaký si vyberete typ hry. Díky tomu si <app>Roboty</app> zahrajete v různých stupních obtížnosti.</p>
+
+  <steps>
+    <title>Abyste změnili úroveň obtížnosti:</title>
+    <item>
+      <p>Vyberte <guiseq><gui style="menu">Předvolby</gui> <gui>Hra</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>V rozbalovací nabídce vedle <gui>Typ hry</gui> vyberte svoji volbu.</p>
+      <table frame="top bottom" rules="rows">
+      <thead>
+      <tr>
+        <td><p>Typ hry</p></td>
+        <td><p>Počáteční počet bezpečných <link xref="moves#teleport">teleportů</link></p>
+        </td>
+        <td><p>Počáteční počet <link xref="scores#high-low-risk">málo nepřátelských robotů</link></p></td>
+        <td><p>Počáteční počet <link xref="scores#high-low-risk">vysoce nepřátelských robotů</link></p></td>
+        <td><p>Zvyšují se postupně bezpečné teleporty v dalších úrovních?</p></td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><p><gui>noční můra</gui></p></td>
+        <td><p>2</p></td>
+        <td><p>2</p></td>
+        <td><p>8</p></td>
+        <td><p>Ano</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>roboti s bezpečným teleportem</gui></p></td>
+        <td><p>0</p></td>
+        <td><p>10</p></td>
+        <td><p>0</p></td>
+        <td><p>Ano, ale jen když jsou roboti zabiti během <link xref="moves#wait">čekání</link></p></td>
+      </tr>
+      <tr>
+        <td><p><gui>roboti 2</gui></p></td>
+        <td><p>1</p></td>
+        <td><p>8</p></td>
+        <td><p>2</p></td>
+        <td><p>Ano, ale jen když jsou roboti zabiti během <link xref="moves#wait">čekání</link></p></td>
+      </tr>
+      <tr>
+        <td><p><gui>roboti 2 snadní</gui></p></td>
+        <td><p>3</p></td>
+        <td><p>8</p></td>
+        <td><p>2</p></td>
+        <td><p>Ano</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>klasičtí roboti</gui></p></td>
+        <td><p>0</p></td>
+        <td><p>10</p></td>
+        <td><p>0</p></td>
+        <td><p>Ne</p></td>
+      </tr>
+      </tbody>
+    </table>
+    </item>
+    <item>
+      <p>Pokud zaškrtnete <gui style="checkbox">Používat bezpečné tahy</gui>, bude se hra v případě, že jedinou možností přežití je telportovat se, starat o to, abyste netáhli způsobem, při kterém by vás roboti mohli zabít. Pokud zaškrtnete <gui style="checkbox">Používat superbezpečné tahy</gui>, bude vám hra ve stejných případech bránit udělat jakýkoliv tah, takže budete nuceni se teleportovat. Tím se sníží náročnost hry, takže jestli vám bude hra připadat příliš snadná, zrušte zaškrtnutí u těchto dvou voleb.</p>
+    </item>
+  </steps>
+
+</page>

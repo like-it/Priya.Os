@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-introduction" xml:lang="gu">
+
+  <info>
+    <link type="guide" xref="shell-overview" group="#first"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-13" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>માઇકલ હીલ</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>ઍકાટેરીના ગેરાસીમોવા</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A visual introduction to your desktop, the top bar, and the
+    <gui>Activities</gui> overview.</desc>
+  </info>
+
+  <title>GNOME નો પરિચય</title>
+
+  <p>GNOME 3 features a completely reimagined user interface designed to
+  stay out of your way, minimize distractions, and help you get things done.
+  When you first log in, you will see an empty desktop and the top bar.</p>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar.png" width="600" if:test="!target:mobile">
+      <p>GNOME શેલ ટોચ પટ્ટી</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar-classic.png" width="500" height="40" if:test="!target:mobile">
+      <p>GNOME શેલ ટોચ પટ્ટી</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>The top bar provides access to your windows and applications, your
+  calendar and appointments, and
+  <link xref="status-icons">system properties</link> like sound, networking,
+  and power. In the status menu in the top bar, you can change the volume or
+  screen brightness, edit your <gui>Wi-Fi</gui> connection details, check your
+  battery status, log out or switch users, and turn off your computer.</p>
+
+<links type="section"/>
+
+<section id="activities">
+  <title><gui>પ્રવૃત્તિ</gui> ઝાંખી:</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
+      <p>પ્રવૃત્તિ બટન</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-activities-classic.png" width="108" height="69" style="floatend floatright" if:test="!target:mobile">
+      <p>પ્રવૃત્તિ બટન</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p if:test="!platform:gnome-classic">To access your windows and applications,
+  click the <gui>Activities</gui> button, or just move your mouse pointer to
+  the top-left hot corner. You can also press the
+  <key xref="keyboard-key-super">Super</key> key on your keyboard. You can
+  see your windows and applications in the overview. You can also just start
+  typing to search your applications, files, folders, and the web.</p>
+
+  <p if:test="platform:gnome-classic">To access your windows and applications,
+  click the <gui xref="shell-introduction#activities">Applications</gui> menu
+  at the top left of the screen and select the <gui>Activities Overview</gui>
+  item. You can also press the <key xref="keyboard-key-super">Super</key> key
+  to see your windows and applications in the <gui>Activities</gui> overview. 
+  Just start typing to search your applications, files, and folders.</p>
+
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
+    <p>ડૅશ</p>
+  </media>
+
+  <p>ઝાંખીની ડાબી બાજુ પર, તમે <em>ડૅશ</em> ને શોધશો. ડૅશ તમારી પસંદીદા અને ચાલતા કાર્યક્રમોને તમને બતાવે છે. તે કાર્યક્રમને ખોલવા માટે ડૅશમાં કોઇપણ ચિહ્ન પર ક્લિક કરો; જો કાર્યક્રમ પહેલેથી ચાલી રહ્યુ હોય તો, તે પ્રકાશિત થયેલ હશે. તેનાં ચિહ્નો પર ક્લિક કરીને મોટાભાગની તાજેતરની વપરાયેલ વિન્ડોને લાવશે. તમે ઝાંખીમાં ચિહ્નને ખેંચી પણ શકો છો, અથવા જમણે કોઇપણ કામ કરવાની જગ્યામાં.</p>
+
+  <p>ચિહ્ન પર જમણી ક્લિક કરીને મેનુને દર્શાવે છે કે જે ચાલતા કાર્યક્રમમાં કોઇપણ વિન્ડોને પસંદ કરવા માટે પરવાનગી આપે છે, અથવા નવી વિન્ડોને ખોલવા માટે. તમે ચિહ્ન પર પણ ક્લિક કરી શકો છો જ્યારે નવી વિન્ડોને ખોલવા માટે <key>Ctrl</key> કીને પકડી રાખો.</p>
+
+  <p>When you enter the overview, you will initially be in the windows
+  overview. This shows you live thumbnails of all the windows on the current
+  workspace.</p>
+
+  <p>કાર્યક્રમ ઝાંખીને દર્શાવવા માટે ડૅશને તળિયે જાળી બટન પર ક્લિક કરો. આ તમારાં કમ્પ્યૂટર પર સ્થાપિત થયેલ બધા કાર્યક્રમોને બતાવે છે. તેને ચલાવવા માટે કોઇપણ કાર્યક્રમ પર ક્લિક કરો, અથવા ઝાંખી અથવા કામ કરવાની જગ્યા થમ્ભનેઇલમાં કાર્યક્રમને ખેંચો. તમે તેને પસંદીદા બનાવવા માટે ડૅશમાં કાર્યક્રમને ખેંચી પણ શકો છો. તમારી પસંદીદા કાર્યક્રમો ડૅશમાં રહે છે જ્યારે તેઓ ચાલી રહ્યા ન હોય, તેથી તમે તેઓને ઝડપથી વાપરી શકો છો.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-apps-open">કાર્યક્રમોને શરૂ કરવા વિશે વધારે શીખો. </link></p>
+    </item>
+    <item>
+      <p><link xref="shell-windows">વિન્ડો અને કામ કરવાની જગ્યા વિશે વધારે શીખો. </link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="appmenu">
+  <title>કાર્યક્રમ મેનુ</title>
+  <if:choose>
+    <if:when test="!platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-shell.png" width="250" style="floatend floatright" if:test="!target:mobile">
+        <p><app>ટર્મિનલ</app> નું કાર્યક્રમ મેનુ</p>
+      </media>
+      <p>Application menu, located beside the <gui>Activities</gui> button,
+      shows the name of the active application alongside with its icon and
+      provides quick access to application preferences or help. The items that
+      are available in the application menu vary depending on the application.
+      </p>
+    </if:when>
+    <if:when test="platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-classic.png" width="154" height="133" style="floatend floatright" if:test="!target:mobile">
+        <p><app>ટર્મિનલ</app> નું કાર્યક્રમ મેનુ</p>
+      </media>
+      <p>Application menu, located next to the <gui>Applications</gui> and
+      <gui>Places</gui> menus, shows the name of the active application
+      alongside with its icon and provides quick access to application
+      preferences or help. The items that are available in the application menu
+      vary depending on the application.</p>
+    </if:when>
+  </if:choose>
+
+</section>
+
+<section id="clock">
+  <title>ઘડિયાળ, કેલેન્ડર અને મંત્રણા</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Clock, calendar, appointments and notifications</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-appts-classic.png" width="373" height="250" style="floatend floatright" if:test="!target:mobile">
+      <p>ઘડિયાળ, કૅલેન્ડર, અને મુલાકાતો</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Click the clock on the top bar to see the current date, a month-by-month
+  calendar, a list of your upcoming appointments and new notifications. You can
+  also open the calendar by pressing
+  <keyseq><key>Super</key><key>M</key></keyseq>. You can access the date and
+  time settings and open your full <app>Evolution</app> calendar directly from
+  the menu.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="clock-calendar">કેલેન્ડર અને મંત્રણા વિશે વધારે શીખો.</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-notifications">સૂચનાઓ અને સંદેશા ટ્રે વિશે વધારે શીખો.</link></p>
+    </item>
+  </list>
+
+</section>
+
+
+<section id="yourname">
+  <title>તમે અને તમારું કમ્પ્યૂટર</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-exit.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>વપરાશકર્તા મેનુ</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-exit-classic.png" width="250" height="200" style="floatend floatright" if:test="!target:mobile">
+      <p>વપરાશકર્તા મેનુ</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Click the system menu in the top-right corner to manage your system
+  settings and your computer.</p>
+
+<!-- Apparently not anymore. TODO: figure out how to update status.
+  <p>You can quickly set your availability directly from the menu. This will set
+  your status for your contacts to see in instant messaging applications such as
+  <app>Empathy</app>.</p>-->
+
+<!--
+<p>If you set yourself to Unavailable, you won't be bothered by message popups
+at the bottom of your screen. Messages will still be available in the message
+tray when you move your mouse to the bottom-right corner. But only urgent
+messages will be presented, such as when your battery is critically low.</p>
+
+<list style="compact">
+  <item><p><link xref="shell-session-status">Learn more about changing
+  your availability.</link></p></item>
+</list>
+-->
+
+  <p>When you leave your computer, you can lock your screen to prevent other
+  people from using it. You can also quickly switch users without logging out
+  completely to give somebody else access to the computer, or you can
+  suspend or power off the computer from the menu.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-exit">વપરાશકર્તાઓને બદલવા વિશે વધારે શીખો, બહાર નીકળી રહ્યા છે, અને તમારા કમ્પ્યૂટરને બંધ કરી રહ્યા છે.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="lockscreen">
+  <title>તાળુ સ્ક્રીન</title>
+
+  <media type="image" src="figures/shell-lock.png" width="250" style="floatend floatright" if:test="!target:mobile">
+    <p>તાળુ સ્ક્રીન</p>
+  </media>
+
+  <p>When you lock your screen, or it locks automatically, the lock screen is
+  displayed. In addition to protecting your desktop while you're away from your
+  computer, the lock screen displays the date and time. It also shows
+  information about your battery and network status, and allows you to control
+  media playback.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-lockscreen">તાળુ સ્ક્રીન વિશે વધારે શીખો.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="window-list">
+  <title>વિન્ડો યાદી</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <p>બીજા ડેસ્કટોપ પર્યાવરણમાં શોધેલ કાયમી દૃશ્યમાન વિન્ડો યાદી કરતા વિન્ડોને બદલવા માટે GNOME લક્ષણોનો વિવિધ હેતુ છે. આ અવરોધ વગર તમને કાર્ય પર પ્રકાશિત થવા દો.</p>
+    <list style="compact">
+      <item>
+        <p><link xref="shell-windows-switching">વિન્ડોને બદલવા વિશે વધારે શીખો. </link></p>
+      </item>
+    </list>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-window-list-classic.png" width="500" height="34" style="floatend floatright" if:test="!target:mobile">
+      <p>વિન્ડો યાદી</p>
+    </media>
+    <p>સ્ક્રીનની તળિયે વિન્ડો યાદી બધી તમારી ખુલ્લી વિન્ડો અને કાર્યક્રમોને પ્રવેશ પૂરો પાડે છે અને તમે તેઓને ઝડપથી ન્યૂનત્તમ અને ફરી સંગ્રહવા દો.</p>
+    <p>At the right-hand side of the window list, GNOME displays a short
+    identifier for the current workspace, such as <gui>1</gui> for the first
+    (top) workspace. In addition, the identifier also displays the total number
+    of available workspaces. To switch to a different workspace, you can click
+    the identifier and select the workspace you want to use from the menu.</p>
+    <p>જો કાર્યક્રમ અથવા સિસ્ટમ ઘટક એ તમારાં ધ્યાનને ખેંચવા માંગતા હોય તો, તે વિન્ડોની જમણી બાજુ પર વાદળી ચિહ્નને દર્શાવશો. વાદળી ચિહ્ન પર ક્લિક કરીને સંદેશા ટ્રેને બતાવે છે.</p>
+  </if:when>
+</if:choose>
+
+</section>
+
+</page>

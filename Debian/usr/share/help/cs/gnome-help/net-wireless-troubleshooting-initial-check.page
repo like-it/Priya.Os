@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-initial-check" xml:lang="cs">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-hardware-info"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Přispěvatelé do wiki s dokumentací k Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ujistěte se, že základní nastavení sítě jsou správná a připravte se na další kroky v řešení problému.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Řešení problémů s bezdrátovými sítěmi</title>
+  <subtitle>Provedení počáteční kontroly připojení</subtitle>
+
+  <p>V tomto kroku budete kontrolovat některé základní údaje vašeho bezdrátového připojení k síti. Tím se ujistíme, že vaše problémy se sítí nejsou způsobeny relativně jednoduchými záležitostmi, jako bezdrátové připojení bez zapnutého adaptéru, a připravíme se na pár následujících kroků v řešení problému.</p>
+
+  <steps>
+    <item>
+      <p>Ujistěte se, že váš počítač není připojený k <em>drátové</em> síti.</p>
+    </item>
+    <item>
+      <p>V případě, že máte externí bezdrátový adaptér (například do USB nebo do slotu PCMCIA), ujistěte se, že je řádně zasunutý do správné zdířky ve vašem počítači.</p>
+    </item>
+    <item>
+      <p>V případě, že je bezdrátová karta součástí <em>uvnitř</em> počítače, ujistěte se, je její vypínač je zapnutý (pokud nějaký má). Notebooky často nemívají samostatný vypínač, ale používá se zmáčknutí kombinace nějakých kláves.</p>
+    </item>
+    <item>
+      <p>Klikněte do systémové stavové oblasti na horní liště a vyberte <gui>Wi-Fi</gui> a následně <gui>Nastavení Wi-Fi</gui>. Ujistěte se, že <gui>Wi-Fi</gui> je <gui>Zapnuto</gui>. Rovněž byste měli zkontrolovat, že <link xref="net-wireless-airplane">režim „letadlo“</link> zapnutý <em>není</em>.</p>
+    </item>
+    <item>
+      <p>Otevřete Terminál, napište <cmd>nmcli device</cmd> a zmáčkněte <key>Enter</key>.</p>
+      <p>Tím se zobrazí informace o síťovém rozhraní a stavu připojení. Projděte si tyto informace a dívejte se po části vztahující se k bezdrátovému adaptéru. Pokud je stav <code>připojeno</code>, znamená to, že funguje a je připojen k bezdrátovému přístupovému bodu/směrovači.</p>
+    </item>
+  </steps>
+
+  <p>Jestliže jste připojeni ke svému bezdrátovém přístupovému bodu/směrovači, ale stále se nemůžete dostat na Internet, možná není váš směrovač správně nastaven nebo se možná poskytovatel připojení (ISP) potýká s nějakými technickými problémy. Projděte si nastavení směrovače a údaje s nastavením od ISP, abyste měli jistotu, že je vše správně a případně kontaktujte podporu od svého ISP.</p>
+
+  <p>Jestliže informace od <cmd>nmcli device</cmd> nenaznačují, že byste byli připojeni k síti, klikněte na <gui>Následující</gui> a pokračujte následující částí průvodce řešením problému.</p>
+
+</page>

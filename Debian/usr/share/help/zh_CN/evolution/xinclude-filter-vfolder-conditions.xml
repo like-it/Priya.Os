@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info xmlns="http://projectmallard.org/1.0/">
+
+<item><p>发送者：</p>
+<p>发信人的邮件地址或姓名。</p></item>
+
+<item><p>收信人：</p>
+<p>邮件的接收者。</p></item>
+
+<item><p>CC:</p>
+<p>Only the CC recipients of the message.</p></item>
+
+<item><p>BCC:</p>
+<p>Only the BCC recipients of the message. Obviously this can only be applied to outgoing filters.</p></item>
+
+<item><p>Sender or Recipients:</p>
+<p>The sender's email address or the name of the sender or the recipients of the message.</p></item>
+
+<item><p>目标：</p>
+<p>邮件的主题行。</p></item>
+
+<item><p>指定的邮件头：</p>
+<p>Any header including <link xref="mail-composer-custom-header-lines">custom ones</link>.</p>
+<p>If a message uses a header more than once, <app>Evolution</app> pays attention only to the first instance, even if the message defines the header differently the second time. For example, if a message declares the Resent-From: header as "engineering@example.com" and then restates it as "marketing@example.com", <app>Evolution</app> filters as though the second declaration did not occur. To filter on messages that use headers multiple times, use a regular expression.</p></item>
+
+<item><p>消息体：</p>
+<p>在邮件的正文中搜索。</p></item>
+
+<item><p>表达式：</p>
+<p>(For programmers only) Match a message according to an expression you write in the Scheme language used to define <link xref="mail-filters">filters</link> in <app>Evolution</app>.</p></item>
+
+<item><p>Free Form Expression:</p>
+<p>(For advanced users only) Combine numerous conditions by using a <link href="https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10">special syntax</link>.</p></item>
+
+<item><p>Date sent:</p>
+<p>Filters messages according to the date on which they were sent. First, choose the conditions you want a message to meet, such as before a given date or after a given date. Then choose the time. The filter compares the message's time stamp to the system clock when the filter is run, or to a specific time and date you choose from a calendar. You can also have it look for a message within a range of time relative to the filter, such as two to four days ago.</p></item>
+
+<item><p>Date received:</p>
+<p>与“发信日期”选项的工作方式相同，但它比较您收到邮件的时间和您指定的日期。</p></item>
+
+<item><p>标签：</p>
+<p>Messages can have <link xref="mail-labels">labels</link> of Important, Work, Personal, To Do, or Later. You can set labels with other filters or manually.</p></item>
+
+<item><p>分数：</p>
+<p>给邮件设置一个大于0的分数。您可以设置一个过滤或改变一个邮件分数，然后设置另一个过滤移动您已评分的邮件。邮件评分没有任何特殊的标准：它只是您给邮件标记的一个数字以便其它过滤器对它们进行操作。</p></item>
+
+<item><p>Size (kB):</p>
+<p>根据邮件大小排序，以千兆字节(KB)为单位。</p></item>
+
+<item><p>状态：</p>
+<p>根据邮件状态过滤。邮件状态可以是回复，草稿，重要，已读或者垃圾邮件。</p></item>
+
+<item><p>跟随：</p>
+<p>Checks whether the message is <link xref="mail-follow-up-flag">flagged for follow-up</link>.</p></item>
+
+<item><p>Completed On:</p></item>
+<!-- TODO: Explain usage of option "Completed On" once https://bugzilla.gnome.org/show_bug.cgi?id=698439 is fixed -->
+
+<item><p>附件：</p>
+<p>Checks whether there is an attachment for the email.</p></item>
+
+<item><p>Mailing List:</p>
+<p>根据邮件来自的邮件列表过滤。这个过滤操作可能会遗漏一些来自某些列表服务器的邮件，因为它检查X-BeenThere信头，这是用于确定邮件列表或其它邮件分发者的。而来自列表服务器的没有正确设置X-BeenThere的邮件就不能被过滤器捕获了。</p></item>
+
+<item><p>正则表达式匹配：</p>
+<p>(For programmers only) If you know your way around a <link href="https://en.wikipedia.org/wiki/Regular_expression">regex</link>, or regular expression, this option allows you to search for complex patterns of letters, so that you can find, for example, all words that start with "a" and end with "m", and are between six and fifteen letters long, or all messages that declare a particular header twice. For information about how to use regular expressions, check <link href="man:grep">the man page for the <cmd>grep</cmd></link> command.</p></item>
+
+</info>

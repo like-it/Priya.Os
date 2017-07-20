@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Priložnici vikija Ubuntuove dokumentacije</name>
+    </credit>
+
+    <credit type="author">
+      <name>Fil Bul</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Neki upravljački programi uređaja neće raditi kako treba sa određenim bežičnim prilagođivačima, tako da ćete morati da pronađete bolji.</desc>
+  </info>
+
+  <title>Rešavanje problema bežične mreže</title>
+
+  <subtitle>Uverite se da su instalirani upravljački programi radnog uređaja</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>U ovom koraku možete da proverite da vidite da li možete da nabavite radne upravljačke programe uređaja za vaš bežični prilagođivač. <em>Upravljački program uređaja</em> je komad softvera koji govori računaru kako da natera hardverski uređaj da radi ispravno. Čak i ako je bežični prilagođivač prepoznat od strane računara, možda nema upravljačke programe koji rade dobro. Možete biti u mogućnosti da pronađete drugačije upravljačke programe za bežični prilagođivač koji će završiti posao. Pokušajte neku od sledećih opcija:</p>
+
+  <list>
+    <item>
+      <p>Proverite da li je vaš bežični prilagođivač na spisku podržanih uređaja.</p>
+      <p>Većina distribucija Linuksa sadrži spisak bežičnih uređaja za koje imaju podršku. Ponekad, ovi spiskovi obezbeđuju dodatne podatke o tome kako da osposobite da upravljački programi rade ispravno za određene prilagođivače. Idite na spisak za vašu distribuciju (na primer, <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>, <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arč</link>, <link href="http://linuxwireless.org/en/users/Drivers">Fedoru</link> ili <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>) i pogledajte da li se marka i model vašeg bežičnog prilagođivača nalazi na spisku. Bićete u mogućnosti da odatle iskoristite neke podatke da biste osposobili za rad vaše bežične upravljačke programe.</p>
+    </item>
+    <item>
+      <p>Potražite ograničene (izvršne) upravljačke programe.</p>
+      <p>Mnoge distribucije Linuksa dolaze samo sa upravljačkim programima uređaja koji su <em>slobodni</em> i <em>otvorenog koda</em>. Ovo je zbog toga što ne mogu da dostavljaju upravljačke programe koji su vlasnički, ili zatvorenog koda. Ako je pravi upravljački program za vaš bežični prilagođivač dostupan jedino u neslobodnom, ili „izvršnom-samo“ izdanju, neće biti unapred instaliran. U ovom slučaju, pogledajte na veb sajtu proizvođača bežičnog prilagođivača da li imaju neki upravljački program za Linuks.</p>
+      <p>Neke distribucije Linuksa imaju alat koji može da vam preuzme ograničene upravljačke programe. Ako vaša distribucija ima jedan od njih, upotrebite ga da vidite da li može da vam pronađe neki bežični upravljački program.</p>
+    </item>
+    <item>
+      <p>Upotrebite Vindouzove upravljačke programe za vaš prilagođivač.</p>
+      <p>Uopšteno, ne možete da koristite upravljačke programe uređaja osmišljene za jedan operativni sistem (kao što je Vindouz) na drugom operativnom sistemu (kao što je Linuks). Zato što oni na drugačije načine rukuju uređajima. Za bežične prilagođivače, međutim, možete da instalirate sloj saglasnosti pod nazivom <em>NDISomotač</em> koji vam dopuštaju da koristite neke Vindouzove bežične upravljačke programe na Linuksu. Ovo je korisno zato što bežični prilagođivači skoro uvek imaju dostupne Vindouzove upravljačke programe, s obzirom da Linuksovi upravljački programi ponekad nisu dostupni. Možete da saznate više o tome kako da koristite NDISomotač <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">ovde</link>. Znajte da ne mogu svi bežični upravljački programi biti korišćeni u NDISomotaču.</p>
+    </item>
+  </list>
+
+  <p>Ako nijedna od ovih opcija ne bude radila, možete isprobati neki drugi bežični prilagođivač da vidite da li bi radio. USB bežični prilagođivači su često vrlo jeftini, i priključuju se na skoro svaki računar. Ipak, pre nego što ga kupite proverite da li je saglasan sa vašom distribucijom Linuksa.</p>
+
+</page>

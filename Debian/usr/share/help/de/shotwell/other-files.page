@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="other-files" xml:lang="de">
+
+    <info>
+        <link type="guide" xref="index#other"/>
+        <desc>Keep the Shotwell library in sync with photo files on disk.</desc>
+        
+        <link type="next" xref="other-plugins"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2106</mal:years>
+    </mal:credit>
+  </info>
+
+   <title>Fotodateien</title>
+
+    <p>
+    Every photo in the Shotwell library corresponds to a file stored on your hard disk.  Shotwell has
+    several features which help you keep the Shotwell library and files on disk in sync.
+    </p>
+    <links type="section"/>
+    
+    <section id="dirpattern">
+        <title>Ein eigenes Namensschema verwenden</title>
+        <p>Shotwell erlaubt es, ein eigenes Namensschema für Ihre Bibliothek zu verwenden. Passen Sie dazu die Einstellungen für <gui>Ordnerstruktur</gui> und <gui>Muster</gui> in den <gui>Einstellungen</gui> an. Verwenden Sie ein vorgewähltes Schema oder wählen Sie <gui>Benutzerdefiniert</gui> und tippen Sie Ihr eigenes ein.</p>
+
+        <p>
+            The available symbols for the directory pattern begin with a % (percent sign). The values 
+            these symbols produce are locale-dependent, so what you see on your computer may vary
+            from the examples below.
+        </p>
+
+        <table frame="all" rules="rowgroups">
+            <tbody>
+                <tr>
+                    <td><p> </p></td> <td><p><em>Symbol</em></p></td> <td><p><em>Bedeutung</em></p></td> <td><p><em>Beispiel</em></p></td>
+                </tr>
+            </tbody>
+            <tbody>
+            <tr>
+                <td><p> </p></td><td><p>%Y</p></td><td><p>Jahr: lang</p></td><td><p>2011</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%y</p></td><td><p>Jahr: kurz</p></td><td><p>11</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%d</p></td><td><p>Tag des Monats mit führender Null</p></td><td><p>03</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%A</p></td><td><p>Tag: lang</p></td><td><p>Mittwoch</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%a</p></td><td><p>Tag: abgekürzt</p></td><td><p>Mi</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%m</p></td><td><p>Monat als Zahl mit führender Null</p></td><td><p>02</p></td>
+            </tr>
+            <tr><td><p> </p></td><td><p>%b</p></td><td><p>Monat: abgekürzt</p></td><td><p>Feb</p></td></tr><tr><td><p> </p></td><td><p>%B</p></td><td><p>Monat: lang</p></td><td><p>Februar</p></td></tr><tr><td><p> </p></td><td><p>%I</p></td><td><p>Stunde: 12-Stunden-Format</p></td><td><p>05</p></td></tr><tr><td><p> </p></td><td><p>%H</p></td><td><p>Stunde: 24-Stunden-Format</p></td><td><p>17</p></td></tr><tr><td><p> </p></td><td><p>%M</p></td><td><p>Minute</p></td><td><p>16</p></td></tr><tr><td><p> </p></td><td><p>%S</p></td><td><p>Sekunde</p></td><td><p>30</p></td></tr><tr><td><p> </p></td><td><p>%p</p></td><td><p>a. m. oder p. m.</p></td><td><p>p. m.</p></td></tr>
+            </tbody>
+        </table>
+
+        <p>
+            There are other symbols available; please check the manual for strftime by running 
+            the command <cmd>man strftime</cmd> if you need one that isn't listed here.
+        </p>
+    </section>
+
+    <section id="automatic-import">
+       <title>Automatisch Fotos importieren</title>
+       
+       <p>Shotwell can automatically import new photos which appear in the library directory.
+       (The library directory is usually the <file>Pictures</file> directory in your home directory;
+       you can change its location in in the <gui>Preferences</gui> window.)
+       </p>
+       
+       <p>To enable auto-import,
+       check the box <gui>Watch library directory for new files</gui> in
+       the <gui>Preferences</gui> window.</p>
+       
+       <note style="advanced"><p>Shotwell can also follow symbolic links inside automatically-imported directories.</p></note>
+
+    </section>
+
+    <section id="automatic-rename">
+       <title>Automatically renaming imported photos to lowercase</title>
+       
+       <p>
+       Shotwell can automatically change the filenames of imported photos
+       to lowercase.  To enable this, choose <guiseq><gui>Edit</gui><gui>Preferences</gui></guiseq>,
+       and in the <gui>Preferences</gui> window, check the <gui>Rename imported files to lowercase</gui>
+       box.
+       </p>
+    
+    </section>
+    
+    <section id="writing-metadata">
+       <title>Writing metadata on the fly</title>
+       
+       <p>By default, Shotwell does not modify photo files, even when you edit photos or change their
+       tags or titles.  Shotwell records these changes in its own database only.</p>
+       
+       <p>To change this behavior, you can enable the checkbox
+       <gui>Write tags, titles and other metadata to photo files</gui>
+       in the <gui>Preferences</gui> dialog.  When this option is enabled, Shotwell will write
+       the following metadata to most photo files whenever you change it in Shotwell:</p>
+       
+       <list>
+       <item><p>Titel</p></item>
+       <item><p>Markierungen</p></item>
+       <item><p>Bewertungen</p></item>
+       <item><p>Rotationsinformation</p></item>
+       <item><p>Uhrzeit/Datum</p></item>
+       </list>
+       
+       <p>Shotwell stores this information in photo files in EXIF, IPTC and/or XMP format.  Note
+       that Shotwell can write only to photo files in JPEG, PNG and TIFF format, not to BMP photos, RAW photos
+       or to video files.  
+       </p>
+    
+    </section>
+    
+    <section id="runtime-monitoring">
+    <title>Runtime monitoring</title>
+    
+    <p>While Shotwell is running, it notices changes made to any photo file externally.
+    When a photo file changes, Shotwell rereads the file and updates your view of the
+    photo and metadata.</p>
+    
+    <p>Note that Shotwell checks all photo files for changes at startup, but only photo files contained in
+    the library directory are monitored in real time after startup.  We hope to remove this limitation
+    in a further release.</p>
+
+    </section>
+    
+</page>

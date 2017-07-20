@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="color-notifications" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-why-calibrate"/>
+
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-04" status="review"/>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Puede recibir una notificación si su perfil de color es antiguo o no es preciso.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>¿Puedo obtener una notificación cuando mi perfil de color no es preciso?</title>
+
+  <p>Puede establecer un recordatorio para recalibrar sus dispositivos pasado cierto tiempo. Por desgracia, no es posible decir si un perfil de un dispositivo sin recalibrar es preciso, por lo que lo mejor es recalibrar los dispositivos regularmente.</p>
+
+  <p>Algunas empresas tienen unas directivas muy específicas para hacer que sus perfiles caduquen, ya que perfiles de color imprecisos pueden marcar una diferencia enorme en un producto final.</p>
+
+  <p>Si establece la directiva de tiempo de caducidad y un perfil es más antiguo que la directiva entonces se mostrará un triángulo rojo de advertencia en el diálogo <gui>Color</gui> junto al perfil. También se mostrará una notificación de advertencia cada vez que inicie sesión en su equipo.</p>
+
+  <p>Para establecer la normativa para dispositivos de pantalla e impresoras, especifique el tiempo máximo de aplicación de la normativa, en días:</p>
+
+<screen>
+<output style="prompt">$ </output><input>gsettings set org.gnome.settings-daemon.plugins.color recalibrate-printer-threshold 180</input>
+<output style="prompt">$ </output><input>gsettings set org.gnome.settings-daemon.plugins.color recalibrate-display-threshold 90</input>
+</screen>
+
+</page>

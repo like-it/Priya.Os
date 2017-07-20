@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="printing-booklet-duplex" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="printing-booklet"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Print folded booklets (like a book or pamphlet) from a PDF using normal
+    A4/Letter-size paper.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Print a booklet on a double-sided printer</title>
+
+  <p>You can make a folded booklet (like a small book or pamphlet) by printing
+  pages of a document in a special order and changing a couple of printing
+  options.</p>
+
+  <p>将 PDF 文档打印成册的指导说明。</p>
+
+  <p>如果您是从 <app>LibreOffice</app> 文档打印小册子，首先要导出为 PDF 文档，点菜单<guiseq><gui>文件</gui><gui>导出为 PDF…</gui></guiseq>，确保文档有4倍以上页面的内容(4,、8,、12、16...)。您可能要添加上三页空白页。</p>
+
+  <p>打印一本小册子：</p>
+
+  <steps>
+    <item>
+      <p>Open the print dialog. This can normally be done through
+      <gui style="menuitem">Print</gui> in the menu or using the
+      <keyseq><key>Ctrl</key><key>P</key></keyseq> keyboard shortcut.</p>
+    </item>
+    <item>
+      <p>Click the <gui>Properties...</gui> button </p>
+      <p>In the <gui>Orientation</gui> drop-down list, make sure that
+      <gui>Landscape</gui> is selected.</p>
+      <p>In the <gui>Duplex</gui> drop-down list, select <gui>Short Edge</gui>.
+      </p>
+      <p>Click <gui>OK</gui> to go back to the print dialog.</p>
+    </item>
+    <item>
+      <p>Under <gui>Range and Copies</gui>, choose <gui>Pages</gui>.</p>
+    </item>
+    <item>
+      <p>按下面的顺序输入页数(n 表示总的页数，应当是4的倍数)：</p>
+      <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
+      <p>例如：</p>
+      <list>
+        <item><p>4页小册子：输入 <input>4,1,2,3</input></p></item>
+        <item><p>8页小册子：输入 <input>8,1,2,7,6,3,4,5</input></p></item>
+        <item><p>20页小册子：输入 <input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input></p></item>
+      </list>
+    </item>
+    <item>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>All pages</gui>.</p>
+    </item>
+    <item>
+      <p>点击<gui>打印</gui>按钮。</p>
+    </item>
+  </steps>
+
+</page>

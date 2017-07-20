@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="te">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>గ్నోమ్ పత్రీకరణ పరియోజన</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>వాల్యూమ్లు మరియు విభజనలు అనగా ఏమిటో అర్ధంచేసుకొని వాటిని నిర్వహించుటకు డిస్కు సౌలభ్యం వుపయోగించండి.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Praveen Illa</mal:name>
+      <mal:email>mail2ipn@gmail.com</mal:email>
+      <mal:years>2011, 2014. </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>కృష్ణబాబు క్రొత్తపల్లి</mal:name>
+      <mal:email>kkrothap@redhat.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>వాల్యూమ్లు మరియు విభజనలు నిర్వహించుము</title>
+
+  <p>హార్డు డిస్కు వంటి నిల్వ పరికరం వివరించుటకు పదం <em>వాల్యూమ్</em> ఉపయోగించబడెను. అది పరికరం నిల్వపైని <em>భాగము</em> కూడా సూచించును, ఎంచేతంటే మీరు నిల్వను ముక్కలుగా కూడా విభజించవచ్చు. <em>మౌంటింగ్</em> అనే ప్రోసెస్ వుపయోగించి ఫైల్ సిస్టమ్ ద్వారా ఈ నిల్వను ఎక్సెస్ చేయగల్గునట్లు కంప్యూటర్ చేయును. మౌంటైన వాల్యూమ్లు బహుశా హార్డు డ్రైవులు, USB డ్రైవులు, DVD-RWలు, SD కార్డులు, మరియు ఇతర మాధ్యమం. ఒక వాల్యూమ్ ప్రస్తుతం మౌంటై వుంటే, మీరు దానిపై ఫైళ్ళను చదువవచ్చు (సాధ్యమైతే వ్రాయవచ్చు).</p>
+
+  <p>తరచుగా, మౌంటైన వాల్యూమ్ <em>విభజన</em> గా పిలువబడును, అయినాకూడా అవి ఒకే విషయం కానక్కరలేదు. “విభజన” ఒక డిస్కు డ్రైవు పైని <em>భౌతిక</em> నిల్వ ప్రాంతమును సూచించును. ఒకసారి విభజన మౌంటైన తరువాత, అది వాల్యూమ్‌గా రిఫర్ చేయవచ్చు ఎంచేతంటే మీరు దానిపైని ఫైళ్ళను ఏక్సెస్ చేయవచ్చును గనుక. మీరు వాల్యూమ్‌లను, విభజనల మరియు డ్రైవుల పనిచేస్తున్న “back rooms” లకు ఏక్సెస్ చేయగల “storefronts” గా భావించవచ్చు.</p>
+
+<section id="manage">
+ <title>డిస్కు సౌలభ్యం వుపయోగించి వాల్యూమ్లు మరియు విభజనలు దర్శించండి మరియు నిర్వహించండి</title>
+
+  <p>డిస్కు సౌలభ్యం వుపయోగించి మీరు మీ కంప్యూటర్ నిల్వ వాల్యూమ్లను పరిశీలించవచ్చు మరియు సవరించవచ్చు.</p>
+
+<steps>
+  <item>
+    <p>Open the <gui>Activities</gui> overview and start <app>Disks</app>.</p>
+  </item>
+  <item>
+    <p>In the list of storage devices on the left, you will find hard disks,
+    CD/DVD drives, and other physical devices. Click the device you want to
+    inspect.</p>
+  </item>
+  <item>
+    <p>The right pane provides a visual breakdown of the volumes and
+    partitions present on the selected device. It also contains a variety of
+    tools used to manage these volumes.</p>
+    <p>జాగ్రత్త: ఈ సౌలభ్యాలు ఉపయోగించి మీ డిస్కు పైని దత్తాంశంను పూర్తిగా తుడిచివేయుట కూడా సాధ్యమే.</p>
+  </item>
+</steps>
+
+  <p>మీ కంప్యూటర్ కనీసం ఒక <em>ప్రాథమిక</em> విభజన మరియు ఒక <em>swap</em> విభజన కలిగివుంటుంది. swap విభజన మెమొరీ నిర్వహణ కొరకు ఆపరేటింగ్ సిస్టమ్ చేత వుపయోగించబడును, మరియు అరుదుగా మౌంటగును. ప్రాథమిక విభజన మీ ఆపరేటింగ్ సిస్టమ్, అనువర్తనాలు, అమరికలు, మరియు వ్యక్తిగత ఫైళ్ళు కలిగివుంటుంది. భద్రత లేదా సౌలభ్యత కొరకు ఈ ఫైళ్ళు బహుళ విభజనల నందు పంపిణీచేయబడివుంటాయి.</p>
+
+  <p>One primary partition must contain information that your computer uses to
+  start up, or <em>boot</em>. For this reason it is sometimes called a boot
+  partition, or boot volume. To determine if a volume is bootable, select the
+  partition and click the menu button in the toolbar underneath the partition
+  list. Then, click <gui>Edit Partition…</gui> and look at its
+  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
+  a bootable volume.</p>
+
+</section>
+
+</page>

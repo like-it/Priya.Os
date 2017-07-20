@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-commander" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/> 
+    <revision version="3.4" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Použít rozhraní příkazové řádky k pokročilým úpravám.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Příkazový režim</title>
+
+  <p>Zásuvný modul <app>Příkazový režim</app> je určen pro pokročilé uživatele aplikace <app>gedit</app>, kterým umožní provádět činnosti na aktuálním souboru pomocí příkazového řádku. Pokud chcete zásuvný modul povolit, vyberte <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Předvolby</gui><gui>Zásuvné moduly</gui><gui>Příkazový režim</gui></guiseq>.</p>
+
+  <p>Když máte zásuvný modul povolen, aktivujte jej zmáčknutím <keyseq><key>Ctrl</key><key>.</key></keyseq>.</p>
+  
+  <note style="tip">
+    <p>Poslední klávesou v předchozí kombinaci kláves je tečka.</p>
+  </note>
+
+  <table frame="all" rules="all">
+    <thead>
+      <tr>
+        <td><p>Činnost</p></td>
+	<td><p>Klávesová zkratka</p></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><p>Zobrazit přehled dostupných příkazů</p></td>
+	<td><p><keyseq><key>Tab</key><key>Tab</key></keyseq></p></td>
+      </tr>
+      <tr>
+        <td><p>Najít slovo v rámci aktuálního dokumentu</p></td>
+	<td>
+	  <p><key>/</key> <input>pokus</input></p>
+          <p>Najde slovo <input>pokus</input>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Nahradit slovo v aktuálním souboru</p></td>
+	<td>
+	  <p><keyseq><key>/</key><key>/</key></keyseq> <input>hokus pokus</input></p>
+          <p>Nahradí slovo <input>hokus</input> za <input>pokus</input>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Přesunout kurzor na konkrétní číslo řádku v aktuálním souboru</p></td>
+        <td>
+	  <p>go <input>[číslo řádku]</input> <em>nebo</em> jen <key>G</key> <input>[číslo řádku]</input></p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>Přepnout indikátor záložky v aktuálním souboru</p></td>
+        <td><p>bookmark <em>nebo</em> jen <key>B</key></p></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <note style="tip">
+    <p>Některé příkazy, jako třeba <app>bookmark</app>, vyžadují, aby byl nainstalován příslušný zásuvný modul a byl aktivován. Pokud jej nainstalovaný a aktivovaný nemáte, obdržíte chybové hlášení.</p>
+  </note>
+
+</page>

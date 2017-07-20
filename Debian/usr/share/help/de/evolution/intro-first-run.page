@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" id="intro-first-run" xml:lang="de">
+
+  <info>
+    <desc><app>Evolution</app> zum allerersten Mal starten.</desc>
+
+    <link type="guide" xref="index#getting-started"/>
+
+    <revision pkgversion="3.8.2" version="0.7" date="2013-06-22" status="stub"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title><app>Evolution</app> zum ersten Mal starten</title>
+
+<p>Wenn Sie das erste Mal <app>Evolution</app> starten, wird der Erste-Schritte-Assistent gestartet, der Ihnen dabei hilft, Ihre E-Mail-Konten einzutragen und gegebenenfalls <link xref="import-data">Daten aus anderen Programmen zu importieren</link>.</p>
+
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-mail-account-identity.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:section)"/>
+
+<section id="restore">
+<title>Aus Sicherungsdatei wiederherstellen</title>
+<p>Sie werden gefragt werden, ob eine Sicherungskopie einer vorhergehenden Version wiederhergestellt werden soll. Wenn Sie keine Sicherungskopie besitzen, so gehen Sie zur nächsten Seite weiter.</p>
+
+ <section id="restore-howto" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Aus Sicherungsdatei wiederherstellen</title>
+  </info>
+  <title>Wiederherstellung</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="backup-restore.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section[@id='restore']/mal:list)"/>
+ </section>
+</section>
+
+<section id="receiving">
+<title>Abrufen von E-Mails</title>
+<p>Wählen Sie zuerst den gewünschten Servertyp aus der Auswahlliste <gui>Servertyp</gui> aus.</p>
+<p>Falls Sie sich nicht sicher sind, welche Server-Art Sie wählen sollten, wenden Sie sich bitte an Ihren Systemadministrator oder Internet-Dienstanbieter.</p>
+
+<note style="tip"><p>Wenn Sie später Ihre Kontendaten ändern oder ein weiteres E-Mail-Konto einrichten möchten, klicken Sie auf <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui><gui>E-Mail-Konten</gui></guiseq>. Wählen Sie das Konto aus, welches Sie ändern möchten, und klicken Sie auf <gui style="button">Bearbeiten</gui>. Ein neues Konto kann hinzugefügt werden, indem Sie auf <gui style="button">Hinzufügen</gui> klicken.</p></note>
+
+<section id="server-type-imap-plus">
+<title>IMAP+</title>
+<p>Behält E-Mails auf dem Server, so dass Sie auf Ihre E-Mails von verschiedenen Rechnern zugreifen können.</p>
+
+ <section id="configure-sending-imap-plus" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Zeigen, wie dieser Kontentyp eingerichtet wird</title>
+  </info>
+  <title>IMAP+-Empfangsoptionen</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-imap-plus.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-pop">
+<title>POP</title>
+<p>Lädt die E-Mails auf Ihren Rechner herunter.</p>
+
+ <section id="configure-sending-pop" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Zeigen, wie dieser Kontentyp eingerichtet wird</title>
+  </info>
+  <title>POP-Empfangsoptionen</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-pop.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-usenet">
+<title>USENET-News</title>
+<p>Verbindet mit einem News-Server und lädt eine Liste verfügbarer Nachrichten aus Newsgroups herunter.</p>
+
+ <section id="configure-sending-usenet" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Zeigen, wie dieser Kontentyp eingerichtet wird</title>
+  </info>
+  <title>Empfangsoptionen für Usenet-Nachrichten</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-usenet-news.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-exchange-ews">
+<title>Exchange EWS</title>
+<p>Zum Verbinden mit einem Microsoft Exchange 2007/2010 oder OpenChange-Server. Beachten Sie, dass es derzeit noch entwickelt wird und in Zukunft den Kontotyp <gui>Exchange MAPI</gui> ersetzen soll. Es könnte noch nicht für Ihre Distribution zur Verfügung stehen.</p>
+<note style="info package">
+  <p>Dazu muss das Paket <sys>evolution-ews</sys> installiert sein.</p>
+  <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+    <if:when test="action:install">
+      <p><link action="install:evolution-ews" href="https://wiki.gnome.org/Apps/Evolution#Get_the_Source_Code" style="button">Evolution-ews installieren</link></p>
+    </if:when>
+  </if:choose>
+</note>
+
+ <section id="configure-sending-exchange-ews" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Zeigen, wie dieser Kontentyp eingerichtet wird</title>
+  </info>
+  <title>Empfangsoptionen für Exchange-Webdienste</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-exchange-ews.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-exchange-mapi">
+<title>Exchange MAPI</title>
+<p>Zum Verbinden mit einem Microsoft Exchange 2007/2010- oder OpenChange-Server.</p>
+<note style="info package">
+  <p>Dazu muss das Paket <sys>evolution-mapi</sys> installiert sein.</p>
+  <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+    <if:when test="action:install">
+      <p><link action="install:evolution-mapi" href="https://wiki.gnome.org/Apps/Evolution#Get_the_Source_Code" style="button">Evolution-mapi installieren</link></p>
+    </if:when>
+  </if:choose>
+</note>
+
+ <section id="configure-sending-exchange-mapi" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Zeigen, wie dieser Kontentyp eingerichtet wird</title>
+  </info>
+  <title>Exchange MAPI-Empfangsoptionen</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-exchange-mapi.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-local-delivery">
+<title>Lokale Zustellung</title>
+<p>Lokale Auslieferung: Wenn Sie E-Mails vom Spool (der Ort, an dem die E-Mails auf ihre Zustellung warten) in Ihren persönlichen Ordner zur Speicherung verschieben möchten. Hierfür müssen Sie den Pfad zum Spool angeben, der benutzt werden soll. Falls die E-Mails im Spool verbleiben sollen, wählen Sie stattdessen die Option <gui>Standard-UNIX-mbox-Spool</gui>.</p>
+
+ <section id="configure-sending-local-delivery" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Zeigen, wie dieser Kontentyp eingerichtet wird</title>
+  </info>
+  <title>Empfangsoptionen für lokale Auslieferung</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-local-delivery.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-mh-format-directories">
+<title>E-Mail-Ordner im MH-Format</title>
+<p>Zum Herunterladen von E-Mails per MH oder durch eine MH-ähnliche Anwendung.</p>
+
+ <section id="configure-sending-mh-format-directories" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Zeigen, wie dieser Kontentyp eingerichtet wird</title>
+  </info>
+  <title>Empfangsoptionen für E-Mail-Ordner im MH-Format</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-mh-format-directories.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-maildir-format-directories">
+<title>E-Mail-Ordner im Maildir-Format</title>
+<p>E-Mail-Ordner im Maildir-Format: Wählen Sie diese Option, falls Sie E-Mails per Qmail oder durch eine Maildir-gleiche Anwendung herunterladen möchten.</p>
+
+ <section id="configure-sending-maildir-format-directories" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Zeigen, wie dieser Kontentyp eingerichtet wird</title>
+  </info>
+  <title>Empfangsoptionen für E-Mail-Ordner im Maildir-Format</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-maildir-format-directories.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-unix-mbox-spool-file">
+<title>Standard Unix mbox Spool-Datei</title>
+<p>Standard Unix mbox-spool-Datei: Zum Lesen und Speichern von E-Mails in einer Mail-Spool-Datei auf Ihrem lokalen System.</p>
+
+ <section id="configure-sending-unix-mbox-spool-file" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Zeigen, wie dieser Kontentyp eingerichtet wird</title>
+  </info>
+  <title>Empfangsoptionen für Standard-Unix-mbox-Spool-Datei</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-unix-mbox-spool-file.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-unix-mbox-spool-directory">
+<title>Standard Unix mbox-Ordner</title>
+<p>Standard Unix mbox-spool-Ordner: Zum Lesen und Speichern von E-Mails in einem Mail-Spool-Ordner auf Ihrem lokalen System.</p>
+
+ <section id="configure-sending-unix-mbox-spool-directory" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Zeigen, wie dieser Kontentyp eingerichtet wird</title>
+  </info>
+  <title>Empfangsoptionen für Standard-Unix-mbox-Ordner</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-receiving-options-unix-mbox-spool-directory.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:section)"/>
+ </section>
+
+</section>
+
+<section id="server-type-none">
+<title>Nichts</title>
+<p>Wenn Sie mit <app>Evolution</app> keine E-Mails abrufen möchten.</p>
+</section>
+
+</section>
+
+<section id="sending"> <!-- Do not rename, we link to it from the subpages -->
+<title>Abrufen von E-Mails</title>
+<p>Folgende Servertypen sind verfügbar:</p>
+
+<section id="server-type-smtp">
+<title>SMTP</title>
+<p>E-Mails an einen externen E-Mail-Server verschicken. Dies ist die üblichste Methode zum Verschicken von E-Mails.</p>
+
+ <section id="configure-sending-smtp" ui:expanded="false">
+  <info>
+    <title type="ui:collapsed">Zeigen, wie dieser Kontentyp eingerichtet wird</title>
+  </info>
+  <title>SMTP-Versandoptionen</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="mail-sending-options-smtp.page" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:list)"/>
+ </section>
+
+</section>
+
+<section id="server-type-sendmail">
+<title>Sendmail</title>
+<p>Nutzt das <app>Sendmail</app>-Programm auf Ihrem Rechner zum Verschicken von E-Mails. Es ist allerdings schwieriger einzustellen. Sie sollten diese Option nur wählen, falls Sie mit Sendmail vertraut sind.</p>
+</section>
+
+</section>
+
+<section id="account-information">
+<title>Konteninformation</title>
+<p>Geben Sie dem Konto einen beliebigen Namen Ihrer Wahl.</p>
+</section>
+
+<section id="account-import">
+<title>E-Mails importieren (optional)</title>
+<p>Setzen Sie bei <link xref="import-data">Daten aus anderen Programmen importieren</link> fort.</p>
+</section>
+
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="id">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>Kalibrasi dan karakterisasi adalah hal yang sama sekali berbeda.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Apa perbedaan antara kalibrasi dan karakterisasi?</title>
+  <p>Banyak orang pada awalnya bingung tentang perbedaan antara kalibrasi dan karakterisasi. Kalibrasi adalah proses mengubah perilaku warna dari suatu perangkat. Ini umumnya dilakukan memakai dua mekanisme:</p>
+  <list>
+    <item><p>Mengubah pengaturan internal atau kendali yang dimilikinya</p></item>
+    <item><p>Menerapkan kurva ke kanal warnanya</p></item>
+  </list>
+  <p>Ide kalibrasi adalah untuk menempatkan perangkat dalam keadaan yang terdefinisi menyangkut respon warnanya. Seringkali ini dipakai sebagai cara hari ke hari untuk menjaga perilaku yang dapat direproduksi. Kalibrasi biasanya akan disimpan dalam perangkat atau format berkas spesifik sistem yang merekam pengaturan erangkat atau kurva kalibrasi per kanal.</p>
+  <p>Karakterisasi (atau pemrofilan) adalah <em>perekaman</em> cara perangkat mereproduksi atau merespon ke warna. Biasanya hasil disimpan dalam profil ICC perangkat. Profil itu sendiri tak mengubah warna secara apapun. Itu memungkinkan sistem seperti CMM (Color Management Module, Modul Manajemen Warna) atau aplikasi yang sadar warna untuk mengubah warna ketika dikombinasikan dengan profil perangkat lain. Hanya dengan mengetahui karakteristik dua perangkat, cara memindahkan warna dari satu representasi perangkat ke lainnya dapat dicapai.</p>
+  <note>
+    <p>Perhatikan bahwa suatu karakterisasi (profil) hanya akan valid bagi suatu perangkat bila ia ada dalam keadaan kalibrasi yang sama dengan ketika ia dikarakterisasi.</p>
+  </note>
+  <p>Dalam kasus profil tampilan ada beberapa kebingungan tambahan karena seringkali informasi kalibrasi disimpan dalam profil untuk kemudahan. Biasanya itu disimpan dalam tag bernama <em>vcgt</em>. Walaupun disimpan di dalam profil, tak ada aplikasi atau alat berbasis ICC normal yang menyadarinya, atau melakukan apapun dengannya. Mirip dengan itu, aplikasi dan alat kalibrasi tampilan yang biasa tak menyadari, atau melakukan apapun dengan informasi karakterisasi (profil) ICC.</p>
+
+</page>

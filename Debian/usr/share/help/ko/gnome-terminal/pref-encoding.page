@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="task" id="pref-encoding" xml:lang="ko">
+  <info>
+    <link type="guide" xref="index#preferences"/>
+    <link type="guide" xref="pref"/>
+    <revision version="0.1" date="2013-03-02" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>다른 문자 세트 지원으로 바꿉니다.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>조성호</mal:name>
+      <mal:email>shcho@gnome.org</mal:email>
+      <mal:years>2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>문자 인코딩</title>
+
+  <p>기본 <em>문자 인코딩</em>은 보통 UTF-8입니다. 다음의 경우 <app>터미널</app>의 문자 인코딩을 바꿀 수도 있습니다:</p>
+
+  <list>
+    <item>
+      <p>기본 인코딩으로 볼 수 없는 문자를 사용하는 파일 또는 디렉터리 이름을 다룰 경우.</p>
+    </item>
+    <item>
+      <p>시스템과 다른 인코딩을 사용하는 외장 하드 디스크를 사용하는 경우.</p>
+    </item>
+    <item>
+      <p>다른 인코딩을 활용하는 원격 컴퓨터에 연결할 경우.</p>
+    </item>
+  </list>
+
+  <section id="change-default-encoding">
+    <title>기본 문자 인코딩 바꾸기</title>
+
+    <steps>
+      <item>
+        <p><guiseq><gui style="menu">터미널</gui> <gui style="menuitem">문자 인코딩 설정</gui></guiseq>을 선택하십시오.</p>
+      </item>
+      <item>
+        <p>원하는 문자 인코딩을 선택하십시오.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="add-encoding-menu-choices">
+    <title>문자 인코딩 메뉴에 더 많은 선택 항목 추가</title>
+
+    <steps>
+      <item>
+        <p><guiseq><gui style="menu">터미널</gui> <gui style="menuitem">문자 인코딩 설정</gui> <gui style="menuitem">추가/제거…</gui></guiseq>를 선택하십시오.</p>
+      </item>
+      <item>
+        <p>가용 인코딩 목록을 살펴보십시오.</p>
+      </item>
+      <item>
+        <p>메뉴에서 원하는 인코딩을 선택하십시오.</p>
+      </item>
+      <item>
+	<p><gui style="button">닫기</gui>를 눌러 대화 상자를 빠져나간 후 <app>터미널</app>로 돌아가십시오.</p>
+      </item>
+    </steps>
+
+    <note>
+      <p>대부분의 최신 운영 체제에서는 현재 기본으로 UTF-8 문자 인코딩을 지원하고 활용합니다.</p>
+    </note>
+
+  </section>
+
+</page>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="ja">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="files#faq"/>
+    <link type="seealso" xref="nautilus-file-properties-basic"/>
+
+    <desc>あなたのファイルやフォルダーを誰が参照できて、誰が編集できるかを制御します。</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>ファイルのアクセス権を設定する</title>
+
+  <p>ファイルのアクセス権限を利用して、あなたの所有するファイルを誰が参照でき、誰が編集できるかを制御することが可能です。ファイルのアクセス権を確認および設定するには、ファイルを右クリックして<gui>プロパティ</gui>を選択し、それから<gui>アクセス権</gui>タブを選択します。</p>
+
+  <p>設定可能なアクセス権の種類の詳細については、以下の <link xref="#files"/> および <link xref="#folders"/> を参照してください。</p>
+
+  <section id="files">
+    <title>ファイル</title>
+
+    <p>ファイルの所有者、所有グループ、およびシステム上のその他のユーザーのアクセス権を設定することができます。あなたのファイルについてはあなたが所有者であり、自分にたいして読み込み専用の権限あるいは読み書き権限を設定できます。誤ってファイルを変更したくない場合は、ファイルを読み込み専用にしてください。</p>
+
+    <p>お使いのコンピューターのどのユーザーも何らかのグループに所属しています。家庭用コンピューターでは、各ユーザーが自分自身のグループに所属しているのが一般的であり、グループの権限が使用されることはあまりありません。企業環境では、グループが、部署やプロジェクトにあわせてグループを活用することがときどきあります。各ファイルには、1 つの所有者が設定されているのと同じように、1 つの所有グループが設定されています。ファイルのグループを設定することによって、そのグループに属する全ユーザーの権限を制御できます。ファイルに設定できるグループは、あなたが属しているグループだけです。</p>
+
+    <p>ファイルの所有者でも、所有グループに属するユーザーでも無い、その他のユーザーの権限も設定できます。</p>
+
+    <p>ファイルがスクリプトなどのプログラムである場合、それを実行するには、<gui>プログラムとして実行できる</gui>のオプションを選択してください。このオプションが設定されていても、ファイルマネージャーはそのファイルを何らかのアプリケーションで開くこともあれば、どうするか確認することもあります。詳細は <link xref="nautilus-behavior#executable"/> を参照してください。</p>
+  </section>
+
+  <section id="folders">
+    <title>フォルダー</title>
+    <p>フォルダーにたいして所有者、グループおよびその他ユーザーの権限を設定できます。所有者、グループおよびその他ユーザーについては、上記のファイルの権限を参照してください。</p>
+    <p>フォルダーにたいして設定できる権限は、次の点でファイルの権限とは異なります。</p>
+    <terms>
+      <item>
+        <title><gui itst:context="permission">None</gui></title>
+        <p>ユーザーは、そのフォルダーに含まれるファイルを確認することもできません。</p>
+      </item>
+      <item>
+        <title><gui>表示のみ</gui></title>
+        <p>ユーザーは、そのフォルダーに含まれるファイルを確認することができます。しかし、ファイルを開いたり、新規作成したり、削除したりすることはできません。</p>
+      </item>
+      <item>
+        <title><gui>アクセスのみ</gui></title>
+        <p>ユーザーは、そのフォルダーのファイルを開くことができます (該当ファイルに対する権限があるかぎりで)。しかし、ファイルの新規作成や削除はできません。</p>
+      </item>
+      <item>
+        <title><gui>作成と削除</gui></title>
+        <p>ユーザーは、フォルダーへの完全なアクセス権を持ち、ファイルを開いたり、新規作成したり、削除したりすることができます。</p>
+      </item>
+    </terms>
+
+    <p>You can also quickly set the file permissions for all the files
+    in the folder by clicking <gui>Change Permissions for Enclosed Files</gui>.
+    Use the drop-down lists to adjust the permissions of contained files or
+    folders, and click <gui>Change</gui>. Permissions are applied to files and
+    folders in subfolders as well, to any depth.</p>
+  </section>
+
+</page>

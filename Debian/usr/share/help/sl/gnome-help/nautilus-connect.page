@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ogled in urejanje datotek na drugem računalniku preko FTP, SSH, souporab Windows ali WebDAV.</desc>
+
+  </info>
+
+<title>Brskanje datotek na strežniku ali omrežni souporabi</title>
+
+<p>Če se povežete s strežnikom ali omrežno souporabo za brskanje, si lahko datoteke ogledate natanko tako, kot če bi bili na svojem računalniku. To je priročen način za prejem ali pošiljanje datotek na internetu ali za izmenjavo datotek z drugimi v vašem krajevnem omrežju.</p>
+
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
+
+<steps>
+  <title>Povezava z datotečnim strežnikom</title>
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
+   sidebar.</p>
+  </item>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
+  <note>
+    <p>If you have connected to the server before, you can click on it in the
+    <gui>Recent Servers</gui> list.</p>
+  </note>
+  </item>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>Pisanje URL-jev</title>
+
+<p>A <em>URL</em>, or <em>uniform resource locator</em>, is a form of address
+ that refers to a location or file on a network. The address is formatted like this:</p>
+  <example>
+    <p><sys>scheme://imestrežnika.primer.si/mapa</sys></p>
+  </example>
+<p>The <em>scheme</em> specifies the protocol or type of server. The
+  <em>example.com</em> portion of the address is called the <em>domain name</em>.
+  If a username is required, it is inserted before the server name:</p>
+  <example>
+    <p><sys>scheme://uporabniškoime@imestrežnika.primer.si/mapa</sys></p>
+  </example>
+<p>Nekatere sheme zahtevajo vnos številke vrat. Vstavite jo po imenu domene:</p>
+  <example>
+    <p><sys>scheme://imestrežnika.primer.si:vrata/mapa</sys></p>
+  </example>
+<p>Sledi nekaj tipičnih primerov za različne podprte vrste strežnikov.</p>
+</section>
+
+<section id="types">
+ <title>Vrste strežnikov</title>
+
+<p>You can connect to different types of servers. Some servers are public,
+   and allow anybody to connect. Other servers require you to log in with a
+   username and password.</p>
+<p>Morda ne boste imeli dovoljenj za izvajanje določenih dejanj na strežniku. Na javnih strežnikih FTP na primer ne boste mogli brisati datotek.</p>
+<p>URL, ki ga vnesete, je odvisen od protokola, ki ga strežnik uporablja za izvoz svojih datotek v skupni rabi.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>If you have a <em>secure shell</em> account on a server, you
+  can connect using this method. Many web hosts provide SSH accounts
+  to members so they can securely upload files. SSH servers always
+  require you to log in.</p>
+  <p>Običajno je URL za SSH naslednje oblike:</p>
+  <example>
+    <p><sys>ssh://uporabniškoime@imestrežnika.primer.si/mapa</sys></p>
+  </example>
+
+  <p>Pri uporabi SSH bodo vsi poslani podatki (vključno z vašim geslom) šifrirani zato, da jih drugi uporabniki na omrežju ne morejo videti.</p>
+</item>
+<item>
+  <title>FTP (s prijavo)</title>
+  <p>FTP je priljubljen način za izmenjavo datotek na Internetu. Ker podatki preko FTP niso šifrirani, veliko strežnikov sedaj zagotavlja dostop preko SSH. Nekateri strežniki še vedno omogočajo ali zahtevajo uporabo FTP za pošiljanje ali prejem datotek. Spletišča FTP s prijavami običajno dovoljujejo brisanje in pošiljanje datotek.</p>
+  <p>Običajno je URL za FTP naslednje oblike:</p>
+  <example>
+    <p><sys>ftp://uporabniškoime@ftp.primer.si/pot/</sys></p>
+  </example>
+</item>
+<item>
+  <title>Javni FTP</title>
+  <p>Sites that allow you to download files will sometimes provide
+  public or anonymous FTP access. These servers do not require a
+  username and password, and will usually not allow you to delete
+  or upload files.</p>
+  <p>Običajno je URL za brezimni FTP naslednje oblike:</p>
+  <example>
+    <p><sys>ftp://ftp.primer.si/pot/</sys></p>
+  </example>
+  <p>Some anonymous FTP sites require you to log in with a
+  public username and password, or with a public username using
+  your email address as the password. For these servers, use the
+  <gui>FTP (with login)</gui> method, and use the credentials
+  specified by the FTP site.</p>
+</item>
+<item>
+  <title>Souporaba s sistemom Windows</title>
+  <p>Računalniki Windows za souporabo datotek preko krajevnega omrežja uporabljalo lastniški protokol. Računalniki na omrežju Windows so včasih združeni v <em>domene</em> za organizacijo in za boljši nadzor dostopa. V primeru da imate na oddaljenemu računalniku prava dovoljenja, se lahko do souporabe Windows povežete iz upravljalnika datotek.</p>
+  <p>Običajno je URL za Windows Share naslednje oblike:</p>
+  <example>
+    <p><sys>smb://imestrežnika/Share</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV in Varen WebDAV</title>
+  <p>WebDAV je osnovan na protokolu HTTP in se včasih uporablja za deljenje datotek preko krajevnega omrežja in za shranjevanje datotek na internetu. V primeru da strežnik na katerega se povezujete podpira varne povezave, izberite to možnost. Varni WebDAV uporablja močno šifriranje SSL zato, da drugi uporabniki ne morejo videti vašega gesla.</p>
+  <p>A WebDAV URL looks like this:</p>
+  <example>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

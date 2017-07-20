@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-search-folders-add" xml:lang="eu">
+
+  <info>
+    <desc>Setting up a search folder.</desc>
+    
+    <link type="guide" xref="mail-search-folders"/>
+
+    <revision pkgversion="3.0.2" version="0.1" date="2011-07-30" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-vfolders.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>Bilaketa-karpetak sortzea</title>
+
+<steps>
+<item><p>Click <guiseq><gui>Edit</gui><gui>Search Folders</gui></guiseq>, or click <guiseq><gui>Message</gui><gui>Create Rule</gui></guiseq> and select the criterion the search folder will be based on, or if you have run a search, click <guiseq><gui>Search</gui><gui>Create Search Folder From Search…</gui></guiseq>.</p></item>
+<item><p>Click <gui style="button">Add</gui>.</p></item>
+<item><p>Enter a name in the <gui>Rule name</gui> field.</p></item>
+<item><p>Define the conditions for the rule. For each condition, you first select which part of the message will be checked and then define the comparison.</p><p>For more information on the available conditions see <link xref="mail-search-folders-conditions">Available Search Folder conditions</link>.</p></item>
+<item><p>If you want to define multiple conditions, define under <gui>Find items</gui> if any or if all conditions have to apply, and click <gui style="button">Add Condition</gui> and repeat the previous step.</p></item>
+<item><p>Select which folders will be used for the search folder in the section <gui>Search Folder Sources</gui>. Options are:</p>
+<list>
+  <item><p>Karpeta lokal guztiak:</p>
+  <p>Bilaketa-karpetaren iturburu gisa karpeta lokal guztiak erabiltzen ditu, hautatutako karpeta indibidualez gain.</p></item>
+
+  <item><p>Urruneko karpeta aktibo guztiak:</p>
+  <p>Zerbitzariarekin konektatuta zaudenean, urruneko karpetak aktibotzat jotzen dira; posta-zerbitzariarekin konektatuta egon behar duzu bilaketa-karpetak iturburu horretako mezuak har ditzan, hautatutako karpeta indibidualez gain.</p></item>
+
+  <item><p>Karpeta lokal eta urruneko karpeta aktibo guztiak:</p>
+  <p>Bilaketa-karpetaren iturburu gisa karpeta lokal eta urruneko aktibo guztiak erabiltzen ditu, hautatutako karpeta indibidualez gain.</p></item>
+
+  <item><p>Zehaztutako karpetak bakarrik:</p>
+  <p>Uses individual folders for the search folder source. In this case, click the <gui style="button">Add</gui> to select folders.</p></item>
+</list>
+</item>
+<item><p>Click <gui style="button">OK</gui>.</p></item>
+</steps>
+
+</page>

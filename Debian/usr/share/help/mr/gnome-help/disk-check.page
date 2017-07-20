@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="mr">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME डॉक्युमेंटेशन प्रकल्प</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>अडचणींकरिता हार्ड डिस्कची चाचणी करा आणि ते टणटणीत आहे याची खात्री करा.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>अडचणींकरिता हार्ड डिस्कची चाचणी करा </title>
+
+<section id="disk-status">
+ <title>हार्ड डिस्क तपासत आहे</title>
+  <p>हार्ड डिस्क्समध्ये बिल्ट-इन हेल्थ-चेक साधन ज्यास <app>SMART</app> (सेल्फ-मॉनिटरिंग, अनॅलसिस, आणि रिपोर्टिंग टेक्नॉलजि) असे म्हटले जाते, जे ठराविक अडचणींकरिता वारंवार डिस्कची चाचणी करते. डिस्क खंडीत होत असल्यास SMART तुम्हाला सावध करते, ज्यामुळे महत्वाचा डाटा गमवण्यापासून मदत प्राप्त होते.</p>
+
+  <p>जरी SMART स्वयंरित्या चालते, तुम्ही डिस्कचे आरोग्य <app>डिस्क्स</app> ॲप्लिकेशन चालवून तपासणी करू शकता:</p>
+
+<steps>
+ <title>डिस्क्स ॲप्लिकेशनचा वापर करून डिस्कचे आरोग्य तपासा</title>
+
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to check from the list of storage devices on
+    the left. Information and status of the disk will be shown.</p>
+  </item>
+  <item>
+    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
+    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+  </item>
+  <item>
+    <p><gui>SMART गुणधर्म</gui> अंतर्गत अधिक माहिती पहा, किंवा स्व-चाचणी चालवण्याकरिता <gui style="button">स्व-चाचणी सुरू करा</gui> बटन क्लिक करा.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>डिस्क निरोगी नसेल तर?</title>
+
+  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
+  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
+  to be prepared with a <link xref="backup-why">backup</link> to prevent data
+  loss.</p>
+
+  <p>स्थिती "Pre-fail" झाले असे दाखवत असल्यास, डिस्कचे आरोग्य तरिही चांगले राहते परंतु दोषयुक्त चिन्ह आढळल्यामुळे भविष्यात अपयशी ठरू शकतात. तुमचे हार्ड डिस्क  (किंवा संगणक) काही वर्ष जुणे असल्यास, तुम्हाला हे संदेश किमान काही हेल्थ तपासणीकरिता आढळेल. तुमच्या <link xref="backup-how">महत्वाच्या फाइल्सचे नियमीतपणे</link> घ्या आणि डिस्क स्थिती वेळोवेळी तपासा आणि ते वाढणार नाही याची खात्री करा.</p>
+
+  <p>अधिक वाईट होत असल्यास, संगणक किंवा हार्ड डिस्कला तज्ञकडे पुढील विश्लेषण किंवा दुरूस्तीकरिता न्या.</p>
+
+</section>
+
+</page>

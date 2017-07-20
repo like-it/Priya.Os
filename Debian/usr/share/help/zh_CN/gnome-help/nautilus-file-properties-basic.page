@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>查看基本的文件信息，设定权限和选择默认的应用程序。</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>文件属性</title>
+
+  <p>要查看有关文件或文件夹的信息，请右键单击文件或文件夹，然后选择<gui>属性</gui>。也可先选择文件再按 <guiseq><gui>Alt</gui><gui>回车键</gui></guiseq>。</p>
+
+  <p>文件属性窗口用于显示文件类型、文件大小和上次文件修改时间之类的信息。如果常需要了解这些信息，则可将其显示在<link xref="nautilus-list">列表视图列</link>或<link xref="nautilus-display#icon-captions">图标标题</link>中。</p>
+
+  <p>显示在<gui>基本</gui>选项卡中的信息的说明如下。其中也有<gui><link xref="nautilus-file-properties-permissions">权限</link></gui>和<gui><link xref="files-open#default">打开方式</link></gui>选项卡。对于某些类型的文件(如图像和视频)，会多显示一个标签，其中有尺寸、持续时间和编码之类的信息。</p>
+
+<section id="basic">
+ <title>基本属性</title>
+ <terms>
+  <item>
+    <title><gui>Name</gui></title>
+    <p>可通过更改此字段重命名文件。也可在属性窗口外重命名文件。请参阅<link xref="files-rename"/>。</p>
+  </item>
+  <item>
+    <title><gui>Type</gui></title>
+    <p>此字段有助于识别文件的类型，如 PDF 文档、OpenDocument 文本文件或 JPEG 图像。文件类型等属性决定着哪种应用程序能打开相应文件。例如，不能用音乐播放器打开图片。对于更多信息，请参见<link xref="files-open"/>。</p>
+    <p>文件的<em>MIME 类型</em>显示在括号里，MIME 类型是计算机用于指示文件类型的标准方法。</p>
+  </item>
+
+  <item>
+    <title>内容</title>
+    <p>如果您查看的是文件夹属性，就会显示这一字段，包含在文件夹里的项目数，如果包含有子文件夹，它将算作一项，甚至它还嵌套有项目。如果是空文件夹，内容将显示为<gui>空</gui>。</p>
+  </item>
+
+  <item>
+    <title>大小</title>
+    <p>如果正在查看文件(不是文件夹)，则此字段已显示出来。从文件大小中可以看出文件占有多少磁盘空间。从中还可看出下载文件或通过电子邮件发送文件会耗费多长时间(收发大文件所耗的时间较长)。</p>
+    <p>可能会以字节、KB、MB 或 GB 为单位显示大小；如果用后三种方式显示大小，也会在括号中以字节为单位显示大小。从技术角度来说，1 KB 是 1024 字节，1 MB 是 1024 KB，以此类推。</p>
+  </item>
+
+  <item>
+    <title>Parent Folder</title>
+    <p>The location of each file on your computer is given by its <em>absolute
+    path</em>. This is a unique "address" of the file on your computer, made up
+    of a list of the folders that you would need to go into to find the file.
+    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
+    folder, its parent folder would be <file>/home/jim</file> and its location
+    would be <file>/home/jim/Resume.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>剩余空间</title>
+    <p>仅会对文件夹显示此字段。此字段用于显示其中有相应文件夹的磁盘上的可用磁盘空间量。可用此字段核实硬盘是否已满。</p>
+  </item>
+
+  <item>
+    <title>访问时间</title>
+    <p>文件最后打开的日期和日间。</p>
+  </item>
+
+  <item>
+    <title>修改时间</title>
+    <p>文件最后更改和保存的日期和时间。</p>
+  </item>
+ </terms>
+</section>
+
+</page>

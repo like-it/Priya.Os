@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="pa">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>ਜੈਕਬ ਸਟਿਈਨੇਰ</name>
+    </credit>
+    <credit type="author">
+      <name>ਪੇਟਰ ਕੋਵਰ</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">ਵੈੱਬ ਬਰਾਊਜ਼ਰ ਕਰੋ</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">A tutorial on browsing the web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  </info>
+
+  <title>ਵੈੱਬ ਬਰਾਊਜ਼ਰ ਕਰੋ</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>ਸਕਰੀਨ ਦੇ ਉੱਤੇ ਖੱਬੇ ਕੋਨੇ ਉੱਤੇ <gui>ਐਪਲੀਕੇਸ਼ਨ</gui> ਉੱਤੇ ਕਲਿੱਕ ਕਰੋ।</p></item>
+      <item><p>ਮੇਨੂ ਤੋਂ, <guiseq><gui>ਇੰਟਰਨੈੱਟ</gui><gui>ਫਾਇਰਫਾਕਸ</gui></guiseq> ਦੀ ਚੋਣ ਕਰੋ</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p><gui>ਸਰਗਰਮੀ ਝਲਕ</gui> ਵੇਖਣ ਲਈ ਆਪਣੇ ਮਾਊਂਸ ਪੁਆਇੰਟਰ ਨੂੰ ਸਕਰੀਨ ਦੇ ਉੱਤੇ ਖੱਬੇ ਕੋਨੇ ਉੱਤੇ <gui>ਸਰਗਰਮੀ</gui> ਉੱਤੇ ਲੈ ਕੇ ਜਾਉ।</p></item>
+      <item><p>ਸਕਰੀਨ ਦੇ ਖੱਬੇ ਪਾਸੇ ਪੱਟੀ ਤੋਂ <app>ਫਾਇਰਫਾਕਸ</app> ਬਰਾਊਜ਼ਰ ਆਈਕਾਨ ਚੁਣੋ।</p></item>
+    </steps>
+
+    <note><p>ਬਦਲਵੇਂ ਰੂਪ ਵਿੱਚ ਤੁਸੀਂ <gui>ਸਰਗਰਮੀ ਝਲਕ</gui> ਵਿੱਚ <em>ਫਾਇਰਫਾਕਸ</em> <link xref="gs-use-system-search">ਲਿਖ ਕੇ ਹੀ</link> ਬਰਾਊਜ਼ਰ ਚਲਾ ਸਕਦੇ ਹੋ।</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p><gui>ਸਰਗਰਮੀ ਝਲਕ</gui> ਵੇਖਣ ਲਈ ਆਪਣੇ ਮਾਊਂਸ ਪੁਆਇੰਟਰ ਨੂੰ ਸਕਰੀਨ ਦੇ ਉੱਤੇ ਖੱਬੇ ਕੋਨੇ ਉੱਤੇ <gui>ਸਰਗਰਮੀ</gui> ਉੱਤੇ ਲੈ ਕੇ ਜਾਉ।</p></item>
+      <item><p>ਸਕਰੀਨ ਦੇ ਖੱਬੇ ਪਾਸੇ ਪੱਟੀ ਤੋਂ <app>ਵੈੱਬ</app> ਬਰਾਊਜ਼ਰ ਆਈਕਾਨ ਚੁਣੋ।</p></item>
+    </steps>
+
+    <note><p>ਬਦਲਵੇਂ ਰੂਪ ਵਿੱਚ ਤੁਸੀਂ <gui>ਸਰਗਰਮੀ ਝਲਕ</gui> ਵਿੱਚ <em>ਵੈੱਬ</em> <link xref="gs-use-system-search">ਲਿਖ ਕੇ ਹੀ</link> ਬਰਾਊਜ਼ਰ ਚਲਾ ਸਕਦੇ ਹੋ।</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>ਬਰਾਊਜ਼ਰ ਵਿੰਡੋ ਵਿੱਚ ਉੱਤੇ ਐਡਰੈਸ ਪੱਟੀ ਉੱਤੇ ਕਲਿੱਕ ਕਰੋ ਅਤੇ ਲੋੜੀਦੀ ਵੈੱਬਸਾਈਟ ਨੂੰ ਖੋਲ੍ਹਣ ਲਈ ਲਿਖਣਾ ਸ਼ੁਰੂ ਕਰੋ।</p></item>
+      <item><p>ਵੈੱਬਸਾਈਟ ਨੂੰ ਲਿਖਣਾ ਸ਼ੁਰੂ ਕਰਨ ਨਾਲ ਇਸਨੂੰ ਬਰਾਊਜ਼ਰ ਅਤੀਤ ਅਤੇ ਬੁੱਕਮਾਰਕ ਵਿੱਚ ਲੱਭਣਾ ਸ਼ੁਰੂ ਕਰ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ ਤਾਂ ਕਿ ਤੁਹਾਨੂੰ ਪੂਰਾ ਐਡਰੈਸ ਯਾਦ ਨਾ ਕਰਨਾ ਪਵੇ।</p>
+        <p>ਜੇ ਵੈੱਬਸਾਈਟ ਅਤੀਤ ਜਾਂ ਬੁੱਕਮਾਰਕ ਵਿੱਚ ਲੱਭ ਜਾਵੇ ਤਾਂ ਇਸ ਨੂੰ ਐਡਰੈਸ ਪੱਟੀ ਵਿੱਚ ਹੇਠਾਂ ਨੂੰ ਲਟਕਦੀ ਸੂਚੀ ਵਿੱਚ ਵੇਖਾਇਆ ਜਾਂਦਾ ਹੈ।</p></item>
+      <item><p>ਲਟਕਦੀ ਸੂਚੀ ਵਿੱਚੋਂ ਤੁਸੀਂ ਤੀਰ ਸਵਿੱਚਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਵੈੱਬਸਾਈਟ ਨੂੰ ਤੁਰੰਤ ਚੁਣ ਸਕਦੇ ਹੋ।</p>
+      </item>
+      <item><p>ਜਦੋਂ ਤੁਸੀਂ ਵੈੱਬਸਾਈਟ ਚੁਣ ਲਈ ਤਾਂ ਇਸ ਨੂੰ ਖੋਲ੍ਹਣ ਲਈ <key>ਐਂਟਰ</key> ਦੱਬੋ।</p>
+      </item>
+    </steps>
+
+</page>

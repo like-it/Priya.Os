@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="printing-booklet-duplex" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="printing-booklet"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Összehajtott füzetek (például könyv vagy szórólap) nyomtatása PDF-ből A4 méretű papírra.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Füzet nyomtatása kétoldalas nyomtatóval</title>
+
+  <p>Összehajtott füzetet (például kis könyvet vagy szórólapot) készíthet a dokumentum oldalainak speciális sorrendben való kinyomtatásával, és néhány beállítás megváltoztatásával.</p>
+
+  <p>Ezek az utasítások egy füzet PDF dokumentumból való nyomtatását ismertetik.</p>
+
+  <p>Ha egy <app>LibreOffice</app> dokumentumból szeretne füzetet nyomtatni, akkor előbb exportálja azt PDF-be a <guiseq><gui>Fájl</gui><gui>Exportálás PDF-be</gui></guiseq> menüpont kiválasztásával. A dokumentum oldalszámának 4 többszörösének kell lennie (4, 8, 12, 16, …). Szükség lehet akár 3 üres oldal beszúrására is.</p>
+
+  <p>Füzet nyomtatásának módja:</p>
+
+  <steps>
+    <item>
+      <p>Nyissa meg a nyomtatási ablakot. Ez általában a menü <gui style="menuitem">Nyomtatás</gui> pontjával, vagy a <keyseq><key>Ctrl</key><key>P</key></keyseq> gyorsbillentyűvel érhető el.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Tulajdonságok</gui> gombra</p>
+      <p>A <gui>Tájolás</gui> legördülő listából mindenképp válassza a <gui>Fekvő</gui> értéket.</p>
+      <p>A <gui>Kétoldalas</gui> legördülő menüben válassza a <gui>Rövid él</gui> lehetőséget.</p>
+      <p>Kattintson az <gui>OK</gui> gombra a visszatéréshez a nyomtatás ablakba.</p>
+    </item>
+    <item>
+      <p>A <gui>Tartományok és példányszám</gui> alatt válassza az <gui>Oldalak</gui> lehetőséget.</p>
+    </item>
+    <item>
+      <p>Írja be a lapok sorszámait a következő sorrendben (az n a lapok teljes száma, és 4 többszöröse):</p>
+      <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
+      <p>Példák:</p>
+      <list>
+        <item><p>4 oldalas füzet: írja be a <input>4,1,2,3</input> sorozatot</p></item>
+        <item><p>8 oldalas füzet: írja be a <input>8,1,2,7,6,3,4,5</input> sorozatot</p></item>
+        <item><p>20 oldalas füzet: írja be a <input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input> sorozatot</p></item>
+      </list>
+    </item>
+    <item>
+      <p>Válassza az <gui>Oldalelrendezés</gui> lapot.</p>
+      <p>Az <gui>Elrendezés</gui> alatt válassza a <gui>Brosúra</gui> lehetőséget.</p>
+      <p>Az <gui>Oldalak</gui> alatt a <gui>Felvétel</gui> legördülő listából válassza a <gui>Minden oldal</gui> lehetőséget.</p>
+    </item>
+    <item>
+      <p>Nyomja meg a <gui>Nyomtatás</gui> gombot.</p>
+    </item>
+  </steps>
+
+</page>

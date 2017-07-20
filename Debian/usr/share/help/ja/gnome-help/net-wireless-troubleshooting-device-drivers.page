@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu ドキュメンテーション Wiki の貢献者</name>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>デバイスドライバーによっては、特定のワイヤレスアダプターでうまく動作しません。場合によって適切なドライバーを探す必要があります。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>無線ネットワークトラブルシューティング</title>
+
+  <subtitle>正しく動作するデバイスドライバーがインストールされているか確認します</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>このステップでは、デバイスドライバーがワイヤレスアダプターに対して正しく動作するかどうかを確認することができます。<em>デバイスドライバー</em>とは、ハードウェアデバイスが正しく動作するようコンピューターに対して指示をするソフトウェアを指します。ワイヤレスアダプターがコンピューターで認識されていても、正しく動作するドライバーがインストールされていない場合があります。ワイヤレスアダプターに対して正しく動作するドライバーは複数見つけることができます。以下に示すオプションを試してみてください。</p>
+
+  <list>
+    <item>
+      <p>お使いのワイヤレスアダプターがサポートされているか確認します。</p>
+      <p>Most Linux distributions keep a list of wireless devices that they
+      have support for. Sometimes, these lists provide extra information on how
+      to get the drivers for certain adapters working properly. Go to the list
+      for your distribution (for example,
+      <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>,
+      <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>,
+      <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> or
+      <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>)
+      and see if your make and model of wireless adapter is listed. You may be
+      able to use some of the information there to get your wireless drivers
+      working.</p>
+    </item>
+    <item>
+      <p>制限のある (バイナリ) ドライバーを探す。</p>
+      <p>Linux ディストリビューションの多くは、<em>自由</em>で<em>オープンソース</em>のデバイスドライバーしか同梱していません。プロプライエタリやクローズドソースのドライバーは配布できないためです。お使いのワイヤレスアダプター用のドライバーがノンフリーまたは「バイナリのみ」でしか利用できない場合には、デフォルトではインストールされない可能性があります。この場合、アダプター製造元の web サイトで Linux 用のドライバーが提供されていないか確認してみてください。</p>
+      <p>Linux ディストリビューションの中には制限のあるドライバーをダウンロードできるツールを提供しているものがあります。使用しているディストリビューションにこのようなツールがある場合には、そのツールを使ってワイヤレスドライバーを探すことができます。</p>
+    </item>
+    <item>
+      <p>Windows 向けドライバーを使用する。</p>
+      <p>一般的に、特定のオペレーティングシステム (Windows など) 向けに設計されたデバイスドライバーを別のオペレーティングシステム (Linux など) で使用することはできません。デバイスの処理方法が異なるためです。ただし、ワイヤレスアダプターの場合、<em>NDISwrapper</em> と呼ばれる互換レイヤーをインストールすることで Windows の一部のワイヤレスドライバーを Linux で使用できるようになります。ワイヤレスアダプターは、ほとんどの場合 Windows 向けドライバーが提供されている一方で Linux 向けドライバーは提供されていないことがあるため、この互換レイヤーが役に立ちます。NDISwrapper の使い方については、<link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page"/> を参照してください。NDISwrapper を使ってもすべてのワイヤレスドライバーが使用できるようになるわけではないので注意してください。</p>
+    </item>
+  </list>
+
+  <p>どの方法でもうまくいかない場合は、別のワイヤレスアダプターで動作するか確認するとよいでしょう。USB ワイヤレスアダプターの多くは非常に安価で、いずれのコンピューターにも接続できます。ただし、 お使いの Linux ディストリビューションに対応していることを確認してから購入するとよいでしょう。</p>
+
+</page>

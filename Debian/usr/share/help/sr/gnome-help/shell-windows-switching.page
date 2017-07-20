@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-switching" xml:lang="sr">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-windows"/>
+    <link type="guide" xref="shell-overview#apps"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-07" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Гномов пројекат документације</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Шоба Тјаги</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Притисните <keyseq><key>Супер</key><key>Таб</key></keyseq>.</desc>
+  </info>
+
+<title>Пребацујте се између прозора</title>
+
+  <p>Можете видети све покренуте програме који имају графичко корисничко сучеље у <em>пребацивачу прозора</em>. Ово чини пребацивање између задатака поступак једног корака и обезбеђује пуну слику покренутих програма.</p>
+
+  <p>Из радног простора:</p>
+
+  <steps>
+    <item>
+      <p>Притисните <keyseq><key xref="keyboard-key-super">Супер</key><key>Таб</key></keyseq> да прикажете <gui>пребацивач прозора</gui>.</p>
+    </item>
+    <item>
+      <p>Отпустите <key xref="keyboard-key-super">Супер</key> да изаберете следећи (означени) прозор у пребацивачу.</p>
+    </item>
+    <item>
+      <p>Иначе, држећи још увек тастер <key xref="keyboard-key-super"> Супер</key>, притисните <key>Таб</key> да кружите по списку отворених прозора, или <keyseq><key>Шифт</key><key>Таб</key></keyseq> да кружите уназад.</p>
+    </item>
+  </steps>
+
+  <p if:test="platform:gnome-classic">Можете да користите списак прозора на доњој траци да приступите свим вашим отвореним прозорима и да се брзо пребацујете између њих.</p>
+
+  <note style="tip" if:test="!platform:gnome-classic">
+    <p>Прозори у пребацивачу прозора су груписани по програмима. Прегледи програма са више прозора бивају приказани на клик. Држите притиснутим <key xref="keyboard-key-super">Супер</key> и притисните <key>`</key> (или тастер изнад тастера <key>Таб</key>) да се крећете по списку.</p>
+  </note>
+
+  <note if:test="!platform:gnome-classic">
+    <p>У пребацивачу прозора, програми са других радних прозора су одвојени усправним раздвојницима.</p>
+  </note>
+
+  <p>Можете такође да се померате између иконица програма у пребацивачу прозора тастерима <key>→</key> или <key>←</key>, или да изаберете један тако што ћете кликнути мишем на њега.</p>
+
+  <p>Прегледи програма са једним прозором могу бити приказани тастером <key>↓</key>.</p>
+
+  <p>Из прегледа <gui>активности</gui>, притисните на <link xref="shell-windows">прозор</link> да се пребаците на њега и да напустите преглед. Ако имате отворених више <link xref="shell-windows#working-with-workspaces">радних простора</link>, можете да кликнете на сваки радни простор да видите отворене прозоре на сваком радном простору.</p>
+
+</page>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="misc-key-fingerprint" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="concepts"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>La huella de una clave es un ID único para cada clave, usado a menudo para verificar la propiedad de una clave.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>¿Qué es una huella?</title>
+
+  <p>La huella de una clave es una secuencia única de letras y números usada para identificar la clave. Al igual que las huellas dactilares de dos personas diferentes, las huellas de dos claves diferentes nunca puede ser idénticas. La huella es la mejor manera de identificar una clave en particular.</p>
+
+  <p>Una clave tiene varias propiedades, como el nombre o la dirección de correo-e del propietario, el tipo de clave, su fecha de caducidad y similares. Cuando está buscando una clave pública y encuentra varias claves con las mismas propiedades, la única manera de identificar la clave que está buscando es comparar las huellas de las dos claves con la huella de la clave que necesita.</p>
+
+  <p>Es la huella de la clave lo que se verifica cuando intenta iniciar sesión en un equipo remoto usando <link xref="index#ssh-keys">SSH</link>. Al firmar una clave <link xref="index#pgp-keys">PGP</link> siempre debe comprobar la huella y verificar la identidad del propietario para asegurarse de que está firmando la clave correcta.</p>
+
+<section id="fingerprint-ui">
+  <title>Huellas en <app>Contraseñas y claves</app></title>
+
+    <p>Puede ver la huella de una clave en <app>Contraseñas y claves</app> en las propiedades de la clave.</p>
+
+    <steps>
+      <title>Para comprobar la huella de una clave:</title>
+        <item>
+	  <p>Seleccione <gui>claves GnuPG</gui> en el panel de la izquierda.</p>
+        </item>
+        <item>
+          <p>Seleccione la clave PGP de la lista.</p>
+        </item>
+        <item>
+          <p>Pulse con el botón derecho sobre la clave y elija <gui style="menuitem">Propiedades</gui>.</p>
+	</item>
+        <item>
+          <p>En el nuevo diálogo, seleccione la pestaña <gui>Detalles</gui>.</p>
+        </item>
+        <item>
+          <p>Puede ver la huella de la clave en la parte izquierda.</p>
+        </item>
+    </steps>
+
+  <!-- stefw: Suggest documenting that the key fingerprint is the
+  only way to uniquely tell the difference between two keys.
+
+  Two keys may have the same name and description. The label or name
+  is no guarantee that the key represents the person described in the label.
+
+  The way to guarantee that you have a given key is to compare the
+  fingerprint with the person who owns the key.
+
+  For SSH keys this is done when you initially connect to a server.
+
+  For PGP keys this is usually done through the web of trust. Where someone
+  you know signs a key, and vouches that the key with a given fingerprint
+  is owned by the person noted on the label.
+  -->
+</section>
+
+</page>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="strategy" xml:lang="es">
+	<info>
+          <revision version="3.4" date="2012-03-08" status="final"/>
+	  <link type="guide" xref="index#play"/>
+	  <credit type="author copyright">
+	    <name>Radoslav Asparuhov</name>
+	    <email>rasparuhov@gmail.com</email>
+	  <years>2011</years>
+	  </credit>
+	  <credit type="editor">
+	    <name>Tiffany Antopolski</name>
+	    <email>tiffany.antopolski@gmail.com</email>
+	  </credit>
+	  <license>
+		<p>Creative Commons Compartir Igual 3.0</p>
+	  </license>
+	
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007 - 2010</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Estrategia</title>
+        <p>Sólo hay una posibilidad para cada cuadrado en un sudoku. Las siguientes estrategias se ayudarán a descubrir sistemáticamente la solución para cada cuadrado.</p>
+ <section id="strategy1">
+	<title>Estrategia 1:</title>
+	  <steps>
+	    <item><p>Elija la fila que contiene más números</p>
+                  <note><p>Debe elegir la fila o la columna con más números. Para simplificar, estas instrucciones se han escrito como si una fila tuviera la mayoría de los números.</p></note>
+            </item>
+	    <item><p>Determine qué números faltan en la fila.</p></item>
+	    <item><p>Elija uno de los cuadrados vacíos en la fila. Determine qué números de los que faltan están en la columna o en el cuadrado de 3x3.</p></item>
+	    <item><p>Usando <link xref="notes">notas</link>, introduzca los números que faltan que no están en la columna o en el cuadrado de 3x3, en el campo superior. Estos números son soluciones candidatas para ese cuadrado.</p></item>
+	    <item><p>Vaya al siguiente cuadrado vacío en la fila elegida y repita el método anterior. Repítalo en cada fila y en cada columna, empezando por aquellas que tienen más números, y siguiendo por las que tienen menos. Busque los números con cuidado y no olvide los cuadrados de 3x3.</p></item>
+	   </steps>
+            <note><p>Esta estrategia revelará los cuadrados que sólo tienen una posibilidad. Cuando los haya descubierto, puede rellenar esos cuadrados con el valor, y repetir la estrategia otra vez hasta que resuelva el puzle entero.</p></note>
+<figure>
+  <desc>Ejemplo de uso de la estrategia 1.</desc>
+  <media type="image" mime="image/png" src="figures/strategy1.png" width="400" its:translate="no"/>
+</figure>
+
+</section>
+<section id="strategy2">
+
+	<title>Estrategia 2:</title>
+	  <steps>
+	    <item><p>Encuentre el número que aparece con mayor frecuencia.</p></item>
+	    <item><p>Ahora mire en la alineación vertical del cuadrado de 3x3 y encuentre las columnas en las que aparece este número.</p></item>
+  	    <item><p>En esta alineación, vaya a un cuadrado de 3x3 que no contenga este número. Usando las <link xref="notes">notas</link>, introduzca este número en cada cuadrado vacío de la columna en la que no aparece el número. Si el número aparece en la fila de estos cuadrados, no lo introduzca en las notas de estos cuadrados.</p></item>
+	    <item><p>Repita los dos últimos pasos para las alineaciones verticales del centro y de la derecha.</p></item>
+            <item><p>Busque el siguiente número que aparece más veces, y repita estos pasos hasta que tenga los 9 números.</p></item>
+	  </steps>
+            <note><p>Esta estrategia revelará los cuadrados que sólo tienen una posibilidad. Cuando los haya descubierto, puede rellenar esos cuadrados con el valor, y repetir la estrategia otra vez hasta que resuelva el puzle entero.</p></note>
+<figure>
+  <desc>Ejemplo de uso de la estrategia 2.</desc>
+  <media type="image" mime="image/png" src="figures/strategy2.png" width="400" its:translate="no"/>
+</figure>
+
+	   <note><p>Si ninguna de las estrategias anteriores resuelve el puzle por sí sola, puede alternarlas. También puede combinar las estrategias.</p></note>
+</section>
+</page>

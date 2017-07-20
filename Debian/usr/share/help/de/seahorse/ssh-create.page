@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="ssh-create" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys" group="first"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="incomplete"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>So erzeugen Sie SSH-Schlüssel, um sich bei anderen Rechnern anzumelden.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Einen neuen SSH-Schlüssel erzeugen</title>
+
+  <p>Ein SSH-Schlüssel unterstützt Sie bei der Herstellung einer sicheren Verbindung zwischen Rechnern. Beim Erstellen eines SSH-Schlüssels werden sowohl ein <em>öffentlicher</em> als auch ein <em>privater</em> Schlüssel angelegt. So erstellen Sie einen neuen Schlüssel:</p>
+
+    <steps>
+      <item><p>Wählen Sie <guiseq><gui>Datei</gui><gui>Neu …</gui></guiseq>.</p></item>
+      <item><p>Wählen Sie <gui>Secure Shell-Schlüssel</gui> und klicken Sie dann auf <gui>Fortsetzen</gui>.</p></item>
+      <item><p>Geben Sie eine Beschreibung für den Schlüssel ein. Die Schlüsselbeschreibung vereinfacht es, den Schlüssel später zuzuordnen. Sie können z.B. das aktuelle Datum eingeben, oder etwas über den Verwendungszweck sagen, oder den Namen des Servers angeben, auf dem Sie den Schlüssel installieren wollen. Das Beschreibungsfeld ist optional, und es ist Ihnen überlassen, wie Sie den Schlüssel beschreiben möchten.</p></item>
+      <item><p>Ändern Sie die Vorgabeeinstellungen für den Verschlüsselungstyp oder die Schlüsselstärke, indem Sie die Leiste <gui>Erweiterte Schlüsseleinstellungen</gui> ausklappen.</p></item>
+    </steps>
+
+  <p>Sie haben jetzt die Wahl nur Ihren Schlüssel zu erstellen, oder diesen zusätzlich auf einem entfernten Rechner zu installieren, um sich ohne Passworteingabe anmelden zu können.</p>
+
+  <section id="ssh-just-create-key" ui:expanded="false">
+    <title>Ihren Schlüssel erstellen und entfernte Anmeldung nicht einrichten</title>
+    <p>Sie können den SSH-Schlüssel erstellen und diesen zu einem späteren Zeitpunkt einrichten.</p>
+
+    <steps>
+      <item>
+	<p>Klicken Sie auf den Knopf <gui style="button">Nur Schlüssel erzeugen</gui>.</p>
+      </item>
+      <item>
+	<p>Geben Sie eine Passphrase für Ihren SSH-Schlüssel ein und klicken Sie auf <gui style="button">OK</gui>.</p>
+      </item>
+      <item>
+	<p>Geben Sie die Passphrase erneut ein und klicken Sie zum Abschließen auf <gui style="button">OK</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Der SSH-Schlüssel wird nun im Schlüsselbund <gui>OpenSSH-Schlüssel</gui> aufgeführt.</p>
+
+    <note style="tip">
+      <p>Sobald Sie Ihren SSH-Schlüssel einsetzen, werden Sie nach der zugehörigen Passphrase gefragt. Damit wird sichergestellt, dass der Schlüssel ohne Passphrase nicht ohne weiteres verwendet werden kann.</p>
+    </note>
+
+  </section>
+
+  <section id="ssh-create-key-and-set-up" ui:expanded="false">
+    <title>Ihren Schlüssel erstellen und auf einem entfernten Rechner installieren</title>
+    <p>Eine der nützlichsten Einsatzmöglichkeiten eines SSH-Schlüssels ist die Installation des öffentlichen Schlüssels auf einem entfernten Rechner. So können Sie sich auf einem entfernten Rechner mit SSH anmelden, ohne jedes Mal ein Passwort eingeben zu müssen.</p>
+
+    <steps>
+      <item>
+	<p>Klicken Sie auf den Knopf <gui style="button">Erstellen und Einrichten</gui> und folgen Sie den Anweisungen zur Eingabe einer Passphrase.</p>
+      </item>
+      <item>
+	<p>Es öffnet sich ein Dialog. Geben Sie die <gui>Server-Adresse</gui> ein, die Sie normalerweise verwenden, um sich mit SSH am entfernten Rechner anzumelden.</p>
+      </item>
+      <item>
+	<p>Stellen Sie sicher, dass der <gui>Anmeldename</gui> für den entfernten Rechner richtig ist und klicken Sie auf <gui>Einrichten</gui>.</p>
+      </item>
+      <item>
+	<p>Das Programm versucht nun eine Verbindung zur angegebenen <gui>Server-Adresse</gui> mit dem <gui>Anmeldenamen</gui>. Im Falle von Problemen beim Zugriff auf den entfernten Rechner öffnet sich ein Einblendfenster, welches das Problem erläutert. Stellen Sie sicher, dass eine Netzverbindung besteht und der entfernte Rechner eingeschaltet und Zugriff möglich ist.</p>
+      </item>
+      <item>
+	<p>Wenn die Verbindung zum entfernten Rechner erfolgreich aufgebaut wurde erscheint ein Dialogfenster, das nach dem <gui>Passwort</gui> zur Anmeldung fragt. Geben Sie Ihr Passwort ein und klicken Sie dann auf <gui style="button">OK</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Der öffentliche Teil des gewählten SSH-Schlüssels wird nun auf dem entfernten Rechner installiert und so eingerichtet, dass eine SSH-Anmeldung ohne Passwort möglich ist.</p>
+
+    <note style="tip">
+      <p>Falls die SSH-Schlüssellegitimierung fehlschlägt und Sie keine Passwort-Legitimierung einsetzen können, so sprechen Sie bitte Ihren Dienstverwalter für weitere Hilfe an.</p>
+    </note>
+  </section>
+</page>

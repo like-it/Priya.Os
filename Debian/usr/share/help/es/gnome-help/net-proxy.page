@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="net-proxy" xml:lang="es">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="net-general"/>
+
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Un proxy es un intermediario del tráfico web que se puede usar para acceder a sitios web de manera anónima, o para propósitos de control o seguridad.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Definir la configuración del proxy</title>
+
+<section id="what">
+  <title>¿Qué es un proxy?</title>
+
+  <p>Un <em>proxy web</em> filtra los sitios web que está consultando, recibe solicitudes del navegador web para obtener las páginas web y sus elementos y, siguiendo una política, decide si los deja pasar. Normalmente se usan en empresas y accesos inalámbricos públicos a Internet para controlar los sitios web que está visitando, impedir que pueda acceder a Internet sin autenticarse o llevar a cabo comprobaciones de seguridad en sitios web.</p>
+
+</section>
+
+<section id="change">
+  <title>Cambiar el método del proxy</title>
+
+  <steps>
+    <item>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Red</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse en <gui>Red</gui> para abrir el panel.</p>
+    </item>
+    <item>
+      <p>Seleccione <gui>Proxy de red</gui> de la lista a la izquierda.</p>
+    </item>
+    <item>
+      <p>Elija el tipo de proxy que quiere usar de entre los siguientes:</p>
+      <terms>
+        <item>
+          <title><gui itst:context="proxy">Ninguno</gui></title>
+          <p>Las aplicaciones usarán una conexión directa para obtener el contenido de la web.</p>
+        </item>
+        <item>
+          <title><gui>Manual</gui></title>
+          <p>Para cada protocolo que se use con un proxy, defina la dirección de un proxy y el puerto. Los protocolos son <gui>HTTP</gui>, <gui>HTTPS</gui>, <gui>FTP</gui> y <gui>SOCKS</gui>.</p>
+        </item>
+        <item>
+          <title><gui>Automático</gui></title>
+          <p>Un URL que apunta a un recurso que contiene la configuración adecuada para su sistema.</p>
+        </item>
+      </terms>
+    </item>
+  </steps>
+
+  <p>Las aplicaciones que usan conexión de red usarán su configuración específica del proxy.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,8 @@
+[Unit]
+Description=Zeitgeist activity log service
+
+[Service]
+Type=dbus
+BusName=org.gnome.zeitgeist.Engine
+ExecStartPre=/usr/lib/zeitgeist/zeitgeist/zeitgeist-maybe-vacuum
+ExecStart=/usr/bin/zeitgeist-daemon

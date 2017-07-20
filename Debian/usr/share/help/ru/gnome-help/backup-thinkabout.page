@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Список папок, содержащих документы, файлы и настройки, которые вы можете захотеть включить в резервную копию.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Где найти файлы, которые я хочу скопировать?</title>
+
+  <p>Решить, какие файлы скопировать, и найти, где они хранятся — один из наиболее сложных шагов при создании резервной копии. Ниже перечислены наиболее типичные места хранения важных файлов и настроек, для которых можно создать резервные копии.</p>
+
+<list>
+ <item>
+  <p>Личные файлы (документы, музыка, фотографии и видео)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Обычно хранятся в вашей домашней папке (<file>/home/ваше_имя</file>). Могут находиться во вложенных папках «Рабочий стол», «Документы», «Изображения», «Музыка» и «Видео».</p>
+  <p>If your backup medium has sufficient space (if it is an external hard
+  disk, for example), consider backing up the entire Home folder. You can find
+  out how much disk space your Home folder takes up by using the
+  <app>Disk Usage Analyzer</app>.</p>
+ </item>
+
+ <item>
+  <p>Скрытые файлы</p>
+  <p>Any file or folder name that starts with a period (.) is hidden by
+  default. To view hidden files, click the
+  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
+  button in the toolbar, and then choose <gui>Show Hidden Files</gui>, or press
+  <keyseq><key>Ctrl</key><key>H</key></keyseq>. You can copy these to a
+  backup location like any other file.</p>
+ </item>
+
+ <item>
+  <p>Личные настройки (параметры рабочего стола, темы и параметры программ)</p>
+  <p>Большинство приложений хранит свои параметры в скрытых папках внутри вашей домашней папки (информацию о скрытых файлах смотрите выше).</p>
+  <p>Параметры большинства приложений хранятся в скрытых папках <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file> и <file>.local</file> в вашей домашней папке.</p>
+ </item>
+
+ <item>
+  <p>Параметры системы</p>
+  <p>Settings for important parts of the system are not stored in your Home
+  folder. There are a number of locations that they could be stored, but most
+  are stored in the <file>/etc</file> folder. In general, you will not need to
+  back up these files on a home computer. If you are running a server, however,
+  you should back up the files for the services that it is running.</p>
+ </item>
+</list>
+
+</page>

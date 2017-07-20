@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="as">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>টিফানি এন্টপলস্কি</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>GNOME তথ্যচিত্ৰ প্ৰকল্প</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>মাইকেল হিল</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>ফোল্ডাৰসমূহৰ এটা তালিকা য'ত আপুনি বেকআপ ল'ব বিচৰা দস্তাবেজসমূহ, ফাইলসমূহ আৰু সংহতিসমূহ পাব।</desc>
+  </info>
+
+  <title>মই বেকআপ কৰিব বিচৰা ফাইলসমূহ ক'ত পাম?</title>
+
+  <p>এটা বেকআপ লোৱাৰ চেষ্টা কৰোতে কোনবোৰ ফাইল বেকআপ লোৱা হব, সিহতক অৱস্থিত কৰা, আটাইতকৈ কঠিন স্তৰ। আপুনি বেকআপ লব খোজা গুৰুত্বপূৰ্ণ ফাইলসমূহ আৰু সংহতিসমূহৰ আটাইতকৈ সাধাৰণ অৱস্থানসমূহৰ তালিকা তলত দিয়া আছে।</p>
+
+<list>
+ <item>
+  <p>ব্যক্তিগত ফাইলসমূহ (দস্তাবেজসমূহ, সংগিত, ফ'টোসমূহ আৰু ভিডিঅ'সমূহ)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">এইসমূহ সাধাৰণত আপোনাৰ ঘৰ ফোল্ডাৰ (<file>/home/your_name</file>) ত সংৰক্ষণ কৰা হয়। এইসমূহ উপফোল্ডাৰ যেনে ডেস্কটপ, দস্তাবেজসমূহ, ছবিবোৰ, সংগিত আৰু ভিডিঅ'সমূহত থাকিব পাৰে।</p>
+  <p>If your backup medium has sufficient space (if it is an external hard
+  disk, for example), consider backing up the entire Home folder. You can find
+  out how much disk space your Home folder takes up by using the
+  <app>Disk Usage Analyzer</app>.</p>
+ </item>
+
+ <item>
+  <p>গোপন ফাইলসমূহ</p>
+  <p>Any file or folder name that starts with a period (.) is hidden by
+  default. To view hidden files, click the
+  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
+  button in the toolbar, and then choose <gui>Show Hidden Files</gui>, or press
+  <keyseq><key>Ctrl</key><key>H</key></keyseq>. You can copy these to a
+  backup location like any other file.</p>
+ </item>
+
+ <item>
+  <p>ব্যক্তিগত সংহতিসমূহ (ডেস্কটপ পছন্দ, থীমবোৰ আৰু চফ্টৱেৰ সংহতিসমূহ)</p>
+  <p>বেছিৰভাগ এপ্লিকেচনে সিহতৰ সংহতিসমূহ আপোনাৰ ঘৰ ফোল্ডাৰৰ ভিতৰত লুকুৱা ফোল্ডাৰসমূহত থয় (লুকুৱা ফাইলসমূহৰ বিষয়ে তথ্যৰ বাবে ওপৰত চাওক)।</p>
+  <p>আপোনাৰ বেছিৰভাগ এপ্লিকেচন সংহতিসমূহ আপোনাৰ ঘৰ ফোল্ডাৰত লুকুৱা ফোল্ডাৰসমূহ <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file>, আৰু <file>.local</file> ত সংৰক্ষণ কৰা হব।</p>
+ </item>
+
+ <item>
+  <p>চিস্টেম-বিস্তৃত সংহতিসমূহ</p>
+  <p>Settings for important parts of the system are not stored in your Home
+  folder. There are a number of locations that they could be stored, but most
+  are stored in the <file>/etc</file> folder. In general, you will not need to
+  back up these files on a home computer. If you are running a server, however,
+  you should back up the files for the services that it is running.</p>
+ </item>
+</list>
+
+</page>

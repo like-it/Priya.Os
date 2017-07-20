@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="look-display-fuzzy" xml:lang="mr">
+
+  <info>
+    <link type="guide" xref="hardware-problems-graphics"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>GNOME डॉक्युमेंटेशन प्रकल्प</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>पडद्याचे रेजोल्युशन अयोग्यरित्या सेट केले असावे.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>पडद्यावर बाबी फज्जि किंवा पिक्सलेटेड का दिसतात?</title>
+
+<p>हे होऊ शकते कारण सेट केलेले डिस्पले रेजॉल्युशन पडद्याकरिता योग्य नाही.</p>
+
+<p>To solve this, open the <gui xref="shell-introduction#activities">Activities</gui>
+overview and start typing <gui>Displays</gui>. Click on <gui>Displays</gui>
+to open the panel. Try some of the <gui>Resolution</gui> options and set the
+one that makes the screen look better.</p>
+
+<section id="multihead">
+  <title>जेव्हा एकापेक्षाजास्त डिस्पलेज जोडले जातात</title>
+
+  <p>संगणकाशी दोन डिस्पलेज जोडले असल्यास (उदाहरणार्थ, सर्वसाधारण मॉनिटर आणि प्रोजेक्टर), डिस्पलेजकडे विविध रेजोल्युशन्स असतील. तरी, संगणकाचे ग्राफिक्स कार्ड स्क्रीनला एकावेळी फक्त एका रेजोल्युशनमध्ये दाखवू शकते, जेणेकरून किमान डिस्पलेजपैकी एक फज्जि आढळू शकते.</p>
+
+  <p>You can set it so that the two displays have different resolutions, but
+  you will not be able to display the same thing on both screens
+  simultaneously. In effect, you will have two independent screens connected at
+  the same time. You can move windows from one screen to another, but you
+  cannot show the same window on both screens at once.</p>
+
+  <p>डिस्पलेज सेटअप करण्यासाठी जेणेकरून प्रत्येकाकड स्वतःचे रेजॉल्युशन असेल:</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Displays</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Displays</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>The displays should be listed as <gui>Mirrored</gui>. Select your main
+      display.</p>
+    </item>
+    <item>
+      <p>Select <gui>Primary</gui> in the list of display configurations, and
+      then click <gui style="button">Apply</gui> to save.</p>
+    </item>
+    <item>
+      <p><gui>डिस्पलेज</gui> पटलाच्या शीर्षातील ग्रे बॉक्सपासून प्रत्येक डिस्पले निवडा. डिस्पले योग्य दिसेपर्यंत <gui>रेजॉल्युशन</gui> बदला.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

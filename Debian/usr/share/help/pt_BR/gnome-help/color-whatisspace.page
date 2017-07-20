@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>Um espaço de cores é uma faixa definida de cores.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>O que é um espaço de cores?</title>
+
+  <p>Um espaço de cores é uma faixa definida de cores. Alguns bem conhecidos são sRGB, AdobeRGB e ProPhotoRGB.</p>
+
+  <p>A visão humana não é um simples sensor RGB, mas podemos nos aproximar de como os olhos reagem com um diagrama de cromaticidade do CIE de 1931, que mostra a resposta visual humana com o formato de uma ferradura. Você pode notar que, na visão humana, existem muito mais tons de verde detectados que de azul ou vermelho. Com um espaço de cores tricromático como o RGB, nós representamos as cores no computador usando três valores, o que restringe à codificação de um <em>triângulo</em> de cores.</p>
+
+  <note>
+    <p>Usar modelos como um diagrama de cromaticidade CIE de 1931 é uma enorme simplificação da visão humana e gama de cores reais são expressas por cascos tridimensionais em vez de projeções 2D. Essas projeções bidimensionais de uma forma 3D às vezes são enganosas. Assim, se quiser ver o casco 3D, use o aplicativo <code>gcm-viewer</code>.</p>
+  </note>
+
+  <figure>
+    <desc>sRGB, AdobeRGB e ProPhotoRGB representados por triângulos brancos</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>Primeiro, olhando para o sRGB, que é o menor espaço e o que pode codificar a menor quantidade de cores. É uma aproximação de um monitor de tubo CRT de 10 anos atrás; monitores mais modernos podem exibir facilmente mais cores que isso. sRGB é um padrão de <em>menor denominador comum</em> e é usado em um grande número de aplicações (inclusive a Internet).</p>
+  <p>AdobeRGB costuma ser usado como um <em>espaço de edição</em>. Ele pode representar mais cores que o sRGB, o que significa que ele pode alterar cores em uma fotografia sem se preocupar muito se as cores mais vívidas serão cortadas ou os pretos destruídos.</p>
+  <p>ProPhoto o maior espaço disponível e é frequentemente usado para arquivamento de documentos. Ele consegue codificar quase que toda a faixa de cores detectadas pelo olho humano e até mesmo codificar cores que o olho não consegue detectar!</p>
+
+  <p>Mas, se ProPhoto é de fato melhor, por que nós não usamos ele para tudo? A resposta tem a ver com a <em>quantização</em>. Se você tem somente 8 bits (256 níveis) para codificar cada canal, então uma faixa maior terá passos maiores entre cada valor.</p>
+  <p>Passos maiores significam um erro maior entre a cor capturada e a cor armazenada, e isso é um grande problemas para algumas cores. Acontece que algumas cores chaves, como os tons de pele, são muito importantes, e mesmo pequenos erros farão com que observadores não treinados notem que algo está errado na fotografia.</p>
+  <p>Claro, usar uma imagem de 16 bits vai gerar muito mais passos e um erro de quantização muito menor, mas isso duplica o tamanho de cada arquivo de imagem. A maioria do conteúdo em existência hoje é em 8bpp, isto é, 8 bits por pixel.</p>
+  <p>O gerenciamento de cores é um processo de converter de um espaço de cores para outro, em que um espaço de cores pode ser um bem conhecido como o sRGB ou um personalizado como o perfil do seu monitor ou o da sua impressora.</p>
+
+</page>

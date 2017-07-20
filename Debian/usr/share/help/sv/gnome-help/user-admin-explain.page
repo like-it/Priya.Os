@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="user-admin-explain" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Du behöver administratörsbehörighet för att ändra viktiga delar i ditt system.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Hur fungerar administratörsbehörighet?</title>
+
+  <p>Precis som filer som <em>du</em> skapar, har din dator ett antal filer som behövs för att systemet ska fungera ordentligt. Om dessa viktiga <em>systemfiler</em> ändras felaktigt kan de orsaka att saker slutar fungera, så de är skyddade från ändring som standard. Vissa program modifierar också viktiga delar i systemet, så de är också skyddade.</p>
+
+  <p>Sättet på vilket de är skyddade är genom att enbart låta användare med <em>administratörsbehörighet</em> ändra filerna eller använda programmen. I dagligt bruk så kommer du inte att behöva ändra några systemfiler eller använda dessa program, så som standard har du inte administratörsbehörighet.</p>
+
+  <p>Ibland behöver du använda dessa program, så du kan tillfälligt få administratörsbehörighet för att låta dig göra ändringarna. Om ett program behöver administratörsbehörighet så kommer det att fråga efter ditt lösenord. Om du till exempel vill installera någon ny programvara så kommer programvaruinstalleraren (pakethanteraren) att fråga dig efter ditt administratörslösenord så att det kan lägga till det nya programmet till systemet. När det är klart så tas din administratörsbehörighet bort igen.</p>
+
+  <p>Administratörsbehörighet associeras med ditt användarkonto. <gui>Administratörs</gui>-användare tillåts ha dessa behörigheter medan <gui>Standard</gui>-användare inte har dem. Utan administratörsbehörighet kommer du inte att kunna installera programvara. Vissa användarkonton (till exempel ”root”-kontot) har permanent administratörsbehörighet. Du bör inte använda administratörsbehörighet hela tiden, eftersom du av misstag kan råka ändra någon som du inte avsett (som till exempel att ta bort en nödvändig systemfil).</p>
+
+  <p>Sammanfattningsvis så låter administratörsbehörighet dig ändra viktiga delar i systemet när det behövs men förhindrar dig från att göra det av misstag.</p>
+
+  <note>
+    <title>Vad betyder ”superanvändare”?</title>
+    <p>En användare med administratörsbehörighet kallas ibland <em>superanvändare</em>. Detta är helt enkelt för att den användaren har mer behörighet än normala användare. Du kan ibland se personer diskutera saker som <cmd>su</cmd> och <cmd>sudo</cmd>; dessa är program som tillfälligt ger dig (administratörs-) behörighet som ”superanvändare”.</p>
+  </note>
+
+<section id="advantages">
+  <title>Varför är administratörsbehörighet användbart?</title>
+
+  <p>Att kräva att användare har administratörsbehörighet innan viktiga systemändringar görs är användbart eftersom det hjälper till att förhindra att ditt system går sönder, avsiktligt eller oavsiktligt.</p>
+
+  <p>Om du har administratörsbehörighet hela tiden så kan du av misstag ändra en viktig fil eller köra ett program som ändrar något viktigt. Att bara tillfälligt få administratörsbehörighet, när du behöver dem, minskar risken att dessa misstag sker.</p>
+
+  <p>Bara vissa, betrodda användare bör tillåtas ha administratörsbehörighet. Detta förhindrar andra användare från att strula med din dator och göra saker som att avinstallera program som du behöver, installera program som du inte vill ha, eller ändra viktiga filer. Detta är användbart ur säkerhetssynpunkt.</p>
+
+</section>
+
+</page>

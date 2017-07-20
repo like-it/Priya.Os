@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-working-offline" xml:lang="fr">
+
+  <info>
+    <desc>Travailler avec vos courriels alors que vous n'êtes pas connecté au réseau.</desc>
+<!-- TODO:POST-3-8: Offline work for web calendars etc also exists => create index page for Offline working? -->
+    <link type="guide" xref="index#mail-basic"/>
+
+    <revision pkgversion="3.7.4" version="0.3" date="2013-01-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-send.html.en#usage-mail-getnsend-offline -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Travail hors ligne</title>
+
+<p>Forced offline mode helps you communicate with remote mail storage systems like GroupWise, IMAP or Exchange, in situations where you are not connected to the network at all times. <app>Evolution</app> keeps a local copy of one or more folders to allow you to compose messages, storing them in your Outbox to be sent the next time you connect.</p>
+
+<note style="warning"><p><app>Evolution</app>'s forced offline mode only refers to mail and does not apply to contacts and calendars.</p></note>
+
+<p>POP mail downloads all messages to your local system, but other connections usually download just the headers, and get the rest only when you want to read the message. Before you force <app>Evolution</app> to be offline, <app>Evolution</app> downloads the unread messages from the folders you have chosen to store.</p>
+
+<section id="mark-folders">
+<title>Signalement des dossiers pour utilisation hors ligne</title>
+<p>Pour marquer un dossier de courriel pour une utilisation hors ligne,</p>
+<steps>
+<item><p>Faites un clic-droit sur le dossier, puis choisissez <gui>Propriétés</gui>.</p></item>
+<item><p>Cliquez sur <gui>Copier localement le contenu du dossier pour les opérations hors ligne</gui>.</p></item>
+</steps>
+</section>
+
+<section id="sync-for-offline">
+<title>Synchronisation des messages pour une utilisation hors ligne</title>
+<p>Your connection status is shown by the small icon in the lower left corner of the <app>Evolution</app> main window. When you are online, it displays two connected cables. When you force offline mode via clicking the icon or via <guiseq><gui>File</gui><gui>Work Offline</gui></guiseq>, the cables separate. You will be asked whether you want to go offline immediately or synchronize folders locally before you go offline.</p>
+<p>Pour télécharger les messages pour des opérations hors-ligne sans être directement mis hors ligne, sélectionnez <guiseq><gui>Fichier</gui><gui>Télécharger les messages pour utilisation hors ligne</gui></guiseq>.</p>
+</section>
+
+<section id="network-manager-integration">
+<title>Gestion automatique de l'état du réseau</title>
+<p><app>Evolution</app> automatically understands the network state and acts accordingly. For instance, <app>Evolution</app> switches to offline mode when the network goes down and automatically switches on when the network is up again.</p>
+</section>
+
+</page>

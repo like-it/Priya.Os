@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters" xml:lang="es">
+
+  <info>
+    <desc>Use las reglas de filtrado para ordenar su correo automáticamente en carpetas.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+
+    <revision pkgversion="3.0.2" version="0.6" date="2012-02-19" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-filters.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Usar filtros</title>
+
+<p>Los filtros de correos aplican acciones sobre correos basándose en condiciones que usted ha definido. Puede definir filtros tanto para correo entrante como para correo saliente.</p>
+
+<p>Los filtros se aplicarán automáticamente a los correos entrantes para las cuentas locales (tales como POP). A menudo el correo en cuentas de servidores remotos (tales como IMAP) se filtra directamente en el servidor ya que es más rápido. Si quiere aplicar sus filtros de <app>Evolution</app> en cuentas remotas puede hacerlo en <guiseq><gui>Editar</gui><gui>Preferencias</gui><gui>Cuentas de correo</gui><gui>Editar</gui><gui>Opciones de recepción</gui><gui>Opciones</gui><gui>Aplicar filtros en mensajes nuevos en la Bandeja de entrada en este servidor</gui></guiseq>.</p>
+
+<p>Para aplicar manualmente filtros sobre correos en una carpeta, seleccione los mensajes y pulse <guiseq><gui>Mensaje</gui><gui>Aplicar filtros</gui></guiseq> o pulse <keyseq><key>Ctrl</key><key>Y</key></keyseq>.</p>
+<p>Puede seleccionar todos los correos en su carpeta pulsando <guiseq><gui>Editar</gui><gui>Seleccionar todos</gui></guiseq> o pulsando <keyseq><key>Ctrl</key><key>A</key></keyseq>.</p>
+
+<section id="adding">
+<title>Crear un filtro</title>
+
+<steps>
+<item><p>Pulse <guiseq><gui>Editar</gui><gui>Filtros de mensajes</gui></guiseq> o pulse <guiseq><gui>Mensaje</gui><gui>Crear</gui></guiseq> y elija el criterio en que se basará el filtro.</p></item>
+<item><p>Pulse <gui style="button">Añadir</gui>.</p></item>
+<item><p>Introduzca un nombre en el campo <gui>Nombre de la regla</gui>.</p></item>
+<item><p>Defina las condiciones para la regla. Para cada condición debe seleccionar primero qué parte del mensaje se comprobará y después definir la comparación.</p><p>Para obtener más información acerca de las condiciones disponibles, consulte <link xref="mail-filters-conditions">condiciones disponibles para filtros</link>.</p></item>
+<item><p>Si quiere definir varias condiciones, defínalas bajo <gui>Buscar elementos</gui> si se debe aplicar una o todas las condiciones y pulse <gui style="button">Añadir condición</gui> y repita el paso anterior.</p></item>
+<item>
+<p>Seleccione las Acciones para el filtro en la sección <gui>Entonces</gui>:</p><p>Para obtener más información acerca de las acciones disponibles, consulte <link linkend="bshly4v">Acciones disponibles para filtros</link>.</p>
+
+<note style="warning"><p>El orden de los filtros es importante. Se aplican sobre el correo original en secuencia, como una receta.</p>
+<p>Si su primer filtro tiene una regla <gui>Parar de procesar</gui>, entonces todos los mensajes de correo que coincidan con este filtro ignorarán los siguientes filtros.</p>
+<p>Cuando mueve un correo a otra carpeta, «mover» realmente significa crear una copia del mensaje en la carpeta de destino y marcar el correo original para su eliminación. De tal forma que cualquier subsiguiente regla se aplicará al correo original que ahora está marcado para su eliminación. Por ello, mover un correo debería ser la última regla en un filtro.</p></note>
+
+</item>
+<item><p>Si quiere definir múltiples acciones pulse <gui style="button">Añadir acción</gui> y repita el paso anterior. Por ejemplo, si quiere que no se aplique ningún otro filtro existente elija <gui>Parar de procesar</gui> como la segunda acción en la lista.</p></item>
+<item><p>Pulse <gui style="button">Aceptar</gui>.</p></item>
+</steps>
+
+</section>
+
+<section id="editing">
+<title>Editar de filtros</title>
+<steps>
+<item><p>Pulse <guiseq><gui>Editar</gui><gui>Filtros de mensajes</gui></guiseq>.</p></item>
+<item><p>Seleccione el filtro.</p></item>
+<item><p>Pulse <gui style="button">Editar</gui>.</p></item>
+<item><p>Haga las correcciones que quiera, después pulse <gui style="button">Aceptar</gui> dos veces.</p></item>
+</steps>
+</section>
+
+<section id="deleting">
+<title>Eliminar filtros</title>
+<steps>
+<item><p>Pulse <guiseq><gui>Editar</gui><gui>Filtros de mensajes</gui></guiseq>.</p></item>
+<item><p>Seleccione el filtro.</p></item>
+<item><p>Pulse <gui style="button">Quitar</gui>.</p></item>
+<item><p>Pulse <gui style="button">Aceptar</gui>.</p></item>
+</steps>
+</section>
+
+
+
+
+	
+</page>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-search-folders-add" xml:lang="cs">
+
+  <info>
+    <desc>Nastavení vyhledávací složky.</desc>
+    
+    <link type="guide" xref="mail-search-folders"/>
+
+    <revision pkgversion="3.0.2" version="0.1" date="2011-07-30" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-vfolders.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Vytvoření vyhledávací složky</title>
+
+<steps>
+<item><p>Klikněte na <guiseq><gui>Upravit</gui> <gui>Vyhledávací složky</gui></guiseq> nebo na <guiseq><gui>Zpráva</gui> <gui>Vytvořit pravidlo</gui></guiseq> a vyberte kritéria, na kterých bude složka hledání založena. Případně, pokud probíhá nějaké hledání, můžete kliknout na <guiseq><gui>Hledat</gui> <gui>Vytvořit vyhledávací složku z hledávání</gui></guiseq>.</p></item>
+<item><p>Klikněte na <gui style="button">Přidat</gui>.</p></item>
+<item><p>Zadejte název do pole <gui>Název pravidla</gui>.</p></item>
+<item><p>Nadefinujte podmínky pro pravidlo. Pro každou podmínku nejprve vyberte, která část zprávy se má kontrolovat a pak zadejte porovnávání.</p><p>Více informací o podmínkách, které jsou k dispozici, naleznete v <link xref="mail-search-folders-conditions">Dostupné podmínky pro vyhledávací složky</link>.</p></item>
+<item><p>Pokud chcete definovat více podmínek, určete v <gui>Hledat položky</gui>, jestli se mohou použít jen některé podmínky nebo se musí použít všechny, a klikněte na <gui style="button">Přidat podmínku</gui> a zopakujte předchozí krok.</p></item>
+<item><p>Vyberte, které složky budou použity pro vyhledávací složku v části <gui>Zdroje vyhledávacích složek</gui>. Možnosti jsou:</p>
+<list>
+  <item><p>Všechny místní složky:</p>
+  <p>Jako zdroj pro vyhledávací složku používá všechny místní složky navíc k těm, které jste jednotlivě vybrali.</p></item>
+
+  <item><p>Všechny aktivní, vzdálené složky:</p>
+  <p>Vzdálené složky jsou považovány za aktivní, pokud jste připojeni k serveru; pro vyhledávací složky musíte být připojeni ke svému poštovního serveru, chcete-li přidat jakékoliv zprávy z tohoto zdroje ke složkám, které jste vybrali jednotlivě.</p></item>
+
+  <item><p>Všechny místní a aktivní, vzdálené složky:</p>
+  <p>Používá všechny místní a aktivní vzdálené složky jako zdroje vyhledávací složky, navíc ke složkám, které jste vybrali jednotlivě.</p></item>
+
+  <item><p>Pouze konkrétní složky:</p>
+  <p>Používá jednotlivé složky jako zdroj pro vyhledávací složku. V tomto případě klikněte na tlačítko <gui style="button">Přidat</gui>, chcete-li vybrat složky.</p></item>
+</list>
+</item>
+<item><p>Klikněte na <gui style="button">Budiž</gui>.</p></item>
+</steps>
+
+</page>

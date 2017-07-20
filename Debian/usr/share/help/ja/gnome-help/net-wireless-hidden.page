@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-hidden" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME ドキュメンテーションプロジェクト</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Connect to a wireless network that is not displayed in the network
+    list.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>非表示設定の無線ネットワークに接続</title>
+
+<p>It is possible to set up a wireless network so that it is "hidden." Hidden
+ networks won't show up in the list of wireless networks displayed in the
+ <gui>Network</gui> settings. To connect to a hidden wireless network:</p>
+
+<steps>
+  <item>
+    <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> from the right
+    side of the top bar.</p>
+  </item>
+  <item>
+    <p>Select
+    <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/>
+      Wi-Fi Not Connected</gui>. The Wi-Fi section of the menu will expand.</p>
+  </item>
+  <item>
+    <p>Click <gui>Wi-Fi Settings</gui>.</p>
+  </item>
+  <item><p>Click the <gui>Connect to Hidden Network…</gui> button.</p></item>
+ <item>
+  <p>In the window that appears, select a previously-connected hidden network
+  using the <gui>Connection</gui> drop-down list, or <gui>New</gui> for a new
+  one.</p>
+ </item>
+ <item>
+  <p>For a new connection, type the network name and choose the type of
+  wireless security from the <gui>Wi-Fi security</gui> drop-down list.</p>
+ </item>
+ <item>
+  <p>Enter the password or other security details.</p>
+ </item>
+ <item>
+  <p>Click <gui>Connect</gui>.</p>
+ </item>
+</steps>
+
+  <p>You may have to check the settings of the wireless access point or router
+  to see what the network name is. If you don't have the network name (SSID),
+  you can use the <em>BSSID</em> (Basic Service Set Identifier, the access
+  point's MAC address), which looks something like <gui>02:00:01:02:03:04</gui>
+  and can usually be found on the underside of the access point.</p>
+
+  <p>You should also check the security settings for the wireless access point.
+  Look for terms like WEP and WPA.</p>
+
+<note>
+ <p>無線ネットワークを非表示に設定すると、そのネットワークの存在を知らないユーザーは接続できなくなるため、セキュリティが強化されると考える方がいるかもしれません。しかし、若干見つけにくくはなりますが、依然、検出は可能であり、実際にはそれほどセキュリティが強化されるわけではありません。</p>
+</note>
+
+</page>

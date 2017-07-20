@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="power"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>ஷான் மெக்கேன்ஸ்</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>ஆன்ட்ரி க்ளாப்பர்</name>
+      <email>ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name>அலெக்சாண்டர் ஃப்ராங்க்</name>
+      <email>afranke@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>எக்காட்டெரினா ஜெராசிமோவா</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>விடுபதிகை செய்து, பயனர்கலை மாற்றி மற்றும் பல வழிகளில் உங்கள் பயனர் கணக்கிலிருந்து எப்படி வெளியேறுவது எனக் கற்றுக்கொள்க.</desc>
+    <!-- Should this be a guide which links to other topics? -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Log out, power off or switch users</title>
+
+  <p>உங்கள் கணினியைப் பயன்படுத்தி முடித்த பிறகு, அதை நீங்கள் அணைக்கலாம், இடைநிறுத்தலாம் (மின்சாரத்தை சேமிக்க) அல்லது விடுபதிகை செய்து இயக்கத்திலேயே விடலாம்.</p>
+
+<section id="logout">
+  <title>விடுபதிகை செய்தல் அல்லது பயனர்களை மாற்றுதல்</title>
+
+  <p>பிற பயனர்கள் கணினியைப் பயன்படுத்த விட்டுச் செல்ல, நீங்கள் விடுபதிகை செய்யலாம் அல்லது நீங்கள் புகுபதிவு செய்தபடி பயனர்களை மாற்றலாம். பயனர்களை மாற்றினால், உங்கள் பயன்பாடுகள் அனைத்தும் இயங்கிக்கொண்டே இருக்கும், மீண்டும் நீங்கள் புகுபதிவு செய்கையில் நீங்கள் விட்டுச்சென்றவை அப்படியே இருக்கும்.</p>
+
+  <p>To <gui>Log Out</gui> or <gui>Switch User</gui>, click the
+  <link xref="shell-introduction#yourname">system menu</link> on the right side of the
+  top bar, click your name and then choose the right option.</p>
+
+  <note if:test="!platform:gnome-classic">
+    <p>உங்கள் கணினியில் ஒன்றுக்கு அதிக பயனர் கணக்குகள் இருந்தால் மட்டுமே மெனுவில் <gui>விடுபதிகை</gui> மற்றும் <gui>பயனரை மாற்று</gui> உள்ளீடுகள் தோன்றும்.</p>
+  </note>
+
+  <note if:test="platform:gnome-classic">
+    <p>உங்கள் கணினியில் ஒன்றுக்கு அதிக பயனர் கணக்குகள் இருந்தால் மட்டுமே மெனுவில் <gui>பயனரை மாற்று</gui> உள்ளீடு தோன்றும்.</p>
+  </note>
+
+</section>
+
+<section id="lock-screen">
+  <info>
+    <link type="seealso" xref="session-screenlocks"/>
+  </info>
+
+  <title>திரையைப் பூட்டுதல்</title>
+
+  <p>சற்று நேரம் கணினியை விட்டு விலகிச் செல்லப்போகிறீர்கள் எனில், மற்றவர்கள் உங்கள் கோப்புகள் அல்லது இயங்கிக்கொண்டுள்ள பயன்பாடுகளை அணுகாமல் தடுக்க நீங்கள் திரையைப் பூட்ட வேண்டும். நீங்கள் திரும்பி வரும்போது, <link xref="shell-lockscreen">திரையைப் பூட்டு</link> திரைச்சீலையை மேலே இழுத்து உங்கள் கடவுச்சொல்லை உள்ளிட்டு புகுபதிவு செய்யலாம். திரையைப் பூட்டாவிட்டால், குறிப்பிட்ட நேரத்தில் அது தானாக பூட்டிக்கொள்ளும்.</p>
+
+  <p>To lock your screen, click the system menu on the right side of the top
+  bar and press the lock screen button at the bottom of the menu.</p>
+
+  <p>உங்கள் திரை பூட்டப்பட்டிருக்கும் போது, கடவுச்சொல் திரையில் உள்ள <gui>வேறு பயனராக புகுபதிவு செய்</gui> ஐ சொடுக்கி பிற பயனர்கள் அவர்களது கணக்கில் புகுபதிவு செய்ய முடியும். அவர்கள் பயன்படுத்தி முடித்ததும் நீங்கள் மீண்டும் உங்கள் பணிமேசைக்குத் திரும்பலாம்.</p>
+
+</section>
+
+<section id="suspend">
+  <info>
+    <link type="seealso" xref="power-suspend"/>
+  </info>
+
+  <title>இடைநிறுத்து</title>
+
+  <p>To save power, suspend your computer when you are not using it. If you use
+  a laptop, GNOME, by default, suspends your computer automatically when you
+  close the lid.
+  This saves your state to your computer's memory and powers off most of the
+  computer's functions. A very small amount of power is still used during
+  suspend.</p>
+
+  <p>To suspend your computer manually, click the system menu on the right side
+  of the top bar and hold down the <key>Alt</key> key. The power off button
+  will change to suspend. Press the button.</p>
+
+</section>
+
+<section id="shutdown">
+<!--<info>
+  <link type="seealso" xref="power-off"/>
+</info>-->
+
+  <title>மின்சக்தி நிறுத்தம் அல்லது மறுதொடக்கம்</title>
+
+  <p>If you want to power off your computer entirely, or do a full restart,
+  click the system menu on the right side of the top bar and press the power
+  off button at the bottom of the menu. A dialog will open offering you the
+  options to either <gui>Restart</gui> or <gui>Power Off</gui>.</p>
+
+  <p>பிற பயனர்களும் புகுபதிவு செய்திருந்தால், கணினியை மின்சக்தி நிறுத்த அல்லது மறுதொடக்கம் செய்ய நீங்கள் அனுமதிக்கப்படாமல் போகலாம், ஏனெனில் இது அவர்களின் அமர்வுகளையும் முடித்துவிடும். நீங்கள் நிர்வாகப் பயனர் எனில் மின்சக்தி நிறுத்தம் செய்ய கடவுச்சொல் கேட்கப்படும்.</p>
+
+  <note style="tip">
+    <p>கணினியை நகர்த்த விரும்பினால் அல்லது பேட்டரி இல்லாவிட்டால் கணினியை மின்சக்தி நிறுத்தம் செய்ய விரும்பலாம், உங்கள் பேட்டரி மிகக் குறைவாக இருந்தால் அல்லது சரியாக சார்ஜை தக்கவைக்காவிட்டாலும் இதைச் செய்ய விரும்பலாம். மின்சக்தி நிறுத்தம் செய்த கணினியும், இடைநிறுத்தப்பட்ட கணினியை விட <link xref="power-batterylife">குறைந்த அளவு மின்சாரத்தைப்</link> பயன்படுத்தும்.</p>
+  </note>
+
+</section>
+
+</page>

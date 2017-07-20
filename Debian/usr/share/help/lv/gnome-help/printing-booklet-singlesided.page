@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="printing-booklet-singlesided" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="printing-booklet"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Izdrukāt bukletu no PDF, lietojot vienpusējo printeri.</desc>
+  </info>
+
+  <title>Izdrukāt bukletu ar vienpusējo printeri</title>
+
+  <note>
+    <p>Šīs instrukcijas ir par to, kā veidot brošūras no PDF dokumentiem.</p>
+    <p>Ja vēlaties veidot brošūras no <app>LibreOffice</app> dokumenta, vispirms eksportējiet to uz PDF, izvēloties <guiseq><gui>Datne</gui><gui>Eksportēt kā PDF…</gui></guiseq>. Jūsu dokumentā lapu skaitam ir jādalās ar 4 (4, 8, 12, 16,…). Iespējams, ka jums būs jāpievieno līdz 3 tukšas lapas.</p>
+  </note>
+
+  <p>Lai drukātu:</p>
+
+  <steps>
+    <item>
+      <p>Atvērt drukāšanas dialoglodziņu. To parasti var izdarīt izvēlnē <gui style="menuitem">Drukāt</gui>, vai izmantojot <keyseq><key>Ctrl</key><key>P</key></keyseq> taustiņu kombināciju.</p>
+    </item>
+    <item>
+      <p>Spiediet <gui>Īpašības...</gui> pogu</p>
+      <p>In the <gui>Orientation</gui> drop-down list, make sure that
+      <gui>Landscape</gui> is selected.</p>
+      <p>Click <gui>OK</gui> to go back to the print dialog.</p>
+    </item>
+    <item>
+      <p>Under <gui>Range and Copies</gui>, choose <gui>Pages</gui>.</p>
+      <p>Ievadiet lappušu numurus šādā secībā (n ir kopējais lappušu skaits, un tas dalās ar 4):</p>
+      <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
+      <p>…līdz esat ievadījis visas lapas.</p>
+    <note>
+      <p>Piemēri:</p>
+      <p>4 lappušu bukleti: ievadiet <input>4,1,2,3</input></p>
+      <p>8 lappušu bukleti: ievadiet <input>8,1,2,7,6,3,4,5</input></p>
+      <p>12 lappušu bukleti: ievadiet <input>12,1,2,11,10,3,4,9,8,5,6,7</input></p>
+      <p>16 lappušu bukleti: ievadiet <input>16,1,2,15,14,3,4,13,12,5,6,11,10,7,8,9</input></p>
+      <p>20 lappušu bukleti: ievadiet <input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input></p>
+     </note>
+    </item>
+    <item>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Front sides / right pages</gui>.</p>
+    </item>
+    <item>
+      <p>Spied <gui>Drukāt</gui>.</p>
+    </item>
+    <item>
+      <p>Kad ir izdrukātas visas lapas, pagrieziet tās otrādi un ielieciet atpakaļ printerī.</p>
+    </item>
+    <item>
+      <p>Atvērt drukāšanas dialoglodziņu. To parasti var izdarīt izvēlnē <gui style="menuitem">Drukāt</gui>, vai izmantojot <keyseq><key>Ctrl</key><key>P</key></keyseq> taustiņu kombināciju.</p>
+    </item>
+    <item>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Back sides / left pages</gui>.</p>
+    </item>
+    <item>
+      <p>Spied <gui>Drukāt</gui>.</p>
+    </item>
+  </steps>
+
+</page>

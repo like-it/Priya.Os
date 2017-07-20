@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="look-display-fuzzy" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="hardware-problems-graphics"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="author">
+      <name>Фил Булл (Phil Bull)</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Шобха Тьяги (Shobha Tyagi)</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Возможно, выбрано неправильное разрешение экрана.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Почему изображение на экране выглядит расплывчатым или мозаичным?</title>
+
+<p>Причина может быть в том, что выбранное разрешение экрана не подходит для вашего монитора.</p>
+
+<p>To solve this, open the <gui xref="shell-introduction#activities">Activities</gui>
+overview and start typing <gui>Displays</gui>. Click on <gui>Displays</gui>
+to open the panel. Try some of the <gui>Resolution</gui> options and set the
+one that makes the screen look better.</p>
+
+<section id="multihead">
+  <title>Если подключено несколько мониторов</title>
+
+  <p>Если к компьютеру подключено несколько устройств отображения (например, обычный монитор и проектор), они могут иметь разное разрешение. Однако видеокарта компьютера не способна поддерживать два разных разрешения экрана одновременно, поэтому по крайней мере на одном из дисплеев изображение может выглядеть расплывчатым.</p>
+
+  <p>You can set it so that the two displays have different resolutions, but
+  you will not be able to display the same thing on both screens
+  simultaneously. In effect, you will have two independent screens connected at
+  the same time. You can move windows from one screen to another, but you
+  cannot show the same window on both screens at once.</p>
+
+  <p>Чтобы установить для каждого экрана своё собственное разрешение:</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Displays</gui>.</p>
+    </item>
+    <item>
+      <p>Нажмите <gui>Мониторы</gui>, чтобы открыть этот раздел настроек.</p>
+    </item>
+    <item>
+      <p>The displays should be listed as <gui>Mirrored</gui>. Select your main
+      display.</p>
+    </item>
+    <item>
+      <p>Select <gui>Primary</gui> in the list of display configurations, and
+      then click <gui style="button">Apply</gui> to save.</p>
+    </item>
+    <item>
+      <p>Выбирайте каждый монитор по очереди из серой области в верхней части окна <gui>Мониторы</gui>. Меняйте значение <gui>Разрешения</gui> пока не получите правильного результата.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

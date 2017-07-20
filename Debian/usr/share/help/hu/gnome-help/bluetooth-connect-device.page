@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-connect-device" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="bluetooth"/>
+    <link type="seealso" xref="sharing-bluetooth"/>
+    <link type="seealso" xref="bluetooth-remove-connection"/>
+
+    <revision pkgversion="3.8" date="2013-05-16" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-22" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Bluetooth eszközök párosítása.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Csatlakoztassa számítógépét Bluetooth eszközökhöz</title>
+
+  <p>Mielőtt használatba vehetné Bluetooth-eszközeit, például egerét vagy fejhallgatóját, először össze kell kapcsolnia azokat számítógépével. Ezt a Bluetooth-eszközök <em>párosításának</em> is hívják.</p>
+
+  <steps>
+    <item>
+      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Bluetooth</gui> szót.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Bluetooth</gui> ikonra a panel megnyitásához.</p>
+    </item>
+    <item>
+      <p>Győződjön meg róla, hogy a Bluetooth be van kapcsolva: az ablak tetején lévő kapcsolónak <gui>BE</gui> állapotban kell lennie. Ha a panel meg van nyitva, és a kapcsoló <gui>BE</gui> állapotban van, a számítógép elkezd eszközöket keresni.</p>
+    </item>
+    <item>
+      <p>Tegye a másik Bluetooth eszközt <link xref="bluetooth-visibility">felfedezhetővé vagy láthatóvá</link>, és helyezze a számítógép 5-10 méteres körzetén belülre.</p>
+    </item>
+    <item>
+      <p>Kattintson az eszközre az <gui>Eszközök</gui> listában. Megnyílik az eszköz panele.</p>
+    </item>
+    <item>
+      <p>Szükség esetén erősítse meg a PIN-kódot a másik eszközön. Az eszköznek a számítógép képernyőjén látható PIN-kódot kell megjelenítenie. Erősítse meg a PIN-kódot az eszközön (szükséges lehet a <gui>Párosítás</gui> vagy a <gui>Megerősítés</gui> gomb megnyomása), majd nyomja meg a <gui>Megegyezik</gui> gombot a számítógépen.</p>
+      <p>A legtöbb eszközön 20 másodpercen belül be kell fejezni a kód bevitelét, különben a kapcsolódás nem lesz sikeres. Ebben az esetben térjen vissza az eszközlistához, és próbálja újra.</p>
+    </item>
+    <item>
+      <p>Az eszköz bejegyzése az <gui>Eszközök</gui> listában a <gui>Kapcsolódva</gui> állapotot jeleníti meg.</p>
+    </item>
+    <item>
+      <p>Az eszköz szerkesztéséhez kattintson rá az <gui>Eszközök</gui> listában. Megjelenik az eszközre jellemző panel. További, azon eszköztípusra jellemző beállításokat jeleníthet meg, amelyhez csatlakozni próbál.</p>
+    </item>
+    <item>
+      <p>A beállítások módosítása után zárja be a panelt.</p>
+    </item>
+  </steps>
+
+  <media its:translate="no" type="image" src="figures/bluetooth-menu.png" style="floatend">
+    <p its:translate="yes">A Bluetooth ikon a felső sávon</p>
+  </media>
+  <p>Ha legalább egy Bluetooth eszköz csatlakozik, akkor megjelenik a Bluetooth ikon a rendszerállapot területen.</p>
+
+</page>

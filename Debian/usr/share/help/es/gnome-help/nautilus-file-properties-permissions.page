@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="es">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="files#faq"/>
+    <link type="seealso" xref="nautilus-file-properties-basic"/>
+
+    <desc>Controlar quién puede ver y editar sus archivos y carpetas.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Establecer los permisos del archivo</title>
+
+  <p>Puede usar los permisos de archivos para controlar quién puede ver y editar sus archivos. Para ver y asignar los permisos de un archivo, púlselo con el botón derecho, seleccione <gui>Propiedades</gui> y a continuación vaya a la pestaña <gui>Permisos</gui>.</p>
+
+  <p>Para obtener detalles acerca de los tipos de permisos que puede establecer, consulte la <link xref="#files"/> y la <link xref="#folders"/> debajo.</p>
+
+  <section id="files">
+    <title>Archivos</title>
+
+    <p>Puede asignar los permisos para el propietario del archivo, el grupo del propietario y todos los demás usuarios del sistema. Para sus archivos, usted es su propietario, y puede concederse a sí mismo permisos de solo lectura o de lectura/escritura. Defina un archivo como solo lectura si no quiere cambiarlo accidentalmente.</p>
+
+    <p>Cada usuario de su equipo pertenece a un grupo. En equipos domésticos, es habitual que cada usuario tenga su propio grupo, y que los permisos de grupo no se usen a menudo. En entornos empresariales, los grupos se usan a veces para departamentos o proyectos. Además de tener un propietario, cada archivo pertenece a un grupo. Puede asignar el grupo de un archivo y controlar los permisos para todos los usuarios de ese grupo. Puede asignar el grupo de un archivo solo si es un grupo al que usted pertenece.</p>
+
+    <p>También puede asignar los permisos de los usuarios que no sean el propietario ni que estén en el grupo del archivo.</p>
+
+    <p>Si el archivo es un programa, como por ejemplo un script, tendrá que seleccionar <gui>Permitir ejecutar el archivo como un programa</gui> para ejecutarlo. Incluso con esta opción activada, puede que el gestor de archivos abra ese archivo dentro de una aplicación o le pregunte qué hacer. Para obtener más información consulte la <link xref="nautilus-behavior#executable"/>.</p>
+  </section>
+
+  <section id="folders">
+    <title>Carpetas</title>
+    <p>Puede asignar permisos sobre carpetas para el propietario, el grupo y el resto de usuarios. Para obtener una explicación sobre propietarios, grupos y el resto de usuarios, consulte los detalles sobre permisos de archivos más arriba.</p>
+    <p>Los permisos que puede establecer para una carpeta son diferentes de los que puede establecer para un archivo.</p>
+    <terms>
+      <item>
+        <title><gui itst:context="permission">Ninguno</gui></title>
+        <p>El usuario ni siquiera será capaz de ver qué archivos están en la carpeta.</p>
+      </item>
+      <item>
+        <title><gui>Solo listar archivos</gui></title>
+        <p>El usuario será capaz de ver los archivos que hay dentro de una carpeta, pero no será capaz de abrir, crear o eliminar archivos.</p>
+      </item>
+      <item>
+        <title><gui>Acceder a archivos</gui></title>
+        <p>El usuario será capaz de abrir archivos en la carpeta (suponiendo que tiene permisos para ello en ese archivo en particular), pero puede no ser capaz de crear nuevos archivos o eliminar archivos.</p>
+      </item>
+      <item>
+        <title><gui>Crear y eliminar archivos</gui></title>
+        <p>El usuario tendrá acceso total a la carpeta, incluyendo abrir, crear y eliminar archivos.</p>
+      </item>
+    </terms>
+
+    <p>Puede establecer rápidamente los permisos para todos los archivos en la carpeta pulsando <gui>Cambiar permisos para archivos contenidos</gui>. Use las listas desplegables para ajustar los permisos de archivos contenidos o carpetas y pulse <gui>Cambiar</gui>. Los permisos se aplican a archivos y carpetas en subcarpetas de cualquier nivel.</p>
+  </section>
+
+</page>

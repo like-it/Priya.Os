@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="gu">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu દસ્તાવેજીકરણ વિકિ માટે ફાળકો</name>
+    </credit>
+
+    <credit type="author">
+      <name>ફીલ બુલ</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>અમુક ઉપકરણ ડ્રાઇવરો અમુક વાયરલેસ ઍડપ્ટર સાથે સારી રીતે કામ કરતુ નથી, તેથી તમે સારાંને શોધવાની જરૂર પડી શકે છે.</desc>
+  </info>
+
+  <title>વાયરલેસ નેટવર્ક મુશ્કેલીનિવારક</title>
+
+  <subtitle>ખાતરી કરો કે કામ કરતા ઉપકરણ ડ્રાઇવરો એ સ્થાપિત થયેલ છે</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>આ તબક્કામાં તમે જોવા માટે ચકાસી શકો છો જો તમે તમારાં વાયરલેસ ઍડપ્ટર માટે ઉપકરણ ડ્રાઇવરો કામ મેળવી શકો છો. <em>ઉપકરણ ડ્રાઇવર</em> એ સોફ્ટવેરનો એક ભાગ છે કે જે કમ્પ્યૂટરને કહે છે યોગ્ય રીતે હાર્ડવેર ઉપકરણ કેવી રીતે કામ કરે. છતાંપણ વાયરલેસ ઍડપ્ટર કમ્પ્યૂટર દ્દારા ઓળખી દેવામાં આવ્યુ છે, તમારી પાસે ડ્રાઇવરો હોઇ શકતા નથી કે જે સારી રીતે કામ કરે છે. તમે વાયરલેસ ઍડપ્ટર માટે વિવિધ ડ્રાઇવરોને શોધવા માટે સક્ષમ હોઇ શકતા નથી કે જે કામ કરે છે. નીચે અમુક વિકલ્પોનો પ્રયત્ન કરો:</p>
+
+  <list>
+    <item>
+      <p>Check to see if your wireless adapter is on a list of supported
+      devices.</p>
+      <p>Most Linux distributions keep a list of wireless devices that they
+      have support for. Sometimes, these lists provide extra information on how
+      to get the drivers for certain adapters working properly. Go to the list
+      for your distribution (for example,
+      <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>,
+      <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>,
+      <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> or
+      <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>)
+      and see if your make and model of wireless adapter is listed. You may be
+      able to use some of the information there to get your wireless drivers
+      working.</p>
+    </item>
+    <item>
+      <p>Look for restricted (binary) drivers.</p>
+      <p>ઘણાં Linux વિતરણો ફક્ત ઉપકરણ ડ્રાઇવર સાથે આવે છે કે જે <em>મુક્ત</em> અને <em>ઓપન સ્ત્રોત</em> છે. આનું કારણ એ છે કે તેઓ ડ્રાઇવરોનું વિતરણ કરી શકતા નથી કે જે માલિકીનાં અથવા બંધ સ્ત્રોત હોય છે. જો તમારાં વાયરલેસ ઍડપ્ટર માટે યોગ્ય ડ્રાઇવર ફક્ત મુક્ત ન હોય અથવા "ફક્ત બાઇનરી" આવૃત્તિ હોય તો. તે મૂળભૂત રીતે સ્થાપિત કરી શકાતી નથી. જો આ સ્થિતિ હોય તો, જોવા માટે વાયરલેસ ઍડપ્ટર ઉત્પાદકની વેબસાઇટ પર જુઓ જો તેઓ પાસે કોઇપણ Linux ડ્રાઇવરો હોય.</p>
+      <p>અમુક Linux વિતરણો પાસે સાધન છે કે જે તમારી માટે મર્યાદિત ડ્રાઇવરોને ડાઉનલોડ કરી શકાય છે. જો તમારાં વિતરણ પાસે આનું એક હોય તો, જોવા માટે તેને વાપરો જો તે તમારી માટે કોઇપણ વાયરલેસ ડ્રાઇવરોને શોધી શકો છો.</p>
+    </item>
+    <item>
+      <p>Use the Windows drivers for your adapter.</p>
+      <p>સામાન્યમાં, તમે બીજી ઓપરેટીંગ સિસ્ટમ (જેમ કે Linux) પર એક ઓપરેટીંગ સિસ્ટમ (જેમ કે Windows) માટે રચાયેલ ડ્રાઇવરને વાપરી શકાતુ નથી. આનું કારણ એ છે કે તેઓ પાસે ઉપકરણોને સંચાલિત કરવાનાં વિવિધ રસ્તાઓ છે. વાયરલેસ ઍડપ્ટરો માટે, છતાંપણ, તમે <em>NDISwrapper</em> કહેવાતા સુસંગત લેયરને વાપરી શકો છો કે જે તમે Linux પર અમુક Windows વાયરલેસ ડ્રાઇવરોને તમને વાપરવા દે. આ ઉપયોગી છે કારણ કે વાયરલેસ ઍડપ્ટર પાસે તેઓ માટે Windows ડ્રાઇવરો ઉપલબ્ધ છે. જ્યાં Linux ડ્રાઇવરો એ અમુકવાર ઉપલબ્ધ નથી. તમારે <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">અહિંયા</link> NDISwrapper ને કેવી રીતે વાપરવું તેના વિશે વધારે શીખી શકો છો. નોંધો કે બધા વાયરલેસ ડ્રાઇવરો એ NDISwrapper મારફતે વાપરી શકાતા નથી.</p>
+    </item>
+  </list>
+
+  <p>જો કંઇપણ વિકલ્પ કામ કરે નહિં તો, તમારે જોવા માટે વિવિધ વાયરલેસ ઍડપ્ટરનો પ્રયત્ન કરવા માંગી શકો છો જો તમે કામ મેળવી શકો છો. USB વાયરલેસ ઍડપ્ટર સસ્તુ હોય તો, અને કોઇપણ કમ્પ્યૂટરમાં પ્લગ થશે. તમારે ચકાસવુ જોઇએ કે જે તેને ખરીદતા પહેલાં ઍડપ્ટર એ તમારાં Linux સાથે સુસંગત નથી.</p>
+
+</page>

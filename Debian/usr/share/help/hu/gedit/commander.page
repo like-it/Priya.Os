@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-commander" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/> 
+    <revision version="3.4" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Parancssor használata speciális szerkesztéshez.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Parancssor</title>
+
+  <p>A <app>parancssor</app> bővítmény gyakorlott <app>gedit</app> felhasználóknak készült, és lehetővé teszi parancssori műveletek végrehajtását az aktuális fájlon. A bővítmény engedélyezéséhez válassza a <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Beállítások</gui><gui>Bővítmények</gui><gui>Parancssort</gui></guiseq>.</p>
+
+  <p>A bővítmény engedélyezése után a <keyseq><key>Ctrl</key><key>.</key></keyseq> megnyomásával aktiválhatja azt.</p>
+  
+  <note style="tip">
+    <p>A fenti kombináció utolsó billentyűje a pont.</p>
+  </note>
+
+  <table frame="all" rules="all">
+    <thead>
+      <tr>
+        <td><p>Művelet</p></td>
+	<td><p>Gyorsbillentyű</p></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><p>Az elérhető parancsok áttekintésének megjelenítése</p></td>
+	<td><p><keyseq><key>Tab</key><key>Tab</key></keyseq></p></td>
+      </tr>
+      <tr>
+        <td><p>Szó keresése az aktuális fájlban</p></td>
+	<td>
+	  <p><key>/</key> <input>bármi</input></p>
+          <p>Ez megkeresi a <input>bármi</input> szót.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Szó cseréje az aktuális fájlban</p></td>
+	<td>
+	  <p><keyseq><key>/</key><key>/</key></keyseq> <input>bármi valami</input></p>
+          <p>Ez lecseréli a <input>bármi</input> szót a <input>valami</input> szóra.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>A kurzor mozgatása a fájl adott sorára</p></td>
+        <td>
+	  <p>go <input>[sorszám]</input> <em>vagy</em> csak <key>G</key> <input>[sorszám]</input></p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>A könyvjelző be- vagy kikapcsolása az adott sorban</p></td>
+        <td><p>bookmark <em>vagy</em> csak <key>B</key></p></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <note style="tip">
+    <p>Egyes parancsok, mint például a <app>bookmark</app> parancs megköveteli a megfelelő bővítmény telepítését és aktiválását. Ha a megfelelő bővítmény nincs telepítve és aktiválva, akkor hibaüzenetet fog kapni.</p>
+  </note>
+
+</page>

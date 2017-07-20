@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>色彩空间是定义的颜色范围。</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>什么是色彩空间？</title>
+
+  <p>色彩空间是定义的颜色范围。知名的色彩空间有 sRGB、AdobeRGB 和 ProPhotoRGB。</p>
+
+  <p>人类视觉系统不是简单的 RGB 传感器，但利用 CIE 1931 色度图，我们可以估计眼睛是如何响应的，该图显示人类视觉响应呈马蹄形。您可以看到，在人类视觉中，检测到的绿色色调比蓝色或红色多得多。对于类似 RGB 的三原色色彩空间，我们在计算机上使用三个值来表现颜色，这甚至会限制编码颜色<em>三角形</em>。</p>
+
+  <note>
+    <p>使用 CIE 1931 色度图等模型可以大大简化人类视觉系统，实际色域以 3D 壳体而不是 2D 投影来表示。3D 形状的 2D 投影有时会产生误导，因此如果您想要观看 3D 壳体，请使用 gcm-viewer 应用程序。</p>
+  </note>
+
+  <figure>
+    <desc>由白色三角形表示的 sRGB、AdobeRGB 和 ProPhotoRGB</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>首先看一下 sRGB，这是最小的空间，可以编码的颜色数量最少。它与 10 年前的 CRT 显示器近似，因此大多数现代显示器都能够轻松显示超过它的更多颜色。sRGB 是标准的<em>最小公分母</em>标准，被大量应用程序所使用(包括互联网)。</p>
+  <p>AbodeRGB 经常被用作<em>编辑空间</em>。它可以编码的颜色比 sRGB 多，这意味着您可以调整照片中的颜色，而不必过于担心最亮的颜色被剪辑掉或黑色被挤压。</p>
+  <p>PhoPhoto 是现有的最大空间，常常用于文件档案。它几乎可以编码人眼可以辨识的整个颜色范围，甚至编码肉眼看不到的颜色！</p>
+
+  <p>那么，如果 PhoPhoto 明显更好，我们为何不在所有应用中都使用它呢？答案与<em>量化</em>有关。如果您只有 8 位(256 级)来编码每个频道，那么范围越大，每个值之间的阶差越大。</p>
+  <p>阶差越大意味着捕获的颜色和存储的颜色之间的误差越大，对于某些颜色，这是一个大问题。其结果是，关键颜色，如皮肤颜色非常重要，即使很小的误差也会让未经训练的观看者注意到照片上有地方看起来不对劲。</p>
+  <p>当然，使用 16 位图像会留下多得多的阶差，并极大减少量化错误，但这会使每个图像文件的大小翻倍。现在存在的大多数内容都是 8bpp，即每像素 8 位。</p>
+  <p>色彩管理是从一个色彩空间转换到另一个色彩空间的过程，该过程中的色彩空间可以是知名的已定义空间(如 sRGB)，也可以是自定义空间(如您的显示器或打印机配置文件)。</p>
+
+</page>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-hidden" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-29" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Hacer que un archivo sea invisible, para que no pueda verlo en el gestor de archivos.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Ocultar un archivo</title>
+
+  <p>El gestor de archivo de GNOME, <app>Archivos</app>, le ofrece la posibilidad de ocultar y mostrar archivos a su elección. Cuando un archivo está oculto, no se muestra en el gestor de archivos, pero sigue estando en la carpeta.</p>
+
+  <p>Para ocultar un archivo, <link xref="files-rename">renómbrelo</link> poniéndole un <key>.</key> al principio de su nombre. Por ejemplo, para ocultar un archivo <file>ejemplo.txt</file>, deberá cambiarle el nombre a <file>.ejemplo.txt</file>.</p>
+
+<note>
+  <p>Puede ocultar carpetas de la misma forma que puede ocultar archivos. Oculte una carpeta poniéndole un <file>.</file> al principio de su nombre.</p>
+</note>
+
+<section id="show-hidden">
+ <title>Mostrar todos los archivos ocultos</title>
+
+  <p>Si quiere ver todos los archivos ocultos de una carpeta, vaya a esa carpeta y pulse el botón de opciones de la vista en la barra de herramientas y elija <gui>Mostrar los archivos ocultos</gui> o bien pulse <keyseq><key>Ctrl</key><key>H</key></keyseq>. Se mostrarán todos los archivos ocultos junto con los que no estaban ocultos.</p>
+
+  <p>Para volver a ocultar estos archivos, pulse  pulse el botón de opciones de la vista en la barra de herramientas y elija <gui>Mostrar archivos ocultos</gui> o pulse <guiseq><gui>Ctrl</gui><gui>H</gui></guiseq> de nuevo.</p>
+
+</section>
+
+<section id="unhide">
+ <title>Mostrar un archivo oculto</title>
+
+  <p>Para mostrar un archivo oculto, vaya a la carpeta que lo contiene y pulse el botón de opciones de la vista en la barra de herramientas y elija <gui>Mostrar los archivos ocultos</gui>. Luego, busque el archivo oculto y renómbrelo de forma que no tenga un <file>.</file> al principio de su nombre. Por ejemplo, para mostrar un archivo oculto llamado <file>.ejemplo.txt</file>, debe renombrarlo a <file>ejemplo.txt</file>.</p>
+
+  <p>Una vez que haya renombrado el archivo pulse el botón de opciones de la vista en la barra de herramientas y elija <gui>Mostrar archivos ocultos</gui> o pulse <keyseq><key>Ctrl</key><key>H</key></keyseq> para ocultar cualquier otro archivo oculto otra vez.</p>
+
+  <note><p>De manera predeterminada, sólo verá los archivos en el gestor de archivos hasta que lo cierre. Para cambiar esta configuración y que el gestor de archivos muestre siempre los archivos ocultos, consulte la <link xref="nautilus-views"/>.</p></note>
+
+  <note><p>La mayoría de los archivos ocultos tienen un <file>.</file> al principio de su nombre. Otros, en cambio, pueden tener una <file>~</file> al final de su nombre. Estos son archivos de respaldo. Consulte la <link xref="files-tilde"/> para obtener más información.</p></note>
+
+</section>
+
+</page>

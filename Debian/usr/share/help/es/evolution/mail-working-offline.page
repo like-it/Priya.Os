@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-working-offline" xml:lang="es">
+
+  <info>
+    <desc>Trabajar con su correo mientras no está conectado a la red.</desc>
+<!-- TODO:POST-3-8: Offline work for web calendars etc also exists => create index page for Offline working? -->
+    <link type="guide" xref="index#mail-basic"/>
+
+    <revision pkgversion="3.7.4" version="0.3" date="2013-01-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-send.html.en#usage-mail-getnsend-offline -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Trabar desconectado</title>
+
+<p>El modo desconectado le ayuda a comunicarse con sistemas de almacenamiento de correo remoto tales como GroupWise, IMAP o Exchange en situaciones en las que no podrá estar siempre conectado a la red local. <app>Evolution</app> guarda copia de una o más carpetas y le permite crear nuevos mensajes, guardarlos en la Bandeja de salida y enviarlo en cuanto vuelva a conectarse.</p>
+
+<note style="warning"><p>El modo desconectado de <app>Evolution</app> sólo se refiere al correo y no se aplica a los contactos ni a los calendarios.</p></note>
+
+<p>El correo POP descarga todos sus mensajes al sistema local, pero normalmente otras conexiones sólo descargan las cabeceras y obtienen el resto solamente cuando quiere leer el mensaje entero. Antes de desconectar, <app>Evolution</app> descargará todos los mensajes sin leer desde las carpetas que haya elegido almacenar.</p>
+
+<section id="mark-folders">
+<title>Marcar carpetas para su uso desconectado</title>
+<p>Para marcar una carpeta de correo para su uso desconectado,</p>
+<steps>
+<item><p>Pulse con el botón derecho del ratón sobre la carpeta, después pulse <gui>Propiedades</gui>.</p></item>
+<item><p>Pulse <gui>Copiar el contenido de la carpeta localmente para operar desconectado</gui>.</p></item>
+</steps>
+</section>
+
+<section id="sync-for-offline">
+<title>Sincronizar mensajes para su uso desconectado</title>
+<p>El estado de la conexión lo muestra un icono en la esquina inferior izquierda de la ventana principal de <app>Evolution</app>. Cuando está conectado mostrará dos cables enchufados. Cuando fuerza el modo desconectado, pulsando el icono o mediante <guiseq><gui>Archivo</gui><gui>Trabajar desconectado</gui></guiseq> los cables estarán desenchufados. Se le preguntará si quiere desconectarse inmediatamente o sincronizar sus carpetas localmente antes de desconectarse.</p>
+<p>Para descargar los mensajes para operaciones en modo desconectado, seleccione <guiseq><gui>Archivo</gui><gui>Descargar mensajes para trabajar sin conexión</gui></guiseq>.</p>
+</section>
+
+<section id="network-manager-integration">
+<title>Gestión automática del estado de la red</title>
+<p><app>Evolution</app> entiende automáticamente el estado de la red y actúa en concordancia. Por ejemplo, <app>Evolution</app> cambia a modo desconectado cuando la red se cae y cambia automáticamente cuando la red se recupera.</p>
+</section>
+
+</page>

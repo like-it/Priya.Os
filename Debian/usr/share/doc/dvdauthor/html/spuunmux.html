@@ -1,0 +1,340 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>spuunmux</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="DVDAuthor"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="DVDAuthor Man Pages"
+HREF="manpages.html"><LINK
+REL="PREVIOUS"
+TITLE="spumux"
+HREF="spumux.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>DVDAuthor</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="spumux.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+>&nbsp;</TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="SPUUNMUX"
+></A
+>spuunmux</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN2496"
+></A
+><H2
+>Name</H2
+>spuunmux&nbsp;--&nbsp;	demultiplexes subtitles from an existing mpeg2 program stream
+	</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN2499"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>spuunmux</B
+>  [<TT
+CLASS="REPLACEABLE"
+><I
+>input file</I
+></TT
+>] [<TT
+CLASS="REPLACEABLE"
+><I
+>input file</I
+></TT
+>...]</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN2506"
+></A
+><H2
+>DESCRIPTION</H2
+><P
+>	<B
+CLASS="COMMAND"
+>spuunmux</B
+> demultiplexes subtitles from an existing mpeg2 program stream
+	</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN2510"
+></A
+><H2
+>OPTIONS</H2
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><DL
+><DT
+>-o <TT
+CLASS="REPLACEABLE"
+><I
+>name</I
+></TT
+></DT
+><DD
+><P
+>			 base name for script and images. Defaults to <TT
+CLASS="REPLACEABLE"
+><I
+>sub</I
+></TT
+>.
+			</P
+></DD
+><DT
+>-v <TT
+CLASS="REPLACEABLE"
+><I
+>level</I
+></TT
+></DT
+><DD
+><P
+>			 verbosity level. <TT
+CLASS="REPLACEABLE"
+><I
+>sub</I
+></TT
+>. Defaults to <TT
+CLASS="REPLACEABLE"
+><I
+>0</I
+></TT
+>.
+			</P
+></DD
+><DT
+>-f</DT
+><DD
+><P
+>			resize images to full size. Defaults to <TT
+CLASS="REPLACEABLE"
+><I
+>720x576</I
+></TT
+>.
+			</P
+></DD
+><DT
+>-s <TT
+CLASS="REPLACEABLE"
+><I
+>stream</I
+></TT
+></DT
+><DD
+><P
+>			 number of the substream to extract. Defaults to <TT
+CLASS="REPLACEABLE"
+><I
+>0</I
+></TT
+>.
+			</P
+></DD
+><DT
+>-p <TT
+CLASS="REPLACEABLE"
+><I
+>file</I
+></TT
+></DT
+><DD
+><P
+>			name of file with dvd palette. If palette file ends with .rgb, treated as a RGB else as a YCbCr color
+			</P
+></DD
+><DT
+>-h</DT
+><DD
+><P
+>			 print this help
+			</P
+></DD
+><DT
+>-V</DT
+><DD
+><P
+>			 print version number
+			</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN2550"
+></A
+><H2
+>USAGE</H2
+><P
+>	<B
+CLASS="COMMAND"
+>spuunmux</B
+> inputfile1 inputfile2
+	</P
+><P
+>	demultiplexes subtitles from an existing mpeg2 program stream. To use stdin for demultiplexing, use - for the inputfile:
+	</P
+><P
+>	play_cell GoldFinger.iso 1 1 6 | <B
+CLASS="COMMAND"
+>spuunmux</B
+> -
+	</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN2557"
+></A
+><H2
+>CAVEATS</H2
+><P
+>	None.
+	</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN2560"
+></A
+><H2
+>BUGS</H2
+><P
+>	None.
+	</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN2563"
+></A
+><H2
+>AUTHOR</H2
+><P
+>	Marc Leeman
+	</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="spumux.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&nbsp;</TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>spumux</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="manpages.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&nbsp;</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

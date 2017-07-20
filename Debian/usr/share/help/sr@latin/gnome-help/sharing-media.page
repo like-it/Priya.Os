@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-media" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.2" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Delite medije na vašoj mesnoj mreži koristeći UPnP.</desc>
+  </info>
+
+  <title>Delite vašu muziku, fotografije i video zapise</title>
+
+  <p>Možete da razgledate, tražite i da puštate medije na vašem računaru koristeći <sys>UPnP</sys> ili <sys>DLNA</sys> uključene uređaje kao što je telefon, TV ili igračka postava. Podesite <gui>Deljenje medija</gui> da dozvoli tim uređajima da pristupe fasciklama koje sadrže vašu muziku, fotografije i video snimke.</p>
+
+  <note style="info package">
+    <p>Morate imati instalran paket <app>Rigel</app> da bi <gui>Deljenje medija</gui> bilo vidljivo.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:rygel" style="button">Instalirajte Rigel</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Deljenje</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknite na <gui>Deljenje</gui> da otvorite panel.</p>
+    </item>
+    <item>
+      <p>Ako je <gui>Deljenje</gui> <gui>ISKLJ.</gui>, prebacite ga na <gui>UKLJ.</gui>.</p>
+
+      <note style="info"><p>Ako vam tekst ispod <gui>naziva računara</gui> dopušta da ga uređujete, možete da <link xref="sharing-displayname">izmenite</link> naziv pod kojim se vaš računar prikazuje na mreži.</p></note>
+    </item>
+    <item>
+      <p>Izaberite <gui>Deljenje medija</gui>.</p>
+    </item>
+    <item>
+      <p>Prebacite <gui>Deljenje medija</gui> na <gui>UKLJ.</gui>.</p>
+    </item>
+    <item>
+      <p>Po osnovi, dele se fascikle <file>muzike</file>, <file>slika</file> i <file>videa</file>. Da uklonite jednu od njih, pritisnite <gui>X</gui> pored naziva fascikle.</p>
+    </item>
+    <item>
+      <p>Da dodate neku drugu fasciklu, pritisnite <gui style="button">+</gui> da otvorite prozor za <gui>biranje fascikle</gui>. Idite <em>do</em> željene fascikle i pritisnite dugme <gui style="button">Otvori</gui>.</p>
+    </item>
+    <item>
+      <p>Pritisnite <gui style="button">H</gui>. Sada ćete biti u mogućnosti da razgledate ili puštate medije iz fascikli koje ste izabrali koristeći spoljni uređaj.</p>
+    </item>
+  </steps>
+
+  <section id="networks">
+  <title>Mreže</title>
+
+  <p>Odeljak <gui>Mreže</gui> navodi mreže na koje ste trenutno povezani. Koristite prekidač <gui>UKLJ. | ISKLJ.</gui> pored savke od njih da izaberete na kojima vaši mediji mogu biti deljeni.</p>
+
+  </section>
+
+</page>

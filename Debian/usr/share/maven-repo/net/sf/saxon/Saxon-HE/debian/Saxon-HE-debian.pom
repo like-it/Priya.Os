@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.sf.saxon</groupId>
+	<artifactId>Saxon-HE</artifactId>
+	<version>debian</version>
+	<packaging>jar</packaging>
+	<name>Saxon-HE</name>
+	<description>The XSLT and XQuery Processor</description>
+	<properties>
+		<configs.path>target/config</configs.path>
+		<edition.properties>target/edition</edition.properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
+			<debian.dom4j.dom4j.originalVersion>1.6.1</debian.dom4j.dom4j.originalVersion>
+		
+			<debian.mavenRules>net.sf.saxon Saxon-HE jar s/.*/debian/ * *</debian.mavenRules>
+		
+			<debian.org.jdom.jdom.originalVersion>1.1</debian.org.jdom.jdom.originalVersion>
+		
+			<debian.originalVersion>9.5.1.1</debian.originalVersion>
+		
+			<debian.package>libsaxonhe-java</debian.package>
+		
+			<debian.xml-resolver.xml-resolver.originalVersion>1.2</debian.xml-resolver.xml-resolver.originalVersion>
+		
+			<debian.xom.xom.originalVersion>1.2.5</debian.xom.xom.originalVersion>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.jdom</groupId>
+			<artifactId>jdom</artifactId>
+			<version>debian</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>xom</groupId>
+			<artifactId>xom</artifactId>
+			<version>debian</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>debian</version>
+		</dependency>
+		<dependency>
+			<groupId>xml-resolver</groupId>
+			<artifactId>xml-resolver</artifactId>
+			<version>debian</version>
+		</dependency>
+	</dependencies>
+</project>

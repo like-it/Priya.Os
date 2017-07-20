@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="pt-BR">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Contribuidores para o wiki de documentação do Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Projeto de documentação do GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Mesmo com seu adaptador de rede sem fio conectado, ele não foi reconhecido adequadamente pelo seu computador.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Solução de problemas de conexão sem fio</title>
+  <subtitle>Verificando se o adaptador de rede sem fio foi reconhecido</subtitle>
+
+  <p>Mesmo com seu adaptador de rede sem fio conectado ao computador, ele pode não ser reconhecido como um dispositivo de rede. Nesta etapa, você verificará se o dispositivo foi reconhecido adequadamente.</p>
+
+  <steps>
+    <item>
+      <p>Abra uma janela do Terminal, digite <cmd>lshw -C network</cmd> e pressione <key>Enter</key>. Se isso fornecer uma mensagem de erro, você pode precisar instalar o programa <app>lshw</app> em seu computador.</p>
+    </item>
+    <item>
+      <p>Analise as informações que apareceram e localize a seção <em>Wireless interface</em>. Se seu adaptador de rede sem fio foi detectado adequadamente, você deveria ver algo similar (mas não idêntico) a:</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>Se um dispositivo de rede sem fio está listado, continue com a etapa de <link xref="net-wireless-troubleshooting-device-drivers">Drivers de dispositivo</link>.</p>
+      <p>Se um dispositivo de rede sem fio <em>não</em> está listado, as próximas etapas vão depender do tipo de dispositivo que você usa. Veja a seção abaixo que é relevante ao tipo de adaptador de rede sem fio que seu computador possui (<link xref="#pci">PCI interno</link>, <link xref="#usb">USB</link> ou <link xref="#pcmcia">PCMCIA</link>).</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>Adaptador de rede sem fio PCI (interno)</title>
+
+  <p>Adaptadores PCI internos são os mais comuns e são encontrados na maioria dos notebooks feitos nos últimos anos. Para verifica se seu adaptador de rede sem fio PCI foi reconhecido:</p>
+
+  <steps>
+    <item>
+      <p>Abra um Terminal, digite <cmd>lspci</cmd> e pressione <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Veja a lista de dispositivos que é mostrada e procure por qualquer um que esteja marcado como <code>Network controller</code> ou <code>Ethernet controller</code>. Vários dispositivos podem estar marcados dessa forma; aquele correspondente a seu adaptador de rede sem fio pode incluir palavras como <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> ou <code>802.11</code>. Aqui está um exemplo de como a mensagem pode ser parecer:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Se você localizou seu adaptador de rede sem fio na lista, continue com a etapa de <link xref="net-wireless-troubleshooting-device-drivers">Drivers de dispositivos</link>. Se você não localizou qualquer dos termos relacionados a seu adaptador de rede sem fio, veja <link xref="#not-recognized">as instruções abaixo</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>Adaptador sem fio USB</title>
+
+  <p>Adaptadores de rede sem fio que são conectados em uma porta USB em seu computador são menos comuns. Eles podem estar conectados diretamente em uma porta USB ou podem ser conectados via um cabo USB. Adaptadores de banda larga móvel/3G se parecem com adaptadores de rede sem fio (wifi), de forma que se você acredita ter um adaptador de rede sem fio USB, verifique novamente se não é, na verdade, um adaptador 3G. Para verificar se seu adaptador de rede de sem fio USB foi reconhecido:</p>
+
+  <steps>
+    <item>
+      <p>Abra um Terminal, digite <cmd>lsusb</cmd> e pressione <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Veja a lista de dispositivos que é mostrada e procure por qualquer um que pareça se referir a um dispositivo de rede sem fio. Aquele correspondente a seu adaptador de rede sem fio pode incluir palavras como <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> ou <code>802.11</code>. Aqui está um exemplo de como a mensagem pode ser parecer:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>Se você localizou seu adaptador de rede sem fio na lista, continue com a etapa de <link xref="net-wireless-troubleshooting-device-drivers">Drivers de dispositivos</link>. Se você não localizou qualquer dos termos relacionados a seu adaptador de rede sem fio, veja <link xref="#not-recognized">as instruções abaixo</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Verificando por um dispositivo PCMCIA</title>
+
+  <p>Adaptadores de rede sem fio PCMCIA são geralmente placas retangulares que podem ser encaixados na lateral de seu notebook. Elas são mais comumente encontradas em computadores mais antigos. Para verificar se seu adaptador PCMCIA foi reconhecido:</p>
+
+  <steps>
+    <item>
+      <p>Inicie seu computador <em>sem</em> que o adaptador de rede sem fio esteja conectado.</p>
+    </item>
+    <item>
+      <p>Abra um Terminal, digite o seguinte e, então, pressione <key>Enter</key>:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>Isso vai exibir uma lista de mensagens relacionadas ao hardware do seu computador e será atualizado se houver alguma alteração em seu hardware.</p>
+    </item>
+    <item>
+      <p>Insira seu adaptador de rede sem fio no slot PCMCIA e veja o que muda na janela do Terminal. As alterações devem incluir alguma informação sobre seu adaptador de rede sem fio. Analise e veja se consegue identificá-lo.</p>
+    </item>
+    <item>
+      <p>Para interromper a execução do comando no Terminal, pressione <keyseq><key>Ctrl</key><key>C</key></keyseq>. Após isto, você pode fechar o Terminal se assim desejar.</p>
+    </item>
+    <item>
+      <p>Se você localizou alguma informação sobre seu adaptador de rede sem fio, continue com a etapa de <link xref="net-wireless-troubleshooting-device-drivers">Drivers de dispositivo</link>. Se você não localizou nada relacionado a seu adaptador, veja <link xref="#not-recognized">as instruções abaixo</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>Adaptador sem fio não foi reconhecido</title>
+
+  <p>Se seu adaptador de rede sem fio não foi reconhecido, ele pode não estar funcionando adequadamente ou os drivers corretos podem não estar instalados para ele. Como você verifica se há drivers que você possa instalar vai depender de qual distribuição Linux você está usando (como Ubuntu, Arch, Fedora ou openSUSE).</p>
+
+  <p>Para obter ajuda específica, procure as opções de suporte no site da sua distribuição. Elas podem incluir lista de discussão e bate-papos on-line por meio dos quais você pode perguntar sobre seu adaptador de rede sem fio, por exemplo.</p>
+
+</section>
+
+</page>

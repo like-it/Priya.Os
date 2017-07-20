@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="ssh-export" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys"/>
+
+    <revision pkgversion="3.14" date="2014-10-03" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>So exportieren Sie ihre öffentlichen und privaten SSH-Schlüssel zum Speichern in Schlüsseldateien.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>SSH-Schlüssel exportieren</title>
+
+  <p>Exportieren Sie den Inhalt ihrer SSH-Schlüssel und Speichern Sie diese in Schlüsseldateien, um eine Sicherheitskopie Ihrer Schlüssel zu besitzen oder um Ihren öffentlichen Schlüssel mit einer Person zu teilen.</p>
+
+  <section id="public">
+    <title>So exportieren Sie Ihren öffentlichen SSH-Schlüssel:</title>
+
+    <steps>
+      <item>
+	<p>Wählen Sie den Schlüsselbund <gui>OpenSSH-Schlüssel</gui> in der linken Seitenleiste.</p>
+      </item>
+      <item>
+	<p>Wählen Sie den <gui>privaten SSH-Schlüssel</gui> in der Liste, welcher exportiert werden soll.</p>
+      </item>
+      <item>
+	<p>Wählen Sie <guiseq><gui>Datei</gui><gui>Exportieren …</gui></guiseq>.</p>
+      </item>
+      <item>
+	<p>Klicken Sie auf den Knopf <gui style="button">Exportieren</gui>, um den exportierten öffentlichen Schlüssel auf Ihrem Rechner zu speichern.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="private">
+    <title>So exportieren Sie Ihren privaten SSH-Schlüssel:</title>
+
+    <steps>
+      <item>
+	<p>Wählen Sie den Schlüsselbund <gui>OpenSSH-Schlüssel</gui> in der linken Seitenleiste.</p>
+      </item>
+      <item>
+	<p>Wählen Sie den <gui>privaten SSH-Schlüssel</gui> in der Liste, welcher exportiert werden soll.</p>
+      </item>
+      <item>
+	<p>Klicken Sie mit der rechten Maustaste auf den gewählten Schlüssel und wählen Sie <guiseq><gui>Eigenschaften</gui><gui>Details</gui></guiseq>.</p>
+      </item>
+      <item>
+	<p>Klicken Sie auf den Knopf <gui style="button">Privaten Schlüssel exportieren</gui>, um den exportierten privaten Schlüssel auf Ihrem Rechner zu speichern.</p>
+      </item>
+    </steps>
+
+    <note style="warning">
+      <p>Bewahren Sie die exportierte private Schlüsseldatei an einem sicheren Ort auf, weil der Inhalt der Datei geheim bleiben muss, um Missbrauch Ihres Schlüssels vorzubeugen.</p>
+    </note>
+
+  </section>
+
+</page>

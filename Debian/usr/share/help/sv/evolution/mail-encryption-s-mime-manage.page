@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-s-mime-manage" xml:lang="sv">
+
+  <info>
+    <desc>Lägga till, redigera, visa och ta bort S/MIME-certifikat.</desc>
+
+    <link type="guide" xref="mail-encryption#s-mime"/>
+
+    <revision pkgversion="3.2.0" version="0.2" date="2011-10-13" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/bshoty0.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Hantera S/MIME-certifikat</title>
+
+<p>Certifikat låter dig säkert kommunicera med andra över en krypterad anslutning eller signera ett meddelande som bekräftar din identitet för kontakten. Dessa inställningar gäller endast för S/MIME-kryptering.</p>
+<p>Du kan importera, visa, redigera (förutom dina egna certifikat) och ta bort dina certifikat under <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>Certifikat</gui></guiseq>.</p>
+
+<note style="tip"><p>Om du får felet ”Motpartens certifikatutfärdare har markerats som icke pålitlig av användaren. (-8172) - Kan inte lägga till attributet SMIMEEncKeyPrefs” efter att du lagt till ditt e-postcertifikat, gå till <gui>Utfärdare</gui> och aktivera <gui>Lita på när denna certifikatutfärdare identifierar e-postanvändare</gui> för certifikatet.</p></note>
+
+<p><gui>Dina certifikat</gui> visar en lista över certifikat som du äger. För att lägga till ett signeringscertifikat, klicka på <gui style="button">Importera</gui>, välj filen som ska importeras, klicka sedan på <gui style="button">Öppna</gui> och skriv in ett lösenord.</p>
+<p><gui>Kontaktcertifikat</gui> visar en lista över certifikat som du har för kontakter. Dessa certifikat låter dig dekryptera meddelanden samt verifiera signerade meddelanden.</p>
+<p><gui>Utfärdare</gui> visar en lista över pålitliga certifikatutfärdare som verifierar att ditt eget certifikat är giltigt.</p>
+</page>

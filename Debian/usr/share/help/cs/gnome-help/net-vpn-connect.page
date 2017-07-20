@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+    <link type="guide" xref="net-wired"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Nastavení připojení VPN k místní síti přes Internet.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Připojení VPN</title>
+
+<p>VPN (<em>Virtual Private Network</em> – virtuální soukromá síť) je způsob připojení k místní síti přes Internet. Například řekněme, že se chcete připojit do místní sítě u vás v práci, ale jste zrovna na služební cestě. Našli byste si kdekoliv (třeba v hotelu) připojení k Internetu a připojili se do VPN v práci. Při používání se vám to bude jevit, jako byste byli připojení přímo do sítě v práci, ale připojení ve skutečnosti půjde přes hotelové připojení k Internetu. Připojení VPN je téměř vždy <em>šifrované</em>, aby se zamezilo cizím lidem v přístupu do místní sítě, do které se připojujete, bez přihlášení.</p>
+
+<p>Existuje řada různých typů VPN. Možná budete muset nainstalovat nějaký dodatečný software v závislosti na tom, k jakému typu VPN se připojujete. Zjistěte si podrobnosti o připojování od toho, kdo má VPN na starosti a podívejte se, jakého <em>klienta VPN</em> potřebujete. Pak přejděte do aplikace na instalování softwaru a vyhledejte balíček <app>NetworkManager</app>, který funguje s vaší VPN (pokud takový existuje) a nainstalujte jej.</p>
+
+<note>
+ <p>Pokud neexistuje pro NetworkManager balíček pro váš typ VPN, budete si muset nejspíše stáhnout a nainstalovat nějaký klientský software od firmy, která poskytuje software pro vaši VPN. V takovém případě se asi budete muset řídit jinými pokyny pro zprovoznění.</p>
+</note>
+
+<p>Když chcete nastavit připojení VPN:</p>
+
+  <steps>
+    <item>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Síť</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknutím na <gui>Síť</gui> otevřete příslušný panel.</p>
+    </item>
+    <item>
+      <p>Ve spodní části seznamu nalevo klikněte na tlačítko <gui>+</gui>, aby se přidalo nové připojení.</p>
+    </item>
+    <item>
+      <p>V seznamu rozhraní zvolte <gui>VPN</gui>.</p>
+    </item>
+    <item>
+      <p>Zvolte, který druh připojení VPN máte.</p>
+    </item>
+    <item>
+      <p>Vyplňte všechny podrobné údaje připojení VPN a až budete hotovi, zmáčkněte <gui>Přidat</gui>.</p>
+    </item>
+    <item>
+      <p>Až je nastavení VPN dokončené, otevřete <gui xref="shell-introduction#yourname">systémovou nabídku</gui> vpravo na horní liště, klikněte na <gui>VPN   Vypnuto</gui> a vyberte <gui>Připojit</gui>. Možná budete muset, než se spojení sestaví, pro něj zadat heslo. Jakmile je spojení sestavené, uvidíte na horní liště ikonu ve tvaru zámku.</p>
+    </item>
+    <item>
+      <p>Doufáme, že jste se úspěšně připojili k VPN. Pokud ne, raději dvakrát zkontrolujte nastavení VPN, která jste zadali. To můžete provést v panelu <gui>Síť</gui>, který jste použili při vytváření připojení. V něm vyberete v seznamu připojení VPN a zmáčknutím tlačítka <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">nastavení</span></media> si nastavení zobrazte.</p>
+    </item>
+    <item>
+      <p>Když se chcete od VPN odpojit, klikněte na systémovou nabídku na horní liště a klikněte na <gui>Vypnout</gui> pod názvem svého připojení VPN.</p>
+    </item>
+  </steps>
+
+</page>

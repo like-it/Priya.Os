@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="other-files" xml:lang="hu">
+
+    <info>
+        <link type="guide" xref="index#other"/>
+        <desc>Keep the Shotwell library in sync with photo files on disk.</desc>
+        
+        <link type="next" xref="other-plugins"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot hu</mal:email>
+      <mal:years>2015, 2016.</mal:years>
+    </mal:credit>
+  </info>
+
+   <title>Photo files</title>
+
+    <p>
+    Every photo in the Shotwell library corresponds to a file stored on your hard disk.  Shotwell has
+    several features which help you keep the Shotwell library and files on disk in sync.
+    </p>
+    <links type="section"/>
+    
+    <section id="dirpattern">
+        <title>Using a custom directory pattern</title>
+        <p>
+            Shotwell allows you to specify how it names directories in your library.  You can do this 
+            by changing the <gui>Directory Structure</gui> and <gui>Pattern</gui> settings in the 
+            <gui>Preferences</gui> dialog.  You may use a preselected pattern, or choose <gui>Custom</gui> 
+            and type in your own.
+        </p>
+
+        <p>
+            The available symbols for the directory pattern begin with a % (percent sign). The values 
+            these symbols produce are locale-dependent, so what you see on your computer may vary
+            from the examples below.
+        </p>
+
+        <table frame="all" rules="rowgroups">
+            <tbody>
+                <tr>
+                    <td><p> </p></td> <td><p><em>Szimbólum</em></p></td> <td><p><em>Jelentés</em></p></td> <td><p><em>Példa</em></p></td>
+                </tr>
+            </tbody>
+            <tbody>
+            <tr>
+                <td><p> </p></td><td><p>%Y</p></td><td><p>Év: teljes</p></td><td><p>2011</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%y</p></td><td><p>Év: két számjeggyel</p></td><td><p>11</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%d</p></td><td><p>Hónap napja kezdő nullával</p></td><td><p>03</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%A</p></td><td><p>Nap neve: teljes</p></td><td><p>Szerda</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%a</p></td><td><p>Nap neve: rövidített</p></td><td><p>Sze</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%m</p></td><td><p>Hónap száma kezdő nullával</p></td><td><p>02</p></td>
+            </tr>
+            <tr><td><p> </p></td><td><p>%b</p></td><td><p>Hónap neve: rövidített</p></td><td><p>Febr</p></td></tr><tr><td><p> </p></td><td><p>%B</p></td><td><p>Hónap neve: teljes</p></td><td><p>Február</p></td></tr><tr><td><p> </p></td><td><p>%I</p></td><td><p>Óra: 12 órás formátum</p></td><td><p>05</p></td></tr><tr><td><p> </p></td><td><p>%H</p></td><td><p>Óra: 24 órás formátum</p></td><td><p>17</p></td></tr><tr><td><p> </p></td><td><p>%M</p></td><td><p>Perc</p></td><td><p>16</p></td></tr><tr><td><p> </p></td><td><p>%S</p></td><td><p>Másodperc</p></td><td><p>30</p></td></tr><tr><td><p> </p></td><td><p>%p</p></td><td><p>DE/DU</p></td><td><p>DU</p></td></tr>
+            </tbody>
+        </table>
+
+        <p>További szimbólumok érhetők el. Nézze meg az strftime kézikönyvét a <cmd>man strftime</cmd> parancsot lefuttatva, ha olyanra van szüksége, amely nincs itt felsorolva.</p>
+    </section>
+
+    <section id="automatic-import">
+       <title>Fényképek automatikus importálása</title>
+       
+       <p>A Shotwell képes azon új fényképek automatikus importálására, amelyek megjelennek a gyűjteménykönyvtárban. (A gyűjteménykönyvtár általában a saját könyvtárban lévő <file>Képek</file> könyvtár. Ennek helyét a <gui>Beállítások</gui> ablakban változtathatja meg.)</p>
+       
+       <p>Az automatikus importálás engedélyezéséhez jelölje be az <gui>Új fájlok figyelése a gyűjteménykönyvtárban</gui> lehetőséget a <gui>Beállítások</gui> ablakban.</p>
+       
+       <note style="advanced"><p>A Shotwell képes az automatikusan importált könyvtárakon belüli szimbolikus linkek követésére is.</p></note>
+
+    </section>
+
+    <section id="automatic-rename">
+       <title>Importált fényképek automatikus átnevezése kisbetűsre</title>
+       
+       <p>A Shotwell automatikusan kisbetűsre tudja változtatni az importált fényképek fájlneveit. Ennek engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui></guiseq> menüpontot, majd a <gui>Beállítások</gui> ablakban jelölje be az <gui>Importált fájlok átnevezése kisbetűssé</gui> lehetőséget.</p>
+    
+    </section>
+    
+    <section id="writing-metadata">
+       <title>Metaadatok írása menet közben</title>
+       
+       <p>Alapértelmezésben a Shotwell nem módosítja a fényképfájlokat még akkor sem, ha fényképeket szerkeszt, vagy megváltoztatja azok címkéit vagy címeit. A Shotwell ezeket a módosításokat csak a saját adatbázisában rögzíti.</p>
+       
+       <p>Ezen viselkedés megváltoztatásához bejelölheti a <gui>Címkék, címek és más metaadatok fényképfájlokba írása</gui> jelölőnégyzetet a <gui>Beállítások</gui> ablakban. Ha ez a lehetőség engedélyezve van, akkor a Shotwell a következő metaadatokat akkor fogja a legtöbb fényképfájlba írni, amikor megváltoztatja azokat:</p>
+       
+       <list>
+       <item><p>címek</p></item>
+       <item><p>címkék</p></item>
+       <item><p>értékelések</p></item>
+       <item><p>forgatási információk</p></item>
+       <item><p>idő/dátum</p></item>
+       </list>
+       
+       <p>A Shotwell ezeket az információkat EXIF, IPTC és/vagy XMP formátumban tárolja a fényképfájlokban. Ne feledje, hogy a Shotwell csak JPEG, PNG és TIFF formátumú fényképfájlokba tud írni, BMP vagy RAW fényképekbe vagy videofájlokba nem.</p>
+    
+    </section>
+    
+    <section id="runtime-monitoring">
+    <title>Futásidejű megfigyelés</title>
+    
+    <p>A Shotwell futás közben észreveszi bármely fényképen a külsőleg elvégzett módosításokat. Amikor egy fényképfájl megváltozik, akkor a Shotwell újraolvassa a fájlt, és frissíti a fénykép megjelenítését és a metaadatokat.</p>
+    
+    <p>Ne feledje, hogy a Shotwell indításkor az összes fényképet ellenőrzi, hogy történt-e módosítás, de csak a gyűjteménykönyvárban lévő fényképeknél történik valós idejű megfigyelés az indítás után. Reméljük, hogy ez a korlátozás eltávolításra kerül egy későbbi kiadásban.</p>
+
+    </section>
+    
+</page>

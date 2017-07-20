@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="data-storage" xml:lang="fr">
+
+  <info>
+    <desc>Where does <app>Evolution</app> store my data on the harddisk?</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+
+    <revision pkgversion="3.5.3" version="0.5" date="2012-06-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Emplacements de stockage des données</title>
+
+<note style="tip">
+<p>Cette section n'intéresse que les utilisateurs avancés qui veulent résoudre des problèmes.</p>
+</note>
+
+<p><app>Evolution</app> 3.6 and later stores its data according to the <link href="http://www.freedesktop.org/wiki/Specifications/basedir-spec">XDG Base Directory Specification</link>. By default this means:</p>
+
+<terms>
+<item>
+<title>Les fichiers des données de l'utilisateur</title>
+<p><file>$HOME/.local/share/evolution</file></p>
+</item>
+<item>
+<title>Divers fichiers de configuration et d'état</title>
+<p><file>$HOME/.config/evolution</file></p>
+</item>
+<item>
+<title>Paramètres de compte</title>
+<p><file>$HOME/.config/evolution/sources</file></p>
+</item>
+<item>
+<title>Caches de données temporaires</title>
+<p><file>$HOME/.cache/evolution</file></p>
+</item>
+<item>
+<title>Paramétrages de configuration dans GSettings</title>
+<p><file>$HOME/.config/dconf</file></p>
+</item>
+</terms>
+
+</page>

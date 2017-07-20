@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-apps-open" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Anwendungen in der <gui>Aktivitäten</gui>-Übersicht starten.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Anwendungen starten</title>
+
+  <p if:test="!platform:gnome-classic">Bewegen Sie Ihren Mauszeiger in die <gui>Aktivitäten</gui>-Ecke links oben auf dem Bildschirm, um die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht anzuzeigen. Hier finden Sie alle Ihre Anwendungen. Sie können die Übersicht auch durch Drücken der <key xref="keyboard-key-super">Super-Taste</key> öffnen.</p>
+  
+  <p if:test="platform:gnome-classic">Sie können Anwendungen im Menü <gui xref="shell-introduction#activities">Anwendungen</gui> links oben auf dem Bildschirm starten, oder Sie verwenden die <gui>Aktivitäten</gui>-Übersicht, indem Sie die <key xref="keyboard-key-super">Super</key>-Taste auf Ihrer Tastatur drücken.</p>
+
+  <p>Es gibt mehrere Möglichkeiten eine Anwendung zu öffnen, wenn Sie sich in der <gui>Aktivitäten</gui>-Übersicht befinden:</p>
+
+  <list>
+    <item>
+      <p>Beginnen Sie den Namen einer Anwendung einzugeben – es sollte sofort danach gesucht werden. Falls dies nicht geschieht, klicken Sie in das Suchfeld am oberen Rand des Bildschirms und beginnen Sie dann mit der Eingabe. Anschließend klicken Sie auf das Anwendungssymbol, um diese zu starten.</p>
+    </item>
+    <item>
+      <p>Einige Anwendungen verfügen über Symbole im <em>Dash</em>, dem senkrechten Streifen mit Symbolen links in der <gui>Aktivitäten</gui>-Übersicht. Klicken Sie auf eines dieser Symbole, um die zugehörige Anwendung zu starten.</p>
+      <p>Häufig verwendete Anwendungen können Sie selbst <link xref="shell-apps-favorites">zum Dash hinzufügen</link>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf das Punktraster-Symbol am unteren Ende des Dash. Sie sehen nun die häufig genutzten Anwendungen, wenn die Ansicht <gui style="button">Häufig</gui> aktiviert ist. Wenn Sie eine neue Anwendung starten wollen, klicken Sie auf den Knopf <gui style="button">Alle</gui> am unteren Ende der Ansicht, um alle Anwendungen anzuzeigen. Klicken Sie auf die gewünschte Anwendung, um sie zu starten.</p>
+    </item>
+    <item>
+      <p>Sie können eine Anwendung auf einer eigenen <link xref="shell-workspaces">Arbeitsfläche</link> ausführen, indem Sie das Anwendungssymbol von der Dash auf eine der Arbeitsflächen auf der rechten Seite des Bildschirms ziehen. Die Anwendung wird auf der entsprechenden Arbeitsfläche geöffnet.</p>
+      <p>Sie können eine Anwendung auf einer <em>neuen</em> Arbeitsfläche starten, indem Sie deren Symbol auf die leere Arbeitsfläche unten im Arbeitsflächenwechsler oder in die schmale Lücke zwischen zwei Arbeitsflächen verschieben.</p>
+    </item>
+  </list>
+
+  <note style="tip">
+    <title>Schnell einen Befehl ausführen</title>
+    <p>Eine weitere, für fortgeschrittene Benutzer geeignete Möglichkeit eine Anwendung auszuführen ist, den <em>Befehlsnamen</em> zu verwenden, was durch das Drücken der Tasten <keyseq><key>Alt</key><key>F2</key></keyseq>, gefolgt von der Eingabe des Befehls und anschließendem Drücken der <key>Eingabetaste</key> durchgeführt werden kann.</p>
+    <p>Um beispielsweise <app>Rhythmbox</app> zu starten, drücken Sie <keyseq><key>Alt</key><key>F2</key></keyseq> und geben Sie <cmd>rhythmbox</cmd> ein. Der Name der Anwendung ist der Befehl zum Starten des Programms.</p>
+  </note>
+
+</page>

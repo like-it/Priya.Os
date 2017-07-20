@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="ssh-import" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor copyright">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>SSH-kulcsok importálása kulcsfájlból a <app>Jelszavak és kulcsok</app> alkalmazásba.</desc>
+  </info>
+
+  <title>SSH-kulcsok importálása</title>
+
+  <p>Ha e-mailen keresztül kapott egy kulcsfájlt, érdemes azt importálni a <app>Jelszavak és kulcsok</app> alkalmazásba. A legtöbb esetben a <app>Jelszavak és kulcsok</app> alkalmazás automatikusan importálja a számítógépe <file>~/.ssh</file> könyvtárában található SSH-kulcsokat. Ezt manuálisan is elvégezheti.</p>
+
+  <steps>
+    <title>Hogyan importálhatok egy kulcsot kézileg?</title>
+    <item>
+      <p>Válassza a <guiseq><gui style="menu">Fájl</gui><gui>Importálás…</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>A megjelenő ablakban válassza ki az importálandó kulcsot. A nyilvános SSH-kulcsok <file>.pub</file> kiterjesztéssel rendelkeznek.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui style="button">Megnyitás</gui> gombra.</p>
+    </item>
+  </steps>
+
+  <p>Az importált kulcsok típustól függően automatikusan csoportosítva lesznek. Így az <file>SSH</file>-kulcsok az <file>OpenSSH kulcsok</file> listájába kerülnek.</p>
+
+</page>

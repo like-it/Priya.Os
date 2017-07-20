@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-wireless-noconnection" xml:lang="as">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" version="0.2" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>ফিল বুল</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Double-check the password, and other things to try.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>মই শুদ্ধ পাছৱাৰ্ড দিছো, কিন্তু তথাপিও মই সংযোগ কৰিব পৰা নাই</title>
+
+<p>যদি আপুনি সঠিক <link xref="net-wireless-wepwpa">বেতাঁৰ পাছৱাৰ্ড</link> সুমুৱাইছে বুলি নিশ্চিত কিন্তু তথাপিও আপুনি এটা বেতাঁৰ নেটৱাৰ্কৰ সৈতে সফলভাৱে সংযোগ কৰিব পৰা নাই, নিম্নলিখিতৰ কিছুমান চেষ্টা কৰি চাওক:</p>
+
+<list>
+ <item>
+  <p>Double-check that you have the correct password</p>
+  <p>পাছৱাৰ্ডসমূহ ফলা সংবেদ্য (সিহতৰ ওপৰ ফলা আখৰ নে তলৰ ফলা আখৰ আছে), সেয়েহে চাওক যে আপুনি আখৰসমূহৰ এটাৰ ফলা ভুল দিয়া নাই।</p>
+ </item>
+
+ <item>
+  <p>হেক্স অথবা ASCII পাছ কি' চেষ্টা কৰি চাওক</p>
+  <p>The password you enter can also be represented in a different way - as a string of characters in hexadecimal (numbers 0-9 and letters a-f) called a pass key. Each password has an equivalent pass key. If you have access to the pass key as well as the password/passphrase, try typing the pass key instead. Make sure you select the correct <gui>wireless security</gui> option when asked for your password (for example, select <gui>WEP 40/128-bit Key</gui> if you're typing the 40-character pass key for a WEP-encrypted connection).</p>
+ </item>
+
+ <item>
+  <p>আপোনাৰ বেতাঁৰ কাৰ্ড বন্ধ কৰি আকৌ আৰম্ভ কৰি চাওক</p>
+  <p>Sometimes wireless cards get stuck or experience a minor problem that means they won't connect. Try turning the card off and then on again to reset it - see <link xref="net-wireless-troubleshooting"/> for more information.</p>
+ </item>
+
+ <item>
+  <p>Check that you're using the correct type of wireless security</p>
+  <p>When prompted for your wireless security password, you can choose which type of wireless security to use. Make sure you choose the one that is used by the router or wireless base station. This should be selected by default, but sometimes it will not be for some reason. If you don't know which one it is, use trial and error to go through the different options.</p>
+ </item>
+
+ <item>
+  <p>সুনিশ্চিত কৰক যে আপোনাৰ বেতাঁৰ কাৰ্ড সঠিকভাৱে সমৰ্থিত</p>
+  <p>Some wireless cards aren't supported very well. They show up as a wireless connection, but they can't connect to a network because their drivers lack the ability to do this. See if you can get an alternative wireless driver, or if you need to perform some extra set-up (like installing a different <em>firmware</em>). See <link xref="net-wireless-troubleshooting"/> for more information.</p>
+ </item>
+
+</list>
+
+</page>

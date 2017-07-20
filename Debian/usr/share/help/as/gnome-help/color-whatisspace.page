@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="as">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>এটা ৰঙৰ স্থান ৰঙসমূহৰ এটা বিৱৰিত বিস্তাৰ।</desc>
+
+    <credit type="author">
+      <name>ৰিচাৰ্ড হিউগ্চ</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>এটা ৰঙৰ স্থান কি?</title>
+
+  <p>এটা ৰঙৰ স্থান ৰঙসমূহৰ এটা বিৱৰিত বিস্তাৰ। প্ৰসিদ্ধ ৰঙৰ স্থানসমূহে অন্তৰ্ভুক্ত কৰে sRGB, AdobeRGB আৰু ProPhotoRGB।</p>
+
+  <p>
+    The human visual system is not a simple RGB sensor, but we can
+    approximate how the eye responds with a CIE 1931 chromaticity diagram
+    that shows the human visual response as a horse-shoe shape.
+    You can see that in human vision there are many more shades of green
+    detected than blue or red.
+    With a trichromatic color space like RGB we represent the colors
+    on the computer using three values, which restricts up to encoding
+    a <em>triangle</em> of colors.
+  </p>
+
+  <note>
+    <p>
+      Using models such as a CIE 1931 chromaticity diagram is a huge
+      simplification of the human visual system, and real gamuts are
+      expressed as 3D hulls, rather than 2D projections.
+      A 2D projection of a 3D shape can sometimes be misleading, so if
+      you want to see the 3D hull, use the <code>gcm-viewer</code>
+      application.
+    </p>
+  </note>
+
+  <figure>
+    <desc>বগা ত্ৰিভুজ দ্বাৰা প্ৰতিনিদ্ধিত্ব কৰা sRGB, AdobeRGB আৰু ProPhotoRGB</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>
+    First, looking at sRGB, which is the smallest space and can encode
+    the least number of colors.
+    It is an approximation of a 10 year old CRT display, and so most
+    modern monitors can easily display more colors than this.
+    sRGB is a <em>least-common-denominator</em> standard and is used
+    in a large number of applications (including the Internet).
+  </p>
+  <p>AdobeRGB সঘনে এটা <em>সম্পাদন স্থান</em> ৰূপে ব্যৱহাৰ কৰা হয়। ই sRGB ত কে অধিক ৰঙ এনক'ড কৰিব পাৰিব, যাৰ অৰ্থ আপুনি এটা ফ'টোগ্ৰাফৰ ৰঙবোৰ পৰিবৰ্তন কৰিব পাৰিব, এই চিন্তা নথকাকৈ যে জীৱন্ত ৰঙসমূহ অথবা কলা ৰঙ কম হৈছে।</p>
+  <p>ProPhoto হল আটাইতকৈ ডাঙৰ উপলব্ধ স্থাব আৰু দস্তাবেজ আৰ্কাইভেলৰ বাবে সঘনে ব্যৱহাৰ কৰা হয়। ই মানুহৰ চকু দ্বাৰা চিনাক্ত কৰিব পৰা ৰঙৰ সম্পূৰ্ণ বিস্তাৰ এনক'ড কৰিব পাৰিব, আৰু চকুৱে চিনাক্ত কৰিব নোৱাৰা ৰঙবোৰ এনক'ড কৰিব পাৰিব।</p>
+
+  <p>এতিয়া, যদি ProPhoto স্পষ্টভাৱে ভাল, আমি ইয়াক সকলোৰ বাবে ব্যৱহাৰ কিয় নকৰো? ইয়াৰ উত্তৰ <em>quantization</em> ৰ লগত জড়িত। যদি আপোনাৰ প্ৰতিটো চেনেল এনক'ড কৰিবলৈ কেৱল ৮ বিট (২৫৬ স্তৰ) আছে, তেন্তে এটা ডাঙৰ বিস্তাৰৰ প্ৰতিটো মানৰ মাজত ডাঙৰ স্তৰ থাকিব।</p>
+  <p>
+    Bigger steps mean a larger error between the captured color and the
+    stored color, and for some colors this is a big problem.
+    It turns out that key colors, like skin colors are very important,
+    and even small errors will make untrained viewers notice that something
+    in a photograph looks wrong.
+  </p>
+  <p>অৱশ্যয়, এটা ১৬ বিট ছবি ব্যৱহাৰ কৰিলে অধিক স্তৰ আৰু এটা সৰু quantization ত্ৰুটি হব, কিন্তু ইয়াৰ বাবে প্ৰতিটো ছবি ফাইলৰ আকাৰ দ্বিগুণ হব। এতিয়া অস্তিত্ববান বেছিৰভাগ সমল হল 8bpp, অৰ্থাত 8 bits-per-pixel।</p>
+  <p>ৰঙ ব্যৱস্থাপনা এটা ৰঙৰ স্থানক অন্য এটালৈ পৰিবৰ্তন কৰাৰ এটা প্ৰক্ৰিয়া, অ'ত এটা ৰঙৰ স্থান এটা খ্যাত বিৱৰিত স্থান যেনে sRGB হব পাৰে, অথবা আপোনাৰ মনিটৰ অথবা প্ৰিন্টাৰ আলেখ্যৰ নিচিনা এটা স্বনিৰ্বাচিত স্থান হব পাৰে।</p>
+
+</page>

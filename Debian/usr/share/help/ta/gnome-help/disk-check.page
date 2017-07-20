@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="ta">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>நடாலியா ருஸ் லெய்வா</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>மைக்கேல் ஹில்</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>உங்கள் வன் வட்டில் ஏதேனும் பிரச்சினைகள் உள்ளதா என்றும் அது ஆரோக்கியமான தான் உள்ளதா என உறுதி செய்ய அதை சோதனை செய்யவும்.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+<title>உங்கள் வன்வட்டில் ஏதேனும் பிரச்சினைகள் உள்ளதா என சோதித்தல்</title>
+
+<section id="disk-status">
+ <title>வன் வட்டை சோதித்தல்</title>
+  <p>வன் வட்டுகளில் <app> SMART</app> (சுய கண்காணிப்பு, பகுப்பாய்வு மற்றும் அறிக்கையிடுதல் தொழில்நுட்பம்) எனப்படும் ஒரு உள்ளமைக்கப்பட்ட ஆரோக்கிய பரிசோதனைக் கருவி உள்ளது, அது வட்டில் ஏதேனும் சிக்கல்கள் ஏற்பட வாய்ப்புள்ளதா என தொடர்ந்து சோதிக்கிறது. அது உங்கள் வட்டு செயலிழக்கும் நிலையில் இருந்தால் எச்சரித்து முக்கியமான தரவு இழப்புகளைத் தவிர்க்க உதவுகிறது.</p>
+
+  <p>SMART தானாக இயங்கும் என்றாலும், நீங்கள் <app>வட்டுகள்</app> பயன்பாட்டை இயக்கி உங்கள் வட்டின் ஆரோக்கியத்தை சரிபார்த்துக்கொள்ளலாம்:</p>
+
+<steps>
+ <title>வட்டுகள் பயன்பாட்டைப் பயன்படுத்தி உங்கள் வட்டின் ஆரோக்கியத்தை சரிபார்த்தல்</title>
+
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to check from the list of storage devices on
+    the left. Information and status of the disk will be shown.</p>
+  </item>
+  <item>
+    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
+    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+  </item>
+  <item>
+    <p>See more information under <gui>SMART Attributes</gui>, or click the
+    <gui style="button">Start Self-test</gui> button to run a self-test.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>வட்டு ஆரோக்கியமான இல்லாவிட்டால் என்ன ஆகும்?</title>
+
+  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
+  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
+  to be prepared with a <link xref="backup-why">backup</link> to prevent data
+  loss.</p>
+
+  <p>நிலை "தோல்விக்கு முந்தையது" எனக் கூறினால், வட்டு போதுமான அளவு ஆரோக்கியமாக உள்ளது, ஆனால் விரைவில் அது தோல்வியடையக்கூடிய அறிகுறிகள் உள்ளன எனப் பொருள். உங்கள் வன் வட்டு (அல்லது கணினி) சில வருடங்கள் பழையது எனில், நலச் சோதனைகளில் சிலவற்றிலேனும் இந்த செய்தி காண்பிக்கப்படும். அப்போது நீங்கள் <link xref="backup-how">வழக்கமாக உங்கள் முக்கியக் கோப்புகளை மறுபிரதி எடுக்க வேண்டும்</link> மற்றும் இது இன்னும் மோசமாகிறதா எனப் பார்க்க வட்டு நிலையை அவ்வப்போது சோதிக்க வேண்டும்.</p>
+
+  <p>அது இன்னும் மோசமாகிப் போனால், கணினியை அல்லது வன் வட்டின் பிரச்சனையைக் கண்டறிய அல்லது சரி செய்ய அதை ஒரு தொழில்முறை வல்லுநரிடம் கொண்டு செல்ல வேண்டும்.</p>
+
+</section>
+
+</page>

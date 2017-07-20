@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-mode" xml:lang="gl">
+
+  <info>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <link type="guide" xref="wacom"/>
+
+    <credit type="author copyright">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Cambia a tableta entre modo tableta e modo ratón.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Estabelece o modo de seguimento da tableta Wacom</title>
+
+<p><gui>Modo de seguemento</gui> determina como se corresponde o punteiro coa pantalla.</p>
+
+<steps>
+  <item>
+    <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+    start typing <gui>Wacom Tablet</gui>.</p>
+  </item>
+  <item>
+    <p>Click on <gui>Wacom Tablet</gui> to open the panel.</p>
+    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
+    <note style="tip"><p>If no tablet is detected, you'll be asked to
+    <gui>Please plug in or turn on your Wacom tablet</gui>. Click the
+    <gui>Bluetooth Settings</gui> link to connect a wireless tablet.</p></note>
+  </item>
+  <item><p>Xunto a <gui>Modo de seguemento</gui>, seleccione <gui>Tableta (absoluto)</gui> ou <gui>Área táctil (relativo)</gui>.</p></item>
+</steps>
+
+<note style="info"><p>No modo <em>absoluto</em> cada punto da tableta corresponde cun punto da pantalla. A esquina superior esquerda da pantalla, por exemplo, sempre corresponde co mesmo punto da tableta.</p>
+ <p>In <em>relative</em> mode, if you lift the pointer off the tablet and put it
+ down in a different position, the cursor on the screen doesn't move. This is
+    the way a mouse operates.</p>
+  </note>
+
+</page>

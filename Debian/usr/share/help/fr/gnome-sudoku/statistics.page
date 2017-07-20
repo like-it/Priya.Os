@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="statistics" xml:lang="fr">
+  <info>
+    <revision pkgversion="3.4" version="0.1" date="2012-03-08" status="final"/>
+    <link type="guide" xref="index#tips"/>
+    <credit type="editor copyright">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <license>
+      <p>Creative Commons Paternité-Partage des Conditions Initiales à l'Identique 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2007-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2008</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Statistiques</title>
+<p>Pour afficher les statistiques de la grille actuelle, cliquez sur <guiseq><gui>Jeu</gui><gui>Statistiques de la grille</gui></guiseq>.</p>
+  <figure>
+    <desc>Exemple de boîte de dialogue de statistiques d'une grille très difficile</desc>
+    <media type="image" mime="image/png" src="figures/stats-very-hard.png" width="400">
+    </media>
+  </figure>
+
+<p><app>GNOME Sudoku</app> classe les grilles en se basant sur le nombre de cellules qui peuvent être remplies rapidement.</p>
+
+<p>La boîte de dialogue de statistiques d'une grille affiche :</p>
+
+<list>
+ <item><p>la difficulté globale,</p></item>
+ <item><p>le nombre de cellules pouvant être immédiatement remplies par élimination, en partant de la grille vierge (c.-à-d. seul un 2 peut aller dans cette boîte, donc c'est un 2),</p></item>
+  <item><p>le nombre de cellules pouvant être immédiatement remplies, en partant de la grille vierge (c.-à-d. seule une cellule dans cette ligne peut être un 2, donc c'est un 2),</p></item>
+  <item><p>le nombre de fois où le programme a dû progresser par essais-erreurs pour résoudre la grille.</p></item>
+</list>
+
+<note><p>Toutes les grilles de sudoku peuvent être résolues sans jamais avoir à supposer. Quand la boîte de dialogue des statistiques affiche que <app>Sudoku</app> a eu besoin de faire X essais-erreurs, cela ne signifie pas qu'un être humain devra absolument utiliser des essais-erreurs pour résoudre la grille.</p></note>
+</page>

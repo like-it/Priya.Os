@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="user-admin-explain" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME dokumentācijas projekts</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Administratora tiesības vajadzīgas, lai veiktu nopietnas izmaiņas sistēmā.</desc>
+  </info>
+
+  <title>Kā strādā administratīvās tiesības?</title>
+
+  <p>As well as the files that <em>you</em> create, your computer has a number
+  of files which are needed by the system for it to work properly. If these
+  important <em>system files</em> are changed incorrectly they can cause
+  various things to break, so they are protected from changes by default.
+  Certain applications also modify important parts of the system, and so are
+  also protected.</p>
+
+  <p>The way that they are protected is by only allowing users with
+  <em>administrative privileges</em> to change the files or use the
+  applications. In day-to-day use, you will not need to change any system files
+  or use these applications, so by default you do not have administrative
+  privileges.</p>
+
+  <p>Dažkārt jums vajadzēs izmantot šīs lietotnes, tāpēc ir iespējams uz laiku aktivizēt administratora tiesības, lai attiecīgās izmaiņas būtu atļautas. Ja lietotnei nepieciešamas administratora tiesības, tā prasīs jūsu paroli. Piemēram, ja vēlaties instalēt jaunu programmatūru, instalētājs (pakotņu pārvaldnieks) prasīs administratora paroli, lai varētu pievienot lietotni sistēmai. Kad instalēšana pabeigta, jūsu administratora tiesības atkal tiks deaktivētas.</p>
+
+  <p>Administratora tiesības ir piesaistītas lietotāja kontam. <gui>Administratora</gui> lietotājiem šīs tiesības ir dotas, bet <gui>Standarta</gui> lietotājiem — ne. Bez administratora tiesībām nav iespējams instalēt programmatūru. Dažiem lietotāja kontiem (piemēram, kontam “root”) ir pastāvīgas administratīvās tiesības. Nav ieteicams ikdienā strādāt ar aktīvām administratīvajām tiesībām, jo var gadīties nejauši veikt nevēlamas izmaiņas (piemēram, dzēst vajadzīgu sistēmas datni).</p>
+
+  <p>Īsāk sakot, administratīvās tiesības ļauj veikt izmaiņas svarīgās sistēmas sastāvdaļās, kad tas nepieciešams, bet novērš netīšu izmaiņu veikšanu.</p>
+
+  <note>
+    <title>Ko nozīmē "super user"?</title>
+    <p>Lietotāju ar administratīvajām tiesībām dažkārt sauc par superlietotāju jeb <em>super user</em>. Tas tāpēc, ka šim lietotājam sistēmā ir vairāk tiesību nekā parasti. Iespējams, internetā redzēsiet sarunas par <cmd>su</cmd> un <cmd>sudo</cmd>; tās ir programmas, kas uz laiku piešķir jums "super user" (administratora) tiesības.</p>
+  </note>
+
+<section id="advantages">
+  <title>Kāpēc ir vajadzīgas administratīvas tiesības?</title>
+
+  <p>Ir lietderīgi atļaut veikt būtiskas izmaiņas sistēmā tikai lietotājiem ar aktīvām administratora tiesībām, jo tas palīdz novērst tīšu un netīšu kaitējumu sistēmai.</p>
+
+  <p>Ja jums būtu pastāvīgi aktīvas administratora tiesības, varētu gadīties, ka jūs netīšām izmaināt  svarīgu datni vai palaižat lietotni, kas izmaina kaut ko būtisku. Administratora tiesību iegūšana tikai uz laiku, brīžos, kad jums tās ir vajadzīgas, samazina šādu negadījumu risku.</p>
+
+  <p>Administratora tiesībām ir jābūt pieejamām tikai noteiktiem uzticamiem lietotājiem. Tad citi nevarēs atinstalēt jums vajadzīgās lietotnes, instalēt nevēlamas lietotnes vai izmainīt svarīgas datnes. Tas ir noderīgi no drošības viedokļa.</p>
+
+</section>
+
+</page>

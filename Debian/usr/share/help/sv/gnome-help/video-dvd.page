@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="video-dvd" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="media#videos"/>
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.12.1" date="2014-03-30" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Du kanske inte har rätt kodekar installerade eller så kan dvd:n vara från fel region.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Varför spelas inte dvd-filmer upp?</title>
+
+  <p>Om du matar in en dvd i din dator och den inte spelar kanske du inte har rätt dvd-<em>kodekar</em> installerade, eller så kan dvd:n vara från en annan <em>region</em>.</p>
+
+<section id="codecs">
+  <title>Installera rätt kodekar för dvd-uppspelning</title>
+
+  <p>För att spela dvd:er måste du ha rätt <em>kodekar</em> installerade. En kodek är en bit programvara som låter program läsa ett video- eller ljudformat. Om ditt filmspelarprogram inte hittar rätt kodekar kan det erbjuda att installera dem åt dig. Om inte, måste du installera kodekarna manuellt - fråga om hjälp om hur du gör detta till exempel på din Linux-distributions supportforum.</p>
+
+  <p>Dvd:er är också <em>kopieringsskyddade</em> via ett system som heter CSS. Detta förhindrar dig från att kopiera dvd:er, men det förhindrar också dig från att spela dem om du inte har extra programvara som hanterar kopieringsskyddet. Denna programvara finns tillgänglig från ett antal Linux-distributioner, men kan inte användas legalt i alla länder. Du kan köpa en kommersiell dvd-avkodare som kan hantera kopieringsskyddet från <link href="http://fluendo.com/shop/product/oneplay-dvd-player/">Fluendo</link>. Den fungerar med Linux och bör vara legal att använda i alla länder.</p>
+
+  </section>
+
+<section id="region">
+  <title>Kontrollera dvd-regionen</title>
+
+  <p>Dvd:er har en <em>regionkod</em> som berättar för dig vilken region i världen de får lov att spelas upp i. Om regionen på din dators dvd-spelare inte matchar regionen för dvd:n du försöker spela kommer du inte att kunna spela dvd:n. Om du till exempel har en dvd-spelare från region 1, kommer du bara att kunna spela dvd:er från Nordamerika.</p>
+
+  <p>Det är ofta möjligt att ändra regionen som din dvd-spelare använder, men det kan bara göras ett fåtal gånger innan den låser sig till en region permanent. För att ändra dvd-region på din dators dvd-spelare, använd <link href="http://linvdr.org/projects/regionset/">regionset</link>.</p>
+
+  <p>Du kan hitta <link href="https://en.wikipedia.org/wiki/DVD_region_code">mer information om dvd-regionkoder på Wikipedia</link>.</p>
+
+</section>
+
+</page>

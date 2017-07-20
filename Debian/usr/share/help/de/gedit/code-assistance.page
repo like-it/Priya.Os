@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-code-assistance" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>  
+    <revision version="3.4" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Echtzeit-Fehlerhervorhebung für unterstützte Sprachen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Programmierhilfe</title>
+  
+  <!-- NOTE: This is draft documentation. It is not yet ready for translation. 
+  Thank you! -->
+
+  <p>Das Plugin <app>gedit-code-assistance</app> ermöglicht sofortige Fehlerhervorhebung für C, C++ und Objective-C. Wählen Sie <guiseq><gui style="menu">Bearbeiten</gui><gui style="menuitem">Einstellungen</gui><gui>Plugins</gui><gui>Programmierhilfe</gui></guiseq>, um dieses Plugin zu aktivieren.</p>
+  
+  <!--
+  <section id="code-assistance-features">
+    <title>Code assistance features</title>
+    <list>
+      <item><p>Feature #1</p></item>
+      <item><p>Feature #2</p></item>
+      <item><p>Feature #3</p></item>
+      <item><p>Feature #4</p></item>
+    </list>
+  </section>
+  -->
+  
+<section id="how-gedit-code-assistance-works">
+  <title>So arbeitet das Plugin der Programmierhilfe</title>
+  
+  <p>Das Plugin arbeitet derzeit anhand der Informationen im Makefile und leitet sich so die Regeln zur Clang-Fehlerhervorhebung her. Es untersucht die <code its:translate="no">make</code>-Regeln und bestimmt, welche Ziele von der Datei abhängen, die verarbeitet wird. Das Plugin extrahiert dann die Compiler-Flags durch Simulation einer Ausführung dieser Ziele.</p>
+
+  <p>Natürlich ist das nicht wirklich narrensicher. In zukünftigen Versionen wird es möglich sein, für dieses Plugin die Compiler-Flags manuell anzugeben.</p>
+
+</section>
+
+</page>

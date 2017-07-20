@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-wireless-noconnection" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" version="0.2" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Double-check the password, and other things to try.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>正しいパスワードを入力したのに接続できません</title>
+
+<p>間違いなく正しい<link xref="net-wireless-wepwpa">ワイヤレスパスワード</link>を入力したにも関わらず無線ネットワークに接続できない場合には、次のいずれかを試してみてください。</p>
+
+<list>
+ <item>
+  <p>Double-check that you have the correct password</p>
+  <p>パスワードは大文字と小文字を区別するため、大文字と小文字が間違っていないか確認してください。</p>
+ </item>
+
+ <item>
+  <p>16 進数か ASCII のパスキーを試してみてください</p>
+  <p>入力したパスワードは、パスキーと呼ばれる 16 進数の文字列 (数字の 0 から 9 と文字 a から f) として別の方法で表すこともできます。パスワードにはそれぞれ対応するパスキーがあります。パスワードまたはパスフレーズと同様、パスキーにもアクセスできる場合は、パスキーを入力してみてください。パスワードの入力が求められたら、正しい<gui>無線セキュリティ</gui>オプションを選択していることを確認してください (たとえば、WEP 暗号を使用した接続に 40 文字のパスキーを入力する場合は<gui>WEP 40/128 ビットキー</gui>を選択します)。</p>
+ </item>
+
+ <item>
+  <p>ワイヤレスカードを一度オフにしてからオンにし直します</p>
+  <p>ワイヤレスカードが動作しなくなったり、何らかの問題が生じて接続しなくなる場合があります。カードを一度オフにしてからオンにし直しリセットしてみてください。詳細については <link xref="net-wireless-troubleshooting"/> を参照してください。</p>
+ </item>
+
+ <item>
+  <p>Check that you're using the correct type of wireless security</p>
+  <p>無線セキュリティのパスワード入力が求められたら、使用する無線セキュリティの種類を選択します。ルーターまたは無線基地局で使用している種類を選択してください。これはデフォルトで選択されるべきですが、何らかの理由で選択されないことがあります。ルーターまたは無線基地局で使用している種類が分からない場合は順番に試してみてください。</p>
+ </item>
+
+ <item>
+  <p>使用しているワイヤレスカードに対応しているか確認してください</p>
+  <p>ワイヤレスカードの中には対応していないものもあります。無線接続を表示しても、ドライバーの機能不足によりネットワークに接続できません。代替となるワイヤレスドライバーが入手できないか、または追加の設定を行う必要がないかどうか (別の<em>ファームウェア</em>のインストールなど) を確認してください。詳細については <link xref="net-wireless-troubleshooting"/> を参照してください。</p>
+ </item>
+
+</list>
+
+</page>

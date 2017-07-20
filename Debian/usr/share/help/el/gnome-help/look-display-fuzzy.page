@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="look-display-fuzzy" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="hardware-problems-graphics"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Έργο Τεκμηρίωσης GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Η ανάλυση οθόνης μπορεί να έχει οριστεί λαθεμένα.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Γιατί κάποια πράγματα φαίνονται ασαφή/θολά στην οθόνη μου;</title>
+
+<p>Αυτό μπορεί να συμβεί επειδή η ανάλυση οθόνης που έχετε ορίσει δεν είναι η σωστή για την οθόνη σας.</p>
+
+<p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Οθόνες</gui>. Κάντε κλικ στο <gui>Οθόνες</gui> για να ανοίξετε τον πίνακα. Δοκιμάστε κάποιες από τις επιλογές <gui>ανάλυσης</gui> και ορίστε αυτήν που κάνει την οθόνη να φαίνεται καλύτερα.</p>
+
+<section id="multihead">
+  <title>Όταν συνδέονται πολλές οθόνες</title>
+
+  <p>Εάν έχετε δύο συνδεμένες οθόνες στον υπολογιστή (για παράδειγμα, μια κανονική οθόνη και έναν προβολέα), οι οθόνες μπορεί να έχουν διαφορετικές αναλύσεις. Όμως, η κάρτα γραφικών του υπολογιστή μπορεί να εμφανίσει μόνο την οθόνη με μια ανάλυση τη φορά, έτσι τουλάχιστον μία από τις οθόνες μπορεί να δείχνει ασαφής.</p>
+
+  <p>Μπορείτε να το ορίσετε έτσι ώστε οι δύο οθόνες να έχουν διαφορετικές αναλύσεις, αλλά δεν θα μπορείτε να εμφανίσετε το ίδιο πράγμα και στις δύο οθόνες ταυτόχρονα. Στην πραγματικότητα, θα έχετε δύο ανεξάρτητες οθόνες συνδεμένες ταυτόχρονα. Μπορείτε να μετακινήσετε τα παράθυρα από τη μια οθόνη στην άλλη, αλλά δεν μπορείτε να εμφανίσετε το ίδιο παράθυρο και στις δύο οθόνες ταυτόχρονα.</p>
+
+  <p>Για να ρυθμίσετε τις οθόνες έτσι ώστε να έχουν τη δικιά τους ανάλυση:</p>
+
+  <steps>
+    <item>
+      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Οθόνες</gui>.</p>
+    </item>
+    <item>
+      <p>Κάντε κλικ στο <gui>Οθόνες</gui> για να ανοίξετε τον πίνακα.</p>
+    </item>
+    <item>
+      <p>Οι οθόνες πρέπει να καταχωρίζονται ως <gui>Με κατοπτρισμό</gui>. Επιλέξτε την κύρια οθόνη σας.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε <gui>Πρωτεύον</gui> στη λίστα με τις ρυθμίσεις οθόνης και έπειτα κάντε κλικ στο <gui style="button">Εφαρμογή</gui> για να την αποθηκεύσετε.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε κάθε οθόνη με τη σειρά της από το γκρίζο πλαίσιο στην κορυφή του παραθύρου <gui>Οθόνες</gui>. Αλλάξτε την <gui>Ανάλυση</gui> μέχρι να φαίνεται σωστή.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

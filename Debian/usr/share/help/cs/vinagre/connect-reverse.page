@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect-reverse" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <link type="seealso" xref="connect"/>
+    <title type="sort">3</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Připojte se k počítačům mimo svou místní síť: obejděte omezení firewallu na vzdáleném počítači.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title><gui>Zpětná připojení…</gui></title>
+
+  <p>Zpětné připojení se obvykle využívá k obejití omezení otevírání portů na firewallu. Firewall většinou blokuje otevření portů, ale ne už tak odchozí provoz. Při běžném připojení se klient spojí se serverem přes otevřený port, kdežto při zpětné připojení otevře port klient a připojí se k němu server.</p>
+
+  <section id="enable-reverse-connections">
+    <title>Povolení zpětného připojení</title>
+
+    <steps>
+      <item>
+        <p>Vyberte <guiseq><gui style="menu">Vzdálené</gui> <gui style="menuitem">Zpětná připojení…</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Zaškrtněte <gui>Povolit zpětná připojení</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="accessing-behind-firewall">
+    <title>Přístup k počítači za firewallem</title>
+
+    <p>Vzdálený počítač potřebuje k připojení znát <em>IP adresu</em> vašeho počítače a číslo portu. Obojí naleznete v dialogovém okně <gui>Zpětná připojení…</gui> pod položkou <gui>Připojení</gui>.</p>
+
+    <note>
+      <p><app>Vino</app>, což je VNC server GNOME, v současnosti nepodporuje zpětná připojení (známá také jako „režim naslouchání“). Některé jiné aplikace, jako <app>UltraVNC</app>, <app>RealVNC</app> a <app>TightVNC</app>, podporu pro zpětná připojení mají.</p>
+    </note>
+
+    <p>Jakmile se vzdálený počítač připojí k vašemu počítači, <app>Prohlížeč vzdálené plochy</app> ustaví zpětné připojení.</p>
+
+    <p>Když se připojujete k počítači, který není ve vaší místní síti, budete muset vzdálenému serveru poskytnou svoji veřejně viditelnou IP adresu a číslo portu.</p>
+
+  </section>
+
+</page>

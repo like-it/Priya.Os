@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="mr">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">वेबला चाळा</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">A tutorial on browsing the web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande</mal:name>
+      <mal:email>djaniketster@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>वेबला चाळा</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p><gui>ॲप्लिकेशन्स</gui> मेनूवर क्लिक करा जे स्क्रीनच्या सगळ्यात वर डाव्या हाताच्या कोपऱ्यावर आहे.</p></item>
+      <item><p>मेनूमधून, <guiseq><gui>Internet</gui><gui>Firefox</gui> </guiseq> निवडा.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p><gui>कार्य सारांश</gui> दाखवण्यासाठी तुमचा माऊस प्वाइन्टर <gui>कृती</gui> येथे हलवा जे स्क्रीनच्या सगळ्यात वर डाव्या हाताच्या कोपऱ्यावर आहे.</p></item>
+      <item><p>स्क्रीनच्या डाव्या हाताच्या पट्टीवरून <app>Firefox</app> ब्राउझर चिन्ह निवडा.</p></item>
+    </steps>
+
+    <note><p>पर्यायी, तुम्ही <gui>कार्य सारांश</gui>मध्ये <em>Firefox</em> <link xref="gs-use-system-search">टाइप करून</link> ब्राउझर लाँच करू शकता.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p><gui>कार्य सारांश</gui> दाखवण्यासाठी तुमचा माऊस प्वाइन्टर <gui>कृती</gui> येथे हलवा जे स्क्रीनच्या सगळ्यात वर डाव्या हाताच्या कोपऱ्यावर आहे.</p></item>
+      <item><p>स्क्रीनच्या डाव्या हाताच्या पट्टीवरून <app>वेब</app> ब्राउझर चिन्ह निवडा.</p></item>
+    </steps>
+
+    <note><p>पर्यायी, तुम्ही <gui>कार्य सारांश</gui>मध्ये <em>वेब</em> <link xref="gs-use-system-search">टाइप करून</link> ब्राउझर लाँच करू शकता.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>ब्राउझर पटलाच्या सगळ्यात वरच्या पत्ता पट्टीवर क्लिक करा आणि इच्छित वेबसाईट टाइप करारायला सुरुवात करा.</p></item>
+      <item><p>वेबसाईट लिहिणं सुरु केल्यावर ब्राउझर इतिहासतात आणि वाचनखुणांमध्ये ते शोधलं जातं, त्यामुळे तुम्हाला पूर्ण पत्ता माहिती असणं गरजेचे नाही.</p>
+        <p>जर वेबसाईट ब्राउझर इतिहासतात आणि वाचनखुणांमध्ये सापडली तर पत्ता पट्टीच्या खाली यादी दाखवली जाईल.</p></item>
+      <item><p>खाली पडणाऱ्या यादीतून, तुम्ही ॲरो की द्वारा वेबसाईट लवकर निवडू शकता.</p>
+      </item>
+      <item><p>तुम्ही वेबसाईट निवडल्यावर,भेट द्यायला <key>Enter</key> दाबा.</p>
+      </item>
+    </steps>
+
+</page>

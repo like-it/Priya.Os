@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="moves" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#play"/>
+
+    <revision pkgversion="3.8" version="0.1" date="2013-05-21" status="draft"/>
+    <revision pkgversion="3.14" date="2015-01-25" status="review"/>
+
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email>safincrazy@gmail.com</email>
+    </credit>
+
+    <desc>¿Cómo moverse en <app>Robots</app>?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>diferentes movimientos en <app>Robots</app></title>
+
+  <p>En <app>Robots</app>, puede moverse en 8 direcciones, esperar a los robots o teletransportarse. Los robots enemigos y el personaje principal se turnan para mover. Por lo tanto, después de cada uno de sus movimientos, los robots enemigos intentarán acercarse al usuario.</p>
+
+<section id="basic">
+  <title>Movimientos básicos</title>
+
+  <p>En su turno, puede moverse a un cuadrado adyacente. Puede moverse en diagonal.</p>
+
+</section>
+
+<section id="wait">
+ <title>Esperar</title>
+
+ <p>Puede quedarse quieto y esperar a que los robots terminen de hacer sus movimientos. Esto no es recomendable, a menos que haya muy pocos robots y esté absolutamente seguro de que todos morirán antes de alcanzarle.</p>
+
+</section>
+
+<section id="teleport">
+  <title>Teletransportarse a una ubicación diferente</title>
+
+  <p>Si ya no hay más movimientos posibles o si quiere hacer un salto a lo largo del tablero en lugar de moverse cuadrado a cuadrado, puede teletransportarse. Hay dos tipos de teletransportes disponibles.</p>
+
+  <terms>
+    <item>
+    <title>Teletransportes seguros</title>
+      <p>Los teletransportes seguros mueven al personaje principal a una ubicación segura respecto de los robots enemigos. En cada partida sólo se permite un número determinado de teletransportes.</p>
+    </item>
+    <item>
+    <title>Teletransportes aleatorios</title>
+      <p>Use los teletransportes aleatorios para teletransportarse a un lugar aleatorio, que puede ser seguro o no. Puede usar tantos teletransportes aleatorios como quiera durante la partida.</p>
+    </item>
+  </terms>
+
+</section>
+
+</page>

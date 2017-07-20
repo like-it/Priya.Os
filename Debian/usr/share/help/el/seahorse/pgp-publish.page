@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-publish" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-06-18" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Δημοσιεύστε τα δημόσια κλειδιά σας σε διακομιστές κλειδιών, ή <link xref="pgp-export">εξάγετε</link> και στείλτε τα στους φίλους σας.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα του GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Μοιραστείτε τα δημόσια κλειδιά σας</title>
+
+  <p>Αν θέλετε τα άτομα να σας στέλνουν με κρυπτογραφημένη επικοινωνία, πρέπει να μοιραστείτε το <gui>κλειδί GnuPG</gui> μαζί τους. Για να μοιραστείτε το κλειδί σας με λίγα επιλεγμένα άτομα, <link xref="pgp-export">εξάγετέ το</link> και στείλτε το τελικό αρχείο κλειδιών σε αυτούς. Για να επιτρέψετε σε οποιονδήποτε να <link xref="pgp-retrieve-remote">ανακτήσει</link> και να χρησιμοποιήσει το δημόσιο κλειδί σας, δημοσιεύστε το σε έναν διακομιστή κλειδιών.</p>
+
+  <steps>
+    <title>Πώς δημοσιεύω το κλειδί μου σε ένα διακομιστή κλειδιών;</title>
+    <item>
+      <p>Επιλέξτε <gui>κλειδιά GnuPG</gui> από το αριστερό πλευρικό παράθυρο.</p>
+    </item>
+    <item>
+      <p>Από τον κατάλογο, επιλέξτε το <gui>Προσωπικό κλειδί PGP</gui> που θέλετε να δημοσιεύσετε.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε <guiseq><gui style="menu">Απομακρυσμένο</gui> <gui style="menuitem">Συγχρονισμός και δημοσίευση κλειδιών…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Πατήστε το πλήκτρο <gui style="button">Διακομιστές κλειδιών</gui> για να δείτε τον κατάλογο των διακομιστών κλειδιών στους οποίους μπορείτε να δημοσιεύσετε το δημόσιο κλειδί σας.</p>
+    </item>
+    <item>
+      <p>Για να δημοσιεύσετε το κλειδί σας σε ένα διακομιστή κλειδιών, επιλέξτε τον διακομιστή κλειδιών από το μενού <gui>Δημοσίευση κλειδιών σε</gui>.</p>
+    </item>
+    <item>
+      <p>Πατήστε <gui style="button">Κλείσιμο</gui> για να επιστρέψετε στον προηγούμενο διάλογο.</p>
+    </item>
+    <item>
+      <p>Πατήστε <gui style="button">Συγχρονισμός</gui> για να τελειώσετε.</p>
+    </item>
+   <!-- <item>
+      <p>Tick the
+      <gui style="checkbox">Automatically retrieve keys from key servers</gui>
+      checkbox to retrieve any key that is published on the server you have
+      selected in the previous step. You can also tick the
+      <gui style="checkbox">Automatically sync modified keys with key servers</gui>
+      checkbox to ensure that any modifications to a key on the key server,
+      like a signature, are updated on your copy of the key too.</p>
+      Not sure about this - Aruna 18/08/2013
+    </item>-->
+  </steps>
+
+  <note style="important">
+    <p>Χρειάζεται να συνδεθείτε με το διαδίκτυο, ενώ δημοσιεύετε τα κλειδιά σας.</p>
+  </note>
+
+  <note style="info">
+    <title>Τι είναι ένας διακομιστής κλειδιών;</title>
+    <p>Οι διακομιστές κλειδιών είναι υπολογιστές που αποθηκεύουν αντίγραφα δημόσιων κλειδιών κρυπτογράφησης που υποβλήθηκαν σε αυτούς και μοιράζουν αυτά τα αντίγραφα με άλλους διακομιστές κλειδιών μέσα από το διαδίκτυο.</p>
+  </note>
+
+</page>

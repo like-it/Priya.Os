@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="te">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>గ్నోమ్ పత్రీకరణ పరియోజన</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>మైకేల్ హిల్</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>మీ హార్డుడిస్కు ఆరోగ్యంగా వుంచుటకు దాని సమస్యలను క్షుణ్ణంగా పరిశీలించండి.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Praveen Illa</mal:name>
+      <mal:email>mail2ipn@gmail.com</mal:email>
+      <mal:years>2011, 2014. </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>కృష్ణబాబు క్రొత్తపల్లి</mal:name>
+      <mal:email>kkrothap@redhat.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>హార్డు డిస్కు సమస్యలను పరిశీలించండి</title>
+
+<section id="disk-status">
+ <title>హార్డుడిస్కు పరిశీలిస్తోంది</title>
+  <p><app>SMART</app> (సెల్ఫ్-మానిటరింగ్, ఎనాలసిస్, మరియు రిపోర్టింగ్ సాంకేతికత) గా పిలువబడు అంతర-నిర్మిత ఆరోగ్య-పరిశీలన సాధనంను హార్డు డిస్కులు కలిగివున్నాయి, అది శక్తివంతమైన సమస్యలను నిరంతరం పరిశీలించును, ముఖ్యమైన దత్తాంశం కోల్పోకుండా మీకు సహాయపడును.</p>
+
+  <p>SMART స్వయంచాలకంగా నడుస్తున్నప్పటికీ, మీరు మీ డిస్కు యొక్క ఆరోగ్యంను <app>డిస్క్స్</app> అనువర్తనం నడిపి పరిశీలించవచ్చు:</p>
+
+<steps>
+ <title>డిస్క్స్ అనువర్తనం ఉపయోగించి మీ డిస్క్స్ ఆరోగ్యం పరిశీలించుము</title>
+
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to check from the list of storage devices on
+    the left. Information and status of the disk will be shown.</p>
+  </item>
+  <item>
+    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
+    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+  </item>
+  <item>
+    <p>See more information under <gui>SMART Attributes</gui>, or click the
+    <gui style="button">Start Self-test</gui> button to run a self-test.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>డిస్కు ఆరోగ్యంగా లేకపోతే ఏంటి?</title>
+
+  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
+  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
+  to be prepared with a <link xref="backup-why">backup</link> to prevent data
+  loss.</p>
+
+  <p>స్థితి అనేది "Pre-fail" అనివుంటే, డిస్కు ప్రస్తుతం ఆరోగ్యంగానే వుంది అయితే పాతబడిన ఆనవాళ్ళు గుర్తించబడెను బహుశా సమీప భవిష్యత్తులో విఫలం కావచ్చునని అర్ధం. మీ హార్డు డిస్కు (లేదా కంప్యూటర్) కొద్ది సంవత్సరాలు పాతది అయితే, మీరు ఈ సందేశంను కనీసం కొన్ని ఆరోగ్య పరిశీలనలందు చూసివుండవచ్చు. మీరు <link xref="backup-how">మీ ముఖ్యమైన ఫైళ్ళను రోజువారీ బ్యాకప్</link> తీయండి మరియు డిస్కు పరిస్థితిని సమయానుసారం పరిశీలించండి.</p>
+
+  <p>ఒకవేళ అది బాగా పాడైవుంటే, మరింత విశ్లేషణకు లేదా బాగుచేయుటకు మీ కంప్యూటర్/హార్డు డిస్కును మీరు అనుభవజ్ఞుల వద్దకు తీసుకుని వెళ్ళవచ్చు.</p>
+
+</section>
+
+</page>

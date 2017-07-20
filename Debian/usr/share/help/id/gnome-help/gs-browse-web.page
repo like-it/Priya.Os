@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="id">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Jelajah web</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">A tutorial on browsing the web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Jelajah web</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>Klik menu <gui>Aplikasi</gui> di sisi kiri atas layar.</p></item>
+      <item><p>Dari menu, pilih <guiseq><gui>Internet</gui><gui>Firefox</gui> </guiseq>.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>Pindahkan penunjuk tetikus Anda ke pojok <gui>Aktivitas</gui> di kiri atas layar untuk menampilkan <gui>Ringkasan Aktivitas</gui>.</p></item>
+      <item><p>Pilih ikon peramban <app>Firefox</app> dari bilah di kiri layar.</p></item>
+    </steps>
+
+    <note><p>Sebagai alternatif, Anda dapat meluncurkan peramban dengan <link xref="gs-use-system-search">sekedar mengetik</link> <em>Firefox</em> dalam <gui>Ringkasan Aktivitas</gui>.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>Pindahkan penunjuk tetikus Anda ke pojok <gui>Aktivitas</gui> di kiri atas layar untuk menampilkan <gui>Ringkasan Aktivitas</gui>.</p></item>
+      <item><p>Pilih ikon peramban <app>Web</app> dari bilah di kiri layar.</p></item>
+    </steps>
+
+    <note><p>Sebagai alternatif, Anda dapat meluncurkan peramban dengan <link xref="gs-use-system-search">sekedar mengetik</link> <em>web</em> dalam <gui>Ringkasan Aktivitas</gui>.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>Klik pada bilah alamat di bagian atas jendela peramban dan mulailah mengetikkan situs web yang ingin Anda kunjungi.</p></item>
+      <item><p>Mengetikkan suatu situs web memulai pencariannya dalam riwayat peramban dan penanda taut, sehingga Anda tidak perlu mengingat alamat persisnya.</p>
+        <p>Bila situs web tersebut ditemukan dalam riwayat atau penanda taut, suatu daftar drop down ditampilkan di bawah bilah alamat.</p></item>
+      <item><p>Dari daftar drop down, Anda dapat memilih suatu situs web secara cepat memakai tombol panah.</p>
+      </item>
+      <item><p>Setelah Anda memilih suatu situs web, tekan <key>Enter</key> untuk mengunjunginya.</p>
+      </item>
+    </steps>
+
+</page>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="problem" version="1.0 if/1.0" id="bluetooth-problem-connecting" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="bluetooth#problems"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>ஃபில் புல்</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>மைக்கேல் ஹில்</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>அடாப்ட்டர் அணைக்கப்பட்டிருக்கலாம் அல்லது அதற்கான இயக்கிகள் இல்லாதிருக்கலாம் அல்லது Bluetooth முடக்கப்பட்டிருக்கலாம் அல்லது தடுக்கப்பட்டிருக்கலாம்.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>I cannot connect my Bluetooth device</title>
+
+  <p>உங்களால் தொலைபேசி அல்லது தலையணி போன்ற ஒரு Bluetooth சாதனத்தை இணைக்க முடியாமல் போவதற்கு பல காரணங்கள் இருக்கலாம்.</p>
+
+  <terms>
+    <item>
+      <title>இணைப்பு தடுக்கப்பட்டது அல்லது நம்பகமற்றது</title>
+      <p>சில Bluetooth சாதனங்கள் முன்னிருப்பாக இணைப்பை முடக்கிவைக்கும் அல்லது இணைப்புகளை உருவாக்க நீங்கள் சில அமைவுகளை மாற்ற வேண்டி இருக்கலாம். உங்கள் சாதனம் இணைப்புகளை அனுமதிக்கும் வகையில் அமைவு செய்யப்பட்டிருக்கிறதா எனப் பார்த்துக்கொள்ளவும்.</p>
+    </item>
+    <item>
+      <title>Bluetooth வன்பொருள் அடையாளம் காணப்படவில்லை</title>
+      <p>Your Bluetooth adapter or dongle may not have been recognized by the
+      computer. This could be because
+      <link xref="hardware-driver">drivers</link> for the adapter are not
+      installed. Some Bluetooth adapters are not supported on Linux, so you may
+      not be able to get the right drivers for them. In this case, you will
+      probably have to get a different Bluetooth adapter.</p>
+    </item>
+    <item>
+      <title>Adapter is not switched on</title>
+      <if:choose>
+        <if:when test="platform:unity">
+          <p>உங்கள் Bluetooth அடாப்ட்டர் இயக்கப்பட்டுள்ளதா என உறுதிப்படுத்தவும்.<gui>மெனு பட்டியில்</gui> உள்ள Bluetooth சின்னத்தை சொடுக்கி, அது <link xref="bluetooth-turn-on-off">முடக்கப்படவில்லையா</link> எனப் பார்த்துக்கொள்ளவும்.</p>
+        </if:when>
+        <p>Make sure that your Bluetooth adapter is switched on. Open the
+        Bluetooth panel and check that it is not
+        <link xref="bluetooth-turn-on-off">disabled</link>.</p>
+      </if:choose>
+    </item>
+    <item>
+      <title>சாதன Bluetooth இணைப்பு அணைக்கப்பட்டுள்ளது</title>
+      <p>Check that Bluetooth is turned on on the device you are trying to
+      connect to, and that it is <link xref="bluetooth-visibility">discoverable
+      or visible</link>. For example, if you are trying to connect to a phone,
+      make sure that it is not in airplane mode.</p>
+    </item>
+    <item>
+      <title>உங்கள் கணினியில் Bluetooth அடாப்ட்டர் இல்லை</title>
+      <p>பல கணினிகளில் Bluetooth அடாப்ட்டர்கள் இருக்காது. Bluetooth ஐப் பயன்படுத்த வேண்டுமெனில் நீங்கள் ஒரு அடாப்ட்டரை வாங்கிக் கொள்ளலாம்.</p>
+    </item>
+  </terms>
+
+</page>

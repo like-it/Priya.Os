@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-list" xml:lang="sr-Latn">
+
+  <info>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="nautilus-prefs" group="nautilus-list"/>
+
+    <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
+
+    <credit type="author">
+      <name>Fil Bul</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Dejvid King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Odredite koji podaci će biti prikazani u kolonama u pregledu spiskom.</desc>
+  </info>
+
+  <title>Postavke kolona spiska datoteka</title>
+
+  <p>Postoji 11 kolona podataka koje možete da prikažete u pregledu spiskom u programu <gui>Datoteke</gui>. Kliknite <gui>Datoteke</gui> na gornjoj traci, izaberite <gui>Postavke</gui> a zatim jezičak <gui>Kolone spiska</gui> da odaberete koje kolone će biti vidljive.</p>
+
+  <note style="tip">
+    <p>Koristite dugmad <gui>Premesti gore</gui> i <gui>Premesti dole</gui> da odaberete poredak u kome će biti prikazane izabrane kolone. Kliknite <gui>Vrati na osnovno</gui> da poništite izmene i da se vratite na osnovne kolone.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Naziv</gui></title>
+      <p>Naziv fascikli i datoteka.</p>
+      <note style="tip">
+        <p>Kolona <gui>naziva</gui> ne može biti skrivena.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Veličina</gui></title>
+      <p>Veličina fascikle je data kao broj stavki koje se nalaze u fascikli. Veličina datoteke je data u bajtima, kilobajtima (KB), ili megabajtima (MB).</p>
+    </item>
+    <item>
+      <title><gui>Vrsta</gui></title>
+      <p>Prikazuje fasciklu, ili vrstu datoteke kao što je PDF dokument, JPEG slika, MP3 zvuk, i još toga.</p>
+    </item>
+    <item>
+      <title><gui>Izmenjeno</gui></title>
+      <p>Prikazuje datum kada je poslednji put izmenjena datoteka.</p>
+    </item>
+    <item>
+      <title><gui>Vlasnik</gui></title>
+      <p>Ime korisnika koji poseduje fasciklu ili datoteku.</p>
+    </item>
+    <item>
+      <title><gui>Grupa</gui></title>
+      <p>Grupa u čijem je vlasništvu datoteka. Svaki korisnik je obično u sopstvenoj grupi, ali je moguće imati više korisnika u jednoj grupi. Na primer, odeljenje može imati svoju sopstvenu grupu u radnom okruženju.</p>
+    </item>
+    <item>
+      <title><gui>Ovlašćenja</gui></title>
+      <p>Prikazuje ovlašćenja za pristup datoteci. Na primer, <gui>drwxrw-r--</gui></p>
+      <list>
+        <item>
+          <p>Prvi znak je vrsta datoteke. <gui>-</gui> znači obična datoteka, a <gui>d</gui> znači direktorijum (fascikla). U retkim slučajevima, ostali znaci takođe mogu biti prikazani.</p>
+        </item>
+        <item>
+          <p>Sledeća tri znaka <gui>rwx</gui> određuju ovlašćenja za korisnika koji poseduje datoteku.</p>
+        </item>
+        <item>
+          <p>Sledeća tri <gui>rw-</gui> određuju ovlašćenja za sve članove grupe koja poseduje datoteku.</p>
+        </item>
+        <item>
+          <p>Poslednja tri znaka u koloni <gui>r--</gui> određuju ovlašćenja za sve ostale korisnike na sistemu.</p>
+        </item>
+      </list>
+      <p>Svako ovlašćenje ima sledeća značenja:</p>
+      <list>
+        <item>
+          <p><gui>r</gui>: čitljivo, znači da možete otvoriti datoteku ili fasciklu</p>
+        </item>
+        <item>
+          <p><gui>w</gui>: upisivo, znači da možete sačuvati izmene</p>
+        </item>
+        <item>
+          <p><gui>x</gui>: izvršivo, znači da je možete pokrenuti ako je u pitanju datoteka programa ili skripte, ili da možete pristupiti podfasciklama i datotekama ako je to fascikla</p>
+        </item>
+        <item>
+          <p><gui>-</gui>: ovlašćenje nije podešeno</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title><gui>MIME vrsta</gui></title>
+      <p>Prikazuje MIME vrstu stavke.</p>
+    </item>
+    <item>
+      <title><gui>Putanja</gui></title>
+      <p>Putanja do mesta na kome se nalazi datoteka.</p>
+    </item>
+    <item>
+      <title><gui>Izmenjeno — Vreme</gui></title>
+      <p>Prikazuje datum i vreme kada je poslednji put izmenjena datoteka.</p>
+    </item>
+    <item>
+      <title><gui>Pristupljen</gui></title>
+      <p>Prikazuje datum ili vreme kada je poslednji put izmenjena datoteka.</p>
+    </item>
+  </terms>
+
+</page>

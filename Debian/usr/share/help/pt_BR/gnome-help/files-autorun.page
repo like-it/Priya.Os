@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-autorun" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="media#photos"/>
+    <link type="guide" xref="media#videos"/>
+    <link type="guide" xref="media#music"/>
+    <link type="guide" xref="files#removable"/>
+
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
+    <revision pkgversion="3.9.92" date="2013-10-04" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <credit type="author">
+      <name>Projeto de documentação do GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Execute automaticamente aplicativos para CDs e DVDs, câmeras, reprodutores de áudio e outros dispositivos e mídias.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <!-- TODO: fix bad UI strings, then update help -->
+  <title>Abrindo aplicativos para dispositivos e discos</title>
+
+  <p>Você pode ter um aplicativo sendo iniciado automaticamente quando você conecta um dispositivo ou insere um disco ou cartão de memória. Por exemplo, você pode querer que seu organizador de fotografias seja iniciado quando você conectar uma câmera digital. É também possível desativar esse recurso, para que nada aconteça quando você plugar alguma coisa ao computador.</p>
+
+  <p>Para decidir que aplicativos deveriam ser executados quando você pluga vários dispositivos:</p>
+
+<steps>
+  <item>
+    <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Detalhes</gui>.</p>
+  </item>
+  <item>
+    <p>Clique em <gui>Detalhes</gui> para abrir o painel.</p>
+  </item>
+  <item>
+    <p>Clique em <gui>Mídia removível</gui>.</p>
+  </item>
+  <item>
+    <p>Localize o tipo de dispositivo ou de mídia desejados, e então escolha um aplicativo ou ação para aquele tipo de mídia. Veja abaixo uma descrição dos diferentes tipos de dispositivos e mídias.</p>
+    <p>Em vez de iniciar um aplicativo, você também pode defini-lo de forma que o dispositivo seja mostrado no gerenciador de arquivos, com a opção <gui>Abrir pasta</gui>. Nessa situação, você será perguntado o que deseja fazer ou nada acontecerá automaticamente.</p>
+  </item>
+  <item>
+    <p>Se você não vir o tipo de dispositivo ou mídia que queira mudar na lista (como discos Blu-ray ou leitores de livro eletrônico), clique em <gui>Outras mídias…</gui> para ver uma lista mais detalhada de dispositivos. Selecione o tipo de dispositivo ou mídia a partir da lista suspensa <gui>Tipo</gui> e o aplicativo ou ação na lista suspensa <gui>Ação</gui>.</p>
+  </item>
+</steps>
+
+  <note style="tip">
+    <p>Se não quiser que um aplicativo seja aberto automaticamente, não importando o que você plugar ao computador, selecione <gui>Nunca perguntar ou iniciar programas ao inserir mídia</gui> ao final da janela <gui>Detalhes</gui>.</p>
+  </note>
+
+<section id="files-types-of-devices">
+  <title>Tipos de mídias e dispositivos</title>
+<terms>
+  <item>
+    <title>Discos de áudio</title>
+    <p>Escolha seu aplicativo de música favorito ou extrator de áudio de CD para manipular CDs de áudio. Se você usa DVDs de áudio (DVD-A), selecione como abri-los em <gui>Outras mídias…</gui>. Se você abrir um disco de áudio no gerenciador de arquivos, as trilhas aparecerão como arquivos WAV, que você pode reproduzir em qualquer aplicativo de reprodução de áudio.</p>
+  </item>
+  <item>
+    <title>Discos de vídeo</title>
+    <p>Escolha seu aplicativo de vídeo favorito para lidar com DVDs de vídeo. Use o botão <gui>Outras mídias…</gui> para definir um aplicativo para Blu-ray, HD DVD, video CD (VCD) e super video CD (SVCD). Se DVDs ou outros discos de vídeo não funcionam corretamente quando você os insere, veja <link xref="video-dvd"/>.</p>
+  </item>
+  <item>
+    <title>Discos vazios</title>
+    <p>Use o botão <gui>Outras mídias…</gui> para selecionar um aplicativo de gravação de disco para CDs, DVDs, discos Blu-ray e HD-DVDs vazios.</p>
+  </item>
+  <item>
+    <title>Câmeras e fotos</title>
+    <p>Use a lista suspensa <gui>Fotos</gui> para escolher o aplicativo de gerenciamento de fotos a ser executado quando você conectar sua câmera digital ao seu computador ou quando você inserir um cartão de memória de uma câmera, como cartões CF, SD, MMC ou MS. Você também pode simplesmente navegar pelas suas fotos usando o gerenciador de arquivos.</p>
+    <p>Em <gui>Outras mídias…</gui>, você pode selecionar um aplicativo para abrir CDs de imagens da Kodak, como aqueles que você pode ter feito em uma loja. Eles são CDs de dados normais com imagens JPEG em uma pasta chamada <file>Imagens</file>.</p>
+  </item>
+  <item>
+    <title>Reprodutores de música</title>
+    <p>Escolha um aplicativo para gerenciar o repertório musical do seu reprodutor de música portátil, ou gerencie os arquivos você mesmo usando o gerenciador de arquivos.</p>
+    </item>
+    <item>
+      <title>Leitores de livros eletrônicos</title>
+      <p>Use o botão <gui>Outras mídias…</gui> para escolher um aplicativo para gerenciar livros no seu leitor de e-books ou gerencie esses arquivos você mesmo usando o gerenciador de arquivos.</p>
+    </item>
+    <item>
+      <title>Software</title>
+      <p>Alguns discos e mídias removíveis contêm programas que supostamente deveriam ser executados automaticamente quando a mídia é inserida. Use a opção <gui>Software</gui> para controlar o que fazer quando uma mídia com um programa de execução automática for inserida. Sempre se pedirá uma confirmação antes de um programa ser executado.</p>
+      <note style="warning">
+        <p>Nunca execute programas contidos em mídias em que você não confia.</p>
+      </note>
+   </item>
+</terms>
+
+</section>
+
+</page>

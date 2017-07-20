@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="game-types" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+    <revision pkgversion="3.8" version="0.1" date="2013-05-21" status="draft"/>
+    <revision pkgversion="3.11.90" date="2014-03-26" status="review"/>
+    <revision pkgversion="3.14" date="2015-01-25" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">safincrazy@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Rachel Dunstan</name>
+      <email its:translate="no">dunstanrc@gmail.com</email>
+    </credit>
+
+    <desc>Cambiar el nivel de dificultad en <app>Robots</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tipo de juego</title>
+
+  <p>Puede jugar a <app>Robots</app> de diferentes maneras, eligiendo un tipo de juego diferente. Esto cambia el nivel de dificultad asociado a <app>Robots</app>.</p>
+
+  <steps>
+    <title>Para cambiar el nivel de dificultad:</title>
+    <item>
+      <p>Seleccione <guiseq> <gui style="menu">Configuración</gui> <gui>Preferencias</gui><gui>Juego</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Elija la opción que quiere en el menú desplegable junto a <gui>Tipo de juego</gui>.</p>
+      <table frame="top bottom" rules="rows">
+      <thead>
+      <tr>
+        <td><p>Tipo de juego</p></td>
+        <td><p><link xref="moves#teleport">Teletransportes</link> seguros iniciales</p>
+        </td>
+        <td><p><link xref="scores#high-low-risk">Robots enemigos de riesgo bajo</link> iniciales</p></td>
+        <td><p><link xref="scores#high-low-risk">Robots enemigos de alto riesgo</link> iniciales</p></td>
+        <td><p>¿Se incrementan los teletransportes seguros en sucesivos niveles?</p></td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><p><gui>pesadilla</gui></p></td>
+        <td><p>2</p></td>
+        <td><p>2</p></td>
+        <td><p>8</p></td>
+        <td><p>Sí</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>robots con teletransportes seguros</gui></p></td>
+        <td><p>0</p></td>
+        <td><p>10</p></td>
+        <td><p>0</p></td>
+        <td><p>Sí, pero sólo si se mata a los robots mientras están <link xref="moves#wait">esperando</link></p></td>
+      </tr>
+      <tr>
+        <td><p><gui>robots2</gui></p></td>
+        <td><p>1</p></td>
+        <td><p>8</p></td>
+        <td><p>2</p></td>
+        <td><p>Sí, pero sólo si se mata a los robots mientras están <link xref="moves#wait">esperando</link></p></td>
+      </tr>
+      <tr>
+        <td><p><gui>robots2 fácil</gui></p></td>
+        <td><p>3</p></td>
+        <td><p>8</p></td>
+        <td><p>2</p></td>
+        <td><p>Sí</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>robots clásicos</gui></p></td>
+        <td><p>0</p></td>
+        <td><p>10</p></td>
+        <td><p>0</p></td>
+        <td><p>No</p></td>
+      </tr>
+      </tbody>
+    </table>
+    </item>
+    <item>
+      <p>Si marca la casilla <gui style="checkbox">Usar movimientos seguros</gui> el juego evitará que se mueva si el movimiento puede hacer que un robot le mate, a menos que la única manera de sobrevivir sea el teletransporte. Si marca la casilla <gui style="checkbox">Usar movimientos superseguros</gui> el juego evitará que haga cualquier movimiento en este caso, por lo que estará obligado a teletransportarse. Esto reduce el nivel de dificultad. Siempre puede desmarcarlas si el juego le resulta demasiado fácil</p>
+    </item>
+  </steps>
+
+</page>

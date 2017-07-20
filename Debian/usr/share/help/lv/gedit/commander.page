@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-commander" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/> 
+    <revision version="3.4" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Use a command-line interface for advanced editing.</desc>
+  </info>
+
+  <title>Commander</title>
+
+  <p>The <app>Commander</app> plugin is a plugin for advanced <app>gedit</app>
+  users that allows you to perform command-line actions on the current file. To
+  enable the commander plugin, select
+  <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferences</gui>
+  <gui>Plugins</gui><gui>Commander</gui></guiseq>.</p>
+
+  <p>Once you have enabled the plugin, activate it by pressing
+  <keyseq><key>Ctrl</key><key>.</key></keyseq>.</p>
+  
+  <note style="tip">
+    <p>Pēdējais taustiņš minētajā taustiņu kombinācijā ir punkts.</p>
+  </note>
+
+  <table frame="all" rules="all">
+    <thead>
+      <tr>
+        <td><p>Action</p></td>
+	<td><p>Keyboard shortcut</p></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><p>Apskatītu pieejamo komandu pārskatu</p></td>
+	<td><p><keyseq><key>Tab</key><key>Tab</key></keyseq></p></td>
+      </tr>
+      <tr>
+        <td><p>Atrastu vārdu pašreizējā datnē</p></td>
+	<td>
+	  <p><key>/</key> <input>foo</input></p>
+          <p>This will find the word <input>foo</input>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Aizvietotu vārdu pašreizējā datnē</p></td>
+	<td>
+	  <p><keyseq><key>/</key><key>/</key></keyseq>
+	  <input>foo bar</input></p>
+          <p>This will replace <input>foo</input> with
+	  <input>bar</input>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Pārvietot kursoru uz datnes rindu ar noteiktu numuru</p></td>
+        <td>
+	  <p>go <input>[line number]</input> <em>or</em> just <key>G</key>
+	  <input>[line number]</input></p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>Pārslēgt grāmatzīmes statusu tekošajai rindai</p></td>
+        <td><p>bookmark <em>or</em> just <key>B</key></p></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <note style="tip">
+    <p>Dažām komandām, piemēram, komandai <app>bookmark</app>, nepieciešams atbilstošais spraudnis. Ja šāds spraudnis nav instalēts vai nav ieslēgts, saņemsiet kļūdas ziņojumu.</p>
+  </note>
+
+</page>

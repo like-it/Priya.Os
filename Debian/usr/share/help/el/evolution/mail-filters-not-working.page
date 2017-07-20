@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters-not-working" xml:lang="el">
+
+  <info>
+    <desc>Διόρθωση προβλημάτων με φίλτρα αλληλογραφίας που δεν ταξινομούν και δεν οργανώνουν την αλληλογραφία όπως αναμένεται.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.9.3" version="0.5" date="2013-06-24" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009-2010</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Τα φίλτρα αλληλογραφίας δεν δουλεύουν</title>
+
+<section id="order">
+<title>Σειρά φίλτρων</title>
+<p>Η σειρά των φίλτρων είναι πολύ σημαντική. Εφαρμόζονται στο αρχικό μήνυμα σε αλληλουχία, όπως σε συνταγή.</p>
+<p>Εάν το πρώτο σας φίλτρο έχει έναν κανόνα <gui>παύσης διεργασίας</gui>, τότε όλα τα μηνύματα που συμφωνούν με αυτό το φίλτρο θα αγνοήσουν όλα τα επόμενα φίλτρα.</p>
+<p>Όταν μετακινείτε ένα μήνυμα σε άλλο φάκελο, η "μετακίνηση" στην πραγματικότητα σημαίνει προσάρτηση ενός αντιγράφου του μηνύματος στον φάκελο προορισμού και σημειώνει το αρχικό μήνυμα για διαγραφή. Έτσι κάθε επόμενος κανόνας φίλτρου θα εφαρμοστεί στο αρχικό μήνυμα που είναι σημειωμένο τώρα για διαγραφή. Συνεπώς η μετακίνηση ενός μηνύματος πρέπει συνήθως να εμφανίζεται τελευταία στην αλληλουχία των κανόνων φίλτρων.</p>
+<p>Για να ελέγξετε τους κανόνες και τη σειρά τους σε υπάρχον φίλτρο, επιθεωρήστε τις ενέργειές του στην ενότητα <gui>έπειτα</gui> με <link xref="mail-filters#editing">επεξεργασία του φίλτρου</link>.</p>
+</section>
+
+<section id="several-clients">
+<title>Χρήση αρκετών πελατών αλληλογραφίας</title>
+<p>Another thing you have to keep in mind is that filters depend on the "new" flag that is set on the server when a particular email message is initially fetched from the server. If you use another email client aside from <app>Evolution</app>, your filters may not work automatically.</p>
+</section>
+
+<section id="filter-log">
+<title>Καταγραφή ενεργειών φίλτρων</title>
+<p>Εάν είναι ακόμα ασαφές γιατί τα φίλτρα δεν δουλεύουν όπως αναμένεται, μπορείτε να ενεργοποιήσετε την καταγραφή ενεργειών φίλτρων.</p>
+<list>
+<item><p>Close <app>Evolution</app>.</p></item>
+<item><p>Άνοιγμα της εφαρμογής του <app>τερματικού</app>.</p></item>
+<item><p>Εκτελέστε την εντολή <cmd>gsettings set org.gnome.evolution.mail filters-log-actions true</cmd></p></item>
+<item><p>Εκτελέστε την εντολή <cmd>gsettings set org.gnome.evolution.mail filters-log-file "/home/myusername/my-filter-log"</cmd> και αντικαταστήστε το <cmd>myusername</cmd> από το όνομα χρήστη. Αυτό θα δημιουργήσει ένα αρχείο κειμένου με όνομα <file>my-filter-log</file> στον προσωπικό σας κατάλογο. Σημειώστε ότι η απόλυτη διαδρομή στο όνομα του αρχείου πρέπει να εισαχθεί· μια σύνταξη όπως <sys>~</sys> ή <sys>$HOME</sys> δεν θα δουλέψει.</p></item><!-- this is explained in https://bugzilla.gnome.org/show_bug.cgi?id=669471 -->
+<item><p>Start <app>Evolution</app>.</p></item>
+<item><p>Προσκόμιση αλληλογραφίας για εφαρμογή φίλτρων.</p></item>
+<item><p>Άνοιγμα του αρχείου <file>my-filter-log</file> με έναν επεξεργαστή κειμένου για να δείτε ποιες ενέργειες φίλτρου έχουν εφαρμοστεί.</p></item>
+</list>
+
+<p>Σημειώστε ότι μπορείτε να απενεργοποιήσετε την καταγραφή φίλτρου ξανά χρησιμοποιώντας την εντολή <cmd>gsettings set org.gnome.evolution.mail filters-log-actions false</cmd></p>
+
+<p>Μπορείτε επίσης να χρησιμοποιήσετε την εφαρμογή <app>dconf-editor</app> για να το κάνετε αυτό.</p>
+</section>
+
+</page>

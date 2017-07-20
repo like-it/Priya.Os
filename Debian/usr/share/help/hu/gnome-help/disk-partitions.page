@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="hu">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>Kötetek és partíciók bemutatása, és a lemezkezelő használata.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>Kötetek és partíciók kezelése</title>
+
+  <p>A <em>kötet</em> szót a tárolóeszközök, például merevlemezek leírására használjuk. Vonatkozhat még az eszközön lévő tárterület egy <em>részére</em> is, mivel a tárterület feldarabolható. A számítógép ezt a tárterületet a fájlrendszeren keresztül teszi elérhetővé, a <em>csatolásnak</em> nevezett folyamat során. A csatolt kötetek lehetnek merevlemezek, USB-meghajtók, DVD-RW lemezek, SD-kártyák és egyéb adathordozók. Ha egy kötet csatolva van, akkor olvashat róla és írhat rá fájlokat.</p>
+
+  <p>A csatolt kötetet gyakran <em>partíciónak</em> is nevezik, noha ezek nem feltétlenül azonosak. A „partíció” egyetlen meghajtó legalább egy <em>fizikai</em> tárolóterületét jelenti. A partíciót csatolása után nevezhetjük kötetnek, mert ekkor válnak elérhetővé a rajta lévő fájlok. A kötetekre a tárolást a „háttérben” végző partíciók és meghajtók megcímkézett, elérhető „kirakataiként” lehet tekinteni.</p>
+
+<section id="manage">
+ <title>Kötetek és partíciók megjelenítése és kezelése a Lemezkezelővel</title>
+
+  <p>A Lemezkezelővel ellenőrizheti és módosíthatja a számítógép tárolóköteteit.</p>
+
+<steps>
+  <item>
+    <p>Nyissa meg a <gui>Tevékenységek</gui> áttekintést, és indítsa el a <app>Lemezek</app> alkalmazást.</p>
+  </item>
+  <item>
+    <p>A tárolóeszközök bal oldali listájában megtalálhatja a merevlemezeket, CD/DVD meghajtókat és egyéb fizikai eszközöket. Kattintson a megvizsgálandó eszközre.</p>
+  </item>
+  <item>
+    <p>A jobb oldali ablaktábla a kijelölt eszközön található kötetek és partíciók felosztását jeleníti meg. Ezen kívül tartalmaz még a kötetek kezelésére használható eszközöket is.</p>
+    <p>Legyen óvatos: ezekkel az eszközökkel lehetséges a lemezen található adatok teljes törlése is.</p>
+  </item>
+</steps>
+
+  <p>A számítógépen valószínűleg van legalább egy <em>elsődleges</em> partíció, és egy <em>csere</em> partíció. A cserepartíciót az operációs rendszere használja a memóriakezelésre, és ritkán van csatolva. Az elsődleges partíció tartalmazza az operációs rendszerét, alkalmazásait, beállításait és személyes fájljait. Ezek a fájlok biztonsági vagy kényelmi okokból több partíció között is eloszthatók.</p>
+
+  <p>Egy elsődleges partíciónak olyan információkat kell tartalmaznia, amelyeket a számítógép az elinduláshoz vagy <em>bootoláshoz</em> használ. Emiatt ezt a partíciót indítópartíciónak, boot kötetnek is nevezik. A kötet indíthatóságának meghatározásához jelölje ki a partíciót, és kattintson a menü gombra a partíciólista alatti eszköztáron. Ezután válassza a <gui>Partíció szerkesztése…</gui> menüpontot, és keresse meg a <gui>Jelzőket</gui>. A külső adathordozók, például USB-meghajtók vagy CD-k is tartalmazhatnak indítható kötetet.</p>
+
+</section>
+
+</page>

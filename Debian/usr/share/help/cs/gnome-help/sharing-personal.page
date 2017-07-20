@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-personal" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.1" date="2013-09-23" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak umožnit ostatním lidem dostat se k souborům v mojí složce <file>Veřejné</file>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Sdílení vašich osobních souborů</title>
+
+  <p>Můžete umožnit přístup z jiných počítačů v síti k složce <file>Veřejné</file> ve vaší <file>Domovské</file> složce. Nastavte <gui>Sdílení osobních souborů</gui>, abyste ostatním umožnili přístup k obsahu této složky.</p>
+
+  <note style="info package">
+    <p>Aby bylo <app>Sdílení multimédií</app> vidět, musíte mít nainstalovaný balíček <gui>gnome-user-share</gui>.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:gnome-user-share" style="button">Nainstalovat gnome-user-share</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Sdílení</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknutím na <gui>Sdílení</gui> otevřete příslušný panel.</p>
+    </item>
+    <item>
+      <p>Pokud je vypínač <gui>Sdílení</gui> v poloze <gui>○</gui> (vypnuto), přepněte jej na <gui>❙</gui> (zapnuto).</p>
+
+      <note style="info"><p>Text pod popiskem <gui>Název počítače</gui> je možné upravit a <link xref="sharing-displayname">změnit</link> tak název svého počítače, kterým se prezentuje v síti.</p></note>
+    </item>
+    <item>
+      <p>Vyberte <gui>Sdílení osobních souborů</gui>.</p>
+    </item>
+    <item>
+      <p>Přepněte vypínač <gui>Sdílení osobních souborů</gui> na <gui>❙</gui> (zapnuto). Znamená to, že ostatní lidé ve vaší aktuální síti se budou moci připojit k vašemu počítači a přistupovat k souborům ve složce <file>Veřejné</file>.</p>
+      <note style="info">
+        <p>Zobrazená adresa <em>URI</em> je tak, přes kterou se mohou ostatní v síti dostat k vaší složce <file>Veřejné</file> na vašem počítači.</p>
+      </note>
+    </item>
+  </steps>
+
+  <section id="security">
+  <title>Zabezpeční</title>
+
+  <terms>
+    <item>
+      <title>Vyžadovat heslo</title>
+      <p>Aby bylo po ostatních lidech požadováno použití hesla při přístupu k vaší složce <file>Veřejné</file>, přepněte <gui>Vyžadovat heslo</gui> na <gui>❙</gui> (zapnuto). Když tuto volbu nepoužijete, bude si moci vaši složku <file>Veřejné</file> zobrazit kdokoliv.</p>
+      <note style="tip">
+        <p>Tato volba je ve výchozím stavu vypnutá, ale měli byste ji zapnout a nastavit bezpečné heslo.</p>
+      </note>
+    </item>
+  </terms>
+  </section>
+
+  <section id="networks">
+  <title>Sítě</title>
+
+  <p>V části <gui>Sítě</gui> jsou uvedeny sítě, ke kterým jste právě připojeni. Použijte vypínač vedle jednotlivých sítí k volbě, kde mohou být vaše osobní soubory sdíleny.</p>
+
+  </section>
+
+</page>

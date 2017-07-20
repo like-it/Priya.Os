@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-composer-change-quotation-string" xml:lang="es">
+
+  <info>
+    <desc>No es posible cambiar la cita introducida al responder un correo.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-composer-reply"/>
+    <link type="seealso" xref="mail-composer-forward"/>
+
+    <revision pkgversion="3.13.90" version="0.5" date="2015-03-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Cambiar la cadena «El fecha, persona escribió:» al responder</title>
+
+<p>Los usuarios avanzados puede cambiar esta cadena.</p>
+
+<list>
+<item><p>Abra la aplicación <app>dconf-editor</app>.</p></item>
+<item><p>Vaya a <code>org.gnome.evolution.mail</code>.</p></item>
+<item><p>Introduzca la cadena de citado preferida como el valor de la clave <gui>composer-message-attribution</gui>.</p></item>
+</list>
+
+<!-- Translators: Do NOT translate the variable names inside the brackets! -->
+<p>La cadena predeterminada en español es: <code>«El ${AbbrevWeekdayName}, ${Day}/${Month}/${Year} a las ${24Hour}:${Minute} ${TimeZone}, ${Sender} escribió:»</code></p>
+
+<p>Están disponibles los siguientes marcadores de posición:</p>
+<list>
+<item><p><code its:translate="no">{Sender}</code></p></item>
+<item><p><code its:translate="no">{SenderName}</code></p></item>
+<item><p><code its:translate="no">{SenderEMail}</code></p></item>
+<item><p><code its:translate="no">{AbbrevWeekdayName}</code></p></item>
+<item><p><code its:translate="no">{WeekdayName}</code></p></item>
+<item><p><code its:translate="no">{AbbrevMonthName}</code></p></item>
+<item><p><code its:translate="no">{MonthName}</code></p></item>
+<item><p><code its:translate="no">{Day}</code> (formato: 01-31)</p></item>
+<item><p><code its:translate="no">{ Day}</code> (formato: 1-31)</p></item>
+<item><p><code its:translate="no">{24Hour}</code></p></item>
+<item><p><code its:translate="no">{12Hour}</code></p></item>
+<item><p><code its:translate="no">{AmPmUpper}</code></p></item>
+<item><p><code its:translate="no">{AmPmLower}</code></p></item>
+<item><p><code its:translate="no">{DayOfYear}</code> (formato: 1-366)</p></item>
+<item><p><code its:translate="no">{Month}</code> (formato: 01-12)</p></item>
+<item><p><code its:translate="no">{Minute}</code></p></item>
+<item><p><code its:translate="no">{Seconds}</code></p></item>
+<item><p><code its:translate="no">{2DigitYear}</code> (ej. 15 para el año 2015)</p></item>
+<item><p><code its:translate="no">{Year}</code></p></item>
+<item><p><code its:translate="no">{TimeZone}</code></p></item>
+</list>
+
+<note style="info package">
+  <p>Es posible que necesite instalar el paquete <sys>dconf-editor</sys> para realizar estos pasos.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:dconf-editor" href="http://ftp.gnome.org/pub/gnome/sources/dconf/" style="button">Instalar dconf-editor</link></p>
+    </if:when>
+  </if:choose>
+</note>
+
+</page>

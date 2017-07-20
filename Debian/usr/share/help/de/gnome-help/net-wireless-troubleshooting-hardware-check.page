@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="de">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Mitwirkende im Dokumentations-Wiki von Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Obwohl Ihr Funknetzwerkadapter angeschlossen ist, könnte er durch den Rechner nicht korrekt erkannt worden sein.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Problemlösungen für Funknetzwerkverbindungen</title>
+  <subtitle>Überprüfen, ob der Funknetzwerkadapter erkannt worden ist</subtitle>
+
+  <p>Obwohl Ihr Funknetzwerkadapter angeschlossen ist, könnte er durch den Rechner nicht korrekt als Netzwerkgerät erkannt worden sein. In diesem Schritt überprüfen Sie, ob das Gerät sauber erkannt worden ist.</p>
+
+  <steps>
+    <item>
+      <p>Öffnen Sie ein Terminalfenster, geben Sie <cmd>lshw -C network</cmd> ein und drücken Sie die <key>Eingabetaste</key>. Falls Sie eine Fehlermeldung erhalten, müssen Sie das Programm <app>lshw</app> auf Ihrem Rechner installieren.</p>
+    </item>
+    <item>
+      <p>Suchen Sie in den angezeigten Informationen nach dem Abschnitt <em>Wireless interface</em>. Falls Ihr Funknetzwerkadapter korrekt erkannt worden ist, sollten Sie etwa Folgendes sehen (aber nicht exakt das Gleiche):</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>Wenn ein Funknetzwerkgerät aufgelistet ist, gehen Sie weiter zum <link xref="net-wireless-troubleshooting-device-drivers">Abschnitt mit den Gerätetreibern</link>.</p>
+      <p>Wenn <em>kein</em> Funknetzwerkgerät aufgelistet ist, hängen die nächsten Schritte vom verwendeten Gerätetyp ab. Gehen Sie nach dem Abschnitt weiter unten vor, der für den Funknetzwerkadaptertyp Ihres Rechners relevant ist (<link xref="#pci">interner PCI-</link>, <link xref="#usb">USB-</link> oder <link xref="#pcmcia">PCMCIA-</link>Anschluss).</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>(Interner) PCI-Funknetzwerkadapter</title>
+
+  <p>Interne PCI-Adapter sind am häufigsten anzutreffen und finden sich in den meisten Laptops, die in den letzten Jahren hergestellt wurden. So überprüfen Sie, ob Ihr PCI-Funknetzwerkadapter erkannt wurde:</p>
+
+  <steps>
+    <item>
+      <p>Öffnen Sie ein Terminal, geben Sie <cmd>lspci</cmd> ein und drücken Sie die <key>Eingabetaste</key>.</p>
+    </item>
+    <item>
+      <p>Durchsuchen Sie die Geräteliste, die angezeigt wird, nach Geräten, die als <code>Network controller</code> oder <code>Ethernet controller</code> bezeichnet werden. Mehrere Geräte können so benannt sein; der Eintrag, der Ihrem Funknetzwerkadapter zuzuordnen ist, enthält wahrscheinlich Wörter wie <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> oder <code>802.11</code>. Ein Beispiel, wie der Eintrag aussehen könnte, ist:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Wenn Sie Ihren Funknetzwerkadapter in der Liste gefunden haben, gehen Sie weiter zum Abschnitt über <link xref="net-wireless-troubleshooting-device-drivers">Gerätetreiber</link>. Wenn Sie nichts gefunden haben, das auf Ihren Funknetzwerkadapter hinweist, folgen Sie den <link xref="#not-recognized">Anleitungen weiter unten</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>USB-Funknetzwerkadapter</title>
+
+  <p>Funknetzwerkadapter, die am USB-Anschluss Ihres Rechners eingesteckt werden, kommen nicht so häufig vor. Sie können entweder direkt beim USB-Anschluss eingesteckt oder über ein USB-Kabel verbunden werden. Adapter für mobile UMTS-Breitbandnetze sehen Funknetzwerk-, also WLAN-Adaptern ziemlich ähnlich, so dass man glauben könnte, es handelt sich um einen WLAN-Adapter. Überprüfen Sie genau, ob es sich nicht um einen 3G-Adapter handelt. So stellen Sie fest, ob Ihr USB-Funknetzwerkadapter erkannt wurde:</p>
+
+  <steps>
+    <item>
+      <p>Öffnen Sie ein Terminal, geben Sie <cmd>lsusb</cmd> ein und drücken Sie die <key>Eingabetaste</key>.</p>
+    </item>
+    <item>
+      <p>Durchsuchen Sie die Geräteliste, die angezeigt wird, nach Geräten, die etwas mit Funknetzwerken oder Netzwerken zu tun haben könnten. Der Eintrag, der Ihrem Funknetzwerkadapter zuzuordnen ist, enthält wahrscheinlich Wörter wie <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> oder <code>802.11</code>. Ein Beispiel, wie der Eintrag aussehen könnte, ist:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>Wenn Sie Ihren Funknetzwerkadapter in der Liste gefunden haben, gehen Sie weiter zum Abschnitt über <link xref="net-wireless-troubleshooting-device-drivers">Gerätetreiber</link>. Wenn Sie nichts gefunden haben, das auf Ihren Funknetzwerkadapter hinweist, folgen Sie den <link xref="#not-recognized">Anleitungen weiter unten</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Prüfen des PCMCIA-Geräts</title>
+
+  <p>PCMCIA-Funknetzwerkadapter sind typischerweise rechteckige Karten, die an der Seite Ihres Laptops eingeschoben werden. Sie sind häufig in älteren Rechnern zu finden. So überprüfen Sie, ob Ihr PCMCIA-Adapter erkannt worden ist:</p>
+
+  <steps>
+    <item>
+      <p>Starten Sie Ihren Rechner, <em>ohne</em> dass der Funknetzwerkadapter eingesteckt ist.</p>
+    </item>
+    <item>
+      <p>Öffnen Sie ein Terminal, geben Sie Folgendes ein und drücken Sie die <key>Eingabetaste</key>:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>Dadurch wird eine Liste von Benachrichtigungen angezeigt, die die Hardware Ihres Rechners betreffen; die Liste wird automatisch aktualisiert, sobald sich etwas, das Ihre Hardware betrifft, ändert.</p>
+    </item>
+    <item>
+      <p>Stecken Sie Ihren Funknetzwerkadapter in den PCMCIA-Steckplatz und sehen Sie nach, was sich im Terminalfenster ändert. Die Änderungen sollten auch Informationen über Ihren Funknetzwerkadapter beinhalten. Durchsuchen Sie sie und versuchen Sie, ihn zu identifizieren.</p>
+    </item>
+    <item>
+      <p>Um die Ausführung des im Terminal laufenden Befehls abzubrechen, drücken Sie <keyseq><key>Strg</key><key>C</key></keyseq>. Nachdem Sie dies getan haben, können Sie das Terminal schließen.</p>
+    </item>
+    <item>
+      <p>Wenn Sie Informationen über Ihren Funknetzwerkadapter gefunden haben, gehen Sie zum Abschnitt über <link xref="net-wireless-troubleshooting-device-drivers">Gerätetreiber</link>. Wenn Sie nichts gefunden haben, das auf Ihren Funknetzwerkadapter hinweist, folgen Sie den <link xref="#not-recognized">Anleitungen weiter unten</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>Funknetzwerkadapter wurde nicht erkannt</title>
+
+  <p>Wenn Ihr Funknetzwerkadapter nicht erkannt worden ist, funktioniert er möglicherweise nicht richtig oder die erforderlichen Treiber sind nicht installiert. Wie Sie überprüfen können, ob Treiber verfügbar sind, die Sie installieren können, hängt von Ihrer Linux-Distribution ab (zum Beispiel Ubuntu, Arch, Fedora oder openSuSE).</p>
+
+  <p>Suchen Sie auf der Website Ihrer Distribution nach den Support-Möglichkeiten, um entsprechende Hilfe zu erhalten. Das könnten zum Beispiel Mailinglisten und Chats sein, wo Sie eine Frage zu Ihrem Funknetzwerkadapter stellen können.</p>
+
+</section>
+
+</page>

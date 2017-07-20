@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="ja">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu ドキュメンテーション Wiki の貢献者</name>
+    </credit>
+    <credit type="author">
+      <name>GNOME ドキュメンテーションプロジェクト</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>ワイヤレスアダプターが接続されていてもコンピューターで正しく認識されていない場合があります。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>無線接続のトラブルシューター</title>
+  <subtitle>ワイヤレスアダプターが認識されたか確認します</subtitle>
+
+  <p>ワイヤレスアダプターがコンピューターに接続されていても、ネットワークデバイスとしてコンピューターで認識されていない場合があります。このステップでは、デバイスが正常に認識されたかどうかを確認します。</p>
+
+  <steps>
+    <item>
+      <p>端末ウィンドウを開き、<cmd>lshw -C network</cmd> と入力して <key>Enter</key> を押します。エラーメッセージが出力される場合は <app>lshw</app> プログラムのインストールが必要である可能性があります。</p>
+    </item>
+    <item>
+      <p>表示される詳細を確認して、<em>無線インターフェース</em>のセクションを見つけます。ワイヤレスアダプターが正しく検出されていた場合には、次のような出力があるはずです (出力は若干異なる場合があります)。</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>無線デバイスが表示されている場合は、<link xref="net-wireless-troubleshooting-device-drivers">デバイスドライバーのステップ</link>に進みます。</p>
+      <p>無線デバイスが表示されない場合、次に行うべき手順は使用しているデバイスの種類によって異なってきます。以下で、コンピューターの持つ無線アダプターに関連しているセクションを参照してください (<link xref="#pci">内部 PCI</link>、<link xref="#usb">USB</link>、<link xref="#pcmcia">PCMCIA</link> など)。</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>PCI (内部) ワイヤレスアダプター</title>
+
+  <p>もっとも一般的なのが内部 PCI アダプターです。ここ数年内に生産されたラップトップのほとんどに搭載されています。PCI ワイヤレスアダプターが認識されたか確認する場合は次を行います。</p>
+
+  <steps>
+    <item>
+      <p>端末を開き、<cmd>lspci</cmd> と入力してから <key>Enter</key> を押します。</p>
+    </item>
+    <item>
+      <p>表示されるデバイス一覧で、<code>ネットワークコントローラー</code>または <code>Ethernet コントローラー</code>の印がついたデバイスを探します。ワイヤレスアダプターに該当するデバイスの場合、<code>wireless</code>、<code>WLAN</code>、<code>wifi</code>、<code>802.11</code> などの単語が含まれている場合があります。出力例を以下に示します。</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>一覧にワイヤレスアダプターがあった場合は、<link xref="net-wireless-troubleshooting-device-drivers">デバイスドライバーのステップ</link>に進んでください。使用しているワイヤレスアダプターに関連しているデバイスがなにも見つからない場合は、<link xref="#not-recognized">以下の手順</link>を参照してください。</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>USB ワイヤレスアダプター</title>
+
+  <p>コンピューターの USB ポートに差し込むワイヤレスアダプターはあまり一般的ではありません。このタイプのアダプターは、USB ポートに直接差し込んだり、USB ケーブルで接続することができます。3G モバイルブロードバンドアダプターはワイヤレス (wifi) アダプターに非常に似ているため、USB ワイヤレスアダプターを持っていると思われる場合には 3G アダプターではないことをよく確認してください。USB ワイヤレスアダプターが認識されたか確認するには次を行います。</p>
+
+  <steps>
+    <item>
+      <p>端末を開き、<cmd>lsusb</cmd> を入力して <key>Enter</key> を押します。</p>
+    </item>
+    <item>
+      <p>表示されるデバイス一覧で、ワイヤレスデバイスまたはネットワークデバイスを指していると思われるものを探します。ワイヤレスアダプターに該当するデバイスの場合、<code>wireless</code>、<code>WLAN</code>、<code>wifi</code>、<code>802.11</code> などの単語が含まれている場合があります。出力例を以下に示します。</p>
+      <code><![CDATA[Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card]]></code>
+    </item>
+    <item>
+      <p>一覧にワイヤレスアダプターがあった場合は、<link xref="net-wireless-troubleshooting-device-drivers">デバイスドライバーのステップ</link>に進んでください。使用しているワイヤレスアダプターに関連しているデバイスがなにも見つからない場合は、<link xref="#not-recognized">以下の手順</link>を参照してください。</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Checking for a PCMCIA device</title>
+
+  <p>PCMCIA ワイヤレスアダプターは一般的には長方形のカードでラップトップの側面にあるスロットに挿入して使用します。比較的、旧式のコンピューターによく見られるタイプになります。PCMCIA アダプターが認識された確認するには次を行います。</p>
+
+  <steps>
+    <item>
+      <p>ワイヤレスアダプターを<em>挿入せずに</em>コンピューターを起動します。</p>
+    </item>
+    <item>
+      <p>端末を開き、次を入力して <key>Enter</key> を押します。</p>
+      <code>tail -f /var/log/messages</code>
+      <p>コンピューターのハードウェアに関するメッセージ一覧が表示され、ハードウェアの変更に関して行うべきことがある場合は自動的に更新が行われます。</p>
+    </item>
+    <item>
+      <p>PCMCIA スロットにワイヤレスアダプターを差し込み、端末ウィンドウに表示される変更を確認します。ワイヤレスアダプターに関する詳細などが表示されるはずです。ワイヤレスアダプターであると確認できる出力があるか表示内容を確認します。</p>
+    </item>
+    <item>
+      <p>端末で実行中のコマンドを停止する場合は、<keyseq><key>Ctrl</key><key>C</key></keyseq> を押します。コマンドを停止させたら端末を閉じても構いません。</p>
+    </item>
+    <item>
+      <p>ワイヤレスアダプターに関する詳細が見つかった場合は、<link xref="net-wireless-troubleshooting-device-drivers">デバイスドライバーのステップ</link>に進んでください。ワイヤレスアダプターに関するものが何も見つからない場合は、<link xref="#not-recognized">以下の手順</link>を参照してください。</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>ワイヤレスアダプターが認識されませんでした</title>
+
+  <p>If your wireless adapter was not recognized, it might not be working
+  properly or the correct drivers may not be installed for it. How you check to
+  see if there are any drivers you can install will depend on which Linux
+  distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
+
+  <p>具体的なヘルプ得るには、使用しているディストリビューションの web サイトでサポートに関するオプションをご覧ください。メーリングリストや web チャットなど、ワイヤレスアダプターに関する質問を問い合わせができる場所なども記載されている可能性があります。</p>
+
+</section>
+
+</page>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-localized-re-subjects" xml:lang="hu">
+
+  <info>
+    <desc>A lefordított „Re:” előtagok miatt hosszú tárgysorok kerülése.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+
+    <revision pkgversion="3.5.90" version="0.1" date="2012-08-16" status="review"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Lokalizált „Re:” kezelése a tárgyban</title>
+
+<p>Hagyományosan az e-mailekre válaszoláskor egy „Re:” előtag kerül hozzáadásra a tárgysorhoz. Egyes e-mail alkalmazások lokalizált kifejezéseket használnak erre, (például „SV:” dánul vagy „AW:” németül, esetleg „Vá:” magyarul). Az <app>Evolution</app> képes felismerni ezeket a kifejezéseket, a tárgysorok egyre hosszabbá válásának elkerüléséhez a beszélgetés során.</p>
+
+<list>
+<item><p>Nyissa meg a <app>Terminál</app> alkalmazást.</p></item>
+<item><p>Futtassa a következő parancsot: <cmd>gsettings set org.gnome.evolution.mail composer-localized-re 'AW,SV'</cmd> (ebben az esetben az „AW:”, „SV:” és „Vá:” kerül felismerésre).</p></item>
+</list>
+<p>Ehhez a <app>dconf-editor</app> alkalmazást is használhatja.</p>
+
+<!-- As per https://bugzilla.gnome.org/show_bug.cgi?id=661087#c6 -->
+
+</page>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+    <link type="guide" xref="net-wired"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>மைக்கேல் ஹில்</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>எக்காட்டெரினா ஜெராசிமோவா</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Set up a VPN connection to a local network over the internet.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+<title>ஒரு VPN க்கு இணைத்தல்</title>
+
+<p>VPN (அல்லது <em>மெய்நிகர் தனிப்பட்ட பிணையம்</em>) என்பது இணையத்தின் மூலமாக அக பிணையத்திற்கு இணைக்கும் ஒரு முறையாகும். நீங்கள் அலுவலக ரீதியாக வெளியே பயணம் சென்றிருக்கும் போது உங்கள் அலுவலக அக பிணையத்திற்கு இணைக்க விரும்பும் சூழ்நிலையை உதாரணமாகக் கூறலாம். அப்போது ஏதேனும் ஒரு இடத்தில் (ஹோட்டல்) இணைய இணைப்பைப் பெற்று அதன் மூலம் உங்கள் அலுவலக VPN க்கு இணைக்கலாம். அப்போது உங்கள் அலுவலக அக பிணைய இணைப்பில் இணைந்தது போன்றே நீங்கள் வேலை செய்ய முடியும், ஆனால் அது ஹோட்டலின் இணைய இணைப்பின் மூலம் செயல்படும். நீங்கள் இணைந்துள்ள அக பிணையத்திற்கு மற்றவர்கள் யாரும் புகுபதிவு செய்யாமல் உள்நுழைவதைத் தடுப்பதற்காக VPN இணைப்புகள் எப்போதும் <em>குறியாக்கம்</em> செய்யப்பட்டிருக்கும்.</p>
+
+<p>பல வகை VPN கள் உள்ளன. நீங்கள் இணைக்கும் VPN வகையைப் பொறுத்து நீங்கள் கூடுதலாக மென்பொருளை நிறுவ வேண்டி இருக்கலாம். VPN க்கு பொறுப்பானவரிடம் இருந்து இணைப்பு விவரங்களைப் பெற்று, நீங்கள் எந்த <em>VPN கிளையன்ட்டை</em> பயன்படுத்த வேண்டும் என்று கண்டறியவும். பிறகு மென்பொருள் நிறுவி பயன்பாட்டுக்குச் சென்று உங்கள் VPN க்கு வேலை செய்யும் <app>NetworkManager</app> தொகுப்பைக் (இருந்தால்) கண்டறிந்து அதை நிறுவவும்.</p>
+
+<note>
+ <p>உங்கள் VPN வகைக்கான ஒரு NetworkManager தொகுப்பு இருந்தால், VPN மென்பொருளை வழங்கும் நிறுவனத்திலிருந்து நீங்கள் ஒரு கிளையன்ட்டை பதிவிறக்கி நிறுவ வேண்டி இருக்கலாம். அதை செயல்பட வைக்க அதற்கான வழிமுறைகளைப் பின்பற்ற வேண்டும்.</p>
+</note>
+
+<p>To set up the VPN connection:</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Network</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>At the bottom of the list on the left, click the <gui>+</gui> button
+      to add a new connection.</p>
+    </item>
+    <item>
+      <p>இடைமுகப் பட்டியலில் <gui>VPN</gui> ஐ தேர்வு செய்யவும்.</p>
+    </item>
+    <item>
+      <p>உங்களிடம் உள்ள VPN இணைப்பு வகையை தேர்வு செய்யவும்.</p>
+    </item>
+    <item>
+      <p>Fill in the VPN connection details, then press <gui>Add</gui> once you
+      are finished.</p>
+    </item>
+    <item>
+      <p>When you have finished setting-up the VPN, open the
+      <gui xref="shell-introduction#yourname">system menu</gui> from the right side of
+      the top bar, click <gui>VPN off</gui> and select <gui>Connect</gui>. You
+      may need to enter a password for the connection before it is established.
+      Once the connection is made, you will see a lock shaped icon in the top
+      bar.</p>
+    </item>
+    <item>
+      <p>Hopefully you will successfully connect to the VPN. If not, you may
+      need to double-check the VPN settings you entered. You can do this from
+      the <gui>Network</gui> panel that you used to create the connection.
+      Select the VPN connection from the list, then press the
+<media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button to review the settings.</p>
+    </item>
+    <item>
+      <p>To disconnect from the VPN, click the system menu on the top bar and
+      click <gui>Turn Off</gui> under the name of your VPN connection.</p>
+    </item>
+  </steps>
+
+</page>

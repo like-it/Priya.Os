@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="misc-key-fingerprint" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="concepts"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>L'empreinte de clé est l'identifiant unique de chaque clé, souvent utilisé pour vérifier le propriétaire de la clé.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Définition de l'empreinte d'une clé</title>
+
+  <p>L'empreinte d'une clé est une suite unique de lettres et de chiffres utilisée pour identifier la clé. Tout comme les empreintes digitales de deux personnes différentes, les empreintes de deux clés différentes ne peuvent jamais être identiques. L'empreinte est la meilleure façon d'identifier une clé particulière.</p>
+
+  <p>Une clé comporte plusieurs caractéristiques comme le nom et l'adresse électronique du propriétaire, le type de clé, la date d'expiration de la clé, etc. Quand vous recherchez une clé publique et que vous en trouvez plusieurs avec les mêmes propriétés, la seule façon d'identifier la clé que vous recherchez est de comparer leurs empreintes.</p>
+
+  <p>C'est l'empreinte d'une clé qui est vérifiée quand vous vous connectez à un ordinateur distant en utilisant <link xref="index#ssh-keys">SSH</link>. Lors de la signature d'une clé <link xref="index#pgp-keys">PGP</link>, vous devez toujours vérifier l'empreinte et l'identité du propriétaire de la clé pour être certain que vous signez la bonne clé.</p>
+
+<section id="fingerprint-ui">
+  <title>Les empreintes dans <app>Mots de passe et clés</app></title>
+
+    <p>Vous pouvez vérifier l'empreinte d'une clé dans <app>Mots de passes et clés</app> en examinant ses propriétés.</p>
+
+    <steps>
+      <title>Vérification de l'empreinte d'une clé :</title>
+        <item>
+	  <p>Sélectionnez <gui>Clés GnuPG</gui> dans le panneau de gauche.</p>
+        </item>
+        <item>
+          <p>Sélectionnez la clé PGP dans la liste.</p>
+        </item>
+        <item>
+          <p>Faites un clic droit sur la clé et sélectionnez <gui style="menuitem">Propriétés</gui>.</p>
+	</item>
+        <item>
+          <p>Dans la nouvelle boîte de dialogue, sélectionnez l'onglet <gui>Détails</gui></p>
+        </item>
+        <item>
+          <p>Vous pouvez voir l'empreinte de la clé sur la gauche.</p>
+        </item>
+    </steps>
+
+  <!-- stefw: Suggest documenting that the key fingerprint is the
+  only way to uniquely tell the difference between two keys.
+
+  Two keys may have the same name and description. The label or name
+  is no guarantee that the key represents the person described in the label.
+
+  The way to guarantee that you have a given key is to compare the
+  fingerprint with the person who owns the key.
+
+  For SSH keys this is done when you initially connect to a server.
+
+  For PGP keys this is usually done through the web of trust. Where someone
+  you know signs a key, and vouches that the key with a given fingerprint
+  is owned by the person noted on the label.
+  -->
+</section>
+
+</page>

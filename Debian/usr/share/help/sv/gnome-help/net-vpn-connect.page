@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+    <link type="guide" xref="net-wired"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Ställ in en VPN-anslutning till ett lokalt nätverk över internet.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Anslut till ett VPN</title>
+
+<p>Ett VPN (eller <em>Virtuellt Privat Nätverk</em>) är ett sätt att ansluta till ett lokalt nätverk över internet. Om du till exempel vill ansluta till ett lokalt nätverk på din arbetsplats medan du är på en affärsresa. Då letar du upp en internetanslutning någonstans (exempelvis på ett hotell) och ansluter sedan till ditt företags VPN. Det ser ut som om du är direktansluten till nätverket på jobb, men den riktiga nätverksanslutningen går genom hotellets internetanslutning. VPN-anslutningar är vanligtvis <em>krypterade</em> för att förhindra personer från att nå det lokala nätverket du ansluter till utan att logga in.</p>
+
+<p>Det finns ett antal olika typer av VPN. Du kan behöva installera extra programvara beroende på vilken typ av VPN du ansluter till. Ta reda på anslutningsdetaljerna från den som är ansvarig för VPN:et och ta reda på vilken <em>VPN-klient</em> du behöver använda. Gå sedan till programmet som installerar programvara och leta efter paket för <app>Nätverkshanteraren</app> som fungerar med ditt VPN (om det finns något) och installera det.</p>
+
+<note>
+ <p>Om det inte finns något paket för Nätverkshanteraren för din typ av VPN måste du troligtvis hämta ner och installera någon klientprogramvara från företaget som erbjuder VPN-programvaran. Du behöver sannolikt följa andra instruktioner för att få det att fungera.</p>
+</note>
+
+<p>För att ställa in VPN-anslutningen:</p>
+
+  <steps>
+    <item>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Nätverk</gui>.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Nätverk</gui> för att öppna panelen.</p>
+    </item>
+    <item>
+      <p>Längst ner i listan till vänster klicka på <gui>+</gui>-knappen för att lägga till en ny anslutning.</p>
+    </item>
+    <item>
+      <p>Välj <gui>VPN</gui> i gränssnittslistan.</p>
+    </item>
+    <item>
+      <p>Välj vilken sorts VPN-anslutning du har.</p>
+    </item>
+    <item>
+      <p>Fyll i detaljerna för VPN-anslutningen, tryck sedan på <gui>Lägg till</gui> när du är klar.</p>
+    </item>
+    <item>
+      <p>När du har ställt in VPN:et, öppna <gui xref="shell-introduction#yourname">systemmenyn</gui> från höger sida i systemraden, klicka på <gui>VPN avslaget</gui> och välj <gui>Anslut</gui>. Du kan behöva skriva in ett lösenord för anslutningen innan den etableras. När anslutningen är gjord kommer du att se en ikon formad som ett lås i systemraden.</p>
+    </item>
+    <item>
+      <p>Förhoppningsvis kommer du att lyckas ansluta till VPN:et. Om inte kan du behöva dubbelkolla VPN-inställningarna du matade in. Du kan göra detta från panelen <gui>Nätverk</gui> som du använde för att skapa anslutningen. Välj VPN-anslutningen från listan och tryck sedan på knappen <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">inställningar</span></media> för att granska inställningarna.</p>
+    </item>
+    <item>
+      <p>För att koppla ifrån ett VPN, klicka på systemmenyn i systemraden och klicka på <gui>Stäng av</gui> under namnet för din VPN-anslutning.</p>
+    </item>
+  </steps>
+
+</page>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="backup-restore" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#data-migration-and-sync"/>
+    <link type="seealso" xref="data-storage"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2014-03-23" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Respaldar y restaurar los datos y la configuración de <app>Evolution</app></desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Respaldar y restaurar</title>
+
+  <p>Puede respaldar sus datos de <app>Evolution</app>. El respaldo guarda sus ajustes, correos, contactos, tareas, notas y calendarios. Se almacenará en formato comprimido gzip, dentro de un archivador tar.</p>
+
+<section id="backup">
+  <title>Respaldos</title>
+
+  <list>
+    <item>
+      <p>Seleccione <guiseq><gui>Archivo</gui><gui>Respaldar datos de Evolution…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Elija un nombre de archivo y la carpeta donde quiere guardar el archivo de respaldo y pulse <gui style="button">Guardar</gui>.</p>
+    </item>
+    <item>
+      <p>Se le pedirá que cierre <app>Evolution</app>. Responda <gui style="button">Sí</gui>.</p>
+    </item>
+  </list>
+
+  <note style="warning">
+    <p>Tenga en cuenta que su configuración de <link xref="mail-spam">filtros de SPAM</link> no se incluyen en el archivo de respaldo, ya que estos ajustes no están controlados por <app>Evolution</app> y porque los desarrolladores de las herramientas de filtrado de SPAM pueden cambiar sus detalles de implementación. Si usa Bogofilter deberá respaldar <file>~/.bogofilter/</file>. Si usa SpamAssassin deberá respaldar <file>~/.spamassassin/</file>.</p>
+  </note>
+
+</section>
+
+<section id="restore">
+  <title>Restaurar</title>
+
+  <list>
+    <item>
+      <p>Seleccione <guiseq><gui>Archivo</gui><gui>Restaurar datos de Evolution…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Seleccione el archivo y pulse <gui style="button">Abrir</gui>.</p>
+    </item>
+    <item>
+      <p>Se le pedirá que cierre <app>Evolution</app>. Responda <gui style="button">Sí</gui>.</p>
+    </item>
+  </list>
+
+  <note style="tip">
+    <p>En el <link xref="intro-first-run">asistente de primera ejecución</link> puede restaurar <app>Evolution</app> desde un archivo de respaldo.</p>
+  </note>
+
+</section>
+
+</page>

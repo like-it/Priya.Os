@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+    <link type="guide" xref="net-wired"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME dokumentācijas projekts</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Iestatiet VPN savienojumu uz privātu tīklu cauri internetam.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Savienoties ar VPN</title>
+
+<p>VPN (no angļu valodas <em>Virtual Private Network</em>, Virtuālais privātais tīkls) ir veids, kā savienoties iekšējā tīklā caur internetu. Piemēram, pieņemsim, ka jūs vēlaties izveidot savienojumu ar jūsu darba vietas iekšējo tīklu, kamēr jūs esat komandējumā. Jūs varētu atrast kaut kur interneta savienojumu (piemēram, kādā viesnīcā) un pēc tam izveidot savienojumu ar jūsu darba vietas VPN. Tas būtu tā pat, it kā jūs būtu tieši pieslēdzies tīklam darbā, bet faktiski tīkla savienojums būtu caur viesnīcas interneta savienojumu. VPN savienojumi parasti ir <em>šifrēti</em>, lai novērstu iespēju, ka cilvēki pieslēdzas jūsu iekšējam tīkla bez pilnvarošanas.</p>
+
+<p>Ir dažādi VPN tipi. Jums varētu būt nepieciešams instalēt kādu papildus programmatūru atkarībā no tā, ar kāda veida VPN jūs savienojaties. Uzziniet savienojuma detaļas no tā, kurš ir atbildīgs par VPN un uzziniet, kāds <em>VPN klients</em> jums ir nepieciešams. Tad dodieties uz programmatūras centra lietotni un meklējiet <app>NetworkManager</app> pakotni, kura darbojas ar jūsu VPN (ja tāda vispār ir) un instalējiet to.</p>
+
+<note>
+ <p>Ja nav NetworkManager pakotnes, kas paredzēta jūsu VPN tipam, jums, iespējams, vajadzēs lejupielādēt un iestatīt kādu klienta programmu no kompānijas, kas nodrošina VPN programmatūru. Jums, iespējams, vajadzēs sekot vairākām dažādām instrukcijām, lai tas strādātu.</p>
+</note>
+
+<p>Lai iestatītu VPN savienojumu:</p>
+
+  <steps>
+    <item>
+      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Tīkls</gui>.</p>
+    </item>
+    <item>
+      <p>Spiediet <gui>Tīkls</gui>, lai atvērtu paneli.</p>
+    </item>
+    <item>
+      <p>At the bottom of the list on the left, click the <gui>+</gui> button
+      to add a new connection.</p>
+    </item>
+    <item>
+      <p>Izvēlieties <gui>VPN</gui> saskarņu sarakstā.</p>
+    </item>
+    <item>
+      <p>Izvēlieties, kāda veida VPN savienojums jums ir.</p>
+    </item>
+    <item>
+      <p>Aizpildiet informāciju par VPN, beigās spiediet <gui>Pievienot</gui>.</p>
+    </item>
+    <item>
+      <p>When you have finished setting-up the VPN, open the
+      <gui xref="shell-introduction#yourname">system menu</gui> from the right side of
+      the top bar, click <gui>VPN off</gui> and select <gui>Connect</gui>. You
+      may need to enter a password for the connection before it is established.
+      Once the connection is made, you will see a lock shaped icon in the top
+      bar.</p>
+    </item>
+    <item>
+      <p>Hopefully you will successfully connect to the VPN. If not, you may
+      need to double-check the VPN settings you entered. You can do this from
+      the <gui>Network</gui> panel that you used to create the connection.
+      Select the VPN connection from the list, then press the
+<media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button to review the settings.</p>
+    </item>
+    <item>
+      <p>To disconnect from the VPN, click the system menu on the top bar and
+      click <gui>Turn Off</gui> under the name of your VPN connection.</p>
+    </item>
+  </steps>
+
+</page>

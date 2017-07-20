@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="color-testing" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-gettingprofiles"/>
+
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-04" status="candidate"/>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Použijte dodávané testovací profily ke kontrole, že se vaše profily správně používají pro obrazovku.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Jak mohu vyzkoušet, že správa barev funguje správně?</title>
+
+  <p>Vliv barevného profilu může být někdy sotva patrný a tak může být těžké poznat, jestli se vůbec něco změnilo</p>
+
+  <p>GNOME přináší několik profilů pro testování, díky kterým zcela jasně uvidíte, jestli se profily vůbec použijí:</p>
+
+  <terms>
+    <item>
+      <title>Blue</title>
+      <p>Tímto se přepne obrazovku na modrou a otestuje se, jestli jsou kalibrační křivky odesílány do displeje.</p>
+    </item>
+<!--    <item>
+      <title>ADOBEGAMMA-test</title>
+      <p>This will turn the screen pink and tests different features of a
+      screen profile.</p>
+    </item>
+    <item>
+      <title>FakeBRG</title>
+      <p>This will not change the screen, but will swap around the RGB channels
+      to become BGR. This will make all the colors gradients look mostly
+      correct, and there won't be much difference on the whole screen, but
+      images will look very different in applications that support color
+      management.</p>
+    </item>-->
+  </terms>
+
+  <steps>
+    <item>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Barvy</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknutím na <gui>Barvy</gui> otevřete příslušný panel.</p>
+    </item>
+    <item>
+      <p>Vyberte zařízení, pro které chcete profil přidat. Možná byste si měli poznamenat, který profil je právě používán.</p>
+    </item>
+    <item>
+      <p>Klikněte na <gui>Přidat profil</gui>, abyste mohli vybrat testovací profil, který by měl být v seznamu až dole.</p>
+    </item>
+    <item>
+      <p>Zmáčknutím <gui>Přidat</gui> svoji volbu potvrdíte.</p>
+    </item>
+    <item>
+      <p>Abyste vrátili předchozí profil, vyberte zařízení v panelu <gui>Barvy</gui>, pak vyberte profil, který se používal před tím, než jste zkoušeli testovací profil, a zmáčkněte <gui>Povolit</gui>, aby se použil.</p>
+    </item>
+  </steps>
+
+
+  <p>Při použití těchto profilů zcela jednoznačně uvidíte, jestli aplikace podporuje správu barev.</p>
+
+</page>

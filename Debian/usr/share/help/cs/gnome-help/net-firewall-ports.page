@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Abyste na firewallu povolili/zakázali síťový přístup k programu, musíte určit správný síťový port.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Běžně používané síťové porty</title>
+
+  <p>Zde je seznam síťových portů obvykle používaných aplikacemi, které poskytují síťové služby, jako je sdílení souborů nebo prohlížení vzdálené plochy. Můžete změnit nastavení svého systémového firewallu, aby <link xref="net-firewall-on-off">blokoval nebo povoloval přístup</link> k těmto aplikacím. Používaných portů jsou tisíce, takže tabulka není rozhodně kompletní.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>Port</p>
+	</td>
+	<td>
+	  <p>Název</p>
+	</td>
+	<td>
+	  <p>Popis</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>Umožňuje systémům se navzájem vyhledat a popsat, které služby nabízejí, aniž byste museli cokoliv ručně nastavovat.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>Tisk</p>
+	</td>
+	<td>
+	  <p>Umožňuje posílat tiskové úlohy do tiskárny po síti.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>Tisk</p>
+	</td>
+	<td>
+	  <p>Umožňuje po síti sdílet tiskárnu s dalšími lidmi.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>Prezence</p>
+	</td>
+	<td>
+	  <p>Umožňuje vám oznamovat svůj stav v rychlé komunikaci ostatním lidem na síti (např. „přítomen“ nebo „zaneprázdněn“).</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>Vzdálená plocha</p>
+	</td>
+	<td>
+	  <p>Umožňujte vám sdílet vaši pracovní plochu s jinými lidmi, kteří se na ni mohou dívat nebo ji vzdáleně použít.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>Sdílení hudby (DAAP)</p>
+	</td>
+	<td>
+	  <p>Umožňuje sdílet hudební knihovnu s dalšími lidmi v síti.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

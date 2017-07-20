@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-switch-tasks" version="1.0 if/1.0" xml:lang="lv">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="videos"/>
+    <title role="trail" type="link">Pārslēgties starp uzdevumiem</title>
+    <link type="seealso" xref="shell-windows-switching"/>
+    <title role="seealso" type="link">Pamācība, kā pārslēgties starp uzdevumiem</title>
+    <link type="next" xref="gs-respond-messages"/>
+  </info>
+
+  <title>Pārslēgties starp uzdevumiem</title>
+
+  <ui:overlay width="812" height="452">
+  <media type="video" its:translate="no" src="figures/gnome-task-switching.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-task-switching.svg"/>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>Pārslēgšanās starp uzdevumiem</tt:p>
+         </tt:div>
+         <if:if test="!platform:gnome-classic">
+         <tt:div begin="5s" end="8s">
+           <tt:p>Pārvietojiet peles rādītāju uz <gui>Aktivitātes</gui> ekrāna augšā kreisajā stūrī.</tt:p>
+           </tt:div>
+         </if:if>
+         <tt:div begin="9s" end="12s">
+           <tt:p>Spiediet uz loga, lai pārslēgtos uz to uzdevumu.</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="14s">
+           <tt:p>Lai maksimizētu logu gar kreiso pusi, satveriet loga virsraksta joslu un velciet to uz ekrāna kreiso pusi.</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="16s">
+           <tt:p>Kad puse ekrāna ir izgaismota, atlaidiet logu.</tt:p>
+         </tt:div>
+         <tt:div begin="16s" end="18">
+           <tt:p>Lai maksimizētu logu gar labo pusi, satveriet loga virsraksta joslu un velciet to uz labo pusi.</tt:p>
+         </tt:div>
+         <tt:div begin="18s" end="20s">
+           <tt:p>Kad puse ekrāna ir izgaismota, atlaidiet logu.</tt:p>
+         </tt:div>
+         <tt:div begin="23s" end="27s">
+           <tt:p>Spiediet <keyseq> <key href="help:gnome-help/keyboard-key-super">Super</key> <key>Tab</key></keyseq>, lai parādītu <gui>logu pārslēdzēju</gui>.</tt:p>
+         </tt:div>
+         <tt:div begin="27s" end="29s">
+           <tt:p>Atlaidiet <key href="help:gnome-help/keyboard-key-super">Super</key>, lai izvēlētos izcelto logu.</tt:p>
+         </tt:div>
+         <tt:div begin="29s" end="32s">
+           <tt:p>Lai ietu cauri atvērtajiem logiem, neatlaidiet <key href="help:gnome-help/keyboard-key-super">Super</key>, bet turiet to piespiestu un spiediet <key>Tab</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="35s" end="37s">
+           <tt:p>Spiediet taustiņu <key href="help:gnome-help/keyboard-key-super">Super</key>, lai parādītu <gui>Aktivitāšu pārskatu</gui>.</tt:p>
+         </tt:div>
+         <tt:div begin="37s" end="40s">
+           <tt:p>Sāciet rakstīt nosaukumu lietotnei, uz kuru vēlaties pārslēgties.</tt:p>
+         </tt:div>
+         <tt:div begin="40s" end="43s">
+           <tt:p>Kad vajadzīgā lietotne parādās kā pirmais rezultāts, spiediet <key>Enter</key>, lai uz to pārslēgtos.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+  <section id="switch-tasks-overview">
+    <title>Pārslēgties starp uzdevumiem</title>
+
+<if:choose>
+<if:when test="!platform:gnome-classic">
+
+  <steps>
+    <item><p>Pārvietojiet peles rādītāju uz <gui>Aktivitātes</gui> ekrāna augšā kreisajā stūrī, lai redzētu <gui>Aktivitāšu pārskatu</gui>, kur jūs varat redzēt pašlaik palaistos uzdevumus, kas tiek attēloti kā mazi lodziņi.</p></item>
+     <item><p>Spiediet uz loga, lai pārslēgtos uz to uzdevumu.</p></item>
+  </steps>
+
+</if:when>
+<if:when test="platform:gnome-classic">
+
+  <steps>
+    <item><p>Jūs varat pārslēgties starp uzdevumiem, izmantojot <gui>logu sarakstu</gui> ekrāna apakšā. Atvērtie uzdevumi <gui>logu sarakstā</gui> izskatās kā pogas.</p></item>
+     <item><p><gui>Logu sarakstā</gui> spiediet pogu, lai pārslēgtos uz to uzdevumu.</p></item>
+  </steps>
+
+</if:when>
+</if:choose>
+
+  </section>
+
+  <section id="switching-tasks-tiling">
+    <title>Izklāt logus</title>
+    
+    <steps>
+      <item><p>Lai maksimizētu logu gar ekrāna malu, satveriet loga virsraksta joslu un velciet to uz ekrāna kreiso vai labo pusi.</p></item>
+      <item><p>Kad puse ekrāna ir izgaismota, atlaidiet logu, lai maksimizētu to gar izvēlēto ekrāna malu.</p></item>
+      <item><p>Lai maksimizētu logus vienu pie otra, satveriet otra loga virsraksta joslu un velciet to uz ekrāna otru pusi.</p></item>
+       <item><p>Kad puse ekrāna ir izgaismota, atlaidiet logu, lai maksimizētu to gar otru ekrāna malu.</p></item>
+    </steps>
+    
+  </section>
+  
+  <section id="switch-tasks-windows">
+    <title>Pārslēgties starp logiem</title>
+    
+  <steps>
+   <item><p>Spiediet <keyseq> <key href="help:gnome-help/keyboard-key-super">Super</key> <key>Tab</key></keyseq>, lai parādītu <gui>logu pārslēdzēju</gui>, kas parāda pašlaik atvērtos logus.</p></item>
+   <item><p>Atlaidiet taustiņu <key href="help:gnome-help/keyboard-key-super">Super</key>, lai izvēlētos nākamo izcelto logu <gui>logu pārslēdzējā</gui>.</p>
+   </item>
+   <item><p>Lai ietu cauri atvērtajiem logiem, neatlaidiet <key href="help:gnome-help/keyboard-key-super">Super</key>, bet turiet to piespiestu un spiediet <key>Tab</key>.</p></item>
+  </steps>
+
+  </section>
+
+  <section id="switch-tasks-search">
+    <title>Lietojiet meklēšanu, lai pārslēgtos starp lietotnēm</title>
+    
+    <steps>
+      <item><p>Spiediet taustiņu <key href="help:gnome-help/keyboard-key-super">Super</key>, lai parādītu <gui>Aktivitāšu pārskatu</gui>.</p></item>
+      <item><p>Vienkārši sāciet rakstīt nosaukumu lietotnei, uz kuru vēlaties pārslēgties. Rakstot parādīsies lietotnes, kas atbilst ierakstītajam tekstam.</p></item>
+      <item><p>Kad lietotne, uz ko vēlaties pārslēgties, parādās kā pirmais rezultāts, spiediet <key>Enter</key>, lai uz to pārslēgtos.</p></item>
+      
+    </steps>
+    
+  </section>
+
+</page>

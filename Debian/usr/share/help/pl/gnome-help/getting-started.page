@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:e="http://projectmallard.org/experimental/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="getting-started" version="1.0 if/1.0" xml:lang="pl">
+
+<info>
+    <link type="guide" xref="index" group="#gs"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <desc>Nowy użytkownik środowiska GNOME? Dowiedz się, jak go używać.</desc>
+    <title type="link">Wprowadzenie do środowiska GNOME</title>
+    <title type="text">Wprowadzenie do środowiska</title>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Wprowadzenie do środowiska</title>
+
+<if:choose>
+<if:when test="!platform:gnome-classic">
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-launching-applications.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-launching-apps.svg">
+      <ui:caption its:translate="yes"><desc style="center">Uruchamianie programów</desc></ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>Uruchamianie programów</tt:p>
+         </tt:div>
+         <tt:div begin="5s" end="7.5s">
+           <tt:p>Przesuń kursor myszy na <gui>Podgląd</gui> w lewym górnym rogu ekranu.</tt:p>
+           </tt:div>
+         <tt:div begin="7.5s" end="9.5s">
+           <tt:p>Kliknij ikonę <gui>Wyświetl programy</gui>.</tt:p>
+         </tt:div>
+         <tt:div begin="9.5s" end="11s">
+           <tt:p>Kliknij program, który chcesz uruchomić, na przykład Pomoc.</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="21s">
+           <tt:p>Można też użyć klawiatury, aby otworzyć <gui>ekran podglądu</gui> naciskając klawisz <key href="help:gnome-help/keyboard-key-super">Super</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="22s" end="29s">
+           <tt:p>Zacznij wpisywać nazwę programu, który chcesz uruchomić.</tt:p>
+         </tt:div>
+         <tt:div begin="30s" end="33s">
+           <tt:p>Naciśnij klawisz <key>Enter</key>, aby uruchomić program.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+</if:when>
+<if:when test="platform:gnome-classic">
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-windows-and-workspaces.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-windows-and-workspaces.svg">
+          <ui:caption its:translate="yes"><desc style="center">Używanie okien i obszarów roboczych</desc></ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>Okna i obszary robocze</tt:p>
+         </tt:div>
+         <tt:div begin="6s" end="10s">
+           <tt:p>Aby zmaksymalizować okno, złap myszą jego pasek tytułowy i przesuń go do góry ekranu.</tt:p>
+           </tt:div>
+         <tt:div begin="10s" end="13s">
+           <tt:p>Kiedy ekran zostanie podświetlony, upuść okno.</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="20s">
+           <tt:p>Aby przywrócić okno, złap myszą jego pasek tytułowy i odsuń go od krawędzi ekranu.</tt:p>
+         </tt:div>
+         <tt:div begin="25s" end="29s">
+           <tt:p>Można także kliknąć górny pasek, aby przesunąć okno i je przywrócić.</tt:p>
+         </tt:div>
+         <tt:div begin="34s" end="38s">
+           <tt:p>Aby zmaksymalizować okno przy lewej stronie ekranu, złap myszą jego pasek tytułowy i przesuń go w lewo.</tt:p>
+         </tt:div>
+         <tt:div begin="38s" end="40s">
+           <tt:p>Kiedy połowa ekrany zostanie podświetlona, upuść okno.</tt:p>
+         </tt:div>
+         <tt:div begin="41s" end="44s">
+           <tt:p>Aby zmaksymalizować okno przy prawej stronie ekranu, złap myszą jego pasek tytułowy i przesuń go w prawo.</tt:p>
+         </tt:div>
+         <tt:div begin="44s" end="48s">
+           <tt:p>Kiedy połowa ekrany zostanie podświetlona, upuść okno.</tt:p>
+         </tt:div>
+         <tt:div begin="54s" end="60s">
+           <tt:p>Aby zmaksymalizować okno za pomocą klawiatury, przytrzymaj klawisz <key href="help:gnome-help/keyboard-key-super">Super</key> i naciśnij klawisz <key>↑</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="61s" end="66s">
+           <tt:p>Aby przywrócić okno do stanu sprzed zmaksymalizowania, przytrzymaj klawisz <key href="help:gnome-help/keyboard-key-super">Super</key> i naciśnij klawisz <key>↓</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="66s" end="73s">
+           <tt:p>Aby zmaksymalizować okno przy prawej stronie ekranu, przytrzymaj klawisz <key href="help:gnome-help/keyboard-key-super">Super</key> i naciśnij klawisz <key>→</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="76s" end="82s">
+           <tt:p>Aby zmaksymalizować okno przy lewej stronie ekranu, przytrzymaj klawisz <key href="help:gnome-help/keyboard-key-super">Super</key> i naciśnij klawisz <key>←</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="83s" end="89s">
+           <tt:p>Aby przejść do obszaru roboczego, który znajduje się poniżej obecnego, naciśnij klawisze <keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>Page Down</key></keyseq>.</tt:p>
+         </tt:div>
+         <tt:div begin="90s" end="97s">
+           <tt:p>Aby przejść do obszaru roboczego, który znajduje się powyżej obecnego, naciśnij klawisze <keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>Page Up</key></keyseq>.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+</if:when>
+</if:choose>
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-task-switching.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-task-switching.svg">
+        <ui:caption its:translate="yes"><desc style="center">Przełączanie między zadaniami</desc></ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>Przełączanie między zadaniami</tt:p>
+         </tt:div>
+         <if:if test="!platform:gnome-classic">
+         <tt:div begin="5s" end="8s">
+           <tt:p>Przesuń kursor myszy na <gui>Podgląd</gui> w lewym górnym rogu ekranu.</tt:p>
+           </tt:div>
+         </if:if>
+         <tt:div begin="9s" end="12s">
+           <tt:p>Kliknij okno, aby przełączyć na to zadanie.</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="14s">
+           <tt:p>Aby zmaksymalizować okno przy lewej stronie ekranu, złap myszą jego pasek tytułowy i przesuń go w lewo.</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="16s">
+           <tt:p>Kiedy połowa ekrany zostanie podświetlona, upuść okno.</tt:p>
+         </tt:div>
+         <tt:div begin="16s" end="18">
+           <tt:p>Aby zmaksymalizować okno po prawej stronie ekranu, złap myszą jego pasek tytułowy i przeciągnij go na prawą stronę.</tt:p>
+         </tt:div>
+         <tt:div begin="18s" end="20s">
+           <tt:p>Kiedy połowa ekrany zostanie podświetlona, upuść okno.</tt:p>
+         </tt:div>
+         <tt:div begin="23s" end="27s">
+           <tt:p>Naciśnij klawisze <keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>Tab</key></keyseq>, aby wyświetlić <gui>przełącznik okien</gui>.</tt:p>
+         </tt:div>
+         <tt:div begin="27s" end="29s">
+           <tt:p>Puść klawisz <key href="help:gnome-help/keyboard-key-super">Super</key>, aby wybrać następne wyróżnione okno.</tt:p>
+         </tt:div>
+         <tt:div begin="29s" end="32s">
+           <tt:p>Aby przewinąć przez listę otwartych okien, nie puszczaj klawisza <key href="help:gnome-help/keyboard-key-super">Super</key>, tylko przytrzymaj go i naciśnij klawisz <key>Tab</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="35s" end="37s">
+           <tt:p>Naciśnij klawisz <key href="help:gnome-help/keyboard-key-super">Super</key>, aby wyświetlić <gui>ekran podglądu</gui>.</tt:p>
+         </tt:div>
+         <tt:div begin="37s" end="40s">
+           <tt:p>Zacznij wpisywać nazwę programu, na który chcesz przełączyć.</tt:p>
+         </tt:div>
+         <tt:div begin="40s" end="43s">
+           <tt:p>Kiedy program pojawi się jako pierwszy wynik, naciśnij klawisz <key>Enter</key>, aby na niego przełączyć.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-responding-to-messages.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-responding-to-messages.svg">
+            <ui:caption its:translate="yes"><desc style="center">Odpowiadanie na wiadomości</desc>
+            </ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="3s">
+           <tt:p>Odpowiadanie na wiadomości</tt:p>
+         </tt:div>
+         <tt:div begin="3s" end="6s">
+           <tt:p>Przesuń kursor myszy na wiadomość na górze ekranu.</tt:p>
+           </tt:div>
+         <tt:div begin="6s" end="9s">
+           <tt:p>Zacznij pisać swoją odpowiedź, a po skończeniu naciśnij klawisz <key>Enter</key>, aby ją wysłać.</tt:p>
+         </tt:div>
+         <tt:div begin="9s" end="10s">
+           <tt:p>Zamknij wiadomość.</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="14s">
+           <tt:p>Opóźniona odpowiedź</tt:p>
+         </tt:div>
+         <tt:div begin="16s" end="22s">
+           <tt:p>Wiadomość na górze ekranu znika po chwili, jeśli użytkownik nie przesunie do niego kursora myszy.</tt:p>
+         </tt:div>
+         <tt:div begin="22s" end="24s">
+           <tt:p>Aby wrócić do oczekującej wiadomości, kliknij zegar na górnym pasku.</tt:p>
+         </tt:div>
+         <tt:div begin="24s" end="26s">
+           <tt:p>Wybierz wiadomość z listy powiadomień.</tt:p>
+         </tt:div>
+         <tt:div begin="26s" end="28s">
+           <tt:p>Zacznij pisać odpowiedź.</tt:p>
+         </tt:div>
+         <tt:div begin="32s" end="35s">
+           <tt:p>Aby wyświetlić listę powiadomień, naciśnij klawisze <keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>V</key></keyseq></tt:p>
+         </tt:div>
+         <tt:div begin="35s" end="41s">
+           <tt:p>Użyj klawiszy strzałek, aby wybrać wiadomość i naciśnij klawisz <key>Enter</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="41s" end="44s">
+           <tt:p>Zacznij pisać odpowiedź.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+
+<links type="topic" style="grid" groups="tasks">
+<title style="heading">Często wykonywane czynności</title>
+</links>
+
+<links type="guide" style="heading nodesc">
+<title/>
+</links>
+
+<!--
+<note style="plain">
+  <title>New in GNOME 3.8</title>
+  <p>New features described here.</p>
+</note>
+-->
+
+</page>

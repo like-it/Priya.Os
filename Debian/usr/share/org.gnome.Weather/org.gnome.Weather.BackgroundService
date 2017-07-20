@@ -1,0 +1,6 @@
+#!/usr/bin/gjs
+imports.package.init({ name: "org.gnome.Weather",
+                        version: "3.20.2",
+                        prefix: "/usr",
+                        libdir: "/usr/lib/x86_64-linux-gnu" });
+imports.package.run(imports.service.main);

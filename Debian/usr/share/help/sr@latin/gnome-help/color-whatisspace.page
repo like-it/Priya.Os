@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>Prostor boje je određeni opseg boja.</desc>
+
+    <credit type="author">
+      <name>Ričards Hjudžiz</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Šta je to prostor boje?</title>
+
+  <p>Prostor boje je određeni opseg boja. Dobro poznati prostori boje uključuju sRGB, AdobeRGB i ProFotoRGB.</p>
+
+  <p>Ljudski vidni sistem nije jednostavan RGB senzor, ali možemo približno da odredimo kako se oko odaziva na CIE 1931 dijagram hromatičnosti koji prikazuje ljudski vizuelni odziv u obliku konjske potkovice. Možete videti da u ljudskom vidu postoji mnogo više otkrivenih nijansi zelene nego plave i crvene. Sa trikromatskim prostorom boje kao što je RGB predstavljamo boje na računaru koristeći tri vrednosti, što ograničava na kodiranje <em>trougla</em> boja.</p>
+
+  <note>
+    <p>Korišćenje modela kao što je CIE 1931 dijagram hromatičnosti je veliko pojednostavljivanje ljudskog vidnog sistema, i stvarni opsezi se izražavaju kao 3D trupovi, umesto 2D projekcije. 2D projekcija 3D oblika može ponekad biti varljiva, zato ako želite da vidite 3D trup, koristite program <code>gcm-viewer</code>.</p>
+  </note>
+
+  <figure>
+    <desc>sRGB, AdobeRGB i ProFotoRGB predstavljeni pomoću trouglova</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>Prvo, gledajući sRGB, koji je manji prostor i može da kodira najmanji roj boja. To je približnost 10 godina starog CRT ekrana, i zato većina novijih monitora može s lakoćom da prikazuje više boja od ovoga. sRGB je standard <em>najmanjeg zajedničkog imenitelja</em> i koristi se u velikom broju programa (uključujući i Internet).</p>
+  <p>AdobeRGB se često koristi kao <em>prostor uređivanja</em>. Može da kodira više boja nego sRGB, što znači da možete da izmenite boje u fotografiji a da ne brinete previše da li su najživlje boje skraćene ili skrhkane crnilom.</p>
+  <p>Pro Foto je najveći dostupan prostor i često se koristi za arhiviranje dokumenata. Može da kodira skoro čitav opseg boja otkrivenih ljudskim okom, i čak kodira boje koje oko ne može da otkrije!</p>
+
+  <p>Sada, ako je Pro Foto najbolji, zašto ga ne koristimo za sve? Odgovor se nalazi u <em>kvantizaciji</em>. Ako imate samo 8 bita (256 nivoa) za kodiranje svakog kanala, onda će veći opseg imati veće korake između svake vrednosti.</p>
+  <p>Veći koraci znače veće greške između snimljene boje i pričuvane boje, i za neke boje ovo je veliki problem. Ispostavlja se da su ključne boje, kao boje kože, veoma važne i da će male greške čak i neuvežbanog posmatrača obavestiti da na slici nešto ne izgleda kako treba.</p>
+  <p>Naravno, korišćenje 16-bitne slike će prouzrokovati mnogo više koraka i mnogo manju grešku kvantizacije, ali ovo udvostručava veličinu svake datoteke slike. Većina sadržaja koji postoji danas je 8b/t, npr. 8 bita po tački.</p>
+  <p>Upravljanje bojom je proces za pretvaranje iz jednog prostora boje u drugi, gde prostor boje može biti vrlo znan određeni prostor kao sRGB, ili proizvoljan prostor kao što je profil vašeg monitora ili štampača.</p>
+
+</page>

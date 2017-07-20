@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="statistics" xml:lang="sv">
+  <info>
+    <revision pkgversion="3.4" version="0.1" date="2012-03-08" status="final"/>
+    <link type="guide" xref="index#tips"/>
+    <credit type="editor copyright">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <license>
+      <p>Creative Commons DelaLika 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Erik Sköldås</mal:name>
+      <mal:email>erik.skoldas@tele2.se</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Statistik</title>
+<p>För att visa statistik för det nuvarande pusslet, klicka <guiseq><gui>Spel</gui><gui>Pusselstatistik</gui></guiseq>.</p>
+  <figure>
+    <desc>Exempel på statistik av mycket svårt pussel</desc>
+    <media type="image" mime="image/png" src="figures/stats-very-hard.png" width="400">
+    </media>
+  </figure>
+
+<p><app>GNOME Sudoku</app> rangordnar pussel baserat på antalet celler som snabbt kan fyllas.</p>
+
+<p>Pusslets statistikruta visar:</p>
+
+<list>
+ <item><p>den totala svårigheten</p></item>
+ <item><p>antalet celler som kan fyllas genom uteslutning, med början från den tomma cellen (dvs endast siffran två passar i denna cell, därför måste en tvåa anges)</p></item>
+  <item><p>antalet celler som kan fyllas i direkt med start från ett tomt fält (dvs endast en cell i den här raden kan vara en tvåa, så det måste vara en tvåa)</p></item>
+  <item><p>antalet gånger för att lösa pusslet där programmet använt försök-och-misstags-algoritm för att lösa pusslet</p></item>
+</list>
+
+<note><p>Alla sudoku-pussel kan lösas utan att behöva gissa. När statistikrutan säger att Sudoku använt "försök-och-misstag" X antal gånger, betyder det inte att en människa skulle behöva använda sig av "försök-och-misstag" för att lösa pusslet.</p></note>
+</page>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="power-nowireless" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-10-28" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Problèmes relatifs à certains périphériques sans fil qui après une sortie de veille de votre ordinateur, ne se réveillent pas correctement.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Absence de réseau sans fil à la sortie de veille de l'ordinateur</title>
+
+  <p>If you have suspended your computer, you may find that your wireless
+  internet connection does not work when you resume it again. This happens when
+  the <link xref="hardware-driver">driver</link> for the wireless device does
+  not fully support certain power saving features.
+  Typically, the wireless connection fails to turn on properly when the
+  computer is resumed.</p>
+
+  <p>Si cela se produit, essayez d'éteindre et de rallumer votre carte réseau sans fil :</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Réseau</gui> pour ouvrir le panneau.</p>
+    </item>
+    <item>
+      <p>Sélectionnez <gui>Wi-Fi</gui>.</p>
+    </item>
+    <item>
+      <p>Désactivez le réseau sans fil puis réactivez-le.</p>
+    </item>
+    <item>
+      <p>Si le réseau sans fil ne fonctionne toujours pas, basculez l'interrupteur <gui>Mode avion</gui> sur <gui>Activé</gui> puis à nouveau sur <gui>Désactivé</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Si cela ne fonctionne pas, le redémarrage de l'ordinateur devrait rétablir la connexion au réseau sans fil. Si malgré tout vous continuez à avoir des problèmes, connectez-vous à Internet au moyen d'un cable Ethernet et mettez à jour l'ordinateur.</p>
+
+</page>

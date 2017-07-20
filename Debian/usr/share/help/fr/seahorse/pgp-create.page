@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="pgp-create" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys" group="#first"/>
+
+    <revision version="0.5" date="2013-02-16" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Créer et utiliser des clés GnuPG pour chiffrer et signer les courriels.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Création de clés PGP</title>
+
+  <p>Pour créer une nouvelle clé PGP :</p>
+
+  <steps>
+    <item>
+      <p>Sélectionnez <guiseq><gui style="menu">Fichier</gui> <gui style="menuitem">Nouveau…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Sélectionnez <gui>Clé PGP</gui> dans la liste et cliquez sur <gui style="button">Continuer</gui>.</p>
+    </item>
+    <item>
+      <p>Saisissez vos nom et prénoms dans le champ <gui>Nom complet</gui>.</p>
+    </item>
+    <item>
+      <p>Éventuellement, ajoutez votre adresse électronique et un commentaire pour décrire la clé.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Créer</gui>.</p>
+    </item>
+    <item>
+      <p>Dans la boîte de dialogue mot de passe, saisissez un mot de passe pour la clé, et saisissez-le à nouveau pour le confirmer.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui style="button">Valider</gui> pour terminer.</p>
+    </item>
+  </steps>
+
+  <p><app>Mots de passe et clés</app> met du temps à générer la clé. Pendant la création de la clé, bougez votre souris, appuyez sur des touches du clavier, ou naviguez sur la Toile. Cela facilitera la création d'une clé vraiment aléatoire. La clé figurera dans la liste située sous <gui>Clés GnuPG</gui>.</p>
+
+  <note style="tip">
+    <p>Le <gui>Nom complet</gui>, l'<gui>Adresse électronique</gui> et le <gui>Commentaire</gui> d'une clé GnuPG sont appelés <link xref="pgp-userid">identifiant utilisateur</link> de la clé.</p>
+  </note>
+
+<section id="advanced" ui:expanded="false">
+  <title>Options avancées de clé PGP</title>
+
+  <p>Développez le panneau <gui>Options avancées de clé PGP</gui> afin de choisir des valeurs personnalisées pour le type de clé, la force de la clé et sa date d'expiration.</p>
+
+  <terms>
+    <item>
+    <title>Type de clé</title>
+      <p>Selon vos besoins, créez des clés utilisables seulement pour la signature ou pour à la fois le chiffrement et la signature. Les algorithmes RSA et DSA-Elgamal génèrent des clés également sécurisées.</p>
+    </item>
+    <item>
+    <title>Force de la clé</title>
+      <p>La force de la clé se mesure en termes de longueur de la clé en bits. Il est plus difficile et il faut plus de temps pour casser une clé forte, mais les clés fortes ralentissent le chiffrement et la signature. Choisissez la force de la clé en fonction de sa durée d'utilisation prévue. Une petite clé est suffisante à court terme, tandis qu'une grande clé convient mieux à long terme.</p>
+    </item>
+    <item>
+    <title>Date d'expiration</title>
+      <p>Quand une clé arrive à expiration, <link xref="pgp-expired">certaines actions ne fonctionnent plus</link>. Dans <app>Mots de passe et clés</app>, vous pouvez régler la clé pour qu'elle <gui style="checkbox">n'expire jamais</gui>, ou lui choisir une date d'expiration.</p>
+      <p>Il est recommandé de définir une date d'expiration pour le cas où vous n'auriez plus accès à la clé. Même si la clé atteint sa limite de validité, vous pouvez toujours <link xref="pgp-expiration-change">repousser la date d'expiration</link>.</p>
+    </item>
+  </terms>
+
+</section>
+
+</page>

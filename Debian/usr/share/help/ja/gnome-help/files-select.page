@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-select" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc><keyseq><key>Ctrl</key><key>S</key></keyseq> を押して、似た名前を持つ複数のファイルを選択します。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>パターンでファイルを選択する</title>
+
+  <p>ファイル名のパターンを使って、フォルダー内のファイルを選択できます。<keyseq><key>Ctrl</key><key>S</key></keyseq> を押して、<gui>パターンを指定してアイテムを選択</gui>のウィンドウを開きます。ファイル名の共通部分とワイルドカード文字でパターンを入力します。次の 2 つのワイルドカード文字が使えます。</p>
+
+  <list style="compact">
+    <item><p><file>*</file> は、任意の数の任意の文字にマッチします。文字がまったく無くてもマッチします。</p></item>
+    <item><p><file>?</file> は、ちょうど 1 つの任意の文字にマッチします。</p></item>
+  </list>
+
+  <p>例:</p>
+
+  <list>
+    <item><p>OpenDocument テキスト、PDF、および画像ファイルが 1 つずつあり、それらすべてのファイル名が <file>Invoice</file> で始まる場合、次のパターンで 3 つすべてを選択します。</p>
+    <example><p><file>Invoice.*</file></p></example></item>
+
+    <item><p><file>Vacation-001.jpg</file>、<file>Vacation-002.jpg</file>、<file>Vacation-003.jpg</file> のようなファイル名前の写真がいくつかある場合、次のパターンでそれらすべてを選択します。</p>
+    <example><p><file>Vacation-???.jpg</file></p></example></item>
+
+    <item><p>If you have photos as before, but you have edited some of them and
+    added <file>-edited</file> to the end of the file name of the photos you
+    have edited, select the edited photos with</p>
+    <example><p><file>Vacation-???-edited.jpg</file></p></example></item>
+  </list>
+
+</page>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-apps-open" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Starta program från översiktsvyn <gui>Aktiviteter</gui>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Starta program</title>
+
+  <p if:test="!platform:gnome-classic">Flytta din musmarkör till <gui>Aktiviteter</gui> i övre vänstra hörnet på skärmen för att visa översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui>. Här kan du hitta alla dina program. Du kan också öppna översiktsvyn genom att trycka på tangenten <key xref="keyboard-key-super">Super</key>.</p>
+  
+  <p if:test="platform:gnome-classic">Du kan starta program från menyn <gui xref="shell-introduction#activities">Program</gui> i övre vänstra delen av skärmen, eller så kan du använda översiktsvyn <gui>Aktiviteter</gui> genom att trycka på tangenten <key xref="keyboard-key-super">Super</key>.</p>
+
+  <p>Det finns flera sätt att öppna ett program när du väl är i översiktsvyn <gui>Aktiviteter</gui>:</p>
+
+  <list>
+    <item>
+      <p>Börja skriva namnet på ett program - sökningen börjar omedelbart. (Om detta inte händer klicka på sökraden i toppen på skärmen och börja skriv.) Om du inte känner till det exakta namnat på ett program, prova att skriv in en relaterad term. Klicka på programmets ikon för att starta det.</p>
+    </item>
+    <item>
+      <p>Vissa program har ikoner i <em>snabbstartspanelen</em>, den vertikala raden av ikoner på vänster sida av översiktsvyn <gui>Aktiviteter</gui>. Klicka på en av dessa för att starta motsvarande program.</p>
+      <p>Om du har program som du använder ofta kan du själv <link xref="shell-apps-favorites">lägga till dem i snabbstartspanelen</link>.</p>
+    </item>
+    <item>
+      <p>Klicka på rutnätsknappen längst ner i snabbstartspanelen. Du kommer att få se ofta använda program om vyn <gui style="button">Ofta använda</gui> är aktiverad. Om du vill köra ett nytt program, tryck på knappen <gui style="button">Alla</gui> längst ner för att visa alla programmen. Tryck på programmet för att starta det.</p>
+    </item>
+    <item>
+      <p>Du kan starta ett program i en separat <link xref="shell-workspaces">arbetsyta</link> genom att dra dess ikon från snabbstartspanelen och släppa den på en utav arbetsytorna på höger sida av skärmen. Programmet kommer att öppnas i den valda arbetsytan.</p>
+      <p>Du kan starta ett program i en <em>ny</em> arbetsyta genom dra dess ikon till den tomma arbetsytan längst ner i arbetsyteväxlaren, eller till det lilla mellanrummet mellan två arbetsytor.</p>
+    </item>
+  </list>
+
+  <note style="tip">
+    <title>Kör ett kommando snabbt</title>
+    <p>Ett annat sätt att start ett program är att trycka <keyseq><key>Alt</key><key>F2</key></keyseq>, skriva in dess <em>kommandonamn</em> och sedan trycka på <key>Retur</key>-tangenten.</p>
+    <p>För att till exempel starta <app>Rhythmbox</app>, tryck <keyseq><key>Alt</key><key>F2</key></keyseq> och skriv ”<cmd>rhythmbox</cmd>” (utan citattecken). Namnet på programmet är kommandot som startar programmet.</p>
+  </note>
+
+</page>

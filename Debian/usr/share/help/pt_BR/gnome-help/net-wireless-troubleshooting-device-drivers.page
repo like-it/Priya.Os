@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Contribuidores para o wiki de documentação do Ubuntu</name>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Alguns drivers de dispositivos não funcionam bem com certos adaptadores de rede sem fim, de forma que você pode ter de localizar um melhor.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Solução de problemas de rede sem fio</title>
+
+  <subtitle>Certificando-se de que os drivers de dispositivo estão instalados</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>Nesta etapa você pode verificar para descobrir se você pode obter drivers de dispositivos funcionais para seu adaptador de rede sem fio. Um <em>driver de dispositivo</em> é um pedaço de software que fala para seu computador como fazer para um dispositivo de hardware funcionar adequadamente. Ainda que seu adaptador de rede sem fio seja reconhecido pelo computador, este pode não ter os drivers que funcionam muito bem com o adaptador. Você pode conseguir localizar drivers diferentes para o adaptador de rede sem fio que funcione de verdade. Tente algumas opções abaixo:</p>
+
+  <list>
+    <item>
+      <p>Verificar para ver se seu adaptador de rede sem fio está em uma lista de dispositivos com suporte.</p>
+      <p>A maioria das distribuições Linux mantém uma lista de dispositivos sem fio aos quais eles oferecem suporte. Em alguns casos, essas listas fornecem informação extra sobre como fazer para que os drivers para certos adaptadores funcionem adequadamente. Acesse a lista de sua distribuição (por exemplo <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>, <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>, <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> ou <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>) e veja se a marca e o modelo de seu adaptador de rede sem fio estão listados. Você pode conseguir usar algumas das informações registradas lá para fazer com que seus drivers de rede sem fio funcionem.</p>
+    </item>
+    <item>
+      <p>Procurar por drivers restritos (binários).</p>
+      <p>Muitas distribuições Linux vêm apenas com os drivers de dispositivo que são <em>livres</em> (free) e <em>código aberto</em> (open source). Isso ocorre porque elas não podem distribuir drivers que são proprietários, ou código fechado. Se o driver correto para seu adaptador de rede sem fio estiver disponível apenas em uma versão não-livre ou "binário-apenas", ele pode não estar instalado por padrão. Se este for o caso, procure no site do fabricante do adaptador de rede sem fio por algum driver para Linux.</p>
+      <p>Algumas distribuições Linux possuem uma ferramenta que pode baixar drivers restritos para você. Se sua distribuição possui uma dessas, use-a para ver se ela localizar algum driver de rede sem fio para você.</p>
+    </item>
+    <item>
+      <p>Usar os drivers Windows para seu adaptador.</p>
+      <p>Em geral, você não pode usar um driver de dispositivo projetado para um sistema operacional (como o Windows) em outro (como o Linux). Isso ocorre porque eles possuem formas diferentes de lidar com os dispositivos. No que se refere a adaptadores de rede sem fio, porém, você pode instalar uma camada de compatibilidade chamada <em>NDISwrapper</em> que permite que você use alguns drivers de rede sem fio do Windows no Linux. Isso é útil porque adaptadores de rede sem fio quase sempre têm drivers de Windows disponíveis, enquanto drivers de Linux não estão disponíveis. Você pode aprender mais sobre como você usar o NDISwrapper <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">aqui</link>. Note que nem todos os drivers de rede sem fio podem ser usados pelo NDISwrapper.</p>
+    </item>
+  </list>
+
+  <p>Se nenhuma das opções funcionarem, você pode preferir tentar um adaptador de rede sem fio diferente para ver se você pode fazê-lo funcionar. Adaptadores de rede sem fio USB geralmente são baratos e você pode conectá-los em qualquer computador. Mesmo assim, você deveria verificar a compatibilidade do adaptador com sua distribuição Linux antes de comprá-lo.</p>
+
+</page>

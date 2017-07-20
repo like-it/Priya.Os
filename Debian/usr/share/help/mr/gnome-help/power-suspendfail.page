@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="mr">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
+
+    <credit type="author">
+      <name>GNOME डॉक्युमेंटेशन प्रकल्प</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>सस्पेंड केल्यानंतर माझे संगणक सुरू का होत नाही?</title>
+
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
+
+<section id="resume">
+  <title>माझे संगणक सस्पेंड केले आहे आणि पुन्हा सुरू होत नाही</title>
+  <p>संगणकाला सस्पेंड केल्यास आणि त्यानंतर कि दाबल्यास किंवा माउस क्लिक दिल्यास, ते सक्रीय व्हायला पाहिजे आणि पासवर्डकरिता विचारणारा एक पडदा दिसायला पाहिजे. असे न झाल्यास, पावर बटन दाबण्याचा प्रयत्न करा (दाबून ठेवू नकरा, फक्त एकदाच दाबा).</p>
+  <p>हे तिरिही फायदेशीर न ठरल्यास, संगणकाचे मानिटर सुरू आहे याची खात्री करा आणि पुन्हा कळफलकवरील कि दाबण्याचा प्रयत्न करा.</p>
+  <p>अंतिम मार्ग म्हणजे, संगणकावरील पॉवर बटन ५-१० सेकंद दाबून ठेवून संगणक बंद करा, जरी असे केल्यास कोणतेही न साठवलेले काम गमवाल. तुम्ही नंतर पुन्हा संगणक सुरू करण्यास सक्षम व्हाल.</p>
+  <p>संगणाला सस्पेंड केल्यानंतर हे वारंवार होत असल्यास, सस्पेंड गुणविशेष तुमच्या हार्डवेअरसह कदाचित कार्य करणार नाही.</p>
+  <note style="warning">
+    <p>संगणकाने पावर गमवल्यास आणि वैकल्पिक पावर सप्लाय नसल्यास (जसे कि कार्यरत बॅटरी), ते बंद होईल.</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>संगणकाला सक्रीय केल्यानंतर माझी वायरलेस जोडणी (किंवा इतर हार्डवेअर) कार्य करत नाही</title>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
+  <p>साधनाकडे पावर स्विच असल्यास, बंद करण्याचा प्रयत्न करा आणि पुन्हा सुरू करा. बहुतांश घटनांमध्ये, साधन पुन्हा सुरू होईल. USB केबल किंवा समानसह जोडणी करत असल्यास, साधनाची जोडणी अशक्य करा आणि पुन्हा जोडणी करा आणि कार्य होते किंवा नाही ते पहा.</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
+</section>
+
+</page>

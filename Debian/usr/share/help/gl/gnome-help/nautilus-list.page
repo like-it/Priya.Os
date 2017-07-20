@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-list" xml:lang="gl">
+
+  <info>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="nautilus-prefs" group="nautilus-list"/>
+
+    <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Controlar que información se visualiza en columnas na vista de lista.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Files list columns preferences</title>
+
+  <p>There are eleven columns of information that you can display in the
+  <gui>Files</gui> list view. Click <gui>Files</gui> in the top bar, pick
+  <gui>Preferences</gui> and choose the <gui>List Columns</gui> tab to select
+  which columns will be visible.</p>
+
+  <note style="tip">
+    <p>Use the <gui>Move Up</gui> and <gui>Move Down</gui> buttons to choose
+    the order in which the selected columns will appear. Click <gui>Reset to
+    Default</gui> to undo any changes and return to the default columns.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Nome</gui></title>
+      <p>The name of folders and files.</p>
+      <note style="tip">
+        <p>The <gui>Name</gui> column cannot be hidden.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Tamaño</gui></title>
+      <p>O tamaño do cartafol fornécese como o número de elementos que conten o cartafol. O tamaño dun ficheiro fornécese en bytes, KB ou MB.</p>
+    </item>
+    <item>
+      <title><gui>Tipo</gui></title>
+      <p>Mostrado como cartafol, o tipo de ficheiro como documento PDF, imaxe JPEG, son MP3, etcétera.</p>
+    </item>
+    <item>
+      <title><gui>Modificado</gui></title>
+      <p>Gives the date of the last time the file was modified.</p>
+    </item>
+    <item>
+      <title><gui>Propietario</gui></title>
+      <p>O nome do usuario propietario do cartafol ou ficheiro.</p>
+    </item>
+    <item>
+      <title><gui>Grupo</gui></title>
+      <p>The group the file is owned by. Each user is normally in their own
+      group, but it is possible to have many users in one group. For example, a
+      department may have their own group in a work environment.</p>
+    </item>
+    <item>
+      <title><gui>Permiso</gui></title>
+      <p>Displays the file access permissions. For example,
+      <gui>drwxrw-r--</gui></p>
+      <list>
+        <item>
+          <p>The first character is the file type. <gui>-</gui> means regular
+          file and <gui>d</gui> means directory (folder). In rare cases, other
+          characters can also be shown.</p>
+        </item>
+        <item>
+          <p>Os seguintes tres caracteres <gui>rwx</gui> especifican os permisos para o usuario privativo do ficheiro.</p>
+        </item>
+        <item>
+          <p>Os seguintes tres <gui>rw-</gui> especifican os permisos para todos os membros do grupo ao que pertence o ficheiro.</p>
+        </item>
+        <item>
+          <p>Os últimos tres caracteres da columna <gui>r--</gui> especifican os permisos para todos os usuarios no sistema.</p>
+        </item>
+      </list>
+      <p>Each permission has the following meanings:</p>
+      <list>
+        <item>
+          <p><gui>r</gui>: readable, meaning that you can open the file or
+          folder</p>
+        </item>
+        <item>
+          <p><gui>w</gui>: writable, meaning that you can save changes to it</p>
+        </item>
+        <item>
+          <p><gui>x</gui>: executable, meaning that you can run it if it is a
+          program or script file, or you can access subfolders and files if it
+          is a folder</p>
+        </item>
+        <item>
+          <p><gui>-</gui>: permission not set</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title><gui>Tipo MIME</gui></title>
+      <p>Mostra o tipo MIME do elemento.</p>
+    </item>
+    <item>
+      <title><gui>Localización</gui></title>
+      <p>A ruta á localización do ficheiro.</p>
+    </item>
+    <item>
+      <title><gui>Modified – Time</gui></title>
+      <p>Dálle a data e hora da última vez que o ficheiro foi modificado.</p>
+    </item>
+    <item>
+      <title><gui>Accedido</gui></title>
+      <p>Gives the date or time of the last time the file was modified.</p>
+    </item>
+  </terms>
+
+</page>

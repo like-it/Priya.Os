@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="statistics" xml:lang="es">
+  <info>
+    <revision pkgversion="3.4" version="0.1" date="2012-03-08" status="final"/>
+    <link type="guide" xref="index#tips"/>
+    <credit type="editor copyright">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007 - 2010</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Estadísticas</title>
+<p>Para ver las estadísticas del puzle actual, seleccione <guiseq><gui>Juego</gui><gui>Estadísticas del puzle</gui></guiseq>.</p>
+  <figure>
+    <desc>Ejemplo de cuadro de estadísticas de un puzle muy difícil</desc>
+    <media type="image" mime="image/png" src="figures/stats-very-hard.png" width="400">
+    </media>
+  </figure>
+
+<p><app>GNOME Sudoku</app> categoriza los puzles basándose en el número de cuadrados que pueden rellenarse rápidamente.</p>
+
+<p>El cuadrado de estadísticas del puzle muestra:</p>
+
+<list>
+ <item><p>la dificultad total</p></item>
+ <item><p>el número de cuadrados rellenables por eliminación, comenzando por la rejilla vacía (ej. sólo puede ir un 2 en este cuadrado, así que debe ser un 2)</p></item>
+  <item><p>el número de cuadrado rellenables por el proceso de rellenado, comenzando por la rejilla vacía (ej. sólo puede haber un 2 en esta fila, así que debe ser un 2).</p></item>
+  <item><p>el número de veces que el equipo tuvo que que usar el algoritmo de prueba y error para solucionar el puzle</p></item>
+</list>
+
+<note><p>Todos los sudokus se puede resolver sin necesidad de adivinar. Cuando la caja de estadísticas diga que Sudoku necesita usar el método de prueba y error X veces no significa que una persona deba usar el método de prueba y error para resolver el puzle.</p></note>
+</page>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="hardware-cardreader" xml:lang="mr">
+
+  <info>
+    <link type="guide" xref="media#photos"/>
+    <link type="guide" xref="hardware#problems"/>
+
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>GNOME डॉक्युमेंटेशन प्रकल्प</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>मिडीया कार्ड रीडर्सचं त्रुटि निदान</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>मिडीया कार्ड रीडर्सचे प्रश्न</title>
+
+<p>अनेक संगणकांमध्ये SD, MMC, SM, MS, CF, आणि इतर स्टोरेज मिडीया कार्डज उपलब्ध आहेत. हे स्वयंरित्या ओळखायला आणि <link xref="disk-partitions"> माऊंट व्हायला हवे</link>. असे होत नसल्यास काही त्रुटीनिवारन पद्धती बाळगा:</p>
+
+<steps>
+<item>
+<p>कार्ड योग्यरित्या स्थीत केले आहे याची खात्री करा. योग्यरित्या जोडल्यानंतर अनेक कार्ड्ज अपसाइड डाउन असे आढळतात. तसेच कार्ड योग्यरित्या स्लॉटमध्ये बसले आहे याची खात्री करा; काही कार्डज, विशेषतया CF, यांस योग्यरित्या जोडण्यासाठी थोडा जोर लागतो. (जास्त जोरत बसवू नका! काही टणक आढळल्यास, जबरनपणे बसवू नका.)</p>
+</item>
+
+<item>
+  <p>Open <app>Files</app> from the
+  <gui xref="shell-introduction#activities">Activities</gui> overview. Does the inserted
+  card appear in the <gui>Devices</gui> list in the left sidebar? Sometimes the
+  card appears in this list but is not mounted; click it once to mount. (If the
+  sidebar is not visible, press <key>F9</key> or click <gui style="menu">Files</gui> in
+  the top bar and select the <gui style="menuitem">Sidebar</gui>.)</p>
+</item>
+
+<item>
+  <p>If your card does not show up in the sidebar, press
+  <keyseq><key>Ctrl</key><key>L</key></keyseq>, then type
+  <input>computer:///</input> and press <key>Enter</key>. If your card reader
+  is correctly configured, the reader should come up as a drive when no card is
+  present, and the card itself when the card has been mounted.</p>
+</item>
+
+<item>
+<p>कार्ड रिडर दिसत असल्यास परंतु कार्ड दिसत नसल्यास, अडचण कार्डसह असू शकते. शक्य असल्यास दुसऱ्या रिडरवर वेगळे कार्ड वापरून पहा.</p>
+</item>
+</steps>
+
+<p>If no cards or drives are shown when browsing the <gui>Computer</gui>
+location, it is possible that your card reader does not work with Linux due to
+driver issues. If your card reader is internal (inside the computer instead of
+sitting outside) this is more likely. The best solution is to directly connect
+your device (camera, cell phone, etc.) to a USB port on the computer. USB
+external card readers are also available, and are far better supported by
+Linux.</p>
+
+</page>

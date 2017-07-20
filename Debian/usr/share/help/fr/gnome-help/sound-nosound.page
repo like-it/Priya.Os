@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="sound-nosound" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="sound-broken"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Check that the sound is not muted, that cables are plugged in properly,
+    and that the sound card is detected.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>I cannot hear any sounds on the computer</title>
+
+  <p>If you cannot hear any sounds on your computer, for example when you try
+  to play music, go through the following troubleshooting tips.</p>
+
+<section id="mute">
+  <title>Assurez-vous que le son n'est pas sur « Muet »</title>
+
+  <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> and make sure that
+  the sound is not muted or turned down.</p>
+
+  <p>Some laptops have mute switches or keys on their keyboards — try pressing
+  that key to see if it unmutes the sound.</p>
+
+  <p>You should also check that you have not muted the application that you are
+  using to play sound (for example, your music player or movie player). The
+  application may have a mute or volume button in its main window, so check
+  that.</p>
+
+  <p>Also, you can check the <gui>Applications</gui> tab in the <gui>Sound</gui>
+  GUI:</p>
+  <steps>
+    <item>
+    <p>Open <app>Settings</app> from the <gui>Activities</gui> overview.</p>
+    </item>
+    <item>
+      <p>Click <gui>Sound</gui>.</p>
+    </item>
+    <item>
+      <p>Go to the <gui>Applications</gui> tab and check that your application
+      is not muted.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="speakers">
+  <title>Vérifiez que les haut-parleurs sont allumés et correctement branchés</title>
+  <p>Si votre ordinateur dispose de haut-parleurs externes, assurez-vous qu'ils sont allumés et que le volume sonore est suffisant. Assurez-vous aussi que le câble de haut-parleur est bien enfoncé dans la prise audio « Sortie » de l'ordinateur. Elle est en général de couleur vert clair.</p>
+
+  <p>Some sound cards can switch between the socket they use for output
+  (to the speakers) and the socket for input (from a microphone, for instance).
+  The output socket may be different when running Linux, Windows or Mac OS.
+  Try connecting the speaker cable to a different audio socket on your
+  computer.</p>
+
+ <p>A final thing to check is that the audio cable is securely plugged into the
+ back of the speakers. Some speakers have more than one input, too.</p>
+</section>
+
+<section id="device">
+  <title>Check that the correct sound device is selected</title>
+
+  <p>Some computers have multiple "sound devices" installed. Some of these are
+  capable of outputting sound and some are not, so you should check that you
+  have the correct sound device selected. This might involve some
+  trial-and-error to choose the right one.</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Sound</gui>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Son</gui> pour ouvrir le panneau.</p>
+    </item>
+    <item>
+      <p>In the <gui>Output</gui> tab, change the <gui>Profile</gui>
+      settings for the selected device and play a sound to see if it works.
+      You might need to go through the list and try each profile.</p>
+
+      <p>En cas d'échec, faites la même chose avec tous les périphériques de la liste.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="hardware-detected">
+
+ <title>Vérifier que la carte son a bien été détectée</title>
+
+  <p>Your sound card may not have been detected properly probably because 
+  the drivers for the card are not installed. You may need to install the drivers
+  for the card manually. How you do this depends on the type of the card. </p>
+
+  <p>Run the <cmd>lspci</cmd> command in the Terminal to find out what sound
+  card you have:</p>
+  <steps>
+    <item>
+      <p>Go to the <gui>Activities</gui> overview and open a Terminal.</p>
+    </item>
+    <item>
+      <p>Run <cmd>lspci</cmd> as <link xref="user-admin-explain">superuser</link>;
+      either type <cmd>sudo lspci</cmd> and type your password, or type
+      <cmd>su</cmd>, enter the <em>root</em> (administrative) password,
+      then type <cmd>lspci</cmd>.</p>
+    </item>
+    <item>
+      <p>Check if an <em>audio controller</em> or <em>audio device</em> is listed:
+      in such case you should see the make and model number of the sound card. 
+      Also, <cmd>lspci -v</cmd> shows a list with more detailed information.</p>
+    </item>
+  </steps>
+
+  <p>Vous trouverez certainement comment rechercher et installer les pilotes pour votre carte. Le mieux est de vous adresser à des forums spécialisés pour votre distribution Linux.</p>
+
+  <p>Si vraiment vous ne trouvez pas de pilotes pour votre carte son, il ne vous reste plus qu'à en acheter une nouvelle. Vous avez le choix entre une carte son interne et une carte son externe, à brancher sur un port USB.</p>
+
+</section>
+
+</page>

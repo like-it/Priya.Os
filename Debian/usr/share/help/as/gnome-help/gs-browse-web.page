@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="as">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>ইয়াকুব স্টাইনাৰ</name>
+    </credit>
+    <credit type="author">
+      <name>পিটাৰ ক'ভাৰ</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">ৱেব ব্ৰাউছ কৰক</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">A tutorial on browsing the web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  </info>
+
+  <title>ৱেব ব্ৰাউছ কৰক</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>পৰ্দাৰ ওপৰ বাওঁফালে <gui>এপ্লিকেচনসমূহ</gui> মেনুত ক্লিক কৰক।</p></item>
+      <item><p>মেনুৰ পৰা, <guiseq><gui>ইন্টাৰনেট</gui><gui>Firefox</gui> </guiseq> বাছক।</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p><gui>কাৰ্য্যসমূহ অভাৰভিউ</gui> দেখুৱাবলৈ আপোনাৰ মাউছ পোইন্টাৰক পৰ্দাৰ ওপৰ বাঁওফালৰ চুকত <gui>কাৰ্য্যসমূহ</gui> লৈ নিয়ক।</p></item>
+      <item><p>পৰ্দাৰ বাওঁ-ফালৰ বাৰৰ পৰা <app>Firefox</app> ব্ৰাউছাৰ আইকন বাছক।</p></item>
+    </steps>
+
+    <note><p>বিকল্পভাৱে, ব্ৰাউছাৰক <gui>কাৰ্য্যসমূহ অভাৰভিউ</gui> ত <em>Firefox</em> <link xref="gs-use-system-search">টাইপ কৰি</link> আৰম্ভ কৰিব পাৰিব।</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p><gui>কাৰ্য্যসমূহ অভাৰভিউ</gui> দেখুৱাবলৈ আপোনাৰ মাউছ পোইন্টাৰক পৰ্দাৰ ওপৰ বাঁওফালৰ চুকত <gui>কাৰ্য্যসমূহ</gui> লৈ নিয়ক।</p></item>
+      <item><p>পৰ্দাৰ বাঁও-ফালৰ পৰা <app>ৱেব</app> ব্ৰাউছাৰ আইকন বাছক।</p></item>
+    </steps>
+
+    <note><p>বিকল্পভাৱে, ব্ৰাউছাৰক <gui>কাৰ্য্যসমূহ অভাৰভিউ</gui> ত <em>web</em> <link xref="gs-use-system-search">টাইপ কৰি</link> আৰম্ভ কৰিব পাৰিব।</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>ব্ৰাউছাৰ উইন্ডোৰ ওপৰত ঠিকনা বাৰত ক্লিক কৰক আৰু আপুনি ভ্ৰমণ কৰিব বিচৰা ৱেবছাইটৰ নাম লিখা আৰম্ভ কৰক।</p></item>
+      <item><p>এটা ৱেবছাইটত টাইপ কৰিলে ইয়াৰ বাবে ব্ৰাউছাৰ ইতিহাস আৰু পত্ৰচিহ্নসমূহত সন্ধান কৰা হয়, সেয়েহে আপুনি সঠিক ঠিকনা মনত নাৰাখিলেও হ'ব।</p>
+        <p>যদি ৱেবছাইট ইতিহাস অথবা পত্ৰচিহ্নসমূহত পোৱা যায়, ঠিকনা বাৰৰ তলত এটা ড্ৰপ-ডাউন তালিকা দেখুৱা হয়।</p></item>
+      <item><p>ড্ৰপ-ডাউন তালিকাৰ পৰা, আপুনি এৰ' কি'সমূহ ব্যৱহাৰ কৰি এটা ৱেবছাইট অতি সোনকালে বাছিব পাৰিব।</p>
+      </item>
+      <item><p>আপুনি এটা ৱেবছাইট নিৰ্বাচন কৰাৰ পিছত, ইয়াক ভ্ৰমণ কৰিবলে <key>Enter</key> টিপক।</p>
+      </item>
+    </steps>
+
+</page>

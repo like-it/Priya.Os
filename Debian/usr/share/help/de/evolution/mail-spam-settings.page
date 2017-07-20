@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-spam-settings" xml:lang="de">
+
+  <info>
+    <desc>So legen Sie den Umgang mit unerwünschten E-Mails fest.</desc>
+
+    <link type="guide" xref="mail-spam"/>
+    <link type="seealso" xref="mail-spam-marking"/>
+
+    <revision pkgversion="3.12.9" version="0.11" date="2015-03-15" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Patrick O'Callaghan</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Pete Biggs</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-prefs-mail.html.en#mail-prefs-junk -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Einstellungen zu unerwünschten Nachrichten</title>
+
+<section id="junk-tools">
+<title>Werkzeuge</title>
+<p><app>Evolution</app> ermöglicht die Prüfung auf unerwünschte E-Mails mit Hilfe der Werkzeuge <app>Bogofilter</app> und <app>SpamAssassin</app>. Stellen Sie vor dem Einsatz sicher, dass diese mit der Softwareverwaltung Ihrer Distribution installiert wurden.</p>
+
+<note style="info package">
+  <p>Sie müssen eventuell <app>Bogofilter</app> oder <app>SpamAssassin</app> installieren, um die Schritte auszuführen.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:bogofilter" href="http://bogofilter.sourceforge.net/" style="button">Bogofilter installieren</link></p>
+      <p><link action="install:spamassassin" href="http://spamassassin.apache.org/" style="button">Spamassassin installieren</link></p>
+    </if:when>
+  </if:choose>
+</note>
+
+<p>SpamAssassin arbeitet über einen Satz vordefinierter Regeln, so dass es unerwünschte E-Mails unmittelbar erkennen kann. Bogofilter  wird nicht mit einer Reihe von Kriterien ausgeliefert und filtert demnach auch nichts automatisch nach der Installation. Sie müssen diesen erst <link xref="mail-spam-marking">trainieren</link>. Sie können die Aktionen von SpamAssassin ebenfalls durch Training beeinflussen.</p>
+</section>
+
+<section id="junk-folder">
+<title>Unerwünscht-Nachrichtenordner</title>
+<p>Als unerwünscht (entweder manuell oder automatisch durch SpamAssassin oder Bogofilter) markierte Nachrichten werden in den E-Mail-Ordner <gui>Unerwünscht</gui> verschoben.</p>
+</section>
+
+<section id="preferences">
+<title>Unerwünscht-Einstellungen</title>
+<note style="tip"><p>Die folgenden Einstellungen für unerwünschte Nachrichten sind nur für POP-Konten und lokale Zustellung gültig. Für den Umgang mit unerwünschten Nachrichten in IMAP-Konten sind die Einstellungen in <app>Evolution</app> unter <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui><gui>E-Mail-Konten</gui><gui style="button">Bearbeiten</gui><gui>Empfangsoptionen</gui></guiseq> zuständig.</p></note>
+<p>Legen Sie den Umgang von <app>Evolution</app> mit unerwünschten Nachrichten in den Unerwünscht-Einstellungen fest:</p>
+<steps>
+<item><p>Klicken Sie auf <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui></guiseq> oder drücken Sie <keyseq><key>Umschalttaste</key><key>Strg</key><key>S</key></keyseq>.</p></item>
+<item><p>Wählen Sie <gui>E-Mail-Einstellungen</gui>.</p></item>
+<item><p>Im Reiter <gui>Unerwünscht</gui> haben Sie die Wahl zwischen folgenden Einstellungen:</p>
+<list>
+<item><p>Eingehende Nachrichten auf Unerwünschtheit prüfen.</p></item>
+<item><p>Unerwünscht-Ordner beim Beenden leeren, und wie oft unerwünschte Nachrichten gelöscht werden sollen.</p></item>
+<item><p>Nachrichten nicht als Unerwünscht markieren, wenn der Absender im Adressbuch ist.</p></item>
+<item><p>Benutzerdefinierte (durch E-Mail-Server hinzugefügte) Kopfzeilen auf Unerwünschtheit prüfen.</p></item>
+</list>
+</item>
+</steps>
+
+<note style="tip"><p>Wir empfehlen für weitere Informationen und Konfigurationsfragen zu Bogofilter und SpamAssassin die häufig gestellten Fragen (FAQ) unter <link href="http://bogofilter.sourceforge.net/faq.shtml">Bogofilter</link> bzw. <link href="http://wiki.apache.org/spamassassin/FrequentlyAskedQuestions">SpamAssassin</link> zu lesen.</p></note>
+</section>
+
+</page>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-batterywindows" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="power#faq"/>
+    <link type="seealso" xref="power-batteryestimate"/>
+    <link type="seealso" xref="power-batterylife"/>
+    <link type="seealso" xref="power-batteryslow"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
+
+    <desc>Justeringar från tillverkaren och olika batteridriftsuppskattningar kan vara orsaken till detta problem.</desc>
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Varför har jag mindre batteridriftstid än jag hade i Windows/Mac OS?</title>
+
+<p>Vissa datorer verkar ha en kortare batteridriftstid när de kör Linux än de har när de kör Windows eller Mac OS. En anledning till detta är att datortillverkare installerar specialprogram för Windows/Mac OS som optimerar diverse hårdvaru-/programvaruinställningar för en given datormodell. Dessa justeringar är ofta väldigt specifika och är kanske inte dokumenterade, så att inkludera dem i Linux är svårt.</p>
+
+<p>Tyvärr finns det inget enkelt sätt att själv applicera dessa justeringar utan att veta exakt vad de gör. Några av <link xref="power-batterylife">strömsparmetoderna</link> kan hjälpa dock. Om din dator har en <link xref="power-batteryslow">processor som kan variera hastighet</link> så kan det vara bra att ändra dess inställningar.</p>
+
+<p>Andra möjliga skäl till skillnaden är att metoden för att uppskatta batteridriftstid är olika i Windows/Mac OS än i Linux. Den riktiga batteridriftstiden skulle kunna vara exakt den samma men de olika metoderna ger olika uppskattning.</p>
+	
+</page>

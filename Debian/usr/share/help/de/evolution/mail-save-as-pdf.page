@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-save-as-pdf" xml:lang="de">
+
+  <info>
+    <desc>Nachrichten in PDF-Dateien umwandeln.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+
+    <revision pkgversion="3.5.90" version="0.2" date="2012-08-16" status="review"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Nachrichten als PDF speichern</title>
+
+<p>Um E-Mails im PDF-Dateiformat zu speichern, wählen Sie <guiseq><gui>Datei</gui><gui>Drucken</gui></guiseq> und wählen Sie <gui>In Datei drucken</gui>. Lesen Sie <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">die Hilfe zur Arbeitsumgebung</link> für allgemeine Informationen zum Drucken.</p>
+
+<note style="advanced">
+<p>Sie können ebenso Nachrichten als PDF exportieren, indem Sie diese in die Dateiverwaltung ziehen und ablegen, anstatt sie per Voreinstellung im mbox-Textformat abzuspeichern. </p>
+<list>
+<item><p>Öffnen Sie die Anwendung <app>Terminal</app>.</p></item>
+<item><p>Führen Sie folgenden Befehl aus: <cmd>gsettings set org.gnome.evolution.mail drag-and-drop-save-file-format 'pdf'</cmd></p></item>
+</list>
+<p>Sie können dies auch mit der Anwendung <app>dconf-editor</app> erledigen.</p>
+</note>
+<!-- As per https://mail.gnome.org/archives/evolution-list/2012-June/msg00174.html -->
+
+</page>

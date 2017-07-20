@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-s-mime-manage" xml:lang="es">
+
+  <info>
+    <desc>Añadir, editar, ver y eliminar certificados S/MIME.</desc>
+
+    <link type="guide" xref="mail-encryption#s-mime"/>
+
+    <revision pkgversion="3.2.0" version="0.2" date="2011-10-13" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/bshoty0.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Gestionar certificados S/MIME</title>
+
+<p>Los certificados le permiten comunicarse con otros de una forma segura bajo una conexión cifrada o firmar un mensaje confirmando su identidad al contacto. Estos ajustes sólo se aplican al cifrado S/MIME.</p>
+<p>Puede importar, ver, editar (excepto sus propios certificados), y eliminar sus certificados bajo <guiseq><gui>Editar</gui><gui>Preferencias</gui><gui>Certificados</gui></guiseq>.</p>
+
+<note style="tip"><p>Si obtiene el error «El emisor del certificado se ha marcado como no confiable por el usuario. (-8172): no se puede añadir el atributo SMIMEEncKeyPrefs» después de añadir su certificado de correo-e, vaya a <gui>Autoridades</gui> y active <gui>Confiar en esta AC para identificar a usuarios de correo-e</gui>.</p></note>
+
+<p><gui>Sus certificados</gui> muestra la lista de certificados que posee. Para añadir un certificado de firma pulse <gui style="button">Importar</gui>, seleccione el archivo que importar, después pulse <gui style="button">Abrir</gui> e introduzca una contraseña.</p>
+<p>Pulse sobre la pestaña <gui>Certificados de contactos</gui> para mostrar una lista de los certificados que posee de sus contactos. Estos certificados le permiten descifrar mensajes así como verificar los mensajes firmados.</p>
+<p><gui>Autoridades</gui> muestra una lista de las autoridades de certificados de confianza que verifican que el certificado que tiene es válido.</p>
+</page>

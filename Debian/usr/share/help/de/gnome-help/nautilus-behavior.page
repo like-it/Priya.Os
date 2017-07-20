@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>Einfacher Klick, um Dateien zu öffnen, ausführbare Textdateien ausführen oder anzeigen, Einstellungen für den Papierkorb.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Einstellungen für das Verhalten der Dateiverwaltung</title>
+<p>Sie können festlegen, ob Sie Dateien mit einfachem oder Doppelklick öffnen, was mit ausführbaren Textdateien geschehen soll und wie mit dem Papierkorb umgegangen wird. Klicken Sie dazu auf <gui>Dateien</gui> in der obersten Leiste und wählen Sie anschließend den Reiter <gui>Verhalten</gui>.</p>
+
+<section id="behavior">
+<title>Verhalten</title>
+<terms>
+ <item>
+  <title><gui>Einfacher Klick zum Öffnen von Objekten</gui></title>
+  <title><gui>Doppelklick zum Öffnen von Objekten</gui></title>
+  <p>In den Standardeinstellungen werden Dateien mit einem einfachen Klick ausgewählt und mit einem Doppelklick geöffnet. Sie können stattdessen einstellen, dass Dateien und Ordner mit nur einem Klick geöffnet werden. Wenn Sie den Einfach-Klick-Modus benutzen, können Sie <key>Strg</key>-Taste während des Klickens gedrückt halten, um eine oder mehrere Dateien auszuwählen.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>Ausführbare Textdateien</title>
+ <p>Eine ausführbare Textdatei ist eine Datei, die ein Programm enthält, das ausgeführt werden kann. Die <link xref="nautilus-file-properties-permissions">Zugriffsrechte</link> der Datei müssen auch erlauben, dass die Datei als Programm ausgeführt wird. Die häufigsten Arten sind <src>Shell-</src>, <src>Python-</src> und <src>Perl-Skripte</src>; sie haben die Endungen <file>.sh</file>, <file>.py</file> beziehungsweise <file>.pl</file>.</p>
+ 
+ <p>Wenn Sie eine ausführbare Textdatei öffnen, können Sie aus Folgendem wählen:</p>
+ 
+ <list>
+  <item>
+    <p><gui>Ausführbare Textdateien ausführen, wenn sie geöffnet werden</gui></p>
+  </item>
+  <item>
+    <p><gui>Ausführbare Textdateien anzeigen, wenn sie geöffnet werden</gui></p>
+  </item>
+  <item>
+    <p><gui>Jedes Mal nachfragen</gui></p>
+  </item>
+ </list>
+
+ <p>Wenn <gui>Jedes Mal nachfragen</gui> ausgewählt ist, erscheint ein Dialog, in dem gefragt wird, ob Sie die ausgewählte Textdatei ausführen oder anzeigen wollen.</p>
+
+ <p>Ausführbare Textdateien werden auch <em>Skripte</em> genannt. Alle Skripte im Ordner <file>~/.local/share/nautilus/scripts</file> erscheinen im Kontextmenü einer Datei im Untermenü <gui style="menuitem">Skripte</gui>. Wenn ein Skript aus einem lokalen Ordner ausgeführt wird, werden alle ausgewählten Dateien dem Skript als Parameter übergeben. So wenden Sie ein Skript auf eine Datei an:</p>
+
+<steps>
+  <item>
+    <p>Navigieren Sie zum gewünschten Ordner.</p>
+  </item>
+  <item>
+    <p>Wählen Sie die gewünschte Datei.</p>
+  </item>
+  <item>
+    <p>Klicken Sie mit der rechten Maustaste auf die Datei, um das Kontextmenü zu öffnen, und wählen Sie das gewünschte auszuführende Skript aus dem <gui style="menuitem">Skripte</gui>-Menü aus.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>Einem Skript werden keine Parameter übergeben, wenn es in einem entfernten Ordner ausgeführt wird, zum Beispiel mit Web- oder <sys>ftp</sys>-Inhalten.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">Einstellungen für den Papierkorb in der Dateiverwaltung</title>
+</info>
+<title>Papierkorb</title>
+
+<terms>
+ <item>
+  <title><gui>Vor dem Leeren des Papierkorbs nachfragen</gui></title>
+  <p>Dies ist die Standardeinstellung. Wenn der Papierkorb geleert werden soll, wird eine Nachricht darüber angezeigt und Sie müssen bestätigen, dass Sie den Papierkorb leeren oder Dateien löschen wollen.</p>
+ </item>
+</terms>
+</section>
+
+</page>

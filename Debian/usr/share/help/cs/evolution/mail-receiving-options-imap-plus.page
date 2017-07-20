@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-receiving-options-imap-plus" xml:lang="cs">
+
+  <info>
+    <desc>Možnosti příjmu u účtů IMAP+.</desc>
+
+    <link type="guide" xref="mail-receiving-options#common-server-types"/>
+    <link type="guide" xref="mail-account-manage-imap-plus#receiving-email"/>
+    <revision pkgversion="3.12.9" version="0.3" date="2015-02-15" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mainwindow-starting.html.en#bstggh0 -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Možnosti přijmu u IMAP+</title>
+
+<section id="receiving-email-imap-plus">
+<title>Příjem pošty</title>
+
+<p>Na stránce <gui>Příjem pošty</gui> (najdete v <guiseq><gui>Upravit</gui><gui>Předvolby</gui><gui>Poštovní účty</gui><gui style="button">Upravit</gui><gui>Příjem pošty</gui></guiseq>):</p>
+
+<list>
+<item><p>Do pole <gui>Server</gui> zadejte adresu poštovního serveru a uveďte své uživatelské jméno pro tento server.</p></item>
+<item><p>Vyberte, jestli chcete používat zabezpečené připojení (SSL nebo TLS).</p><p>Pokud ji server podporuje, měli byste tuto volbu povolit.</p>
+<note style="tip"><p>Poskytovatelé freemailů obvykle poskytují o informace možnostech, které můžete použít. Pokud jste v prostředí organizace, kontaktujte správce, chcete-li získat více informací.</p></note></item>
+<item><p>Vyberte typ ověření totožnosti nebo klikněte na <gui style="button">Zjistit podporované typy</gui> a <app>Evolution</app> zjistí, jaké mechanismy ověření totožnosti jsou podporovány. Některé servery neoznamují, které autentizační mechanismy podporují, takže kliknutí na toto tlačítko nezaručuje, že dostupné mechanismy opravdu fungují.</p></item>
+<item><p>Zvolte, pokud chcete, aby si <app>Evolution</app> pamatoval vaše heslo.</p></item>
+</list>
+
+</section>
+
+<section id="receiving-options-imap-plus">
+<title>Volby příjmu</title>
+
+<p>Na kartě <gui>Volby příjmu</gui> (přístupné přes <guiseq><gui>Upravit</gui><gui>Předvolby</gui><gui>Poštovní účty</gui><gui style="button">Upravit</gui><gui>Volby příjmu</gui></guiseq>):</p>
+
+<list>
+<item><p>Pokud chcete, aby se <app>Evolution</app> automaticky díval po nových zprávách, klikněte na <gui>Kontrolovat nové zprávy každých ‥ minut </gui> a zvolte četnost kontrol v minutách.</p></item>
+<item><p>Pokud server IMAP podporuje <link href="http://tools.ietf.org/html/rfc5162">rozšíření IMAP4 pro rychlou synchronizaci poštovních schránek</link>, vyberte <gui>Používat rychlou synchronizaci</gui>.</p></item>
+<!-- https://bugzilla.gnome.org/show_bug.cgi?id=730460 -->
+<item><p>V případě, že server neumožňuje více připojení z aplikace <app>Evolution</app> na server naráz (například pro situace, kdy na serveru máte více než jeden účet), nastavte <gui>Počet použitých souběžných připojení</gui> na 1.</p></item>
+<item><p>Můžete také určit, jestli má <app>Evolution</app> kontrolovat zprávy ve všech složkách nebo jen v odebíraných složkách.</p></item>
+<item><p>Zvolte, jestli chcete, aby <app>Evolution</app> zobrazoval pouze <link xref="mail-imap-subscriptions">odebírané složky</link>.</p></item>
+<item><p>Vyberte, jestli se mají na poštu, kterou obdržíte, automaticky použít <link xref="mail-filters">filtry</link>, jestli mají být automaticky filtrovány <link xref="mail-spam-marking">nevyžádané zprávy</link> a jestli se má <link xref="mail-working-offline">pošta na serveru synchronizovat s místní kopií kvůli přístupu při odpojení od sítě</link>.</p></item></list>
+
+</section>
+
+</page>

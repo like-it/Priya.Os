@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://redhat.com/rhel-atomic/7.0">
+    <short-id>rhel-atomic-7.0</short-id>
+    <name>Red Hat Enterprise Linux Atomic Host 7.0</name>
+    <name xml:lang="ca">Red Hat Enterprise Linux Atomic Host 7.0</name>
+    <name xml:lang="fr">Red Hat Enterprise Linux Atomic Host 7.0</name>
+    <name xml:lang="pl">Red Hat Enterprise Linux Atomic Host 7.0</name>
+    <name xml:lang="pt_BR">Red Hat Enterprise Linux Atomic Host 7.0</name>
+    <name xml:lang="uk">Red Hat Enterprise Linux Atomic Host 7.0</name>
+    <version>7.0</version>
+    <vendor>Red Hat, Inc</vendor>
+    <vendor xml:lang="ca">Red Hat, Inc</vendor>
+    <vendor xml:lang="de">Red Hat, Inc</vendor>
+    <vendor xml:lang="es">Red Hat, Inc</vendor>
+    <vendor xml:lang="fr">Red Hat, Inc</vendor>
+    <vendor xml:lang="ja">Red Hat, Inc</vendor>
+    <vendor xml:lang="pl">Red Hat, Inc</vendor>
+    <vendor xml:lang="pt_BR">Red Hat, Inc</vendor>
+    <vendor xml:lang="uk">Red Hat, Inc</vendor>
+    <family>linux</family>
+    <distro>rhel</distro>
+    <derives-from id="http://redhat.com/rhel/7.0"/>
+
+    <devices>
+      <device id="http://pcisig.com/pci/1b36/0100"/> 
+      <device id="http://pcisig.com/pci/8086/2415"/> 
+      <device id="http://usb.org/usb/80ee/0021"/> 
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
+      <device id="http://pcisig.com/pci/1af4/1000"/> 
+    </devices>
+
+    <media arch="x86_64">
+      <iso>
+        <system-id>LINUX</system-id>
+        <volume-id>RHEL.*Atomic.*7 x86_64.*</volume-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <resources arch="all">
+      <minimum>
+        <n-cpus>1</n-cpus>
+        <cpu>1000000000</cpu>
+        <ram>1073741824</ram>
+        <storage>10737418240</storage>
+      </minimum>
+
+      <recommended>
+        <cpu>400000000</cpu>
+        <ram>1073741824</ram>
+        <storage>9663676416</storage>
+      </recommended>
+    </resources>
+  </os>
+</libosinfo>

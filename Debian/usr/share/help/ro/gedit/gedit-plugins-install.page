@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-install" xml:lang="ro">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <desc>How to install third-party plugins.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Laurențiu Cristian Ion</mal:name>
+      <mal:email>ionlaurentiucristian@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Șerbănescu</mal:name>
+      <mal:email>daniel [at] serbanescu [dot] dk</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Module gedit adiționale</title>
+
+  <p>Instalând module terțe va oferi funcționalități suplimentare care nu sunt disponibile în modulele implicite <app>gedit</app>, sau chiar în modulele suplimentare care fac parte din pachetul <app>gedit-plugins</app>. O listă online de module terțe este <link href="https://wiki.gnome.org/Apps/Gedit">menținută aici</link>.</p>
+  
+  <p>Instalarea unui modul terț implică descărcarea modulului, introducerea fișierelor în directorul corect și activarea modulului.</p>
+  
+  <steps>
+    <item><p>Puteți descărca de obicei un modul de pe situl modulului, dar poate fi necesar să folosiți un program de control de revizii ca <app>git</app>, <app>bazaar</app> sau <app>subversion</app> pentru a copia un repozitoriu al unui modul de pe internet. Consultați documentația modulului pentru informații despre obținerea modulului.</p></item>
+    <item><p>Plasați fișierele modulului în directorul <file>/home/<var>utilizator</var>/.local/share/gedit/plugins</file>.</p>
+    <p>Desigur, înlocuiți cuvântul <var>utilizator</var> cu propriul nume de utilizator.</p></item>
+    <item><p>După ce ați plasat fișierele modulului în directorul corect, modulul va apărea în meniul Preferințe. Selectați <guiseq><gui>Editare</gui><gui>Preferințe</gui><gui>Module</gui><gui>[Nume modul]</gui></guiseq> pentru a activa modulul.</p></item>
+    <item><p>Apăsați <gui>Închidere</gui>.</p></item>
+  </steps>
+  
+  <p>După ce ați activat modulul, ar trebui să fie disponibil pentru a-l folosi.</p>
+  
+  <note style="tip">
+    <p>Directorul <file>.local</file> este ascuns în mod implicit. Pentru a-l vizualiza pe acesta și alte fișiere ascunse, selectați <guiseq><gui>Vizualizare</gui><gui>Arată fișiere ascunse</gui></guiseq>, sau apăsați <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+  </note>
+
+  <note style="tip">
+    <p>În cazul în care directorul <file>.local/share/gedit/plugins/</file> nu este prezent pe sistemul dumneavoastră, va trebui să îl creați.</p>
+  </note>
+  
+</page>

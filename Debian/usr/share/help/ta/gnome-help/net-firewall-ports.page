@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>பால் W. ஃப்ரியெல்ட்ஸ்</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>உங்கள் ஃபயர்வால் கொண்டு, ஒரு நிரலுக்கான பிணைய அணுகலை இயக்க/முடக்க நீங்கள் சரியான பிணைய போர்ட்டைக் குறிப்பிட வேண்டும்.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>பொதுவாக பயன்படுத்தப்படும் பிணைய போர்ட்கள்</title>
+
+  <p>கோப்புப் பகிர்தல் அல்லது தொலைநிலை பணிமேசை காணுதல் போன்ற பிணைய சேவைகளை வழங்கும் பயன்பாடுகள் பயன்படுத்தும் பொதுவான போர்ட்டுகளின் பட்டியல் இது. இந்த பயன்பாடுகளுக்கான <link xref="net-firewall-on-off">அணுகலை தடுக்க அல்லது அனுமதிக்க</link> கணினியின் ஃபயர்வாலை அமைக்கலாம். ஆயிரக்கணக்கான போர்ட்டுகள் பயன்படுத்தப்படுவதால் இந்த அட்டவணை நிறைவுறாதது.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>போர்ட்</p>
+	</td>
+	<td>
+	  <p>பெயர்</p>
+	</td>
+	<td>
+	  <p>விளக்கம்</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>நீங்கள் எந்த விவரமும் வழங்காமலே, கணினிகள் ஒன்றை ஒன்று கண்டறியவும் அவை என்ன சேவைகளை வழங்குகின்றன என்று விவரிக்கவும் அனுமதிக்கிறது.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>அச்சிடுதல்</p>
+	</td>
+	<td>
+	  <p>பிணையத்தின் மூலம் அச்சுப்பொறிக்கு ஒரு அச்சுப் பணியை அனுப்ப அனுமதிக்கிறது.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>அச்சிடுதல்</p>
+	</td>
+	<td>
+	  <p>பிணையத்தில் உள்ள மற்றவர்களுடன் உங்கள் அச்சுப்பொறியை பகிர அனுமதிக்கிறது.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>இருப்பு</p>
+	</td>
+	<td>
+	  <p>பிணையத்தில் உள்ள மற்றவர்க்கு "ஆன்லைன்" அல்லது "வேலையில்" என்பது போன்ற உங்கள் உடனடி செய்திப் பயன்பாட்டுக்கான நிலைகளை மற்றவர்க்கு தெரியப்படுத்த அனுமதிக்கிறது.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>தொலைநிலை பணிமேசை</p>
+	</td>
+	<td>
+	  <p>தொலைவிலிருப்பவர்கள் உங்கள் பணிமேசையைக் காணவும் உங்களுக்கு உதவவும் உங்கள் பணிமேசையை பகிர அனுமதிக்கிறது.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>இசை பகிர்வு (DAAP)</p>
+	</td>
+	<td>
+	  <p>பிணையத்தில் உள்ள மற்றவர்களுடன் உங்கள் இசை தரவகத்தைப் பகிர அனுமதிக்கிறது.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

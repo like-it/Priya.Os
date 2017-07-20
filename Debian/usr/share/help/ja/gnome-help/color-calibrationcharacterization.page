@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="ja">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>Calibration and characterization are different things entirely.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>What's the difference between calibration and characterization?</title>
+  <p>
+    Many people are initially confused about the difference between calibration
+    and characterization.
+    Calibration is the process of modifying the color behavior of a device.
+    This is typically done using two mechanisms:
+  </p>
+  <list>
+    <item><p>Changing controls or internal settings that it has</p></item>
+    <item><p>Applying curves to its color channels</p></item>
+  </list>
+  <p>
+    The idea of calibration is to put a device in a defined state with regard
+    to its color response.
+    Often this is used as a day to day means of maintaining reproducible behavior.
+    Typically calibration will be stored in device or systems specific file
+    formats that record the device settings or per-channel calibration curves.
+  </p>
+  <p>
+    Characterization (or profiling) is <em>recording</em> the way
+    a device reproduces or responds to color.
+    Typically the result is stored in a device ICC profile.
+    Such a profile does not in itself modify color in any way.
+    It allows a system such as a CMM (Color Management Module) or a color aware
+    application to modify color when combined with another device profile.
+    Only by knowing the characteristics of two devices, can a way of
+    transferring color from one device representation to another be achieved.
+  </p>
+  <note>
+    <p>
+      Note that a characterization (profile) will only be valid for a device
+      if it's in the same state of calibration as it was when it was
+      characterized.
+    </p>
+  </note>
+  <p>
+    In the case of display profiles there is some additional confusion because
+    often the calibration information is stored in the profile for convenience.
+    By convention it is stored in a tag called the <em>vcgt</em> tag.
+    Although it is stored in the profile, none of the normal ICC based tools
+    or applications are aware of it, or do anything with it.
+    Similarly, typical display calibration tools and applications will not be
+    aware of, or do anything with the ICC characterization (profile) information.
+  </p>
+
+</page>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="subkeys-revoke" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="pgp-subkeys#more"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-08-25" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Revocar una clave que se ha comprometido o que no se está usando.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Revocar subclaves</title>
+
+  <p>Si la subclave se ha comprometido o ya no está en uso, puede ser una buena idea revocarla para evitar un mal uso de la clave.</p>
+
+  <steps>
+    <title>Para revocar una subclave:</title>
+    <item>
+      <p><link xref="subkeys-examine">Navegue</link> hasta el panel de <gui>Subclaves</gui>.</p>
+    </item>
+    <!--The above step can be replaced with the following, if it's too vague:
+    <item>
+      <p>Select <gui>GnuPG keys</gui> from the panel on the left.</p>
+    </item>
+    <item>
+      <p>Right click on the PGP key and select
+      <guiseq><gui>Properties</gui><gui>Details</gui>.</p>
+    </item>
+    <item>
+      <p>Expand the subkeys panel if required.</p>
+    </item>-->
+    <item>
+      <p>Seleccione la subclave en la lista y pulse el botón <gui style="button">Revocar</gui>.</p>
+    </item>
+    <item>
+      <p>En el nuevo diálogo, seleccione una razón para revocar la clave. Opcionalmente, describa el motivo con más detalles en el campo <gui>Descripción</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse el botón <gui style="button">Revocar</gui>.</p>
+    </item>
+    <item>
+      <p>Deberá desbloquear la clave con su contraseña.</p>
+    </item>
+    <item>
+      <p>El <gui>Estado</gui> de la subclave cambia a <gui>Revocada</gui> en el panel de <gui>Subclaves</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Si ha <link xref="pgp-publish">publicado</link> su subclave, debe <link xref="pgp-sync">sincronizarla</link> con los servidores de claves después de revocarla, para aplicar la revocación a todas las copias de la clave.</p>
+  </note>
+
+</page>

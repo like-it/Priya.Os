@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="hardware-cardreader" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="media#photos"/>
+    <link type="guide" xref="hardware#problems"/>
+
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Fehlerbeseitigung bei Speicherkartenlesern</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Probleme mit Speicherkartenlesern</title>
+
+<p>Viele Rechner enthalten Lesegeräte für SD, MMC, SM, MS, CF und weitere Speicherkartentypen. Diese sollten automatisch erkannt und <link xref="disk-partitions">eingehängt</link> werden. Hier einige Hinweise zur Fehleranalyse, falls das nicht passiert:</p>
+
+<steps>
+<item>
+<p>Überprüfen Sie, ob die Karte richtig eingelegt ist. Viele Karten scheinen verkehrt herum zu liegen, wenn sie korrekt eingesetzt sind. Außerdem sollten Sie den festen Sitz der Karte prüfen. Einige Typen, insbesondere CF-Karten, benötigen etwas mehr Nachdruck beim Einlegen. Seien Sie jedoch vorsichtig und wenden Sie nicht zu viel Kraft auf! Sobald Sie einen festen Gegendruck verspüren, sollten Sie aufhören.</p>
+</item>
+
+<item>
+  <p>Öffnen Sie <app>Dateien</app> mit Hilfe der <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht. Erscheint die eingelegte Karte in der <gui>Geräte</gui>-Liste in der linken Seitenleiste? Manchmal ist die Karte in dieser Liste aufgeführt, aber nicht eingehängt; klicken Sie einmal darauf, um sie einzuhängen. (Falls die Seitenleiste nicht sichtbar ist, drücken Sie die <key>F9</key>-Taste oder klicken Sie auf den Ansichtsoptionen-Knopf in der oberen Leiste und wählen Sie <gui>Seitenleiste</gui>.)</p>
+</item>
+
+<item>
+  <p>Falls Ihre Karte nicht in der Seitenleiste angezeigt wird, drücken Sie <keyseq><key>Strg</key><key>L</key></keyseq> und geben Sie dann <input>computer:///</input> ein und bestätigen Sie die Eingabe mit der <key>Eingabetaste</key>. Wenn der Kartenleser korrekt eingerichtet ist, wird er als Laufwerk angezeigt, falls keine Karte vorhanden ist, oder als Karte, wenn diese eingelegt wurde.</p>
+</item>
+
+<item>
+<p>Falls Sie den Kartenleser sehen können, die Karte jedoch nicht, könnte ein Problem mit der Karte selbst bestehen. Tauschen Sie die Karte aus oder versuchen Sie sie in einem anderen Kartenleser, falls vorhanden.</p>
+</item>
+</steps>
+
+<p>Wenn keine Karten oder Laufwerke im Ordner <gui>Rechner</gui> sichtbar sind, funktioniert Ihr Kartenleser möglicherweise aufgrund von Treiberproblemen nicht unter Linux. Wenn es sich um einen internen Kartenleser handelt (im Rechner eingebaut statt außen angeschlossen), ist das umso wahrscheinlicher. Die beste Lösung ist es, Ihr Gerät (Kamera, Mobiltelefon etc.) direkt über den USB-Anschluss mit dem Rechner zu verbinden. Es gibt auch externe USB-Kartenleser, die unter Linux weitaus besser unterstützt sind.</p>
+
+</page>

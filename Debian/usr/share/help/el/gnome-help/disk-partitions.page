@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="el">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Έργο Τεκμηρίωσης GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>Κατανοώντας τι είναι τόμοι και κατατμήσεις και χρησιμοποιώντας το εργαλείο δίσκου μπορείτε να τα διαχειριστείτε.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>Διαχείριση τόμων και κατατμήσεων</title>
+
+  <p>Η λέξη <em>τόμος</em> χρησιμοποιείται για την περιγραφή μιας συσκευής αποθήκευσης, όπως ένας σκληρός δίσκος. Μπορεί επίσης να αναφέρεται σε ένα <em>μέρος</em> της αποθήκευσης σε αυτή τη συσκευή, επειδή μπορείτε να διαιρέσετε την αποθήκευση σε τμήματα. Ο υπολογιστής κάνει αυτήν την αποθήκευση προσβάσιμη μέσα από τα αρχείο συστήματός σας με μια διαδικασία που αναφέρεται ως <em>προσάρτηση</em>. Οι προσαρτημένοι τόμοι μπορεί να είναι σκληροί δίσκοι, οδηγοί USB, DVD-RWs, κάρτες SD και άλλα μέσα. Εάν ένας τόμος είναι προς το παρόν προσαρτημένος, μπορείτε να διαβάσετε (και πιθανόν να γράψετε) αρχεία σε αυτόν.</p>
+
+  <p>Συχνά, ένας προσαρτημένος τόμος λέγεται <em>κατάτμηση</em>, όμως δεν είναι αναγκαστικά το ίδιο πράγμα. Μια «κατάτμηση» αναφέρεται σε μια <em>φυσική</em> περιοχή αποθήκευσης σε έναν οδηγό δίσκου. Αφού μια κατάτμηση έχει προσαρτηθεί, μπορεί να αναφέρεται ως ένας τόμος επειδή μπορείτε να προσπελάσετε τα αρχεία σε αυτή. Μπορείτε να σκεφτείτε τους τόμους ως τις ετικέτες, προσβάσιμες “βιτρίνες” στο λειτουργικό “των πίσω δωματίων” των κατατμήσεων και των οδηγών.</p>
+
+<section id="manage">
+ <title>Προβολή και διαχείριση τόμων και κατατμήσεων χρησιμοποιώντας το εργαλείο δίσκου</title>
+
+  <p>Μπορείτε να ελέγξετε και να τροποποιήσετε τους τόμους αποθήκευσης του υπολογιστή με το εργαλείο δίσκου.</p>
+
+<steps>
+  <item>
+    <p>Ανοίξτε την επισκόπηση <gui>Δραστηριότητες</gui> και ξεκινήστε την εφαρμογή <app>Δίσκοι</app>.</p>
+  </item>
+  <item>
+    <p>Στην λίστα συσκευών αποθήκευσης στα αριστερά σας, θα βρείτε σκληρούς δίσκους, δίσκους CD/DVD και άλλες φυσικές συσκευές. Πατήστε τη συσκευή που θέλετε να επιθεωρήσετε.</p>
+  </item>
+  <item>
+    <p>Το δεξιό παράθυρο παρέχει μια οπτική ανάλυση των τόμων και των κατατμήσεων που εμφανίζονται στην επιλεγμένη συσκευή. Περιέχει επίσης μια ποικιλία εργαλείων που χρησιμοποιούνται για τη διαχείριση αυτών των τόμων.</p>
+    <p>Να είστε προσεκτικοί: είναι πιθανό να σβήσετε πλήρως τα δεδομένα στον δίσκο σας με αυτά τα εργαλεία.</p>
+  </item>
+</steps>
+
+  <p>Ο υπολογιστής σας πού πιθανόν έχει τουλάχιστον μια <em>πρωτεύουσα</em> κατάτμηση και μια μονή κατάτμηση <em>εναλλαγής</em>. Η κατάτμηση εναλλαγής χρησιμοποιείται από το λειτουργικό σύστημα για διαχείριση μνήμης και προσαρτάται σπάνια. Η πρωτεύουσα κατάτμηση περιέχει το λειτουργικό σας σύστημα, εφαρμογές, ρυθμίσεις και προσωπικά αρχεία. Αυτά τα αρχεία μπορούν επίσης να διανεμηθούν μεταξύ πολλαπλών κατατμήσεων για ασφάλεια ή διευκόλυνση.</p>
+
+  <p>One primary partition must contain information that your computer uses to
+  start up, or <em>boot</em>. For this reason it is sometimes called a boot
+  partition, or boot volume. To determine if a volume is bootable, select the
+  partition and click the menu button in the toolbar underneath the partition
+  list. Then, click <gui>Edit Partition…</gui> and look at its
+  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
+  a bootable volume.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="video-dvd" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="media#videos"/>
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.12.1" date="2014-03-30" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
+
+    <credit type="author">
+      <name>GNOME ドキュメンテーションプロジェクト</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>正しいコーデックがインストールされていないか、DVD のリージョンが異なる可能性があります。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>DVD を再生できない</title>
+
+  <p>DVD をコンピューターに挿入しても再生できない場合、DVD の<em>コーデック</em>がインストールされていないか、DVD の<em>リージョン</em>が異なる可能性があります。</p>
+
+<section id="codecs">
+  <title>DVD 再生に適したコーデックをインストールする</title>
+
+  <p>In order to play DVDs, you need to have the right <em>codecs</em>
+  installed.  A codec is a piece of software that allows applications to read a
+  video or audio format. If your movie player software doesn't find the right
+  codecs, it may offer to install them for you. If not, you'll have to install
+  the codecs manually - ask for help on how to do this, for example on your
+  Linux distribution's support forums.</p>
+
+  <p>DVDs are also <em>copy-protected</em> using a system called CSS. This
+  prevents you from copying DVDs, but it also prevents you from playing them
+  unless you have extra software to handle the copy protection. This software
+  is available from a number of Linux distributions, but cannot be legally used
+  in all countries. You can buy a commercial DVD decoder that can handle copy
+  protection from
+  <link href="http://fluendo.com/shop/product/oneplay-dvd-player/">Fluendo</link>.
+  It works with Linux and should be legal to use in all countries.</p>
+
+  </section>
+
+<section id="region">
+  <title>DVD のリージョンを確認する</title>
+
+  <p>DVD には<em>リージョンコード</em>が付与されています。リージョンコードは、その DVD の再生が許可されている地域を示します。あなたのコンピューターの DVD プレイヤーのリージョンと、DVD のリージョンとが一致しない場合、その DVD を再生できません。たとえばリージョン1の DVD プレイヤーは、北米の DVD のみ再生を許可されています。</p>
+
+  <p>DVD プレイヤーの中には、リージョンを変更できるものがあります。しかしこの変更は、DVD プレイヤーがリージョンをロックするまでの数回に限られます。コンピューターの DVD プレイヤーのリージョンを変更するには、<link href="http://linvdr.org/projects/regionset/">regionset</link> を使います。</p>
+
+  <p>You can find
+  <link href="https://en.wikipedia.org/wiki/DVD_region_code">more information
+  about DVD region codes on Wikipedia</link>.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Mitwirkende im Dokumentations-Wiki von Ubuntu</name>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Einige Gerätetreiber funktionieren mit bestimmten Funknetzwerkadaptern nicht wirklich gut, so dass es hilfreich sein könnte, nach einem anderen Gerätetreiber zu suchen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Problemlösungen für Funknetzwerke</title>
+
+  <subtitle>Stellen Sie sicher, dass funktionierende Gerätetreiber installiert sind</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>In diesem Schritt können Sie überprüfen, ob es funktionierende Gerätetreiber für Ihren Funknetzwerkadapter gibt. Ein <em>Gerätetreiber</em> ist ein Stück Software, die dem Rechner Anweisungen gibt, wie ein Hardwaregerät richtig anzusprechen ist. Selbst wenn der Funknetzwerkadapter von Ihrem Rechner erkannt wurde, kann es vorkommen, dass der Rechner keinen sauber funktionierenden Treiber dafür hat. Möglicherweise finden Sie dann andere Treiber für den Funknetzwerkadapter, die richtig funktionieren. Versuchen Sie einige der folgenden Möglichkeiten:</p>
+
+  <list>
+    <item>
+      <p>Überprüfen, ob Ihr Funknetzwerkadapter in der Liste der unterstützten Geräte erscheint.</p>
+      <p>Die meisten Linux-Distributionen stellen eine Liste von unterstützten Funknetzwerkgeräten zur Verfügung. Manchmal liefern diese Listen zusätzliche Informationen darüber, wie man die Treiber für bestimmte Adapter zum Laufen bringen kann. Gehen Sie zu der Liste Ihrer Distribution (zum Beispiel <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>, <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>, <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> oder <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>) und stellen Sie fest, ob Ihr Funknetzwerkadapter in Ihrer Version aufgelistet ist. Vielleicht können Sie die dortigen Informationen verwenden, um Ihre Funknetzwerktreiber zum Laufen zu bringen.</p>
+    </item>
+    <item>
+      <p>Nach eingeschränkten (binären) Treibern suchen.</p>
+      <p>Viele Linux-Distributionen werden nur mit Gerätetreibern ausgeliefert, die <em>frei</em> und <em>quelloffen</em> sind. Das liegt daran, dass sie keine Treiber verteilen können, die proprietär sind oder deren Quellen nicht einsehbar sind. Wenn der passende Treiber für Ihren Funknetzwerkadapter nur in einer nicht-freien, nur binären Version erhältlich ist, ist er unter Umständen nicht vorinstalliert. Wenn das der Fall ist, suchen Sie auf der Website des Funknetzwerkadapter-Herstellers, ob er Linuxtreiber zur Verfügung stellt.</p>
+      <p>Einige Linux-Distributionen verfügen über ein Werkzeug, das eingeschränkte Treiber für Sie herunterladen kann. Falls Ihre Distribution ein solches Werkzeug mitbringt, nutzen Sie es, um zu sehen, ob Sie auf diese Weise zu Funknetzwerktreibern gelangen.</p>
+    </item>
+    <item>
+      <p>Die Windows-Treiber für Ihren Adapter verwenden.</p>
+      <p>Im Allgemeinen können Sie einen Gerätetreiber, der für ein bestimmtes Betriebssystem erstellt wurde (etwa für Windows), nicht auf einem anderen Betriebssystem einsetzen (etwa Linux). Das liegt daran, dass Betriebssysteme auf unterschiedliche Art und Weise mit Geräten umgehen. Allerdings ist es bei Funknetzwerkadaptern möglich, eine Kompatibilitätsschicht namens <em>NDISwrapper</em> zu installieren, mit deren Hilfe Sie einige Windows-Funknetzwerktreiber unter Linux verwenden können. Das ist nützlich, weil für Funknetzwerkadapter fast immer Windows-Treiber verfügbar sind, aber manchmal keine Linux-Treiber. Wie Sie NDISwrapper verwenden können, erfahren Sie <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">hier</link>. Bitte beachten Sie, dass nicht alle Funknetzwerktreiber mit NDISwrapper verwendet werden können.</p>
+    </item>
+  </list>
+
+  <p>Wenn keine dieser Möglichkeiten funktioniert, könnten Sie einen anderen Funknetzwerkadapter ausprobieren, um zu sehen, ob Sie ihn zum Laufen bringen können. USB-Funknetzwerkadapter sind meist relativ billig und können an jeden Rechner angeschlossen werden. Sie sollten aber vor dem Kauf überprüfen, ob der Adapter mit Ihrer Linux-Distribution kompatibel ist.</p>
+
+</page>

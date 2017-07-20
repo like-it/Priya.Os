@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="calendar-alarms-and-reminders" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#calendar"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2011-08-02" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+     <name its:translate="no">Novell, Inc</name>
+     <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-prefs-cal.html.en#CACHCGCI -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak nastavit připomínání pomocí upozorňování na události.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Připomínání událostí</title>
+
+<section id="general-settings">
+  <title>Obecná nastavení</title>
+
+  <p>Pod <guiseq><gui>Upravit</gui> <gui>Předvolby</gui> <gui>Kalendář a úkoly</gui> <gui>Připomenutí</gui></guiseq> můžete vybrat kalendáře, od kterých chcete přijímat oznámení o připomenutí. Když kalendář nevyberete, nebudete dostávat připomenutí pro žádnou z údálostí v tomto kalendáři. Můžete také definovat, jestli zobrazovat připomenutí pro každou událost a pro každé narozeniny a výročí.</p>
+
+  <if:choose>
+    <if:when test="platform:gnome-shell">
+      <p>Ohledně obecných informací o zobrazování připomenutí se podívejte prosím do <link xref="help:gnome-help/shell-notifications" href="https://help.gnome.org/users/gnome-help/stable/shell-notifications">nápovědy k pracovnímu prostředí GNOME</link>.</p>
+    </if:when>
+  </if:choose>
+
+</section>
+
+<section id="manual-reminders">
+  <title>Ruční připomínání</title>
+
+  <p>Mimo obecného nastavení si můžete nastavit také připomenutí v editoru události pro jednu konkrétní událost:</p>
+
+  <steps>
+    <item>
+      <p>Klikněte na <guiseq><gui>Volby</gui> <gui>Připomenutí</gui></guiseq> nebo zmáčkněte tlačítko Připomenutí na nástrojové liště.</p>
+    </item>
+    <item>
+      <p>V rozbalovací nabídce zvolte buď jednu z dostupných výchozích voleb, kdy se má oznámení o přepomenutí zobrazit nebo zvolte <gui>Přizpůsobit</gui>.</p>
+    </item>
+    <item>
+      <p>V případě volby <gui>Přizpůsobit</gui> může mít připomenutí podobu vyskakovacího oznámení, přehrání zvuku nebo spuštění programu. Můžete také navolit, jesti se má připomenutí opakovat.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

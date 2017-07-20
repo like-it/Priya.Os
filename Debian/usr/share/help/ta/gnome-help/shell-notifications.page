@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-notifications" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="shell-overview#desktop"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
+
+    <credit type="author">
+      <name>மேரினா ஸுராகின்ஸ்கயா</name>
+      <email>marinaz@redhat.com</email>
+    </credit>
+    <credit type="editor">
+      <name>மைக்கேல் ஹில்</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>எக்காட்டெரினா ஜெராசிமோவா</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013, 2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Messages drop down from the top of the screen telling you when
+    certain events happen.</desc> 
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+<title>அறிவிப்புகள் மற்றும் செய்தித் தட்டு</title>
+
+<section id="what">
+  <title>அறிவிப்பு என்றால் என்ன?</title>
+
+  <p>If an application or a system component wants to get your attention, a
+  notification will be shown at the top of the screen.</p>
+
+  <p>For example, if you get a new chat message or a new email, you will get a
+  notification informing you.</p>
+
+<!--  <p>To minimize distraction, some notifications first appear as a single line.
+  You can move your mouse over them to see their full content.</p>-->
+
+  <p>பிற அறிவிப்புகளுக்கு தேர்ந்தெடுக்கத்தக்க விருப்பம் பொத்தான்கள் உள்ளன. இந்த அறிவிப்புகளில் ஒன்றை அதன் விருப்பங்கள் எதையும் தேர்ந்தெடுக்காமல் மூட மூடு பொத்தானை சொடுக்கவும்.</p>
+
+<!--  <media type="image" width="500" src="figures/notification-buttons.png"/>-->
+
+  <p>மூடு பொத்தானை சொடுக்கினால், சில அறிவிப்புகள் அப்புறப்படுத்தப்படும். Rhythmbox அல்லது உங்கள் அரட்டை பயன்பாடு போன்ற பிற அறிவிப்புகள் செய்தித் தட்டிலேயே மறைந்திருக்கும்.</p>
+
+</section>
+
+<section id="messagetray">
+
+  <title>செய்தித் தட்டு</title>
+
+  <p if:test="!platform:gnome-classic">The message tray gives you a way to get
+  back to your notifications when it is convenient for you. It appears when you
+  click on the clock, or press
+  <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. The
+  message tray contains all the notifications that you have not acted upon or
+  that permanently reside in it.</p>
+
+  <p if:test="platform:gnome-classic">நீங்கள் விருப்பம்படும் போது மீண்டும் அறிவிப்புகளைக் காண செய்தித் தட்டுக்குச் செல்லலாம். நீங்கள் சொடுக்கியை திரையின் அடிப்பகுதிக்குக் கொண்டு செல்லும் போது அல்லது <keyseq> <key xref="keyboard-key-super">Super</key><key>M</key></keyseq> ஐ அழுத்தும் போது அது காண்பிக்கப்படுகிறது. சாளர பட்டியலின் வலப்புறம் உள்ள நீல நிற எண் சின்னத்தை சொடுக்கியும் செய்தித் தட்டைத் திறக்கலாம். நீங்கள் நடவடிக்கை எடுக்காத மற்றும் அங்கேயே நிரந்தரமாக இருக்கும் அனைத்து அறிவிப்புகளுமே செய்தித் தட்டில் இருக்கும்.</p>
+
+  <p>செய்தித் தட்டிலுள்ள உருப்படிகளை சொடுக்குவதன் மூலம் நீங்கள் அறிவிப்புகளைக் காணலாம். இவை பொதுவாக பயன்பாடுகள் அனுப்பும் செய்திகளே. இருப்பினும், அரட்டை செய்திகள் சிறப்பாக நடத்தப்படும், அவை உங்களுக்கு அரட்டை செய்தியை அனுப்பிய தொடர்பையும் காண்பிக்கும்.</p>
+
+  <p>மீண்டும் <keyseq><key>Super</key><key>M</key></keyseq> ஐ அழுத்தி அல்லது <key>Esc</key> ஐ அழுத்தியும் செய்தித் தட்டை மூடலாம்.</p>
+
+</section>
+
+<section id="hidenotifications">
+
+  <title>அறிவிப்புகளை மறைத்தல்</title>
+
+  <p>If you're working on something and do not want to be bothered, you can
+  switch off notifications.</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Notifications</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Notifications</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Notification Banners</gui> to <gui>OFF</gui>.</p>
+    </item>
+  </steps>
+
+  <p if:test="!platform:gnome-classic">When switched off, most notifications
+  will not pop up at the top of the screen. <!--Very important notifications, such
+  as when your battery is critically low, will still pop up.--> Notifications will
+  still be available in the message tray when you display it (by clicking on
+  the clock, or by pressing <keyseq><key>Super</key><key>M</key></keyseq>), and
+  they will start popping up again when you switch the toggle to <gui>ON</gui>
+  again.</p>
+
+  <p>You can also disable or re-enable notifications for individual
+  applications from the <gui>Notifications</gui> panel.</p>
+
+  <p if:test="platform:gnome-classic">When switched off, most notifications will
+  not pop up at the bottom of the screen. Very important notifications, such as
+  when your battery is critically low, will still pop up. Notifications will
+  still be available in the message tray when you display it (by moving your mouse
+  to the bottom-right corner of the screen, or by pressing <keyseq><key>Super</key>
+  <key>M</key></keyseq>), and they will start popping up again when you switch the
+  toggle to <gui>ON</gui> again.</p>
+
+</section>
+
+</page>

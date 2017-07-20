@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="strategy" xml:lang="cs">
+	<info>
+          <revision version="3.4" date="2012-03-08" status="final"/>
+	  <link type="guide" xref="index#play"/>
+	  <credit type="author copyright">
+	    <name>Radoslav Asparuhov</name>
+	    <email>rasparuhov@gmail.com</email>
+	  <years>2011</years>
+	  </credit>
+	  <credit type="editor">
+	    <name>Tiffany Antopolski</name>
+	    <email>tiffany.antopolski@gmail.com</email>
+	  </credit>
+	  <license>
+		<p>Creative Commons Share Alike 3.0</p>
+	  </license>
+	
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Stratedie</title>
+        <p>V hlavolamu Sudoku existuje pro každé políčko jen jedna správná možnost. Následující strategie vám pomohou systematicky objevovat řešení pro jednotlivá políčka.</p>
+ <section id="strategy1">
+	<title>Strategie 1:</title>
+	  <steps>
+	    <item><p>Zvolte řádek s nejvíce čísly.</p>
+                  <note><p>Měli byste zvolit řádek nebo sloupec s nejvíce čísly. Následující postup je pro zjednodušení psán, jako by největší počet číslic byl v řádku.</p></note>
+            </item>
+	    <item><p>Určete, která čísla v řádku schází.</p></item>
+	    <item><p>Zvolte si jedno prázdné políčko v tomto řádku. Určete, která z chybějících čísel se nachází v odpovídajícím sloupci nebo bloku 3 × 3.</p></item>
+	    <item><p>Pomocí <link xref="notes">poznámek</link> si poznačte do horní části, která z chybějících čísel nejsou ani ve sloupci, ani v bloku 3 × 3. Tato čísla jsou kandidáty na vyřešení políčka.</p></item>
+	    <item><p>Přejděte na následující prázdné políčko vybraného řádku a předchozí postup zopakujte. Postupně jej opakujte pro všechny řádky a sloupce, počínaje těmi, ve kterých je nejvíc vyplněných čísel, až po ty s nejméně. Čísla vždy hledejte pečlivě a nezapomínejte na bloky 3 × 3.</p></item>
+	   </steps>
+            <note><p>Tato strategie pomůže vyhodnotit políčka, ve kterých je jen jedno možné číslo. Až celý postup dokončíte, můžete takováto políčka vyplnit a strategii znovu opakovat, dokud nevyřešíte celé sudoku.</p></note>
+<figure>
+  <desc>Příklad použití strategie 1.</desc>
+  <media type="image" mime="image/png" src="figures/strategy1.png" width="400" its:translate="no"/>
+</figure>
+
+</section>
+<section id="strategy2">
+
+	<title>Strategie 2:</title>
+	  <steps>
+	    <item><p>Najděte číslo, které se objevuje nejčastěji.</p></item>
+	    <item><p>Nyní se podívejte na svislou řadu bloků 3 × 3 vlevo a najděde sloupec či sloupce, ve kterých se toto číslo vyskytuje.</p></item>
+  	    <item><p>V této řadě přejděte na blok 3 × 3, který toto číslo neobsahuje v žádném z políček. Zadejte si dané číslo do <link xref="notes">poznámek</link> v každém volném políčku sloupce, ve kterém se toto číslo nevyskytuje. Pokud se ale číslo vyskytuje v řádku patřícímu k některému z těchto políček, do poznámky jej nezadávejte.</p></item>
+	    <item><p>Opakujte poslední dva kroky pro prostřední a pravou řadu bloků 3 × 3.</p></item>
+            <item><p>Najděte další číslo, které se opakuje nejčastěji, a opakujte postup, dokud neprojdete všech 9 čísel.</p></item>
+	  </steps>
+            <note><p>Tato strategie pomůže vyhodnotit políčka, ve kterých je jen jedno možné číslo. Až celý postup dokončíte, můžete takováto políčka vyplnit a strategii znovu opakovat, dokud nevyřešíte celé sudoku.</p></note>
+<figure>
+  <desc>Příklad použití strategie 2.</desc>
+  <media type="image" mime="image/png" src="figures/strategy2.png" width="400" its:translate="no"/>
+</figure>
+
+	   <note><p>Pokud ani jedna z uvedených strategií nevede k vyřešení sudoku, zkuste jinou strategie. Můžete také strategie kombinovat.</p></note>
+</section>
+</page>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="seealso" xref="net-findip"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Džim Kembel</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Korišćenje statičke IP adrese može da olakša obezbeđivanje nekih mrežnih usluga sa vašeg računara.</desc>
+  </info>
+
+  <title>Napravite vezu sa stalnom IP adresom</title>
+
+  <p>Većina mreža će sama da dodeli <link xref="net-what-is-ip-address">IP adresu</link> i ostale detalje vašem računaru kada se priključite na mrežu. Ovi detalji mogu da se promene s vremena na vreme, ali vi ćete možda želeti da imate stalnu IP adresu za računar tako da znate uvek koja je njegova adresa (na primer, ako je to server datoteka).</p> <p>Da date vašem računaru stalnu (statičku) IP adresu:</p>
+
+  <steps>
+    <item>
+      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Mreža</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknite na <gui>Mreža</gui> da otvorite panel.</p>
+    </item>
+    <item>
+      <p>U levom oknu, izaberite mrežnu vezu kojoj želite da dodelite stalnu adresu. Ako se kablom priključite na mrežu, kliknite <gui>Žičana</gui>, zatim kliknite na dugme <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">podešavanja</span></media> u donjem desnom uglu panela. Za <gui>Bežičnu</gui> vezu, dugme <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">podešavanja</span></media> će se nalaziti pored radne mreže.</p>
+    </item>
+    <item>
+      <p>Kliknite na jezičak <gui>IPv4</gui> ili <gui>IPv6</gui> i izmenite <gui>Adrese</gui> na <em>Ručno</em>.</p>
+    </item>
+    <item>
+      <p>Unesite podatke za <em>Adresu</em>, <em>Mrežnu masku</em>, i <em>Mrežni prolaz</em> u odgovarajuća polja. Kako ćete ovo izabrati zavisiće od vašeg podešavanja mreže; postoje naročita pravila koja odlučuju koje IP adrese i mrežne maske su ispravne za datu mrežu.</p>
+    </item>
+    <item>
+      <p>Ako je neophodno, unesite adresu <em>Servera naziva domena</em> u polje <gui>DNS serveri</gui>. Ovo je IP adresa servera koji pretražuje nazive domena; većina mrežnih udruženja i internet dostavljača imaju posvećene DNS servere.</p>
+    </item>
+    <item>
+      <p>Pritisnite <gui>Primeni</gui>. Mrežna veza će sada imati stalnu IP adresu.</p>
+    </item>
+  </steps>
+
+</page>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="offline" xml:lang="hu">
+
+  <info>
+    <desc>Az <app>Evolution</app> levelező visszaállítása online módba.</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+    <link type="seealso" xref="mail-working-offline"/>
+
+    <revision pkgversion="3.13.4" version="0.4" date="2015-02-15" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Brian Grohe</name>
+      <email its:translate="no">grohe43@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Patrick O'Callaghan</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+<title>Miért van az <app>Evolution</app> levelező kapcsolat nélküli módban?</title>
+<p>Lehet, hogy az <app>Evolutiont</app> a <cmd>--offline</cmd> parancssori kapcsolóval indította a kapcsolat nélküli mód kikényszerítéséhez.</p>
+
+<p>Ha nem ezt tette, és az <app>Evolution</app> normális működése során hirtelen nem csatlakozik a postafiókjaihoz, akkor lehet, hogy véletlenül rákattintott a bal alsó sarokban lévő ikonra. A hálózathoz csatlakozva ez az ikon csatlakoztatott dugaljakhoz hasonlít. Ha a dugaljak nincsenek összekapcsolva, akkor nincs kapcsolat a postafiókjaihoz (és a <gui style="button">Küldés / Fogadás</gui> gomb is ki van szürkítve). Kattintson az ikonra az állapotának megváltoztatásához.</p>
+
+<p>Ha a probléma továbbra is fennáll, és biztosan nem kattintott az ikonra, de más alkalmazásokból (böngésző, FTP, SSH, ping stb.) eléri a hálózatot, akkor lehet, hogy a hálózati kapcsolat van rosszul beállítva. További információkért nézze meg az <link xref="help:gnome-help/net-problem" href="https://help.gnome.org/users/gnome-help/stable/net-problem">asztali környezet súgóját</link>, vagy keresse fel a disztribúciója támogatási fórumait vagy levelezőlistáit.</p>
+
+<!-- from https://bugzilla.gnome.org/show_bug.cgi?id=728604 -->
+<p>Ha szeretné az <app>Evolutiont</app> online módra kényszeríteni, akkor győződjön meg róla, hogy az <app>Evolution</app> nem fut, és nyisson egy <app>Terminál</app> ablakot, majd adja ki a következő parancsot:</p>
+     <p><cmd its:translate="no">
+         GIO_USE_NETWORK_MONITOR=base evolution
+     </cmd></p>
+
+<note style="warning"><p>Az <app>Evolution</app> kényszerített kapcsolat nélküli módja csak a levelezésre vonatkozik, és nem érvényes a névjegyekre és naptárakra.</p></note>
+
+</page>

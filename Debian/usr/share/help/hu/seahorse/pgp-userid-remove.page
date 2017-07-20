@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-userid-remove" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="pgp-userid#add-remove"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-06-27" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Extra felhasználói azonosítók eltávolítása</desc>
+  </info>
+
+  <title>Felhasználói azonosító eltávolítása a kulcsról</title>
+
+  <p>Míg legalább egy felhasználói azonosító megléte kötelező, a kulcshoz csatolt összes további azonosítót el lehet távolítani.</p>
+
+  <steps>
+    <title>PGP-kulcshoz csatolt felhasználói azonosító eltávolításához:</title>
+    <item>
+      <p>Válassza ki a bal oldali sávban a <gui>GnuPG kulcsok</gui> kulcstartót.</p>
+    </item>
+    <item>
+      <p>A GnuPG kulcsok listájából válassza ki a kívánt <gui>Személyes PGP-kulcsot</gui>.</p>
+    </item>
+    <item>
+      <p>Kattintson a jobb egérgombbal a kulcsra, majd nyissa meg a <guiseq><gui>Tulajdonságok</gui> <gui>Nevek és aláírások</gui></guiseq> lapot.</p>
+    </item>
+    <item>
+      <p>Válassza ki a listából az eltávolítandó felhasználói azonosítót, majd kattintson a <gui style="button">Törlés</gui> gombra.</p>
+    </item>
+  </steps>
+
+   <note style="tip">
+     <p>A felhasználói azonosító törlését követően <link xref="pgp-sync">szinkronizálja</link> a kulcsot a távoli másolat információinak frissítéséhez.</p>
+   </note>
+
+</page>

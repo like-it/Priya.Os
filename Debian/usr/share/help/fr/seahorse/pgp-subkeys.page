@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="pgp-subkeys" xml:lang="fr">
+  <info>
+    <link type="guide" xref="index#pgp-keys" group="second"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-28" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Une sous-clé est toujours rattachée à une clé maîtresse dans une paire de clés PGP. Elle est utilisée pour le chiffrement.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Définition de la notion de sous-clé</title>
+
+  <p>Bien qu'il soit très important de garder ses clés en sécurité, il peut devenir bien ennuyeux de le faire si vous avez de nombreuses clés. <gui>Mots de passe et Clés</gui> fournit une solution simple pour la sécurité des clés avec l'utilisation de <em>sous-clés</em> lors de la signature et du cryptage.</p>
+
+  <p>Chaque fois que vous <link xref="pgp-create">créez</link> une nouvelle clé de chiffrement publique, une <em>paire de clés</em> est générée au lieu d'une clé simple. Cette paire de clés se compose d'une clé principale, aussi appelée <em>clé maîtresse</em>, et d'une <em>sous-clé</em>. Une clé maîtresse peut être utilisée pour créer d'autres sous-clés qui lui sont alors rattachées.</p>
+
+  <list>
+    <title>Rôle de chaque clé dans une paire</title>
+      <item>
+	<p>La <em>clé maîtresse</em> sert à <link xref="pgp-sign">signer</link> d'autres clés, à créer et à <link xref="subkeys-revoke">révoquer</link> les sous-clés. La clé maîtresse doit être gardée en lieu sûr. Les signatures de confiance sont également réunies sur la clé maîtresse. Si la clé maîtresse est compromise, vous n'avez pas d'autre solution que la révoquer ainsi que toutes les sous-clés qui lui sont rattachées.</p>
+      </item>
+      <item>
+	<p>La <em>sous-clé</em> par défaut sert au chiffrement et au déchiffrement des messages. D'autres sous-clés peuvent être créées pour la signature. Bien qu'il soit important de garder vos sous-clés en lieu sûr, vous pouvez toujours révoquer une sous-clé si elle est compromise, et en re-créer une nouvelle avec la clé maîtresse d'origine.</p>
+      </item>
+  </list>
+
+  <section id="more" style="2column">
+    <title>Informations supplémentaires sur les sous-clés</title>
+  </section>
+</page>

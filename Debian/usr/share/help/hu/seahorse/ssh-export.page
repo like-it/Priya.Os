@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="ssh-export" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys"/>
+
+    <revision pkgversion="3.14" date="2014-10-03" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Nyilvános és személyes SSH-kulcsok exportálása kulcsfájlban való tároláshoz.</desc>
+  </info>
+
+  <title>SSH-kulcsok exportálása</title>
+
+  <p>Biztonsági másolat készítéséhez, vagy nyilvános kulcsa másokkal való megosztásához SSH-kulcsai tartalmát kulcsfájlba is exportálhatja.</p>
+
+  <section id="public">
+    <title>A nyilvános SSH-kulcs exportálásához:</title>
+
+    <steps>
+      <item>
+	<p>Válassza ki a bal oldali sáv <gui>OpenSSH kulcsok</gui> kulcstartóját.</p>
+      </item>
+      <item>
+	<p>Válassza ki a listából az exportálandó <gui>Személyes SSH-kulcsot</gui>.</p>
+      </item>
+      <item>
+	<p>Válassza a <guiseq><gui>Fájl</gui><gui>Exportálás…</gui></guiseq> menüpontot.</p>
+      </item>
+      <item>
+	<p>Nyomja meg az <gui style="button">Exportálás</gui> gombot az exportált nyilvános kulcs mentéséhez.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="private">
+    <title>Személyes SSH-kulcs exportálásához:</title>
+
+    <steps>
+      <item>
+	<p>Válassza ki a bal oldali sáv <gui>OpenSSH kulcsok</gui> kulcstartóját.</p>
+      </item>
+      <item>
+	<p>Válassza ki a listából az exportálandó <gui>Személyes SSH-kulcsot</gui>.</p>
+      </item>
+      <item>
+	<p>Kattintson a jobb egérgombbal a kijelölt kulcsra, majd válassza a <guiseq><gui>Tulajdonságok</gui><gui>Részletek</gui></guiseq> menüpontot.</p>
+      </item>
+      <item>
+	<p>Nyomja meg az <gui style="button">Teljes kulcs exportálása</gui> gombot az exportált személyes kulcs mentéséhez.</p>
+      </item>
+    </steps>
+
+    <note style="warning">
+      <p>A kulcsával való visszaélés megelőzése érdekében az exportált személyes kulcsot tárolja mindig biztonságos helyen.</p>
+    </note>
+
+  </section>
+
+</page>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Una lista de carpetas donde puede encontrar documentos, archivos y configuraciones que podría querer respaldar.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>¿Dónde puedo encontrar los archivos de los que quiero hacer copia de respaldo?</title>
+
+  <p>Decidir qué archivos respaldar y saber dónde están es el paso más difícil al intentar llevar a cabo una copia de respaldo. A continuación se listan las ubicaciones más comunes de archivos y ajustes importantes que puede querer respaldar.</p>
+
+<list>
+ <item>
+  <p>Archivos personales (documentos, música, fotos y vídeos)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Generalmente están almacenados en su carpeta (<file>/home/su_nombre</file>). Pueden estar en subcarpetas como Escritorio, Documentos, Imágenes, Música y Vídeos.</p>
+  <p>Si el medio que usa para sus respaldos tiene suficiente espacio (si es un disco duro externo, por ejemplo), considere respaldar completamente su carpeta personal. Puede averiguar cuánto espacio de disco duro usa su carpeta personal usando el <app>Analizador de uso de disco</app>.</p>
+ </item>
+
+ <item>
+  <p>Archivos ocultos</p>
+  <p>De forma predeterminada se oculta cualquier carpeta o archivo que comience por un punto (.). Para ver archivos ocultos, pulse el botón <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Opciones de la vista</span></media></gui> en la barra de herramientas y elija <gui>Mostrar archivos ocultos</gui> o pulse <keyseq><key>Ctrl</key><key>H</key></keyseq>. Puede copiarlos a una ubicación de respaldo como cualquier otro tipo de archivo.</p>
+ </item>
+
+ <item>
+  <p>Configuración personal (preferencias del escritorio, temas y configuración del software)</p>
+  <p>La mayoría de las aplicaciones almacenan su configuración en carpetas ocultas dentro de su carpeta personal (para obtener más información acerca de archivos ocultos, ver más arriba).</p>
+  <p>La mayor parte de la configuración de sus aplicaciones se almacenará en las carpetas ocultas <cmd>.config</cmd>, <cmd>.gconf</cmd>, <cmd>.gnome2</cmd> y <cmd>.local</cmd> en su carpeta personal.</p>
+ </item>
+
+ <item>
+  <p>Configuración global del sistema</p>
+  <p>La configuración de las partes importantes de su sistema no almacena en su carpeta personal. Hay varias ubicaciones en las que se puede almacenar, pero la mayoría lo hacen en la carpeta <file>/etc</file>. En general, no necesita hacer una copia de respaldo de estos archivos en un ordenador personal. Sin embargo, si se trata de un servidor, debería crear una copia de respaldo de los archivos de los servicios que estén en ejecución.</p>
+ </item>
+</list>
+
+</page>

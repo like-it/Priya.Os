@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="power-batteryestimate" xml:lang="fr">
+
+  <info>
+
+    <link type="guide" xref="power#faq"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
+
+    <desc>La durée de vie affichée lorsque vous cliquez sur l'<gui>icône de la batterie</gui> est une estimation.</desc>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>L'estimation de la durée de vie de la batterie est fausse</title>
+
+<p>Quand vous vérifiez la durée de vie de la batterie, le temps restant qui s'affiche peut être différent de la durée de vie réelle, car ce paramètre n'est qu'une estimation. Normalement ces estimations s'améliorent avec le temps.</p>
+
+<p>In order to estimate the remaining battery life, a number of factors must be
+taken into account. One is the amount of power currently being used by the
+computer: power consumption varies depending on how many programs you have
+open, which devices are plugged in, and whether you are running any intensive
+tasks (like watching high-definition video or converting music files, for
+example). This changes from moment to moment, and is difficult to predict.</p>
+
+<p>La manière dont la batterie se décharge est un autre facteur. Certaines batteries se déchargent plus vite qu'elles ne se chargent. Sans une connaissance précise de la façon dont la batterie se décharge, seule une grossière estimation de sa durée de vie restante peut être faite.</p>
+
+<p>Au fur et à mesure de la décharge de la batterie, le gestionnaire d'énergie va comprendre quels paramètres interviennent et va apprendre à affiner les estimations de la durée de vie. Mais malgré tout, elles ne seront jamais complètement fiables.</p>
+
+<note>
+  <p>Si vous obtenez une durée de vie estimée complètement farfelue (disons des centaines de jours), c'est que le gestionnaire d'énergie ne possède sans doute pas toutes les données pour faire une estimation intelligente.</p>
+  <p>Débranchez l'ordinateur du secteur et laissez-le fonctionner pendant un moment sur batterie, puis rebranchez-le et laissez-le se recharger : le gestionnaire d'énergie doit maintenant être en mesure d'obtenir les données dont il a besoin.</p>
+</note>
+
+</page>

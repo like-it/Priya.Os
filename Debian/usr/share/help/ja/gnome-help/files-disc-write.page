@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-disc-write" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+
+    <credit type="author">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>CD/DVD クリエーターを使って、ファイルやドキュメントを空の CD や DVD に書き込みます。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>CD や DVD にファイルを書き込む</title>
+
+  <p><gui>CD/DVD クリエーター</gui>を使って空のディスクにファイルを書き込むことができます。CD/DVD の書き込み可能なドライブにディスクを配置すると、CD/DVD を作成するオプションがファイルマネージャーに現れます。ファイルマネージャーでは、他のコンピューターにファイルを転送したり、空のディスクにファイルを書き込んで<link xref="backup-why">バックアップ</link>を取ったりすることができます。CD や DVD にファイルを書き込む方法は次のとおりです。</p>
+
+  <steps>
+    <item>
+      <p>CD/DVD の書き込み可能なドライブに空のディスクをセットします。</p></item>
+    <item>
+      <p>画面下部に<gui>空の CD/DVD-R ディスク</gui>のポップアップ通知が現れるので、そこから<gui>CD/DVD クリエーター</gui>を選択します。<gui>CD/DVD クリエーター</gui>のフォルダーウィンドウが開きます。</p>
+      <p>ファイルマネージャーの<gui>デバイス</gui>の下の<gui>空の CD/DVD-R ディスク</gui>をクリックしてもかまいません。)</p>
+    </item>
+    <item>
+      <p><gui>ディスクの名前</gui>欄に、ディスクの名前を入力します。</p>
+    </item>
+    <item>
+      <p>ウィンドウに、対象のファイルをドラッグするかコピーします。</p>
+    </item>
+    <item>
+      <p><gui>ディスクに書き込む</gui>をクリックします。</p>
+    </item>
+    <item>
+      <p><gui>書き込み先のディスクの選択</gui>欄で、空のディスクを選択します。</p>
+      <p>(代わりに、<gui>イメージファイル</gui>を選択することもできます。これを選ぶと、ファイルを<em>ディスクイメージ</em>に書き込み、お使いのコンピューターに保存されます。その後、そのディスクイメージを空のディスクに書き込むことができます。)</p>
+    </item>
+    <item>
+      <p><gui>プロパティ</gui>をクリックすると、書き込み速度、一時ファイルの場所、およびその他のオプションの調整ができます。デフォルトのままでも十分です。</p>
+    </item>
+    <item>
+      <p><gui>書き込む</gui>ボタンをクリックすると、書き込みが始まります。</p>
+      <p><gui>複数のディスクの書き込み</gui>を選択した場合は、追加のディスクをセットするよう促されます。</p>
+    </item>
+    <item>
+      <p>ディスクの作成が完了すれば、自動的にディスクが取り出されます。<gui>別のコピーを作成する</gui> を選択するか、あるいは<gui>閉じる</gui>を選んで終了します。</p>
+    </item>
+  </steps>
+
+<section id="problem">
+  <title>ディスクの書き込みがうまくできなかった場合</title>
+
+  <p>ときにデータの書き込みが正常にできない場合があります。コンピューターにそのディスクをセットしてもファイルを見ることはできません</p>
+
+  <p>この場合、書き込みをもう一度実行してみてください。ただし書き込み速度はより低速 (たとえば、48x よりも 12x) にします。低速なほど、より信頼性も高くなります。速度の選択は、<gui>CD/DVD クリエーター</gui>ウィンドウの<gui>プロパティ</gui>から可能です。</p>
+
+</section>
+
+</page>

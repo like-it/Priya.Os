@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-workspaces-movewindow" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces"/>
+    <link type="seealso" xref="shell-workspaces"/>
+
+    <revision pkgversion="3.8" version="0.3" date="2013-05-10" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-04" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>மைக்கேல் ஹில்</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc><gui>செயல்பாடுகள்</gui> மேலோட்டத்திற்குச் சென்று சாளரத்தை வேறு பணியிடத்திற்கு இழுத்துச் செல்லுதல்.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>ஒரு சாளரத்தை வேறு பணியிடத்திற்கு நகர்த்துதல்</title>
+
+  <steps>
+    <title>சொடுக்கியைப் பயன்படுத்துதல்:</title>
+    <item>
+      <p if:test="!platform:gnome-classic">Open the
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+      <p if:test="platform:gnome-classic">Open the
+      <gui xref="shell-introduction#activities">Activities Overview</gui> from the
+      <gui xref="shell-introduction#activities">Applications</gui> menu
+      at the top left of the screen.</p>
+    </item>
+    <item>
+      <p>சாளரத்தை சொடுக்கி திரையின் வலப்புறமாக இழுத்துச் செல்லவும்.</p>
+    </item>
+    <item>
+      <p>The <em xref="shell-workspaces">workspace selector</em> will
+      appear.</p>
+    </item>
+    <item>
+      <p if:test="!platform:gnome-classic">சாளரத்தை ஒரு காலியான பணியிடத்தில் இடவும். இப்போது இந்தப் பணியிடத்தில் இப்போது நீங்கள் இட்ட சாளரம் இருக்கும், <em>பணியிடத் தேர்வியின்</em> கீழ் மற்றொரு காலி பணியிடம் தோன்றும்.</p>
+      <p if:test="platform:gnome-classic">சாளரத்தை ஒரு காலியான பணியிடத்தில் இடவும். இப்போது இந்தப் பணியிடத்தில் நீங்கள் இட்ட சாளரம் இருக்கும்.</p>
+    </item>
+  </steps>
+
+  <steps>
+    <title>விசைப்பலகையைப் பயன்படுத்தி:</title>
+    <item>
+      <p>Select the window that you want to move (for example, using the
+      <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
+      <em xref="shell-windows-switching">window switcher</em>).</p>
+    </item>
+    <item>
+      <p>சாளரத்தை <em>பணியிடத் தேர்வியில்</em> தற்போதுள்ள பணியிடத்திற்கு மேலுள்ள பணியிடத்திற்கு நகர்த்த <keyseq><key>Super</key><key>Shift</key><key>Page Up</key></keyseq> ஐ அழுத்தவும்.</p>
+      <p>சாளரத்தை <em>பணியிடத் தேர்வியில்</em> தற்போதுள்ள பணியிடத்திற்கு கீழுள்ள பணியிடத்திற்கு நகர்த்த <keyseq><key>Super</key><key>Shift</key><key>Page Down</key></keyseq> ஐ அழுத்தவும்.</p>
+    </item>
+  </steps>
+
+</page>

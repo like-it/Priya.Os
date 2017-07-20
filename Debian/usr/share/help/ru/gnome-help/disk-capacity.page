@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-capacity" xml:lang="ru">
+  <info>
+    <link type="guide" xref="disk"/>
+
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.3" date="2012-06-15" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Воспользуйтесь <gui>Анализатором использования дисков</gui> или <gui>Системным монитором</gui>, чтобы узнать объём диска и сколько на нём осталось свободного места.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Проверка оставшегося свободного места на диске</title>
+
+  <p>Проверить, сколько свободного места осталось на диске, можно с помощью <app>Анализатора использования дисков</app> или <app>Системного монитора</app>.</p>
+
+<section id="disk-usage-analyzer">
+<title>Проверка с помощью <app>Анализатора использования дисков</app></title>
+
+  <p>Чтобы проверить объём диска и оставшееся на нём свободное место с помощью <app>Анализатора использования дисков</app>:</p>
+
+  <list>
+    <item>
+      <p>Open <app>Disk Usage Analyzer</app> from the <gui>Activities</gui>
+      overview. The window will display a list of file locations together with
+      the usage and capacity of each.</p>
+    </item>
+    <item>
+      <p>Click one of the items in the list to view a detailed summary of the
+      usage for that item. Click the menu button, and then <gui>Scan
+      Folder…</gui> or <gui>Scan Remote Folder…</gui> to scan a different
+      location.</p>
+    </item>
+  </list>
+  <p>The information is displayed according to <gui>Folder</gui>,
+  <gui>Size</gui>, <gui>Contents</gui> and when the data was last
+  <gui>Modified</gui>. See more details in <link href="help:baobab"><app>Disk
+  Usage Analyzer</app></link>.</p>
+
+</section>
+
+<section id="system-monitor">
+
+<title>Проверка с помощью <app>Системного монитора</app></title>
+
+  <p>Чтобы проверить объём диска и оставшееся на нём свободное место с помощью <app>Системного монитора</app>:</p>
+
+<steps>
+ <item>
+  <p>Откройте приложение <app>Системный монитор</app> из <gui>Обзора</gui>.</p>
+ </item>
+ <item>
+  <p>Выберите вкладку <gui>Файловые системы</gui>, чтобы увидеть информацию о разделах системы и использовании дискового пространства. Эти данные отображаются в столбцах <gui>Всего</gui>, <gui>Свободно</gui>, <gui>Доступно</gui> и <gui>Использовано</gui>.</p>
+ </item>
+</steps>
+</section>
+
+<section id="disk-full">
+
+<title>Что делать, если диск слишком заполнен?</title>
+
+  <p>Если на диске осталось слишком мало места, нужно:</p>
+
+ <list>
+  <item>
+   <p>Удалить не очень важные и ненужные файлы.</p>
+  </item>
+  <item>
+   <p>Сделать <link xref="backup-why">резервную копию</link> важных файлов, которые в ближайшее время не понадобятся, и удалить их с жёсткого диска.</p>
+  </item>
+ </list>
+</section>
+
+</page>

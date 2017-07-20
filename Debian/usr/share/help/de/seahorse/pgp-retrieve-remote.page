@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-retrieve-remote" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-18" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Wenn Sie eine dringende verschlüsselte Nachricht versenden wollen, aber nicht den Schlüssel dieser Person haben, so können Sie diesen Schlüssel von einem entfernten Schlüssel-Servern abrufen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Entfernte Schlüssel einholen</title>
+
+  <p>Sie können den öffentlichen GnuPG-Schlüssel einer Person aus dem Internet abrufen und diesen in <app>Passwörter und Schlüssel</app> speichern.</p>
+
+  <steps>
+    <title>So holen Sie einen entfernten Schlüssel: </title>
+    <item>
+      <p>Wählen Sie <guiseq><gui style="menu">Entfernt</gui><gui style="menuitem">Entfernte Schlüssel suchen …</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Geben Sie Informationen über den Schlüssel ein, den Sie abrufen wollen. Eigenschaften wie die Schlüsselkennung und die E-Mail-Adresse des Besitzers erzielen bessere Suchtreffer als der Name des Schlüsselbesitzers.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf den Knopf <gui style="button">Suchen</gui>.</p>
+    </item>
+    <item>
+      <p>Wählen Sie in der Ergebnisliste den gewünschten Schlüssel zum Importieren, klicken Sie mit der rechten Maustaste auf diesen und wählen Sie <gui style="menuitem">Importieren</gui>. Alternativ können Sie auch oben auf den Knopf <gui style="menuitem">Importieren</gui> klicken, nachdem Sie den Schlüssel angewählt haben.</p>
+    </item>
+  </steps>
+
+  <p>Der importierte Schlüssel wird daraufhin im Schlüsselbund <gui>GnuPG-Schlüssel</gui> aufgeführt.</p>
+
+  <note style="tip">
+  <p>Wenn Sie den abgerufenen Schlüssel nicht sehen, so wählen Sie <guiseq><gui style="menu">Ansicht</gui><gui>Alle anzeigen</gui></guiseq>.</p>
+  </note>
+
+  <note style="tip">
+    <p>Um vor dem Importieren weitere Informationen zu einem Schlüssel zu erhalten, wählen Sie diesen an und klicken Sie auf den Knopf Eigenschaften oben im Dialog. Alternativ können Sie mit der rechten Maustaste auf den Schlüssel klicken und <gui style="menuitem">Eigenschaften</gui> wählen. Daraufhin öffnet sich ein neues Fenster, in dem Informationen wie Schlüsselkennung, Fingerabdruck, Vertrauensgrad, den Besitzernamen usw. angezeigt werden.</p>
+  </note>
+
+</page>

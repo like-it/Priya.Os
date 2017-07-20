@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-userid-add" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="pgp-userid#add-remove"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-27" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Jak vám pomůže více ID uživatele u jednoho klíče komunikovat s různými lidmi.</desc>
+  </info>
+
+  <title>Přidání dodatečného ID uživatele do klíče</title>
+
+  <p>Klíč může mít více ID uživatele. To se hodí, když chcete použít ten stejný klíče pro komunikaci s několika lidmi a některý z nich nezná dejme tomu vaši e-mailovou adresu v ID uživatele. Tato osoba pak nebude chtít importovat váš veřejný klíč, protože obsahuje údaje, které nezná. Pokud se vám nechce při takovém scénáři vytvářet zcela nový klíč s jiným ID uživatele, můžete přidat nové ID uživatele do stávajícího klíče.</p>
+
+  <steps>
+    <title>Když chcete přidat dodatečné ID uživatele:</title>
+    <item>
+      <p>V levém postranním panelu vyberte klíčenku <gui>Klíče GnuPG</gui>.</p>
+    </item>
+    <item>
+      <p>V seznamu podle své potřeby vyberte <gui>Osobní klíče PGP</gui>.</p>
+    </item>
+    <item>
+      <p>Klikněte na klíč pravým tlačítkem a vyberte <guiseq><gui>Vlastnosti</gui> <gui>Jména a podpisy</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Pro přidání nového ID uživatele klikněte na tlačítko <gui style="button">Přidat jméno</gui>.</p>
+    </item>
+    <item>
+      <p>V novém dialogovém okně vyplňte pro nové ID uživatele podrobnosti jako jsou <gui>Celé jméno</gui>, <gui>E-mailová adresa</gui> a <gui>Komentář klíče</gui>.</p>
+    </item>
+    <item>
+      <p>Zadejte správnou heslovou frázi a vše dokončete kliknutím na <gui style="button">Budiž</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Nové ID uživatele bude nyní uvedeno v panelu <gui>Jména a podpisy</gui>.</p>
+
+  <note style="tip">
+    <p>V případě, že máte svůj klíč zveřejněn na serveru s klíči, po přidání ID uživatele jej <link xref="pgp-sync">synchronizujte</link>, aby byla vzdálená kopie klíče aktuální.</p>
+  </note>
+
+</page>

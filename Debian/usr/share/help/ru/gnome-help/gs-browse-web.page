@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="ru">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Якуб Штайнер (Jakub Steiner)</name>
+    </credit>
+    <credit type="author">
+      <name>Петр Ковар (Petr Kovar)</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Путешествие по Интернету</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">A tutorial on browsing the web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Путешествие по Интернету</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>Нажмите меню <gui>Приложения</gui> в левом верхнем углу экрана.</p></item>
+      <item><p>Выберите в меню <guiseq><gui>Интернет</gui><gui>Firefox</gui> </guiseq>.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>Откройте <gui>Обзор</gui>, переместив указатель мыши в левый верхний угол, где находится надпись <gui>Обзор</gui>.</p></item>
+      <item><p>Выберите значок веб-браузера <app>Firefox</app> в панели с левой стороны экрана.</p></item>
+    </steps>
+
+    <note><p>Веб-браузер можно запустить <link xref="gs-use-system-search">просто напечатав</link> <em>Firefox</em> в <gui>режиме обзора</gui>.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>Откройте <gui>Обзор</gui>, переместив указатель мыши в левый верхний угол, где находится надпись <gui>Обзор</gui>.</p></item>
+      <item><p>Выберите значок <app>веб-браузера</app> в панели с левой стороны экрана.</p></item>
+    </steps>
+
+    <note><p>Веб-браузер можно запустить <link xref="gs-use-system-search">просто напечатав</link> <em>web</em> в <gui>режиме обзора</gui>.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>Нажмите на адресную строку в верхней части окна браузера и введите адрес сайта, который вы хотите открыть.</p></item>
+      <item><p>При вводе адреса веб-сайта используется поиск по истории и закладкам веб-браузера, поэтому вам не нужно запоминать полный адрес сайта.</p>
+        <p>Если адрес веб-сайта найден в истории или в закладках, под адресной строкой появится выпадающий список.</p></item>
+      <item><p>Вы можете выбрать веб-сайт в списке с помощью клавиш со стрелками.</p>
+      </item>
+      <item><p>После того, как вы выберете веб-сайт, нажмите <key>Enter</key>, чтобы его открыть.</p>
+      </item>
+    </steps>
+
+</page>

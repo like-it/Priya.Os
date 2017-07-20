@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="hardware-cardreader" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="media#photos"/>
+    <link type="guide" xref="hardware#problems"/>
+
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Felsök mediakortsläsare</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Problem med mediakortsläsare</title>
+
+<p>Många datorer innehåller läsare för SD, MMC, SM, MS, CF och andra kort med lagringsmedia. Dessa bör automatiskt detekteras och <link xref="disk-partitions">monteras</link>. Här finns några felsökningssteg om detta inte lyckas:</p>
+
+<steps>
+<item>
+<p>Säkerställ att kortet matats in korrekt. Många kort ser ut som om de sitter i upp och ner när de är korrekt isatta. Försäkra också att kortet är ordentligt isatt i kortplatsen; vissa kort, speciellt CF, kräver en liten knuff för att sättas i korrekt. (Var aktsam så du inte trycker för hårt! Om du stöter i något hårt, pressa inte.)</p>
+</item>
+
+<item>
+  <p>Öppna <app>Filer</app> genom att använda menyn <gui xref="shell-introduction#activities">Aktiviteter</gui>. Visas det inmatade kortet i listan <gui>Enheter</gui> i den vänstra sidopanelen? Ibland visas kortet i listan men det är inte monterat; klicka på det en gång för att montera det. (Om sidopanelen inte visas tryck på <key>F9</key> eller klicka på <gui style="menu">Filer</gui> i systemraden och välj <gui style="menuitem">Sidopanel</gui>.)</p>
+</item>
+
+<item>
+  <p>Om ditt kort inte visas i sidopanelen, klicka på <keyseq><key>Ctrl</key><key>L</key></keyseq>, skriv sedan <input>computer:///</input> och tryck <key>Retur</key>. Om din kortläsare är korrekt konfigurerad borde läsaren dyka upp som en enhet när inget kort är isatt och som kortet själv när kortet har monterats.</p>
+</item>
+
+<item>
+<p>Om du ser kortläsaren men inte kortet kan problem vara kortet i sig. Prova med ett annat kort eller kontrollera om möjligt att kortet fungerar i en annan kortläsare.</p>
+</item>
+</steps>
+
+<p>Om inga kort eller enheter visas när du bläddrar genom platsen <gui>Dator</gui> är det möjligt att din kortläsare inte fungerar med Linux på grund av drivrutinsproblem. Om din kortläsare är intern (inuti datorn istället för utanför) är detta mer troligt. Den bästa lösningen är att ansluta din enhet (kamera, mobiltelefon, etc.) direkt till en USB-port på datorn. Externa USB-kortläsare finns också och har väsentligt bättre stöd i Linux.</p>
+
+</page>

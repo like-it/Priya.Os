@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="seealso" xref="net-findip"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Statiskas IP adreses izmantošana var atvieglot dažu tīkla pakalpojumu sniegšanu no jūsu datora.</desc>
+  </info>
+
+  <title>Veidot savienojumu ar fiksēto IP adresi.</title>
+
+  <p>Pārsvarā tīkli automātiski piešķirs <link xref="net-what-is-ip-address">IP adresi</link> un citu informāciju jūsu datoram, kad tas pieslēgsies tīklam. Šīs detaļas var periodiski mainīties, bet jūs varat vēlēties fiksēto IP adresi savam datoram, lai vienmēr zinātu, kāda tā ir (piemēram, ja dators ir datņu serveris).</p> <p>Lai jūsu datoram iedotu fiksēto (statisko) IP adresi:</p>
+
+  <steps>
+    <item>
+      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Tīkls</gui>.</p>
+    </item>
+    <item>
+      <p>Spiediet <gui>Tīkls</gui>, lai atvērtu paneli.</p>
+    </item>
+    <item>
+      <p>In the left pane, select the network connection that you want to give
+      a fixed address. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
+    </item>
+    <item>
+      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
+    </item>
+    <item>
+      <p>Enter the <em>Address</em>, <em>Netmask</em>, and <em>Gateway</em>
+      information into the appropriate boxes. How you choose these will depend
+      on your network setup; there are specific rules governing which IP
+      addresses and netmasks are valid for a given network.</p>
+    </item>
+    <item>
+      <p>Ja nepieciešams, ievadiet <em>domēnu vārdu servera</em> adresi iekš <gui>DNS serveri</gui> ailes. Šī ir IP adrese serverim, kurā glabājas domēnu nosaukumi; lielākajai daļai korporatīvo tīklu un interneta sniedzēju ir savi DNS serveri.</p>
+    </item>
+    <item>
+      <p>Click <gui>Apply</gui>. The network connection should now have a fixed
+      IP address.</p>
+    </item>
+  </steps>
+
+</page>

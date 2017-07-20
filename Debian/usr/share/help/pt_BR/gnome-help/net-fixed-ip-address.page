@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="seealso" xref="net-findip"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>O uso de um endereço IP estático pode facilitar o fornecimento de alguns serviços do seu computador.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Criando uma conexão com um endereço IP fixo</title>
+
+  <p>A maioria das redes vão atribuir automaticamente um <link xref="net-what-is-ip-address">endereço IP</link> e outros detalhes a seu computador quando você conectar à rede. Estes detalhes podem alterar periodicamente, mas você pode querer ter um endereço IP para o seu computador, de forma que você sempre saiba qual é o seu endereço (por exemplo, se ele for um servidor de arquivo).</p> <p>Para dar ao seu computador um endereço IP fixo (ou estático):</p>
+
+  <steps>
+    <item>
+      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Rede</gui>.</p>
+    </item>
+    <item>
+      <p>Clique em <gui>Rede</gui> para abrir o painel.</p>
+    </item>
+    <item>
+      <p>No painel esquerdo, selecione a conexão de rede que você deseja configurar um endereço fixo. Se você se conectar a uma rede cabeada, clique em <gui>Com fio</gui> e, então, clique no botão <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">configurações</span></media> no canto inferior direito do painel. Para um conexão <gui>Wi-Fi</gui>, o botão <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">configurações</span></media> estará localizado ao lado da rede ativa.</p>
+    </item>
+    <item>
+      <p>Clique na aba <gui>IPv4</gui> ou <gui>IPv6</gui> e altere o <gui>Endereço</gui> para <em>Manual</em>.</p>
+    </item>
+    <item>
+      <p>Digite as informações de <em>Endereço</em>, <em>Máscara de rede</em> e <em>Gateway</em> nas caixas apropriadas. Como você escolhe essas informações vai depender da configuração da sua rede; há regras específicas definindo quais endereços IP e máscaras de rede são válidas para uma dada rede.</p>
+    </item>
+    <item>
+      <p>Se necessário, digite o endereço de um <em>Servidor de nome de domínio</em> (DNS) na caixa de <gui>Servidores DNS</gui>. Esse é o endereço IP de um servidor que procura por nomes de domínio; a maioria das redes corporativas e provedores de internet possuem servidores DNS dedicados.</p>
+    </item>
+    <item>
+      <p>Clique em <gui>Aplicar</gui>. A conexão de rede deveria agora ter um endereço IP fixo.</p>
+    </item>
+  </steps>
+
+</page>

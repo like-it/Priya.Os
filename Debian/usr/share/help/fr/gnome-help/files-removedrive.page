@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-removedrive" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="files#removable"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-10-08" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Éjecter ou démonter une clé USB, un CD, un DVD ou tout autre périphérique.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Démontage d'un lecteur externe en toute sécurité</title>
+
+  <p>Si vous utilisez des périphériques de stockage externe comme des clés USB, vous devez les enlever en toute sécurité avant de les débrancher. Si vous vous contentez de débrancher un périphérique, vous courez le risque qu'une application soit encore en train d'y accéder. Cela pourrait résulter en la perte ou la corruption de vos fichiers. Quand vous utilisez un disque optique comme un CD ou un DVD, vous pouvez utiliser les mêmes étapes pour éjecter le disque de votre ordinateur.</p>
+
+  <steps>
+    <title>Pour éjecter un disque amovible :</title>
+    <item>
+      <p>From the <gui xref="shell-introduction#activities">Activities</gui> overview,
+      open <app>Files</app>.</p>
+    </item>
+    <item>
+      <p>Localisez le périphérique dans le panneau latéral. Il y a une petite icône d'éjection (en forme de pointe de flèche vers le haut) à côté du nom. Cliquez dessus pour démonter et/ou éjecter le périphérique en tout sécurité.</p>
+      <p>Sinon, faites un clic droit sur le nom du périphérique dans le panneau latéral et sélectionnez <gui>Éjecter</gui>.</p>
+    </item>
+  </steps>
+
+  <section id="remove-busy-device">
+    <title>Démontage en toute sécurité d'un périphérique qui est actuellement utilisé</title>
+
+  <p>Si un des fichiers sur le périphérique est ouvert et en cours d'utilisation par une application, vous ne pourrez pas retirer le volume sans risque. Une fenêtre vous informant que « Le volume est occupé » s'affiche, et énumère tous les fichiers ouverts sur le périphérique. Pour retirer en toute sécurité le périphérique :</p>
+
+  <steps>
+    <item><p>cliquez sur <gui>Annuler</gui>,</p></item>
+    <item><p>fermez tous les fichiers sur le périphérique,</p></item>
+    <item><p>cliquez sur l'icône d'éjection pour retirer ou éjecter le périphérique.</p></item>
+    <item><p>Sinon, faites un clic droit sur le nom du périphérique dans le panneau latéral et sélectionnez <gui>Éjecter</gui>.</p></item>
+  </steps>
+
+  <note style="warning"><p>Vous pouvez aussi choisir <gui>Démonter tout de même</gui> pour retirer le périphérique sans fermer les fichiers. Cela pourrait provoquer des erreurs dans les applications qui ont ouvert ces fichiers.</p></note>
+
+  </section>
+
+</page>

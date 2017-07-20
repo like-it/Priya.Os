@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="mr">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>FTP, SSH, Windows शेअर्स, किंवा WebDAV वरील दुसऱ्या संगणकावरील फाइल्सचे अवलोकन आणि संपादन.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>सर्वर किंवा नेटवर्क शेअरवर फाइल्स चाळा</title>
+
+<p>ठराविक सर्व्हरवरील फाइल्सच्या चाळणी आणि अवलोकनकरिता सर्व्हर किंवा नेटवर्क शेअरशी जोडणी शक्य आहे, संगणकावर आढळल्याप्रमाणेच. इंटरनेटवरील फाइल्स डाउनलोड किंवा अपलोड करण्याचे, किंवा स्थानीय नेटवर्कवरील इतर व्यक्तिंसह फाइल्स शेअर करण्यासाठी, हे योग्य पर्याय आहे.</p>
+
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
+
+<steps>
+  <title>फाइल सर्वरशी जोडा</title>
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
+   sidebar.</p>
+  </item>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
+  <note>
+    <p>यापूर्वी सर्व्हरशी जोडणी केली असल्यास, <gui>नविन सर्व्हर्स</gui> सूचीमध्ये तुम्ही त्यावर क्लिक करू शकाल.</p>
+  </note>
+  </item>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>URL लिहिणे</title>
+
+<p><em>URL</em>, किंवा <em>युनिफॉर्म रिसोअर्स लोकेटर</em>, पत्त्याचे स्वरूप आहे जे नेटवर्कवरील ठिकाण किंवा फाइल निर्देशीत करते. पत्त्याचे रूपण खालील प्रमाणे असते:</p>
+  <example>
+    <p><sys>scheme://servername.example.com/folder</sys></p>
+  </example>
+<p><em>स्किम</em> प्रोटोकॉल किंवा सर्व्हर प्रकार निर्देशीत करते. पत्त्याचे <em>example.com</em> भाग यास <em>डोमेन नेम</em> असे म्हटले जाते. वापरकर्ताना आवश्यक असल्यास, त्यास सर्व्हर नाव अगोदर अंतर्भुत केले जाते:</p>
+  <example>
+    <p><sys>scheme://username@servername.example.com/folder</sys></p>
+  </example>
+<p>काही स्किम्स्ला पोर्ट क्रमांक निर्देशीत करणे आवश्यक आहे. डोमेन नावानंतर अंतर्भुत करा:</p>
+  <example>
+    <p><sys>scheme://servername.example.com:port/folder</sys></p>
+  </example>
+<p>खालील उदाहरणे समर्थीत विविध सर्व्हर प्रकारकरिता आहे.</p>
+</section>
+
+<section id="types">
+ <title>सर्वरचे प्रकार</title>
+
+<p>विविध सर्व्हरप्रकारशी जोडणी शक्य आहे. काही सर्व्हर्स पब्लिक आहेत, आणि कोणालाही जोडणीकरिता परवानगी देते. इतर सर्व्हर्सला वापरकर्तानाव आणि पासवर्डसह प्रवेश करणे आवश्यक आहे.</p>
+<p>सर्व्हरवरील फाइल्सकरिता ठराविक कृती करण्यासाठी तुमच्याकडे परवानगी नसावी. उदाहरणार्थ, पब्लिक FTP स्थळांवर, तुम्ही संभाव्यतया फाइल्स नष्ट करू शकणार नाही.</p>
+<p>दिलेले URL प्रोटोकॉलवर आधारित आहे ज्याचा वापर सर्व्हर स्वतःचे फाइल शेअर्स एक्सपोर्ट करण्याकरिता करतो.</p>
+<terms>
+<item>
+  <title>एसएसएच</title>
+  <p>सर्व्हरवर <em>सेक्युर शेल</em> खाते असल्यास, त्या पद्धतीचा वापर करून तुम्ही जोडणी करू शकता. अनेक वेब यजमान सदस्यांकरिता SSH खाते पुरवतात ज्यामुळे फाइल्स सुरक्षितपणे अपलोड केले जाते. SSH सर्व्हर्स नेहमी तुम्हाला प्रवेश करायला सांगेल.</p>
+  <p>वैशिष्टपूर्ण SSH URL खालील प्रमाणे दिसते:</p>
+  <example>
+    <p><sys>ssh://username@servername.example.com/folder</sys></p>
+  </example>
+
+  <p>SSHचा वापर करताना, पाठवलेला सर्व डाटा (पासवर्ड समाविष्टीत) एनक्रिप्ट केला जातो ज्यामुळे नेटवर्कवरील इतर वापरकर्त्यांना ते दिसणार नाही.</p>
+</item>
+<item>
+  <title>एफटीपी (लॉगइनसह)</title>
+  <p>इंटरनेटवरील फाइल्स अदाबदलकरिता FTP प्रसिद्ध पर्याय आहे. FTP वरील डाटा एंक्रिप्टेड नसल्यास, अनेक सर्व्हर्स SSH मार्गे आत्ता प्रवेश पुरवतात. काही सर्व्हर्स, तरी, तुम्हाला FTPचा वापर फाइल्स अपलोड किंवा डाउनलोड करीता परवानगी देते. प्रवेशसह सक्षम FTP स्थळे बऱ्यापैकी तुम्हाला फाइल्स नष्ट आणि अपलोड करण्यास परवानगी देते.</p>
+  <p>वैशिष्टपूर्ण FTP URL खालील प्रमाणे दिसते:</p>
+  <example>
+    <p><sys>ftp://username@ftp.example.com/path/</sys></p>
+  </example>
+</item>
+<item>
+  <title>सर्वसामान्य एफटीपी</title>
+  <p>साइट्स जे तुम्हाला फाइल्स डाउनलोड करण्यासाठी परवानगी देताता कधीकधी पब्लिक किंवा अनॉनिमस FTP प्रवेश पुरवतात. ह्या सर्व्हर्सला वापरकर्तानाव आणि पासवर्डची आवश्यकता नसते, आणि सहसा तुम्हाला फाइल्स नष्ट किंवा अपलोड करण्यास परवानगी देते.</p>
+  <p>वैशिष्टपूर्ण निनावी FTP URL खालील प्रमाणे दिसते:</p>
+  <example>
+    <p><sys>ftp://ftp.example.com/path/</sys></p>
+  </example>
+  <p>काही निनावी FTP स्थळांना पब्लिक वापरकर्तानाव आणि पासवर्डसह, किंवा पब्लिक वापरकर्तानाव जे ईमेल पत्त्याचा वापर पासवर्ड म्हणून करतात, त्यांस प्रवेश करणे आवश्यक आहे. ह्या सर्व्हर्सकरिता, <gui>FTP (प्रवेशसह) </gui> पद्धतचा वापर करा, आणि FTP साइटतर्फे निर्देशीत श्रेयचा वापर करा.</p>
+</item>
+<item>
+  <title>पटले शेअर</title>
+  <p>स्थानीय क्षेत्र नेटवर्कवरील फाइल्स शेअर करण्यासाठी Windows संगणक प्रोप्राइटरि प्रोटोकॉलचा वापर करतात. Windows नेटवर्कवरील संगणकांना   कधीकधी संस्थांकरिता आणि योग्य कंट्रोल प्रवेशसाठी <em>डोमेन्स</em> अंतर्गत संघटीत केले जातात. दूरस्त संगणकवारील योग्य परवानगी असल्यास, तुम्ही फाइल व्यवस्थापकपासून Windows शेअरसह जोडणी करू शकता.</p>
+  <p>वैशिष्टपूर्ण Windows शेअर URL खालील प्रमाणे दिसते:</p>
+  <example>
+    <p><sys>smb://servername/Share</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV आणि सुरक्षित WebDAV</title>
+  <p>वेबवरील वापरण्याजोगी HTTP प्रोटोकॉलवर आधारित, WebDAV चा वापर कधीकधी स्थानीय नेटवर्कवर फाइल्स शेअर करणे आणि इंटरनेटवरील फाइल्स साठवण्याकरिता केला जातो. सुरक्षित जोडणींकरिता समर्थन पुरवणाऱ्या सर्व्हरसह जोडणी करताना, ह्या पर्यायची निवड करा. सेक्युर WebDAV मजबूत SSL एंक्रिप्शनचा वापर करतात, ज्यामुळे इतर वापरकर्ते तुमचा पासवर्ड पाहू शकणार नाही.</p>
+  <p>A WebDAV URL looks like this:</p>
+  <example>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

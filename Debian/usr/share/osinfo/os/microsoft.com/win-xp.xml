@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://microsoft.com/win/xp">
+    <short-id>winxp</short-id>
+    <name>Microsoft Windows XP</name>
+    <name xml:lang="ca">Microsoft Windows XP</name>
+    <name xml:lang="de">Microsoft Windows XP</name>
+    <name xml:lang="es">Microsoft Windows XP</name>
+    <name xml:lang="fr">Microsoft Windows XP</name>
+    <name xml:lang="ja">Microsoft Windows XP</name>
+    <name xml:lang="pl">Microsoft Windows XP</name>
+    <name xml:lang="pt_BR">Microsoft Windows XP</name>
+    <name xml:lang="uk">Microsoft Windows XP</name>
+    <version>5.1</version>
+    <vendor>Microsoft Corporation</vendor>
+    <vendor xml:lang="ca">Microsoft Corporation</vendor>
+    <vendor xml:lang="de">Microsoft Corporation</vendor>
+    <vendor xml:lang="es">Microsoft Corporation</vendor>
+    <vendor xml:lang="fr">Microsoft Corporation</vendor>
+    <vendor xml:lang="ja">Microsoft Corporation</vendor>
+    <vendor xml:lang="pl">Microsoft Corporation</vendor>
+    <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>
+    <vendor xml:lang="uk">Корпорація Microsoft</vendor>
+    <family>winnt</family>
+    <distro>win</distro>
+    <derives-from id="http://microsoft.com/win/2k"/>
+    <derives-from id="http://microsoft.com/win/me"/>
+    <upgrades id="http://microsoft.com/win/me"/>
+
+    <release-date>2001-10-25</release-date>
+    <eol-date>2009-04-19</eol-date>
+
+    <media installer-reboots="2" arch="i686">
+      <iso>
+        <volume-id>(WXPFPP|WXHFPP|WXPCCP|WXHCCP|WXPOEM|WXHOEM|WXPVOL|WXPEVL|XRMPFPP|XRMHFPP|XRMPCCP|XRMHCCP|XRMPOEM|XRMHOEM|XRMPVOL|XRMSD2|X1APFPP|X1AHFPP|X1APCCP|X1APCCP|X1AHCCP|X1APOEM|X1AHOEM|X1APVOL|VRMPFPP|VRMHFPP|VRMPCCP|VRMHCCP|VRMPOEM|VRMHOEM|VRMPVOL|VRMSD2|VX2PFPP|VX2HFPP|VX2PCCP|VX2HCCP|VX2POEM|VX2HOEM|VX2PRMFPP|VX2PVOL|GRTMUPD|GRTMPFPP|GRTMPRMFPP|GRTMHFPP|GRTMHKFPP|GRTMHKNFPP|GRTMHRMFPP|GRTMPOEM|GRTMHOEM|GRTMPVOL|GRTMPKNVOL|GRTMPKVOL|GRTMPRMVOL|MX2PFPP|MRMSD2)_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+
+    <media installer-reboots="2" arch="x86_64">
+      <iso>
+        <volume-id>(ARMPXFPP|ARMPXCCP|ARMPXOEM|ARMPXVOL|AX2PXCFPP|AX2PXFPP)_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+
+    <resources arch="i686">
+      <minimum>
+        <cpu>233000000</cpu>
+        <n-cpus>1</n-cpus>
+        <ram>67108864</ram>
+        <storage>1610612736</storage>
+      </minimum>
+
+      <recommended>
+        <cpu>300000000</cpu>
+        <ram>536870912</ram>
+        <storage>10737418240</storage>
+      </recommended>
+    </resources>
+
+    <resources arch="x86_64">
+      <minimum>
+        <cpu>733000000</cpu>
+        <n-cpus>1</n-cpus>
+        <ram>268435456</ram>
+        <storage>1610612736</storage>
+      </minimum>
+
+      <recommended>
+        <cpu>733000000</cpu>
+        <ram>536870912</ram>
+        <storage>10737418240</storage>
+      </recommended>
+    </resources>
+
+    <installer>
+      <script id='http://microsoft.com/windows/sif/jeos'/>
+      <script id='http://microsoft.com/windows/sif/desktop'/>
+      <script id='http://microsoft.com/windows/reg/desktop'/>
+      <script id='http://microsoft.com/windows/cmd/desktop'/>
+    </installer>
+
+    
+    <driver signed="false" pre-installable="true" location="https://zeenix.fedorapeople.org/drivers/win-tools-1/preinst/winxp/x86" arch="i686">
+      <file>viostor.cat</file>
+      <file>viostor.inf</file>
+      <file>viostor.sys</file>
+      
+      <file>txtsetup.oem</file>
+      <device id="http://pcisig.com/pci/1af4/1001"/>
+    </driver>
+
+    <driver signed="false" pre-installable="true" location="https://zeenix.fedorapeople.org/drivers/win-tools-1/preinst/winxp/amd64" arch="x86_64">
+      <file>viostor.cat</file>
+      <file>viostor.inf</file>
+      <file>viostor.sys</file>
+      
+      <file>txtsetup.oem</file>
+      <device id="http://pcisig.com/pci/1af4/1001"/>
+    </driver>
+
+    
+    <driver signed="false" location="https://zeenix.fedorapeople.org/drivers/win-tools/postinst" arch="i686">
+      <file>spice-guest-tools-0.65.exe</file>
+      <file>spice-guest-tools-0.65.cmd</file>
+      <file>redhat09.cer</file>
+      <file>redhat10.cer</file>
+      <device id="http://pcisig.com/pci/1af4/1000"/>
+      <device id="http://pcisig.com/pci/1af4/1001"/>
+      <device id="http://pcisig.com/pci/1af4/1002"/>
+      <device id="http://pcisig.com/pci/1af4/1003"/>
+      <device id="http://pcisig.com/pci/1b36/0100"/>
+    </driver>
+
+    <driver signed="false" location="https://zeenix.fedorapeople.org/drivers/win-tools/postinst" arch="x86_64">
+      <file>spice-guest-tools-0.65.exe</file>
+      <file>spice-guest-tools-0.65.cmd</file>
+      <file>redhat09.cer</file>
+      <file>redhat10.cer</file>
+      <device id="http://pcisig.com/pci/1af4/1000"/>
+      <device id="http://pcisig.com/pci/1af4/1001"/>
+      <device id="http://pcisig.com/pci/1af4/1002"/>
+      <device id="http://pcisig.com/pci/1af4/1003"/>
+      <device id="http://pcisig.com/pci/1b36/0100"/>
+    </driver>
+  </os>
+</libosinfo>

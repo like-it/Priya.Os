@@ -1,0 +1,34 @@
+<schemalist>
+  <enum id="org.gnome.swell-foop.Sizes">
+    <value value="0" nick="small"/>
+    <value value="1" nick="normal"/>
+    <value value="2" nick="large"/>
+  </enum>
+  <schema id="org.gnome.swell-foop" path="/org/gnome/swell-foop/" gettext-domain="swell-foop">
+    <key name="theme" type="s">
+      <default>'shapesandcolors'</default>
+      <summary>The theme to use</summary>
+      <description>The title of the tile theme to use.</description>
+    </key>
+    <key name="size" enum="org.gnome.swell-foop.Sizes">
+      <default>'small'</default>
+      <summary>Board size</summary>
+      <description>The size of the game board.</description>
+    </key>
+    <key name="colors" type="i">
+      <default>3</default>
+      <summary>Board color count</summary>
+      <description>The number of colors of tiles to use in the game.</description>
+    </key>
+    <key name="first-run" type="b">
+      <default>true</default>
+      <summary>Is this the first run</summary>
+      <description>Setting to decide whether to show first-run hint dialog or not.</description>
+    </key>
+    <key name="zealous" type="b">
+      <default>true</default>
+      <summary>Zealous animation</summary>
+      <description>Use more flashy, but slower, animations.</description>
+    </key>
+  </schema>
+</schemalist>

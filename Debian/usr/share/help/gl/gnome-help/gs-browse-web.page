@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="gl">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Navegar pola web</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">Un titorial sobre como navegar pola web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Diéguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2013-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Navegar pola web</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>Mova o menú <gui>Actividades</gui> na parte superior esquerda da pantalla.</p></item>
+      <item><p>Desde o menú, seleccione <guiseq><gui>Internet</gui><gui>Firefox</gui></guiseq>.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>Mova o seu punteiro do rato á esquina <gui>Actividades</gui> na parte superior esquerda da pantalla para mostrar a <gui>Vista xeral de actividades</gui>.</p></item>
+      <item><p>Seleccione a icona do navegador <app>Firefox</app> desde a barra da parte esquerda da pantalla.</p></item>
+    </steps>
+
+    <note><p>Ou se non, pode iniciar o navegador <link xref="gs-use-system-search">simplemente escribindo</link> <em>Firefox</em> na <gui>Vista xeral de actividades</gui>.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>Mova o seu punteiro do rato á esquina <gui>Actividades</gui> na parte superior esquerda da pantalla para mostrar a <gui>Vista xeral de actividades</gui>.</p></item>
+      <item><p>Seleccione a icona do navegador <app>Web</app> desde a barra da parte esquerda da pantalla.</p></item>
+    </steps>
+
+    <note><p>Ou se non, pode iniciar o navegador <link xref="gs-use-system-search">simplemente escribindo</link> <em>web</em> na <gui>Vista xeral de actividades</gui>.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>Prema na barra de enderezos na parte superior da xanela do navegador e comece a escribir o sitio web que quere visitar.</p></item>
+      <item><p>Ao escribir un sitio web comeza a busca do mesmo no historial e marcadores do seu navegador, polo que non terá que lembrar o enderezo exacto.</p>
+        <p>Se se atopa un sitio web no seu historial ou nos seus marcadores, aparecerá unha lista despregábel xusto embaixo da barra de enderezos.</p></item>
+      <item><p>Desde a lista despregábel poderá seleccionar de forma rápida un sitio web usando os teclas de frecha do seu teclado.</p>
+      </item>
+      <item><p>Despois de que seleccionara un sitio web, prema <key>Intro</key> para visitala.</p>
+      </item>
+    </steps>
+
+</page>

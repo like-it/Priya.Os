@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-remove" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="accounts" group="remove"/>
+    <link type="seealso" xref="accounts-disable-service"/>
+
+    <revision pkgversion="3.5.5" date="2012-08-15" status="draft"/>
+    <revision pkgversion="3.9.92" date="2013-09-18" status="draft"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2015</years>
+    </credit>
+
+    <desc>Eliminar el acceso a un proveedor de servicios en línea desde sus aplicaciones.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Quitar una cuenta</title>
+
+  <p>Puede eliminar una cuenta en línea que ya no quiera usar.</p>
+
+  <note style="tip">
+    <p>Muchos proveedores de servicios en línea proporcionan un testigo de autorización que GNOME guarda en lugar su contraseña. Si elimina una cuenta, debe revocar también ese certificado en la cuenta en línea. Esto asegurará que ninguna otra aplicación o sitio web podrán conectarse a ese servicio usando la autorización para GNOME.</p>
+
+    <p>Cómo revocar la autorización depende del proveedor de servicios. Compruebe su configuración en la página web del proveedor para las aplicaciones o sitios autorizados. Busque una aplicación llamada «GNOME» y elimínela.</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Cuentas en línea</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse en <gui>Cuentas en línea</gui> para abrir el panel.</p>
+    </item>
+    <item>
+      <p>Seleccione la cuenta que quiere quitar.</p>
+    </item>
+    <item>
+      <p>Pulse el botón <gui>-</gui> en la esquina inferior izquierda de la ventana.</p>
+    </item>
+    <item>
+      <p>Pulse <gui>Quitar</gui> en el diálogo de confirmación.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>En lugar de eliminar la cuenta por completo, es posible <link xref="accounts-disable-service">restringir los servicios</link> a los que acceder desde su escritorio.</p>
+  </note>
+</page>

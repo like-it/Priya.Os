@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="gs-tabs" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#getting-started"/>
+    <revision pkgversion="3.8" date="2013-02-17" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-03-07" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013–2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Aktivera, lägg till och ändra ordning på <app>Terminal</app>-flikar.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015, 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Använda flikar</title>
+
+  <p>Innan du kan navigera bland flikar med menyerna behöver du kontrollera att de är <link xref="pref-tab-window">aktiverade i dina inställningar</link>.</p>
+
+  <p>Flikraden visas högst upp i ett <app>Terminal</app>-fönster som har flera flikar öppna (den ser ut som en rad med knappar). Klicka på en flik för att växla till den. Du kan öppna flera flikar för att hantera ditt arbete i <app>Terminal</app>. Detta låter dig göra flera saker samtidigt som att köra program, bläddra i kataloger och redigera textfiler i ett enda <app>Terminal</app>-fönster.</p>
+
+  <section id="add-tab">
+    <title>Öppna en ny flik</title>
+
+    <p>För att öppna en ny flik i ditt aktuella <app>Terminal</app>-fönster:</p>
+    <steps>
+      <item>
+        <p>Tryck <keyseq><key>Skift</key><key>Ctrl</key><key>T</key></keyseq>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+<!-- TODO: doesn't work, see bug 720693
+  <section id="rename-tab">
+    <title>Rename a tab</title>
+
+    <p>Each tab has an automatically assigned title. You can rename the tabs
+    individually:</p>
+
+    <steps>
+      <item>
+        <p>Select <guiseq><gui style="menu">Terminal</gui>
+        <gui style="menuitem">Set Title…</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Enter the desired <gui>Title</gui> that you wish to use for the tab.
+        This will overwrite any titles that would be set by terminal commands.
+        </p>
+        <note>
+          <p>It is not possible to set back the automatically set title once it
+          has been set for a tab. To see the title, you need to allow terminal
+          command titles to be shown in the <gui style="menuitem">Profile 
+          Preferences</gui>.</p>
+        </note>
+      </item>
+      <item>
+        <p>Click <gui style="button">OK</gui>.</p>
+      </item>
+    </steps>
+  </section>-->
+
+  <section id="close-tab">
+    <title>Ta bort en flik</title>
+
+    <p>För att stänga en befintlig flik i ditt aktuella <app>Terminal</app>-fönster:</p>
+
+    <steps>
+      <item>
+        <p>Välj <guiseq><gui style="menu">Arkiv</gui><gui style="menuitem">Stäng terminal</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <p>Alternativt du klicka på <gui style="button">×</gui> i det övre högra hörnet för fliken eller högerklicka på fliken och välja <gui style="menuitem">Stäng terminal</gui>.</p>
+
+  </section>
+
+  <section id="reorder-tab">
+    <title>Ändra ordning på flikar</title>
+
+    <p>För att ändra ordningen på flikar i ett fönster:</p>
+    <steps>
+      <item>
+        <p>Klicka och håll ner vänster musknapp på fliken.</p>
+      </item>
+      <item>
+        <p>Dra fliken till den önskade positionen bland de andra flikarna.</p>
+      </item>
+      <item>
+        <p>Släpp musknappen.</p>
+      </item>
+    </steps>
+
+    <p>Fliken kommer placeras på positionen närmas där du släppte fliken, omedelbart intill andra öppna flikar.</p>
+
+    <p>Alternativt kan du ändra placering för en flik genom att högerklicka på en flik och välja <gui style="menuitem">Flytta terminal till vänster</gui> för att flytta fliken till vänster eller <gui style="menuitem">Flytta terminal till höger</gui> för att flytta fliken till höger. Detta kommer ändra flikpositionen genom att flytta den en placering i taget.</p>
+
+  </section>
+
+  <section id="move-tab-another-window">
+    <title>Flytta en flik till ett annat <app>Terminal</app>-fönster</title>
+
+    <p>Om du vill flytta en flik från ett fönster till ett annat:</p>
+    <steps>
+      <item>
+        <p>Klicka och håll ner vänster musknapp på fliken.</p>
+      </item>
+      <item>
+        <p>Dra fliken till det nya fönstret.</p>
+      </item>
+      <item>
+        <p>Placera den bredvid andra flikar i det nya fönstret.</p>
+      </item>
+      <item>
+        <p>Släpp musknappen.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Du kan flytta en flik från ett fönster till ett annat genom att dra fliken till <gui>Aktiviteter</gui>-hörnet i <gui>GNOME-skalet</gui>. Detta kommer att visa vart och ett av de öppna <app>Terminal</app>-fönstren. Du kan släppa fliken som du håller över det önskade <app>Terminal</app>-fönstret.</p>
+    </note>
+  </section>
+
+  <section id="move-tab-create-window">
+    <title>Flytta en flik för att skapa ett nytt <app>Terminal</app>-fönster</title>
+
+    <p>För att skapa ett nytt fönster från en befintlig flik:</p>
+    <steps>
+      <item>
+        <p>Klicka och håll ner vänster musknapp på fliken.</p>
+      </item>
+      <item>
+        <p>Dra fliken ut ur det aktuella <app>Terminal</app>-fönstret.</p>
+      </item>
+      <item>
+        <p>Släpp musknappen.</p>
+      </item>
+    </steps>
+  </section>
+
+</page>

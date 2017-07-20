@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="gu">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>માપાંકન અને લાક્ષણિકતા એ સંપૂર્ણપણે અલગ વસ્તુઓ છે.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>માપાંકન અને લાક્ષણિકતા વચ્ચે શું તફાવત છે?</title>
+  <p>માપાંકન અને લાક્ષણિકતા વચ્ચેનાં તફાવત વિશે ઘણા લોકો શરૂઆતમાં મૂંઝવાય છે. માપાંકન એ ઉપકરણનાં રંગ વર્તણૂકને બદલવાની પ્રક્રિયા છે. આ ખાસ કરીને બે પદ્દતિઓની મદદથી પૂર્ણ થાય છે:</p>
+  <list>
+    <item><p>નિયંત્રણો અથવા આંતરિક સુયોજનોને બદલવાનું કે જે તેની પાસે છે</p></item>
+    <item><p>તેની રંગ ચેનલોમાં વળાંકોને લાગુ કરી રહ્યા છે</p></item>
+  </list>
+  <p>માપાંકિતનો વિચાર એ તેનાં રંગનાં જવાબમાં વ્યાખ્યાયિત થયેલ સ્થિતિમાં ઉપકરણને મૂકવાનું છે. વારંવાર આ ફરી પેદા થતી વર્તણૂકને જાળવી રાખવા વાપરેલ છે, ખાસ કરીને માપાંકન એ ઉપકરણ અથવા સિસ્ટમ ખાસ ફાઇલ બંધારણમાં સંગ્રહશે કે જે ઉપકરણ સુયોજનો અથવા પ્રતિ ચેનલ કેલિબ્રેશન વણાંકોનો અહેવાલ રાખો.</p>
+  <p>કેરેક્ટરાઇઝેશન (અથવા રૂપરેખાકરણ) એ રંગ પ્રતિ ઉપકરણ શું ઉત્પન્ન કરે છે કે કેવી રીતે પ્રત્યુત્તર આપે છે તેને <em>રૅકોર્ડ</em> કરવાનો માર્ગ છે. મોટે ભાગે પરિણામ ઉપકરણ ICC રૂપરેખામાં સચવાય છે. આવી રૂપરેખા પોતે કોઇપણ રીતે રંગને બદલતી નથી. તે CMM (રંગ વ્યવસ્થાપન મોડ્યુલ - Color Management Module) જેવી સિસ્ટમ અથવા રંગ પરિચિત કાર્યક્રમને રંગમાં ફેરફાર કરવાની પરવાનગી આપે છે જ્યારે અન્ય ઉપકરણ રૂપરેખા સાથે ભેગી થાય. બે ઉપકરણોના લક્ષણો માત્ર જાણીને, એક ઉપકરણ રજૂઆતમાંથી બીજામાં રંગ રૂપાતરણ કરવાના માર્ગે પ્રાપ્ત કરી શકાય છે.</p>
+  <note>
+    <p>નોંધો કે લાક્ષણિકતા (રૂપરેખા) એ ફક્ત ઉપકરણ માટે યોગ્ય છે જો તે માપાંકનની એજ સ્થિતિમાં હોય તે લાક્ષણિકતા હતી તે સ્થિતિમાં હતુ.</p>
+  </note>
+  <p>
+    In the case of display profiles there is some additional confusion because
+    often the calibration information is stored in the profile for convenience.
+    By convention it is stored in a tag called the <em>vcgt</em> tag.
+    Although it is stored in the profile, none of the normal ICC based tools
+    or applications are aware of it, or do anything with it.
+    Similarly, typical display calibration tools and applications will not be
+    aware of, or do anything with the ICC characterization (profile) information.
+  </p>
+
+</page>

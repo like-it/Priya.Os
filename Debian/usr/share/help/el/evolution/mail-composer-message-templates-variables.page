@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-composer-message-templates-variables" xml:lang="el">
+
+  <info>
+   <desc>Ρύθμιση μεταβλητών σε πρότυπα και επαναχρησιμοποίηση στοιχείων από το μήνυμα στο οποίο απαντάτε</desc>
+   
+   <link type="guide" xref="mail-composer-message-templates#options"/>
+
+ <revision pkgversion="3.5.90" version="0.3" date="2012-08-17" status="draft"/>
+ <credit type="author">
+   <name its:translate="no">Andre Klapper</name>
+   <email its:translate="no">ak-47@gmx.net</email>
+ </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/b1dlaazl.html.en -->
+ </credit>
+ 
+ <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+     
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009-2010</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Χρήση μεταβλητών σε πρότυπα</title>
+
+<section id="configure">	
+<title>Ρύθμιση μεταβλητών για πρότυπα μηνύματος</title>
+<steps>
+<item><p>Επιλέξτε <guiseq><gui>επεξεργασία</gui><gui>πρόσθετα</gui></guiseq>.</p></item>
+<item><p>Πατήστε <gui>πρότυπα</gui>.</p></item>
+<item><p>Κλικ στην καρτέλα <gui>διαμόρφωση</gui>.</p></item>
+<item><p>Μπορείτε να προσθέσετε, να επεξεργαστείτε ή να αφαιρέσετε ζεύγη κλειδιών-τιμών. Μπορείτε να καθορίσετε οποιοδήποτε αριθμό ζευγών κλειδιών-τιμών.</p></item>
+</steps>
+ <p>Σε οποιοδήποτε πρότυπο, η εμφάνιση οποιουδήποτε $κλειδιού αντικαθίσταται από την τιμή που έχει στη ρύθμιση. Για παράδειγμα, αν ορίσετε το κλειδί σε διαχειριστής και την τιμή σε Χάρης, κάθε εμφάνιση του $διαχειριστής αντικαθίσταται στο μήνυμα από το Χάρης.</p>
+ <p>Αν υποθέσουμε ότι έχετε 1000 πρότυπα μηνυμάτων με το τρέχον όνομα το διαχειριστή σας σε αυτά. Όταν ο τρέχον διαχειριστής αλλάξει από έναν καινούριο, δεν είναι εύκολο για σας να αντικαταστήσετε χειροκίνητα το όνομα του διαχειριστή σας στα 1000 μηνύματα. Αν τα μηνύματα έχουν μια τιμή κλειδιού $διαχειριστής, τότε μπορείτε να ξαναορίσετε την τιμή στην καρτέλα ρύθμιση αυτού του προσθέτου.</p>
+ <p>Από προεπιλογή, όλες οι μεταβλητές περιβάλλοντος χρησιμοποιούνται ως ζεύγη κλειδιού-τιμής. Ένα συμβάν της $μεταβλητής_περιβάλλοντος αντικαθίσταται από την τιμή που φέρει. Για παράδειγμα, ένα συμβάν στο του $PATH στο πρότυπό σας αντικαθίσταται από την τιμή του όταν χρησιμοποιείται το πρότυπο.</p>
+ <p>Η διαδικασία αντικατάστασης χρησιμοποιεί την ακόλουθη σειρά προτεραιότητας:</p>
+ <steps>
+  <item>
+<p>Το $κλειδί αντικαθίσταται από την ορισμένη τιμή στην καρτέλα ρύθμισης του προσθέτου πρότυπα.</p>
+  </item>
+  <item>
+<p>Αν δε βρεθεί το κλειδί, τότε αντικαθίσταται από την τιμή της μεταβλητής περιβάλλοντος του.</p>
+  </item>
+  <item>
+<p>Αν το κλειδί δεν έχει ούτε επιλογή ρύθμισης ούτε μεταβλητή περιβάλλοντος, δε γίνεται καμιά αλλαγή.</p>
+  </item>
+ </steps>
+</section>
+
+<!-- as per https://bugzilla.gnome.org/show_bug.cgi?id=641845 - available since 3.2-->
+<section id="reply-variables">
+<title>Χρήση στοιχείων από ένα μήνυμα σε ένα πρότυπο όταν απαντάτε</title>
+<p>Τα πρότυπα μπορούν να περιέχουν περισσότερα από μόνο το προκαθορισμένο σύνολο των <link xref="#configure">ζευγών κλειδιού-τιμής</link>. Μπορείτε επίσης να πάρετε οποιεσδήποτε τιμές κεφαλίδας μηνύματος από το μήνυμα που εφαρμόζετε το πρότυπο, συν το πλήρες μήνυμα σώματος.</p>
+
+<!-- TRANSLATORS: Do NOT translate "$ORIG[subject]" and "$ORIG[body]" in this sentence. -->
+<p its:locNote="TO TRANSLATORS: Do NOT translate $ORIG[subject] and $ORIG[body] in this sentence!">Για να το κάνετε αυτό, χρησιμοποιήστε τη μορφή <code>$ORIG[ονομα_κεφαλιδας]</code> και αντικαταστήστε τη μεταβλητή <code>ονομα_κεφαλιδας</code> με την ενεργή κεφαλίδα. Για παράδειγμα, εάν θέλετε να εισάγετε τη γραμμή θέματος του μηνύματος στο οποίο απαντάτε, χρησιμοποιήστε <code>$ORIG[subject]</code>. Για εισαγωγή του πλήρους σώματος, χρησιμοποιήστε <code>$ORIG[body]</code>.</p>
+
+<!-- TRANSLATORS: Do NOT translate "$ORIG[body]" and "$ORIG[reply-to]" in this sentence. -->
+<p its:locNote="TO TRANSLATORS: Do NOT translate $ORIG[body] and $ORIG[reply-to] in this sentence!">Εάν δεν βρεθεί αντικατάσταση για μια μεταβλητή, η μεταβλητή δεν αφαιρείται (εκτός από το <code>$ORIG[body]</code>) αλλά αφήνεται στη θέση έτσι ώστε βλέπετε ότι κάτι πήγε λάθος. Αυτό θα μπορούσε να συμβεί όταν προσπαθείτε να χρησιμοποιήσετε κεφαλίδες που δεν είναι αναγκαστικά διαθέσιμες πάντα στο αρχικό μήνυμα (για παράδειγμα <code>$ORIG[reply-to]</code>).</p>
+</section>
+
+</page>

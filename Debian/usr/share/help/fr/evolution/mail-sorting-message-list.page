@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-sorting-message-list" xml:lang="fr">
+
+  <info>
+    <desc>Trier la liste des messages d'un dossier de courriel.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+    <link type="guide" xref="mail-layout-changing"/>
+
+    <revision pkgversion="3.3.91" version="0.7" date="2012-03-07" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-columns.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tri de la liste des messages</title>
+  
+<p><app>Evolution</app> lets you organize your emails by letting you sort messages in the <link xref="intro-main-window#e-mail">message list</link>.</p>
+
+<section id="email-threads">
+<title>Tri des messages par fils de discussion</title>
+<p>Vous pouvez utiliser un affichage groupé par fils de discussion pour trier vos courriels. Pour activer cette fonction, cliquez sur <guiseq><gui>Affichage</gui><gui>Grouper par fils de discussion</gui></guiseq> ou pressez <keyseq><key>Ctrl</key><key>T</key></keyseq>.</p>
+<p>Cette fonctionnalité, lorsqu'elle est activée, regroupe les réponses au message d'origine et vous permet de suivre le flux de la conversation d'un message à l'autre.</p>
+<p>Lorsqu'un nouveau message arrive, il est ajouté sous le message parent. Les fils de discussion sont triés et affichés par ordre chronologique.</p>
+<note style="tip"><p>Pour les utilisateurs avancés : il existe une clé GSettings qui vous permet de basculer entre un état plié ou déplié des fils de discussion de courriel. L'état plié est activé par défaut. Il peut être modifié en démarrant le <app>terminal</app> et en lançant la commande <cmd>gsettings set org.gnome.evolution.mail thread-expand true</cmd>.</p>
+<list>
+<item><p>Ouvrez l'application <app>Terminal</app>.</p></item>
+<item><p>Lancez la commande <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd>.</p></item>
+</list>
+</note>
+</section>
+
+<section id="column-headers">
+<title>Tri des messages avec les en-têtes de colonne</title>
+<p>La liste des messages comporte normalement des colonnes pour indiquer si un message a été lu, s'il possède des pièces jointes, ainsi que son importance, l'expéditeur, la date et le sujet. Pour modifier les colonnes utilisées, vous pouvez :</p>
+<list>
+<item><p>déplacer les barres d'en-tête de colonne,</p></item>
+<item><p>faire un clic-droit sur l'en-tête,</p></item>
+<item><p>sélectionner l'option <gui>Enlever cette colonne</gui> ou <gui>Ajouter une colonne</gui>.</p></item>
+</list>
+
+<p><app>Evolution</app> allows you to sort your messages using these columns. Just click on the column label to sort the emails. The direction of the arrow next to the label indicates the direction of the sort.</p>
+</section>
+
+<section id="sort-options">
+<title>Utilisation d'autres options de tri</title>
+<p><app>Evolution</app> provides other ways for sorting email messages. You can use Sort By, Sort Ascending, Sort Descending, or Reset sort.</p>
+	<section id="sort-options-by">
+	<title>Trier par</title>
+		<p>Vous pouvez également trier les messages de courriel en utilisant la liste <gui>Trier par</gui>.</p>
+		<steps>
+		<item><p>Faites un clic-droit sur l'en-tête de la colonne de la liste des messages.</p></item>
+		<item><p>Sélectionnez l'option <gui>Trier par</gui>.</p><p>Cela fait apparaître cette liste de critères de tri des messages :</p>
+			<list>
+			<item><p>Sujet - Tronqué</p></item>
+			<item><p>Étiquettes</p></item>
+			<item><p>Destinataires</p></item>
+			<item><p>Expéditeur</p></item>
+			<item><p>Emplacement</p></item>
+			<item><p>Date d'échéance</p></item>
+			<item><p><link xref="mail-follow-up-flag">Marqueur de suivi</link></p></item>
+			<item><p>État des marqueurs</p></item>
+			<item><p>Taille</p></item>
+			<item><p>À</p></item>
+			<item><p>Reçu</p></item>
+			<item><p>Date</p></item>
+			<item><p>Sujet</p></item>
+			<item><p>De</p></item>
+			<item><p>Pièce jointe</p></item>
+			<item><p>Marqué</p></item>
+			<item><p>État</p></item>
+			<item><p>Personnalisé</p></item>
+			</list>
+		</item>
+		<item><p>Sélectionnez l'option que vous voulez utiliser pour le tri des messages.</p></item>
+		</steps>
+	</section>
+
+	<section id="sort-options-ascending">
+	<title>Tri croissant</title>
+		<steps>
+		<item><p>Faites un clic-droit sur l'en-tête de la colonne de la liste des messages.</p></item>
+		<item><p>Sélectionnez l'option <gui>Tri croissant</gui>.</p></item>
+		</steps>
+		<p>Les messages les plus récents sont affichés en dernier.</p>
+	</section>
+
+	<section id="sort-options-descending">
+	<title>Tri décroissant</title>
+		<steps>
+		<item><p>Faites un clic-droit sur l'en-tête de la colonne de la liste des messages.</p></item>
+		<item><p>Sélectionnez l'option <gui>Tri décroissant</gui>.</p></item>
+		</steps>
+		<p>Les messages les plus récents sont affichés en premier.</p>
+	</section>
+
+	<section id="sort-options-unsort">
+	<title>Réinitialiser le tri</title>
+		<steps>
+		<item><p>Faites un clic-droit sur l'en-tête de la colonne de la liste des messages.</p></item>
+		<item><p>Sélectionnez l'option <gui>Réinitialiser le tri</gui>.</p></item>
+		</steps>
+		<p>Cela enlève le tri selon cette colonne, revenant à l'état de tri des messages selon leur ordre d'arrivée dans le dossier.</p>
+	</section>
+</section>
+
+</page>

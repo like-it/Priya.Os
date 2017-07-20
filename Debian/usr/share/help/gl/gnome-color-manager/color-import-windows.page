@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="color-import-windows" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <link type="seealso" xref="color-gettingprofiles"/>
+    <desc>Como importar un perfil ICC existente usando un sistema Windows.</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Instalando un perfil ICC en Microsoft Windows</title>
+  <p>O método para asignar o perfil a un dispositivo e tamén usando as curvas de calibrado incrustadas é distinto para cada versión de Microsoft Windows.</p>
+  <section id="xp">
+    <title>Windows XP</title>
+    <p>Prema co botón dereito sobre o perfil en Windows Explorer e prema <gui>Instalar perfil</gui>. Isto copia o perfil no cartafol correcto automaticamente. </p>
+    <p>Logo abra <guiseq><gui>Centro de control</gui><gui>Cor</gui></guiseq> e engada o perfil ao dispositivo.</p>
+    <note style="warning">
+      <p>Se está substituíndo un perfil existente en Windows XP, o atallo de arriba non funcionará. Os perfiles deben copiarse manualmente en <file>C:\Windows\system32\spool\drivers\color</file> para substituír o perfil orixinal.</p>
+    </note>
+    <p>Windows XP require que un programa se execute ao inicio para copiar o perfíl de curvas de calibrado na tarxeta gráfica. Isto pode facerse usando <app>Adobe Gamma</app>, <app>LUT Loader</app> ou usando o programa gratuito <app href="https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=12714"> Microsoft Color Control Panel Applet</app>. Ao usar este último engadirase un elemento <gui>Cor</gui> ao panel de control e permitiralle estabelecer de forma doada perfiles predeterminados en cada inicio.</p>
+  </section>
+
+  <section id="vista">
+    <title>Windows Vista</title>
+    <p>Microsoft Windows Vista eliminou de forma errónea o calibrado de curvas do vídeo LUT despois do inicio de sesión, suspensión e cando aparece a pantalla UAC. ISto significa que ten que recargar manualmente o perfil co perfil de curvas de calibrado. Se está usando perfiles con curvas de calibrado incrustadas ten que ter moito coidado de que o estado de calibrado non se fora limpado.</p>
+  </section>
+
+  <section id="7">
+    <title>Windows 7</title>
+    <p>Windows 7 admite un esquema similar a Linux, nos que os perfiles se instalan a nivel de sistema ou específicos para un usuario. Porén almacénanse no mesmo lugar. Prema co botón dereito no perfil en Windows Explorer e prema <gui>Instalar perfil</gui> ou copie o perfil .icc en <file>C:\Windows\system32\spool\drivers\color</file>.</p>
+    <p>Abra <guiseq><gui>Centro de control</gui><gui>Xestión de cor</gui></guiseq> e logo engada un perfil ao sistema premendo no botón <gui>Engadir</gui>. Prema na lapela <gui>Avanzado</gui> e busque <gui>Calibración da pantalla</gui>. A carga do calibrado de curvas actívase na caixa de verificación <gui>Usar calibrado de pantalla Windows</gui> pero non é sensíbel. Isto pode activarse premendo en <gui>Cambiar preferencias do sistema</gui> e logo volvendo á lapela <gui>Avanzado</gui> e logo premendo na caixa de verificación.</p>
+    <p>Peche o diálogo e prema <gui>Recargar as calibracións actuais</gui> para estabelecer os desniveis gamma. As curvas de calibrado de perfil deberían estabelecerse para cada arrinque.</p>
+  </section>
+
+</page>

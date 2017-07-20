@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Sodelavci wiki dokumentacije Ubuntu</name>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Nekateri gonilniki naprav ne delujejo dobro z določenimi brezžičnimi karticami, zato boste morda morali najti boljšega.</desc>
+  </info>
+
+  <title>Odpravljanje težav z brezžičnimi omrežji</title>
+
+  <subtitle>Prepričajte se, da so nameščeni delujoči gonilniki naprave</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>Pri tem koraku lahko preverite, če lahko gonilnike naprav za brezžično kartico spravite k delovanju. <em>Gonilnik naprave</em> je program, ki računalniku pove kako spraviti napravo strojne opreme k delovanju. Tudi če računalnik prepozna brezžično kartico, morda nima gonilnikov, ki delujejo zelo dobro. Morda boste lahko našli druge gonilnike za brezžično kartico, ki delujejo. Poskusite nekaj od možnosti spodaj:</p>
+
+  <list>
+    <item>
+      <p>Check to see if your wireless adapter is on a list of supported
+      devices.</p>
+      <p>Most Linux distributions keep a list of wireless devices that they
+      have support for. Sometimes, these lists provide extra information on how
+      to get the drivers for certain adapters working properly. Go to the list
+      for your distribution (for example,
+      <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>,
+      <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>,
+      <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> or
+      <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>)
+      and see if your make and model of wireless adapter is listed. You may be
+      able to use some of the information there to get your wireless drivers
+      working.</p>
+    </item>
+    <item>
+      <p>Look for restricted (binary) drivers.</p>
+      <p>Veliko distribucij Linux vsebuje le gonilnike, ki so <em>prosti</em> in <em>odprtokodni</em>. To se zgodi, ker ne morejo distribuirati gonilnikov, ki so lastniški ali zaprtokodni. Če je pravi gonilnik za vašo brezžično kartico na voljo le v neprosti ali "le-binarni" različici, morda privzeto ne bo nameščen. V tem primeru si oglejte spletišče proizvajalca brezžične kartice in preverite, če imajo gonilnike Linux.</p>
+      <p>Nekatere distribucije Linux imajo orodje, ki lahko za vas prejme omejene gonilnike. Če vaša distribucija vsebuje to orodje, ga uporabite. Morda lahko za vas najde brezžične kartice.</p>
+    </item>
+    <item>
+      <p>Use the Windows drivers for your adapter.</p>
+      <p>V splošnem gonilnika zasnovanega za določen operacijski sistem (kot je na primer Windows) ne morete uporabiti na drugem operacijskem sistemu (kot je na primer Linux). To se zgodi zato, ker imajo različen način upravljanja naprav. Za brezžične kartice lahko namestite plast združljivosti <em>NDISwrapper</em>, ki vam omogoča uporabo nekaterih gonilnikov Windows na Linuxu. To je uporabno, ker imajo brezžične kartice skoraj vedno na voljo gonilnike Windows, gonilniki Linux pa včasih niso na voljo. Več o tem kako uporabiti NDISwrapper lahko izveste <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">tukaj</link>. Vedite, da z NDISwrapper ne morete uporabiti vseh brezžičnih gonilnikov.</p>
+    </item>
+  </list>
+
+  <p>Če nobena od teh možnosti ne deluje, boste morda želeli preizkusiti drugo brezžično kartico za ogled, če jo lahko spravite k delovanju. Brezžične kartice USB so precej poceni in jih lahko vklopite v katerikoli računalnik. Preden brezžično kartico kupite, preverite da je združljiva z vašo distribucijo Linux.</p>
+
+</page>

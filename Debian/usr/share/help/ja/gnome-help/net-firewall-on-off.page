@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>ネットワークにアクセスできるプログラムを制御することが可能です。制御を行うことでコンピューターを安全に保つのに役立ちます。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>ファイアウォールへのアクセスの許可とブロック</title>
+
+  <p>システムには、インターネット上またはネットワーク上の他のユーザーによるプログラムへのアクセスをブロックできる<em>ファイアウォール</em>を設定してください。これによりコンピューターの安全性を確保することができます。</p>
+
+  <p>ネットワーク接続を使用する可能性があるアプリケーションが多々あります。たとえば、ネットワークに接続している場合、ファイルを共有したり他のユーザーに遠隔からのデスクトップの表示を許可したりすることができます。コンピューターのセットアップ方法によっては、こうしたサービスが意図した通りに動作するようファイアウォールを調整する必要があります。</p>
+
+  <p>ネットワークサービスを提供するプログラムはそれぞれ特定の<em>ネットワークポート</em>を使用します。ネットワーク上の他のコンピューターにサービスへのアクセスを許可するには、場合によってそのサービスに割り当てられているポートをファイアウォール上で「開く」必要があります。</p>
+
+
+  <steps>
+    <item>
+      <p>画面左上にある<gui>アクティビティ</gui>からファイアウォールアプリケーションを起動します。ファイアウォール管理ツール (Firestarter、 GUFW など) が見つからない場合は必要に応じてインストールしえください。</p>
+    </item>
+    <item>
+      <p>他のユーザーにアクセスを許可するかしないかに応じて、ネットワークサービスのポートを開いたり無効にしたりします。変更が必要なポートは<link xref="net-firewall-ports">サービスによって異なります</link>。</p>
+    </item>
+    <item>
+      <p>ファイアウォールツールで指定されている指示にしたがい変更を保存または適用します。</p>
+    </item>
+  </steps>
+
+</page>

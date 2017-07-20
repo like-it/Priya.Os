@@ -1,0 +1,8 @@
+# Override lintian error about embedding the tinyxml library. This would lead
+# to an ftp-master autoreject otherwise. See
+# https://ftp-master.debian.org/static/lintian.tags
+# While this is not an ideal solution, porting to the tinyxml system library is
+# non-trivial due to changes in the API.
+embedded-library usr/bin/rarian-sk-get-cl: tinyxml
+embedded-library usr/bin/rarian-sk-migrate: tinyxml
+embedded-library usr/bin/rarian-sk-preinstall: tinyxml

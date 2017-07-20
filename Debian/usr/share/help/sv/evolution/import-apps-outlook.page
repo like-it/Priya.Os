@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-apps-outlook" xml:lang="sv">
+
+  <info>
+    <desc>Importera data från Microsoft Outlook.</desc>
+    
+    <link type="guide" xref="import-data#import-from-apps"/>
+
+    <revision pkgversion="3.0.2" version="0.5" date="2011-09-02" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/outlook-migration-mail.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Outlook</title>
+<!-- "Import data and settings from older programs" cannot recognize Outlook, as there obviously is no default storage location for Outlook *under Linux* -->
+
+<p>Dessa steg avser lokalt lagrad data så som POP-konton. För fjärrdata (så som IMAP) behövs inte detta, eftersom datan fortfarande är på servern och inte behöver överföras manuellt. Du kan ställa in motsvarande konton i <app>Evolution</app> så kommer datan att hämtas ner.</p>
+
+<section id="prerequisites">
+<title>Förutsättningar under Windows</title>
+<p>Först, medan du använder Microsoft Windows, förbered dina meddelanden för import:</p>
+<steps>
+<item><p>Hitta dina Outlook-filer (de har normalt filändelsen <file>.pst</file> eller <file>.ost</file>):</p>
+<table frame="all" rules="all">
+  <tr>
+    <td/><td><p>Windows 7, Windows Vista</p></td><td><p>Windows XP</p></td>
+  </tr>
+  <tr>
+    <td><p>Outlook 2010</p></td><td><p><file>C:\Användare\användarnamn\Mina dokument\Outlook-filer</file></p></td><td><p><file>C:\Documents and Settings\användarnamn\Mina dokument\Outlook-filer</file></p></td>
+  </tr>
+  <tr>
+    <td><p>Outlook 2007 och tidigare</p></td><td><p><file>C:\Användare\användarnamn\AppData\Local\Microsoft\Outlook</file></p></td><td><p><file>C:\Documents and Settings\användarnamn\AppData\Local\Microsoft\Outlook</file></p></td>
+  </tr>
+</table>
+<p>(Ersätt ”användarnamn” med ditt användarnamn.)</p>
+</item>
+<!-- File locations taken from http://support.microsoft.com/kb/2291280 and http://answers.microsoft.com/en-us/windows/forum/windows_7-files/where-is-location-of-outlookpst-file-in-windows-7/3a4c03c3-e8ad-4912-9e37-f1c62057d1f9 -->
+<item><p>Kopiera Outlook-filerna till systemet eller partitionen som <app>Evolution</app> finns installerat på.</p>
+<p>Eftersom din Windows-hårddisk troligtvis använder NTFS-formatet kan vissa Linux-system inte läsa den utan ytterligare programvara. Du kan finna det enklare att kopiera e-postmapparna till en USB-enhet eller bränna en CD.</p></item>
+</steps>
+</section>
+
+<section id="importing">
+<title>Importera i <app>Evolution</app></title>
+<steps>
+<item><p>Beroende på ditt sista steg, anslut disken eller USB-enheten med data på och vänta tills filhanterarfönstret öppnas eller montera din Windows-enhet.</p></item>
+<item><p>Kopiera alla e-postfiler till din hemkatalog eller någon annan lämplig plats.</p></item>
+<item><p>Starta <app>Evolution</app>.</p></item>
+<item><p>Du kan välja att använda <guiseq><gui>Arkiv</gui><gui>Nytt</gui><gui>E-postmapp</gui></guiseq> för att skapa <link xref="mail-folders">mapparna</link> du vill ha.</p></item>
+
+<item><p>Klicka på <guiseq><gui>Arkiv</gui><gui>Importera</gui></guiseq>.</p></item>
+<item><p>I fliken <gui>Importörstyp</gui>, klicka på <gui>Importera en enda fil</gui>.</p></item>
+<item><p>Välj den Outlook-fil med personliga mappar (.pst) som du vill importera.</p><p>Filtypen kommer att fastställas automatiskt.</p>
+<note style="tip"><p>Om alternativet att importera Outlook-personliga mappar (.pst-filer) inte finns under <guiseq><gui>Arkiv</gui><gui>Importera</gui><gui>Importera en enda fil</gui><gui>Filtyp</gui></guiseq>, kanske din distribution inte har aktiverat denna funktionalitet.</p></note>
+</item>
+<item><p>Välj destinationen (t.ex. mappen i <app>Evolution</app>) för den importerade datan.</p></item>
+<item><p>Upprepa importstegen till du har importerat alla dina data.</p></item>
+</steps>
+
+</section>
+
+</page>

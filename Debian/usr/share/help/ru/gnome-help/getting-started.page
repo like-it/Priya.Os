@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:e="http://projectmallard.org/experimental/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="getting-started" version="1.0 if/1.0" xml:lang="ru">
+
+<info>
+    <link type="guide" xref="index" group="#gs"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <desc>Новичок в GNOME? Узнай, с чего начать.</desc>
+    <title type="link">Начало работы с GNOME</title>
+    <title type="text">Начало работы</title>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Начало работы</title>
+
+<if:choose>
+<if:when test="!platform:gnome-classic">
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-launching-applications.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-launching-apps.svg">
+      <ui:caption its:translate="yes"><desc style="center">Запуск приложений</desc></ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>Запуск приложений</tt:p>
+         </tt:div>
+         <tt:div begin="5s" end="7.5s">
+           <tt:p>Переместите курсор мыши на <gui>Обзор</gui>, в левый верхний угол экрана.</tt:p>
+           </tt:div>
+         <tt:div begin="7.5s" end="9.5s">
+           <tt:p>Нажмите значок <gui>Показать приложения</gui>.</tt:p>
+         </tt:div>
+         <tt:div begin="9.5s" end="11s">
+           <tt:p>Нажмите на приложение для его запуска, например «Справка».</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="21s">
+           <tt:p>Также можно открыть <gui>Обзор</gui> нажав клавишу <key href="help:gnome-help/keyboard-key-super">Super</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="22s" end="29s">
+           <tt:p>Начните вводить название приложения, которое вы хотите запустить.</tt:p>
+         </tt:div>
+         <tt:div begin="30s" end="33s">
+           <tt:p>Нажмите <key>Enter</key> для запуска приложения.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+</if:when>
+<if:when test="platform:gnome-classic">
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-windows-and-workspaces.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-windows-and-workspaces.svg">
+          <ui:caption its:translate="yes"><desc style="center">Использование окон и рабочих столов</desc></ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>Окна и рабочие столы</tt:p>
+         </tt:div>
+         <tt:div begin="6s" end="10s">
+           <tt:p>Чтобы раскрыть окно на весь экран, перетащите заголовок окна к верхнему краю экрана.</tt:p>
+           </tt:div>
+         <tt:div begin="10s" end="13s">
+           <tt:p>Когда на экране появится подсветка, отпустите окно.</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="20s">
+           <tt:p>Чтобы вернуть прежний размер окна, перетащите заголовок окна от краёв экрана.</tt:p>
+         </tt:div>
+         <tt:div begin="25s" end="29s">
+           <tt:p>Также можно нажать на верхнюю панель, чтобы перетащить окно и вернуть его прежний размер.</tt:p>
+         </tt:div>
+         <tt:div begin="34s" end="38s">
+           <tt:p>Чтобы растянуть окно вдоль левой стороны экрана, перетащите заголовок окна влево.</tt:p>
+         </tt:div>
+         <tt:div begin="38s" end="40s">
+           <tt:p>Когда в левой половине экрана появится подсветка, отпустите окно.</tt:p>
+         </tt:div>
+         <tt:div begin="41s" end="44s">
+           <tt:p>Чтобы растянуть окно вдоль правой стороны экрана, перетащите заголовок окна вправо.</tt:p>
+         </tt:div>
+         <tt:div begin="44s" end="48s">
+           <tt:p>Когда в левой половине экрана появится подсветка, отпустите окно.</tt:p>
+         </tt:div>
+         <tt:div begin="54s" end="60s">
+           <tt:p>Чтобы развернуть окно на весь экран с помощью клавиатуры, нажмите клавишу <key href="help:gnome-help/keyboard-key-super">Super</key> и затем <key>↑</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="61s" end="66s">
+           <tt:p>Чтобы восстановить прежний размер окна используя клавиатуру, нажмите клавишу <key href="help:gnome-help/keyboard-key-super">Super</key> и затем <key>↓</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="66s" end="73s">
+           <tt:p>Чтобы растянуть окно вдоль правой стороны экрана, нажмите клавишу <key href="help:gnome-help/keyboard-key-super">Super</key> и затем <key>→</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="76s" end="82s">
+           <tt:p>Чтобы растянуть окно вдоль левой стороны экрана, нажмите клавишу <key href="help:gnome-help/keyboard-key-super">Super</key> и затем <key>←</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="83s" end="89s">
+           <tt:p>Чтобы переключиться на нижнее рабочее место, нажмите <keyseq><key href="help:gnome-help/keyboard-key-super">Super </key><key>Page Down</key></keyseq>.</tt:p>
+         </tt:div>
+         <tt:div begin="90s" end="97s">
+           <tt:p>Чтобы переключиться на верхнее рабочее место, нажмите <keyseq><key href="help:gnome-help/keyboard-key-super">Super </key><key>Page Up</key></keyseq>.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+</if:when>
+</if:choose>
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-task-switching.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-task-switching.svg">
+        <ui:caption its:translate="yes"><desc style="center">Переключение между задачами</desc></ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>Переключение между задачами</tt:p>
+         </tt:div>
+         <if:if test="!platform:gnome-classic">
+         <tt:div begin="5s" end="8s">
+           <tt:p>Переместите курсор мыши на <gui>Обзор</gui>, в левый верхний угол экрана.</tt:p>
+           </tt:div>
+         </if:if>
+         <tt:div begin="9s" end="12s">
+           <tt:p>Нажмите на окно, чтобы переключиться на эту задачу.</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="14s">
+           <tt:p>Чтобы растянуть окно вдоль левой стороны экрана, перетащите заголовок окна влево.</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="16s">
+           <tt:p>Когда в левой половине экрана появится подсветка, отпустите окно.</tt:p>
+         </tt:div>
+         <tt:div begin="16s" end="18">
+           <tt:p>Чтобы максимально раскрыть окно вдоль левой стороны экрана, перетащите заголовок окна вправо.</tt:p>
+         </tt:div>
+         <tt:div begin="18s" end="20s">
+           <tt:p>Когда в левой половине экрана появится подсветка, отпустите окно.</tt:p>
+         </tt:div>
+         <tt:div begin="23s" end="27s">
+           <tt:p>Чтобы открыть <gui>переключатель окон</gui>, нажмите <keyseq> <key href="help:gnome-help/keyboard-key-super">Super</key><key> Tab</key></keyseq>.</tt:p>
+         </tt:div>
+         <tt:div begin="27s" end="29s">
+           <tt:p>Чтобы выбрать следующее выделенное окно, отпустите клавишу <key href="help:gnome-help/keyboard-key-super">Super </key>.</tt:p>
+         </tt:div>
+         <tt:div begin="29s" end="32s">
+           <tt:p>To cycle through the list of open windows, do not release
+           <key href="help:gnome-help/keyboard-key-super">Super</key> but hold
+           it down, and press <key>Tab</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="35s" end="37s">
+           <tt:p>Откройте <gui>Обзор</gui>, нажав клавишу <key href="help:gnome-help/keyboard-key-super">Super </key>.</tt:p>
+         </tt:div>
+         <tt:div begin="37s" end="40s">
+           <tt:p>Начните вводить название приложения, на которое вы хотите переключиться.</tt:p>
+         </tt:div>
+         <tt:div begin="40s" end="43s">
+           <tt:p>Когда приложение появится в качестве первого результата, нажмите <key> Enter</key>, чтобы на него переключиться.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-responding-to-messages.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-responding-to-messages.svg">
+            <ui:caption its:translate="yes"><desc style="center">Ответ на сообщение</desc>
+            </ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="3s">
+           <tt:p>Ответы на сообщения</tt:p>
+         </tt:div>
+         <tt:div begin="3s" end="6s">
+           <tt:p>Наведите курсор мыши на сообщение чата, которое появляется в верхней части экрана.</tt:p>
+           </tt:div>
+         <tt:div begin="6s" end="9s">
+           <tt:p>Начните вводить ответ и, когда закончите, нажмите <key>Enter </key>, чтобы отправить его.</tt:p>
+         </tt:div>
+         <tt:div begin="9s" end="10s">
+           <tt:p>Закройте сообщение.</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="14s">
+           <tt:p>Отложенный ответ</tt:p>
+         </tt:div>
+         <tt:div begin="16s" end="22s">
+           <tt:p>Сообщение чата в верхней части экрана через некоторое время исчезнет, если вы не наведёте курсор мыши на сообщение.</tt:p>
+         </tt:div>
+         <tt:div begin="22s" end="24s">
+           <tt:p>Чтобы вернуться к неотвеченным сообщениям, нажмите на часы на верхней панели.</tt:p>
+         </tt:div>
+         <tt:div begin="24s" end="26s">
+           <tt:p>Из списка уведомлений, выберите ваше сообщение.</tt:p>
+         </tt:div>
+         <tt:div begin="26s" end="28s">
+           <tt:p>Начните вводить свой ответ.</tt:p>
+         </tt:div>
+         <tt:div begin="32s" end="35s">
+           <tt:p>Чтобы открыть список уведомлений, нажмите комбинацию клавиш <keyseq> <key href="help:gnome-help/ keyboard-key-super">Super</key> <key>V</key></keyseq></tt:p>
+         </tt:div>
+         <tt:div begin="35s" end="41s">
+           <tt:p>С помощью клавиш со стрелками выберите сообщение, на которое хотите ответить, и нажмите <key>Enter</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="41s" end="44s">
+           <tt:p>Начните вводить свой ответ.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+
+<links type="topic" style="grid" groups="tasks">
+<title style="heading">Общие задачи</title>
+</links>
+
+<links type="guide" style="heading nodesc">
+<title/>
+</links>
+
+<!--
+<note style="plain">
+  <title>New in GNOME 3.8</title>
+  <p>New features described here.</p>
+</note>
+-->
+
+</page>

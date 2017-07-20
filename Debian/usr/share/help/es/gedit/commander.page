@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-commander" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/> 
+    <revision version="3.4" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Usar una interfaz de línea de comandos para edición avanzada.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Milagros Alessandra Infante Montero</mal:name>
+      <mal:email>maim92@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Comando</title>
+
+  <p>El complemento <app>Comando</app> es para usuarios avanzados de <app>gedit</app> que permite realizar acciones de línea de comandos sobre el archivo actual. Para activar el complemento «Comando», seleccione <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferencias</gui> <gui>Complementos</gui><gui>Comando</gui></guiseq>.</p>
+
+  <p>Una vez que haya instalado el complemento, actívelo pulsando <keyseq><key>Ctrl</key><key>.</key></keyseq>.</p>
+  
+  <note style="tip">
+    <p>La última tecla de la combinación de teclas indicada es un punto («.»).</p>
+  </note>
+
+  <table frame="all" rules="all">
+    <thead>
+      <tr>
+        <td><p>Acción</p></td>
+	<td><p>Atajo del teclado</p></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><p>Ver una descripción de los comandos disponibles</p></td>
+	<td><p><keyseq><key>Tab</key><key>Tab</key></keyseq></p></td>
+      </tr>
+      <tr>
+        <td><p>Buscar una palabra en el archivo actual</p></td>
+	<td>
+	  <p><key>/</key> <input>foo</input></p>
+          <p>Esto buscará la palabra <input>foo</input>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Reemplazar una palabra en el archivo actual</p></td>
+	<td>
+	  <p><keyseq><key>/</key><key>/</key></keyseq> <input>algo barra</input></p>
+          <p>Esto reemplazará <em>foo</em> por <em>bar</em>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Mover el cursos a un determinado número de línea en su archivo</p></td>
+        <td>
+	  <p>go <input>[número de línea]</input> <em>o</em> simplemente <em>G</em> <input>[número de línea]</input></p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>Conmutar el indicador de marcador para la línea actual</p></td>
+        <td><p>bookmark <em>o</em> simplemente <em>B</em></p></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <note style="tip">
+    <p>Algunos comandos, como <app>bookmark</app>, necesitan que se instale y active el complemento adecuado. Si no tiene el complemento instalado y activado, obtendrá un mensaje de error.</p>
+  </note>
+
+</page>

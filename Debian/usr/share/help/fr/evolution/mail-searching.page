@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-searching" xml:lang="fr">
+ 
+  <info>
+    <desc>Recherche de messages.</desc>
+    
+    <link type="guide" xref="searching-items"/>
+    <link type="guide" xref="mail-organizing"/>
+ 
+    <revision pkgversion="3.13.90" version="0.6" date="2015-03-09" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Max Vorobuov</name>
+      <email its:translate="no">vmax0770@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+ 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+ 
+<title>Recherche de courriel</title>
+
+<section id="search-single">
+<title>Recherche dans un seul message.</title>
+<p>Pour trouver un texte dans le message affiché, sélectionnez <guiseq><gui>Édition</gui><gui>Rechercher dans le message...</gui></guiseq> dans le menu principal.</p>
+</section>
+
+<section id="search-many">
+<title>Recherche parmi les messages.</title>
+
+<section id="quick-search">
+<title>Recherche rapide</title>
+<p>Dans la vue des courriels, vous pouvez faire une recherche rapide de messages en définissant des conditions.</p>
+<steps>
+<item><p>Cliquez sur l'icône de recherche <media type="image" mime="image/png" its:translate="no" src="figures/search-icon.png"/> pour ouvrir la liste déroulante.</p></item>
+<item><p>Sélectionnez le critère de recherche dans la liste.</p>
+<note style="tip"><p>Les utilisateurs avancés vous pouvez <link href="https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10">combiner plusieurs conditions en utilisant la syntaxe <gui>Free form expression</gui></link>.</p></note>
+</item>
+<item><p>Choisissez la portée dans la liste déroulante à côté de la boîte de texte.</p>
+<note style="tip"><p>Pour la portée du <gui>Compte actuel</gui>, le terme « compte » se réfère aux nœuds de niveau supérieur dans la <link xref="intro-main-window#e-mail">liste des dossiers de courriel</link>, tels que « Sur cet ordinateur » ou les comptes de messagerie distants.</p></note>
+</item>
+<item><p>Saisissez le texte à rechercher et appuyez sur <key>Entrée</key>.</p></item>
+<item><p><app>Evolution</app> affiche les résultats de la recherche.</p></item>
+</steps>
+<note style="tip"><p>Si vous démarrez directement à partir de l'étape 4, le texte sera recherché dans les sujets et adresses des courriels et la portée sera le « Dossier actuel ».</p></note>
+<note style="tip"><p>Si vous recherchez assez souvent des messages qui ne sont pas dans les mêmes dossiers, il peut être préférable de créer un dossier de recherche à la place ; consultez <link xref="mail-search-folders">Utilisation des dossiers de recherche</link> pour plus de détails.</p></note>
+<p>Si vous voulez définir plusieurs critères de recherche, vous devriez faire une Recherche avancée, telle que décrite ci-dessous.</p>
+</section>
+
+<!-- As advanced-search, clearing-search, saved-searches, editing-a-saved-search are totally identical in all *-searching.page files, this is centrally in one file that's included by XInclude. See
+http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-searching.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:section)"/>
+
+</section> 
+</page>

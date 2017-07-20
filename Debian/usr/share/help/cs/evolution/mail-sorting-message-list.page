@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-sorting-message-list" xml:lang="cs">
+
+  <info>
+    <desc>Řazení seznamu zpráv ve složce pošty.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+    <link type="guide" xref="mail-layout-changing"/>
+
+    <revision pkgversion="3.3.91" version="0.7" date="2012-03-07" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-columns.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Řazení seznamu zpráv</title>
+  
+<p><app>Evolution</app> vám umožňuje se svoji poštu uspořádat pomocí různého řazení zpráv v <link xref="intro-main-window#e-mail">seznamu zpráv</link>.</p>
+
+<section id="email-threads">
+<title>Řazení pošty do vláken</title>
+<p>E-maily si můžete zobrazit setříděné do vláken. Tuto funkci zapnete kliknutím na <guiseq><gui>Zobrazit</gui><gui>Seskupit podle vláken</gui></guiseq> nebo zmáčknutím <keyseq><key>Ctrl</key><key>T</key></keyseq>.</p>
+<p>Když je tato funkce zapnutá, seskupují se odpovědi s původní zprávou, takže můžete snadno procházet po jednotlivých zprávách průběh celé konverzace.</p>
+<p>Jakmile dorazí nová zpráva, je přidána pod svého předchůdce. Vlákna jako celek jsou pak seřazena a zobrazena podle data své nejstarší zprávy.</p>
+<note style="tip"><p>Pro pokročilé uživatele: Existuje klíč GSettings, který určuje, jestli mají být vlákna sbalená nebo rozbalená na jednotlivé zprávy. Výchozí volbou jsou sbalená vlákna. Změnu můžete provést v aplikaci <app>Terminál</app> spuštěním příkazu <cmd>gsettings set org.gnome.evolution.mail thread-expand true</cmd></p>
+<list>
+<item><p>Otevřete aplikaci <app>Terminál</app>.</p></item>
+<item><p>Spusťte příkaz <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd></p></item>
+</list>
+</note>
+</section>
+
+<section id="column-headers">
+<title>Řazení pošty podle sloupců</title>
+<p>Seznam zpráv má sloupce, které ukazují, zda byla zpráva přečtena, zda má přílohu, jak důležitá je, odesílatele, datum a předmět. Chcete-li sloupce v seznamu změnit, můžete udělat něco z následujícího:</p>
+<list>
+<item><p>Přetáhněte a upusťte lištu záhlaví sloupce</p></item>
+<item><p>Klikněte pravým tlačítkem na záhlaví.</p></item>
+<item><p>Vyberte možnost <gui>Odstranit tento sloupec</gui> nebo <gui>Přidat sloupec</gui>.</p></item>
+</list>
+
+<p><app>Evolution</app> vám umožňuje řadit si zprávy pomocí těchto sloupců. Stačí kliknout na záhlaví a zprávy se podle něj seřadí. Směr šipky vedle popisu sloupce ukazuje směr řazení.</p>
+</section>
+
+<section id="sort-options">
+<title>Používání dalších voleb řazení</title>
+<p><app>Evolution</app> poskytuje i další způsoby řazení poštovních zpráv. Můžete použít Řadit podle, Řadit vzestupně, Řadit sestupně nebo Neřadit.</p>
+	<section id="sort-options-by">
+	<title>Řadit podle</title>
+		<p>Můžete také použít řazení poštovních zpráv podle seznamu <gui>Řadit podle</gui>.</p>
+		<steps>
+		<item><p>Klikněte pravým tlačítkem na záhlaví sloupce v seznamu zpráv.</p></item>
+		<item><p>Vyberte volbu <gui>Řadit podle</gui>.</p><p>Tím se zobrazí seznam kritérií pro řazení poštovních zpráv:</p>
+			<list>
+			<item><p>Předmět - oříznutý</p></item>
+			<item><p>Štítky</p></item>
+			<item><p>Příjemce</p></item>
+			<item><p>Odesílatel</p></item>
+			<item><p>Místo</p></item>
+			<item><p>Termín dokončení</p></item>
+			<item><p><link xref="mail-follow-up-flag">Příznak K vyřízení</link></p></item>
+			<item><p>Příznak Stav</p></item>
+			<item><p>Velikost</p></item>
+			<item><p>Komu</p></item>
+			<item><p>Přijato</p></item>
+			<item><p>Datum</p></item>
+			<item><p>Předmět</p></item>
+			<item><p>Od</p></item>
+			<item><p>Příloha</p></item>
+			<item><p>Označeno</p></item>
+			<item><p>Stav</p></item>
+			<item><p>Vlastní</p></item>
+			</list>
+		</item>
+		<item><p>Vyberte volbu, kterou chcete použít pro řazení e-mailových zpráv.</p></item>
+		</steps>
+	</section>
+
+	<section id="sort-options-ascending">
+	<title>Řadit vzestupně</title>
+		<steps>
+		<item><p>Klikněte pravým tlačítkem na záhlaví sloupce v seznamu zpráv.</p></item>
+		<item><p>Vyberte volbu <gui>Řadit vzestupně</gui>.</p></item>
+		</steps>
+		<p>Zprávy budou zobrazeny tak, že ty nejnovější budou dole.</p>
+	</section>
+
+	<section id="sort-options-descending">
+	<title>Řadit sestupně</title>
+		<steps>
+		<item><p>Klikněte pravým tlačítkem na záhlaví sloupce v seznamu zpráv.</p></item>
+		<item><p>Vyberte volbu <gui>Řadit sestupně</gui>.</p></item>
+		</steps>
+		<p>Zprávy budou zobrazeny tak, že ty nejnovější budou nahoře.</p>
+	</section>
+
+	<section id="sort-options-unsort">
+	<title>Výchozí řazení</title>
+		<steps>
+		<item><p>Klikněte pravým tlačítkem na záhlaví sloupce v seznamu zpráv.</p></item>
+		<item><p>Vyberte volbu <gui>Výchozí řazení</gui>.</p></item>
+		</steps>
+		<p>Tímto se ve sloupci zruší řazení a navrátí se k pořadí zpráv tak, jak byly přidány do složky.</p>
+	</section>
+</section>
+
+</page>

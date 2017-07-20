@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="printing-booklet-duplex" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="printing-booklet"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Skriv ut vikta häften (som en bok eller broschyr) från en PDF med normalt A4 eller papper i Letter-storlek.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Skriv ut ett häfte på en dubbelsidig skrivare</title>
+
+  <p>Du kan göra ett vikt häfte (som en liten bok eller broschyr) genom att skriva ut sidor från ett dokument i en speciell ordning och ändra ett par utskriftsalternativ.</p>
+
+  <p>Dessa instruktioner är för att skriva ut ett häfte från ett PDF-dokument.</p>
+
+  <p>Om du vill skriva ut ett häfte från ett <app>LibreOffice</app>-dokument, måste du först exportera det till en PDF genom att välja <guiseq><gui>Arkiv</gui><gui>Exportera som PDF…</gui></guiseq>. Ditt dokument måste ha ett antal sidor som är en multipel av 4 (4, 8, 12, 16,…). Du kan behöva lägga till upp till 3 blanka sidor.</p>
+
+  <p>För att skriva ut ett häfte:</p>
+
+  <steps>
+    <item>
+      <p>Öppna dialogrutan för utskrifter. Detta kan normalt sett göras genom <gui style="menuitem">Skriv ut</gui> i menyn eller genom att tangentbordsgenvägen <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Klicka på knappen <gui>Egenskaper…</gui></p>
+      <p>I rullgardinsmenyn <gui>Orientering</gui>, säkerställ att <gui>Liggande</gui> är valt.</p>
+      <p>I rullgardinsmenyn <gui>Duplex</gui>, välj <gui>Kortsida</gui>.</p>
+      <p>Klicka på <gui>OK</gui> för att gå tillbaka till utskriftsdialogen.</p>
+    </item>
+    <item>
+      <p>Under <gui>Intervall och kopior</gui>, välj <gui>Sidor</gui>.</p>
+    </item>
+    <item>
+      <p>Skriv antalet sidor i denna ordning (n är det totala antalet sidor, och är en multipel av 4):</p>
+      <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
+      <p>Exempel:</p>
+      <list>
+        <item><p>4-sidors häfte: Skriv <input>4,1,2,3</input></p></item>
+        <item><p>8-sidors häfte: Skriv <input>8,1,2,7,6,3,4,5</input></p></item>
+        <item><p>20-sidors häfte: Skriv <input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input></p></item>
+      </list>
+    </item>
+    <item>
+      <p>Välj fliken <gui>Sidlayout</gui>.</p>
+      <p>Under <gui>Layout</gui>, välj <gui>Broschyr</gui>.</p>
+      <p>Under <gui>Sidplacering</gui> i rullgardinsmenyn <gui>Aktivera för</gui>, välj <gui>Alla sidor</gui>.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Skriv ut</gui>.</p>
+    </item>
+  </steps>
+
+</page>

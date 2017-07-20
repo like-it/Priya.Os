@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="problem-permissions" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="index#problems"/>
+    <revision pkgversion="3.12" date="2014-01-25" status="review"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Eu vejo uma mensagem de erro <gui>Não foi possível varrer a pasta /… ou algumas das pastas nelas contidas</gui> ao varrer.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ricardo Franco</mal:name>
+      <mal:email>ricardo_krieg@yahoo.com.br</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Felipe Braga</mal:name>
+      <mal:email>fbobraga@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Erro ao varrer</title>
+
+  <p>Quando se está varrendo, você pode ver uma mensagem <gui>Não foi possível varrer a pasta /… ou algumas das pastas nelas contidas</gui> no topo da janela <app>Analisador de uso de disco</app>. Esse erro aparece porque você não tem permissões para acessar alguns arquivos devido ao conjunto de restrições no sistema alvo. Os arquivos que você não pode acessar não serão usados para computar o <link xref="pref-view-chart">gráfico</link> representando o uso do disco e, portanto, o resultado relatado pode ser errado.</p>
+
+  <p>Não ter acesso a todos arquivos e diretórios é perfeitamente comum, apesar de não haver o que se fazer sobre esse erro.</p>
+
+  <note style="info"><p>O <app>Analisador de uso de disco</app> usa comando <cmd>du</cmd> para criar a visão detalhada do uso do armazenamento e precisa que você tenha permissão de leitura em arquivos e permissão de execução de diretórios.</p>
+
+  <p>Por outro lado, o uso do disco do sistema de arquivos no uso do comando <cmd>df</cmd> para utilização de disco na janela principal que depende do sistema de arquivos e não nas permissões do arquivo.</p></note>
+</page>

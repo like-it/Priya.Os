@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="ru">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Удалите все файлы и папки с внешнего жёсткого диска или флэш-диска USB, отформатировав его.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Удаление всего содержимого съёмного носителя</title>
+
+  <p>Иногда возникает необходимость удалить все файлы и папки со съёмного носителя, такого как флэш-диск USB или внешний жёсткий диск. Сделать это можно, <em>отформатировав</em> носитель — при этом все файлы с него будут удалены и он станет пустым.</p>
+
+<steps>
+  <title>Форматирование съёмного носителя</title>
+  <item>
+    <p>Откройте <gui>Обзор</gui> и откройте приложение <app>Диски</app>.</p>
+  </item>
+  <item>
+    <p>Выберите слева из списка накопителей диск, который вы хотите очистить.</p>
+
+    <note style="warning">
+      <p>Убедитесь, что диск выбран правильно, иначе все файлы будут удалены с другого диска.</p>
+    </note>
+  </item>
+  <item>
+    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
+    menu button. Then click <gui>Format…</gui>.</p>
+  </item>
+  <item>
+    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
+    disk.</p>
+   <p>Если вы используете диск кроме компьютеров под управлением Linux также на компьютерах с Windows или Mac OS, выберите <gui>FAT</gui>. Если вы пользуетесь им только в Windows, оптимальным выбором может быть <gui>NTFS</gui>. Краткое описание <gui>типа файловой системы</gui> будет представлено в качестве метки диска.</p>
+  </item>
+  <item>
+    <p>Give the disk a name and click <gui>Format…</gui> to continue and show a
+    confirmation window. Check the details carefully, and click
+    <gui>Format</gui> to wipe the disk.</p>
+  </item>
+  <item>
+    <p>Once the formatting has finished, click the eject icon to safely remove
+    the disk. It should now be blank and ready to use again.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Форматирование диска не обеспечивает необратимое удаление данных</title>
+  <p>Форматирование диска не является необратимым способом стирания с него всех данных. Отформатированный диск кажется пустым, но с помощью специальных программ для восстановления информации иногда удаётся восстановить хранившиеся на нём файлы. Если требуется необратимое удаление файлов, воспользуйтесь утилитой командной строки <app>shred</app>.</p>
+</note>
+
+</page>

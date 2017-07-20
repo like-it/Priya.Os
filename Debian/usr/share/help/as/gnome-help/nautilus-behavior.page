@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="as">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>ফাইলসমূহ খোলিবলৈ, লিখনী ফাইলসমূহ চলাবলৈ অথবা দৰ্শন কৰিবলৈ, আৰু আবৰ্জনাৰ ব্যৱহাৰ ধাৰ্য্য কৰিবলৈ এবাৰ-ক্লিক কৰক।</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>টিফানি এন্টপলস্কি</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>শ্বণ মেকেন্স</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>মাইকেল হিল</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>চিন্ধু এচ</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>ফাইল ব্যৱস্থাপক ব্যৱহাৰ পছন্দবোৰ</title>
+<p>আপুনি ফাইলসমূহ এবাৰ-ক্লিক কৰিব নে দুবাৰ-ক্লিক কৰিব, এক্সিকিউটেবুল লিখনী ফাইলসমূহ কেনেকৈ নিয়ন্ত্ৰণ কৰা হব, আৰু আবৰ্জনাৰ ব্যৱহাৰ নিয়ন্ত্ৰণ কৰিব পাৰিব। ওপৰ বাৰত <gui>ফাইলসমূহ</gui> ক্লিক কৰক, <gui>পছন্দসমূহ</gui> ক্লিক কৰক আৰু <gui>ব্যৱহাৰ</gui> টেব বাছক।</p>
+
+<section id="behavior">
+<title>ব্যৱহাৰ</title>
+<terms>
+ <item>
+  <title><gui>বস্তুবোৰ খোলিবলৈ এবাৰ ক্লিক কৰক</gui></title>
+  <title><gui>বস্তুবোৰ খোলিবলৈ দুবাৰ ক্লিক কৰক</gui></title>
+  <p>অবিকল্পিতভাৱে, এবাৰ ক্লিক কৰিলে ফাইলসমূহ নিৰ্বাচন হয় আৰু দুবাৰ ক্লিকত সিহত খোল খায়। ইয়ৰা পৰিৱৰ্তে আপুনি এবাৰ ক্লিকত ফাইল আৰু ফোল্ডাৰসমূহ খোলিবলৈ নিৰ্বাচন কৰিব পাৰে। যেতিয়া আপুনি এবাৰ-ক্লিক অৱস্থা ব্যৱহাৰ কৰে, এটা অথবা অধিক ফাইলসমূহ নিৰ্বাচন কৰিবলৈ আপুনি <key>Ctrl</key> কি ধৰি থৈ ক্লিক কৰিব পাৰে।</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>এক্সিকিউটেবুল লিখনী ফাইলসমূহ</title>
+ <p>An executable text file is a file that contains a program that you can run
+ (execute). The <link xref="nautilus-file-properties-permissions">file
+ permissions</link> must also allow for the file to run as a program. The most
+ common are <sys>Shell</sys>, <sys>Python</sys> and <sys>Perl</sys> scripts.
+ These have extensions <file>.sh</file>, <file>.py</file> and <file>.pl</file>,
+ respectively.</p>
+ 
+ <p>যেতিয়া আপুনি এটা এক্সিকিউটেবুল লিখনী ফাইল খোলে, আপুনি বাছিব পাৰিব:</p>
+ 
+ <list>
+  <item>
+    <p><gui>এক্সিকিউটেবুল লিখনী ফাইলসমূহ খোলোতে চলাওক</gui></p>
+  </item>
+  <item>
+    <p><gui>এক্সিকিউটেবুল ফাইলসমূহ খোলোতে দৰ্শন কৰক</gui></p>
+  </item>
+  <item>
+    <p><gui>প্ৰতিবাৰ সোধিব</gui></p>
+  </item>
+ </list>
+
+ <p>যদি <gui>প্ৰতিবাৰ সোধক</gui>  নিৰ্বাচন কৰা থাকে, এটা ডাইলগ পপ আপ হব যি আপুনি নিৰ্বাচিত লিখনী ফাইল চলাব খোজে নে দৰ্শন কৰিব খোজে সোধিব।</p>
+
+ <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
+
+<steps>
+  <item>
+    <p>পছন্দৰ ফোল্ডাৰলৈ যাওক।</p>
+  </item>
+  <item>
+    <p>পছন্দৰ ফাইল বাছক।</p>
+  </item>
+  <item>
+    <p>পৰিপ্ৰেক্ষতিত মেনু খোলিবলৈ ফাইলত ৰাইট ক্লিক কৰক আৰু <gui style="menuitem">স্ক্ৰিপ্টসমূহ</gui> মেনুৰ পৰা এক্সিকিউট কৰিবলৈ পছন্দৰ স্ক্ৰিপ্ট বাছক।</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>এটা স্ক্ৰিপ্টক কোনো প্ৰাচল প্ৰদান কৰা নহব যেতিয়া এটা দূৰৱৰ্তী ফোল্ডাৰ যেনে ৱেব অথবা <sys>ftp</sys> সমল দেখুৱা এটা ফোল্ডাৰৰ পৰা এক্সিকিউট কৰা হয়।</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">ফাইল ব্যৱস্থাপক আবৰ্জনা পছন্দবোৰ</title>
+</info>
+<title>আবৰ্জনা</title>
+
+<terms>
+ <item>
+  <title><gui>Ask before emptying the Trash</gui></title>
+  <p>এই বিকল্প অবিকল্পিতভাৱে নিৰ্বাচিত থাকে। আবৰ্জনা ৰিক্ত কৰোতে, এটা বাৰ্তা প্ৰদৰ্শন কৰা হব যি আপোনাক আবৰ্জনা ৰিক্ত কৰিব খোজে নে ফাইলসমূহ মচিব খোজে সোধিব।</p>
+ </item>
+</terms>
+</section>
+
+</page>

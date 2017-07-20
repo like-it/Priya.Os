@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Чтобы разрешить/запретить сетевой доступ программе с помощью сетевого экрана. необходимо указать правильный порт.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Часто используемые сетевые порты</title>
+
+  <p>Это список сетевых портов, которые часто используются приложениями, предоставляющими сетевые услуги, например совместный доступ к файлам или просмотр удалённого рабочего стола. Можно изменить настройки межсетевого экрана своей системы, чтобы <link xref="net-firewall-on-off">заблокировать или разрешить доступ</link> к этим приложениям. Существуют тысячи используемых портов, так что эта таблица не является полной.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>Порт</p>
+	</td>
+	<td>
+	  <p>Имя</p>
+	</td>
+	<td>
+	  <p>Описание</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>Позволяет системам обнаруживать друг друга и сообщать о предлагаемых ими услугах, без необходимости уточнения деталей вручную.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>Печать</p>
+	</td>
+	<td>
+	  <p>Позволяет отправлять задания печати на другие принтеры в сети.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>Печать</p>
+	</td>
+	<td>
+	  <p>Позволяет открывать общий доступ к вашему принтеру для других пользователей сети.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>Присутствие</p>
+	</td>
+	<td>
+	  <p>Позволяет объявлять другим людям в сети ваш статус в чате, например «в сети» или «занят».</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>Удалённый рабочий стол</p>
+	</td>
+	<td>
+	  <p>Позволяет открывать совместный доступ к вашему рабочему столу, чтобы другие пользователи могли просматривать его или оказывать удалённую помощь.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>Совместный доступ к музыке (DAAP)</p>
+	</td>
+	<td>
+	  <p>Позволяет открывать общий доступ к музыкальной коллекции для других пользователей в вашей сети.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

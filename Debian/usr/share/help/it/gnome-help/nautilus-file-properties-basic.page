@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Visualizzare informazioni di base sui file, impostare i permessi e scegliere le applicazioni predefinite.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Proprietà del file</title>
+
+  <p>Per visualizzare informazioni circa un file o una cartella, fare clic col pulsante destro del mouse e selezionare <gui>Proprietà</gui>. È anche possibile selezionare il file e premere <keyseq><key>Alt</key><key>Invio</key></keyseq>.</p>
+
+  <p>La finestra delle proprietà del file mostra informazioni quali il tipo di file, le dimensioni del file e quando è stato modificato l'ultima volta. Se si necessita spesso di tali informazioni, è possibile visualizzarle in <link xref="nautilus-list">Colonne dell'elenco</link> o <link xref="nautilus-display#icon-captions">Didascalie delle icone</link>.</p>
+
+  <p>Le informazioni contenute nella scheda <gui>Generali</gui> sono spiegate di seguito. Oltre a questa, sono disponibili anche le schede <gui><link xref="nautilus-file-properties-permissions">Permessi</link></gui> e <gui><link xref="files-open#default">Apri con</link></gui>. Per alcuni tipi di file, come immagini o video, è presente un'ulteriore scheda che fornisce informazioni come la dimensione, la durata e il codec.</p>
+
+<section id="basic">
+ <title>Proprietà generali</title>
+ <terms>
+  <item>
+    <title><gui>Name</gui></title>
+    <p>È possibile rinominare il file modificando questo campo o rinominandolo al di fuori della finestra delle proprietà. Consultare <link xref="files-rename"/>.</p>
+  </item>
+  <item>
+    <title><gui>Type</gui></title>
+    <p>Consente di identificare il tipo di file (come documento PDF, OpenDocument, immagine JPEG, ecc.). Il tipo di file determina, tra le altre cose, quali applicazioni possono aprirlo. Per esempio, non è possibile aprire un'immagine con un riproduttore audio. Per maggiori informazioni, consultare <link xref="files-open"/>.</p>
+    <p>Il <em>tipo MIME</em> del file è mostrato tra parentesi. Il tipo MIME è un standard che i computer utilizzando per classificare e fare riferimento a un file.</p>
+  </item>
+
+  <item>
+    <title>Contenuto</title>
+    <p>Questo campo è mostrato quando vengono visualizzate le proprietà di una cartella piuttosto che di un file. Consente di sapere qual è il numero di oggetti contenuti nella cartella: se la cartella contiene a sua volta altre cartelle, ciascuna di esse è conteggiata come un solo oggetto. Anche i file vengono considerati ciascuno come un oggetto singolo. Se la cartella è vuota, viene visualizzato il testo <gui>niente</gui>.</p>
+  </item>
+
+  <item>
+    <title>Dimensione</title>
+    <p>Questo campo è mostrato solo quando viene selezionato un file (e non una cartella). La dimensione di un file indica quanto spazio occupa su disco ed è anche un indicatore di quanto tempo servirà per scaricare un file o per inviarlo via email (file di grandi dimensioni impiegano più tempo per essere inviati/ricevuti).</p>
+    <p>Le dimensioni possono essere mostrate in byte, KB, MB o GB. Negli ultimi tre casi viene mostrata tra parentesi anche la dimensione in byte. Tecnicamente, 1 KB corrisponde a 1024 byte, 1 MB a 1024 KB e così via.</p>
+  </item>
+
+  <item>
+    <title>Parent Folder</title>
+    <p>The location of each file on your computer is given by its <em>absolute
+    path</em>. This is a unique "address" of the file on your computer, made up
+    of a list of the folders that you would need to go into to find the file.
+    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
+    folder, its parent folder would be <file>/home/jim</file> and its location
+    would be <file>/home/jim/Resume.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Spazio libero</title>
+    <p>Questo attributo è mostrato solo per le cartelle. Indica la quantità di spazio che è ancora disponibile sul disco che ospita la cartella. È utile per controllare se il disco è pieno.</p>
+  </item>
+
+  <item>
+    <title>Ultimo accesso</title>
+    <p>La data e l'ora in cui il file è stato aperto l'ultima volta.</p>
+  </item>
+
+  <item>
+    <title>Ultima modifica</title>
+    <p>La data e l'ora in cui il file è stato modificato e salvato l'ultima volta</p>
+  </item>
+ </terms>
+</section>
+
+</page>

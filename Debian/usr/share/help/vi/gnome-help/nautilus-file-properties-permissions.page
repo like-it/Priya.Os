@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="vi">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="files#faq"/>
+    <link type="seealso" xref="nautilus-file-properties-basic"/>
+
+    <desc>Điều khiển ai được phép xem và thay đổi tập tin/thư mục của bạn.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
+      <mal:email>pclouds@gmail.com</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+  <title>Đặt quyền tập tin</title>
+
+  <p>Bạn có thể dùng quyền truy cập tập tin để điều khiển ai được phép xem và sửa đổi tập tin của bạn. Để xem và đặt quyền cho tập tin, nhấn chuột phải vào tập tin và chọn <gui>Thuộc tính</gui>, sau đó chọn thẻ <gui>Quyền</gui>.</p>
+
+  <p>Xem <link xref="#files"/> và <link xref="#folders"/> bên dưới để biết thêm về loại quyền bạn có thể đặt.</p>
+
+  <section id="files">
+    <title>Tập tin</title>
+
+    <p>Bạn có thể đặt quyền cho chủ tập tin, nhóm sỡ hữu tập tin và những người còn lại trên hệ thống. Do bạn là chủ, bạn có thể tự đặt quyền chỉ đọc hoặc đọc ghi cho tập tin của bạn. Đặt quyền chỉ đọc nếu bạn không muốn vô tình thay đổi tập tin.</p>
+
+    <p>Mỗi người dùng trên hệ thống thuộc vào một nhóm. Trên máy tính cá nhân, mỗi người dùng thường có một nhóm riêng, quyền nhóm ít khi dùng. Nhóm đôi khi được dùng trong môi trường công sở, những nới người dùng có thể được nhóm theo dự án hoặc phòng ban. Mỗi tập tin thuộc về một nhóm. Bạn có thể đặt quyền nhóm và điều khiển mọi người dùng trong nhóm đó. Bạn chỉ có thể đặt quyền nhóm nếu bạn thuộc nhóm đó.</p>
+
+    <p>Bạn có thể đặt quyền cho những người dùng khác không phải chủ và cũng không nằm trong nhóm của tập tin.</p>
+
+    <p>Nếu tập tin là một chương trình, ví dụ một script, bạn phải chọn <gui>Cho peh1p thực thi tập tin như chương trình</gui> để có thể chạy nó. Thậm chí khi đã chọn tuỳ chọn này, trình quản lý tập tin sẽ vẫn có thể mở tập tin trong ứng dụng hoặc hỏi cần phải làm gì với nó. Xem <link xref="nautilus-behavior#executable"/> để biết chi tiết.</p>
+  </section>
+
+  <section id="folders">
+    <title>Thư mục</title>
+    <p>Bạn có thể đặt quyền thư mục cho chủ, nhóm và những người dùng khác. Xem chi tiết về quyền tập tin ở trên để được giải thích về chủ, nhóm và những người dùng khác.</p>
+    <p>Quyền bạn đặt cho thư mục khác với quyền cho tập tin.</p>
+    <terms>
+      <item>
+        <title><gui itst:context="permission">None</gui></title>
+        <p>Bạn sẽ không thể thấy tập tin trong thư mục.</p>
+      </item>
+      <item>
+        <title><gui>Chỉ tập tin</gui></title>
+        <p>Người dùng có thể thấy tập tin trong thư mục, nhưng không thể mở, tạo hoặc xoá tập tin.</p>
+      </item>
+      <item>
+        <title><gui>Truy cập tập tin</gui></title>
+        <p>Người dùng sẽ có thể mở tập tin (nếu có quyền phù hợp trên tập tin đó), nhưng không thể tạo mới hoặc xoá tập tin đã có.</p>
+      </item>
+      <item>
+        <title><gui>Tạo và xoá tập tin</gui></title>
+        <p>Ngươì dùng có toàn quyền trên thư mục, bao gồm mở, tạo và xoá tập tin.</p>
+      </item>
+    </terms>
+
+    <p>You can also quickly set the file permissions for all the files
+    in the folder by clicking <gui>Change Permissions for Enclosed Files</gui>.
+    Use the drop-down lists to adjust the permissions of contained files or
+    folders, and click <gui>Change</gui>. Permissions are applied to files and
+    folders in subfolders as well, to any depth.</p>
+  </section>
+
+</page>

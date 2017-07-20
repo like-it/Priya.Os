@@ -1,0 +1,34 @@
+<ui>
+
+    <menubar name="MenuBar">
+        <menu name="FileMenu" action="FileMenu">
+            <menuitem name="Stop" action="Stop" />
+            <separator />
+            <menuitem name="Import" action="CommonFileImport" />
+            <menuitem name="ImportExternal" action="ExternalLibraryImport" />
+            <separator />
+            <menuitem name="EmptyTrash" action="CommonEmptyTrash" />
+            <separator />
+            <menuitem name="Quit" action="CommonQuit" />
+        </menu>
+        
+        <menu name="ViewMenu" action="ViewMenu">
+            <menuitem name="DisplayBasicProperties" action="CommonDisplayBasicProperties" />
+            <separator />
+            <menu name="SortEvents" action="CommonSortEvents">
+                <menuitem name="SortEventsAscending" action="CommonSortEventsAscending" />
+                <menuitem name="SortEventsDescending" action="CommonSortEventsDescending" />
+            </menu>
+        </menu>
+        
+        <menu name="HelpMenu" action="HelpMenu">
+            <menuitem name="Contents" action="CommonHelpContents" />
+            <menuitem name="Frequently Asked Questions" action="CommonHelpFAQ" />
+            <menuitem name="Report a Problem..." action="CommonHelpReportProblem" />
+            <separator />
+            <menuitem name="About" action="CommonAbout" />
+        </menu>
+    </menubar>
+
+</ui>
+

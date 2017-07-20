@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-personal" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.1" date="2013-09-23" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Permita que outras pessoas acessem arquivos em sua pasta <file>Público</file>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Compartilhando seus arquivos pessoais</title>
+
+  <p>You can allow access to the <file>Public</file> folder in your
+  <file>Home</file> folder from another computer on the network. Configure
+  <gui>Personal File Sharing</gui> to allow others to access the contents of
+  the folder.</p>
+
+  <note style="info package">
+    <p>Você deve ter o pacote <app>gnome-user-share</app> instalado para que <gui>Compartilhamento de arquivos pessoais</gui> esteja visível.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:gnome-user-share" style="button">Instalar gnome-user-share</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Sharing</gui>.</p>
+    </item>
+    <item>
+      <p>Clique em <gui>Compartilhamento</gui> para abrir o painel.</p>
+    </item>
+    <item>
+      <p>Se <gui>Compartilhar</gui> estiver em <gui>OFF</gui>, alterne-o para <gui>ON</gui>.</p>
+
+      <note style="info"><p>Se o texto embaixo de <gui>Nome do computador</gui> permite que o edite, você pode <link xref="sharing-displayname">alterar</link> o nome que o seu computador exibe na rede.</p></note>
+    </item>
+    <item>
+      <p>Selecione <gui>Compartilhamento de arquivos pessoais</gui>.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Personal File Sharing</gui> to <gui>ON</gui>. This means
+      that other people on your current network will be able to attempt to
+      connect to your computer and access files in your <file>Public</file>
+      folder.</p>
+      <note style="info">
+        <p>A <em>URI</em> is displayed by which your <file>Public</file> folder
+        can be accessed from other computers on the network.</p>
+      </note>
+    </item>
+  </steps>
+
+  <section id="security">
+  <title>Segurança</title>
+
+  <terms>
+    <item>
+      <title>Exigir senha</title>
+      <p>Para exigir que outras pessoas usem uma senha ao acessar sua pasta <file>Público</file>, alterne <gui>Exigir senha</gui> para <gui>ON</gui>. Se você não usar essa opção, qualquer um pode tentar ver sua pasta <file>Público</file>.</p>
+      <note style="tip">
+        <p>Essa opção é desabilitada por padrão, mas você deveria habilitá-la e definir uma senha segura.</p>
+      </note>
+    </item>
+  </terms>
+  </section>
+
+  <section id="networks">
+  <title>Networks</title>
+
+  <p>The <gui>Networks</gui> section lists the networks to which you are
+  currently connected. Use the <gui>ON | OFF</gui> switch next to each to
+  choose where your personal files can be shared.</p>
+
+  </section>
+
+</page>

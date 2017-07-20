@@ -1,0 +1,20 @@
+#!/bin/sh
+
+export GJS_PATH="/usr/share/sushi/js${GJS_PATH:+:$GJS_PATH}"
+export GI_TYPELIB_PATH="/usr/lib/i386-linux-gnu/sushi/girepository-1.0${GI_TYPELIB_PATH:+:$GI_TYPELIB_PATH}"
+export LD_LIBRARY_PATH="/usr/lib/i386-linux-gnu/sushi${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+
+if test x"$GJS_DEBUG_OUTPUT" = x ; then
+    export GJS_DEBUG_OUTPUT=stderr
+fi
+
+if test x"$GJS_DEBUG_TOPICS" = x ; then
+    export GJS_DEBUG_TOPICS="JS ERROR;JS LOG"
+fi
+
+DEBUG_COMMAND=""
+if [ "$RUN_DEBUG" != "" ]; then
+    DEBUG_COMMAND="gdb --args"
+fi
+
+exec $DEBUG_COMMAND /usr/lib/i386-linux-gnu/sushi-start

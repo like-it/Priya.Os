@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="printing-booklet-duplex" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="printing-booklet"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovář</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak vytisknout vázanou brožuru (jako je kniha nebo časopis) z PDF s použitím normálního papíru A4.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tisk brožury na oboustranné tiskárně</title>
+
+  <p>Můžete si vyrobit vázanou brožuru (něco jako malou knihu) pomocí vytisknutí stránek dokumentu ve speciálním pořadí a změnou pár voleb tisku.</p>
+
+  <p>Tyto instrukce jsou pro tisk brožury z dokumentu PDF.</p>
+
+  <p>Když chcete vytisknout brožuru z dokumentu <app>LibreOffice</app>, nejprve ji vyexportujte do PDF pomocí <guiseq><gui>Soubor</gui> <gui>Exportovat do PDF…</gui></guiseq>. Váš dokument musí mít počet stránek násobkem 4 (4, 8, 12, 16, …). Takže možná budete muset přidat až 3 prázdné stránky.</p>
+
+  <p>Abyste vytiskli brožuru:</p>
+
+  <steps>
+    <item>
+      <p>Otevřete dialogové okno tisku. Normálně se to dělá přes nabídku <gui style="menuitem">Tisk</gui> nebo pomocí klávesové zkratky <keyseq><key>Ctrl</key> <key>P</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Klikněte na tlačítko <gui>Vlastnosti…</gui></p>
+      <p>Ujistěte se, že v rozbalovacím seznamu <gui>Orientace</gui> je vybráno <gui>Na šířku</gui>.</p>
+      <p>V rozbalovacím seznamu <gui>Oboustranné</gui> vyberte <gui>Kratší okraj</gui>.</p>
+      <p>Kliknutím na <gui>Budiž</gui> se vraťte do dialogového okna tisku.</p>
+    </item>
+    <item>
+      <p>V části <gui>Rozsah a kopie</gui> zvolte <gui>Stránky</gui>.</p>
+    </item>
+    <item>
+      <p>Napište čísla stránek v tomto pořadí (n je celkový počet stránek a je násobkem 4):</p>
+      <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
+      <p>Příklad:</p>
+      <list>
+        <item><p>4stránková brožura: Napište <input>4,1,2,3</input></p></item>
+        <item><p>8stránková brožura: Napište <input>8,1,2,7,6,3,4,5</input></p></item>
+        <item><p>20stránková brožura: Napište  <input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input></p></item>
+      </list>
+    </item>
+    <item>
+      <p>Zvolte kartu <gui>Rozvržení stránek</gui>.</p>
+      <p>V části <gui>Rozvržení</gui> zvolte <gui>Příručka</gui>.</p>
+      <p>V <gui>Strany stránek</gui> v rozbalovacím seznamu <gui>Zahrnout</gui> vyberte <gui>Všechny strany</gui>.</p>
+    </item>
+    <item>
+      <p>Klikněte na <gui>Tisk</gui>.</p>
+    </item>
+  </steps>
+
+</page>

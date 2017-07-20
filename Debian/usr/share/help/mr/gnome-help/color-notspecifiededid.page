@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-notspecifiededid" xml:lang="mr">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="guide" xref="color-gettingprofiles"/>
+    <link type="guide" xref="color-why-calibrate"/>
+    <desc>पूर्वनिर्धारित मॉनिटर प्रोफाइल्सकडे कॅलिब्रेशन दिनांक नसते.</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>पूर्वनिर्धारित मॉनिटर प्रोफाइल्सकडे कॅलिब्रेशन वेळसमाप्ति का रहात नाही?</title>
+  <p>
+    The default color profile used for each monitor is generated
+    automatically based on the display 
+    <link href="https://en.wikipedia.org/wiki/Extended_Display_Identification_Data">
+    EDID</link> which is stored in a memory chip inside the monitor.
+    The EDID only gives us a snapshot of the available colors the monitor
+    was capable of displaying when it was manufactured, and does not
+    contain much other information for color correction.
+  </p>
+
+  <figure>
+    <desc>EDID ला सुधारित करणे अशक्य असल्यामुळे, त्यास वेळसमाप्ति दिनांक राहत नाही.</desc>
+    <media type="image" mime="image/png" src="figures/color-profile-default.png"/>
+  </figure>
+
+  <note style="tip">
+    <p>मॉनिटर विक्रेतापासून प्रोफाइल प्राप्त करताना किंवा स्वतःहून प्रोफाइल निर्माण केल्यास जास्त योग्य रंग सुधारणा शक्य होईल.</p>
+  </note>
+
+</page>

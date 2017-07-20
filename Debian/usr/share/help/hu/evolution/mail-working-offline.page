@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-working-offline" xml:lang="hu">
+
+  <info>
+    <desc>Levelek kezelése, amikor nem csatlakozik a hálózatra.</desc>
+<!-- TODO:POST-3-8: Offline work for web calendars etc also exists => create index page for Offline working? -->
+    <link type="guide" xref="index#mail-basic"/>
+
+    <revision pkgversion="3.7.4" version="0.3" date="2013-01-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-send.html.en#usage-mail-getnsend-offline -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Kapcsolat nélküli munka</title>
+
+<p>A kényszerített kapcsolat nélküli módban akkor is kommunikálhat távoli levéltároló rendszerekkel, mint például a GroupWise, IMAP vagy Exchange, amikor nincs folyamatosan kapcsolódva a hálózatra. Az <app>Evolution</app> helyi másolatot tárol több mappáról, ami lehetővé teszi a levelek szerkesztését és a Postázandó mappában tárolt levelek elküldését a következő kapcsolódáskor.</p>
+
+<note style="warning"><p>Az <app>Evolution</app> kényszerített kapcsolat nélküli módja csak a levelezésre vonatkozik, és nem érvényes a névjegyekre és naptárakra.</p></note>
+
+<p>A POP levelezés minden levelet letölt a helyi rendszerre, de más kapcsolatok általában csak a fejléceket töltik le, a levelek többi részét pedig csak akkor, amikor megkísérli elolvasni a levelet. Mielőtt kapcsolat nélküli módba kényszeríti, az <app>Evolution</app> letölti az olvasatlan leveleket a helyi tárolásra kiválasztott mappákban.</p>
+
+<section id="mark-folders">
+<title>Mappák megjelölése kapcsolat nélküli használatra</title>
+<p>Levélmappa megjelölése kapcsolat nélküli használatra:</p>
+<steps>
+<item><p>Kattintson a jobb egérgombbal a mappára, és válassza a <gui>Tulajdonságok</gui> menüpontot.</p></item>
+<item><p>Jelölje be az <gui>A mappa tartalmáról helyi másolat készítése kapcsolat nélküli munkához</gui> jelölőnégyzetet.</p></item>
+</steps>
+</section>
+
+<section id="sync-for-offline">
+<title>Üzenetek szinkronizálása kapcsolat nélküli használathoz</title>
+<p>Kapcsolati állapotát az <app>Evolution</app> főablakának bal alsó sarkában lévő kis ikon jelzi. Amikor online állapotban van, akkor két összekötött kábelt jelenít meg. Amikor az ikonra kattintva vagy a <guiseq><gui>Fájl</gui><gui>Kapcsolat nélküli munka</gui></guiseq> menüpont kiválasztásával a kapcsolat nélküli módot kényszeríti ki, akkor az ikon szétvált kábeleket jelenít meg. A program ilyenkor megkérdezi, hogy azonnal szeretne-e kapcsolat nélküli módba váltani, vagy szeretné-e előtte elvégezni a mappák helyi szinkronizálását.</p>
+<p>Válassza a <guiseq><gui>Fájl</gui><gui>Üzenetek letöltése kapcsolat nélküli módhoz</gui></guiseq> menüpontot a levelek letöltéséhez kapcsolat nélküli munkához a kapcsolat nélküli módba váltás előtt.</p>
+</section>
+
+<section id="network-manager-integration">
+<title>Hálózati állapot automatikus kezelése</title>
+<p>Az <app>Evolution</app> automatikusan felismeri a hálózati állapotot, és ennek megfelelően működik. Az <app>Evolution</app> például képes kapcsolat nélküli módba váltani, amikor a hálózat elérhetetlenné válik, automatikusan és online módba váltani, amikor a hálózat újra elérhetővé válik.</p>
+</section>
+
+</page>

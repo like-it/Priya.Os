@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="strategy" xml:lang="ro">
+	<info>
+		<link type="guide" xref="index#tips"/>
+		<include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+		<desc>Strategii pentru a juca Hitori.</desc>
+	</info>
+	<title>Strategii de joc</title>
+
+	<p>Hitori este destul de similar cu Sudoku, în care este nevoie de deducție logică pentru a determina care celule trebuiesc pictate. O strategie este de a utiliza <key>Shift</key>-clic pentru a evidenția toate numerele ce se repetă în fiecare <em>coloană</em>, apoi utilizați <key>Ctrl</key>-clic pentru a evidenția toate numerele ce se repetă în fiecare <em>rând</em>.</p>
+	<p>Odată ce acest lucru se face pentru întreaga masă, celulele care au fost evidențiate în ambele sensuri sunt bune candidate pentru pictare, deși nu întotdeauna. Când o celulă este pictată, neevidențierea altor celule cu același număr în același rând și coloană ca acea celula este o modalitate bună de a urmări care celulele încă încalcă <link xref="game">regula 1 din Hitori</link>.</p>
+	<p>Întotdeauna țineți minte că regula 2 din Hitori înseamnă că două celule adiacente nu pot fi ambele pictate. <app>Hitori</app> va evidenția în roșu celulele care încalcă regula 2. În mod similar, grupuri de celule care încalcă regula 3, prin separarea a uneia sau mai multe celule nepictate de alte celule nepictate vor fi evidențiate în roșu.</p>
+
+	<p>Dacă rămâneți blocat în orice moment, alegeți <guiseq><gui style="menu">Joc</gui><gui style="menuitem">Indiciu</gui></guiseq> pentru ca <app>Hitori</app> să semnalizeze o celulă care ar trebui să fie pictată sau depictată, pentru a se apropia de o soluție.</p>
+</page>

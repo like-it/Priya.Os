@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect-reverse" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <link type="seealso" xref="connect"/>
+    <title type="sort">3</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Conectarse a computadores que non están na súa rede local saltando as restricións do firewall no equipo remoto.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title><gui>Conexións inversas…</gui></title>
+
+  <p>Unha conexión inversa é normalmente usada para saltar as restricións dunha devasa en portos abertos. Unha devasa normalmente bloquea portos abertos, pero non bloquea o tráfico saínte. Nunha conexión de reenvío normal, un cliente conéctase a un porto aberto nun servidor. Porén, no caso das conexións inversas, o cliente abre un porto ao que o servidor se conecta.</p>
+
+  <section id="enable-reverse-connections">
+    <title>Activar conexións inversas</title>
+
+    <steps>
+      <item>
+        <p>Abra <guiseq><gui style="menu">Remoto</gui><gui style="menuitem">Conexións recentes...</gui> </guiseq>.</p>
+      </item>
+      <item>
+        <p>Marque <gui>Activar conexións inversas</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="accessing-behind-firewall">
+    <title>Acceda a un computador detrás dun firewall</title>
+
+    <p>O computador remoto precisa conectarse á súa máquina usando o seu <em>enderezo IP</em> e número de porto, que pose estar no diálogo de <gui>Conexións inversas...</gui>, baixo <gui>Conectividade</gui>.</p>
+
+    <note>
+      <p>Actualmente, <app>Vino</app> o servidor de VNC de GNOME non é compatíbel coas conexións inversas, tamén coñecidas como «modo escoita». Algúns outros aplicativos, como o <app>UltraVNC</app>, <app>RealVNC</app> e <app>TightVNC</app> teñen compatibilidade para conexións inversas.</p>
+    </note>
+
+    <p>Once the remote computer connects to your machine, <app>Remote Desktop
+    Viewer</app> will establish the reverse connection.</p>
+
+    <p>Ao conectarse a unha máquina que non está na súa rede local, terá que fornecer o seu enderezo IP externo visíbel e un número de porto ao servidor remoto.</p>
+
+  </section>
+
+</page>

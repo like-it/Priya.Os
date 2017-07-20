@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-several-pop-accounts" xml:lang="sv">
+
+  <info>
+    <desc>Hur man delar och sorterar e-post när man använder mer än ett lokalt konto.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-organizing"/>
+    <link type="seealso" xref="mail-receiving-options-pop"/>
+
+    <revision pkgversion="3.5.3" version="0.2" date="2012-06-16" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Separera POP-e-post från mer än ett konto</title>
+
+<p>Det är inte möjligt att ha separata konton i konto- och mapplistpanelerna. <app>Evolution</app> har bara en unik inkorg för inkommande e-post.</p>
+<p>Du kan antingen använda IMAP istället för POP, eller flytta inkommande e-post till olika mappar genom <link xref="mail-folders">skapa mappar</link> och <link xref="mail-filters">skapa filter</link>: Skapa en ny mapp och skapa två undermappar (för inkommande och för utgående e-post för det kontot). Ställ sedan in ett inkommande filter via <guiseq><gui>Redigera</gui><gui>Meddelandefilter…</gui><gui style="button">Lägg till</gui></guiseq> för att flytta inkommande e-post till den inkommande mappen genom att filtrera på mottagarens adress och ställ in ett utgående filter att flytta utgående e-post till mappen skickad genom att filtrera på avsändarens adress.</p>
+
+<!-- https://bugzilla.gnome.org/show_bug.cgi?id=273944 -->
+
+</page>

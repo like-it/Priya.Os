@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="contacts-ldap" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="contacts-using-several-addressbooks"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2015-03-09" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/usage-contact-sharing.html.en
+	   and
+	   http://library.gnome.org/users/evolution/2.32/config-prefs-contact.html.en#bxmw6w5
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Megosztott címjegyzékek használata a helyi hálózaton.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>LDAP-hozzáférés felvétele</title>
+
+  <p>Az LDAP protokollt azért hozták létre, hogy a felhasználók névjegy-információkat oszthassanak meg helyi hálózaton egy központi címtár közös használatával. Az LDAP lehetővé teszi egy cég számára névjegy-információk megosztott halmazának fenntartását. Sok cég rendelkezik egy LDAP-címjegyzékkel az alkalmazottairól vagy ügyfeleiről.</p>
+
+<section id="add-ldap-addressbook">
+  <title>LDAP-címjegyzék felvétele</title>
+
+  <steps>
+    <item>
+      <p>Válassza a <guiseq><gui>Fájl</gui><gui>Új</gui> <gui>Címjegyzék</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Az <gui>Általános</gui> lapon válassza az <gui>LDAP-kiszolgálókon</gui> lehetőséget.</p>
+    </item>
+    <item>
+      <p>Írjon be egy nevet.</p>
+    </item>
+    <item>
+      <p>Adja meg a kiszolgáló címét, portszámát (az alapértelmezett a 389), és hogy biztonságosan szeretne-e csatlakozni.</p>
+    </item>
+    <item>
+      <p>Adja meg a bejelentkezési módszert és a felhasználónevét.</p>
+    </item>
+    <item>
+      <p>Kattintson az <gui style="button">Alkalmaz</gui> gombra.</p>
+    </item>
+    <item>
+      <p>A <gui>Részletek</gui> lapon a következő beállításokat adhatja meg:</p>
+      <list>
+        <item>
+	  <p>Keresés kiindulópontja: a keresés kiindulópontja a címtárkeresés kezdőpontja. Keresse meg a rendszergazdát a helyes beállításokkal kapcsolatos információkért.</p>
+        </item>
+        <item>
+	  <p>Keresés hatóköre: a keresés hatóköre az adott keresés szélessége.</p>
+	  <p>A következő beállítások érhetők el:</p>
+          <list>
+            <item>
+	      <p>Egy: a Keresés kiindulópontján és egy bejegyzéssel alatta keres.</p>
+	    </item>
+            <item>
+	      <p>Sub: a Keresés kiindulópontján és minden alatta lévő bejegyzésben keres.</p>
+            </item>
+          </list>
+        </item>
+        <item>
+	  <p>Keresési szűrő: itt adható meg a keresési szűrő minden LDAP-lekérdezéshez. Például:</p>
+          <list>
+            <item>
+              <p><code>ObjectClass=*</code>: felsorolja az összes objektumot a kiszolgálóról.</p>
+	    </item>
+            <item>
+	      <p><code>ObjectClass=User</code>: csak a felhasználókat sorolja fel.</p>
+	    </item>
+            <item>
+	      <p><code>Filter (|(ObjectClass=User)(ObjectClass=groupOfNames))</code>: Lekéri a felhasználó és a címlista objektumokat.</p>
+	    </item>
+            <item>
+	      <p><code>(&amp;(mail=*)(ObjectClass=*))</code>: felsorolja az e-mail címekhez társított objektumokat.</p>
+	    </item>
+          </list>
+        </item>
+        <item>
+	  <p>Időkorlát: az <app>Evolution</app> legfeljebb ennyi ideig próbál adatokat letölteni a kiszolgálóról, mielőtt feladná.</p>
+        </item>
+        <item>
+	  <p>Letöltési korlát: adott keresésből visszakapott találatok maximális száma. A legtöbb kiszolgáló nem küld vissza 500-nál több névjegyet, de beállíthat alacsonyabb számot a letöltési idő csökkentéséhez a szélesebb keresések esetén.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Ha bizonytalan egyes beállításokkal kapcsolatban, akkor kérdezze meg rendszergazdáját.</p>
+  </note>
+
+</section>
+
+<section id="ldap-vs-local-addressbooks">
+  <title>Eltérések a helyi címjegyzékekhez képest</title>
+
+  <p>Az LDAP-címjegyzékek alapvetően úgy működnek, mint a számítógépén lévő helyi címjegyzékek, a következő eltérésekkel:</p>
+
+  <list>
+    <item>
+      <p>A hálózati mappák csak akkor érhetők el, ha csatlakozott a hálózatra. Ha laptopot vagy modemes kapcsolatot használ, akkor készítsen másolatot vagy gyorsítótárazza a hálózati címtár egy részét. Ezt a kívánt névjegyek helyi címjegyzékbe húzásával és ejtésével érheti el.</p>
+    </item>
+    <item>
+      <p>A hálózati mappát megjelölheti kapcsolat nélküli használatra is. A megjelöléshez kattintson a jobb egérgombbal a mappára, válassza a <gui>Tulajdonságok</gui> menüpontot, és jelölje be <gui>A mappa tartalmáról helyi másolat készítése kapcsolat nélküli munkához</gui> jelölőnégyzetet.</p>
+    </item>
+    <item>
+      <p>A túlzott hálózati forgalom elkerülése érdekében az <app>Evolution</app> általában nem tölti be az adatokat az LDAP-kiszolgálóról a megnyitáskor.</p>
+    </item>
+    <item>
+      <p>A kiszolgáló beállításaitól függően lehet, hogy nem lesz képes szerkeszteni az LDAP-kiszolgálón tárolt névjegyek minden mezőjét. Egyes kiszolgálók nem engedélyeznek bizonyos változtatásokat, mások pedig kevesebb mezőt használnak, mint az <app>Evolution.</app> Ha eltérő beállításokra van szüksége, akkor keresse meg rendszergazdáját.</p>
+    </item>
+  </list>
+
+</section>
+
+</page>

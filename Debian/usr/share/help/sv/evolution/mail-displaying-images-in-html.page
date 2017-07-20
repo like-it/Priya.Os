@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-displaying-images-in-html" xml:lang="sv">
+
+  <info>
+    <desc>Om inbäddade bilder i mottagna HTML-meddelanden.</desc>
+
+    <link type="guide" xref="mail-displaying-message"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2011-08-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-read.html.en#usage-mail-getnsend-get-attach-html -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Bilder inuti HTML-brev</title>
+
+<p>När någon skickar HTML-brev till dig som inkluderar en bild i meddelandetexten (exempelvis välkomstmeddelandet i din inkorg) kommer <app>Evolution</app> att visa bilden inuti meddelandet.</p>
+
+<section id="loading">
+<title>Inläsning av bilder</title>
+<p>Vissa bilder är länkar i ett meddelande snarare än att vara en del av meddelandet. <app>Evolution</app> kan hämta ner dessa bilder från nätet men gör inte det såvida du inte har begärt det. Det här är på grund av att fjärrbilder kan vara långsamma att hämta och visa, samt kan även användas av spammare för att spåra vem som läser e-postmeddelandet. Du skyddar din integritet genom att inte läsa in bilder automatiskt.</p>
+
+<p>För att läsa in bilderna för ett meddelande klicka på <guiseq><gui>Visa</gui><gui>Läs in bilder</gui></guiseq> eller tryck på <keyseq><key>Ctrl</key><key>I</key></keyseq>.</p>
+
+<p>För att ställa in standardåtgärden för att läsa in bilder, gå till <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>E-postinställningar</gui><gui>HTML-meddelanden</gui><gui>Inläsning av bilder</gui></guiseq>.</p>
+</section>
+
+<section id="automatically-download">
+<title>Automatisk hämtning av bilder i e-postmeddelanden från personer du känner</title>
+
+<p>Du kan hämta bilder från e-postmeddelanden som skickats av dina kontakter. För att göra detta gå till <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>E-postmeddelanden</gui><gui>HTML-meddelanden</gui><gui>Inläsning av bilder</gui></guiseq>. Aktivera alternativet <gui>Läs in bilder endast i meddelanden från kontakter</gui>.</p>
+
+<p>Därefter, gå till <guiseq><gui>Redigera</gui><gui>Inställningar</gui><gui>Kontakter</gui><gui>Automatisk komplettering</gui></guiseq>. Aktivera automatisk komplettering genom att kryssa i kryssrutan <gui>Visa alltid adressen för automatiskt kompletterad kontakt</gui>.</p>
+</section>
+
+<section id="saving">
+<title>Spara bilder</title>
+<p>För att spara en bild som är inbäddad i ett HTML-meddelande, högerklicka på bilden och klicka på <gui>Spara bild…</gui>.</p>
+<!-- This is available only since version 3.1.5, see https://bugzilla.gnome.org/show_bug.cgi?id=655669 -->
+</section>
+
+</page>

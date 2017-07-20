@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="mr">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+    <link type="guide" xref="net-wired"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME डॉक्युमेंटेशन प्रकल्प</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Set up a VPN connection to a local network over the internet.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>व्हीपीएनला जोडा</title>
+
+<p>VPN (किंवा <em>वर्चुअल प्राइव्हेट नेटवर्क</em>) इंटरनेटवरील स्थानीय नेटवर्कशी जोडणी करण्याचा मार्ग आहे. उदाहरणार्थ, तुम्ही व्यावसायीक भेटीवर जाताना वर्कप्लेसवरील स्थानीय नेटवर्कशी जोडणी करायचे असल्यास. तुम्हाला इंटरनेट जोडणी आढळेल (जसे कि हॉटेलमध्ये) आणि त्यानंतर वर्कप्लेसच्या VPN सह जोडणी करा. हे म्हणजे कामावरील नेटवर्कशी प्रत्यक्षरित्या जोडणी करण्यासारखे होईल, परंतु प्रत्यक्ष नेटवर्क जोडणी हॉटेलच्या इंटरनेट जोडणीतर्फे असेल. VPN जोडण्या सहसा <em>एंक्रिप्टेड</em> असतात जेणेकरून प्रवेश न करता स्थानीय नेटवर्कशी जोडणी करण्याचा प्रयत्न करणारे वापरकर्ते टाळले जातील.</p>
+
+<p>VPNचे अनेक प्रकार आहेत. VPNच्या कोणत्या प्रकारसह तुम्ही जोडणी करत आहात यावर आधारित काही अगाऊ सॉफ्टवेअर इंस्टॉल करावे लागेल. VPNची मालकी असलेल्याकडून जोडणी तपशील शोधा आणि वापरण्याजोगी <em>VPN क्लाएंट</em> पहा. त्यानंतर, सॉफ्टवेअर इंस्टॉलरकडे जा आणि  <app>नेटवर्कमॅनेजर</app> संकुलकरिता शोधा जे तुमच्या VPN (एखादी असल्यास) सह कार्य करते आणि त्यास इंस्टॉल करा.</p>
+
+<note>
+ <p>तुमच्या VPN प्रकारकरिता NetworkManager संकुल नसल्यास, तुम्हाला कदाचित VPN सॉफ्टवेअर पुरवणाऱ्या कंपनीकडून काही क्लाएंट सॉफ्टवेअर डाउनलोड करून इंस्टॉल करावे लागेल. ते कार्यरत करण्यासाठी तुम्हाला कदाचित काही विविध सूचना लागू करावे लागेल.</p>
+</note>
+
+<p>To set up the VPN connection:</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Network</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>At the bottom of the list on the left, click the <gui>+</gui> button
+      to add a new connection.</p>
+    </item>
+    <item>
+      <p>Choose <gui>VPN</gui> in the interface list.</p>
+    </item>
+    <item>
+      <p>Choose which kind of VPN connection you have.</p>
+    </item>
+    <item>
+      <p>VPN जोडणी तपशील भरा, नंतर एकदाचे पूर्ण झाल्यानंतर <gui>समाविष्ट करा</gui> दाबा.</p>
+    </item>
+    <item>
+      <p>When you have finished setting-up the VPN, open the
+      <gui xref="shell-introduction#yourname">system menu</gui> from the right side of
+      the top bar, click <gui>VPN off</gui> and select <gui>Connect</gui>. You
+      may need to enter a password for the connection before it is established.
+      Once the connection is made, you will see a lock shaped icon in the top
+      bar.</p>
+    </item>
+    <item>
+      <p>Hopefully you will successfully connect to the VPN. If not, you may
+      need to double-check the VPN settings you entered. You can do this from
+      the <gui>Network</gui> panel that you used to create the connection.
+      Select the VPN connection from the list, then press the
+<media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button to review the settings.</p>
+    </item>
+    <item>
+      <p>To disconnect from the VPN, click the system menu on the top bar and
+      click <gui>Turn Off</gui> under the name of your VPN connection.</p>
+    </item>
+  </steps>
+
+</page>

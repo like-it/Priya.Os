@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-gpg-set-up" xml:lang="hu">
+
+  <info>
+    <desc>Postafiók beállítása GPG használatára a levelek aláírására és/vagy titkosítására és visszafejtésére.</desc>
+
+    <link type="guide" xref="mail-encryption#gpg"/>
+
+    <revision pkgversion="3.13.90" version="0.4" date="2015-03-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#encrypt-evo-integ -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>GPG beállítása postafiókjához</title>
+<!-- TODO:POST-3-8: Update and rewrite using Seahorse. Needs a rewrite once https://bugzilla.gnome.org/show_bug.cgi?id=745872 and https://bugzilla.gnome.org/show_bug.cgi?id=508744 is fixed. -->
+
+<note style="tip"><p>Ehhez egy GPG-kulcsra van szüksége. Ha még nem rendelkezik ilyennel, akkor nézze meg a <link xref="mail-encryption-gpg-create-key">GPG-kulcs létrehozása</link> szakaszt.</p></note>
+
+<steps>
+<item><p>Válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Postafiókok</gui></guiseq> lehetőséget.</p></item>
+<item><p>Válassza ki a biztonságosan használni kívánt fiókot, és nyomja meg a <gui style="button">Szerkesztés</gui> gombot.</p></item>
+<item><p>Kattintson a <gui>Biztonság</gui> fülre.</p></item>
+<item><p>Adja meg kulcsazonosítóját az <gui>OpenPGP kulcs azonosítója</gui> mezőben.</p>
+<note style="tip"><p>A mező alatt többek közt kiválaszthatja, hogy a kimenő leveleket mindig aláírja-e a fiók használatakor.</p></note>
+</item>
+<item><p>Nyomja meg az <gui style="button">OK</gui> gombot.</p></item>
+<item><p>Nyomja meg a <gui style="button">Bezárás</gui> gombot.</p></item>
+</steps>
+<p>Az <app>Evolution</app> megköveteli, hogy ismerje kulcsazonosítóját. Ha nem emlékszik rá, akkor a <app>Jelszavak és kulcsok</app> alkalmazásban nyissa meg a <gui>GnuPG kulcsok</gui> szakaszt, jelölje ki a kívánt GPG kulcsot, kattintson rá a jobb egérgombbal, a helyi menüből válassza a <gui>Tulajdonságok</gui> pontot, majd másolja ki a <gui>Kulcsazonosítót</gui>. A kulcsazonosító egy nyolc véletlen számból és betűből álló karakterlánc.</p>
+
+</page>

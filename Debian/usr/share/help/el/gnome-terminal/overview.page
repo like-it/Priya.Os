@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="overview" xml:lang="el">
+  <info>
+    <revision version="0.1" date="2013-01-10" status="draft"/>
+    <link type="guide" xref="index"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Τι είναι ένα τερματικό;</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Επισκόπηση ενός τερματικού</title>
+
+  <p>Το <app>Τερματικό</app> είναι ένα πρόγραμμα τερματικού για το <gui>GNOME</gui>. Οι ακόλουθοι όροι και οι περιγραφές τους θα σας βοηθήσουν να εξοικειωθείτε με το <app>Τερματικό</app> και τις δυνατότητές του.</p>
+
+  <terms>
+    <item>
+      <title>Ένα τερματικό</title>
+      <p>Ένα τερματικό είναι ένα σημείο εισόδου κειμένου σε έναν υπολογιστή που λέγεται και διεπαφή γραμμής εντολών (CLI).</p>
+    </item>
+    <item>
+      <title>Φυσικά τερματικά</title>
+      <p>Τα IBM 3270, VT100 και πολλοί άλλα είναι τερματικά υλικού που δεν παράγονται πια ως φυσικές συσκευές. Για απομίμηση αυτών των τερματικών, υπάρχουν τερματικοί εξομοιωτές.</p>
+    </item>
+    <item>
+      <title>Εξομοιωτές τερματικού</title>
+      <p>Εξομοίωση είναι η ικανότητα ενός προγράμματος υπολογιστή να μιμείται ένα άλλο πρόγραμμα ή συσκευή.</p>
+
+      <p>Ένας εξομοιωτής τερματικού που λέγεται επίσης tty είναι ένα πρόγραμμα λογισμικού που μιμείται ένα τερματικό βίντεο σε σύγχρονους υπολογιστές που χρησιμοποιούν γραφικές διεπαφές χρήστη και παρέχουν διαδραστική πρόσβαση σε εφαρμογές που τρέχουν μόνο σε περιβάλλοντα γραμμής εντολών. Αυτές οι εφαρμογές μπορεί να εκτελούνται είτε στο ίδιο μηχάνημα ή σε διαφορετικό μέσα από <app>telnet</app>, <app>ssh</app>, or <app>dial-up</app>.</p>
+    </item>
+    <item>
+      <title>VTE</title>
+      <p>Περιβάλλον εικονικού τερματικού (VTE) είναι ένας εξομοιωτής τερματικού που εξομοιώνει ένα τερματικό κειμένου μέσα σε ένα περιβάλλον γραφικής διεπαφής χρήστη (GUI). Το <app>Τερματικό</app> βασίζεται κατά πολύ στο <app>VTE</app>. Το <app>VTE</app> έχει γραφικά συστατικά που εφαρμόζουν έναν πλήρως λειτουργικό εξομοιωτή τερματικού.</p>
+    </item>
+    <item>
+      <title>Κέλυφος</title>
+      <p>Ένα <em>κέλυφος</em> είναι ένα πρόγραμμα που παρέχει μια διεπαφή για εντολές κλήσης ή "έναρξης" μέσα σε ένα τερματικό. Επιτρέπει επίσης να προβάλετε και να περιηγηθείτε στα περιεχόμενα των καταλόγων. Δημοφιλή κελύφη είναι τα <app>Bash</app>, <app>zsh</app>, <app>csh</app>.</p>
+    </item>
+    <item>
+      <title>Ακολουθίες διαφυγής</title>
+      <p>Μια ακολουθία διαφυγής είναι μια σειρά χαρακτήρων που χρησιμοποιείται για την αλλαγή του νοήματος των δεδομένων σε έναν τερματικό. Οι ακολουθίες διαφυγής χρησιμοποιούνται όταν ένας υπολογιστής έχει μόνο ένα κανάλι για επιστροφή και προώθηση πληροφοριών. Οι ακολουθίες διαφυγής χρησιμοποιούνται για να ξεχωρίσουν εάν τα δεδομένα που στέλνονται είναι μια εντολή για να εκτελεστεί ή πληροφορίες για να αποθηκευτούν και να εμφανιστούν.</p>
+    </item>
+
+    <item>
+      <title>Προτροπή</title>
+      <p>Μια προτροπή που λέγεται επίσης <em>προτροπή εντολής</em>. Είναι μια σειρά χαρακτήρων που χρησιμοποιείται σε περιβάλλον γραμμής εντολών για να δείξει την ετοιμότητα του κελύφους να δεχτεί εντολές.</p>
+
+      <p>Μια προτροπή συνήθως τελειώνει με χαρακτήρες <sys>$</sys>, <sys>%</sys>, <sys>#</sys> or <sys>&gt;</sys> και περιλαμβάνει πληροφορίες για τη διαδρομή του καταλόγου της παρούσας εργασίας. Σε συστήματα με βάση τοUnix, είναι συνηθισμένο για την προτροπή να τελειώνει σε ένα χαρακτήρα <sys>$</sys> or <sys>%</sys> ανάλογα με τον ρόλο του χρήστη όπως <sys>$</sys> για χρήστη και <sys>%</sys> για υπερχρήστη (που λέγεται επίσης <sys>root</sys>).</p>
+    </item>
+    <item>
+      <title>Εντολή</title>
+      <p>Η είσοδος που πληκτρολογείται στην προτροπή για να εκτελεστεί λέγεται <em>εντολή</em>. Είναι ένας συνδυασμός του ονόματος προγράμματος μαζί με οποιεσδήποτε άλλες πρόσθετες παραμέτρους που πέρασαν ως σημαίες για να αλλάξουν την εκτέλεση του προγράμματος.</p>
+    </item>
+  </terms>
+
+</page>

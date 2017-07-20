@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info xmlns="http://projectmallard.org/1.0/">
+
+<item><p>Expéditeur :</p>
+<p>L'adresse électronique de l'expéditeur ou son nom.</p></item>
+
+<item><p>Destinataires :</p>
+<p>Les destinataires du message.</p></item>
+
+<item><p>CC :</p>
+<p>Seulement les destinataires CC du message.</p></item>
+
+<item><p>Cci :</p>
+<p>Seulement les destinataires Cci du message. Cela ne peut évidemment s'appliquer qu'à des filtres sortants.</p></item>
+
+<item><p>Expéditeur ou destinataires :</p>
+<p>L'adresse électronique de l'expéditeur ou son nom ou les destinataires du message.</p></item>
+
+<item><p>Sujet :</p>
+<p>La ligne sujet du message.</p></item>
+
+<item><p>En-tête spécifique :</p>
+<p>Tout en-tête incluant <link xref="mail-composer-custom-header-lines">les personnalisés</link>.</p>
+<p>If a message uses a header more than once, <app>Evolution</app> pays attention only to the first instance, even if the message defines the header differently the second time. For example, if a message declares the Resent-From: header as "engineering@example.com" and then restates it as "marketing@example.com", <app>Evolution</app> filters as though the second declaration did not occur. To filter on messages that use headers multiple times, use a regular expression.</p></item>
+
+<item><p>Corps du message :</p>
+<p>Recherche dans le texte effectif du message.</p></item>
+
+<item><p>Expression :</p>
+<p>(For programmers only) Match a message according to an expression you write in the Scheme language used to define <link xref="mail-filters">filters</link> in <app>Evolution</app>.</p></item>
+
+<item><p>Free Form Expression :</p>
+<p>(Pour utilisateurs avancés uniquement) Combiner plusieurs conditions en utilisant un <link href="https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10">syntaxe spéciale</link>.</p></item>
+
+<item><p>Date d'envoi :</p>
+<p>Filters messages according to the date on which they were sent. First, choose the conditions you want a message to meet, such as before a given date or after a given date. Then choose the time. The filter compares the message's time stamp to the system clock when the filter is run, or to a specific time and date you choose from a calendar. You can also have it look for a message within a range of time relative to the filter, such as two to four days ago.</p></item>
+
+<item><p>Date de réception :</p>
+<p>Cela fonctionne de la même manière qu'avec l'option Date d'envoi, sauf que la date où vous avez reçu le message est comparée aux dates que vous indiquez.</p></item>
+
+<item><p>Étiquette :</p>
+<p>Les messages peuvent avoir les <link xref="mail-labels">étiquettes</link> Important, Bureau, Personnel, À faire ou Plus tard. Vous pouvez placer ces étiquettes avec d'autres filtres ou à la main.</p></item>
+
+<item><p>Score :</p>
+<p>Définit le score du message à n'importe quel nombre entier plus grand que 0. Vous pouvez configurer un filtre qui définit ou qui modifie le score d'un message, et un autre qui déplace le message que vous avez ainsi évalué. Le score d'un message n'est basé sur rien de particulier, c'est simplement un nombre que vous pouvez attribuer aux messages afin que d'autres filtres puissent les traiter.</p></item>
+
+<item><p>Taille (Ko) :</p>
+<p>Trie selon la taille du message en kilooctets.</p></item>
+
+<item><p>État :</p>
+<p>Filtre selon l'état d'un message. L'état peut être Répondre à, Brouillon, Important, Lu ou Pourriel.</p></item>
+
+<item><p>Donner suite :</p>
+<p>Vérifie si le messages est <link xref="mail-follow-up-flag">marqué pour donner suite</link>.</p></item>
+
+<item><p>Terminé :</p></item>
+<!-- TODO: Explain usage of option "Completed On" once https://bugzilla.gnome.org/show_bug.cgi?id=698439 is fixed -->
+
+<item><p>Pièces jointes :</p>
+<p>Vérifie s'il y a une pièce jointe au courriel.</p></item>
+
+<item><p>Liste de diffusion :</p>
+<p>Filtre selon la liste de diffusion de provenance du message. Ce filtre peut manquer des messages de certains serveurs de listes, car il vérifie l'en-tête X-BeenThere qui est utilisé pour identifier les listes de diffusion ou d'autres redistributeurs de courriels. Les messages provenant de serveurs de listes qui ne définissent pas correctement X-BeenThere ne seront pas interceptés par ces filtres.</p></item>
+
+<item><p>Correspondance Regex :</p>
+<p>(For programmers only) If you know your way around a <link href="https://en.wikipedia.org/wiki/Regular_expression">regex</link>, or regular expression, this option allows you to search for complex patterns of letters, so that you can find, for example, all words that start with "a" and end with "m", and are between six and fifteen letters long, or all messages that declare a particular header twice. For information about how to use regular expressions, check <link href="man:grep">the man page for the <cmd>grep</cmd></link> command.</p></item>
+
+</info>

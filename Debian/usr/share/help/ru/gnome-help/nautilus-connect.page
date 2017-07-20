@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Шон МакКенс (Shaun McCance)</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Дэвид Кинг (David King)</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Просмотр и редактирование файлов на другом компьютере через FTP, SSH, общие ресурсы Windows или WebDAV.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Обзор файлов на сервере или сетевом ресурсе</title>
+
+<p>Можно подключиться к общему серверу или к общей сети чтобы просматривать файлы точно также, как если бы они находились на вашем компьютере. Это удобный способ размещения файлов в Интернет и загрузки их на локальный компьютер, а также для обмена общими файлами между пользователями в локальной сети.</p>
+
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
+
+<steps>
+  <title>Подключение к файловому серверу</title>
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
+   sidebar.</p>
+  </item>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
+  <note>
+    <p>Если вы уже подключались к серверу ранее, можно выбрать его из списка <gui>Недавние серверы</gui>.</p>
+  </note>
+  </item>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>Запись URL</title>
+
+<p><em>URL</em> (<em>uniform resource locator</em>) — это адрес, указывающий на место или файл в сети. Адрес имеет следующий формат:</p>
+  <example>
+    <p><sys>схема://имя_сервера.пример.рф/папка</sys></p>
+  </example>
+<p><em>Схема</em> определяет протокол или тип сервера. Часть адреса <em>пример.рф</em> называется <em>именем домена</em>. Если требуется имя пользователя, оно указывается перед именем сервера:</p>
+  <example>
+    <p><sys>схема://имя_пользователя@имя_сервера.пример.рф/папка</sys></p>
+  </example>
+<p>Некоторые схемы требуют указания номера порта. Вставьте его после имени домена:</p>
+  <example>
+    <p><sys>схема://имя_сервера.пример.рф:порт/папка</sys></p>
+  </example>
+<p>Ниже приведены примеры различных поддерживаемых типов серверов.</p>
+</section>
+
+<section id="types">
+ <title>Типы серверов</title>
+
+<p>Можно подключаться к разным типам серверов. Некоторые серверы общедоступны и позволяют подключаться всем. Другие серверы требуют для входа ввести имя пользователя и пароль.</p>
+<p>Для выполнения некоторых действий с файлами на сервере необходимо иметь права доступа. Например, на публичных FTP вы, скорее всего, не сможете удалять файлы.</p>
+<p>Вводимый вами адрес URL зависит от протокола, который используется на сервере для экспорта общих файловых ресурсов.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>Если у вас есть учётная запись с доступом по <em>протоколу SSH</em>, то можно использовать этот способ для подключения к серверу. Многие хосты предоставляют пользователям доступ по SSH для надёжной загрузки файлов на сервер. Для доступа на сервер по протоколу SSH всегда нужна авторизация.</p>
+  <p>Типичный URL SSH выглядит следующим образом:</p>
+  <example>
+    <p><sys>ssh://имя_пользователя@имя_сервера.пример.рф/папка</sys></p>
+  </example>
+
+  <p>При использовании SSH все отправляемые вами данные (включая пароль) шифруются, чтобы остальные пользователи сети не смогли их увидеть.</p>
+</item>
+<item>
+  <title>FTP (с авторизацией)</title>
+  <p>FTP — популярный способ обмена файлами в Интернете. Поскольку данные при использовании FTP не шифруются, многие серверы предоставляют сейчас доступ через SSH. Тем не менее, некоторые серверы до сих пор позволяют или требуют использовать FTP для загрузки на сервер или скачивания файлов. FTP-серверы с авторизацией обычно разрешают пользователю загружать на сервер и удалять файлы.</p>
+  <p>Типичный URL FTP выглядит так:</p>
+  <example>
+    <p><sys>ftp://имя_пользователя@ftp.пример.рф/путь/</sys></p>
+  </example>
+</item>
+<item>
+  <title>Публичный FTP</title>
+  <p>Сайты, позволяющие скачивать файлы, иногда предоставляют пользователям публичный или анонимный доступ по протоколу FTP. Эти серверы не требуют ввода имени пользователя и пароля и, как правило, не позволяют удалять файлы на сервере или загружать их на сервер.</p>
+  <p>Типичный URL анонимного FTP выглядит так:</p>
+  <example>
+    <p><sys>ftp://ftp.пример.рф/путь/</sys></p>
+  </example>
+  <p>Некоторые анонимные FTP требуют указывать для входа публичное имя пользователя и пароль, или публичное имя пользователя и ваш адрес электронной почты в качестве пароля. Для таких серверов используйте метод <gui>FTP (с авторизацией)</gui> и вводите учётные данные, требуемые этим FTP.</p>
+</item>
+<item>
+  <title>Совместно используемый ресурс Windows</title>
+  <p>Компьютеры с Windows используют проприетарный протокол для общего доступа к файлам по локальной сети. Компьютеры в сети Windows иногда группируются в <em>домены</em> для организации и лучшего контроля доступа. Если у вас есть права доступа на удалённом компьютере, вы можете подключиться к совместно используемому ресурсу Windows из менеджера файлов.</p>
+  <p>Типичный URL совместно используемого ресурса Windows выглядит следующим образом:</p>
+  <example>
+    <p><sys>smb://имя_сервера/Ресурс</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV и Secure WebDAV</title>
+  <p>WebDAV, основанный на используемом в Интернете протоколе HTTP, иногда используется для совместного доступа к файлам в локальной сети и для хранения файлов в Интернете. Если сервер, к которому вы подключаетесь, поддерживает безопасные соединения, следует выбрать этот вариант. Secure WebDAV использует надёжное шифрование SSL, чтобы другие пользователи не смогли увидеть ваш пароль.</p>
+  <p>A WebDAV URL looks like this:</p>
+  <example>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

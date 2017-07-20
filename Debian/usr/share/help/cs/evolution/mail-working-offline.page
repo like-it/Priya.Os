@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-working-offline" xml:lang="cs">
+
+  <info>
+    <desc>Jak s poštou pracovat, když jste odpojeni od sítě.</desc>
+<!-- TODO:POST-3-8: Offline work for web calendars etc also exists => create index page for Offline working? -->
+    <link type="guide" xref="index#mail-basic"/>
+
+    <revision pkgversion="3.7.4" version="0.3" date="2013-01-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-send.html.en#usage-mail-getnsend-offline -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Práce při odpojení</title>
+
+<p>Režim odpojení vám pomáhá komunikovat se vzdálenými systémy pro uchování pošty jako GroupWise, IMAP nebo Exchange v situacích, kdy nejste trvale připojeni k síti. <app>Evolution</app> uchovává místní kopii jedné nebo více složek, aby vám umožnil vytvářet zprávy a ukládat je do složky K Odeslání do té doby, než budete připojeni. </p>
+
+<note style="warning"><p>Režím odpojení se v aplikaci <app>Evolution</app> týká jen pošty, na kontakty a kalendáře nemá vliv.</p></note>
+
+<p>POP stahuje všechny zprávy do místního systému, ale ostatní připojení stahují pouze hlavičky a zbytek, pouze když chcete zprávu číst. Před tím, než cíleně přejdete do režimu odpojení, stáhne <app>Evolution</app> nepřečtené zprávy ze složek, které jste vybrali pro uchování zpráv.</p>
+
+<section id="mark-folders">
+<title>Označení složek pro použití při odpojení</title>
+<p>Chcete-li složku označit pro použití při odpojení,</p>
+<steps>
+<item><p>Klikněte pravým tlačítkem na složku a potom na <gui>Vlastnosti</gui>.</p></item>
+<item><p>Klikněte na <gui>Zkopírovat obsah složky lokálně pro práci při odpojení</gui>.</p></item>
+</steps>
+</section>
+
+<section id="sync-for-offline">
+<title>Synchronizování zpráv pro použití při odpojení</title>
+<p>Váš stav připojení je zobrazen malou ikonou v levém dolním rohu hlavního okna <app>Evolution</app>. Když jste on-line, zobrazuje dva spojené kabely. Když se odpojujete kliknutím na ikonu nebo přes <guiseq><gui>Soubor</gui><gui>Pracovat při odpojení</gui></guiseq>, kabely se rozpojí. Budete dotázáni, zda se chcete odpojit okamžitě nebo nejdříve lokálně synchronizovat složky.</p>
+<p>Chcete-li stáhnout zprávy pro operace po odpojení, aniž byste se okamžitě odpojili, vyberte <guiseq><gui>Soubor</gui><gui>Stáhnout zprávy pro používání při odpojení</gui></guiseq>.</p>
+</section>
+
+<section id="network-manager-integration">
+<title>Automatické reakce na stav sítě</title>
+<p><app>Evolution</app> automaticky rozpoznává stav sítě a podle toho reaguje. Například se přepíná do režimu odpojení, když síť spadne a automaticky se vrací zpět, když síť opět funguje.</p>
+</section>
+
+</page>

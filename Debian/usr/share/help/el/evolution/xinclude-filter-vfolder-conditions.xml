@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info xmlns="http://projectmallard.org/1.0/">
+
+<item><p>Αποστολέας:</p>
+<p>Η διεύθυνση αλληλογραφίας του αποστολέα ή το όνομα του αποστολέα.</p></item>
+
+<item><p>Παραλήπτες:</p>
+<p>Οι παραλήπτες του μηνύματος.</p></item>
+
+<item><p>Κοινοποίηση:</p>
+<p>Μόνο οι αποδέκτες κοινοποίησης του μηνύματος.</p></item>
+
+<item><p>Κρυφή κοινοποίηση:</p>
+<p>Μόνο οι αποδέκτες κρυφής κοινοποίησης του μηνύματος. Προφανώς αυτό μπορεί να εφαρμοστεί μόνο σε εξερχόμενα φίλτρα.</p></item>
+
+<item><p>Αποστολέας ή αποδέκτες:</p>
+<p>Η διεύθυνση αλληλογραφίας του αποστολέα ή το όνομα του αποστολέα ή των αποδεκτών του μηνύματος.</p></item>
+
+<item><p>Θέμα:</p>
+<p>Η γραμμή θέματος του μηνύματος.</p></item>
+
+<item><p>Συγκεκριμένη κεφαλίδα:</p>
+<p>Οποιαδήποτε κεφαλίδα που περιλαμβάνει <link xref="mail-composer-custom-header-lines">προσαρμοσμένες κεφαλίδες</link>.</p>
+<p>If a message uses a header more than once, <app>Evolution</app> pays attention only to the first instance, even if the message defines the header differently the second time. For example, if a message declares the Resent-From: header as "engineering@example.com" and then restates it as "marketing@example.com", <app>Evolution</app> filters as though the second declaration did not occur. To filter on messages that use headers multiple times, use a regular expression.</p></item>
+
+<item><p>Σώμα μηνύματος:</p>
+<p>Αναζητά στο κείμενο του μηνύματος.</p></item>
+
+<item><p>Έκφραση:</p>
+<p>(For programmers only) Match a message according to an expression you write in the Scheme language used to define <link xref="mail-filters">filters</link> in <app>Evolution</app>.</p></item>
+
+<item><p>Ελεύθερη μορφή έκφρασης:</p>
+<p>(Μόνο για προχωρημένους χρήστες) Συνδυασμός πολλών συνθηκών χρησιμοποιώντας έναν <link href="https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10">ειδική σύνταξη</link>.</p></item>
+
+<item><p>Ημερομηνία αποστολής:</p>
+<p>Filters messages according to the date on which they were sent. First, choose the conditions you want a message to meet, such as before a given date or after a given date. Then choose the time. The filter compares the message's time stamp to the system clock when the filter is run, or to a specific time and date you choose from a calendar. You can also have it look for a message within a range of time relative to the filter, such as two to four days ago.</p></item>
+
+<item><p>Ημερομηνία παραλαβής:</p>
+<p>Αυτό δουλεύει παρόμοια με την επιλογή ημερομηνία αποστολής, με τη διαφορά ότι συγκρίνει την ώρα που λάβατε το μήνυμα με τις ημερομηνίες που ορίζετε.</p></item>
+
+<item><p>Ετικέτα:</p>
+<p>Τα μηνύματα μπορούν να έχουν <link xref="mail-labels">ετικέτες</link> σημαντικό, εργασία, προσωπικό, εκκρεμές, ή αργότερα. Μπορείτε να ορίσετε ετικέτες με άλλα φίλτρα ή χειροκίνητα.</p></item>
+
+<item><p>Αποτέλεσμα:</p>
+<p>Ορίζει το αποτέλεσμα του μηνύματος σε οποιοδήποτε ακέραιο αριθμό μεγαλύτερο από το 0. Μπορείτε να έχετε ένα ορισμένο φίλτρο ή να αλλάξετε το αποτέλεσμα του μηνύματος και έπειτα να εγκαταστήσετε ένα άλλο φίλτρο για μετακίνηση των μηνυμάτων που σημειώσατε. Το αποτέλεσμα ενός μηνύματος δε βασίζεται σε κάτι συγκεκριμένο: είναι απλά ένας αριθμός τον οποίο μπορείτε να αναθέσετε σε μηνύματα ώστε άλλα φίλτρα να τον επεξεργάζονται.</p></item>
+
+<item><p>Μέγεθος (kB):</p>
+<p>Ταξινομεί με βάση το μέγεθος του μηνύματος σε kilobytes.</p></item>
+
+<item><p>Κατάσταση:</p>
+<p>Φιλτράρει σύμφωνα με την κατάσταση του μηνύματος. Η κατάσταση μπορεί να είναι απαντημένο, πρόχειρο, σημαντικό, διαβασμένο ή ανεπιθύμητο.</p></item>
+
+<item><p>Παρακολούθηση:</p>
+<p>Ελέγχει αν το μήνυμα είναι <link xref="mail-follow-up-flag">με σημαία για παρακολούθηση</link>.</p></item>
+
+<item><p>Ολοκληρωμένο την:</p></item>
+<!-- TODO: Explain usage of option "Completed On" once https://bugzilla.gnome.org/show_bug.cgi?id=698439 is fixed -->
+
+<item><p>Συνημμένα:</p>
+<p>Ελέγχει εάν υπάρχει συνημμένο στο μήνυμα.</p></item>
+
+<item><p>Κατάλογος ταχυδρομείου:</p>
+<p>Φιλτράρει με βάση τον κατάλογο ταχυδρομείου από τον οποίο έφτασε το μήνυμα. Αυτό το φίλτρο μπορεί να χάσει μερικά μηνύματα από μερικούς διακομιστές καταλόγων, γιατί ελέγχει για την κεφαλίδα X-BeenThere, η οποία χρησιμοποιείται για να ταυτοποιεί καταλόγους ταχυδρομείου ή άλλους αναδιανομής αλληλογραφίας. Αλληλογραφία από διακομιστές καταλόγων οι οποίοι δεν ορίζουν την κεφαλίδα X-BeenThere σωστά δε θα φιλτραριστούν από τέτοια φίλτρα.</p></item>
+
+<item><p>Ταίριασμα με Regex:</p>
+<p>(For programmers only) If you know your way around a <link href="https://en.wikipedia.org/wiki/Regular_expression">regex</link>, or regular expression, this option allows you to search for complex patterns of letters, so that you can find, for example, all words that start with "a" and end with "m", and are between six and fifteen letters long, or all messages that declare a particular header twice. For information about how to use regular expressions, check <link href="man:grep">the man page for the <cmd>grep</cmd></link> command.</p></item>
+
+</info>

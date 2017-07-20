@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-dwellclick" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="mouse"/>
+    <link type="guide" xref="a11y#mobility" group="clicking"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
+    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc><gui>ホバークリック</gui> (自動クリック) の機能を使い、マウスを静止させることによりクリック動作を行う。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>ホバーリングでクリックを代替する</title>
+
+  <p>画面上のコントロールや対象物の上にマウスポインターをホバーリングすることで、簡単にクリックやドラッグ操作ができます。マウスを動かしつつ同時にクリックすることが困難であれば、これは役立ちます。この機能は、<gui>ホバークリック</gui>あるいは自動クリックと呼ばれています。</p>
+
+  <p><gui>ホバークリック</gui>を有効にすれば、対象物の上にマウスポインターを移動させ、マウスから手を離してしばらく待つことで、ボタンをクリックすることができます。</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Universal Access</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Universal Access</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>Press <gui>Click Assist</gui> in the <gui>Pointing &amp;
+      Clicking</gui> section.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Hover Click</gui> to <gui>ON</gui>.</p>
+    </item>
+  </steps>
+
+  <p><gui>ホバークリック</gui>のウィンドウが開き、他のウィンドウよりも前面に配置されます。これは、ホバーリングしたときにどの種別のクリックを実行するかを選ぶのに使用します。たとえば<gui>副ボタンのクリック</gui>を選ぶと、ホバーリングで右クリック動作が行われます。ダブルクリック、右クリック、またはドラッグを実行したあとは、自動的にただのクリック動作に戻ります。</p>
+
+  <p>マウスポインターをボタンの上にホバーリングしてそのまま動かさずにいると、ポインターの色が徐々に変わっていきます。ポインター全体の色が変わったタイミングで、ボタンがクリックされます。</p>
+
+  <p><gui>認識するまでの間隔</gui>を調節して、クリックするのに必要となるマウスポインターの静止時間を設定してください。</p>
+
+  <p>ホバークリックをするためにマウスを完璧に静止させる必要はありません。ポインターは少しなら動いてもかまわず、しばらくすればクリックされます。しかし、大きく動きすぎた場合はクリックされません。</p>
+
+  <p><gui>ジェスチャーのしきい値</gui>を調節して、ホバーリングと認識されるのに動かしてもよい程度を設定してください。</p>
+
+</page>

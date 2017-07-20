@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="power-batteryestimate" xml:lang="sv">
+
+  <info>
+
+    <link type="guide" xref="power#faq"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
+
+    <desc>Batteridriftstiden som visas när du klickar på <gui>batteriikonen</gui> är en uppskattning.</desc>
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Den uppskattade batteridriftstiden är fel</title>
+
+<p>När du kontrollerar hur mycket batteridriftstid som finns kvar kan du komma att upptäcka att den återstående tiden som rapporteras skiljer sig från hur länge batteriet faktiskt håller. Detta är för att mängden återstående batteridriftstid bara kan uppskattas. Normalt förbättras uppskattningarna efterhand.</p>
+
+<p>För att uppskatta mängden återstående batteridriftstid tas hänsyn till ett antal faktorer. En av den är mängden ström som för närvarande används av datorn: strömförbrukningen varierar beroende på hur många program du har öppna, vilka enheter som är anslutna och huruvida du kör några intensiva uppgifter (så som att titta på högupplöst video eller konvertera musikfiler till exempel). Detta ändras från ögonblick till ögonblick och är svårt att förutsäga.</p>
+
+<p>En annan faktor är hur batteriet laddas ur. Vissa batterier förlorar laddning snabbare ju mer urladdade de är. Utan precis kunskap om hur batteriet urladdas kan bara en grov uppskattning av återstående batteridriftstid göras.</p>
+
+<p>Efterhand som batteriet urladdas kommer strömhanteraren att lista ut dess urladdningsegenskaper och kommer att lära sig att göra bättre uppskattningar av batteridriftstiden. De kommer aldrig att vara helt korrekta dock.</p>
+
+<note>
+  <p>Om du får helt löjliga uppskattningar för batteridriftstid (säg, hundratals dagar) saknar förmodligen strömhanteraren någon data som den behöver för att göra vettiga uppskattningar.</p>
+  <p>Om du drar ut strömsladden och kör den bärbara datorn på batteri ett tag och sedan kopplar in och låter den ladda igen, borde strömhanteraren få tag i den data den behöver.</p>
+</note>
+
+</page>

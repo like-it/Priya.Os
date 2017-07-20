@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="app-colors" xml:lang="hu">
+
+  <info>
+    <revision version="0.1" date="2013-03-02" status="candidate"/>
+    <link type="guide" xref="index#appearance"/>
+    <link type="guide" xref="profile"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Színek és hátterek módosítása.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2013, 2014, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Attila Hammer</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Színsémák</title>
+
+  <p>Ha az alapértelmezett <app>Terminál</app> séma nem nyerte el tetszését, módosíthatja a szöveghez és a háttérhez használt színeket. Használhatja az asztali környezet témájának színeit, választhat az előre beállítottak közül, vagy létrehozhat sajátot is.</p>
+
+  <section id="system-theme">
+    <title>Rendszertéma színeinek használata</title>
+
+    <p>A rendszertéma színeinek használata:</p>
+
+    <steps>
+      <item>
+        <p>Válassza a <guiseq><gui style="menu">Szerkesztés</gui> <gui style="menuitem">Profil beállításai</gui> <gui style="tab">Színek</gui></guiseq> lapot.</p>
+      </item>
+      <item>
+        <p>Jelölje be a <gui style="checkbox">Rendszertéma színeinek használata</gui> négyzetet. A változtatások azonnal életbe lépnek.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="built-in-scheme">
+    <title>Beépített sémák</title>
+
+    <p>A következő beépített színsémák közül választhat: <gui>Fekete a világossárgán</gui>, <gui>Fekete a fehéren</gui>, <gui>Szürke a feketén</gui>, <gui>Zöld a feketén</gui>, <gui>Fehér a feketén</gui>, <gui>Solarized light</gui>, <gui>Solarized dark</gui>. A beépített sémák bármelyikének használata:</p>
+
+    <steps>
+      <item>
+        <p>Válassza a <guiseq><gui style="menu">Szerkesztés</gui> <gui style="menuitem">Profil beállításai</gui> <gui style="tab">Színek</gui></guiseq> lapot.</p>
+      </item>
+      <item>
+        <p>Törölje a <gui style="checkbox">Rendszertéma színeinek használata</gui> négyzetet. Válassza ki a kívánt színsémát a <gui>Beépített sémák</gui> listából. A kiválasztott színséma azonnal alkalmazásra kerül.</p>
+        <note>
+	  <p>Az alkalmazások a megadott félkövér szín helyett használhatják a paletta egy színét is.</p>
+        </note>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="custom-scheme">
+    <title>Egyéni színséma</title>
+
+    <p>Egyéni színeket is használhat a <app>Terminál</app> szövegéhez és hátteréhez:</p>
+
+    <steps>
+      <item>
+        <p>Válassza a <guiseq><gui style="menu">Szerkesztés</gui> <gui style="menuitem">Profil beállításai</gui> <gui style="tab">Színek</gui></guiseq> lapot.</p>
+      </item>
+      <item>
+        <p>Törölje a <gui style="checkbox">Rendszertéma színeinek használata</gui> négyzetet. Válassza a <gui>Beépített sémák</gui> lista <gui>Egyéni</gui> elemét.</p>
+      </item>
+      <item>
+        <p>Kattintson a módosítandó összetevő melletti színmintára.</p>
+      </item>
+      <item>
+        <p>Válassza ki a kívánt színt a színválasztóból, és nyomja meg a <gui style="button">Kiválasztás</gui> gombot.</p>
+        <p>Ha a színválasztóból szeretne egy színt választani, akkor nyomja meg a <gui style="button">+</gui> gombot. A kívánt színt a következő módszerekkel választhatja ki:</p>
+        <list>
+          <item>
+            <p>Beírhatja a hexadecimális színkódot a beviteli mezőbe.</p>
+          </item>
+          <item>
+            <p>Húzza a bal oldali csúszkát a szín módosításához, és kattintson a jobb oldali színkijelölő területen a kívánt árnyalatra.</p>
+          </item>
+        </list>
+	<p>A változtatásai automatikusan mentésre kerülnek.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Egy színt akkor is megváltoztathat a színminta gomb megnyomásával, ha egy beépített sémát választott. A változtatás után a Beépített sémák listában a kijelölés az <gui>Egyéni</gui> értékre változik.</p>
+    </note>
+
+  </section>
+
+</page>

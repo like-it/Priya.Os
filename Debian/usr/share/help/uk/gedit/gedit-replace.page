@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-replace" xml:lang="uk">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-search"/>
+    <desc>Replace portions of text in a file.</desc>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-05" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-11-28" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Катерина Герасимова</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Young Li</name>
+      <email>li.young1618@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Максим Дзюманенко</mal:name>
+      <mal:email>dziumanenko@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Назарій Ріттер</mal:name>
+      <mal:email>nazariy.ritter@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Заміна тексту</title>
+
+  <p>Редагування тексту може забирати багато часу. Щоб зекономити час, «<app>gedit</app>» має функцію «<app>Замінити</app>», яка дозволяє знайти та замінити фрагменти тексту.</p>
+
+  <steps>
+    <title>Заміна тексту з «<app>gedit</app>»</title>
+    <item>
+      <p>Open the <gui>Replace</gui> tool by clicking
+      <guiseq><gui style="button">Menu button</gui><gui style="menuitem">Find 
+      and Replace…</gui></guiseq> or press
+      <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>У полі «<gui>Шукати:</gui>» введіть текст, який потрібно замінити.</p>
+    </item>
+    <item>
+      <p>У полі «<gui>Замінити на:</gui>» введіть текст, на який потрібно замінити.</p>
+    </item>
+    <item>
+      <p>Як тільки початковий та заміняючий тексти було введено, можна вибрати додаткові параметри пошуку. Можна вибрати, що потрібно замінити:</p>
+      <list>
+        <item>
+          <p>Щоб замінити <em>лише</em> наступне співпадіння, клацніть на «<gui>Замінити</gui>».</p>
+        </item>
+        <item>
+          <p>Щоб замінити <em>всі співпадіння</em> шуканого тексту, клацніть на «<gui>Замінити все</gui>».</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="warning">
+    <p>Використовуйте функцію «<gui>Замінити все</gui>» обережно. «<gui>Замінити все</gui>» впливає на весь текст Вашого файлу, та не дозволяє виділяти фрагменти тексту, які будуть замінені.</p>
+  </note>
+
+<section id="replace-options">
+  <title>Більше параметрів</title>
+
+  <p>Якщо потрібно, можна додати додаткові параметри для пошуку:</p>
+
+  <terms>
+    <item>
+      <title>Врахування регістру</title>
+      <p>Параметр «<em>Враховувати регістр</em>» дозволяє зробити пошук чутливим до регістру. Якщо цей параметр вибрано, пошук буде чутливим до регістру. Якщо ні, пошук буде виконуватися без врахування регістру.</p>
+    </item>
+    <item>
+      <title>Лише ціле слово</title>
+      <p>Використовуйте цей параметр для пошуку певного слова без врахування фрагментів інших слів. Наприклад, якщо шукане слово – «кіт», то при цьому вибраному параметрі, буде знайдено слово «кіт», а слова «гур<em>кіт</em>» та «ма<em>кіт</em>ра» – ні.</p>
+    </item>
+    <item>
+      <title>Пошук в зворотному напрямку</title>
+      <p>Ця команда діє аналогічно команді «Знайти попереднє». Якщо потрібно пройтися по результатам пошуку з кінця до початку, виберіть дану опцію.</p>
+    </item>
+    <item>
+      <title>Перейти до початку</title>
+      <p>Якщо параметр «<app>Перейти до початку</app>» увімкнено, «<app>gedit</app>» знову почне пошук/заміну з початку файлу, після того як буде досягнуто кінця файлу. Це забезпечує виконання пошуку/заміни по всьому файлові.</p>
+    </item>
+  </terms>
+
+</section>
+
+<section id="escape-sequences">
+  <title>Використання керівних послідовностей</title>
+
+  <p>You can use <em>escape sequences</em> to search for line breaks, carriage
+  returns, and tabs.</p>
+
+  <terms>
+    <item>
+      <title>\n</title>
+      <p>Символ нового рядка</p>
+    </item>
+    <item>
+      <title>\r</title>
+      <p>Символ повернення каретки</p>
+    </item>
+    <item>
+      <title>\t</title>
+      <p>Символ табуляції</p>
+    </item>
+  </terms>
+
+  <p>Якщо потрібно шукати «<output>\</output>» (зворотню похилу риску) або яку-небудь керівну послідовність в тексті, то потрібно екранувати зворотню похилу риску додатковою зворотною похилою рискою. Наприклад, щоб шукати «<input>\</input>», потрібно ввести «<input>\\</input>» в пошукове поле або поле заміни. Таким самим чином можна шукати керівні послідовності: для пошуку чи заміни на «<input>\n</input>», використовуйте «<input>\\n</input>».</p>
+
+</section>
+
+</page>

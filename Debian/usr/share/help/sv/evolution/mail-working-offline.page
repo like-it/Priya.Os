@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-working-offline" xml:lang="sv">
+
+  <info>
+    <desc>Arbeta med din e-post medan du inte är ansluten till nätverket.</desc>
+<!-- TODO:POST-3-8: Offline work for web calendars etc also exists => create index page for Offline working? -->
+    <link type="guide" xref="index#mail-basic"/>
+
+    <revision pkgversion="3.7.4" version="0.3" date="2013-01-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-send.html.en#usage-mail-getnsend-offline -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Arbeta frånkopplad</title>
+
+<p>Frånkopplat läge hjälper dig att kommunicera med fjärrlagringssystem för e-post såsom GroupWise, IMAP eller Exchange, i situationer där du inte är ansluten till nätverket hela tiden. <app>Evolution</app> håller en lokal kopia av en eller flera mappar för att du ska kunna skriva meddelanden, lagra dem i din utkorg och sedan skicka dem nästa gång som du ansluter till nätverket.</p>
+
+<note style="warning"><p><app>Evolutions</app> påtvingade frånkopplade läge gäller endast för e-post och gäller inte för kontakter eller kalendrar.</p></note>
+
+<p>POP-e-post hämtar ner alla meddelanden till ditt lokala system, men andra anslutningar hämtar vanligtvis bara rubrikerna och hämtar resten först när du vill läsa meddelandet. Innan du tvingar <app>Evolution</app> att vara frånkopplat, kommer <app>Evolution</app> att hämta de olästa meddelandena från de mappar du har valt att lagra.</p>
+
+<section id="mark-folders">
+<title>Markera mappar för frånkopplad användning</title>
+<p>För att markera en e-postmeddelandemapp för användning i frånkopplat läge använd,</p>
+<steps>
+<item><p>Högerklicka på mappen, klicka sedan på <gui>Inställningar</gui>.</p></item>
+<item><p>Klicka på <gui>Kopiera mappinnehåll lokalt för frånkopplad användning</gui>.</p></item>
+</steps>
+</section>
+
+<section id="sync-for-offline">
+<title>Synkronisera meddelanden för frånkopplad användning</title>
+<p>Din anslutningsstatus visas som en liten ikon i det nedre vänstra hörnet i <app>Evolutions</app> huvudfönster. När du är ansluten visar den två anslutna kablar. När du påtvingar frånkopplat läge genom att klicka på ikonen eller via <guiseq><gui>Arkiv</gui><gui>Arbeta frånkopplad</gui></guiseq>, så separeras kablarna. Du kommer att tillfrågas om huruvida du vill frånkopplas omedelbart eller om du vill synkronisera mappar lokalt innan du blir frånkopplad.</p>
+<p>För att hämta meddelanden för frånkopplade åtgärder utan att omedelbart koppla ifrån, välj <guiseq><gui>Arkiv</gui><gui>Hämta ner meddelanden för frånkopplad användning</gui></guiseq>.</p>
+</section>
+
+<section id="network-manager-integration">
+<title>Automatisk hantering av nätverkstillstånd</title>
+<p><app>Evolution</app> förstår automatiskt nätverkstillståndet och agerar därefter. <app>Evolution</app> växlar till exempel till frånkopplat läge när nätverket går ner och ansluter automatiskt när nätverket är uppe igen.</p>
+</section>
+
+</page>

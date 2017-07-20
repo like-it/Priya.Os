@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="misc-key-backup" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+    <link type="guide" xref="index#ssh-keys"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Mantener una copia de sus claves en un dispositivo externo.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Hacer una copia de respaldo segura de sus claves</title>
+
+  <p>Siempre es recomendable guardar una copia de sus claves en un dispositivo de almacenamiento externo, como una memoria USB. En este caso, el dispositivo se debe bloquear o guardar en un sitio seguro. De este modo, siempre tendrá una copia de la clave si se rompe el equipo o si los datos del equipo se corrompen por alguna razón.</p>
+
+  <steps>
+    <title>Para respaldar sus claves:</title>
+    <item>
+      <p>Exporte sus archivos de claves:</p>
+      <steps>
+        <item><p><link xref="pgp-export">Exportar sus claves PGP</link>.</p></item>
+        <item><p><link xref="ssh-export">Exportar sus claves SSH</link>.</p></item>
+      </steps>
+    </item>
+    <item>
+      <p>Copie los archivos exportados a un disco externo.</p>
+    </item>
+  </steps>
+</page>

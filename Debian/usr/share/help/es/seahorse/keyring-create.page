@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="keyring-create" xml:lang="es">
+
+  <info>
+    <link type="seealso" xref="keyring-update-password"/>
+    <link type="guide" xref="index#passwords" group="#first"/>
+
+    <revision pkgversion="3.14" date="2014-10-26" status="candidate"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Usar depósitos de claves para agrupar las contraseñas guardadas.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Crear un depósito de claves</title>
+
+  <p>Use <link xref="keyring">depósitos de claves</link> para agrupar las contraseñas relacionadas. Puede proteger su depósito de claves con una contraseña.</p>
+
+  <steps>
+    <title>Crear un depósito de contraseñas nuevo:</title>
+    <item>
+      <p>Seleccione <guiseq><gui style="menu">Archivo</gui> <gui style="menuitem">Nuevo…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Elija <gui>Depósito de contraseñas</gui> y pulse <gui style="button">Continuar</gui>.</p>
+    </item>
+    <item>
+      <p>Elija un nombre para el depósito de claves y pulse <gui style="button">Aceptar</gui> para continuar.</p>
+    </item>
+    <item>
+      <!-- TODO: make shorter -->
+      <p>Para proteger su depósito de claves con una contraseña, elija una contraseña y escríbala dos veces para confirmar su elección. Deje ambos campos en blanco si quiere que el depósito de claves permanezca desbloqueado en todo momento.</p>
+      <!--If you want your keyring to be protected with a password, chose one
+      now. If you do not with to use a password, leave these fields blank. This
+      is the password which you will need to use to unlock the keyring.</p>-->
+    </item>
+    <item>
+      <p>Pulse <gui style="button">Continuar</gui> para terminar de crear el depósito de claves. Si no lo ha protegido con una contraseña, necesitará confirmar que quiere que sea así.</p>
+    </item>
+  </steps>
+
+  <p>El nuevo depósito se listará bajo <gui>Contraseñas</gui>.</p>
+
+</page>

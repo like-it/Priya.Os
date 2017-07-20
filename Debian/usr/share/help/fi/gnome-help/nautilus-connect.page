@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Katsele ja muokkaa toisella tietokoneella olevia tiedostoja FTP:n, SSH:n, Windows-levyjaon tai WebDAVin kautta.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Selaa palvelimen verkkojaon tiedostoja</title>
+
+<p>Voit yhdistää palvelimeen tai levyjakoon selataksesi kohteessa olevia tiedostoja aivan kuin ne olisivat omalla tietokoneellasi. Tämä on kätevä tapa lähettää tiedostoja tai ladata tiedostoja internetistä tai paikallisesta verkosta.</p>
+
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
+
+<steps>
+  <title>Yhdistä tiedostopalvelimeen</title>
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
+   sidebar.</p>
+  </item>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
+  <note>
+    <p>If you have connected to the server before, you can click on it in the
+    <gui>Recent Servers</gui> list.</p>
+  </note>
+  </item>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>Writing URLs</title>
+
+<p>A <em>URL</em>, or <em>uniform resource locator</em>, is a form of address
+ that refers to a location or file on a network. The address is formatted like this:</p>
+  <example>
+    <p><sys>scheme://servername.example.com/folder</sys></p>
+  </example>
+<p>The <em>scheme</em> specifies the protocol or type of server. The
+  <em>example.com</em> portion of the address is called the <em>domain name</em>.
+  If a username is required, it is inserted before the server name:</p>
+  <example>
+    <p><sys>scheme://username@servername.example.com/folder</sys></p>
+  </example>
+<p>Some schemes require the port number to be specified. Insert it after the domain name:</p>
+  <example>
+    <p><sys>scheme://servername.example.com:port/folder</sys></p>
+  </example>
+<p>Below are specific examples for the various server types that are supported.</p>
+</section>
+
+<section id="types">
+ <title>Palvelintyyppejä</title>
+
+<p>You can connect to different types of servers. Some servers are public,
+   and allow anybody to connect. Other servers require you to log in with a
+   username and password.</p>
+<p>Sinulla ei välttämättä ole riittäviä oikeuksia tiettyjen tiedostoihin liittyvien asioiden tekemiseksi. Esimerkiksi julkisilla FTP-palvelimilla et mitä luultavimmin pysty poistamaan tiedostoja.</p>
+<p>The URL you enter depends on the protocol that the
+  server uses to export its file shares.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>Jos sinulla on <em>secure shell</em> -tili, on se suositeltava yhteystapa. Monet verkkopalveluja tarjoavat yritykset ja yhteisöt antavat SSH-tilin salatun tiedostosiirron mahdollistamiseksi. SSH-palvelimet vaativat aina sisäänkirjautumisen.</p>
+  <p>Tyypillinen SSH-osoite näyttää tältä:</p>
+  <example>
+    <p><sys>ssh://tunnus@palvelin.esimerkkiosoite.fi/kansio</sys></p>
+  </example>
+
+  <p>Kun käytät SSH:ta, kaikki tiedot (mukaan lukien salasanasi) salataan, eivätkä muut verkkoa käyttävät näe lähettämiäsi tai vastaanottamiasi tietoja.</p>
+</item>
+<item>
+  <title>FTP (sisään kirjautumisen vaativa)</title>
+  <p>FTP on yleinen tapa siirtää tiedostoja internetissä. Moni palvelin suosii SSH:ta tiedostosiirroissa, koska FTP-liikenne ei ole oletuksena salattu. Jotkin palvelimet vaativat edelleen FTP-yhteyden tiedostojen siirtämiseksi. Sisäänkirjautumisen vaativat FTP-palvelimet mahdollistavat yleensä tiedostojen poistamisen ja lähettämisen.</p>
+  <p>Tyypillinen FTP-osoite näyttää tältä:</p>
+  <example>
+    <p><sys>ftp://tunnus@ftp.esimerkkiosoite.fi/polku/</sys></p>
+  </example>
+</item>
+<item>
+  <title>Julkinen FTP</title>
+  <p>Sites that allow you to download files will sometimes provide
+  public or anonymous FTP access. These servers do not require a
+  username and password, and will usually not allow you to delete
+  or upload files.</p>
+  <p>Tyypillinen anonyymi FTP-osoite näyttää tältä:</p>
+  <example>
+    <p><sys>ftp://ftp.esimerkkiosoite.fi/polku/</sys></p>
+  </example>
+  <p>Some anonymous FTP sites require you to log in with a
+  public username and password, or with a public username using
+  your email address as the password. For these servers, use the
+  <gui>FTP (with login)</gui> method, and use the credentials
+  specified by the FTP site.</p>
+</item>
+<item>
+  <title>Windows-jako</title>
+  <p>Windows-tietokoneet käyttävät suljettua protokollaa tiedostojen jakamiseen paikallisverkossa. Windows-verkossa olevat tietokoneet liitetään toisinaan osaksi <em>toimialuetta</em>, jolloin tietokoneita ja niiden jakoja on helpompi hallita. Jos sinulla on soveltuvat oikeudet etäkoneeseen, voit yhdistää Windows-jakoon tiedostonhallintaa käyttäen.</p>
+  <p>Tyypillisen Windows-jaon osoite näyttää tältä:</p>
+  <example>
+    <p><sys>smb://palvelin/Jako</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV ja salattu WebDAV</title>
+  <p>Internetissä käytettyyn HTTP-protokollaan perustuvaa WebDAVia käytetään toisinaan tiedostojen jakamiseen paikallisverkossa ja tiedostojen varastointiin internetissä. Käytäthän salattua yhteyttä, jos käyttämäsi WebDAV-palvelin tukee sitä. Salattu WebDAV-yhteys käyttää vahvaa SSL-salausta, jolloin muut käyttäjät eivät näe salasanaasi.</p>
+  <p>Tyypillinen WebDAV-osoite näyttää tältä:</p>
+  <example>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS-jako</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>Tyypillisen NFS-jaon osoite näyttää tältä:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

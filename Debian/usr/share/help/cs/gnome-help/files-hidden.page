@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-hidden" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-29" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak učinit soubor neviditelným, abyste jej neviděli ve správci souborů.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Skrytí souboru</title>
+
+  <p>Správce souborů <app>Soubory</app> poskytuje možnost skrýt a odhalit soubory, které jsou určené jako skryté. Když je soubor určený jako skrytý, normálně se ve správci souborů nezobrazí, ale ve své složce se stále nachází.</p>
+
+  <p>Když chcete souboru skrýt, <link xref="files-rename">přejmenujte jej</link> s <file>.</file> na začátku názvu souboru. Například, abyste skryli soubor s názvem <file>příklad.txt</file>, museli byste jej přejmenovat na <file>.příklad.txt</file>.</p>
+
+<note>
+  <p>Složky můžete skrývat úplně stejným způsobem, jako soubory. Stačí přidat znak <file>.</file> na začátek názvu složky.</p>
+</note>
+
+<section id="show-hidden">
+ <title>Zobrazení všech skrytých souborů</title>
+
+  <p>Jestli chcete vidět všechny skryté soubory ve složce, přejděte do dané složky a klikněte na tlačítko voleb zobrazení na nástrojové liště a zaškrtněte <gui>Zobrazovat skryté soubory</gui>, nebo zmáčkněte <keyseq><key>Ctrl</key><key>H</key></keyseq>. Uvidíte všechny skryté soubory, dohromady spolu s běžnými soubory, které skryté nejsou.</p>
+
+  <p>Pro opětovné skrytí těchto souborů buď klikněte na tlačítko voleb zobrazenína nástrojové liště a zrušte zaškrtnutí <gui>Zobrazovat skryté soubory</gui> nebo zmáčkněte znovu <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+
+</section>
+
+<section id="unhide">
+ <title>Odkrytí souborů</title>
+
+  <p>Abyste odhalili skryté soubory, přejděte do složky obsahující skryté soubory a klikněte na nástrojové liště na tlačítko voleb zobrazení a zaškrtněte <gui>Zobrazovat skryté soubory</gui>. Po té můžete najít skrytý soubor a přejmenovat jej tak, že nebude mít <file>.</file> na začátku názvu. Například, když chcete aby nebyl skrytý soubor <file>.příklad.txt</file>, měli byste jej přejmenovat na <file>příklad.txt</file>.</p>
+
+  <p>Až máte soubor přejmenovaný, buď klikněte na nástrojové liště na tlačítko voleb zobrazení a znovu klikněte na <gui>Zobrazovat skryté soubory</gui> nebo zmáčkněte <keyseq><key>Ctrl</key><key>H</key></keyseq>, aby se ostatní skryté soubory opět skryly.</p>
+
+  <note><p>Výchozí chování je, že skryté soubory uvidíte ve správci souborů, jen dokud jej nezavřete. Při jeho příštím spuštění se opět zobrazovat nebudou. Toto chování můžete změnit, aby se zobrazovaly nastálo, viz <link xref="nautilus-views"/>.</p></note>
+
+  <note><p>Většina skrytých souborů má <file>.</file> na začátku svého názvu, ale existují i takové, které mají <file>~</file> na konci svého názvu. Jedná se o záložní soubory. Další informace viz <link xref="files-tilde"/>.</p></note>
+
+</section>
+
+</page>

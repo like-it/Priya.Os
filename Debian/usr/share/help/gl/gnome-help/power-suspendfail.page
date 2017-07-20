@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
+
+    <credit type="author">
+      <name>Proxecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Porque o meu computador non se acende logo de ir suspendelo?</title>
+
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
+
+<section id="resume">
+  <title>O meu computador está durmindo e non se esperta</title>
+  <p>Se suspende o seu computador e logo preme unha tecla ou preme co seu rato, debería espertarse e mostrar unha pantalla que lle pregunta polo seu contrasinal. Se isto non ocorre, tente presinando o botón de acendido (non o manteña premido, prémao só unha vez).</p>
+  <p>Se isto non funciona, asegúrese de que o monitor do seu computador está acendido e tente premer unha tecla novamente.</p>
+  <p>Como último recurso, apague o computador mantendo premido o botón de acendido de 5 a 10 segundos. Ao facelo perderá os seus traballos sen gardar. Logo poderá acender o equipo novamente.</p>
+  <p>Se isto ocorre sempre que pon o seu computador a durmir, pode que a suspensión non funcione co seu hardware.</p>
+  <note style="warning">
+    <p>Se o seu computador gasta enerxía e non ten unha fonte de alimentación alternativa (como unha batería), apagarase.</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>Non teño conexión sen fíos á rede cando desperto o meu computador</title>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
+  <p>Se o dispositivo ten algún interruptor de acendido, probe a apagalo e volver a acendelo. En moitas ocasións, o dispositivo volverá a funcionar de novo. Se se conecta mediante un cabo USB ou similar, desconécteo e vólvao a conectar, a ver se funciona.</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
+</section>
+
+</page>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="fr">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Contributeurs au wiki de la documentation Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Même si votre adaptateur sans fil est connecté, il se peut qu'il ne soit pas bien reconnu par l'ordinateur.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dépannage de la connexion sans fil</title>
+  <subtitle>Vérifier si l'adaptateur sans fil a été reconnu</subtitle>
+
+  <p>Même si votre adaptateur sans fil est connecté, il se peut qu'il ne soit pas bien reconnu comme un périphérique réseau par l'ordinateur. Cette étape est une vérification de la compatibilité de votre périphérique.</p>
+
+  <steps>
+    <item>
+      <p>Ouvrez un terminal, saisissez <cmd>lshw -C network</cmd> et appuyez sur <key>Entrée</key>. Si cette commande retourne une erreur, installez le programme <app>lshw</app> sur votre ordinateur.</p>
+    </item>
+    <item>
+      <p>Regardez les informations qui s'affichent, et recherchez la section <em>Wireless interface</em>. Si votre adaptateur sans fil est reconnu correctement, vous devriez voir s'afficher quelque chose de similaire (mais non d'identique) à ceci :</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>S'il y a un périphérique sans fil dans la liste, continuez par l'<link xref="net-wireless-troubleshooting-device-drivers">étape sur les pilotes de périphérique</link>.</p>
+      <p>S'il n'y a <em>pas</em> de périphérique sans fil dans la liste, les étapes suivantes dépendront du type de périphérique que vous utilisez. Reportez-vous à la section ci-dessous qui traite du type d'adaptateur sans fil dont votre ordinateur dispose (<link xref="#pci">PCI interne</link>, <link xref="#usb">USB</link>, <link xref="#pcmcia">PCMCIA</link>).</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>Adaptateur sans fil PCI (interne)</title>
+
+  <p>Les adaptateurs PCI internes sont les plus utilisés et sont présents dans la plupart des ordinateurs portables de ces dernières années. Pour vérifier que votre adaptateur PCI interne a été reconnu :</p>
+
+  <steps>
+    <item>
+      <p>Ouvrez un terminal, saisissez <cmd>lspci</cmd> et appuyez sur <key>Entrée</key>.</p>
+    </item>
+    <item>
+      <p>Regardez dans la liste des périphériques affichés et recherchez ceux qui sont appelés <code>Network controller</code> ou <code>Ethernet controller</code>. Plusieurs périphériques peuvent être qualifiés de cette façon ; celui qui correspond à votre adaptateur sans fil doit inclure des termes comme <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> ou <code>802.11</code>. Voici un exemple du retour de la commande :</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Si vous avez trouvé votre adaptateur sans fil dans la liste, allez à l'<link xref="net-wireless-troubleshooting-device-drivers">étape sur les pilotes de périphérique</link>. Si vous n'avez rien trouvé qui ressemble à votre adaptateur sans fil, consultez <link xref="#not-recognized">les instructions ci-dessous</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>Adaptateur sans fil USB</title>
+
+  <p>Les adaptateurs sans fil qui se branchent dans un port USB de votre ordinateur sont moins courants. Ils se branchent directement dans un port USB ou sont reliés à lui par un câble USB. Les adaptateurs 3G/mobiles à large bande ressemblent beaucoup à un adaptateur sans fil (Wifi), donc vérifiez bien que votre adaptateur USB ne soit pas en fait un adaptateur 3G. Pour vérifier si votre adaptateur sans fil USB a été reconnu :</p>
+
+  <steps>
+    <item>
+      <p>Ouvrez un terminal, saisissez <cmd>lsusb</cmd> et appuyez sur <key>Entrée</key>.</p>
+    </item>
+    <item>
+      <p>Regardez dans la liste des périphériques qui s'affiche et recherchez-en un qui semble se référer à un périphérique ou un réseau sans fil. Celui qui correspond à votre adaptateur devrait contenir des termes comme <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> ou <code>802.11</code>. Voici un exemple du retour de cette commande :</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>Si vous avez trouvé votre adaptateur sans fil dans la liste, allez à l'<link xref="net-wireless-troubleshooting-device-drivers">étape sur les pilotes de périphérique</link>. Si vous n'avez rien trouvé qui ressemble à votre adaptateur sans fil, consultez <link xref="#not-recognized">les instructions ci-dessous</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Périphérique PCMCIA</title>
+
+  <p>Les adaptateurs sans fil PCMCIA sont typiquement des cartes rectangulaires qui se branchent dans une fente sur le côté de votre ordinateur portable. Ils sont très répandus sur les vieux ordinateurs. Pour vérifier si votre adaptateur PCMCIA a été reconnu :</p>
+
+  <steps>
+    <item>
+      <p>Démarrez votre ordinateur <em>sans</em> l'adaptateur sans fil branché,</p>
+    </item>
+    <item>
+      <p>ouvrez un terminal et saisissez ce qui suit, puis appuyez sur <key>Entrée</key> :</p>
+      <code>tail -f /var/log/messages</code>
+      <p>Cette commande affiche une liste de messages concernant le matériel composant votre ordinateur et se met à jour automatiquement dès que quelque chose change dans la composition.</p>
+    </item>
+    <item>
+      <p>Introduisez votre adaptateur sans fil dans le logement PCMCIA et regardez ce qui change dans la fenêtre du terminal. Les changements doivent inclure des informations concernant votre adaptateur sans fil. Recherchez-les pour les identifier.</p>
+    </item>
+    <item>
+      <p>Pour arrêter ce processus dans le terminal, appuyez sur <keyseq><key>Ctrl</key><key>C</key></keyseq>. Fermez ensuite le terminal.</p>
+    </item>
+    <item>
+      <p>Si vous avez trouvé des informations sur votre adaptateur sans fil, allez à l'<link xref="net-wireless-troubleshooting-device-drivers">étape pilotes de périphériques</link>. Si vous n'avez rien trouvé, consultez les <link xref="#not-recognized">instructions ci-dessous</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>Adaptateur sans fil non reconnu</title>
+
+  <p>If your wireless adapter was not recognized, it might not be working
+  properly or the correct drivers may not be installed for it. How you check to
+  see if there are any drivers you can install will depend on which Linux
+  distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
+
+  <p>Pour obtenir une aide plus spécifique, consultez le site Web de votre distribution. Pensez aussi aux listes de diffusion et aux forums d'aide pour poser des questions sur votre adaptateur sans fil.</p>
+
+</section>
+
+</page>

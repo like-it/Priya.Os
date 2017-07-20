@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+
+case "$1" in
+    purge|remove)
+
+    #
+    # rebuild icon cache
+    #
+    if [ -x gtk-update-icon-cache ] ; then
+	gtk-update-icon-cache /usr/share/icons/hicolor
+    fi
+
+esac
+
+

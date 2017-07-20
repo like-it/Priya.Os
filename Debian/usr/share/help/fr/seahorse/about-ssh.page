@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="about-ssh" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="concepts" group="first"/>
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Les clés SSH sont utilisées pour l'accès à distance d'un ordinateur après qu'une connexion sécurisée ait été établie.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Qu'est-ce qu'une clé Secure Shell ?</title>
+
+  <p>Une <em>clé Secure Shell</em>, le plus souvent appelée <em>clé SSH</em>, vous permet de créer une connexion sécurisée sur un réseau non-sécurisé.</p>
+
+  <list>
+    <title>Une clé SSH est composée de deux parties :</title>
+    <item><p>Une clé publique qui est à la disponibilité de tous.</p></item>
+    <item><p>Une clé privée qui est gardée secrète. La clé privée est utilisée pour le déchiffrement de messages chiffrés à l'aide d'une clé publique correspondante.</p></item>
+  </list>
+
+  <p>L'avantage d'utiliser une <em>clé SSH</em> pour la création d'une connexion entre ordinateurs est que seulement la <em>clé publique</em> a besoin d'être échangée via le réseau. Les transmissions chiffrées avec une <em>clé publique</em> peuvent uniquement être décodées avec la <em>clé privée</em> correspondante et un mot de passe. Seule la clé publique est échangée sur le réseau. Le mot de passe correspondant à la clé est quant à lui maintenu secret.</p>
+
+</page>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="hu">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Világháló böngészése</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">Ismertető a világháló böngészéséhez</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Világháló böngészése</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>Kattintson a képernyő bal felső sarkában lévő <gui>Tevékenységek</gui> menüre.</p></item>
+      <item><p>A menüből válassza az <guiseq><gui>Internet</gui><gui>Firefox</gui></guiseq> menüpontot.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>Vigye az egérmutatót a képernyő bal felső sarkában lévő <gui>Tevékenységek</gui> feliratra a <gui>Tevékenységek áttekintés</gui> megjelenítéséhez.</p></item>
+      <item><p>Válassza ki a <app>Firefox</app> ikonját a képernyő bal oldalán lévő sávból.</p></item>
+    </steps>
+
+    <note><p>A böngészőt elindíthatja a <em>Firefox</em> szó <link xref="gs-use-system-search">begépelésével</link> is a <gui>Tevékenységek áttekintésben</gui>.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>Vigye az egérmutatót a képernyő bal felső sarkában lévő <gui>Tevékenységek</gui> feliratra a <gui>Tevékenységek áttekintés</gui> megjelenítéséhez.</p></item>
+      <item><p>Válassza ki a <app>Webböngésző</app> ikonját a képernyő bal oldalán lévő sávból.</p></item>
+    </steps>
+
+    <note><p>A böngészőt elindíthatja a <em>web</em> szó <link xref="gs-use-system-search">begépelésével</link> is a <gui>Tevékenységek áttekintésben</gui>.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>Kattintson a böngészőablak tetején lévő címsorra, és kezdje el begépelni a felkeresni kívánt weboldal címét.</p></item>
+      <item><p>A webcímek begépelése keresést indít a böngésző előzményei és könyvjelzői között, így nem kell emlékeznie a pontos címre.</p>
+        <p>Ha a weboldal megtalálható az előzmények vagy a könyvjelzők között, akkor egy legördülő lista jelenik meg a címsáv alatt.</p></item>
+      <item><p>A legördülő listából a nyílbillentyűkkel gyorsan kiválaszthat egy weboldalt.</p>
+      </item>
+      <item><p>A weboldal kiválasztása után nyomja meg az <key>Enter</key> billentyűt a felkereséséhez.</p>
+      </item>
+    </steps>
+
+</page>

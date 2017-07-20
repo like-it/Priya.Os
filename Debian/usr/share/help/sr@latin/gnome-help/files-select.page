@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-select" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <credit type="author">
+      <name>Šon Mek Kens</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Pritisnite <keyseq><key>Ktrl</key><key>S</key></keyseq> da izaberete nekolik datoteka koje imaju slične nazive.</desc>
+  </info>
+
+  <title>Izaberite datoteke prema obrascu</title>
+
+  <p>Možete da izaberete datoteke u fascikli koristeći obrazac u nazivu datoteke. Pritisnite <keyseq><key>Ktrl</key><key>S</key></keyseq> da prizovete prozorče <gui>Označi stavke po uslovu</gui>. Upišite obrazac koristeći opšte delove naziva datoteke plus znakove zamene (džokere). Dostupna su dva znaka zamene:</p>
+
+  <list style="compact">
+    <item><p><file>*</file> odgovara bilo kom broju bilo kojih znakova, čak uopšte i bez znakova.</p></item>
+    <item><p><file>?</file> odgovara tačno jednom od bilo kog znaka.</p></item>
+  </list>
+
+  <p>Na primer:</p>
+
+  <list>
+    <item><p>Ako imate tekstualnu datoteku Otvorenog dokumenta, PDF datoteku, i sliku i da sve one imaju isti osnovni naziv <file>Faktura</file>, izaberite sve tri pomoću obrasca</p>
+    <example><p><file>Faktura.*</file></p></example></item>
+
+    <item><p>Ako imate neke fotografije pod nazivom <file>Letovanje-001.jpg</file>, <file>Letovanje-002.jpg</file>, <file>Letovanje-003.jpg</file>; izaberite ih sve pomoću obrasca</p>
+    <example><p><file>Letovanje-???.jpg</file></p></example></item>
+
+    <item><p>Ako imate ovakve fotografije, ali ste uredili neke od njih i dodali <file>-uređena</file> na kraj naziva datoteke fotografija koje ste uredili, izaberite uređene fotografije pomoću</p>
+    <example><p><file>Letovanje-???-uređena.jpg</file></p></example></item>
+  </list>
+
+</page>

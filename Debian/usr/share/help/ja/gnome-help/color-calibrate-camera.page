@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="color-calibrate-camera" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="color#calibration"/>
+    <link type="seealso" xref="color-calibrationtargets"/>
+    <link type="seealso" xref="color-calibrate-printer"/>
+    <link type="seealso" xref="color-calibrate-scanner"/>
+    <link type="seealso" xref="color-calibrate-screen"/>
+    <desc>Calibrating your camera is important to capture accurate colors.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>How do I calibrate my camera?</title>
+
+  <p>
+    Camera devices are calibrated by taking a photograph of a target
+    under the desired lighting conditions.
+    By converting the RAW file to a TIFF file, it can be used to
+    calibrate the camera device in the color control panel.
+  </p>
+  <p>
+    You will need to crop the TIFF file so that just the target is
+    visible. Ensure the white or black borders are still visible.
+    Calibration will not work if the image is upside-down or is
+    distorted by a large amount.
+  </p>
+
+  <note style="tip">
+    <p>
+      The resulting profile is only valid under the lighting condition
+      that you acquired the original image from.
+      This means you might need to profile several times for
+      <em>studio</em>, <em>bright sunlight</em> and <em>cloudy</em>
+      lighting conditions.
+    </p>
+  </note>
+
+</page>

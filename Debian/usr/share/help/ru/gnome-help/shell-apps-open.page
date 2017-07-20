@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-apps-open" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Шобха Тьяги (Shobha Tyagi)</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Запуск приложений из режима <gui>Обзора</gui>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Запуск приложений</title>
+
+  <p if:test="!platform:gnome-classic">Move your mouse pointer to the
+  <gui>Activities</gui> corner at the top left of the screen to show the
+  <gui xref="shell-introduction#activities">Activities</gui> overview. This is where you
+  can find all of your applications. You can also open the overview by pressing
+  the <key xref="keyboard-key-super">Super</key> key.</p>
+  
+  <p if:test="platform:gnome-classic">You can start applications from the
+  <gui xref="shell-introduction#activities">Applications</gui> menu at the top
+  left of the screen, or you can use the <gui>Activities</gui> overview by
+  pressing the <key xref="keyboard-key-super">Super</key> key.</p>
+
+  <p>Из <gui>Обзора</gui> приложения можно запускать нескольким способами:</p>
+
+  <list>
+    <item>
+      <p>Start typing the name of an application - searching begins instantly.
+      (If this doesn't happen, click the search bar at the top of the screen
+      and start typing.) If you don't know the exact name of an application, try
+      to type an related term. Click the application's icon to start it.</p>
+    </item>
+    <item>
+      <p>Значки некоторых приложений находятся в <em>боковой панели</em> — вертикальная полоса в левой части <gui>Обзора</gui>. Чтобы запустить приложение, нажмите на его значок.</p>
+      <p>Часто используемые приложения можно <link xref="shell-apps-favorites">добавить в боковую панель</link>.</p>
+    </item>
+    <item>
+      <p>Нажмите кнопку в виде сетки в нижней части боковой панели. Вы увидите популярные (часто используемые вами) приложения (если включён режим <gui style="button">популярных приложений</gui>). Если вы хотите запустить новое приложение, нажмите кнопку <gui style="button">Все</gui>, чтобы увидеть все доступные приложения. Нажмите на значок приложения, чтобы его запустить.</p>
+    </item>
+    <item>
+      <p>Приложение можно запускать на отдельном <link xref="shell-workspaces">рабочем месте</link>, перетащив значок приложения из боковой панели (или списка приложений) на одно из рабочих мест в правой части экрана. После перетаскивания приложение будет открыто в выбранном рабочем месте.</p>
+      <p>Чтобы запустить приложение на <em>новом</em> рабочем месте перетащите его значок на пустое рабочее место в нижней части переключателя рабочих мест или на небольшой зазор между рабочими местами.</p>
+    </item>
+  </list>
+
+  <note style="tip">
+    <title>Быстрое выполнение команд</title>
+    <p>Ещё один способ запуска приложений: нажмите <keyseq><key>Alt</key><key>F2</key></keyseq>, введите <em>команду</em> и нажмите <key>Enter</key>.</p>
+    <p>Например, чтобы запустить проигрыватель <app>Rhythmbox</app>, нажмите <keyseq><key>Alt</key><key>F2</key></keyseq>, введите «rhythmbox» (кавычки вводить не надо). Название приложения — это команда для запуска программы.</p>
+  </note>
+
+</page>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-delete" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-24" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Jak smazat místní kopii svých klíčů nebo klíčů, pomocí kterých komunikujete s lidmi.</desc>
+  </info>
+
+  <title>Smazání existujícího klíče</title>
+
+  <p>Pokud s někým již nadále nebudete komunikovat, můžete smazat kopii jeho klíče GnuPG ve svém počítači pomocí aplikace <app>Hesla a klíče</app>. Můžete také trvale smazat klíč, který vlastníte a který nebyl nikdy zveřejněn na serveru s klíči. Smazáním klíče GnuPG se smaže jak veřejný, tak soukromý klíč.</p>
+
+  <steps>
+    <title>Když chcete smazat klíč:</title>
+    <item>
+      <p>Vyberte klíč. (Může být potřeba zobrazit všechny klíče pomocí <guiseq><gui style="menu">Zobrazit</gui> <gui style="menuitem">Zobrazit všechny</gui></guiseq>.)</p>
+    </item>
+    <item>
+      <p>Klikněte pravým tlačítkem a zvolte <gui>Smazat</gui>. Případně můžete ke smazání použít nabídku <guiseq><gui style="menu">Upravit</gui> <gui style="menuitem">Smazat</gui></guiseq>.</p>
+      <note style="important">
+        <p>V případě, že smažete klíč GnuPG, který máte zveřejněn na serveru s klíči, smažete jen klíč ve své klíčence GnuPG, ale kopie na serveru s klíči bude stále vystavena.</p>
+        <p>Když smažete svůj klíč GnuPG, znamená to, že bude váš soukromý klíč trvale smazán, avšak váš veřejný klíč můžete stále <link xref="pgp-retrieve-remote">získat</link> ze serveru s klíči a použít jej k šifrování zpráv, které pak už ale nebudete moci číst! Abyste předešli takovémuto použití klíče, získejte jej a odvolejte. Odvolaný klíč pak <link xref="pgp-sync">synchronizujte</link> se serverem s klíči, abyste zabránili lidem v jeho použití.</p>
+        <!-- or when you <link xref="misc-key-revoke">revoke</link> it.- No
+        revoking feature yet for SSH keys/PGP master keys-->
+      </note>
+    </item>
+    <item>
+      <p>V novém dialogovém okně potvrďte smazání zaškrtnutím políčka <gui style="checkbox">Chápu, že všechny položky budou trvale smazány</gui> a vše dokončete zmáčknutím tlačítka <gui style="button">Smazat</gui>.</p>
+    </item>
+  </steps>
+
+
+</page>

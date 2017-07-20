@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Mentendő dokumentumokat, fájlokat és beállításokat tartalmazó mappák listája.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Hol találhatom a mentendő fájlokat?</title>
+
+  <p>Biztonsági mentés készítésekor a mentendő fájlok kiválasztása és megtalálása a legnehezebb lépés. Alább látható azon fontos fájlok és beállítások megtalálási helyeinek listája, amelyekről érdemes biztonsági mentést készíteni.</p>
+
+<list>
+ <item>
+  <p>Személyes fájlok (dokumentumok, zene, fényképek és videók)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Ezek általában a saját mappájában (<cmd>/home/felhasználónév</cmd>) találhatók. Az almappákban, például Asztal, Dokumentumok, Képek, Zene, Videók is lehetnek fájlok.</p>
+  <p>Ha a mentési adathordozó elegendő helyet tartalmaz (például az egy külső merevlemez), fontolja meg a saját mappájának teljes mentését. A saját mappája által felhasznált lemezterületet a <app>Lemezhasználat-elemző</app> segítségével határozhatja meg.</p>
+ </item>
+
+ <item>
+  <p>Rejtett fájlok</p>
+  <p>Alapesetben a ponttal (.) kezdődő fájl- vagy mappanevek nem láthatók. A rejtett fájlok megjelenítéséhez nyomja meg az eszköztár <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Nézetbeállítások</span></media></gui> gombját, majd válassza a <gui>Rejtett fájlok megjelenítése</gui> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>H</key></keyseq> billentyűkombinációt a fájlböngészőben. Ezeket is a többi fájlhoz hasonlóan másolhatja át a biztonsági mentésbe.</p>
+ </item>
+
+ <item>
+  <p>Személyes beállítások (asztali környezet beállításai, témák és szoftverbeállítások)</p>
+  <p>A legtöbb alkalmazás a beállításait rejtett mappákban tárolja az Ön saját mappájában (a rejtett fájlokkal kapcsolatos információkat lásd fent).</p>
+  <p>A legtöbb alkalmazásbeállítás a saját mappájának rejtett <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file> és <file>.local</file> almappáiban kerül tárolásra.</p>
+ </item>
+
+ <item>
+  <p>Rendszerszintű beállítások</p>
+  <p>A rendszer fontos részeinek beállításai nem a saját mappájában találhatók. Számos helyen fordulnak elő, de a legtöbb az <file>/etc</file> mappában. Otthoni számítógépen általában nem kell ezekről biztonsági mentést készíteni. Ha azonban kiszolgálót futtat, az azon futó szolgáltatások fájljairól készítsen mentést.</p>
+ </item>
+</list>
+
+</page>

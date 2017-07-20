@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="mail-account-manage-microsoft-exchange-evo-mapi" xml:lang="de">
+
+  <info>
+    <desc>Add and edit a Microsoft Exchange MAPI account in <app>Evolution</app>.</desc>
+
+    <link type="guide" xref="mail-account-manage-microsoft-exchange"/>
+
+    <revision pkgversion="3.7" version="0.7" date="2013-06-22" status="candidate"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Einstellungen für Exchange MAPI-Konten</title>
+
+<section id="account-editor">
+<title>Konteneditor</title>
+<p>E-Mail-Konten können hinzugefügt werden, indem Sie <guiseq><gui>Datei</gui><gui>Neu</gui><gui>E-Mail-Konto</gui></guiseq>  oder <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui><gui>E-Mail-Konten</gui><gui style="button">Hinzufügen</gui></guiseq> wählen. Die Schritte sind nahezu identisch mit dem <link xref="intro-first-run">Erste-Schritte-Assistent</link> mit der Ausnahme, dass nicht gefragt wird, ob Sie Daten von anderen Anwendungen importieren oder aus einer Sicherungsdatei wiederherstellen möchten.</p>
+<p>E-Mail-Konten können bearbeitet werden unter <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui><gui>E-Mail-Konten</gui><gui style="button">Bearbeiten</gui></guiseq>, oder indem Sie auf den entsprechenden übergeordneten Knoten in der Ordnerliste mit der rechten Maustaste klicken und <gui>Eigenschaften</gui> wählen.</p>
+<p>Es gibt die folgenden Einstellmöglichkeiten beim Bearbeiten vorhandener Konten:</p>
+
+<!-- As the "Identity" section is identical in all account pages, it is centrally in one file included 
+via XInclude. See +http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-mail-account-identity.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:section)"/>
+
+<section id="receiving-email">
+<info>
+  <title type="link">Nachrichten empfangen und Empfangsoptionen (für Exchange MAPI-Konten)</title>
+</info>
+<title>Nachrichten empfangen und Empfangsoptionen</title>
+</section>
+
+<section id="defaults">
+<info>
+  <title type="link">Voreinstellungen (Exchange MAPI-Konten)</title>
+</info>
+<title>Vorgaben</title>
+</section>
+
+<section id="exchange-settings">
+<title>Exchange-Einstellungen</title>
+<p>In diesem Bereich können Sie die Größe aller Exchange-Ordner sehen.</p>
+</section>
+
+<section id="security">
+<info>
+  <title type="link">Sicherheit (Exchange MAPI-Konten)</title>
+</info>
+<title>Sicherheit</title>
+</section>
+
+</section> <!-- end "account editor" section, now list any account settings stuff related to this account type outside of it -->
+
+<!-- <section id="other-settings">
+<info>
+  <title type="link">Other settings (Exchange MAPI accounts)</title>
+</info>
+<title>Other settings</title>
+<p>Other account related settings that are not located in the <gui>Account Editor</gui>:</p>
+</section> -->
+
+</page>

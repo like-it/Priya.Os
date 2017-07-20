@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="pgp-sign" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision pkgversion="3.9" date="2013-08-29" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Αν εμπιστεύεστε ένα κλειδί, μπορείτε να το υπογράψετε.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα του GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Υπογραφή κλειδιών</title>
+
+  <p>Για να δείξετε ότι εμπιστεύεστε και εγγυάσθε για την γνησιότητα του κλειδιού κάποιου, μπορείτε να την υπογράψετε. Το κλειδί κάποιου πρέπει να υπογραφεί μόνο αφού συγκρίνετε το <link xref="pgp-userid">αναγνωριστικό χρήστη</link> με το κλειδί με μια έγκυρη απόδειξη της ταυτότητάς του, όπως ένα διαβατήριο, άδεια οδήγησης, ή παρόμοια. Αν δύο αναγνωριστικά ταιριάζουν, το κλειδί θεωρείται αξιόπιστο.</p>
+
+  <steps>
+    <title>Για να υπογράψετε ένα κλειδί:</title>
+    <item>
+      <p>Εισάγετε το <link xref="pgp-retrieve-remote">απομακρυσμένο κλειδί</link> ή <link xref="pgp-import">αρχείο κλειδιών</link> που περιέχει το κλειδί προς υπογραφή στο <app>Κωδικοί πρόσβασης και κλειδιά</app>.</p>
+    </item>
+    <item>
+      <p>Από τον κατάλογο <gui>κλειδιά GnuPG</gui> επιλέξτε το εισαγόμενο κλειδί.</p>
+    </item>
+    <item>
+      <p>Κάντε δεξί κλικ το κλειδί και επιλέξτε <guiseq><gui>Ιδιότητες</gui><gui>Έμπιστο</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Πατήστε το πλήκτρο <gui style="button">Υπογραφή αυτού του κλειδιού</gui>.</p>
+    </item>
+    <item>
+      <p>Ανάλογα με το πόσο προσεκτικά έχετε σημειώσει το κλειδί, επιλέξτε ένα από τα <gui style="radiobutton">Καθόλου</gui>, <gui style="radiobutton">Ευκαιριακά</gui> ή <gui style="radiobutton">Πολύ προσεκτικά</gui>.</p>
+    </item>
+    <item>
+      <p>Αποφασίστε αν θέλετε να ανακαλέσετε την υπογραφή σας σε μια μεταγενέστερη ημερομηνία και αν θέλετε να κάνετε την υπογραφή σας δημόσια, σημειώνοντας τα παρεχόμενα πλαίσια ελέγχου.</p>
+    </item>
+    <item>
+      <p>Όταν κατέχετε περισσότερα από ένα κλειδί PGP, επιλέξτε το κλειδί με το οποίο θέλετε να υπογράψετε, από τον κατάλογο δίπλα στο <gui>Υπογράφων</gui>.</p>
+    </item>
+    <item>
+      <p>Πατήστε το πλήκτρο <gui style="button">Υπογραφή</gui> για να τελειώσετε.</p>
+    </item>
+  </steps>
+
+  <note style="info">
+    <title>Μπορώ να υπογράψω τα δικά μου κλειδιά;</title>
+    <p>Όταν <link xref="pgp-create">δημιουργείτε</link> ένα νέο <gui>κλειδί GnuPG</gui>, υπογράφεται αυτόματα από εσάς. Κάθε νέο υποκλειδί που <link xref="subkeys-add">δημιουργήθηκε</link> χρησιμοποιώντας ένα <gui>κλειδί GnuPG</gui>, θα υπογράφεται επίσης αυτόματα.</p>
+  </note>
+
+</page>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu wiki 文档贡献者</name>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>有些驱动程序无法同个别型号的无线适配器很好地工作，所以您可能需要寻找一个更好的替代品。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>无线网络故障排除</title>
+
+  <subtitle>确保所需的设备驱动已经安装</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>在这步中可以检查您的无线适配器驱动是否正常工作。<em>设备驱动</em> 是一种帮助电脑同硬件设备协同工作的软件。尽管电脑已经识别出无线适配器，设备驱动仍可能存在问题。您可能找到其他能够工作的驱动，请尝试下列几个：</p>
+
+  <list>
+    <item>
+      <p>Check to see if your wireless adapter is on a list of supported
+      devices.</p>
+      <p>Most Linux distributions keep a list of wireless devices that they
+      have support for. Sometimes, these lists provide extra information on how
+      to get the drivers for certain adapters working properly. Go to the list
+      for your distribution (for example,
+      <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>,
+      <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>,
+      <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> or
+      <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>)
+      and see if your make and model of wireless adapter is listed. You may be
+      able to use some of the information there to get your wireless drivers
+      working.</p>
+    </item>
+    <item>
+      <p>Look for restricted (binary) drivers.</p>
+      <p>许多 Linux 发行版中附带<em>免费</em>和<em>开源</em>的设备驱动，这是因为它们不能分发带有专利或闭源驱动程序。如果无线网卡只有非开源的或“二进制”版本驱动，默认情况下它是不会被安装的，在这各情况下，您可以到设备制造商网站上去寻找是否有 Linux 驱动。</p>
+      <p>一些 Linux 发行版带有工具软件，可以为您下载受限驱动。如果您的发行版也有，请使用它来搜索是否有可用的无线设备驱动。</p>
+    </item>
+    <item>
+      <p>Use the Windows drivers for your adapter.</p>
+      <p>通常情况下您无法在一个操作系统上使用为另一个操作系统设计的设备驱动程序(例如不能在 Linux 上使用 Windows 驱动程序)。这是因为不同的操作系统同硬件的交互方式存在差别。然而，对于无线适配器来说，您可以安装名为 <em>NDISwrapper</em> 的兼容层使得 Windows 无线驱动可以为 Linux 工作。由于多数网卡都提供了 Windows 驱动，NDISwrapper 对 Linux 用户而言便极具价值。您可以查看 NDISwrapper 的<link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">主页</link>了解其使用方法。请注意并不是全部无线网卡驱动都可以通过 NDISwrapper 运行。</p>
+    </item>
+  </list>
+
+  <p>如果这些选项都不能解决，您可以要换一个其他无线设备，看看是否能正常工作。USB 无线适配器通常很便宜，可以接到任何计算机上。但是，您在购买前，应当检查它是否跟您的 Linux 发行版相兼容。</p>
+
+</page>

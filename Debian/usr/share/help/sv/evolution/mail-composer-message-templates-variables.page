@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-composer-message-templates-variables" xml:lang="sv">
+
+  <info>
+   <desc>Konfigurera variabler i mallar och återanvänd objekt från meddelandet du svarar på</desc>
+   
+   <link type="guide" xref="mail-composer-message-templates#options"/>
+
+ <revision pkgversion="3.5.90" version="0.3" date="2012-08-17" status="draft"/>
+ <credit type="author">
+   <name its:translate="no">Andre Klapper</name>
+   <email its:translate="no">ak-47@gmx.net</email>
+ </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/b1dlaazl.html.en -->
+ </credit>
+ 
+ <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+     
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Användning av variabler i mallar</title>
+
+<section id="configure">	
+<title>Konfigurera variabler för meddelandemallar</title>
+<steps>
+<item><p>Välj <guiseq><gui>Redigera</gui><gui>Insticksmoduler</gui></guiseq>.</p></item>
+<item><p>Klicka på <gui>Mallar</gui>.</p></item>
+<item><p>Klicka på fliken <gui>Konfiguration</gui>.</p></item>
+<item><p>Du kan lägga till, redigera eller ta bort nyckel/värde-par. Du kan ange hur många nyckel/värde-par som helst.</p></item>
+</steps>
+ <p>I vilken mall som helst kommer varje förekomst av varje $nyckel att ersättas av värdet den har i konfigurationen. Om du till exempel ställer in nyckeln som Chef och värdet som Åsa kommer varje förekomst av $Chef att ersättas av Åsa i meddelandet.</p>
+ <p>Antag att du har 1000 meddelandemallar med din nuvarande chefs namn i dem. När den nya chefen ersätts av en ny är det inte enkelt för dig att manuellt ersätta chefens namn i alla 1000 meddelandena. Om meddelandena har ett $Chef nyckelvärde kan du återställa värdet i Konfigurationsfliken i denna insticksmodul.</p>
+ <p>Som standard kommer alla miljövariabler att användas som nyckel/värde-par. En förekomst av $miljö_variabel ersätts med dess värde. En förekomst av till exempel $PATH i dina mallar ersätts av dess värde när mallen används.</p>
+ <p>Ersättningsprocessen använder följande rangordning:</p>
+ <steps>
+  <item>
+<p>$nyckel ersätts av värdet som ställts in för den i Konfigurationsfliken i insticksmodulen Mallar.</p>
+  </item>
+  <item>
+<p>Om nyckeln inte hittas ersätts värdet för dess miljövariabel.</p>
+  </item>
+  <item>
+<p>Om nyckeln varken är ett konfigurationsalternativ eller en miljövariabel görs inga ändringar.</p>
+  </item>
+ </steps>
+</section>
+
+<!-- as per https://bugzilla.gnome.org/show_bug.cgi?id=641845 - available since 3.2-->
+<section id="reply-variables">
+<title>Användning av delar av ett meddelande i en mall vid svar</title>
+<p>Mallar kan innehålla mer än bara den fördefinierade uppsättningen av <link xref="#configure">nyckel/värde-par</link>. Du kan också hämta vilken meddelanderubriks värde som helst från e-postmeddelandet som du tillämpar mallen för, samt den fullständiga meddelandetexten.</p>
+
+<!-- TRANSLATORS: Do NOT translate "$ORIG[subject]" and "$ORIG[body]" in this sentence. -->
+<p its:locNote="TO TRANSLATORS: Do NOT translate $ORIG[subject] and $ORIG[body] in this sentence!">För att göra detta använd formatet <code>$ORIG[rubriknamn]</code> och ersätt variabeln <code>rubriknamn</code> med den riktiga rubriken. Om du till exempel vill infoga ärenderaden för meddelandet som du svarar på, använd <code>$ORIG[subject]</code>. För att infoga den fullständiga texten, använd <code>$ORIG[body]</code>.</p>
+
+<!-- TRANSLATORS: Do NOT translate "$ORIG[body]" and "$ORIG[reply-to]" in this sentence. -->
+<p its:locNote="TO TRANSLATORS: Do NOT translate $ORIG[body] and $ORIG[reply-to] in this sentence!">Om ingen ersättning för en variabel hittas kommer variabeln inte att tas bort (utom för <code>$ORIG[body]</code>), utan lämnas kvar så att du ser att något gått fel. Detta kan hända när du försöker att använda rubriker som inte nödvändigtvis alltid är tillgängliga i originalmeddelandet (till exempel <code>$ORIG[reply-to]</code>).</p>
+</section>
+
+</page>

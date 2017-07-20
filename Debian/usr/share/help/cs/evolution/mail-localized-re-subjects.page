@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-localized-re-subjects" xml:lang="cs">
+
+  <info>
+    <desc>Jak předejít zbytečnému prodlužování řádku s lokalizovanou předponou „Re:“</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+
+    <revision pkgversion="3.5.90" version="0.1" date="2012-08-16" status="review"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Rozpoznání lokalizovaného „Re:“ v předmětu</title>
+
+<p>Předpona „Re:“ se tradičně přidává na řádek s předmětem, když odpovídáte na zprávu. Některé poštovní aplikace používají lokalizovanou verzi této předpony (jako „SV:“ v dánštině, „AW:“ v němčině nebo „Odp:“ v češtině). <app>Evolution</app> umí tyto výrazy rozpoznat a předejít tak zbytečnému nabývání řádku na délce přidáváním další předpony.</p>
+
+<list>
+<item><p>Otevřete aplikaci <app>Terminál</app>.</p></item>
+<item><p>Spusťte příkaz <cmd>gsettings set org.gnome.evolution.mail.composer-localized-re 'Odp,AW'</cmd> (v případě, že chcete rozpoznávat „Odp:“ a „AW:“).</p></item>
+</list>
+<p>Toho stejného lze dosáhnout i použitím aplikace <app>dconf-editor</app>.</p>
+
+<!-- As per https://bugzilla.gnome.org/show_bug.cgi?id=661087#c6 -->
+
+</page>

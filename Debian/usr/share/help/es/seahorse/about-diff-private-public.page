@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="about-diff-private-public" xml:lang="es">
+  <info>
+    <link type="guide" xref="concepts" group="second"/>
+    <link type="seealso" xref="about-ssh"/>
+
+    <revision pkgversion="3.8" date="2013-02-26" status="incomplete"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Una clave pública se usa para cifrar la comunicación. La clave privada se usa para descifrarla.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Clave pública frente a clave privada</title>
+
+  <p>Aunque las claves <em>pública</em> y <em>privada</em> se mencionan ambas como <em>claves</em>, ayuda a pensar en ellas de manera diferente. Pruebe a pensar en la <em>clave pública</em> como un candado, y en la <em>clave privada</em> como en la clave que desbloquea el candado.</p>
+
+  <section id="public-private-example">
+    <title>Un ejemplo: enviar un mensaje secreto en una caja</title>
+
+  <p>Use este ejemplo para ver cómo funciona. Imagine que quiere que un amigo le envíe un mensaje secreto en una caja. Puede darle a su amigo una caja y un candado, pero sólo usted tendrá la llave para abrir el candado.</p>
+
+  <p>Su amigo puede poner en mensaje en la caja, cerrar el candado y enviarle la caja por correo. Cuando la reciba, puede usar su llave para abrir la caja.</p>
+
+  <p>Esto es similar a cómo funcionan las claves <em>pública</em> y <em>privada</em>. Al igual que el candado, puede dar su <em>clave pública</em>. Esto hará que cualquiera pueda cifrar o bloquear un mensaje que quiera enviarle con seguridad.</p>
+  
+  <p>Por otro lado, una <em>clave privada</em> es la llave que le permite descifrar o desbloquear el candado. Dado que la <em>Private Key</em> se usa para descifrar mensajes seguros, debe mantener su <em>clave pública</em> segura.</p>
+  
+  </section>
+
+</page>

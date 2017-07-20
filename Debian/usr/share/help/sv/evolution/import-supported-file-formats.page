@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-supported-file-formats" xml:lang="sv">
+
+  <info>
+    <desc>Filformat som stöd för import av data.</desc>
+    
+    <link type="guide" xref="import-data"/>
+
+    <revision pkgversion="3.0.2" version="0.3" date="2011-10-13" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/importing-mail-and-settings.html.en#importing-mail -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Filformat som stöds</title>
+
+<p><app>Evolution</app> kan importera följande filtyper:</p>
+
+<section id="mail">
+<title>Post</title>
+<list>
+<item><p>Berkeley-brevlåda (.mbox eller ingen filändelse):</p>
+<p>E-postformatet som används av <app>Mozilla</app>, <app>Netscape</app>, <app>Evolution</app> (för lokala mappar fram till version 2.32), <app>Eudora</app> och många andra e-postprogram.</p></item>
+<item><p>Maildir (ingen ändelse):</p>
+<p>Formatet som används av <app>Evolution</app> (för lokala mappar sedan version 3.0). Det finns inget behov av att importera Maildir-filer eftersom du kan <link xref="mail-account-manage-maildir-format-directories">konfigurera ett Maildir-konto</link> i <app>Evolution</app> och peka på mappen där Maildir-filerna finns lagrade.</p></item>
+<item><p>Personliga Outlook Express 5/6-mappar (.dbx):</p>
+<p>E-postfilformatet som används av <app>Microsoft Outlook Express 5/6</app>. För nyare versioner rekommenderas PST-import.</p></item>
+</list>
+</section>
+
+<section id="calendar">
+<title>Kalender</title>
+<list>
+<item><p>vCalendar (.vcs):</p>
+<p>Ett format för att lagra kalenderfiler, vilket vanligtvis används av <app>Evolution</app>, <app>Microsoft Outlook</app>, <app>Sunbird</app> och <app>Korganizer</app>.</p></item>
+<item><p>iCalendar eller iCal (.ics):</p>
+<p>Ett format för att lagra kalenderfiler. iCalendar används av <app>Evolution</app>, <app>Microsoft Outlook</app>, handhållna Palm OS-enheter men även andra.</p></item>
+</list>
+</section>
+
+<section id="contacts">
+<title>Kontakter</title>
+<list>
+<item><p>LDAP Data Interchange Format (.ldif):</p>
+<p>Ett standardiserat dataformat för kontaktkort.</p></item>
+<item><p>vCard (.vcf, .gcrd):</p>
+<p>Adressboksformatet som används av GNOME, KDE och många andra kontakthanteringsprogram. Du bör kunna exportera till vCard-formatet från ett adressboksprogram.</p></item>
+</list>
+</section>
+
+<section id="misc">
+<title>Diverse</title>
+<list>
+<item><p><app>Evolution</app>/Mozilla/Outlook CSV/Tab (.csv, .tab):</p>
+<p>CSV- (Kommaseparerade värden) eller tabulatorfiler sparade med <app>Evolution</app>, <app>Microsoft Outlook</app> och <app>Mozilla</app>.</p></item>
+<item><p>Personliga Outlook-mappar (.pst):</p>
+<p>Ett filformat som används för att lagra kopior av meddelanden, kalenderevenemang och andra objekt i Microsoft-programvara så som <app>Microsoft Exchange Client</app>, <app>Windows Messaging</app> och <app>Microsoft Outlook</app>. Det kallas också ”Personal Storage Table”.</p></item>
+</list>
+</section>
+
+</page>

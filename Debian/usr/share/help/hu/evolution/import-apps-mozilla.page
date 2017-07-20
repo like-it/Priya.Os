@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-apps-mozilla" xml:lang="hu">
+
+  <info>
+    <desc>Adatok importálása Mozilla <app>Thunderbirdből</app>.</desc>
+    
+    <link type="guide" xref="import-data#import-from-apps"/>
+
+    <revision pkgversion="3.6.4" version="0.5" date="2016-05-13" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mozilla</title>
+<!-- <guiseq><gui>File</gui><gui>Import</gui><gui>Import data and settings from older programs</gui></guiseq> does NOT recognize Outlook and Thunderbird automatically in 3.8." -->
+<!-- TODO: Check https://bugzilla.gnome.org/show_bug.cgi?id=214858 occasionally (Thunderbird automatic mail import) -->
+<!-- TODO: Check https://bugzilla.gnome.org/show_bug.cgi?id=559266 occasionally (Thunderbird mailfilter importer) -->
+<steps>
+<item><p><link href="https://support.mozilla.org/kb/profiles-tb#w_how-to-find-your-profile">Keresse meg a <app>Thunderbird</app> profil mappáját.</link></p></item>
+<item><p>Válassza a <guiseq><gui>Fájl</gui><gui>Importálás</gui></guiseq> menüpontot.</p></item>
+<item><p>Az <gui>Importáló típusa</gui> lapon válassza az <gui>Egyetlen fájl importálása</gui> menüpontot.</p></item>
+<item><p>Nyissa meg azt a mappát, ahol a <app>Thunderbird</app> az adatait tárolja. Ehhez be kell kapcsolni a <link xref="help:gnome-help/files-hidden#show-hidden" href="https://help.gnome.org/users/gnome-help/stable/files-hidden#show-hidden">rejtett fájlok megjelenítését</link> a fájlválasztó ablakban.</p></item>
+<item>
+<list>
+<item><p>Ha leveleket szeretne importálni a <app>Thunderbirdből</app>, akkor nyissa meg a <file>Mail/Local Folders</file> (helyi postafiókok esetén) vagy az <file>ImapMail/kiszolgálónév</file> (távoli postafiókok esetén) könyvtárat. A <file>kiszolgálónév</file> a távoli levélkiszolgáló címe lesz. A kiterjesztés nélküli fájlok tartalmazzák az üzeneteket (nem a <file>.msf</file> fájlok).</p></item>
+<item><p>Ha szeretne <app>Thunderbird/Lightning</app> naptáradatokat importálni, akkor előbb exportálja a <app>Thunderbirdből</app> az eseményeket <file>.ical</file>/<file>.ics</file> fájlként, majd importálja ezeket a fájlokat az <app>Evolutionbe</app>. Ez azért szükséges, mert a <app>Thunderbird</app> a naptáradatokat nem szabványos formátumú adatbázisban tárolja.</p></item>
+</list>
+<p>A fájl típusa automatikusan meghatározásra kerül.</p></item>
+<item><p>Válassza ki az importált adatok célját (például a mappát vagy naptárat az <app>Evolutionben</app>).</p></item>
+<item><p>Ismételje az importálási lépéseket, amíg nem importálta az összes adatát.</p></item>
+</steps>
+</page>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="sl">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>Umerjanje in karakterizacija sta dve popolnoma različni stvari.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Kakšna je razlika med umerjanjem in karakterizacijo?</title>
+  <p>Veliko ljudi je na začetku zmedenih o razliki med umerjanjem in karakterizacijo. Umerjanje je opravilo spreminjanja obnašanja barve naprave. To je običajno narejeno z dvema mehanizmoma:</p>
+  <list>
+    <item><p>Spreminjanje nadzornikov ali njihovih notranjih nastavitev</p></item>
+    <item><p>Uveljavljenje krivulj v barvne kanale.</p></item>
+  </list>
+  <p>Cilj umerjanja je nastaviti napravo v določeno stanje glede na njen barvni odziv. Pogosto se to uporablja kot način za zagotavljanje ponovljivega obnašanja. Običajno je umerjanje shranjeno na napravi ali za sistem določenih vrstah datotek, ki posname nastavitve naprave ali umeritvene krivulje za kanal.</p>
+  <p>Karakterizacija (ali profiliranje) je <em>snemanje</em> načina na katerega naprava proizvede ali se odzove na barvo. Običajno je rezultat shranjen v profilu ICC naprave. Takšen profil ne spremeni barve na noben način. Sistemu kot je CMM (modul za upravljanje barv) ali programu, ki se zaveda barv, omogoča spreminjanje barv, ko je združen z drugim profilom naprave.</p>
+  <note>
+    <p>Karakterizacija (profil) za napravo bo veljavna le dokler je v istem stanju umerjanja kot je bila ob karakterizaciji.</p>
+  </note>
+  <p>V primeru zaslonskih profilov obstaja dodatna zmeda, ker so zaradi priročnosti podatki o umerjanju pogosto shranjeni v profilu. Po dogovoru je shranjen v oznaki <em>vcgt</em>. Čeprav je shranjen v profilu, se ga običajni programi osnovani na ICC ne zavedajo in ne počenjajo nič z njim. Podobno se ga ne bodo zavedala in z njim upravljala običajna orodja in programi za umerjanje.</p>
+
+</page>

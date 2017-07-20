@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>ஷான் மெக்கேன்ஸ்</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>மைக்கேல் ஹில்</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>FTP, SSH, Windows பகிர்வுகள் அல்லது WebDAV மூலம் கோப்புகளை வேறொரு கணினியில் காணுதல், திருத்துதல்.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+<title>ஒரு சேவையகம் அல்லது பிணைய பகிர்வில் உள்ள கோப்புகளை உலவுதல்</title>
+
+<p>நீங்கள் ஒரு சேவையகத்தில் உள்ள கோப்புகளை, அச்சேவையகத்துடன் இணைப்பை ஏற்படுத்தி உங்கள் கணினியில் உள்ளவற்றைப் போலவே உலவ மற்றும் பார்வையிட முடியும். இது இணையத்தில் கோப்புகளை பதிவிறக்க அல்லது பதிவேற்ற அல்லது உங்கள் அக பிணையத்தில் உள்ள மற்றவர்களிடம் கோப்புகளைப் பகிர ஏதுவான வழியாகும்.</p>
+
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
+
+<steps>
+  <title>ஒரு கோப்பு சேவையகத்துடன் இணைத்தல்</title>
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
+   sidebar.</p>
+  </item>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
+  <note>
+    <p>நீங்கள் முன்பே சேவையகத்தை இணைத்திருந்தால், <gui>சமீபத்திய சேவையகங்கள்</gui> பட்டியலில் அதை சொடுக்கலாம்.</p>
+  </note>
+  </item>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>URLகளை எழுதுதல்</title>
+
+<p>ஒரு <em>URL</em> அல்லது <em>சீரான வள இருப்பிடக்காட்டி</em> என்பது ஒரு பிணையத்தில் உள்ள ஒரு இருப்பிடம் அல்லது கோப்பைக் குறிக்கும் ஒரு முகவரியின் வடிவமாகும். முகவரி இப்படி வடிவமைக்கப்படுகிறது:</p>
+  <example>
+    <p><sys>திட்டம்://servername.example.com/folder</sys></p>
+  </example>
+<p><em>திட்டம்</em> சேவையகத்தின் நெறிமுறை அல்லது வகையைக் குறிக்கிறது. முகவரியின் <em>example.com</em> பகுதி <em>டொமைன் பெயர்</em> என்று அழைக்கப்படுகிறது. பயனர் பெயர் தேவைப்பட்டால், அது சேவையக பெயரின் முன் சேர்க்கப்படுகிறது:</p>
+  <example>
+    <p><sys>திட்டம்://username@servername.example.com/folder</sys></p>
+  </example>
+<p>சில திட்டங்களில் போர்ட் எண் குறிப்பிடப்பட வேண்டும். டொமைன் பெயருக்கு பின் அதைச் சேர்க்கவும்:</p>
+  <example>
+    <p><sys>திட்டம்://servername.example.com:port/folder</sys></p>
+  </example>
+<p>கீழே ஆதரிக்கப்படும் பல்வேறு சேவையக வகைகளுக்கான குறிப்பிட்ட உதாரணங்கள் உள்ளன.</p>
+</section>
+
+<section id="types">
+ <title>சேவையகங்களின் வகைகள்</title>
+
+<p>நீங்கள் பல்வேறு வகையான சேவையகங்களுடன் இணைக்க முடியும். சில சேவையகங்கள் பொது சேவையகங்கள், அவற்றுடன் யாரும் இணைக்க முடியும். மற்ற சேவையகங்களில் பயனர் பெயர் மற்றும் கடவுச்சொல்லை கொண்டு உள்நுழைய வேண்டி இருக்கும்.</p>
+<p>ஒரு சேவையகத்தில் உள்ள கோப்புகளைக் கொண்டு சில செயல்களை செய்ய உங்களுக்கு அனுமதி இல்லாதிருக்கலாம். உதாரணமாக, பொது FTP தளங்களில், நீங்கள் கோப்புகளை அழிக்க முடியாதிருக்கலாம்.</p>
+<p>நீங்கள் உள்ளிடும் URL ஆனது சேவையகம் அதன் கோப்பு பகிர்வுகளை ஏற்றுமதி செய்ய பயன்படுத்தும் நெறிமுறையைப் பொறுத்தது.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>உங்களிடம் ஒரு சேவையகத்தில் <em>பாதுகாப்பான ஷெல்</em> கணக்கு இருந்தால், இந்த முறையை பயன்படுத்தி இணைக்க முடியும். பல வலை வழங்கிகள் தங்கள் உறுப்பினர்களுக்கு SSH கணக்குகளை வழங்குகின்றன, அதன் மூலம் அவர்கள் பாதுகாப்பாக கோப்புகளை பதிவேற்ற முடியும். SSH சேவையகத்தில் எப்போதும் புகுபதிவு செய்ய வேண்டியது அவசியம்.</p>
+  <p>ஒரு வழக்கமான SSH URL இப்படி இருக்கும்:</p>
+  <example>
+    <p><sys>ssh://username@servername.example.com/folder</sys></p>
+  </example>
+
+  <p>SSH ஐப் பயன்படுத்தும் போது நீங்கள் அனுப்பும் அனைத்து தரவும் (உங்கள் கடவுச்சொல் உட்பட) உங்கள் பிணையத்தின் பிற பயனர்கள் பார்க்க முடியாதபடி குறியாக்கம் செய்யப்படுகின்றன.</p>
+</item>
+<item>
+  <title>FTP (புகுபதிவுடன்)</title>
+  <p>இணையத்தில் கோப்புகளை பரிமாறிக்கொள்ளும் ஒரு பிரபலமான வழி FTP ஆகும். FTP வழியாக பரிமாறப்படும் தரவு குறியாக்கம் செய்யப்படுவதில்லை என்பதால், பல சேவையகங்கள் இப்போது SSH வழியாக அணுகலை வழங்குகின்றன. எனினும் சில சேவையகங்கள், இன்னும் கோப்புகளை பதிவேற்ற அல்லது பதிவிறக்க FTP ஐப் பயன்படுத்த அனுமதிக்கின்றன. புகுபதிவு தேவை கொண்ட FTP தளங்கள் பொதுவாக நீங்கள் கோப்புகளை அழிக்கவும் மற்றும் பதிவேற்றவும் அனுமதிக்கும்.</p>
+  <p>ஒரு வழக்கமான FTP URL இப்படி இருக்கும்:</p>
+  <example>
+    <p><sys>ftp://username@ftp.example.com/path/</sys></p>
+  </example>
+</item>
+<item>
+  <title>பொது FTP</title>
+  <p>கோப்புகளை பதிவிறக்க அனுமதிக்கும் தளங்கள் சில நேரங்களில் பொது அல்லது அநாமதேய FTP அணுகலை வழங்கும். இந்த சேவையகங்களுக்கு பயனர் பெயர் மற்றும் கடவுச்சொல் தேவையில்லை, பொதுவாக அவற்றிலுள்ள கோப்புகளை நீங்கள் அழிக்கவோ அல்லது பதிவேற்றவோ அனுமதி இருக்காது.</p>
+  <p>ஒரு வழக்கமான அநாமதேய FTP URL இப்படி இருக்கும்:</p>
+  <example>
+    <p><sys>ftp://ftp.example.com/path/</sys></p>
+  </example>
+  <p>சில அநாமதேய FTP தளங்களில் நீங்கள் ஒரு பொது பயனர் பெயர் மற்றும் கடவுச்சொல் கொண்டு புகுபதிகை செய்ய வேண்டி இருக்கும், அல்லது பொதுவான பயனர் பெயருடன் உங்கள் மின்னஞ்சல் முகவரியை கடவுச்சொல்லாகப் பயன்படுத்தி புகுபதிவு செய்ய வேண்டி இருக்கும். இந்த சேவையகங்களுக்கு, <gui>FTP (புகுபதிவுடன்)</gui> முறையைப் பயன்படுத்தி, FTP தளம் குறிப்பிட்ட சான்றுகளைப் பயன்படுத்தவும்.</p>
+</item>
+<item>
+  <title>Windows பகிர்வு</title>
+  <p>Windows கணினிகள் ஒரு அக பிணையத்தில் கோப்புகளைப் பகிர்ந்து கொள்ள ஒரு தனிப்பட்ட நெறிமுறையைப் பயன்படுத்துகின்றன. ஒரு Windows பிணையத்திலுள்ள கணினிகள் ஒழுங்கமைப்புக்காகவும் அணுகல் கட்டுப்பாட்டை சிறப்பாக்கவும் சில நேரங்களில் <em>டொமைன்களாக</em> குழுப்படுத்தப்படுகின்றன. தொலை கணினியில் உங்களுக்கு சரியான அனுமதிகள் இருந்தால், நீங்கள் கோப்பு மேலாளரில் இருந்து ஒரு Windows பகிர்வுடன் இணைக்க முடியும்.</p>
+  <p>ஒரு வழக்கமான Windows பகிர்வு URL இப்படி இருக்கும்:</p>
+  <example>
+    <p><sys>smb://servername/Share</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV மற்றும் Secure WebDAV</title>
+  <p>இணையத்தில் பயன்படுத்தப்படும் HTTP நெறிமுறையின் அடிப்படையில் அமைந்ததான, WebDAV முறை சில நேரங்களில் ஒரு அக பிணையத்தில் கோப்புகளைப் பகிர்ந்து கொள்ளவும் இணையத்தில் கோப்புகளைச் சேமிக்கவும் பயன்படுத்தப்படுகிறது. நீங்கள் இணைக்கும் சேவையகம் பாதுகாப்பான இணைப்புகளை ஆதரிக்கும் என்றால், நீங்கள் இந்த விருப்பத்தை தேர்வு செய்ய வேண்டும். மற்ற பயனர்கள் உங்கள் கடவுச்சொல்லைப் பார்க்க முடியாதபடி Secure WebDAV வலுவான SSL குறியாக்கத்தைப் பயன்படுத்துகிறது.</p>
+  <p>A WebDAV URL looks like this:</p>
+  <example>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

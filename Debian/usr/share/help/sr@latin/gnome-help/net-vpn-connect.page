@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+    <link type="guide" xref="net-wired"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Gnomov projekat dokumentacije</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Podesite VPN vezu na lokalnu mrežu preko interneta.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Povezivanje na VPN</title>
+
+<p>VPN (ili <em>Virtuelna lična mreža</em>) je način povezivanja na lokalnu mrežu preko interneta. Na primer, recimo da želite da se povežete na lokalnu mrežu na vašem radnom mestu dok ste na službenom putu. Negde ćete naći vezu na internet (u hotelu) i zatim ćete se povezati na VPN vašeg radnog mesta. To će biti isto kao da ste se direktno povezali na mrežu na poslu, ali će stvarna mrežna veza biti preko internet veze hotela. VPN mreže su obično <em>šifrovane</em> da bi sprečile druge da bez prijavljivanja pristupe lokalnoj mreži na koju ste povezani.</p>
+
+<p>Postoji veliki broj različitih vrsta VPN-a. Možda ćete morati da instalirate neki dodatni softver u zavisnosti na koju vrstu VPN-a se povezujete. Saznajte detalje veze od onoga ko je zadužen za VPN i vidite koji <em>VPN klijent</em> treba da koristite. Zatim, pokrenite program za instaliranje softvera i potražite paket <app>Upravnika mreže</app> koji radi sa vašim VPN-om (ako ga ima) i instalirajte ga.</p>
+
+<note>
+ <p>Ako ne postoji Upravnik mreže za vašu vrstu VPN-a, verovatno ćete morati da preuzmete i da instalirate neki softver klijent od kompanije koja obezbeđuje VPN softver. Verovatno ćete morati da pratite malo drugačija uputstva kako biste ga osposobili za rad.</p>
+</note>
+
+<p>Da podesite VPN vezu:</p>
+
+  <steps>
+    <item>
+      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Mreža</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknite na <gui>Mreža</gui> da otvorite panel.</p>
+    </item>
+    <item>
+      <p>Pri dnu spiska sa leve strane, kliknite na dugme <gui>+</gui> da dodate novu vezu.</p>
+    </item>
+    <item>
+      <p>Izaberite <gui>VPN</gui> na spisku sučelja.</p>
+    </item>
+    <item>
+      <p>Izaberite koju vrstu VPN veze imate.</p>
+    </item>
+    <item>
+      <p>Popunite detalje VPN veze, a zatim pritisnite <gui>Dodaj</gui> kada završite.</p>
+    </item>
+    <item>
+      <p>Kada završite podešavanje VPN-a, otvorite <gui xref="shell-introduction#yourname">sistemski izbornik</gui> na desnoj strani gornje trake, kliknite <gui>Isključi VPN</gui> i izaberite <gui>Poveži se</gui>. Možda ćete morati da unesete lozinku za vezu pre nego što se uspostavi. Kada je veza napravljena, videćete ikonicu u obliku katanca na gornjoj traci.</p>
+    </item>
+    <item>
+      <p>Na sreću, uspešno ćete se povezati na VPN. Ako do toga ne dođe, moraćete dva puta da proverite VPN podešavanja. Ovo možete da uradite na tabli <gui>Mreža</gui> koju ste koristili da napravite vezu. Izaberite VPN vezu sa spiska, zatim pritisnite dugme <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">podešavanja</span></media> da pregledate podešavanja.</p>
+    </item>
+    <item>
+      <p>Da isključite VPN, kliknite na izbornik sistema na gornjoj traci i kliknite <gui>Prekini vezu</gui> ispod naziva vaše VPN veze.</p>
+    </item>
+  </steps>
+
+</page>

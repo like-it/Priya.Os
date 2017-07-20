@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-wireless-noconnection" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" version="0.2" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Double-check the password, and other things to try.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>La password è corretta, ma il collegamento non funziona</title>
+
+<p>Se si è sicuri di aver inserito la <link xref="net-wireless-wepwpa">password per le rete WiFi</link> corretta, ma non si riesce ancora a collegarsi, provare con una delle procedure sottostanti:</p>
+
+<list>
+ <item>
+  <p>Double-check that you have the correct password</p>
+  <p>Prestare attenzione alle lettere maiuscole e minuscole: le password tengono in considerazione anche questo aspetto.</p>
+ </item>
+
+ <item>
+  <p>Provare la chiave di accesso esadecimale o ASCII</p>
+  <p>La password da digitare può essere rappresentata anche in un diverso modo, come una stringa di caratteri esadecimali (numeri 0-9 e lettere a-f) chiamata chiave di accesso. Ogni password ha una equivalente chiave di accesso. Se si dispone sia della password/frase di accesso che della chiave di accesso, provare a digitare quest'ultima. Assicurarsi di selezionare la corretta opzione sicurezza senza fili quando viene richiesta la password (per esempio, selezionare <gui>Chiave WEP 40/128-bit</gui> se si digita la chiave d'accesso di 40 caratteri per una connessione con crittografia WEP).</p>
+ </item>
+
+ <item>
+  <p>Provare a spegnere e ad accendere nuovamente la scheda WiFi</p>
+  <p>Le schede WiFi a volte possono bloccarsi o avere dei piccoli problemi momentanei che non consentono di collegarsi alla rete: provare a spegnere e a riaccendere la scheda WiFi per ripristinarla. Per maggiori informazioni, consultare <link xref="net-wireless-troubleshooting"/>.</p>
+ </item>
+
+ <item>
+  <p>Check that you're using the correct type of wireless security</p>
+  <p>Quando viene richiesta la password di sicurezza senza fili, è possibile scegliere quale tipo di sicurezza utilizzare. Assicurarsi di scegliere quella usata dal router o dalla stazione fissa WiFi: questa dovrebbe essere selezionata automaticamente, ma talvolta non lo è. Se non si conosce quale tipo usare, procedere per tentativi attraverso le diverse opzioni.</p>
+ </item>
+
+ <item>
+  <p>Controllare che la scheda WiFi sia supportata</p>
+  <p>Alcune schede di rete non sono adeguatamente supportate. Vengono visualizzate come connessioni WiFi, ma non riescono a collegarsi a una rete perché i loro driver non ne hanno la capacità. Verificare se è possibile procurarsi driver WiFi alternativi o se è necessario eseguire un'ulteriore configurazione (come installare un diverso <em>firmware</em>). Per maggiori informazioni, consultare <link xref="net-wireless-troubleshooting"/>.</p>
+ </item>
+
+</list>
+
+</page>

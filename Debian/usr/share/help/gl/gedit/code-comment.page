@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-code-comment" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>  
+    <revision version="3.4" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Comment-out or uncomment a block of code.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Comentar código</title>
+
+  <p>Os comentarios do código son fragmentos de texto que facilitan á xente entender o código dun programa, pero non afectan ao funcionamento do mesmo. Os comentarios sepáranse do resto de partes do programa mediante caracteres especiais.</p>
+  
+  <p>The <app>code comment</app> plugin makes it easier to quickly create or
+  remove code comments. To enable the code comment plugin, select
+  <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferences</gui>
+  <gui>Plugins</gui><gui>Code comment</gui></guiseq>.</p>
+  
+  <steps>
+    <title>Para crear ou quitar un comentario:</title>
+    <item>
+      <p>Realce o fragmento de texto que quere engadir ou quitar un comentario.</p>
+    </item>
+    <item>
+      <p>To add a comment, click <guiseq><gui style="menu">gedit</gui>
+      <gui>Comment Code</gui></guiseq>, or press <keyseq><key>Ctrl</key>
+      <key>M</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>To remove a comment, click <guiseq><gui style="menu">gedit</gui>
+      <gui>Uncomment Code</gui></guiseq>, or press <keyseq><key>Shift</key>
+      <key>Ctrl</key><key>M</key></keyseq>.</p>
+    </item>
+  </steps>
+  
+  <note style="tip">
+    <p><app>gedit</app> will automatically use the correct style of comment
+    based on the language or syntax of the file. If <app>gedit</app> doesn't
+    identify your language or syntax, you can select it from the language list
+    in the bottom <gui>Status bar</gui>.</p>
+  </note>
+
+</page>

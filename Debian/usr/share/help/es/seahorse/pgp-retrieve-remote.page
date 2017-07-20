@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-retrieve-remote" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-18" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Si quiere enviar un mensaje cifrado urgente a alguien, pero no tiene su clave, puede conseguirla desde un servidor de claves remoto.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Recuperar claves remotas</title>
+
+  <p>Puede obtener la clave GnuPG pública de alguien en Internet y guardarla en <app>Contraseñas y claves</app>.</p>
+
+  <steps>
+    <title>Para recuperar una clave remota:</title>
+    <item>
+      <p>Seleccione <guiseq><gui style="menu">Remoto</gui> <gui style="menuitem">Buscar claves remotas…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Introduzca la información sobre la clave que quiere obtener en el campo proporcionado. Detalles como el ID de la clave o la dirección de correo-e de su propietario dan resultados más precisos que el nombre del propietario de la clave.</p>
+    </item>
+    <item>
+      <p>Pulse el botón <gui style="button">Buscar</gui>.</p>
+    </item>
+    <item>
+      <p>En la lista de resultados de búsqueda, pulse con el botón derecho sobre la clave que quiere importar y elija <gui style="menuitem">Importar</gui>. Alternativamente, puede pulsar el botón <gui style="button">Importar</gui> en la parte superior del diálogo, después de haber seleccionado la clave.</p>
+    </item>
+  </steps>
+
+  <p>La clave importada se mostrará en el depósito de <gui>claves GnuPG</gui> keyring.</p>
+
+  <note style="tip">
+  <p>Si no puede ver la clave recibida, seleccione <guiseq><gui>Ver</gui><gui>Mostrar cualquiera</gui></guiseq>.</p>
+  </note>
+
+  <note style="tip">
+    <p>Si quiere más información sobre una clave, antes de importarla, selecciónela y pulse el botón de propiedades en la parte superior del diálogo. alternativamente, también puede pulsar con el botón derecho sobre la clave y seleccionar <gui style="menuitem">Propiedades</gui>. Esto abre una ventana nueva que muestra información como el ID de la clave, su huella, el nivel de confianza, el nombre del propietario, etc.</p>
+  </note>
+
+</page>

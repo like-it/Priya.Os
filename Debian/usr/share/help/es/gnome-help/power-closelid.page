@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Los portátiles se suspenden cuando se cierra la tapa para ahorrar energía.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>¿Por qué se apaga mi equipo cuando cierro la tapa?</title>
+
+  <p>Cuando cierra la pantalla de su portátil, su equipo se <link xref="power-suspend"><em>suspend</em></link> para ahorrar energía. Esto quiere decir que el equipo no está realmente apagado, solo está durmiendo. Puede despertarlo abriendo de nuevo la pantalla. Si no se despierta así, pruebe pulsando un botón del ratón o una tecla cualquiera. Si sigue sin funcionar, pulse el botón de encendido.</p>
+
+  <p>Algunos equipos no se suspenden correctamente, normalmente porque su hardware no funciona completamente con el sistema operativo (ej. los controladores de Linux no están completos). En este caso, verá que no puede reanudar su equipo después de haber cerrado la tapa del portátil. Puede intentar <link xref="power-suspendfail">arreglar problemas de suspensión</link>, o puede evitar que el equipo intente suspenderse cuando cierre la tapa de su portátil.</p>
+
+<section id="nosuspend">
+  <title>Parar la suspensión del equipo cuando se cierra la tapa</title>
+
+  <note style="important">
+    <p>Estas instrucciones sólo funcionarán si está usando <app>systemd</app>. Consulte su distribución para obtener más información.</p>
+  </note>
+
+  <note style="important">
+    <p>Necesita tener instalada la <app>Herramienta de retoques</app> para modificar esta opción.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">Instalar <app>Herramienta de retoques</app></link></p>
+    </if:if>
+  </note>
+
+  <p>Si no quiere que el equipo se suspenda al cerrar la tapa, puede cambiar la configuración de ese comportamiento.</p>
+
+  <note style="warning">
+    <p>Tenga cuidado si cambia esta configuración. Algunos portátiles se pueden sobrecalentar si se dejan encendidos con la tapa cerrada, especialmente si están en un lugar cerrado como una mochila.</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Herramienta de retoques</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse en <gui>Herramienta de retoques</gui> para abrir la aplicación.</p>
+    </item>
+    <item>
+      <p>Pulse en la pestaña <gui>Energía</gui>.</p>
+    </item>
+    <item>
+      <p>Active la <gui>No suspender al cerrar la tapa</gui> (<gui>Encendido</gui>).</p>
+    </item>
+    <item>
+      <p>Cierre la ventana de la <gui>Herramienta de retoques</gui>.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

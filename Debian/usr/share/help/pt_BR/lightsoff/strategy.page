@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="strategy" xml:lang="pt-BR">
+	<info>
+          <revision version="3.4" date="2012-03-08" status="review"/>
+	  <link type="guide" xref="index#play"/>
+	  <credit type="author copyright">
+	    <name>Perumal Viravan</name>
+	    <email>perumalv18@gmail.com</email>
+	  <years>2012</years>
+	  </credit>
+	  <license>
+		<p>Creative Commons Atribuição compartilhada 3.0</p>
+	  </license>
+	
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Antonio Fernando Santos Ladeia</mal:name>
+      <mal:email>contato@antonioladeia.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Estratégia</title>
+        <p>Esta é uma simples estratégia para resolver o quebra-cabeças <app>Luzes desligadas</app> usando o método chamado "Perseguindo as Luzes".</p>
+	  <steps>
+	    <item><p>Persiga as luzes iniciando na primeira linha. Para perseguir as luzes na primeira linha, clique na pedra da segunda linha que corresponde a luz na primeira linha. Isto irá apagar a luz na primeira linha.</p>
+                  <note><p>Este método pode ser usado da mesma forma para perseguir as luzes em outras linhas também, i.e., se você precisar perseguir as luzes na segunda linha, clique na pedra correspondente na terceira linha.</p></note>
+            </item>
+	    <item><p>Da mesma forma, continue a perseguir as luzes da segunda, terceira e quarta linha. No final disso você só terá as luzes na quinta linha.</p></item>
+
+	    <item><p>Agora, dependendo de quais luzes estão permanecendo na quinta linha, clique nas pedras na primeira linha usando a tabela apresentada abaixo.</p>
+
+<table frame="all" shade="all" rules="all">
+  <tr>
+    <td><p>Luzes à esquerda na quinta linha</p></td> <td><p>Pedras para clicar na primeira linha</p></td>
+  </tr>
+  <tr>
+    <td><p>1, 2, 3</p></td> <td><p>2</p></td>
+  </tr><tr>
+    <td><p>1, 2, 4, 5</p></td> <td><p>3</p></td>
+  </tr><tr>
+    <td><p>1, 3, 4</p></td> <td><p>5</p></td>
+  </tr><tr>
+    <td><p>1, 5</p></td> <td><p>1, 2</p></td>
+  </tr><tr>
+    <td><p>2, 3, 5</p></td> <td><p>1</p></td>
+  </tr><tr>
+    <td><p>2, 4</p></td> <td><p>1, 4</p></td>
+  </tr><tr>
+    <td><p>3, 4, 5</p></td> <td><p>4</p></td>
+  </tr>
+</table>
+</item>
+	    <item><p>Agora novamente persiga as luzes a partir da primeira linha. Depois de perseguir as luzes desta vez seu quebra-cabeça será resolvido.</p></item>
+	   </steps>
+            <note><p>Esta estratégia nem sempre produz a solução ideal, ela pode demandar mais movimentos.</p></note>
+</page>

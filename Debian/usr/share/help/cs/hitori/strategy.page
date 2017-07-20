@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="strategy" xml:lang="cs">
+	<info>
+		<link type="guide" xref="index#tips"/>
+		<include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+		<desc>Strategie pro hraní Hitori.</desc>
+	</info>
+	<title>Herní strategie</title>
+
+	<p>Hra Hitori je trochu podobná Sudoku, také vyžaduje logickou dedukci k určení, která políčka zatřít. Jednou ze strategií je použít klikání spolu s klávesou <key>Shift</key> k označení všech čísel, která se v jednotlivých <em>sloupcích</em> opakují, a s klávesou <key>Ctrl</key> k označení těch, která se opakují v jednotlivých <em>řádcích</em>.</p>
+	<p>Až to uděláte na celé desce, budou některá políčka označena oběma způsoby a ty jsou horkými kandidáty na zatření, ale naplatí to vždy. Když políčko zatíráte, zrušte označení všech políček se stejným číslem v příslušném řádku a sloupci, tak si udržíte přehled, které buňky stále porušují <link xref="game">pravidlo 1 hry Hitori</link>.</p>
+	<p>Stále mějte na paměti také pravidlo 2 hry Hitori, že nesmí být zatřeny naráz sousedící políčka. Políčka, která druhé pravidlo poruší, budou zvýrazněna červeně. Stejně tak budou červeně zvýrazněny skupiny políček, které porušují pravidlo číslo 3 oddělením jednoho nebo více nezatřených políček od jiných nezatřených políček.</p>
+
+	<p>Jestli se v nějakém bodě zaseknete, zvolte <guiseq><gui style="menu">Hra</gui><gui style="menuitem">Rada</gui></guiseq>, aby vám aplikace <app>Hitori</app> označila políčko, které by se mělo zatřít nebo očistit, a tím vás přiblížila k řešení.</p>
+</page>

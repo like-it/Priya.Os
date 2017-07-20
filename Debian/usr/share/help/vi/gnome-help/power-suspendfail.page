@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="vi">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
+
+    <credit type="author">
+      <name>Dự án tài liệu GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
+      <mal:email>pclouds@gmail.com</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Tại sao máy tính không bật trở lại sau khi ngưng?</title>
+
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
+
+<section id="resume">
+  <title>Máy tính ngưng rồi không trở lại nữa</title>
+  <p>Nếu máy tính ngưng và bạn nhấn phím hoặc chuột, máy nên thức dậy và hỏi mật khẩu. Nếu không được, thử nhấn nút bật/tắt máy (đừng giữ, chỉ nhấn một lần và buông ra).</p>
+  <p>Nếu vẫn không được, bảo đảm màn hình đã bật và thử nhấn phím trên bàn phím lại.</p>
+  <p>Cách cuối cùng là tắt máy bằng cách nhấn giữ phím tắt/mở máy trong 5-10 giây. Bạn sẽ mất tất cả những tài liệu chưa lưu. Bạn sẽ có thể bật máy trở lại sau đó.</p>
+  <p>Nếu cứ bị vậy mỗi lần ngưng máy tính, tính năng ngưng có lẽ không hoạt động với phần cứng của bạn.</p>
+  <note style="warning">
+    <p>If your computer loses power and does not have an alternative power
+    supply (such as a working battery), it will switch off.</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>Kết nối không dây (hoặc phần cứng khác) không hoạt động khi mở máy lại</title>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
+  <p>Nếu thiết bị có công tắt bật/tắt, thử tắt và bật lại. Hầu hết trường hợp thiết bị sẽ hoạt động lại. Nếu kết nối thông qua cáp USB hoặc tương tự, tháo cáp và gắn lại, xem nó hoạt động không.</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
+</section>
+
+</page>

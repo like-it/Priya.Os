@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="vi">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Bạn có thể điều khiển chương trình nào được phép truy cập mạng. Việc này giúp tăng cường an ninh cho máy tính của bạn.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
+      <mal:email>pclouds@gmail.com</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Bật và chặn truy cập tường lửa</title>
+
+  <p>Hệ thống bạn được trang bị <em>tường lửa</em> cho phép chặn người dùng khác trên internet hoặc trên mạng nội bộ truy cập chương trình trên máy. Việc này tăng cường an ninh cho máy tính.</p>
+
+  <p>Nhiều chương trình GNOME cung cấp các dịch vụ mạng. Ví dụ, bạn có thể chia sẻ tập tin, hoặc cho ai đó ở xa xem màn hình làm việc của mình. Tuỳ vào cách bạn cài đặt GNOME, bạn có thể cần điều chỉnh tường lửa để cho phép những dịch vụ này hoạt động như mong muốn.</p>
+
+  <p>Mỗi chương trình cung cấp dịch vụ dùng một số <em>cổng mạng</em> nhất định. Để bật truy các dịch vụ của chương trình, bạn có thể cần "mở" các cổng xác định trên tường lửa:</p>
+
+
+  <steps>
+    <item>
+      <p>Go to <gui>Activities</gui> in the top left corner of the screen and
+      start your firewall application. You may need to install a firewall
+      manager yourself if you can't find one (for example, Firestarter or
+      GUFW).</p>
+    </item>
+    <item>
+      <p>Open or disable the port for your network service, depending on
+      whether you want people to be able to access it or not. Which port you
+      need to change will <link xref="net-firewall-ports">depend on the
+      service</link>.</p>
+    </item>
+    <item>
+      <p>Lưu hoặc áp dụng các thay đổi và thực hiện các chỉ dẫn bổ sung của công cụ tường lửa.</p>
+    </item>
+  </steps>
+
+</page>

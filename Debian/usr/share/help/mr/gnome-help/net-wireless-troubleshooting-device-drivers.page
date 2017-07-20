@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="mr">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu डॉक्युमेंटेशन विकीचे अंशदाते</name>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>काही डिव्हाइस ड्राइव्हर्स ठराविक वायरलेस अडॅप्टर्ससह उत्तमरित्या कार्य करत नाही, म्हणून तुम्हाला योग्य शोधावे लागेल.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>वायरलेस नेटवर्क समस्या निवारक</title>
+
+  <subtitle>कार्यरत डिव्हास ड्राइव्हर्स इंस्टॉल झाले आहे याची खात्री करा</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>या टप्प्यात तुम्ही तपासणी करू शकता कि वायरलेस अडॅप्टरकरिता कार्यरत डिव्हास ड्राइव्हर्स प्राप्त होऊ शकतो किंवा नाही. <em>डिव्हास ड्राइव्हर</em> सॉफ्टवेअरचा भाग आहे जे संगणकाला योग्यरित्या हार्डवेअर साधन कसे बनवायचे ते सांगते. संगणकातर्फे जरी वायरलेस अडॅप्टर योग्यरित्या ओळखले गेले असल्यास, त्याकडे योग्यरित्या कारणारे ड्राइव्हर्स नाही. वायरलेस अडॅप्टरकरिता कार्य करण्याजोगी विविध ड्राइव्हर्स शोधणे शक्य आहे. खालील काही पर्याय वापरून पहा:</p>
+
+  <list>
+    <item>
+      <p>Check to see if your wireless adapter is on a list of supported
+      devices.</p>
+      <p>Most Linux distributions keep a list of wireless devices that they
+      have support for. Sometimes, these lists provide extra information on how
+      to get the drivers for certain adapters working properly. Go to the list
+      for your distribution (for example,
+      <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>,
+      <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>,
+      <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> or
+      <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>)
+      and see if your make and model of wireless adapter is listed. You may be
+      able to use some of the information there to get your wireless drivers
+      working.</p>
+    </item>
+    <item>
+      <p>Look for restricted (binary) drivers.</p>
+      <p>अनेक Linux वितरक फक्त <em>फ्री</em> आणि <em>ओपन सोअर्स</em> डिव्हास ड्राइव्हर्ससह उपलब्ध असतात. याचे कारण असे कि प्रॉप्राइटरि, किंवा क्लोज्ड-सोअर्स ड्राइव्हर्सचे वितरण त्यांच्यातर्फे केले जात नाही. वायरलेस अडॅप्टरकरिता योग्य ड्राइव्हर फक्त नॉन-फ्री स्वरूपात, किंवा "binary-only" आवृत्तीमध्ये उपलब्ध असल्यास, त्यास पूर्वनिर्धारितपणे इंस्टॉल करणे कदाचित शक्य होणार नाही. असे असल्यास, वायरलेस अडॅप्टर उत्पादकाच्या संकेतस्थळावर जा आणि त्यांच्याकडे Linux ड्राइव्हर्स उपलब्ध आहे किंवा नाही, याची तपासणी करा.</p>
+      <p>काही Linux वितरकांकडे साधन असते जे तुमच्याकरिता प्रतिबंधीत ड्राइव्हर्स डाउनलोड करतात. तुमच्या वितरकाकडे यापैकी एक असल्यास, वापर करून कोणतेही वायरलेस ड्राइव्हर्स आढळतात किंवा नाही याकरिता शोधा.</p>
+    </item>
+    <item>
+      <p>Use the Windows drivers for your adapter.</p>
+      <p>सर्वसाधारनपणे, एका कार्यप्रणालीकरिता (जसे कि Windows) निर्देशीत डिव्हास ड्राइव्हरचा वापर दुसऱ्या कार्यप्रणालीवर (जसे कि Linux) करणे शक्य नाही. याचे कारण म्हणजे दोघांकडे साधन हाताळणीकरिता विविध पर्याय असतात. वायरलेस अडॅप्टर्सकरिता, तरी, सहत्वता स्तर ज्यास <em>NDISwrapper</em> म्हटले जाते, इंस्टॉल करणे शक्य आहे आणि जे तुम्हाला Windows वायरलेस ड्राइव्हर्स Linuxवर वापरण्यास सुविधा पुरवते. हे उपयोगी ठरते कारण वायरलेस अडॅपटरकडे नेहमी Windows ड्राइव्हर्स उपलब्ध असतात, तसेच Linux ड्राइव्हर्स कधीकधी उपलब्ध होत नाही. NDISwrapper च्या वापरविषयी अधिक माहिती <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">येथे</link> उपलब्ध आहे. लक्षात ठेवा सर्व वायरलेस ड्राइव्हर्सचा वापर NDISwrapper मार्गे शक्य नाही.</p>
+    </item>
+  </list>
+
+  <p>यापैकी कुठलेही पर्याय कार्य करत नसल्यास, तुम्हाला हे योग्यरित्या कार्य करते किंवा नाही, हे पाहण्याकरिता वेगळे वायरलेस अडॅप्टरचा वापर करायला आवडेल. USB वायरलेस अडॅप्टर्स सहसा जास्त स्वस्त असतात, आणि संगणकाशी जोडले जाऊ शकतात. तरी, विकत घेण्यापूर्वी, अडॅप्टर Linux वितरणसह सहत्व आहे याची तपासणी करा.</p>
+
+</page>

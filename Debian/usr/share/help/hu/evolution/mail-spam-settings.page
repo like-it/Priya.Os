@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-spam-settings" xml:lang="hu">
+
+  <info>
+    <desc>Hogyan állítható be a nemkívánatos levélszemét kezelése?</desc>
+
+    <link type="guide" xref="mail-spam"/>
+    <link type="seealso" xref="mail-spam-marking"/>
+
+    <revision pkgversion="3.12.9" version="0.11" date="2015-03-15" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Patrick O'Callaghan</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Pete Biggs</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-prefs-mail.html.en#mail-prefs-junk -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Levélszemét beállításai</title>
+
+<section id="junk-tools">
+<title>Eszközök</title>
+<p>Az <app>Evolution</app> lehetővé teszi a nem kívánt levélszemét keresését a <app>Bogofilter</app> vagy <app>SpamAssassin</app> eszközökkel. Ezen eszközök használatához telepítenie kell azokat a disztribúciója csomagkezelő eszközével.</p>
+
+<note style="info package">
+  <p>Szükség lehet a <app>Bogofilter</app> vagy <app>SpamAssassin</app> csomagok egyikének telepítésére.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:bogofilter" href="http://bogofilter.sourceforge.net/" style="button">A Bogofilter telepítése</link></p>
+      <p><link action="install:spamassassin" href="http://spamassassin.apache.org/" style="button">A SpamAssasin telepítése</link></p>
+    </if:when>
+  </if:choose>
+</note>
+
+<p>A SpamAssassin előre megadott szabályok halmazának használatával működik, így a levélszemetet azonnal felismeri. A Bogofilter nem tartalmaz ilyen alapértelmezett szabályokat, így a telepítése után nem fog felismerni semmit. A megfelelő működéséhez előbb <link xref="mail-spam-marking">be kell tanítania</link>. Tanítással a SpamAssassin működése is módosítható.</p>
+</section>
+
+<section id="junk-folder">
+<title>Levélszemét mappa</title>
+<p>A levélszemétként (akár saját kezűleg, akár a SpamAssassin vagy Bogofilter használatával automatikusan) megjelölt üzenetek áthelyezésre kerülnek a <gui>Levélszemét</gui> mappába.</p>
+</section>
+
+<section id="preferences">
+<title>Levélszemét beállításai</title>
+<note style="tip"><p>A jelen oldalon ismertetett levélszemét-kezelési lehetőségek csak a POP és helyi kézbesítésű fiókok esetén érhetők el. IMAP fiókok használata esetén nézze meg az <app>Evolution</app> beállításait a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Postafiókok</gui><gui style="button">Szerkesztés</gui><gui>Fogadás beállításai</gui></guiseq> alatt.</p></note>
+<p>A levélszemét beállításaival módosíthatja, hogy az <app>Evolution</app> hogyan kezeli a levélszemetet:</p>
+<steps>
+<item><p>Válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Shift</key><key>Ctrl</key><key>S</key></keyseq> kombinációt.</p></item>
+<item><p>Válassza a <gui>Levelezés beállításai</gui> ikont.</p></item>
+<item><p>Lépjen a <gui>Levélszemét</gui> lapra. Itt megadhatja a következőket:</p>
+<list>
+<item><p>Levélszemét keresése beérkezett levelekben.</p></item>
+<item><p>Levélszemét törlése kilépéskor, és a levélszemét törlésének gyakorisága.</p></item>
+<item><p>Ne jelölje meg az üzeneteket szemétként, ha a feladó a címjegyzékében van.</p></item>
+<item><p>Levélszemét keresése egyéni (a levélkiszolgáló által felvett) fejlécekben.</p></item>
+</list>
+</item>
+</steps>
+
+<note style="tip"><p>További információkért, vagy a Bogofilter vagy a SpamAssassin beállításával kapcsolatos konkrét válaszokért nézze meg a <link href="http://bogofilter.sourceforge.net/faq.shtml">Bogofilter</link> vagy a <link href="http://wiki.apache.org/spamassassin/FrequentlyAskedQuestions">SpamAssassin</link> angol nyelvű Gyakori kérdések oldalát.</p></note>
+</section>
+
+</page>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="ssh-connect-remote" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+    </credit>
+
+    <desc>Usar claves SSH para iniciar sesión en otro equipo sin introducir una contraseña.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Conectarse a otros equipos</title>
+
+  <p>Puede usar <app>Contraseñas y claves</app> para instalar su clave SSH en un equipo remoto que pueda ejecutar un servidor SSH. también puede <link xref="ssh-create#ssh-create-key-and-set-up">configurar su clave SSH para inicio de sesión remoto cuando crea la clave</link>.</p>
+
+  <steps>
+    <item>
+      <p>Pulse con el botón derecho sobre la <gui>clave SSH</gui> y elija <gui>Configurar clave para Shell segura…</gui>.</p>
+    </item>
+    <item>
+      <p>En la ventana de diálogo que se abre, introduzca la <gui>Dirección del servidor</gui> al que se suele conectar de manera remota por SSH y pulse <gui>Configurar</gui>.</p>
+    </item>
+    <item>
+      <p>El programa intentará conectarse a la <gui>Dirección del servidor</gui> indicada cono el <gui>Nombre de inicio de sesión</gui> introducido. Si hay algún problema al intentar acceder al equipo remoto, aparecerá una ventana emergente explicando el problema, y podrá intentarlo de nuevo. Asegúrese de que está conectado a la red y de que ele equipo remoto está activo y accesible.</p>
+    </item>
+    <item>
+      <p>Si la conexión al equipo remoto se completa con éxito, aparecerá un cuadro de diálogo solicitando la <gui>Contraseña</gui> usada para iniciar sesión en el equipo remoto. Introdúzcala y pulse <gui style="button">Aceptar</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Ahora debería poder iniciar sesión en el equipo remoto mediante SSH sin necesidad de contraseña.</p>
+
+</page>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" version="1.0 if/1.0" id="shell-workspaces" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces" group="#first"/>
+
+    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10.3" date="2014-01-26" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>GNOME ドキュメンテーションプロジェクト</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>ワークスペースを使って、デスクトップのウィンドウを分類し、まとめる。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>ワークスペースとは何ですか? 何の役に立ちますか?</title>
+
+    <media type="image" src="figures/shell-workspaces.png" width="162" height="434" style="floatend floatright">
+        <p>ワークスペースセレクター</p>
+    </media>
+
+  <p if:test="!platform:gnome-classic">Workspaces refer to the grouping of
+  windows on your desktop. You can create multiple workspaces, which act like
+  virtual desktops. Workspaces are meant to reduce clutter and make the desktop
+  easier to navigate.</p>
+
+  <p if:test="platform:gnome-classic">Workspaces refer to the grouping of
+  windows on your desktop. You can use multiple workspaces, which act like
+  virtual desktops. Workspaces are meant to reduce clutter and make the desktop
+  easier to navigate.</p>
+
+  <p>ワークスペースは、ユーザーの作業を体系的に整理するのに使用されます。たとえば、メーラーやチャットクライアントなどのコミュニケーションツールのウィンドウを 1 つのワークスペースにまとめて配置しておき、いま作業に取り組んでいるウィンドウは別のワークスペースに配置する、といったことができます。その間また別のワークスペースでは、音楽管理ツールが起動していることもあるでしょう。</p>
+
+<p>ワークスペースの使い方:</p>
+
+<list>
+  <item>
+    <p if:test="!platform:gnome-classic">In the
+    <gui xref="shell-introduction#activities">Activities</gui> overview, move your cursor
+    to the right-most side of the screen.</p>
+    <p if:test="platform:gnome-classic">Press the
+    <key xref="keyboard-key-super">Super</key> key to open the
+    <gui>Activities</gui> overview and then move your cursor to the right-most
+    side of the screen.</p>
+  </item>
+  <item>
+    <p if:test="!platform:gnome-classic">A vertical panel will appear showing
+    workspaces in use, plus an empty workspace. This is the
+    workspace selector.</p>
+    <p if:test="platform:gnome-classic">A vertical panel will appear showing
+    available workspaces. This is the workspace selector.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>To add a workspace, drag and drop a window from an existing workspace
+    onto the empty workspace in the workspace selector. This workspace now
+    contains the window you have dropped,
+    and a new empty workspace will appear below it.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>ワークスペースを削除するには、そのワークスペースにあるウィンドウをすべて閉じるか、あるいは他のワークスペースへ移動させます。</p>
+  </item>
+</list>
+
+<p if:test="!platform:gnome-classic">少なくとも 1 つのワークスペースは、常に存在しています。</p>
+
+</page>

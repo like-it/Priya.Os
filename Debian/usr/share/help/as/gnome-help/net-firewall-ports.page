@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="as">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>এটা প্ৰগ্ৰামক আপোনাৰ ফায়াৰৱালৰ সৈতে নেটৱাৰ্ক অভিগম সামৰ্থবান/অসামৰ্থবান কৰিবলৈ আপুনি সঠিক নেটৱাৰ্ক পৰ্ট ধাৰ্য্য কৰিব লাগিব।</desc>
+  </info>
+
+  <title>সাধাৰণতে-ব্যৱহৃত নেটৱাৰ্ক পৰ্টসমূহ</title>
+
+  <p>This is a list of network ports commonly used by applications that provide
+  network services, like file sharing or remote desktop viewing. You can change
+  your system's firewall to <link xref="net-firewall-on-off">block or allow
+  access</link> to these applications. There are thousands of ports in use, so
+  this table isn't complete.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>পৰ্ট</p>
+	</td>
+	<td>
+	  <p>নাম</p>
+	</td>
+	<td>
+	  <p>বিৱৰণ</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>চিস্টেমসমূহক আন চিস্টেমসমূহ সন্ধান কৰাৰ, আৰু সিহতে প্ৰদান কৰা সেৱাসমূহৰ বিৱৰণ দিয়াৰ অনুমতি দিয়ক, আপুনি বিৱৰণসমূহ হস্তচালিতভাৱে ধাৰ্য্য কৰাৰ প্ৰয়োজনীয়তা নহোৱাকৈ।</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>প্ৰিন্টিং</p>
+	</td>
+	<td>
+	  <p>আপোনাক নেটৱাৰ্কৰ সহায়ত এটা প্ৰিন্টাৰলৈ প্ৰিন্ট কাৰ্য্য পঠোৱাৰ অনুমতি দিয়ে।</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>প্ৰিন্টিং</p>
+	</td>
+	<td>
+	  <p>আপোনাক আপোনাৰ প্ৰিন্ৰাক নেটৱাৰ্কত অন্যৰ সৈতে অংশীদাৰী কৰাৰ অনুমতি দিয়ে।</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>উপস্থিতি</p>
+	</td>
+	<td>
+	  <p>নেটৱাৰ্কত আপোনাৰ তৎক্ষনাত বাৰ্তাৰ অৱস্থা, যেনে "অনলাইন" অথবা "ব্যস্ত" প্ৰকাশ কৰাৰ অনুমতি দিয়ে।</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>দূৰৱৰ্তী ডেস্কটপ</p>
+	</td>
+	<td>
+	  <p>আপোনাৰ ডেস্কটপ অংশীদাৰী কৰাৰ অনুমতি দিয়ে যাতে অন্য মানুহে ইয়াক দৰ্শন কৰিব পাৰে অথবা দূৰৱৰ্তী সহায় প্ৰদান কৰিব পাৰে।</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>সংগিত অংশীদাৰী (DAAP)</p>
+	</td>
+	<td>
+	  <p>নেটৱাৰ্কত অন্যৰ সৈতে আপোনাৰ সংগিত লাইব্ৰেৰী অংশীদাৰী কৰাৰ অনুমতি দিয়ে।</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

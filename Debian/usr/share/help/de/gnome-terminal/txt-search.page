@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="task" id="txt-search" xml:lang="de">
+
+  <info>
+    <revision version="0.1" date="2013-03-03" status="candidate"/>
+    <link type="guide" xref="index#textoutput"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Die Ausgaben im <app>Terminal</app> durchsuchen.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2010, 2012-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Die <gui style="menuitem">Suche</gui> verwenden</title>
+
+  <p>So suchen Sie nach einem Text in der Ausgabe von <app>Terminal</app>:</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui style="menu">Suchen</gui><gui style="menuitem">Suchen …</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Geben Sie den Suchbegriff ein und wählen Sie <gui style="button">Suchen</gui>. Wählen Sie zum Abbruch der Suche <gui style="button">Schließen</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Sie können die folgenden Optionen verwenden, um die Suchergebnisse einzugrenzen:</p>
+
+  <terms>
+    <item>
+      <title><gui style="checkbox">Groß-/Kleinschreibung berücksichtigen</gui></title>
+      <p>Großschreibung berücksichtigen: Suchergebnisse werden auf jene mit übereinstimmender Groß-/Kleinschreibung eingeschränkt.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Nur vollständige Wörter berücksichtigen</gui></title>
+      <p><app>Terminal</app> sucht nach dem vollständigen Suchbegriff und ignoriert Ergebnisse mit teilweiser Übereinstimmung. Wenn Sie zum Beispiel nach »gnome« suchen, so zeigt <app>Terminal</app> nur Ergebnisse an, die exakt mit dem Suchbegriff übereinstimmen und ignoriert Ergebnisse wie z.B. »gnome-terminal«.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Als regulären Ausdruck verarbeiten</gui></title>
+      <p>Sie können in Ihrem Suchbegriff Muster mit regulären Ausdrücken verwenden, die auch als Regex-Muster bekannt sind. <app>Terminal</app> zeigt die Ergebnisse an, die diesen Suchbegriffen entsprechen.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Rückwärts suchen</gui></title>
+      <p><app>Terminal</app> sucht nach dem Schlüsselwort in der neuesten Ausgabe und setzt die Suche nach oben fort. Diese Option wird empfohlen, wenn Sie nach einem Schlüsselwort suchen, dass jüngst erschienen sein könnte. Somit sollten Sie das Schlüsselwort schnell finden.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Suche beim Erreichen des Endes am Anfang fortsetzen</gui></title>
+      <p><app>Terminal</app> sucht ab der aktuellen Position im Zeilenspeicher bis zum Ende der verfügbaren Terminalausgabe und beginnt dann die Suche wieder von oben.</p>
+    </item>
+  </terms>
+
+  <note style="tip">
+    <p>Wenn Sie mit einer längeren Ausgabe in <app>Terminal</app> rechnen, so vergrößern Sie den <link xref="pref-scrolling#lines">Zeilenspeicher</link>, um mit <app>Terminal</app> weiter zurück suchen zu können.</p>
+  </note>
+
+</page>

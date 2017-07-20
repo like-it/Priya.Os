@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="gu">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>ટિફની એન્ટોપોલસ્કી</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>GNOME દસ્તાવેજીકરણ પ્રોજેક્ટ</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>માઇકલ હીલ</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>ફોલ્ડરોની યાદી જ્યાં તમે દસ્તાવેજો, ફાઇલો અને સુયોજનોને શોધી શકો છો કે જે તમે બેકઅપ લઇ શકો છો.</desc>
+  </info>
+
+  <title>હું ક્યાં ફાઇલને શોધી શકુ છુ મારે તેનો બેકઅપ લેવો છે?</title>
+
+  <p>નક્કી કરી રહ્યા છે કઇ ફાઇલોનું બેકઅપ લેવુ, અને તેઓને સ્થિત કરવી, આ પગલું વધારે મુશ્કેલીભર્યુ છે જ્યારે બેકઅપ લેવોને પ્રયત્ન કરી રહ્યા હોય. નીચે યાદી થયેલ મહત્ત્વની ફાઇલોનું સામાન્ય સ્થાન છે અને સુયોજનો કે જે તમે બેકઅપ લેવા માંગો છો.</p>
+
+<list>
+ <item>
+  <p>વ્યક્તિગત ફાઇલો (દસ્તાવેજીકરણો, સંગીત, ફોટો અને વિડિયો)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">આ સામાન્ય રીતે તમારાં ઘર ફોલ્ડરમાં સંગ્રહેલ છે (<file>/home/your_name</file>). તેઓ ઉપફોલ્ડરો હોઇ શકે છે જેમ કે ડેસ્કટોપ, દસ્તાવેજ, ચિત્રો, સંગીત અને વિડિયો.</p>
+  <p>If your backup medium has sufficient space (if it is an external hard
+  disk, for example), consider backing up the entire Home folder. You can find
+  out how much disk space your Home folder takes up by using the
+  <app>Disk Usage Analyzer</app>.</p>
+ </item>
+
+ <item>
+  <p>છુપાયેલ ફાઇલો</p>
+  <p>Any file or folder name that starts with a period (.) is hidden by
+  default. To view hidden files, click the
+  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
+  button in the toolbar, and then choose <gui>Show Hidden Files</gui>, or press
+  <keyseq><key>Ctrl</key><key>H</key></keyseq>. You can copy these to a
+  backup location like any other file.</p>
+ </item>
+
+ <item>
+  <p>વ્યક્તિગત સુયોજનો (ડેસ્કટોપ પસંદગીઓ, થીમ, અને સોફ્ટવેર સુયોજનો)</p>
+  <p>તમારા ઘર ફોલ્ડરની અંદર છુપાયેલ ફોલ્ડરોમાં મોટાભાગનાં કાર્યક્રમો તેનાં સુયોજનોને સંગ્રહે છે (છુપાયેલ ફાઇલો પર જાણકારી માટે ઉપર જુઓ).</p>
+  <p>મોટાભાગનાં તમારા કાર્યક્રમ સુયોજનો એ  તમારાં ઘર ફોલ્ડરમાં છુપાયેલ ફોલ્ડરો <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file>, અને <file>.local</file> માં સંગ્રહેલ હશે.</p>
+ </item>
+
+ <item>
+  <p>સિસ્ટમ-વાઇડ સુયોજનો</p>
+  <p>Settings for important parts of the system are not stored in your Home
+  folder. There are a number of locations that they could be stored, but most
+  are stored in the <file>/etc</file> folder. In general, you will not need to
+  back up these files on a home computer. If you are running a server, however,
+  you should back up the files for the services that it is running.</p>
+ </item>
+</list>
+
+</page>

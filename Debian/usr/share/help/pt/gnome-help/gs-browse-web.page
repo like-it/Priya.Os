@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="pt">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Navegar na Internet</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">Um tutorial sobre navegação pela Internet</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>nunober</mal:name>
+      <mal:email>nunober@gmail.com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Albuquerque</mal:name>
+      <mal:email>palbuquerque73@gmail.com</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tiago Santos</mal:name>
+      <mal:email>tiagofsantos81@sapo.pt</mal:email>
+      <mal:years>2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Navegar na Internet</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>Carregue no menu <gui>Aplicações</gui> no topo à esquerda do ecrã.</p></item>
+      <item><p>Do menu, selecione <guiseq><gui>Internet</gui><gui>Firefox</gui> </guiseq>.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>Mova o ponteiro do rato para o canto de <gui>Atividades</gui> no topo à esquerda do ecrã para mostrar o <gui>Panorama de atividades</gui>.</p></item>
+      <item><p>Selecione o ícone de navegador <app>Firefox</app> da barra no lado esquerdo da tela.</p></item>
+    </steps>
+
+    <note><p>De forma alternativa, pode executar o navegador da seguinte forma: <link xref="gs-use-system-search">digite</link> <app>Firefox</app> no <gui>Panorama de atividades</gui>.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>Mova o ponteiro do rato para o canto de <gui>Atividades</gui> no topo à esquerda do ecrã para mostrar o <gui>Panorama de atividades</gui>.</p></item>
+      <item><p>Selecione o ícone do navegador da <app>Internet</app> na barra no lado esquerdo do ecrã.</p></item>
+    </steps>
+
+    <note><p>De forma alternativa, pode executar o navegador <link xref="gs-use-system-search">simplesmente digitando</link> <app>web</app> no <gui>Panorama de atividades</gui>.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>Carregue na barra de endereço no topo da janela do navegador e comece a digitar a página que deseja visitar.</p></item>
+      <item><p>Ao digitar uma página, a procura começa pelo histórico e pelo favoritos do navegador, de forma que não precisa de se lembrar do endereço exato.</p>
+        <p>Se a página for encontrada no histórico ou nos favoritos, é mostrada uma lista pendente por baixo da barra de endereços.</p></item>
+      <item><p>Com a lista pendente, pode selecionar rapidamente uma página usando as teclas de setas.</p>
+      </item>
+      <item><p>Após ter uma página selecionada, prima <key>Enter</key> para a visitar.</p>
+      </item>
+    </steps>
+
+</page>

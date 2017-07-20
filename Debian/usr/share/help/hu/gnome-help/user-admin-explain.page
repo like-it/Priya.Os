@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="user-admin-explain" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A rendszer fontos részeinek módosításához rendszergazdai jogosultság szükséges.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Hogyan működik a rendszergazdai jogosultság?</title>
+
+  <p>Az <em>Ön</em> által létrehozott fájlokon kívül a számítógép számos, a rendszer megfelelő működéséhez szükséges fájlt tartalmaz. Ha ezek a fontos <em>rendszerfájlok</em> helytelenül kerülnek módosításra, akkor a legváltozatosabb funkciók romolhatnak el, emiatt a fájlok alapesetben írásvédettek. Bizonyos alkalmazások képesek a rendszer fontos részeinek módosítására, emiatt szintén védettek.</p>
+
+  <p>A védelem lényege, hogy csak <em>rendszergazdai jogosultsággal</em> rendelkező felhasználók módosíthatják a fájlokat, vagy használhatják az alkalmazásokat. A napi használatban nem lesz szüksége rendszerfájlok módosítására vagy ezen alkalmazások használatára, így alapesetben nincs rendszergazdai jogosultsága.</p>
+
+  <p>Néha szükség lehet ezen alkalmazások használatára, így ideiglenesen rendszergazdai jogosultságra tehet szert a módosítások végrehajtásához. Ha egy alkalmazás rendszergazdai jogosultságot igényel, akkor bekéri a jelszavát. Ha például új szoftvert szeretne telepíteni, akkor a szoftvertelepítő (csomagkezelő) bekéri a rendszergazdai jelszót, hogy telepíthesse az új alkalmazást a rendszerre. Miután ezzel elkészült, a rendszergazdai jogosultságot elveszti.</p>
+
+  <p>A rendszergazdai jogosultság a felhasználói fiókhoz tartozik. A <gui>Rendszergazda</gui> felhasználók rendelkeznek rendszergazdai jogosultsággal, míg az <gui>Általános</gui> felhasználók nem. Ezek nélkül nem lesz képes szoftverek telepítésére. Egyes felhasználói fiókok (például a „root” fiók) állandó rendszergazdai jogosultsággal rendelkeznek. Ne használjon állandó rendszergazdai jogosultsággal rendelkező fiókot, mert véletlenül megváltoztathat valamit, amit igazából nem akart (például letöröl egy fontos rendszerfájlt).</p>
+
+  <p>Összefoglalva, a rendszergazdai jogosultság szükség esetén lehetővé teszi a rendszer fontos részeinek megváltoztatását, de megakadályozza a véletlen módosítást.</p>
+
+  <note>
+    <title>Ki az a „root felhasználó”?</title>
+    <p>Az állandóan rendszergazdai jogokkal rendelkező felhasználó neve a <em>root</em>. A <cmd>su</cmd> és <cmd>sudo</cmd> programok használatával ideiglenesen megkaphatja a „root” felhasználó jogosultságait.</p>
+  </note>
+
+<section id="advantages">
+  <title>Miért hasznos a rendszergazdai jogosultság?</title>
+
+  <p>A rendszergazdai jogosultság meglétének ellenőrzése a fontos változtatások előtt azért hasznos, mert megakadályozza az operációs rendszer szándékos vagy véletlen „elrontását”.</p>
+
+  <p>Ha mindig rendszergazdai jogosultsága lenne, véletlenül megváltoztathatna egy fontos fájlt, vagy olyan alkalmazást futtathatna, amely esetleg egy tévedésből kifolyólag változtat meg valami fontosat. Csak a rendszergazdai jogosultságok ideiglenes, adott céllal való használata csökkenti az ilyen hibák bekövetkezésének veszélyét.</p>
+
+  <p>Csak néhány megbízható felhasználónak szabad rendszergazdai jogosultságot adni. Ez megakadályozza a többi felhasználót a rendszer működésének nem kívánt befolyásolásában, például szükséges alkalmazások eltávolításában, szükségtelen alkalmazások telepítésében és fontos fájlok módosításában. Ez biztonsági szempontból hasznos.</p>
+
+</section>
+
+</page>

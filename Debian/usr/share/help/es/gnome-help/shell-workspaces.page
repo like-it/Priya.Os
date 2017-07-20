@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" version="1.0 if/1.0" id="shell-workspaces" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces" group="#first"/>
+
+    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10.3" date="2014-01-26" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Las áreas de trabajo son una manera de agrupar ventanas en su escritorio.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>¿Qué es un área de trabajo y cómo me ayudará?</title>
+
+    <media type="image" src="figures/shell-workspaces.png" width="162" height="434" style="floatend floatright">
+        <p>Selector de áreas de trabajo</p>
+    </media>
+
+  <p if:test="!platform:gnome-classic">Las áreas de trabajo se refieren a la agrupación de ventanas en su escritorio. Puede crear varias áreas de trabajo, que actúan como escritorios virtuales. Las áreas de trabajo están destinadas a reducir el desorden y hacer que el escritorio sea sencillo de examinar.</p>
+
+  <p if:test="platform:gnome-classic">Las áreas de trabajo se refieren a la agrupación de ventanas en su escritorio. Puede usar varias áreas de trabajo, que actúan como escritorios virtuales. Las áreas de trabajo están destinadas a reducir el desorden y hacer que el escritorio sea sencillo de examinar.</p>
+
+  <p>Podría utilizar las áreas de trabajo para organizar su trabajo. Por ejemplo, podría tener todas sus ventanas de comunicación, tales como el correo electrónico y su programa de chat en un área de trabajo y el trabajo que está haciendo en un área de trabajo diferente. Su gestor de música podría estar en una tercera área de trabajo.</p>
+
+<p>Usando áreas de trabajo:</p>
+
+<list>
+  <item>
+    <p if:test="!platform:gnome-classic">En la a la vista de <gui xref="shell-introduction#activities">Actividades</gui>, mueva el cursor a la parte derecha de la pantalla.</p>
+    <p if:test="platform:gnome-classic">Pulse la tecla <key xref="keyboard-key-super">Super</key> para abrir la vista de <gui>Actividades</gui> y mueva el cursor la lateral derecho de la pantalla.</p>
+  </item>
+  <item>
+    <p if:test="!platform:gnome-classic">Aparecerá un panel vertical con las áreas de trabajo en uso y con área de trabajo adicional vacía. Esto es el selector de áreas de trabajo.</p>
+    <p if:test="platform:gnome-classic">Aparecerá un panel vertical con las áreas de trabajo disponibles. Esto es el selector de áreas de trabajo.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>Para añadir un área de trabajo, mueva una ventana de un área de trabajo existente hasta el área de trabajo vacía en el selector de áreas de trabajo. Esta área de trabajo contiene ahora la ventana que se dejó en ella, y debe aparecer un área de trabajo nueva vacía en la parte inferior.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>Para quitar un área de trabajo, simplemente cierre todas las ventanas que tenga, o muévalas a otras áreas de trabajo.</p>
+  </item>
+</list>
+
+<p if:test="!platform:gnome-classic">Siempre hay al menos un área de trabajo.</p>
+
+</page>

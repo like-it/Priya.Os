@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-media" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.2" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Média megosztása a helyi hálózaton UPnP használatával.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Zene, fényképek és videók megosztása</title>
+
+  <p>A számítógépén lévő médiafájlokat tallózhatja, keresheti és lejátszhatja egy <sys>UPnP</sys> vagy <sys>DLNA</sys>-képes eszközzel, például telefonnal, TV-vel vagy játékkonzollal. A <gui>Médiamegosztás</gui> beállításával engedélyezheti ezen eszközöknek a zenéit, fényképeit és videóit tartalmazó mappák elérését.</p>
+
+  <note style="info package">
+    <p>A <gui>Médiamegosztás</gui> csak akkor látható, ha a <app>Rygel</app> csomag telepítve van.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:rygel" style="button">A Rygel telepítése</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Megosztás</gui> szót.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Megosztás</gui> ikonra a panel megnyitásához.</p>
+    </item>
+    <item>
+      <p>Ha a <gui>Megosztás</gui> <gui>KI</gui> van kapcsolva, akkor kapcsolja <gui>BE</gui> állásba a kapcsolót.</p>
+
+      <note style="info"><p>Ha a <gui>Számítógép neve</gui> alatti szöveg szerkeszthető, akkor <link xref="sharing-displayname">megváltoztathatja</link> a számítógép által a hálózaton megjelenített nevet.</p></note>
+    </item>
+    <item>
+      <p>Nyissa meg a <gui>Médiamegosztás</gui> panelt.</p>
+    </item>
+    <item>
+      <p>Kapcsolja <gui>BE</gui> a <gui>Médiamegosztás</gui> kapcsolót.</p>
+    </item>
+    <item>
+      <p>Alapesetben a <file>Zene</file>, <file>Képek</file> és <file>Videók</file> mappák vannak megosztva. Eltávolításukhoz kattintson a mappa neve melletti <gui>X</gui>-re.</p>
+    </item>
+    <item>
+      <p>Nyomja meg a <gui style="button">+</gui> gombot a <gui>Válasszon mappát</gui> ablak megnyitásához. Lépjen <em>be</em> a kívánt mappába, és nyomja meg a <gui style="button">Megnyitás</gui> gombot.</p>
+    </item>
+    <item>
+      <p>Nyomja meg az <gui style="button">X</gui> gombot. Mostantól a külső eszközzel is képes lesz a kiválasztott mappákban lévő média tallózására vagy lejátszására.</p>
+    </item>
+  </steps>
+
+  <section id="networks">
+  <title>Hálózatok</title>
+
+  <p>A <gui>Hálózatok</gui> szakasz felsorolja azokat a hálózatokat, amelyekhez jelenleg csatlakozik. A mellettük lévő <gui>BE / KI</gui> kapcsolóval szabályozhatja, hogy médiafájljai melyeken oszthatók meg.</p>
+
+  </section>
+
+</page>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="zh-HK">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">瀏覽網頁</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">A tutorial on browsing the web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Cheng-Chia Tseng</mal:name>
+      <mal:email>pswo10680@gmail.com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>瀏覽網頁</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>點按畫面左上角的 <gui>應用程式</gui> 選單。</p></item>
+      <item><p>從選單中，請選取 <guiseq><gui>互聯網</gui><gui>Firefox</gui> </guiseq>。</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>將你的鼠標移到螢幕左上角的 <gui>概覽</gui> 角落，如此可顯示 <gui>活動概覽</gui> 畫面。</p></item>
+      <item><p>從螢幕左側的長欄中選取 <app>Firefox</app> 瀏覽器圖示。</p></item>
+    </steps>
+
+    <note><p>或者，你可以直接在 <gui>活動概覽</gui> 畫面中 <link xref="gs-use-system-search">直接輸入</link> <em>Firefox</em> 來啟動瀏覽器。</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>將你的鼠標移到螢幕左上角的 <gui>概覽</gui> 角落，如此可顯示 <gui>活動概覽</gui> 畫面。</p></item>
+      <item><p>從螢幕左側的長欄中選取 <app>網頁</app> 瀏覽器圖示。</p></item>
+    </steps>
+
+    <note><p>或者，你可以直接在 <gui>活動概覽</gui> 畫面中 <link xref="gs-use-system-search">直接輸入</link> <em>網頁</em> 來啟動瀏覽器。</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>點按瀏覽器視窗頂端的位址列，並輸入你想要造訪的網站。</p></item>
+      <item><p>輸入之時會自動搜尋相關瀏覽器歷史與書籤，如此一來你就無需記住實際的網址。</p>
+        <p>如果歷史或書籤中找到相關網站，位址列下方則會列出個下拉清單供選擇。</p></item>
+      <item><p>從下拉清單中，你可以使用方向鍵快速選取網站。</p>
+      </item>
+      <item><p>在你選好網站後，請按下 <key>Enter</key> 鍵前往。</p>
+      </item>
+    </steps>
+
+</page>

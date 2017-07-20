@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>Atvērt datnes ar vienu klikšķi, norādīt, ko darīt ar izpildāmām teksta datnēm un iestatīt miskastes uzvedību.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Datņu pārvaldnieka uzvedības iestatījumi</title>
+<p>Jūs varat noteikt, vai atvērsiet datni ar vienkāršu vai dubultklikšķi, to, kā rīkoties ar izpildāmiem teksta datnēm, un ar miskasti saistīto uzvedību. Spiediet <gui>Datnes</gui> augšējā joslā, izvēlieties <gui>Iestatījumi</gui> un izvēlieties cilni <gui>Uzvedība</gui>.</p>
+
+<section id="behavior">
+<title>Uzvedība</title>
+<terms>
+ <item>
+  <title><gui>Viens klikšķis atver vienumus</gui></title>
+  <title><gui>Dubultklikšķis atver vienumus</gui></title>
+  <p>Pēc noklusējuma viens klikšķis izvēlas datni, bet dubultklikšķis to atver. Tā vietā jūs varat izvēlēties, lai datnes un mapes atvērtos ar vienu klikšķi. Šajā režīmā jūs varat pieturēt nospiestu <key>Ctrl</key> taustiņu, lai izmantotu klikšķus, lai izvēlētos datnes.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>Izpildāmās teksta datnes</title>
+ <p>Izpildāma teksta datne ir datne, kas satur palaižamu (izpildāmu) programmu. Arī <link xref="nautilus-file-properties-permissions">datnes atļaujām</link> jābūt iestatītām, lai atļautu palaist datni kā programmu. Izplatītākās izpildāmās teksta datnes ir <sys>čaulas</sys>, <sys>Python</sys> un <sys>Perl</sys> skripti. To paplašinājumi ir attiecīgi <file>.sh</file>, <file>.py</file> un <file>.pl</file>.</p>
+ 
+ <p>Atverot izpildāmu datni, jūs varat izvēlēties no:</p>
+ 
+ <list>
+  <item>
+    <p><gui>Palaist izpildāmās teksta datnes, kad tās tiek atvērtas</gui></p>
+  </item>
+  <item>
+    <p><gui>Skatīt izpildāmās teksta datnes, kad tās tiek atvērtas</gui></p>
+  </item>
+  <item>
+    <p><gui>Vaicāt katru reizi</gui></p>
+  </item>
+ </list>
+
+ <p>Ja izvēlēsities <gui>Vaicāt katru reizi</gui>, parādīsies dialoglodziņš, kas vaicās, vai vēlaties izpildīt vai skatīt izvēlēto teksta datni.</p>
+
+ <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
+
+<steps>
+  <item>
+    <p>Dodaties uz vēlamo mapi.</p>
+  </item>
+  <item>
+    <p>Izvēlieties vēlamo datni.</p>
+  </item>
+  <item>
+    <p>Spiediet labo klikšķi uz datnes, lai atvērtu konteksta izvēlni un izvēlnē <gui style="menuitem">Skripti</gui> izvēlieties skriptu, ko izpildīt.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>Skriptam netiks padoti nekādi parametri, ja tas tiks izpildīts no attālinātas mapes, piemēram, mapes, kas rāda tīmekļa vai <sys>ftp</sys> saturu.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">Datņu pārvaldnieka miskastes iestatījumi</title>
+</info>
+<title>Miskaste</title>
+
+<terms>
+ <item>
+  <title><gui>Ask before emptying the Trash</gui></title>
+  <p>Šī iespēja pēc noklusējuma ir ieslēgta. Iztukšojot miskasti, sistēmas ziņojums prasīs apstiprinājumu, ka tiešām vēlaties iztukšot miskasti vai dzēst datnes.</p>
+ </item>
+</terms>
+</section>
+
+</page>

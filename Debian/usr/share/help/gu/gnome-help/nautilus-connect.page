@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="gu">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>માઇકલ હીલ</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>FTP, SSH, Windows shares, અથવા WebDAV પર બીજા કમ્પ્યૂટર પર ફાઇલોને જુઓ અને ફેરફાર કરો.</desc>
+
+  </info>
+
+<title>સર્વર અથના નેટવર્ક ભાગ પર ફાઇલો બ્રાઉઝ કરો</title>
+
+<p>તમે સર્વર પર ફાઇલોને બ્રાઉઝ અને જોવા માટે સર્વર અથવા નેટવર્ક વહેંચણીને જોડાઇ શકો છો,  જો તેઓ તમારાં પોતાના કમ્પ્યૂટર પર હતા. આ ઇન્ટરનેટ પર ફાઇલોને ડાઉનલોડ અથવા અપલોડ કવા માટે સુસંગત રસ્તો છે, અથવા તમારાં સ્થાનિક નેટવર્ક પર બીજા લોકો સાથે ફાઇલોને વહેંચવા માટે.</p>
+
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
+
+<steps>
+  <title>ફાઇલ સર્વર સાથે જોડાવો</title>
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
+   sidebar.</p>
+  </item>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
+  <note>
+    <p>જો તમે પહેલાં સર્વર સાથે જોડાયેલ હોય, તમે <gui>તાજેતરનાં સર્વરો</gui> ની યાદીમાં તેની પર ક્લિક કરી શકો છો.</p>
+  </note>
+  </item>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>URLs લખી રહ્યા છે</title>
+
+<p><em>URL</em> અથવા <em>uniform resource locator</em> એ સરનામાંનુ રૂપ છે કે જે નેટવર્ક પર સ્થાન અથવા ફાઇલને સંદર્ભ કરે છે. આ સરનામું આનાં જેવુ બંધારિત થયેલ છે:</p>
+  <example>
+    <p><sys>scheme://servername.example.com/folder</sys></p>
+  </example>
+<p><em>યોજના</em> સર્વરનાં પ્રકાર અથવા પ્રોટોકોલને સ્પષ્ટ કરે છે. સરનામાંનો <em>example.com</em> ભાગ એ <em>ડોમેઇન નામ</em> તરીકે કહેવાયેલ છે. જો વપરાશકર્તાનામની જરૂરિયાત હોય તો, તે સર્વર નામ કરતા પહેલાં દાખલ થયેલ છે:</p>
+  <example>
+    <p><sys>scheme://username@servername.example.com/folder</sys></p>
+  </example>
+<p>અમુક યોજનાઓને સ્પષ્ટ કરવા માટે પોર્ટ નંબરની જરૂર છે. ડોમેઇન નામ પછી તેને દાખલ કરો:</p>
+  <example>
+    <p><sys>scheme://servername.example.com:port/folder</sys></p>
+  </example>
+<p>વિવિધ સર્વર પ્રકારો માટે નીચે ખાસ ઉદાહરણો છે કે જે આધારભૂત છે.</p>
+</section>
+
+<section id="types">
+ <title>સર્વરનાં પ્રકારો</title>
+
+<p>તમે વિવિધ પ્રકારનાં સર્વરો સાથે જોડાઇ શકો છો. અમુક સર્વરો એ સાર્વજનિક છે, અને કોઇપણ સાથે જોડાવા પરવાનગી છે. બીજા સર્વરો ને વપરાશકર્તાનામ અને પાસવર્ડ સાથે પ્રવેશવા તમારી જરૂર છે.</p>
+<p>તમે સર્વર પર ફાઇલો પર અમુક ક્રિયાઓને ચલાવવા માટે પરવાનગી મળતી નથી. ઉદાહરણ તરીકે, સાર્વજનિક FTP સાઇટ પર, તમે ફાઇલોને કાઢવા માટે કદાચ સક્ષમ હશો નહિં.</p>
+<p>URL જે તમે દાખલ કરેલ છે તે તેનાં પ્રોટોકોલ પર આધાર રાખે છે કે જે તેની ફાઇલ વહેંચણીને નિકાસ કરવા માટે સર્વરને વાપરે છે.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>જો તમારી પાસે સર્વર પર <em>સુરક્ષિત શેલ</em> ખાતુ હોય તો, તમે આ પદ્દતિની મદદથી જોડાઇ શકો છો. ઘણાં વેબ યજમાનો સભ્યો માટે SSH ખાતાને પૂરુ પાડે છે તેથી તેઓ સુરક્ષિત રીતે ફાઇલોને અપલોડ કરી શકે છે. SSH સર્વરોની હંમેશા તમને પ્રવેશવાની જરૂર છે.</p>
+  <p>ખાસ SSH URL આનાં જેવુ લાગે છે:</p>
+  <example>
+    <p><sys>ssh://username@servername.example.com/folder</sys></p>
+  </example>
+
+  <p>જ્યારે SSH ને વાપરી રહ્યા હોય, બધી માહિતી જે તમે મોકલી છે (તમારાં પાસવર્ડને સમાવી રહ્યા છે) એનક્રિપ્ટ થયેલ છે કે તમારાં નેટવર્ક પર બીજા વપરાશકર્તાઓ તેને જોઇ શકતા નથી.</p>
+</item>
+<item>
+  <title>FTP (પ્રવેશ સાથે)</title>
+  <p>FTP એ ઇન્ટરનેટ પર ફાઇલોને બદલવાનો જાણીતો રસ્તો છે. કારણ કે માહિતી FTP પર એનક્રિપ્ટ થયેલ નથી, ઘણાં સર્વરો એ SSH મારફતે પણ પ્રવેશને પૂરુ પાડે છે. અમુક સર્વરો, છતાંપણ, હજુ ફાઇલોને ડાઉનલોડ અથવા અપલોડ કરવા FTP ને વાપરવા તમારી જરૂર અથવા પરવાનગી આપે છે. પ્રવેશો સાથે FTP સાઇટ સામાન્ય રીતે ફાઇલોને અપલોડ અને કાઢવા માટે તમને પરવાનગી આપે છ.</p>
+  <p>ખાસ FTP URL આનાં જેવુ લાગે છે:</p>
+  <example>
+    <p><sys>ftp://username@ftp.example.com/path/</sys></p>
+  </example>
+</item>
+<item>
+  <title>જાહેર FTP</title>
+  <p>સાઇટો કે જે ફાઇલોને ડાઉનલોડ કરવા માટે તમને પરવાનગી આપે છે કે કોઇકવાર સાર્વજનિક  અથવા અનામિક FTP પ્રવેશને પૂરુ પાડશે. આ સર્વરોને વપરાશકર્તાનામ અને પાસવર્ડની જરૂર નથી, અને ફાઇલોને અપલોડ અથવા કાઢવા માટે તમને સામાન્ય રીતે પરવાનગી આપશે નહિં.</p>
+  <p>ખાસ અનામિક FTP URL આનાં જેવુ લાગે છે:</p>
+  <example>
+    <p><sys>ftp://ftp.example.com/path/</sys></p>
+  </example>
+  <p>અમુક અનામિક FTP સાઇટો સાર્વજનિક વપરાશકર્તાનામ અને પાસવર્ડ સાથે પ્રવેશવા તમારી જરૂરિયાત છે, પાસવર્ડ તરીકે તમારું ઇમેઇલ સરનામાંની મદદથી સાર્વજનિક વપરાશકર્તા નામ સાથે. આ સર્વરો માટે, <gui>FTP (પ્રવેશ સાથે)</gui> પદ્દતિને વાપરો, અને FTP સાઇટ દ્દારા સ્પષ્ટ થયેલ શ્રેયને વાપરો.</p>
+</item>
+<item>
+  <title>વિન્ડો વહેંચણી</title>
+  <p>Windows computers use a proprietary protocol to share files over a local
+  area network. Computers on a Windows network are sometimes grouped into
+  <em>domains</em> for organization and to better control access. If you have
+  the right permissions on the remote computer, you can connect to a Windows
+  share from the file manager.</p>
+  <p>મોટા ભાગની વિન્ડૉ શૅર URL આના જેવી દેખાય છે:</p>
+  <example>
+    <p><sys>smb://servername/Share</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV અને સુરક્ષિત WebDAV</title>
+  <p>વેબ પર વાપરેલ HTTP પ્રોટોકોલ પર આધારિત છે, WebDAV કોઇકવાર સ્થાનિક નેટવર્ક પર ફાઇલોને વહેંચવા માટે વાપરેલ છે અને ઇન્ટરનેટ પર સંગ્રહવા માટે. જો સર્વર જે તમે સુરક્ષિત જોડાણ આધાર આપવા માટે જોડાઇ રહ્યુ છે, તમે આ વિકલ્પને પસંદ કરવુ જોઇએ. સુરક્ષિત WebDAV એ મજબૂત SSL એનક્રિપ્શનને વાપરે છે, તેથી બીજા વપરાશકર્તાઓ તમારાં પાસવર્ડને જોઇ શકતા નથી.</p>
+  <p>A WebDAV URL looks like this:</p>
+  <example>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

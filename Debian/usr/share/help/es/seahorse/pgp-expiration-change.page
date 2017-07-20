@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-expiration-change" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision pkgversion="3.9" version="0.1" date="2013-07-22" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Adelantar o posponer la fecha de caducidad de sus claves.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Cambiar la fecha de caducidad de sus claves</title>
+
+  <p>Si su clave PGP ha caducado, pero quiere seguir usándola, puede cambiar su fecha de caducidad. También puede cambiar la caducidad para que una clave caduque antes.</p>
+
+  <steps>
+    <title>Para cambiar la fecha de caducidad de una clave PGP:</title>
+    <item>
+      <p>Seleccione la clave PGP de la lista.</p>
+    </item>
+    <item>
+      <p>Pulse con el botón derecho sobre la clave seleccionara y elija <gui>Propiedades</gui>.</p>
+    </item>
+    <item>
+      <p>En el nuevo diálogo, seleccione la pestaña <gui>Detalles</gui>.</p>
+    </item>
+    <item>
+      <list>
+        <item>
+	  <p>Para cambiar la fecha de caducidad de una clave maestra, pulse el botón con la imagen de un calendario junto a <gui>Caduca</gui>, en la parte derecha del diálogo. Podrá seleccionar la nueva fecha de caducidad en el calendario.</p>
+        </item>
+        <item>
+	  <p>Para cambiar la fecha de caducidad de una <link xref="pgp-subkeys">subclave</link>, expanda el panel <gui>Subclaves</gui> y seleccione la subclave en la lista. Pulse el botón <gui style="button">Caduca</gui> en la parte izquierda del panel y elija la nueva fecha de caducidad.</p>
+	</item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="important">
+    <p>Si está cambiando la fecha de caducidad de una clave que ya se ha publicado, debe <link xref="pgp-sync">sincronizar</link> la clave con el servidor de claves después de hacer los cambios.</p>
+  </note>
+
+</page>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Κάποια εξαρτήματα υπολογιστών προκαλούν προβλήματα με την αναστολή.</desc>
+
+    <credit type="author">
+      <name>Έργο Τεκμηρίωσης GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Γιατί ο υπολογιστής μου δεν επιστρέφει μετά την αναστολή;</title>
+
+<p>Αν <link xref="power-suspend">αναστείλετε</link> τον υπολογιστή σας, και έπειτα προσπαθείτε να τον ανοίξετε, μπορεί να βρείτε πως δεν λειτουργεί όπως πρέπει. Αυτό μπορεί να συμβαίνει διότι η αναστολή του δεν υποστηρίζεται σωστά από το υλικό του υπολογιστή.</p>
+
+<section id="resume">
+  <title>Ο υπολογιστής μου ανεστάλη και δεν συνεχίζει</title>
+  <p>Εάν αναστείλατε τον υπολογιστή σας και έπειτα κάντε κλικ σε ένα πλήκτρο ή πατήσατε το ποντίκι, θα πρέπει να ξεκινήσει και να εμφανίσει μια οθόνη που ζητά τον κωδικό πρόσβασής σας. Εάν δεν συμβεί αυτό, δοκιμάστε πατώντας το κουμπί ισχύος (μην το κρατήσετε, απλά πατήστε το μια φορά).</p>
+  <p>Εάν αυτό ακόμα δεν έχει αποτέλεσμα, βεβαιωθείτε ότι η οθόνη του υπολογιστή σας είναι αναμμένη και δοκιμάστε να πατήσετε ένα πλήκτρο στο πληκτρολόγιο πάλι.</p>
+  <p>Ως τελευταίο καταφύγιο, κλείστε τον υπολογιστή κρατώντας το κουμπί ισχύος πατημένο για 5-10 δευτερόλεπτα, αν και θα χάσετε οποιαδήποτε αναποθήκευτη εργασία κάνοντας το. Θα πρέπει τότε να μπορέσετε να ανάψετε τον υπολογιστή σας πάλι.</p>
+  <p>Εάν αυτό συμβαίνει κάθε φορά που αναστέλλετε τον υπολογιστή σας, η λειτουργία της αναστολής ενδέχεται να μην δουλεύει με το υλικό σας.</p>
+  <note style="warning">
+    <p>Εάν ο υπολογιστής σας χάνει ισχύ και δεν έχει μια εναλλακτική παροχή ισχύος (όπως μια λειτουργική μπαταρία), θα κλείσει.</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>Η ασύρματη σύνδεση (ή άλλο υλικό) δεν δουλεύει όταν ξεκινά ο υπολογιστής μου</title>
+  <p>Εάν αναστείλετε ή αδρανοποιήσετε τον υπολογιστή σας και έπειτα συνεχίσετε ξανά, ίσως βρείτε ότι η σύνδεση στο διαδίκτυο, το ποντίκι ή κάποια άλλη συσκευή δεν δουλεύει σωστά. Αυτό μπορεί να συμβαίνει επειδή ο οδηγός λογισμικού για τη συσκευή δεν υποστηρίζει σωστά την αναστολή ή την αδρανοποίηση. Αυτό είναι ένα <link xref="hardware-driver">πρόβλημα με τον οδηγό</link> και όχι με την ίδια τη συσκευή.</p>
+  <p>Εάν η συσκευή έχει ένα διακόπτη ισχύος, δοκιμάστε απενεργοποίηση και μετά επανεργοποίηση. Στις περισσότερες περιπτώσεις, η συσκευή θα αρχίσει να δουλεύει πάλι. Εάν συνδέεται μέσα από ένα καλώδιο USB ή παρόμοιο, αποσυνδέστε τη συσκευή και έπειτα συνδέστε την πάλι και δείτε εάν δουλεύει.</p>
+  <p>Εάν δεν μπορείτε να κλείσετε ή να αποσυνδέσετε τη συσκευή, ή εάν αυτό δεν δουλεύει, ίσως χρειαστεί να επανεκκινήσετε τον υπολογιστή σας για να ξεκινήσει να δουλεύει η συσκευή ξανά.</p>
+</section>
+
+</page>

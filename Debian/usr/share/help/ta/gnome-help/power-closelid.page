@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author editor">
+      <name>எக்காட்டெரினா ஜெராசிமோவா</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>பேட்ர் கோவார்</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>நீங்கள் மடிக்கணினி மூடியை மூடும் போது, மின் சக்தியை சேமிப்பதற்காக மடிக்கணினி உறக்க முறைக்குச் செல்லும்.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>நான், மூடியை மூடும் போது என் கணினி ஏன் அணைகிறது?</title>
+
+  <p>உங்கள் மடிக்கணினி மூடியை நீங்கள் மூடும் போது, கணினி மின் சக்தியை சேமிப்பதற்காக <link xref="power-suspend"><em>இடைநிறுத்தப்படும்</em></link>. அதாவது கணினி முழுதும் அணைக்கப்படுவதில்லை, உறக்க நிலைக்கு மட்டுமே செல்கிறது. மூடியை திறந்தால் மீண்டும் விழித்துக்கொள்ளும். மூடியைத் திறந்தும் விழிக்காவிட்டால்  சொடுக்கியை சொடுக்கவும் அல்லது ஒரு விசையை அழுத்தவும். அப்போதும் இயங்காவிட்டால் பவர் பொத்தானை அழுத்தவும்.</p>
+
+  <p>சில கணினிகள் சரியாக இடைநிறுத்தப்பட முடியாமல் இருக்கலாம், அவற்றின் வன்பொருளை அவற்றின் இயக்க முறைமை முழுமையாக ஆதரிக்காதது இதற்குக் காரணமாக இருக்கலாம் (உதாரணம் Linux இயக்கிகள் முழுமையாக இல்லாமலிருக்கலாம்). இச்சூழ்நிலையில் மூடியை மூடிய பிறகு மீண்டும் கணினியை இயக்க முடியாமல் போகலாம். அப்போது நீங்கள் <link xref="power-suspendfail">இடைநிறுத்துதல் தொடர்பான சிக்கலை சரி செய்ய</link> முயற்சிக்கலாம் அல்லது மூடியை மூடும் போது கணினி இடைநிறுத்த முயற்சிக்காமல் தடுக்கலாம்.</p>
+
+<section id="nosuspend">
+  <title>மூடியை மூடும் போது கணினி இடைநிறுத்தப்படாமல் தடுத்தல்</title>
+
+  <note style="important">
+    <p>These instructions will only work if you are using <app>systemd</app>.
+    Contact your distribution for more information.</p>
+  </note>
+
+  <note style="important">
+    <p>You need to have the <app>Tweak Tool</app> installed on your computer to
+    change this setting.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">Install
+      <app>Tweak Tool</app></link></p>
+    </if:if>
+  </note>
+
+  <p>If you do not want the computer to suspend when you close the lid, you can
+  change the setting for that behavior.</p>
+
+  <note style="warning">
+    <p>இந்த அமைவை மாற்றினால் கவனமாக இருக்கவும். சில மடிக்கணினிகள் மூடி மூடியபடி இயங்கினால் அதிக வெப்பமாகலாம், குறிப்பாக அவை முதுகுப்பை போன்ற அடைபட்ட இடத்தில் இருந்தால் இதற்கு வாய்ப்பு அதிகம்.</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Tweak Tool</gui>.</p>
+    </item>
+    <item>
+      <p>Click <gui>Tweak Tool</gui> to open the application.</p>
+    </item>
+    <item>
+      <p>Click the <gui>Power</gui> tab.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Don't suspend on lid close</gui> to <gui>ON</gui>.</p>
+    </item>
+    <item>
+      <p>Close the <gui>Tweak Tool</gui> window.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

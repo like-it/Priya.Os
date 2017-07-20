@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-displaying-images-in-html" xml:lang="fr">
+
+  <info>
+    <desc>À propos des images incorporées dans les messages reçus en HTML.</desc>
+
+    <link type="guide" xref="mail-displaying-message"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2011-08-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-read.html.en#usage-mail-getnsend-get-attach-html -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Images dans les courriels HTML</title>
+
+<p>When someone sends you HTML mail that includes an image in the body of the message (for example, the welcome message in your Inbox), <app>Evolution</app> displays the image inside the message.</p>
+
+<section id="loading">
+<title>Chargement des images</title>
+<p>Some images are links in a message, rather than being part of the message. <app>Evolution</app> can download those images from the Internet, but does not do so unless you request it. This is because remotely hosted images can be slow to load and display, and can even be used by spammers to track who reads the email. Not automatically loading images helps protect your privacy.</p>
+
+<p>Pour charger les images d'un message, cliquez sur <guiseq><gui>Affichage</gui><gui>Charger les images</gui></guiseq> ou pressez <keyseq><key>Ctrl</key><key>I</key></keyseq>.</p>
+
+<p>Pour définir l'action par défaut pour le chargement des images, allez dans <guiseq><gui>Édition</gui><gui>Préférences</gui><gui>Préférences du courriel</gui><gui>Messages HTML</gui><gui>Chargement des images</gui></guiseq>.</p>
+</section>
+
+<section id="automatically-download">
+<title>Téléchargement automatique des images des courriels venant des personnes que vous connaissez.</title>
+
+<p>Vous pouvez télécharger les images dans les courriels envoyés par vos contacts. Pour cela, allez dans <guiseq><gui>Édition</gui><gui>Préférences</gui><gui>Préférences du courriel</gui><gui>Messages HTML</gui><gui>Chargement des images</gui></guiseq>. Activer l'option <gui>Afficher les images seulement dans les messages des contacts</gui>.</p>
+
+<p>Ensuite, allez dans <guiseq><gui>Édition</gui><gui>Préférences</gui><gui>Contacts</gui><gui>Complétion automatique</gui></guiseq>. Cochez la case <gui>Toujours afficher l'adresse du contact auto-complétée</gui>.</p>
+</section>
+
+<section id="saving">
+<title>Enregistrement des images</title>
+<p>Pour enregistrer une image qui est intégrée dans un courriel HTML, faites un clic-droit sur l'image et cliquez sur <gui>Enregistrer l'image...</gui>..</p>
+<!-- This is available only since version 3.1.5, see https://bugzilla.gnome.org/show_bug.cgi?id=655669 -->
+</section>
+
+</page>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-introduction" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="shell-overview" group="#first"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-13" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Eine visuelle Einführung in Ihre Arbeitsumgebung, das obere Panel und die <gui>Aktivitäten</gui>-Übersicht.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Einführung in GNOME</title>
+
+  <p>GNOME 3 zeichnet sich durch eine vollständig neu entworfene Benutzeroberfläche aus, die Sie in Ihrer Arbeit nicht behindern, Ablenkungen so gering wie möglich halten und Ihnen bei der Bewältigung anstehender Aufgaben zur Seite stehen soll. Wenn Sie sich das erste Mal anmelden, werden Sie eine leere Arbeitsfläche und ein Panel am oberen Rand sehen.</p>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar.png" width="600" if:test="!target:mobile">
+      <p>Oberes Panel der GNOME Shell</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar-classic.png" width="500" height="40" if:test="!target:mobile">
+      <p>Oberes Panel der GNOME Shell</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Das obere Panel ermöglicht Ihnen den Zugriff auf Fenster und Anwendungen, Ihren Kalender und Termine, sowie auf <link xref="status-icons">Systemeinstellungen</link> (z.B. Audio, Netzwerk und Stromversorgung). Im Status-Menü im oberen Panel können Sie die Lautstärke oder die Bildschirmhelligkeit ändern, die Verbindungsdetails für <gui>Funknetzwerke</gui> bearbeiten, den Akkuzustand prüfen, sich abmelden oder den Benutzer wechseln sowie den Rechner ausschalten.</p>
+
+<links type="section"/>
+
+<section id="activities">
+  <title><gui>Aktivitäten</gui>-Übersicht</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
+      <p>Aktivitäten-Knopf</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-activities-classic.png" width="108" height="69" style="floatend floatright" if:test="!target:mobile">
+      <p>Aktivitäten-Knopf</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p if:test="!platform:gnome-classic">Um Fenster und Anwendungen aufzurufen, klicken Sie auf den Knopf <gui>Aktivitäten</gui> oder bewegen Sie Ihren Mauszeiger einfach in die funktionale Ecke ganz links oben. Sie können auch die <key xref="keyboard-key-super">Super</key>-Taste auf Ihrer Tastatur drücken. In der Übersicht sehen Sie Ihre Fenster und Anwendungen. Außerdem können Sie einfach tippen, um nach Ihren Anwendungen, Dateien, Ordnern und im Internet zu suchen.</p>
+
+  <p if:test="platform:gnome-classic">Um Fenster und Anwendungen aufzurufen, klicken Sie auf das <gui xref="shell-introduction#activities">Anwendungen</gui>-Menü links oben auf dem Bildschirm und wählen Sie den Eintrag <gui>Aktivitäten-Übersicht</gui>. Sie können auch die <key xref="keyboard-key-super">Super</key>-Taste auf Ihrer Tastatur drücken, um in der <gui>Aktivitäten</gui>-Übersicht Ihre Fenster und Anwendungen zu sehen. Außerdem können Sie einfach tippen, um nach Ihren Anwendungen, Dateien und Ordnern zu suchen.</p>
+
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
+    <p>Das Dash</p>
+  </media>
+
+  <p>Auf der linken Seite der Übersicht sehen Sie das <em>Dash</em>. Das Dash zeigt Ihnen Ihre Lieblingsanwendungen und gerade ausgeführte Anwendungen. Klicken Sie auf ein beliebiges Symbol im Dash, um die zugehörige Anwendung zu öffnen. Wird die Anwendung bereits ausgeführt, so ist das Symbol hervorgehoben. Wenn Sie auf das Symbol klicken, erscheint das zuletzt verwendete Fenster. Sie können das Symbol auch in die Übersicht oder eine der Arbeitsflächen auf der rechten Seite ziehen.</p>
+
+  <p>Ein Klick mit der rechten Maustaste auf das Symbol öffnet ein Menü, in welchem Sie ein beliebiges Fenster einer laufenden Anwendung wählen oder ein neues Fenster öffnen können. Sie können auch beim Anklicken des Symbols die <key>Strg</key>-Taste gedrückt halten, um ein neues Fenster zu öffnen.</p>
+
+  <p>Wenn Sie die Übersicht aufrufen, erscheint zunächst die Fensterübersicht. Diese zeigt eine Vorschau aller Fenster der aktuellen Arbeitsfläche in Echtzeit.</p>
+
+  <p>Klicken Sie auf den Raster-Knopf am unteren Ende des Dash, um zur Anwendungsübersicht zu gelangen. Diese zeigt alle auf dem Rechner installierten Anwendungen. Klicken Sie auf eine Anwendung, um diese auszuführen, oder ziehen Sie diese in die Übersicht oder auf eine Arbeitsflächenvorschau. Sie können eine Anwendung auch auf das Dash ziehen, um Sie zu Ihren Lieblingsanwendungen hinzuzufügen. Ihre Lieblingsanwendungen bleiben in dem Dash, auch wenn sie nicht ausgeführt werden, damit Sie schnell darauf zugreifen können.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-apps-open">Erfahren Sie mehr über das Starten von Anwendungen.</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-windows">Erfahren Sie mehr über Fenster und Arbeitsflächen.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="appmenu">
+  <title>Anwendungsmenü</title>
+  <if:choose>
+    <if:when test="!platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-shell.png" width="250" style="floatend floatright" if:test="!target:mobile">
+        <p>Anwendungsmenü von <app>Terminal</app></p>
+      </media>
+      <p>Das Anwendungsmenü, welches sich neben dem <gui>Aktivitäten</gui>-Knopf befindet, zeigt den Namen und das zugehörige Symbol der aktiven Anwendung an. Außerdem bietet es schnellen Zugriff auf die Anwendungseinstellungen und die Hilfe. Die in diesem Menü enthaltenen Einträge sind von der jeweiligen Anwendung abhängig.</p>
+    </if:when>
+    <if:when test="platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-classic.png" width="154" height="133" style="floatend floatright" if:test="!target:mobile">
+        <p>Anwendungsmenü von <app>Terminal</app></p>
+      </media>
+      <p>Das Anwendungsmenü, welches sich neben den Menüs <gui>Anwendungen</gui> und <gui>Orte</gui> befindet, zeigt den Namen und das zugehörige Symbol der aktiven Anwendung an. Außerdem bietet es schnellen Zugriff auf die Anwendungseinstellungen und die Hilfe. Die in diesem Menü enthaltenen Einträge sind von der jeweiligen Anwendung abhängig.</p>
+    </if:when>
+  </if:choose>
+
+</section>
+
+<section id="clock">
+  <title>Uhr, Kalender und Termine</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Uhr, Kalender, Termine und Benachrichtigungen</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-appts-classic.png" width="373" height="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Uhr, Kalender und Termine</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Klicken Sie auf die Uhr in der Mitte des oberen Panels, um das aktuelle Datum, einen Kalender mit Monatsansicht, eine Liste Ihrer bevorstehenden Termine und neue Benachrichtigungen anzuzeigen. Den Kalender können Sie auch durch Drücken von <keyseq><key>Super</key><key>M</key></keyseq> öffnen. Sie können außerdem auf die Zeit- und Datumseinstellungen zugreifen und Ihren kompletten <app>Evolution</app>-Kalender direkt aus dem Menü öffnen.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="clock-calendar">Erfahren Sie mehr über Kalender und Termine.</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-notifications">Erfahren Sie mehr über Benachrichtigungen und das Benachrichtigungsfeld.</link></p>
+    </item>
+  </list>
+
+</section>
+
+
+<section id="yourname">
+  <title>Sie und Ihr Rechner</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-exit.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Benutzermenü</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-exit-classic.png" width="250" height="200" style="floatend floatright" if:test="!target:mobile">
+      <p>Benutzermenü</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Klicken Sie auf das Systemmenü rechts oben auf dem Bildschirm, um Ihre Systemeinstellungen und Ihren Rechner zu verwalten.</p>
+
+<!-- Apparently not anymore. TODO: figure out how to update status.
+  <p>You can quickly set your availability directly from the menu. This will set
+  your status for your contacts to see in instant messaging applications such as
+  <app>Empathy</app>.</p>-->
+
+<!--
+<p>If you set yourself to Unavailable, you won't be bothered by message popups
+at the bottom of your screen. Messages will still be available in the message
+tray when you move your mouse to the bottom-right corner. But only urgent
+messages will be presented, such as when your battery is critically low.</p>
+
+<list style="compact">
+  <item><p><link xref="shell-session-status">Learn more about changing
+  your availability.</link></p></item>
+</list>
+-->
+
+  <p>Wenn Sie Ihren Rechner verlassen, können Sie den Bildschirm sperren, um andere Personen daran zu hindern, Ihren Rechner zu benutzen. Sie können schnell zwischen Benutzern wechseln, ohne sich abzumelden, um jemand anderem Zugriff auf den Rechner zu ermöglichen. Sie können auch vom Menü aus den Rechner in Bereitschaft versetzen oder ausschalten.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-exit">Erfahren Sie mehr über Benutzerwechsel, Abmelden und Ausschalten Ihres Rechners.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="lockscreen">
+  <title>Sperrbildschirm</title>
+
+  <media type="image" src="figures/shell-lock.png" width="250" style="floatend floatright" if:test="!target:mobile">
+    <p>Sperrbildschirm</p>
+  </media>
+
+  <p>Wenn Sie Ihren Bildschirm sperren oder dies automatisch geschieht, wird der Sperrbildschirm angezeigt. Er schützt Ihre Arbeitsumgebung, während Sie von Ihrem Rechner abwesend sind und zeigt außerdem Datum und Uhrzeit an. Weiterhin werden Informationen über den Ladezustand des Akkus und Ihr Netzwerk angezeigt und Sie können die Medienwiedergabe steuern.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-lockscreen">Erfahren Sie mehr über den Sperrbildschirm.</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="window-list">
+  <title>Fensterliste</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <p>GNOME verwendet eine andere Herangehensweise zum Wechseln von Fenstern als dauerhaft sichtbare Fensterlisten, wie sie in anderen Arbeitsumgebungen zu finden sind. So können Sie sich ohne Ablenkungen auf Ihre Arbeit konzentrieren.</p>
+    <list style="compact">
+      <item>
+        <p><link xref="shell-windows-switching">Erfahren Sie mehr über das Wechseln zwischen Fenstern.</link></p>
+      </item>
+    </list>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-window-list-classic.png" width="500" height="34" style="floatend floatright" if:test="!target:mobile">
+      <p>Fensterliste</p>
+    </media>
+    <p>Die Fensterliste am unteren Rand des Bildschirms bietet Zugriff auf all Ihre geöffneten Fenster und Anwendungen und lässt Sie diese schnell minimieren und wiederherstellen.</p>
+    <p>An der rechten Seite der Fensterliste zeigt GNOME die Nummer der aktuellen Arbeitsfläche, zum Beispiel <gui>1</gui> für die erste (obere) Arbeitsfläche. Zusätzlich wird die Gesamtanzahl der verfügbaren Arbeitsflächen angezeigt. Um zu einer anderen Arbeitsfläche zu wechseln, klicken Sie auf diesen Knopf und wählen Sie die gewünschte Arbeitsfläche aus dem Menü aus.</p>
+    <p>Falls eine Anwendung oder Systemkomponente Ihre Aufmerksamkeit erfordert, wird ein blaues Symbol auf der rechten Seite der Fensterliste angezeigt. Ein Klick auf das blaue Symbol öffnet das Benachrichtigungsfeld.</p>
+  </if:when>
+</if:choose>
+
+</section>
+
+</page>

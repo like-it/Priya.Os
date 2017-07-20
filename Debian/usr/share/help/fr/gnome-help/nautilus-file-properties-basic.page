@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Afficher des informations basiques sur le fichier, définir les permissions et sélectionner les applications par défaut.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Propriétés de fichier</title>
+
+  <p>Pour afficher les informations sur un fichier ou un dossier, faites un clic-droit dessus et choisissez <gui>Propriétés</gui>. Vous pouvez aussi sélectionner le fichier et utiliser le raccourci <keyseq><key>Alt</key><key>Entrée</key></keyseq>.</p>
+
+  <p>La fenêtre propriétés donne des informations comme le type de fichier, sa taille et sa date de dernière modification. Si vous avez souvent besoin de ces données, vous pouvez les afficher comme <link xref="nautilus-list">colonnes de la vue en liste</link> ou comme <link xref="nautilus-display#icon-captions">libellés des icônes</link>.</p>
+
+  <p>Les informations de l'onglet <gui>Général</gui> sont détaillées ci-dessous. ce sont aussi les onglets <gui><link xref="nautilus-file-properties-permissions">Permissions</link></gui> et <gui><link xref="files-open#default">Ouvrir avec</link></gui>. Pour certains types de fichiers, comme les images ou les vidéos, un onglet fournissant des informations tels que les dimensions, la durée et le codec.</p>
+
+<section id="basic">
+ <title>Propriétés élémentaires</title>
+ <terms>
+  <item>
+    <title><gui>Name</gui></title>
+    <p>Vous pouvez renommer le fichier en modifiant ce champ. Vous pouvez aussi le faire en dehors de cette fenêtre. Voir <link xref="files-rename"/>.</p>
+  </item>
+  <item>
+    <title><gui>Type</gui></title>
+    <p>Ce champ vous aide à identifier le type du document, comme par exemple un PDF, un texte ODT ou une image JPEG. Le type de fichier détermine, entre autres, les applications qui peuvent l'ouvrir (par exemple, un lecteur de musique ne peut pas lire un document image). Consultez <link xref="files-open"/> pour obtenir plus d'informations.</p>
+    <p>Le <em>type MIME</em> du fichier est affiché entre parenthèses. C'est un standard utilisé par les ordinateurs pour identifier le type du fichier.</p>
+  </item>
+
+  <item>
+    <title>Contenus</title>
+    <p>Cette ligne ne s'affiche que pour les propriétés d'un dossier, pas d'un fichier. Elle donne le nombre d'éléments contenus dans le dossier. Si le dossier inclut d'autres dossiers, chacun d'eux est compté comme un seul élément même s'il contient lui-même d'autres éléments. Chaque fichier est aussi compté comme un élément. Si le dossier est vide, le contenu affiche <gui>aucun</gui>.</p>
+  </item>
+
+  <item>
+    <title>Taille</title>
+    <p>Cette ligne ne s'affiche que pour les propriétés d'un fichier, pas d'un dossier. La taille d'un fichier indique la place qu'il occupe sur le disque. Cela donne aussi une indication sur le temps qu'il faut pour le télécharger ou l'envoyer par courriel par exemple (de gros fichiers mettent plus de temps pour être envoyés ou être reçus).</p>
+    <p>Les tailles peuvent être indiquées en octets, Ko, Mo ou Go ; ces trois dernières sont aussi indiquées en octets entre parenthèses. Techniquement, 1 Ko égale 1024 octets, 1 Mo égale 1024 Ko et ainsi de suite.</p>
+  </item>
+
+  <item>
+    <title>Parent Folder</title>
+    <p>The location of each file on your computer is given by its <em>absolute
+    path</em>. This is a unique "address" of the file on your computer, made up
+    of a list of the folders that you would need to go into to find the file.
+    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
+    folder, its parent folder would be <file>/home/jim</file> and its location
+    would be <file>/home/jim/Resume.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Espace libre</title>
+    <p>Cette information n'est affichée que pour les dossiers. Elle indique l'espace disponible sur le disque où se trouve le dossier. Cela est utile pour vérifier si le disque dur est plein.</p>
+  </item>
+
+  <item>
+    <title>Dernier accès</title>
+    <p>La date et l'heure du dernier accès au fichier.</p>
+  </item>
+
+  <item>
+    <title>Dernière modification</title>
+    <p>La date et l'heure de la dernière modification et enregistrement du fichier.</p>
+  </item>
+ </terms>
+</section>
+
+</page>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="sound-nosound" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="sound-broken"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Überprüfen Sie, ob es nicht stumm geschaltet ist, ob die Kabel ordentlich eingesteckt sind und ob die Soundkarte erkannt wird.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Ich kann keine Klänge auf dem Rechner hören</title>
+
+  <p>Falls Sie keine Klänge Ihres Rechners hören können, beispielsweise bei der Musikwiedergabe, versuchen Sie Folgendes, um das Problem zu beheben.</p>
+
+<section id="mute">
+  <title>Stellen Sie sicher, dass der Ton nicht stumm geschaltet ist</title>
+
+  <p>Öffnen Sie das <gui xref="shell-terminology#yourname">Systemmenü</gui> und stellen Sie sicher, dass der Klang nicht stumm geschaltet oder völlig herunter geregelt ist.</p>
+
+  <p>Einige Laptops haben Stummschalter oder entsprechend wirkende Tasten. Versuchen Sie diese Schalter oder Tasten zu bedienen, um zu sehen, ob der Klang nicht stumm geschaltet ist.</p>
+
+  <p>Sie sollten auch sicherstellen, dass die für die Wiedergabe von Klängen verwendete Anwendung nicht stumm geschaltet ist, zum Beispiel ein Musikwiedergabeprogramm oder ein Video-Player. Die jeweilige Anwendung könnte einen Knopf zum Stummschalten oder für die Lautstärke im Hauptfenster haben, daher sollten Sie das ebenfalls überprüfen.</p>
+
+  <p>Klicken Sie auf den Reiter <gui>Anwendungen</gui> im <gui>Audio</gui>-Panel und überprüfen Sie folgendes:</p>
+  <steps>
+    <item>
+    <p>Öffnen Sie in der <gui>Aktivitäten</gui>-Übersicht die <app>Einstellungen</app>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Audio</gui>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf den Reiter <gui>Anwendungen</gui> und überprüfen Sie, ob Ihre Anwendung nicht stumm geschaltet ist.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="speakers">
+  <title>Überprüfen Sie, ob die Lautsprecher korrekt angeschlossen und eingeschaltet sind</title>
+  <p>Falls Ihr Rechner über externe Lautsprecher verfügt, stellen Sie sicher, dass diese eingeschaltet sind und die Lautstärke hoch geregelt ist. Überprüfen Sie außerdem, ob das Anschlusskabel fest in die »«Ausgabe«-Buchse Ihres Rechners eingesteckt ist. Diese Buchse ist üblicherweise in hellgrüner Farbe gekennzeichnet.</p>
+
+  <p>Mit einigen Soundkarten ist es möglich, die Belegung der Buchsen für die Ausgabe (zu den Lautsprechern) und die Eingabe (z.B. von einem Mikrofon) zu ändern. Die Ausgabebuchse kann unter Linux durchaus eine andere sein als unter Windows oder Mac OS. Versuchen Sie, das Lautsprecherkabel in eine andere Buchse des Rechners zu stecken, um zu sehen, ob es funktioniert.</p>
+
+ <p>Zuletzt können Sie noch prüfen, ob das Audiokabel fest in den Buchsen an der Rückseite der Lautsprecher sitzt. Einige Lautsprecher haben mehrere Eingangsbuchsen.</p>
+</section>
+
+<section id="device">
+  <title>Überprüfen Sie, ob das richtige Tonausgabegerät angeschlossen ist</title>
+
+  <p>Auf einigen Rechnern sind mehrere »Audiogeräte« installiert. Einige davon können Klänge ausgeben, andere nicht. Überprüfen Sie also, ob das richtige Gerät ausgewählt ist. Einige Testläufe könnten nötig sein, um das richtige Gerät zu finden.</p>
+
+  <steps>
+    <item>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Audio</gui> ein.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Audio</gui>, um das Panel zu öffnen.</p>
+    </item>
+    <item>
+      <p>Versuchen Sie im Reiter <gui>Ausgabe</gui> für das ausgewählte Gerät das <gui>Profil</gui> zu ändern. Spielen Sie anschließend einen Klang ab, um zu sehen, ob es funktioniert. Möglicherweise müssen Sie nun die Liste weiter durcharbeiten und jedes Profil testen.</p>
+
+      <p>Falls das nicht funktioniert, müssen Sie das Gleiche für jedes der anderen aufgelisteten Geräte tun.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="hardware-detected">
+
+ <title>Überprüfen Sie, ob die Soundkarte von Ihrem Rechner richtig erkannt wurde</title>
+
+  <p>Ihre Soundkarte könnte nicht richtig erkannt worden sein. Ein möglicher Grund hierfür könnte sein, dass die Treiber für die Karte nicht installiert sind. Sie müssen gegebenenfalls die Treiber für die Karte manuell installieren. Die Vorgehensweise hängt vom Typ der Karte ab.</p>
+
+  <p>Mit dem Befehl <cmd>lspci</cmd> in einem Terminal erfahren Sie, welche Soundkarte Sie besitzen:</p>
+  <steps>
+    <item>
+      <p>Wechseln Sie in die <gui>Aktivitäten</gui>-Übersicht und starten Sie ein Terminal.</p>
+    </item>
+    <item>
+      <p>Führen Sie <cmd>lspci</cmd> als <link xref="user-admin-explain">Systemverwalter</link>aus. Geben Sie entweder <cmd>sudo lspci</cmd> und Ihr Passwort ein, oder geben Sie <cmd>su</cmd> ein und geben Sie das <em>root</em>-Passwort (Systemverwalter-Passwort) an, gefolgt von <cmd>lspci</cmd>.</p>
+    </item>
+    <item>
+      <p>Prüfen Sie, ob ein <em>Audio-Steuergerät</em> oder ein <em>Audio-Gerät</em> aufgelistet ist. Dann sehen Sie auch die Modellnummer der Sound-Karte. <cmd>lspci -v</cmd> zeigt die Liste mit wesentlich detaillierteren Informationen.</p>
+    </item>
+  </steps>
+
+  <p>Es sollte möglich sein, Treiber für Ihre Soundkarte zu finden und zu installieren. Am besten sollten Sie in Hilfeforen (oder ähnlichem) Ihrer Linux-Distribution um Unterstützung bitten.</p>
+
+  <p>Falls keine Treiber für Ihre Soundkarte zu finden sind, könnte es sinnvoll sein, eine neue Soundkarte zu kaufen. Sie können Soundkarten kaufen, die für die Installation innerhalb des Rechners vorgesehen sind, und externe Soundkarten, die über USB angeschlossen werden.</p>
+
+</section>
+
+</page>

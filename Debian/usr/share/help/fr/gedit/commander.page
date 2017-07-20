@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-commander" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/> 
+    <revision version="3.4" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Use a command-line interface for advanced editing.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>christophe.bliard@trux.info</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski &lt;allomervan@gmail.com&gt;, 2011-2013.Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ligne de commande</title>
+
+  <p>The <app>Commander</app> plugin is a plugin for advanced <app>gedit</app>
+  users that allows you to perform command-line actions on the current file. To
+  enable the commander plugin, select
+  <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferences</gui>
+  <gui>Plugins</gui><gui>Commander</gui></guiseq>.</p>
+
+  <p>Once you have enabled the plugin, activate it by pressing
+  <keyseq><key>Ctrl</key><key>.</key></keyseq>.</p>
+  
+  <note style="tip">
+    <p>La dernière touche dans la combinaison de touches est un point.</p>
+  </note>
+
+  <table frame="all" rules="all">
+    <thead>
+      <tr>
+        <td><p>Action</p></td>
+	<td><p>Keyboard shortcut</p></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><p>Afficher un résumé des commandes disponibles</p></td>
+	<td><p><keyseq><key>Tab</key><key>Tab</key></keyseq></p></td>
+      </tr>
+      <tr>
+        <td><p>Rechercher un mot dans le fichier actuel</p></td>
+	<td>
+	  <p><key>/</key> <input>foo</input></p>
+          <p>This will find the word <input>foo</input>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Remplacer un mot dans le fichier actuel</p></td>
+	<td>
+	  <p><keyseq><key>/</key><key>/</key></keyseq>
+	  <input>foo bar</input></p>
+          <p>This will replace <input>foo</input> with
+	  <input>bar</input>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Déplacer le curseur vers un numéro de ligne dans votre fichier</p></td>
+        <td>
+	  <p>go <input>[line number]</input> <em>or</em> just <key>G</key>
+	  <input>[line number]</input></p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>Basculer l'indicateur de signet de la ligne actuelle</p></td>
+        <td><p>bookmark <em>or</em> just <key>B</key></p></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <note style="tip">
+    <p>Certaines commandes, comme la commande <app>bookmark</app> nécessitent que le greffon approprié soit installé et activé, sinon un message d'erreur s'affiche.</p>
+  </note>
+
+</page>

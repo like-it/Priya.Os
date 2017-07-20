@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-list" xml:lang="es">
+
+  <info>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="nautilus-prefs" group="nautilus-list"/>
+
+    <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Controlar qué información se visualiza en columnas en la vista de lista.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Preferencias de las columnas en la lista de archivos</title>
+
+  <p>Hay once columnas de información que puede visualizar en la vista de lista de <gui>Archivos</gui>. Pulse en <gui>Archivos</gui> en la barra superior, vaya a <gui>Preferencias</gui> y elija <gui>Columnas de la lista</gui> para seleccionar qué columnas serán visibles.</p>
+
+  <note style="tip">
+    <p>Use los botones <gui>Subir</gui> y <gui>Bajar</gui> para seleccionar el orden en el que aparecerán las columnas seleccionadas. Pulse <gui>Restablecer los valores predeterminados</gui> para deshacer todos los cambios y volver a las columnas predeterminadas.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Nombre</gui></title>
+      <p>El nombre de las carpetas y archivos.</p>
+      <note style="tip">
+        <p>La columna <gui>Nombre</gui> no se puede ocultar.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Tamaño</gui></title>
+      <p>El tamaño de una carpeta viene dado por el número de elementos que contiene dicha carpeta. El tamaño de un archivo viene dado en bytes, KB o MB.</p>
+    </item>
+    <item>
+      <title><gui>Tipo</gui></title>
+      <p>Mostrado como carpeta, o tipo de archivo como documento PDF, imagen JPEG, sonido MP3, etcétera.</p>
+    </item>
+    <item>
+      <title><gui>Modificado</gui></title>
+      <p>Da la fecha de la última vez que se modificó el archivo.</p>
+    </item>
+    <item>
+      <title><gui>Propietario</gui></title>
+      <p>El nombre del usuario propietario de la carpeta o archivo.</p>
+    </item>
+    <item>
+      <title><gui>Grupo</gui></title>
+      <p>El grupo al que pertenece el archivo. Normalmente, cada usuario pertenece a su propio grupo, pero es posible que haya varios usuarios en un grupo. Por ejemplo, un departamento puede tener su propio grupo en un entorno de trabajo.</p>
+    </item>
+    <item>
+      <title><gui>Permisos</gui></title>
+      <p>Muestra los permisos de acceso del archivo. Ej. <gui>drwxrw-r--</gui></p>
+      <list>
+        <item>
+          <p>El primer carácter es el tipo de archivo. <gui>-</gui> significa que es un archivo normal y <gui>d</gui> significa que es una carpeta. En ciertos casos se pueden mostrar otros caracteres.</p>
+        </item>
+        <item>
+          <p>Los tres caracteres siguientes <gui>rwx</gui> especifican los permisos para el usuario propietario del archivo.</p>
+        </item>
+        <item>
+          <p>Los tres siguientes <gui>rw-</gui> especifican los permisos para todos los miembros del grupo al que pertenece el archivo.</p>
+        </item>
+        <item>
+          <p>Los tres últimos caracteres de la columna <gui>r--</gui> especifican los permisos para todos los demás usuarios del sistema.</p>
+        </item>
+      </list>
+      <p>Cada permiso tiene el siguiente significado:</p>
+      <list>
+        <item>
+          <p><gui>r</gui>: lectura, lo que significa que puede abrir el archivo o la carpeta</p>
+        </item>
+        <item>
+          <p><gui>w</gui>: escritura, lo que significa que puede guardar cambios en él</p>
+        </item>
+        <item>
+          <p><gui>x</gui>: ejecución, lo que significa que puede ejecutarlo si es un programa o un script, o que puede acceder a las subcarpetas y archivos si es una carpeta</p>
+        </item>
+        <item>
+          <p><gui>-</gui>: permiso no establecido</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title><gui>Tipo MIME</gui></title>
+      <p>Muestra el tipo MIME del elemento.</p>
+    </item>
+    <item>
+      <title><gui>Ubicación</gui></title>
+      <p>La ruta a la ubicación del archivo.</p>
+    </item>
+    <item>
+      <title><gui>Modificado: fecha</gui></title>
+      <p>Da la fecha y hora de la última vez que se modificó el archivo.</p>
+    </item>
+    <item>
+      <title><gui>Accedido</gui></title>
+      <p>Da la fecha  o la hora de la última vez que se modificó el archivo.</p>
+    </item>
+  </terms>
+
+</page>

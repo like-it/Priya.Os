@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-supported-file-formats" xml:lang="es">
+
+  <info>
+    <desc>Tipos de formatos de archivo soportados para importar datos.</desc>
+    
+    <link type="guide" xref="import-data"/>
+
+    <revision pkgversion="3.0.2" version="0.3" date="2011-10-13" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/importing-mail-and-settings.html.en#importing-mail -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Formatos de archivo soportados</title>
+
+<p><app>Evolution</app> puede importar los siguientes tipos de archivos:</p>
+
+<section id="mail">
+<title>Correo</title>
+<list>
+<item><p>Berkley Mailbox (.mbox o sin extensión):</p>
+<p>El formato correo-e utilizado por <app>Mozilla</app>, <app>Netscape</app>, <app>Evolution</app> (para carpetas locales hasta la versión 2.32), <app>Eudora</app> y muchos otros clientes de correo-e.</p></item>
+<item><p>Maildir (sin extensión):</p>
+<p>El formato usado por <app>Evolution</app> (para carpetas locales desde la versión 3.0). No existe necesidad de importar archivos Maildir ya que puede <link xref="mail-account-manage-maildir-format-directories">configurar una cuenta Maildir</link> en <app>Evolution</app> y que apunte a la carepta donde los archivos Maildir están almacenados.</p></item>
+<item><p>Carpetas personales de Outlook Express 5/6 (.dbx):</p>
+<p>El formato de los archivos de correo-e usado por <app>Microsoft Outlook Express 5/6</app>. Para versiones más modernas se recomienda la importación de PST.</p></item>
+</list>
+</section>
+
+<section id="calendar">
+<title>Calendario</title>
+<list>
+<item><p>vCalendar (.vcs):</p>
+<p>Un formato para almacenar archivos de calendario, generalmente usado por <app>Evolution</app>, <app>Microsoft Outlook</app>, <app>Sunbird</app> y <app>Korganizer</app>.</p></item>
+<item><p>iCalendar o iCal (.ics):</p>
+<p>Un formato para almacenar archivos de calendario. iCalendar lo usan por <app>Evolution</app>, <app>Microsoft Outlook</app>, los dispositivos de mano Palm OS y otros.</p></item>
+</list>
+</section>
+
+<section id="contacts">
+<title>Contactos</title>
+<list>
+<item><p>Formato de intercambio de datos LDAP (.ldif):</p>
+<p>Un formato de datos estándar para tarjetas de visita.</p></item>
+<item><p>vCard (.vcf, .gcrd):</p>
+<p>El formato de libreta utilizado por los programas GNOME, KDE así como numerosas aplicaciones de administración de contactos. Será necesario poder exportar la libreta de direcciones de su otra aplicación al formato vCard.</p></item>
+</list>
+</section>
+
+<section id="misc">
+<title>Información variada</title>
+<list>
+<item><p><app>Evolution</app>/Mozilla/Outlook CSV/Tab (.csv, .tab):</p>
+<p>Archivos CSV (archivos separados por comas) o Tab guardados al usar <app>Evolution</app>, <app>Microsoft Outlook</app> y <app>Mozilla</app>.</p></item>
+<item><p>Carpetas personales de Outlook (.pst):</p>
+<p>Un formato de archivo usado para almacenar copias locales de mensajes, eventos de calendario y otros elementos de software de Microsoft como <app>Microsoft Exchange Client</app>, <app>Windows Messaging</app> y <app>Microsoft Outlook</app>. También se llama «Tabla de almacenamiento personal».</p></item>
+</list>
+</section>
+
+</page>

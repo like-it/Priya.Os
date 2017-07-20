@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-personal" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.1" date="2013-09-23" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Engedélyezze a <file>Nyilvános</file> mappában lévő fájlok eléréséhez.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Személyes fájljainak megosztása</title>
+
+  <p>Lehetővé teheti másoknak, hogy elérhessék a <file>saját mappájában</file> lévő <file>Nyilvános</file> mappát közvetlenül a hálózat egy másik számítógépéről. A <app>Személyes fájlmegosztás</app> beállítóablakában engedélyezheti a mappa tartalmának elérését.</p>
+
+  <note style="info package">
+    <p>A <gui>Személyes fájlmegosztás</gui> csak akkor látható, ha a <app>gnome-user-share</app> csomag telepítve van.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:gnome-user-share" style="button">A gnome-user-share telepítése</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Megosztás</gui> szót.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Megosztás</gui> ikonra a panel megnyitásához.</p>
+    </item>
+    <item>
+      <p>Ha a <gui>Megosztás</gui> <gui>KI</gui> van kapcsolva, akkor kapcsolja <gui>BE</gui> állásba a kapcsolót.</p>
+
+      <note style="info"><p>Ha a <gui>Számítógép neve</gui> alatti szöveg szerkeszthető, akkor <link xref="sharing-displayname">megváltoztathatja</link> a számítógép által a hálózaton megjelenített nevet.</p></note>
+    </item>
+    <item>
+      <p>Válassza a <gui>Személyes fájlmegosztás</gui> lehetőséget.</p>
+    </item>
+    <item>
+      <p>Kapcsolja <gui>BE</gui> a <gui>Személyes fájlmegosztást</gui>. Ez azt jelenti, hogy mások az aktuális helyi hálózatról csatlakozhatnak számítógépéhez, és elérhetik a <file>Nyilvános</file> mappában lévő fájlokat.</p>
+      <note style="info">
+        <p>Megjelenik egy <em>URI</em>, amellyel a <file>Nyilvános</file> mappája a hálózat más számítógépeiről elérhető.</p>
+      </note>
+    </item>
+  </steps>
+
+  <section id="security">
+  <title>Biztonság</title>
+
+  <terms>
+    <item>
+      <title>Jelszó kérése</title>
+      <p>Ahhoz, hogy mások csak jelszó megadása után érhessék el a <file>Nyilvános</file> mappáját, állítsa a <gui>Jelszó kérése</gui> kapcsolót <gui>BE</gui> állásba. Ha nem használja ezt a beállítást, akkor bárki megpróbálhatja megjeleníteni az Ön <file>Nyilvános</file> mappáját.</p>
+      <note style="tip">
+        <p>Ez a beállítás alapesetben le van tiltva, de engedélyezze, és adjon meg egy jelszót.</p>
+      </note>
+    </item>
+  </terms>
+  </section>
+
+  <section id="networks">
+  <title>Hálózatok</title>
+
+  <p>A <gui>Hálózatok</gui> szakasz felsorolja azokat a hálózatokat, amelyekhez jelenleg csatlakozik. A mellettük lévő <gui>BE / KI</gui> kapcsolóval szabályozhatja, hogy személyes fájljai melyeken oszthatók meg.</p>
+
+  </section>
+
+</page>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="el">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Συντελεστές στην τεκμηρίωση wiki του Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Έργο Τεκμηρίωσης GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ακόμα κι αν ο ασύρματος προσαρμογέας σας είναι συνδεμένος, ενδέχεται να μην έχει αναγνωριστεί κατάλληλα από τον υπολογιστή.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ανίχνευση προβλημάτων ασύρματης σύνδεσης</title>
+  <subtitle>Ελέγξετε ότι ο ασύρματος προσαρμογέας αναγνωρίστηκε</subtitle>
+
+  <p>Ακόμα κι αν ο ασύρματος προσαρμογέας είναι συνδεμένος στον υπολογιστή, ενδέχεται να μην έχει αναγνωριστεί ως συσκευή δικτύου από τον υπολογιστή. Σε αυτό το βήμα, θα ελέγξετε εάν η συσκευή αναγνωρίστηκε κατάλληλα.</p>
+
+  <steps>
+    <item>
+      <p>Ανοίξτε ένα παράθυρο τερματικού, πληκτρολογήστε <cmd>lshw -C network</cmd> και πατήστε <key>Enter</key>. Εάν αυτό δίνει ένα μήνυμα σφάλματος, μπορεί να χρειαστείτε να εγκαταστήσετε το πρόγραμμα <app>lshw</app> στον υπολογιστή σας.</p>
+    </item>
+    <item>
+      <p>Κοιτάξτε τις πληροφορίες που εμφανίστηκαν και βρείτε την ενότητα <em>Ασύρματη διεπαφή</em>. Εάν ο ασύρματος προσαρμογέας σας ανιχνεύτηκε σωστά, θα πρέπει να δείτε κάτι παρόμοιο (αλλά όχι ταυτόσημο) με αυτό:</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>Εάν μια ασύρματη συσκευή είναι καταχωρημένη, συνεχίστε στο <link xref="net-wireless-troubleshooting-device-drivers">Βήμα οδηγών συσκευής</link>.</p>
+      <p>Εάν μια ασύρματη συσκευή <em>δεν</em> είναι καταχωρημένη, τα επόμενα βήματα που παίρνετε θα εξαρτηθούν από τον τύπο της συσκευής που χρησιμοποιείτε. Δείτε την παρακάτω ενότητα που είναι σχετική με τον τύπο του ασύρματου προσαρμογέα που έχει ο υπολογιστής σας (<link xref="#pci">εσωτερικό PCI</link>, <link xref="#usb">USB</link>, ή <link xref="#pcmcia">PCMCIA</link>).</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>PCI (εσωτερικός) ασύρματος προσαρμογέας</title>
+
+  <p>Οι εσωτερικοί προσαρμογείς PCI είναι οι πιο συνηθισμένοι και βρίσκονται στους περισσότερους φορητούς υπολογιστές στα τελευταία λίγα χρόνια. Για να ελέγξετε εάν ο ασύρματος προσαρμογέας σας PCI αναγνωρίστηκε:</p>
+
+  <steps>
+    <item>
+      <p>Ανοίξτε ένα τερματικό, πληκτρολογήστε <cmd>lspci</cmd> και πατήστε <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Κοιτάξτε τη λίστα των συσκευών που προβάλλονται και βρείτε οποιαδήποτε είναι σημειωμένη ως <code>ελεγκτής δικτύου</code> ή <code>ελεγκτής Ethernet</code>. Αρκετές συσκευές μπορεί να είναι σημειωμένες με αυτόν τον τρόπο· αυτή που αντιστοιχεί στον ασύρματο προσαρμογέα μπορεί να περιλαμβάνει λέξεις όπως <code>ασύρματο</code>, <code>WLAN</code>, <code>wifi</code> ή <code>802.11</code>. Ιδού ένα παράδειγμα πώς μπορεί να μοιάζει η καταχώριση:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Εάν βρήκατε τον ασύρματο προσαρμογέα σας στη λίστα, συνεχίστε στο <link xref="net-wireless-troubleshooting-device-drivers">Βήμα οδηγών συσκευής</link>. Εάν δεν βρήκατε τίποτα σχετικό με τον ασύρματο προσαρμογέα σας, δείτε <link xref="#not-recognized">τις παρακάτω οδηγίες</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>Ασύρματος προσαρμογέας USB</title>
+
+  <p>Οι ασύρματοι προσαρμογείς που συνδέονται σε μια θύρα USB στον υπολογιστή σας είναι λιγότερο συνηθισμένοι. Μπορούν να συνδεθούν άμεσα σε μια θύρα USB, ή μπορούν να συνδεθούν με ένα καλώδιο USB. Οι προσαρμογείς ευρυζωνικού 3G/κινητού φαίνονται αρκετά παρόμοιοι με ασύρματους (wifi) προσαρμογείς, έτσι εάν νομίζετε ότι έχετε έναν ασύρματο προσαρμογέα USB, διπλοελέγξτε ότι δεν είναι στην πραγματικότητα ένας προσαρμογέας 3G. Για να ελέγξετε εάν ο ασύρματος προσαρμογέας σας USB αναγνωρίστηκε:</p>
+
+  <steps>
+    <item>
+      <p>Ανοίξτε ένα τερματικό, πληκτρολογήστε <cmd>lsusb</cmd> και πατήστε <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Κοιτάξτε τη λίστα των συσκευών που προβάλλονται και βρείτε οποιαδήποτε φαίνεται να αναφέρεται σε μια ασύρματη ή δικτυακή συσκευή. Αυτή που αντιστοιχεί στον ασύρματο προσαρμογέα μπορεί να περιλαμβάνει λέξεις όπως <code>ασύρματο</code>, <code>WLAN</code>, <code>wifi</code> ή <code>802.11</code>. Ιδού ένα παράδειγμα πώς μπορεί να μοιάζει η καταχώριση:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>Εάν βρήκατε τον ασύρματο προσαρμογέα σας στη λίστα, συνεχίστε στο <link xref="net-wireless-troubleshooting-device-drivers">Βήμα οδηγών συσκευής</link>. Εάν δεν βρήκατε τίποτα σχετικό με τον ασύρματο προσαρμογέα σας, δείτε <link xref="#not-recognized">τις παρακάτω οδηγίες</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Έλεγχος για μια συσκευή PCMCIA</title>
+
+  <p>Οι ασύρματοι προσαρμογείς PCMCIA είναι τυπικά ορθογώνιες κάρτες που έχουν σχισμή στην πλευρά του φορητού υπολογιστή. Βρίσκονται συνήθως σε παλιότερους υπολογιστές. Για να ελέγξετε εάν ο προσαρμογέας PCMCIA αναγνωρίστηκε:</p>
+
+  <steps>
+    <item>
+      <p>Εκκινήστε τον υπολογιστή σας <em>χωρίς</em> τον ασύρματο προσαρμογέα συνδεμένο.</p>
+    </item>
+    <item>
+      <p>Ανοίξτε ένα τερματικό και πληκτρολογήστε τα παρακάτω, έπειτα πατήστε <key>Enter</key>:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>Αυτό θα εμφανίσει μια λίστα μηνυμάτων σχετικών με το υλικό του υπολογιστή σας και θα ενημερωθεί αυτόματα εάν κάτι με το υλικό σας άλλαξε.</p>
+    </item>
+    <item>
+      <p>Εισάγετε τον ασύρματο προσαρμογέα σας στη σχισμή PCMCIA και δείτε τι αλλάζει στο παράθυρο τερματικού. Οι αλλαγές πρέπει να περιλαμβάνουν κάποιες πληροφορίες για τον ασύρματο προσαρμογέα σας. Κοιτάξτε τις και δείτε αν μπορείτε να τις ταυτοποιήσετε.</p>
+    </item>
+    <item>
+      <p>Για να μην εκτελεστεί η εντολή στο τερματικό, πατήστε <keyseq><key>Ctrl</key><key>C</key></keyseq>. Αφού έχετε κάνει αυτό, μπορείτε να κλείσετε το τερματικό εάν θέλετε.</p>
+    </item>
+    <item>
+      <p>Εάν βρήκατε οποιαδήποτε πληροφορία για τον ασύρματο προσαρμογέα σας, συνεχίστε στο <link xref="net-wireless-troubleshooting-device-drivers">βήμα οδηγών συσκευής</link>. Εάν δεν βρήκατε τίποτα σχετικό με τον ασύρματο προσαρμογέα σας, δείτε <link xref="#not-recognized">τις παρακάτω οδηγίες</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>Δεν αναγνωρίστηκε ο ασύρματος προσαρμογέας</title>
+
+  <p>Εάν ο ασύρματος προσαρμογέας δεν αναγνωρίστηκε, μπορεί να μην δουλεύει σωστά ή οι σωστοί οδηγοί ενδέχεται να μην είναι εγκατεστημένοι για αυτόν. Για να δείτε εάν υπάρχουν οδηγοί που μπορείτε να εγκαταστήσετε εξαρτάται από ποια διανομή Linux χρησιμοποιείτε (όπως Ubuntu, Arch, Fedora ή openSUSE).</p>
+
+  <p>Για να πάρετε συγκεκριμένη βοήθεια, κοιτάξτε τις επιλογές υποστήριξης στον ιστότοπο της διανομή σας. Αυτές μπορεί να περιλαμβάνουν λίστες αλληλογραφίας και συνομιλίες ιστού όπου μπορείτε να ρωτήσετε για τον προσαρμογέα ασυρμάτου, για παράδειγμα.</p>
+
+</section>
+
+</page>

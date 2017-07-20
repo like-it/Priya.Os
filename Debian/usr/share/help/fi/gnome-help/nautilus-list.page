@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-list" xml:lang="fi">
+
+  <info>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="nautilus-prefs" group="nautilus-list"/>
+
+    <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Luettelonäkymässä näytettävien tietojen hallinta.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Files list columns preferences</title>
+
+  <p>There are eleven columns of information that you can display in the
+  <gui>Files</gui> list view. Click <gui>Files</gui> in the top bar, pick
+  <gui>Preferences</gui> and choose the <gui>List Columns</gui> tab to select
+  which columns will be visible.</p>
+
+  <note style="tip">
+    <p>Use the <gui>Move Up</gui> and <gui>Move Down</gui> buttons to choose
+    the order in which the selected columns will appear. Click <gui>Reset to
+    Default</gui> to undo any changes and return to the default columns.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Nimi</gui></title>
+      <p>The name of folders and files.</p>
+      <note style="tip">
+        <p>The <gui>Name</gui> column cannot be hidden.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Koko</gui></title>
+      <p>Tiedostojen kohdalla näytetään tiedoston koko (esim. mega- tai kilotavuina) ja kansioiden yhteydessä sen sisältämien kohteiden lukumäärä.</p>
+    </item>
+    <item>
+      <title><gui>Tyyppi</gui></title>
+      <p>Kansion kohdalla lukee vain "kansio", tiedostossa ilmoitetaan tiedostomuoto, kuten PDF-asiakirja, JPEG-kuvat, MP3-musiikkitiedostot ja muut vastaavat.</p>
+    </item>
+    <item>
+      <title><gui>Muokattu</gui></title>
+      <p>Gives the date of the last time the file was modified.</p>
+    </item>
+    <item>
+      <title><gui>Omistaja</gui></title>
+      <p>Käyttäjän tunnus, joka omistaa kansion tai tiedoston.</p>
+    </item>
+    <item>
+      <title><gui>Ryhmä</gui></title>
+      <p>The group the file is owned by. Each user is normally in their own
+      group, but it is possible to have many users in one group. For example, a
+      department may have their own group in a work environment.</p>
+    </item>
+    <item>
+      <title><gui>Oikeudet</gui></title>
+      <p>Displays the file access permissions. For example,
+      <gui>drwxrw-r--</gui></p>
+      <list>
+        <item>
+          <p>The first character is the file type. <gui>-</gui> means regular
+          file and <gui>d</gui> means directory (folder). In rare cases, other
+          characters can also be shown.</p>
+        </item>
+        <item>
+          <p>Seuraavat kolme merkkiä <gui>rwx</gui> kuvaavat tiedoston omistajan oikeuksia.</p>
+        </item>
+        <item>
+          <p>Seuraavat kolme merkkiä <gui>rw-</gui> kuvaavat tiedoston omistavan ryhmän oikeuksia tiedostoon.</p>
+        </item>
+        <item>
+          <p>Viimeiset kolme merkkiä <gui>r--</gui> kuvaavat kaikkien järjestelmän (muiden) käyttäjien oikeuksia tiedostoon.</p>
+        </item>
+      </list>
+      <p>Each permission has the following meanings:</p>
+      <list>
+        <item>
+          <p><gui>r</gui>: readable, meaning that you can open the file or
+          folder</p>
+        </item>
+        <item>
+          <p><gui>w</gui>: writable, meaning that you can save changes to it</p>
+        </item>
+        <item>
+          <p><gui>x</gui>: executable, meaning that you can run it if it is a
+          program or script file, or you can access subfolders and files if it
+          is a folder</p>
+        </item>
+        <item>
+          <p><gui>-</gui>: permission not set</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title><gui>MIME-tyyppi</gui></title>
+      <p>Näyttää kohteen MIME-tyypin.</p>
+    </item>
+    <item>
+      <title><gui>Sijainti</gui></title>
+      <p>Tiedoston sijainnin polku.</p>
+    </item>
+    <item>
+      <title><gui>Modified – Time</gui></title>
+      <p>Tiedoston viimeisin muokkauspäivämäärä ja -aika.</p>
+    </item>
+    <item>
+      <title><gui>Avattu</gui></title>
+      <p>Gives the date or time of the last time the file was modified.</p>
+    </item>
+  </terms>
+
+</page>

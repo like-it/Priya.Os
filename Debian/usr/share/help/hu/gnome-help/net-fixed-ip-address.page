@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="seealso" xref="net-findip"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Statikus IP-cím használatával egyszerűsíthető néhány hálózati szolgáltatás biztosítása a számítógépéről.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Statikus IP-címet használó kapcsolat létrehozása</title>
+
+  <p>A legtöbb hálózat automatikusan társít <link xref="net-what-is-ip-address">IP-címet</link> és más adatokat a számítógépéhez, amikor az csatlakozik. Ezek az adatok rendszeresen változhatnak, de néha szüksége lehet rögzített IP-cím használatára, például ha fájlkiszolgálóként használja azt.</p> <p>Rögzített IP-cím társítása a számítógéphez:</p>
+
+  <steps>
+    <item>
+      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Hálózat</gui> szót.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Hálózat</gui> ikonra a panel megnyitásához.</p>
+    </item>
+    <item>
+      <p>A bal oldali ablaktáblán válassza ki azt a hálózati kapcsolatot, amelynek rögzített címet szeretne adni. Ha kábellel csatlakozik a hálózatra, akkor kattintson a <gui>Vezetékes</gui> lehetőségre, majd a <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">beállítások</span></media> gombra a panel jobb alsó sarkában. <gui>Wi-Fi</gui> kapcsolat esetén a <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">beállítások</span></media> gomb az aktív hálózat mellett lesz.</p>
+    </item>
+    <item>
+      <p>Kattintson az <gui>IPv4</gui> vagy az <gui>IPv6</gui> lapra, és módosítsa a <gui>Címeket</gui> <em>Kézi</em> értékűre.</p>
+    </item>
+    <item>
+      <p>A megfelelő mezőkben adja meg a <em>Cím</em>, <em>Hálózati maszk</em> és <em>Átjáró</em> adatokat. A választható értékek a hálózat beállításaitól függenek, speciális szabályok adják meg, hogy melyik IP-címek és hálózati maszkok érvényesek egy adott hálózaton.</p>
+    </item>
+    <item>
+      <p>Szükség esetén adja meg egy <em>DNS-kiszolgáló</em> címét a <gui>DNS-kiszolgálók</gui> mezőben. Ez azon kiszolgáló IP-címe, amely a tartományneveket keresi ki. A legtöbb vállalati hálózat és internetszolgáltató rendelkezik saját DNS-kiszolgálóval.</p>
+    </item>
+    <item>
+      <p>Nyomja meg az <gui>Alkalmaz</gui> gombot. A hálózati kapcsolat mostantól rögzített IP-címmel rendelkezik.</p>
+    </item>
+  </steps>
+
+</page>

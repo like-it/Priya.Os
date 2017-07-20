@@ -1,0 +1,13 @@
+firefox-esr: embedded-library usr/lib/firefox-esr/libxul.so: libtheora
+# The embedded libjpeg is libjpeg-turbo, not libjpeg.
+firefox-esr: embedded-library usr/lib/firefox-esr/libxul.so: libjpeg
+# The embedded libpng is patched for APNG support
+firefox-esr: embedded-library usr/lib/firefox-esr/libxul.so: libpng
+# Upstream code is not ready to use system library
+firefox-esr: embedded-library usr/lib/firefox-esr/libxul.so: srtp
+# This is a stripped down libavutil
+firefox-esr: embedded-library usr/lib/firefox-esr/libmozavutil.so: libavutil
+# Debian doesn't have the right version.
+firefox-esr: embedded-library usr/lib/firefox-esr/libnss3.so: nss
+# Debian doesn't have the right version.
+firefox-esr: embedded-library usr/lib/firefox-esr/libnspr4.so: nspr

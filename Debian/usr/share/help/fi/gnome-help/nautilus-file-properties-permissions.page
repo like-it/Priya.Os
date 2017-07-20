@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="fi">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="files#faq"/>
+    <link type="seealso" xref="nautilus-file-properties-basic"/>
+
+    <desc>Hallitse, ketkä voivat nähdä ja muokata tiedostojasi ja kansioitasi.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+  <title>Määritä tiedoston käyttöoikeudet</title>
+
+  <p>Voit käyttää tiedoston käyttöoikeuksia määrittääksesi, kuka tai ketkä voivat katsella ja muokata tiedostojasi. Aseta tiedoston käyttöoikeudet napsauttamalla tiedostoa hiiren oikealla painikkeella ja valitsemalla valikosta <gui>Ominaisuudet</gui>. Valitse avautuvasta ikkunasta <gui>Oikeudet</gui>-välilehti.</p>
+
+  <p>Lue <link xref="#files"/> ja <link xref="#folders"/> saadaksesi lisätietoja, minkälaisia oikeuksia voit asettaa.</p>
+
+  <section id="files">
+    <title>Tiedostot</title>
+
+    <p>Käyttöoikeuksia voi asettaa tiedoston omistajalle, ryhmälle sekä järjestelmän muille käyttäjille. Olet omien tiedostojesi omistaja ja voit antaa itsellesi joko pelkät lukuoikeudet tai sekä luku- että kirjoitusoikeudet tiedostoihisi. Jos et halua vahingossa muuttaa tiedostoa, aseta se vain-luku -muotoon.</p>
+
+    <p>Jokainen tietokoneen käyttäjä kuuluu johonkin ryhmään. Kotikoneille on yleistä, että jokaisella käyttäjällä on oma ryhmä eikä ryhmien käyttöoikeuksia käytetä kovin usein. Yritysjärjestelmissä ryhmiä voidaan käyttää eri osastojen tai projektien välillä. Jokainen tiedosto kuuluu jollekin ryhmälle sen lisäksi, että sillä on omistaja. Voit valita tiedostolle ryhmän ja hallita täten kaikkien kyseiseen ryhmään kuuluvien henkilöiden käyttöoikeutta kyseiseen tiedostoon. Voit asettaa tiedostolle ryhmäksi vain sellaisen ryhmän, johon itse kuulut.</p>
+
+    <p>Voit määritellä oikeudet myös kaikille käyttäjille sekä käyttäjille jotka ovat tiedoston ryhmässä.</p>
+
+    <p>Jos tiedosto on ohjelma ja haluat suorittaa sen tiedostonhallinnasta, täytyy asetus <gui>Salli tiedoston suorittaminen ohjelmana</gui> olla käytössä. Tiedostohallinta voi kuitenkin yhä avata tiedoston jossakin ohjelmassa tai kysyä sinulta, mitä tehdä. Lue <link xref="nautilus-behavior#executable"/> saadaksesi lisätietoa.</p>
+  </section>
+
+  <section id="folders">
+    <title>Kansiot</title>
+    <p>Voit asettaa kansioiden käyttöoikeuksia omistajan, ryhmän ja muiden käyttäjien osalta. Lue selitykset omistajalle, ryhmälle ja muille käyttäjille yläpuolelta Tiedostojen käyttöoikeuksista.</p>
+    <p>Kansioille asetettavat oikeudet eroavat tiedostoille annettavista oikeuksista.</p>
+    <terms>
+      <item>
+        <title><gui itst:context="permission">None</gui></title>
+        <p>Käyttäjä ei näe edes kansion sisältöä.</p>
+      </item>
+      <item>
+        <title><gui>Listaa ainoastaan tiedostot</gui></title>
+        <p>Käyttäjä näkee kansion sisällön, mutta ei voi avata, luoda tai poistaa tiedostoja.</p>
+      </item>
+      <item>
+        <title><gui>Avaa tiedostoja</gui></title>
+        <p>Käyttäjä voi avata kansiossa olevia tiedostoja (olettaen että tiedoston käyttöoikeudet niin sallivat), mutta käyttäjä ei voi luoda tai poistaa tiedostoja.</p>
+      </item>
+      <item>
+        <title><gui>Luo ja poista tiedostoja</gui></title>
+        <p>Käyttäjällä on täydet oikeudet kansioon, eli tiedostoja on mahdollista avata, luoda ja poistaa.</p>
+      </item>
+    </terms>
+
+    <p>You can also quickly set the file permissions for all the files
+    in the folder by clicking <gui>Change Permissions for Enclosed Files</gui>.
+    Use the drop-down lists to adjust the permissions of contained files or
+    folders, and click <gui>Change</gui>. Permissions are applied to files and
+    folders in subfolders as well, to any depth.</p>
+  </section>
+
+</page>

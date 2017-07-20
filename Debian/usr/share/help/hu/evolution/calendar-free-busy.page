@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-free-busy" xml:lang="hu">
+
+  <info>
+
+    <link type="guide" xref="calendar-sharing-information"/>
+
+    <revision pkgversion="3.1.5" version="0.5" date="2012-02-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en
+	   and
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en#usage-calendar-freebusy
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Az Időbeosztás nézet használata csoportmunka-kiszolgálón találkozók szervezésére.</desc>
+    <!-- TODO: Really split this into Exchange/Groupware section and normal people section -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Időbeosztás</title>
+
+  <p>Találkozókhoz használhatja az Időbeosztás keresést a meghívottak elérhetőségének megállapításához.</p>
+
+  <p>A szokásos találkozóütemező eszközök kiegészítéseként az időbeosztás nézet használatával előre ellenőrizheti, hogy mások elérhetők-e. Az időbeosztás szolgáltatás rendszerint az olyan dedikált csoportmunka-kiszolgálók egyik funkciója, mint a Microsoft Exchange és a Novell GroupWise. Ugyanakkor online is közzéteheti időbeosztását, és hozzáférhet máshol közzétett időbeosztásokhoz is. Ha nem minden közreműködő jelentet meg időbeosztás-információkat, akkor a napirendjének másokkal való egyeztetéséhez használhatja a <link xref="calendar-meetings-sending-invitation">találkozómeghívók</link> küldését is.</p>
+
+  <p>Az időbeosztás nézet eléréséhez:</p>
+
+  <steps>
+    <item>
+      <p>Válassza a <guiseq><gui>Fájl</gui><gui>Új</gui><gui>Találkozó</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Amennyiben szeretne másokat meghívni, az e-mail címük hozzáadásához nyomja meg a <gui style="button">Hozzáadás</gui> gombot.</p>
+    </item>
+    <item>
+      <p>Nyomja meg az eszköztáron az <gui>Időbeosztás</gui> gombot, vagy válassza a <guiseq><gui>Beállítások</gui><gui>Időbeosztás</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Állítsa be a találkozó időtartamát a találkozó határvonalának húzásával, vagy egy előre meghatározott időtartam kiválasztásával az <gui>Automatikus kiszedés</gui> gomb használatával, majd nyomja meg a <gui style="button">Bezárás</gui> gombot.</p>
+    </item>
+  </steps>
+
+  <list>
+    <item>
+      <p>Résztvevők listája:</p>
+      <p>A Résztvevők listája felsorolja a megbeszélésre meghívottakat.</p>
+    </item>
+    <item>
+      <p>Ütemező rács:</p>
+      <p>Az ütemező rács mutatja az Ön által meghívottak közzétett időbeosztását. Itt az időbeosztások összevetésével szabad időpontot kereshet az értekezletnek. Az egyes személyek csak akkor látnak ütemezési információt, ha ugyanazt a Novell GroupWise vagy Microsoft Exchange kiszolgálót használják (vagyis ugyanazon szervezetben vannak, mint Ön). Esetleg egy Ön által elérhető webcímen tesznek közzé időbeosztást, és Ön a <link xref="contacts-usage-edit-contact">Névjegyszerkesztőben</link> a <guiseq><gui>Személyes információk</gui> <gui>Webcímek</gui><gui>Időbeosztás</gui></guiseq> alatt beírta ezt a webcímet a névjegykártyájukra.</p>
+    </item>
+  </list>
+
+  <p>A naptár- és időbeosztás-információkat közzéteheti WebDAV kiszolgálón, FTP kiszolgálón, SSH használatával elérhető távoli gépen, vagy bármely egyéb HTTP PUT támogatással rendelkező webkiszolgálón.</p>
+
+  <p>Vállalati környezetekben közzéteheti naptár- és időbeosztás-információit egy Exchange vagy Groupwise kiszolgálón. Ne feledje, hogy a felső szintű Exchange naptárat kell használnia, ha azt szeretné, hogy mások is elérhessék az időbeosztás-információit amikor Önt találkozókra hívják.</p> <p>Az alapértelmezett kiszolgáló a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui> <gui>Naptár és feladatok</gui> <gui>Információk közzététele</gui><gui>Időbeosztást tároló alapértelmezett kiszolgáló</gui></guiseq> menüpont alatt adható meg.</p>
+
+  <!-- This is the location since 3.1.5, see bug
+       https://bugzilla.gnome.org/show_bug.cgi?id=655666 -->
+
+<section id="no-groupware">
+  <title>Időbeosztás-adatok elérése csoportmunka-kiszolgáló nélkül</title>
+
+  <p>Ha valaki megadja Önnek az időbeosztás-adataira vagy a webnaptárára mutató URL-címet, akkor felveheti azt a <link xref="contacts-usage-edit-contact">Kapcsolatszerkesztőben</link> a <guiseq><gui>Személyes adatok</gui><gui>Webcímek</gui></guiseq> menüpont alatt. Ha Ön ezután egy találkozót akar vele beütemezni, akkor az <gui>Evolution</gui> letölti az időbeosztást, és megjeleníti az időbeosztás-adatok alatt.</p>
+
+</section>
+
+</page>

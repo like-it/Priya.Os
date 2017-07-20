@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="cs">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>Kalibrace a charakterizace jsou dvě zcela odlišné věci.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Jaký je rozdíl mez kalibrací a charakterizací?</title>
+  <p>Lide ze začátku většinou bývají zmatení v rozlišení mezi kalibrací a charakterizací. Kalibrace je postup změny chování barev na zařízení. Typicky se provádí dvěma mechanizmy:</p>
+  <list>
+    <item><p>Změnou řízení nebo vnitřního nastavení, které má</p></item>
+    <item><p>Použitím křivek na jeho barevné kanály</p></item>
+  </list>
+  <p>Myšlenkou kalibrace je dostat zařízení do definovaného stavu s ohledem na jeho barevné odezvy. Často se používá jako každodenní prostředek k zachování reprodukovatelného chování. Typická kalibrace uloží do zařízení nebo operačního systému soubory v jistém formátu, ve kterých je nahráno nastavení zařízení nebo kalibrační křivky jednotlivých kanálů.</p>
+  <p>Charakterizace (neboli profilování) je <em>záznam</em> způsobu, kterým zařízení reprodukuje barvy nebo na barvy reaguje. Výsledek se obvykle ukládá od profilu ICC pro dané zařízení. Takovýto profil sám o sobě barvy nijak nemění. Umožňuje ale systémům, jako je CMM (Color Management Modul – modul správy barev), nebo aplikacím starajícím se o barvy, měnit barvy, když se míchají s jiným profilem zařízení. Teprve tím, že známe charakteristiky dvou zařízení, můžeme dosáhnout přenosu barvy z reprezentace v jednom zařízení do jiného.</p>
+  <note>
+    <p>Je třeba si uvědomit, že charakterizace (profil) bude pro zařízení platná, když je ve stejném stavu kalibrace, jako bylo během charakterizace.</p>
+  </note>
+  <p>V případě profilů zobrazení je zde další matoucí věc, protože informace o kalibraci jsou často z důvodu pohodlnosti uloženy v profilu. Podle konvence jsou uchovány ve značce s názvem <em>vcgt</em>. Ačkoliv jsou uloženy v profilu, žádný z nástrojů nebo aplikací používajících ICC si jich nevšímají a nic s nimi nedělají. Obdobně, typické nástroje a aplikace pro kalibraci zobrazení si nevšímají a nic nedělají s (profilovými) informacemi o charakterizaci ICC.</p>
+
+</page>

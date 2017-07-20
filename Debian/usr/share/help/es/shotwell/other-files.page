@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="other-files" xml:lang="es">
+
+    <info>
+        <link type="guide" xref="index#other"/>
+        <desc>Mantener la biblioteca de Shotwell sincronizada con los archivos de fotos del disco.</desc>
+        
+        <link type="next" xref="other-plugins"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marina Prado</mal:name>
+      <mal:email>mapraro93@hotmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Dámaris Letelier</mal:name>
+      <mal:email>dam.letelier@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+   <title>Archivos de fotos</title>
+
+    <p>Cada foto de la biblioteca de Shotwell se corresponde con un archivo almacenado en su disco duro. Shotwell tienen varias características que le ayudan a mantener su biblioteca y los archivos del disco sincronizados.</p>
+    <links type="section"/>
+    
+    <section id="dirpattern">
+        <title>Usar un patrón de carpeta predeterminado</title>
+        <p>Shotwell le permite especificar como llamar a sus carpetas en una biblioteca. Puede hacer esto cambiando las configuraciones de <gui>Estructura del directorio</gui> y <gui>Patrón</gui> en el cuadro de diálogo <gui>Preferencias</gui>. Puede utilizar un patrón preseleccionado, o escoger <gui>Personalizado</gui> y escribir el suyo.</p>
+
+        <p>Los símbolos disponibles para los patrones de carpetas empiezan por «%» (signo de porcentaje). Los valores que estos símbolos producen dependen de la configuración regional, por lo que lo que vea en su equipo puede ser diferente a estos ejemplos.</p>
+
+        <table frame="all" rules="rowgroups">
+            <tbody>
+                <tr>
+                    <td><p> </p></td> <td><p><em>Símbolo</em></p></td> <td><p><em>Significado</em></p></td> <td><p><em>Ejemplo</em></p></td>
+                </tr>
+            </tbody>
+            <tbody>
+            <tr>
+                <td><p> </p></td><td><p>%Y</p></td><td><p>Año: completo</p></td><td><p>2011</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%y</p></td><td><p>Año: dos dígitos</p></td><td><p>11</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%d</p></td><td><p>Día del mes, empezando por cero</p></td><td><p>03</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%A</p></td><td><p>Nombre del día: completo</p></td><td><p>Miércoles</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%a</p></td><td><p>Nombre del día: abreviado</p></td><td><p>Mié</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%m</p></td><td><p>Número de mes, empezando por cero</p></td><td><p>02</p></td>
+            </tr>
+            <tr><td><p> </p></td><td><p>%b</p></td><td><p>Nombre del mes: abreviado</p></td><td><p>Feb</p></td></tr><tr><td><p> </p></td><td><p>%B</p></td><td><p>Nombre del mes: completo</p></td><td><p>Febrero</p></td></tr><tr><td><p> </p></td><td><p>%I</p></td><td><p>Hora: formato de 12 horas</p></td><td><p>05</p></td></tr><tr><td><p> </p></td><td><p>%H</p></td><td><p>Hora: formato de 24 horas</p></td><td><p>17</p></td></tr><tr><td><p> </p></td><td><p>%M</p></td><td><p>Minuto</p></td><td><p>16</p></td></tr><tr><td><p> </p></td><td><p>%S</p></td><td><p>Segundo</p></td><td><p>30</p></td></tr><tr><td><p> </p></td><td><p>%p</p></td><td><p>AM o PM</p></td><td><p>PM</p></td></tr>
+            </tbody>
+        </table>
+
+        <p>Existen otros símbolos disponibles, revise el manual de strftime ejecutando el comando <cmd>man strftime</cmd> si necesita alguno que no esté listado aquí.</p>
+    </section>
+
+    <section id="automatic-import">
+       <title>Importar fotos automáticamente</title>
+       
+       <p>Shotwell puede automáticamente importar nuevas fotos que aparezcan en la carpeta de la biblioteca. (La carpeta de la biblioteca está usualmente en la carpeta <file>Imágenes</file> en su carpeta local; puede cambiar esta ubicación en la ventana <gui>Preferencias</gui>.)</p>
+       
+       <p>Para activar la importación automática, marca la opción <gui>Vigilar mi colección en búsqueda de archivos nuevos</gui> en la ventana <gui>Preferencias</gui>.</p>
+       
+       <note style="advanced"><p>Shotwell también puede seguir los enlaces simbólicos en carpetas importadas automáticamente.</p></note>
+
+    </section>
+
+    <section id="automatic-rename">
+       <title>Renombrar a minúsculas automáticamente las fotos importadas</title>
+       
+       <p>Shotwell puede cambiar automáticamente los nombres de las fotos importadas a minúsculas. Para activar esto, escoja <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>, y en la ventana de <gui>Preferencias</gui>, marque la casilla <gui>Renombrar los archivos importados a minúsculas</gui>.</p>
+    
+    </section>
+    
+    <section id="writing-metadata">
+       <title>Escribir metadatos al vuelo</title>
+       
+       <p>De manera predeterminada, Shotwell no modifica los archivos de fotos, aunque las edite o cambie sus etiquetas o títulos. Shotwell guardará estos cambios únicamente en su propia base de datos.</p>
+       
+       <p>Para cambiar este comportamiento, puede activar la casilla <gui>Escribir etiquetas, títulos y otros metadatos a los archivos</gui> en el cuadro de diálogo <gui>Preferencias</gui>. Cuando esta opción se activa, Shotwell escribirá los siguientes metadatos a la mayoría de los archivos cada vez que los modifique en Shotwell.</p>
+       
+       <list>
+       <item><p>títulos</p></item>
+       <item><p>etiquetas</p></item>
+       <item><p>valoraciones</p></item>
+       <item><p>información de rotación</p></item>
+       <item><p>fecha/hora</p></item>
+       </list>
+       
+       <p>Shotwell almacena esta información en archivos de fotos en formato EXIF, IPTC y/o XMP. Tenga en cuenta que Shotwell sólo puede escribir en archivos de fotos en formato JPEG, PNG y TIFF, no en fotos en BMP, RAW o en archivos de vídeo.</p>
+    
+    </section>
+    
+    <section id="runtime-monitoring">
+    <title>Monitorizazión en tiempo de ejecución</title>
+    
+    <p>Mientras Shotwell está en ejecución, tiene en cuenta los cambios realizados en un archivo de una foto externamente. Cuando el archivo cambia, Shotwell vuelve a leer el archivo y actualiza la vista de la foto y sus metadatos.</p>
+    
+    <p>Tenga en cuenta que Shotwell comprueba todos los archivos de fotos para ver si hay cambios al inicio, pero sólo los archivos de fotos contenidos en la carpeta de la biblioteca se supervisan en tiempo real después del inicio. Esperamos eliminar esta limitación en una nueva versión.</p>
+
+    </section>
+    
+</page>

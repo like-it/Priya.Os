@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="default-browser" xml:lang="el">
+
+  <info>
+    <desc>Άνοιγμα συνδέσμων από ένα μήνυμα σε περιηγητή και άνοιγμα της σύνταξης μηνύματος από έναν σύνδεσμο αλληλογραφίας σε μια ιστοσελίδα.</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+
+    <revision pkgversion="3.8.3" version="0.8" date="2013-07-19" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009-2010</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Άνοιγμα συνδέσμων μέσα και από περιηγητή ιστού</title>
+
+<!-- For GNOME2 the steps are to define the gconf keys /desktop/gnome/url-handlers/http and /https -->
+
+<section id="browser-to-use">
+<title>Αλλάξτε ποιοι ιστοτόποι περιηγητή ιστού είναι ανοικτοί</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-shell !platform:gnome-classic !platform:unity">
+<p>In case you use <app>Evolution</app> under a different environment from GNOME,</p>
+ <steps>
+   <item>
+     <p>Ανοίξτε μια εφαρμογή τερματικού.</p>
+   </item>
+   <item>
+<p>Βρείτε το όνομα του αρχείου <cmd>.desktop</cmd> για τον αγαπημένο σας περιηγητή. Ανάλογα με τον περιηγητή σας και τη διανομή, το αρχείο μπορεί να λέγεται για παράδειγμα <cmd>epiphany.desktop</cmd>, <cmd>firefox.desktop</cmd>, <cmd>google-chrome.desktop</cmd>, <cmd>konqbrowser.desktop</cmd>, ή <cmd>opera-browser.desktop</cmd>. Αν είσαστε αβέβαιος, μπορείτε να αναζητήσετε περισσότερα αρχεία <cmd>.desktop</cmd> στον φάκελο <cmd>/usr/share/applications/</cmd>.</p>
+   </item>
+   <item>
+     <p>Πληκτρολογήστε αυτήν την εντολή, αντικαταστήστε <cmd>browser.desktop</cmd> από το ενεργό όνομα αρχείου και πατήστε το πλήκτρο <key>Εισαγωγή</key>:</p>
+     <p><cmd its:translate="no">
+       xdg-settings set default-url-scheme-handler https browser.desktop
+     </cmd></p>
+   </item>
+   <item>
+     <p>Πληκτρολογήστε αυτήν την εντολή, αντικαταστήστε <cmd>browser.desktop</cmd> από το ενεργό όνομα αρχείου και πατήστε το πλήκτρο <key>Εισαγωγή</key>:</p>
+     <p><cmd its:translate="no">
+       xdg-settings set default-url-scheme-handler http browser.desktop
+     </cmd></p>
+   </item>
+   <item>
+     <p><app>Evolution</app> may need to be restarted for the settings to take effect.</p>
+   </item>
+ </steps>
+<note style="tip">
+  <p>Εάν εμφανιστεί το μήνυμα σφάλματος "xdg-settings: command not found", χρειάζεται να εγκαταστήσετε το πακέτο <sys>xdg-utils</sys>.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:xdg-utils" style="button">Εγκατάσταση xdg-utils</link></p>
+    </if:when>
+  </if:choose>
+</note>
+  </if:when>
+<p>Παρακαλώ δείτε <link xref="help:gnome-help/net-default-browser" href="https://help.gnome.org/users/gnome-help/stable/net-default-browser">Βοήθεια επιφάνειας εργασίας GNOME</link>.</p>
+
+<p>Εάν ο προτιμώμενος περιηγητής ορίζεται ως προεπιλεγμένη εφαρμογή αλλά ακόμα δεν δουλεύει σωστά παρακαλώ επικοινωνήστε με τη διανομή σας μέσα από ομίλους ή εντοπιστή σφαλμάτων.</p>
+
+<note style="tip">
+  <p>Εάν εμφανιστεί το μήνυμα σφάλματος "αδυναμία ανοίγματος του συνδέσμου: η λειτουργία δεν υποστηρίζεται", χρειάζεται να εγκαταστήσετε το πακέτο <sys>gvfs</sys>.</p>
+  <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+    <if:when test="action:install">
+      <p><link action="install:gvfs" href="http://ftp.gnome.org/pub/gnome/sources/gvfs/" style="button">Εγκατάσταση gvfs</link></p>
+    </if:when>
+  </if:choose>
+</note>
+</if:choose>
+</section>
+
+
+<section id="email-application-to-use">
+<title>Αλλάξτε ποια εφαρμογή αλληλογραφίας χρησιμοποιείται για εγγραφή μηνυμάτων</title>
+
+<p>Παρακαλούμε δείτε <link xref="help:gnome-help/net-default-email" href="https://help.gnome.org/users/gnome-help/stable/net-default-email">Βοήθεια επιφάνειας εργασίας GNOME</link>.</p>
+
+</section>
+
+<section id="advanced-options">
+<title>Προχωρημένες επιλογές</title>
+<note style="advanced"><p>Εάν έχετε τεχνικό υπόβαθρο μπορείτε επίσης να ψιλοαλλάξετε αυτές τις ρυθμίσεις ορίζοντας τους χειριστές σχήματος στο <file>$HOME/.local/share/applications/mimeapps.list</file>.</p></note>
+</section>
+
+</page>

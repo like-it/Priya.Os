@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="it">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="files#faq"/>
+    <link type="seealso" xref="nautilus-file-properties-basic"/>
+
+    <desc>Controllare chi può vedere e modificare i propri file e cartelle.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Impostare i permessi sui file</title>
+
+  <p>È possibile usare i permessi dei file per controllare chi può visualizzare e modificare i propri file. Per visualizzare e impostare i permessi di un file, fare clic col pulsante destro del mouse e selezionare <gui>Proprietà</gui>, quindi selezionare la scheda <gui>Permessi</gui>.</p>
+
+  <p>Consultare <link xref="#files"/> e <link xref="#folders"/> più sotto per i dettagli relativi ai tipi di permessi che è possibile impostare.</p>
+
+  <section id="files">
+    <title>File</title>
+
+    <p>I permessi sui file possono essere impostati per il proprietario del file, il gruppo e per tutti gli altri utenti del sistema. Per i file nella propria cartella personale, di cui si è i proprietari, è possibile impostare permessi di sola lettura o di lettura e scrittura. Impostare un file in sola lettura per non correre il rischio di modificarlo per sbaglio.</p>
+
+    <p>Ogni utente all'interno del computer appartiene a un gruppo. Su computer domestici solitamente ogni utente dispone di un proprio gruppo e questo tipo di permesso non viene molto usato. In ambienti aziendali, invece, i gruppi possono essere usati per distinguere dipartimenti o progetti. Oltre ad avere un proprietario, ogni file appartiene anche a un gruppo, in moda da poter associare un file a un gruppo e controllare i permessi per tutti gli utenti che ne fanno parte. Per associare un gruppo a un file, è necessario far parte del gruppo.</p>
+
+    <p>I permessi possono essere impostati anche per gli utenti diversi dal proprietario e per quelli appartenenti al gruppo del file.</p>
+
+    <p>Se un file è un programma, come per esempio uno script, è necessario selezionare <gui>Consentire l'esecuzione del file come programma</gui> per poterlo eseguire. Anche con quest'opzione selezionata, il gestore di file potrebbe comunque aprire il file usando un'altra applicazione oppure chiedere cosa fare. Per maggiori informazioni, consultare <link xref="nautilus-behavior#executable"/>.</p>
+  </section>
+
+  <section id="folders">
+    <title>Cartelle</title>
+    <p>I permessi sulle cartelle possono essere impostati per il proprietario, il gruppo e gli altri utenti. Consultare i dettagli dei permessi descritti sopra per capire chi e cosa sono proprietario, gruppo e altri utenti.</p>
+    <p>I permessi che è possibile applicare per una cartella sono diversi da quelli di un file.</p>
+    <terms>
+      <item>
+        <title><gui itst:context="permission">None</gui></title>
+        <p>L'utente non può nemmeno visualizzare quali file la cartella contenga.</p>
+      </item>
+      <item>
+        <title><gui>Elencare soltanto i file</gui></title>
+        <p>L'utente può vedere quali file sono nella cartella, ma non può aprire, creare o eliminare file.</p>
+      </item>
+      <item>
+        <title><gui>Accedere ai file</gui></title>
+        <p>L'utente può aprire i file nella cartella (ammesso che abbia i permessi per farlo su quei file), ma non può crearne di nuovi o eliminarli.</p>
+      </item>
+      <item>
+        <title><gui>Creare ed eliminare i file</gui></title>
+        <p>L'utente può avere pieno accesso alla cartella, compreso aprire, creare ed eliminare file.</p>
+      </item>
+    </terms>
+
+    <p>You can also quickly set the file permissions for all the files
+    in the folder by clicking <gui>Change Permissions for Enclosed Files</gui>.
+    Use the drop-down lists to adjust the permissions of contained files or
+    folders, and click <gui>Change</gui>. Permissions are applied to files and
+    folders in subfolders as well, to any depth.</p>
+  </section>
+
+</page>

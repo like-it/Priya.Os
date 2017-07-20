@@ -1,0 +1,77 @@
+
+                         _|_ __|_ _ ._ _  
+                          |_(_)|_(/_| | | 
+
+Totem is movie player for the GNOME desktop based on GStreamer.
+It features a playlist, a full-screen mode, seek and volume controls,
+as well as complete keyboard navigation.
+
+Apart from a movie player, it also includes a Mozilla plugin, and a
+Nautilus thumbnailer and properties page.
+
+News
+====
+
+See NEWS file
+
+Dependencies
+============
+
+GStreamer 1.0
+	http://gstreamer.freedesktop.org
+
+GNOME 3.x development platform
+	http://www.gnome.org
+
+gromit 20041213, for the Telestrator mode:
+	http://www.home.unix-ag.org/simon/gromit/
+
+Controls
+========
+
+Ctrl+H:
+	Shortcut help
+
+Undocumented shortcuts:
+Ctrl+Q:
+	Quit
+Ctrl+D:
+	Toggle drawing using Gromit
+Ctrl+E:
+	Erase drawing using Gromit
+Mouse button 1 double-click:
+	Toggle full screen
+Middle mouse button click:
+	Play/Pause
+
+Copyright
+=========
+
+Nifty media player icon by Jakub Steiner <jimmac@ximian.com>
+
+UI help by Seth Nickell <snickell@stanford.edu>
+
+Automatic GStreamer codec installation (optional)
+================================================================
+- requires GStreamer core and gst-plugins-base >= 0.10.12
+- calls (via GStreamer) a predefined external helper script (which is to be
+  installed by the distro and can be defined via gst-plugins-base's configure
+  script when building gst-plugins-base) with details of missing GStreamer
+  plugins. See
+  http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstpbutilsinstallplugins.html#id511743
+  for more information on how this all works together.
+
+BUGS
+====
+
+Bugs should be filed in GNOME's Bugzilla:
+http://bugzilla.gnome.org/enter_bug.cgi?product=totem
+
+To get a better debug output, follow the instructions at:
+https://wiki.gnome.org/Apps/Videos/BugReporting
+
+Contact
+=======
+
+Bastien Nocera <hadess@hadess.net>
+http://wiki.gnome.org/Apps/Videos

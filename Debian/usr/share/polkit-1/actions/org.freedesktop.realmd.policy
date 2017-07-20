@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+                       "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+                       "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+	<vendor>realmd</vendor>
+	
+
+	
+	<action id="org.freedesktop.realmd.discover-realm">
+		<description>Discover realm</description>
+		<description xml:lang="da">Registrer område</description>
+		<description xml:lang="de">Bereich entdecken</description>
+		<description xml:lang="el">Ανακαλύψτε το πεδίο</description>
+		<description xml:lang="en_GB">Discover realm</description>
+		<description xml:lang="es">Descubrir reino</description>
+		<description xml:lang="fr">Découverte du domaine</description>
+		<description xml:lang="gl">Descubrir reino</description>
+		<description xml:lang="hu">A realm feltérképezése</description>
+		<description xml:lang="id">Temukan realm</description>
+		<description xml:lang="ko">영역 검색</description>
+		<description xml:lang="pl">Wykrywanie obszaru</description>
+		<description xml:lang="pt_BR">Descobrir reino</description>
+		<description xml:lang="ru">Обнаружение области</description>
+		<description xml:lang="sl">Odkrij polje</description>
+		<description xml:lang="sv">Upptäck sfär</description>
+		<description xml:lang="tr">Erişim alanını keşfet</description>
+		<description xml:lang="uk">Виявлення області</description>
+		<description xml:lang="zh_CN">搜索领域</description>
+		<message>Authentication is required to discover a kerberos realm</message>
+		<message xml:lang="da">Godkendelse er krævet for at registrere et kerberosområde</message>
+		<message xml:lang="de">Legitimierung ist erforderlich, um einen Kerberos-Bereich zu entdecken</message>
+		<message xml:lang="el">Απαιτείται πιστοποίηση για να ανακαλύψετε ένα πεδίο kerberos</message>
+		<message xml:lang="en_GB">Authentication is required to discover a kerberos realm</message>
+		<message xml:lang="es">Se requiere autenticación para descubrir un reino de Kerberos</message>
+		<message xml:lang="fr">L'authentification est nécessaire afin de découvrir un domaine kerberos</message>
+		<message xml:lang="gl">Debe autenticarse para descubrir un reino de kerberos</message>
+		<message xml:lang="hu">Hitelesítés szükséges a kerberos realm feltérképezéséhez</message>
+		<message xml:lang="id">Perlu otentikasi untuk menemukan suatu realm kerberos</message>
+		<message xml:lang="ko">Kerberos 영역을 사용하려면 인증이 필요합니다.</message>
+		<message xml:lang="pl">Wymagane jest uwierzytelnienie, aby wykryć obszar Kerberos</message>
+		<message xml:lang="pt_BR">Autenticação é necessária para descobrir um reino em kerberos</message>
+		<message xml:lang="ru">Для обнаружения области Керберос требуется аутентификация</message>
+		<message xml:lang="sl">Za zaznavanje polja kerberos je zahtevana overitev</message>
+		<message xml:lang="sv">Autentisering krävs för att upptäcka en kerberos-sfär</message>
+		<message xml:lang="tr">Bir kerberos erişim alanını keşfetmek kimlik doğrulama gerektiriyor</message>
+		<message xml:lang="uk">Щоб отримати доступ до виявлення області Kerberos, слід пройти розпізнавання</message>
+		<message xml:lang="zh_CN">搜索 Kerberos 领域需要认证</message>
+		<defaults>
+			<allow_any>yes</allow_any>
+			<allow_inactive>yes</allow_inactive>
+			<allow_active>yes</allow_active>
+		</defaults>
+	</action>
+
+	<action id="org.freedesktop.realmd.configure-realm">
+		<description>Join machine to realm</description>
+		<description xml:lang="da">Slut maskine til område</description>
+		<description xml:lang="de">Rechner einem Bereich beitreten</description>
+		<description xml:lang="el">Συνδέστε το μηχάνημα στο πεδίο</description>
+		<description xml:lang="en_GB">Join machine to realm</description>
+		<description xml:lang="es">Unir equipo al reino</description>
+		<description xml:lang="fr">Joindre la machine au domaine</description>
+		<description xml:lang="gl">Unir máquina ao reino</description>
+		<description xml:lang="hu">Gép csatlakoztatása a realmhoz</description>
+		<description xml:lang="id">Gabungkan mesin ke realm</description>
+		<description xml:lang="ko">영역에 기기 추가</description>
+		<description xml:lang="pl">Dołączenie komputera do obszaru</description>
+		<description xml:lang="pt_BR">Associar máquina ao reino</description>
+		<description xml:lang="ru">Присоединить машину к области</description>
+		<description xml:lang="sl">Pridruži napravo v polje</description>
+		<description xml:lang="sv">Anslut maskin till sfär</description>
+		<description xml:lang="tr">Makineyi etki alanına ekle</description>
+		<description xml:lang="uk">Долучення комп’ютера до області</description>
+		<description xml:lang="zh_CN">将计算机加入领域</description>
+		<message>Authentication is required to join this machine to a realm or domain</message>
+		<message xml:lang="da">Godkendelse er krævet for at slutte denne maskine til et område eller domæne</message>
+		<message xml:lang="de">Legitimierung ist erforderlich, damit dieser Rechner einem Bereich oder einer Domäne beitritt</message>
+		<message xml:lang="el">Απαιτείται πιστοποίηση για να συνδέσετε αυτό το μηχάνημα σε ένα πεδίο ή τομέα</message>
+		<message xml:lang="en_GB">Authentication is required to join this machine to a realm or domain</message>
+		<message xml:lang="es">Se requiere autenticación para unir este equipo a un reino o a un dominio</message>
+		<message xml:lang="fr">L'authentification est nécessaire afin d'inscrire cette machine au domaine kerberos</message>
+		<message xml:lang="gl">Debe autenticarse para unir esta máquina ao reino ou dominio</message>
+		<message xml:lang="hu">Hitelesítés szükséges ennek a gépnek a realmhoz vagy tartományhoz való csatlakoztatásához</message>
+		<message xml:lang="id">Perlu otentikasi untuk menggabungkan mesin ini ke suatu realm atau domain</message>
+		<message xml:lang="ko">영역이나 도메인에 이 기기를 추가하려면 인증이 필요합니다.</message>
+		<message xml:lang="pl">Wymagane jest uwierzytelnienie, aby dołączyć ten komputer do obszaru lub domeny</message>
+		<message xml:lang="pt_BR">Autenticação é necessária para associar esta máquina a um reino ou domínio</message>
+		<message xml:lang="ru">Для присоединения машины к области или домену требуется аутентификация</message>
+		<message xml:lang="sl">Za prijavo naprave v polje ali domeno je zahtevana overitev</message>
+		<message xml:lang="sv">Autentisering krävs för att ansluta denna maskin till en sfär eller domän</message>
+		<message xml:lang="tr">Bu makineyi bir erişim alanına veya alana eklemek kimlik doğrulama gerektiriyor</message>
+		<message xml:lang="uk">Для долучення цього комп’ютера до області або домену слід пройти розпізнавання</message>
+		<message xml:lang="zh_CN">将此计算机加入领域或域需要认证</message>
+		<defaults>
+			<allow_any>auth_admin</allow_any>
+			<allow_inactive>auth_admin</allow_inactive>
+			<allow_active>auth_admin_keep</allow_active>
+		</defaults>
+		<annotate key="org.freedesktop.policykit.imply">
+			org.freedesktop.realmd.discover-realm
+			org.freedesktop.realmd.deconfigure-realm
+		</annotate>
+	</action>
+
+	<action id="org.freedesktop.realmd.deconfigure-realm">
+		<description>Remove machine from realm</description>
+		<description xml:lang="da">Fjern maskine fra område</description>
+		<description xml:lang="de">Rechner aus Bereich entfernen</description>
+		<description xml:lang="el">Αφαίρεση μηχανήματος από το πεδίο</description>
+		<description xml:lang="en_GB">Remove machine from realm</description>
+		<description xml:lang="es">Quitar equipo del reino</description>
+		<description xml:lang="fr">Supprimer la machine du domaine</description>
+		<description xml:lang="gl">Quitar máquina do reino</description>
+		<description xml:lang="hu">Gép eltávolítása a realmból</description>
+		<description xml:lang="id">Hapus mesin dari realm</description>
+		<description xml:lang="ko">영역에서 기기 삭제</description>
+		<description xml:lang="pl">Usunięcie komputera z obszaru</description>
+		<description xml:lang="pt_BR">Remover máquina do reino</description>
+		<description xml:lang="ru">Удалить машину из области</description>
+		<description xml:lang="sl">Odstrani napravo iz polja</description>
+		<description xml:lang="sv">Ta bort maskin från sfär</description>
+		<description xml:lang="tr">Makineyi etki alanından çıkar</description>
+		<description xml:lang="uk">Вилучення комп’ютера з області</description>
+		<description xml:lang="zh_CN">从领域中移除计算机</description>
+		<message>Authentication is required to remove this computer from a realm or domain.</message>
+		<message xml:lang="da">Godkendelse er krævet for at fjerne denne computer fra et område eller domæne.</message>
+		<message xml:lang="de">Legitimierung ist erforderlich, um diesen Rechner aus einem Bereich oder aus einer Domäne zu entfernen.</message>
+		<message xml:lang="el">Απαιτείται πιστοποίηση για να αφαιρέσετε αυτόν τον υπολογιστή από ένα πεδίο ή τομέα.</message>
+		<message xml:lang="en_GB">Authentication is required to remove this computer from a realm or domain.</message>
+		<message xml:lang="es">Se requiere autenticación para quitar este equipo de un reino o de un dominio.</message>
+		<message xml:lang="fr">L'authentification est nécessaire afin de supprimer cette machine du domaine.</message>
+		<message xml:lang="gl">Debe autenticarse para quitar este computador do reino ou dominio.</message>
+		<message xml:lang="hu">Hitelesítés szükséges ennek a számítógépnek a realmból vagy tartományból való eltávolításához.</message>
+		<message xml:lang="id">Perlu otentikasi untuk menghapus komputer ini dari suatu realm atau domain.</message>
+		<message xml:lang="ko">영역이나 도메인에서 이 컴퓨터를 제외하려면 인증이 필요합니다.</message>
+		<message xml:lang="pl">Wymagane jest uwierzytelnienie, aby usunąć ten komputer z obszaru lub domeny.</message>
+		<message xml:lang="pt_BR">Autenticação é necessária para remover este computador de um reino ou domínio.</message>
+		<message xml:lang="ru">Для удаления этого компьютера из области или домена требуется аутентификация.</message>
+		<message xml:lang="sl">Za odstranitev naprave iz polja ali domene je zahtevana overitev</message>
+		<message xml:lang="sv">Autentisering krävs för att ta bort denna dator från en sfär eller domän.</message>
+		<message xml:lang="tr">Bu makineyi bir erişim alanından veya bir alandan çıkarmak kimlik doğrulama gerektiriyor.</message>
+		<message xml:lang="uk">Для вилучення цього комп’ютера з області або домену слід пройти розпізнавання.</message>
+		<message xml:lang="zh_CN">从领域或域中移除此计算机需要认证。</message>
+		<defaults>
+			<allow_any>auth_admin</allow_any>
+			<allow_inactive>auth_admin</allow_inactive>
+			<allow_active>auth_admin_keep</allow_active>
+		</defaults>
+	</action>
+
+	<action id="org.freedesktop.realmd.login-policy">
+		<description>Change login policy</description>
+		<description xml:lang="da">Ændr logindpolitik</description>
+		<description xml:lang="de">Anmelderichtlinie ändern</description>
+		<description xml:lang="el">Αλλαγή πολιτικής σύνδεσης</description>
+		<description xml:lang="en_GB">Change login policy</description>
+		<description xml:lang="es">Cambiar política de inicio de sesión</description>
+		<description xml:lang="fr">Modifier la politique de connexion</description>
+		<description xml:lang="gl">Cambiar a normativa de inicio de sesión</description>
+		<description xml:lang="hu">Bejelentkezési házirend módosítása</description>
+		<description xml:lang="id">Ubah kebijakan log masuk</description>
+		<description xml:lang="ja">ログインポリシーの変更</description>
+		<description xml:lang="ko">로그인 정책 변경</description>
+		<description xml:lang="pl">Zmiana polityki logowania</description>
+		<description xml:lang="pt_BR">Alterar política de início de sessão</description>
+		<description xml:lang="ru">Изменить политику входа</description>
+		<description xml:lang="sl">Spremeni pravila prijavljanja</description>
+		<description xml:lang="sv">Ändra inloggningspolicy</description>
+		<description xml:lang="tr">Oturum açma politikasını değiştir</description>
+		<description xml:lang="uk">Зміна правил входу</description>
+		<description xml:lang="zh_CN">变更登录策略</description>
+		<message>Authentication is required to change the policy of who can log in on this computer.</message>
+		<message xml:lang="da">Godkendelse er krævet for at ændre politikken for hvem der kan logge ind på denne computer.</message>
+		<message xml:lang="de">Legitimierung ist zum Ändern der Richtlinie, wer sich auf diesem Rechner anmelden darf, notwendig.</message>
+		<message xml:lang="el">Απαιτείται πιστοποίηση για να αλλάξετε την πολιτική δυνατότητας σύνδεσης σε αυτόν τον υπολογιστή.</message>
+		<message xml:lang="en_GB">Authentication is required to change the policy of who can log in on this computer.</message>
+		<message xml:lang="es">Para cambiar la política sobre quién puede iniciar sesión en este equipo, necesita autenticarse.</message>
+		<message xml:lang="fr">L'authentification est nécessaire afin de modifier la politique de qui peut se connecter sur cet ordinateur.</message>
+		<message xml:lang="gl">Debe autenticarse para cambiar a normativa de quen pode iniciar sesión neste computador.</message>
+		<message xml:lang="hu">Hitelesítés szükséges a házirend módosításához, hogy ki jelentkezhet be erre a számítógépre.</message>
+		<message xml:lang="id">Perlu otentikasi untuk mengubah kebijakan tentang siapa yang dapat log masuk ke komputer ini.</message>
+		<message xml:lang="ko">이 컴퓨터에 누가 로그인할 수 있는지에 대한 정책을 변경하려면 인증이 필요합니다.</message>
+		<message xml:lang="pl">Wymagane jest uwierzytelnienie, aby zmienić politykę zezwalania na logowanie na tym komputerze.</message>
+		<message xml:lang="pt_BR">Autenticação é necessária para alterara a política de quem pode se conectar a este computador.</message>
+		<message xml:lang="ru">Для изменения политики входа на этот компьютер требуется аутентификация.</message>
+		<message xml:lang="sl">Za spreminjanje dovoljenj prijave za uporabo naprave je zahtevana overitev</message>
+		<message xml:lang="sv">Autentisering krävs för att ändra policy för vem som kan logga in på denna dator.</message>
+		<message xml:lang="tr">Bu bilgisayarda kimin oturum açacağı ile ilgili politikayı değiştirmek kimlik doğrulama gerektiriyor.</message>
+		<message xml:lang="uk">Для змінити правил щодо того, хто може входити до цієї системи, слід пройти розпізнавання.</message>
+		<message xml:lang="zh_CN">更改什么用户可登录此计算机的策略需要进行认证。</message>
+		<defaults>
+			<allow_any>auth_admin</allow_any>
+			<allow_inactive>auth_admin</allow_inactive>
+			<allow_active>auth_admin_keep</allow_active>
+		</defaults>
+	</action>
+
+</policyconfig>

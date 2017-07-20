@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" version="1.0 ui/1.0" id="shell-keyboard-shortcuts" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="guide" xref="keyboard"/>
+    <link type="guide" xref="shell-overview#apps"/>
+    <link type="seealso" xref="keyboard-key-super"/>
+
+    <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Conheça o ambiente de trabalho usando o teclado.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Atalhos de teclado úteis</title>
+
+<p>This page provides an overview of keyboard shortcuts that can help you
+use your desktop and applications more efficiently. If you cannot use a
+mouse or pointing device at all, see <link xref="keyboard-nav"/> for more
+information on navigating user interfaces with only the keyboard.</p>
+
+<table rules="rows" frame="top bottom" ui:expanded="true">
+<title>Conhecendo o ambiente</title>
+  <tr xml:id="alt-f1">
+    <td><p><keyseq><key>Alt</key><key>F1</key></keyseq> ou a tecla <key xref="keyboard-key-super">Super</key></p></td>
+    <td><p>Switch between the <gui>Activities</gui> overview and desktop. In
+    the overview, start typing to instantly search your applications, contacts,
+    and documents.</p></td>
+  </tr>
+  <tr xml:id="alt-f2">
+    <td><p><keyseq><key>Alt</key><key>F2</key></keyseq></p></td>
+    <td><p>Pop up command window (for quickly running commands)</p></td>
+  </tr>
+  <tr xml:id="super-tab">
+    <td><p><keyseq><key>Super</key><key>Tab</key></keyseq></p></td>
+    <td><p><link xref="shell-windows-switching">Alterne rapidamente entre janelas.</link>. Mantenha o <key>Shift</key> pressionado para uma ordem reversa de alternância.</p></td>
+  </tr>
+  <tr xml:id="super-tick">
+    <td><p><keyseq><key>Super</key><key>`</key></keyseq></p></td>
+    <td>
+      <p>Alterna entre janelas do mesmo aplicativo ou do aplicativo selecionado depois após <keyseq><key>Super</key><key>Tab</key></keyseq>.</p>
+      <p>Este atalho usa <key>`</key> em teclados americanos, sendo que a tecla <key>`</key> está sobre o <key>Tab</key>. Em todos os outros teclados, o atalho é <key>Super</key> mais a tecla que estiver sobre o <key>Tab</key>.</p>
+    </td>
+  </tr>
+  <tr xml:id="ctrl-alt-tab">
+    <!-- To be updated to <key>Tab</key> in the future. -->
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq></p></td>
+    <td>
+      <p>Give keyboard focus to the top bar. In the <gui>Activities</gui>
+      overview, switch keyboard focus between the top bar, dash, windows
+      overview, applications list, search field, and message tray. Use the
+      arrow keys to navigate.</p>
+    </td>
+  </tr>
+  <tr xml:id="super-a">
+    <td><p><keyseq><key>Super</key><key>A</key></keyseq></p></td>
+    <td><p>Mostra a lista de aplicativos.</p></td>
+  </tr>
+  <tr xml:id="super-updown">
+    <td><p><keyseq><key>Super</key><key>Page Up</key></keyseq> e <keyseq><key>Super</key><key>Page Down</key></keyseq></p></td>
+    <td><p><link xref="shell-workspaces-switch">Alterna entre espaços de trabalho</link>.</p></td>
+  </tr>
+  <tr xml:id="super-shift-updown">
+    <td><p><keyseq><key>Super</key><key>Shift</key><key>Page Up</key></keyseq> e <keyseq><key>Super</key><key>Shift</key><key>Page Down</key></keyseq></p></td>
+    <td><p><link xref="shell-workspaces-movewindow">Move a janela atual para um espaço de trabalho diferente</link>.</p></td>
+  </tr>
+  <tr xml:id="super-shift-left">
+    <td><p><keyseq><key>Super</key><key>Shift</key><key>←</key></keyseq></p></td>
+    <td><p>Move the current window one monitor to the left.</p></td>
+  </tr>
+  <tr xml:id="super-shift-right">
+    <td><p><keyseq><key>Super</key><key>Shift</key><key>→</key></keyseq></p></td>
+    <td><p>Move the current window one monitor to the right.</p></td>
+  </tr>
+  <tr xml:id="ctrl-alt-Del">
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Delete</key></keyseq></p></td>
+    <td><p><link xref="shell-exit">Desligar</link>.</p></td>
+  </tr>
+  <tr xml:id="ctrl-alt-l">
+    <td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
+    <td><p><link xref="shell-exit#lock-screen">Bloqueia a tela.</link></p></td>
+  </tr>
+  <tr xml:id="super-m">
+    <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
+    <td><p>Open <link xref="shell-notifications#messagetray">the message
+    tray</link>. Press <keyseq><key>Super</key><key>M</key></keyseq> again or
+    <key>Esc</key> to close.</p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>Atalhos comuns para edição</title>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td>
+    <td><p>Seleciona todo o texto ou todos os itens em uma lista.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>X</key></keyseq></p></td>
+    <td><p>Recorta (remove) o texto selecionado ou os itens e coloca-os na área de transferência.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>C</key></keyseq></p></td>
+    <td><p>Copia o texto selecionado ou os itens para a área de transferência.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>V</key></keyseq></p></td>
+    <td><p>Cola o conteúdo da área de transferência.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Z</key></keyseq></p></td>
+    <td><p>Desfaz a última ação.</p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>Capturando a tela</title>
+  <tr>
+    <td><p><key>Prnt Scrn</key></p></td>
+    <td><p><link xref="screen-shot-record#screenshot">Faz uma captura de tela.</link></p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Alt</key><key>Prnt Scrn</key></keyseq></p></td>
+    <td><p><link xref="screen-shot-record#screenshot">Faz uma captura de uma janela.</link></p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Shift</key><key>Prnt Scrn</key></keyseq></p></td>
+    <td><p><link xref="screen-shot-record#screenshot">Faça uma captura de uma área da tela.</link> O ponteiro torna-se uma mira. Clique e arraste para selecionar uma área.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq></p></td>
+    <td><p><link xref="screen-shot-record#screencast">Inicia e finaliza uma gravação de tela.</link></p></td>
+  </tr>
+</table>
+
+</page>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-localized-re-subjects" xml:lang="el">
+
+  <info>
+    <desc>Αποφύγετε μεγάλες γραμμές θέματος λόγω των μεταφρασμένων προθεμάτων "Re:".</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+
+    <revision pkgversion="3.5.90" version="0.1" date="2012-08-16" status="review"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009-2010</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Χειρισμός τοπικών "Re:" σε θέματα</title>
+
+<p>Παραδοσιακά ένα πρόθεμα "Re:" προστίθεται σε μια γραμμή θέματος όταν απαντάτε σε ένα μήνυμα. Μερικές εφαρμογές μηνύματος χρησιμοποιούν τοπικούς όρους για αυτό (όπως "SV:" στα δανικά ή "AW: στα γερμανικά). Το <app>Evolution</app> μπορεί να αναγνωρίσει αυτούς τους όρους για να αποφύγει την επιμήκυνση των γραμμών καθώς συνεχίζεται η συζήτηση.</p>
+
+<list>
+<item><p>Άνοιγμα της εφαρμογής του <app>τερματικού</app>.</p></item>
+<item><p>Εκτελέστε την εντολή <cmd>gsettings set org.gnome.evolution.mail.composer-localized-re 'AW:,SV:'</cmd> (σε περίπτωση που θέλετε να αναγνωρίζονται τα "AW:" και "SV:").</p></item>
+</list>
+<p>Μπορείτε επίσης να χρησιμοποιήσετε την εφαρμογή <app>dconf-editor</app> για να το κάνετε αυτό.</p>
+
+<!-- As per https://bugzilla.gnome.org/show_bug.cgi?id=661087#c6 -->
+
+</page>

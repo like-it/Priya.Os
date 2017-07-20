@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="seealso" xref="net-findip"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Η χρήση στατικής διεύθυνσης IP μπορεί να διευκολύνει την παροχή κάποιων υπηρεσιών δικτύου από τον υπολογιστή σας.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Δημιουργία σύνδεσης με σταθερή διεύθυνση IP</title>
+
+  <p>Τα περισσότερα δίκτυα θα εκχωρήσουν αυτόματα μια <link xref="net-what-is-ip-address">διεύθυνση IP</link> και άλλες λεπτομέρειες στον υπολογιστή σας όταν συνδέστε στο δίκτυο. Αυτές οι λεπτομέρειες μπορούν να αλλάζουν περιοδικά, αλλά μπορεί να θέλετε να έχετε μια σταθερή διεύθυνση IP για τον υπολογιστή έτσι ώστε να ξέρετε πάντα ποια είναι η διεύθυνσή του (για παράδειγμα, εάν είναι ένας διακομιστής αρχείων).</p> <p>Για να δώσετε στον υπολογιστή σας μια σταθερή (στατική) διεύθυνση IP:</p>
+
+  <steps>
+    <item>
+      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Δίκτυο</gui>.</p>
+    </item>
+    <item>
+      <p>Κάντε κλικ στο <gui>Δίκτυο</gui> για να ανοίξετε τον πίνακα.</p>
+    </item>
+    <item>
+      <p>Από τον αριστερό πίνακα, επιλέξτε τη σύνδεση δικτύου που θέλετε να δώσετε μια στατική διεύθυνση. Αν συνδέεστε στο δίκτυο με καλώδιο, κάντε κλικ στο <gui>Ενσύρματη</gui>, και έπειτα στο κουμπί <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">ρυθμίσεις</span></media> στην κάτω δεξιά γωνία του πίνακα. Για μια σύνδεση <gui>Wi-Fi</gui>, το κουμπί <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">ρυθμίσεις</span></media> βρίσκεται δίπλα στο ενεργό δίκτυο.</p>
+    </item>
+    <item>
+      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
+    </item>
+    <item>
+      <p>Εισάγετε τις πληροφορίες <em>Διεύθυνση</em>, <em>Μάσκα δικτύου</em> και <em>Πύλη δικτύου</em> στα κατάλληλα πλαίσια. Πώς θα τα επιλέξετε εξαρτάται από τη διαμόρφωση του δικτύου σας· υπάρχουν ειδικοί κανόνες που διέπουν ποιες διευθύνσεις IP και ποιες μάσκες δικτύου είναι έγκυρες για ένα δεδομένο δίκτυο.</p>
+    </item>
+    <item>
+      <p>Εάν είναι απαραίτητο, εισάγετε μια διεύθυνση <em>Διακομιστή ονομάτων τομέα</em> στο πλαίσιο <gui>Διακομιστές DNS</gui>. Αυτή είναι η διεύθυνση IP ενός διακομιστή που αναζητά ονόματα τομέων· τα περισσότερα εταιρικά δίκτυα και οι πάροχοι διαδικτύου έχουν αποκλειστικούς διακομιστές DNS.</p>
+    </item>
+    <item>
+      <p>Κάντε κλικ στο <gui>Εφαρμογή</gui>. Η σύνδεση δικτύου πρέπει να έχει τώρα μια σταθερή διεύθυνση IP.</p>
+    </item>
+  </steps>
+
+</page>

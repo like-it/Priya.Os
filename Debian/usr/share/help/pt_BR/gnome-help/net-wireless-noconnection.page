@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-wireless-noconnection" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" version="0.2" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Verifique novamente a senha e outras coisas que você pode tentar.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Eu inseri a senha correta, mas ainda não consigo conectar</title>
+
+<p>Se você tem certeza que você inseriu a <link xref="net-wireless-wepwpa">senha de rede sem fio</link> correta, mas você ainda não consegue conectar com sucesso à rede sem fio, tente alguns das seguintes tentativas:</p>
+
+<list>
+ <item>
+  <p>Verificar novamente se você tem a senha correta</p>
+  <p>Senhas diferenciam maiúsculo de minúsculo, então certifique-se de que você não tem qualquer das letras maiúsculas/minúsculas erroneamente.</p>
+ </item>
+
+ <item>
+  <p>Tentar a chave secreta hex ou ASCII</p>
+  <p>A senha que você digitou também pode ser representada em uma forma diferente - como um conjunto de caracteres em hexadecimal (números 0-9 e letras a-f), chamada de chave secreta. Cada senha possui uma chave secreta. Se você tem acesso à chave secreta assim como a senha/palavra-chave, tente digitar a chave secreta. Certifique-se de selecionar a opção de <gui>segurança sem fio</gui> correta quando solicitada a sua senha (por exemplo, selecione <gui>chave WEP da 40/128 bits</gui> se você está digitando a chave secreta de 40 caracteres para uma conexão criptografada com WEP).</p>
+ </item>
+
+ <item>
+  <p>Tentar desligar sua placa de rede sem fio e, então, ligar novamente</p>
+  <p>Em alguns casos, placas de rede sem fio travam ou apresentam um problema pequeno, o que significa que não vão se conectar. Tente desligar a placa e ligar novamente para redefini-la - Veja <link xref="net-wireless-troubleshooting"/> para mais informação.</p>
+ </item>
+
+ <item>
+  <p>Verificar se você está usando o tipo correto de segurança sem fio</p>
+  <p>Quando solicitada sua senha de segurança sem fio, você pode escolher qual tipo de segurança sem fio pretende usar. Certifique-se de escolher aquela que é usada pelo rotador ou ponto de acesso. Ela deveria estar selecionado por padrão, mas em alguns casos ela não estará por algum motivo. Se você não sabe qual é, use a técnica de tentativa-e-erro com as diferentes opções.</p>
+ </item>
+
+ <item>
+  <p>Certificar que há suporte adequado à sua placa de rede sem fio</p>
+  <p>Algumas placas de rede não possuem um suporte muito bom no Linux. Elas aparecem como uma conexão sem fio, mas não conseguem se conectar a uma rede porque seus drivers não possuem a capacidade de fazê-lo. Veja se você pode obter um driver de rede sem fio alternativo, ou se você precisa realizar alguma configuração extra (como instalar um <em>firmware</em> diferente). Veja <link xref="net-wireless-troubleshooting"/> para mais informação.</p>
+ </item>
+
+</list>
+
+</page>

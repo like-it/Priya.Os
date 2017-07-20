@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters-not-working" xml:lang="hu">
+
+  <info>
+    <desc>A leveleket nem a várt módon rendező és rendszerező levélszűrők hibáinak elhárítása.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.9.3" version="0.5" date="2013-06-24" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Nem működő levélszűrők</title>
+
+<section id="order">
+<title>Szűrők sorrendje</title>
+<p>A szűrők sorrendje nagyon fontos. Az eredeti üzenetre sorrendben kerülnek alkalmazásra, mint egy recept.</p>
+<p>Ha az első szűrője egy <gui>Feldolgozás leállítása</gui> szabályt tartalmaz, akkor az erre illeszkedő összes levélen a következő szűrők már nem lesznek lefuttatva.</p>
+<p>Amikor egy levelet áthelyez egy másik mappába, akkor az „áthelyezés” valójában az üzenet egy másolatának a célmappához fűzését és az eredeti üzenet törlésre való kijelölését jelenti. Emiatt az ezt esetleg követő szűrőszabályok az eredeti üzenetre lesznek alkalmazva, amely most törlésre van kijelölve. Emiatt az üzenet áthelyezése általában a szűrőszabályok sorozatának utolsó eleme kell legyen.</p>
+<p>Meglévő szűrő szabályainak és azok sorrendjének ellenőrzéséhez tekintse át a műveleteket az <gui>Azután</gui> szakaszban a <link xref="mail-filters#editing">szűrő szerkesztésével</link>.</p>
+</section>
+
+<section id="several-clients">
+<title>Több levelezőkliens használata</title>
+<p>Másik fontos dolog, hogy a szűrők az „új” jelzőre támaszkodnak, amely akkor kerül beállításra a kiszolgálón, amikor egy adott e-mail először letöltésre kerül a kiszolgálóról. Ha másik levelezőklienst is használ az <app>Evolution</app> mellett, akkor a szűrők nem biztos, hogy automatikusan működni fognak.</p>
+</section>
+
+<section id="filter-log">
+<title>Szűrő műveletek naplózása </title>
+<p>Ha még mindig nem világos, miért nem működnek a szűrők az elvárt módon, akkor bekapcsolhatja a szűrő műveletek naplózását.</p>
+<list>
+<item><p>Zárja be az <app>Evolutiont</app>.</p></item>
+<item><p>Nyissa meg a <app>Terminál</app> alkalmazást.</p></item>
+<item><p>Futtassa a következő parancsot: <cmd>gsettings set org.gnome.evolution.mail filters-log-actions true</cmd></p></item>
+<item><p>Futtassa a következő parancsot: <cmd>gsettings set org.gnome.evolution.mail filters-log-file "/home/felhasználónév/szűrőnaplóm"</cmd>, és a <cmd>felhasználónév</cmd> helyére saját felhasználónevét írja. Ez létrehoz egy <file>szűrőnaplóm</file> nevű szövegfájlt az Ön saját könyvtárában. Ne feledje, hogy a fájlnév abszolút útvonalát kell megadni, a <sys>~</sys> vagy <sys>$HOME</sys> nem fog működni.</p></item><!-- this is explained in https://bugzilla.gnome.org/show_bug.cgi?id=669471 -->
+<item><p>Indítsa el az <app>Evolutiont</app>.</p></item>
+<item><p>Levelek letöltése a szűrők alkalmazásához.</p></item>
+<item><p>Nyissa meg a <file>szűrőnaplóm</file> fájlt egy szövegszerkesztővel, ekkor láthatja, mely szűrő műveletek kerültek alkalmazásra.</p></item>
+</list>
+
+<p>Ne feledje, hogy a szűrők naplózását kikapcsolhatja a <cmd>gsettings set org.gnome.evolution.mail filters-log-actions false</cmd> parancs kiadásával.</p>
+
+<p>Ehhez a <app>dconf-editor</app> alkalmazást is használhatja.</p>
+</section>
+
+</page>

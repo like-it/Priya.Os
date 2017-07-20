@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-search" xml:lang="uk">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-replace"/>
+    <desc>Find a portion of text within a file.</desc>
+    <revision pkgversion="3.14" date="2014-12-04" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Максим Дзюманенко</mal:name>
+      <mal:email>dziumanenko@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Назарій Ріттер</mal:name>
+      <mal:email>nazariy.ritter@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Пошук тексту</title>
+  
+    <p>Інструмент «Знайти» допомагає знаходити задані послідовності тексту у файлі.</p>
+
+    <steps>
+      <title>Пошук тексту</title>
+      <item>
+        <p>Open the <gui>search window</gui> by clicking 
+        <guiseq><gui style="menu">Menu Button</gui>
+        <gui style="menuitem">Find…</gui> </guiseq> or
+        pressing <keyseq><key>Ctrl</key><key>F</key></keyseq>. This will move
+        your cursor to the start of the <gui>search window</gui>.</p>
+      </item>
+      <item>
+        <p>У <gui>пошуковому вікні</gui> введіть текст, який потрібно шукати.</p>
+      </item>
+      <item>
+        <p>Під час введення тексту, «<app>gedit</app>» підсвічує фрагменти тексту, що відповідають введеному.</p>
+      </item>
+    </steps>
+    
+    <p>Для переміщення по результатам пошуку, виконайте одну з наступних дій:</p>
+    <list>
+      <item>
+        <p>Клацніть на стрілках <gui style="button">вгору</gui> або <gui style="button">вниз</gui> біля <gui>пошукового вікна</gui>.</p>
+      </item>
+      <item>
+        <p>Натисніть клавіші <key>стрілка вгору</key> чи <key>стрілка вниз</key> на клавіатурі.</p>
+      </item>
+      <item>
+        <p>Натисніть <keyseq><key>Ctrl</key><key>G</key></keyseq> або <keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Натисніть <key>Ctrl</key> і використовуйте функцію <key>коліщатко</key> миші або сенсорної панелі для переміщення по тексту вгору або вниз.</p>
+      </item>
+    </list>
+
+  <p>Для закриття <gui>пошукового вікна</gui>, натисніть <key>Esc</key> або <key>Enter</key>. Натиснення <key>Esc</key> поверне курсор на ту позицію, де він знаходився перед початком пошуку. Натиснення <key>Enter</key> – на поточну позицію результатів пошуку.</p>
+
+  <list>
+    <title>Поради з пошуку</title>
+    <item>
+      <p>Якщо вибрати фрагмент тексту за допомогою миші, а потім натиснути <keyseq><key>Ctrl</key><key>F</key></keyseq>, то вибраний текст з'явиться в пошуковому вікні.</p>
+    </item>
+    <item>
+      <p>Для більшої кількості опції, клацніть на піктограмі «<gui style="button">Лупи</gui>» у вікні пошуку або клацніть правою кнопкою миші будь-де в пошуковому вікні. Можна вибрати одну або декілька опцій пошуку з наступних:</p>
+      <list>
+        <item>
+          <p>Виберіть «<gui>Враховувати регістр</gui>», щоб зробити пошук чутливим до регістру.</p>
+        </item>
+        <item>
+          <p>Виберіть «<gui>Лише ціле слово</gui>», щоб шукати лише цілі слова.</p>
+        </item>
+        <item>
+          <p>Виберіть «<gui>Перейти до початку</gui>», щоб шукати текст з верху до низу і знову спочатку.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>Шуканий текст буде залишатися виділеним, навіть, після закінчення пошуку. Щоб прибрати виділення, клацніть на <guiseq><gui>«Пошук»</gui><gui>«Очистити виділення»</gui></guiseq> або натисніть <keyseq><key>Ctrl</key><key>Shift</key><key>K</key></keyseq>.</p>
+    </item>
+  </list>
+
+</page>

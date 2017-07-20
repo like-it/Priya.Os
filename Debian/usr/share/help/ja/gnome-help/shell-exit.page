@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="power"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name>Alexandre Franke</name>
+      <email>afranke@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>ログアウト、ユーザーの切り替えなどによる、アカウントの抜け方を学びます。</desc>
+    <!-- Should this be a guide which links to other topics? -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>ログアウト、電源オフ、ユーザー切り替え</title>
+
+  <p>コンピューターを使い終わったあとは、電源を切ったり、(節電のために) サスペンドしたり、電源を入れたままログアウトしたりできます。</p>
+
+<section id="logout">
+  <title>ログアウトあるいはユーザー切り替え</title>
+
+  <p>お使いのコンピューターを誰か他の人が使用できるようにするには、ログアウトしてもいいですし、あるいはログインしたままでユーザーの切り替えを行うこともできます。ユーザー切り替えを行った場合は、使用中のアプリケーションはすべて起動したままになり、ログインしなおせば元のままの状態になっています。</p>
+
+  <p>To <gui>Log Out</gui> or <gui>Switch User</gui>, click the
+  <link xref="shell-introduction#yourname">system menu</link> on the right side of the
+  top bar, click your name and then choose the right option.</p>
+
+  <note if:test="!platform:gnome-classic">
+    <p>The <gui>Log Out</gui> and <gui>Switch User</gui> entries only appear in
+    the menu if you have more than one user account on your system.</p>
+  </note>
+
+  <note if:test="platform:gnome-classic">
+    <p>The <gui>Switch User</gui> entry only appears in the menu if you have
+    more than one user account on your system.</p>
+  </note>
+
+</section>
+
+<section id="lock-screen">
+  <info>
+    <link type="seealso" xref="session-screenlocks"/>
+  </info>
+
+  <title>画面のロック</title>
+
+  <p>If you're leaving your computer for a short time, you should lock your
+  screen to prevent other people from accessing your files or running
+  applications. When you return, raise the
+  <link xref="shell-lockscreen">lock screen</link> curtain and enter your
+  password to log back in. If you don't lock your screen, it will lock
+  automatically after a certain amount of time.</p>
+
+  <p>To lock your screen, click the system menu on the right side of the top
+  bar and press the lock screen button at the bottom of the menu.</p>
+
+  <p>When your screen is locked, other users can log in to their own accounts
+  by clicking <gui>Log in as another user</gui> on the password screen. You
+  can switch back to your desktop when they are finished.</p>
+
+</section>
+
+<section id="suspend">
+  <info>
+    <link type="seealso" xref="power-suspend"/>
+  </info>
+
+  <title>サスペンド</title>
+
+  <p>To save power, suspend your computer when you are not using it. If you use
+  a laptop, GNOME, by default, suspends your computer automatically when you
+  close the lid.
+  This saves your state to your computer's memory and powers off most of the
+  computer's functions. A very small amount of power is still used during
+  suspend.</p>
+
+  <p>To suspend your computer manually, click the system menu on the right side
+  of the top bar and hold down the <key>Alt</key> key. The power off button
+  will change to suspend. Press the button.</p>
+
+</section>
+
+<section id="shutdown">
+<!--<info>
+  <link type="seealso" xref="power-off"/>
+</info>-->
+
+  <title>電源オフ、再起動</title>
+
+  <p>If you want to power off your computer entirely, or do a full restart,
+  click the system menu on the right side of the top bar and press the power
+  off button at the bottom of the menu. A dialog will open offering you the
+  options to either <gui>Restart</gui> or <gui>Power Off</gui>.</p>
+
+  <p>他のユーザーがログインしていれば、コンピューターの電源を切ったり再起動したりすることはできないでしょう。他のユーザーのセッションを終了させることになってしまうからです。あなたがシステム管理者であれば、電源を落とすのにパスワードを求められることもあります。</p>
+
+  <note style="tip">
+    <p>You may want to power off your computer if you wish to move it and do
+    not have a battery, if your battery is low or does not hold charge well. A
+    powered off computer also uses <link xref="power-batterylife">less
+    energy</link> than one which is suspended.</p>
+  </note>
+
+</section>
+
+</page>

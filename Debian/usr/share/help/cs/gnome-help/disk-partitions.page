@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="cs">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>Vysvětlení, co jsou to svazky a oddíly a použití diskového nástroje k jejich správě.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>Správa svazků a oddílů</title>
+
+  <p>Slovo <em>svazek</em> se používá k označení úložného zařízení, jako je pevný disk. Může také označovat jen <em>část</em> úložného zařízení, protože to se dá rozdělit na více bloků. Počítač vám úložiště zpřístupňuje pomocí souborových systémů po jejich tzv. <em>připojení</em>. Připojenými svazky mohou být pevné disky, flashdisky do USB, DVD-RW mechaniky, karty SD a další média. Když je svazek připojen, můžete z něj číst soubory (a případně je i zapisovat).</p>
+
+  <p>Občas se připojenému svazku říká <em>oddíl</em>, ale to není úplně přesné. „Oddíl“ představuje <em>fyzickou</em> oblast úložiště na jednom diskovém zařízení. Když je oddíl připojen, je označován jako svazek, protože můžete přistupovat k souborům na něm. O svazcích můžete uvažovat jako o označených zpřístupněných „místnostech“ v celém „domě“ z oddílů a disků.</p>
+
+<section id="manage">
+ <title>Zobrazení a správa svazků a oddílů pomocí diskového nástroje</title>
+
+  <p>Úložné svazky v počítači můžete kontrolovat a měnit pomocí diskového nástroje.</p>
+
+<steps>
+  <item>
+    <p>Otevřete přehled <gui>Činnosti</gui> a spusťte <app>Disky</app>.</p>
+  </item>
+  <item>
+    <p>V seznamu úložných zařízení na levé straně najdete pevné disky, mechaniky CD/DVD a další fyzická zařízení. Klikněte na zařízení, které chcete prozkoumat.</p>
+  </item>
+  <item>
+    <p>Pravý panel přináší grafické znázornění rozdělení svazků a přítomnosti oddílů na vybraném zařízení. Obsahuje také různé nástroje používané ke správě těchto svazků.</p>
+    <p>Buďte opatrní: pomocí tohoto nástroje je možné vymazat veškerá data na vašem disku.</p>
+  </item>
+</steps>
+
+  <p>Počítač má obvykle aspoň jeden <em>hlavní</em> oddíl a jeden <em>odkládací</em> oddíl. Odkládací oddíl používá operační systém ke správě paměti a bývá zřídka připojen. Hlavní oddíl obsahuje operační systém, aplikace, nastavení a osobní soubory. Někdy z důvodů určitých potřeb a bezpečnosti mohou být osobní soubory rozmístěny na více oddílech.</p>
+
+  <p>Jeden hlavní oddíl musí obsahovat informace používané ke spuštění, neboli <em>zavedení</em> operačního systému. Podle toho se nazývá zaváděcí oddíl. Když chcete zjistit, který to je, vyberte oddíl a klikněte na nabídkové tlačítko na nástrojové liště pod seznamem oddílů. Pak klikněte na <gui>Upravit oddíl…</gui> a podívejte se na jeho <gui>Příznaky</gui>. Zaváděcí oddíl mohou obsahovat i externí média, jako jsou flasdisky nebo CD.</p>
+
+</section>
+
+</page>

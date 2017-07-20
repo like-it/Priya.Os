@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-composer-spellcheck" xml:lang="cs">
+
+  <info>
+    <desc>Jak během psaní pošty kontrolovat překlepy.</desc>
+    
+    <link type="guide" xref="index#mail-composing"/>
+
+    <revision pkgversion="3.20.5" version="0.7" date="2016-11-21" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Kontrola pravopisu</title>
+
+<!-- Instructions are only valid from Evolution 2.24 on -->
+
+<section id="required-packages">
+<title>Předpoklady</title>
+<p>Abyste při psaní e-mailů mohli používat kontrolu pravopisu, musíte nejprve zajistit pomocí správy softwaru své distribuce instalaci balíčků <sys>hunspell</sys> (pro váš konkrétní jazyk) a <sys>enchant</sys>.</p>
+
+<note style="info package">
+  <p>Aby šli provést tyto kroky, budete možná muset nainstalovat <sys>hunspell</sys> a/nebo <sys>enchant</sys>.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:hunspell" href="http://hunspell.sourceforge.net/" style="button">Instalovat hunspell</link></p>
+      <p><link action="install:enchant" href="http://www.abisource.com/projects/enchant/" style="button">Instalovat enchant</link></p>
+    </if:when>
+  </if:choose>
+</note>
+</section>
+
+<section id="global-preferences">
+<title>Globální předvolby</title>
+
+<p>V <guiseq><gui>Upravit</gui> <gui>Předvolby</gui> <gui>Předvolby editoru</gui> <gui>Kontrola pravopisu</gui> <gui>Volby</gui></guiseq> můžete určit, jestli má být během psaní prováděna kontrola pravopisu.</p>
+
+<p>Můžete si také v seznamu nainstalovaných jazyků <guiseq><gui>Upravit</gui> <gui>Předvolby</gui> <gui>Předvolby editoru</gui> <gui>Kontrola pravopisu</gui> <gui>Jazyky</gui></guiseq>, nebo přímo v editoru přes <guiseq><gui>Upravit</gui><gui>Aktuální jazyky</gui></guiseq>, vybrat, které jazyky se mají pro kontrolu pravopisu používat.</p>
+</section>
+
+<section id="composer">
+<title>Ruční kontrola pravopisu v editoru</title>
+<p>Pokud nemáte v <link xref="#global-preferences">Předvolbách editoru</link> zapnuto <gui>Při psaní kontrolovat pravopis</gui>, můžete kontrolu pravopisu v editoru zpráv spustit kliknutím na <guiseq><gui>Upravit</gui> <gui>Kontrola pravopisu…</gui></guiseq> nebo zmáčknutím <key>F7</key>.</p>
+</section>
+
+</page>

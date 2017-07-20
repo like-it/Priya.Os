@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu documentation wiki இன் பங்களிப்பாளர்கள்</name>
+    </credit>
+
+    <credit type="author">
+      <name>ஃபில் புல்</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>சில சாதன இயக்கிகள் சில குறிப்பிட்ட வயர்லெஸ் அடாப்ட்டர்களுடன் சரியாக வேலை செய்யாது, ஆகவே நீங்கள் வேறு இயக்கிகளைப் பெற வேண்டி இருக்கலாம்.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>வயர்லெஸ் பிணைய சிக்கல்தீர்வி</title>
+
+  <subtitle>வேலை செய்யக்கூடிய சாதன இயக்கிகள் நிறுவப்பட்டுள்ளதா எனப் பார்க்கவும்</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>இந்த செயல்படியில், உங்கள் வயர்லெஸ் அடாப்ட்டருக்கு செயல்படக்கூடிய சாதன இயக்கிகள் உள்ளனவா என சோதிக்க முடியும். <em>சாதன இயக்கி</em> என்பது ஒரு மென்பொருள் பகுதியாகும், அது தான் உங்கள் கணினிக்கு அந்த வன்பொருளை எப்படி சரியாக வேலை செய்ய வைக்க வேண்டும் என்று கூறும். வயர்லெஸ் அடாப்ட்டரை கணினி அடையாளம் கண்டுகொண்டாலும், சரியாக வேலை செய்யும் இயக்கிகள் இல்லாதிருக்கலாம். கீழே உள்ள சில விருப்பங்களை முயற்சிக்கவும்:</p>
+
+  <list>
+    <item>
+      <p>உங்கள் வயர்லெஸ் அடாப்ட்டர் ஆதரிக்கப்படும் சாதனங்களின் பட்டியலில் உள்ளதா எனப் பார்க்கவும்.</p>
+      <p>Most Linux distributions keep a list of wireless devices that they
+      have support for. Sometimes, these lists provide extra information on how
+      to get the drivers for certain adapters working properly. Go to the list
+      for your distribution (for example,
+      <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>,
+      <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>,
+      <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> or
+      <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>)
+      and see if your make and model of wireless adapter is listed. You may be
+      able to use some of the information there to get your wireless drivers
+      working.</p>
+    </item>
+    <item>
+      <p>கட்டுப்படுத்தப்பட்ட (பைனரி) இயக்கிகள் உள்ளதா என தேடவும்.</p>
+      <p>பெரும்பாலான Linux விநியோகங்கள் <em>இலவச</em> மற்றும் <em>திறமூல</em> சாதன இயக்கிகளையே கொண்டு கிடைக்கின்றன. ஏனெனில் அவை உரிமைத்தன்மை கொண்ட அல்லது திறமூலமல்லாத இயக்கிகளை விநியோகிக்க முடியாது. உங்கள் வயர்லெஸ் அடாப்ட்டருக்கான சரியான இயக்கி இலவசமல்லாத அல்லது "பைனரி-மட்டும்" பதிப்பில் மட்டுமே உள்ளது எனில், அது முன்னிருப்பாக நிறுவப்பட்டிருக்காது. இச்சூழ்நிலையில் வயர்லெஸ் அடாப்ட்டர் உற்பத்தி நிறுவன வலைத்தளத்திற்கு சென்று, Linux இயக்கிகள் உள்ளதா எனப் பார்க்கவும்.</p>
+      <p>சில Linux விநியோகங்களில், உங்களுக்காக கட்டுப்படுத்தப்பட்ட இயக்கிகளைப் பதிவிறக்கும் ஒரு கருவி உள்ளது. இக்கருவி உங்கள் விநியோகத்தில் இருந்தால், உங்களுக்காக ஏதேனும் வயர்லெஸ் இயக்கியை அது கண்டறிகிறதா என முயற்சிக்கவும்.</p>
+    </item>
+    <item>
+      <p>உங்கள் அடாப்ட்டருக்கு Windows இயக்கிகளைப் பயன்படுத்துதல்.</p>
+      <p>பொதுவாக, ஒரு (Windows போன்ற) இயக்க முறைமைக்கு என உருவாக்கப்பட்ட இயக்கியை (Linux போன்ற) வேறொரு இயக்க முறைமைக்குப் பயன்படுத்த முடியாது. ஏனெனில் அவை சாதனங்களை கையாளும் விதமும் மாறுபடும். இருப்பினும் வயர்லெஸ் அடாப்ட்டர்களுக்கு <em>NDISwrapper</em> எனப்படும் இணக்கவழங்கி அடுக்கை நிறுவலாம், அது Linux இல் சில Windows இயக்கிகளைப் பயன்படுத்த அனுமதிக்கும். ஏனெனில் வயர்லெஸ் அடாப்ட்டர்களுக்கு சில சமயம் Linux இயக்கிகள் கிடைக்காவிட்டாலும் Windows இயக்கிகள் நிச்சயம் இருக்கும் என்பதால் இது உதவக்கூடும். NDISwrapper ஐ எப்படிப் பயன்படுத்துவது என்று <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">இங்கு</link> மேலும் அறியலாம். NDISwrapper ஐக் கொண்டு எல்லா வயர்லெஸ் இயக்கிகளையும் பயன்படுத்திவிட முடியாது என்பதை நினைவில் கொள்ளவும்.</p>
+    </item>
+  </list>
+
+  <p>இந்த வழிகள் எதுவும் பலனளிக்காவிட்டால், நீங்கள் வேறு வயர்லெஸ் அடாப்ட்டரைப் பயன்படுத்தி அது இயங்குகிறதா எனப் பார்க்கலாம். USB வயர்லெஸ் அடாப்ட்டர்கள் மலிவானவை, அவற்றை எந்த கணினியிலும் எளிதில் இணைக்க முடியும். இருப்பினும் அந்த அடாப்ட்டர்களை வாங்கும் முன்பு அவை உங்கள் Linux விநியோகத்துடன் இணக்கமானவையா எனப் பார்த்துக்கொள்ளவும்.</p>
+
+</page>

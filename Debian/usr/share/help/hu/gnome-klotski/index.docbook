@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.10">
+<!ENTITY date "March 2004">
+<!ENTITY app "<application>Klotski</application>">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="hu">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>A <application>Klotski</application> kézikönyve</title>
+
+    <abstract role="description">
+      <para>A Klotski egy logikai játék. Célja a mintás doboz eljuttatása a jelzésre, amely az útjában lévő dobozok elmozdításával végezhető el.</para>
+    </abstract>
+
+    <copyright><year>2002</year> <holder>Andrew Sobala</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME dokumentációs projekt</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Engedélyt adunk Önnek a jelen dokumentum sokszorosítására, terjesztésére és/vagy módosítására a Free Software Foundation által kiadott GNU Free Documentation License (GFDL) 1.1-es, vagy bármely azt követő verziójának feltételei alapján. Nincs Nem Változtatható szakasz, nincs Címlapszöveg, nincs Hátlapszöveg. A jelen licenc egy példányát <ulink type="help" url="help:fdl">itt</ulink> vagy a kézikönyv COPYING-DOCS elnevezésű fájljában találhatja.</para>
+         <para>Ez a kézikönyv része a GFDL alatt megjelenő GNOME dokumentációk gyűjteményének. A kézikönyv a gyűjteménytől függetlenül szabadon terjeszthető, a licenc másolatát mellékelve a 6. fejezetben leírtaknak megfelelően.</para>
+
+	<para>A cégek különböző, védjegy alá tartozó elnevezéseket használnak termékeik és szolgáltatásuk megkülönböztetéséhez. Ahol ezek a nevek megjelennek bármelyik GNOME dokumentációban és a GNOME dokumentációs projekt tagjainak tudomásuk van a védjegyről, abban az esetben ezek az elnevezések teljes egészében vagy kezdőbetűik nagybetűsek.</para>
+
+	<para>A DOKUMENTUM ÉS A DOKUMENTUM MÓDOSÍTOTT VERZIÓJA A GNU FREE DOCUMENTATION LICENSE (GFDL) ALATT JELENIK MEG AZ ALÁBBI ÉRTELMEZÉSSEL: <orderedlist>
+		<listitem>
+		  <para>A DOKUMENTUM A "JELEN ÁLLAPOTÁBAN" KERÜL KIADÁSRA, MINDENFÉLE GARANCIAVÁLLALÁS NÉLKÜL, LEGYEN AZ KIFEJEZETT VAGY BELEÉRTETT, BELEÉRTVE, DE NEM KIZÁRÓLAGOSAN A DOKUMENTUM VAGY ANNAK MÓDOSÍTOTT VÁLTOZATÁNAK HIBAMENTESSÉGÉRE, FORGALOMBA HOZHATÓSÁGRA VAGY ALKALMAZHATÓSÁGRA VONATKOZÓ GARANCIÁKAT. A DOKUMENTUM VAGY ANNAK MÓDOSÍTOTT VÁLTOZATÁNAK MINŐSÉGÉBŐL ÉS FELHASZNÁLHATÓSÁGÁBÓL FAKADÓ ÖSSZES KOCKÁZAT A FELHASZNÁLÓT TERHELI. HA A PROGRAM HIBÁSAN MŰKÖDIK, A FELHASZNÁLÓNAK MAGÁNAK (NEM AZ ÍRÓNAK, SZERZŐNEK VAGY BÁRMELY KÖZREMŰKÖDŐNEK) KELL VÁLLALNIA A JAVÍTÁSHOZ SZÜKSÉGES MINDEN KÖLTSÉGET. A GARANCIAVÁLLALÁS EZEN ELUTASÍTÁSA A LICENC ELVÁLASZTHATATLAN RÉSZÉT KÉPEZI. A DOKUMENTUMOT VAGY ANNAK BÁRMELY MÓDOSÍTOTT VÁLTOZATÁNAK HASZNÁLATA NEM ENGEDÉLYEZETT, AZ ALÁBBIAKBAN FELSOROLTAKON KÍVÜL; VALAMINT</para>
+		</listitem>
+		<listitem>
+		  <para>KÖRÜLMÉNYEKTŐL ÉS HATÁLYOS JOGSZABÁLYOKTÓL, A KÁRTÓL (BELEÉRTVE A GONDATLANSÁGOT), SZERZŐDÉS VAGY EGYEBEKTŐL FÜGGETLENÜL,A SZERZŐ, A DOKUMENTUM ÍRÓJA VAGY BÁRMELY FÉL BESZÁLLÍTÓJA NEM TEHETŐK FELELŐSSÉ A KÁROKÉRT, BELEÉRTVE MINDEN VÉLETLEN, VAGY KÖVETKEZMÉNYES KÁRT, AMELY A PROGRAM HASZNÁLATÁBÓL VAGY A HASZNÁLAT MEGAKADÁLYOZÁSÁBÓL SZÁRMAZIK (BELEÉRTVE, DE NEM KIZÁRÓLAGOSAN AZ ADATVESZTÉST ÉS A HELYTELEN ADATFELDOLGOZÁST, VALAMINT A MÁS PROGRAMOKKAL VALÓ HIBÁS EGYÜTTMŰKÖDÉST), MÉG AKKOR SEM, HA EZEN FELEK TUDATÁBAN VOLTAK, HOGY ILYEN KÁROK KELETKEZHETNEK.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author><firstname>Andrew</firstname> <surname>Sobala</surname> <affiliation> <orgname>GNOME dokumentációs projekt</orgname> <address> <email>andrew@sobala.net</email> </address> </affiliation></author> 
+
+	<othercredit role="author"><firstname>Lars</firstname> <surname>Rydlinge</surname> <affiliation> <orgname>GNOME projekt</orgname> <address> <email> Lars.Rydlinge@HIG.SE </email> </address> </affiliation></othercredit>
+
+	<othercredit role="maintainer"><firstname>Ross</firstname> <surname>Burton</surname> <affiliation> <orgname>GNOME projekt</orgname> <address> <email> ross@burtonini.com </email> </address> </affiliation></othercredit>
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+<!--
+      <revision> 
+		<revnumber>Full title of previous manual.</revnumber> 
+		<date>Release date of previous manual.</date> 
+		<revdescription> 
+	  		<para role="author">Documentation Writer 1 
+	    	<email>docwriter1@gnome.org</email>
+	  		</para>
+	  		<para role="publisher">GNOME Documentation Project</para>
+		</revdescription> 
+      </revision> 
+-->
+
+	<revision><revnumber>V2.0</revnumber> <date>2002. augusztus 13.</date> <revdescription>
+	  		<para role="author">Andrew Sobala <email>andrew@sobala.net</email></para>
+	  		<para role="publisher">GNOME dokumentációs projekt</para>
+		</revdescription></revision>
+
+    </revhistory> 
+
+    <releaseinfo>Ez a kézikönyv a GNOME Klotski 2.12-es verziójához készült.</releaseinfo> 
+    <legalnotice> 
+      <title>Visszajelzés</title> 
+      <para>A <application>Klotski</application> alkalmazás vagy dokumentáció hibáiról bejelentést, illetve javaslatokat a <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME visszajelzés oldal</ulink> leírása alapján tehet.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Úr Balázs</firstname>
+      </personname>
+      <email>urbalazs@gmail.com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2014.</year>
+      
+      <holder>Úr Balázs</holder>
+    </copyright>
+  </articleinfo> 
+
+  <indexterm zone="index"><primary>GNOME Klotski</primary></indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="gnotski-introduction"> 
+	<title>Bevezetés</title> 
+	<para>A <application>Klotski</application> alkalmazás a Klotski játék klónja. A cél a mintás doboz áthelyezése a zöld jelzések által határolt területre.</para>
+
+	<para>A <application>Klotski</application> alkalmazást Lars Rydlinge készítette (<email>Lars.Rydlinge@HIG.SE</email>).</para>
+
+	<para>A <application>Klotski</application> játékot a gnome-games csomag tartalmazza, amely a GNOME asztali környezet része. Ez a dokumentum a <application>Klotski</application> 2.12-es verziójához készült.</para>
+
+	<para>Ez a program a Free Software Foundation által kiadott GNU Lesser General Public License dokumentumban leírtak, akár a licenc 2-es, akár (tetszőleges) későbbi  változata szerint kerül terjesztésre. Ennek a licencnek egy példánya megtalálható ezen a <ulink url="help:gpl" type="help">hivatkozáson</ulink>, vagy a program forráskódjában mellékelt fájl tartalmazza annak MÁSOLATÁT.</para>
+
+	<para>Az alkalmazással, vagy ezen kézikönyvvel kapcsolatos megjegyzéseit és hibajelentéseit ezen <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentum</ulink> útmutatási alapján juttathatja el hozzánk.</para>
+  </sect1>
+
+<!-- ===========Objective ============================== -->
+<sect1 id="gnotski-objective">
+	<title>Cél</title>
+	<para>A <application>Klotski</application> célja a mintás doboz áthelyezése a zöld jelzésekre a lehető legkevesebb lépésből. Ezt úgy teheti meg, hogy addig mozgatja a dobozokat egyesével az egérrel, amíg el nem juttatja a mintás dobozt a jelzésekre. <figure id="gnotski-figure-win"> 
+		<title>A nyerő lépés</title> 
+		<screenshot> 
+			<mediaobject><imageobject> <imagedata fileref="figures/gnotski_win.png" format="PNG"/> </imageobject> <textobject> <phrase>A mintás dobozt a zöld jelzések által határolt területre kell mozgatni.</phrase> </textobject></mediaobject> 
+		</screenshot>
+	</figure></para>
+	<!-- ==== End of Figure ==== -->
+</sect1>
+
+<!-- =========== Getting Started ============================== -->
+
+  <sect1 id="gnotski-playing"> 
+	<title>A <application>Klotski</application> játék</title> 
+	<para>
+	<itemizedlist> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-start"/></para> 
+	</listitem>
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-ui"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-new-game"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-moving"/></para> 
+	</listitem>
+	</itemizedlist> </para>
+
+	<!-- =========== To start gnotski ============================== -->
+	<sect2 id="gnotski-start">
+		<title>A <application>Klotski</application> indítása</title>
+		<para>A <application>Klotski</application> játékot a Alkalmazások menüből indíthatja a <menuchoice> <guisubmenu>Játékok</guisubmenu> <guimenuitem>Gnotski</guimenuitem> </menuchoice> menüponttal.</para>
+	</sect2>
+
+	<!-- =========== The main window ============================== -->
+	<sect2 id="gnotski-ui">
+		<title>A főablak</title>
+		<para>A <application><application>Klotski</application></application> indításakor a következő ablak jelenik meg.</para>
+
+		<!-- ==== Figure ==== -->
+		<figure id="gnotski-figure-mainwindow"> 
+			<title>A <application>Klotski</application> indítóablaka</title> 
+			<screenshot> 
+				<mediaobject><imageobject> <imagedata fileref="figures/gnotski_start_window.png" format="PNG"/> </imageobject> <textobject> <phrase>Megjeleníti a <application>Klotski</application> főablakát. A címsort, a menüsávot, a játékterületet és az állapotsort tartalmazza. A menüsáv tartalmazza a Játék és a Súgó menüket. </phrase> </textobject></mediaobject> 
+			</screenshot>
+		</figure>
+		<!-- ==== End of Figure ==== -->
+
+		<para>A <application>Klotski</application> ablak a következő elemeket tartalmazza: <variablelist>
+		<varlistentry>
+			<term>Menüsáv</term>
+			<listitem>
+			<variablelist>
+			<varlistentry>
+				<term>Játékmenü</term>
+				<listitem>
+				<para>A játék menü lehetővé teszi új játékok indítását, a legmagasabb pontszámok megtekintését és a programból való kilépést.</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Súgó menü</term>
+				<listitem>
+				<para>A súgó menü lehetővé teszi a <application>Klotski</application> dokumentációjának megtekintését.</para>
+				</listitem>
+			</varlistentry>
+			</variablelist>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Játékterület</term>
+			<listitem>
+			<para>A játékterület jeleníti meg az aktuális játék dobozait. Az egérrel foghatja meg a dobozokat az itt leírtak szerint: <xref linkend="gnotski-moving"/>.</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Állapotsor</term>
+			<listitem>
+			<para>Az állapotsor azt jeleníti meg, hogy hány lépést tett meg eddig.</para>
+			</listitem>
+		</varlistentry>
+		</variablelist></para>
+
+	</sect2>
+
+	<!-- =========== Starting a new game ============================== -->
+	<sect2 id="gnotski-new-game">
+		<title>Egy új játék indítása</title>
+		<para>A <guimenu>Játék menü</guimenu> használatával indíthat új játékot. A <guimenuitem>Következő feladvány</guimenuitem> és az <guimenuitem>Előző feladvány</guimenuitem> lehetővé teszi a feladványok közötti egymás utáni navigációt. Minden feladvány az almenükben található három kategória egyikéhez tartozik, név szerint <guisubmenu>HuaRong ösvény</guisubmenu>, <guisubmenu>Kihíváscsomag</guisubmenu> és <guisubmenu>Szakértői csomag</guisubmenu>. Ezekben az almenükben minden feladványnév egy játékforgatókönyvre utal.</para>
+		<example>
+		<title>Egy játék indítása</title>
+		<para>Egy játék indításához válassza a <menuchoice> <guimenu>Játék</guimenu> <guisubmenu>[kategória]</guisubmenu> <guimenuitem>[játékforgatókönyv]</guimenuitem> </menuchoice> menüpontot.</para></example>
+	</sect2>
+
+	<!-- ===========Moving blocks ============================== -->
+	<sect2 id="gnotski-moving">
+		<title>A dobozok mozgatása</title>
+		<para>Egy doboz mozgatásához kattintson rá, tartsa nyomva az egér gombját, és húzza az új helyére. Nem helyezheti át a zöld dobozokat, vagy a játékot határolókat. Nem mozgathatja a dobozt olyan helyre, amelyet egy másik doboz már elfoglal, azzal a kivétellel, hogy a mintás dobozt áthúzhatja a zöld dobozokon ahhoz, hogy nyerjen.</para>
+	</sect2>
+
+</sect1>
+
+<!-- Known bugs.  Try to manage user expectations and warn them of known bugs
+but it is better to omit this section than give a false sense of perfection
+<sect1 id="gnotski-bugs">
+	<title>Known Bugs and Limitations</title>
+	<para>
+        There are no known bugs in this game.
+	</para>
+</sect1>
+-->
+
+<sect1 id="authors">
+  <title>Szerzők</title>
+  <para>A <application>Klotski</application> alkalmazást Lars Rydlinge készítette (<email>lars.rydlinge@hig.se</email>). Ezt a kézikönyvet Andrew Sobala írta. Egy hiba jelentéséhez, vagy az alkalmazással, illetve a kézikönyvvel kapcsolatos javaslat tételéhez kövesse az ebben a <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentumban</ulink> található útmutatást.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+ <sect1 id="license">
+  <title>Licenc</title>
+  <para>Ez a program és a csempék grafikája szabad szoftver, terjesztheti és/vagy módosíthatja a Free Software Foundation által kiadott <citetitle>GNU General Public License</citetitle> feltételi szerint; vagy a licenc 2. verziója, vagy (az önnek tetsző) bármely későbbi verziójában foglaltak alapján.</para>
+  <para>A programot abban a reményben terjesztjük, hogy hasznos lesz, de nem vállalunk SEMMIFÉLE GARANCIÁT, még olyan értelemben sem, hogy a program alkalmas-e a KÖZREADÁSRA vagy EGY BIZONYOS FELADAT ELVÉGZÉSÉRE. További részletekért tanulmányozza a <citetitle>GNU GPL licencet</citetitle>.</para>
+  <para>A <citetitle>GNU General Public License</citetitle> egy példányát függelékként tartalmazza a <citetitle>GNOME felhasználói kézikönyv</citetitle>. Beszerezheti a <citetitle>GNU General Public License</citetitle> egy példányát a Free Software Foundation <ulink type="http" url="http://www.fsf.org">weboldalának</ulink> meglátogatásával, vagy írjon egy levelet az alábbi címre: <address>
+    Free Software Foundation, Inc.
+    <street>59 Temple Place</street> - Suite 330
+    <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode>
+    <country>USA</country>
+   </address></para>
+ </sect1>
+
+</article>

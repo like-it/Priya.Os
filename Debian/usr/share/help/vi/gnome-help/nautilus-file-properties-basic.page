@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="vi">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Xem thông tin tập tin cơ bản, đặt quyền, chọn ứng dụng mặc định.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
+      <mal:email>pclouds@gmail.com</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Thuộc tính tập tin</title>
+
+  <p>Để xem thuộc tính một tập tin hoặc thư mục, nhấn chuột phải và chọn <gui>Thuộc tính</gui>. Bạn cũng có thể chọn tập tin và nhấn <guiseq><gui>Alt</gui><gui>Enter</gui></guiseq>.</p>
+
+  <p>Hộp thoại thuộc tính tập tin hiện ra cho bạn biết loại tập tin, kích thước, thời gian thay đổi... Nếu bạn thường xuyên cần những thông tin này, bạn có thể hiển thị trong <link xref="nautilus-list">cột hiển thị danh sách</link> hoặc <link xref="nautilus-display#icon-captions">tên biểu tượng</link>.</p>
+
+  <p>The information given on the <gui>Basic</gui> tab is explained below.
+  There are also
+  <gui><link xref="nautilus-file-properties-permissions">Permissions</link></gui>
+  and <gui><link xref="files-open#default">Open With</link></gui> tabs. For
+  certain types of files, such as images and videos, there will be an extra tab
+  that provides information like the dimensions, duration, and codec.</p>
+
+<section id="basic">
+ <title>Thuộc tính cơ bản</title>
+ <terms>
+  <item>
+    <title><gui>Name</gui></title>
+    <p>Bạn có thể đổi tên tập tin bằng cách thay đổi ô này. Bạn cũng có thể đổi tên bên ngoài cửa sổ thuộc tính. Xem <link xref="files-rename"/>.</p>
+  </item>
+  <item>
+    <title><gui>Type</gui></title>
+    <p>Nó giúp bạn xác định loại tập tin, như tài liệu PDF, văn bản OpenDocument hoặc ảnh JPEG. Loại tập tin xác định ứng dụng nào để mở tập tin và những thứ khác. Ví dụ, bạn không thể mở ảnh bằng trình phát nhạc. Xem <link xref="files-open"/> để biết chi tiết.</p>
+    <p>The <em>MIME type</em> of the file is shown in parentheses; MIME type is
+    a standard way that computers use to refer to the file type.</p>
+  </item>
+
+  <item>
+    <title>Nội dung</title>
+    <p>Mục này được hiển thị nếu xem thuộc tính thư mục chứ không phải tập tin, cho biết số mục trong thư mục. Nếu thư mục có thư mục con, mỗi thư mục bên trong được đếm là một. Mỗi tập tin được đếm là một. Nếu thư mục rỗng, hiện <gui>không có gì</gui>.</p>
+  </item>
+
+  <item>
+    <title>Kích thước</title>
+    <p>This field is displayed if you are looking at a file (not a folder). The size of a file tells you how much disk space it takes up. This is also an indicator of how long it will take to download a file or send it in an email (big files take longer to send/receive).</p>
+    <p>Sizes may be given in bytes, KB, MB, or GB; in the case of the last three, the size in bytes will also be given in parentheses. Technically, 1 KB is 1024 bytes, 1 MB is 1024 KB and so on.</p>
+  </item>
+
+  <item>
+    <title>Parent Folder</title>
+    <p>The location of each file on your computer is given by its <em>absolute
+    path</em>. This is a unique "address" of the file on your computer, made up
+    of a list of the folders that you would need to go into to find the file.
+    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
+    folder, its parent folder would be <file>/home/jim</file> and its location
+    would be <file>/home/jim/Resume.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Vùng trống</title>
+    <p>This is only displayed for folders. It gives the amount of disk space
+    which is available on the disk that the folder is on. This is useful for
+    checking if the hard disk is full.</p>
+  </item>
+
+  <item>
+    <title>Truy cập</title>
+    <p>Ngày giờ tập tin được mở lần cuối.</p>
+  </item>
+
+  <item>
+    <title>Sửa đổi</title>
+    <p>Ngày giờ tập tin được thay đổi lần cuối.</p>
+  </item>
+ </terms>
+</section>
+
+</page>

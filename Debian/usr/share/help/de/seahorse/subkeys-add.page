@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="subkeys-add" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="pgp-subkeys#more"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-28" status="draft"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Zusätzliche Unterschlüssel machen Ihren Hauptschlüssel sicherer.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Weitere Unterschlüssel hinzufügen</title>
+
+  <p>Sie können demselben Hauptschlüssel zusätzliche Unterschlüssel hinzufügen. Sie müssen dann jedes Mal den richtigen Unterschlüssel beim Verschlüsseln oder Signieren auswählen.</p>
+
+  <steps>
+    <title>So fügen Sie einem PGP-Schlüssel zusätzliche Unterschlüssel hinzu:</title>
+      <item>
+        <p>Wählen Sie <gui>GnuPG-Schlüssel</gui> aus dem linken Bereich.</p>
+      </item>
+      <item>
+	<p>Wählen Sie den <gui>privaten PGP-Schlüssel</gui> in der Liste.</p>
+      </item>
+      <item>
+	<p>Klicken Sie mit der rechten Maustaste auf den gewählten Schlüssel und wählen Sie <guiseq><gui>Eigenschaften</gui><gui>Details</gui></guiseq>.</p>
+      </item>
+      <item>
+	<p>Klappen Sie gegebenenfalls die Leiste <gui>Unterschlüssel</gui> aus.</p>
+      </item>
+      <item>
+	<p>Klicken Sie auf den Knopf <gui style="button">Hinzufügen</gui>, um einen neuen Unterschlüssel hinzuzufügen.</p>
+      </item>
+      <item>
+	<p>Wählen Sie die richtigen Eigenschaften für Ihren Schlüssel aus, indem Sie passend <gui>Schlüsseltyp</gui>, <gui>Schlüssellänge</gui> und <gui>Ablaufdatum</gui> wählen. Klicken Sie anschließend auf <gui style="button">OK</gui>.</p>
+      </item>
+  </steps>
+
+  <note style="tip">
+    <p>Stellen Sie stets sicher, dass Ihr Unterschlüssel vor Ihrem Hauptschlüssel abläuft, weil ein Unterschlüssel mit abgelaufenem Hauptschlüssel nutzlos ist.</p>
+  </note>
+
+
+</page>

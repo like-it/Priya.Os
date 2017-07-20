@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="files-copy" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-15" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Cristopher Thomas</name>
+      <email>crisnoh@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Kopiera eller flytta objekt till en ny mapp.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Kopiera eller flytta filer och mappar</title>
+
+ <p>En fil eller mapp kan kopieras eller flyttas till en ny plats genom att dra och släppa den med musen, använda kommandona kopiera och klistra in eller via snabbtangenter.</p>
+
+ <p>Du kanske vill kopiera en presentation till en minnessticka så du kan ta arbetet med dig. Eller så kan du göra en säkerhetskopia av ett dokument innan du gör ändringar i det (och sedan använda den gamla kopia om du inte tyckte om ändringarna).</p>
+
+ <p>Dessa instruktioner gäller både filer och mappar. Du kopierar och flyttar filer och mappar på exakt samma sätt.</p>
+
+<steps ui:expanded="false">
+<title>Kopiera och klistra in filer</title>
+<item><p>Markera den fil du vill kopiera genom att klicka på den en gång.</p></item>
+<item><p>Högerklicka och välj <gui>Kopiera</gui>, eller tryck <keyseq><key>Ctrl</key><key>C</key></keyseq>.</p></item>
+<item><p>Navigera till en annan mapp, där du vill lägga kopian av filen.</p></item>
+<item><p>Klicka på menyknappen och välj <gui>Klistra in</gui> för att kopiera filen, eller tryck <keyseq><key>Ctrl</key><key>V</key></keyseq>. Det kommer nu att finnas en kopia av filen i originalmappen och den andra mappen.</p></item>
+</steps>
+
+<steps ui:expanded="false">
+<title>Klipp ut och klistra in filer för att flytta dem</title>
+<item><p>Markera filen du vill flytta genom att klicka på den en gång.</p></item>
+<item><p>Högerklicka och välj <gui>Klipp ut</gui>, eller tryck <keyseq><key>Ctrl</key><key>X</key></keyseq>.</p></item>
+<item><p>Navigera till den mapp dit du vill flytta filen.</p></item>
+<item><p>Klicka på menyknappen i verktygsfältet och välj <gui>Klistra in</gui> för att flytta filen, eller tryck <keyseq><key>Ctrl</key><key>V</key></keyseq>. Filen kommer att tas från sin originalmapp och flyttas till den andra mappen.</p></item>
+</steps>
+
+<steps ui:expanded="false">
+<title>Dra filer för att kopiera eller flytta</title>
+<item><p>Öppna filhanteraren och gå till mappen som innehåller filen du vill kopiera.</p></item>
+<item><p>Klicka på <gui>Filer</gui> i systemraden och välj <gui>Nytt fönster</gui> (eller tryck <keyseq><key>Ctrl</key><key>N</key></keyseq>) för att öppna ett andra fönster. I det nya fönstret, navigera till mappen där du önskar att flytta eller kopiera filen.</p></item>
+<item>
+ <p>Klicka och dra filen från ett fönster till det andra. Detta kommer att <em>flytta den</em> om destinationen är på <em>samma</em> enhet, eller <em>kopiera den</em> om destinationen är på en <em>annan</em> enhet.</p>
+ <p>Om du till exempel drar en fil från en USB-minne till din Hemmapp kommer den att kopieras eftersom du drar den från en enhet till en annan.</p>
+ <p>Du kan tvinga filen att kopieras genom att hålla ner tangenten <key>Ctrl</key> medan du drar eller tvinga den att flyttas genom att hålla ner tangenten <key>Skift</key> medan du drar.</p>
+ </item>
+</steps>
+
+<note>
+  <p>Du kan inte kopiera eller flytta en fil in i en mapp som är <em>skrivskyddad</em>. Vissa mappar är skrivskyddade för att förhindra att du gör ändringar i deras innehåll. Du kan ändra saker från att vara skrivskyddade genom att <link xref="nautilus-file-properties-permissions">ändra filrättigheterna</link>.</p>
+</note>
+
+</page>

@@ -1,0 +1,1762 @@
+[    31.155] _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+[    31.155] _XSERVTransMakeAllCOTSServerListeners: server already running
+[    31.155] (--) Log file renamed from "/var/log/Xorg.pid-922.log" to "/var/log/Xorg.1.log"
+[    31.157] 
+X.Org X Server 1.19.2
+Release Date: 2017-03-02
+[    31.157] X Protocol Version 11, Revision 0
+[    31.157] Build Operating System: Linux 4.9.0-3-amd64 i686 Debian
+[    31.157] Current Operating System: Linux priya 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686
+[    31.157] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.9.0-3-686-pae root=UUID=2da96be4-63ce-4638-ac49-8ab3e000e88f ro quiet
+[    31.157] Build Date: 07 July 2017  06:13:53AM
+[    31.157] xorg-server 2:1.19.2-1+deb9u1 (https://www.debian.org/support) 
+[    31.157] Current version of pixman: 0.34.0
+[    31.157] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    31.157] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    31.157] (==) Log file: "/var/log/Xorg.1.log", Time: Wed Jul 19 20:21:56 2017
+[    31.158] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    31.158] (==) No Layout section.  Using the first Screen section.
+[    31.158] (==) No screen section available. Using defaults.
+[    31.158] (**) |-->Screen "Default Screen Section" (0)
+[    31.158] (**) |   |-->Monitor "<default monitor>"
+[    31.159] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    31.159] (==) Automatically adding devices
+[    31.159] (==) Automatically enabling devices
+[    31.159] (==) Automatically adding GPU devices
+[    31.159] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    31.159] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[    31.159] 	Entry deleted from font path.
+[    31.159] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/100dpi/:unscaled,
+	/usr/share/fonts/X11/75dpi/:unscaled,
+	/usr/share/fonts/X11/Type1,
+	/usr/share/fonts/X11/100dpi,
+	/usr/share/fonts/X11/75dpi,
+	built-ins
+[    31.159] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    31.159] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    31.159] (II) Loader magic: 0x802b1720
+[    31.159] (II) Module ABI versions:
+[    31.159] 	X.Org ANSI C Emulation: 0.4
+[    31.159] 	X.Org Video Driver: 23.0
+[    31.159] 	X.Org XInput driver : 24.1
+[    31.159] 	X.Org Server Extension : 10.0
+[    31.161] (++) using VT number 2
+
+[    31.176] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_33
+[    31.180] (--) PCI:*(0:0:1:0) 1002:9998:1462:7721 rev 0, Mem @ 0xc0000000/268435456, 0xfeb00000/262144, I/O @ 0x0000f000/256, BIOS @ 0x????????/131072
+[    31.180] (II) LoadModule: "glx"
+[    31.181] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    31.183] (II) Module glx: vendor="X.Org Foundation"
+[    31.183] 	compiled for 1.19.2, module version = 1.0.0
+[    31.183] 	ABI class: X.Org Server Extension, version 10.0
+[    31.183] (==) Matched ati as autoconfigured driver 0
+[    31.183] (==) Matched modesetting as autoconfigured driver 1
+[    31.183] (==) Matched fbdev as autoconfigured driver 2
+[    31.183] (==) Matched vesa as autoconfigured driver 3
+[    31.183] (==) Assigned the driver to the xf86ConfigLayout
+[    31.183] (II) LoadModule: "ati"
+[    31.183] (II) Loading /usr/lib/xorg/modules/drivers/ati_drv.so
+[    31.183] (II) Module ati: vendor="X.Org Foundation"
+[    31.183] 	compiled for 1.19.0, module version = 7.8.0
+[    31.183] 	Module class: X.Org Video Driver
+[    31.183] 	ABI class: X.Org Video Driver, version 23.0
+[    31.183] (II) LoadModule: "radeon"
+[    31.183] (II) Loading /usr/lib/xorg/modules/drivers/radeon_drv.so
+[    31.183] (II) Module radeon: vendor="X.Org Foundation"
+[    31.183] 	compiled for 1.19.0, module version = 7.8.0
+[    31.183] 	Module class: X.Org Video Driver
+[    31.183] 	ABI class: X.Org Video Driver, version 23.0
+[    31.183] (II) LoadModule: "modesetting"
+[    31.188] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    31.188] (II) Module modesetting: vendor="X.Org Foundation"
+[    31.188] 	compiled for 1.19.2, module version = 1.19.2
+[    31.188] 	Module class: X.Org Video Driver
+[    31.188] 	ABI class: X.Org Video Driver, version 23.0
+[    31.188] (II) LoadModule: "fbdev"
+[    31.188] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[    31.188] (II) Module fbdev: vendor="X.Org Foundation"
+[    31.188] 	compiled for 1.19.0, module version = 0.4.4
+[    31.188] 	Module class: X.Org Video Driver
+[    31.188] 	ABI class: X.Org Video Driver, version 23.0
+[    31.188] (II) LoadModule: "vesa"
+[    31.188] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[    31.188] (II) Module vesa: vendor="X.Org Foundation"
+[    31.188] 	compiled for 1.19.0, module version = 2.3.4
+[    31.188] 	Module class: X.Org Video Driver
+[    31.188] 	ABI class: X.Org Video Driver, version 23.0
+[    31.188] (II) RADEON: Driver for ATI/AMD Radeon chipsets:
+	ATI Radeon Mobility X600 (M24), ATI FireMV 2400,
+	ATI Radeon Mobility X300 (M24), ATI FireGL M24 GL,
+	ATI Radeon X600 (RV380), ATI FireGL V3200 (RV380),
+	ATI Radeon IGP320 (A3), ATI Radeon IGP330/340/350 (A4),
+	ATI Radeon 9500, ATI Radeon 9600TX, ATI FireGL Z1, ATI Radeon 9800SE,
+	ATI Radeon 9800, ATI FireGL X2, ATI Radeon 9600, ATI Radeon 9600SE,
+	ATI Radeon 9600XT, ATI FireGL T2, ATI Radeon 9650, ATI FireGL RV360,
+	ATI Radeon 7000 IGP (A4+), ATI Radeon 8500 AIW,
+	ATI Radeon IGP320M (U1), ATI Radeon IGP330M/340M/350M (U2),
+	ATI Radeon Mobility 7000 IGP, ATI Radeon 9000/PRO, ATI Radeon 9000,
+	ATI Radeon X800 (R420), ATI Radeon X800PRO (R420),
+	ATI Radeon X800SE (R420), ATI FireGL X3 (R420),
+	ATI Radeon Mobility 9800 (M18), ATI Radeon X800 SE (R420),
+	ATI Radeon X800XT (R420), ATI Radeon X800 VE (R420),
+	ATI Radeon X850 (R480), ATI Radeon X850 XT (R480),
+	ATI Radeon X850 SE (R480), ATI Radeon X850 PRO (R480),
+	ATI Radeon X850 XT PE (R480), ATI Radeon Mobility M7,
+	ATI Mobility FireGL 7800 M7, ATI Radeon Mobility M6,
+	ATI FireGL Mobility 9000 (M9), ATI Radeon Mobility 9000 (M9),
+	ATI Radeon 9700 Pro, ATI Radeon 9700/9500Pro, ATI FireGL X1,
+	ATI Radeon 9800PRO, ATI Radeon 9800XT,
+	ATI Radeon Mobility 9600/9700 (M10/M11),
+	ATI Radeon Mobility 9600 (M10), ATI Radeon Mobility 9600 (M11),
+	ATI FireGL Mobility T2 (M10), ATI FireGL Mobility T2e (M11),
+	ATI Radeon, ATI FireGL 8700/8800, ATI Radeon 8500, ATI Radeon 9100,
+	ATI Radeon 7500, ATI Radeon VE/7000, ATI ES1000,
+	ATI Radeon Mobility X300 (M22), ATI Radeon Mobility X600 SE (M24C),
+	ATI FireGL M22 GL, ATI Radeon X800 (R423), ATI Radeon X800PRO (R423),
+	ATI Radeon X800LE (R423), ATI Radeon X800SE (R423),
+	ATI Radeon X800 XTP (R430), ATI Radeon X800 XL (R430),
+	ATI Radeon X800 SE (R430), ATI Radeon X800 (R430),
+	ATI FireGL V7100 (R423), ATI FireGL V5100 (R423),
+	ATI FireGL unknown (R423), ATI Mobility FireGL V5000 (M26),
+	ATI Mobility Radeon X700 XL (M26), ATI Mobility Radeon X700 (M26),
+	ATI Radeon X550XTX, ATI Radeon 9100 IGP (A5),
+	ATI Radeon Mobility 9100 IGP (U3), ATI Radeon XPRESS 200,
+	ATI Radeon XPRESS 200M, ATI Radeon 9250, ATI Radeon 9200,
+	ATI Radeon 9200SE, ATI FireMV 2200, ATI Radeon X300 (RV370),
+	ATI Radeon X600 (RV370), ATI Radeon X550 (RV370),
+	ATI FireGL V3100 (RV370), ATI FireMV 2200 PCIE (RV370),
+	ATI Radeon Mobility 9200 (M9+), ATI Mobility Radeon X800 XT (M28),
+	ATI Mobility FireGL V5100 (M28), ATI Mobility Radeon X800 (M28),
+	ATI Radeon X850, ATI unknown Radeon / FireGL (R480),
+	ATI Radeon X800XT (R423), ATI FireGL V5000 (RV410),
+	ATI Radeon X700 XT (RV410), ATI Radeon X700 PRO (RV410),
+	ATI Radeon X700 SE (RV410), ATI Radeon X700 (RV410),
+	ATI Radeon X1800, ATI Mobility Radeon X1800 XT,
+	ATI Mobility Radeon X1800, ATI Mobility FireGL V7200,
+	ATI FireGL V7200, ATI FireGL V5300, ATI Mobility FireGL V7100,
+	ATI FireGL V7300, ATI FireGL V7350, ATI Radeon X1600, ATI RV505,
+	ATI Radeon X1300/X1550, ATI Radeon X1550, ATI M54-GL,
+	ATI Mobility Radeon X1400, ATI Radeon X1550 64-bit,
+	ATI Mobility Radeon X1300, ATI Radeon X1300, ATI FireGL V3300,
+	ATI FireGL V3350, ATI Mobility Radeon X1450,
+	ATI Mobility Radeon X2300, ATI Mobility Radeon X1350,
+	ATI FireMV 2250, ATI Radeon X1650, ATI Mobility FireGL V5200,
+	ATI Mobility Radeon X1600, ATI Radeon X1300 XT/X1600 Pro,
+	ATI FireGL V3400, ATI Mobility FireGL V5250,
+	ATI Mobility Radeon X1700, ATI Mobility Radeon X1700 XT,
+	ATI FireGL V5200, ATI Radeon X2300HD, ATI Mobility Radeon HD 2300,
+	ATI Radeon X1950, ATI Radeon X1900, ATI AMD Stream Processor,
+	ATI RV560, ATI Mobility Radeon X1900, ATI Radeon X1950 GT, ATI RV570,
+	ATI FireGL V7400, ATI Radeon 9100 PRO IGP,
+	ATI Radeon Mobility 9200 IGP, ATI Radeon X1200, ATI RS740,
+	ATI RS740M, ATI Radeon HD 2900 XT, ATI Radeon HD 2900 Pro,
+	ATI Radeon HD 2900 GT, ATI FireGL V8650, ATI FireGL V8600,
+	ATI FireGL V7600, ATI Radeon 4800 Series, ATI Radeon HD 4870 x2,
+	ATI Radeon HD 4850 x2, ATI FirePro V8750 (FireGL),
+	ATI FirePro V7760 (FireGL), ATI Mobility RADEON HD 4850,
+	ATI Mobility RADEON HD 4850 X2, ATI FirePro RV770,
+	AMD FireStream 9270, AMD FireStream 9250, ATI FirePro V8700 (FireGL),
+	ATI Mobility RADEON HD 4870, ATI Mobility RADEON M98,
+	ATI FirePro M7750, ATI M98, ATI Mobility Radeon HD 4650,
+	ATI Radeon RV730 (AGP), ATI Mobility Radeon HD 4670,
+	ATI FirePro M5750, ATI RV730XT [Radeon HD 4670], ATI RADEON E4600,
+	ATI Radeon HD 4600 Series, ATI RV730 PRO [Radeon HD 4650],
+	ATI FirePro V7750 (FireGL), ATI FirePro V5700 (FireGL),
+	ATI FirePro V3750 (FireGL), ATI Mobility Radeon HD 4830,
+	ATI Mobility Radeon HD 4850, ATI FirePro M7740, ATI RV740,
+	ATI Radeon HD 4770, ATI Radeon HD 4700 Series, ATI RV610,
+	ATI Radeon HD 2400 XT, ATI Radeon HD 2400 Pro,
+	ATI Radeon HD 2400 PRO AGP, ATI FireGL V4000, ATI Radeon HD 2350,
+	ATI Mobility Radeon HD 2400 XT, ATI Mobility Radeon HD 2400,
+	ATI RADEON E2400, ATI FireMV 2260, ATI RV670, ATI Radeon HD3870,
+	ATI Mobility Radeon HD 3850, ATI Radeon HD3850,
+	ATI Mobility Radeon HD 3850 X2, ATI Mobility Radeon HD 3870,
+	ATI Mobility Radeon HD 3870 X2, ATI Radeon HD3870 X2,
+	ATI FireGL V7700, ATI Radeon HD3690, AMD Firestream 9170,
+	ATI Radeon HD 4550, ATI Radeon RV710, ATI Radeon HD 4350,
+	ATI Mobility Radeon 4300 Series, ATI Mobility Radeon 4500 Series,
+	ATI FirePro RG220, ATI Mobility Radeon 4330, ATI RV630,
+	ATI Mobility Radeon HD 2600, ATI Mobility Radeon HD 2600 XT,
+	ATI Radeon HD 2600 XT AGP, ATI Radeon HD 2600 Pro AGP,
+	ATI Radeon HD 2600 XT, ATI Radeon HD 2600 Pro, ATI Gemini RV630,
+	ATI Gemini Mobility Radeon HD 2600 XT, ATI FireGL V5600,
+	ATI FireGL V3600, ATI Radeon HD 2600 LE,
+	ATI Mobility FireGL Graphics Processor, ATI Radeon HD 3470,
+	ATI Mobility Radeon HD 3430, ATI Mobility Radeon HD 3400 Series,
+	ATI Radeon HD 3450, ATI Radeon HD 3430, ATI FirePro V3700,
+	ATI FireMV 2450, ATI Radeon HD 3600 Series, ATI Radeon HD 3650 AGP,
+	ATI Radeon HD 3600 PRO, ATI Radeon HD 3600 XT,
+	ATI Mobility Radeon HD 3650, ATI Mobility Radeon HD 3670,
+	ATI Mobility FireGL V5700, ATI Mobility FireGL V5725,
+	ATI Radeon HD 3200 Graphics, ATI Radeon 3100 Graphics,
+	ATI Radeon HD 3300 Graphics, ATI Radeon 3000 Graphics, SUMO, SUMO2,
+	ATI Radeon HD 4200, ATI Radeon 4100, ATI Mobility Radeon HD 4200,
+	ATI Mobility Radeon 4100, ATI Radeon HD 4290, ATI Radeon HD 4250,
+	AMD Radeon HD 6310 Graphics, AMD Radeon HD 6250 Graphics,
+	AMD Radeon HD 6300 Series Graphics,
+	AMD Radeon HD 6200 Series Graphics, PALM, CYPRESS,
+	ATI FirePro (FireGL) Graphics Adapter, AMD Firestream 9370,
+	AMD Firestream 9350, ATI Radeon HD 5800 Series,
+	ATI Radeon HD 5900 Series, ATI Mobility Radeon HD 5800 Series,
+	ATI Radeon HD 5700 Series, ATI Radeon HD 6700 Series,
+	ATI Mobility Radeon HD 5000 Series, ATI Mobility Radeon HD 5570,
+	ATI Radeon HD 5670, ATI Radeon HD 5570, ATI Radeon HD 5500 Series,
+	REDWOOD, ATI Mobility Radeon Graphics, CEDAR, ATI FirePro 2270,
+	ATI Radeon HD 5450, CAYMAN, AMD Radeon HD 6900 Series,
+	AMD Radeon HD 6900M Series, Mobility Radeon HD 6000 Series, BARTS,
+	AMD Radeon HD 6800 Series, AMD Radeon HD 6700 Series, TURKS, CAICOS,
+	ARUBA, TAHITI, PITCAIRN, VERDE, OLAND, HAINAN, BONAIRE, KABINI,
+	MULLINS, KAVERI, HAWAII
+[    31.217] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    31.217] (II) FBDEV: driver for framebuffer: fbdev
+[    31.217] (II) VESA: driver for VESA chipsets: vesa
+[    31.217] (II) [KMS] drm report modesetting isn't supported.
+[    31.217] (EE) open /dev/dri/card0: No such file or directory
+[    31.217] (WW) Falling back to old probe method for modesetting
+[    31.217] (EE) open /dev/dri/card0: No such file or directory
+[    31.217] (II) Loading sub module "fbdevhw"
+[    31.217] (II) LoadModule: "fbdevhw"
+[    31.218] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[    31.218] (II) Module fbdevhw: vendor="X.Org Foundation"
+[    31.218] 	compiled for 1.19.2, module version = 0.0.2
+[    31.218] 	ABI class: X.Org Video Driver, version 23.0
+[    31.218] (EE) open /dev/fb0: No such file or directory
+[    31.218] (WW) Falling back to old probe method for fbdev
+[    31.218] (II) Loading sub module "fbdevhw"
+[    31.218] (II) LoadModule: "fbdevhw"
+[    31.218] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[    31.218] (II) Module fbdevhw: vendor="X.Org Foundation"
+[    31.218] 	compiled for 1.19.2, module version = 0.0.2
+[    31.218] 	ABI class: X.Org Video Driver, version 23.0
+[    31.218] (EE) open /dev/fb0: No such file or directory
+[    31.218] (EE) Screen 0 deleted because of no matching config section.
+[    31.218] (II) UnloadModule: "radeon"
+[    31.218] (EE) Screen 0 deleted because of no matching config section.
+[    31.218] (II) UnloadModule: "modesetting"
+[    31.218] (EE) Screen 0 deleted because of no matching config section.
+[    31.218] (II) UnloadModule: "fbdev"
+[    31.218] (II) UnloadSubModule: "fbdevhw"
+[    31.218] (II) Loading sub module "vbe"
+[    31.218] (II) LoadModule: "vbe"
+[    31.218] (II) Loading /usr/lib/xorg/modules/libvbe.so
+[    31.218] (II) Module vbe: vendor="X.Org Foundation"
+[    31.218] 	compiled for 1.19.2, module version = 1.1.0
+[    31.218] 	ABI class: X.Org Video Driver, version 23.0
+[    31.218] (II) Loading sub module "int10"
+[    31.218] (II) LoadModule: "int10"
+[    31.218] (II) Loading /usr/lib/xorg/modules/libint10.so
+[    31.219] (II) Module int10: vendor="X.Org Foundation"
+[    31.219] 	compiled for 1.19.2, module version = 1.0.0
+[    31.219] 	ABI class: X.Org Video Driver, version 23.0
+[    31.219] (II) VESA(0): initializing int10
+[    31.219] (II) VESA(0): Primary V_BIOS segment is: 0xc000
+[    31.219] (II) VESA(0): VESA BIOS detected
+[    31.219] (II) VESA(0): VESA VBE Version 3.0
+[    31.219] (II) VESA(0): VESA VBE Total Mem: 16384 kB
+[    31.219] (II) VESA(0): VESA VBE OEM: AMD ATOMBIOS
+[    31.219] (II) VESA(0): VESA VBE OEM Software Rev: 15.31
+[    31.219] (II) VESA(0): VESA VBE OEM Vendor: (C) 1988-2010, Advanced Micro Devices, Inc.
+[    31.219] (II) VESA(0): VESA VBE OEM Product: DVST
+[    31.219] (II) VESA(0): VESA VBE OEM Product Rev: 01.00
+[    31.237] (II) VESA(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    31.237] (==) VESA(0): Depth 24, (--) framebuffer bpp 32
+[    31.237] (==) VESA(0): RGB weight 888
+[    31.237] (==) VESA(0): Default visual is TrueColor
+[    31.237] (==) VESA(0): Using gamma correction (1.0, 1.0, 1.0)
+[    31.237] (II) Loading sub module "ddc"
+[    31.237] (II) LoadModule: "ddc"
+[    31.237] (II) Module "ddc" already built-in
+[    31.237] (II) VESA(0): VESA VBE DDC supported
+[    31.237] (II) VESA(0): VESA VBE DDC Level 2
+[    31.237] (II) VESA(0): VESA VBE DDC transfer in appr. 1 sec.
+[    31.283] (II) VESA(0): VESA VBE DDC read successfully
+[    31.283] (II) VESA(0): Manufacturer: IVM  Model: 611a  Serial#: 16843009
+[    31.283] (II) VESA(0): Year: 2014  Week: 0
+[    31.283] (II) VESA(0): EDID Version: 1.3
+[    31.283] (II) VESA(0): Digital Display Input
+[    31.283] (II) VESA(0): Max Image Size [cm]: horiz.: 53  vert.: 30
+[    31.283] (II) VESA(0): Gamma: 2.20
+[    31.283] (II) VESA(0): DPMS capabilities: Off
+[    31.283] (II) VESA(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[    31.284] (II) VESA(0): First detailed timing is preferred mode
+[    31.284] (II) VESA(0): redX: 0.645 redY: 0.332   greenX: 0.315 greenY: 0.619
+[    31.284] (II) VESA(0): blueX: 0.151 blueY: 0.065   whiteX: 0.313 whiteY: 0.329
+[    31.284] (II) VESA(0): Supported established timings:
+[    31.284] (II) VESA(0): 720x400@70Hz
+[    31.284] (II) VESA(0): 640x480@60Hz
+[    31.284] (II) VESA(0): 640x480@67Hz
+[    31.284] (II) VESA(0): 640x480@72Hz
+[    31.284] (II) VESA(0): 640x480@75Hz
+[    31.284] (II) VESA(0): 800x600@56Hz
+[    31.284] (II) VESA(0): 800x600@60Hz
+[    31.284] (II) VESA(0): 800x600@72Hz
+[    31.284] (II) VESA(0): 800x600@75Hz
+[    31.284] (II) VESA(0): 832x624@75Hz
+[    31.284] (II) VESA(0): 1024x768@60Hz
+[    31.284] (II) VESA(0): 1024x768@70Hz
+[    31.284] (II) VESA(0): 1024x768@75Hz
+[    31.284] (II) VESA(0): 1280x1024@75Hz
+[    31.284] (II) VESA(0): 1152x864@75Hz
+[    31.284] (II) VESA(0): Manufacturer's mask: 0
+[    31.284] (II) VESA(0): Supported standard timings:
+[    31.284] (II) VESA(0): #0: hsize: 1680  vsize 1050  refresh: 60  vid: 179
+[    31.284] (II) VESA(0): #1: hsize: 1600  vsize 1200  refresh: 60  vid: 16553
+[    31.284] (II) VESA(0): #2: hsize: 1440  vsize 900  refresh: 60  vid: 149
+[    31.284] (II) VESA(0): #3: hsize: 1280  vsize 960  refresh: 60  vid: 16513
+[    31.284] (II) VESA(0): #4: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
+[    31.284] (II) VESA(0): #5: hsize: 1440  vsize 900  refresh: 75  vid: 3989
+[    31.284] (II) VESA(0): #6: hsize: 1152  vsize 864  refresh: 75  vid: 20337
+[    31.284] (II) VESA(0): #7: hsize: 1920  vsize 1080  refresh: 60  vid: 49361
+[    31.284] (II) VESA(0): Supported detailed timing:
+[    31.284] (II) VESA(0): clock: 148.5 MHz   Image Size:  531 x 299 mm
+[    31.284] (II) VESA(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[    31.284] (II) VESA(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[    31.284] (II) VESA(0): Serial No: 0
+[    31.284] (II) VESA(0): Ranges: V min: 55 V max: 76 Hz, H min: 30 H max: 83 kHz, PixClock max 175 MHz
+[    31.284] (II) VESA(0): Monitor name: PL2488H
+[    31.284] (II) VESA(0): Number of EDID sections to follow: 1
+[    31.284] (II) VESA(0): EDID (in hex):
+[    31.284] (II) VESA(0): 	00ffffffffffff0026cd1a6101010101
+[    31.284] (II) VESA(0): 	0018010380351e782a0ef5a555509e26
+[    31.284] (II) VESA(0): 	105054bfef80b300a940950081408180
+[    31.284] (II) VESA(0): 	950f714fd1c0023a801871382d40582c
+[    31.284] (II) VESA(0): 	4500132b2100001e000000ff00300a20
+[    31.284] (II) VESA(0): 	20202020202020202020000000fd0037
+[    31.284] (II) VESA(0): 	4c1e5311000a202020202020000000fc
+[    31.284] (II) VESA(0): 	00504c32343838480a20202020200132
+[    31.284] (II) VESA(0): EDID vendor "IVM", prod id 24858
+[    31.284] (II) VESA(0): Using EDID range info for horizontal sync
+[    31.284] (II) VESA(0): Using EDID range info for vertical refresh
+[    31.284] (II) VESA(0): Printing DDC gathered Modelines:
+[    31.284] (II) VESA(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[    31.284] (II) VESA(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[    31.284] (II) VESA(0): Modeline "800x600"x0.0   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz e)
+[    31.284] (II) VESA(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[    31.284] (II) VESA(0): Modeline "640x480"x0.0   31.50  640 664 704 832  480 489 492 520 -hsync -vsync (37.9 kHz e)
+[    31.284] (II) VESA(0): Modeline "640x480"x0.0   30.24  640 704 768 864  480 483 486 525 -hsync -vsync (35.0 kHz e)
+[    31.284] (II) VESA(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    31.284] (II) VESA(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[    31.284] (II) VESA(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[    31.284] (II) VESA(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[    31.284] (II) VESA(0): Modeline "1024x768"x0.0   75.00  1024 1048 1184 1328  768 771 777 806 -hsync -vsync (56.5 kHz e)
+[    31.285] (II) VESA(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[    31.285] (II) VESA(0): Modeline "832x624"x0.0   57.28  832 864 928 1152  624 625 628 667 -hsync -vsync (49.7 kHz e)
+[    31.285] (II) VESA(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[    31.285] (II) VESA(0): Modeline "800x600"x0.0   50.00  800 856 976 1040  600 637 643 666 +hsync +vsync (48.1 kHz e)
+[    31.285] (II) VESA(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[    31.285] (II) VESA(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[    31.285] (II) VESA(0): Modeline "1600x1200"x0.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+[    31.285] (II) VESA(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[    31.285] (II) VESA(0): Modeline "1280x960"x0.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)
+[    31.285] (II) VESA(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[    31.285] (II) VESA(0): Modeline "1440x900"x0.0  136.75  1440 1536 1688 1936  900 903 909 942 -hsync +vsync (70.6 kHz e)
+[    31.285] (II) VESA(0): Modeline "1920x1080"x60.0  172.80  1920 2040 2248 2576  1080 1081 1084 1118 -hsync +vsync (67.1 kHz e)
+[    31.285] (II) VESA(0): Searching for matching VESA mode(s):
+[    31.285] Mode: 100 (640x400)
+[    31.285] 	ModeAttributes: 0xbb
+[    31.285] 	WinAAttributes: 0x7
+[    31.286] 	WinBAttributes: 0x0
+[    31.286] 	WinGranularity: 64
+[    31.286] 	WinSize: 64
+[    31.286] 	WinASegment: 0xa000
+[    31.286] 	WinBSegment: 0x0
+[    31.286] 	WinFuncPtr: 0xc000594d
+[    31.286] 	BytesPerScanline: 640
+[    31.286] 	XResolution: 640
+[    31.286] 	YResolution: 400
+[    31.286] 	XCharSize: 8
+[    31.286] 	YCharSize: 16
+[    31.286] 	NumberOfPlanes: 1
+[    31.286] 	BitsPerPixel: 8
+[    31.286] 	NumberOfBanks: 1
+[    31.286] 	MemoryModel: 4
+[    31.286] 	BankSize: 0
+[    31.286] 	NumberOfImages: 63
+[    31.286] 	RedMaskSize: 0
+[    31.286] 	RedFieldPosition: 0
+[    31.286] 	GreenMaskSize: 0
+[    31.286] 	GreenFieldPosition: 0
+[    31.286] 	BlueMaskSize: 0
+[    31.286] 	BlueFieldPosition: 0
+[    31.286] 	RsvdMaskSize: 0
+[    31.286] 	RsvdFieldPosition: 0
+[    31.286] 	DirectColorModeInfo: 0
+[    31.286] 	PhysBasePtr: 0xc0000000
+[    31.286] 	LinBytesPerScanLine: 640
+[    31.286] 	BnkNumberOfImagePages: 63
+[    31.286] 	LinNumberOfImagePages: 63
+[    31.286] 	LinRedMaskSize: 0
+[    31.286] 	LinRedFieldPosition: 0
+[    31.286] 	LinGreenMaskSize: 0
+[    31.286] 	LinGreenFieldPosition: 0
+[    31.286] 	LinBlueMaskSize: 0
+[    31.286] 	LinBlueFieldPosition: 0
+[    31.286] 	LinRsvdMaskSize: 0
+[    31.286] 	LinRsvdFieldPosition: 0
+[    31.286] 	MaxPixelClock: 400000000
+[    31.287] Mode: 101 (640x480)
+[    31.287] 	ModeAttributes: 0xbb
+[    31.287] 	WinAAttributes: 0x7
+[    31.287] 	WinBAttributes: 0x0
+[    31.287] 	WinGranularity: 64
+[    31.287] 	WinSize: 64
+[    31.287] 	WinASegment: 0xa000
+[    31.287] 	WinBSegment: 0x0
+[    31.287] 	WinFuncPtr: 0xc000594d
+[    31.287] 	BytesPerScanline: 640
+[    31.287] 	XResolution: 640
+[    31.287] 	YResolution: 480
+[    31.287] 	XCharSize: 8
+[    31.287] 	YCharSize: 16
+[    31.287] 	NumberOfPlanes: 1
+[    31.287] 	BitsPerPixel: 8
+[    31.287] 	NumberOfBanks: 1
+[    31.287] 	MemoryModel: 4
+[    31.287] 	BankSize: 0
+[    31.287] 	NumberOfImages: 50
+[    31.287] 	RedMaskSize: 0
+[    31.287] 	RedFieldPosition: 0
+[    31.287] 	GreenMaskSize: 0
+[    31.287] 	GreenFieldPosition: 0
+[    31.287] 	BlueMaskSize: 0
+[    31.287] 	BlueFieldPosition: 0
+[    31.287] 	RsvdMaskSize: 0
+[    31.287] 	RsvdFieldPosition: 0
+[    31.287] 	DirectColorModeInfo: 0
+[    31.287] 	PhysBasePtr: 0xc0000000
+[    31.287] 	LinBytesPerScanLine: 640
+[    31.287] 	BnkNumberOfImagePages: 50
+[    31.287] 	LinNumberOfImagePages: 50
+[    31.287] 	LinRedMaskSize: 0
+[    31.287] 	LinRedFieldPosition: 0
+[    31.287] 	LinGreenMaskSize: 0
+[    31.287] 	LinGreenFieldPosition: 0
+[    31.287] 	LinBlueMaskSize: 0
+[    31.287] 	LinBlueFieldPosition: 0
+[    31.287] 	LinRsvdMaskSize: 0
+[    31.287] 	LinRsvdFieldPosition: 0
+[    31.287] 	MaxPixelClock: 400000000
+[    31.288] Mode: 103 (800x600)
+[    31.288] 	ModeAttributes: 0xbb
+[    31.288] 	WinAAttributes: 0x7
+[    31.288] 	WinBAttributes: 0x0
+[    31.288] 	WinGranularity: 64
+[    31.288] 	WinSize: 64
+[    31.288] 	WinASegment: 0xa000
+[    31.288] 	WinBSegment: 0x0
+[    31.288] 	WinFuncPtr: 0xc000594d
+[    31.288] 	BytesPerScanline: 832
+[    31.288] 	XResolution: 800
+[    31.288] 	YResolution: 600
+[    31.288] 	XCharSize: 8
+[    31.288] 	YCharSize: 14
+[    31.288] 	NumberOfPlanes: 1
+[    31.288] 	BitsPerPixel: 8
+[    31.288] 	NumberOfBanks: 1
+[    31.288] 	MemoryModel: 4
+[    31.288] 	BankSize: 0
+[    31.288] 	NumberOfImages: 31
+[    31.288] 	RedMaskSize: 0
+[    31.288] 	RedFieldPosition: 0
+[    31.288] 	GreenMaskSize: 0
+[    31.288] 	GreenFieldPosition: 0
+[    31.288] 	BlueMaskSize: 0
+[    31.288] 	BlueFieldPosition: 0
+[    31.288] 	RsvdMaskSize: 0
+[    31.288] 	RsvdFieldPosition: 0
+[    31.288] 	DirectColorModeInfo: 0
+[    31.288] 	PhysBasePtr: 0xc0000000
+[    31.288] 	LinBytesPerScanLine: 832
+[    31.288] 	BnkNumberOfImagePages: 31
+[    31.288] 	LinNumberOfImagePages: 31
+[    31.288] 	LinRedMaskSize: 0
+[    31.288] 	LinRedFieldPosition: 0
+[    31.288] 	LinGreenMaskSize: 0
+[    31.288] 	LinGreenFieldPosition: 0
+[    31.288] 	LinBlueMaskSize: 0
+[    31.288] 	LinBlueFieldPosition: 0
+[    31.288] 	LinRsvdMaskSize: 0
+[    31.288] 	LinRsvdFieldPosition: 0
+[    31.288] 	MaxPixelClock: 400000000
+[    31.289] Mode: 105 (1024x768)
+[    31.289] 	ModeAttributes: 0xbb
+[    31.289] 	WinAAttributes: 0x7
+[    31.289] 	WinBAttributes: 0x0
+[    31.289] 	WinGranularity: 64
+[    31.289] 	WinSize: 64
+[    31.289] 	WinASegment: 0xa000
+[    31.289] 	WinBSegment: 0x0
+[    31.289] 	WinFuncPtr: 0xc000594d
+[    31.289] 	BytesPerScanline: 1024
+[    31.289] 	XResolution: 1024
+[    31.289] 	YResolution: 768
+[    31.289] 	XCharSize: 8
+[    31.289] 	YCharSize: 16
+[    31.289] 	NumberOfPlanes: 1
+[    31.289] 	BitsPerPixel: 8
+[    31.289] 	NumberOfBanks: 1
+[    31.289] 	MemoryModel: 4
+[    31.289] 	BankSize: 0
+[    31.289] 	NumberOfImages: 18
+[    31.289] 	RedMaskSize: 0
+[    31.289] 	RedFieldPosition: 0
+[    31.289] 	GreenMaskSize: 0
+[    31.289] 	GreenFieldPosition: 0
+[    31.289] 	BlueMaskSize: 0
+[    31.289] 	BlueFieldPosition: 0
+[    31.289] 	RsvdMaskSize: 0
+[    31.289] 	RsvdFieldPosition: 0
+[    31.289] 	DirectColorModeInfo: 0
+[    31.289] 	PhysBasePtr: 0xc0000000
+[    31.289] 	LinBytesPerScanLine: 1024
+[    31.289] 	BnkNumberOfImagePages: 18
+[    31.289] 	LinNumberOfImagePages: 18
+[    31.289] 	LinRedMaskSize: 0
+[    31.289] 	LinRedFieldPosition: 0
+[    31.289] 	LinGreenMaskSize: 0
+[    31.289] 	LinGreenFieldPosition: 0
+[    31.289] 	LinBlueMaskSize: 0
+[    31.289] 	LinBlueFieldPosition: 0
+[    31.289] 	LinRsvdMaskSize: 0
+[    31.289] 	LinRsvdFieldPosition: 0
+[    31.289] 	MaxPixelClock: 400000000
+[    31.290] Mode: 107 (1280x1024)
+[    31.290] 	ModeAttributes: 0xbb
+[    31.290] 	WinAAttributes: 0x7
+[    31.290] 	WinBAttributes: 0x0
+[    31.290] 	WinGranularity: 64
+[    31.290] 	WinSize: 64
+[    31.290] 	WinASegment: 0xa000
+[    31.290] 	WinBSegment: 0x0
+[    31.290] 	WinFuncPtr: 0xc000594d
+[    31.290] 	BytesPerScanline: 1280
+[    31.290] 	XResolution: 1280
+[    31.290] 	YResolution: 1024
+[    31.290] 	XCharSize: 8
+[    31.290] 	YCharSize: 16
+[    31.290] 	NumberOfPlanes: 1
+[    31.290] 	BitsPerPixel: 8
+[    31.290] 	NumberOfBanks: 1
+[    31.290] 	MemoryModel: 4
+[    31.290] 	BankSize: 0
+[    31.290] 	NumberOfImages: 11
+[    31.290] 	RedMaskSize: 0
+[    31.290] 	RedFieldPosition: 0
+[    31.290] 	GreenMaskSize: 0
+[    31.290] 	GreenFieldPosition: 0
+[    31.290] 	BlueMaskSize: 0
+[    31.290] 	BlueFieldPosition: 0
+[    31.290] 	RsvdMaskSize: 0
+[    31.290] 	RsvdFieldPosition: 0
+[    31.290] 	DirectColorModeInfo: 0
+[    31.290] 	PhysBasePtr: 0xc0000000
+[    31.291] 	LinBytesPerScanLine: 1280
+[    31.291] 	BnkNumberOfImagePages: 11
+[    31.291] 	LinNumberOfImagePages: 11
+[    31.291] 	LinRedMaskSize: 0
+[    31.291] 	LinRedFieldPosition: 0
+[    31.291] 	LinGreenMaskSize: 0
+[    31.291] 	LinGreenFieldPosition: 0
+[    31.291] 	LinBlueMaskSize: 0
+[    31.291] 	LinBlueFieldPosition: 0
+[    31.291] 	LinRsvdMaskSize: 0
+[    31.291] 	LinRsvdFieldPosition: 0
+[    31.291] 	MaxPixelClock: 400000000
+[    31.291] Mode: 110 (640x480)
+[    31.291] 	ModeAttributes: 0xbb
+[    31.291] 	WinAAttributes: 0x7
+[    31.291] 	WinBAttributes: 0x0
+[    31.291] 	WinGranularity: 64
+[    31.291] 	WinSize: 64
+[    31.291] 	WinASegment: 0xa000
+[    31.291] 	WinBSegment: 0x0
+[    31.291] 	WinFuncPtr: 0xc000594d
+[    31.291] 	BytesPerScanline: 1280
+[    31.291] 	XResolution: 640
+[    31.291] 	YResolution: 480
+[    31.291] 	XCharSize: 8
+[    31.291] 	YCharSize: 16
+[    31.291] 	NumberOfPlanes: 1
+[    31.291] 	BitsPerPixel: 16
+[    31.292] 	NumberOfBanks: 1
+[    31.292] 	MemoryModel: 6
+[    31.292] 	BankSize: 0
+[    31.292] 	NumberOfImages: 24
+[    31.292] 	RedMaskSize: 5
+[    31.292] 	RedFieldPosition: 10
+[    31.292] 	GreenMaskSize: 5
+[    31.292] 	GreenFieldPosition: 5
+[    31.292] 	BlueMaskSize: 5
+[    31.292] 	BlueFieldPosition: 0
+[    31.292] 	RsvdMaskSize: 0
+[    31.292] 	RsvdFieldPosition: 0
+[    31.292] 	DirectColorModeInfo: 0
+[    31.292] 	PhysBasePtr: 0xc0000000
+[    31.292] 	LinBytesPerScanLine: 1280
+[    31.292] 	BnkNumberOfImagePages: 24
+[    31.292] 	LinNumberOfImagePages: 24
+[    31.292] 	LinRedMaskSize: 5
+[    31.292] 	LinRedFieldPosition: 10
+[    31.292] 	LinGreenMaskSize: 5
+[    31.292] 	LinGreenFieldPosition: 5
+[    31.292] 	LinBlueMaskSize: 5
+[    31.292] 	LinBlueFieldPosition: 0
+[    31.292] 	LinRsvdMaskSize: 0
+[    31.292] 	LinRsvdFieldPosition: 0
+[    31.292] 	MaxPixelClock: 400000000
+[    31.293] Mode: 111 (640x480)
+[    31.293] 	ModeAttributes: 0xbb
+[    31.293] 	WinAAttributes: 0x7
+[    31.293] 	WinBAttributes: 0x0
+[    31.293] 	WinGranularity: 64
+[    31.293] 	WinSize: 64
+[    31.293] 	WinASegment: 0xa000
+[    31.293] 	WinBSegment: 0x0
+[    31.293] 	WinFuncPtr: 0xc000594d
+[    31.293] 	BytesPerScanline: 1280
+[    31.293] 	XResolution: 640
+[    31.293] 	YResolution: 480
+[    31.293] 	XCharSize: 8
+[    31.293] 	YCharSize: 16
+[    31.293] 	NumberOfPlanes: 1
+[    31.293] 	BitsPerPixel: 16
+[    31.293] 	NumberOfBanks: 1
+[    31.293] 	MemoryModel: 6
+[    31.293] 	BankSize: 0
+[    31.293] 	NumberOfImages: 24
+[    31.293] 	RedMaskSize: 5
+[    31.293] 	RedFieldPosition: 11
+[    31.293] 	GreenMaskSize: 6
+[    31.293] 	GreenFieldPosition: 5
+[    31.293] 	BlueMaskSize: 5
+[    31.293] 	BlueFieldPosition: 0
+[    31.293] 	RsvdMaskSize: 0
+[    31.293] 	RsvdFieldPosition: 0
+[    31.293] 	DirectColorModeInfo: 0
+[    31.293] 	PhysBasePtr: 0xc0000000
+[    31.293] 	LinBytesPerScanLine: 1280
+[    31.293] 	BnkNumberOfImagePages: 24
+[    31.293] 	LinNumberOfImagePages: 24
+[    31.293] 	LinRedMaskSize: 5
+[    31.293] 	LinRedFieldPosition: 11
+[    31.293] 	LinGreenMaskSize: 6
+[    31.293] 	LinGreenFieldPosition: 5
+[    31.293] 	LinBlueMaskSize: 5
+[    31.293] 	LinBlueFieldPosition: 0
+[    31.293] 	LinRsvdMaskSize: 0
+[    31.293] 	LinRsvdFieldPosition: 0
+[    31.293] 	MaxPixelClock: 400000000
+[    31.294] Mode: 113 (800x600)
+[    31.294] 	ModeAttributes: 0xbb
+[    31.294] 	WinAAttributes: 0x7
+[    31.294] 	WinBAttributes: 0x0
+[    31.294] 	WinGranularity: 64
+[    31.294] 	WinSize: 64
+[    31.294] 	WinASegment: 0xa000
+[    31.294] 	WinBSegment: 0x0
+[    31.294] 	WinFuncPtr: 0xc000594d
+[    31.294] 	BytesPerScanline: 1664
+[    31.294] 	XResolution: 800
+[    31.294] 	YResolution: 600
+[    31.294] 	XCharSize: 8
+[    31.294] 	YCharSize: 14
+[    31.294] 	NumberOfPlanes: 1
+[    31.294] 	BitsPerPixel: 16
+[    31.294] 	NumberOfBanks: 1
+[    31.294] 	MemoryModel: 6
+[    31.294] 	BankSize: 0
+[    31.294] 	NumberOfImages: 15
+[    31.294] 	RedMaskSize: 5
+[    31.294] 	RedFieldPosition: 10
+[    31.294] 	GreenMaskSize: 5
+[    31.294] 	GreenFieldPosition: 5
+[    31.294] 	BlueMaskSize: 5
+[    31.294] 	BlueFieldPosition: 0
+[    31.294] 	RsvdMaskSize: 0
+[    31.294] 	RsvdFieldPosition: 0
+[    31.294] 	DirectColorModeInfo: 0
+[    31.294] 	PhysBasePtr: 0xc0000000
+[    31.294] 	LinBytesPerScanLine: 1664
+[    31.294] 	BnkNumberOfImagePages: 15
+[    31.294] 	LinNumberOfImagePages: 15
+[    31.294] 	LinRedMaskSize: 5
+[    31.294] 	LinRedFieldPosition: 10
+[    31.294] 	LinGreenMaskSize: 5
+[    31.294] 	LinGreenFieldPosition: 5
+[    31.294] 	LinBlueMaskSize: 5
+[    31.294] 	LinBlueFieldPosition: 0
+[    31.294] 	LinRsvdMaskSize: 0
+[    31.294] 	LinRsvdFieldPosition: 0
+[    31.294] 	MaxPixelClock: 400000000
+[    31.295] Mode: 114 (800x600)
+[    31.295] 	ModeAttributes: 0xbb
+[    31.295] 	WinAAttributes: 0x7
+[    31.295] 	WinBAttributes: 0x0
+[    31.295] 	WinGranularity: 64
+[    31.295] 	WinSize: 64
+[    31.295] 	WinASegment: 0xa000
+[    31.295] 	WinBSegment: 0x0
+[    31.295] 	WinFuncPtr: 0xc000594d
+[    31.295] 	BytesPerScanline: 1664
+[    31.295] 	XResolution: 800
+[    31.295] 	YResolution: 600
+[    31.295] 	XCharSize: 8
+[    31.295] 	YCharSize: 14
+[    31.295] 	NumberOfPlanes: 1
+[    31.295] 	BitsPerPixel: 16
+[    31.295] 	NumberOfBanks: 1
+[    31.295] 	MemoryModel: 6
+[    31.295] 	BankSize: 0
+[    31.295] 	NumberOfImages: 15
+[    31.295] 	RedMaskSize: 5
+[    31.295] 	RedFieldPosition: 11
+[    31.295] 	GreenMaskSize: 6
+[    31.295] 	GreenFieldPosition: 5
+[    31.295] 	BlueMaskSize: 5
+[    31.295] 	BlueFieldPosition: 0
+[    31.295] 	RsvdMaskSize: 0
+[    31.295] 	RsvdFieldPosition: 0
+[    31.295] 	DirectColorModeInfo: 0
+[    31.295] 	PhysBasePtr: 0xc0000000
+[    31.295] 	LinBytesPerScanLine: 1664
+[    31.295] 	BnkNumberOfImagePages: 15
+[    31.295] 	LinNumberOfImagePages: 15
+[    31.295] 	LinRedMaskSize: 5
+[    31.295] 	LinRedFieldPosition: 11
+[    31.295] 	LinGreenMaskSize: 6
+[    31.295] 	LinGreenFieldPosition: 5
+[    31.295] 	LinBlueMaskSize: 5
+[    31.295] 	LinBlueFieldPosition: 0
+[    31.295] 	LinRsvdMaskSize: 0
+[    31.295] 	LinRsvdFieldPosition: 0
+[    31.295] 	MaxPixelClock: 400000000
+[    31.296] Mode: 116 (1024x768)
+[    31.296] 	ModeAttributes: 0xbb
+[    31.296] 	WinAAttributes: 0x7
+[    31.296] 	WinBAttributes: 0x0
+[    31.296] 	WinGranularity: 64
+[    31.296] 	WinSize: 64
+[    31.296] 	WinASegment: 0xa000
+[    31.296] 	WinBSegment: 0x0
+[    31.296] 	WinFuncPtr: 0xc000594d
+[    31.296] 	BytesPerScanline: 2048
+[    31.296] 	XResolution: 1024
+[    31.296] 	YResolution: 768
+[    31.296] 	XCharSize: 8
+[    31.296] 	YCharSize: 16
+[    31.296] 	NumberOfPlanes: 1
+[    31.296] 	BitsPerPixel: 16
+[    31.296] 	NumberOfBanks: 1
+[    31.296] 	MemoryModel: 6
+[    31.296] 	BankSize: 0
+[    31.296] 	NumberOfImages: 9
+[    31.296] 	RedMaskSize: 5
+[    31.296] 	RedFieldPosition: 10
+[    31.296] 	GreenMaskSize: 5
+[    31.296] 	GreenFieldPosition: 5
+[    31.296] 	BlueMaskSize: 5
+[    31.296] 	BlueFieldPosition: 0
+[    31.296] 	RsvdMaskSize: 0
+[    31.296] 	RsvdFieldPosition: 0
+[    31.296] 	DirectColorModeInfo: 0
+[    31.296] 	PhysBasePtr: 0xc0000000
+[    31.296] 	LinBytesPerScanLine: 2048
+[    31.296] 	BnkNumberOfImagePages: 9
+[    31.296] 	LinNumberOfImagePages: 9
+[    31.296] 	LinRedMaskSize: 5
+[    31.296] 	LinRedFieldPosition: 10
+[    31.296] 	LinGreenMaskSize: 5
+[    31.297] 	LinGreenFieldPosition: 5
+[    31.297] 	LinBlueMaskSize: 5
+[    31.297] 	LinBlueFieldPosition: 0
+[    31.297] 	LinRsvdMaskSize: 0
+[    31.297] 	LinRsvdFieldPosition: 0
+[    31.297] 	MaxPixelClock: 400000000
+[    31.297] Mode: 117 (1024x768)
+[    31.297] 	ModeAttributes: 0xbb
+[    31.297] 	WinAAttributes: 0x7
+[    31.297] 	WinBAttributes: 0x0
+[    31.297] 	WinGranularity: 64
+[    31.297] 	WinSize: 64
+[    31.297] 	WinASegment: 0xa000
+[    31.297] 	WinBSegment: 0x0
+[    31.297] 	WinFuncPtr: 0xc000594d
+[    31.297] 	BytesPerScanline: 2048
+[    31.297] 	XResolution: 1024
+[    31.297] 	YResolution: 768
+[    31.297] 	XCharSize: 8
+[    31.297] 	YCharSize: 16
+[    31.297] 	NumberOfPlanes: 1
+[    31.297] 	BitsPerPixel: 16
+[    31.297] 	NumberOfBanks: 1
+[    31.298] 	MemoryModel: 6
+[    31.298] 	BankSize: 0
+[    31.298] 	NumberOfImages: 9
+[    31.298] 	RedMaskSize: 5
+[    31.298] 	RedFieldPosition: 11
+[    31.298] 	GreenMaskSize: 6
+[    31.298] 	GreenFieldPosition: 5
+[    31.298] 	BlueMaskSize: 5
+[    31.298] 	BlueFieldPosition: 0
+[    31.298] 	RsvdMaskSize: 0
+[    31.298] 	RsvdFieldPosition: 0
+[    31.298] 	DirectColorModeInfo: 0
+[    31.298] 	PhysBasePtr: 0xc0000000
+[    31.298] 	LinBytesPerScanLine: 2048
+[    31.298] 	BnkNumberOfImagePages: 9
+[    31.298] 	LinNumberOfImagePages: 9
+[    31.298] 	LinRedMaskSize: 5
+[    31.298] 	LinRedFieldPosition: 11
+[    31.298] 	LinGreenMaskSize: 6
+[    31.298] 	LinGreenFieldPosition: 5
+[    31.298] 	LinBlueMaskSize: 5
+[    31.298] 	LinBlueFieldPosition: 0
+[    31.298] 	LinRsvdMaskSize: 0
+[    31.298] 	LinRsvdFieldPosition: 0
+[    31.298] 	MaxPixelClock: 400000000
+[    31.298] Mode: 119 (1280x1024)
+[    31.299] 	ModeAttributes: 0xbb
+[    31.299] 	WinAAttributes: 0x7
+[    31.299] 	WinBAttributes: 0x0
+[    31.299] 	WinGranularity: 64
+[    31.299] 	WinSize: 64
+[    31.299] 	WinASegment: 0xa000
+[    31.299] 	WinBSegment: 0x0
+[    31.299] 	WinFuncPtr: 0xc000594d
+[    31.299] 	BytesPerScanline: 2560
+[    31.299] 	XResolution: 1280
+[    31.299] 	YResolution: 1024
+[    31.299] 	XCharSize: 8
+[    31.299] 	YCharSize: 16
+[    31.299] 	NumberOfPlanes: 1
+[    31.299] 	BitsPerPixel: 16
+[    31.299] 	NumberOfBanks: 1
+[    31.299] 	MemoryModel: 6
+[    31.299] 	BankSize: 0
+[    31.299] 	NumberOfImages: 5
+[    31.299] 	RedMaskSize: 5
+[    31.299] 	RedFieldPosition: 10
+[    31.299] 	GreenMaskSize: 5
+[    31.299] 	GreenFieldPosition: 5
+[    31.299] 	BlueMaskSize: 5
+[    31.299] 	BlueFieldPosition: 0
+[    31.299] 	RsvdMaskSize: 0
+[    31.299] 	RsvdFieldPosition: 0
+[    31.299] 	DirectColorModeInfo: 0
+[    31.299] 	PhysBasePtr: 0xc0000000
+[    31.299] 	LinBytesPerScanLine: 2560
+[    31.299] 	BnkNumberOfImagePages: 5
+[    31.299] 	LinNumberOfImagePages: 5
+[    31.299] 	LinRedMaskSize: 5
+[    31.299] 	LinRedFieldPosition: 10
+[    31.299] 	LinGreenMaskSize: 5
+[    31.299] 	LinGreenFieldPosition: 5
+[    31.299] 	LinBlueMaskSize: 5
+[    31.299] 	LinBlueFieldPosition: 0
+[    31.299] 	LinRsvdMaskSize: 0
+[    31.299] 	LinRsvdFieldPosition: 0
+[    31.299] 	MaxPixelClock: 400000000
+[    31.300] Mode: 11a (1280x1024)
+[    31.300] 	ModeAttributes: 0xbb
+[    31.300] 	WinAAttributes: 0x7
+[    31.300] 	WinBAttributes: 0x0
+[    31.300] 	WinGranularity: 64
+[    31.300] 	WinSize: 64
+[    31.300] 	WinASegment: 0xa000
+[    31.300] 	WinBSegment: 0x0
+[    31.300] 	WinFuncPtr: 0xc000594d
+[    31.300] 	BytesPerScanline: 2560
+[    31.300] 	XResolution: 1280
+[    31.300] 	YResolution: 1024
+[    31.300] 	XCharSize: 8
+[    31.300] 	YCharSize: 16
+[    31.300] 	NumberOfPlanes: 1
+[    31.300] 	BitsPerPixel: 16
+[    31.300] 	NumberOfBanks: 1
+[    31.300] 	MemoryModel: 6
+[    31.300] 	BankSize: 0
+[    31.300] 	NumberOfImages: 5
+[    31.300] 	RedMaskSize: 5
+[    31.300] 	RedFieldPosition: 11
+[    31.300] 	GreenMaskSize: 6
+[    31.300] 	GreenFieldPosition: 5
+[    31.300] 	BlueMaskSize: 5
+[    31.300] 	BlueFieldPosition: 0
+[    31.300] 	RsvdMaskSize: 0
+[    31.300] 	RsvdFieldPosition: 0
+[    31.300] 	DirectColorModeInfo: 0
+[    31.300] 	PhysBasePtr: 0xc0000000
+[    31.300] 	LinBytesPerScanLine: 2560
+[    31.300] 	BnkNumberOfImagePages: 5
+[    31.300] 	LinNumberOfImagePages: 5
+[    31.300] 	LinRedMaskSize: 5
+[    31.300] 	LinRedFieldPosition: 11
+[    31.300] 	LinGreenMaskSize: 6
+[    31.300] 	LinGreenFieldPosition: 5
+[    31.300] 	LinBlueMaskSize: 5
+[    31.300] 	LinBlueFieldPosition: 0
+[    31.300] 	LinRsvdMaskSize: 0
+[    31.300] 	LinRsvdFieldPosition: 0
+[    31.300] 	MaxPixelClock: 400000000
+[    31.301] Mode: 163 (1280x960)
+[    31.301] 	ModeAttributes: 0xbb
+[    31.301] 	WinAAttributes: 0x7
+[    31.301] 	WinBAttributes: 0x0
+[    31.301] 	WinGranularity: 64
+[    31.301] 	WinSize: 64
+[    31.301] 	WinASegment: 0xa000
+[    31.301] 	WinBSegment: 0x0
+[    31.301] 	WinFuncPtr: 0xc000594d
+[    31.301] 	BytesPerScanline: 1280
+[    31.301] 	XResolution: 1280
+[    31.301] 	YResolution: 960
+[    31.301] 	XCharSize: 8
+[    31.301] 	YCharSize: 16
+[    31.301] 	NumberOfPlanes: 1
+[    31.301] 	BitsPerPixel: 8
+[    31.301] 	NumberOfBanks: 1
+[    31.301] 	MemoryModel: 4
+[    31.301] 	BankSize: 0
+[    31.301] 	NumberOfImages: 12
+[    31.301] 	RedMaskSize: 0
+[    31.301] 	RedFieldPosition: 0
+[    31.301] 	GreenMaskSize: 0
+[    31.301] 	GreenFieldPosition: 0
+[    31.301] 	BlueMaskSize: 0
+[    31.301] 	BlueFieldPosition: 0
+[    31.301] 	RsvdMaskSize: 0
+[    31.301] 	RsvdFieldPosition: 0
+[    31.301] 	DirectColorModeInfo: 0
+[    31.301] 	PhysBasePtr: 0xc0000000
+[    31.301] 	LinBytesPerScanLine: 1280
+[    31.301] 	BnkNumberOfImagePages: 12
+[    31.301] 	LinNumberOfImagePages: 12
+[    31.301] 	LinRedMaskSize: 0
+[    31.301] 	LinRedFieldPosition: 0
+[    31.301] 	LinGreenMaskSize: 0
+[    31.301] 	LinGreenFieldPosition: 0
+[    31.301] 	LinBlueMaskSize: 0
+[    31.301] 	LinBlueFieldPosition: 0
+[    31.301] 	LinRsvdMaskSize: 0
+[    31.301] 	LinRsvdFieldPosition: 0
+[    31.301] 	MaxPixelClock: 400000000
+[    31.302] Mode: 165 (1280x960)
+[    31.302] 	ModeAttributes: 0xbb
+[    31.302] 	WinAAttributes: 0x7
+[    31.302] 	WinBAttributes: 0x0
+[    31.302] 	WinGranularity: 64
+[    31.302] 	WinSize: 64
+[    31.302] 	WinASegment: 0xa000
+[    31.302] 	WinBSegment: 0x0
+[    31.302] 	WinFuncPtr: 0xc000594d
+[    31.302] 	BytesPerScanline: 2560
+[    31.302] 	XResolution: 1280
+[    31.302] 	YResolution: 960
+[    31.302] 	XCharSize: 8
+[    31.302] 	YCharSize: 16
+[    31.302] 	NumberOfPlanes: 1
+[    31.302] 	BitsPerPixel: 16
+[    31.302] 	NumberOfBanks: 1
+[    31.302] 	MemoryModel: 6
+[    31.302] 	BankSize: 0
+[    31.302] 	NumberOfImages: 5
+[    31.302] 	RedMaskSize: 5
+[    31.302] 	RedFieldPosition: 11
+[    31.302] 	GreenMaskSize: 6
+[    31.302] 	GreenFieldPosition: 5
+[    31.302] 	BlueMaskSize: 5
+[    31.302] 	BlueFieldPosition: 0
+[    31.302] 	RsvdMaskSize: 0
+[    31.302] 	RsvdFieldPosition: 0
+[    31.302] 	DirectColorModeInfo: 0
+[    31.302] 	PhysBasePtr: 0xc0000000
+[    31.303] 	LinBytesPerScanLine: 2560
+[    31.303] 	BnkNumberOfImagePages: 5
+[    31.303] 	LinNumberOfImagePages: 5
+[    31.303] 	LinRedMaskSize: 5
+[    31.303] 	LinRedFieldPosition: 11
+[    31.303] 	LinGreenMaskSize: 6
+[    31.303] 	LinGreenFieldPosition: 5
+[    31.303] 	LinBlueMaskSize: 5
+[    31.303] 	LinBlueFieldPosition: 0
+[    31.303] 	LinRsvdMaskSize: 0
+[    31.303] 	LinRsvdFieldPosition: 0
+[    31.303] 	MaxPixelClock: 400000000
+[    31.303] *Mode: 166 (1280x960)
+[    31.303] 	ModeAttributes: 0xbb
+[    31.303] 	WinAAttributes: 0x7
+[    31.303] 	WinBAttributes: 0x0
+[    31.303] 	WinGranularity: 64
+[    31.303] 	WinSize: 64
+[    31.303] 	WinASegment: 0xa000
+[    31.303] 	WinBSegment: 0x0
+[    31.303] 	WinFuncPtr: 0xc000594d
+[    31.303] 	BytesPerScanline: 5120
+[    31.303] 	XResolution: 1280
+[    31.303] 	YResolution: 960
+[    31.303] 	XCharSize: 8
+[    31.303] 	YCharSize: 16
+[    31.303] 	NumberOfPlanes: 1
+[    31.303] 	BitsPerPixel: 32
+[    31.303] 	NumberOfBanks: 1
+[    31.304] 	MemoryModel: 6
+[    31.304] 	BankSize: 0
+[    31.304] 	NumberOfImages: 2
+[    31.304] 	RedMaskSize: 8
+[    31.304] 	RedFieldPosition: 16
+[    31.304] 	GreenMaskSize: 8
+[    31.304] 	GreenFieldPosition: 8
+[    31.304] 	BlueMaskSize: 8
+[    31.304] 	BlueFieldPosition: 0
+[    31.304] 	RsvdMaskSize: 0
+[    31.304] 	RsvdFieldPosition: 0
+[    31.304] 	DirectColorModeInfo: 0
+[    31.304] 	PhysBasePtr: 0xc0000000
+[    31.304] 	LinBytesPerScanLine: 5120
+[    31.304] 	BnkNumberOfImagePages: 2
+[    31.304] 	LinNumberOfImagePages: 2
+[    31.304] 	LinRedMaskSize: 8
+[    31.304] 	LinRedFieldPosition: 16
+[    31.304] 	LinGreenMaskSize: 8
+[    31.304] 	LinGreenFieldPosition: 8
+[    31.304] 	LinBlueMaskSize: 8
+[    31.304] 	LinBlueFieldPosition: 0
+[    31.304] 	LinRsvdMaskSize: 0
+[    31.304] 	LinRsvdFieldPosition: 0
+[    31.304] 	MaxPixelClock: 400000000
+[    31.305] *Mode: 121 (640x480)
+[    31.305] 	ModeAttributes: 0xbb
+[    31.305] 	WinAAttributes: 0x7
+[    31.305] 	WinBAttributes: 0x0
+[    31.305] 	WinGranularity: 64
+[    31.305] 	WinSize: 64
+[    31.305] 	WinASegment: 0xa000
+[    31.305] 	WinBSegment: 0x0
+[    31.305] 	WinFuncPtr: 0xc000594d
+[    31.305] 	BytesPerScanline: 2560
+[    31.305] 	XResolution: 640
+[    31.305] 	YResolution: 480
+[    31.305] 	XCharSize: 8
+[    31.305] 	YCharSize: 16
+[    31.305] 	NumberOfPlanes: 1
+[    31.305] 	BitsPerPixel: 32
+[    31.305] 	NumberOfBanks: 1
+[    31.305] 	MemoryModel: 6
+[    31.305] 	BankSize: 0
+[    31.305] 	NumberOfImages: 12
+[    31.305] 	RedMaskSize: 8
+[    31.305] 	RedFieldPosition: 16
+[    31.305] 	GreenMaskSize: 8
+[    31.305] 	GreenFieldPosition: 8
+[    31.305] 	BlueMaskSize: 8
+[    31.305] 	BlueFieldPosition: 0
+[    31.305] 	RsvdMaskSize: 0
+[    31.305] 	RsvdFieldPosition: 0
+[    31.305] 	DirectColorModeInfo: 0
+[    31.305] 	PhysBasePtr: 0xc0000000
+[    31.305] 	LinBytesPerScanLine: 2560
+[    31.305] 	BnkNumberOfImagePages: 12
+[    31.305] 	LinNumberOfImagePages: 12
+[    31.305] 	LinRedMaskSize: 8
+[    31.305] 	LinRedFieldPosition: 16
+[    31.305] 	LinGreenMaskSize: 8
+[    31.305] 	LinGreenFieldPosition: 8
+[    31.305] 	LinBlueMaskSize: 8
+[    31.305] 	LinBlueFieldPosition: 0
+[    31.305] 	LinRsvdMaskSize: 0
+[    31.305] 	LinRsvdFieldPosition: 0
+[    31.305] 	MaxPixelClock: 400000000
+[    31.306] *Mode: 122 (800x600)
+[    31.306] 	ModeAttributes: 0xbb
+[    31.306] 	WinAAttributes: 0x7
+[    31.306] 	WinBAttributes: 0x0
+[    31.306] 	WinGranularity: 64
+[    31.306] 	WinSize: 64
+[    31.306] 	WinASegment: 0xa000
+[    31.306] 	WinBSegment: 0x0
+[    31.306] 	WinFuncPtr: 0xc000594d
+[    31.306] 	BytesPerScanline: 3328
+[    31.306] 	XResolution: 800
+[    31.306] 	YResolution: 600
+[    31.306] 	XCharSize: 8
+[    31.306] 	YCharSize: 14
+[    31.306] 	NumberOfPlanes: 1
+[    31.306] 	BitsPerPixel: 32
+[    31.306] 	NumberOfBanks: 1
+[    31.306] 	MemoryModel: 6
+[    31.306] 	BankSize: 0
+[    31.306] 	NumberOfImages: 7
+[    31.306] 	RedMaskSize: 8
+[    31.306] 	RedFieldPosition: 16
+[    31.306] 	GreenMaskSize: 8
+[    31.306] 	GreenFieldPosition: 8
+[    31.306] 	BlueMaskSize: 8
+[    31.306] 	BlueFieldPosition: 0
+[    31.306] 	RsvdMaskSize: 0
+[    31.306] 	RsvdFieldPosition: 0
+[    31.306] 	DirectColorModeInfo: 0
+[    31.306] 	PhysBasePtr: 0xc0000000
+[    31.306] 	LinBytesPerScanLine: 3328
+[    31.306] 	BnkNumberOfImagePages: 7
+[    31.306] 	LinNumberOfImagePages: 7
+[    31.306] 	LinRedMaskSize: 8
+[    31.306] 	LinRedFieldPosition: 16
+[    31.306] 	LinGreenMaskSize: 8
+[    31.306] 	LinGreenFieldPosition: 8
+[    31.306] 	LinBlueMaskSize: 8
+[    31.306] 	LinBlueFieldPosition: 0
+[    31.306] 	LinRsvdMaskSize: 0
+[    31.306] 	LinRsvdFieldPosition: 0
+[    31.306] 	MaxPixelClock: 400000000
+[    31.307] *Mode: 123 (1024x768)
+[    31.307] 	ModeAttributes: 0xbb
+[    31.307] 	WinAAttributes: 0x7
+[    31.307] 	WinBAttributes: 0x0
+[    31.307] 	WinGranularity: 64
+[    31.307] 	WinSize: 64
+[    31.307] 	WinASegment: 0xa000
+[    31.307] 	WinBSegment: 0x0
+[    31.307] 	WinFuncPtr: 0xc000594d
+[    31.307] 	BytesPerScanline: 4096
+[    31.307] 	XResolution: 1024
+[    31.307] 	YResolution: 768
+[    31.307] 	XCharSize: 8
+[    31.307] 	YCharSize: 16
+[    31.307] 	NumberOfPlanes: 1
+[    31.307] 	BitsPerPixel: 32
+[    31.307] 	NumberOfBanks: 1
+[    31.307] 	MemoryModel: 6
+[    31.307] 	BankSize: 0
+[    31.307] 	NumberOfImages: 4
+[    31.307] 	RedMaskSize: 8
+[    31.307] 	RedFieldPosition: 16
+[    31.307] 	GreenMaskSize: 8
+[    31.307] 	GreenFieldPosition: 8
+[    31.307] 	BlueMaskSize: 8
+[    31.307] 	BlueFieldPosition: 0
+[    31.307] 	RsvdMaskSize: 0
+[    31.307] 	RsvdFieldPosition: 0
+[    31.307] 	DirectColorModeInfo: 0
+[    31.307] 	PhysBasePtr: 0xc0000000
+[    31.307] 	LinBytesPerScanLine: 4096
+[    31.307] 	BnkNumberOfImagePages: 4
+[    31.307] 	LinNumberOfImagePages: 4
+[    31.307] 	LinRedMaskSize: 8
+[    31.307] 	LinRedFieldPosition: 16
+[    31.307] 	LinGreenMaskSize: 8
+[    31.307] 	LinGreenFieldPosition: 8
+[    31.307] 	LinBlueMaskSize: 8
+[    31.307] 	LinBlueFieldPosition: 0
+[    31.307] 	LinRsvdMaskSize: 0
+[    31.307] 	LinRsvdFieldPosition: 0
+[    31.307] 	MaxPixelClock: 400000000
+[    31.308] *Mode: 124 (1280x1024)
+[    31.308] 	ModeAttributes: 0xbb
+[    31.308] 	WinAAttributes: 0x7
+[    31.308] 	WinBAttributes: 0x0
+[    31.308] 	WinGranularity: 64
+[    31.403] 	WinSize: 64
+[    31.403] 	WinASegment: 0xa000
+[    31.403] 	WinBSegment: 0x0
+[    31.403] 	WinFuncPtr: 0xc000594d
+[    31.403] 	BytesPerScanline: 5120
+[    31.403] 	XResolution: 1280
+[    31.403] 	YResolution: 1024
+[    31.403] 	XCharSize: 8
+[    31.403] 	YCharSize: 16
+[    31.403] 	NumberOfPlanes: 1
+[    31.403] 	BitsPerPixel: 32
+[    31.403] 	NumberOfBanks: 1
+[    31.403] 	MemoryModel: 6
+[    31.403] 	BankSize: 0
+[    31.403] 	NumberOfImages: 2
+[    31.403] 	RedMaskSize: 8
+[    31.403] 	RedFieldPosition: 16
+[    31.403] 	GreenMaskSize: 8
+[    31.403] 	GreenFieldPosition: 8
+[    31.403] 	BlueMaskSize: 8
+[    31.403] 	BlueFieldPosition: 0
+[    31.403] 	RsvdMaskSize: 0
+[    31.403] 	RsvdFieldPosition: 0
+[    31.403] 	DirectColorModeInfo: 0
+[    31.403] 	PhysBasePtr: 0xc0000000
+[    31.403] 	LinBytesPerScanLine: 5120
+[    31.403] 	BnkNumberOfImagePages: 2
+[    31.403] 	LinNumberOfImagePages: 2
+[    31.403] 	LinRedMaskSize: 8
+[    31.403] 	LinRedFieldPosition: 16
+[    31.403] 	LinGreenMaskSize: 8
+[    31.403] 	LinGreenFieldPosition: 8
+[    31.403] 	LinBlueMaskSize: 8
+[    31.403] 	LinBlueFieldPosition: 0
+[    31.403] 	LinRsvdMaskSize: 0
+[    31.403] 	LinRsvdFieldPosition: 0
+[    31.403] 	MaxPixelClock: 400000000
+[    31.404] Mode: 143 (1400x1050)
+[    31.404] 	ModeAttributes: 0xbb
+[    31.404] 	WinAAttributes: 0x7
+[    31.404] 	WinBAttributes: 0x0
+[    31.404] 	WinGranularity: 64
+[    31.404] 	WinSize: 64
+[    31.404] 	WinASegment: 0xa000
+[    31.404] 	WinBSegment: 0x0
+[    31.404] 	WinFuncPtr: 0xc000594d
+[    31.404] 	BytesPerScanline: 1408
+[    31.404] 	XResolution: 1400
+[    31.404] 	YResolution: 1050
+[    31.404] 	XCharSize: 8
+[    31.404] 	YCharSize: 16
+[    31.404] 	NumberOfPlanes: 1
+[    31.404] 	BitsPerPixel: 8
+[    31.404] 	NumberOfBanks: 1
+[    31.404] 	MemoryModel: 4
+[    31.404] 	BankSize: 0
+[    31.404] 	NumberOfImages: 10
+[    31.404] 	RedMaskSize: 0
+[    31.404] 	RedFieldPosition: 0
+[    31.404] 	GreenMaskSize: 0
+[    31.404] 	GreenFieldPosition: 0
+[    31.404] 	BlueMaskSize: 0
+[    31.404] 	BlueFieldPosition: 0
+[    31.404] 	RsvdMaskSize: 0
+[    31.404] 	RsvdFieldPosition: 0
+[    31.404] 	DirectColorModeInfo: 0
+[    31.404] 	PhysBasePtr: 0xc0000000
+[    31.404] 	LinBytesPerScanLine: 1408
+[    31.404] 	BnkNumberOfImagePages: 10
+[    31.404] 	LinNumberOfImagePages: 10
+[    31.404] 	LinRedMaskSize: 0
+[    31.404] 	LinRedFieldPosition: 0
+[    31.404] 	LinGreenMaskSize: 0
+[    31.404] 	LinGreenFieldPosition: 0
+[    31.404] 	LinBlueMaskSize: 0
+[    31.404] 	LinBlueFieldPosition: 0
+[    31.404] 	LinRsvdMaskSize: 0
+[    31.404] 	LinRsvdFieldPosition: 0
+[    31.404] 	MaxPixelClock: 400000000
+[    31.405] Mode: 145 (1400x1050)
+[    31.405] 	ModeAttributes: 0xbb
+[    31.405] 	WinAAttributes: 0x7
+[    31.405] 	WinBAttributes: 0x0
+[    31.405] 	WinGranularity: 64
+[    31.405] 	WinSize: 64
+[    31.405] 	WinASegment: 0xa000
+[    31.405] 	WinBSegment: 0x0
+[    31.405] 	WinFuncPtr: 0xc000594d
+[    31.405] 	BytesPerScanline: 2816
+[    31.405] 	XResolution: 1400
+[    31.405] 	YResolution: 1050
+[    31.405] 	XCharSize: 8
+[    31.405] 	YCharSize: 16
+[    31.405] 	NumberOfPlanes: 1
+[    31.405] 	BitsPerPixel: 16
+[    31.405] 	NumberOfBanks: 1
+[    31.405] 	MemoryModel: 6
+[    31.405] 	BankSize: 0
+[    31.405] 	NumberOfImages: 4
+[    31.405] 	RedMaskSize: 5
+[    31.405] 	RedFieldPosition: 11
+[    31.405] 	GreenMaskSize: 6
+[    31.405] 	GreenFieldPosition: 5
+[    31.405] 	BlueMaskSize: 5
+[    31.405] 	BlueFieldPosition: 0
+[    31.405] 	RsvdMaskSize: 0
+[    31.405] 	RsvdFieldPosition: 0
+[    31.405] 	DirectColorModeInfo: 0
+[    31.405] 	PhysBasePtr: 0xc0000000
+[    31.405] 	LinBytesPerScanLine: 2816
+[    31.405] 	BnkNumberOfImagePages: 4
+[    31.405] 	LinNumberOfImagePages: 4
+[    31.405] 	LinRedMaskSize: 5
+[    31.405] 	LinRedFieldPosition: 11
+[    31.405] 	LinGreenMaskSize: 6
+[    31.405] 	LinGreenFieldPosition: 5
+[    31.405] 	LinBlueMaskSize: 5
+[    31.405] 	LinBlueFieldPosition: 0
+[    31.405] 	LinRsvdMaskSize: 0
+[    31.405] 	LinRsvdFieldPosition: 0
+[    31.405] 	MaxPixelClock: 400000000
+[    31.406] *Mode: 146 (1400x1050)
+[    31.406] 	ModeAttributes: 0xbb
+[    31.406] 	WinAAttributes: 0x7
+[    31.406] 	WinBAttributes: 0x0
+[    31.406] 	WinGranularity: 64
+[    31.406] 	WinSize: 64
+[    31.406] 	WinASegment: 0xa000
+[    31.406] 	WinBSegment: 0x0
+[    31.406] 	WinFuncPtr: 0xc000594d
+[    31.406] 	BytesPerScanline: 5632
+[    31.406] 	XResolution: 1400
+[    31.406] 	YResolution: 1050
+[    31.406] 	XCharSize: 8
+[    31.406] 	YCharSize: 16
+[    31.406] 	NumberOfPlanes: 1
+[    31.406] 	BitsPerPixel: 32
+[    31.406] 	NumberOfBanks: 1
+[    31.406] 	MemoryModel: 6
+[    31.406] 	BankSize: 0
+[    31.406] 	NumberOfImages: 1
+[    31.406] 	RedMaskSize: 8
+[    31.406] 	RedFieldPosition: 16
+[    31.406] 	GreenMaskSize: 8
+[    31.406] 	GreenFieldPosition: 8
+[    31.406] 	BlueMaskSize: 8
+[    31.406] 	BlueFieldPosition: 0
+[    31.406] 	RsvdMaskSize: 0
+[    31.406] 	RsvdFieldPosition: 0
+[    31.406] 	DirectColorModeInfo: 0
+[    31.406] 	PhysBasePtr: 0xc0000000
+[    31.406] 	LinBytesPerScanLine: 5632
+[    31.406] 	BnkNumberOfImagePages: 1
+[    31.406] 	LinNumberOfImagePages: 1
+[    31.406] 	LinRedMaskSize: 8
+[    31.406] 	LinRedFieldPosition: 16
+[    31.406] 	LinGreenMaskSize: 8
+[    31.406] 	LinGreenFieldPosition: 8
+[    31.406] 	LinBlueMaskSize: 8
+[    31.406] 	LinBlueFieldPosition: 0
+[    31.406] 	LinRsvdMaskSize: 0
+[    31.406] 	LinRsvdFieldPosition: 0
+[    31.406] 	MaxPixelClock: 400000000
+[    31.406] Mode: 173 (1600x1200)
+[    31.406] 	ModeAttributes: 0xba
+[    31.406] 	WinAAttributes: 0x7
+[    31.406] 	WinBAttributes: 0x0
+[    31.406] 	WinGranularity: 64
+[    31.406] 	WinSize: 64
+[    31.406] 	WinASegment: 0xa000
+[    31.406] 	WinBSegment: 0x0
+[    31.406] 	WinFuncPtr: 0xc000594d
+[    31.406] 	BytesPerScanline: 1600
+[    31.406] 	XResolution: 1600
+[    31.406] 	YResolution: 1200
+[    31.406] 	XCharSize: 8
+[    31.406] 	YCharSize: 16
+[    31.406] 	NumberOfPlanes: 1
+[    31.406] 	BitsPerPixel: 8
+[    31.406] 	NumberOfBanks: 1
+[    31.407] 	MemoryModel: 4
+[    31.407] 	BankSize: 0
+[    31.407] 	NumberOfImages: 7
+[    31.407] 	RedMaskSize: 0
+[    31.407] 	RedFieldPosition: 0
+[    31.407] 	GreenMaskSize: 0
+[    31.407] 	GreenFieldPosition: 0
+[    31.407] 	BlueMaskSize: 0
+[    31.407] 	BlueFieldPosition: 0
+[    31.407] 	RsvdMaskSize: 0
+[    31.407] 	RsvdFieldPosition: 0
+[    31.407] 	DirectColorModeInfo: 0
+[    31.407] 	PhysBasePtr: 0xc0000000
+[    31.407] 	LinBytesPerScanLine: 1600
+[    31.407] 	BnkNumberOfImagePages: 7
+[    31.407] 	LinNumberOfImagePages: 7
+[    31.407] 	LinRedMaskSize: 0
+[    31.407] 	LinRedFieldPosition: 0
+[    31.407] 	LinGreenMaskSize: 0
+[    31.407] 	LinGreenFieldPosition: 0
+[    31.407] 	LinBlueMaskSize: 0
+[    31.407] 	LinBlueFieldPosition: 0
+[    31.407] 	LinRsvdMaskSize: 0
+[    31.407] 	LinRsvdFieldPosition: 0
+[    31.407] 	MaxPixelClock: 400000000
+[    31.407] Mode: 175 (1600x1200)
+[    31.407] 	ModeAttributes: 0xba
+[    31.407] 	WinAAttributes: 0x7
+[    31.407] 	WinBAttributes: 0x0
+[    31.407] 	WinGranularity: 64
+[    31.407] 	WinSize: 64
+[    31.407] 	WinASegment: 0xa000
+[    31.407] 	WinBSegment: 0x0
+[    31.407] 	WinFuncPtr: 0xc000594d
+[    31.407] 	BytesPerScanline: 3200
+[    31.407] 	XResolution: 1600
+[    31.407] 	YResolution: 1200
+[    31.407] 	XCharSize: 8
+[    31.407] 	YCharSize: 16
+[    31.407] 	NumberOfPlanes: 1
+[    31.407] 	BitsPerPixel: 16
+[    31.407] 	NumberOfBanks: 1
+[    31.407] 	MemoryModel: 6
+[    31.407] 	BankSize: 0
+[    31.407] 	NumberOfImages: 3
+[    31.407] 	RedMaskSize: 5
+[    31.407] 	RedFieldPosition: 11
+[    31.407] 	GreenMaskSize: 6
+[    31.407] 	GreenFieldPosition: 5
+[    31.407] 	BlueMaskSize: 5
+[    31.407] 	BlueFieldPosition: 0
+[    31.407] 	RsvdMaskSize: 0
+[    31.407] 	RsvdFieldPosition: 0
+[    31.407] 	DirectColorModeInfo: 0
+[    31.407] 	PhysBasePtr: 0xc0000000
+[    31.407] 	LinBytesPerScanLine: 3200
+[    31.407] 	BnkNumberOfImagePages: 3
+[    31.407] 	LinNumberOfImagePages: 3
+[    31.407] 	LinRedMaskSize: 5
+[    31.407] 	LinRedFieldPosition: 11
+[    31.407] 	LinGreenMaskSize: 6
+[    31.407] 	LinGreenFieldPosition: 5
+[    31.407] 	LinBlueMaskSize: 5
+[    31.407] 	LinBlueFieldPosition: 0
+[    31.408] 	LinRsvdMaskSize: 0
+[    31.408] 	LinRsvdFieldPosition: 0
+[    31.408] 	MaxPixelClock: 400000000
+[    31.408] Mode: 176 (1600x1200)
+[    31.408] 	ModeAttributes: 0xba
+[    31.408] 	WinAAttributes: 0x7
+[    31.408] 	WinBAttributes: 0x0
+[    31.408] 	WinGranularity: 64
+[    31.408] 	WinSize: 64
+[    31.408] 	WinASegment: 0xa000
+[    31.408] 	WinBSegment: 0x0
+[    31.408] 	WinFuncPtr: 0xc000594d
+[    31.408] 	BytesPerScanline: 6400
+[    31.408] 	XResolution: 1600
+[    31.408] 	YResolution: 1200
+[    31.408] 	XCharSize: 8
+[    31.408] 	YCharSize: 16
+[    31.408] 	NumberOfPlanes: 1
+[    31.408] 	BitsPerPixel: 32
+[    31.408] 	NumberOfBanks: 1
+[    31.408] 	MemoryModel: 6
+[    31.408] 	BankSize: 0
+[    31.408] 	NumberOfImages: 1
+[    31.408] 	RedMaskSize: 8
+[    31.408] 	RedFieldPosition: 16
+[    31.408] 	GreenMaskSize: 8
+[    31.408] 	GreenFieldPosition: 8
+[    31.408] 	BlueMaskSize: 8
+[    31.408] 	BlueFieldPosition: 0
+[    31.408] 	RsvdMaskSize: 0
+[    31.408] 	RsvdFieldPosition: 0
+[    31.408] 	DirectColorModeInfo: 0
+[    31.408] 	PhysBasePtr: 0xc0000000
+[    31.408] 	LinBytesPerScanLine: 6400
+[    31.408] 	BnkNumberOfImagePages: 1
+[    31.408] 	LinNumberOfImagePages: 1
+[    31.408] 	LinRedMaskSize: 8
+[    31.409] 	LinRedFieldPosition: 16
+[    31.409] 	LinGreenMaskSize: 8
+[    31.409] 	LinGreenFieldPosition: 8
+[    31.409] 	LinBlueMaskSize: 8
+[    31.409] 	LinBlueFieldPosition: 0
+[    31.409] 	LinRsvdMaskSize: 0
+[    31.409] 	LinRsvdFieldPosition: 0
+[    31.409] 	MaxPixelClock: 400000000
+[    31.409] Mode: 1d1 (1920x1080)
+[    31.409] 	ModeAttributes: 0xbb
+[    31.409] 	WinAAttributes: 0x7
+[    31.409] 	WinBAttributes: 0x0
+[    31.409] 	WinGranularity: 64
+[    31.409] 	WinSize: 64
+[    31.409] 	WinASegment: 0xa000
+[    31.409] 	WinBSegment: 0x0
+[    31.409] 	WinFuncPtr: 0xc000594d
+[    31.409] 	BytesPerScanline: 1920
+[    31.409] 	XResolution: 1920
+[    31.410] 	YResolution: 1080
+[    31.410] 	XCharSize: 8
+[    31.410] 	YCharSize: 16
+[    31.410] 	NumberOfPlanes: 1
+[    31.410] 	BitsPerPixel: 8
+[    31.410] 	NumberOfBanks: 1
+[    31.410] 	MemoryModel: 4
+[    31.410] 	BankSize: 0
+[    31.410] 	NumberOfImages: 7
+[    31.410] 	RedMaskSize: 0
+[    31.410] 	RedFieldPosition: 0
+[    31.410] 	GreenMaskSize: 0
+[    31.410] 	GreenFieldPosition: 0
+[    31.410] 	BlueMaskSize: 0
+[    31.410] 	BlueFieldPosition: 0
+[    31.410] 	RsvdMaskSize: 0
+[    31.410] 	RsvdFieldPosition: 0
+[    31.410] 	DirectColorModeInfo: 0
+[    31.410] 	PhysBasePtr: 0xc0000000
+[    31.410] 	LinBytesPerScanLine: 1920
+[    31.410] 	BnkNumberOfImagePages: 7
+[    31.410] 	LinNumberOfImagePages: 7
+[    31.410] 	LinRedMaskSize: 0
+[    31.410] 	LinRedFieldPosition: 0
+[    31.410] 	LinGreenMaskSize: 0
+[    31.410] 	LinGreenFieldPosition: 0
+[    31.410] 	LinBlueMaskSize: 0
+[    31.410] 	LinBlueFieldPosition: 0
+[    31.410] 	LinRsvdMaskSize: 0
+[    31.410] 	LinRsvdFieldPosition: 0
+[    31.410] 	MaxPixelClock: 400000000
+[    31.411] Mode: 1d2 (1920x1080)
+[    31.411] 	ModeAttributes: 0xbb
+[    31.411] 	WinAAttributes: 0x7
+[    31.411] 	WinBAttributes: 0x0
+[    31.411] 	WinGranularity: 64
+[    31.411] 	WinSize: 64
+[    31.411] 	WinASegment: 0xa000
+[    31.411] 	WinBSegment: 0x0
+[    31.411] 	WinFuncPtr: 0xc000594d
+[    31.411] 	BytesPerScanline: 3840
+[    31.411] 	XResolution: 1920
+[    31.411] 	YResolution: 1080
+[    31.411] 	XCharSize: 8
+[    31.411] 	YCharSize: 16
+[    31.411] 	NumberOfPlanes: 1
+[    31.411] 	BitsPerPixel: 16
+[    31.411] 	NumberOfBanks: 1
+[    31.411] 	MemoryModel: 6
+[    31.411] 	BankSize: 0
+[    31.411] 	NumberOfImages: 3
+[    31.411] 	RedMaskSize: 5
+[    31.411] 	RedFieldPosition: 11
+[    31.411] 	GreenMaskSize: 6
+[    31.411] 	GreenFieldPosition: 5
+[    31.411] 	BlueMaskSize: 5
+[    31.411] 	BlueFieldPosition: 0
+[    31.411] 	RsvdMaskSize: 0
+[    31.411] 	RsvdFieldPosition: 0
+[    31.411] 	DirectColorModeInfo: 0
+[    31.411] 	PhysBasePtr: 0xc0000000
+[    31.411] 	LinBytesPerScanLine: 3840
+[    31.411] 	BnkNumberOfImagePages: 3
+[    31.411] 	LinNumberOfImagePages: 3
+[    31.411] 	LinRedMaskSize: 5
+[    31.411] 	LinRedFieldPosition: 11
+[    31.411] 	LinGreenMaskSize: 6
+[    31.411] 	LinGreenFieldPosition: 5
+[    31.411] 	LinBlueMaskSize: 5
+[    31.411] 	LinBlueFieldPosition: 0
+[    31.411] 	LinRsvdMaskSize: 0
+[    31.411] 	LinRsvdFieldPosition: 0
+[    31.411] 	MaxPixelClock: 400000000
+[    31.412] *Mode: 1d4 (1920x1080)
+[    31.412] 	ModeAttributes: 0xbb
+[    31.412] 	WinAAttributes: 0x7
+[    31.412] 	WinBAttributes: 0x0
+[    31.412] 	WinGranularity: 64
+[    31.412] 	WinSize: 64
+[    31.412] 	WinASegment: 0xa000
+[    31.412] 	WinBSegment: 0x0
+[    31.412] 	WinFuncPtr: 0xc000594d
+[    31.412] 	BytesPerScanline: 7680
+[    31.412] 	XResolution: 1920
+[    31.412] 	YResolution: 1080
+[    31.412] 	XCharSize: 8
+[    31.412] 	YCharSize: 16
+[    31.412] 	NumberOfPlanes: 1
+[    31.412] 	BitsPerPixel: 32
+[    31.412] 	NumberOfBanks: 1
+[    31.412] 	MemoryModel: 6
+[    31.412] 	BankSize: 0
+[    31.412] 	NumberOfImages: 1
+[    31.412] 	RedMaskSize: 8
+[    31.412] 	RedFieldPosition: 16
+[    31.412] 	GreenMaskSize: 8
+[    31.412] 	GreenFieldPosition: 8
+[    31.412] 	BlueMaskSize: 8
+[    31.412] 	BlueFieldPosition: 0
+[    31.412] 	RsvdMaskSize: 0
+[    31.412] 	RsvdFieldPosition: 0
+[    31.412] 	DirectColorModeInfo: 0
+[    31.412] 	PhysBasePtr: 0xc0000000
+[    31.412] 	LinBytesPerScanLine: 7680
+[    31.412] 	BnkNumberOfImagePages: 1
+[    31.412] 	LinNumberOfImagePages: 1
+[    31.412] 	LinRedMaskSize: 8
+[    31.412] 	LinRedFieldPosition: 16
+[    31.412] 	LinGreenMaskSize: 8
+[    31.412] 	LinGreenFieldPosition: 8
+[    31.413] 	LinBlueMaskSize: 8
+[    31.413] 	LinBlueFieldPosition: 0
+[    31.413] 	LinRsvdMaskSize: 0
+[    31.413] 	LinRsvdFieldPosition: 0
+[    31.413] 	MaxPixelClock: 400000000
+[    31.413] 
+[    31.413] (II) VESA(0): Total Memory: 256 64KB banks (16384kB)
+[    31.413] (II) VESA(0): <default monitor>: Using hsync range of 30.00-83.00 kHz
+[    31.413] (II) VESA(0): <default monitor>: Using vrefresh range of 55.00-76.00 Hz
+[    31.413] (II) VESA(0): <default monitor>: Using maximum pixel clock of 175.00 MHz
+[    31.413] (WW) VESA(0): Unable to estimate virtual size
+[    31.413] (II) VESA(0): Not using built-in mode "1400x1050" (no mode of this name)
+[    31.413] (--) VESA(0): Virtual size is 1920x1080 (pitch 1920)
+[    31.413] (**) VESA(0): *Built-in mode "1920x1080"
+[    31.413] (**) VESA(0): *Built-in mode "1280x1024"
+[    31.413] (**) VESA(0): *Built-in mode "1280x960"
+[    31.413] (**) VESA(0): *Built-in mode "1024x768"
+[    31.413] (**) VESA(0): *Built-in mode "800x600"
+[    31.413] (**) VESA(0): *Built-in mode "640x480"
+[    31.413] (**) VESA(0): Display dimensions: (530, 300) mm
+[    31.413] (**) VESA(0): DPI set to (92, 91)
+[    31.413] (**) VESA(0): Using "Shadow Framebuffer"
+[    31.413] (II) Loading sub module "shadow"
+[    31.413] (II) LoadModule: "shadow"
+[    31.414] (II) Loading /usr/lib/xorg/modules/libshadow.so
+[    31.414] (II) Module shadow: vendor="X.Org Foundation"
+[    31.414] 	compiled for 1.19.2, module version = 1.1.0
+[    31.414] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    31.414] (II) Loading sub module "fb"
+[    31.414] (II) LoadModule: "fb"
+[    31.414] (II) Loading /usr/lib/xorg/modules/libfb.so
+[    31.414] (II) Module fb: vendor="X.Org Foundation"
+[    31.414] 	compiled for 1.19.2, module version = 1.0.0
+[    31.414] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    31.414] (==) Depth 24 pixmap format is 32 bpp
+[    31.414] (II) Loading sub module "int10"
+[    31.414] (II) LoadModule: "int10"
+[    31.414] (II) Loading /usr/lib/xorg/modules/libint10.so
+[    31.414] (II) Module int10: vendor="X.Org Foundation"
+[    31.414] 	compiled for 1.19.2, module version = 1.0.0
+[    31.415] 	ABI class: X.Org Video Driver, version 23.0
+[    31.415] (II) VESA(0): initializing int10
+[    31.415] (II) VESA(0): Primary V_BIOS segment is: 0xc000
+[    31.415] (II) VESA(0): VESA BIOS detected
+[    31.415] (II) VESA(0): VESA VBE Version 3.0
+[    31.415] (II) VESA(0): VESA VBE Total Mem: 16384 kB
+[    31.415] (II) VESA(0): VESA VBE OEM: AMD ATOMBIOS
+[    31.415] (II) VESA(0): VESA VBE OEM Software Rev: 15.31
+[    31.415] (II) VESA(0): VESA VBE OEM Vendor: (C) 1988-2010, Advanced Micro Devices, Inc.
+[    31.415] (II) VESA(0): VESA VBE OEM Product: DVST
+[    31.415] (II) VESA(0): VESA VBE OEM Product Rev: 01.00
+[    31.415] (II) VESA(0): virtual address = 0xb5a04000,
+	physical address = 0xc0000000, size = 16777216
+[    31.573] (II) VESA(0): Setting up VESA Mode 0x1D4 (1920x1080)
+[    31.573] (II) VESA(0): VBESetVBEMode failed, mode set without customized refresh.
+[    31.791] (==) VESA(0): Default visual is TrueColor
+[    31.791] (==) VESA(0): Backing store enabled
+[    31.791] (==) VESA(0): DPMS enabled
+[    31.791] (==) RandR enabled
+[    31.796] (II) SELinux: Disabled on system
+[    31.796] (II) AIGLX: Screen 0 is not DRI2 capable
+[    31.796] (EE) AIGLX: reverting to software rendering
+[    31.820] (II) IGLX: enabled GLX_MESA_copy_sub_buffer
+[    31.821] (II) IGLX: Loaded and initialized swrast
+[    31.821] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[    31.866] (II) config/udev: Adding input device Power Button (/dev/input/event4)
+[    31.866] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    31.866] (II) LoadModule: "libinput"
+[    31.866] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    31.867] (II) Module libinput: vendor="X.Org Foundation"
+[    31.867] 	compiled for 1.19.0, module version = 0.23.0
+[    31.867] 	Module class: X.Org XInput Driver
+[    31.867] 	ABI class: X.Org XInput driver, version 24.1
+[    31.867] (II) Using input driver 'libinput' for 'Power Button'
+[    31.868] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 22 paused 0
+[    31.868] (**) Power Button: always reports core events
+[    31.868] (**) Option "Device" "/dev/input/event4"
+[    31.868] (**) Option "_source" "server/udev"
+[    31.869] (II) input device 'Power Button', /dev/input/event4 is tagged by udev as: Keyboard
+[    31.869] (II) input device 'Power Button', /dev/input/event4 is a keyboard
+[    31.869] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input7/event4"
+[    31.869] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    31.869] (**) Option "xkb_model" "pc105"
+[    31.869] (**) Option "xkb_layout" "us"
+[    31.870] (II) input device 'Power Button', /dev/input/event4 is tagged by udev as: Keyboard
+[    31.870] (II) input device 'Power Button', /dev/input/event4 is a keyboard
+[    31.871] (II) config/udev: Adding input device Video Bus (/dev/input/event5)
+[    31.871] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    31.871] (II) Using input driver 'libinput' for 'Video Bus'
+[    31.872] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 25 paused 0
+[    31.872] (**) Video Bus: always reports core events
+[    31.872] (**) Option "Device" "/dev/input/event5"
+[    31.872] (**) Option "_source" "server/udev"
+[    31.872] (II) input device 'Video Bus', /dev/input/event5 is tagged by udev as: Keyboard
+[    31.872] (II) input device 'Video Bus', /dev/input/event5 is a keyboard
+[    31.872] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input8/event5"
+[    31.873] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    31.873] (**) Option "xkb_model" "pc105"
+[    31.873] (**) Option "xkb_layout" "us"
+[    31.873] (II) input device 'Video Bus', /dev/input/event5 is tagged by udev as: Keyboard
+[    31.873] (II) input device 'Video Bus', /dev/input/event5 is a keyboard
+[    31.874] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[    31.874] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    31.874] (II) Using input driver 'libinput' for 'Power Button'
+[    31.875] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 26 paused 0
+[    31.875] (**) Power Button: always reports core events
+[    31.875] (**) Option "Device" "/dev/input/event3"
+[    31.875] (**) Option "_source" "server/udev"
+[    31.875] (II) input device 'Power Button', /dev/input/event3 is tagged by udev as: Keyboard
+[    31.875] (II) input device 'Power Button', /dev/input/event3 is a keyboard
+[    31.875] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input6/event3"
+[    31.876] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[    31.876] (**) Option "xkb_model" "pc105"
+[    31.876] (**) Option "xkb_layout" "us"
+[    31.876] (II) input device 'Power Button', /dev/input/event3 is tagged by udev as: Keyboard
+[    31.876] (II) input device 'Power Button', /dev/input/event3 is a keyboard
+[    31.877] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=3 (/dev/input/event7)
+[    31.877] (II) No input driver specified, ignoring this device.
+[    31.877] (II) This device may have been added with another device file.
+[    31.878] (II) config/udev: Adding input device Logitech USB Keyboard (/dev/input/event0)
+[    31.878] (**) Logitech USB Keyboard: Applying InputClass "libinput keyboard catchall"
+[    31.878] (II) Using input driver 'libinput' for 'Logitech USB Keyboard'
+[    31.879] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 27 paused 0
+[    31.879] (**) Logitech USB Keyboard: always reports core events
+[    31.879] (**) Option "Device" "/dev/input/event0"
+[    31.879] (**) Option "_source" "server/udev"
+[    31.880] (II) input device 'Logitech USB Keyboard', /dev/input/event0 is tagged by udev as: Keyboard
+[    31.880] (II) input device 'Logitech USB Keyboard', /dev/input/event0 is a keyboard
+[    31.880] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:10.0/usb1/1-2/1-2:1.0/0003:046D:C31C.0001/input/input3/event0"
+[    31.880] (II) XINPUT: Adding extended input device "Logitech USB Keyboard" (type: KEYBOARD, id 9)
+[    31.880] (**) Option "xkb_model" "pc105"
+[    31.880] (**) Option "xkb_layout" "us"
+[    31.881] (II) input device 'Logitech USB Keyboard', /dev/input/event0 is tagged by udev as: Keyboard
+[    31.881] (II) input device 'Logitech USB Keyboard', /dev/input/event0 is a keyboard
+[    31.882] (II) config/udev: Adding input device Logitech USB Keyboard (/dev/input/event1)
+[    31.882] (**) Logitech USB Keyboard: Applying InputClass "libinput keyboard catchall"
+[    31.882] (II) Using input driver 'libinput' for 'Logitech USB Keyboard'
+[    31.882] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 28 paused 0
+[    31.883] (**) Logitech USB Keyboard: always reports core events
+[    31.883] (**) Option "Device" "/dev/input/event1"
+[    31.883] (**) Option "_source" "server/udev"
+[    31.883] (II) input device 'Logitech USB Keyboard', /dev/input/event1 is tagged by udev as: Keyboard
+[    31.883] (II) input device 'Logitech USB Keyboard', /dev/input/event1 is a keyboard
+[    31.883] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:10.0/usb1/1-2/1-2:1.1/0003:046D:C31C.0002/input/input4/event1"
+[    31.883] (II) XINPUT: Adding extended input device "Logitech USB Keyboard" (type: KEYBOARD, id 10)
+[    31.883] (**) Option "xkb_model" "pc105"
+[    31.883] (**) Option "xkb_layout" "us"
+[    31.884] (II) input device 'Logitech USB Keyboard', /dev/input/event1 is tagged by udev as: Keyboard
+[    31.885] (II) input device 'Logitech USB Keyboard', /dev/input/event1 is a keyboard
+[    31.885] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/event2)
+[    31.885] (**) Logitech USB Optical Mouse: Applying InputClass "libinput pointer catchall"
+[    31.885] (II) Using input driver 'libinput' for 'Logitech USB Optical Mouse'
+[    31.886] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 29 paused 0
+[    31.886] (**) Logitech USB Optical Mouse: always reports core events
+[    31.886] (**) Option "Device" "/dev/input/event2"
+[    31.886] (**) Option "_source" "server/udev"
+[    31.887] (II) input device 'Logitech USB Optical Mouse', /dev/input/event2 is tagged by udev as: Mouse
+[    31.887] (II) input device 'Logitech USB Optical Mouse', /dev/input/event2 is a pointer caps
+[    31.887] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb5/5-4/5-4:1.0/0003:046D:C077.0003/input/input5/event2"
+[    31.887] (II) XINPUT: Adding extended input device "Logitech USB Optical Mouse" (type: MOUSE, id 11)
+[    31.888] (**) Option "AccelerationScheme" "none"
+[    31.888] (**) Logitech USB Optical Mouse: (accel) selected scheme none/0
+[    31.888] (**) Logitech USB Optical Mouse: (accel) acceleration factor: 2.000
+[    31.888] (**) Logitech USB Optical Mouse: (accel) acceleration threshold: 4
+[    31.889] (II) input device 'Logitech USB Optical Mouse', /dev/input/event2 is tagged by udev as: Mouse
+[    31.889] (II) input device 'Logitech USB Optical Mouse', /dev/input/event2 is a pointer caps
+[    31.890] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/mouse0)
+[    31.890] (II) No input driver specified, ignoring this device.
+[    31.890] (II) This device may have been added with another device file.
+[    31.890] (II) config/udev: Adding input device HD-Audio Generic Front Mic (/dev/input/event8)
+[    31.890] (II) No input driver specified, ignoring this device.
+[    31.890] (II) This device may have been added with another device file.
+[    31.891] (II) config/udev: Adding input device HD-Audio Generic Rear Mic (/dev/input/event9)
+[    31.891] (II) No input driver specified, ignoring this device.
+[    31.891] (II) This device may have been added with another device file.
+[    31.891] (II) config/udev: Adding input device HD-Audio Generic Line (/dev/input/event10)
+[    31.891] (II) No input driver specified, ignoring this device.
+[    31.891] (II) This device may have been added with another device file.
+[    31.892] (II) config/udev: Adding input device HD-Audio Generic Line Out (/dev/input/event11)
+[    31.892] (II) No input driver specified, ignoring this device.
+[    31.892] (II) This device may have been added with another device file.
+[    31.892] (II) config/udev: Adding input device HD-Audio Generic Front Headphone (/dev/input/event12)
+[    31.892] (II) No input driver specified, ignoring this device.
+[    31.892] (II) This device may have been added with another device file.
+[    31.893] (II) config/udev: Adding input device PC Speaker (/dev/input/event6)
+[    31.893] (II) No input driver specified, ignoring this device.
+[    31.893] (II) This device may have been added with another device file.

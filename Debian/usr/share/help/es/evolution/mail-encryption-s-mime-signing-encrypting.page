@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-s-mime-signing-encrypting" xml:lang="es">
+
+  <info>
+    <desc>Firmar o cifrar los mensajes que envía a través de S/MIME.</desc>
+
+    <link type="guide" xref="mail-encryption#s-mime"/>
+
+    <revision pkgversion="3.13.90" version="0.3" date="2015-03-09" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#bsqbdkv -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Firmar o cifrar correos</title>
+
+<p>Después de que haya <link xref="mail-encryption-s-mime-manage">añadido su certificado</link>, puede firmar o cifrar un correo pulsando <guiseq><gui>Opciones</gui><gui>Firma S/MIME</gui></guiseq> o <gui>Cifrado S/MIME</gui> en el menú del editor de mensajes o pulsando en el botón correspondiente de la barra de herramientas.</p>
+<note style="tip"><p>La línea del Asunto del mensaje no se cifrará y no se debería usar para contener información sensible.</p></note>
+
+<p>Para enviar cada mensaje cifrado o firmado:</p>
+<steps>
+<item><p>Seleccione <guiseq><gui>Editar</gui><gui>Preferencias</gui><gui>Cuentas de correo</gui></guiseq>.</p></item>
+<item><p>Seleccione la cuenta en la que cifrar mensajes.</p></item>
+<item><p>Pulse <gui style="button">Editar</gui>.</p></item>
+<item><p>Pulse en la pestaña <gui>Seguridad</gui>.</p></item>
+<item><p>En la sección <gui>MIME seguro (S/MIME)</gui> pulse <gui style="button">Seleccionar</gui> junto a <gui>Certificado de firma</gui> y especifique la ruta a su certificado de firma o pulse <gui style="button">Seleccionar</gui> junto a <gui>Certificado de cifrado</gui> y especifique la ruta a su certificado de cifrado.</p></item>
+<item><p>Seleccione las opciones apropiadas.</p></item>
+<item><p>Pulse <gui style="button">Aceptar</gui>.</p></item>
+</steps>
+</page>

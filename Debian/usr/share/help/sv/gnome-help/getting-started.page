@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:e="http://projectmallard.org/experimental/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="getting-started" version="1.0 if/1.0" xml:lang="sv">
+
+<info>
+    <link type="guide" xref="index" group="#gs"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <desc>Är GNOME nytt för dig? Lär dig hur du använder det.</desc>
+    <title type="link">Börja med GNOME</title>
+    <title type="text">Komma igång</title>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Komma igång</title>
+
+<if:choose>
+<if:when test="!platform:gnome-classic">
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-launching-applications.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-launching-apps.svg">
+      <ui:caption its:translate="yes"><desc style="center">Starta program</desc></ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>Starta program</tt:p>
+         </tt:div>
+         <tt:div begin="5s" end="7.5s">
+           <tt:p>Flytta din musmarkör till <gui>Aktivitetshörnet</gui> längst upp till vänster på skärmen.</tt:p>
+           </tt:div>
+         <tt:div begin="7.5s" end="9.5s">
+           <tt:p>Klicka på ikonen <gui>Visa program</gui>.</tt:p>
+         </tt:div>
+         <tt:div begin="9.5s" end="11s">
+           <tt:p>Klicka på programmet som du vill köra, till exempel, Hjälp.</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="21s">
+           <tt:p>Alternativt, använd tangentbordet för att öppna <gui>Aktivitetsöversikt</gui> genom att trycka på <key href="help:gnome-help/keyboard-key-super">Super</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="22s" end="29s">
+           <tt:p>Börja skriva namnet på det program du vill starta.</tt:p>
+         </tt:div>
+         <tt:div begin="30s" end="33s">
+           <tt:p>Tryck på <key>Retur</key> för att starta programmet.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+</if:when>
+<if:when test="platform:gnome-classic">
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-windows-and-workspaces.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-windows-and-workspaces.svg">
+          <ui:caption its:translate="yes"><desc style="center">Använda fönster och arbetsytor</desc></ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>Fönster och arbetsytor</tt:p>
+         </tt:div>
+         <tt:div begin="6s" end="10s">
+           <tt:p>För att maximera ett fönster, fånga fönstrets namnlist och dra det till toppen på skärmen.</tt:p>
+           </tt:div>
+         <tt:div begin="10s" end="13s">
+           <tt:p>När skärmen är markerad, släpp fönstret.</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="20s">
+           <tt:p>För att avmaximera ett fönster, fånga fönstrets namnlist och dra det bort ifrån kanterna på skärmen.</tt:p>
+         </tt:div>
+         <tt:div begin="25s" end="29s">
+           <tt:p>Du kan också klicka på namnlisten för att dra bort fönstret och avmaximera det.</tt:p>
+         </tt:div>
+         <tt:div begin="34s" end="38s">
+           <tt:p>För att maximera ett fönster längs skärmens vänstra sida, fånga fönstrets namnlist och dra det åt vänster.</tt:p>
+         </tt:div>
+         <tt:div begin="38s" end="40s">
+           <tt:p>När halva skärmen är markerad, släpp fönstret.</tt:p>
+         </tt:div>
+         <tt:div begin="41s" end="44s">
+           <tt:p>För att maximera ett fönster längs skärmens högra sida, fånga fönstrets namnlist och dra det åt höger.</tt:p>
+         </tt:div>
+         <tt:div begin="44s" end="48s">
+           <tt:p>När halva skärmen är markerad, släpp fönstret.</tt:p>
+         </tt:div>
+         <tt:div begin="54s" end="60s">
+           <tt:p>För att maximera ett fönster med tangentbordet, håll ner <key href="help:gnome-help/keyboard-key-super">Super</key> och tryck på <key>↑</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="61s" end="66s">
+           <tt:p>För att återställa fönstret till dess avmaximerade storlek, håll ner <key href="help:gnome-help/keyboard-key-super">Super</key> och tryck på <key>↓</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="66s" end="73s">
+           <tt:p>För att maximera ett fönster längs den högra sidan på skärmen, håll ner <key href="help:gnome-help/keyboard-key-super">Super</key> och tryck på <key>→</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="76s" end="82s">
+           <tt:p>För att maximera ett fönster längs den vänstra sidan på skärmen, håll ner <key href="help:gnome-help/keyboard-key-super">Super</key> och tryck på <key>←</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="83s" end="89s">
+           <tt:p>För att flytta till en arbetsyta som är under den nuvarande arbetsytan, tryck på <keyseq><key href="help:gnome-help/keyboard-key-super">Super </key><key>Page Down</key></keyseq>.</tt:p>
+         </tt:div>
+         <tt:div begin="90s" end="97s">
+           <tt:p>För att flytta till en arbetsyta som är ovanför den nuvarande arbetsytan, tryck på <keyseq><key href="help:gnome-help/keyboard-key-super">Super </key><key>Page Up</key></keyseq>.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+</if:when>
+</if:choose>
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-task-switching.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-task-switching.svg">
+        <ui:caption its:translate="yes"><desc style="center">Växla uppgifter</desc></ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>Växlar uppgifter</tt:p>
+         </tt:div>
+         <if:if test="!platform:gnome-classic">
+         <tt:div begin="5s" end="8s">
+           <tt:p>Flytta din musmarkör till <gui>Aktivitetshörnet</gui> längst upp till vänster på skärmen.</tt:p>
+           </tt:div>
+         </if:if>
+         <tt:div begin="9s" end="12s">
+           <tt:p>Klicka på ett fönster för att byta till den uppgiften.</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="14s">
+           <tt:p>För att maximera ett fönster längs skärmens vänstra sida, fånga fönstrets namnlist och dra det åt vänster.</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="16s">
+           <tt:p>När halva skärmen är markerad, släpp fönstret.</tt:p>
+         </tt:div>
+         <tt:div begin="16s" end="18">
+           <tt:p>För att maximera ett fönster längs den högra sidan, fånga fönstrets namnlist och dra det åt höger.</tt:p>
+         </tt:div>
+         <tt:div begin="18s" end="20s">
+           <tt:p>När halva skärmen är markerad, släpp fönstret.</tt:p>
+         </tt:div>
+         <tt:div begin="23s" end="27s">
+           <tt:p>Tryck <keyseq> <key href="help:gnome-help/keyboard-key-super">Super</key><key> Tabb</key></keyseq> för att visa <gui>fönsterväxlaren</gui>.</tt:p>
+         </tt:div>
+         <tt:div begin="27s" end="29s">
+           <tt:p>Släpp <key href="help:gnome-help/keyboard-key-super">Super</key> för att välja nästa markerade fönster.</tt:p>
+         </tt:div>
+         <tt:div begin="29s" end="32s">
+           <tt:p>För att bläddra igenom listan av öppna fönster, släpp inte <key href="help:gnome-help/keyboard-key-super">Super</key> utan håll den nertryckt och tryck på <key>Tabb</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="35s" end="37s">
+           <tt:p>Tryck på <key href="help:gnome-help/keyboard-key-super">Super </key> för att visa <gui>Aktivitetsöversikt</gui>.</tt:p>
+         </tt:div>
+         <tt:div begin="37s" end="40s">
+           <tt:p>Börja skriv in namnet på det program du vill växla till.</tt:p>
+         </tt:div>
+         <tt:div begin="40s" end="43s">
+           <tt:p>När programmet visas som det första resultatet, tryck på <key>Retur</key> för att växla till det.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+  <ui:overlay width="235" height="145">
+  <media type="video" its:translate="no" src="figures/gnome-responding-to-messages.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-responding-to-messages.svg">
+            <ui:caption its:translate="yes"><desc style="center">Svara på meddelande</desc>
+            </ui:caption>
+    </ui:thumb>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="3s">
+           <tt:p>Svarar på meddelande</tt:p>
+         </tt:div>
+         <tt:div begin="3s" end="6s">
+           <tt:p>Flytta din mus över chattmeddelandet som visas nära toppen på skärmen.</tt:p>
+           </tt:div>
+         <tt:div begin="6s" end="9s">
+           <tt:p>Börja skriva ditt svar. När du är klar, tryck på <key>Retur</key> och skicka svaret.</tt:p>
+         </tt:div>
+         <tt:div begin="9s" end="10s">
+           <tt:p>Stäng chattmeddelandet.</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="14s">
+           <tt:p>Fördröjt svar</tt:p>
+         </tt:div>
+         <tt:div begin="16s" end="22s">
+           <tt:p>Ett chattmeddelande nära toppen av skärmen försvinner efter en stund om du inte flyttar din mus över meddelandet.</tt:p>
+         </tt:div>
+         <tt:div begin="22s" end="24s">
+           <tt:p>För att få tillbaka ditt obesvarade meddelande, klicka på klockan i systemraden.</tt:p>
+         </tt:div>
+         <tt:div begin="24s" end="26s">
+           <tt:p>Från aviseringslistan, välj ditt meddelande.</tt:p>
+         </tt:div>
+         <tt:div begin="26s" end="28s">
+           <tt:p>Börja skriva ditt svar.</tt:p>
+         </tt:div>
+         <tt:div begin="32s" end="35s">
+           <tt:p>För att visa aviseringslistan, tryck <keyseq> <key href="help:gnome-help/keyboard-key-super">Super</key> <key>V</key></keyseq></tt:p>
+         </tt:div>
+         <tt:div begin="35s" end="41s">
+           <tt:p>Använd piltangenterna för att välja meddelandet som du vill svara på, och tryck på <key>Retur</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="41s" end="44s">
+           <tt:p>Börja skriva ditt svar.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+
+<links type="topic" style="grid" groups="tasks">
+<title style="heading">Vanliga uppgifter</title>
+</links>
+
+<links type="guide" style="heading nodesc">
+<title/>
+</links>
+
+<!--
+<note style="plain">
+  <title>New in GNOME 3.8</title>
+  <p>New features described here.</p>
+</note>
+-->
+
+</page>

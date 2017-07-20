@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="user-admin-explain" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Проект документирования GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Для изменения важных компонентов системы нужны права администратора.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Как работают административные полномочия?</title>
+
+  <p>As well as the files that <em>you</em> create, your computer has a number
+  of files which are needed by the system for it to work properly. If these
+  important <em>system files</em> are changed incorrectly they can cause
+  various things to break, so they are protected from changes by default.
+  Certain applications also modify important parts of the system, and so are
+  also protected.</p>
+
+  <p>Защита заключается в том, что изменять эти файлы или использовать приложения, изменяющие их, могут только пользователи с <em>правами администратора</em>. В повседневной работе нет необходимости изменять системные файлы или использовать защищённые приложения, поэтому по умолчанию у вас нет прав доступа администратора.</p>
+
+  <p>Иногда может возникнуть необходимость в использовании этих приложений, поэтому можно временно получить права администратора, чтобы внести изменения. Если приложение требует административных полномочий, то вам будет предложено ввести пароль. Например, если вы хотите установить новые программы, установщик приложений (менеджер пакетов) предложит ввести пароль, чтобы получить возможность добавить новое приложение в систему. Как только установка завершится, вы снова лишитесь прав администратора.</p>
+
+  <p>Права администратора связаны с учётной записью пользователя. У пользователей-<gui>Администраторов</gui> эти права есть, у <gui>Обычных</gui> пользователей — нет. Без прав администратора вы не сможете устанавливать программы. Некоторые учётные записи (например, «root») имеют постоянные права администратора. Не следует работать с правами администратора постоянно, поскольку вы можете случайно изменить что-нибудь (например, удалить важные системные файлы).</p>
+
+  <p>Если обобщить, административные полномочия позволяют изменять важные компоненты системы, но не дают сделать это случайно.</p>
+
+  <note>
+    <title>Кто такой «суперпользователь»?</title>
+    <p>Пользователя с административными полномочиями иногда называют <em>суперпользователем</em> просто потому, что этот пользователь имеет больше прав, чем обычные пользователи. Возможно, вам случалось видеть, как люди обсуждают <cmd>su</cmd> и <cmd>sudo</cmd> — это программы, временно дающие вам права «суперпользователя» (администратора).</p>
+  </note>
+
+<section id="advantages">
+  <title>Зачем нужны права администратора?</title>
+
+  <p>Требование обладать правами администратора для внесения важных изменений в систему полезно потому, что оно помогает предотвратить повреждение системы, случайное или намеренное.</p>
+
+  <p>Если иметь права администратора постоянно, то можно случайно изменить важный файл или запустить приложение, которое может ошибочно изменить что-то важное. Временное предоставление прав администратора, только тогда, когда они действительно нужны, уменьшает риск подобных ошибок.</p>
+
+  <p>Получать права администратора должны лишь надёжные, доверенные пользователи. Это не позволит другим пользователям создавать хаос в системе, например, удаляя нужные вам приложения, устанавливая ненужные приложения или изменяя важные файлы. Это полезно с точки зрения безопасности.</p>
+
+</section>
+
+</page>

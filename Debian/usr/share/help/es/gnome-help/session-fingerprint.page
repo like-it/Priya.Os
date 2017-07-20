@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="hardware-auth"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Puede iniciar sesión en su sistema usando un lector de huellas digitales soportado en lugar de escribiendo su contraseña.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Iniciar sesión con una huella dactilar</title>
+
+  <p>Si su sistema tiene un lector de huellas digitales soportado, puede grabar su huella y usarla para iniciar sesión.</p>
+
+<section id="record">
+  <title>Grabar una huella dactilar</title>
+
+  <p>Antes de poder iniciar sesión con su huella dactilar, debe grabarla para que el sistema le pueda identificar.</p>
+
+  <note style="tip">
+    <p>Si su dedo está demasiado seco, puede que tenga dificultad para registrar su huella dactilar. Si esto sucede, humedezca ligeramente el dedo, séquelo con un paño limpio y sin pelusa, y vuelva a intentarlo.</p>
+  </note>
+
+  <p>Necesita <link xref="user-admin-explain">privilegios de administrador</link> para editar cuentas de usuarios que no sean la suya propia.</p>
+
+  <steps>
+    <item>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Usuarios</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse en <gui>Usuarios</gui> para abrir el panel.</p>
+    </item>
+    <item>
+      <p>Pulse en <gui>Desactivado</gui> junto a <gui>Iniciar sesión con la huella dactilar</gui> para añadir una huella dactilar a la cuenta seleccionada. Si está añadiendo la huella para otro usuario, primero deberá <gui>Desbloquear</gui> el panel.</p>
+    </item>
+    <item>
+      <p>Seleccione el dedo que quiere usar para la huella dactilar y pulse <gui style="button">Siguiente</gui>.</p>
+    </item>
+    <item>
+      <p>Siga las instrucciones del diálogo y deslice su dedo a una <em>velocidad moderada</em> sobre el lector de huellas digitales. Una vez que el equipo tenga un registro correcto de su huella dactilar, verá un mensaje de <gui>Hecho</gui>.</p>
+    </item>
+    <item>
+      <p>Seleccione <gui>Siguiente</gui>. Verá un mensaje de confirmación de que su huella digital se ha guardado correctamente. Seleccione <gui>Cerrar</gui> para finalizar.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="verify">
+  <title>Compruebe que la huella dactilar funciona</title>
+
+  <p>Ahora compruebe que funciona su nuevo inicio de sesión con huella dactilar. Si registra una huella dactilar, todavía tiene la opción de iniciar sesión con su contraseña.</p>
+
+  <steps>
+    <item>
+      <p>Guarde cualquier trabajo que tenga abierto y <link xref="shell-exit">cierre la sesión</link>.</p>
+    </item>
+    <item>
+      <p>En la pantalla de inicio de sesión, seleccione su nombre de usuario de la lista. Aparecerá el formulario de entrada de contraseña.</p>
+    </item>
+    <item>
+      <p>En lugar de escribir su contraseña, debería poder deslizar el dedo por el lector de huella digital.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-spam-settings" xml:lang="el">
+
+  <info>
+    <desc>Πώς να εγκαταστήσετε τον χειρισμό ανεπιθύμητων/οχλήσεων.</desc>
+
+    <link type="guide" xref="mail-spam"/>
+    <link type="seealso" xref="mail-spam-marking"/>
+
+    <revision pkgversion="3.12.9" version="0.11" date="2015-03-15" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Patrick O'Callaghan</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Pete Biggs</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-prefs-mail.html.en#mail-prefs-junk -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009-2010</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Ρυθμίσεις ανεπιθύμητης αλληλογραφίας</title>
+
+<section id="junk-tools">
+<title>Εργαλεία</title>
+<p>Το <app>Evolution</app> επιτρέπει τον έλεγχο για ανεπιθύμητα ή μηνύματα όχλησης χρησιμοποιώντας τα εργαλεία <app>Bogofilter</app> ή <app>SpamAssassin</app>. Για να χρησιμοποιήσετε αυτά τα εργαλεία, χρειάζεται να βεβαιωθείτε ότι εγκαταστάθηκαν μέσα από το εργαλείο διαχείρισης λογισμικού της διανομής σας.</p>
+
+<note style="info package">
+  <p>Ίσως χρειαστεί να εγκαταστήσετε το <app>Bogofilter</app> ή το <app>SpamAssassin</app> για να εκτελέσετε αυτά τα βήματα.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:bogofilter" href="http://bogofilter.sourceforge.net/" style="button">Εγκατάσταση bogofilter</link></p>
+      <p><link action="install:spamassassin" href="http://spamassassin.apache.org/" style="button">Εγκατάσταση καταστροφέα οχλήσεων</link></p>
+    </if:when>
+  </if:choose>
+</note>
+
+<p>Το SpamAssassin δουλεύει μέσα από ένα σύνολο προκαθορισμένων κανόνων, συνεπώς μπορεί να προσδιορίσει οχλήσεις αμέσως. Το Bogofilter δεν έρχεται με ένα προεπιλεγμένο σύνολο κριτηρίων όχλησης, έτσι θα φιλτράρει αυτόματα ο,τιδήποτε μετά την εγκατάστασή του. Πρέπει πρώτα να <link xref="mail-spam-marking">το εκπαιδεύσετε</link> για να δουλέψει. Μπορείτε να τροποποιήσετε τις ενέργειες του SpamAssassin εκπαιδεύοντας το επίσης.</p>
+</section>
+
+<section id="junk-folder">
+<title>Φάκελος ανεπιθύμητης αλληλογραφίας</title>
+<p>Μηνύματα που σημειώνονται ως ανεπιθύμητα (είτε χειροκίνητα από τον χρήστη ή αυτόματα μέσα από SpamAssassin ή Bogofilter) θα μετακινηθούν στον φάκελο αλληλογραφίας <gui>ανεπιθύμητα</gui>.</p>
+</section>
+
+<section id="preferences">
+<title>Προτιμήσεις ανεπιθύμητης αλληλογραφίας</title>
+<note style="tip"><p>The junk mail options discussed in this page refer only to POP and Local Delivery accounts. For handling junk mail on IMAP accounts, see the <app>Evolution</app> settings under <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Mail Accounts</gui><gui style="button">Edit</gui><gui>Receiving Options</gui></guiseq>.</p></note>
+<p>You can modify how <app>Evolution</app> handles junk mail by changing the Junk Mail Preferences:</p>
+<steps>
+<item><p>Κλικ στο <guiseq><gui>επεξεργασία</gui><gui>προτιμήσεις</gui></guiseq>, ή πατήστε <keyseq><key>Shift</key><key>Ctrl</key><key>S</key></keyseq>.</p></item>
+<item><p>Επιλέξτε <gui>προτιμήσεις αλληλογραφίας</gui>.</p></item>
+<item><p>Κλικ στην καρτέλα <gui>ανεπιθύμητα</gui>. Εδώ, μπορείτε να καθορίσετε τα παρακάτω:</p>
+<list>
+<item><p>Ελέγχονται τα εισερχόμενα μηνύματα για ανεπιθύμητα.</p></item>
+<item><p>Διαγραφή ανεπιθύμητων μηνυμάτων στην έξοδο και συχνότητα διαγραφής ανεπιθύμητων μηνυμάτων.</p></item>
+<item><p>Να μην σημειώνονται τα μηνύματα ως ανεπιθύμητα αν ο αποστολέας βρίσκεται στο βιβλίο διευθύνσεών μου.</p></item>
+<item><p>Ελέγχονται οι προσαρμοσμένες κεφαλίδες (που προστέθηκαν από τον διακομιστή αλληλογραφίας) για ανεπιθύμητα μηνύματα.</p></item>
+</list>
+</item>
+</steps>
+
+<note style="tip"><p>Για περισσότερες πληροφορίες και ιδιαίτερες ερωτήσεις διαμόρφωσης του Bogofilter ή SpamAssassin συνιστάται να ελέγξετε τις συχνές ερωτήσεις για το <link href="http://bogofilter.sourceforge.net/faq.shtml">Bogofilter</link> και αντίστοιχα για το <link href="http://wiki.apache.org/spamassassin/FrequentlyAskedQuestions">SpamAssassin</link>.</p></note>
+</section>
+
+</page>

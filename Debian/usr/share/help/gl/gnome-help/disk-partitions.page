@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="gl">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Proxecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>Entender que son os volumes e particións e usar o aplicativo de utilidade de discos para xestionalos.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>Xestionar os volumes e particións</title>
+
+  <p>A palabra <em>volume</em> úsase para describir un dispositivo de almacenamento, como un disco duro. Tamén se refire a <em>parte</em> do almacenamento nese dispositivo, xa que pode dividir o dispositivo en varias áreas. O computador fai accesíbel este almacenamento a través da súa sistema de ficheiros nun proceso que se denomina <em>montaxe</em>. Os volumes que poden montar son discos duros, unidades USB, DVD-RW, tarxetas SD e outros dispositivos. Se un volume está montado, pode ler (e posibelmente escribir) ficheiros nel.</p>
+
+  <p>A miúdo, un volume montado chámase <em>partición</em>, aínda que non son idénticos. Unha «partición» refírese a unha ou máis áreas <em>físicas</em> de almacenamento nunha soa unidade. Unha vez que a partición se montou, pódeselle chamar un volume. Pode pensar en volumes como o etiquetado, «escaparates» accesíbeis ao «cuarto trasteiro» funcional das particións e os dispositivos.</p>
+
+<section id="manage">
+ <title>Ver e xestionar volumes e particións usando a <app>Utilidade de discos</app></title>
+
+  <p>Pode comprobar e modificar os volumes de almacenamento coa Utilidade de discos.</p>
+
+<steps>
+  <item>
+    <p>Open the <gui>Activities</gui> overview and start <app>Disks</app>.</p>
+  </item>
+  <item>
+    <p>In the list of storage devices on the left, you will find hard disks,
+    CD/DVD drives, and other physical devices. Click the device you want to
+    inspect.</p>
+  </item>
+  <item>
+    <p>The right pane provides a visual breakdown of the volumes and
+    partitions present on the selected device. It also contains a variety of
+    tools used to manage these volumes.</p>
+    <p>Teña coidado: é posíbel que borre completamente os datos do seu disco con estas utilidades.</p>
+  </item>
+</steps>
+
+  <p>É moi probábel que o seu computador teña cando menos unha partición <em>primaria</em> e unha única partición <em>de intercambio</em>. A partición de intercambio emprégaa o sistema operativo para a xestión de memoria, e móntase en raras ocasións. A partición primaria contén o sistema operativo, aplicativos, configuracións e ficheiros persoais. Estes ficheiros pódense distribuír entre varias particións por seguranza ou comodidade.</p>
+
+  <p>One primary partition must contain information that your computer uses to
+  start up, or <em>boot</em>. For this reason it is sometimes called a boot
+  partition, or boot volume. To determine if a volume is bootable, select the
+  partition and click the menu button in the toolbar underneath the partition
+  list. Then, click <gui>Edit Partition…</gui> and look at its
+  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
+  a bootable volume.</p>
+
+</section>
+
+</page>

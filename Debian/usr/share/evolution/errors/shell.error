@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<error-list domain="shell">
+
+ <error type="info" id="importing">
+    <title>Importing...</title>
+    <secondary>{0}</secondary>
+    <button stock="gtk-cancel" response="GTK_RESPONSE_CANCEL"/>
+ </error>
+
+ <error type="error" id="upgrade-failed">
+  <primary>Upgrade from previous version failed:</primary>
+  <secondary xml:space="preserve">{0}
+
+If you choose to continue, you may not have access to some of your old data.
+</secondary>
+  <button response="GTK_RESPONSE_OK" label="Continue Anyway"></button>
+  <button response="GTK_RESPONSE_CANCEL" label="Quit Now"></button>
+ </error>
+
+ <error type="warning" id="upgrade-version-too-old" default="GTK_RESPONSE_CANCEL">
+  <primary>Cannot upgrade directly from version {0}</primary>
+  <secondary>Evolution no longer supports upgrading directly from version {0}. However as a workaround you might try first upgrading to Evolution 2, and then upgrading to Evolution 3.</secondary>
+  <button response="GTK_RESPONSE_OK" label="Continue Anyway"></button>
+  <button response="GTK_RESPONSE_CANCEL" label="Quit Now"></button>
+ </error>
+
+ <error type="question" id="ask-quit-with-pending" default="GTK_RESPONSE_CANCEL">
+  <primary>Close Evolution with pending background operations?</primary>
+  <secondary>Evolution is taking a long time to shut down, possibly due to network connectivity issues. Would you like to cancel all pending operations and close immediately, or keep waiting?</secondary>
+  <button response="GTK_RESPONSE_OK" label="_Close Immediately"></button>
+  <button response="GTK_RESPONSE_CANCEL" label="Keep _Waiting"></button>
+ </error>
+
+ <error type="warning" id="source-get-values-failed">
+  <primary>Failed to get values from '{0}'</primary>
+  <secondary>{1}</secondary>
+ </error>
+
+ <error type="warning" id="source-invoke-authenticate-failed">
+  <primary>Failed to invoke authenticate for '{0}'</primary>
+  <secondary>{1}</secondary>
+ </error>
+
+ <error type="error" id="source-connection-error">
+  <primary>Failed to connect '{0}'</primary>
+  <secondary>{1}</secondary>
+  <button response="GTK_RESPONSE_APPLY" label="_Reconnect"></button>
+ </error>
+
+ <error type="error" id="addressbook-connection-error">
+  <primary>Failed to connect address book '{0}'</primary>
+  <secondary>{1}</secondary>
+  <button response="GTK_RESPONSE_APPLY" label="_Reconnect"></button>
+ </error>
+
+ <error type="error" id="calendar-connection-error">
+  <primary>Failed to connect calendar '{0}'</primary>
+  <secondary>{1}</secondary>
+  <button response="GTK_RESPONSE_APPLY" label="_Reconnect"></button>
+ </error>
+
+ <error type="error" id="mail-connection-error">
+  <primary>Failed to connect mail account '{0}'</primary>
+  <secondary>{1}</secondary>
+  <button response="GTK_RESPONSE_APPLY" label="_Reconnect"></button>
+ </error>
+
+ <error type="error" id="memo-list-connection-error">
+  <primary>Failed to connect memo list '{0}'</primary>
+  <secondary>{1}</secondary>
+  <button response="GTK_RESPONSE_APPLY" label="_Reconnect"></button>
+ </error>
+
+ <error type="error" id="task-list-connection-error">
+  <primary>Failed to connect task list '{0}'</primary>
+  <secondary>{1}</secondary>
+  <button response="GTK_RESPONSE_APPLY" label="_Reconnect"></button>
+ </error>
+
+ <error type="warning" id="source-credentials-prompt-failed">
+  <primary>Failed to prompt for credentials for '{0}'</primary>
+  <secondary>{1}</secondary>
+ </error>
+
+ <error type="warning" id="source-trust-prompt-failed">
+  <primary>Failed to finish trust prompt for '{0}'</primary>
+  <secondary>{1}</secondary>
+ </error>
+
+ <error type="error" id="source-connection-trust-error">
+  <primary>SSL certificate for '{0}' is not trusted.</primary>
+  <secondary>Reason: {1}</secondary>
+  <button response="GTK_RESPONSE_APPLY" label="_View Certificate"></button>
+ </error>
+
+ <error type="error" id="addressbook-connection-trust-error">
+  <primary>SSL certificate for address book '{0}' is not trusted.</primary>
+  <secondary>Reason: {1}</secondary>
+  <button response="GTK_RESPONSE_APPLY" label="_View Certificate"></button>
+ </error>
+
+ <error type="error" id="calendar-connection-trust-error">
+  <primary>SSL certificate for calendar '{0}' is not trusted.</primary>
+  <secondary>Reason: {1}</secondary>
+  <button response="GTK_RESPONSE_APPLY" label="_View Certificate"></button>
+ </error>
+
+ <error type="error" id="mail-connection-trust-error">
+  <primary>SSL certificate for mail account '{0}' is not trusted.</primary>
+  <secondary>Reason: {1}</secondary>
+  <button response="GTK_RESPONSE_APPLY" label="_View Certificate"></button>
+ </error>
+
+ <error type="error" id="memo-list-connection-trust-error">
+  <primary>SSL certificate for memo list '{0}' is not trusted.</primary>
+  <secondary>Reason: {1}</secondary>
+  <button response="GTK_RESPONSE_APPLY" label="_View Certificate"></button>
+ </error>
+
+ <error type="error" id="task-list-connection-trust-error">
+  <primary>SSL certificate for task list '{0}' is not trusted.</primary>
+  <secondary>Reason: {1}</secondary>
+  <button response="GTK_RESPONSE_APPLY" label="_View Certificate"></button>
+ </error>
+
+</error-list>

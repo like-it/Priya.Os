@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-displaying-images-in-html" xml:lang="hu">
+
+  <info>
+    <desc>A HTML-levelekbe beágyazott képekről.</desc>
+
+    <link type="guide" xref="mail-displaying-message"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2011-08-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-read.html.en#usage-mail-getnsend-get-attach-html -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Képek a HTML-levelekben</title>
+
+<p>Ha valaki olyan HTML-levelet küld, amely a törzsében képet tartalmaz (mint például az üdvözlő üzenet a Beérkezett üzenetek mappában), akkor az <app>Evolution</app> a képet az üzeneten belül jeleníti meg.</p>
+
+<section id="loading">
+<title>Képek betöltése</title>
+<p>Egyes képek az üzenetben hivatkozásként és nem az üzenet részeként szerepelnek. Az <app>Evolution</app> képes letölteni ezeket az üzeneteket az internetről, de ezt csak akkor teszi meg, ha Ön kéri. Ennek az az oka, hogy a távolról elérhető képek letöltése és megjelenítése lassú lehet, és a levélszemétküldők felhasználhatják a levélszemét olvasóinak követésére. A képek automatikus betöltésének kerülése segít megvédeni magánszféráját.</p>
+
+<p>Egy üzenet képeinek betöltéséhez válassza a <guiseq><gui>Nézet</gui><gui>Képek betöltése</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>I</key></keyseq> kombinációt.</p>
+
+<p>A képek betöltésével kapcsolatos alapértelmezett művelet beállításához válasszon a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Levelezés beállításai</gui><gui>HTML üzenetek</gui><gui>Képek betöltése</gui></guiseq> szakasz beállításai közül.</p>
+</section>
+
+<section id="automatically-download">
+<title>Képek automatikus letöltése ismerősei levelei esetén</title>
+
+<p>Letöltheti a partnerei által küldött levelekben lévő képeket. Ehhez nyissa meg a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Levelezés beállításai</gui><gui>HTML üzenetek</gui><gui>Képek betöltése</gui></guiseq> szakaszt. Engedélyezze a <gui>Képek betöltése csak ha a feladó szerepel a címjegyzékben</gui> beállítást.</p>
+
+<p>Ezután lépjen a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Névjegyek</gui><gui>Automatikus kiegészítés</gui></guiseq> lapra. Engedélyezze az automatikus kiegészítést a <gui>Mindig jelenjen meg az automatikusan kiegészített partner címe</gui> négyzet bejelölésével.</p>
+</section>
+
+<section id="saving">
+<title>Képek mentése</title>
+<p>Egy HTML-levélbe ágyazott kép mentéséhez kattintson a jobb egérgombbal a képre, és válassza a <gui>Kép mentése…</gui> menüpontot.</p>
+<!-- This is available only since version 3.1.5, see https://bugzilla.gnome.org/show_bug.cgi?id=655669 -->
+</section>
+
+</page>

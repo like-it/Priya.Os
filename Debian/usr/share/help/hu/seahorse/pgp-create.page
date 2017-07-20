@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="pgp-create" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys" group="#first"/>
+
+    <revision version="0.5" date="2013-02-16" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>E-mail aláírására és titkosítására használt GnuPG kulcsok létrehozása és használata.</desc>
+  </info>
+
+  <title>PGP-kulcsok létrehozása</title>
+
+  <p>Új PGP-kulcs létrehozásához:</p>
+
+  <steps>
+    <item>
+      <p>Kattintson a <guiseq><gui>Fájl</gui><gui>Új…</gui></guiseq> menüpontra.</p>
+    </item>
+    <item>
+      <p>Válassza ki a listából a <gui>PGP-kulcs</gui> bejegyzést, majd kattintson a <gui style="button">Folytatás</gui> gombra.</p>
+    </item>
+    <item>
+      <p>Írja be a nevét a <gui>Teljes név</gui> mezőbe.</p>
+    </item>
+    <item>
+      <p>Ha kívánja, megadhatja az e-mail címét és a kulcsot leíró információkat is.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Létrehozás</gui> gombra.</p>
+    </item>
+    <item>
+      <p>A Jelszó ablakban adja meg a kulcs jelszavát, majd ismételje ezt meg a megerősítéséhez.</p>
+    </item>
+    <item>
+      <p>A befejezéshez kattintson az <gui style="button">OK</gui> gombra.</p>
+    </item>
+  </steps>
+
+  <p>A <app>Jelszavak és kulcsok</app> alkalmazásnak időre van szüksége a kulcs létrehozásához. Amíg tart ez a folyamat, mozgassa az egeret, használja a billentyűzetet, vagy böngésszen a világhálón. Ez támogatja a <app>Jelszavak és kulcsok</app> alkalmazást egy valóban véletlenszerű kulcs létrehozásában. A kulcs a <gui>GnuPG kulcsok</gui> listában jelenik meg.</p>
+
+  <note style="tip">
+    <p>A GnuPG kulcshoz tartozó <gui>Teljes név</gui>, <gui>E-mail cím</gui> és <gui>Megjegyzés</gui> tulajdonságok alkotják a kulcs <link xref="pgp-userid">felhasználói azonosítóját</link>.</p>
+  </note>
+
+<section id="advanced" ui:expanded="false">
+  <title>PGP-kulcs speciális beállításai</title>
+
+  <p>Nyissa ki a <gui>Speciális kulcsbeállítások</gui> sávot, ahol beállíthatja a kulcs típusát, erősségét és a lejárat dátumát.</p>
+
+  <terms>
+    <item>
+    <title>Kulcs típusa</title>
+      <p>Igény szerint csak aláírásra vagy aláírásra és titkosításra egyaránt használható kulcsokat hozhat létre. Az RSA és DSA-Elgamal algoritmusok egyaránt biztonságos kulcsokat hoznak létre.</p>
+    </item>
+    <item>
+    <title>Kulcs erőssége</title>
+      <p>Egy kulcs erőssége a kulcs bitekben megadott mérete alapján állapítható meg. Az erős kulcsok feltörése bonyolult és időigényes, bár ezek lelassítják az aláírás és a titkosítás folyamatát. A kulcs erősségét a <app>Jelszavak és kulcsok</app> alkalmazásban a kívánt használati időtartam függvényében határozza meg. Egy kisebb kulcs rövidtávú felhasználásra lehet alkalmas, míg a nagyobb kulcsok hosszú távra is megfelelők.</p>
+    </item>
+    <item>
+    <title>Lejárati idő</title>
+      <p>Amikor egy kulcs érvényessége lejár, akkor <link xref="pgp-expired">alkalmatlanná válik bizonyos funkciók betöltésére</link>. A <app>Jelszavak és kulcsok</app> alkalmazásban készíthető olyan kulcs, ami <gui style="checkbox">Soha nem jár le</gui>, de rögzített lejárati idő is beállítható.</p>
+      <p>Érdemes minden kulcsot lejárati idővel ellátni arra az esetre, ha elvesztené a kulcsát. Még ha a kulcsa le is jár, lehetőség van <link xref="pgp-expiration-change">későbbi lejárati idő beállítására</link>.</p>
+    </item>
+  </terms>
+
+</section>
+
+</page>

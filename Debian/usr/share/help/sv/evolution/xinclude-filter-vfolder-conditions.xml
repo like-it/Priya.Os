@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info xmlns="http://projectmallard.org/1.0/">
+
+<item><p>Avsändare:</p>
+<p>Avsändarens e-postadress eller namnet på avsändaren.</p></item>
+
+<item><p>Mottagare:</p>
+<p>Meddelandets mottagare.</p></item>
+
+<item><p>Kopia:</p>
+<p>Bara kopiemottagare av meddelandet.</p></item>
+
+<item><p>BCC:</p>
+<p>Bara BCC-mottagarna för meddelande. Naturligtvis kan detta bara tillämpas för utgående filter.</p></item>
+
+<item><p>Avsändare eller mottagare:</p>
+<p>Avsändarens e-postadress eller namnet på avsändaren eller meddelandets mottagare.</p></item>
+
+<item><p>Ämne:</p>
+<p>Meddelandets ämnesrad.</p></item>
+
+<item><p>Specifik rubrik:</p>
+<p>Vilken rubrik som helst inklusive <link xref="mail-composer-custom-header-lines">anpassade</link>.</p>
+<p>Om ett meddelande använder en rubrik mer än en gång kommer <app>Evolution</app> bara att uppmärksamma den den första gången, även om meddelandet definierar rubriken annorlunda andra gången. Om till exempel ett meddelande deklarerar rubriken Resent-From: som ”utveckling@example.com” och sedan upprepar den som ”försäljning@example.com” så kommer <app>Evolution</app> att filtrera meddelande som om den andra deklarationen inte inträffat. För att filtrera meddelanden som använder rubriker flera gånger, använd ett reguljärt uttryck.</p></item>
+
+<item><p>Meddelandetext:</p>
+<p>Söker i själva meddelandetexten.</p></item>
+
+<item><p>Uttryck:</p>
+<p>(Endast för programmerare) Matcha ett meddelande enligt ett uttryck du skriver i språket Scheme som används för att definiera <link xref="mail-filters">filter</link> i <app>Evolution</app>.</p></item>
+
+<item><p>Friformsuttryck:</p>
+<p>(Endast för avancerade användare) Kombinera många villkor genom att använda en <link href="https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10">speciell syntax</link>.</p></item>
+
+<item><p>Avsändningsdatum:</p>
+<p>Filtrera meddelande enligt det datum då de sänts. Välj först villkoren du vill att meddelandet ska uppfylla, så som före ett givet datum eller efter ett givet datum. Välj sedan tiden. Filtret jämför meddelandets tidsstämpel med systemklockan när filtret körs, eller med en specifik tid och datum som du väljer från en kalender. Du kan också be det leta efter ett meddelande inom ett tidsintervall relativt till filtret, exempelvis för två till fyra dagar sedan.</p></item>
+
+<item><p>Ankomstdatum:</p>
+<p>Detta fungerar på samma sätt som alternativet Avsändningsdatum, förutom att det jämför tiden du tog emot meddelandet med datumen du anger.</p></item>
+
+<item><p>Etikett:</p>
+<p>Meddelanden kan ha <link xref="mail-labels">etiketter</link> som är viktigt, arbete, personligt, att göra eller senare. Du kan sätta etiketter med andra filter eller manuellt.</p></item>
+
+<item><p>Poäng:</p>
+<p>Sätter meddelandepoäng till ett heltal större än 0. Du kan ha ett filter som sätter eller ändrar en meddelandepoäng och sedan ställa in ett annat filter att flytta meddelanden som har poängsatts. En meddelandepoäng baseras inte på något särskilt: det är helt enkelt bara ett tal du kan tilldela meddelanden så att andra filter kan behandla dem.</p></item>
+
+<item><p>Storlek (kB):</p>
+<p>Sorterar baserat på storlek av meddelandet i kilobyte.</p></item>
+
+<item><p>Status:</p>
+<p>Filtrera enligt meddelandets status. Statusen kan vara besvarad, utkast, viktig, läst eller skräppost.</p></item>
+
+<item><p>Uppföljning:</p>
+<p>Kontrollera huruvida meddelandet är <link xref="mail-follow-up-flag">flaggat för uppföljning</link>.</p></item>
+
+<item><p>Färdigt den:</p></item>
+<!-- TODO: Explain usage of option "Completed On" once https://bugzilla.gnome.org/show_bug.cgi?id=698439 is fixed -->
+
+<item><p>Bilagor:</p>
+<p>Kontrollerar huruvida det finns en bilaga för meddelandet.</p></item>
+
+<item><p>Sändlista:</p>
+<p>Filter baserade på sändlistan som meddelandet kom från. Detta filter kan missa meddelanden från vissa listservrar eftersom det letar efter rubriken X-BeenThere, som används för att identifiera sändlistor eller andra återdistributörer av post. Post från listservrar som inte har X-BeenThere satt korrekt fångas inte av dessa filter.</p></item>
+
+<item><p>Regex-matchning:</p>
+<p>(Endast för programmerare) Om du vet hur <link href="https://en.wikipedia.org/wiki/Regular_expression">regex</link>, eller reguljära uttryck, fungerar då låter denna inställning dig söka efter komplexa mönster av bokstäver så att du kan till exempel kan hitta alla ord som börja med ”a” och slutar med ”m” och är mellan sex och femton bokstäver långa, eller alla meddelanden som deklarerar en särskilt rubrik två gånger. För information om hur man använder reguljära uttryck, se <link href="man:grep">the man page for the <cmd>grep</cmd></link>-kommandot.</p></item>
+
+</info>

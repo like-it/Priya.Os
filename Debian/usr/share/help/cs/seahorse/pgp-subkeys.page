@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="pgp-subkeys" xml:lang="cs">
+  <info>
+    <link type="guide" xref="index#pgp-keys" group="second"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-28" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Podklíč je vždy spojen s hlavním klíčem v páru klíčů PGP. Používá se k šifrování.</desc>
+  </info>
+
+  <title>Co je to podklíč?</title>
+
+  <p>Ačkoliv je velmi důležité uchovat své klíče v bezpečí, může to být poněku unavné, když máte klíčů hodně. <app>Hesla a klíče</app> poskytují jednoduché řešení, jak zachovat klíče bezpečné, pomocí <em>podklíčů</em> pro podepisování a šifrování.</p>
+
+  <p>Kdykoliv <link xref="pgp-create">vytvoříte</link> nový veřejný šifrovací klíč, nevytvoří se jeden klíč, ale <em>pár klíčů</em>. Tento pár klíčů tvoří <em>hlavní klíč</em> a <em>podklíč</em>. Hlavní klíč může být použit k vytvoření dodatečných podklíčů, které s ním budou spojeny.</p>
+
+  <list>
+    <title>Co každý klíč v páru dělá?</title>
+      <item>
+	<p><em>Hlavní klíč</em> se používá k <link xref="pgp-sign">podepisování</link> ostatních klíčů, k vytváření podklíčů a k <link xref="subkeys-revoke">odvolávání</link> podklíčů. Hlavní klíč musí být udržován opravdu v bezpečí. V hlavním klíči se sdružují také podpisy důvěry. V případě, že je hlavní klíč kompromitován, nemáte jinou možnost, než jej odvolat a s ním i všechny připojené podklíče.</p>
+      </item>
+      <item>
+	<p>Výchozí <em>podklíč</em> se používá k šifrování a dešifrování zpráv. Dodatečné podklíče mohou být použity k vytváření podpisů. Ačkoliv je důležité, aby vaše podklíče zůstaly v bezpečí, můžete podklíč, kdykoliv je kompromitován, odvolat a vytvořit místo něj nový s původním hlavním klíčem.</p>
+      </item>
+  </list>
+
+  <section id="more" style="2column">
+    <title>Více o podklíčích</title>
+  </section>
+</page>

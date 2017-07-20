@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-composer-message-templates-variables" xml:lang="hu">
+
+  <info>
+   <desc>Adjon meg változókat a sablonokban, és használja újra a megválaszolt üzenet elemeit</desc>
+   
+   <link type="guide" xref="mail-composer-message-templates#options"/>
+
+ <revision pkgversion="3.5.90" version="0.3" date="2012-08-17" status="draft"/>
+ <credit type="author">
+   <name its:translate="no">Andre Klapper</name>
+   <email its:translate="no">ak-47@gmx.net</email>
+ </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/b1dlaazl.html.en -->
+ </credit>
+ 
+ <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+     
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Változók használata sablonokban</title>
+
+<section id="configure">	
+<title>Változók beállítása üzenetsablonokhoz</title>
+<steps>
+<item><p>Válassza a <guiseq><gui>Szerkesztés</gui><gui>Bővítmények</gui></guiseq> menüpontot.</p></item>
+<item><p>Válassza a <gui>Sablonok</gui> bővítményt.</p></item>
+<item><p>Lépjen a <gui>Beállítás</gui> lapra.</p></item>
+<item><p>Hozzáadhat, szerkeszthet vagy eltávolíthat kulcs-érték párokat. Tetszőleges számú kulcs-érték párt adhat meg.</p></item>
+</steps>
+ <p>Bármely sablonban a $kulcs minden előfordulása a beállításokban megadott értékre lesz lecserélve. Ha például beállítja a Főnök kulcs értékét Gáborra, akkor a $Főnök minden előfordulását az üzenetben a Gábor váltja.</p>
+ <p>Tegyük fel, hogy van 1000 üzenetsablonja, amelyben a jelenlegi főnöke neve szerepel. Amikor új főnököt kap, nem egyszerű dolog minden sablonban saját kezűleg lecserélni a főnök nevét mind az 1000 sablonban. Ha az üzenetekben egy $Főnök kulcsérték szerepel, akkor a bővítmény Beállítás lapján új értéket adhat ennek.</p>
+ <p>Alapesetben minden környezeti változó felhasználásra kerül kulcs-érték párként. A $környezeti_változó minden előfordulása helyettesítésre kerül az általa hordozott értékkel. A sablonban lévő $PATH helyére például az értéke kerül a sablon használatakor.</p>
+ <p>A helyettesítési folyamat a következő precedencia-sorrendet használja:</p>
+ <steps>
+  <item>
+<p>A $kulcs helyettesítésre kerül a Sablonok bővítmény Beállítás lapján hozzá megadott értékkel.</p>
+  </item>
+  <item>
+<p>Ha a kulcs nem található, akkor a neki megfelelő környezeti változó értékével kerül helyettesítésre.</p>
+  </item>
+  <item>
+<p>Ha a kulcs nem egy beállított változó vagy környezeti változó, akkor nem történik csere.</p>
+  </item>
+ </steps>
+</section>
+
+<!-- as per https://bugzilla.gnome.org/show_bug.cgi?id=641845 - available since 3.2-->
+<section id="reply-variables">
+<title>Üzenet elemeinek használata sablonban válaszoláskor</title>
+<p>A sablonok a <link xref="#configure">kulcs-érték párok</link> előre megadott halmazánál többet is tartalmazhatnak. Lekérheti az összes üzenetfejlécet abból az e-mailből, amelyre a sablont alkalmazza, valamint a teljes üzenettörzset.</p>
+
+<!-- TRANSLATORS: Do NOT translate "$ORIG[subject]" and "$ORIG[body]" in this sentence. -->
+<p its:locNote="TO TRANSLATORS: Do NOT translate $ORIG[subject] and $ORIG[body] in this sentence!">Ehhez használja a <code>$ORIG[fejlécnév]</code> formátumot, és a <code>fejlécnév</code> változó helyett a tényleges fejlécet írja be. Ha például azon e-mail tárgysorát szeretné beszúrni, amelyre válaszol, használja az <code>$ORIG[subject]</code> jelölést. A teljes törzs a <code>$ORIG[body]</code> használatával szúrható be.</p>
+
+<!-- TRANSLATORS: Do NOT translate "$ORIG[body]" and "$ORIG[reply-to]" in this sentence. -->
+<p its:locNote="TO TRANSLATORS: Do NOT translate $ORIG[body] and $ORIG[reply-to] in this sentence!">Ha egy változó helyettesítése nem található, akkor a változó nem kerül eltávolításra (a <code>$ORIG[body]</code> kivételével), hanem a helyén marad, így látható lesz a hiba. Ez akkor történhet meg, ha olyan fejléceket próbál meg használni, amelyek nincsenek feltétlenül mindig jelen az eredeti üzenetben (például <code>$ORIG[reply-to]</code>).</p>
+</section>
+
+</page>

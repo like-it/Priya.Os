@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="pt-BR">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="files#faq"/>
+    <link type="seealso" xref="nautilus-file-properties-basic"/>
+
+    <desc>Controle quem pode ver e editar seus arquivos e suas pastas.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+  <title>Definindo permissões de arquivo</title>
+
+  <p>Você pode usar as permissões de arquivos para controlar quem pode ver e editar arquivos que você possui. Para ver e definir permissões de um arquivo, clique com botão direito e selecione <gui>Propriedades</gui> e, então, selecione a aba de <gui>Permissões</gui>.</p>
+
+  <p>Veja <link xref="#files"/> e <link xref="#folders"/> abaixo para detalhes sobre os tipos de permissões que você pode definir.</p>
+
+  <section id="files">
+    <title>Arquivos</title>
+
+    <p>Você pode definir as permissões do proprietário do arquivo, do proprietário do grupo e de todos os outros usuários do sistema. Para os seus arquivos, você é o proprietário e você mesmo pode se dar permissão de acesso de somente leitura ou leitura e escrita. Defina um arquivo como somente leitura, se você não deseja acidentalmente alterá-lo.</p>
+
+    <p>Cada usuário em seu computador pertence a um grupo. Em computadores residenciais, é comum que cada usuário tenha seu próprio grupo e as permissões de grupo geralmente não são usadas. Em ambientes corporativos, grupos são algumas vezes usados para departamentos ou projetos. Da mesma forma que ter um dono, cada arquivo pertence a um grupo. Você pode definir o grupo do arquivo e controlar as permissões para todos os usuários naquele grupo. Você apenas pode definir o grupo do arquivo para um grupo ao qual você pertença.</p>
+
+    <p>Você também pode definir as permissões de usuários além do dono e aqueles no grupo do arquivo.</p>
+
+    <p>Se o arquivo é um programa, como um script, você deve selecionar <gui>Permitir execução do arquivo como um programa</gui> para executá-lo. Mesmo com esta opção selecionada, o gerenciador de arquivos pode ainda abrir o arquivo em um aplicativo ou perguntar o que deseja fazer. Veja <link xref="nautilus-behavior#executable"/> para mais informações.</p>
+  </section>
+
+  <section id="folders">
+    <title>Pastas</title>
+    <p>Você pode definir permissões das pastas para o proprietário, grupo e outros usuários. Veja os detalhes das permissões de arquivos acima para uma explicação de proprietários, grupos e outros usuários.</p>
+    <p>As permissões que você pode definir para uma pasta são diferentes daquelas que você definir para um arquivo.</p>
+    <terms>
+      <item>
+        <title><gui itst:context="permission">Nenhuma</gui></title>
+        <p>O usuário não vai nem saber ver que arquivos estão dentro da pasta.</p>
+      </item>
+      <item>
+        <title><gui>Apenas listar arquivos</gui></title>
+        <p>O usuário vai ser capaz de ver que arquivos estão na pasta, mas não será capaz de abrir, criar ou excluir arquivos.</p>
+      </item>
+      <item>
+        <title><gui>Acessar arquivos</gui></title>
+        <p>O usuário será capaz de abrir arquivos na pasta (desde que ele tenha permissão para fazer isso no arquivo em particular), mas não será capaz de criar novos arquivos ou excluir arquivos.</p>
+      </item>
+      <item>
+        <title><gui>Criar e excluir arquivos</gui></title>
+        <p>O usuário terá acesso total à pasta, incluindo abrir, criar e excluir arquivos.</p>
+      </item>
+    </terms>
+
+    <p>Você também pode rapidamente definir as permissões de arquivo para todos os arquivos na pasta clicando em <gui>Alterar permissões dos arquivos contidos na pasta</gui>. Use as listas suspensas para ajustar as permissões dos arquivos ou pastas contidas e clique em <gui>Mudar</gui>. Permissões são aplicadas para arquivos e pastas em subpastas também, para qualquer profundidade.</p>
+  </section>
+
+</page>

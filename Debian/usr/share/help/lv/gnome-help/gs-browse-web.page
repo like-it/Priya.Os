@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="lv">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Pārlūkot tīmekli</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">A tutorial on browsing the web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  </info>
+
+  <title>Pārlūkot tīmekli</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>Spiediet uz izvēlnes <gui>Lietotnes</gui> ekrāna augšējā kreisajā stūrī.</p></item>
+      <item><p>Izvēlnē izvēlieties <guiseq><gui>Internets</gui><gui>Firefox</gui></guiseq>.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>Pārvietojiet peles rādītāju uz <gui>Aktivitātes</gui> ekrāna augšā kreisajā stūrī, lai redzētu <gui>Aktivitāšu pārskatu</gui>.</p></item>
+      <item><p>Izvēlieties pārlūka <app>Firefox</app> ikonu no kreisās ekrāna puses.</p></item>
+    </steps>
+
+    <note><p>Vai arī varat pārlūku palaist <link xref="gs-use-system-search">vienkārši ierakstot</link> <em>Firefox</em> <gui>Aktivitāšu pārskatā</gui>.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>Pārvietojiet peles rādītāju uz <gui>Aktivitātes</gui> ekrāna augšā kreisajā stūrī, lai redzētu <gui>Aktivitāšu pārskatu</gui>.</p></item>
+      <item><p>Izvēlieties pārlūka <app>Tīmeklis</app> ikonu no kreisās ekrāna puses.</p></item>
+    </steps>
+
+    <note><p>Vai arī varat pārlūku palaist <link xref="gs-use-system-search">vienkārši ierakstot</link> <em>tīmeklis</em> <gui>Aktivitāšu pārskatā</gui>.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>Spiediet uz adreses joslas pārlūka loga augšpusē un sāciet rakstīt vietnes nosaukumu, kuru vēlaties apmeklēt.</p></item>
+      <item><p>Tīmekļa vietnes rakstīšanas laikā tā tiek meklēta pārlūka vēsturē un grāmatzīmēs, lai jums nevajadzētu atcerēties precīzu adresi.</p>
+        <p>Ja vietne ir atrasta vēsturē vai grāmatzīmēs, tā tiks parādīta sarakstā zem adreses joslas.</p></item>
+      <item><p>No šī saraksta jūs varat ātri izvēlēties tīmekļa vietnes, izmantojot bultu taustiņus.</p>
+      </item>
+      <item><p>Pēc tīmekļa vietnes izvēles, spiediet <key>Enter</key>, lai to apmeklētu.</p>
+      </item>
+    </steps>
+
+</page>

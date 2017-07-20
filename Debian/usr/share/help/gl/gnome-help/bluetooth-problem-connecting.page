@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="problem" version="1.0 if/1.0" id="bluetooth-problem-connecting" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="bluetooth#problems"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Pode que o adaptador estea apagado ou que non teña controladores, ou pode que teña desactivado ou bloqueado o Bluteooth.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Non podo conectar o meu dispositivo Bluetooth</title>
+
+  <p>Hai varias razóns polas que non podería conectarse ao seu dispositivo Bluetooth, como un teléfono ou máns libres.</p>
+
+  <terms>
+    <item>
+      <title>Conexión bloqueada ou non confiábel</title>
+      <p>Algúns dispositivos Bluetooth bloquean as conexións de maneira predeterminada ou requiren que se lles cambie a configuración para permitir as conexións. Asegúrese de que o seu dispositivo permite as conexións.</p>
+    </item>
+    <item>
+      <title>Hardware Bluetooth non recoñecido</title>
+      <p>É posíbel que o seu equipo non recoñeza o seu adaptador ou dongle Bluetooth. Isto pode deberse a que non teña instalados os <link xref="hardware-driver">controladores</link> para o seu adaptador. Algúns adaptadores Bluetooth non funciona con Linux, e por tanto non lle será posíbel conseguir os controladores axeitados para eles. En tal caso, probabelmente terá que conseguir outro adaptador Bluetooth diferente.</p>
+    </item>
+    <item>
+      <title>Adaptador non está acendido</title>
+      <if:choose>
+        <if:when test="platform:unity">
+          <p>Asegúrese de que o seu adaptador Bluetooth está acendido. Prema a icona de Bluetooth na <gui>barra de menú</gui> e comprobe que non está <link xref="bluetooth-turn-on-off">desactivado</link>.</p>
+        </if:when>
+        <p>Make sure that your Bluetooth adapter is switched on. Open the
+        Bluetooth panel and check that it is not
+        <link xref="bluetooth-turn-on-off">disabled</link>.</p>
+      </if:choose>
+    </item>
+    <item>
+      <title>Conexión do dispositivo Bluetooth apagado</title>
+      <p>Check that Bluetooth is turned on on the device you are trying to
+      connect to, and that it is <link xref="bluetooth-visibility">discoverable
+      or visible</link>. For example, if you are trying to connect to a phone,
+      make sure that it is not in airplane mode.</p>
+    </item>
+    <item>
+      <title>Non hai ningún adaptador no seu computador</title>
+      <p>Moitos computadores non teñen adaptadores de Bluetooth. Pode comprar un adaptador se quere usar Bluetooth.</p>
+    </item>
+  </terms>
+
+</page>

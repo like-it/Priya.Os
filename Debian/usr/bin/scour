@@ -1,0 +1,10 @@
+#!/usr/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'scour==0.32','console_scripts','scour'
+__requires__ = 'scour==0.32'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('scour==0.32', 'console_scripts', 'scour')()
+    )

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="backup-restore" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#data-migration-and-sync"/>
+    <link type="seealso" xref="data-storage"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2014-03-23" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Εφεδρεία και ανάκτηση δεδομένων και ρυθμίσεων του <app>Evolution</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009-2010</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Εφεδρεία και ανάκτηση δεδομένων</title>
+
+  <p>Μπορείτε να αντιγράψετε τα δεδομένα σας του <app>Evolution</app>. Η εφεδρεία αποθηκεύει τις ρυθμίσεις σας, αλληλογραφία, εργασίες, υπενθυμίσεις και ημερολόγια. Θα αποθηκευτεί σε ένα gzip συμπιεσμένο αρχείο ιστορικού tar.</p>
+
+<section id="backup">
+  <title>Εφεδρεία</title>
+
+  <list>
+    <item>
+      <p>Επιλέξτε <guiseq><gui>Aρχείο</gui><gui>εφεδρεία δεδομένων Evolution…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε όνομα αρχείου και τον φάκελο όπου θέλετε να αποθηκεύσετε το εφεδρικό αρχείο, κλικ <gui style="button">αποθήκευση</gui>.</p>
+    </item>
+    <item>
+      <p>Θα σας ζητηθεί να κλείσετε το <app>Evolution</app>. Απαντήστε <gui style="button">Nαι</gui>.</p>
+    </item>
+  </list>
+
+  <note style="warning">
+    <p>Σημειώστε ότι οι ρυθμίσεις σας <link xref="mail-spam">φιλτράρισμα ανεπιθύμητων</link> δεν συμπεριλαμβάνονται στο αρχείο του αντιγράφου ασφαλείας, καθώς αυτές οι ρυθμίσεις δεν ελέγχονται από το <app>Evolution</app> και οι προγραμματιστές των εργαλείων φιλτραρίσματος οχλήσεων μπορεί να αλλάξουν τις λεπτομέρειες εφαρμογής. Εάν χρησιμοποιείτε Bogofilter θα χρειαστείτε να πάρετε αντίγραφο ασφαλείας του κρυφού φακέλου <file>~/.bogofilter/</file>. Εάν χρησιμοποιείτε SpamAssassin θα χρειαστείτε να πάρετε αντίγραφο ασφαλείας του κρυφού φακέλου του <file>~/.spamassassin/</file>.</p>
+  </note>
+
+</section>
+
+<section id="restore">
+  <title>Επαναφορά</title>
+
+  <list>
+    <item>
+      <p>Επιλέξτε <guiseq><gui>Αρχείο</gui><gui>Επαναφορά δεδομένων Evolution…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε το αρχείο και κλικ <gui style="button">άνοιγμα</gui>.</p>
+    </item>
+    <item>
+      <p>Θα σας ζητηθεί να κλείσετε το <app>Evolution</app>. Απαντήστε <gui style="button">Nαι</gui>.</p>
+    </item>
+  </list>
+
+  <note style="tip">
+    <p>Στο <link xref="intro-first-run">βοηθός πρώτης εκτέλεσης</link>, μπορείτε να επαναφέρετε τα δεδομένα του <app>Evolution</app> από εφεδρικό αρχείο.</p>
+  </note>
+
+</section>
+
+</page>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="contacts-libreoffice" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#data-migration-and-sync"/>
+
+    <revision pkgversion="3.1.5" version="0.2" date="2012-02-18" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak použít údaje z adresáře <app>Evolution</app> v dokumentech LibreOffice.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Kontakty v LibreOffice</title>
+
+  <p>Adresář <app>Evolution</app> můžete použít jako zdroj dat v LibreOffice. Následující kroky se vztahují k LibreOffice verze 3.3.3.</p>
+
+  <steps>
+    <item>
+      <p>V nabídkové liště klikněte na <guiseq><gui>Upravit</gui> <gui>Vyměnit databázi…</gui></guiseq> Objeví se dialogové okno <gui>Vyměnit databáze</gui>.</p>
+    </item>
+    <item>
+      <p>V pravém panelu pod <gui>Dostupné databáze</gui> je jako zdroj dostupné <gui>EvolutionLocal</gui>. Kliknutím jej rozbalte a uvidíte seznam svých adresářů z aplikace <app>Evolution</app>.</p>
+    </item>
+    <item>
+      <p>Vyberte adresář a klikněte na <gui style="button">Definovat</gui>.</p>
+    </item>
+    <item>
+      <p>V případě, že zatím není v seznamu, klikněte na <gui style="button">Procházet…</gui> Objeví se dialogové okno pro výběr souboru.</p>
+    </item>
+    <item>
+      <p>Protože <app>Evolution</app> uchovává svá data ve skryté složce, zmáčkněte <keyseq><key>Ctrl</key> <key>L</key></keyseq>, aby se zobrazila lišta, do které můžete zadat umístění.</p>
+    </item>
+    <item>
+      <p>Přejděte do <file>~/.local/share/evolution/addressbook/system/addressbook.db</file> a klikněte na <gui style="button">Otevřít</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Tímto postupem se adresář <app>Evolution</app> stane výchozím zdrojem dat pro LibreOffice. Od této chvíle z něj můžete přes <guiseq><gui>Vložit</gui> <gui>Pole</gui> <gui>Jiné…</gui></guiseq> do dokumentů LibreOffice vybírat jednotlivá pole.</p>
+
+</page>

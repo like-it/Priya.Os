@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-notifications" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="shell-overview#desktop"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
+
+    <credit type="author">
+      <name>Marina Zhurakhinskaya</name>
+      <email>marinaz@redhat.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013, 2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Meldungen klappen vom oberen Rand des Bildschirms aus und informieren Sie über diverse Ereignisse.</desc> 
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Benachrichtigungen und das Benachrichtigungsfeld</title>
+
+<section id="what">
+  <title>Was ist eine Benachrichtigung?</title>
+
+  <p>Falls eine Anwendung oder Systemkomponente Ihre Aufmerksamkeit erfordert, wird eine Benachrichtigung am oberen Rand des Bildschirms angezeigt.</p>
+
+  <p>Wenn Sie beispielsweise eine neue Sofortnachricht oder eine neue E-Mail erhalten, werden Sie darüber durch eine Benachrichtigung informiert.</p>
+
+<!--  <p>To minimize distraction, some notifications first appear as a single line.
+  You can move your mouse over them to see their full content.</p>-->
+
+  <p>Für andere Benachrichtigungen gibt es auswählbare Optionsknöpfe. Um eine dieser Benachrichtigungen zu schließen, ohne mit Hilfe der Knöpfe eine Auswahl zu treffen, klicken Sie auf eine beliebige Stelle der Benachrichtigung.</p>
+
+<!--  <media type="image" width="500" src="figures/notification-buttons.png"/>-->
+
+  <p>Ein Klick auf den Schließen-Knopf in einigen Benachrichtigungen verwirft diese. In anderen Anwendungen, wie Rhythmbox oder Ihrer Sofortnachrichten-Anwendung, bleiben die Benachrichtigungen im Benachrichtigungsfeld, werden aber verborgen.</p>
+
+</section>
+
+<section id="messagetray">
+
+  <title>Das Benachrichtigungsfeld</title>
+
+  <p if:test="!platform:gnome-classic">Das Benachrichtigungsfeld gibt Ihnen eine Möglichkeit, sich den Benachrichtigungen zu widmen, sobald Sie dazu Zeit haben. Es erscheint, wenn Sie auf die Uhr klicken oder die Tastenkombination <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq> drücken und enthält alle Benachrichtigungen, auf die Sie noch nicht reagiert haben oder die ständig angezeigt werden.</p>
+
+  <p if:test="platform:gnome-classic">Das Benachrichtigungsfeld gibt Ihnen eine Möglichkeit, sich den Benachrichtigungen zu widmen, sobald Sie dazu Zeit haben. Es erscheint, wenn Sie die Maus über die rechte untere Ecke des Bildschirms bewegen oder die Tastenkombination <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq> drücken. Das Benachrichtigungsfeld können Sie auch öffnen, indem Sie auf das blaue Zahlensymbol an der rechten Seite der Fensterliste klicken. Das Benachrichtigungsfeld enthält alle Benachrichtigungen, auf die Sie noch nicht reagiert haben oder die ständig angezeigt werden.</p>
+
+  <p>Sie können die Benachrichtigungen anzeigen, indem Sie auf die Objekte des Benachrichtigungsfeldes klicken. Diese Objekte sind üblicherweise Anwendungen, die Ihnen Benachrichtigungen senden. Sofortnachrichten sind in diesem Zusammenhang spezieller Natur und werden unter dem Namen des Kontakts angezeigt, der Ihnen die Sofortnachricht gesendet hat.</p>
+
+  <p>Sie können das Benachrichtigungsfeld schließen, indem Sie <keyseq><key>Super</key><key>M</key></keyseq> erneut oder <key>Esc</key> drücken.</p>
+
+</section>
+
+<section id="hidenotifications">
+
+  <title>Benachrichtigungen verbergen</title>
+
+  <p>Falls Sie an etwas Wichtigem arbeiten und nicht gestört werden wollen, können Sie die Benachrichtigungen ausschalten.</p>
+
+  <steps>
+    <item>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Benachrichtigungen</gui> ein.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Benachrichtigungen</gui>, um das Panel zu öffnen.</p>
+    </item>
+    <item>
+      <p>Stellen Sie die <gui>Benachrichtigungs-Banner</gui> auf <gui>AUS</gui>.</p>
+    </item>
+  </steps>
+
+  <p if:test="!platform:gnome-classic">Wenn sie ausgeschaltet sind, werden die meisten Benachrichtigungen am oberen Bildschirmrand nicht angezeigt. Die Benachrichtigungen sind im Benachrichtigungsfeld noch verfügbar, wenn Sie auf die Uhr klicken oder die Tastenkombination <keyseq><key>Super</key><key>M</key></keyseq> drücken, und werden angezeigt, sobald Sie den Schalter wieder auf <gui>AN</gui> stellen.</p>
+
+  <p>Im Panel <gui>Benachrichtigungen</gui> können Sie Benachrichtigungen für einzelne Anwendungen deaktivieren oder erneut aktivieren.</p>
+
+  <p if:test="platform:gnome-classic">Wenn sie ausgeschaltet sind, werden die meisten Benachrichtigungen am unteren Bildschirmrand nicht angezeigt. Nur sehr wichtige Meldungen, zum Beispiel über den kritischen Ladezustand Ihres Akkus, erscheinen weiterhin. Die Benachrichtigungen sind im Benachrichtigungsfeld noch verfügbar, wenn Sie die Maus über die rechte untere Ecke des Bildschirms bewegen oder die Tastenkombination <keyseq><key>Super</key><key>M</key></keyseq> drücken, und werden angezeigt, sobald Sie den Schalter wieder auf <gui>AN</gui> stellen.</p>
+
+</section>
+
+</page>

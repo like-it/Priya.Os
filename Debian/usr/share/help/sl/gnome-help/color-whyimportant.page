@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whyimportant" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="color"/>
+    <desc>Upravljanje barv je pomembno za razvijalce, fotografe in umetnike.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Zakaj je upravljanje z barvami pomembno?</title>
+  <p>Upravljanje barv je opravilo zajemanja barv na vhodni naprav, njihov prikaz na zaslonu in tisk medtem ko so natančne barve in obseg upravljane na vsakem mediju.</p>
+
+  <p>Potrebo po barvnem upravljanju je najbrž najlažje razložiti s fotografijo ptice na leden zimski dan.</p>
+
+  <figure>
+    <desc>Ptič na zmrznjenem zidu kot jo vidi fotoaparat</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-camera.png"/>
+  </figure>
+
+  <p>Običajno prikaže preveč nasičen moder kanal, ki povzroči, da je slika videti mrzlo.</p>
+
+  <figure>
+    <desc>To uporabnik vidi na zaslonu običajnega poslovnega prenosnika.</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-display.png"/>
+  </figure>
+
+  <p>Opazite kako bela ni popolnoma bela in da je črno oko sedaj blatno rjavo.</p>
+
+  <figure>
+    <desc>To vidi uporabnik, ko sliko natisne na običajnem brizgalnem tiskalniku.</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-printer.png"/>
+  </figure>
+
+  <p>Osnovna težava je, da vsaka naprava lahko upravlja različen obseg barv. Zato boste morda lahko zajeli fotografijo električno modre barve, vendar je večina tiskalnikov ne bo mogla natisniti.</p>
+  <p>Večina slikovnih naprav zajema v RGB (rdeča, zelena, modra) in morajo za tiskanje pretvoriti v CMYK (sinja, magenta, rumena in črna). Druga težava je, da ne morate imeti <em>bele</em> barve, zato je lahko belina le tako dobra kot papir.</p>
+
+  <p>Druga težava so enote. Brez merila barv ni mogoče vedeti, če je 100% rdeča blizu infrardeče barve ali najtemnejša rdeča barva na tiskalniku. 50% rdeča na enem zaslonu je verjetno 62% rdeča na drugem zaslonu. To je enako kot da bi nekomu povedali, da ste prevozili 7 enot, ne bi pa povedali, ali je to 7 metrov ali kilometrov.</p>
+
+  <p>V barvah so enote gamut. Gamut je obseg barv, ki jih je mogoče prikazati. Naprava kot je DSLR fotoaparat ima lahko zelo velik gamut in lahko zajame vse barve v sončnem zahodu, projektor pa ima majhen gamut, zato bodo vse barve videti "izprano".</p>
+
+  <p>V nekaterih primerih je mogoče izhod naprave <em>popraviti</em> s spreminjanjem poslanih podatkov, v primerih, ko to ni mogoče (električno modre ni mogoče natisniti), pa je treba uporabniku pokazati, kakšen bi bil rezultat.</p>
+
+  <p>Za fotografe je smiselno uporabiti polen tonski obseg barvne naprave, ki lahko naredi spremembe barve gladkejše. Za drugo grafiko boste morda želeli barvo ujemati natančno, kar je pomembno, če želite natisniti kozarec z logotipom Red Hat, ki <em>mora</em> biti natanko Red Hat rdeča.</p>
+
+</page>

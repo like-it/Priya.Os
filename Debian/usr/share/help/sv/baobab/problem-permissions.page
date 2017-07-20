@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="problem-permissions" xml:lang="sv">
+  <info>
+    <link type="guide" xref="index#problems"/>
+    <revision pkgversion="3.12" date="2014-01-25" status="review"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jag ser ett <gui>Kunde inte söka av /… eller några av mapparna i</gui>-felmeddelande vid avsökning.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Fel vid avsökning</title>
+
+  <p>Vid avsökning kan du se ett meddelande om <gui>Kunde inte söka av /… eller några av mapparna i</gui> högst upp i fönstret för <app>Diskanvändningsanalysator</app>. Detta fel dyker upp eftersom du inte har de nödvändiga rättigheterna för att komma åt några filer på grund av begränsningar som satts för målsystemet. FIlerna du inte kan komma åt kommer inte att användas för att beräkna <link xref="pref-view-chart">diagrammet</link> som representerar diskanvändningen, så det rapporterade resultatet kan vara felaktigt.</p>
+
+  <p>Att inte ha åtkomst till alla filer och kataloger är dock helt normalt, så det finns inget du kan göra åt detta fel.</p>
+
+  <note style="info"><p><app>Diskanvändningsanalysator</app> använder kommandot <cmd>du</cmd> för att skapa den detaljerade vyn över användningen av lagringsutrymme, och kräver att du har läsrättighet för filer och exekveringsrättighet för kataloger.</p>
+
+  <p>Å andra sidan använder sig beräkningen av diskanvändning för filsystemet kommandot <cmd>df</cmd> för diskanvändning på huvudfönstret. Detta förlitar sig på filsystemet och inte på filrättigheter.</p></note>
+</page>

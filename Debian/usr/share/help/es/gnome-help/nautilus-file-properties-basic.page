@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ver información básica del archivo, asignar permisos y seleccionar aplicaciones predeterminadas.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Propiedades del archivo</title>
+
+  <p>Puede ver información sobre un archivo o carpeta, pulse con el botón derecho y seleccione <gui>Propiedades</gui>. También puede seleccionar el archivo y pulsar <keyseq><key>Alt</key><key>Intro</key></keyseq>.</p>
+
+  <p>La ventana de propiedades del archivo le muestra información tal como el tipo de archivo, su tamaño y cuándo lo modificó por última vez. Si necesita esta información a menudo, puede mostrarla en las <link xref="nautilus-list">columnas de la vista de lista</link> o en las <link xref="nautilus-display#icon-captions">leyendas de los iconos</link>.</p>
+
+  <p>La información básica dada en la pestaña <gui>Básico</gui> se explica a continuación. También están las pestañas <gui><link xref="nautilus-file-properties-permissions">Permisos</link></gui> y <gui><link xref="files-open#default">Abrir con</link></gui>. Para ciertos tipos de archivos, como imágenes y vídeos, habrá una pestaña adicional que proporcione información sobre el tamaño, la duración y el códec.</p>
+
+<section id="basic">
+ <title>Propiedades básicas</title>
+ <terms>
+  <item>
+    <title><gui>Nombre</gui></title>
+    <p>Puede cambiar el nombre del archivo cambiando este campo. También puede cambiar el nombre de un archivo fuera de la ventana de propiedades. Consulte la <link xref="files-rename"/>.</p>
+  </item>
+  <item>
+    <title><gui>Tipo</gui></title>
+    <p>Esto le ayuda a identificar el tipo de un archivo, como un documento PDF, texto de OpenDocument o una imagen JPEG. El tipo del archivo determina, entre otras cosas, qué aplicaciones pueden abrir el archivo.Por ejemplo, no puede abrir una imagen con un reproductor de música. Consulte la <link xref="files-open"/> para obtener más información.</p>
+    <p>Entre paréntesis se muestra el <em>tipo MIME</em> del archivo; el tipo MIME es una forma estándar que los equipos usan para referirse al tipo de archivo.</p>
+  </item>
+
+  <item>
+    <title>Contenido</title>
+    <p>Este campo se muestra si está consultando las propiedades de una carpeta. Muestra el número de elementos de la carpeta. Si la carpeta incluye otras carpetas, cada carpeta interna se cuenta como un elemento, aunque contenga a su vez otros elementos. Cada archivo se cuenta como un elemento. Si la carpeta está vacía, el contenido no mostrará <gui>nada</gui>.</p>
+  </item>
+
+  <item>
+    <title>Tamaño</title>
+    <p>Este campo se muestra si está viendo un archivo (no una carpeta). el tamaño de un archivo le indica cuanto espacio ocupa en el disco. También es un indicador de cuánto tardará en descargar un archivo o en enviarlo por correo-e (cuanto más grande es el archivo, más tarda al enviarse/recibirse).</p>
+    <p>Los tamaños se puede dar en bytes, KB, MB o GB; en los tres últimos casos, el tamaño en bytes aparece entre paréntesis. Técnicamente, 1KB son 1024 bytes, 1MB son 1024 KB, y así sucesivamente.</p>
+  </item>
+
+  <item>
+    <title>Carpeta padre</title>
+    <p>La ubicación de cada archivo en su sistema viene dada por su <em>ruta absoluta</em>. Esto es una «dirección» única del archivo en el equipo, compuesta de una lista de carpetas a las que debe ir para encontrar el archivo. Por ejemplo, si Jaime tiene un archivo <file>Resumen.pdf</file> en su carpeta personal, la carpeta padre de será <file>/home/jaime</file> y la ubicación será <file>/home/jaime/Resumen.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Espacio libre</title>
+    <p>Esto sólo se muestra para las carpetas. Indica la cantidad total de espacio disponible en el disco en el que se encuentra la carpeta. Es útil para comprobar si el disco duro está lleno.</p>
+  </item>
+
+  <item>
+    <title>Accedido</title>
+    <p>Fecha y hora de la última apertura del archivo.</p>
+  </item>
+
+  <item>
+    <title>Modificado</title>
+    <p>Fecha y hora de la última vez que se cambió y guardó el archivo.</p>
+  </item>
+ </terms>
+</section>
+
+</page>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="sl">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="files#faq"/>
+    <link type="seealso" xref="nautilus-file-properties-basic"/>
+
+    <desc>Nadzira kdo si lahko ogleda in uredi vaše datoteke in mape.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  <title>Nastavitev dovoljenja datotek</title>
+
+  <p>Za nadzor kdo lahko vidi in ureja datoteke katerih lastnik ste lahko uporabite dovoljenja datotek. Za ogled in nastavitev dovoljenj datoteke, desno kliknite nanjo in izberite <gui>Lastnosti</gui> in nato izberite zavihek <gui>Dovoljenja</gui>.</p>
+
+  <p>Oglejte si <link xref="#files"/> and <link xref="#folders"/> spodaj za podrobnosti o vrstah dovoljenj, ki jih lahko nastavite.</p>
+
+  <section id="files">
+    <title>Datoteke</title>
+
+    <p>Nastavite lahko dovoljenja za  lastnika datotek, skupine lastnika in vse druge uporabnike na sistemu. Za svoje datoteke ste lastnik vi in lahko sebi dodelite pravice le za branje ali za branje in pisanje. Nastavite datoteko na le za branje, če je ne želite po nesreči spremeniti.</p>
+
+    <p>Vsak uporabnik na vašem računalniku spada v skupino. Na domačih računalnikih ima vsak uporabnik pogosto svojo lastno skupino, zato se skupinska dovoljenja redko uporabljajo. Vsaka datoteka pripada tako lastniku kot skupini. Nastavite lahko skupino datoteke in s tem nastavite dovoljenja za vse uporabnike v tej skupini. Skupino datoteke lahko nastavite le na skupino, kateri pripadate.</p>
+
+    <p>Nastavite lahko tudi dovoljenja za uporabnike, ki niso lastniki in za tiste, ki so v skupini datoteke.</p>
+
+    <p>V primeru da je datoteka program kot je skript, morate za njeno poganjanje izbrati <gui>Dovoli izvajanje datoteke kot programa</gui>. Tudi če je ta možnost izbrana, bo morda upravljalnik datotek še vedno odprl datoteko v programu in vas vprašal kaj želite narediti. Za več podrobnosti si oglejte <link xref="nautilus-behavior#executable"/>.</p>
+  </section>
+
+  <section id="folders">
+    <title>Mape</title>
+    <p>Dovoljenja map lahko nastavite za lastnika, skupino in druge uporabnike. Oglejte si podrobnosti dovoljenj datotek zgoraj za razlago o skrbnikih, skupinah in drugih uporabnikih.</p>
+    <p>Dovoljenja, ki jih nastavite za mapo, so drugačna od dovoljenj za datoteko.</p>
+    <terms>
+      <item>
+        <title><gui itst:context="permission">None</gui></title>
+        <p>Uporabnik ne bo mogel niti videti katere datoteke so v mapi.</p>
+      </item>
+      <item>
+        <title><gui>Le izpiši datoteke</gui></title>
+        <p>Uporabnik bo lahko videl katere datoteke so v mapi, vendar datotek ne bo mogel odpreti, ustvariti ali izbrisati.</p>
+      </item>
+      <item>
+        <title><gui>Dostop do datotek</gui></title>
+        <p>Uporabnik bo lahko odprl datoteke v mapi (pod pogojem, da ima za to dovoljenje do določene datoteke), vendar ne bodo mogli brisati datotek ali ustvariti novih datotek.</p>
+      </item>
+      <item>
+        <title><gui>Ustvarjanje in brisanje datotek</gui></title>
+        <p>Uporabnik bo imel poln dostop do mape ključno z odpiranjem, ustvarjanjem in brisanjem datotek.</p>
+      </item>
+    </terms>
+
+    <p>You can also quickly set the file permissions for all the files
+    in the folder by clicking <gui>Change Permissions for Enclosed Files</gui>.
+    Use the drop-down lists to adjust the permissions of contained files or
+    folders, and click <gui>Change</gui>. Permissions are applied to files and
+    folders in subfolders as well, to any depth.</p>
+  </section>
+
+</page>

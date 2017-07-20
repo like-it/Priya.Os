@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="ssh-export" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys"/>
+
+    <revision pkgversion="3.14" date="2014-10-03" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Jak exportovat své veřejné a soukromé klíče SSH, aby byly uložené v souborech.</desc>
+  </info>
+
+  <title>Export klíčů SSH</title>
+
+  <p>Vyexportujte si obsah svých klíčů SSH a uložte si je do souborů, abyste měli jejich zálohu a abyste mohli své veřejné klíče sdílet s ostatními.</p>
+
+  <section id="public">
+    <title>Když chcete exportovat svůj veřejný klíč SSH:</title>
+
+    <steps>
+      <item>
+	<p>V levém postranním panelu vyberte klíčenku <gui>Klíče OpenSSH</gui>.</p>
+      </item>
+      <item>
+	<p>V seznamu vyberte <gui>Osobní klíč SSH</gui>, který má být vyexportován.</p>
+      </item>
+      <item>
+	<p>Vyberte <guiseq><gui>Soubor</gui><gui>Export…</gui></guiseq></p>
+      </item>
+      <item>
+	<p>Zmáčknutím tlačítka <gui style="button">Exportovat</gui> uložte exportovaný klíč do souboru.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="private">
+    <title>Když chcete exportovat svůj soukromý klíč SSH:</title>
+
+    <steps>
+      <item>
+	<p>V levém postranním panelu vyberte klíčenku <gui>Klíče OpenSSH</gui>.</p>
+      </item>
+      <item>
+	<p>V seznamu vyberte <gui>Osobní klíč SSH</gui>, který má být vyexportován.</p>
+      </item>
+      <item>
+	<p>Klikněte na vybraný klíč pravým tlačítkem a zvolte <guiseq><gui>Vlastnosti</gui> <gui>Podrobnosti</gui></guiseq>.</p>
+      </item>
+      <item>
+	<p>Pro vyexportování soukromého klíče do souboru zmáčkněte tlačítko <gui style="button">Exportovat soukromý klíč</gui>.</p>
+      </item>
+    </steps>
+
+    <note style="warning">
+      <p>Vyexportovaný soukromý klíč uchovávejte na bezpečném místě, protože obsah souboru musí zůstat soukromý, aby se předešlo zneužití klíče.</p>
+    </note>
+
+  </section>
+
+</page>

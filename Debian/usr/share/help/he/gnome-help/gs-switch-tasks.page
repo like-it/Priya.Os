@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-switch-tasks" version="1.0 if/1.0" xml:lang="he">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="videos"/>
+    <title role="trail" type="link">מעבר בין משימות</title>
+    <link type="seealso" xref="shell-windows-switching"/>
+    <title role="seealso" type="link">הדרכה עבור מעבר בין משימות</title>
+    <link type="next" xref="gs-respond-messages"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Niv Baehr</mal:name>
+      <mal:email>bloop93@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>מעבר בין משימות</title>
+
+  <ui:overlay width="812" height="452">
+  <media type="video" its:translate="no" src="figures/gnome-task-switching.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-task-switching.svg"/>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>מעבר בין משימות</tt:p>
+         </tt:div>
+         <if:if test="!platform:gnome-classic">
+         <tt:div begin="5s" end="8s">
+           <tt:p>הזיזו את הסמן אל <gui>פעילויות</gui> בפינה הימנית העליונה של המסך.</tt:p>
+           </tt:div>
+         </if:if>
+         <tt:div begin="9s" end="12s">
+           <tt:p>לחצו על חלון על מנת לעבור למשימה זו</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="14s">
+           <tt:p>להגדלת חלון לאורך צדו השמאלי של המסך, החזיקו את שורת הכותרת וגררו אותה שמאלה.</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="16s">
+           <tt:p>כאשר מחצית המסך תודגש, שחררו את החלון.</tt:p>
+         </tt:div>
+         <tt:div begin="16s" end="18">
+           <tt:p>להגדלת חלון לאורך הצד הימני, החזיקו את שורת הכותרת וגררו אותה ימינה.</tt:p>
+         </tt:div>
+         <tt:div begin="18s" end="20s">
+           <tt:p>כאשר מחצית המסך תודגש, שחררו את החלון.</tt:p>
+         </tt:div>
+         <tt:div begin="23s" end="27s">
+           <tt:p>לחצו <keyseq> <key href="help:gnome-help/keyboard-key-super">Super</key><key> Tab</key></keyseq> להצגת <gui>מחליף החלונות</gui>.</tt:p>
+         </tt:div>
+         <tt:div begin="27s" end="29s">
+           <tt:p>שחררו את מקש ה־<key href="help:gnome-help/keyboard-key-super">Super </key> כדי לבחור את החלון המודגש הבא.</tt:p>
+         </tt:div>
+         <tt:div begin="29s" end="32s">
+           <tt:p>למעבר בין החלונות הפתוחים, אין לשחרר את <key href="help:gnome-help/keyboard-key-super">Super</key> אלא יש להחזיקו לחוץ, ולהקיש <key>Tab</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="35s" end="37s">
+           <tt:p>לחצו על מקש ה־<key href="help:gnome-help/keyboard-key-super">Super </key> להצגת <gui>סקירת הפעילויות</gui>.</tt:p>
+         </tt:div>
+         <tt:div begin="37s" end="40s">
+           <tt:p>התחילו להקליד את שם היישום אליו ברצונכם לעבור.</tt:p>
+         </tt:div>
+         <tt:div begin="40s" end="43s">
+           <tt:p>כאשר היישום מוצג כתוצאה הראשונה, לחצו <key> Enter</key> על מנת לעבור אליו.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+  <section id="switch-tasks-overview">
+    <title>מעבר בין משימות</title>
+
+<if:choose>
+<if:when test="!platform:gnome-classic">
+
+  <steps>
+    <item><p>הזיזו את הסמן אל <gui>פעילויות</gui> בפינה הימנית העליונה של המסך להצגת <gui>סקירת הפעילויות</gui> בה ניתן לראות את המשימות הפועלות כעת כחלונות קטנים.</p></item>
+     <item><p>לחצו על חלון על מנת לעבור למשימה זו</p></item>
+  </steps>
+
+</if:when>
+<if:when test="platform:gnome-classic">
+
+  <steps>
+    <item><p>ניתן לעבור בין משימות באמצעות <gui>רשימת החלונות</gui> בתחתית המסך. משימות פתוחות תופענה ככתורים ב<gui>רשימת החלונות</gui>.</p></item>
+     <item><p>לחצו על כפתור ב<gui>רשימת החלונות</gui> למעבר למשימה זו.</p></item>
+  </steps>
+
+</if:when>
+</if:choose>
+
+  </section>
+
+  <section id="switching-tasks-tiling">
+    <title>ריצוף חלונות</title>
+    
+    <steps>
+      <item><p>להגדלת חלון לצד המסך, החזיקו את שורת הכותרת וגררו אותה לצדו השמאלי של המסך או לצדו הימני.</p></item>
+      <item><p>כאשר מחצית המסך תודגש, שחררו את החלון להגדלתו לאורך הצד שנבחר.</p></item>
+      <item><p>להגדלת שני חלונות זה לצד זה, החזיקו בשורת הכותרת של החלון השני וגררו אותה לצדו הנגדי של המסך.</p></item>
+       <item><p>כאשר מחצית המסך תודגש, שחררו את החלון להגדלתו לאורך הצד הנגדי.</p></item>
+    </steps>
+    
+  </section>
+  
+  <section id="switch-tasks-windows">
+    <title>מעבר בין חלונות</title>
+    
+  <steps>
+   <item><p>לחצו <keyseq><key href="help:gnome-help/keyboard-key-super">Super </key><key>Tab</key></keyseq> להצגת <gui>מחליף החלונות</gui>, המפרט את החלונות הפתוחים כעת.</p></item>
+   <item><p>שחררו את מקש ה־<key href="help:gnome-help/keyboard-key-super">Super</key> לבחירת החלון הבא ב<gui>מחליף החלונות</gui>.</p>
+   </item>
+   <item><p>למעבר בין החלונות הפתוחים, אין לשחרר את <key href="help:gnome-help/keyboard-key-super">Super</key> אלא יש להחזיקו לחוץ, ולהקיש <key>Tab</key>.</p></item>
+  </steps>
+
+  </section>
+
+  <section id="switch-tasks-search">
+    <title>מעבר בין יישומים באמצעות חיפוש</title>
+    
+    <steps>
+      <item><p>לחצו על מקש ה־<key href="help:gnome-help/keyboard-key-super">Super</key> להצגת <gui>סקירת הפעילויות</gui>.</p></item>
+      <item><p>התחילו להקליד את שם היישום אליו ברצונכם לעבור. יישומים המתאימים למה שהקלדתם יופיע בעודכם מקלידים.</p></item>
+      <item><p>כאשר היישום אליו ברצונכם לעבור מופיע כתוצאה הראשונה, לחצו <key>Enter</key> למעבר אליו.</p></item>
+      
+    </steps>
+    
+  </section>
+
+</page>

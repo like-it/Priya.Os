@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="as">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu তথ্যচিত্ৰ ৱিকিৰ অৱদানকাৰীসকল</name>
+    </credit>
+    <credit type="author">
+      <name>GNOME তথ্যচিত্ৰ প্ৰকল্প</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>যদিও আপোনাৰ বেতাঁৰ এডাপ্টাৰ সংযুক্ত থাকে, ইয়াক হয়তো কমপিউটাৰে সঠিকভাৱে চিনাক্ত কৰা নাই।</desc>
+  </info>
+
+  <title>বেতাঁৰ সংযোগ সমস্যামুক্তক</title>
+  <subtitle>সুনিশ্চিত কৰক যে বেতাঁৰ এডাপ্টাৰ চিনাক্ত কৰা হৈছিল</subtitle>
+
+  <p>যদিও বেতাঁৰ এডাপ্টাৰ কমপিউটাৰৰ সৈতে সংযুক্ত আছে, ইয়াক হয়তো কমপিউটাৰ দ্বাৰা এটা নেটৱাৰ্ক ডিভাইচ ৰূপে চিনাক্ত কৰা হোৱা নাই। এই স্তৰত, আপুনি ডিভাইচ সঠিকভাৱে চিনাক্ত কৰা হৈছিল নে নিৰীক্ষণ কৰিব।</p>
+
+  <steps>
+    <item>
+      <p>এটা টাৰ্মিনেল খোলক, <cmd>lshw -C network</cmd> টাইপ কৰক আৰু <key>Enter</key> টিপক। যদি ই এটা ত্ৰুটি বাৰ্তা দিয়ে, আপুনি হয়তো আপোনাৰ কমপিউটাৰৰ বাবে <app>lshw</app> প্ৰগ্ৰাম ইনস্টল কৰিব লাগিব।</p>
+    </item>
+    <item>
+      <p>উপস্থিত হোৱা তথ্য চাওক আৰু <em>বেতাঁৰ আন্তঃপৃষ্ঠ</em> অংশ চাওক। যদি আপোনাৰ বেতাঁৰ এডাপ্টাৰ সঠিকভাৱে চিনাক্ত কৰা হৈছিল, আপুনি ইয়াৰ সৈতে কিবা সদৃশ দেখা পাব (কিন্তু একে নহয়):</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>যদি এটা বেতাঁৰ ডিভাইচ তালিকাভুক্ত থাকে, <link xref="net-wireless-troubleshooting-device-drivers">ডিভাইচ ড্ৰাইভাৰসমূহ স্তৰ</link> ত যাওক।</p>
+      <p>যদি এটা বেতাঁৰ ডিভাইচ তালিকাভুক্ত <em>নহয়</em>, আপুনি লোৱা পৰৱৰ্তী স্তৰসমূহ আপুনি ব্যৱহাৰ কৰা ডিভাইচৰ ধৰণৰ ওপৰত নিৰ্ভৰ কৰিব। তলত কমপিউটাৰৰ সৈতে প্ৰাসংগিক বেতাঁৰ এডাপ্টাৰ ধৰণৰ অংশ চাওক (<link xref="#pci">internal PCI</link>, <link xref="#usb">USB</link>, অথবা <link xref="#pcmcia">PCMCIA</link>)।</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>PCI (অভ্যন্তৰীক) বেতাঁৰ এডাপ্টাৰ</title>
+
+  <p>অভ্যন্তৰীক PCI এডাপ্টাৰসমূহ আটাইতকৈ সাধাৰণ, আৰু বিগত কিছু বছৰত নিৰ্মাণ কৰা বেছিৰভাগ লেপটপত পোৱা যায়। আপোনাৰ PCI বেতাঁৰ এডাপ্টাৰ চিনাক্ত কৰা হৈছিল নে নিৰীক্ষণ কৰিবলৈ:</p>
+
+  <steps>
+    <item>
+      <p>এটা টাৰ্মিনেল খোলক, <cmd>lspci</cmd> টাইপ কৰক আৰু <key>Enter</key> টিপক।</p>
+    </item>
+    <item>
+      <p>Look through the list of devices that is shown and find any that are
+      marked <code>Network controller</code> or <code>Ethernet
+      controller</code>. Several devices may be marked in this way; the one
+      corresponding to your wireless adapter might include words like
+      <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> or
+      <code>802.11</code>. Here is an example of what the entry might look
+      like:</p>
+      <code>নেটৱাৰ্ক নিয়ন্ত্ৰক: Intel Corporation PRO/Wireless 3945ABG [Golan] নেটৱাৰ্ক সংযোগ</code>
+    </item>
+    <item>
+      <p>যদি আপুনি আপোনাৰ বেতাঁৰ এডাপ্টাৰ তালিকাত পাইছে, <link xref="net-wireless-troubleshooting-device-drivers">ডিভাইচ ড্ৰাইভাৰ স্তৰ</link> লৈ যাওক। যদি আপুনি আপোনাৰ বেতাঁৰ এডাপ্টাৰৰ সৈতে প্ৰাসংগিক একো নাই পোৱা, <link xref="#not-recognized">তলত দিয়া নিৰ্দেশ চাওক</link>।</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>USB বেতাঁৰ এডাপ্টাৰ</title>
+
+  <p>Wireless adapters that plug into a USB port on your computer are less
+  common. They can plug directly into a USB port, or may be connected by a USB
+  cable. 3G/mobile broadband adapters look quite similar to wireless (wifi)
+  adapters, so if you think you have a USB wireless adapter, double-check that
+  it is not actually a 3G adapter. To check if your USB wireless adapter was
+  recognized:</p>
+
+  <steps>
+    <item>
+      <p>এটা টাৰ্মিনেল খোলক, <cmd>lsusb</cmd> টাইপ কৰক আৰু <key>Enter</key> টিপক।</p>
+    </item>
+    <item>
+      <p>ডিভাইচসমূহৰ তালিকা চাওক আৰু এটা বেতাঁৰ অথবা নেটৱাৰ্ক ডিভাইচক প্ৰসংগ কৰা এটা ডিভাইচ সন্ধান কৰক। আপোনাৰ বেতাঁৰ এডাপ্টাৰৰ সৈতে প্ৰসংগ কৰা বেতাঁৰ এডাপ্টাৰে <code>বেতাঁৰ</code>, <code>WLAN</code>, <code>wifi</code> অথবা <code>802.11</code> শব্দবোৰ অন্তৰ্ভুক্ত কৰিব পাৰে। প্ৰৱিষ্টি দেখাত এনেকুৱা হব পাৰে:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>যদি আপুনি আপোনাৰ বেতাঁৰ এডাপ্টাৰ তালিকাত পাইছে, <link xref="net-wireless-troubleshooting-device-drivers">ডিভাইচ ড্ৰাইভাৰ স্তৰ</link> লৈ যাওক। যদি আপুনি আপোনাৰ বেতাঁৰ এডাপ্টাৰৰ সৈতে প্ৰাসংগিক একো নাই পোৱা, <link xref="#not-recognized">তলত দিয়া নিৰ্দেশ চাওক</link>।</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>এটা PCMCIA ডিভাইচৰ বাবে নিৰীক্ষণ কৰা হৈছে</title>
+
+  <p>PCMCIA বেতাঁৰ এডাপ্টাৰসমূহ সাধাৰণত আয়ত আকৃতিৰ কাৰ্ড হয় যি আপোনাৰ লেপটপৰ কাষত স্লট হয়। সিহতক সাধাৰণত পুৰনি কমপিউটাৰসমূহত পোৱা যায়। আপোনাৰ PCMCIA এডাপ্টাৰ চিনাক্ত হৈছিল নে নিৰীক্ষণ কৰিবলৈ:</p>
+
+  <steps>
+    <item>
+      <p>বেতাঁৰ এডাপ্টাৰ প্লাগ ইন <em>নথকাকৈ</em> আপোনাৰ কমপিউটাৰ আৰম্ভ কৰক।</p>
+    </item>
+    <item>
+      <p>এটা টাৰ্মিনেল খেলক আৰু নিম্নলিখিত টাইপ কৰক, তাৰ পিছত <key>Enter</key> টিপক:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>ই আপোনাৰ কমপিউটাৰৰ হাৰ্ডৱেৰৰ সৈতে জড়িত বাৰ্তাসমূহৰ এটা তালিকা প্ৰদৰ্শন কৰিব, আৰু আপোনাৰ হাৰ্ডৱেৰ পৰিবৰ্তনৰ বাবে কিবা কৰিব লগিয়া থাকিলে স্বচালিতভাৱে আপডেইট কৰিব।</p>
+    </item>
+    <item>
+      <p>আপোনাৰ বেতাঁৰ এডাপ্টাৰক PCMCIA স্লটত সুমুৱাওক আৰু টাৰ্মিনেল উইন্ডোত কি পৰিবৰ্তন হয় চাওক। পৰিবৰ্তনসমূহে আপোনাৰ বেতাঁৰ এডাপ্টাৰৰ বিষয়ে কিছুমান তথ্য অন্তৰ্ভুক্ত কৰিব লাগে। সিহতক চিনাক্ত কৰিব পাৰে নে চাওক।</p>
+    </item>
+    <item>
+      <p>কমান্ডক টাৰ্মিনেলত চলাৰ পৰা ৰখাবলৈ, <keyseq><key>Ctrl</key><key>C</key></keyseq> টিপক। আপুনি তেনেকুৱা কৰাৰ পিছত, আপুনি টাৰ্মিনেল বন্ধ কৰিব পাৰে।</p>
+    </item>
+    <item>
+      <p>যদি আপুনি আপোনাৰ বেতাঁৰ এডাপ্টাৰ বিষয়ে কোতো তথ্য পাইছে, <link xref="net-wireless-troubleshooting-device-drivers">ডিভাইচ ড্ৰাইভাৰ স্তৰ</link> লৈ যাওক। যদি আপুনি আপোনাৰ বেতাঁৰ এডাপ্টাৰৰ সৈতে প্ৰাসংগিক একো নাই পোৱা, <link xref="#not-recognized">তলত দিয়া নিৰ্দেশ চাওক</link>।</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>বেতাঁৰ এডাপ্টাৰ চিনাক্ত কৰিব পৰা নগল</title>
+
+  <p>If your wireless adapter was not recognized, it might not be working
+  properly or the correct drivers may not be installed for it. How you check to
+  see if there are any drivers you can install will depend on which Linux
+  distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
+
+  <p>নিৰ্দিষ্ট সহায় প্ৰাপ্ত কৰিবলৈ, আপোনাৰ বিতৰনৰ ৱেবছাইটত সমৰ্থন বিকল্পসমূহ চাওক। ই মেইলিং তালিকা আৰু ৱেব চেট অন্তৰ্ভুক্ত কৰিব পাৰে য'ত আপুনি আপোনাৰ বেতাঁৰ এডাপ্টাৰৰ বিষয়ে সোধিব পাৰিব, উদাহৰণস্বৰূপ।</p>
+
+</section>
+
+</page>

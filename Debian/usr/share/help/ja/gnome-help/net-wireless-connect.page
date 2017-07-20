@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-connect" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="net-wireless" group="#first"/>
+    <link type="seealso" xref="net-wireless-troubleshooting"/>
+    <link type="seealso" xref="net-wireless-disconnecting"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>GNOME ドキュメンテーションプロジェクト</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>インターネットに接続する - 無線</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>無線ネットワークに接続する</title>
+
+<p>ワイヤレス接続に対応したコンピューターをお使いの場合、近くのワイヤレスネットワークへ接続してインターネットにアクセスしたり、ネットワーク上の共有ファイルを閲覧したりすることができます。</p>
+
+<steps>
+  <item>
+    <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> from the right
+    side of the top bar.</p>
+  </item>
+  <item>
+    <p>Select
+    <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/>
+      Wi-Fi Not Connected</gui>. The Wi-Fi section of the menu will expand.</p>
+  </item>
+  <item>
+    <p>Click <gui>Select Network</gui>.</p>
+  </item>
+  <item>
+    <p>Click the name of the network you want, then click
+    <gui>Connect</gui>.</p>
+    <p>If the name of the network is not in the list, try clicking
+    <gui>More</gui> to see if the network is further down the list. If you 
+    still do not see the network, you may be out of range, or the network
+    <link xref="net-wireless-hidden">might be hidden</link>.</p>
+  </item>
+  <item>
+    <p>ネットワークがパスワード (<link xref="net-wireless-wepwpa">暗号鍵</link>) で保護されている場合には、入力を求められた時にそのパスワードを入力してから<gui>接続</gui>をクリックします。</p>
+    <p>If you do not know the key, it may be written on the underside of the
+    wireless router or base station, or in its instruction manual, or you may
+    have to ask the person who administers the wireless network.</p>
+  </item>
+  <item>
+    <p>コンピューターによりネットワークへの接続が試みられると、ネットワークアイコンが変化します。</p>
+  </item>
+  <item>
+    <p>If the connection is successful, the icon will change to a dot with
+    several curved bars above it
+    (<media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/>). More bars
+    indicate a stronger connection to the network. Fewer bars mean the
+    connection is weaker and might not be very reliable.</p>
+  </item>
+</steps>
+
+  <p>接続に失敗した場合、パスワードの再入力を求められる、または単に接続が切断された旨のメッセージが表示されます。このような場合いくつかの原因があります。たとえば、間違ったパスワードを入力した、ワイヤレス信号が弱すぎる、コンピューターのワイヤレスカードに問題があるなどです。ヘルプについては <link xref="net-wireless-troubleshooting"/> をご覧ください。</p>
+
+  <p>ワイヤレスネットワークへの接続強度が高いからと言ってインターネット接続速度が必ずしも高速となるわけではなく、またダウンロード速度が速くなるわけでもありません。無線接続により、コンピューターは<em>インターネット接続を提供するデバイス</em> (ルーターまたはモデムなど) に接続されますが、この 2 種類の接続は実際には異なるため別々の速度で実行されます。</p>
+
+</page>

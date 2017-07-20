@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="default-browser" xml:lang="es">
+
+  <info>
+    <desc>Abrir enlaces de un correo en un navegador y abrir el editor de mensajes desde un enlace de un correo en una página web.</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+
+    <revision pkgversion="3.8.3" version="0.8" date="2013-07-19" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Abrir enlaces en y desde un navegador web</title>
+
+<!-- For GNOME2 the steps are to define the gconf keys /desktop/gnome/url-handlers/http and /https -->
+
+<section id="browser-to-use">
+<title>Cambiar qué páginas web se abren en el navegador</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-shell !platform:gnome-classic !platform:unity">
+<p>En el caso de que use <app>Evolution</app> en un entorno que no sea GNOME,</p>
+ <steps>
+   <item>
+     <p>Abra la aplicación de la terminal.</p>
+   </item>
+   <item>
+<p>Busque el nombre del archivo <cmd>.desktop</cmd> de su navegador preferido. Dependiendo del navegador y de la distribución, el archivo se puede llamar <cmd>epiphany.desktop</cmd>, <cmd>firefox.desktop</cmd>, <cmd>google-chrome.desktop</cmd>, <cmd>konqbrowser.desktop</cmd>, o <cmd>opera-browser.desktop</cmd>. Si no está seguro, puede mirar todos los archivos <cmd>.desktop</cmd> de la carpeta <cmd>/usr/share/applications/</cmd>.</p>
+   </item>
+   <item>
+     <p>Escriba este comando, reemplace <cmd>browser.desktop</cmd> por el nombre actual del archivo y pulse <key>Intro</key>:</p>
+     <p><cmd its:translate="no">
+       xdg-settings set default-url-scheme-handler https browser.desktop
+     </cmd></p>
+   </item>
+   <item>
+     <p>Escriba este comando, reemplace <cmd>browser.desktop</cmd> por el nombre actual del archivo y pulse <key>Intro</key>:</p>
+     <p><cmd its:translate="no">
+       xdg-settings set default-url-scheme-handler http browser.desktop
+     </cmd></p>
+   </item>
+   <item>
+     <p>Es posible que deba reiniciar <app>Evolution</app> para que la configuración tenga efecto.</p>
+   </item>
+ </steps>
+<note style="tip">
+  <p>Si se muestra el error «xdg-settings: comando no encontrado», debe instalar el paquete <sys>xdg-utils</sys>.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:xdg-utils" style="button">Instalar xdg-utils</link></p>
+    </if:when>
+  </if:choose>
+</note>
+  </if:when>
+<p>Consulte <link xref="help:gnome-help/net-default-browser" href="https://help.gnome.org/users/gnome-help/stable/net-default-browser">la ayuda del escritorio GNOME</link>.</p>
+
+<p>Si el navegador preferido esté establecido como la aplicación predeterminada pero aún así no funciona correctamente, contacte con su distribución a través de su foto o web de seguimiento de errores.</p>
+
+<note style="tip">
+  <p>Si se muestra el error «No se pudo abrir el enlace: operación no soportada», debe instalar el paquete <sys>gvfs</sys>.</p>
+  <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+    <if:when test="action:install">
+      <p><link action="install:gvfs" href="http://ftp.gnome.org/pub/gnome/sources/gvfs/" style="button">Instalar gvfs</link></p>
+    </if:when>
+  </if:choose>
+</note>
+</if:choose>
+</section>
+
+
+<section id="email-application-to-use">
+<title>Cambiar qué aplicación de correo se usa para escribir correos electrónicos</title>
+
+<p>Consulte <link xref="help:gnome-help/net-default-email" href="https://help.gnome.org/users/gnome-help/stable/net-default-email">la ayuda del escritorio GNOME</link>.</p>
+
+</section>
+
+<section id="advanced-options">
+<title>Opciones avanzadas</title>
+<note style="advanced"><p>Si tiene conocimientos técnicos puede ajustar estas configuraciones definiendo manejadores de esquemas en <file>$HOME/.local/share/applications/mimeapps.list</file>.</p></note>
+</section>
+
+</page>

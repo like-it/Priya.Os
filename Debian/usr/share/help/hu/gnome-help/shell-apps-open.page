@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-apps-open" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Alkalmazások indítása a <gui>Tevékenységek</gui> áttekintésből.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Alkalmazások indítása</title>
+
+  <p if:test="!platform:gnome-classic">Mozgassa az egérmutatót a képernyő bal felső sarkában lévő <gui>Tevékenységek</gui> feliratra a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintés megjelenítéséhez. Az alkalmazások itt találhatók. Az áttekintés megjeleníthető a <key xref="keyboard-key-super">Super billentyű</key> lenyomásával is.</p>
+  
+  <p if:test="platform:gnome-classic">Az alkalmazásokat a képernyő bal felső sarkában lévő <gui xref="shell-introduction#activities">Alkalmazások</gui> menüből is elindíthatja, vagy használhatja a <gui>Tevékenységek</gui> áttekintést a <link xref="keyboard-key-super">Super billentyű</link> lenyomásával is.</p>
+
+  <p>A <gui>Tevékenységek</gui> áttekintésből több módon is megnyithat egy alkalmazást:</p>
+
+  <list>
+    <item>
+      <p>Kezdje el beírni az alkalmazás nevét – a keresés azonnal megkezdődik. Ha ez nem történik meg, kattintson a keresősávra a képernyő tetején, és kezdjen el gépelni. Ha nem tudja az alkalmazás pontos nevét, akkor írjon be egy kapcsolódó kifejezést. Kattintson az alkalmazás ikonjára az elindításához.</p>
+    </item>
+    <item>
+      <p>Egyes alkalmazások ikonja az <em>indítópanelen</em>, a <gui>Tevékenységek</gui> áttekintés bal oldalán lévő függőleges ikonsávon is megtalálható. Kattintson ezek egyikére az adott alkalmazás elindításához.</p>
+      <p>Ha egyes alkalmazásokat gyakrabban használ, akkor <link xref="shell-apps-favorites">felveheti azokat az indítópanelra</link>.</p>
+    </item>
+    <item>
+      <p>Kattintson a rács gombra az indítópanel alján. Ha a <gui style="button">Gyakoriak</gui> nézet be van kapcsolva, akkor megjelennek a gyakran használt alkalmazások. Ha új alkalmazást szeretne futtatni, akkor nyomja meg a lenti <gui style="button">Minden</gui> gombot az összes alkalmazás megjelenítéséhez. Kattintson egy alkalmazásra az elindításához.</p>
+    </item>
+    <item>
+      <p>Egy alkalmazást másik <link xref="shell-workspaces">munkaterületen</link> is elindíthat, ha az ikonját az indítópanelről áthúzza a képernyő jobb oldalán lévő egyik munkaterületre. Az alkalmazás ekkor a kiválasztott munkaterületen nyílik meg.</p>
+      <p>Egy alkalmazást <em>új</em> munkaterületen indíthat el, ha az ikonját a munkaterület-váltó alján lévő üres munkaterületre, vagy a két munkaterület közti kis résre húzza.</p>
+    </item>
+  </list>
+
+  <note style="tip">
+    <title>Parancs gyors futtatása</title>
+    <p>Az alkalmazások futtatásának másik módja az <keyseq><key>Alt</key><key>F2</key></keyseq> megnyomása, a <em>parancsnevük</em> beírása, és az <key>Enter</key> megnyomása.</p>
+    <p>A <app>Rhythmbox</app> futtatásához például nyomja meg az <keyseq><key>Alt</key><key>F2</key></keyseq> kombinációt, és írja be a <cmd>rhythmbox</cmd> kifejezést. Az alkalmazás neve a program elindítására használt parancs.</p>
+  </note>
+
+</page>

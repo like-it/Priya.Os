@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-duplicates" xml:lang="es">
+
+  <info>
+    <desc>Cómo gestionar mensajes de correo duplicados</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+
+    <revision pkgversion="3.7.4" version="0.6" date="2013-01-23" status="final"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Se descargan correos duplicados</title>
+
+<section id="remove">
+<title>Quitar mensajes duplicados</title>
+<p>Para quitar correos duplicados en una carpeta seleccione varios mensajes (o seleccione todos los mensajes en una carpeta pulsando <guiseq><gui>Editar</gui><gui>Seleccionar todo</gui></guiseq> o pulsando <keyseq><key>Ctrl</key><key>A</key></keyseq>) y pulse <guiseq><gui>Mensaje</gui><gui>Quitar correos duplicados</gui></guiseq>.</p>
+<!-- available by default since 2.91, as per http://mail.gnome.org/archives/evolution-list/2011-August/msg00000.html -->
+</section>
+
+<section id="reasons">
+<title>Motivos</title>
+<p>La descarga de correos duplicados puede suceder debido a uno de estos motivos:</p>
+<list>
+<item><p>Existen diversas copias del mismo mensaje en el buzón de correo</p></item>
+<item><p><app>Evolution</app> está sufriendo un problema con la extensión UIDL.</p></item>
+<item><p>Los archivos de la caché se encuentran en <file>$HOME/.local/share/evolution/mail/local/</file> y no se puede escribir en ellos.</p></item>
+</list>
+</section>
+
+</page>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-admin-change" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+    <link type="seealso" xref="user-admin-explain"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak přidělením oprávnění správce umožnit uživatelům provádět změny systému.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Změna osob s oprávněním správce</title>
+
+  <p>Správcovská oprávnění jsou způsobem, jak rozhodovat, kdo může provádět změny v důležitých částech systému. Můžete měnit, kteří uživatelé mají oprávnění správce, a kteří ne. Je to dobrý způsob, jak udržet váš systém bezpečný a jak zabránit potenciálním neoprávněným změnám vedoucím k jeho poškození.</p>
+
+  <p>Abyste mohli změnit typ účtu, potřebujete <link xref="user-admin-explain">oprávnění správce</link>.</p>
+
+  <steps>
+    <item>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Uživatelé</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknutím na <gui>Uživatelé</gui> otevřete příslušný panel.</p>
+    </item>
+    <item>
+      <p>Zmáčkněte <gui style="button">Odemknout</gui> v pravém horním rohu a po vyzvání zadejte heslo.</p>
+    </item>
+    <item>
+      <p>Vyberte uživatele, jehož oprávnění chcete změnit.</p>
+    </item>
+    <item>
+      <p>Klikněte na <gui>Standardní</gui> vedle <gui>Typ účtu</gui> a vyberte <gui>Správce</gui>.</p>
+    </item>
+    <item>
+      <p>Nová oprávnění uživatele se použijí, až se příště přihlásí.</p>
+    </item>
+  </steps>
+
+  <note>
+    <p>První uživatelský účet v systému je obvykle ten, který má oprávnění správce. Jedná se o uživatelský účet, který byl vytvořen při instalaci systému.</p>
+    <p>Není rozumné mít v jednom systému příliš uživatelů s oprávněními <gui>Správce</gui>.</p>
+  </note>
+
+</page>

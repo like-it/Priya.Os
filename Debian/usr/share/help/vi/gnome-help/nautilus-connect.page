@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="vi">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Xem và thay đổi tập tin trên máy khác qua FTP, SSH, chia sẻ Windows hoặc WebDAV.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
+      <mal:email>pclouds@gmail.com</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Duyệt tập tin trên máy chủ hoặc chia sẻ mạng</title>
+
+<p>Bạn có thể kết nối đến máy chủ hoặc chia sẻ mạng để duyệt và xem tập tin trên đó y như trên máy mình. Cách này tiện lợi để chép tập tin về hoặc gửi tập tin lên trên internet, hoặc chia sẻ tập tin với người dùng khác trong mạng nội bộ.</p>
+
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
+
+<steps>
+  <title>Kết nối đến máy chủ tập tin</title>
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
+   sidebar.</p>
+  </item>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
+  <note>
+    <p>If you have connected to the server before, you can click on it in the
+    <gui>Recent Servers</gui> list.</p>
+  </note>
+  </item>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>Writing URLs</title>
+
+<p>A <em>URL</em>, or <em>uniform resource locator</em>, is a form of address
+ that refers to a location or file on a network. The address is formatted like this:</p>
+  <example>
+    <p><sys>scheme://servername.example.com/folder</sys></p>
+  </example>
+<p>The <em>scheme</em> specifies the protocol or type of server. The
+  <em>example.com</em> portion of the address is called the <em>domain name</em>.
+  If a username is required, it is inserted before the server name:</p>
+  <example>
+    <p><sys>scheme://username@servername.example.com/folder</sys></p>
+  </example>
+<p>Some schemes require the port number to be specified. Insert it after the domain name:</p>
+  <example>
+    <p><sys>scheme://servername.example.com:port/folder</sys></p>
+  </example>
+<p>Below are specific examples for the various server types that are supported.</p>
+</section>
+
+<section id="types">
+ <title>Loại máy chủ</title>
+
+<p>You can connect to different types of servers. Some servers are public,
+   and allow anybody to connect. Other servers require you to log in with a
+   username and password.</p>
+<p>Bạn có thể không có quyền thực hiện một số thao tác trên máy chủ. Ví dụ, trên FTP công cộng, bạn sẽ hông thể xoá tập tin.</p>
+<p>The URL you enter depends on the protocol that the
+  server uses to export its file shares.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>If you have a <em>secure shell</em> account on a server, you
+  can connect using this method. Many web hosts provide SSH accounts
+  to members so they can securely upload files. SSH servers always
+  require you to log in.</p>
+  <p>A typical SSH URL looks like this:</p>
+  <example>
+    <p><sys>ssh://username@servername.example.com/folder</sys></p>
+  </example>
+
+  <p>Khi dùng SSH, mọi dữ liệu bạn gửi (kể cả mật khẩu) đều được mã hoá nên không ai có thể theo dõi dữ liệu của bạn.</p>
+</item>
+<item>
+  <title>FTP (kèm đăng nhập)</title>
+  <p>FTP là giao thức phổ biến để trao đổi tập tin trên Internet. Vì dữ liệu không được mã hoá trên FTP, nhiều máy chủ hiện nay cung cấp SSH để thay thế. Một số máy chủ vẫn cho phép hoặc yêu cầu bạn dùng FTP để trao đổi tập tin. Các địa chỉ FTP đòi hỏi đăng nhập thường cho phép bạn xoá và đưa tập tin lên.</p>
+  <p>A typical FTP URL looks like this:</p>
+  <example>
+    <p><sys>ftp://username@ftp.example.com/path/</sys></p>
+  </example>
+</item>
+<item>
+  <title>FTP công cộng</title>
+  <p>Sites that allow you to download files will sometimes provide
+  public or anonymous FTP access. These servers do not require a
+  username and password, and will usually not allow you to delete
+  or upload files.</p>
+  <p>A typical anonymous FTP URL looks like this:</p>
+  <example>
+    <p><sys>ftp://ftp.example.com/path/</sys></p>
+  </example>
+  <p>Some anonymous FTP sites require you to log in with a
+  public username and password, or with a public username using
+  your email address as the password. For these servers, use the
+  <gui>FTP (with login)</gui> method, and use the credentials
+  specified by the FTP site.</p>
+</item>
+<item>
+  <title>Chia sẻ Windows</title>
+  <p>Máy Windows dùng giao thức độc quyền để chia sẻ tập tin qua mạng cục bộ. Máy tính của bạn trên mạng Windows đôi khi được góm thành từng <em>miền</em> (domain) để dễ quản lý và phân quyền. Nếu bạn có quyền truy cập vào máy tính ở xa, bạn có thể kết nối vào chia sẻ Windows từ trình quản lý tập tin.</p>
+  <p>A typical Windows share URL looks like this:</p>
+  <example>
+    <p><sys>smb://servername/Share</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV và WebDAV An toàn</title>
+  <p>Dựa trên giao thức HTTP dùng trên web, WebDAV đôi khi được dùng để chia sẻ tập tin trên mạng cục bộ hoặc lưu tập tin trên Internet. Nếu máy chủ bạn truy cập hỗ trợ kết nối an toàn, bạn nên chọn tuỳ chọn này. WebDAV An toàn dùng mã hoá SSL mạnh, người khác không thể theo dõi dữ liệu hoặc mật khẩu của bạn.</p>
+  <p>A WebDAV URL looks like this:</p>
+  <example>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

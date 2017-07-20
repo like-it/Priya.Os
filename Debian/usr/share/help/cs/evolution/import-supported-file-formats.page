@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-supported-file-formats" xml:lang="cs">
+
+  <info>
+    <desc>Formáty souborů podporované při importu dat.</desc>
+    
+    <link type="guide" xref="import-data"/>
+
+    <revision pkgversion="3.0.2" version="0.3" date="2011-10-13" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/importing-mail-and-settings.html.en#importing-mail -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Podporované formáty souborů</title>
+
+<p><app>Evolution</app> umí importovat následující typy souborů:</p>
+
+<section id="mail">
+<title>Pošta</title>
+<list>
+<item><p>Berkley Mailbox (.mbox nebo bez přípony):</p>
+<p>Formát pošty používaný poštovními klienty <app>Mozilla</app>, <app>Netscape</app>, <app>Evolution</app> (pro místní složky do verze 2.32), <app>Eudora</app> a mnoha dalšími.</p></item>
+<item><p>Maildir (bez přípony):</p>
+<p>Formát používaný aplikací <app>Evolution</app> (pro místní složky do verze 3.0). Soubory Maildir není zapotřebí importovat, protože v <app>Evolution</app> můžete <link xref="mail-account-manage-maildir-format-directories">nastavit účet Maildir</link> a odkázat se na složku, ve které jsou soubory Maildir uloženy.</p></item>
+<item><p>Osobní složky Outlook Express 5/6 (.dbx):</p>
+<p>Formát poštovních souborů používaný aplikacemi <app>Microsoft Outlook Express 5/6</app>. Pro novější verze je doporučován formát PST.</p></item>
+</list>
+</section>
+
+<section id="calendar">
+<title>Kalendář</title>
+<list>
+<item><p>vCalendar (.vcs):</p>
+<p>Formát pro uchovávání souborů kalendáře, který je obecně používán aplikacemi <app>Evolution</app>, <app>Microsoft Outlook</app>, <app>Sunbird</app> a <app>Korganizer</app>.</p></item>
+<item><p>iCalendar nebo iCal (.ics):</p>
+<p>Formát souborů pro uchovávání kalendářů. iCalendar je používán aplikacemi <app>Evolution</app>, <app>Microsoft Outlook</app>, handheldy Palm OS a dalšími.</p></item>
+</list>
+</section>
+
+<section id="contacts">
+<title>Kontakty</title>
+<list>
+<item><p>Formát pro výměnu dat LDAP (.ldif):</p>
+<p>Standardní datový formát pro karty kontaktů.</p></item>
+<item><p>vCard (.vcf, .gcrd):</p>
+<p>Formát adresáře používaný GNOME, KDE a jinými aplikacemi pro správu kontaktů. Měli byste být schopní exportovat formát vCard z jakékoliv adresářové aplikace.</p></item>
+</list>
+</section>
+
+<section id="misc">
+<title>Různé</title>
+<list>
+<item><p>Evolution/Mozilla/Outlook CSV/Tab (.csv, .tab):</p>
+<p>Soubory CSV (hodnoty oddělené čárkou) nebo Tab (hodnoty oddělené tabulátory) uložené pomocí aplikací <app>Evolution</app>, <app>Microsoft Outlook</app> a <app>Mozilla Thunderbird</app>.</p></item>
+<item><p>Osobní složky Outlook (.pst)</p>
+<p>Souborový formát, který se používá pro místní kopie zpráv, událostí v kalendáři a dalších položek v softwaru firmy Microsoft, jako je <app>Microsoft Exchange Client</app>, <app>Windows Messaging</app> a <app>Microsoft Outlook</app>. Zkratka pochází ze spojení „Personal Storage Table“ (tabulka pro uchování osobních dat).</p></item>
+</list>
+</section>
+
+</page>

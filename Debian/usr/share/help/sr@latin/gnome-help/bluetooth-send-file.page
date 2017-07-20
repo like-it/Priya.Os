@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-send-file" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="bluetooth"/>
+    <link type="guide" xref="sharing"/>
+    <link type="seealso" xref="files-share"/>
+
+    <revision pkgversion="3.8" date="2013-05-16" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Džim Kembel</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Pol V. Frilds</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Majkl Hil</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Dejvid King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Delite datoteke Blutut uređajima kao što je vaš telefon.</desc>
+  </info>
+
+  <title>Pošaljite datoteke Blutut uređaju</title>
+
+<if:choose>
+  <if:when test="platform:unity">
+    <p>Možete da šaljete datoteke na povezane blutut uređaje, kao što su neki mobilni telefoni ili drugi računari. Neke vrste uređaja ne dozvoljavaju prenos datoteka, ili naročitih vrsta datoteka. Datoteke možete da pošaljete na jedan od tri načina: koristeći ikonicu blututa na traci izbornika, iz prozora podešavanja blututa, ili posredno iz upravnika datoteka.</p>
+  </if:when>
+  <p>Možete da šaljete datoteke na povezane blutut uređaje, kao što su neki mobilni telefoni ili drugi računari. Neke vrste uređaja ne dozvoljavaju prenos datoteka, ili naročitih vrsta datoteka. Možete da pošaljete datoteke koristeći prozor podešavanja blututa.</p>
+</if:choose>
+
+  <steps>
+    <item>
+      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Blutut</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknite na <gui>Blutut</gui> da otvorite panel.</p>
+    </item>
+    <item>
+      <p>Uverite se da je blutut uključen: prekidač na naslovnoj traci treba biti postavljen na <gui>UKLJ.</gui>.</p>
+    </item>
+    <item>
+      <p>Na spisku <gui>uređaja</gui>, izaberite uređaj kome će se slati datoteke. Ako željeni uređaj nije prikazan kao <gui>Povezan</gui> na spisku, treba da se <link xref="bluetooth-connect-device">povežete</link> s njim.</p>
+      <p>Pojaviće se panel namenjen spoljnom uređaju.</p>
+    </item>
+    <item>
+      <p>Kliknite <gui>Pošalji datoteke…</gui> i pojaviće se birač datoteka.</p>
+    </item>
+    <item>
+      <p>Izaberite datoteku koju želite da pošaljete i kliknite <gui>Izaberi</gui>.</p>
+      <p>Da pošaljete više od jedne datoteke u fascikli, držite pritisnutim <key>Ktrl</key> i birajte datoteku jednu po jednu.</p>
+    </item>
+    <item>
+      <p>Vlasnik prijemnog uređaja bi trebao da pritisne dugme da bi prihvatio datoteku. Prozorče <gui>prenosa datoteka blututom</gui> će prikazati traku napredovanja. Kliknite <gui>Zatvori</gui> kada se prenos završi.</p>
+    </item>
+  </steps>
+
+</page>

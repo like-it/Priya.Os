@@ -1,0 +1,25 @@
+TROUBLESHOOTING
+---------------
+
+- video-thumbnailer
+
+  On problems with the shotwell-video-thumbnailer you can
+  switch to the ffmpegthumnailer. Please run as root:
+
+  1. Backup /usr/lib/shotwell-video-thumbnailer:
+     * mv /usr/lib/shotwell-video-thumbnailer /usr/lib/shotwell-video-thumbnailer.org
+
+  2. Install ffmpegthumbnailer:
+     * apt-get install ffmpegthumbnailer
+
+  3. Create a new executable file:
+     * touch /usr/lib/shotwell-video-thumbnailer
+     * chmod  --reference=/usr/lib/shotwell-video-thumbnailer.org /usr/lib/shotwell-video-thumbnailer
+
+  4. Write into the new file:
+     * echo "#! /bin/bash" >/usr/lib/shotwell-video-thumbnailer
+     * echo "ffmpegthumnailer -i \"$1\" -o -b -c png >>/usr/lib/shotwell-video-thumbnailer
+
+  Or you can use the file replace_thumbnail.sh from the examples directory.
+
+  Thanks to Teo Romera <teoromera@gmail.com>

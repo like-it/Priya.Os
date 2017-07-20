@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="other-files" xml:lang="cs">
+
+    <info>
+        <link type="guide" xref="index#other"/>
+        <desc>Jak zachovat knihovnu Shotwell synchronizovanou se soubory s fotografiemi na disku.</desc>
+        
+        <link type="next" xref="other-plugins"/>
+    </info>
+
+   <title>Soubory s fotografiemi</title>
+
+    <p>Každá fotografie v knihovně Shotwell odpovídá souboru uloženému na vašem pevném disku. Shotwell má několik funkcí, které pomáhají udržet jeho knihovnu a soubory na disku synchronizované.</p>
+    <links type="section"/>
+    
+    <section id="dirpattern">
+        <title>Používání vlastního vzoru složky</title>
+        <p>Shotwell umožňuje určit, jak má pojmenovávat složky ve vaší knihovně. Můžete tak učinit změnou nastavení <gui>Struktury složek</gui> a <gui>Vzoru</gui> v dialogovém okně <gui>Předvolby</gui>. K dispozici jsou předdefinované vzory nebo zvolte <gui>Vlastní</gui> a zapište svůj vlastní.</p>
+
+        <p>Všechny symboly pro vzor složek začínají znakem % (procenta). Hodnoty těchto symbolů se vytváří na základě národního prostředí, takže to co uvidíte ve svém počítač se může lišit od příkladů níže.</p>
+
+        <table frame="all" rules="rowgroups">
+            <tbody>
+                <tr>
+                    <td><p> </p></td> <td><p><em>symbol</em></p></td> <td><p><em>význam</em></p></td> <td><p><em>příklad</em></p></td>
+                </tr>
+            </tbody>
+            <tbody>
+            <tr>
+                <td><p> </p></td><td><p>%Y</p></td><td><p>rok: úplný</p></td><td><p>2011</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%y</p></td><td><p>rok: dvě číslice</p></td><td><p>11</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%d</p></td><td><p>den v měsíci dvojmístný s úvodní nulou</p></td><td><p>03</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%A</p></td><td><p>název dne: úplný</p></td><td><p>Středa</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%a</p></td><td><p>název dne: zkratka</p></td><td><p>St</p></td>
+            </tr>
+            <tr>
+                <td><p> </p></td><td><p>%m</p></td><td><p>číslo měsíce dvojmístné s úvodní nulou</p></td><td><p>02</p></td>
+            </tr>
+            <tr><td><p> </p></td><td><p>%b</p></td><td><p>název měsíce: zkratka</p></td><td><p>bře</p></td></tr><tr><td><p> </p></td><td><p>%B</p></td><td><p>název měsíce: úplný</p></td><td><p>březen</p></td></tr><tr><td><p> </p></td><td><p>%I</p></td><td><p>hodiny: 12hodinový formát</p></td><td><p>05</p></td></tr><tr><td><p> </p></td><td><p>%H</p></td><td><p>hodiny: 24hodinový formát</p></td><td><p>17</p></td></tr><tr><td><p> </p></td><td><p>%M</p></td><td><p>minuty</p></td><td><p>16</p></td></tr><tr><td><p> </p></td><td><p>%S</p></td><td><p>sekundy</p></td><td><p>30</p></td></tr><tr><td><p> </p></td><td><p>%p</p></td><td><p>odp. nebo dop.</p></td><td><p>odp.</p></td></tr>
+            </tbody>
+        </table>
+
+        <p>Existují ještě další symboly, které zde uvedené nejsou. Jestli vás zajímají, podívejte se do příručky k funkci strftime, stačí použít příkaz <cmd>man strftime</cmd>.</p>
+    </section>
+
+    <section id="automatic-import">
+       <title>Automatický import fotografií</title>
+       
+       <p>Shotwell může automaticky importovat nové fotografie, které se objeví ve složce knihovny. (Složkou knihovny je obvykle složka <file>Obrázky</file> ve vaší domovské složce. Toto umístění můžete změnit v okně <gui>Předvolby</gui>.)</p>
+       
+       <p>Pro zapnutí automatického importu zaškrtněte políčko <gui>Sledovat, jestli nejsou do knihovny přidány nové soubory</gui> v okně <gui>Předvolby</gui>.</p>
+       
+       <note style="advanced"><p>Shotwell také umí automaticky následovat symbolické odkazy v automaticky importovaných složkách.</p></note>
+
+    </section>
+
+    <section id="automatic-rename">
+       <title>Automatické přejmenování importovaných fotografií na malá písmena</title>
+       
+       <p>Shotwell může automaticky měnit názvy souborů importovaných fotografií na malá písmena. Pokud tomu tak chcete, zvolte <guiseq><gui>Upravit</gui> <gui>Předvolby</gui></guiseq> a v okně, které se objeví, zaškrtněte políčko <gui>Převádět názvy importovaných souborů na malá písmena</gui>.</p>
+    
+    </section>
+    
+    <section id="writing-metadata">
+       <title>Zápis metadat za běhu</title>
+       
+       <p>Standardně Shotwell nemění soubory s fotografiemi, i když fotografii upravíte nebo změníte její štítky nebo název. Tyto změny pouze zaznamená do své vlastní databáze.</p>
+       
+       <p>Pokud chcete toto chování změnit, zaškrtněte políčko <gui>Zapisovat štítky, názvy a další metadata do souborů s fotografiemi</gui> v dialogovém okně <gui>Předvolby</gui>. Jakmile je tato volba zapnutá, Shotwell bude zapisovat následující metadata do většiny souborů s fotografiemi, kdykoliv provedete změnu:</p>
+       
+       <list>
+       <item><p>název</p></item>
+       <item><p>štítky</p></item>
+       <item><p>hodnocení</p></item>
+       <item><p>informace o otočení</p></item>
+       <item><p>datum/čas</p></item>
+       </list>
+       
+       <p>Shotwell ukládá tyto informace do souborů s fotografiemi pomocí formátů EXIF, IPTC a/nebo XMP. Upozorňujeme, že je umí zapisovat pouze do souborů ve formátu JPEG, PNG a TIFF, nikoliv do fotografií BMP a RAW a do videosouborů.</p>
+    
+    </section>
+    
+    <section id="runtime-monitoring">
+    <title>Sledování běhu</title>
+    
+    <p>Když Shotwell běží, přijímá upozornění o externích změnách v souborech s fotografiemi. Když se takovýto soubor změní, Shotwell jej znovu načte a aktualizuje zobrazení fotografie a metadata.</p>
+    
+    <p>Je třeba si uvědomit, že Shotwell při spuštění kontroluje všechny soubory s fotografiemi, ale jen soubory nacházející se ve složce knihovny jsou sledovány v reálném čase po spuštění. Autoři doufají, že v příštích vydáních bude toto omezení překonáno.</p>
+
+    </section>
+    
+</page>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="mr">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME डॉक्युमेंटेशन प्रकल्प</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>तीव्रता्स आणि विभाजन काय असते ते समजूण घ्या आणि त्यांना व्यवस्थापीत करण्यासाठी डिस्क युटिलिटिचा वापर करा.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>आकारमान आणि भाग व्यवस्थापित करा</title>
+
+  <p>शब्द <em>तीव्रताचा</em> वापर स्टोरेज साधनाच्या वर्णनकरिता होतो, जसे कि हार्ड डिस्क. ते साधनावरील स्टोरेजचा <em>भाग</em> देखील असू शकतो, कारण स्टोरेजला तुकड्यांमध्ये विभाजीत करणे शक्य आहे. संगणक ह्या स्टोरेजला फाइल प्रणालीतर्फे प्रवेशजोगी करतो ज्यास <em>माऊंटिंग</em> असे म्हटले जाते. माऊंट केलेले तीव्रता्स हार्ड ड्राइव्ह्ज, USB ड्राइव्ह्ज, DVD-RWs, SD कार्ड्स, आणि इतर मिडीया असू शकते. तीव्रता सध्या माऊंट केले असल्यास, त्यावरील फाइल्स वाचणे (आणि संभाव्यतया वाचणे) शक्य होईल.</p>
+
+  <p>अनेकवेळी, माऊंट केलेल्या तीव्रताला <em>पार्टिशन</em> असे म्हटले जाते, जरी ते परस्पर समान बाबी नाही. “partition” म्हणजे एका डिस्क ड्राइव्हवरील स्टोरेजचे <em>फिजिकल</em> क्षेत्र. विभाजनला एकदाचे माऊंट केल्यानंतर, त्यास तीव्रता म्हणून म्हटले जाऊ शकते कराण तुम्ही त्यावरील फाइल्सकरिता प्रवेश प्राप्त करू शकता. तीव्रता्सला लेबल केलेले, विभाजन आणि ड्राइव्हजच्या कार्यकारि “back rooms” करिता प्रवेशजोगी “storefronts” म्हणून समजणे शक्य आहे.</p>
+
+<section id="manage">
+ <title>डिस्क युटिलिटिचा वापर करून तीव्रता्स आणि विभाजनचे अवलोकन आणि व्यवस्थापन करा</title>
+
+  <p>डिस्क युटिलिटिचा वापर करून संगणकाच्या स्टोरेज तीव्रता्सची तपासणी आणि संपादत शक्य आहे.</p>
+
+<steps>
+  <item>
+    <p>Open the <gui>Activities</gui> overview and start <app>Disks</app>.</p>
+  </item>
+  <item>
+    <p>In the list of storage devices on the left, you will find hard disks,
+    CD/DVD drives, and other physical devices. Click the device you want to
+    inspect.</p>
+  </item>
+  <item>
+    <p>The right pane provides a visual breakdown of the volumes and
+    partitions present on the selected device. It also contains a variety of
+    tools used to manage these volumes.</p>
+    <p>काळजी घ्या: ह्या युटिलिटिजसह तुम्ही डिस्कवरील डाटा पूर्णपणे नष्ट करू शकता.</p>
+  </item>
+</steps>
+
+  <p>तुमच्या संगणकाकडे किमान एक <em>प्राइमरि</em> विभाजन आणि एक <em>स्वॅप</em> विभाजन समाविष्टीत आहे. स्वॅप विभाजनचा वापर कार्यप्रणालीतर्फे मेमरि व्यवस्थापन केला जातो, आणि क्वचित माउंट केले जाते. प्राइमरि विभाजनात ऑपरेटिंग सिस्टम, ॲप्लिकेशन्स, सेटिंग्ज, आणि व्यक्तिगत फाइल्स समाविष्टीत आहे. ह्या फाइल्सला सुरक्षा आणि सुविधाकरिता बहु विभाजांतर्फे वितरीत करणे शक्य आहे.</p>
+
+  <p>One primary partition must contain information that your computer uses to
+  start up, or <em>boot</em>. For this reason it is sometimes called a boot
+  partition, or boot volume. To determine if a volume is bootable, select the
+  partition and click the menu button in the toolbar underneath the partition
+  list. Then, click <gui>Edit Partition…</gui> and look at its
+  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
+  a bootable volume.</p>
+
+</section>
+
+</page>

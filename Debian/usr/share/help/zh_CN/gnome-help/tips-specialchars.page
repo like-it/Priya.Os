@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tips-specialchars" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="seealso" xref="keyboard-layouts"/>
+
+    <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>输入您键盘上找不到的字符，像外语字母、数学符号和特殊符号等。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>输入特殊字符</title>
+
+  <p>您可以从全世界的输入系统中找到成千上万的字符，甚至有些在您的键盘上都找不到，这一页列出了输入特殊字符的几种方法。</p>
+
+  <links type="section">
+    <title>输入字符的方法</title>
+  </links>
+
+  <section id="charmap">
+    <title>字符映射表</title>
+    <p>GNOME 附带一个字符映射表程序，可以让您浏览所有 Unicode 字符，使用它可以找到您想要的字符，然后复制粘贴到其他您要使用的地方。</p>
+
+    <p>您可以在<gui>活动概览</gui>中找到<app>字符映射表</app>，更多相关信息，请参阅<link href="help:gucharmap">字符映射表手册</link>。</p>
+
+  </section>
+
+  <section id="characters">
+    <title>Characters</title>
+    <p>Another useful application shipped with GNOME is <app>Characters</app>.
+    It lets you find and insert unusual characters by browsing character
+    categories or searching for keywords.</p>
+
+    <p>You can launch Characters from the Activities overview. For more
+    information on Characters, see the <link href="help:gnome-characters">
+    Characters Manual</link>.</p>
+
+  </section>
+
+  <section id="compose">
+    <title>Compose 键</title>
+    <p>Compose 键是一种特殊按键，可以按多个键序列得到一个特殊字符，例如，要输入重音符号 <em>é</em>，您可以按住 <key>compose</key> 然后再按 <key>'</key> 和 <key>e</key> 键。</p>
+    <p>键盘上没有指定 compose 键，相反，您可以定义键盘上的一个键作为 compose 键。</p>
+
+    <steps>
+      <title>定义一个 compose 键</title>
+      <item>
+        <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+        start typing <gui>Keyboard</gui>.</p>
+      </item>
+      <item>
+        <p>Click on <gui>Keyboard</gui> to open the panel.</p>
+      </item>
+      <item><p>Select the <gui>Shortcuts</gui> tab and click
+      <gui>Typing</gui>.</p></item>
+      <item><p>点击右侧面板的<gui>组合键</gui>。</p></item>
+      <item><p>Click on <gui>Disabled</gui> and select the key you would like to
+      behave as a compose key from the drop-down menu. You can choose either of
+      the <key>Ctrl</key> keys, the right <key>Alt</key> key, the right
+      <key>Win</key> or <key xref="keyboard-key-super">Super</key> key if
+      you have one, the <key xref="keyboard-key-menu">Menu</key> key or
+      <key>Caps Lock</key>. Any key you select will then only work as a compose
+      key, and will no longer work for its original purpose.</p></item>
+    </steps>
+    <p>您可以用 compose 键输入多种字符，例如：</p>
+    <list>
+      <item><p>按住 <key>compose</key> 键，然后按 <key>'</key> 键，可以输入重音符号，像 <em>é</em>。</p></item>
+      <item><p>按住 <key>compose</key> 键，然后按  <key>`</key> (反引号)键，可以输入抑音符号，像 <em>è</em>。</p></item>
+      <item><p>按住 <key>compose</key> 键，然后按  <key>"</key> ，可以输入变音符号，像 <em>ë</em>。</p></item>
+      <item><p>按住 <key>compose</key> 键，然后按  <key>-</key> ，可以输入长音符号，像 <em>ē</em>。</p></item>
+    </list>
+    <p>更多的 compose 键序列，请参阅 <link href="http://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations">Wikipedia 上的 compose 键</link>.</p>
+  </section>
+
+<section id="ctrlshiftu">
+  <title>代码点</title>
+
+  <p>您可以用键盘输入任何一个 Unicode 字符，只要输入这个字符的代码点数值。每个字符由一个四字符码来标识。要查找一个字符的四字符码，在字符映射表程序中找到这个字符，然后在状态栏中或在<gui>字符细节</gui>中找到，代码点是在<gui>U+</gui> 后面的四字符码。</p>
+
+  <p>To enter a character by its code point, hold down <key>Ctrl</key> and
+  <key>Shift</key>, type <key>U</key> followed by the four-character code
+  point, then release <key>Ctrl</key> and <key>Shift</key>. If you often use
+  characters that you can't easily access with other methods, you might find
+  it useful to memorize the code point for those characters so you can enter
+  them quickly.</p>
+
+</section>
+
+  <section id="layout">
+    <title>键盘布局</title>
+    <p>您可以让键盘变成其他语言布局，而不是原来键盘上标识的字母了，您甚至可以使用顶部面板上的一个图标，轻松地在不同语言之间切换，详细介绍请参阅 <link xref="keyboard-layouts"/>。</p>
+  </section>
+
+<section id="im">
+  <title>输入法</title>
+
+  <p>An Input Method expands the previous methods by allowing to enter
+  characters not only with keyboard but also any input devices. For instance
+  you could enter characters with a mouse using a gesture method, or enter
+  Japanese characters using a Latin keyboard.</p>
+
+  <p>要选择一个输入法，在输入控件上点击右键，在<gui>输入法</gui>菜单中选择一种需要的输入法。尚没有完全成为事实标准的统一的输入法，请参考输入法的文档查看如何使用。</p>
+
+</section>
+
+</page>

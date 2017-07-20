@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Du kan styra vilka program som ska kunna komma åt nätverket. Detta hjälper dig att hålla din dator säker.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Aktivera eller blockera brandväggsåtkomst</title>
+
+  <p>Ditt system bör vara utrustat med en <em>brandvägg</em> som låter det blockera program från att nås av andra personer på internet eller på ditt nätverk. Detta hjälper till att hålla din dator säker.</p>
+
+  <p>Många program kan använda din nätverksanslutning. Du kan till exempel dela filer eller låta någon se ditt skrivbord från en annan dator när du är ansluten till ett nätverk. Beroende på hur din dator är inställd kan du behöva justera brandväggen för att tillåta dessa tjänster att fungera som avsett.</p>
+
+  <p>Varje program som tillhandahåller nätverkstjänster använder en specifik <em>nätverksport</em>. För att låta andra datorer på nätverket komma åt en tjänst kan du behöva ”öppna” dess tilldelade port i brandväggen:</p>
+
+
+  <steps>
+    <item>
+      <p>Gå till <gui>Aktiviteter</gui> i övre vänstra hörnet på skärmen och starta ditt brandväggsprogram. Du kan behöva installera en brandväggshanterare själv som du inte hittar en (till exempel Firestarter eller GUFW).</p>
+    </item>
+    <item>
+      <p>Öppna eller inaktivera porten för din nätverkstjänst, beroende på om du vill att personer ska kunna nå den eller ej. Vilken port du behöver ändra <link xref="net-firewall-ports">beror på tjänsten</link>.</p>
+    </item>
+    <item>
+      <p>Spara eller verkställ ändringarna, efter att du följt brandväggsverktygets instruktioner.</p>
+    </item>
+  </steps>
+
+</page>

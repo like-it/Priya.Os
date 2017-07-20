@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-removedrive" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="files#removable"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-10-08" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>弹出或卸载 USB 闪存、CD、DVD 光盘，或者其他设备。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>安全移除一个外置设备</title>
+
+  <p>当您使用外部存储设备(如 USB 闪存驱动器)时，您应在将其拔下之前安全删除它们。如果您只是拔下设备，就会遇到拔下时应用程序仍在使用设备的危险，这会造成您的部分文件丢失或受损。当您使用 CD 或 DVD 等光盘时，您可以使用相同步骤将光盘从计算机中弹出。</p>
+
+  <steps>
+    <title>格式化可移动磁盘</title>
+    <item>
+      <p>From the <gui xref="shell-introduction#activities">Activities</gui> overview,
+      open <app>Files</app>.</p>
+    </item>
+    <item>
+      <p>在侧边栏中找到设备，在它的文件名旁边应该有一个弹出小图标，点击这个小图标就可以安全移除或弹出设备。</p>
+      <p>此外，您可以用右键单击侧边栏上的设备名并选择 <gui>弹出</gui>。</p>
+    </item>
+  </steps>
+
+  <section id="remove-busy-device">
+    <title>安全删除使用中的外部设备</title>
+
+  <p>如果设备上有文件被其他程序打开，那么您将不能安全移除设备。这时会出来一个提示窗口告诉您<gui>卷正忙</gui>，要安全移除此设备：</p>
+
+  <steps>
+    <item><p>点<gui>取消</gui>。</p></item>
+    <item><p>关闭此设备上的所有文件。</p></item>
+    <item><p>点击弹出图标安全移除或弹出设备。</p></item>
+    <item><p>此外，您可以用右键单击侧边栏上的设备名并选择 <gui>弹出</gui>。</p></item>
+  </steps>
+
+  <note style="warning"><p>您还可以不关闭打开的文件，而<gui>强制弹出</gui>来移除设备，但这可能会导致已经打开的程序文件出错。</p></note>
+
+  </section>
+
+</page>

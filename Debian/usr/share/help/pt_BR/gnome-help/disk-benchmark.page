@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="disk-benchmark" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="disk"/>
+
+    <revision pkgversion="3.6.2" version="0.2" date="2012-11-16" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Projeto de documentação do GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+   <credit type="editor">
+     <name>Michael Hill</name>
+     <email>mdhillca@gmail.com</email>
+   </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Realize testes de desempenho para ver quão rápido é seu disco rígido.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Testando o desempenho do seu disco rígido</title>
+
+  <p>Para testar a velocidade do seu disco rígido:</p>
+
+  <steps>
+    <item>
+      <p>Abra <app>Discos</app> no panorama de <gui xref="shell-introduction#activities">Atividades</gui>.</p>
+    </item>
+    <item>
+      <p>Escolha o disco da lista no painel à esquerda.</p>
+    </item>
+    <item>
+      <p>Clique no botão de menu e selecione <gui>Avaliar desempenho do disco…</gui>.</p>
+    </item>
+    <item>
+      <p>Clique <gui>Iniciar avaliação de desempenho…</gui> e ajuste os parâmetros de <gui>Taxa de transferência</gui> e <gui>Tempo de acesso</gui> como desejar.</p>
+    </item>
+    <item>
+      <p>Clique em <gui>Iniciar avaliação de desempenho</gui> para testar o quão rápido os dados podem ser lidos do disco. <link xref="user-admin-explain">Privilégios administrativos</link> podem ser necessários. Informe sua senha ou a senha para a conta de administrador que for requisitada.</p>
+      <note>
+        <p>Se <gui>Executar avaliação de desempenho de escrita</gui> estiver marcada, a avaliação de desempenho vai testar o quão rápido os dados podem ser lidos e gravados no disco. Isso vai levar mais tempo para concluir.</p>
+      </note>
+    </item>
+  </steps>
+
+  <p>Quando o teste estiver finalizado, os resultados vão aparecer no gráfico. Os pontos verdes e linhas contando-os indicam as amostras tiradas; elas correspondem ao eixo direito, mostrando tempo de acesso, confrontado com o eixo inferior, representando a porcentagem de tempo passado durante a avaliação de desempenho. As linhas azuis representam taxas de leitura, enquanto as linhas vermelhas representam taxas de gravação; elas são exibidas como taxa de acesso a dados no eixo esquerdo, confrontando a porcentagem de disco caminhado, de fora para dentro, junto com o eixo inferior.</p>
+
+  <p>Abaixo do gráfico, são exibidos os valores mínimo, máximo e médio das taxas de leitura e escrita; o tempo médio de acesso e tempo decorrido desde o último teste de avaliação de desempenho.</p>
+
+</page>

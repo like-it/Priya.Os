@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="backup-how" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="backup-why"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit>
+      <name>Έργο Τεκμηρίωσης GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Χρησιμοποιήστε το Déjà Dup (ή κάποια άλλη εφαρμογή εφεδρείας) για να αντιγράψετε τα πολύτιμα αρχεία και ρυθμίσεις σας για να προστατευτείτε από απώλειες.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Πώς να δημιουργήσετε αντίγραφα ασφαλείας</title>
+
+  <p>Ο πιο εύκολος τρόπος αντιγραφής των αρχείων και ρυθμίσεων σας είναι να αφήσετε μια εφαρμογή αντιγράφων ασφαλείας να διαχειριστεί την διαδικασία αντιγραφής για σας. Ένας αριθμός διαφορετικών εφαρμογών αντιγραφής είναι διαθέσιμος, για παράδειγμα το <app>Déjà Dup</app>.</p>
+
+  <p>Η βοήθεια για την επιλεγμένη εφαρμογή αντιγραφής θα σας δείξει τις ρυθμίσεις των προτιμήσεων σας για την αντιγραφή, καθώς και πώς να επαναφέρετε τα δεδομένα σας.</p>
+
+  <p>Μια εναλλακτική επιλογή είναι να <link xref="files-copy">αντιγράψετε τα αρχεία σας</link> σε ασφαλή θέση, όπως ένας εξωτερικός σκληρός δίσκος, ένας άλλος υπολογιστής στο δίκτυο, ή ένας οδηγός USB. Τα <link xref="backup-thinkabout">προσωπικά σας αρχεία</link> και οι ρυθμίσεις είναι συνήθως στον προσωπικό σας φάκελο, έτσι μπορείτε να τα αντιγράψετε από εκεί.</p>
+
+  <p>Η ποσότητα των δεδομένων που μπορείτε να δημιουργήσετε αντίγραφα ασφαλείας περιορίζεται από το μέγεθος της συσκευής αποθήκευσης. Εάν έχετε χώρο στη συσκευή αντιγράφων σας, είναι άριστο να αντιγράψετε όλον τον προσωπικό σας φάκελο με τις ακόλουθες εξαιρέσεις:</p>
+
+<list>
+ <item><p>Αρχεία που έχουν ήδη αντιγραφεί κάπου αλλού, όπως σε ένα CD, DVD, ή σε άλλα αφαιρέσιμα μέσα.</p></item>
+ <item><p>Αρχεία που μπορείτε να αναδημιουργήσετε εύκολα. Για παράδειγμα, εάν είσαστε προγραμματιστής, δεν χρειάζεται να δημιουργείτε αντίγραφα ασφαλείας για τα αρχεία που παράγονται όταν μεταγλωττίζετε τα προγράμματά σας. Αντί για αυτό, βεβαιωθείτε απλά ότι αντιγράψατε τα αρχικά πηγαία αρχεία.</p></item>
+ <item><p>Όλα τα αρχεία στον φάκελο απορριμμάτων. Ο φάκελος απορριμμάτων μπορεί να βρεθεί στο <file>~/.local/share/Trash</file>.</p></item>
+</list>
+
+</page>

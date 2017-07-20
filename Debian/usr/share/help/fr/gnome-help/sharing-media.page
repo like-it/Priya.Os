@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-media" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.10" version="0.2" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Partager les médias sur votre réseau local en utilisant UPnP.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Partage de votre musique, de vos photos et vidéos</title>
+
+  <p>Vous pouvez explorer et lire les médias sur votre ordinateur en utilisant un périphérique certifié <sys>UpnP</sys> ou <sys>DLNA</sys>, comme un téléphone, une TV ou une console de jeu. Configurez <gui>Partager les médias</gui> afin d'autoriser ces périphériques à accéder aux dossiers contenant votre musique, vos photos ou vos vidéos</p>
+
+  <note style="info package">
+    <p>Le paquet <app>Rygel</app> doit être installé pour que <gui>Partager les médias</gui> soit visible.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:rygel" style="button">Installer rygel</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Sharing</gui>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Partage</gui> pour ouvrir le panneau.</p>
+    </item>
+    <item>
+      <p>Si l'interrupteur <gui>Partage</gui> est sur <gui>Désactivé</gui>, basculez-le sur <gui>Activé</gui>.</p>
+
+      <note style="info"><p>Si le texte sous <gui>Nom de l'ordinateur</gui> le permet, vous pouvez <link xref="sharing-displayname">changer</link> le nom que votre ordinateur affiche sur le réseau.</p></note>
+    </item>
+    <item>
+      <p>Choisissez <gui>Partager les médias</gui>.</p>
+    </item>
+    <item>
+      <p>Basculer l'interrupteur <gui>Partager les médias</gui> sur <gui>Activé</gui>.</p>
+    </item>
+    <item>
+      <p>Par défaut, les dossiers <file>Musique</file>, <file>Images</file> et <file>Vidéos</file> sont partagés. Pour en retirer un, cliquez sur <gui>X</gui> à côté de son nom.</p>
+    </item>
+    <item>
+      <p>Pour ajouter un autre dossier, cliquez sur le bouton <gui style="button">+</gui> pour ouvrir la boîte de dialogue <gui>Choisir un dossier</gui>. Allez <em>dans</em> le dossier désiré et cliquez sur <gui style="button">Ouvrir</gui>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui style="button">X</gui>. Vous pouvez maintenant explorer ou lire les médias dans les dossiers que vous avez sélectionnés en utilisant le périphérique externe.</p>
+    </item>
+  </steps>
+
+  <section id="networks">
+  <title>Réseaux</title>
+
+  <p>La section <gui>Réseaux</gui> affiche la liste des réseaux auxquels vous êtes actuellement connecté. Utilisez l'interrupteur <gui>Activé | Désactivé</gui> de chaque réseau pour choisir avec qui vous autorisez le partage de votre média.</p>
+
+  </section>
+
+</page>

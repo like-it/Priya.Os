@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="ta">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>வெளிப்புற வன் வட்டு அல்லது USB பிளாஷ் வட்டை ஃபார்மேட் செய்து அதிலுள்ள கோப்புகள் மற்றும் கோப்புறைகள் அனைத்தையும் அகற்றவும்.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+<title>நீக்கக்கூடிய வட்டிலிருந்து அனைத்தையும் அழிக்கவும்</title>
+
+  <p>உங்களிடம் USB மெமரி ஸ்டிக் அலல்து வெளிப்புற வன் வட்டு போன்ற நீக்கக்கூடிய வட்டு இருந்தால், அதில் உள்ள கோப்புகள் மற்றும் கோப்புறைகள் அனைத்தையும் மொத்தமாக நீங்கள் அகற்ற விரும்பலாம். வட்டை <em>ஃபார்மேட்</em> செய்வதன் மூலம் இதைச் செய்யலாம், ஃபார்மேட் செய்வது வட்டில் உள்ள அனைத்து கோப்புகளையும் அழித்து வட்டை காலியாக்கும்.</p>
+
+<steps>
+  <title>நீக்கக்கூடிய வட்டு ஒன்றை ஃபார்மேட் செய்தல்</title>
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to wipe from the list of storage devices on the
+    left.</p>
+
+    <note style="warning">
+      <p>சரியான வட்டைத் தேர்ந்தெடுக்க வேண்டும், இல்லாவிட்டால் வேறொரு வட்டிலிருந்து கோப்புகள் அனைத்தும் அழிந்துவிடும்!</p>
+    </note>
+  </item>
+  <item>
+    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
+    menu button. Then click <gui>Format…</gui>.</p>
+  </item>
+  <item>
+    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
+    disk.</p>
+   <p>நீங்கள் அந்த வட்டை Linux கணினிகளில் மட்டுமின்றி Windows மற்றும் Mac OS கணினிகளிலும் பயன்படுத்தினால், <gui>FAT</gui> ஐ தேர்வு செய்யவும். அதை Windows இல் மட்டும் பயன்படுத்தினால், <gui>NTFS</gui> சிறந்த தெரிவு. <gui>கோப்பு முறைமை வகைகள்</gui> பற்றிய குறிப்பு லேபிளாக வழங்கப்படும்.</p>
+  </item>
+  <item>
+    <p>Give the disk a name and click <gui>Format…</gui> to continue and show a
+    confirmation window. Check the details carefully, and click
+    <gui>Format</gui> to wipe the disk.</p>
+  </item>
+  <item>
+    <p>Once the formatting has finished, click the eject icon to safely remove
+    the disk. It should now be blank and ready to use again.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>ஒரு வட்டை ஃபார்மேட் செய்வதால் உங்கள் கோப்புகள் பாதுகாப்பாக அழிக்கப்படாது</title>
+  <p>ஒரு வட்டில் உள்ள அனைத்து தரவையும் முற்றிலுமாக அழிக்க அதை ஃபார்மேட் செய்தால் மட்டும் போதாது. ஃபார்மேட் செய்த வட்டில் கோப்புகள் எதுவும் இல்லாதது போலவே தோன்றும், ஆனால் சிறப்பான மீட்பு மென்பொருளைக் கொண்டு கோப்புகளை மீட்க முடியும். கோப்புகளை பாதுகாப்பாக அழிக்க <app>shred</app> போன்ற கட்டளை வரி பயன்பாட்டைப் பயன்படுத்த வேண்டும்.</p>
+</note>
+
+</page>

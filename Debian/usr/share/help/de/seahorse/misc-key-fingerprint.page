@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="misc-key-fingerprint" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="concepts"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Der Fingerabdruck eines Schlüssels ist eine einzigartige Zeichenkette jedes Schlüssels, die oft eingesetzt wird, den Eigentümer eines Schlüssels zu identifizieren.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Was ist ein Fingerabdruck eines Schlüssels?</title>
+
+  <p>Der (digitale) Fingerabdruck eines Schlüssels ist eine eindeutige Folge von Buchstaben und Zahlen, mit welcher der Schlüssel identifiziert werden kann. Vergleichbar mit den Fingerabdrücken zweier unterschiedlicher Personen sind die Fingerabdrücke zweier unterschiedlicher Schlüssel niemals identisch. Der Fingerabdruck ist die beste Möglichkeit einen bestimmten Schlüssel zu identifizieren.</p>
+
+  <p>Ein Schlüssel hat mehrere Eigenschaften wie Name und E-Mail des Eigentümers, den Schlüsseltyp, das Ablaufdatum usw. Wenn Sie nach einem öffentlichen Schlüssel suchen und mehrere Schlüssel mit den gleichen Eigenschaften finden, dann ist der einzige Weg den gesuchten Schlüssel zu identifizieren, die Fingerabdrücke der Schlüssel mit dem Fingerabdruck des gesuchten Schlüssel zu vergleichen.</p>
+
+  <p>Der Fingerabdruck eines kryptografischen Schlüssels wird überprüft, wenn Sie sich an einem entfernten Rechner per<link xref="index#ssh-keys">SSH</link> anmelden. Beim Signieren eines <link xref="index#pgp-keys">PGP</link>-Schlüssels müssen Sie immer den Fingerabdruck des Schlüssels kontrollieren und die Identität des Schlüsselbesitzers überprüfen, um sicherzustellen, dass Sie den richtigen Schlüssel signieren.</p>
+
+<section id="fingerprint-ui">
+  <title>Fingerabdrücke in <app>Passwörter und Schlüssel</app></title>
+
+    <p>Schauen Sie sich in <app>Passwörter und Schlüssel</app> den Fingerabdruck eines Schlüssels in den Eigenschaften eines Schlüssels an.</p>
+
+    <steps>
+      <title>So überprüfen Sie den Fingerabdruck eines Schlüssels:</title>
+        <item>
+	  <p>Wählen Sie <gui>GnuPG-Schlüssel</gui> aus dem linken Bereich.</p>
+        </item>
+        <item>
+          <p>Wählen Sie den PGP-Schlüssel aus der Liste.</p>
+        </item>
+        <item>
+          <p>Klicken Sie rechts auf den Schlüssel und wählen Sie <gui style="menuitem">Eigenschaften</gui>.</p>
+	</item>
+        <item>
+          <p>Wählen Sie den Reiter <gui>Details</gui> in dem neuen Fenster.</p>
+        </item>
+        <item>
+          <p>Sie können den Fingerabdruck des Schlüssels auf der linken Seite sehen.</p>
+        </item>
+    </steps>
+
+  <!-- stefw: Suggest documenting that the key fingerprint is the
+  only way to uniquely tell the difference between two keys.
+
+  Two keys may have the same name and description. The label or name
+  is no guarantee that the key represents the person described in the label.
+
+  The way to guarantee that you have a given key is to compare the
+  fingerprint with the person who owns the key.
+
+  For SSH keys this is done when you initially connect to a server.
+
+  For PGP keys this is usually done through the web of trust. Where someone
+  you know signs a key, and vouches that the key with a given fingerprint
+  is owned by the person noted on the label.
+  -->
+</section>
+
+</page>

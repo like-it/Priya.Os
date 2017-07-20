@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tips-specialchars" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="seealso" xref="keyboard-layouts"/>
+
+    <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A billentyűzeten nem szereplő karakterek, például idegen ábécék, matematikai szimbólumok és dingbatok beírása.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Speciális karakterek bevitele</title>
+
+  <p>A világ legtöbb írásrendszeréből származó karakterek ezreit viheti be és jelenítheti meg, még ha azok nem is találhatók meg a billentyűzetén. Ez az oldal a speciális karakterek bevitelének különböző módszereit sorolja fel.</p>
+
+  <links type="section">
+    <title>Karakterbeviteli módszerek</title>
+  </links>
+
+  <section id="charmap">
+    <title>Karaktertábla</title>
+    <p>A GNOME karaktertábla alkalmazása segítségével böngészheti az Unicode összes karakterét. A kívánt karakter megkereséséhez használja a karaktertáblát, majd másolja és illessze be azt oda, ahol szüksége van rá.</p>
+
+    <p>A <app>Karaktertábla</app> alkalmazást megtalálja a <gui>Tevékenységek</gui> áttekintésben. A karaktertáblával kapcsolatos további információkért lásd a <link href="help:gucharmap">karaktertábla kézikönyvét</link>.</p>
+
+  </section>
+
+  <section id="characters">
+    <title>Karakterek</title>
+    <p>A GNOME másik hasznos alkalmazása a <app>Karakterek</app>. Lehetővé teszi szokatlan karakterek megkeresését és beszúrását a karakterkategóriák tallózásával vagy kulcsszavak keresésével.</p>
+
+    <p>A Karakterek alkalmazást megtalálja a Tevékenységek áttekintésben. A Karakterekkel kapcsolatos további információkért lásd a <link href="help:gucharmap">Karakterek kézikönyvét</link>.</p>
+
+  </section>
+
+  <section id="compose">
+    <title>Kombináló billentyű</title>
+    <p>A kombináló billentyű egy speciális billentyű, amely lehetővé teszi speciális karakterek beírását több billentyű egymás utáni lenyomásával. Például egy ékezetes <em>é</em> betű beírásához megnyomhatja a <key>kombináló</key> billentyűt, majd a <key>'</key>, végül az <key>e</key> billentyűket.</p>
+    <p>A billentyűzeteken nincs fizikai kombináló billentyű. Ehelyett megadhatja, hogy a billentyűzetén található billentyűk közül melyiket szeretné kombináló billentyűként használni.</p>
+
+    <steps>
+      <title>Kombináló billentyű definiálása</title>
+      <item>
+        <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Billentyűzet</gui> szót.</p>
+      </item>
+      <item>
+        <p>Kattintson a <gui>Billentyűzet</gui> ikonra a panel megnyitásához.</p>
+      </item>
+      <item><p>Válassza a <gui>Gyorsbillentyűk</gui> fület, és kattintson a <gui>Gépelés</gui> kategóriára.</p></item>
+      <item><p>Kattintson a <gui>Kombináló billentyű</gui> elemre a jobb oldalon.</p></item>
+      <item><p>Kattintson a <gui>Letiltva</gui> elemre, és a legördülő menüből válassza ki a billentyűt, amelyet kombináló billentyűként szeretne használni. Választhatja például bármelyik <key>Ctrl</key>, a jobb <key>Alt</key>, a jobb <key>Win</key> vagy a <key xref="keyboard-key-super">Super</key> billentyűt (ha van), a <key xref="keyboard-key-menu">Menü</key> vagy a <key>Caps Lock</key> billentyűt. A kiválasztott billentyű ezután csak kombináló billentyűként működik, és nem tudja az eredeti rendeltetésének megfelelően használni.</p></item>
+    </steps>
+    <p>Számos általános karaktert beírhat a kombináló billentyű segítségével, például:</p>
+    <list>
+      <item><p>Nyomja meg a <key>kombináló</key> billentyűt, majd a <key>'</key> billentyűt, és egy betűt az éles mellékjel elhelyezéséhez, úgy mint az <em>é</em> betűn.</p></item>
+      <item><p>Nyomja meg a <key>kombináló</key> billentyűt, majd a <key>`</key> (visszafelé ékezet) billentyűt, és egy betűt a tompa mellékjel elhelyezéséhez, úgy mint az <em>è</em> betűn.</p></item>
+      <item><p>Nyomja meg a <key>kombináló</key> billentyűt, majd a <key>"</key> billentyűt, és egy betűt az umlaut mellékjel elhelyezéséhez, úgy mint az <em>ë</em> betűn.</p></item>
+      <item><p>Nyomja meg a <key>kombináló</key> billentyűt, majd nyomja meg a <key>-</key> billentyűt, és egy betűt a macron mellékjel elhelyezéséhez, úgy mint az <em>ē</em> betűn.</p></item>
+    </list>
+    <p>További kombináló billentyűkombinációkért lásd a <link href="http://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations">kombináló billentyű lapot a Wikipédiában</link>.</p>
+  </section>
+
+<section id="ctrlshiftu">
+  <title>Kódpontok</title>
+
+  <p>Bármely Unicode karaktert beírhatja a karakter numerikus kódpontjának begépelésével. Minden karaktert egy négykarakteres kódpont azonosít. Egy karakter kódpontját megtalálhatja, ha megkeresi a karaktert a Karaktertábla alkalmazásban, ekkor az megjelenik az állapotsoron és a <gui>Karakter adatai</gui> lapon is. A kódpont az <gui>U+</gui> utáni négy karakter.</p>
+
+  <p>Egy karakter kódponttal való beírásához tartsa lenyomva a <key>Ctrl</key> és <key>Shift</key> billentyűket, üsse le az <key>U</key> billentyűt, írja be a négykarakteres kódpontot, ezután engedje fel a <key>Ctrl</key> és <key>Shift</key> billentyűket. Ha gyakran használ más módszerekkel nehezen elérhető karaktereket, hasznos lehet a kódpontjaik memorizálása, hogy gyorsan beírhassa azokat.</p>
+
+</section>
+
+  <section id="layout">
+    <title>Billentyűzetkiosztások</title>
+    <p>Beállíthatja, hogy a billentyűzete – függetlenül a billentyűkre nyomtatott írásjelektől – egy másik nyelv karakterkiosztásának megfelelően működjön. A felső panelen található ikon segítségével könnyedén válthat a különböző billentyűzetkiosztások között. További információkért lásd: <link xref="keyboard-layouts"/>.</p>
+  </section>
+
+<section id="im">
+  <title>Beviteli módok</title>
+
+  <p>A beviteli módok kibővítik a korábbi módszereket, segítségükkel nem csak billentyűzettel, de bármely más beviteli eszközökkel is bevihet karaktereket. Egy gesztus mód használatával például az egérrel vihet be karaktereket, vagy japán karaktereket vihet be latin billentyűzet használatával.</p>
+
+  <p>Beviteli mód kiválasztásához kattintson a jobb egérgombbal egy szövegbeviteli mezőn, válassza a <gui>Beviteli mód</gui> menüt, majd a használni kívánt beviteli módot. Nincs alapértelmezett beviteli mód, ezért a használatukkal kapcsolatban nézze meg a beviteli módok dokumentációját.</p>
+
+</section>
+
+</page>

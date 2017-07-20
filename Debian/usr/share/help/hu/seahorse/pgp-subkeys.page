@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="pgp-subkeys" xml:lang="hu">
+  <info>
+    <link type="guide" xref="index#pgp-keys" group="second"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-28" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Egy PGP-kulcspárban a részkulcs mindig egy mesterkulcshoz kapcsolódik. Ez titkosításra használható.</desc>
+  </info>
+
+  <title>Mi az a részkulcs?</title>
+
+  <p>Bár a kulcsok biztonságos tárolása nagyon fontos, ez különösen akkor fárasztó, ha sok kulccsal rendelkezik. A <app>Jelszavak és kulcsok</app> alkalmazás az aláírásra és titkosításra alkalmas <em>részkulcsok</em> révén egyszerű megoldást kínál a kulcsok biztonságos kezelésére.</p>
+
+  <p>Minden egyes új nyilvános titkosítási kulcs <link xref="pgp-create">létrehozásakor</link> nem egyetlen kulcs, hanem egy <em>kulcspár</em> jön létre. Ez a kulcspár egy <em>mester kulcsnak</em> is nevezett fő kulcsból és egy <em>részkulcsból</em> áll. A mester kulcs további, hozzá kapcsolódó részkulcsok készítésére is használható.</p>
+
+  <list>
+    <title>Mire használatosak a kulcspárt alkotó kulcsok?</title>
+      <item>
+	<p>A <em>mester kulcs</em> más kulcsok <link xref="pgp-sign">aláírására</link>, részkulcsok készítésére és a részkulcsok <link xref="subkeys-revoke">visszavonására</link> használható. A mester kulcs biztonságos tárolása különös figyelmet igényel. A begyűjtött megbízhatósági aláírásokat is a mester kulcs tárolja. Ha a mester kulcs kompromittálódott, akkor nincs más választása, mint visszavonni a mester kulcsot, az összes csatolt részkulccsal együtt.</p>
+      </item>
+      <item>
+	<p>Az alapértelmezett <em>részkulcs</em> üzenetek titkosítására és visszafejtésére használatos. Lehetséges további, aláírásra használható részkulcsok létrehozása is. Bár a részkulcsok biztonságos tárolása fontos, egy kompromittált részkulcsot bármikor visszavonhat, az eredeti mester kulccsal pedig készíthet egy újat.</p>
+      </item>
+  </list>
+
+  <section id="more" style="2column">
+    <title>Tudjon meg többet a részkulcsokról</title>
+  </section>
+</page>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="pgp-sign" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision pkgversion="3.9" date="2013-08-29" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Si vous avez confiance en la clé, vous pouvez la signer.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Signature des clés</title>
+
+  <p>Pour montrer que vous avez confiance et que vous vous portez garant de l'authenticité de la clé de quelqu'un, vous pouvez la signer. Vous ne devez signer la clé d'une personne qu'après avoir comparé l'<link xref="pgp-userid">identifiant utilisateur</link> de la clé avec une preuve d'identité, comme un passeport, un permis de conduire ou quelque chose de similaire. Si les deux identifiants correspondent, la clé est réputée fiable.</p>
+
+  <steps>
+    <title>Signature d'une clé :</title>
+    <item>
+      <p>Importez, dans <app>Mots de passe et Clés</app>, la <link xref="pgp-retrieve-remote">clé distante</link> ou le <link xref="pgp-import">fichier de clé</link> contenant la clé à signer.</p>
+    </item>
+    <item>
+      <p>Dans la liste des <gui>Clés GnuPG</gui>, sélectionnez la clé importée.</p>
+    </item>
+    <item>
+      <p>Faites un clic droit sur la clé et sélectionnez <guiseq><gui>Propriétés</gui><gui>Confiance</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton<gui style="button">Signer cette clé</gui>.</p>
+    </item>
+    <item>
+      <p>Selon le soin que vous avez apporté à la vérification de la clé, choisissez une des options parmi <gui style="radiobutton">Pas du tout</gui>, <gui style="radiobutton">Superficiellement</gui> ou <gui style="radiobutton">Très sérieusement</gui>.</p>
+    </item>
+    <item>
+      <p>Décidez si vous voulez révoquer votre signature ultérieurement et si vous voulez rendre publique votre signature, en cochant les cases fournies.</p>
+    </item>
+    <item>
+      <p>Si vous possédez plus d'une clé PGP, sélectionnez la clé avec laquelle vous voulez signer dans la liste près de <gui>Signataire</gui>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton <gui style="button">Signer</gui> pour terminer.</p>
+    </item>
+  </steps>
+
+  <note style="info">
+    <title>Signature de mes propres clés</title>
+    <p>Quand vous <link xref="pgp-create">créez</link> une nouvelle clé <gui>GnuPG</gui>, elle est automatiquement signée par vous. Toutes les sous-clés <link xref="subkeys-add">créées</link> en utilisant une clé <gui>GnuPG</gui> sont également signées automatiquement.</p>
+  </note>
+
+</page>

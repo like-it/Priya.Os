@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="pref-scrolling" xml:lang="fr">
+
+  <info>
+    <revision pkgversion="3.8" date="2013-02-25" status="draft"/>
+    <revision pkgversion="3.12" date="2014-09-08" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+    <link type="guide" xref="profile"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013–2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Modifier le défilement de l'affichage et le comportement de la barre de défilement.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yoann Fievez</mal:name>
+      <mal:email>yoann.fievez@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jérôme Sirgue</mal:name>
+      <mal:email>jsirgue@free.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Guillaume Bernard</mal:name>
+      <mal:email>translate@filorin.fr</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Préférences de la barre de défilement</title>
+
+  <p>Quand un grand nombre de sorties s'affichent sur votre terminal, il peut être utile de le configurer spécialement pour qu'il soit plus facile à utiliser.</p>
+
+  <section id="visibility">
+    <title>Affichage de la barre de défilement</title>
+
+    <p>Vous pouvez désactiver la barre de défilement:</p>
+
+    <steps>
+      <item>
+        <p>Sélectionnez <guiseq><gui style="menu">Édition</gui> <gui style="menuitem">Préférences du profil</gui> <gui style="tab">Défilement</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Décochez <gui>Afficher la barre de défilement</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Vos préférences sont automatiquement enregistrées.</p>
+
+  </section>
+
+  <section id="on-output">
+    <title>Défilement sur la sortie</title>
+
+    <p>Vous pouvez bloquer le défilement afin d'afficher en permanence les dernières sorties tandis qu'une commande s'exécute.</p>
+
+    <steps>
+      <item>
+        <p>Sélectionnez <guiseq><gui style="menu">Édition</gui> <gui style="menuitem">Préférences du profil</gui> <gui style="tab">Défilement</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Cochez <gui style="checkbox">Défilement sur la sortie</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="on-keystroke">
+    <title>Défilement lors de la saisie</title>
+
+    <p>Vous pouvez régler le terminal pour qu'il défile automatiquement au bas de la fenêtre quand vous tapez un texte dans l'invite de commande.</p>
+
+    <steps>
+      <item>
+        <p>Sélectionnez <guiseq><gui style="menu">Édition</gui> <gui style="menuitem">Préférences du profil</gui> <gui style="tab">Défilement</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Cochez <gui style="checkbox">Défilement sur pression d'une touche</gui>.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="lines">
+    <title>Lignes de défilement</title>
+
+    <p>Vous pouvez limiter le nombre de lignes de sortie du terminal stockées en mémoire. Cela peut être utile si vous redémarrez peut souvent votre terminal, afin de limiter la quantité de mémoire consommée par la barre de défilement.</p>
+
+    <steps>
+      <item>
+        <p>Sélectionnez <guiseq><gui style="menu">Édition</gui> <gui style="menuitem">Préférences du profil</gui> <gui style="tab">Défilement</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Cochez <gui>Limitez les lignes d'historique à </gui> et saisissez un nombre de lignes supérieur à zéro pour limiter le défilement.</p>
+      </item>
+      <item>
+        <p>Cliquez sur le <gui style="button">+</gui> pour augmenter ou le <gui style="button">-</gui> pour diminuer le nombre de lignes.</p>
+      </item>
+    </steps>
+
+    <note style="warning">
+      <p>L'utilisation de l'option défilement illimité peut rendre <app>Terminal</app> très lent pendant le défilement !</p>
+    </note>
+
+  </section>
+
+</page>

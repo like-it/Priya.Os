@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters" xml:lang="de">
+
+  <info>
+    <desc>Verwenden Sie Filterregeln zum automatischen Sortieren Ihrer E-Mails in Ordner.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+
+    <revision pkgversion="3.0.2" version="0.6" date="2012-02-19" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-filters.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Filter verwenden</title>
+
+<p>Nachrichtenfilter führen aufgrund von Bedingungen, die Sie festgelegt haben, Aktionen mit Nachrichten aus. Es gibt Filter sowohl für eingehende als auch für ausgehende E-Mails.</p>
+
+<p>Filter werden automatisch auf eingehende Nachrichten für lokale Konten (wie z.B. POP) angewendet. E-Mail-Server von entfernten Konten (wie z.B. IMAP) filtern häufig E-Mails bereits auf dem Server, weil es schneller ist. Wenn die Filter in <app>Evolution</app> auf entfernte Konten angewendet werden sollen, so schalten Sie dies unter <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui><gui>E-Mail-Konten</gui><gui style="button">Bearbeiten</gui><gui>Empfangsoptionen</gui><gui>Optionen</gui><gui>Filter auf neue Nachrichten im Eingang dieses Servers anwenden</gui></guiseq> ein.</p>
+
+<p>Um händisch Filter auf Nachrichten in einem Ordner anzuwenden, wählen Sie die Nachrichten und klicken Sie auf  <guiseq><gui>Nachricht</gui><gui>Filter anwenden</gui></guiseq>, oder drücken Sie <keyseq><key>Strg</key><key>Y</key></keyseq>.</p>
+<p>Um alle Nachrichten in einem Ordner auszuwählen, wählen Sie <guiseq><gui>Bearbeiten</gui><gui>Alle markieren</gui></guiseq> in der Menüleiste, oder drücken Sie <keyseq><key>Strg</key><key>A</key></keyseq>.</p>
+
+<section id="adding">
+<title>Einen Filter erstellen</title>
+
+<steps>
+<item><p>Klicken Sie auf <guiseq><gui>Bearbeiten</gui><gui>Nachrichtenfilter</gui></guiseq> oder auf <guiseq><gui>Nachricht</gui><gui>Regel erstellen</gui></guiseq> und wählen Sie das Kriterium, auf dem der Filter basieren soll.</p></item>
+<item><p>Klicken Sie auf <gui style="button">Hinzufügen</gui>.</p></item>
+<item><p>Geben Sie einen Namen in das Feld <gui>Regelname</gui> ein.</p></item>
+<item><p>Legen Sie die Bedingungen für die Regel fest. Sie müssen für jede Bedingung zuerst wählen, welcher Nachrichtenteil geprüft wird, und dann den Vergleich definieren.</p><p>Für weitere Informationen zu verfügbaren Bedingungen lesen Sie bitte <link xref="mail-filters-conditions">Verfügbare Filterbedingungen</link>.</p></item>
+<item><p>Wenn Sie mehrere Bedingungen festlegen wollen, so legen sie unter <gui>Objekte suchen</gui> fest, wie viele zutreffen müssen, klicken Sie auf <gui style="button">Bedingung hinzufügen</gui> und wiederholen Sie den vorhergehenden Schritt.</p></item>
+<item>
+<p>Wählen Sie die Aktionen für den Filter unter <gui>Dann</gui> aus.</p><p>Für weitere Informationen zu den verfügbaren Aktionen lesen Sie bitte <link xref="mail-filters-actions">Verfügbare Filteraktionen</link>.</p>
+
+<note style="warning"><p>Beachten Sie, dass die Reihenfolge der Filter entscheidend ist. Sie werden wie ein Schema der Reihe nach auf die ursprüngliche Nachricht angewendet, wie ein Rezept.</p>
+<p>Wenn Ihr erster Filter eine Regel <gui>Bearbeitung abbrechen</gui> enthält, so werden alle E-Mails, auf welche dieser Filter zutrifft, alle nachfolgenden Filter übergehen.</p>
+<p>Wenn Sie eine Nachricht in einen anderen Ordner »verschieben«, so wird in Wirklichkeit eine Kopie der Nachricht an den Zielordner angehängt und die ursprüngliche Nachricht zum Löschen vorgemerkt. Das heißt, alle darauf folgenden Filterregeln werden auf die ursprüngliche Nachricht angewendet, welche nun zum Löschen vorgemerkt ist. Deshalb sollte das Verschieben einer Nachricht in einer Abfolge von Filterregeln erst zum Schluss erfolgen.</p></note>
+
+</item>
+<item><p>Klicken Sie zum Definieren mehrfacher Aktionen auf <gui style="button">Aktion hinzufügen</gui> und wiederholen Sie den letzten Schritt. Wenn Sie zum Beispiel keine anderen bestehenden Filter anwenden lassen wollen, so wählen Sie <gui>Verarbeitung stoppen</gui> als zweite Aktion in der Liste.</p></item>
+<item><p>Klicken Sie auf <gui style="button">OK</gui>.</p></item>
+</steps>
+
+</section>
+
+<section id="editing">
+<title>Filter bearbeiten</title>
+<steps>
+<item><p>Klicken Sie auf <guiseq><gui>Bearbeiten</gui><gui>Nachrichtenfilter</gui></guiseq>.</p></item>
+<item><p>Wählen Sie den Filter aus.</p></item>
+<item><p>Klicken Sie auf <gui style="button">Bearbeiten</gui>.</p></item>
+<item><p>Führen Sie die gewünschten Änderungen durch und klicken Sie zweimal auf <gui style="button">OK</gui>.</p></item>
+</steps>
+</section>
+
+<section id="deleting">
+<title>Filter löschen</title>
+<steps>
+<item><p>Klicken Sie auf <guiseq><gui>Bearbeiten</gui><gui>Nachrichtenfilter</gui></guiseq>.</p></item>
+<item><p>Wählen Sie den Filter aus.</p></item>
+<item><p>Klicken Sie auf <gui style="button">Entfernen</gui>.</p></item>
+<item><p>Klicken Sie auf <gui style="button">OK</gui>.</p></item>
+</steps>
+</section>
+
+
+
+
+	
+</page>

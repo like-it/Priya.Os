@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="contacts-ldap" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="contacts-using-several-addressbooks"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2015-03-09" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/usage-contact-sharing.html.en
+	   and
+	   http://library.gnome.org/users/evolution/2.32/config-prefs-contact.html.en#bxmw6w5
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak používat sdílený adresář na místní síti.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Přidání přistupu k LDAP</title>
+
+  <p>Protokol LDAP byl vytvořen, aby uživatelům umožnil sdílet kontakty po síti pomocí sdílení přístupu do centrálního adresáře. LDAP umožňuje firmám udržovat sdílené kontakty. Mnoho firem udržuje společný adresář LDAP pro všechny své zaměstnance nebo klienty.</p>
+
+<section id="add-ldap-addressbook">
+  <title>Přidání adresáře LDAP</title>
+
+  <steps>
+    <item>
+      <p>Klikněte na <guiseq><gui>Soubor</gui> <gui>Nový</gui> <gui>Adresář</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Na kartě <gui>Obecné</gui> vyberte typ <gui>Na serveru LDAP</gui>.</p>
+    </item>
+    <item>
+      <p>Vložte název, kterému dáváte přednost.</p>
+    </item>
+    <item>
+      <p>Zadejte adresu serveru, číslo portu (výchozí je 389) a jestli se chcete připojovat zabezpečeně.</p>
+    </item>
+    <item>
+      <p>Určete způsob přihlašování a své uživatelské jméno.</p>
+    </item>
+    <item>
+      <p>Klikněte na <gui style="button">Použít</gui>.</p>
+    </item>
+    <item>
+      <p>Na kartě <gui>Používání LDAP</gui> zadejte následující věci:</p>
+      <list>
+        <item>
+	  <p>Základ vyhledávání: Je počáteční bod pro prohledávání adresáře. Ohledně správného nastavení kontaktujte správce vaší sítě.</p>
+        </item>
+        <item>
+	  <p>Rozsah vyhledávání: Jedná se o hloubku prohledávání.</p>
+	  <p>Dostupné jsou následující volby:</p>
+          <list>
+            <item>
+	      <p>Jedna úroveň: Prohledává se základ vyhledávání a jeden záznam pod ním.</p>
+	    </item>
+            <item>
+	      <p>Podstrom: Prohledává základ vyhledávání a všechny záznamy pod ním.</p>
+            </item>
+          </list>
+        </item>
+        <item>
+	  <p>Filtr hledání: Filtr hledání zde může být nastaven pro všechny dotazy LDAP. Například:</p>
+          <list>
+            <item>
+              <p><code>ObjectClass=*</code>: Seznam všech objektů na serveru.</p>
+	    </item>
+            <item>
+	      <p><code>ObjectClass=User</code>: Jen seznam uživatelů.</p>
+	    </item>
+            <item>
+	      <p><code>Filter (|(ObjectClass=User)(ObjectClass=groupOfNames))</code>: Získává objekty ze seznamu uživatelů a kontaktů.</p>
+	    </item>
+            <item>
+	      <p><code>(&amp;(mail=*)(ObjectClass=*))</code>: Vypíše objekty, které mají přiřazenu nějakou e-mailovou adresu.</p>
+	    </item>
+          </list>
+        </item>
+        <item>
+	  <p>Časové omezení (v minutách): Maximální čas, po který se <app>Evolution</app> pokouší stahovat data ze serveru před tím, než to vzdá.</p>
+        </item>
+        <item>
+	  <p>Limit stahování: Maximální počet výsledků pro určité vyhledávání. Většina serverů odmítá poslat více než 500, ale můžete nastavit číslo nižší, pokud chcete zkrátit stahování velmi rozsáhlých vyhledávání.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Pokud si nejste jistí, jaká je adresa vašeho serveru, kontaktujte svého správce sítě.</p>
+  </note>
+
+</section>
+
+<section id="ldap-vs-local-addressbooks">
+  <title>Rozdíl oproti místním adresářům</title>
+
+  <p>Adresáře LDAP fungují podobně jak místní adresáře ve vašem počítači, ale s těmito odlišnostmi:</p>
+
+  <list>
+    <item>
+      <p>Složky v síti jsou dostupné, pouze když jste k síti připojeni. Používáte-li notebook nebo máte modemové připojení, možná budete chtít kopírovat nebo ukládat některé věci ze síťového adresáře do mezipaměti. Uděláte to přetažením a upustěním požadovaných kontaktů do místního adresáře.</p>
+    </item>
+    <item>
+      <p>Můžete také složku v síti označit pro použití při odpojení. Složku označíte tak, že kliknete pravým tlačítkem na složku, kliknete na <gui>Vlastnosti</gui> a vyberete <gui>Zkopírovat obsah složky lokálně pro práci při odpojení</gui>.</p>
+    </item>
+    <item>
+      <p>Aby zbytečně nezatěžoval síťový provoz, <app>Evolution</app> normálně nenačítá data ze serveru LDAP, dokud složku neotevřete.</p>
+    </item>
+    <item>
+      <p>V závislosti na nastavení vašeho serveru možná nebudete moci upravovat všechna pole v kontaktech uložených na serveru LDAP. Některé servery zakazují některé nebo veškeré změny, jiné používají menší sadu polí, než umožňuje <app>Evolution</app>. Pokud potřebujete jiné nastavení, obraťte se na správce vaší sítě.</p>
+    </item>
+  </list>
+
+</section>
+
+</page>

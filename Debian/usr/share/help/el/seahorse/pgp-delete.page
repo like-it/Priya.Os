@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-delete" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#pgp-keys"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-24" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="editor copyright">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Διαγραφή των τοπικών αντιγράφων των κλειδιών σας ή των κλειδιών των ατόμων με τους οποίους επικοινωνείτε.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα του GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Διαγραφή ενός υπάρχοντος κλειδιού</title>
+
+  <p>Αν δεν επικοινωνείτε πια με κάποιον, μπορείτε να διαγράψετε το αντίγραφο του κλειδί GnuPG σας στον υπολογιστή σας χρησιμοποιώντας το <app>Κωδικοί πρόσβασης και κλειδιά</app>. Μπορείτε επίσης να διαγράψετε μόνιμα ένα κλειδί που έχετε αν δεν έχει ποτέ δημοσιευτεί σε ένα διακομιστή κλειδιών. Διαγράφοντας ένα κλειδί GnuPG διαγράφονται και το δημόσιο κλειδί και το μυστικό κλειδί.</p>
+
+  <steps>
+    <title>Για να διαγράψετε ένα κλειδί:</title>
+    <item>
+      <p>Επιλέξτε το κλειδί. (Μπορεί να χρειαστείτε να εμφανίσετε όλα τα κλειδιά, με <guiseq> <gui style="menu">Προβολή</gui><gui style="menuitem">Εμφάνιση όλων</gui> </guiseq>)</p>
+    </item>
+    <item>
+      <p>Κάντε δεξί κλικ και επιλέξτε <gui>Διαγραφή</gui>. Εναλλακτικά, μπορείτε να επιλέξετε επίσης <guiseq><gui style="menu">Επεξεργασία</gui> <gui style="menuitem">Διαγραφή</gui></guiseq> για να διαγράψετε το κλειδί.</p>
+      <note style="important">
+        <p>Όταν διαγράφετε ένα κλειδί GnuPG που έχει δημοσιευτεί σε ένα διακομιστή κλειδιών, διαγράφετε μόνο το κλειδί στην κλειδοθήκη σας GnuPG επειδή ένα αντίγραφο του δημόσιου κλειδιού εμφανίζεται ακόμα σε κάποιον διακομιστή κλειδιών.</p>
+        <p>Αν διαγράψετε το κλειδί σας GnuPG, αυτό σημαίνει ότι το ιδιωτικό κλειδί σας θα διαγραφεί μόνιμα, αν και το δημόσιο κλειδί σας μπορεί ακόμα να <link xref="pgp-retrieve-remote">ανακτηθεί</link> από ένα διακομιστή κλειδιών και να χρησιμοποιηθεί για κρυπτογράφηση μηνυμάτων προς εσάς που δεν θα μπορείτε να διαβάσετε! Για να αποτρέψετε τη χρήση ενός τέτοιου κλειδιού, ανακτήστε και ανακαλέστε το κλειδί. Το ανακαλεσμένο κλειδί μπορεί τότε να <link xref="pgp-sync">συγχρονισθεί</link> με ένα διακομιστή κλειδιών για να αποτρέψει την ανάκτηση και χρήση του από άλλα άτομα.</p>
+        <!-- or when you <link xref="misc-key-revoke">revoke</link> it.- No
+        revoking feature yet for SSH keys/PGP master keys-->
+      </note>
+    </item>
+    <item>
+      <p>Στον νέο διάλογο, επιβεβαιώστε τη διαγραφή σημειώνοντας το πλαίσιο ελέγχου <gui style="checkbox">Καταλαβαίνω ότι αυτό το μυστικό κλειδί θα διαγραφεί μόνιμα</gui> και πατήστε το πλήκτρο <gui style="button">Διαγραφή</gui> για να ολοκληρώσετε.</p>
+    </item>
+  </steps>
+
+
+</page>

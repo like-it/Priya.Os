@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info xmlns="http://projectmallard.org/1.0/">
+
+<item><p>Feladó:</p>
+<p>A feladó e-mail címe vagy neve.</p></item>
+
+<item><p>Címzettek:</p>
+<p>A levél címzettjei.</p></item>
+
+<item><p>CC:</p>
+<p>Csak a levél másolatainak címzettjei.</p></item>
+
+<item><p>BCC:</p>
+<p>Csak a levél rejtett másolatainak címzettjei. Ez csak kimenő szűrőkre alkalmazható.</p></item>
+
+<item><p>Feladó vagy címzettek:</p>
+<p>A feladó vagy az üzenet címzettjeinek e-mail címe vagy neve.</p></item>
+
+<item><p>Tárgy:</p>
+<p>A levél tárgysora.</p></item>
+
+<item><p>Adott fejléc:</p>
+<p>Bármely fejléc, beleértve az <link xref="mail-composer-custom-header-lines">egyénieket</link> is.</p>
+<p>Ha egy levél többször is használ egy fejlécet, akkor az <app>Evolution</app> csak az elsőt veszi figyelembe, még ha a levél a másodikat másképp is adja meg. Ha például egy üzenet a Resent-From: fejlécet a „fejlesztes@példa.hu” értékkel adja meg, majd újra megadja a „marketing@példa.hu” értékkel, akkor az <app>Evolution</app> úgy szűri a levelet, mintha a második megadás nem is lenne ott. A fejléceket többször is megadó levelek szűréséhez használjon reguláris kifejezéseket.</p></item>
+
+<item><p>Üzenettörzs:</p>
+<p>A levél tényleges szövegében keres.</p></item>
+
+<item><p>Kifejezés:</p>
+<p>(Csak programozóknak) Üzenet szűrése az <app>Evolution</app> <link xref="mail-filters">szűrőinek</link> megadására használt Scheme nyelven írt kifejezéssel.</p></item>
+
+<item><p>Tetszőleges kifejezés:</p>
+<p>(csak tapasztalt felhasználóknak) Egyesítsen több feltételt egy <link href="https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10">különleges szintaxis</link> használatával.</p></item>
+
+<item><p>Küldés dátuma:</p>
+<p>A leveleket az elküldési dátumuk alapján szűri. Elsőként válassza ki a feltételeket, amelyeket a levélnek teljesítenie kell, például adott időpont előtt vagy után küldték. Ezután válassza ki az időpontot. A szűrő a futtatásakor összehasonlítja az üzenet időbélyegét a rendszerórával, vagy a naptárból kiválasztott adott dátummal és idővel. Választhatja azt is, hogy a szűrés idejéhez képest megadott időszakban érkezett leveleket szűrje, például a kettő-négy nappal ezelőttieket.</p></item>
+
+<item><p>Fogadás dátuma:</p>
+<p>Ugyanúgy működik, mint a Küldés dátuma beállítás, csak ez az üzenet fogadásának dátumát hasonlítja össze a kiválasztott dátumokkal.</p></item>
+
+<item><p>Címke:</p>
+<p>A levelek olyan <link xref="mail-labels">címkékkel</link> rendelkezhetnek, mint a Fontos, Munka, Személyes, Teendő vagy Később. A címkéket más szűrőkkel vagy saját kezűleg állíthatja be.</p></item>
+
+<item><p>Pontszám:</p>
+<p>A levél pontszámát beállítja egy 0-nál nagyobb egész számra. Beállíthat egy szűrőt az üzenetek pontszámainak megadására vagy módosítására, majd egy másik szűrővel a pontoknak megfelelően áthelyezheti a leveleket. A levelek pontszáma nem rendelkezik konkrét alappal: egy levelekhez rendelt tetszőleges szám, amely alapján más szűrőkkel feldolgozhatja azokat.</p></item>
+
+<item><p>Méret (kB):</p>
+<p>A levél kilobájtban megadott mérete alapján rendez.</p></item>
+
+<item><p>Állapot:</p>
+<p>A levél állapota alapján szűr. Ez a Megválaszolt, Vázlat, Fontos, Olvasott vagy Levélszemét egyike lehet.</p></item>
+
+<item><p>Nyomon követés:</p>
+<p>Ellenőrzi, hogy a levél meg van-e <link xref="mail-follow-up-flag">jelölve nyomon követésre</link>.</p></item>
+
+<item><p>Befejezve:</p></item>
+<!-- TODO: Explain usage of option "Completed On" once https://bugzilla.gnome.org/show_bug.cgi?id=698439 is fixed -->
+
+<item><p>Mellékletek:</p>
+<p>Ellenőrzi, hogy a levélnek vannak-e mellékletei.</p></item>
+
+<item><p>Levelezőlista:</p>
+<p>Szűrés a levelezőlista alapján, amelyre a levél érkezett. Ez a szűrő kihagyhat egyes listakiszolgálókról érkező leveleket, mert az X-BeenThere fejlécet vizsgálja, amely levelezőlisták vagy más levélterjesztők azonosítására használatos. Az X-BeenThere fejlécet nem megfelelően beállító listakiszolgálókról érkező leveleket ezek a szűrők nem szűrik ki.</p></item>
+
+<item><p>Regex illeszkedés:</p>
+<p>(Csak programozóknak) Ha eligazodik a <link href="https://en.wikipedia.org/wiki/Regular_expression">regexek</link> vagy reguláris kifejezések világában, akkor ez a beállítás lehetővé teszi összetett karakterminták keresését, így például megtalálhatja az összes „a” betűvel kezdődő és „m”-mel végződő, vagy hat és tizenöt karakter közti hosszúságú szót, vagy egy bizonyos fejlécet kétszer adnak meg. A reguláris kifejezések használatával kapcsolatban nézze meg a <link href="man:grep">the man page for the <cmd>grep</cmd></link>, vagy a fenti Wikipédia-oldal magyar változatát.</p></item>
+
+</info>

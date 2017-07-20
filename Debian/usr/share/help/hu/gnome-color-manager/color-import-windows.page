@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="color-import-windows" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <link type="seealso" xref="color-gettingprofiles"/>
+    <desc>Hogyan lehet egy létező ICC profilt importálni Windows rendszer használata esetén.</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs@gmail.com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Egy ICC profil telepítése Microsoft Windowson</title>
+  <p>A profil hozzárendelésének módja egy eszközhöz és a beágyazott kalibrációs görbék használata eltérő minden Microsoft Windows verzió esetén.</p>
+  <section id="xp">
+    <title>Windows XP</title>
+    <p>Jobb kattintás a profilra a Windows Explorerben, majd kattintson a <gui>Profil telepítése</gui> menüpontra. Ez automatikusan a megfelelő könyvtárba másolja a profilt.</p>
+    <p>Ezután nyissa meg a <guiseq><gui>Vezérlőpult</gui><gui>Szín</gui></guiseq> menüpontot, és adja hozzá a profilt az eszközhöz.</p>
+    <note style="warning">
+      <p>Ha egy létező profilt cserél le Windows XP-n, a fenti parancsikon nem működik. A profilokat kézzel kell átmásolni a <file>C:\Windows\system32\spool\drivers\color</file> könyvtárba az eredeti profilok lecseréléshez.</p>
+    </note>
+    <p>A Windows XP egy indításkor futó programot igényel a profilkalibrációs görbék átmásolásához a videokártyára. Ez az <app>Adobe Gamma</app> vagy a <app>LUT Loader</app> programokkal végezhető el, illetve az ingyenes <app href="https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=12714"> Microsoft színkezelő panel kisalkalmazás</app> használatával.</p>
+  </section>
+
+  <section id="vista">
+    <title>Windows Vista</title>
+    <p>A Microsoft Windows Vista tévesen eltávolítja a kalibrációs görbéket a video LUT-ról bejelentkezés vagy felfüggesztés után, és az UAC képernyő megjelenésekor. Ez azt jelenti, hogy esetleg kézzel kell újratöltenie az ICC profilkalibrációs görbéket. Ha beágyazott kalibrációs görbékkel rendelkező profilokat használ, akkor nagy óvatosnak kell lennie, a kalibrációs állapot nem lett törölve.</p>
+  </section>
+
+  <section id="7">
+    <title>Windows 7</title>
+    <p>A Windows 7 a Linuxhoz hasonló sémát támogat, ahol a profilok telepíthetők rendszerszinten vagy a felhasználóra jellemzően. Viszont azok ugyanazon a helyen vannak eltárolva. Jobb kattintás a profilra a Windows Explorerben, majd kattintson a <gui>Profil telepítése</gui> menüpontra, vagy másolja át az .icc profilt a <file>C:\Windows\system32\spool\drivers\color</file> könyvtárba.</p>
+    <p>Nyissa meg a <guiseq><gui>Vezérlőpult</gui><gui>Színkezelés</gui></guiseq> menüpontot, majd adja hozzá a profilt a rendszerhez a <gui>Hozzáadás</gui> gombra kattintva. Kattintson a <gui>Speciális</gui> lapra, és keresse meg a <gui>Kijelzőkalibrációt</gui>. A kalibrációs görbék betöltése engedélyezve van a <gui>Windows kijelzőkalibráció engedélyezése</gui> jelölőnégyzettel, de ez nem érzékeny. Ez engedélyezhető a <gui>Rendszer alapértelmezések módosítására</gui> kattintva, majd visszatérve a <gui>Speciális</gui> lapra, és a jelölőnégyzetre kattintva.</p>
+    <p>Zárja be a párbeszédablakot, és kattintson a <gui>Jelenlegi kalibrációk újratöltése</gui> menüpontra a gamma rámpák beállításához. A profilkalibrációs görbéknek most beállítva kellene lenniük minden indításkor.</p>
+  </section>
+
+</page>

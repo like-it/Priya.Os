@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="it">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Collaboratori del wiki della documentazione di Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Progetto documentazione di GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Anche se l'adattatore WiFi è collegato, potrebbe non essere stato riconosciuto correttamente dal computer.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Risoluzione dei problemi relativi alla connessione WiFi</title>
+  <subtitle>Controllare che l'adattatore WiFi sia stato riconosciuto</subtitle>
+
+  <p>Anche se l'adattatore WiFi è collegato al computer, potrebbe non essere stato riconosciuto come dispositivo di rete. In questo passaggio verrà indicato come controllare se il dispositivo sia stato riconosciuto correttamente.</p>
+
+  <steps>
+    <item>
+      <p>Open a Terminal window, type <cmd>lshw -C network</cmd> and press
+      <key>Enter</key>. If this gives an error message, you may need to install
+      the <app>lshw</app> program on your computer.</p>
+    </item>
+    <item>
+      <p>Esaminare le informazioni che vengono visualizzate e trovare la sezione <em>Wireless interface</em>. Se l'adattatore WiFi è stato riconosciuto correttamente, dovrebbe essere visualizzato qualcosa di simile (ma non identico) a questo:</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>Se nell'elenco è presente un dispositivo WiFi, continuare consultando il <link xref="net-wireless-troubleshooting-device-drivers">passaggio sull'installazione dei driver</link>.</p>
+      <p>Se nell'elenco <em>non</em> è presente un dispositivo WiFi, i passi successivi da intraprendere dipendono dal tipo di dispositivo utilizzato. Consultare la pertinente sezione in relazione al tipo di adattatore WiFi usato: <link xref="#pci">PCI interno</link>, <link xref="#usb">USB</link> o <link xref="#pcmcia">PCMCIA</link>.</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>Adattatore senza fili PCI (interno)</title>
+
+  <p>Gli adattatori interni PCI sono i più diffusi e si trovano nella maggior parte dei computer portatili prodotti negli ultimi anni. Per controllare se l'adattatore WiFi PCI è stato riconosciuto:</p>
+
+  <steps>
+    <item>
+      <p>Aprire un terminale, digitare <cmd>lspci</cmd> e premere <key>Invio</key>.</p>
+    </item>
+    <item>
+      <p>Esaminare l'elenco dei dispositivi visualizzato e trovare quelli contrassegnati come <code>Network controller</code> o <code>Ethernet controller</code>. Ci possono essere diversi dispositivi contrassegnati in questo modo: quello che corrisponde al proprio adattatore WiFi dovrebbe contenere termini come <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> o <code>802.11</code>. Ecco un esempio di come potrebbe essere la voce visualizzata:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Se l'adattatore WiFi è presente nell'elenco, procedere consultando il <link xref="net-wireless-troubleshooting-device-drivers">passaggio sull'installazione dei driver</link>. Se non si trova nulla che faccia riferimento all'adattatore WiFi, consultare <link xref="#not-recognized">le seguenti istruzioni</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>Adattatore senza fili USB</title>
+
+  <p>Gli adattatori WiFi che si collegano attraverso una porta USB del computer sono meno diffusi. Possono essere collegati direttamente a una porta USB o attraverso un cavo USB. Gli adattatori a banda larga 3G/mobile sono molto simili agli adattatori senza fili (WiFi) e se si ritiene di avere un adattatore WiFi USB, occorre controllare attentamente che non si tratti invece di un adattatore 3G.</p>
+
+  <steps>
+    <item>
+      <p>Aprire un terminale, digitare <cmd>lsusb</cmd> e premere <key>Invio</key>.</p>
+    </item>
+    <item>
+      <p>Esaminare l'elenco dei dispositivi visualizzato e trovare qualcosa che sembri riferirsi a un dispositivo Wifi o di rete. Quello corrispondente al proprio adattatore WiFi dovrebbe contenere termini come <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> o <code>802.11</code>. Ecco un esempio di come potrebbe essere la voce visualizzata:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>Se l'adattatore WiFi è presente nell'elenco, procedere consultando il <link xref="net-wireless-troubleshooting-device-drivers">passaggio sull'installazione dei driver</link>. Se non si trova nulla che faccia riferimento all'adattatore WiFi, consultare <link xref="#not-recognized">le seguenti istruzioni</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Controllare un dispositivo PCMCIA</title>
+
+  <p>Gli adattatori WiFi PCMCIA sono solitamente schede rettangolari inserite nella parte laterale del computer portatile e si trovano comunemente nei computer più datati. Per controllare se l'adattatore PCMCIA è stato riconosciuto:</p>
+
+  <steps>
+    <item>
+      <p>Accendere il computer <em>senza</em> collegare l'adattatore WiFi.</p>
+    </item>
+    <item>
+      <p>Aprire un terminale e digitare quanto segue, quindi premere <key>Invio</key>:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>Verrà visualizzato un elenco di messaggi relativo alle componenti hardware del computer, automaticamente aggiornato se cambia un qualsiasi componente.</p>
+    </item>
+    <item>
+      <p>Inserire l'adattatore WiFi nel connettore PCMCIA e controllare cosa cambia nella finestra del terminale. Le modifiche dovrebbero comprendere alcune informazioni relative all'adattatore WiFi: esaminarle per cercare di identificarlo.</p>
+    </item>
+    <item>
+      <p>Per interrompere l'esecuzione del comando nel terminale, premere <keyseq><key>Ctrl</key><key>C</key></keyseq>; dopo questa operazione si può chiudere il terminale.</p>
+    </item>
+    <item>
+      <p>Se si sono trovate informazioni circa l'adattatore WiFi, procedere consultando il <link xref="net-wireless-troubleshooting-device-drivers">passaggio sull'installazione dei driver</link>, altrimenti consultare <link xref="#not-recognized">le seguenti istruzioni</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>L'adattatore WiFi non è stato riconosciuto</title>
+
+  <p>If your wireless adapter was not recognized, it might not be working
+  properly or the correct drivers may not be installed for it. How you check to
+  see if there are any drivers you can install will depend on which Linux
+  distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
+
+  <p>Per ottenere un aiuto più specifico, cercare tra le opzioni di supporto nel sito web della propria distribuzione, che potrebbero indicare strumenti come mailing list o chat in cui sottoporre domande relative al proprio adattatore WiFi.</p>
+
+</section>
+
+</page>

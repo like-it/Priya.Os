@@ -1,0 +1,36 @@
+#!/bin/sh
+
+set -e
+
+validate_extensions() {
+  INSTDIR=`mktemp -d`
+  if HOME=$INSTDIR /usr/lib/libreoffice/program/unopkg list --bundled >/dev/null 2>/dev/null; then
+	HOME=$INSTDIR /usr/lib/libreoffice/program/unopkg validate -v --bundled
+  fi
+}
+
+make_lo_sync_extensions() {
+	touch /usr/lib/libreoffice/share/extensions
+}
+
+if [ "$1" = "triggered" ]; then
+        for triggername in $2; do
+                case "$triggername" in
+                        # new "bundled" extensions (since 3.3)
+                        "/usr/lib/libreoffice/share/extensions")
+                          make_lo_sync_extensions
+                        ;;
+                esac
+        done
+fi
+
+# Automatically added by dh_icons
+if which update-icon-caches >/dev/null 2>&1 ; then
+	update-icon-caches /usr/share/icons/locolor
+fi
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/bash_completion.d/libreoffice.sh 1:5.1.1~rc1-1 $DPKG_MAINTSCRIPT_PACKAGE -- "$@"
+# End automatically added section
+
+

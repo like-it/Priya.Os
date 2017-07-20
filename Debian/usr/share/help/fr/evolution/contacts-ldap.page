@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="contacts-ldap" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="contacts-using-several-addressbooks"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2015-03-09" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/usage-contact-sharing.html.en
+	   and
+	   http://library.gnome.org/users/evolution/2.32/config-prefs-contact.html.en#bxmw6w5
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Utiliser un carnet d'adresses partagé sur un réseau local.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ajout d'un accès LDAP</title>
+
+  <p>Le protocole LDAP a été créé pour permettre aux utilisateurs de partager des informations de contacts sur un réseau en partageant l'accès à un répertoire centralisé. LDAP permet à une organisation de maintenir un ensemble partagé d'informations de contacts. Beaucoup d'organisations conservent un carnet d'adresses LDAP commun pour tous leurs employés ou pour les contacts clients.</p>
+
+<section id="add-ldap-addressbook">
+  <title>Ajout d'un carnet d'adresses LDAP</title>
+
+  <steps>
+    <item>
+      <p>Cliquez sur <guiseq><gui>Fichier</gui><gui>Nouveau</gui><gui>Carnet d'adresses</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Dans l'onglet <gui>Général</gui>, sélectionnez le type <gui>Sur les serveurs LDAP</gui>.</p>
+    </item>
+    <item>
+      <p>Saisissez le nom que vous voulez.</p>
+    </item>
+    <item>
+      <p>Saisissez l'adresse du serveur LDAP, le numéro de port (le numéro par défaut est 389) et si vous voulez utiliser une connexion sécurisée.</p>
+    </item>
+    <item>
+      <p>Définissez la méthode d'authentification et votre nom d'utilisateur.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui style="button">Valider</gui>.</p>
+    </item>
+    <item>
+      <p>Dans l'onglet <gui>Détails</gui>, vous pouvez définir les paramètres suivants :</p>
+      <list>
+        <item>
+	  <p>Base de recherche : la base de recherche correspond au point de départ d'une recherche d'annuaire. Pour plus d'informations sur les paramètres appropriés, contactez l'administrateur système.</p>
+        </item>
+        <item>
+	  <p>Domaine de recherche : le domaine de recherche correspond à l'étendue d'une recherche donnée. </p>
+	  <p>Les paramètres suivants sont disponibles :</p>
+          <list>
+            <item>
+	      <p>Un niveau : effectue une recherche dans la base de recherche et dans un niveau hiérarchique au-dessous.</p>
+	    </item>
+            <item>
+	      <p>Arborescence : effectue une recherche dans la base de recherche et dans tous les niveaux hiérarchiques.</p>
+            </item>
+          </list>
+        </item>
+        <item>
+	  <p>Filtre de recherche : le filtre de recherche peut être défini ici pour toutes les requêtes LDAP. Par exemple :</p>
+          <list>
+            <item>
+              <p><code>ObjectClass=*</code> : énumère tous les objets du serveur.</p>
+	    </item>
+            <item>
+	      <p><code>ObjectClass=User</code> : énumère seulement ceux de l'utilisateur.</p>
+	    </item>
+            <item>
+	      <p><code>Filter (|(ObjectClass=User)(ObjectClass=groupOfNames))</code> : récupère les objets de l'utilisateur et de la liste de contacts.</p>
+	    </item>
+            <item>
+	      <p><code>(&amp;(mail=*)(ObjectClass=*))</code> : énumère les objets associés aux adresses électroniques.</p>
+	    </item>
+          </list>
+        </item>
+        <item>
+	  <p>Délai (en minutes) : délai maximum au cours duquel <app>Evolution</app> tente de télécharger les données du serveur avant d'abandonner.</p>
+        </item>
+        <item>
+	  <p>Limite de téléchargement : nombre maximum de résultats associés à une recherche. La plupart des serveurs refusent d'envoyer plus de 500 contacts, mais vous pouvez définir une valeur inférieure pour raccourcir les téléchargements dans le cas de recherches très larges.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Si vous n'êtes pas sûr de certains réglages, contactez votre administrateur système.</p>
+  </note>
+
+</section>
+
+<section id="ldap-vs-local-addressbooks">
+  <title>Différences avec les carnets d'adresses locaux</title>
+
+  <p>Les carnets d'adresses LDAP fonctionnent comme les carnets d'adresses locaux de votre ordinateur aux exceptions suivantes près :</p>
+
+  <list>
+    <item>
+      <p>Les dossiers réseau ne sont accessibles que lorsque vous êtes connecté au réseau. Si vous utilisez un ordinateur portable ou que vous avez une connexion par modem, il peut être souhaitable de copier ou de mettre en mémoire tampon une partie de l'annuaire réseau. Vous pouvez le faire en faisant glisser les contacts concernés dans les carnets d'adresses locaux.</p>
+    </item>
+    <item>
+      <p>You can also mark the network folder for offline usage. To mark the
+      folder, right-click the folder, click <gui>Properties</gui> and select
+      <gui>Copy folder content locally for offline operation</gui>.</p>
+    </item>
+    <item>
+      <p>Pour éviter un trafic réseau trop important, <app>Evolution</app> ne charge en principe pas les données du serveur LDAP au moment de son ouverture.</p>
+    </item>
+    <item>
+      <p>Selon les réglages de votre serveur, vous ne pourrez peut-être pas modifier tous les champs d'un contact stocké sur un serveur LDAP. Certains serveurs empêchent tout ou partie des modifications, et d'autres utilisent un nombre de champs plus restreint que ceux d'<app>Evolution</app> Contactez votre administrateur système si vous avez besoin de réglages différents.</p>
+    </item>
+  </list>
+
+</section>
+
+</page>

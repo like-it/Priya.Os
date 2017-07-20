@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="power"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name>Alexandre Franke</name>
+      <email>afranke@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Aprenda como deixar sua conta de usuário, encerrando a sessão, alternando usuários e por aí vai.</desc>
+    <!-- Should this be a guide which links to other topics? -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Encerrando sessão, desligando seu computador ou alternando usuários</title>
+
+  <p>Quando você acabou de usar o seu computador, você pode desligá-lo, suspendê-lo (para economizar energia) ou deixá-lo ligado e encerrar a sessão.</p>
+
+<section id="logout">
+  <title>Encerrar sessão ou alternar usuários</title>
+
+  <p>Para permitir que outros usuários usem o seu computador, você pode encerrar a sessão ou deixar sua sessão aberta e apenas alterar usuários. Se você alternar usuários, todos os seus aplicativos continuarão em execução e tudo estará onde você deixou quando voltar.</p>
+
+  <p>Para <gui>Encerrar sessão</gui> ou <gui>Alternar usuário</gui>, clique no  <link xref="shell-introduction#yourname">menu de sistema</link> no lado direito da barra superior, clique no seu nome e, então, escolha a opção correta.</p>
+
+  <note if:test="!platform:gnome-classic">
+    <p>As entradas <gui>Encerrar sessão</gui> e <gui>Alternar usuários</gui> aparecem apenas no menu se você tiver mais de uma conta de usuário no seu sistema.</p>
+  </note>
+
+  <note if:test="platform:gnome-classic">
+    <p>A entrada <gui>Alternar usuários</gui> apenas aparece no menu se você tiver mais do que uma conta de usuário no seu sistema.</p>
+  </note>
+
+</section>
+
+<section id="lock-screen">
+  <info>
+    <link type="seealso" xref="session-screenlocks"/>
+  </info>
+
+  <title>Bloquear a tela</title>
+
+  <p>Se você está deixando o seu computador por um pequeno período de tempo, você deveria bloquear sua tela para evitar que outras pessoas acessem os seus arquivos ou executem aplicativos. Ao retornar, levante a cortina do <link xref="shell-lockscreen">bloqueio de tela</link> e digite sua senha para voltar para a sessão. Se você não bloquear a tela, ela será bloqueada automaticamente após um determinado período de tempo.</p>
+
+  <p>Para bloquear sua tela, clique no menu de sistema no lado direito da barra superior e pressione o botão da tela de bloqueio na parte inferior do menu.</p>
+
+  <p>Quando sua tela está bloqueada, outros usuários podem iniciar a sessão com suas próprias contas clicando em <gui>Iniciar sessão como outro usuário</gui> na tela de senha. Você pode alternar de volta para sua área de trabalho quando eles tiverem finalizado.</p>
+
+</section>
+
+<section id="suspend">
+  <info>
+    <link type="seealso" xref="power-suspend"/>
+  </info>
+
+  <title>Suspender</title>
+
+  <p>Para economizar energia, suspenda o seu computador quando você não está usando-o. Se você usa um notebook, o GNOME, por padrão, suspende seu computador automaticamente quando você fecha a tampa. Isso salva o estado da memória do seu computador e desliga a maioria de suas funções. Uma pequena quantidade de energia ainda é usada durante a suspensão.</p>
+
+  <p>Para suspender o seu computador manualmente, clique no menu de sistema no lado direito da barra superior e mantenha pressionada a tecla <key>Alt</key>. O botão de desligar será alterado para o de suspender. Pressione o botão.</p>
+
+</section>
+
+<section id="shutdown">
+<!--<info>
+  <link type="seealso" xref="power-off"/>
+</info>-->
+
+  <title>Desligar ou reiniciar</title>
+
+  <p>Se você deseja desligar por inteiro o seu computador, ou fazer uma reinicialização completa, clique no menu de sistema no lado direito da barra superior e pressione o botão de desligar na parte inferior do menu. Um diálogo vai abrir oferecendo a você opções para <gui>Reiniciar</gui> ou <gui>Desligar</gui>.</p>
+
+  <p>Se ainda há usuários com sessão iniciada, você pode não conseguir desligar ou reiniciar o computador porque isso vai finalizar a sessão deles. Se você é um usuário administrador, pode ser solicitado a você informar sua senha pra desligar.</p>
+
+  <note style="tip">
+    <p>Você pode querer desligar o seu computador se você deseja movê-lo e não tiver bateria, se sua bateria estiver baixa ou não mantiver carga corretamente. Um computador desligado também usa <link xref="power-batterylife">menos bateria</link> do que um que está suspenso.</p>
+  </note>
+
+</section>
+
+</page>

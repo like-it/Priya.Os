@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://microsoft.com/win/10">
+    <short-id>win10</short-id>
+    <name>Microsoft Windows 10</name>
+    <name xml:lang="fr">Microsoft Windows 10</name>
+    <version>10.0</version>
+    <vendor>Microsoft Corporation</vendor>
+    <vendor xml:lang="ca">Microsoft Corporation</vendor>
+    <vendor xml:lang="de">Microsoft Corporation</vendor>
+    <vendor xml:lang="es">Microsoft Corporation</vendor>
+    <vendor xml:lang="fr">Microsoft Corporation</vendor>
+    <vendor xml:lang="ja">Microsoft Corporation</vendor>
+    <vendor xml:lang="pl">Microsoft Corporation</vendor>
+    <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>
+    <vendor xml:lang="uk">Корпорація Microsoft</vendor>
+    <family>winnt</family>
+    <distro>win</distro>
+    <derives-from id="http://microsoft.com/win/8.1"/>
+    <upgrades id="http://microsoft.com/win/8.1"/>
+
+    <release-date>2015-07-29</release-date>
+
+    <variant id="education">
+      <name>Microsoft Windows 10 Education</name>
+      <name xml:lang="fr">Microsoft Windows 10 Éducation</name>
+    </variant>
+    <variant id="enterprise">
+      <name>Microsoft Windows 10 Enterprise</name>
+      <name xml:lang="fr">Microsoft Windows 10 Entreprise</name>
+    </variant>
+    <variant id="enterprise-ltsb">
+      <name>Microsoft Windows 10 Enterprise (Long Term Servicing Branch)</name>
+    </variant>
+
+    
+    <media arch="i686">
+      <variant id="education"/>
+      <iso>
+        <volume-id>(J_)?CEDN?A_X86FRE_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+    <media arch="x86_64">
+      <variant id="education"/>
+      <iso>
+        <volume-id>(J_)?CEDN?A_X64FRE_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+
+    
+    <media arch="i686">
+      <variant id="enterprise"/>
+      <iso>
+        <volume-id>(J_)?CEN?A_X86FREV_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+    <media arch="x86_64">
+      <variant id="enterprise"/>
+      <iso>
+        <volume-id>(J_)?CENN?A_X64FREV_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+
+    
+    <media arch="i686">
+      <variant id="enterprise-ltsb"/>
+      <iso>
+        <volume-id>(J_)?CESN?N?_X86FREV_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+    <media arch="x86_64">
+      <variant id="enterprise-ltsb"/>
+      <iso>
+        <volume-id>(J_)?CESN?N?_X64FREV_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+
+    
+    <media arch="i686">
+      <iso>
+        <volume-id>(J_)?CCSN?A_X86FRE_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+    <media arch="x86_64">
+      <iso>
+        <volume-id>(J_)?CCSN?A_X64FRE_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+
+    <resources arch="i686">
+      <minimum>
+        <cpu>1000000000</cpu>
+        <n-cpus>1</n-cpus>
+        <ram>1073741824</ram>
+        <storage>17179869184</storage>
+      </minimum>
+    </resources>
+
+    <resources arch="x86_64">
+      <minimum>
+        <cpu>1000000000</cpu>
+        <n-cpus>1</n-cpus>
+        <ram>2147483648</ram>
+        <storage>21474836480</storage>
+      </minimum>
+    </resources>
+
+    <devices>
+      <device id="http://pcisig.com/pci/8086/2668"/> 
+    </devices>
+
+    <installer>
+      <script id='http://microsoft.com/windows/unattend/jeos'/>
+      <script id='http://microsoft.com/windows/unattend/desktop'/>
+
+      
+      <script id='http://microsoft.com/windows/cmd/desktop'/>
+    </installer>
+  </os>
+</libosinfo>

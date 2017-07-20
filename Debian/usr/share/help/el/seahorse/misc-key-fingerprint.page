@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="misc-key-fingerprint" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="concepts"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Το δακτυλικό αποτύπωμα κλειδιού είναι ένα μοναδικό αναγνωριστικό για κάθε κλειδί, που χρησιμοποιείται συχνά για να επιβεβαιώσει την ιδιοκτησία ενός κλειδιού</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα του GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Τι είναι το δακτυλικό αποτύπωμα κλειδιού;</title>
+
+  <p>Το δακτυλικό αποτύπωμα ενός κλειδιού είναι μια μοναδική σειρά γραμμάτων και αριθμών που χρησιμοποιούνται για να αναγνωρίσουν το κλειδί. Ακριβώς όπως τα δακτυλικά αποτυπώματα δύο διαφορετικών ατόμων, τα δακτυλικά αποτυπώματα δυο διαφορετικών κλειδιών δεν μπορούν να είναι ποτέ ταυτόσημα. Το δακτυλικό αποτύπωμα είναι ο βέλτιστος τρόπος αναγνώρισης ενός συγκεκριμένου κλειδιού.</p>
+
+  <p>Ένα κλειδί έχει αρκετές ιδιότητες όπως το όνομα και η ηλεκτρονική διεύθυνση του κατόχου του κλειδιού, τον τύπο του κλειδιού, την ημερομηνία λήξης του κλειδιού κ.ο.κ. Όταν αναζητάτε ένα δημόσιο κλειδί και βρείτε πολλά κλειδιά με τις ίδιες ιδιότητες, ο μόνος τρόπος να αναγνωρίσετε το κλειδί που ψάχνετε είναι να συγκρίνετε τα δακτυλικά αποτυπώματα των δύο κλειδιών με το δακτυλικό αποτύπωμα του κλειδιού που ζητάτε.</p>
+
+  <p>Είναι το δακτυλικό αποτύπωμα ενός κλειδιού που επιβεβαιώνεται όταν προσπαθείτε να συνδεθείτε με έναν απομακρυσμένο υπολογιστή χρησιμοποιώντας το <link xref="index#ssh-keys">SSH</link>. Ενώ υπογράφετε ένα κλειδί <link xref="index#pgp-keys">PGP</link>, πρέπει να ελέγχετε πάντα το δακτυλικό αποτύπωμα του κλειδιού και να επιβεβαιώνετε την ταυτότητα του κατόχου του κλειδιού για να εξασφαλίσετε ότι υπογράφετε το σωστό κλειδί.</p>
+
+<section id="fingerprint-ui">
+  <title>Τα δακτυλικά αποτυπώματα στο <app>Κωδικοί πρόσβασης και κλειδιά</app></title>
+
+    <p>Μπορείτε να κοιτάξετε στο δακτυλικό αποτύπωμα ενός κλειδιού στο <app>Κωδικοί πρόσβασης και κλειδιά</app> ελέγχοντας τις ιδιότητες του κλειδιού.</p>
+
+    <steps>
+      <title>Για να ελέγξετε το δακτυλικό αποτύπωμα ενός κλειδιού:</title>
+        <item>
+	  <p>Επιλέξτε <gui>κλειδιά GnuPG</gui> από το αριστερό πλευρικό παράθυρο.</p>
+        </item>
+        <item>
+          <p>Επιλέξτε το κλειδί PGP από τον κατάλογο.</p>
+        </item>
+        <item>
+          <p>Κάντε δεξί κλικ το κλειδί και επιλέξτε <gui style="menuitem">ιδιότητες</gui>.</p>
+	</item>
+        <item>
+          <p>Στον νέο διάλογο, επιλέξτε την καρτέλα <gui>λεπτομέρειες</gui>.</p>
+        </item>
+        <item>
+          <p>Μπορείτε να δείτε το δακτυλικό αποτύπωμα του κλειδιού στα αριστερά.</p>
+        </item>
+    </steps>
+
+  <!-- stefw: Suggest documenting that the key fingerprint is the
+  only way to uniquely tell the difference between two keys.
+
+  Two keys may have the same name and description. The label or name
+  is no guarantee that the key represents the person described in the label.
+
+  The way to guarantee that you have a given key is to compare the
+  fingerprint with the person who owns the key.
+
+  For SSH keys this is done when you initially connect to a server.
+
+  For PGP keys this is usually done through the web of trust. Where someone
+  you know signs a key, and vouches that the key with a given fingerprint
+  is owned by the person noted on the label.
+  -->
+</section>
+
+</page>

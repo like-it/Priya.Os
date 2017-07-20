@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-searching" xml:lang="cs">
+ 
+  <info>
+    <desc>Vyhledávání zpráv.</desc>
+    
+    <link type="guide" xref="searching-items"/>
+    <link type="guide" xref="mail-organizing"/>
+ 
+    <revision pkgversion="3.13.90" version="0.6" date="2015-03-09" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Max Vorobuov</name>
+      <email its:translate="no">vmax0770@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+ 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+ 
+<title>Prohledávání pošty</title>
+
+<section id="search-single">
+<title>Hledání v jedné zprávě</title>
+<p>Chcete-li najít text v zobrazené zprávě, vyberte v hlavní nabídce <guiseq><gui>Upravit</gui> <gui>Najít ve zprávě…</gui></guiseq></p>
+</section>
+
+<section id="search-many">
+<title>Hledání ve všech zprávách</title>
+
+<section id="quick-search">
+<title>Rychlé hledání</title>
+<p>V zobrazení pošty můžete jednoduše hledat zprávy podle definovaných podmínek.</p>
+<steps>
+<item><p>Klikněte na ikonu hledání <media type="image" mime="image/png" its:translate="no" src="figures/search-icon.png"/>, aby se rozbalil seznam.</p></item>
+<item><p>V seznamu vyberte podmínky hledání.</p>
+<note style="tip"><p>Pokročilí uživatelé mohou <link href="https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10">kombinovat několik podmínek pomocí syntaxe <gui>Výrazů ve volném tvaru</gui></link>.</p></note>
+</item>
+<item><p>Vyberte rozsah z rozbalovacího seznamu napravo od textového pole.</p>
+<note style="tip"><p>U rozsahu <gui>Aktuální účet</gui> se výrazem „účet“ míní vrchní uzly v <link xref="intro-main-window#e-mail">seznamu poštovních složek</link>, jako například „V tomto počítači“ nebo vzdálené poštovní účty.</p></note>
+</item>
+<item><p>Zadejte text, který chcete vyhledat, a zmáčkněte <key>Enter</key>.</p></item>
+<item><p><app>Evolution</app> zobrazí výsledky hledání.</p></item>
+</steps>
+<note style="tip"><p>V případě, že začnete přímo čtvrtým krokem, bude se text hledat v předmětu zpráv a v adresách a rozsah bude „Aktuální složka“.</p></note>
+<note style="tip"><p>Pokud často hledáte zprávy, které nejsou ve stejné složce, raději místo toto vytvořte vyhledávací složku; více informací naleznete v <link xref="mail-search-folders">Používání vyhledávacích složek</link>.</p></note>
+<p>Chcete-li nastavit několik podmínek vyhledávání, měli byste použít pokročilé hledání, které je popsáno níže.</p>
+</section>
+
+<!-- As advanced-search, clearing-search, saved-searches, editing-a-saved-search are totally identical in all *-searching.page files, this is centrally in one file that's included by XInclude. See
+http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-searching.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:section)"/>
+
+</section> 
+</page>

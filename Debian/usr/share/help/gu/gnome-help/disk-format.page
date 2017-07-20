@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="gu">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME દસ્તાવેજીકરણ પ્રોજેક્ટ</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>તેને બંધારિત કરીને બહારની હાર્ડ ડિસ્ક અથવા USB ફ્લેશ ડ્રાઇવમાંથી બધી ફાઇલો અને ફોલ્ડરોને દૂર કરો.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>દૂર કરી શકાય તેવી ડિસ્ક પરથી બધું કાઢી નાંખો</title>
+
+  <p>જો તમારી પાસે દૂર કરી શકાય તેવી ડિસ્ક હોય તો, જેમ કે USB મેમરી સ્ટીક અથવા બહારની હાર્ડ ડિસ્ક, તમે તેની બધી ફાઇલો અને ફોલ્ડરોને સંપૂર્ણપણે દૂર કરવાની કોઇકવાર ઇચ્છા રાખી શકો છો. તમે ડિસ્કને <em>બંધારિત</em> કરીને આને કરી શકો છો - આ ડિસ્ક પર બધી ફાઇલોને કાઢે છે અને તેને ખાલી છોડી દો.</p>
+
+<steps>
+  <title>દૂર કરી શકાય તેવી ડિસ્કને બંધારિત કરો</title>
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to wipe from the list of storage devices on the
+    left.</p>
+
+    <note style="warning">
+      <p>ખાતરી કરો કે તમે યોગ્ય ડિસ્ક પસંદ કરેલ છે! જો તમે ખોટી ડિસ્ક પસંદ કરી હોય તો, બીજી ડિસ્ક પર બધી ફાઇલોને કાઢી નંખાશે!</p>
+    </note>
+  </item>
+  <item>
+    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
+    menu button. Then click <gui>Format…</gui>.</p>
+  </item>
+  <item>
+    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
+    disk.</p>
+   <p>જો તમે Linux કમ્પ્યૂટર માટે વધુમાં Windows અને Mac OS કમ્પ્યૂટરો પર ડિસ્ક વાપરો તો, <gui>FAT</gui> ને પસંદ કરો. જો તમે Windows પર ફક્ત તેને વાપરો તો, <gui>NTFS</gui> સારો વિકલ્પ હોઇ શકે છે. <gui>ફાઇલ સિસ્ટમ પ્રકાર</gui> નું ટૂંકુ વર્ણન એ લેબલ તરીકે રજૂ થયેલ હશે.</p>
+  </item>
+  <item>
+    <p>Give the disk a name and click <gui>Format…</gui> to continue and show a
+    confirmation window. Check the details carefully, and click
+    <gui>Format</gui> to wipe the disk.</p>
+  </item>
+  <item>
+    <p>Once the formatting has finished, click the eject icon to safely remove
+    the disk. It should now be blank and ready to use again.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>ડિસ્ક બંધારિત કરવાથી તમારી ફાઇલો સુરક્ષિત રીતે કઢાતી નથી</title>
+  <p>ડિસ્કને બંધારિત કરવાનો તેની બધી માહિતીને ભૂંસવાનો સંપૂર્ણપણે સુરક્ષિત રસ્તો નથી. બંધારિત થયેલ ડિસ્ક તેની પર રાખવા માટે દેખાશે નહિં, પરંતુ કે શક્ય છે કે ખાસ સુધારેલ સોફ્ટવેર ફાઇલોને પાછી લાવી શકે છે. જો તમે સુરક્ષિત રીતે ફાઇલોને કાઢવાની જરૂર હોય તો, તમારે આદેશ-વાક્યને વાપરવાની જરૂર પડશે, જેમ કે <app>shred</app>.</p>
+</note>
+
+</page>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-switch-tasks" version="1.0 if/1.0" xml:lang="de">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="videos"/>
+    <title role="trail" type="link">Zwischen Anwendungen wechseln</title>
+    <link type="seealso" xref="shell-windows-switching"/>
+    <title role="seealso" type="link">Eine Kurzanleitung, wie man Aufgaben wechselt</title>
+    <link type="next" xref="gs-respond-messages"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2013, 2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Zwischen Anwendungen wechseln</title>
+
+  <ui:overlay width="812" height="452">
+  <media type="video" its:translate="no" src="figures/gnome-task-switching.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-task-switching.svg"/>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>Zwischen Anwendungen wechseln</tt:p>
+         </tt:div>
+         <if:if test="!platform:gnome-classic">
+         <tt:div begin="5s" end="8s">
+           <tt:p>Bewegen Sie den Mauszeiger zu der <gui>Aktivitäten</gui>-Ecke am linken oberen Rand des Bildschirms.</tt:p>
+           </tt:div>
+         </if:if>
+         <tt:div begin="9s" end="12s">
+           <tt:p>Klicken Sie auf ein Fenster, um die Anwendung zu wechseln.</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="14s">
+           <tt:p>Um ein Fenster auf der linken Bildschirmhälfte zu maximieren, klicken Sie die Titelleiste des Fensters und ziehen Sie sie an den linken Rand.</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="16s">
+           <tt:p>Wenn die Hälfte des Bildschirms markiert ist, lassen Sie das Fenster los.</tt:p>
+         </tt:div>
+         <tt:div begin="16s" end="18">
+           <tt:p>Um ein Fenster auf der rechten Bildschirmhälfte zu maximieren, klicken Sie die Titelleiste des Fensters und ziehen Sie sie an den rechten Rand.</tt:p>
+         </tt:div>
+         <tt:div begin="18s" end="20s">
+           <tt:p>Wenn die Hälfte des Bildschirms markiert ist, lassen Sie das Fenster los.</tt:p>
+         </tt:div>
+         <tt:div begin="23s" end="27s">
+           <tt:p>Drücken Sie <keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>Tabulator</key></keyseq>, um den <gui>Fensterwechsler</gui> anzuzeigen.</tt:p>
+         </tt:div>
+         <tt:div begin="27s" end="29s">
+           <tt:p>Lassen Sie <key href="help:gnome-help/keyboard-key-super">Super</key> los, um das nächste markierte Fenster auszuwählen.</tt:p>
+         </tt:div>
+         <tt:div begin="29s" end="32s">
+           <tt:p>Um durch die Liste geöffneter Fenster zu wechseln, halten Sie <key href="help:gnome-help/keyboard-key-super">Super</key> gedrückt und drücken Sie <key>Tabulator</key>.</tt:p>
+         </tt:div>
+         <tt:div begin="35s" end="37s">
+           <tt:p>Drücken Sie die <key href="help:gnome-help/keyboard-key-super">Super</key>-Taste, um die <gui>Aktivitäten-Übersicht</gui> anzuzeigen.</tt:p>
+         </tt:div>
+         <tt:div begin="37s" end="40s">
+           <tt:p>Beginnen Sie den Namen der Anwendung zu tippen, zu der Sie wechseln wollen.</tt:p>
+         </tt:div>
+         <tt:div begin="40s" end="43s">
+           <tt:p>Wenn die Anwendung als erstes Ergebnis erscheint, drücken Sie die <key>Eingabetaste</key>, um zur Anwendung zu wechseln.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+  <section id="switch-tasks-overview">
+    <title>Zwischen Anwendungen wechseln</title>
+
+<if:choose>
+<if:when test="!platform:gnome-classic">
+
+  <steps>
+    <item><p>Bewegen Sie den Mauszeiger zu der <gui>Aktivitäten</gui>-Ecke am linken oberen Rand des Bildschirms, um die <gui>Aktivitäten-Übersicht</gui> anzuzeigen, wo Sie die aktuell laufenden Anwendungen als kleine Fenster sehen können.</p></item>
+     <item><p>Klicken Sie auf ein Fenster, um die Anwendung zu wechseln.</p></item>
+  </steps>
+
+</if:when>
+<if:when test="platform:gnome-classic">
+
+  <steps>
+    <item><p>Sie können zwischen Anwendungen wechseln, in dem Sie die <gui>Fensterliste</gui> unten auf dem Bildschirm verwenden. Offene Anwendungen erscheinen als Knöpfe in der <gui>Fensterliste</gui>.</p></item>
+     <item><p>Klicken Sie auf einen Knopf in der <gui>Fensterliste</gui>, um zu dieser Anwendung zu wechseln.</p></item>
+  </steps>
+
+</if:when>
+</if:choose>
+
+  </section>
+
+  <section id="switching-tasks-tiling">
+    <title>Fenster kacheln</title>
+    
+    <steps>
+      <item><p>Um ein Fenster auf einer Bildschirmhälfte zu maximieren, klicken Sie die Titelleiste des Fensters und ziehen Sie sie an den linken oder rechten Rand.</p></item>
+      <item><p>Wenn die Hälfte des Bildschirms markiert ist, lassen Sie das Fenster los, um es auf der gewählten Seite des Bildschirms zu maximieren.</p></item>
+      <item><p>Um zwei Fenster Seite-an-Seite zu maximieren, klicken Sie die Titelleiste des zweiten Fensters und ziehen Sie sie an den gegenüberliegenden Rand des Bildschirms.</p></item>
+       <item><p>Wenn die Hälfte des Bildschirms markiert ist, lassen Sie das Fenster los, um es an der gegenüberliegenden Seite des Bildschirms zu maximieren.</p></item>
+    </steps>
+    
+  </section>
+  
+  <section id="switch-tasks-windows">
+    <title>Zwischen Fenstern wechseln</title>
+    
+  <steps>
+   <item><p>Drücken Sie <keyseq><key href="help:gnome-help/keyboard-key-super">Super</key><key>Tabulator</key></keyseq>, um den <gui>Fensterwechsler</gui> anzuzeigen, der die momentan geöffneten Fenster auflistet.</p></item>
+   <item><p>Lassen Sie <key href="help:gnome-help/keyboard-key-super">Super</key> los, um das nächste markierte Fenster im Fensterwechsler auszuwählen.</p>
+   </item>
+   <item><p>Um durch die Liste geöffneter Fenster zu wechseln, halten Sie <key href="help:gnome-help/keyboard-key-super">Super</key> gedrückt und drücken Sie <key>Tabulator</key>.</p></item>
+  </steps>
+
+  </section>
+
+  <section id="switch-tasks-search">
+    <title>Verwenden Sie die Suche, um zwischen Anwendungen zu wechseln</title>
+    
+    <steps>
+      <item><p>Drücken Sie die <key href="help:gnome-help/keyboard-key-super">Super</key>-Taste, um die <gui>Aktivitäten-Übersicht</gui> anzuzeigen.</p></item>
+      <item><p>Beginnen Sie einfach den Namen der Anwendung zu tippen, zu der Sie wechseln wollen. Passende Anwendungen werden erscheinen, sobald Sie tippen.</p></item>
+      <item><p>Wenn die Anwendung, zu der Sie wechseln wollen, als erstes Ergebnis erscheint, drücken Sie die <key>Eingabetaste</key>, um zu ihr zu wechseln.</p></item>
+      
+    </steps>
+    
+  </section>
+
+</page>

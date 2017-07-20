@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-join-split-lines" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision version="3.8" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Sammanfoga flera rader text eller dela långa rader.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Josef Andersson</mal:name>
+      <mal:email>josef.andersson@fripost.org</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Sammanfoga/Dela rader</title>
+
+  <p>Insticksmodulen <app>Sammanfoga/Dela rader</app> kan sammanfoga kortare rader till en lång rad, eller dela upp en lång rad till flera kortare rader.</p>
+  
+  <p>För att aktivera denna insticksmodul, välj <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Inställningar</gui><gui>Insticksmoduler</gui> <gui>Sammanfoga/Dela rader</gui></guiseq>.</p>
+
+  <steps>
+    <title>Att sammanfoga flera rader till en längre rad:</title>
+    <item>
+      <p>Markera de rader du vill sammanfoga. För att göra detta kan du använda musen eller trycka ned <keyseq><key>Skift</key><key>Pil upp</key> </keyseq> eller <keyseq><key>Skift</key><key>Pil ned</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Tryck ned <keyseq><key>Ctrl</key><key>J</key></keyseq>.</p>
+      <p>De rader du har markerat kommer att sammanfogas till en längre rad.</p>
+    </item>
+  </steps>
+
+  <steps>
+    <title>För att dela upp en rad till flera rader:</title>
+    <item>
+      <p>Markera raden du vill dela genom att placera din markör varsomhelst på den raden.</p>
+    </item>
+    <item>
+      <p>Tryck ned <keyseq><key>Ctrl</key><key>Skift</key> <key>J</key></keyseq>.</p>
+      <p>Raden kommer att delas upp till flera rader. Blanksteg används för att bestämma var det är säkert att dela en rad, och längden för var rad kommer inte att överstiga 80 tecken.</p>
+    </item>
+  </steps>
+
+</page>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-stickykeys" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="a11y#mobility" group="keyboard"/>
+    <link type="guide" xref="keyboard" group="a11y"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
+    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Tastenkombinationen Taste für Taste tippen, statt alle Tasten gleichzeitig gedrückt halten zu müssen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Klebrige Tasten aktivieren</title>
+
+  <p><em>Klebrige Tasten</em> erlauben es Ihnen, Tastenkombinationen Taste für Taste einzugeben, anstatt alle Tasten gleichzeitig drücken zu müssen. Zum Beispiel wechselt die Tastenkombination <keyseq><key xref="keyboard-key-super">Super</key><key>Tabulator</key></keyseq> zwischen Fenstern. Ohne eingeschaltete klebrige Tasten müssten Sie beide Tasten gleichzeitig gedrückt halten; mit eingeschalteten klebrigen Tasten würden Sie <key>Super</key> drücken und dann <key>Tabulator</key>, um dasselbe zu erreichen.</p>
+
+  <p>Sie möchten vielleicht klebrige Tasten einschalten, wenn es Ihnen schwer fällt, mehrere Tasten gleichzeitig gedrückt zu halten.</p>
+
+  <steps>
+    <item>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Barrierefreiheit</gui> ein.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Barrierefreiheit</gui>, um das Panel zu öffnen.</p>
+    </item>
+    <item>
+      <p>Öffnen Sie <gui>Tippassistent (AccessX)</gui> und wählen Sie den Reiter <gui>Texteingabe</gui>.</p>
+    </item>
+    <item>
+      <p>Stellen Sie <gui>Klebrige Tasten</gui> auf <gui>AN</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <title>Klebrige Tasten schnell ein- und ausschalten</title>
+    <p>Wählen Sie <gui>Barrierefreiheitsfunktionen mit der Tastatur aktivieren</gui> in <gui>Per Tastatur aktivieren</gui>, um klebrige Tasten mit der Tastatur ein- und auszuschalten. Wenn diese Option gewählt ist, können Sie klebrige Tasten ein- oder ausschalten, indem Sie die <key>Umschalttaste</key> fünfmal hintereinander drücken.</p>
+    <p>Sie können klebrige Tasten schnell ein- und ausschalten, indem Sie auf das <link xref="a11y-icon">Symbol für Barrierefreiheit</link> im oberen Panel klicken und <gui>Klebrige Tasten</gui> wählen. Das Barrierefreiheitssymbol ist sichtbar, wenn eine oder mehrere Einstellungen in den <gui>Barrierefreiheitseinstellungen</gui> aktiviert wurden.</p>
+  </note>
+
+  <p>Wenn Sie zwei Tasten gleichzeitig drücken, können Sie klebrige Tasten kurzfristig ausschalten, um eine Tastenkombination auf die »übliche« Art und Weise einzugeben.</p>
+
+  <p>Wenn Sie etwa klebrige Tasten aktiviert haben, aber <key>Super</key> und <key>Tabulator</key> gleichzeitig drücken, würde klebrige Tasten nicht darauf warten, dass Sie eine weitere Taste drücken, wenn Sie diese Option eingeschaltet hatten. Es <em>würde</em> aber warten, wenn Sie nur eine Taste gedrückt hätten. Dies ist nützlich, wenn Sie zwar einige Tastenkombinationen drücken können (zum Beispiel solche, deren Tasten nahe beieinander liegen), aber andere nicht.</p>
+
+  <p>Wählen Sie <gui>Deaktivieren, wenn zwei Tasten zusammen gedrückt werden</gui>, um das einzuschalten.</p>
+
+  <p>Sie können Ihren Rechner einen Signalton ausgeben lassen, wenn Sie bei aktivierten klebrigen Tasten eine Tastenkombination zu tippen beginnen. Dies ist nützlich, wenn Sie wissen wollen, ob die klebrigen Tasten eine Tastenkombination erwarten, so dass der nächste Tastendruck als Teil einer Tastenkombination aufgefasst wird. Wählen Sie <gui>Signalton ausgeben, wenn eine Zusatztaste gedrückt wird</gui>, um dies zu aktivieren.</p>
+
+</page>

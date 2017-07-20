@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="sl">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Dokumentacijski projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Odstranite vse datoteke in mape iz zunanjega trdega diska ali USB ključka s formatiranjem.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Odstranitev vsega z odstranljivega diska</title>
+
+  <p>V primeru da imate odstranljiv disk kot je ključek USB ali zunanji trdi disk, boste morda želeli popolnoma odstraniti vse njegove datoteke in mape. To lahko storite s <em>formatiranjem</em> diska - to izbriše vse datoteke na disku in ga pusti praznega.</p>
+
+<steps>
+  <title>Formatiranje odstranljivega diska</title>
+  <item>
+    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+  </item>
+  <item>
+    <p>Select the disk you want to wipe from the list of storage devices on the
+    left.</p>
+
+    <note style="warning">
+      <p>Prepričajte se, da ste izbrali pravi disk! V primeru da izberete napačen disk, bodo vse datoteke na drugem disku izbrisane!</p>
+    </note>
+  </item>
+  <item>
+    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
+    menu button. Then click <gui>Format…</gui>.</p>
+  </item>
+  <item>
+    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
+    disk.</p>
+   <p>V primeru da disk uporabljate tudi na sistemih Windows in Mac OS, izberite <gui>FAT</gui>. Če ga uporabljate le na Windows, je <gui>NTFS</gui> boljša možnost. Kratek opis <gui>vrste datotečnega sistema</gui> bo bil predstavljen kot oznaka.</p>
+  </item>
+  <item>
+    <p>Give the disk a name and click <gui>Format…</gui> to continue and show a
+    confirmation window. Check the details carefully, and click
+    <gui>Format</gui> to wipe the disk.</p>
+  </item>
+  <item>
+    <p>Once the formatting has finished, click the eject icon to safely remove
+    the disk. It should now be blank and ready to use again.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Formatiranje diska vaših datotek ne izbriše varno</title>
+  <p>Formatiranje diska ni popolnoma varen način izbrisa podatkov. Formatiran disk bo videti kot da na njem ni datotek, vendar je mogoče s posebnimi obnovitvenimi programi datoteke obnoviti. V primeru da želite datoteke varno izbrisati, uporabite pripomoček kot je <app>shred</app>.</p>
+</note>
+
+</page>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Contribuíntes da wiki de documentación de Ubuntu</name>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Algúns dispositivos non funcionan correctamente con certos adaptadores sen fíos, así que pode que teña que atopar un mellor.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Resolución de problemas en redes sen fíos</title>
+
+  <subtitle>Asegúrese que ten instalados os controladores do dispositivo que funcionan</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>Neste paso pode comprobar se pode obter os controladores de dispositivo correctos para o seu adaptador sen fíos. Un <em>controlador de dispositivo</em> é un software que lle di ao computador como facer que un dispositivo hardware funcione correctamente. Aínda que un adaptador sen fíos fora recoñecido polo seu computador, podería non ter os controladores para facer que funcione ben. Podería buscar uns controladores distintos para o adaptador de rede sen fíos que o fagan funcionar. Tente algunha das opcións de embaixo:</p>
+
+  <list>
+    <item>
+      <p>Check to see if your wireless adapter is on a list of supported
+      devices.</p>
+      <p>Most Linux distributions keep a list of wireless devices that they
+      have support for. Sometimes, these lists provide extra information on how
+      to get the drivers for certain adapters working properly. Go to the list
+      for your distribution (for example,
+      <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>,
+      <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>,
+      <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> or
+      <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>)
+      and see if your make and model of wireless adapter is listed. You may be
+      able to use some of the information there to get your wireless drivers
+      working.</p>
+    </item>
+    <item>
+      <p>Look for restricted (binary) drivers.</p>
+      <p>Algunhas distribucións Linux só veñen cos controladores de dispositivos que son <em>libres</em> e <em>open source</em>. Isto é porque no poden distribuír controladores que son privativos, ou de fontes pechadas. Se o controlador axeitado para o seu adaptador sen fíos só está dispoñibel como unha versión «só binaria», podería non estar instalado por omisión. Se este é o caso, vexa o sitio web do fabricante do adaptador sen fíos para ver se hai controladores Linux.</p>
+      <p>Algunhas distribucións Linux teñen unha ferramenta que pode descargar controldaores restrinxidos por vostede. Se a súa distribución ten unha desas ferramentas, úsea para ver se pode atopar calquera controlador sen fíos.</p>
+    </item>
+    <item>
+      <p>Use the Windows drivers for your adapter.</p>
+      <p>En xeral, só pode usar un controlador de dispositivo deseñado para un sistema operativo (por exemplo Windows) noutro sistema operativo (como Linux). Isto é porque teñen diferentes formas de xestionar os dispositivos. Para os adaptadores sen fíos, porén, pode instalar unha capa de compatibilidade chamada <em>NDISwrapper</em> que lle permite usar algúns controladores de Windows en Linux. Isto é útil porque os adaptadores sen fíos teñen sempre un controlador dispoñíbel para Windows, mentres que para Linux non sempre están dispoñíbeis. Pode saber máis sobre como usar NDISwrapper <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">aquí</link>. Teña en conta que non todos os controladores sen fíos poden usarse con NDISwrapper.</p>
+    </item>
+  </list>
+
+  <p>Se ningunha destas opcións funciona, podería probar un adaptador de rede sen fíos distinto para ver se pode facelo funcionar. Os adaptadores de rede sen fíos USB son normalmente bastante baratos, e pode conectalos a calquera computador. Debe comprobar que adaptador é compatíbel coa súa distribución de Linux antes de mercalo.</p>
+
+</page>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-searching" xml:lang="de">
+ 
+  <info>
+    <desc>Suchen nach Nachrichten.</desc>
+    
+    <link type="guide" xref="searching-items"/>
+    <link type="guide" xref="mail-organizing"/>
+ 
+    <revision pkgversion="3.13.90" version="0.6" date="2015-03-09" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Max Vorobuov</name>
+      <email its:translate="no">vmax0770@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+ 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013, 2015,2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bernd Homuth</mal:name>
+      <mal:email>dev@hmt.im</mal:email>
+      <mal:years>2015.</mal:years>
+    </mal:credit>
+  </info>
+ 
+<title>Nach Nachrichten suchen</title>
+
+<section id="search-single">
+<title>Suchen in einer einzelnen Nachricht</title>
+<p>Klicken Sie zum Suchen nach Text in der angezeigten Nachricht auf <guiseq><gui>Bearbeiten</gui><gui>In Nachricht suchen …</gui></guiseq> im Hauptmenü.</p>
+</section>
+
+<section id="search-many">
+<title>Alle Nachrichten durchsuchen</title>
+
+<section id="quick-search">
+<title>Schnelle Suche</title>
+<p>Durch das Definieren von Bedingungen können Sie in der Nachrichtenansicht schnell nach bestimmten Nachrichten suchen.</p>
+<steps>
+<item><p>Klicken Sie auf das Such-Symbol <media type="image" mime="image/png" its:translate="no" src="figures/search-icon.png"/>, um die Auswahlliste auszuklappen.</p></item>
+<item><p>Wählen Sie das Suchkriterium aus der Liste aus.</p>
+<note style="tip"><p>Fortgeschritte Benutzer <link href="https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10">kombinieren verschiedene Bedingungen mit einer Syntax im <gui>Ausdruck-Feld</gui></link>.</p></note>
+</item>
+<item><p>Wählen Sie den Bereich aus der Auswahlliste rechts neben dem Textfeld aus.</p>
+<note style="tip"><p>Für den Geltungsbereich <gui>Aktuelles Konto</gui> bezieht sich der Begriff »Konto« auf die obersten Knoten in der <link xref="intro-main-window#e-mail">E-Mail-Ordnerliste</link>, wie z.B. »Auf diesem Rechner« und entfernten E-Mail-Konten.</p></note>
+</item>
+<item><p>Geben Sie im Suchfeld den Begriff ein, nach dem Sie suchen möchten, und drücken Sie die <key>Eingabetaste</key>.</p></item>
+<item><p><app>Evolution</app> zeigt die Suchergebnisse an.</p></item>
+</steps>
+<note style="tip"><p>Wenn Sie direkt mit Schritt vier beginnen, so wird im aktuellen Ordner nach dem Suchbegriff im Betreff und den E-Mail-Adressen aller Nachrichten gesucht.</p></note>
+<note style="tip"><p>Wenn Sie häufig nach Nachrichten in einem anderen Ordner suchen, so empfiehlt es sich, dass Sie anstelle dessen einen Suchordner erstellen. Lesen Sie bitte <link xref="mail-search-folders">Suchordner verwenden</link> für weitere Informationen.</p></note>
+<p>Verwenden Sie die Erweiterte Suche, um mehrere Suchbedingungen festzulegen. Diese ist im Folgenden beschrieben.</p>
+</section>
+
+<!-- As advanced-search, clearing-search, saved-searches, editing-a-saved-search are totally identical in all *-searching.page files, this is centrally in one file that's included by XInclude. See
+http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-searching.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:section)"/>
+
+</section> 
+</page>

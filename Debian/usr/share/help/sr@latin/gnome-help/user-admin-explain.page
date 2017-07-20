@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="user-admin-explain" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Gnomov projekat dokumentacije</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Potrebna su vam administratorska ovlašćenja da izmenite važne delove vašeg sistema.</desc>
+  </info>
+
+  <title>Kako funkcionišu administratorska ovlašćenja?</title>
+
+  <p>Kao i datoteke koje <em>vi</em> napravite, vaš računar sadrži brojne datoteke koje su potrebne sistemu da bi ispravno radio. Ako su ove važne <em>sistemske datoteke</em> izmenjene na neodgovarajući način mogle bi da izazovu loš rad mnogih stvari, tako da su u osnovi zaštićene od izmena. Određeni programi takođe menjaju važne delove sistema, tako da su i od ovoga zaštićene.</p>
+
+  <p>Način na koji su zaštićene omogućava samo korisnicima sa <em>administratorskim ovlašćenjima</em> da izmene datoteke ili da koriste programe. Pri svakodnevnom korišćenju, nećete morati da menjate nikakve sistemske datoteke ili da koristite ove programe, tako da po osnovi nemate administratorska ovlašćenja.</p>
+
+  <p>Ponekad ćete morati da koristite ove programe, tako da ćete moći privremeno da dobijete administratorska ovlašćenja koja će vam omogućiti da napravite izmene. Ako neki program zahteva administratorska ovlašćenja, od vas će zatražiti vašu lozinku. Na primer, ako želite da instalirate neke nove programe, program za instalaciju (upravnik paketa) će od vas zatražiti administratorsku lozinku kako bi sistemu mogao da doda nove programe. Kada bude završio, biće vam ponovo oduzeta administratorska ovlašćenja.</p>
+
+  <p>Administratorska ovlašćenja su povezana sa vašim korisničkim nalogom. Korisnicima <gui>administratorima</gui> je dozvoljeno da imaju ova ovlašćenja dok <gui>običnim</gui> korisnicima nije. Bez administratorskih ovlašćenja nećete biti u mogućnosti da instalirate programe. Neki korisnički nalozi (na primer, „administratorski“ nalog) imaju stalna administratorska ovlašćenja. Ne biste trebali da koristite administratorska ovlašćenja čitavo vreme, zato što biste mogli slučajno da izmenite nešto što niste nameravali (da obrišete potrebnu sistemsku datoteku, na primer).</p>
+
+  <p>Sažeto, administratorska ovlašćenja vam omogućavaju da izmenite važne delove vašeg sistema kada je potrebno, ali vas sprečavaju da to slučajno uradite.</p>
+
+  <note>
+    <title>Šta znači „super korisnik“?</title>
+    <p>Korisnik sa administratorskim ovlašćenjima se ponekad naziva <em>super korisnikom</em>. Jednostavno zbog toga što taj korisnik ima više ovlašćenja nego običan korisnik. Možete da vidite ljude koji raspravljaju o stvarima kao <cmd>su</cmd> i <cmd>sudo</cmd>; to su programi koji vam privremeno daju ovlašćenja „super korisnika“ (administratora).</p>
+  </note>
+
+<section id="advantages">
+  <title>Zašto su korisna administratorska ovlašćenja?</title>
+
+  <p>Zahtevanje od korisnika da imaju administratorska ovlašćenja pre unošenja važnih izmena na sistemu je korisno zato što pomaže u zaštiti vašeg sistema od oštećenja, namernih ili nenamernih.</p>
+
+  <p>Ako imate administratorska ovlašćenja svo vreme, možete slučajno da izmenite neku važnu datoteku, ili da pokrenete neki program koji bi greškom izmenio nešto važno na sistemu. Samo privremeno dobijanje administratorskih ovlašćenja, kada su vam potrebna, smanjuje rizik dešavanja ovih grešaka.</p>
+
+  <p>Samo određeni poverljivi korisnici bi trebali da imaju administratorska ovlašćenja. Ovo sprečava druge korisnike da nanesu štetu računaru i da uklone programe koji vam trebaju, da instaliraju programe koji vam ne trebaju, ili da izmene važne datoteke. Ovo je korisno sa bezbednosne tačke gledišta.</p>
+
+</section>
+
+</page>

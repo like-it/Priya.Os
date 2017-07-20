@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-rename" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>So ändern Sie den Namen einer Datei oder eines Ordners.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2016.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Eine Datei oder einen Ordner umbenennen</title>
+
+  <p>Wie in anderen Dateiverwaltungen auch können Sie die <app>Dateiverwaltung</app> von GNOME dazu verwenden, den Namen einer Datei oder eines Ordners zu ändern.</p>
+
+  <steps>
+    <title>So benennen Sie eine Datei oder einen Ordner um:</title>
+    <item><p>Klicken Sie mit der rechten Maustaste auf ein Objekt und wählen Sie <gui>Umbenennen</gui> oder wählen Sie die Datei aus und drücken Sie <key>F2</key>.</p></item>
+    <item><p>Geben Sie den neuen Namen ein und drücken Sie die <key>Eingabetaste</key> oder klicken Sie auf <gui>Umbenennen</gui>.</p></item>
+  </steps>
+
+  <p>Sie können eine Datei auch im <link xref="nautilus-file-properties-basic">Eigenschaften</link>-Fenster umbenennen.</p>
+
+  <p>Wenn Sie eine Datei umbenennen, ist nur der erste Teil des Namens markiert, nicht aber die Dateiendung (der Teil nach »<file>.</file>«). Die Endung zeigt für gewöhnlich an, um welchen Dateityp es sich handelt (zum Beispiel ist <file>Datei.pdf</file> ein PDF-Dokument), also werden Sie diese normalerweise nicht ändern. Wenn Sie auch die Endung ändern wollen, markieren Sie den gesamten Dateinamen und ändern Sie ihn.</p>
+
+  <note style="tip">
+    <p>Wenn Sie die falsche Datei umbenannt haben oder die Umbenennung nicht korrekt war, können Sie die Umbenennung rückgängig machen. Klicken Sie dazu sofort auf den Menüknopf in der Werkzeugleiste und wählen Sie <gui>Umbenennen rückgängig machen</gui>, oder drücken Sie <keyseq><key>Strg</key><key>Z</key></keyseq>, um den vorherigen Namen wiederherzustellen.</p>
+  </note>
+
+  <section id="valid-chars">
+    <title>Gültige Zeichen für Dateinamen</title>
+
+    <p>Sie können in Dateinamen jedes Zeichen außer <file>/</file> (Schrägstrich) verwenden. Manche Geräte verwenden aber ein <em>Dateisystem</em>, das weitere Einschränkungen bei Dateinamen vorsieht. Daher sollten Sie folgende Zeichen in Dateinamen vermeiden: <file>|</file>, <file>\</file>, <file>?</file>, <file>*</file>, <file>&lt;</file>, <file>"</file>, <file>:</file>, <file>&gt;</file> und <file>/</file>.</p>
+
+    <note style="warning">
+    <p>Wenn Sie eine Datei so benennen, dass sie mit <file>.</file> als erstem Zeichen beginnt, wird diese Datei <link xref="files-hidden">verborgen</link>, wenn Sie in der Dateiverwaltung darauf zugreifen wollen.</p>
+    </note>
+
+  </section>
+
+  <section id="common-probs">
+    <title>Häufige Probleme</title>
+
+    <terms>
+      <item>
+        <title>Der Dateiname wird bereits verwendet</title>
+        <p>Es dürfen nicht zwei Dateien oder Ordner mit demselben Namen im selben Ordner vorhanden sein. Wenn Sie versuchen, einer Datei einen Namen zu geben, der in diesem Ordner bereits existiert, wird die Dateiverwaltung das nicht zulassen.</p>
+        <p>Bei Datei- und Ordnernamen wird Groß- und Kleinschreibung berücksichtigt. Zum Beispiel ist der Dateiname <file>DATEI.txt</file> nicht dasselbe wie <file>datei.txt</file>. Solche unterschiedlichen Dateinamen zu verwenden ist zwar erlaubt, aber nicht empfehlenswert.</p>
+      </item>
+      <item>
+        <title>Der Dateiname ist zu lang</title>
+        <p>In einigen Dateisystemen dürfen Dateinamen nicht länger als 255 Zeichen sein. Diese Einschränkung betrifft nicht nur den Dateinamen, sondern auch den Pfad zur Datei (zum Beispiel <file>/home/hans/Dokumente/Arbeit/Dienstreisen/…</file>). Daher sollten Sie lange Datei- und Ordnernamen vermeiden, soweit möglich.</p>
+      </item>
+      <item>
+        <title>Die Option zum Umbenennen ist ausgegraut</title>
+        <p>Falls <gui>Umbenennen</gui> ausgegraut ist, haben Sie nicht das Recht, die Datei umzubenennen. Sie sollten beim Umbenennen solcher geschützter Dateien vorsichtig sein, da dies Ihr System instabil machen könnte. Siehe <link xref="nautilus-file-properties-permissions"/>.</p>
+      </item>
+    </terms>
+
+  </section>
+
+</page>

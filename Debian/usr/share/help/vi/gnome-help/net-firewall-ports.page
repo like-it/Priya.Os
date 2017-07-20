@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="vi">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>You need to specify the right network port to enable/disable network
+    access for a program with your firewall.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
+      <mal:email>pclouds@gmail.com</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Cổng mạng thường dùng</title>
+
+  <p>This is a list of network ports commonly used by applications that provide
+  network services, like file sharing or remote desktop viewing. You can change
+  your system's firewall to <link xref="net-firewall-on-off">block or allow
+  access</link> to these applications. There are thousands of ports in use, so
+  this table isn't complete.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>Cổng</p>
+	</td>
+	<td>
+	  <p>Tên</p>
+	</td>
+	<td>
+	  <p>Mô tả</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>Cho phép hệ thống tìm thấy nhau, mô tả những dịch vụ có thể dùng mà không cần cấu hình gì.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>In ấn</p>
+	</td>
+	<td>
+	  <p>Cho phép gửi tác vụ in đến máy in qua mạng.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>In ấn</p>
+	</td>
+	<td>
+	  <p>Cho phép chia sẻ máy in với người khác qua mạng.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>Hiện diện</p>
+	</td>
+	<td>
+	  <p>Cho phép quảng bá tình trạng tán gẫu của bạn, như "trực tuyến", hoặc "bận".</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>Màn hình làm việc từ xa</p>
+	</td>
+	<td>
+	  <p>Cho phép xem chung màn hình máy tính hoặc hỗ trợ từ xa.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>Chia sẻ nhạc (DAAP)</p>
+	</td>
+	<td>
+	  <p>Cho phép chia sẻ nhạc với máy khác trên mạng.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

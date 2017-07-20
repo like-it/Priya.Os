@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Afficher et modifier des fichiers sur un autre ordinateur par FTP, SSH, partage Windows ou WebDAV.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Consultation de fichiers sur un serveur ou un réseau partagé</title>
+
+<p>Vous pouvez vous connecter à un serveur ou à un réseau pour y chercher et afficher des fichiers comme s'ils étaient sur votre propre ordinateur. C'est une bonne façon de télécharger ou téléverser des fichiers sur Internet, ou de les partager avec les autres membres de votre réseau local.</p>
+
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
+
+<steps>
+  <title>Connexion à un serveur de fichiers</title>
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
+   sidebar.</p>
+  </item>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
+  <note>
+    <p>Si vous vous êtes déjà connecté au serveur récemment, vous pouvez cliquer dessus dans la liste des <gui>Connexions récentes</gui>.</p>
+  </note>
+  </item>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>Écriture des URL</title>
+
+<p>Un <em>URL</em>, ou <em>Uniform Resource Locator</em>, est une forme d'adresse se référant à un emplacement ou à un fichier sur un réseau. L'adresse est formatée de la façon suivante :</p>
+  <example>
+    <p><sys>scheme://nomduserveur.exemple.com/dossier</sys></p>
+  </example>
+<p><em>Scheme</em> est le protocole ou le type de serveur. La partie de l'adresse <em>exemple.com</em> est appelée <em>nom de domaine</em>. Si un nom d'utilisateur est requis, il est inséré devant le nom du serveur :</p>
+  <example>
+    <p><sys>scheme://nomutilisateur@nomduserveur.exemple.com/dossier</sys></p>
+  </example>
+<p>Certains schemes nécessitent un numéro de port. Insérez-le après le nom de domaine : </p>
+  <example>
+    <p><sys>scheme://nomduserveur.exemple.com:port/dossier</sys></p>
+  </example>
+<p>Plus bas figurent des exemples de différents types de serveurs qui sont acceptés.</p>
+</section>
+
+<section id="types">
+ <title>Types de serveurs</title>
+
+<p>Vous pouvez vous connecter à différents types de serveurs. Certains sont publics et n'importe qui peut s'y connecter. D'autres sont à accès restreint et vous demandent de vous identifier avec un nom d'utilisateur et un mot de passe.</p>
+<p>Il se peut que vous n'ayez pas toutes les autorisations pour intervenir sur les fichiers d'un serveur. Par exemple, sur des sites FTP publics, vous n'aurez probablement pas l'autorisation de supprimer des fichiers.</p>
+<p>L'URL que vous saisissez dépend du protocole que le serveur utilise pour exporter ses partages de fichiers.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>Si vous disposez d'un compte <em>shell sécurisé</em> sur un serveur, vous pouvez vous connecter de cette façon. Beaucoup d'hébergeurs Web fournissent un compte SSH à leurs clients pour téléverser des fichiers en toute sécurité. Les serveurs SSH exigent toujours de vous identifier. </p>
+  <p>Un URL SSH ressemble typiquement à ceci :</p>
+  <example>
+    <p><sys>ssh:/nomutilisateur@nomduserveur.exemple.com/dossier</sys></p>
+  </example>
+
+  <p>Avec SSH, toutes vos données envoyées (y compris votre mot de passe) sont chiffrées et donc parfaitement invisibles pour les autres utilisateurs du réseau.</p>
+</item>
+<item>
+  <title>FTP (avec identification)</title>
+  <p>FTP est un protocole très répandu d'échange de fichiers par Internet. Mais comme les échanges ne sont pas chiffrés avec FTP, de nombreux serveurs proposent maintenant l'accès via SSH. Cependant certains serveurs permettent ou exigent toujours le téléversement ou le téléchargement de fichiers via FTP. Les sites FTP avec identification vous autorisent habituellement à supprimer et téléverser des fichiers.</p>
+  <p>Une adresse URL FTP ressemble à ceci :</p>
+  <example>
+    <p><sys>ftp://nomutilisateur@ftp.exemple.com/chemin/</sys></p>
+  </example>
+</item>
+<item>
+  <title>FTP public</title>
+  <p>Les sites autorisant le téléchargement de fichiers fournissent parfois un accès FTP public ou anonyme. Ils ne demandent pas de nom d'utilisateur ni de mot de passe et interdisent généralement la suppression ou le téléversement de fichiers.</p>
+  <p>Un URL FTP anonyme ressemble typiquement à ceci :</p>
+  <example>
+    <p><sys>ftp://ftp.exemple.com/chemin/</sys></p>
+  </example>
+  <p>Quelques sites FTP anonymes vous demandent de vous identifier avec un nom et un mot de passe publics, d'autres avec un nom d'utilisateur public et votre adresse courriel comme mot de passe. Avec ces serveurs, utilisez le type de service <gui>FTP (avec identification)</gui> et renseignez les informations d'identification demandées.</p>
+</item>
+<item>
+  <title>Partage Windows</title>
+  <p>Les ordinateurs Windows utilisent un protocole propriétaire pour le partage de fichiers sur un réseau local. Ils sont parfois groupés en <em>domaines</em> pour l'organisation et un meilleur contrôle de l'accès. Si vous disposez des autorisations sur l'ordinateur distant, vous pouvez vous connecter à un partage Windows à partir du gestionnaire de fichiers.</p>
+  <p>Un URL de partage Windows ressemble typiquement à ceci :</p>
+  <example>
+    <p><sys>smb://nomduserveur/Partage</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV et WebDAV sécurisé</title>
+  <p>Basé sur le protocole HTTP en vigueur sur le Web, WebDAV sert parfois à partager des données sur un réseau local et à enregistrer des fichiers sur internet. Si le serveur distant l'accepte, il est préférable d'établir une connexion sécurisée. Le WebDAV sécurisé utilise un chiffrement SSL très puissant, de sorte que personne ne peut voir votre mot de passe.</p>
+  <p>Une adresse URL WebDAV ressemble à ceci :</p>
+  <example>
+    <p><sys>dav://exemple.nomdhote.com/chemin</sys></p>
+  </example>
+</item>
+<item>
+  <title>Partage NFS</title>
+  <p>Les ordinateurs sous UNIX utilisent traditionnellement le protocole NFS (Network File System protocol) pour partager les fichiers sur un réseau local. Avec NFS, la sécurité est basée sur l'identifiant UID de l'utilisateur accédant au partage et donc il n'a pas besoin de s'authentifier pour s'y connecter.</p>
+  <p>Un URL de partage NFS ressemble à ceci :</p>
+  <example>
+    <p><sys>nfs://nomduserveur/chemin</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

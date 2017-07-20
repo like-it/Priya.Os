@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="game-types" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#preferences"/>
+    <revision pkgversion="3.8" version="0.1" date="2013-05-21" status="draft"/>
+    <revision pkgversion="3.11.90" date="2014-03-26" status="review"/>
+    <revision pkgversion="3.14" date="2015-01-25" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">safincrazy@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Rachel Dunstan</name>
+      <email its:translate="no">dunstanrc@gmail.com</email>
+    </credit>
+
+    <desc>Ändra svårighetsgraden i <app>Robotar</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Erik Sköldås</mal:name>
+      <mal:email>erik.skoldas@tele2.se</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Speltyp</title>
+
+  <p>Du kan spela <app>Robotar</app> på olika sätt genom att välja en annan speltyp. Detta ändrar svårighetsgraden för att spela <app>Robotar</app>.</p>
+
+  <steps>
+    <title>För att ändra svårighetsgrad:</title>
+    <item>
+      <p>Välj <guiseq> <gui style="menu">Inställningar</gui><gui>Inställningar</gui><gui>Spel</gui> </guiseq>.</p>
+    </item>
+    <item>
+      <p>Från rullgardinsmenyn bredvid <gui>Speltyp</gui>, välj ditt alternativ.</p>
+      <table frame="top bottom" rules="rows">
+      <thead>
+      <tr>
+        <td><p>Speltyp</p></td>
+        <td><p>Initiala säkra <link xref="moves#teleport">teleporteringar</link></p>
+        </td>
+        <td><p>Initiala <link xref="scores#high-low-risk">mindre farliga fienderobotar</link></p></td>
+        <td><p>Initiala <link xref="scores#high-low-risk">farliga fienderobotar</link></p></td>
+        <td><p>Ökar antalet säkra teleporteringar i successiva nivåer?</p></td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><p><gui>mardröm</gui></p></td>
+        <td><p>2</p></td>
+        <td><p>2</p></td>
+        <td><p>8</p></td>
+        <td><p>Ja</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>robotar med säker teleportering</gui></p></td>
+        <td><p>0</p></td>
+        <td><p>10</p></td>
+        <td><p>0</p></td>
+        <td><p>Ja, men bara om robotar dödas medan du <link xref="moves#wait">väntar</link></p></td>
+      </tr>
+      <tr>
+        <td><p><gui>robotar2</gui></p></td>
+        <td><p>1</p></td>
+        <td><p>8</p></td>
+        <td><p>2</p></td>
+        <td><p>Ja, men bara om robotar dödas medan du <link xref="moves#wait">väntar</link></p></td>
+      </tr>
+      <tr>
+        <td><p><gui>robotar2 lätt</gui></p></td>
+        <td><p>3</p></td>
+        <td><p>8</p></td>
+        <td><p>2</p></td>
+        <td><p>Ja</p></td>
+      </tr>
+      <tr>
+        <td><p><gui>klassiska robotar</gui></p></td>
+        <td><p>0</p></td>
+        <td><p>10</p></td>
+        <td><p>0</p></td>
+        <td><p>Nej</p></td>
+      </tr>
+      </tbody>
+    </table>
+    </item>
+    <item>
+      <p>Om du markerar kryssrutan <gui style="checkbox">Använd säkra förflyttningar</gui>, kommer spelet att hindra dig från att förflytta dig om flytten skulle orsaka att en robot skulle döda dig, såvida inte det enda sättet att överleva är att teleportera. Om du markerar kryssrutan <gui style="checkbox">Använd supersäkra förflyttningar</gui>, kommer spelet att hindra dig från att ta något steg i det här fallet, så att du är tvungen att teleportera. Detta minskar svårighetsgraden. Du kan alltid avmarkera dessa om du tycker spelet blir alltför lätt.</p>
+    </item>
+  </steps>
+
+</page>

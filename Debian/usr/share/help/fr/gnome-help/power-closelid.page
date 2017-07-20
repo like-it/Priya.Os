@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Pour économiser l'énergie, les ordinateurs portables se mettent en veille quand vous rabattez l'écran.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mise en veille de l'ordinateur quand l'écran est rabattu</title>
+
+  <p>Si vous rabattez l'écran de votre ordinateur portable, il se met en <link xref="power-suspend"><em>veille</em></link> pour économiser l'énergie. Cela ne signifie pas qu'il s'éteint - il s'est juste mis en veille. Relevez l'écran et il se réveille. Si ce n'est pas le cas, essayez de cliquer avec la souris ou d'appuyer sur une touche. Si ça ne marche toujours pas, appuyez sur le bouton de mise en marche.</p>
+
+  <p>Certains ordinateurs n'arrivent pas à se mettre en veille convenablement, souvent parce que leur matériel n'est pas complètement pris en charge par le système d'exploitation (par ex. il manque des pilotes Linux). Le résultat est que vous ne pouvez pas réveiller l'ordinateur après avoir abaissé le couvercle. Essayez soit de <link xref="power-suspendfail">résoudre le problème de la mise en veille</link>, soit d'empêcher la mise en veille quand vous rabattez l'écran.</p>
+
+<section id="nosuspend">
+  <title>Désactivation de la mise en veille à la fermeture de l'écran</title>
+
+  <note style="important">
+    <p>Ces instructions ne sont valables que si vous utilisez <app>systemd</app>. Consultez votre distribution pour de plus amples informations.</p>
+  </note>
+
+  <note style="important">
+    <p>You need to have the <app>Tweak Tool</app> installed on your computer to
+    change this setting.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">Install
+      <app>Tweak Tool</app></link></p>
+    </if:if>
+  </note>
+
+  <p>If you do not want the computer to suspend when you close the lid, you can
+  change the setting for that behavior.</p>
+
+  <note style="warning">
+    <p>Faites très attention si vous modifiez ce paramètre. Certains ordinateurs portables peuvent surchauffer s'ils restent allumés avec le couvercle rabattu, notamment s'ils sont dans un espace confiné comme un sac à dos.</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Tweak Tool</gui>.</p>
+    </item>
+    <item>
+      <p>Click <gui>Tweak Tool</gui> to open the application.</p>
+    </item>
+    <item>
+      <p>Click the <gui>Power</gui> tab.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Don't suspend on lid close</gui> to <gui>ON</gui>.</p>
+    </item>
+    <item>
+      <p>Close the <gui>Tweak Tool</gui> window.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

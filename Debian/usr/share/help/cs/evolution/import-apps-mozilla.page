@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-apps-mozilla" xml:lang="cs">
+
+  <info>
+    <desc>Jak importovat data z pošťáka Mozilla <app>Thunderbird</app>.</desc>
+    
+    <link type="guide" xref="import-data#import-from-apps"/>
+
+    <revision pkgversion="3.6.4" version="0.5" date="2016-05-13" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mozilla</title>
+<!-- <guiseq><gui>File</gui><gui>Import</gui><gui>Import data and settings from older programs</gui></guiseq> does NOT recognize Outlook and Thunderbird automatically in 3.8." -->
+<!-- TODO: Check https://bugzilla.gnome.org/show_bug.cgi?id=214858 occasionally (Thunderbird automatic mail import) -->
+<!-- TODO: Check https://bugzilla.gnome.org/show_bug.cgi?id=559266 occasionally (Thunderbird mailfilter importer) -->
+<steps>
+<item><p><link href="https://support.mozilla.org/kb/profiles-tb#w_how-to-find-your-profile">Vyhledejte složku se svým profilem z pošťáka <app>Thunderbird</app>.</link></p></item>
+<item><p>Klikněte na <guiseq><gui>Soubor</gui> <gui>Importovat</gui></guiseq>.</p></item>
+<item><p>Na kartě <gui>Typ importu</gui> klikněte na <gui>Importovat jeden soubor</gui>.</p></item>
+<item><p>Přejděte do složky, ve které jsou data pošťáka <app>Thunderbird</app> uložena. Mustíte mít při tom v dialogovém okně pro výběr souboru povolené <link xref="help:gnome-help/files-hidden#show-hidden" href="https://help.gnome.org/users/gnome-help/stable/files-hidden#show-hidden">zobrazování skrytých souborů</link>.</p></item>
+<item>
+<list>
+<item><p>Pokud si přejete importovat z aplikace <app>Thunderbird</app> poštu, přejděte do <file>Mail/Local Folders</file> (pro účty místní pošty) nebo <file>ImapMail/název_serveru</file> (pro účty vzdálené pošty). <file>název_serveru</file> je adresa vašeho vzdáleného poštovního serveru. Soubory bez přípony (ne soubory <file>.msf</file>) obsahují vaše zprávy.</p></item>
+<item><p>Pokud si přejete importovat z aplikace <app>Thunderbird/Lightning</app> kalendářová data, měli byste nejprve exportovat události z aplikace <app>Thunderbird</app> do souboru <file>.ical</file>/<file>.ics</file> a pak tyto soubory importovat do aplikace <app>Evolution</app>. Je to z toho důvodu, že <app>Thunderbird</app> uchovává kalendářová data v nestandardním databázovém formátu.</p></item>
+</list>
+<p>Typ souboru bude určen automaticky.</p></item>
+<item><p>Zvolte cíl (tj. složka nebo kalendář v aplikaci <app>Evolution</app>) pro importovaná data.</p></item>
+<item><p>Opakujte kroky importu, dokud nebudete mít naimportována všechna data.</p></item>
+</steps>
+</page>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="he">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">גלישה ברשת</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">הדרכה עבור גלישה ברשת</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Niv Baehr</mal:name>
+      <mal:email>bloop93@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>גלישה ברשת</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>לחצו על התפריט <gui>יישומים</gui> בחלקו הימני העליון של המסך.</p></item>
+      <item><p>מתוך התפריט, בחרו <guiseq><gui>אינטרנט</gui><gui>Firefox</gui> </guiseq>.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>הזיזו את הסמן אל <gui>פעילויות</gui> בפינה הימנית העליונה של המסך להצגת <gui>סקירת הפעילויות</gui>.</p></item>
+      <item><p>בחרו בסמליל הדפדפן <app>Firefox</app> מהסרגל בצדו הימני של המסך.</p></item>
+    </steps>
+
+    <note><p>לחלופין, ניתן להפעיל את הדפדפן באמצעות <link xref="gs-use-system-search">הקלדת</link> <em>Firefox</em> ב<gui>סקירת הפעילויות</gui>.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>הזיזו את הסמן אל <gui>פעילויות</gui> בפינה הימנית העליונה של המסך להצגת <gui>סקירת הפעילויות</gui>.</p></item>
+      <item><p>בחרו בסמליל <app>דפדפן</app> מהסרגל בצדו הימני של המסך.</p></item>
+    </steps>
+
+    <note><p>לחלופין, ניתן להפעיל את הדפדפן באמצעות <link xref="gs-use-system-search">הקלדת</link> <em>דפדפן</em> ב<gui>סקירת הפעילויות</gui>.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>לחצו על שורת הכתובת בחלקו העליון של חלון הדפדפן והתחילו בהקלדת אתר האינטרנט בו ברצונכם לבקר.</p></item>
+      <item><p>הקלדת אתר אינטרנט מתחילה בחיפוש אחריו בהיסטורית הדפדפן והסימניות, כך שלא תצטרכו לזכור את הכתובת המדויקת.</p>
+        <p>אם אתר האינטרנט אינו נמצא בהיסטוריה או בסימניות, תוצג רשימה מתחת לשורת הכתובת.</p></item>
+      <item><p>מהרשימה ניתן לבחור במהירות את אתר האינטרנט באמצעות מקשי החצים.</p>
+      </item>
+      <item><p>לאחר בחירת אתר אינטרנט, הקישו <key>Enter</key> כדי לבקר בו.</p>
+      </item>
+    </steps>
+
+</page>

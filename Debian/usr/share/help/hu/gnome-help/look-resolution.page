@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="look-resolution" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="prefs-display"/>
+    <link type="seealso" xref="look-display-fuzzy"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl </email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A képernyő felbontásának és tájolásának (forgatásának) megváltoztatása.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>A képernyő felbontásának vagy forgatásának módosítása</title>
+
+  <p>A <em>képernyő felbontásának</em> módosításával megadhatja, hogy milyen nagyok (vagy részletesek) legyenek a képernyőn megjelenő objektumok. A <em>forgatás</em> módosításával megadhatja, hogy melyik irányban legyen a képernyő teteje, ez akkor hasznos, ha forgatható kijelzője van.</p>
+
+  <steps>
+    <item>
+      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Kijelzők</gui> szót.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Kijelzők</gui> ikonra a panel megnyitásához.</p>
+    </item>
+    <item>
+      <p>Ha több kijelzője van, amelyek nem tükrözöttek, akkor az egyes kijelzők felbontása eltérő is lehet. Válasszon egy kijelezőt az előnézeti területen.</p>
+    </item>
+    <item>
+      <p>Válassza ki a felbontást és forgatást.</p>
+    </item>
+    <item>
+      <p>Nyomja meg az <gui>Alkalmaz</gui> gombot. Az új beállítások 20 másodpercre alkalmazásra, majd visszavonásra kerülnek. Így ha nem lát semmit az új beállítások mellett, akkor a régi beállítások automatikusan visszaállításra kerülnek. Ha elégedett az új beállításokkal, akkor nyomja meg a <gui>Változtatások megtartása</gui> gombot.</p>
+    </item>
+  </steps>
+
+<section id="resolution">
+  <title>Felbontás</title>
+
+  <p>A felbontás az egyes irányokban megjeleníthető képpontok száma. Minden felbontáshoz tartozik egy <em>méretarány</em>, a szélesség magassághoz viszonyított aránya. A széles vásznú kijelzők 16∶9 méretarányt használnak, míg a hagyományosak 4∶3 méretarányt. Ha a kijelző méretarányának meg nem felelő felbontást választ, akkor a képernyő tartalma letterboxban jelenik meg a torzítás elkerülése érdekében, azaz a képernyő tetején és alján vagy két oldalán fekete sávok jelennek meg.</p>
+
+  <p>A <gui>Felbontás</gui> legördülő menüből kiválaszthatja a kívánt felbontást. Ha a képernyőhöz nem megfelelő beállítást választ, a kép könnyen <link xref="look-display-fuzzy">homályos vagy pixeles</link> lehet.</p>
+
+</section>
+
+<section id="rotation">
+  <title>Forgatás</title>
+
+  <p>Néhány laptop képernyője fizikailag több irányba is elforgatható, ilyenkor hasznos lehet a kijelző forgatásának módosítása. A képernyő forgatását a nyilakat ábrázoló gombokkal végezheti el.</p>
+
+</section>
+
+</page>

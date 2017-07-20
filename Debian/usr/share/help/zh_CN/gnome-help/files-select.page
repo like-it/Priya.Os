@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-select" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>按 <keyseq><key>Ctrl</key><key>S</key></keyseq> 选择多个相似名称的文件。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>用通配符选择多个文件</title>
+
+  <p>您可以在文件名中使用通配符来选择多个文件，按 <keyseq><key>Ctrl</key><key>S</key></keyseq>打开<gui>选择匹配的项目</gui>对话框，输入一个通配符作为文件名的一部分，有两个可用的通配字符：</p>
+
+  <list style="compact">
+    <item><p><file>*</file> 可以匹配任何数量的任何字符，甚至没有字符。</p></item>
+    <item><p><file>?</file> 匹配一个字符。</p></item>
+  </list>
+
+  <p>例如：</p>
+
+  <list>
+    <item><p>如果您有一个 ODT 文件，一个 PDF 文件，和一个图片文件，它们的基本名相同都是 <file>Invoice</file>，用符来选中它们</p>
+    <example><p><file>Invoice.*</file></p></example></item>
+
+    <item><p>如果您有一些照片文件名是 <file>Vacation-001.jpg</file>、<file>Vacation-002.jpg</file>、<file>Vacation-003.jpg</file>，用通配符选中它们</p>
+    <example><p><file>Vacation-???.jpg</file></p></example></item>
+
+    <item><p>If you have photos as before, but you have edited some of them and
+    added <file>-edited</file> to the end of the file name of the photos you
+    have edited, select the edited photos with</p>
+    <example><p><file>Vacation-???-edited.jpg</file></p></example></item>
+  </list>
+
+</page>

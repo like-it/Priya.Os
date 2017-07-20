@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-calibrationcharacterization" xml:lang="el">
+
+  <info>
+
+    <link type="guide" xref="color#calibration"/>
+
+    <desc>Η βαθμονόμηση και ο χαρακτηρισμός είναι πλήρως διαφορετικά πράγματα.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ποια είναι η διαφορά μεταξύ βαθμονόμησης και χαρακτηρισμού;</title>
+  <p>Πολλά άτομα αρχικά μπερδεύονται με τη διαφορά μεταξύ βαθμονόμησης και χαρακτηρισμού. Βαθμονόμηση είναι η διαδικασία τροποποίησης της συμπεριφοράς χρώματος μιας συσκευής. Αυτό γίνεται τυπικά χρησιμοποιώντας δύο μηχανισμούς:</p>
+  <list>
+    <item><p>Αλλάζοντας τους ελέγχους ή τις εσωτερικές ρυθμίσεις που έχει</p></item>
+    <item><p>Εφαρμόζοντας καμπύλες στα χρωματικά κανάλια</p></item>
+  </list>
+  <p>Η ιδέα της βαθμονόμησης είναι να βάλουμε μια συσκευή σε μια ορισμένη κατάσταση όσον αφορά τη χρωματική της απάντηση. Συχνά αυτό χρησιμοποιείται καθημερινά που σημαίνει διατήρηση αναπαραγόμενης συμπεριφοράς. Η τυπική βαθμονόμηση θα αποθηκευτεί σε συσκευή ή σε μορφές αρχείου συγκεκριμένων συστημάτων που καταγράφουν τις ρυθμίσεις της συσκευής ή σε καμπύλες βαθμονόμησης ανά κανάλι.</p>
+  <p>Ο χαρακτηρισμός (ή δημιουργία προφίλ) είναι η <em>εγγραφή</em> του τρόπου που μια συσκευή αναπαράγει ή αποκρίνεται στο χρώμα. Τυπικά το αποτέλεσμα αποθηκεύεται σε ένα προφίλ συσκευής ICC. Ένα τέτοιο προφίλ δεν αρκεί για να τροποποιήσετε το χρώμα με κανένα τρόπο. Επιτρέπει σε ένα σύστημα όπως ένα CMM (άρθρωμα διαχείρισης χρώματος) ή σε ένα χρώμα που αναγνωρίζει την εφαρμογή να τροποποιήσει το χρώμα όταν συνδυαστεί με ένα άλλο προφίλ συσκευής. Γνωρίζοντας μόνο τα χαρακτηριστικά των δύο συσκευών, μπορεί ένας τρόπος μεταφοράς χρώματος από μια αναπαράσταση συσκευής σε μια άλλη να επιτευχθεί.</p>
+  <note>
+    <p>Σημειώστε ότι ένας χαρακτηρισμός (προφίλ) θα είναι έγκυρος μόνο για μια συσκευή εάν είναι στην ίδια κατάσταση βαθμονόμησης όπως ήταν όταν χαρακτηρίστηκε.</p>
+  </note>
+  <p>Στην περίπτωση προφίλ οθόνης υπάρχει κάποια πρόσθετη σύγχυση επειδή συχνά οι πληροφορίες βαθμονόμησης αποθηκεύονται στο προφίλ για ευκολία. Συμβατικά αποθηκεύονται σε μια ετικέτα που λέγεται ετικέτα <em>vcgt</em>. Αν και αποθηκεύονται στο προφίλ, κανένα από τα κανονικά εργαλεία με βάση ICC ή καμιά εφαρμογή δεν τις αναγνωρίζει, ή δεν κάνει τίποτα με αυτές. Παρόμοια, τυπικά εργαλεία βαθμονόμησης οθόνης και εφαρμογών δεν τις αναγνωρίζουν, ή δεν κάνουν τίποτα με τις πληροφορίες χαρακτηρισμού (προφίλ).</p>
+
+</page>

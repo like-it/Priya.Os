@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>You may have to enter network settings if they don't get assigned
+    automatically.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>ネットワーク設定を手動で行う</title>
+
+  <p>ネットワーク設定がコンピューターに自動的に割り当てられない場合は、ユーザーによる入力が必要になる場合があります。ここでは使用する適切な設定がすでにわかっていることを前提としています。使用する設定が分からない場合はネットワーク管理者に問い合わせるか、ルーターまたはネットワークスイッチの設定を確認してください。</p>
+
+  <steps>
+    <title>ネットワーク設定を手動で行う方法は次のとおりです。</title>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
+    </item>
+    <item>
+      <p><gui>ネットワーク</gui>を選択して設定パネルを開きます。</p>
+    </item>
+    <item>
+      <p>In the left pane, select the network connection that you want to set
+      up manually. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
+      <p>Make sure that your wireless card is turned on or a network cable is
+      plugged in.</p>
+    </item>
+    <item>
+      <p>Click <gui>IPv4</gui> and change <gui>Addresses</gui> to
+      <gui>Manual</gui>.</p>
+    </item>
+    <item>
+      <p>Type in the <gui>Address</gui> and <gui>Gateway</gui>, as well as the
+      appropriate <gui>Netmask</gui>.</p>
+      <p>These must be <em>IP addresses</em>; that is, they must be four
+      numbers separated by periods (e.g. 123.45.6.78).</p>
+    </item>
+    <item>
+      <p>In the <gui>DNS</gui> section, switch <gui>Automatic</gui> to
+      <gui>OFF</gui>. Enter the IP address of a DNS server you want to use.
+      Enter additional DNS server addresses using the <gui>+</gui> button.</p>
+    </item>
+    <item>
+      <p>In the <gui>Routes</gui> section, switch <gui>Automatic</gui> to
+      <gui>OFF</gui>. Enter the <gui>Address</gui>, <gui>Netmask</gui>,
+      <gui>Gateway</gui> and <gui>Metric</gui> for a route you want to use.
+      Enter additional routes using the <gui>+</gui> button.</p>
+    </item>
+    <item>
+      <p>Click <gui>Apply</gui>. If you are not connected to the network, click
+      the system status area on the top bar and connect. Test the network
+      settings by trying to visit a website or look at shared files on the
+      network, for example.</p>
+    </item>
+  </steps>
+
+</page>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="mr">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Ubuntu डॉक्युमेंटेशन विकीचे अंशदाते</name>
+    </credit>
+    <credit type="author">
+      <name>GNOME डॉक्युमेंटेशन प्रकल्प</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>वायरलेस अडॅप्टरची जोडणी स्थापीत झाल्यावरही, ते संगणकातर्फे योग्यरित्या ओळखले गेले नसावे.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>वायरलेस जोडणी समस्या निवारक</title>
+  <subtitle>संगणकातर्फे वायरलेस अडॅप्टर ओळखले गेले याची तपासणी करा</subtitle>
+
+  <p>जरी संगणकाशी वायरलेस अडॅप्टर योग्यरित्या जोडले गेले असले, तरी संगणकातर्फे त्यास नेटवर्क साधन म्हणून ओळखले गेले नसावे. या टप्प्यात, तुम्ही साधन योग्यरित्या ओळखले गेले किंवा नावी याची तपासणी कराल.</p>
+
+  <steps>
+    <item>
+      <p>टर्मिनल पटल उघडा, <cmd>lshw -C network</cmd> टाइप करा आणि <key>Enter</key> दाबा. हे त्रुटी संदेश देत असल्यास, तुम्हाला संगणकावर <app>lshw</app> प्रोग्राम इंस्टॉल करावे लागेल.</p>
+    </item>
+    <item>
+      <p>आढळलेली माहिती चाळा आणि <em>वायरलेस संवाद</em> विभाग शोधा. वायरलेस अडॅप्टर योग्यरित्या ओढळले असल्यास, खालील प्रमाणे (परंतु हुबेहुब नाही) दिसेल:</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>वायरलेस साधन आढळल्यास, <link xref="net-wireless-troubleshooting-device-drivers">डिव्हाइस ड्राइव्हर्स पद्धत चाळा</link>.</p>
+      <p>वायरलेस साधन <em>न</em> आढळल्यास, पुढील टप्पे वापरण्याजोगी साधन प्रकारावर आधारित असेल. संगणकावरील संबंधीत वायरलेस अडॅप्टरशी परस्पर विभाग पहा (<link xref="#pci">इंटरनल PCI</link>, <link xref="#usb">USB</link>, किंवा <link xref="#pcmcia">PCMCIA</link>).</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>पीसीआय (आतलं) वायरलेस अडाप्टर</title>
+
+  <p>इंटर्नल PCI अडॅप्टर्स सर्वात सामान्य आहे, आणि मागील काही वर्षात निर्मीत बहुतांश लॅपटॉप्समध्ये आढळले जातात. तुमचे PCI वायरलेस अडॅप्टर योग्यरित्या ओळखले गेले किंवा नाही याच्या तपासणीकरिता:</p>
+
+  <steps>
+    <item>
+      <p>टर्मिनल उघडा, <cmd>lspci</cmd> टाइप करा आणि <key>Enter</key> दाबा.</p>
+    </item>
+    <item>
+      <p>साधन सूची चाळा आणि <code>Network controller</code> किंवा <code>Ethernet controller</code> असे चिन्ह असलेले साधन शोधा. अनेक साधनांना अशा प्रकारे चिन्ह लावले जाते; वायरलेस अडॅप्टरशी परस्पर <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> किंवा <code>802.11</code>. नोंदणी कशा प्रकारे दिसेल खालील त्याचे उदाहरण आहे:</p>
+      <code>नेटवर्क कंट्रोलर: Intel Corporation PRO/Wireless 3945ABG [Golan] नेटवर्क जोडणी</code>
+    </item>
+    <item>
+      <p>सूचीमध्ये तुमचे वायरलेस अडॅप्टर आढळल्यास, <link xref="net-wireless-troubleshooting-device-drivers">डिव्हाइस ड्राइव्हर्स टप्पा</link> करिता जा. वायरलेस अडॅप्टरसह संबंधित काहिही न आढळल्यास, <link xref="#not-recognized">खालील सूचना पहा</link> पहा.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>युएसबी वायरलेस अडाप्टर</title>
+
+  <p>संगणकाशी जोडलेले USB पोर्टची वारंवारता खूप कमी आहे. ते USB पोर्टशी प्रत्यक्षरित्या जोडले असेल, किंवा USB केबलतर्फे जोडले असेल. 3G किंवा मोबाईल ब्रॉडबँड अडॅप्टर्स वायफाय (wifi) अडॅप्टर्सप्रमाणेच दिसता, म्हणून तुमच्याकडे USB वायरलेस अडॅप्टर असल्यास, ते प्रत्यक्षात 3G अडॅप्टर नाही याची दोनवेळा तपासणी करा. तुमचे USB वायरलेस अडॅप्टर ओळखले गेले किंवा नाही याची तपासणी करण्यासाठी:</p>
+
+  <steps>
+    <item>
+      <p>टर्मिनल उघडा, <cmd>lsusb</cmd> टाइप करा आणि <key>Enter</key> दाबा.</p>
+    </item>
+    <item>
+      <p>साधन सूची चाळा आणि असे चिन्ह असलेले साधन शोधा. अनेक साधनांना अशा प्रकारे चिन्ह लावले जाते; वायरलेस अडॅप्टरशी परस्पर <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> किंवा <code>802.11</code> आढळतील. नोंदणी कशा प्रकारे दिसेल खालील त्याचे उदाहरण आहे:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 वायरलेस डाटा मोडेम एचएसडी युएसबी कार्ड</code>
+    </item>
+    <item>
+      <p>सूचीमध्ये तुमचे वायरलेस अडॅप्टर आढळल्यास, <link xref="net-wireless-troubleshooting-device-drivers">डिव्हाइस ड्राइव्हर्स टप्पा</link> करिता जा. वायरलेस अडॅप्टरसह संबंधित काहिही न आढळल्यास, <link xref="#not-recognized">खालील सूचना पहा</link> पहा.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>PCMCIA साधनकरिता तपासणी करत आहे</title>
+
+  <p>PCMCIA वायरलेस अडॅप्टर्स सहसा आयताकृती कार्डज असतात जे लॅपटॉपच्या बाजूस स्लॉट होतात. ते साधारणतया जुण्या संगणकांमध्ये आढळतात. PCMCIA अडॅप्टर ओळखले गेले किंवा नाही याची तपासणी करण्याकरिता:</p>
+
+  <steps>
+    <item>
+      <p>वायरलेस अडॅप्टर <em>न जोडता</em> संगणकाला सुरू करा.</p>
+    </item>
+    <item>
+      <p>टर्मिनल उघडा, खालील टाइप करा, त्यानंतर <key>Enter</key> दाबा:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>यामुळे संगणकाच्या हार्डवेअरसी परस्पर संदेशांची सूची दाखवली जाते, आणि हार्डवेअर बदलशी परस्पर काहिही असल्यास स्वयंरित्या सुधारित केली जाते.</p>
+    </item>
+    <item>
+      <p>वायलेस अडॅप्टरला PCMCIA स्लॉटमध्ये अंतर्भुत करा आणि टर्मिनल पटलात काय बदलते ते पहा. बदलमध्ये वायरलेस अडॅप्टरविषयी माहिती समाविष्टीत पाहिजे. चाळा आणि त्यास ओळखणे शक्य आहे किंवा नाही, ते पहा.</p>
+    </item>
+    <item>
+      <p>टर्मिनलमध्ये आदेश चालवणे थांबवण्याकरिता, <keyseq><key>Ctrl</key><key>C</key></keyseq> दाबा. असे केल्यानंतर, आवश्यकतानुसारे टर्मिनल बंद करा.</p>
+    </item>
+    <item>
+      <p>सूचीमध्ये तुमचे वायरलेस अडॅप्टर आढळल्यास, <link xref="net-wireless-troubleshooting-device-drivers">डिव्हाइस ड्राइव्हर्स टप्पा</link> करिता जा. वायरलेस अडॅप्टरसह संबंधित काहिही न आढळल्यास, <link xref="#not-recognized">खालील सूचना पहा</link> पहा.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>वायरलेस अडॅप्टर ओळखले गेले नाही</title>
+
+  <p>If your wireless adapter was not recognized, it might not be working
+  properly or the correct drivers may not be installed for it. How you check to
+  see if there are any drivers you can install will depend on which Linux
+  distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
+
+  <p>ठराविक मदत प्राप्त करण्यासाठी, वितराकाच्य संकेतस्थळावरील समर्थन संकेतस्थळ पहा. यामध्ये मेलिंग सूची आणि वेब गप्पा समाविष्टीत असू शकतात जेथे तुम्ही वायरलेस अडॅप्टरविषयी विचारू शकता, उदाहरणार्थ.</p>
+
+</section>
+
+</page>

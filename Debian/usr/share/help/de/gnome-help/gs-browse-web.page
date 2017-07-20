@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="de">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Im Internet surfen</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">Eine Kurzanleitung zum Stöbern im Internet</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2013, 2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Im Internet surfen</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>Klicken Sie auf das Menü <gui>Anwendungen</gui> in der linken oberen Ecke des Bildschirms.</p></item>
+      <item><p>Wählen Sie im Menü <guiseq><gui>Internet</gui><gui>Firefox</gui> </guiseq>.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>Bewegen Sie den Mauszeiger zu der <gui>Aktivitäten</gui>-Ecke am linken oberen Rand des Bildschirms, um die <gui>Aktivitäten-Übersicht</gui> anzuzeigen.</p></item>
+      <item><p>Wählen Sie das Browser-Symbol <app>Firefox</app> in der Leiste an der linken Seite des Bildschirms aus.</p></item>
+    </steps>
+
+    <note><p>Alternativ können Sie den Browser starten, indem Sie <em>Firefox</em> in die <gui>Aktivitäten-Übersicht</gui> <link xref="gs-use-system-search">einfach eintippen</link></p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>Bewegen Sie den Mauszeiger zu der <gui>Aktivitäten</gui>-Ecke am linken oberen Rand des Bildschirms, um die <gui>Aktivitäten-Übersicht</gui> anzuzeigen.</p></item>
+      <item><p>Wählen Sie das <app>Internet</app>-Browser-Symbol in der Leiste an der linken Seite des Bildschirms aus.</p></item>
+    </steps>
+
+    <note><p>Alternativ können Sie den <em>Internet</em>-Browser starten, indem Sie den Namen des Browsers einfach in die <gui>Aktivitäten-Übersicht</gui> <link xref="gs-use-system-search">eintippen</link></p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>Klicken Sie auf die Adressleiste oben im Browser-Fenster und geben Sie die Internetseite ein, die Sie besuchen wollen.</p></item>
+      <item><p>Beim Eingeben der Internetseite wird begonnen, in der Chronik des Browsers und in den Lesezeichen zu suchen, so dass Sie nicht die exakte Adresse wissen müssen.</p>
+        <p>Falls die Internetseite in der Chronik oder den Lesezeichen gefunden wird, erscheint eine Auswahlliste unterhalb der Adressleiste.</p></item>
+      <item><p>In der Auswahlliste können Sie eine Internetseite einfach mit den Pfeiltasten auswählen.</p>
+      </item>
+      <item><p>Nachdem Sie eine Internetseite ausgewählt haben, drücken Sie die <key>Eingabetaste</key>, um sie zu besuchen.</p>
+      </item>
+    </steps>
+
+</page>

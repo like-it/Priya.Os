@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="it">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Esplorare il web</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">A tutorial on browsing the web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Esplorare il web</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>Click the <gui>Applications</gui> menu at the top left of the
+      screen.</p></item>
+      <item><p>From the menu, select <guiseq><gui>Internet</gui><gui>Firefox</gui>
+      </guiseq>.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>Spostare il puntatore del mouse sull'angolo <gui>Attività</gui> in alto a sinistra sullo schermo per mostrare la <gui>Panoramica attività</gui>.</p></item>
+      <item><p>Select the <app>Firefox</app> browser icon from the bar on the
+      left-hand side of the screen.</p></item>
+    </steps>
+
+    <note><p>Alternatively, you can launch the browser by <link xref="gs-use-system-search">just typing</link> <em>Firefox</em> in the
+    <gui>Activities Overview</gui>.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>Spostare il puntatore del mouse sull'angolo <gui>Attività</gui> in alto a sinistra sullo schermo per mostrare la <gui>Panoramica attività</gui>.</p></item>
+      <item><p>Selezionare l'icona del browser <app>Web</app> dalla barra sul lato destro dello schermo.</p></item>
+    </steps>
+
+    <note><p>Alternatively, you can launch the browser by <link xref="gs-use-system-search">just typing</link> <em>web</em> in the
+    <gui>Activities Overview</gui>.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>Click the address bar at the top of the browser window and start
+       typing in the website you want to visit.</p></item>
+      <item><p>Digitando l'indirizzo del sito si avvia la ricerca nella cronologia e nei segnalibri, così non si deve ricordare l'indirizzo esatto.</p>
+        <p>Se il sito web è presente nella cronologia o segnalibri, viene mostrato un elenco a discesa sotto la barra dell'indirizzo.</p></item>
+      <item><p>È possibile selezionare rapidamente un sito web dall'elenco a discesa usando i tasti freccia.</p>
+      </item>
+      <item><p>Una volta selezionato il sito web, premere <key>Invio</key> per visitarlo.</p>
+      </item>
+    </steps>
+
+</page>

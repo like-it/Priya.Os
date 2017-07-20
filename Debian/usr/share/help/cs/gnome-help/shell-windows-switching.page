@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-switching" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-windows"/>
+    <link type="guide" xref="shell-overview#apps"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-07" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Zmáčkněte <keyseq><key>Super</key><key>Tab</key></keyseq>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Přepínání mezi okny</title>
+
+  <p>Všechny běžící aplikace, které mají grafické uživatelské rozhraní, můžete vidět v <em>přepínači oken</em>. Ten provádí přepínání mezi úlohami jednoduše jediným krokem a poskytuje obrázek s náhledem, která aplikace běží.</p>
+
+  <p>Na pracovní ploše:</p>
+
+  <steps>
+    <item>
+      <p>Zmáčkněte <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>, aby se zobrazil <gui>přepínač oken</gui>.</p>
+    </item>
+    <item>
+      <p>Uvolněním klávesy <key xref="keyboard-key-super">Super</key> vyberete v přepínači následující (zvýrazněné) okno.</p>
+    </item>
+    <item>
+      <p>Nebo klávesu <key xref="keyboard-key-super">Super</key> držte stále zmáčknutou a mačkáním <key>Tab</key> procházejte seznam otevřených oken. Pomocí <keyseq><key>Shift</key><key>Tab</key></keyseq> jej případně můžete procházet v opačném pořadí.</p>
+    </item>
+  </steps>
+
+  <p if:test="platform:gnome-classic">Pro přístup k otevřeným oknům a k jejich přepínání můžete použít také seznam oken na spodní liště.</p>
+
+  <note style="tip" if:test="!platform:gnome-classic">
+    <p>Okna jsou v přepínači oken seskupena podle aplikací. Při procházení se u aplikací s více okny rozbalují náhledy. Pro procházení náhledů držte zmáčknutou klávesu <key xref="keyboard-key-super">Super</key> a mačkejte <key>`</key> (nebo klávesu nad klávesou <key>Tab</key>).</p>
+  </note>
+
+  <note if:test="!platform:gnome-classic">
+    <p>V přepínači oken jsou aplikace z různých pracovních ploch odděleny svislou čarou.</p>
+  </note>
+
+  <p>V přepínači oken se můžete mezi ikonami jednotlivých aplikací přesouvat také pomocí kláves <key>→</key> a <key>←</key>, nebo na ikonu vybrat kliknutím myší.</p>
+
+  <p>Náhled aplikací s jedním oknem si můžete zobrazit pomocí klávesy <key>↓</key>.</p>
+
+  <p>Kliknutím na <link xref="shell-windows">okno</link> v přehledu <gui>Činnosti</gui> se do tohoto okna přepnete a přehled opustíte. Pokud máte otevřeno více <link xref="shell-windows#working-with-workspaces">pracovních ploch</link>, můžete klikat na jednotlivé plochy, abyste viděli okna, která jsou na nich otevřená.</p>
+
+</page>

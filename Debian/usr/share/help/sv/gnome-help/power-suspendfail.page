@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Viss datorhårdvara orsakar problem med vänteläge.</desc>
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Varför återstartar inte min dator efter att jag har försatt den i vänteläge?</title>
+
+<p>Om du försätter din dator i <link xref="power-suspend">vänteläge</link> och sedan försöker återstarta den, kan du upptäcka att den inte fungerar som du förväntar dig. Det kan bero på att vänteläge inte har fullständigt stöd i din hårdvara.</p>
+
+<section id="resume">
+  <title>Min dator är i vänteläge men återstartar inte</title>
+  <p>Om du försätter din dator i vänteläge och sedan trycker på en tangent eller klicka med musen bör den vakna upp och skärmen ska be dig om ditt lösenord. Om det inte händer, försök trycka på strömknappen (håll den inte inne, bara tryck på den en gång).</p>
+  <p>Om detta inte hjälper, försäkra dig om att din dators skärm är på och försök att trycka på en tangent på tangentbordet igen.</p>
+  <p>Som en sista utväg, stäng av datorn genom att hålla strömknappen inne under 5-10 sekunder, trots att du kommer att förlora allt osparat arbete genom att göra detta. Du bör sedan kunna starta datorn igen.</p>
+  <p>Om detta händer varje gång du försätter datorn i vänteläge så kan det vara så att vänteläge inte fungerar med din hårdvara.</p>
+  <note style="warning">
+    <p>Om din dator förlorar ström och inte har någon alternativ strömkälla (som ett fungerande batteri) kommer den att stänga av sig.</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>Min trådlösa anslutning (eller annan hårdvara) fungerar inte när jag väcker min dator</title>
+  <p>Om du försätter din dator i vänteläge och sedan återstartar den igen, kan du komma att upptäcka att din internetanslutning, mus eller någon annan enhet inte fungerar som den ska. Detta kan vara för att drivrutinen för enheten inte har fullständigt stöd för vänteläge. Detta är ett <link xref="hardware-driver">problem med drivrutinen</link> och inte enheten i sig.</p>
+  <p>Om enheten har en strömknapp, prova att stänga av den och slå på den igen. I de flesta fall kommer enheten att börja fungera igen. Om den ansluts via en USB-kabel eller liknande, koppla från enheten och koppla in den igen och se om det fungerar.</p>
+  <p>Om du inte kan stäng av eller koppla från enheten, eller det inte fungerar, kan du komma att behöva starta om datorn för att enheten ska börja fungera igen.</p>
+</section>
+
+</page>

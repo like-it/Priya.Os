@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-switch-tasks" version="1.0 if/1.0" xml:lang="hi">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="videos"/>
+    <title role="trail" type="link">कार्य बदलें</title>
+    <link type="seealso" xref="shell-windows-switching"/>
+    <title role="seealso" type="link">कार्य बदलने पर ट्यूटोरियल</title>
+    <link type="next" xref="gs-respond-messages"/>
+  </info>
+
+  <title>कार्य बदलें</title>
+
+  <ui:overlay width="812" height="452">
+  <media type="video" its:translate="no" src="figures/gnome-task-switching.webm" width="700" height="394">
+    <ui:thumb type="image" mime="image/svg" src="gs-thumb-task-switching.svg"/>
+      <tt:tt xmlns:tt="http://www.w3.org/ns/ttml" its:translate="yes">
+       <tt:body>
+         <tt:div begin="1s" end="5s">
+           <tt:p>कार्य बदल रहा है</tt:p>
+         </tt:div>
+         <if:if test="!platform:gnome-classic">
+         <tt:div begin="5s" end="8s">
+           <tt:p>अपने मॉउस पॉइंटर को <gui>गतिविधि</gui> कोने में स्क्रीन के शीर्ष पर ले जाएँ.</tt:p>
+           </tt:div>
+         </if:if>
+         <tt:div begin="9s" end="12s">
+           <tt:p>उस कार्य में जाने के लिए किसी विंडो में क्लिक करें.</tt:p>
+         </tt:div>
+         <tt:div begin="12s" end="14s">
+           <tt:p>स्क्रीन के बायीं ओर की तरफ विंडो अधिकतम करने के लिए, विंडो के शीर्षकपट्टी को पकड़ें और इसे बायीं ओर खींचें.</tt:p>
+         </tt:div>
+         <tt:div begin="14s" end="16s">
+           <tt:p>आधे स्क्रीन के आलोकित होने पर, विंडो को छोड़ें.</tt:p>
+         </tt:div>
+         <tt:div begin="16s" end="18">
+           <tt:p>दाहिनी ओर विंडो अधिकतम करने के लिए, विंडो के शीर्षकपट्टी को पकड़ें और इसे दाहिनी ओर खींचें.</tt:p>
+         </tt:div>
+         <tt:div begin="18s" end="20s">
+           <tt:p>आधे स्क्रीन के आलोकित होने पर, विंडो को छोड़ें.</tt:p>
+         </tt:div>
+         <tt:div begin="23s" end="27s">
+           <tt:p><keyseq> <key href="help:gnome-help/keyboard-key-super">Super</key><key> Tab</key></keyseq> दबाएँ <gui>विंडो स्विचर</gui> दिखाने के लिए.</tt:p>
+         </tt:div>
+         <tt:div begin="27s" end="29s">
+           <tt:p><key href="help:gnome-help/keyboard-key-super">Super </key> को अगले आलोकित विंडो में चुनने के लिए छोड़ें.</tt:p>
+         </tt:div>
+         <tt:div begin="29s" end="32s">
+           <tt:p>खुले विंडो की सूची से चलाने के लिए, <key href="help:gnome-help/keyboard-key-super">Super</key> को मत छोड़ें लेकिन इसे पकड़े रहें और <key>Tab</key> दबाएँ.</tt:p>
+         </tt:div>
+         <tt:div begin="35s" end="37s">
+           <tt:p><key href="help:gnome-help/keyboard-key-super">Super </key> कुँजी को <gui>गतिविधि सारांश</gui> दिखाने के लिए दबाएँ.</tt:p>
+         </tt:div>
+         <tt:div begin="37s" end="40s">
+           <tt:p>अनुप्रयोग का नाम टाइप करना शुरू करें जिसमें आप स्विच करना चाहते हैं.</tt:p>
+         </tt:div>
+         <tt:div begin="40s" end="43s">
+           <tt:p>जब अनुप्रयोग बतौर पहले परिणाम प्रकट होता है, <key> Enter</key> कुँजी दबाएँ ताकि इसमें स्विच किया जा सके.</tt:p>
+         </tt:div>
+       </tt:body>
+     </tt:tt>
+  </media>
+  </ui:overlay>
+
+  <section id="switch-tasks-overview">
+    <title>कार्य बदलें</title>
+
+<if:choose>
+<if:when test="!platform:gnome-classic">
+
+  <steps>
+    <item><p>अपने मॉउस पॉइंटर को <gui>गतिविधि</gui> कोने में स्क्रीन के शीर्ष पर <gui>गतिविधि सारांश</gui> को दिखाने के लिए ले जाएँ जहाँ आप छोटे विंडो के रूप में दिखाए मौजूदा कार्यशील कार्य देख सकें.</p></item>
+     <item><p>उस कार्य में जाने के लिए किसी विंडो में क्लिक करें.</p></item>
+  </steps>
+
+</if:when>
+<if:when test="platform:gnome-classic">
+
+  <steps>
+    <item><p><gui>विंडो सूची</gui> के उपयोग से आप कार्यों के बीच सक्रीन के नीचे स्विच कर सकते हैं. खुले कार्य  <gui>window list</gui> में बतौर बटन प्रकट होते हैं.</p></item>
+     <item><p><gui>विंडो सूची</gui> में कार्य में जाने के लिए किसी बटन पर क्लिक करें.</p></item>
+  </steps>
+
+</if:when>
+</if:choose>
+
+  </section>
+
+  <section id="switching-tasks-tiling">
+    <title>टाइल विंडोज़</title>
+    
+    <steps>
+      <item><p>स्क्रीन की तरफ विंडो अधिकतम करने के लिए, विंडो के शीर्षकपट्टी को पकड़ें और इसे स्क्रीन के बायीं ओर खींचें या दाहिनी ओर खींचें.</p></item>
+      <item><p>आधे स्क्रीन के आलोकित होने पर, विंडो को छोड़ें ताकि स्क्रीन के चुने किनारे की ओर इसे अधिकतम किया जा सके.</p></item>
+      <item><p>दो विंडो को आजू-बाजू अधिकतम करने के लिए, दूसरे विंडो के शीर्षकपट्टी को पकड़ें और इसे स्क्रीन के विपरीत ओर खींचें.</p></item>
+       <item><p>आधे स्क्रीन के आलोकित होने पर, विंडो को छोड़ें ताकि स्क्रीन के विपरीत किनारे की ओर इसे अधिकतम किया जा सके.</p></item>
+    </steps>
+    
+  </section>
+  
+  <section id="switch-tasks-windows">
+    <title>विंडो के बीच स्विच करें</title>
+    
+  <steps>
+   <item><p><keyseq> <key href="help:gnome-help/keyboard-key-super">Super</key><key> Tab</key></keyseq> दबाएँ <gui>विंडो स्विचर</gui> दिखाने के लिए जो अभी खुले विंडो दिखाता है.</p></item>
+   <item><p><key href="help:gnome-help/keyboard-key-super">Super</key> को <gui>विंडो स्विचर</gui> में अगले आलोकित विंडो में चुनने के लिए छोड़ें.</p>
+   </item>
+   <item><p>खुले विंडो की सूची से चलाने के लिए, <key href="help:gnome-help/keyboard-key-super">Super</key> को मत छोड़ें लेकिन इसे पकड़े रहें और <key>Tab</key> दबाएँ.</p></item>
+  </steps>
+
+  </section>
+
+  <section id="switch-tasks-search">
+    <title>अनुप्रयोग बदलने के लिए खोज का उपयोग करें</title>
+    
+    <steps>
+      <item><p><key href="help:gnome-help/keyboard-key-super">Super</key> कुँजी को <gui>गतिविधि सारांश</gui> दिखाने के लिए दबाएँ.</p></item>
+      <item><p>अनुप्रयोग का नाम टाइप करना शुरू करें जिसमें आप स्विच करना चाहते हैं. जैसे ही आप टाइप करेंगे मेल खाते अनुप्रयोग प्रकट होंगे.</p></item>
+      <item><p>जब अनुप्रयोग जिसमें आप जाना चाहते हैं, बतौर पहले परिणाम प्रकट होता है, <key> Enter</key> कुँजी दबाएँ ताकि इसमें स्विच किया जा सके.</p></item>
+      
+    </steps>
+    
+  </section>
+
+</page>

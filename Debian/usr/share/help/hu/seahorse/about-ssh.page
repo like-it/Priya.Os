@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="about-ssh" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="concepts" group="first"/>
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Az SSH-kulcsok távoli számítógépekre bejelentkezéshez használhatók, biztonságos kapcsolat létrehozása után.</desc>
+  </info>
+
+  <title>Mi az az SSH-kulcs?</title>
+
+  <p>Az <em>SSH-kulcs</em> (<em>Secure shell – biztonságos parancsértelmező</em>) segít biztonságos kapcsolatot létrehozni egy egyébként nem biztonságos hálózaton.</p>
+
+  <list>
+    <title>Az SSH-kulcs valójában két részből áll:</title>
+    <item><p>Egy nyilvános kulcsból, amely széles körben elérhető.</p></item>
+    <item><p>Egy személyes kulcsból, amely titkos. A személyes kulcs segítségével visszafejthetők a megfelelő nyilvános kulccsal titkosított üzenetek.</p></item>
+  </list>
+
+  <p>Az <em>SSH-kulcs</em> számítógépek közti kapcsolat létrehozására való használatának előnye az, hogy csak a <em>nyilvános kulcsot</em> kell elküldeni a hálózaton. A <em>nyilvános kulccsal</em> titkosított adatátvitel csak a megfelelő <em>személyes kulccsal</em> és jelszóval való feloldás után dekódolható. Mivel csak a nyilvános kulcs kerül átvitelre a hálózaton, a személyes kulcs jelszava titkos maradhat.</p>
+
+</page>

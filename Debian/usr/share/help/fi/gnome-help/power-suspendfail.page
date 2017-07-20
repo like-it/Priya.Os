@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
+
+    <credit type="author">
+      <name>Gnomen dokumentointiprojekti</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiri Grönroos</mal:name>
+      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Miksi tietokoneeni ei suostu palaamaan valmiustilasta?</title>
+
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
+
+<section id="resume">
+  <title>Tietokoneeni ei herää valmiustilasta</title>
+  <p>If you suspend your computer and then press a key or click the mouse, it
+  should wake up and display a screen asking for your password. If this does
+  not happen, try pressing the power button (do not hold it in, just press it
+  once).</p>
+  <p>If this still does not help, make sure that your computer's monitor is
+  switched on and try pressing a key on the keyboard again.</p>
+  <p>Viimeinen vaihtoehto on sammuttaa tietokone painamalla virtapainiketta 5-10 sekuntia. Tämä kuitenkin tuhoaa tallentamattomat tiedostot. Tämän jälkeen koneen pitäisi käynnistyä normaalisti.</p>
+  <p>Jos tämä tapahtuu aina valmiustilaan siirryttäessä, valmiustila ei toimi laitteistollasi.</p>
+  <note style="warning">
+    <p>If your computer loses power and does not have an alternative power
+    supply (such as a working battery), it will switch off.</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>My wireless connection (or other hardware) does not work when I wake
+  up my computer</title>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
+  <p>Jos laitteessa on virtakytkin, käynnistä laite uudelleen. Yleensä tämä saa laitteen toimimaan. Jos se on liitetty tietokoneeseen USB-kaapelilla tai muulla samanlaisella tavalla, irrota laite ja liitä se takaisin.</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
+</section>
+
+</page>

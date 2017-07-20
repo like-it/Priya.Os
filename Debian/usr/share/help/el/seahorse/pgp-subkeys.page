@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="pgp-subkeys" xml:lang="el">
+  <info>
+    <link type="guide" xref="index#pgp-keys" group="second"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-28" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Ένα υποκλειδί συνδέεται πάντα με το κύριο κλειδί σε ένα ζεύγος κλειδιών PGP. Χρησιμοποιείται για κρυπτογράφηση.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα του GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Τι είναι ένα υποκλειδί;</title>
+
+  <p>Αν και είναι πολύ σημαντικό να κρατάτε ασφαλή τα κλειδιά σας, μπορεί να γίνει αρκετά κουραστικό να το κάνετε όταν έχετε πολλά κλειδιά. Το <app>Κωδικοί πρόσβασης και κλειδιά</app> παρέχει μια απλή λύση στην ασφάλεια του κλειδιού χρησιμοποιώντας τα <em>υποκλειδιά</em> για υπογραφή και κρυπτογράφηση.</p>
+
+  <p>Όποτε <link xref="pgp-create">δημιουργείτε</link> ένα νέο δημόσιο κλειδί κρυπτογράφησης, δημιουργείται ένα <em>ζεύγος κλειδιών</em> αντί για ένα μοναδικό κλειδί. Αυτό το ζεύγος κλειδιών αποτελείται από το βασικό κλειδί, που λέγεται επίσης <em>κύριο κλειδί</em> και ένα <em>υποκλειδί</em>. Το κύριο κλειδί μπορεί να χρησιμοποιηθεί για να δημιουργήσει πρόσθετα υποκλειδιά που είναι δεσμευμένα σε αυτό.</p>
+
+  <list>
+    <title>Τι κάνει κάθε κλειδί σε ένα ζεύγος κλειδιών;</title>
+      <item>
+	<p>Το <em>κύριο κλειδί</em> χρησιμοποιείται για την <link xref="pgp-sign">υπογραφή</link> άλλων κλειδιών, δημιουργώντας υποκλειδιά και <link xref="subkeys-revoke">ανακαλώντας</link> υποκλειδιά. Το κύριο κλειδί πρέπει να κρατιέται πολύ ασφαλές. Οι υπογραφές εμπιστοσύνης συλλέγονται επίσης στο κύριο κλειδί σας. Αν το κύριο κλειδί εκτίθεται, δεν έχετε άλλη επιλογή από την ανάκλησή του καθώς και όλων των υποκλειδιών που είναι προσαρτημένα σε αυτό.</p>
+      </item>
+      <item>
+	<p>Το προεπιλεγμένο <em>υποκλειδί</em> χρησιμοποιείται για κρυπτογράφηση και αποκρυπτογράφηση των μηνυμάτων. Πρόσθετα υποκλειδιά μπορούν να δημιουργηθούν για υπογραφή. Αν και είναι σημαντικό να διατηρούνται ασφαλή τα κλειδιά σας, μπορείτε να ανακαλέσετε πάντα ένα υποκλειδί αν είναι εκτεθειμένο και να δημιουργήσετε ένα νέο με το αρχικό κύριο κλειδί.</p>
+      </item>
+  </list>
+
+  <section id="more" style="2column">
+    <title>Περισσότερα για τα υποκλειδιά</title>
+  </section>
+</page>

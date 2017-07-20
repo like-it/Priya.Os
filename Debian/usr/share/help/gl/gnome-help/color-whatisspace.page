@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>Un espazo de cor é un rango definido de cores.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Que é un espazo de cor?</title>
+
+  <p>Un espazo de cor é un rango de cores definido. Os espazos de cores ben documentados inclúen sRGB, AdobeRGB e ProPhotoRGB.</p>
+
+  <p>O sistema visual humano non é un sensor RGB simple pero se pode aproximar como responde o ollo humano ao diagrama de cromaticidade CIE 1931 que mostra a resposta visual humana cunha forma de ferradura. Pode ver que na visión humana detéctanse moitos máis tons de verde que de azul ou vermello. Cun espazo de cor tricomático como o RGB, represéntanse cores no equipo usando tres valores, o que se restrinxe a codificar un <em>triángulo</em> de cores.</p>
+
+  <note>
+    <p>Usar modelos tales como o diagrama de cromaticidade CIE 1931 é unha enorme simplificación do sistema visual humano e as gamas reais exprésanse en 3D, no lugar de en proxeccións 2D. Unha proxección 2D dunha forma 3D pode levar a confusións, de tal forma que se quere ver a presentación 3D use o aplicativo <code>gcm-viewer</code>.</p>
+  </note>
+
+  <figure>
+    <desc>sRGB, AdobeRGB e ProPhotoRGB representados por triángulos brancos</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>Primeiro, mire ao sRGB, que é o menor espazo e que pode codificar o menor número de cores. É unha aproximación dunha pantalla CRT de 10 anos de antigüidade e a maioría dos monitores modernos poden mostrar moitas máis cores que estas. sRGB é un estándar do <em>menor-denominador-común</em> e úsase nun gran número de aplicativos (incluíndo Internet).</p>
+  <p>AdobeRGB úsase frecuentemente como un <em>espazo de edición</em>. Pode codificar máis cores que sRGB, o que significa que pode axustar as cores nunha fotografía sen preocuparse de que o brillo dos cores se corte ou os negros se pisen.</p>
+  <p>ProPHoto é o maior sitio dispoñíbel e úsase frecuentemente para arquivar documentos. Pode codificar case todo o rango de cores detectados polo ollo humano e incluso codificar que o ollo humano non pode detectar.</p>
+
+  <p>Agora, se ProPhoto é claramente mello, ¿por que non usalo para todo? A resposta ten que ver coa <em>cuantización</em>. Se só ten 8 bits (256 niveis) para codificar cada canle, entón un maior rango requerirá ter pasos máis grandes entre cada valor.</p>
+  <p>Pasos máis grandes significan un maior erro entre a cor capturada e a cor almacenado e para algúns cores é un gran problema. Resulta que as cores chave, como as cores da pel, son moi importantes e incluso pequenos erros farán que unha persoa non acostumada note que algo está mal na fotografía.</p>
+  <p>Por suposto, usar 16 bits para a imaxe fará que haxa máis niveis e un erro de cuantización moito máis pequeno, pero isto multiplica por dous o tamaño de cada ficheiro de imaxe. A maioría do contido existente hoxe en día ten 8bpp, é dicir, 8 bits por píxel.</p>
+  <p>O proceso de xestión de cor para converter dun espazo de cor a outro, onde o espazo de cor pódese definir ben nun espazo de cor sRGB ou un espazo de cor personalizado tal como é o do perfil do seu monitor ou a súa impresora.</p>
+
+</page>

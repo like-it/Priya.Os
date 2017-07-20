@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-localized-re-subjects" xml:lang="es">
+
+  <info>
+    <desc>Evite las líneas de asunto largas debido a los prefijos «Re:» traducidos.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+
+    <revision pkgversion="3.5.90" version="0.1" date="2012-08-16" status="review"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yolanda Álvarez Pérez</mal:name>
+      <mal:email>yolandaa.alvarez.perez@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Manejar el «Re:» traducido en los asuntos</title>
+
+<p>Generalmente se añade un prefijo «Re:» a la línea del asunto cuando se responde a un correo. Algunas aplicaciones usan términos traducidos para esto (por ejemplo, «SV» en danés o «AW» en alemán). <app>Evolution</app> puede reconocer estos términos para evitar que el sujeto se haga muy largo a medida que avanza la conversación.</p>
+
+<list>
+<item><p>Abra la aplicación <app>Terminal</app>.</p></item>
+<item><p>Ejecute el comando <cmd>gsettings set org.gnome.evolution.mail composer-localized-re 'AW,SV'</cmd> (en el caso de que quiera que se reconozcan «AW:» y «SV:»)</p></item>
+</list>
+<p>También puede usar la aplicación <gui>dconf-editor</gui> para hacer esto.</p>
+
+<!-- As per https://bugzilla.gnome.org/show_bug.cgi?id=661087#c6 -->
+
+</page>

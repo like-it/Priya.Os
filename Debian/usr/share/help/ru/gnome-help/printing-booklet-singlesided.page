@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="printing-booklet-singlesided" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="printing-booklet"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Петр Ковар (Petr Kovar)</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Print a booklet from a PDF using a single-sided printer.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юлия Дронова</mal:name>
+      <mal:email>juliette.tux@gmail.com</mal:email>
+      <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Печать буклета на принтере, не поддерживающем двухстороннюю печать</title>
+
+  <note>
+    <p>Это инструкции для распечатки документа PDF в виде буклета.</p>
+    <p>Чтобы распечатать буклет из документа <app>LibreOffice</app>, сначала экспортируйте его в PDF, выбрав <guiseq><gui>Файл</gui><gui>Экспорт в PDF…</gui></guiseq>. Число страниц в документе должно быть кратным 4 (4, 8, 12, 16,…). Возможно, понадобится добавить до 3 пустых страниц.</p>
+  </note>
+
+  <p>Чтобы распечатать:</p>
+
+  <steps>
+    <item>
+      <p>Откройте диалоговое окно печати. Обычно это можно сделать нажав на <gui style="menuitem">Печать</gui> в меню или с помощью комбинации клавиш <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Click the <gui>Properties...</gui> button </p>
+      <p>In the <gui>Orientation</gui> drop-down list, make sure that
+      <gui>Landscape</gui> is selected.</p>
+      <p>Click <gui>OK</gui> to go back to the print dialog.</p>
+    </item>
+    <item>
+      <p>Under <gui>Range and Copies</gui>, choose <gui>Pages</gui>.</p>
+      <p>Укажите номера страниц в следующем порядке (n — общее число страниц, кратное четырём):</p>
+      <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
+      <p>…пока не наберёте номера всех страниц.</p>
+    <note>
+      <p>Примеры:</p>
+      <p>4-страничный буклет: наберите <input>4,1,2,3</input></p>
+      <p>8-страничный буклет: наберите <input>8,1,2,7,6,3,4,5</input></p>
+      <p>12-страничный буклет: наберите <input>12,1,2,11,10,3,4,9,8,5,6,7</input></p>
+      <p>16-страничный буклет: наберите <input>16,1,2,15,14,3,4,13,12,5,6,11,10,7,8,9</input></p>
+      <p>20-страничный буклет: наберите <input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input></p>
+     </note>
+    </item>
+    <item>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Front sides / right pages</gui>.</p>
+    </item>
+    <item>
+      <p>Нажмите кнопку <gui>Печать</gui>.</p>
+    </item>
+    <item>
+      <p>Когда все страницы будут распечатаны, переверните их и снова поместите в принтер.</p>
+    </item>
+    <item>
+      <p>Откройте диалоговое окно печати. Обычно это можно сделать нажав на <gui style="menuitem">Печать</gui> в меню или с помощью комбинации клавиш <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Back sides / left pages</gui>.</p>
+    </item>
+    <item>
+      <p>Нажмите кнопку <gui>Печать</gui>.</p>
+    </item>
+  </steps>
+
+</page>

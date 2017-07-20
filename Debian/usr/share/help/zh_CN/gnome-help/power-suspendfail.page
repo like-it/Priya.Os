@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
+
+    <credit type="author">
+      <name>GNOME 文档项目</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>为什么我的机子休眠后不能回到原来的状态？</title>
+
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
+
+<section id="resume">
+  <title>我遥计算机挂起后不同唤醒</title>
+  <p>如果您挂起了计算机，那么按下任意键或者点击鼠标后，应该可以唤醒它，然后屏幕显示询问密码。如果计算机没反应，尝试按一下电源键(不要按太久，按一下就可以了)。</p>
+  <p>如果依然没有反应，确保您的计算机显示器是开启的，然后再试着按一下键盘上的键。</p>
+  <p>如果仍不起作用，则最后一种方法是通过按住电源按钮 5 到10 秒钟关闭计算机。您这样操作会丢失未保存的工作。但是，您应该可以再次打开计算机。</p>
+  <p>如果这种情况在计算机每次睡眠时都发生，则可能是您的硬件无法支持挂起功能。</p>
+  <note style="warning">
+    <p>如果计算机掉电，而且又没有额外的电源供应(比如电池)，它将会关机。</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>当我唤醒计算机时，无线连接(或其他硬件)不能工作</title>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
+  <p>如果设备有电源键，试着关闭它们重新开启，大多数情况，设备将会重新正常工作。如果连接是 USB 类的，拔下来再重新插上，看看是否能工作。</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
+</section>
+
+</page>

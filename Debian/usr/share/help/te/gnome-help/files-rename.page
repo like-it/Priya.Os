@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-rename" xml:lang="te">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>గ్నోమ్ పత్రీకరణ పరియోజన</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>షాన్ మెక్‌కేన్స్</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>జిమ్ క్యాంబెల్</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>మైకేల్ హిల్</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>దస్త్రం లేదా సంచయం పేరు మార్చండి.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Praveen Illa</mal:name>
+      <mal:email>mail2ipn@gmail.com</mal:email>
+      <mal:years>2011, 2014. </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>కృష్ణబాబు క్రొత్తపల్లి</mal:name>
+      <mal:email>kkrothap@redhat.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>దస్త్రం లేదా సంచయం పేరుమార్చండి</title>
+
+  <p>As with other file managers, you can use <app>Files</app> to change the
+  name of a file or folder.</p>
+
+  <steps>
+    <title>ఫైలు లేదా సంచయం పేరుమార్చుటకు:</title>
+    <item><p>అంశముపై కుడి-నొక్కు నొక్కి <gui>పేరుమార్చు</gui> ఎంపికచేయి, లేదా ఫైలును ఎంపికచేసి మరియు <key>F2</key> వత్తుము.</p></item>
+    <item><p>Type the new name and press <key>Enter</key> or click
+    <gui>Rename</gui>.</p></item>
+  </steps>
+
+  <p>మీరు ఫైలు పేరును <link xref="nautilus-file-properties-basic">లక్షణాలు</link> విండో నుండి కూడా మార్చవచ్చు.</p>
+
+  <p>When you rename a file, only the first part of the name of the file is
+  selected, not the file extension (the part after the last <file>.</file>).
+  The extension normally denotes what type of file it is (for example,
+  <file>file.pdf</file> is a PDF document), and you usually do not want to
+  change that. If you need to change the extension as well, select the entire
+  file name and change it.</p>
+
+  <note style="tip">
+    <p>If you renamed the wrong file, or named your file improperly, you can
+    undo the rename. To revert the action, immediately click the menu button in
+    the toolbar and select <gui>Undo Rename</gui>, or press
+    <keyseq><key>Ctrl</key><key>Z</key></keyseq>, to restore the former
+    name.</p>
+  </note>
+
+  <section id="valid-chars">
+    <title>ఫైల్ పేర్లకు చెల్లునటువంటి అక్షరాలు</title>
+
+    <p>You can use any character except the <file>/</file> (slash) character in
+    file names. Some devices, however, use a <em>file system</em> that has more
+    restrictions on file names. Therefore, it is a best practice to avoid the
+    following characters in your file names: <file>|</file>, <file>\</file>,
+    <file>?</file>, <file>*</file>, <file>&lt;</file>, <file>"</file>,
+    <file>:</file>, <file>&gt;</file>, <file>/</file>.</p>
+
+    <note style="warning">
+    <p>If you name a file with a <file>.</file> as the first character, the
+    file will be <link xref="files-hidden">hidden</link> when you attempt to
+    view it in the file manager.</p>
+    </note>
+
+  </section>
+
+  <section id="common-probs">
+    <title>ఉమ్మడి సమస్యలు</title>
+
+    <terms>
+      <item>
+        <title>దస్త్రం పేరు ఇప్పటికే వినియోగంలో వుంది</title>
+        <p>You cannot have two files or folders with the same name in the same
+        folder. If you try to rename a file to a name that already exists in
+        the folder you are working in, the file manager will not allow it.</p>
+        <p>ఫైలు మరియు సంచయం పేర్లు అక్షరతేడా గుర్తించును. కనుక <file>File.txt</file> ఫైలు పేరు <file>FILE.txt</file> ఫైలు పేరుకు సమానం కాదు. ఈ విధంగా భిన్న ఫైలు పేర్లను వుపయోగించవచ్చు, అది సిఫార్సు చేయబడనప్పటికీ.</p>
+      </item>
+      <item>
+        <title>దస్త్రం పేరు మరీ పొడవైనది</title>
+        <p>On some file systems, file names can have no more than 255
+        characters in their names.  This 255 character limit includes both the
+        file name and the path to the file (for example,
+        <file>/home/wanda/Documents/work/business-proposals/…</file>), so you
+        should avoid long file and folder names where possible.</p>
+      </item>
+      <item>
+        <title>పేరుమార్చు ఐచ్చికం ఊదారంగులో వుంది</title>
+        <p><gui>పేరుమార్చు</gui> ఊదారంగులో వుంటే, ఫైలు పేరుమార్చుటకు మీకు అనుమతి లేదు. అటువంటి ఫైళ్ళ పేరు మార్చునప్పుడు మీరు జాగ్రత్తగా వుండాలి, అటువంటి రక్షిత ఫైళ్ళ పేరుమార్చితే మీ వ్యవస్థ కుదురుగా వుండకపోవచ్చు. మరింత సమాచారం కొరకు <link xref="nautilus-file-properties-permissions"/> చూడండి.</p>
+      </item>
+    </terms>
+
+  </section>
+
+</page>

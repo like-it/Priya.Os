@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-browse" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="seealso" xref="files-copy"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-16" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Fájlok kezelése és rendszerezése a fájlkezelővel.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Fájlok és mappák tallózása</title>
+
+<p>A <app>Fájlok</app> alkalmazás segítségével tallózhatja a számítógépén található fájlokat. Segítségével kezelheti a tárolóeszközökön (például külső merevlemezeken), <link xref="nautilus-connect">fájlkiszolgálókon</link> és hálózati megosztásokon lévő fájlokat.</p>
+
+<p>A fájlkezelő elindításához válassza a <app>Fájlok</app> alkalmazást a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintésben. Mappákat és eszközöket az áttekintésben ugyanúgy kereshet, mint <link xref="shell-apps-open">alkalmazásokat</link>.</p>
+
+<section id="files-view-folder-contents">
+  <title>Mappák tartalmának felfedezése</title>
+
+<p>A fájlkezelőben a mappákra duplán kattintva megjelenik azok tartalma, a fájlokra duplán vagy a <link xref="mouse-middleclick">középső gombbal</link> kattintva azok megnyílnak a fájltípushoz tartozó alap alkalmazásban. Egy mappán való középső kattintás új lapon nyitja azt meg. A mappán jobb egérgombbal kattintva megnyithatja azt új ablakban vagy új lapon.</p>
+
+<p>Egy mappa fájljainak áttekintésekor a szóköz megnyomásával gyorsan <link xref="files-preview">megjelenítheti az egyes fájlok előnézetét</link>, így azok megnyitása, másolása vagy törlése előtt meggyőződhet arról, hogy a megfelelő fájlt választotta ki.</p>
+
+<p>A fájlok és mappák listája fölötti <em>útvonalsáv</em> megjeleníti az éppen látható mappát, beleértve a szülőmappáit is. Kattintson egy szülőmappára az útvonalsávon az adott mappába ugráshoz. Kattintson bármely mappára a jobb egérgombbal az útvonalsávon az új lapon vagy ablakban való megnyitásához, illetve tulajdonságainak megjelenítéséhez.</p>
+
+<p>Ha gyorsan meg <link xref="files-search">szeretne találni egy fájlt</link> az éppen megjelenített mappában vagy az alatt, akkor kezdje el begépelni a fájl nevét. Az ablak tetején megjelenik egy <em>keresőmező</em>, és csak a keresett kifejezésre illeszkedő fájlok jelennek meg. Nyomja meg az <key>Esc</key> billentyűt a keresés megszakításához.</p>
+
+<p>Az <em>oldalsávból</em> gyorsan elérheti az általános helyeket. Ha nem látja az oldalsávot, akkor kattintson a <gui>Fájlok</gui> gombra a felső sávon, és válassza az <gui>Oldalsáv</gui> menüpontot. A gyakran használt mappákra könyvjelzőket is készíthet, ezek is az oldalsávban jelennek meg. Ehhez húzzon egy mappát az oldalsávra, és ejtse a dinamikusan megjelenő <gui>Új könyvjelző</gui> elemre, vagy kattintson az ablak menüjére, majd válassza a <gui style="menuitem">Hely könyvjelzőzése</gui> menüpontot.</p>
+
+</section>
+
+</page>

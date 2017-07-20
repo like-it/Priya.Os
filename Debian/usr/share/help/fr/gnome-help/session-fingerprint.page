@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="hardware-auth"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ouvrir une session en utilisant un scanner d'empreintes digitales pris en charge à la place de la saisie de votre mot de passe.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Connexion avec une empreinte digitale</title>
+
+  <p>Si votre système possède un scanner d'empreintes reconnu, vous pouvez enregistrer une empreinte digitale et l'utiliser pour vous connecter.</p>
+
+<section id="record">
+  <title>Enregistrement d'une empreinte digitale</title>
+
+  <p>Avant de pouvoir vous connecter avec une empreinte digitale, vous devez l'enregistrer pour que le système puisse ensuite l'utiliser pour vous identifier.</p>
+
+  <note style="tip">
+    <p>Si votre doigt est trop sec, vous pouvez avoir des difficultés pour enregistrer votre empreinte digitale. Si cela arrive, humidifiez légèrement votre doigt, séchez-le avec un chiffon propre et non pelucheux et réessayez.</p>
+  </note>
+
+  <p><link xref="user-admin-explain">Les privilèges administrateurs</link> sont requis pour modifier des comptes utilisateurs autres que le votre.</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Users</gui>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Utilisateurs</gui> pour ouvrir le panneau.</p>
+    </item>
+    <item>
+      <p>Appuyez sur <gui>Désactivé</gui>, à côté de <gui>Connexion par empreinte digitale</gui> pour pouvoir ajouter une empreinte au compte sélectionné. Si vous agissez pour le compte d'autres utilisateurs, vous devez d'abord <gui>Déverrouiller</gui> le panneau.</p>
+    </item>
+    <item>
+      <p>Sélectionnez le doigt qui servira à enregistrer l'empreinte, puis cliquez sur <gui style="button">Suivant</gui>.</p>
+    </item>
+    <item>
+      <p>Suivez les instructions de la boîte de dialogue et frottez votre doigt à <em>vitesse raisonable</em> sur le lecteur d'empreintes. Dès que l'ordinateur a obtenu un bon enregistrement de votre empreinte, le message <gui>Terminé !</gui> s'affiche.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Suivant</gui>. Vous avez un message de confirmation indiquant que votre empreinte digitale a été enregistrée avec succès. Cliquez sur <gui>Fermer</gui> pour terminer.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="verify">
+  <title>Contrôle du bon fonctionnement de votre empreinte</title>
+
+  <p>Maintenant vérifiez que votre nouvelle connexion par empreinte digitale fonctionne. Bien que vous ayez enregistré une empreinte digitale, vous avez toutefois la possibilité de vous connecter avec votre mot de passe.</p>
+
+  <steps>
+    <item>
+      <p>Enregistrez tout vos travaux en cours et <link xref="shell-exit#logout">déconnectez-vous</link>.</p>
+    </item>
+    <item>
+      <p>À l'écran de connexion, sélectionnez votre nom dans la liste. La fenêtre de saisie du mot de passe apparaît.</p>
+    </item>
+    <item>
+      <p>Au lieu de saisir votre mot de passe, frottez votre doigt sur le lecteur d'empreintes.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

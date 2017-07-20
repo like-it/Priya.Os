@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="printing-booklet-duplex" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="printing-booklet"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Imprimir folletos plegados (tipo libro o panfleto) desde un PDF usando un tamaño de papel normal A4/Carta.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Imprimir un folleto en una impresora de doble cara</title>
+
+  <p>Puede hacer folletos plegados (como un pequeño libro o panfleto) imprimiendo las páginas de un documento en un orden especial y cambiando un par de opciones de impresión.</p>
+
+  <p>Estas instrucciones son para imprimir un folleto a partir de un documento PDF.</p>
+
+  <p>Si quiere imprimir un folleto desde un documento de <app>LibreOffice</app>, tendrá que exportarlo primero a PDF eligiendo <guiseq><gui>Archivo</gui><gui>Exportar como PDF…</gui></guiseq>. Su documento debe tener un número de páginas múltiplo de 4 (4, 8, 12, 16,...). Es posible que tenga que añadir hasta 3 páginas en blanco.</p>
+
+  <p>Para imprimir un folleto:</p>
+
+  <steps>
+    <item>
+      <p>Abra el diálogo de impresión. Esto se puede hacer normalmente mediante el elemento de menú <gui style="menuitem">Imprimir</gui> o usando el atajo del teclado <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Pulse el botón <gui>Propiedades...</gui>.</p>
+      <p>En la lista desplegable <gui>Orientación</gui>, asegúrese de que la opción <gui>Apaisado</gui> está seleccionada</p>
+      <p>En la lista desplegable <gui>Dos caras</gui> elija <gui>Margen corto</gui>.</p>
+      <p>Pulse <gui>Aceptar</gui> para volver al diálogo de impresión.</p>
+    </item>
+    <item>
+      <p>En <gui>Rango y copias</gui>, elija <gui>Páginas</gui>.</p>
+    </item>
+    <item>
+      <p>Escriba los números de las páginas en este orden (n es el número total de páginas, múltiplo de 4):</p>
+      <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
+      <p>Ejemplos:</p>
+      <list>
+        <item><p>Folleto de 4 páginas: escriba <input>4,1,2,3</input></p></item>
+        <item><p>Folleto de 8 páginas: escriba <input>8,1,2,7,6,3,4,5</input></p></item>
+        <item><p>Folleto de 20 páginas: escriba <input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input></p></item>
+      </list>
+    </item>
+    <item>
+      <p>Seleccione la pestaña <gui>Configuración de página</gui>.</p>
+      <p>En <gui>Distribución</gui>, elija <gui>Folleto</gui>.</p>
+      <p>En <gui>Márgenes</gui>, en la lista desplegable <gui>Includir</gui> elija <gui>Todas las páginas</gui>.</p>
+    </item>
+    <item>
+      <p>Pulse <gui>Imprimir</gui>.</p>
+    </item>
+  </steps>
+
+</page>

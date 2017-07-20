@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-free-busy" xml:lang="sv">
+
+  <info>
+
+    <link type="guide" xref="calendar-sharing-information"/>
+
+    <revision pkgversion="3.1.5" version="0.5" date="2012-02-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en
+	   and
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en#usage-calendar-freebusy
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Användning av ledig-/upptagenvyn på en groupware-server för att ställa in sammanträden.</desc>
+    <!-- TODO: Really split this into Exchange/Groupware section and normal people section -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ledig-/upptageninformation</title>
+
+  <p>Du kan använda ledig-/upptagensökningen för sammanträden för att avgöra deltagarnas tillgänglighet.</p>
+
+  <p>Utöver de normala verktygen för sammanträdesbokning kan du använda ledig-/upptagenvyn för att se huruvida människor är tillgängliga i förväg. Funktionen ledig/upptagen är normalt en funktion för dedikerade groupware-servers så som Microsoft Exchange och Novell GroupWise. Det kan dock också publicera ledig/upptagen-information på nätet och komma åt ledig/upptagen-information som publicerats på andra ställen. Om inte alla du samarbetar med publicerar ledig/upptagen-data kan du fortfarande använda <link xref="calendar-meetings-sending-invitation">sammanträdesinbjudningar</link> för att koordinera bokningar med andra människor.</p>
+
+  <p>För att nå ledig-/upptagenvyn:</p>
+
+  <steps>
+    <item>
+      <p>Klicka på <guiseq><gui>Arkiv</gui><gui>Nytt</gui><gui>Sammanträde</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui style="button">Lägg till</gui> för att lägga till e-postadresserna för människor du vill bjuda in.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Ledig/Upptagen</gui>-knappen i verktygsfältet eller klicka på <guiseq><gui>Alternativ</gui><gui>Ledig/Upptagen</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Justera sammanträdestiden, antingen genom att dra sammanträdesramarna eller genom att använda <gui>Autovälj</gui>-knapparna för att välja en tid automatiskt, klicka sedan på <gui style="button">Stäng</gui>. Deltagare på en Exchange-server kommer att få mötet uppdaterat automatiskt; andra kommer att få e-postaviseringar angående ändringar i planerna.</p>
+    </item>
+  </steps>
+
+  <list>
+    <item>
+      <p>Deltagarlista:</p>
+      <p>Deltagarlistan visar människorna som har bjudits in till mötet.</p>
+    </item>
+    <item>
+      <p>Bokningsrutnät:</p>
+      <p>Bokningsrutnätet visa den publicerade ledig/upptagen-informationen för människor du har bjudit in. Det är här du jämför scheman för att hitta ledig tid att boka mötet. Individer har synlig bokningsinformation bara om de använder samma Novell GroupWise- eller Microsoft Exchange-server som du (det vill säga, om de är i samma organisation om du), eller om de publicerar ledig-/upptageninformation på en webbadress (URL) som du kan nå och du har matat in den webbadressen för den specifika kontakten i <link xref="contacts-usage-edit-contact">Kontaktredigerare</link> under <guiseq><gui>Personlig information</gui> <gui>Webbadresser</gui><gui>Ledig/Upptagen</gui></guiseq>.</p>
+    </item>
+  </list>
+
+  <p>Du kan publicera kalender- och ledig-/upptageninformation på en WebDAV-server, FTP-server, en fjärrmaskin via SSH eller på vilken webbserver som helst med HTTP PUT-stöd.</p>
+
+  <p>I företagsmiljöer kan du publicera kalender- och ledig-/upptageninformation på en Exchange- eller Groupwise-server. Notera att du måste använda toppnivå-Exchange-kalendern om du vill att andra ska kunna nå din ledig-/upptageninformation när de bjuder in dig till ett möte.</p> <p>Standardservern kan definieras under <guiseq><gui>Redigera</gui><gui>Inställningar</gui> <gui>Kalender och uppgifter</gui> <gui>Publiceringsinformation</gui> <gui>Standardserver för ledig/upptagen</gui></guiseq>.</p>
+
+  <!-- This is the location since 3.1.5, see bug
+       https://bugzilla.gnome.org/show_bug.cgi?id=655666 -->
+
+<section id="no-groupware">
+  <title>Nå ledig-/upptagendata utan en Groupware-server</title>
+
+  <p>Om individer ger dig en URL med ledig-/upptageninformation eller till deras webbkalender kan du lägga till URL:en under <guiseq><gui>Personlig Information</gui><gui>Webbadresser</gui></guiseq> i <link xref="contacts-usage-edit-contact">Kontaktredigerare</link>. Sen, när du bokar ett möte med dem kommer <app>Evolution</app> att slå upp schemat och visa det bland ledig-/upptagendata.</p>
+
+</section>
+
+</page>

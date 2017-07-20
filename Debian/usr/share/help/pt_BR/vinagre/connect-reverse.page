@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect-reverse" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <link type="seealso" xref="connect"/>
+    <title type="sort">3</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Conecte-se a computadores que não estão em sua rede local: ignorando restrições de firewall na máquina remota.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title><gui>Conexões reversas…</gui></title>
+
+  <p>Uma conexão reversa é normalmente usada para ignorar as restrições de firewall em relação a portas abertas. Normalmente, um firewall bloqueia portas abertas, porém não bloqueia o tráfego de saída. Em uma encaminhamento normal de conexão, um cliente se conecta a um porta aberta em um servidor. Contudo, no caso da conexão reversa, o cliente abre um porta ao que o servidor se conecta.</p>
+
+  <section id="enable-reverse-connections">
+    <title>Ativando conexões reversas</title>
+
+    <steps>
+      <item>
+        <p>Selecione <guiseq><gui style="menu">Remota</gui> <gui style="menuitem">Conexões reversas…</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Marque a opção <gui>Ativar conexões reversas</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="accessing-behind-firewall">
+    <title>Acesso a um computador resguardado por um firewall</title>
+
+    <p>A máquina remota precisa se conectar à sua máquina usando seu <em>endereço de IP</em> e o número da porta, que podem ser encontrados no diálogo de <gui>Conexões reversas…</gui>, em <gui>Conectividade</gui>.</p>
+
+    <note>
+      <p>Atualmente, o <app>Vino</app>, aplicativo GNOME para servidor VNC, não possui suporte à conexões reversas, que também são conhecidas como "modo de escuta". Já alguns outros aplicativos, como o <app>UltraVNC</app>, o <app>RealVNC</app> e o <app>TightVNC</app> possuem suporte à conexões reversas.</p>
+    </note>
+
+    <p>Uma vez que a máquina remota conecte-se a seu computador, o <app>Visualizador de área de trabalho remota</app> estabelecerá a conexão reversa.</p>
+
+    <p>Ao se conectar a uma máquina que não esteja em sua rede local, será necessário que você informe seu endereço de IP e número de porta externamente visíveis ao servidor remoto.</p>
+
+  </section>
+
+</page>

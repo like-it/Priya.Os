@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-switching" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-windows"/>
+    <link type="guide" xref="shell-overview#apps"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-07" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Pulse <keyseq><key>Super</key><key>Tab</key></keyseq>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Cambiar entre ventanas</title>
+
+  <p>En el <gui>selector de ventanas</gui> puede ver todas las aplicaciones en ejecución que tienen una interfaz gráfica. Esto hace que el cambio entre tareas sea un proceso de un sólo paso y proporciona una visión completa de las aplicaciones que están en ejecución.</p>
+
+  <p>Desde un área de trabajo:</p>
+
+  <steps>
+    <item>
+      <p>Pulse <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> para mostrar el <gui>intercambiador de ventanas</gui>.</p>
+    </item>
+    <item>
+      <p>Suelte la tecla <key xref="keyboard-key-super">Super</key> para seleccionar la siguiente ventana (resaltada) en el selector.</p>
+    </item>
+    <item>
+      <p>Otra forma, aún manteniendo pulsada la tecla <key xref="keyboard-key-super"> Super</key>, pulse <key>Tab</key> para cambiar entre la lista de ventanas abiertas, o pulse <keyseq><key>Mayús</key><key>Tab</key></keyseq> para cambiar hacia atrás.</p>
+    </item>
+  </steps>
+
+  <p if:test="platform:gnome-classic">También puede usar la lista de ventanas en la barra inferior para acceder a todas sus ventanas abiertas y cambiar entre ellas.</p>
+
+  <note style="tip" if:test="!platform:gnome-classic">
+    <p>Las ventanas en el selector de ventanas se agrupan por aplicaciones. Las vistas previas de las aplicaciones con múltiples ventanas se despliegan cuando las pulsa. Pulse la tecla <key xref="keyboard-key-super">Super</key> y pulse <key>`</key> (o la tecla <key>Tab</key>) para recorrer la lista.</p>
+  </note>
+
+  <note if:test="!platform:gnome-classic">
+    <p>En el selector de ventanas, las aplicaciones de diferentes áreas de trabajo se dividen con separadores verticales.</p>
+  </note>
+
+  <p>También puede moverse entre los iconos de aplicaciones en el selector de ventanas con las teclas <key>→</key> o <key>←</key>, o seleccionar una pulsándola con el ratón.</p>
+
+  <p>Las vistas previas de las aplicaciones con una sola ventana se pueden mostrar con la tecla <key>↓</key>.</p>
+
+  <p>Pulse en una <link xref="shell-windows">ventana</link> en la vista de <gui>Actividades</gui> para cambiar a ella y salir de la vista previa. Si tiene varias <link xref="shell-windows#working-with-workspaces">áreas de trabajo</link> abiertas, puede pulsar en cada una de ellas para ver las ventanas abiertas en cada área de trabajo.</p>
+
+</page>

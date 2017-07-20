@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>Un espace colorimétrique est une gamme définie de couleurs.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Qu'est-ce qu'un espace colorimétrique ?</title>
+
+  <p>Un espace colorimétrique est une gamme définie de couleurs. Des espaces colorimétriques très connus sont sRGB, AdobeRGB et ProPhotoRGB.</p>
+
+  <p>Le système de vision humain n'est pas un simple capteur RVB mais nous pouvons nous rapprocher de la façon dont l'œil répond à l'aide d'un diagramme chromatique CIE 1931 qui affiche la réponse visuelle humaine sous la forme d'un sabot de cheval. Vous pouvez vous rendre compte que dans la vision humaine, il y a beaucoup plus de zones vertes que bleu ou rouge. Avec un espace colorimétrique trichromatique comme RVB, nous représentons les couleurs sur l'ordinateur en utilisant trois valeurs ce qui nous restreint au codage d'un <em>triangle</em> de couleurs.</p>
+
+  <note>
+    <p>L'utilisation de modèles tels qu'un diagramme chromatique CIE 1931 est une énorme simplification du système de vision humain et les vrais gamuts sont exprimés comme des coques 3D plutôt que des projections 2D. La projection 2D d'une forme 3D peut parfois être trompeur donc si vous voulez voir la coque 3D, utilisez l'application <code>gcm-viewer</code>.</p>
+  </note>
+
+  <figure>
+    <desc>sRGB, AdobeRGB and ProPhotoRGB représentée sous forme de triangles blancs</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>Regardons d'abord sRGB, qui est le plus petit espace colorimétrique et celui qui code le plus petit nombre de couleurs. Il correspond à celui d'un écran CRT de plus de dix ans et la grande majorité des écrans modernes affichent beaucoup plus de couleurs que lui. Le standard sRGB est le <em>plus petit dénominateur commun</em> mais est néanmoins utilisé dans beaucoup d'applications (y compris internet).</p>
+  <p>AdobeRGB est souvent utilisé comme <em>espace de retouches</em>. Il sait coder plus de couleurs que sRGB, ce qui signifie que vous pouvez modifier les couleurs d'une photo sans trop vous préoccuper de savoir si les couleurs les plus vives seront coupées ou les noirs écrasés.</p>
+  <p>ProPhoto est l'espace colorimétrique le plus étendu et est souvent utilisé pour l'archivage de documents. Il peut coder la totalité de la gamme de couleurs détectée par l'œil humain et même celles que l'œil ne peut pas voir !</p>
+
+  <p>Maintenant, si ProPhoto est effectivement le meilleur, pourquoi ne pas l'utiliser dans tous les cas ? La réponse est dans la <em>quantification</em>. Si vous n'avez que 8 bits (256 niveaux) pour coder chaque canal, alors une plus grande gamme aura de plus grands intervalles entre chaque valeur.</p>
+  <p>De plus grands intervalles signifient une erreur plus grande entre la couleur captée et celle restituée et pour certaines couleurs c'est un gros handicap. En fait, des couleurs clés comme celle de la peau, sont très importantes et même d'infimes erreurs vont conduire des personnes peu habituées à considérer que quelque chose ne va pas dans la photo.</p>
+  <p>Bien sûr, utiliser un format d'image en 16 bits comble beaucoup d'intervalles et de fait, diminue l'erreur de quantification, mais cela double aussi la taille du fichier de chaque image. Le meilleur usage aujourd'hui semble être le 8bpp, autrement dit le 8 bits par pixel.</p>
+  <p>La gestion des couleurs est le processus de conversion d'un espace colorimétrique à un autre, où un espace peut-être bien connu comme le sRGB ou un espace personnalisé comme le profil de votre écran ou de votre imprimante.</p>
+
+</page>

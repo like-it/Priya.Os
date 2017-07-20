@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="subkeys-revoke" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="pgp-subkeys#more"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" date="2013-08-25" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Ανάκληση ενός υποκλειδιού που έχει κινδυνεύσει ή δεν χρησιμοποιείται.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα του GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ανάκληση των υποκλειδιών σας.</title>
+
+  <p>Αν το υποκλειδί σας έχει κινδυνεύσει ή δεν χρησιμοποιείται πια, μπορεί να είναι καλή ιδέα να το ανακαλέσετε για να αποτρέψετε κατάχρηση του κλειδιού.</p>
+
+  <steps>
+    <title>Για να ανακαλέσετε ένα υποκλειδί:</title>
+    <item>
+      <p><link xref="subkeys-examine">Περιηγηθείτε</link> στο παράθυρο <gui>Υποκλειδιά</gui>.</p>
+    </item>
+    <!--The above step can be replaced with the following, if it's too vague:
+    <item>
+      <p>Select <gui>GnuPG keys</gui> from the panel on the left.</p>
+    </item>
+    <item>
+      <p>Right click on the PGP key and select
+      <guiseq><gui>Properties</gui><gui>Details</gui>.</p>
+    </item>
+    <item>
+      <p>Expand the subkeys panel if required.</p>
+    </item>-->
+    <item>
+      <p>Επιλέξτε το υποκλειδί από τον κατάλογο και πατήστε το πλήκτρο <gui style="button">Ανάκληση</gui>.</p>
+    </item>
+    <item>
+      <p>Στον νέο διάλογο, επιλέξτε έναν λόγο για την ανάκληση του κλειδιού. Προαιρετικά, περιγράψτε τον λόγο πιο λεπτομερώς στο πεδίο <gui>Περιγραφή</gui>.</p>
+    </item>
+    <item>
+      <p>Πατήστε το πλήκτρο <gui style="button">Ανάκληση</gui>.</p>
+    </item>
+    <item>
+      <p>Θα πρέπει να ξεκλειδώσετε το κλειδί με το συνθηματικό του.</p>
+    </item>
+    <item>
+      <p>Η <gui>Κατάσταση</gui> του υποκλειδιού αλλάζει σε <gui>Ανακαλεσμένο</gui> στο παράθυρο <gui>Υποκλειδιά</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Αν έχετε <link xref="pgp-publish">δημοσιεύσει</link> το υποκλειδί σας, πρέπει να το <link xref="pgp-sync">συγχρονίσετε</link> με τους διακομιστές κλειδιών μετά την ανάκλησή του για να εφαρμόσετε την ανάκληση σε όλα τα αντίγραφα του κλειδιού.</p>
+  </note>
+
+</page>

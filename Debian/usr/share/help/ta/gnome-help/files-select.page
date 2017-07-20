@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-select" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <credit type="author">
+      <name>ஷான் மெக்கேன்ஸ்</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>ஒத்த பெயர்கள் கொண்ட பல கோப்புகளை தேர்வு செய்ய <keyseq><key>Ctrl</key><key>S</key></keyseq> ஐ அழுத்தவும்.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>கோப்புகளை பொது பகுதி மூலம் தேர்ந்தெடுக்கவும்</title>
+
+  <p>நீங்கள் கோப்பு பெயரில் உள்ள பொது அமைப்பைக் கொண்டு ஒரு கோப்புறையில் இருக்கும் கோப்புகளை தேர்ந்தெடுக்க முடியும். <gui>பொருந்தும் உருப்படிகளை தேர்ந்தெடுக்கவும்</gui> சாளரத்தை வரவழைக்க <keyseq><key>Ctrl</key><key>S</key></keyseq> ஐ அழுத்தவும். கோப்பு பெயர்களில் பொதுவாகப் பொருந்தும் பொது பகுதியை தட்டச்சு செய்து அத்துடன் வைல்டு கார்டு எழுத்துகளைத் தட்டச்சு செய்யவும். இரண்டு வைல்டு கார்டு எழுத்துகளைப் பயன்படுத்தலாம்:</p>
+
+  <list style="compact">
+    <item><p><file>*</file> என்பது எந்த எழுத்துகளும் எத்தனை இருந்தாலும் பொருந்தும், எழுத்துகளே இல்லாவிட்டாலும் பொருந்தும்.</p></item>
+    <item><p><file>?</file> என்பது ஏதேனும் ஒரு எழுத்துக்கு மட்டும் பொருந்தும்.</p></item>
+  </list>
+
+  <p>உதாரணமாக:</p>
+
+  <list>
+    <item><p>உங்களிடம் <file>Invoice</file> என்ற ஒரே அடிப்படைப் பெயரைக் கொண்ட OpenDocument Text கோப்பு, ஒரு PDF கோப்பு மற்றும் ஒரு படக் கோப்பு ஆகியவை இருந்தால் இந்த பொதுப் பகுதியைக் கொண்டு மூன்று கோப்புகளையும் சேர்த்து தேர்ந்தெடுக்கலாம்</p>
+    <example><p><file>Invoice.*</file></p></example></item>
+
+    <item><p>உங்களிடம் <file>Vacation-001.jpg</file>, <file>Vacation-002.jpg</file>, <file>Vacation-003.jpg</file> என்றவாறு பெயரிட்ட புகைப்படங்கள் இருந்தால்; இவை அனைத்தையும் தேர்ந்தெடுக்க இந்த பொதுப் பகுதியைப் பயன்படுத்தலாம்</p>
+    <example><p><file>Vacation-???.jpg</file></p></example></item>
+
+    <item><p>If you have photos as before, but you have edited some of them and
+    added <file>-edited</file> to the end of the file name of the photos you
+    have edited, select the edited photos with</p>
+    <example><p><file>Vacation-???-edited.jpg</file></p></example></item>
+  </list>
+
+</page>

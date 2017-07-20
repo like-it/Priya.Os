@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <title type="sort">1</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Conéctese a outro computador na súa rede local.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Estabelecer unha conexión</title>
+
+  <p>You can connect to other computers on your local network using
+  <app>Remote Desktop Viewer</app>.</p>
+
+  <steps>
+    <item>
+      <p>Seleccione <guiseq><gui style="menu">Remoto</gui><gui style="menuitem">Conectar</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Seleccione o <gui>Protocolo</gui> e o <gui>Computador</gui> para a conexión.</p>
+      <note>
+        <p>Algúns protocolos permítenlle ver tódolos computadores dispoñíbeis na súa rede local premendo no botón <gui style="button">Buscar</gui>. Sen a compatibilidade de <app>Avahi</app>, este botón non se verá.</p>
+      </note>
+    </item>
+    <item>
+      <p>Seleccione as opcións que quere activar cando se realice unha conexión. As opcións varían dependendo do protocolo que vostede emprega.</p>
+    </item>
+    <item>
+      <p>Prema o botón <gui style="button">Conectar</gui>.</p>
+      <p>Neste punto, o escritorio remoto pode precisar que confirme a conexión. Se este é o caso, o visor manterase en negro até que a conexión se confirme.</p>
+      <note>
+        <p>Some computers may require a secure connection: an authentication
+        dialog will be displayed, asking for the credentials. The type of
+        credentials depend on the remote host; it may be a password and a
+        username. If you select <gui>Remember this credential</gui>,
+        <app>Remote Desktop Viewer</app> will store the information using
+        <app>GNOME Keyring</app>.</p>
+      </note>
+    </item>
+  </steps>
+
+  <p>Se a conexión foi empregada anteriormente, pode acceder a ela mediante <guiseq><gui style="menu">Remoto</gui><gui style="menuitem">Conexións recentes</gui></guiseq>.</p>
+
+  <p>Para pechar unha conexión seleccione <guiseq><gui style="menu">Remoto</gui><gui style="menuitem">Pechar</gui></guiseq> ou prema o botón <gui>Pechar</gui>.</p>
+
+</page>

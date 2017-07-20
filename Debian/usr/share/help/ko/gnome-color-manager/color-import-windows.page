@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="color-import-windows" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <link type="seealso" xref="color-gettingprofiles"/>
+    <desc>윈도우 시스템에서 기존의 ICC 프로파일을 가져오는 방법입니다.</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>조성호</mal:name>
+      <mal:email>shcho@gnome.org</mal:email>
+      <mal:years>2016.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>마이크로소프트 윈도우에 ICC 프로파일 설치하기</title>
+  <p>내장 보정 커브를 활용하여 프로파일을 장치에 할당하는 방법은 마이크로소프트 윈도우의 각 버전마다 다릅니다.</p>
+  <section id="xp">
+    <title>윈도우 XP</title>
+    <p>윈도우 탐색기에서 마우스 오른쪽 단추를 누른 후 <gui>프로파일 설치</gui>를 누르십시오. 프로파일을 적절한 디렉터리에 자동으로 복사합니다.</p>
+    <p>그 다음 <guiseq><gui>제어 센터</gui><gui>색 관리</gui></guiseq>를 여시고 장치에 프로파일을 추가하십시오.</p>
+    <note style="warning">
+      <p>윈도우 XP의 기존 프로파일을 바꾼다면 위 바로 가기가 동작하지 않을지도 모릅니다. 기존 프로파일을 바꾸려면 프로파일을 <file>C:\Windows\system32\spool\drivers\color</file>에 직접 복사해야 합니다.</p>
+    </note>
+    <p>윈도우 XP에서는 비디오 카드에 프로파일 보정 커브를 복사할 프로그램을 시작프로그램에 넣고 실행해야합니다. <app>어도비 감마</app>, <app>LUT 로더</app>, 무료 <app href="https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=12714">마이크로소프트 색상 제어판 애플릿</app>을 활용하실 수 있습니다. 마지막에 언급한 프로그램을 활용하시면 <gui>색 관리</gui> 항목을 제어판에 추가하여 윈도우를 매번 시작할 때마다 기본 프로파일 보정 커브를 쉽게 설정할 수 있습니다.</p>
+  </section>
+
+  <section id="vista">
+    <title>윈도우 비스타</title>
+    <p>마이크로소프트 윈도우 비스타는 실수로 보정 커브 기능을 로그인 한 다음, 대기 모드에 진입한 후, UAC 화면이 뜰 때 나타나는 비디오 LUT에서 뺐습니다. ICC 프로파일 보정 커브를 매번 직접 다시 불러와야 한다는 의미입니다. 내장 보정 커브 프로파일을 활용한다면 보정 상태가 완전하지 않으므로 조심스럽게 다루어야합니다.</p>
+  </section>
+
+  <section id="7">
+    <title>윈도우 7</title>
+    <p>윈도우 7에서는 리눅스와 비슷한 형태를 제공하며, 시스템 전체 또는 사용자별로 프로파일을 설치할 수 있습니다. 하지만 이 프로파일은 같은 곳에 있습니다. 윈도우 탐색기에서 마우스 오른쪽 단추를 누른 다음 <gui>프로파일 설치</gui>를 누르거나 <file>C:\Windows\system32\spool\drivers\color</file>에 .icc 프로파일을 복사하십시오.</p>
+    <p><guiseq><gui>제어 센터</gui><gui>색 관리</gui></guiseq>를 여시고 <gui>추가</gui> 단추를 눌러 시스템에 프로파일을 추가하십시오. <gui>고급</gui> 탭을 누른 후 <gui>디스플레이 보정</gui>을 찾아보십시오. 보정 커브는 <gui>윈도우 디스플레이 보정 사용</gui> 확인 상자로 활성화하여 불러올 수 있지만 동작이 세밀하지 않습니다. <gui>시스템 기본값으로 변경</gui>를 누르신 후 <gui>고급</gui> 탭으로 돌아와서 확인 상자를 눌러 해결할 수 있습니다.</p>
+    <p>대화 상자를 닫으신 후 <gui>현재 보정 다시 불러오기</gui>를 눌러 감마 경사 곡선을 설정하십시오. 이렇게 하면 매번 부팅할 때마다 프로파일 보정 커브를 설정합니다.</p>
+  </section>
+
+</page>

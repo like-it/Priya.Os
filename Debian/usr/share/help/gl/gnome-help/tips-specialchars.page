@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tips-specialchars" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="seealso" xref="keyboard-layouts"/>
+
+    <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Escriba os caracteres que non se encontran no teclado, incluíndo alfabetos estranxeiros, símbolos matemáticos e «dingbats».</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Inserir caracteres especiais</title>
+
+  <p>Pode introducir e ver milleiros de caracteres da maioría dos sistemas de escritura do mundo, incluso os que non se encontran no teclado. Nesta páxina enuméranse algunhas das diferentes maneiras nas que pode introducir caracteres especiais.</p>
+
+  <links type="section">
+    <title>Métodos para inserir caracteres</title>
+  </links>
+
+  <section id="charmap">
+    <title>Mapa de caracteres</title>
+    <p>GNOME ven con un aplicativo de mapa de caracteres que lle permite explorar tódolos caracteres en Unicode. Use o mapa de caracteres para atopar o caracter que quere e logo cópieo e pégueo onde o precise.</p>
+
+    <p>Pode atopar o <app>Mapa de caracteres</app> na vista de <gui>Actividades</gui>. Para máis información sobre o mapa de caracteres vexa o <link href="help:gucharmap">Manual do mapa de caracteres</link>.</p>
+
+  </section>
+
+  <section id="characters">
+    <title>Characters</title>
+    <p>Another useful application shipped with GNOME is <app>Characters</app>.
+    It lets you find and insert unusual characters by browsing character
+    categories or searching for keywords.</p>
+
+    <p>You can launch Characters from the Activities overview. For more
+    information on Characters, see the <link href="help:gnome-characters">
+    Characters Manual</link>.</p>
+
+  </section>
+
+  <section id="compose">
+    <title>Tecla Compose</title>
+    <p>Unha chave composta é unha chave especial que lle permite premer varias teclas seguidas para obter un caracter especial. Por exemplo para usar a letra con tilde <em>é</em> pode premer <key>compoñer</key> despois <key>'</key> e despois <key>e</key>.</p>
+    <p>Os teclados non teñen teclas de composición específicas. No seu lugar, pode definir unha das teclas existentes no seu teclado, como tecla para compoñer.</p>
+
+    <steps>
+      <title>Definir unha tecla composta</title>
+      <item>
+        <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+        start typing <gui>Keyboard</gui>.</p>
+      </item>
+      <item>
+        <p>Click on <gui>Keyboard</gui> to open the panel.</p>
+      </item>
+      <item><p>Seleccione a lapela <gui>Atallos</gui> e prema <gui>Escribindo</gui>.</p></item>
+      <item><p>Prema <gui>Tecla Compose</gui> no lateral dereito.</p></item>
+      <item><p>Prema en <gui>Desactivado</gui> e seleccione a tecla que quere que se comporte como a tecla composición desde a lista despregábel. Pode escoller calquera das teclas <key>Ctrl</key>, a tecla <key>Alt</key> dereita, a tecla <key>Windows</key> ou <key xref="keyboard-key-super">Super</key> se conta con ela, ou a tecla <key xref="keyboard-key-menu">Menú</key>. Calquera tecla que seleccione só funcionará como a tecla composición, e non funcionará máis co seu propósito orixinal.</p></item>
+    </steps>
+    <p>Pode teclear moitos caracteres comúns usando a tecla composta, por exemplo:</p>
+    <list>
+      <item><p>Prema <key>compoñer</key> e logo <key>'</key> e logo a tecla para estabelecer a tilde en tal letra, tal como é o <em>é</em>.</p></item>
+      <item><p>Prema <key>compoñer</key> despois <key>`</key> despois unha letra para estabelecer un acento grave sobre tal letra, tal como <em>è</em>.</p></item>
+      <item><p>Prema <key>compoñer</key> despois <key>"</key> despois unha letra para estabelecer unha diérese en tal letra, tal como o <em>ë</em>.</p></item>
+      <item><p>Prema <key>compoñer</key> despois <key>-</key> despois unha letra para estabelecer un macrón sobre a letra, tal como o <em>ē</em>.</p></item>
+    </list>
+    <p>Para saber máis sobre teclas de composición consulte <link href="http://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations">a páxina de teclas de composición na Wikipedia</link>.</p>
+  </section>
+
+<section id="ctrlshiftu">
+  <title>Puntos de código</title>
+
+  <p>Pode introducir calquera caracter Unicode usando só o teclado co punto de código numérico do caracter. Cada caracter identifícase cun punto de código de catro caracteres. Para encontrar o punto de código dun caracter, busque o caracter no aplicativo de mapa de caracteres e mire na barra de estado ou na lapela <gui>Detalles de caracter</gui>. O punto de código son os catro caracteres que hai despois de <gui>U+</gui>.</p>
+
+  <p>To enter a character by its code point, hold down <key>Ctrl</key> and
+  <key>Shift</key>, type <key>U</key> followed by the four-character code
+  point, then release <key>Ctrl</key> and <key>Shift</key>. If you often use
+  characters that you can't easily access with other methods, you might find
+  it useful to memorize the code point for those characters so you can enter
+  them quickly.</p>
+
+</section>
+
+  <section id="layout">
+    <title>Disposicións de teclado</title>
+    <p>Pode facer que o teclado se comporte como o teclado doutro idioma, independentemente das teclas impresas nas teclas. Incluso pode cambiar facilmente entre diferentes distribucións de teclado cunha icona na barra superior. Para saber como facelo, consulte a <link xref="keyboard-layouts"/>.</p>
+  </section>
+
+<section id="im">
+  <title>Métodos de entrada</title>
+
+  <p>An Input Method expands the previous methods by allowing to enter
+  characters not only with keyboard but also any input devices. For instance
+  you could enter characters with a mouse using a gesture method, or enter
+  Japanese characters using a Latin keyboard.</p>
+
+  <p>Para escoller un método de entrada, prema co botón dereito sobre un widget de texto e, no menú <gui>Método de entrada</gui>, seleccione o método de entrada que quere usar. Non hai ningún predeterminado, polo que pode consultar a documentación dos métodos de entrada para saber como usalos.</p>
+
+</section>
+
+</page>

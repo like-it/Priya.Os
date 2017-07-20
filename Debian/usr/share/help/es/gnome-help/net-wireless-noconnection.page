@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-wireless-noconnection" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" version="0.2" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Comprobar dos veces la contraseña, y otras cosas que intentar.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>He introducido la contraseña correcta, pero sigo sin poder conectarme</title>
+
+<p>Si está seguro de que ha introducido correctamente la <link xref="net-wireless-wepwpa">contraseña de la red inalámbrica</link> pero aún no puede conectarse correctamente a la red inalámbrica, intente alguna de las siguientes sugerencias:</p>
+
+<list>
+ <item>
+  <p>Compruebe dos veces que ha introducido correctamente la contraseña</p>
+  <p>Las contraseñas son sensibles a mayúsculas (quiere decir que distinguen entre mayúsculas y minúsculas), de tal forma que si no usó una mayúscula donde debería haberlo hecho, una de las letras es incorrecta.</p>
+ </item>
+
+ <item>
+  <p>Intente la clave hexadecimal o ASCII</p>
+  <p>La contraseña que se introduce también puede representarse de una forma distinta, como una cadena de caracteres en hexadecimal (números 0-9 y letras a-f). Si tiene acceso a la clave de paso así como a la contraseña (o frase de paso), pruebe a teclear la clave de paso en su lugar. Compruebe que selecciona la opción de <gui>seguridad inalámbrica</gui> correcta cuando se le pida la contraseña (por ejemplo, seleccione <gui>Clave WEP de 40/128 bits</gui> si está tecleando los 40 caracteres de la clave de paso de una conexión cifrada por WEP).</p>
+ </item>
+
+ <item>
+  <p>Intente apagar su tarjeta inalámbrica y volverla a encender</p>
+  <p>A veces, las tarjetas inalámbricas «se atascan» o sufren un problema menor que provoca que no se puedan conectar. Pruebe a apagar la tarjeta y volverla a encender para reiniciarla; consulte la <link xref="net-wireless-troubleshooting"/> para obtener más información.</p>
+ </item>
+
+ <item>
+  <p>Compruebe que está usando el tipo correcto de seguridad inalámbrica</p>
+  <p>Cuando se le pida su contraseña de seguridad inalámbrica, puede elegir qué tipo de seguridad inalámbrica quiere usar. Asegúrese de elegir la que utiliza la estación base inalámbrico o enrutador. Esto debe seleccionarse de manera predeterminada, pero a veces no ocurre por alguna razón. Si no sabe cuál es, intente el método de ensayo y error para recorrer las diferentes opciones.</p>
+ </item>
+
+ <item>
+  <p>Compruebe que su tarjeta inalámbrica está correctamente soportada</p>
+  <p>Algunas tarjetas inalámbricas no están bien soportadas. Muestran una conexión inalámbrica pero no pueden conectarse a la red porque sus controladores no tienen la capacidad de hacerlo. Intente conseguir otro controlador inalámbrico, o compruebe si necesita llevar a cabo algún otro paso adicional (como instalar un<em>firmware</em> diferente). Consulte la <link xref="net-wireless-troubleshooting"/> para obtener más información.</p>
+ </item>
+
+</list>
+
+</page>

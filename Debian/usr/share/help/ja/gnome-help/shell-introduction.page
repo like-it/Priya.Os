@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-introduction" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="shell-overview" group="#first"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-13" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>デスクトップ、トップバー、および<gui>アクティビティ</gui>画面について画像をまじえた入門。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>GNOME 入門</title>
+
+  <p>GNOME 3 はユーザーインターフェースを徹底的に見直しました。ユーザーにあれこれ干渉せず、邪魔なものをできるだけ取り除き、ユーザーが作業を片付けるのに役立つように設計されています。最初にログインしたときは、何もない空っぽのデスクトップとトップバーが見えます。</p>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar.png" width="600" if:test="!target:mobile">
+      <p>GNOME Shell トップバー</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-top-bar-classic.png" width="500" height="40" if:test="!target:mobile">
+      <p>GNOME Shell トップバー</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>The top bar provides access to your windows and applications, your
+  calendar and appointments, and
+  <link xref="status-icons">system properties</link> like sound, networking,
+  and power. In the status menu in the top bar, you can change the volume or
+  screen brightness, edit your <gui>Wi-Fi</gui> connection details, check your
+  battery status, log out or switch users, and turn off your computer.</p>
+
+<links type="section"/>
+
+<section id="activities">
+  <title><gui>アクティビティ</gui>画面</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
+      <p>アクティビティボタン</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-activities-classic.png" width="108" height="69" style="floatend floatright" if:test="!target:mobile">
+      <p>アクティビティボタン</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p if:test="!platform:gnome-classic">To access your windows and applications,
+  click the <gui>Activities</gui> button, or just move your mouse pointer to
+  the top-left hot corner. You can also press the
+  <key xref="keyboard-key-super">Super</key> key on your keyboard. You can
+  see your windows and applications in the overview. You can also just start
+  typing to search your applications, files, folders, and the web.</p>
+
+  <p if:test="platform:gnome-classic">To access your windows and applications,
+  click the <gui xref="shell-introduction#activities">Applications</gui> menu
+  at the top left of the screen and select the <gui>Activities Overview</gui>
+  item. You can also press the <key xref="keyboard-key-super">Super</key> key
+  to see your windows and applications in the <gui>Activities</gui> overview. 
+  Just start typing to search your applications, files, and folders.</p>
+
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
+    <p>ダッシュボード</p>
+  </media>
+
+  <p>アクティビティ画面の左部に<em>ダッシュボード</em>が見えます。ダッシュボードには、お気に入りのアプリケーションと起動中のアプリケーションが表示されます。ダッシュボードのアイコンのどれかをクリックすると、そのアプリケーションが開きます。アプリケーションがすでに起動しているときは、ハイライト表示されます。起動中のアイコンをクリックすると、その最後に使ったウィンドウが前面に表示されます。アイコンは、アクティビティ画面や、あるいは画面右側の任意のワークスペースにドラッグすることもできます。</p>
+
+  <p>アイコンを右クリックすると、実行中のアプリケーションなら任意のウィンドウにフォーカスすることができ、また新規にウィンドウを開くこともできます。<key>Ctrl</key> キーを押さえながらアイコンをクリックして、新しいウィンドウを開くこともできます。</p>
+
+  <p>アクティビティ画面を表示すると、まずウィンドウの一覧が表示されます。これは、現在のワークスペースで開いている全ウィンドウのサムネイルです。</p>
+
+  <p>ダッシュボードの一番下にあるグリッドボタンを押すと、アプリケーションの一覧が表示されます。ここには、お使いのコンピューターにインストールされているすべてのアプリケーションが表示されます。いずれかのアプリケーションを選択すると、そのアプリケーションが起動します。あるいは、アクティビティ画面かワークスペースのサムネイルにアプリケーションをドラッグしても起動します。また、アプリケーションをダッシュボードにドラッグすることで、お気に入りとして追加することもできます。お気に入りのアプリケーションは、起動していない場合でもダッシュボードに表示されており、すばやく起ち上げることができます。</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-apps-open">アプリケーションの起動についてもっと詳しく。</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-windows">ウィンドウとワークスペースについてもっと詳しく。</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="appmenu">
+  <title>アプリケーションメニュー</title>
+  <if:choose>
+    <if:when test="!platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-shell.png" width="250" style="floatend floatright" if:test="!target:mobile">
+        <p>App Menu of <app>Terminal</app></p>
+      </media>
+      <p>Application menu, located beside the <gui>Activities</gui> button,
+      shows the name of the active application alongside with its icon and
+      provides quick access to application preferences or help. The items that
+      are available in the application menu vary depending on the application.
+      </p>
+    </if:when>
+    <if:when test="platform:gnome-classic">
+      <media type="image" src="figures/shell-appmenu-classic.png" width="154" height="133" style="floatend floatright" if:test="!target:mobile">
+        <p>App Menu of <app>Terminal</app></p>
+      </media>
+      <p>Application menu, located next to the <gui>Applications</gui> and
+      <gui>Places</gui> menus, shows the name of the active application
+      alongside with its icon and provides quick access to application
+      preferences or help. The items that are available in the application menu
+      vary depending on the application.</p>
+    </if:when>
+  </if:choose>
+
+</section>
+
+<section id="clock">
+  <title>時計、カレンダーおよび予定</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>Clock, calendar, appointments and notifications</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-appts-classic.png" width="373" height="250" style="floatend floatright" if:test="!target:mobile">
+      <p>時計、カレンダーおよび予定</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Click the clock on the top bar to see the current date, a month-by-month
+  calendar, a list of your upcoming appointments and new notifications. You can
+  also open the calendar by pressing
+  <keyseq><key>Super</key><key>M</key></keyseq>. You can access the date and
+  time settings and open your full <app>Evolution</app> calendar directly from
+  the menu.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="clock-calendar">カレンダーと予定についてもっと詳しく。</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-notifications">通知メッセージとメッセージトレイについてもっと詳しく。</link></p>
+    </item>
+  </list>
+
+</section>
+
+
+<section id="yourname">
+  <title>あなた、およびお使いのコンピューターについて</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <media type="image" src="figures/shell-exit.png" width="250" style="floatend floatright" if:test="!target:mobile">
+      <p>ユーザーメニュー</p>
+    </media>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-exit-classic.png" width="250" height="200" style="floatend floatright" if:test="!target:mobile">
+      <p>ユーザーメニュー</p>
+    </media>
+  </if:when>
+</if:choose>
+
+  <p>Click the system menu in the top-right corner to manage your system
+  settings and your computer.</p>
+
+<!-- Apparently not anymore. TODO: figure out how to update status.
+  <p>You can quickly set your availability directly from the menu. This will set
+  your status for your contacts to see in instant messaging applications such as
+  <app>Empathy</app>.</p>-->
+
+<!--
+<p>If you set yourself to Unavailable, you won't be bothered by message popups
+at the bottom of your screen. Messages will still be available in the message
+tray when you move your mouse to the bottom-right corner. But only urgent
+messages will be presented, such as when your battery is critically low.</p>
+
+<list style="compact">
+  <item><p><link xref="shell-session-status">Learn more about changing
+  your availability.</link></p></item>
+</list>
+-->
+
+  <p>When you leave your computer, you can lock your screen to prevent other
+  people from using it. You can also quickly switch users without logging out
+  completely to give somebody else access to the computer, or you can
+  suspend or power off the computer from the menu.</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-exit">ユーザーの切り替え、ログアウト、コンピューターの電源オフについてもっと詳しく</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="lockscreen">
+  <title>ロック画面</title>
+
+  <media type="image" src="figures/shell-lock.png" width="250" style="floatend floatright" if:test="!target:mobile">
+    <p>ロック画面</p>
+  </media>
+
+  <p>画面をロックしたり、自動的にロックが掛かったりした場合に、ロック画面が表示されます。コンピューターから離れている間、デスクトップを保護できます。ロック画面には日付や時刻などが表示されます。他にもバッテリーやネットワークの状態を確認したり、メディアの再生をコントロールしたりできます。</p>
+
+  <list style="compact">
+    <item>
+      <p><link xref="shell-lockscreen">ロック画面についてもっと詳しく。</link></p>
+    </item>
+  </list>
+
+</section>
+
+<section id="window-list">
+  <title>ウィンドウの一覧</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+    <p>GNOME におけるウィンドウ切り替えのスタイルは、他のデスクトップ環境で採用されているような、常にウィンドウ一覧を表示するものとは異なったアプローチを取っています。</p>
+    <list style="compact">
+      <item>
+        <p><link xref="shell-windows-switching">ウィンドウの切り替えについてもっと詳しく。</link></p>
+      </item>
+    </list>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+    <media type="image" src="figures/shell-window-list-classic.png" width="500" height="34" style="floatend floatright" if:test="!target:mobile">
+      <p>ウィンドウの一覧</p>
+    </media>
+    <p>画面最下部のウィンドウ一覧から、開いているウィンドウやアプリケーションにアクセスできます。またウィンドウを最小化したり、元のサイズに戻したりすることも可能です。</p>
+    <p>ウィンドウ一覧の右側に、現在のワークスペースを示すインジケーターが表示されます。たとえば最初 (先頭) のワークスペースの場合、<gui>1</gui> と記されます。また、このインジケーターには、利用可能なワークスペースの総数も示されます。他のワークスペースに切り替えるには、インジケーターを押して、表示されるメニューから使用するワークスペースを選択してください。</p>
+    <p>アプリケーションやシステムコンポーネントがユーザーへ注意喚起をする場合に、青いアイコンをウィンドウ一覧の右側に表示します。青いアイコンを押すとメッセージトレイが表示されます。</p>
+  </if:when>
+</if:choose>
+
+</section>
+
+</page>

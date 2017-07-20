@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="strategy" xml:lang="fr">
+	<info>
+          <revision version="3.4" date="2012-03-08" status="final"/>
+	  <link type="guide" xref="index#play"/>
+	  <credit type="author copyright">
+	    <name>Radoslav Asparuhov</name>
+	    <email>rasparuhov@gmail.com</email>
+	  <years>2011</years>
+	  </credit>
+	  <credit type="editor">
+	    <name>Tiffany Antopolski</name>
+	    <email>tiffany.antopolski@gmail.com</email>
+	  </credit>
+	  <license>
+		<p>Creative Commons Paternité-Partage des Conditions Initiales à l'Identique 3.0</p>
+	  </license>
+	
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2007-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2008</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Stratégie</title>
+        <p>Il n'y a qu'une seule possibilité pour chaque cellule dans une grille de sudoku. Les stratégies suivantes vous aideront à trouver de manière systématique la solution de toutes les cellules.</p>
+ <section id="strategy1">
+	<title>Stratégie 1 :</title>
+	  <steps>
+	    <item><p>Choisissez la ligne qui possèdent le plus de nombres.</p>
+                  <note><p>En pratique, vous devez choisir la ligne ou la colonne avec le plus de nombres. Pour simplifier, ces instructions sont écrites comme si c'était une ligne qui avait le plus de nombres.</p></note>
+            </item>
+	    <item><p>Déterminez les nombres manquants dans la ligne.</p></item>
+	    <item><p>Choisissez une des cellules vide de cette ligne. Déterminez parmi les nombres manquants lesquels sont dans cette colonne ou dans cette boîte 3x3.</p></item>
+	    <item><p>En utilisant les <link xref="notes">notes</link>, saisissez dans le champ supérieur, les nombres manquants qui ne sont pas dans cette colonne ou dans la boîte 3x3. Ces nombres sont candidats comme solution de cette cellule.</p></item>
+	    <item><p>Allez dans la prochaine cellule vide de la ligne choisie et répétez la méthode ci-dessus. Recommencez cela pour chaque ligne et colonne, en commençant par celles qui ont le plus de nombres et en terminant par celles qui en ont le moins. Regardez toujours attentivement les nombres et n'oubliez pas les boîtes 3x3.</p></item>
+	   </steps>
+            <note><p>Cette stratégie aide à mettre en évidence les cellules qui n'ont qu'une seule possibilité. Une fois révélée, vous pouvez remplir ces cellules avec ce nombre et répétez la stratégie à nouveau jusqu'à ce que la grille soit résolue.</p></note>
+<figure>
+  <desc>Exemple d'utilisation de la stratégie 1.</desc>
+  <media type="image" mime="image/png" src="figures/strategy1.png" width="400" its:translate="no"/>
+</figure>
+
+</section>
+<section id="strategy2">
+
+	<title>Stratégie 2 :</title>
+	  <steps>
+	    <item><p>Recherchez le nombre qui apparaît le plus souvent dans la grille.</p></item>
+	    <item><p>Regardez maintenant l'empilement vertical des boîtes 3x3 de gauche et localisez la ou les colonnes dans lesquelles ce nombre apparaît.</p></item>
+  	    <item><p>Dans cet empilement, allez dans une boîte 3x3 qui ne contient pas ce nombre dans aucune de ses cellules. En utilisant les <link xref="notes">notes</link>, saisissez ce nombre dans chaque cellule vide de la colonne dans laquelle ce nombre n'apparaît pas. Si le nombre apparaît dans la ligne de l'une de ces cellules, ne le saisissez pas dans les notes de la cellule.</p></item>
+	    <item><p>Répétez les deux dernières étapes pour l'empilement vertical du centre et de droite.</p></item>
+            <item><p>Recherchez le nombre suivant qui apparaît le plus et répétez jusqu'à ce que vous ayez fait cela pour les 9 nombres.</p></item>
+	  </steps>
+            <note><p>Cette stratégie aide à mettre en évidence les cellules qui n'ont qu'une seule possibilité. Une fois révélée, vous pouvez remplir ces cellules avec ce nombre et répétez la stratégie à nouveau jusqu'à ce que la grille soit résolue.</p></note>
+<figure>
+  <desc>Exemple d'utilisation de la stratégie 2.</desc>
+  <media type="image" mime="image/png" src="figures/strategy2.png" width="400" its:translate="no"/>
+</figure>
+
+	   <note><p>Si aucune des stratégies ci-dessus ne résout la grille de son côté, vous pouvez alterner les stratégies. Vous pouvez aussi combiner les stratégies.</p></note>
+</section>
+</page>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="printing-booklet-singlesided" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="printing-booklet"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Εκτυπώστε ένα φυλλάδιο από PDF χρησιμοποιώντας εκτυπωτή μονής όψης.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Εκτύπωση φυλλαδίου σε εκτυπωτή μονής όψης</title>
+
+  <note>
+    <p>Αυτές οι οδηγίες είναι για εκτύπωση φυλλαδίου από έγγραφο PDF.</p>
+    <p>Εάν θέλετε να εκτυπώσετε ένα φυλλάδιο από ένα έγγραφο <app>LibreOffice</app>, πρώτα εξάγετε το σε PDF επιλέγοντας <guiseq><gui>Αρχείο</gui><gui>Εξαγωγή ως PDF…</gui></guiseq>. Το έγγραφό σας χρειάζεται να έχει ένα πολλαπλάσιο του αριθμού 4 των σελίδων (4, 8, 12, 16,…). Μπορεί να χρειαστείτε να προσθέσετε μέχρι 3 κενές σελίδες.</p>
+  </note>
+
+  <p>Για εκτύπωση:</p>
+
+  <steps>
+    <item>
+      <p>Ανοίξτε τον διάλογο εκτύπωσης. Αυτό μπορεί κανονικά να γίνει μέσα από την <gui style="menuitem">Εκτύπωση</gui> στο μενού ή χρησιμοποιώντας τη συντόμευση πληκτρολογίου <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Κάντε κλικ στο κουμπί <gui>Προτιμήσεις...</gui></p>
+      <p>Στην πτυσσόμενη λίστα <gui>Προσανατολισμός</gui>, σιγουρευτείτε πως είναι επιλεγμένο το <gui>Οριζόντια</gui>.</p>
+      <p>Κάντε κλικ στο <gui>Εντάξει</gui> για να μεταβείτε πίσω στον διάλογο εκτύπωσης.</p>
+    </item>
+    <item>
+      <p>Στο <gui>Εύρος και αντίγραφα</gui>, επιλέξτε <gui>Σελίδες</gui>.</p>
+      <p>Πληκτρολογήστε τους αριθμούς των σελίδων με αυτήν τη σειρά (n είναι ο συνολικός αριθμός των σελίδων και ένα πολλαπλάσιο του 4):</p>
+      <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
+      <p>…μέχρι να τυπώσετε όλες τις σελίδες.</p>
+    <note>
+      <p>Παραδείγματα:</p>
+      <p>4σέλιδο φυλλάδιο: Πληκτρολογήστε <input>4,1,2,3</input></p>
+      <p>8σέλιδο φυλλάδιο: Πληκτρολογήστε <input>8,1,2,7,6,3,4,5</input></p>
+      <p>12σέλιδο φυλλάδιο: Πληκτρολογήστε <input>12,1,2,11,10,3,4,9,8,5,6,7</input></p>
+      <p>16σέλιδο φυλλάδιο: Πληκτρολογήστε <input>16,1,2,15,14,3,4,13,12,5,6,11,10,7,8,9</input></p>
+      <p>20σέλιδο φυλλάδιο: Πληκτρολογήστε <input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input></p>
+     </note>
+    </item>
+    <item>
+      <p>Επιλέξτε την καρτέλα <gui>Διαμόρφωση σελίδας</gui>.</p>
+      <p>Στο <gui>Διάταξη</gui>, επιλέξτε <gui>Φυλλάδιο</gui>.</p>
+      <p>Στο <gui>Πλευρές σελίδας</gui>, στην πτυσσόμενη λίστα <gui>Συμπερίληψη</gui>, επιλέξτε <gui>Μπροστά πλευρά / δεξιές σελίδες</gui>.</p>
+    </item>
+    <item>
+      <p>Κάντε κλικ στο <gui>Εκτύπωση</gui>.</p>
+    </item>
+    <item>
+      <p>Όταν όλες οι σελίδες εκτυπωθούν, αναστροφή των σελίδων και τοποθέτηση τους πίσω στον εκτυπωτή.</p>
+    </item>
+    <item>
+      <p>Ανοίξτε τον διάλογο εκτύπωσης. Αυτό μπορεί κανονικά να γίνει μέσα από την <gui style="menuitem">Εκτύπωση</gui> στο μενού ή χρησιμοποιώντας τη συντόμευση πληκτρολογίου <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε την καρτέλα <gui>Διαμόρφωση σελίδας</gui>.</p>
+      <p>Στο <gui>Πλευρές σελίδας</gui>, στην πτυσσόμενη λίστα <gui>Συμπερίληψη</gui>, επιλέξτε <gui>Πίσω πλευρά / αριστερές σελίδες</gui>.</p>
+    </item>
+    <item>
+      <p>Κάντε κλικ στο <gui>Εκτύπωση</gui>.</p>
+    </item>
+  </steps>
+
+</page>

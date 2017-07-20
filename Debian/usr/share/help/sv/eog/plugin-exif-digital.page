@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="plugin-exif-digital" xml:lang="sv">
+
+  <info>
+   <link type="guide" xref="index#plugins"/>
+   <desc>Visa information så som kamerainställningar och histogram, geografisk plats och datum.</desc>
+
+   <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+   <credit type="author">
+     <name>Tiffany Antopolski</name>
+     <email>tiffany.antopolski@gmail.com</email>
+   </credit>
+   <credit type="editor">
+     <name>Fabiana Simões</name>
+     <email>fabianapsimoes@gmail.com</email>
+   </credit>
+   <license>
+     <p>Creative Commons DelaLika 3.0</p>
+   </license>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Henrik Löwendahl</mal:name>
+      <mal:email>henrik.lowendahl@purplescout.se</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Visa detaljerad information om en bild</title>
+
+<p>Bilder som tagits av digitalkameror lagras med en uppsjö extra information inbäddad, så som datum då bilden togs, vilka exponeringsinställningar som användes i kameran och i vissa fall till och med var bilden togs.</p>
+
+<p>Detta ämne visar hur du får tillgång till denna information.</p>
+
+<section id="date">
+<title>Visa datum i statusraden</title>
+  <media type="image" src="figures/prefs-plugins-date.png" width="300" style="floatend"/>
+  <p>Du kan visa det datum som en bild togs i statusraden längst ner i fönstret.</p>
+  <p>För att göra detta klicka på <guiseq><gui>Redigera</gui><gui>Inställningar</gui></guiseq> och gå till fliken <gui>Insticksmoduler</gui>. Kryssa sedan i <gui>Datum i statusraden</gui>.</p>
+</section>
+
+<section id="exif">
+ <title>Detaljerad Exif-data</title>
+  <p>Den detaljerade information som lagras med digitala foton kallas <em>Exif-data</em>. Du kan visa den genom att installera en insticksmodul för bildvisaren.</p>
+
+  <steps>
+   <item>
+    <p>För att kunna se Exif-datan som bäddas in i dina bilder måste du först installera paketet <link xref="plugins">eog-plugins</link>.</p>
+   </item>
+   <item>
+    <p>Om <sys>eog-plugins</sys> är installerat, klicka på <guiseq><gui>Redigera</gui><gui>Inställningar</gui></guiseq> och gå till fliken <gui>Insticksmoduler</gui>. Kryssa sedan i <gui>Exif-visning</gui> och klicka på <gui>Stäng</gui>.</p>
+   </item>
+   <item>
+    <p>Klicka på <guiseq><gui>Visa</gui><gui>Sidopanel</gui></guiseq> för att visa kamerainställningarna som användes när fotot togs. För att också visa histogram som visar färgbalans och högdagrar/skuggor i bilden, välj <gui>Exif-visning</gui> i fliken <gui>Insticksmoduler</gui> och klicka på <gui>Inställningar</gui>. Kryssa i histogrammen som du vill visa, listade under <gui>Histogram</gui>.</p>
+   </item>
+   <item>
+    <p>Du kan också visa kamerainställningarna som användes då fotot togs i statusraden. Välj <gui>Exif-visning</gui> i fliken <gui>Insticksmoduler</gui> och klicka på <gui>Inställningar</gui>. Kryssa i <gui>Visa kamerainställningar i statusrad</gui>.</p>
+   </item>
+  </steps>
+</section>
+
+<section id="map">
+ <title>Visa en platskarta för foton</title>
+  <p>Vissa kameror kan bifoga <em>geografisk platsinformation</em> (geotaggar) med digitala foton. Geotaggar är vanligtvis helt enkelt GPS-koordinaterna (latitud och longitud) för platsen där fotot togs.</p>
+
+  <steps>
+   <item>
+    <p>För att kunna se en karta över var dina foto togs måste du först installera paketet <link xref="plugins">eog-plugins</link>.</p>
+   </item>
+   <item>
+    <p>Om <sys>eog-plugins</sys> är installerat klicka på <guiseq><gui>Redigera</gui><gui>Inställningar</gui></guiseq> och gå till fliken <gui>Insticksmoduler</gui>. Kryssa sedan i <gui>Karta</gui> och klicka på <gui>Stäng</gui>.</p>
+   </item>
+   <item>
+    <p>Klicka på <guiseq><gui>Visa</gui><gui>Sidopanel</gui></guiseq> för att visa kartan.</p>
+   </item>
+  </steps>
+  <p>Kartan kommer att visa platsen där en bild togs endast om det finns geografisk platsinformation bifogad med fotot. Många kameror bifogar inte geografisk platsinformation med bilder.</p>
+</section>
+
+
+</page>

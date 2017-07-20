@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-select" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Tryck på <keyseq><key>Ctrl</key><key>S</key></keyseq> för att markera flera filer som har liknande namn.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Markera filer efter mönster</title>
+
+  <p>Du kan markera filer i en mapp genom att använda ett mönster för filnamnen. Tryck på <keyseq><key>Ctrl</key><key>S</key></keyseq> för att visa fönstret <gui>Markera matchande objekt</gui>. Skriv in ett mönster som innehåller gemensamma delar av filnamnen samt jokertecken. Det finns två jokertecken:</p>
+
+  <list style="compact">
+    <item><p><file>*</file> matchar vilket antal tecken som helst, även inga tecken.</p></item>
+    <item><p><file>?</file> matchar exakt ett tecken, vilket som helst.</p></item>
+  </list>
+
+  <p>Till exempel:</p>
+
+  <list>
+    <item><p>Om du har en OpenDocument-textfil, en PDF-fil och en bild som alla har samma basnamn <file>Faktura</file>, välj alla tre med mönstret</p>
+    <example><p><file>Faktura.*</file></p></example></item>
+
+    <item><p>Om du har några foton som är namngivna i stil med <file>Semester-001.jpg</file>, <file>Semester-002.jpg</file>, <file>Semester-003.jpg</file>; välj dem alla med mönstret</p>
+    <example><p><file>Semester-???.jpg</file></p></example></item>
+
+    <item><p>Om du har foton som ovan, men du har redigerat några av dem och lagt till <file>-redigerad</file>på slutet av filnamnet på fotona du redigerat, välj de redigerade fotona med</p>
+    <example><p><file>Semester-???-redigerad.jpg</file></p></example></item>
+  </list>
+
+</page>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" version="1.0 if/1.0" id="shell-workspaces" xml:lang="mr">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces" group="#first"/>
+
+    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10.3" date="2014-01-26" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>GNOME डॉक्युमेंटेशन प्रकल्प</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>कार्यक्षेत्र डेस्कटॉपवरील पटलांना गटात एकत्र करण्याचा मार्ग आहे.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
+      <mal:email>sshedmak@redhat.com</mal:email>
+      <mal:years>२०१३.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>वर्कस्पेस काय आहे, आणि त्याची मला मदत कशी होईल?</title>
+
+    <media type="image" src="figures/shell-workspaces.png" width="162" height="434" style="floatend floatright">
+        <p>वर्कस्पेस निवडणारा</p>
+    </media>
+
+  <p if:test="!platform:gnome-classic">डेस्कटॉपवरील कार्यक्षेत्र म्हणजे पटलांचे गट होते. तुम्ही बहु कार्यक्षेत्र निर्माण करू शकता, जे वर्च्युअल डेस्कटॉप सारखे असते. कार्यक्षेत्र क्लट्टर कमी करण्यसाठी असते आणि संचारनरिता डेस्कटॉपला सोपे करणे आहे.</p>
+
+  <p if:test="platform:gnome-classic">डेस्कटॉपवरील कार्यक्षेत्र म्हणजे पटलांचे गट होते. तुम्ही बहु कार्यक्षेत्र निर्माण करू शकता, जे वर्च्युअल डेस्कटॉप सारखे असते. कार्यक्षेत्र क्लट्टर कमी करण्यसाठी असते आणि संचारनरिता डेस्कटॉपला सोपे करणे आहे.</p>
+
+  <p>कार्यक्षेत्रांचा वापर काम आयोजीत करण्यासाठी केला जातो. उदाहरणार्थ, एका कार्यक्षेत्रावर, आणि वेगळ्या कार्यक्षेत्रावरील कार्य सर्व संपर्क पटल, जसे कि ईमेल आणि गप्पा प्रोग्राम, सर्वांना समाविष्ट करणे शक्य आहे. तुमचे संगीत व्यवस्थापक वेगळ्या कार्यक्षेत्रावर असू शकतात.</p>
+
+<p>वर्कस्पेसेस वापरुन:</p>
+
+<list>
+  <item>
+    <p if:test="!platform:gnome-classic">In the
+    <gui xref="shell-introduction#activities">Activities</gui> overview, move your cursor
+    to the right-most side of the screen.</p>
+    <p if:test="platform:gnome-classic"><gui>कृती</gui> अवलोकन उघडण्याकरिता <key xref="keyboard-key-super">Super</key> कि दाबा आणि कर्सरला पडद्याच्या उजव्या-बाजूस स्थानांतरीत करा.</p>
+  </item>
+  <item>
+    <p if:test="!platform:gnome-classic">A vertical panel will appear showing
+    workspaces in use, plus an empty workspace. This is the
+    workspace selector.</p>
+    <p if:test="platform:gnome-classic">A vertical panel will appear showing
+    available workspaces. This is the workspace selector.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>To add a workspace, drag and drop a window from an existing workspace
+    onto the empty workspace in the workspace selector. This workspace now
+    contains the window you have dropped,
+    and a new empty workspace will appear below it.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>कार्यक्षेत्र काढून टाकण्याकरिता, सर्व पटलांना बंद करा किंवा त्यास इतर कार्यक्षेत्रांकरिता स्थानांतरित करा.</p>
+  </item>
+</list>
+
+<p if:test="!platform:gnome-classic">दरवेळेस कमीतकमी एक तरी वर्कस्पेस असेल.</p>
+
+</page>

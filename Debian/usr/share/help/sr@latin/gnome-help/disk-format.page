@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="sr-Latn">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Gnomov projekat dokumentacije</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Uklonite sve datoteke i fascikle sa spoljnog čvrstog diska ili USB diska njihovim formatiranjem.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Obrišite sve sa uklonjivog diska</title>
+
+  <p>Ako posedujete uklonjivi disk, kao USB memorijski štapić ili spoljni čvrsti disk, možda ćete nekad poželeti da u potpunosti uklonite sve datoteke i fascikle na njemu. Ovo možete da uradite <em>formatiranjem</em> diska — što će obrisati sve datoteke na disku i ostaviće ga praznim.</p>
+
+<steps>
+  <title>Formatirajte uklonjivi disk</title>
+  <item>
+    <p>Otvorite program <app>Diskovi</app> iz pregleda <gui>Aktivnosti</gui>.</p>
+  </item>
+  <item>
+    <p>Izaberite disk koji želite da obrišete sa spiska skladišnih uređaja na levoj strani.</p>
+
+    <note style="warning">
+      <p>Uverite se da ste izabrali pravi disk! Ako izaberete pogrešan disk, sve datoteke na njemu će biti obrisane!</p>
+    </note>
+  </item>
+  <item>
+    <p>Na traci alata ispod odeljka <gui>Volumeni</gui>, kliknite na dugme izbornika. Nakon toga <gui>Formatiraj…</gui>.</p>
+  </item>
+  <item>
+    <p>U prozoru koji će se pojaviti, izaberite <gui>vrstu</gui> sistema datoteka za disk.</p>
+   <p>Ako disk koristite na računarima sa Vindouzom i Mek OS-om pored računara sa Linuksom, izaberite <gui>FAT</gui>. Ako ga koristite samo na Vindouzu, <gui>NTFS</gui> može biti bolja opcija. Kratak opis <gui>vrste sistema datoteka</gui> će biti prikazan kao natpis.</p>
+  </item>
+  <item>
+    <p>Dajte disku naziv i pritisnite <gui>Formatiraj…</gui> da nastavite i da pokažete prozor za potvrđivanje. Pažljivo proverite pojedinosti, i pritisnite <gui>Formatiraj</gui> da obrišete disk.</p>
+  </item>
+  <item>
+    <p>Nakon završenog formatiranja, pritisnite ikonicu izbacivanja da bezbedno uklonite disk. Sada će biti prazan i spreman za ponovnu upotrebu.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Formatiranje diska ne briše bezbedno vaše datoteke</title>
+  <p>Formatiranje diska nije potpuno siguran način za brisanje svih njegovih podataka. Formatiran disk će izgledati kao da ne sadrži datoteke na sebi, ali će naročitim programom za oporavak biti moguće pronaći datoteke. Ako imate potrebu da bezbedno uklonite datoteke, moraćete da koristite pomagalo linije naredbi, kao što je <app>shred</app>.</p>
+</note>
+
+</page>

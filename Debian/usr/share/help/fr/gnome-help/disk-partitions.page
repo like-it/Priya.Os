@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="fr">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>Comprendre ce que sont les volumes et les partitions, et se servir de l'utilitaire de disque pour les gérer.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>Gestion des volumes et des partitions</title>
+
+  <p>Le mot <em>volume</em> est utilisé pour décrire un périphérique de stockage, comme un disque dur. Il peut aussi se référer à une <em>partie</em> du périphérique de stockage parce que vous pouvez découper l'ensemble du stockage en plusieurs morceaux. L'ordinateur permet d'accéder à cet emplacement par l'intermédiaire du système de fichiers grâce à un processus appelé <em>montage</em>. Les volumes montés peuvent être des disques durs, des clés USB, des DVD-RW, des cartes SD et d'autres médias. Si un volume est actuellement monté, vous pouvez le lire et probablement y écrire des fichiers.</p>
+
+  <p>On appelle souvent un volume monté une <em>partition</em>, bien que ce ne soit pas exactement la même chose. Une partition fait référence à une zone <em>physique</em> d'enregistrement sur un disque dur. Une fois montée, on peut s'y référer en tant que volume parce que vous pouvez accéder à ses fichiers. Vous pouvez imaginer les volumes comme la devanture accessible, étiquetée de l'arrière-boutique des partitions et des disques.</p>
+
+<section id="manage">
+ <title>Visualisation et gestion des volumes et des partitions en se servant de l'utilitaire de disque.</title>
+
+  <p>Vous pouvez vérifier et modifier les volumes de stockage de l'ordinateur avec l'utilitaire de disque.</p>
+
+<steps>
+  <item>
+    <p>Ouvrez la vue d'ensemble des <gui>Activités</gui> et démarrez l'application <app>Disques</app>.</p>
+  </item>
+  <item>
+    <p>Dans la liste des périphériques de stockage à gauche, il y a les disques durs, les lecteurs/graveurs de CD et DVD et d'autres périphériques physiques. Cliquez sur le périphérique que vous souhaitez inspecter.</p>
+  </item>
+  <item>
+    <p>Le panneau de droite affiche une analyse des volumes et des partitions présentes sur le périphérique sélectionné. Il contient aussi une série d'outils de gestion des volumes.</p>
+    <p>Soyez prudent : vous risquez d'effacer complètement les données de votre disque dur avec ces utilitaires.</p>
+  </item>
+</steps>
+
+  <p>Votre ordinateur dispose au moins d'une partition <em>primaire</em> et d'une seule partition <em>swap</em>. La partition swap est utilisée par le système d'exploitation pour gérer la mémoire, et elle est rarement montée. La partition primaire contient le système d'exploitation, les applications, les paramètres et vos dossiers personnels. Ces fichiers peuvent également être répartis entre plusieurs partitions pour des raisons de sécurité ou de convenance.</p>
+
+  <p>One primary partition must contain information that your computer uses to
+  start up, or <em>boot</em>. For this reason it is sometimes called a boot
+  partition, or boot volume. To determine if a volume is bootable, select the
+  partition and click the menu button in the toolbar underneath the partition
+  list. Then, click <gui>Edit Partition…</gui> and look at its
+  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
+  a bootable volume.</p>
+
+</section>
+
+</page>

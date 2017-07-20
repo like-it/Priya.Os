@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.18">
+<!ENTITY date "December">
+<!ENTITY app "<application>Chess</application>">
+<!ENTITY appname "Chess">
+<!ENTITY version "2.22">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sv">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title>Handbok för <application>Schack</application></title>
+
+ <abstract role="description">
+       <para>GNOME Schack är ett spel för att spela det klassiska brädspelet schack, där två spelare simulerar en strid genom att slå ut motståndarens pjäser och i slutändan kungen. Det kan spelas i 2D- eller 3D-läge, helskärm eller i ett fönster.</para>
+ </abstract>
+ <copyright><year>2006-2008</year> <holder>Andreas Røsdal</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is
+     not specified, the publisher/author is the same for all versions of the
+     document.  -->
+    <publisher role="maintainer">
+      <publishername>Dokumentationsprojekt för GNOME</publishername>
+    </publisher>
+
+     <legalnotice id="legalnotice">
+        <para>Detta dokument har en dubbel licens. Du kan antingen distribuera och / eller modifiera det under villkoren i <ulink type="help" url="help:gpl">GNU General Public License</ulink>, som <link linkend="license">programmet är licensierat </link> under, eller så kan du distribuera det under villkoren i GNU Free Documentation License. En kopia av detta följer.</para>
+
+	<para>Tillstånd att kopiera, distribuera och/eller modifiera detta dokument ges under villkoren i GNU Free Documentation License (GFDL), version 1.1 eller senare, utgivet av Free Software Foundation utan standardavsnitt och omslagstexter. En kopia av GFDL finns att hämta på denna <ulink type="help" url="help:fdl">länk</ulink> eller i filen COPYING-DOCS som medföljer denna handbok.</para>
+         <para>Denna handbok utgör en av flera GNOME-handböcker som distribueras under villkoren i GFDL. Om du vill distribuera denna handbok separat från övriga handböcker kan du göra detta genom att lägga till en kopia av licensavtalet i handboken enligt instruktionerna i avsnitt 6 i licensavtalet.</para>
+
+	<para>Flera namn på produkter och tjänster är registrerade varumärken. I de fall dessa namn förekommer i GNOME-dokumentation - och medlemmarna i GNOME-dokumentationsprojektet är medvetna om dessa varumärken - är de skrivna med versaler eller med inledande versal.</para>
+
+	<para>DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET TILLHANDAHÅLLS UNDER VILLKOREN I GNU FREE DOCUMENTATION LICENSE ENDAST UNDER FÖLJANDE FÖRUTSÄTTNINGAR: <orderedlist>
+		<listitem>
+		  <para>DOKUMENTET TILLHANDAHÅLLS I "BEFINTLIGT SKICK" UTAN NÅGRA SOM HELST GARANTIER, VARE SIG UTTRYCKLIGA ELLER UNDERFÖRSTÅDDA, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, GARANTIER ATT DOKUMENTET ELLER EN MODIFIERAD VERSION AV DOKUMENTET INTE INNEHÅLLER NÅGRA FELAKTIGHETER, ÄR LÄMPLIGT FÖR ETT VISST ÄNDAMÅL ELLER INTE STRIDER MOT LAG. HELA RISKEN VAD GÄLLER KVALITET, EXAKTHET OCH UTFÖRANDE AV DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET LIGGER HELT OCH HÅLLET PÅ ANVÄNDAREN. OM ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT SKULLE VISA SIG INNEHÅLLA FELAKTIGHETER I NÅGOT HÄNSEENDE ÄR DET DU (INTE DEN URSPRUNGLIGA SKRIBENTEN, FÖRFATTAREN ELLER NÅGON ANNAN MEDARBETARE) SOM FÅR STÅ FÖR ALLA EVENTUELLA KOSTNADER FÖR SERVICE, REPARATIONER ELLER KORRIGERINGAR. DENNA GARANTIFRISKRIVNING UTGÖR EN VÄSENTLIG DEL AV DETTA LICENSAVTAL. DETTA INNEBÄR ATT ALL ANVÄNDNING AV ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT BEVILJAS ENDAST UNDER DENNA ANSVARSFRISKRIVNING;</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGA OMSTÄNDIGHETER ELLER INOM RAMEN FÖR NÅGON LAGSTIFTNING, OAVSETT OM DET GÄLLER KRÄNKNING (INKLUSIVE VÅRDSLÖSHET), KONTRAKT ELLER DYLIKT, SKA FÖRFATTAREN, DEN URSPRUNGLIGA SKRIBENTEN ELLER ANNAN MEDARBETARE ELLER ÅTERFÖRSÄLJARE AV DOKUMENTET ELLER AV EN MODIFIERAD VERSION AV DOKUMENTET ELLER NÅGON LEVERANTÖR TILL NÅGON AV NÄMNDA PARTER STÄLLAS ANSVARIG GENTEMOT NÅGON FÖR NÅGRA DIREKTA, INDIREKTA, SÄRSKILDA ELLER OFÖRUTSEDDA SKADOR ELLER FÖLJDSKADOR AV NÅGOT SLAG, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, SKADOR BETRÄFFANDE FÖRLORAD GOODWILL, HINDER I ARBETET, DATORHAVERI ELLER NÅGRA ANDRA TÄNKBARA SKADOR ELLER FÖRLUSTER SOM KAN UPPKOMMA PÅ GRUND AV ELLER RELATERAT TILL ANVÄNDNINGEN AV DOKUMENTET ELLER MODIFIERADE VERSIONER AV DOKUMENTET, ÄVEN OM PART SKA HA BLIVIT INFORMERAD OM MÖJLIGHETEN TILL SÅDANA SKADOR.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+        other legal stuff such as "NO WARRANTY" statement. Please do not change
+	any of this. -->
+
+    <authorgroup>
+      <author><firstname>Andreas</firstname> <surname>Røsdal</surname> <affiliation> <address> <email>andrearo@pvv.ntnu.no</email> </address> </affiliation></author>
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname>
+	<surname>Translator 1</surname>
+	<affiliation>
+	  <orgname>Latin Translation Team</orgname>
+	  <address> <email>translator@gnome.org</email> </address>
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+	<releaseinfo revision="2.26" role="review"/>
+
+<revhistory>
+      <revision><revnumber>Schack handbok V2.18</revnumber> <date>December</date> <revdescription>
+	  <para role="author">Andreas Røsdal <email>andrearo@pvv.ntnu.no</email></para>
+	  <para role="publisher">Dokumentationsprojekt för GNOME</para>
+	</revdescription></revision>
+  <revision><revnumber>1</revnumber> <date>December 2006</date> <authorinitials>AR</authorinitials> <revremark> Första utkastet färdigt. </revremark></revision>
+ </revhistory>
+
+    <releaseinfo>Den här handboken beskriver version 2.18 av Schack.</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice>
+      <title>Återkoppling</title>
+      <para>För att rapportera ett fel eller komma med ett förslag angående spelet <application>Schack</application> eller dess handbok, följ anvisningarna på <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME:s återkopplingssida</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+
+    <othercredit class="translator">
+      <personname>
+        <firstname>Daniel Nylander</firstname>
+      </personname>
+      <email>po@danielnylander.se</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2007</year>
+      
+        <year>2009</year>
+      
+      <holder>Daniel Nylander</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Erik Sköldås</firstname>
+      </personname>
+      <email>erik.skoldas@tele2.se</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2015</year>
+      
+      <holder>Erik Sköldås</holder>
+    </copyright>
+  </articleinfo>
+
+  <indexterm zone="index"><primary>GNOME Schack</primary></indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Introduktion</title>
+ <sect2 id="what">
+  <title>Översikt över Schack</title>
+
+  <para>Schack är ett strategiskt brädspel för två spelare. <application>GNOME Schack</application> är ett 2D/3D-schackspel, där spel kan spelas med en kombination av mänskliga spelare och datorspelare. GNOME Schack upptäcker kända tredjeparts schackmotorer för datorspelare. Spelet utvecklades ursprungligen av Robert Ancell, nu ingår spelet i gnome-spel.</para>
+
+  <para><application>GNOME Schack</application> är skrivet i Python och använder GTK+ och Cairo för att skapa schackbrädet. 3D-stöd finns som tillval med hjälp av OpenGL, som använder sig av Python OpenGL och GtkGLExt bibliotek. Som med de flesta moderna 3D-program rekommenderas hårdvaruacceleration men det bör fungera OK i programvaran. GNOME Schack kommer med GNU Schack som standard schack-AI. GNOME Schack kan spelas i nätverksläge mot andra spelare över Internet.</para>
+  <para>Schack spelas på ett fyrkantigt schackbräde, som består av 64 rutor av omväxlande färg. Varje spelare börjar spelet med sexton pjäser: en kung, en drottning, två torn, två springare, två löpare och åtta bönder. En spelare styr de vita pjäserna och den andra spelaren styr de svarta pjäserna; spelaren som styr vitt är den som börjar att spela. Spelarna turas om att flytta sina pjäser; vissa drag innebära att "fånga" en av motståndarens pjäser, ta bort den från brädet. Målet med spelet är att göra motståndarens kung schackmatt. Detta inträffar när kungen är under direkt attack (i schack) och det finns inget sätt att flytta den från angrepp under nästa drag. Teoretiker har utvecklat omfattande schackstrategier och tillvägagångssätt sedan spelets början.</para>
+<para>Den nuvarande formen av spelet dök upp i Sydeuropa under andra halvan av 1400-talet efter att ha utvecklas från liknande, mycket äldre spel med asiatiskt ursprung. Schack är ett av världens mest populära brädspel. Traditionen med schackturneringar började på 1500-talet. Den första officiella schackvärldsmästaren, Wilhelm Steinitz, tog sin titel 1886; hans moderna motsvarighet, Vladimir Kramnik, är den 14:e mästaren i härstamningen. Det finns också vartannat år världsomfattande lagtävlingar som kallas schackolympiader. Sedan 1900-talet har två internationella organisationer, Världsschackförbundet och International Correspondence Chess Federation organiserat och övervakat större schacktävlingar och internationella titlar.</para>
+<para>Ett av målen som tidiga dataforskare hade, var att skapa en schackspelande maskin, och dagens schack är mycket influerat av den otroliga förmågan i dagens schackprogram. En match mellan Garry Kasparov, då världsmästare, och IBM:s schackprogram Deep Blue 1997 visade att datorer kan slå även de smartaste mänskliga spelarna.</para>
+
+  <para>För att spela <application>GNOME Schack</application>, välj <guimenuitem>Schack</guimenuitem> från menyn <guisubmenu>Spel</guisubmenu> på <guimenu>huvudmenyn</guimenu>, eller skriv <command>gnome-chess</command> på kommandoraden.</para>
+ </sect2>
+
+</sect1>
+
+
+<sect1 id="playing-gnome-chess">
+ <title>Spela GNOME Schack</title>
+ <sect2 id="main-game-window">
+<title>Spelets huvudfönster</title>
+
+     <para>När man startar GNOME Schack visas spelets huvudfönster enligt nedan. Spelet spelas genom att flytta schackpjäser med hjälp av musen. Spelarna turas om att flytta en pjäs i sin färg, från en plats på brädet till en annan giltig brädplats. Huvudspelsfönstret är organiserad i tre huvudområden: I toppmenyn och verktygsfältet kan de flesta vanliga spelåtgärder göras. Schackbrädet är i mitten av fönstret, där spelet spelas genom att flytta schackpjäser med hjälp av musen. Slutligen visar spelhistorikpanelen som finns längst ned information om spelet historia, resterande dragtid och knappar för att visa föregående eller nästa drag.</para>
+
+ <figure id="main-game-shot">
+  <title>Huvudfönstret i GNOME schack</title>
+  <screenshot>
+    <mediaobject><imageobject> <imagedata fileref="figures/game-3-12.png" format="PNG" srccredit="Andreas"/> </imageobject> <textobject> <phrase>Huvudfönstret i GNOME Schack.</phrase> </textobject></mediaobject>
+  </screenshot>
+ </figure>
+</sect2>
+
+<sect2>
+<title>Starta ett nytt spel</title>
+<para>För att starta ett nytt spel, klicka på knappen <guibutton>Nytt Spel</guibutton> på verktygsfältet.</para>
+</sect2>
+
+
+
+
+<sect2 id="menubar">
+   <title>Menyer</title>
+   <para>Menyraden, som ligger högst upp i <interface>huvudfönstret</interface>, innehåller följande menyer:</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Spel</guimenu></term>
+     <listitem>
+      <para>Den här menyn innehåller: <itemizedlist>
+        <listitem>
+         <para><menuchoice> <shortcut> <keysym>Ctrl+N</keysym> </shortcut> <guimenuitem>Nytt</guimenuitem> </menuchoice> Det här startar ett nytt <application>Schack</application>-spel.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice> <shortcut> <keysym>Ctrl+O</keysym> </shortcut> <guimenuitem>Öppna</guimenuitem> </menuchoice> Laddar ett tidigare sparat spel.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice> <shortcut> <keysym>Ctrl+S</keysym> </shortcut> <guimenuitem>Spara</guimenuitem> </menuchoice> Sparar det aktuella schackspelet.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice> <guimenuitem>Spara som</guimenuitem> </menuchoice> Sparar det aktuella schackspelet med ett nytt filnamn.</para>
+        </listitem>
+
+        <listitem>
+         <para><menuchoice> <shortcut> <keysym>Ctrl+L</keysym> </shortcut> <guimenuitem>Nätverksspel</guimenuitem> </menuchoice> Detta startar ett nätverksspel med flera spelare med GGZ Spelzon.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice> <guimenuitem>Ge upp</guimenuitem> </menuchoice> För att medge förlust av spelet, så att motståndaren vinner spelet.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice> <guimenuitem>Begära Remi</guimenuitem> </menuchoice> Om en remi accepteras, avslutas spelet utan seger för någon av spelarna.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice> <shortcut> <keysym>Ctrl+Q</keysym> </shortcut> <guimenuitem>Avsluta</guimenuitem> </menuchoice> Avslutar spelet.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+
+    <varlistentry>
+     <term><guimenu>Visa</guimenu></term>
+     <listitem>
+      <para>Den här menyn innehåller: <itemizedlist>
+        <listitem>
+         <para><menuchoice> <shortcut> <keysym>F11</keysym> </shortcut> <guimenuitem>Helskärmsläge</guimenuitem> </menuchoice> Visar spelfönstret i helskärmsläge.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice> <guimenuitem>3D-schackvy</guimenuitem> </menuchoice> Aktiverar 3D-schackvisningsläget med hjälp av OpenGL. Detta kräver att Python OpenGL och Python GTKGLExt är installerat, förutom ett korrekt konfigurerat 3D-grafikkort. Kontakta din systemadministratör om du har problem, i varje fall kommer du alltid att kunna spela schack i 2D-läge.</para>
+        </listitem>
+	 <listitem>
+         <para><menuchoice> <guimenuitem>Visa Logg</guimenuitem> </menuchoice> Visa loggar för att felsöka GNOME Schack och den aktiva schack-AI-motorn.</para>
+        </listitem>
+     </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Inställningar</guimenu></term>
+     <listitem>
+      <para>Den här menyn innehåller: <itemizedlist>
+        <listitem>
+         <para><menuchoice> <guimenuitem>Inställningar</guimenuitem> </menuchoice> Detta öppnar fönstret för att redigera <link linkend="prefs"> inställningar.</link></para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+    <varlistentry>
+     <term><guimenu>Hjälp</guimenu></term>
+     <listitem>
+      <para>Den här menyn innehåller: <itemizedlist>
+        <listitem>
+          <para><menuchoice> <shortcut> <keysym>F1</keysym> </shortcut> <guimenuitem>Innehåll</guimenuitem> </menuchoice> Visar den här handboken.</para>
+         <para><guimenuitem>Om</guimenuitem> Detta öppnar dialogrutan <interface>Om</interface> som visar grundläggande information om <application>Gnome Schack</application>, såsom författarens namn, spelets versionsnummer.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="chess-rules">
+ <title>Schackregler</title>
+ <sect2 id="rules-of-chess">
+  <title>Reglerna för schack</title>
+<!--
+The reference for this chapter is http://en.wikipedia.org/wiki/Chess
+-->
+  <para>Schack spelas på ett kvadratiskt bräde på åtta rader (betecknas med siffrorna 1 till 8) och åtta kolumner (kallas linjer och betecknas med bokstäverna a till h) av kvadrater. Färgerna på de sextiofyra rutorna växlar mellan ljusa och mörka, och kallas "ljusa rutor" och "mörka rutor". Schackbrädet placeras så att varje spelare har en vit ruta i sin högra hörna, och pjäserna placeras som visats i diagrammet, med varje drottning på en ruta som matchar dess färg.</para><para>Varje spelare börjar spelet med sexton pjäser: varje spelares pjäser består av en kung, en drottning, två torn, två löpare, två springare och åtta bönder. En spelare, som kallas vit, styr de vita pjäserna och den andra spelaren, svart, styr svarta pjäser; Vit är alltid den första spelaren att flytta. Färgerna väljs antingen genom en vänlig överenskommelse, genom ett lotteri eller av en turneringsdirigerare. Spelarna turas om att flytta en pjäs i taget (med undantag för rockad, när två pjäser flyttas samtidigt). Pjäserna flyttas till antingen en ledig ruta eller en som är upptagen av en av motståndarens pjäser, vilket fångar den och tar bort den från spelet. Med ett undantag (en passant), slår alla pjäser motståndarens pjäser genom att flytta till rutan som motståndarens pjäs upptar.</para>
+ <sect3 id="rules-piece-king">
+  <title>Kung</title>
+<para>När en kung är under direkt attack av en (eller möjligen två) av motståndarens pjäser, sägs spelaren vara i schack. När du är i schack, tillåts endast drag som tar bort kungen från angrepp. Spelaren får inte göra någon drag som skulle placera sin kung i schack. Målet med spelet är att göra motståndaren schackmatt; detta inträffar när motståndarens kung är i schack, och det inte finns några drag som tar bort kungen från angrepp.</para><para>Kungen kan röra sig en ruta vågrätt, lodrätt eller diagonalt. Väl inne i spelet, tillåts varje kung att göra en särskild dubbelflytt till tornet. En rockad innebär att flytta kungen två rutor mot ett torn och att sedan flytta tornet till rutan bortom kungen. Rockad är bara tillåten om alla följande villkor uppfylls:</para>
+<itemizedlist spacing="compact">
+  <listitem>
+   <para>Spelaren får inte ha flyttat både kungen och tornet som deltar i rockad.</para>
+  </listitem>
+  <listitem>
+   <para>Det får inte finnas några pjäser mellan kungen och tornet.</para>
+  </listitem>
+  <listitem>
+   <para>Kungen får för tillfället inte vara i schack, och kungen får inte heller passera genom rutor som är under attack av fientliga pjäser. Som med varje flyttning, är rockad olagligt om det skulle placera kungen i schack.</para>
+ </listitem>
+  <listitem>
+   <para>Kungen och tornet måste vara på samma rad (för att utesluta rockad med en befordrad bonde).</para>
+  </listitem>
+</itemizedlist>
+</sect3>
+ <sect3 id="rules-piece-rook">
+  <title>Torn</title>
+<para>Tornet flyttas obegränsat antal lediga rutor i lodrät eller vågrät riktning (den är också involverad i kungens speciella drag, rockad).</para>
+</sect3>
+ <sect3 id="rules-piece-bishop">
+  <title>Löpare</title>
+<para>Löparna flyttar valfritt antal lediga rutor i någon riktning diagonalt.Observera att en löpare aldrig ändrar rutfärg, därför omnämner spelare dessa som "ljusa" eller "mörka" löpare.</para>
+</sect3>
+ <sect3 id="rules-piece-queen">
+  <title>Drottning</title>
+<para>Drottningen kan flytta valfritt antal lediga rutor diagonalt, vågrätt eller lodrätt.</para>
+</sect3>
+ <sect3 id="rules-piece-knight">
+  <title>Springare</title>
+<para>Springaren kan hoppa över upptagna rutor och flyttar två rutor vågrätt och en ruta lodrätt eller vice versa, i form av ett "L". En springare i mitten av brädet har åtta rutor som den kan flytta till. Observera att varje gång en springare flyttar, byter den rutfärg.</para>
+</sect3>
+ <sect3 id="rules-piece-pawns">
+  <title>Bönder</title>
+<para>Bönder har de mest komplexa förflyttningsreglerna: En bonde kan flytta framåt en ruta, om den rutan inte är upptagen. Om den inte har rört sig ännu, har bonden möjlighet att flytta två rutor framåt, om båda rutorna framför bonden är lediga. En bonde kan inte flytta bakåt. När en sådan inledande tvåruts-flyttning görs som placerar bonden vågrätt intill en motståndares bonde, kan motståndarens bonde slå ut bonden med "en passant" som om den flyttats framåt endast en i stället för två rutor, men endast på det omedelbart efterföljande steget. Bönder är de enda pjäser som slår ut annorlunda än de flyttar. De kan slå ut en fiendepjäs på någon av de två utrymmena intill utrymmet framför dem (det vill säga, de två rutorna diagonalt framför dem), men kan inte flytta till dessa utrymmen om de är lediga. Om en bonde går hela vägen till sin åttonde rad, blir den befordrad (konverterad) till en drottning, torn, löpare, eller springare av samma färg. I praktiken blir en bonde nästan alltid befordrad till en drottning.</para>
+</sect3>
+
+<sect3 id="rules-movement-others">
+<title>Återstående förflyttningsregler</title>
+<para>Med undantag av springaren, kan pjäser inte hoppa över varandra. Ens egna pjäser ("vänliga pjäser") kan inte passeras om de är i vägen för förflyttningen, och en vänlig pjäs kan aldrig ersätta en annan vänlig pjäs.Fiendepjäser kan inte passeras, men de kan "fångas".När en pjäs fångas (eller slås ut), ersätter den attackerande pjäsen fiendepjäsen på den rutan (en passant är det enda undantaget). Den slagna pjäsen tas sålunda bort från spelet och kan inte returneras för att spela för resten av spelet. Kungen kan inte fångas, bara sättas i schack. Om en spelare inte kan få kungen att inte stå i schack, resulterar det i schackmatt, med en förlust av spelet.</para><para>Schackpartier behöver inte sluta i schackmatt - endera spelaren kan ge upp om situationen ser hopplös ut. Spel kan också sluta med remi (oavgjort). Remi kan inträffa genom flera situationer, inklusive remi efter överenskommelse, patt, trefaldig upprepning av en position, femtio-dragsregeln, eller oavgjort med omöjligheten att skapa schackmatt (oftast på grund av för få pjäser för att skapa schackmatt).</para>
+</sect3>
+</sect2>
+
+
+<sect2 id="timed-games">
+<title>Spel med tidtagning</title>
+<para>Schackpartiet kan spelas med en tidsbegränsning genom att ställa in en flytt-tid när du skapar ett nytt spel. I tidsbegränsade spel har varje spelare en viss tid för att avgöra vilket drag man skall göra, och den återstående tiden för varje spelare minskar endast när det är deras tur att flytta.</para>
+</sect2>
+
+<sect2 id="draw">
+<title>Remi</title>
+<para>Ett spel som slutar utan seger för någon av spelarna. De flesta remispelen blir oavgjorda enligt överenskommelse baserat på reglerna. Andra sätt ett spel kan sluta i remi är patt, trefaldig upprepning, femtio-dragsregeln, och otillräckligt med pjäser. En position sägs vara remi (eller en oavgjord position) om någon av spelarna kan, genom korrekt spel, så småningom tvinga spelet till ett läge där spelet måste sluta oavgjort, oavsett de drag som görs av den andra spelaren.</para>
+
+
+<sect3 id="stalemate">
+<title>Patt</title>
+<para>Patt är en position där spelaren vars tur det är att flytta inte har något regelrätt drag och hans kung inte är i schack. Patt resulterar i en omedelbar remi.</para>
+</sect3>
+
+<sect3 id="threefold-repetition">
+<title>Trefaldig upprepning</title>
+<para>Partiet blir remi om samma position uppkommer tre gånger för samma spelare , och båda spelarna har samma uppsättning regelrätta drag varje gång (det sistnämnda inkluderar rätten att ta en passant och rätten att göra rockad).</para>
+</sect3>
+
+
+<sect3 id="fifty-move-rule">
+<title>Femtio-dragsregeln</title>
+<para>Femtio-dragsregeln anger att spelet blir remi efter femtio drag från vardera sidan utan att en bonde har flyttats eller slagits.</para>
+</sect3>
+
+<sect3 id="insuff-material">
+<title>Otillräckligt med pjäser</title>
+<para>Ett spelscenario där alla bönder har slagits ut, och ena sidan bara har kvar sin kung, medan den andra har kvar en kung eller en kung och en springare eller en löpare. Positionen blir remi eftersom det är omöjligt för den anfallande sidan att skapa schackmatt oavsett drag. Situationer där schackmatt endast är möjlig om den sämre sidan gör misstag täcks av femtio-dragsregeln.</para>
+</sect3>
+
+
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="prefs">
+ <title>Spelinställningar</title>
+
+
+<sect2 id="game-prefs">
+  <title>Spel Inställningar</title>
+  <para>Under <interface>Spel</interface>fliken i dialogrutan <interface>Inställningar</interface> har du möjlighet att justera dina val för nya spel. I fältet <interface>Motståndare</interface>, är det möjligt att markera mänsklig motståndare eller datormotståndare (AI). Om du har installerat någon kompatibel schackmotor som AI-spelare, kommer dessa att visas i listan över tillgängliga spelare. Svårighetsgraden för AI-spelare ställs in i fältet <interface>Svårighetsgrad</interface>. Slutligen anges tidsgränsen för varje spelares drag i fältet <interface>Tidsgräns</interface>.</para>
+
+ <figure id="preferences-game-shot">
+  <title>Dialogrutan spelreferenser för GNOME Schack</title>
+  <screenshot>
+    <mediaobject><imageobject> <imagedata fileref="figures/preferences-game-3-12.png" format="PNG" srccredit="Andreas"/> </imageobject> <textobject> <phrase>Dialogrutan spelinställningar för GNOME Schack.</phrase> </textobject></mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+
+
+<sect2 id="view-prefs">
+  <title>Utseendeinställningar</title>
+  <para>Fliken <interface>Utseende</interface> i dialogen <interface>Inställningar</interface> ger dig möjlighet att ändra brädorientering, dragformat, och det allmänna utseendet och känslan av GNOME Schack.</para>
+
+ <figure id="preferences-appearance-shot">
+  <title>Dialogrutan, utseendeinställningar för GNOME Schack</title>
+  <screenshot>
+    <mediaobject><imageobject> <imagedata fileref="figures/preferences-appearance-3-12.png" format="PNG" srccredit="Andreas"/> </imageobject> <textobject> <phrase>Dialogrutan utseende-inställningar för GNOME Schack.</phrase> </textobject></mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="engines">
+ <title>Schackmotorer</title>
+
+     <para>GNOME Schack bör kunna använda alla schackmotorer kompatibla med Chess Engine Communication Protocol eller Universal Chess Interface, inklusive dessa schackmotorer:</para>
+
+<!-- Please keep AI list synchronized with gnome-chess/data/ai.xml -->
+<itemizedlist spacing="compact">
+  <listitem>
+	<para>GNUChess</para>
+  </listitem>
+  <listitem>
+	<para>Sjeng</para>
+  </listitem>
+  <listitem>
+	<para>Amy</para>
+ </listitem>
+  <listitem>
+	<para>Crafty</para>
+  </listitem>
+  <listitem>
+	<para>Faile</para>
+  </listitem>
+  <listitem>
+	<para>Phalanx</para>
+  </listitem>
+  <listitem>
+	<para>Glaurung</para>
+  </listitem>
+  <listitem>
+	<para>HoiChess</para>
+  </listitem>
+  <listitem>
+	<para>Diablo</para>
+  </listitem>
+  <listitem>
+	<para>BBChess</para>
+  </listitem>
+  <listitem>
+	<para>Fruit</para>
+  </listitem>
+  <listitem>
+	<para>Shredder</para>
+  </listitem>
+  <listitem>
+	<para>Toga II</para>
+  </listitem>
+  <listitem>
+	<para>Boo's Chess Engine</para>
+  </listitem>
+
+
+</itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Upphovsmän</title>
+  <para><application>GNOME Schack</application> har författats av Robert Ancell, och ingår nu i gnome-spel. Denna dokumentation skrevs ursprungligen av Andreas Røsdal, med bidrag från flera GPL-källor. För att rapportera ett fel eller komma med ett förslag angående det här programmet eller dess handbok, följ anvisningarna i det här <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentet</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licens</title>
+  <para>Detta program är fri programvara. Du kan distribuera det och/eller modifiera det under villkoren i <citetitle>GNU General Public License</citetitle>, publicerad av Free Software Foundation, antingen version 2 eller (om du så vill) någon senare version.</para>
+  <para>Detta program distribueras i hopp om att det ska vara användbart, men UTAN NÅGON SOM HELST GARANTI, även utan underförstådd garanti om SÄLJBARHET eller LÄMPLIGHET FÖR NÅGOT SPECIELLT ÄNDAMÅL. Se <citetitle>GNU General Public License</citetitle> för ytterligare information.</para>
+  <para>En kopia av <citetitle>GNU General Public License</citetitle> finns inkluderar som en bilaga till <citetitle>GNOME:s användarguide</citetitle>. Du kan även få tag på en kopia av <citetitle>GNU General Public License</citetitle> från Free Software Foundation genom att besöka <ulink type="http" url="http://www.fsf.org">deras webbplats</ulink> eller genom att skriva till <address>
+    Free Software Foundation, Inc.
+    <street>51 Franklin Street</street> - Fifth Floor
+    <city>Boston</city>, <state>MA</state> <postcode>02110-1335</postcode>
+    <country>USA</country>
+   </address></para>
+ </sect1>
+</article>

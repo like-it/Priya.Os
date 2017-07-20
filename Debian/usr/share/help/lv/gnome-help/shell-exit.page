@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="power"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name>Alexandre Franke</name>
+      <email>afranke@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Iemācieties, kā pamest savu lietotāja kontu, izrakstoties, mainot lietotājus u.t.t.</desc>
+    <!-- Should this be a guide which links to other topics? -->
+  </info>
+
+  <title>Izrakstīties, izslēgt datoru vai pārslēgt lietotājus</title>
+
+  <p>Kad esiet pabeiguši lietot savu datoru, jūs varat to izslēgt, ieslēgt miega režīmu (lai ietaupītu enerģiju) vai atstāt to ieslēgtu un izrakstīties.</p>
+
+<section id="logout">
+  <title>Izrakstīties vai mainīt lietotājus</title>
+
+  <p>Lai ļautu citiem lietotājiem izmantot savu datoru, jūs varat vai izrakstīties, vai arī atstāt sevi ierakstītu un tikai pārslēgt lietotājus. Ja maināt lietotājus, visas jūsu lietotnes turpinās darbu un viss paliks, kur to atstājāt, kad atkal ierakstīsieties.</p>
+
+  <p>To <gui>Log Out</gui> or <gui>Switch User</gui>, click the
+  <link xref="shell-introduction#yourname">system menu</link> on the right side of the
+  top bar, click your name and then choose the right option.</p>
+
+  <note if:test="!platform:gnome-classic">
+    <p>Ieraksti <gui>Izrakstīties</gui> un <gui>Mainītu lietotāju</gui> izvēlnē parādās tikai tad, ja uz sistēmas ir vairāk kā viens lietotāja konts.</p>
+  </note>
+
+  <note if:test="platform:gnome-classic">
+    <p>Ieraksts <gui>Mainītu lietotāju</gui> izvēlnē parādās tikai tad, ja uz sistēmas ir vairāk kā viens lietotāja konts.</p>
+  </note>
+
+</section>
+
+<section id="lock-screen">
+  <info>
+    <link type="seealso" xref="session-screenlocks"/>
+  </info>
+
+  <title>Bloķēt ekrānu</title>
+
+  <p>Ja pametat savu datoru uz īsu brīdi, jums vajadzētu bloķēt savu ekrānu, lai liegtu citiem pieeju jūsu datnēm un ieslēgtajām lietotnēm. Atgriežoties paceliet <link xref="shell-lockscreen">ekrāna bloķēšanas</link> aizkaru un ievadiet savu paroli, lai atkal pierakstītos. Ja nebloķējat savu ekrānu, tas automātiski bloķēsies pēc noteikta laika.</p>
+
+  <p>Lai bloķētu ekrānu, spiediet sistēmas izvēlni augšējās joslas labajā pusē un spiediet ekrāna bloķēšanas pogu apakšējā izvēlnē.</p>
+
+  <p>Kad ekrāns ir bloķēts, citi lietotāji var pierakstīties paši savā kontā, spiežot <gui>Ierakstīties kā cits lietotājs</gui> paroles logā. Jūs varat pārslēgties atpakaļ uz savu darbvirsmu, kad pārējie lietotāji ir beiguši darbu.</p>
+
+</section>
+
+<section id="suspend">
+  <info>
+    <link type="seealso" xref="power-suspend"/>
+  </info>
+
+  <title>Iesnaudināt</title>
+
+  <p>To save power, suspend your computer when you are not using it. If you use
+  a laptop, GNOME, by default, suspends your computer automatically when you
+  close the lid.
+  This saves your state to your computer's memory and powers off most of the
+  computer's functions. A very small amount of power is still used during
+  suspend.</p>
+
+  <p>Lai datoru iesnaudinātu manuāli, spiediet sistēmas izvēlni augšējās joslās labajā pusē un turiet piespiestu <key>Alt</key> taustiņu. Opcija <gui>Izslēgt</gui> mainīsies uz <gui>Iesnaudināt</gui>. Spiediet šo pogu.</p>
+
+</section>
+
+<section id="shutdown">
+<!--<info>
+  <link type="seealso" xref="power-off"/>
+</info>-->
+
+  <title>Izslēgt vai pārstartēt</title>
+
+  <p>Ja vēlaties izslēgt savu datoru pilnībā, vai veikt pilnu pārstartēšanu, spiediet sistēmas izvēlni augšējās joslas labajā pusē un izvēlieties izslēgšanas pogu izvēlnes apakšā. Parādīsies dialoglodziņš, kas piedāvās <gui>Pārstartēt</gui> vai <gui>Izslēgt</gui>.</p>
+
+  <p>Ja citi lietotāji ir pierakstījušies, jums var tikt liegta datora izslēgšana, jo tad citu lietotāju sesijas beigtos. Ja esat administratīvais lietotājs, jums var tikt jautāta parole, lai datoru izslēgtu.</p>
+
+  <note style="tip">
+    <p>Jūs varētu vēlēties izslēgt datoru, ja vēlaties to pārvietot un tam nav baterijas, vai arī ja baterija nespētu nodrošināt strāvu pietiekami ilgi. Turklāt izslēgts dators izmanto arī <link xref="power-batterylife">mazāk enerģijas</link> nekā iesnaudināts.</p>
+  </note>
+
+</section>
+
+</page>

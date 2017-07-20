@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="plugin-commander" xml:lang="bg">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/> 
+    <revision version="3.4" date="2013-02-24" status="review"/>
+
+    <credit type="author">
+      <name>Джим Къмпбел</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Use a command-line interface for advanced editing.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>От командния ред</title>
+
+  <p>The <app>Commander</app> plugin is a plugin for advanced <app>gedit</app>
+  users that allows you to perform command-line actions on the current file. To
+  enable the commander plugin, select
+  <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferences</gui>
+  <gui>Plugins</gui><gui>Commander</gui></guiseq>.</p>
+
+  <p>Once you have enabled the plugin, activate it by pressing
+  <keyseq><key>Ctrl</key><key>.</key></keyseq>.</p>
+  
+  <note style="tip">
+    <p>Последният клавиш в клавишната комбинация е точка.</p>
+  </note>
+
+  <table frame="all" rules="all">
+    <thead>
+      <tr>
+        <td><p>Action</p></td>
+	<td><p>Keyboard shortcut</p></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><p>Преглед на наличните команди</p></td>
+	<td><p><keyseq><key>Tab</key><key>Tab</key></keyseq></p></td>
+      </tr>
+      <tr>
+        <td><p>Намиране на дума във файла</p></td>
+	<td>
+	  <p><key>/</key> <input>foo</input></p>
+          <p>This will find the word <input>foo</input>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Заменяне на дума във файла</p></td>
+	<td>
+	  <p><keyseq><key>/</key><key>/</key></keyseq>
+	  <input>foo bar</input></p>
+          <p>This will replace <input>foo</input> with
+	  <input>bar</input>.</p>
+	</td>
+      </tr>
+      <tr>
+        <td><p>Преместване на курсора на указан ред</p></td>
+        <td>
+	  <p>go <input>[line number]</input> <em>or</em> just <key>G</key>
+	  <input>[line number]</input></p>
+        </td>
+      </tr>
+      <tr>
+        <td><p>Добавяне/премахване на отметка за текущия ред</p></td>
+        <td><p>bookmark <em>or</em> just <key>B</key></p></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <note style="tip">
+    <p>Някои команди като <app>bookmark</app> изискват да бъде инсталирана и включена съответната приставка. Ако приставката липсва или е изключена, ще получите съобщение за грешка.</p>
+  </note>
+
+</page>

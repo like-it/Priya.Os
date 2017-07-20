@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="printing-cancel-job" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="printing#problems"/>
+
+    <revision pkgversion="3.10.2" date="2013-11-03" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>保留中の印刷ジョブを取り消してキューから削除します。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>松澤 二郎</mal:name>
+      <mal:email>jmatsuzawa@gnome.org</mal:email>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星 柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kentaro KAZUHAMA</mal:name>
+      <mal:email>kazken3@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shushi Kurose</mal:name>
+      <mal:email>md81bird@hitaki.net</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Noriko Mizumoto</mal:name>
+      <mal:email>noriko@fedoraproject.org</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>坂本 貴史</mal:name>
+      <mal:email>o-takashi@sakamocchi.jp</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>日本GNOMEユーザー会</mal:name>
+      <mal:email>http://www.gnome.gr.jp/</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>印刷ジョブの取り消し、一時停止、解放</title>
+
+  <p>プリンター設定から、保留中の印刷ジョブを取り消してキューから削除することができます。</p>
+
+  <section id="cancel-print-job">
+    <title>印刷ジョブを取り消す</title>
+
+  <p>誤って印刷を実行してしまった場合は、インクや用紙を無駄遣いしないよう印刷を取り消すことができます。</p>
+
+  <steps>
+    <title>印刷ジョブを取り消す方法は次のとおりです。</title>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Printers</gui>.</p>
+    </item>
+    <item>
+      <p>Click <gui>Printers</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p><gui>プリンター</gui>ダイアログの右側にある<gui>ジョブの表示</gui>ボタンをクリックします。</p>
+    </item>
+    <item>
+      <p>Cancel the print job by clicking the stop button.</p>
+    </item>
+  </steps>
+
+  <p>If this does not cancel the print job like you expected, try holding down
+  the <em>cancel</em> button on your printer.</p>
+
+  <p>As a last resort, especially if you have a big print job with a lot of
+  pages that will not cancel, remove the paper from the printer's paper input
+  tray. The printer should realize that there is no paper and will stop
+  printing. You can then try canceling the print job again, or try turning the
+  printer off and then on again.</p>
+
+  <note style="warning">
+    <p>Be careful that you don't damage the printer when removing the paper,
+    though. If you would have to pull hard on the paper to remove it, you
+    should probably just leave it where it is.</p>
+  </note>
+
+  </section>
+
+  <section id="pause-release-print-job">
+    <title>印刷ジョブの一時停止と解放</title>
+
+  <p>印刷ジョブを一時停止または解放したい場合は、プリンター設定のジョブダイアログで対応するボタンをクリックします。</p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Printers</gui>.</p>
+    </item>
+    <item>
+      <p>Click <gui>Printers</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p><gui>プリンター</gui>ダイアログ右側の<gui>ジョブの表示</gui>をクリックし、対象の印刷ジョブの一時停止または解放を行います。</p>
+    </item>
+  </steps>
+
+  </section>
+
+</page>

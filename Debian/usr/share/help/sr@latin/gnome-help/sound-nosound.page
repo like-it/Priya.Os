@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="sound-nosound" xml:lang="sr-Latn">
+
+  <info>
+    <link type="guide" xref="sound-broken"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Gnomov projekat dokumentacije</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Proverite da zvuk nije utišan, da su kablovi ispravno priključeni, i da je zvučna kartica otkrivena.</desc>
+  </info>
+
+<title>Ne čujem nikakav zvuk na računaru</title>
+
+  <p>Ako ne možete da čujete nikakav zvuk na računaru, na primer kada pokušavate da pustite muziku, probajte ove korake za rešavanje problema.</p>
+
+<section id="mute">
+  <title>Uverite se da zvuk nije utišan</title>
+
+  <p>Otvorite <gui xref="shell-introduction#yourname">izbornik sistema</gui> i uverite se da zvuk nije utišan ili potpuno isključen.</p>
+
+  <p>Neki prenosni računari imaju prekidače ili tastere na tastaturama — pokušajte da pritisnete taj taster da vidite da li će se zvuk pojačati.</p>
+
+  <p>Treba takođe da proverite da niste utišali program koji koristite za puštanje zvuka (na primer, program za muziku ili filmove). Program može da ima dugme za utišavanje ili jačinu zvuka na glavnom prozoru, i zato proverite i to.</p>
+
+  <p>Takođe, možete da proverite jezičak <gui>programa</gui> u grafičkom sučelju <gui>zvuka</gui>:</p>
+  <steps>
+    <item>
+    <p>Otvorite <app>podešavanja</app> iz pregleda <gui>aktivnosti</gui>.</p>
+    </item>
+    <item>
+      <p>Pritisnite na <gui>Zvuk</gui>.</p>
+    </item>
+    <item>
+      <p>Idite na jezičak <gui>Programi</gui> i proverite da li je program utišan.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="speakers">
+  <title>Proverite da li su zvučnici upaljeni i ispravno priključeni</title>
+  <p>Ako vaš računar ima spoljne zvučnike, uverite se da su upaljeni i da je jačina zvuka pojačana. Uverite se da je kabal zvučnika bezbedno priključen u „izlaznu“ priključnicu zvuka na vašem računaru. Ova priključnica je obično svetlo-zelene boje.</p>
+
+  <p>Neke zvučne kartice mogu da promene utičnicu koju koriste za izlaz (na zvučnike) i ulaz (iz mikrofona, na primer). Izlazna utičnica može biti drugačija kada radi pod Linuksom, Vindouzom ili Mek OS-om. Pokušajte da povežete kabal zvučnika na drugu zvučnu utičnicu na računaru.</p>
+
+ <p>Poslednja stvar za proveru je da li je audio kabal bezbedno priključen na poleđinu zvučnika. Takođe, neki zvučnici imaju više od jednog ulaza.</p>
+</section>
+
+<section id="device">
+  <title>Proverite da li je izabran odgovarajući zvučni uređaj</title>
+
+  <p>Neki računari imaju instaliranih više „zvučnih uređaja“. Neki od njih imaju mogućnost otpuštanja zvuka a neki ne, tako da trebate da proverite da li ste izabrali onaj pravi. Ovo može da obuhvati neke probe-i-greške za izbor one prave.</p>
+
+  <steps>
+    <item>
+      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Zvuk</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknite na <gui>Zvuk</gui> da otvorite panel.</p>
+    </item>
+    <item>
+      <p>U jezičku <gui>Izlaz</gui>, izmenite podešavanja <gui>profila</gui> izabranog uređaja i pustite zvuk da vidite da li će raditi. Možda ćete morati da isprobate svaki profil sa spiska.</p>
+
+      <p>Ako ovo ne radi, možete da pokušate da uradite isto za svaki drugi uređaj koji se nalazi na spisku.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="hardware-detected">
+
+ <title>Proverite da li je zvučna kartica ispravno otkrivena</title>
+
+  <p>Možda vaša zvučna kartica nije ispravno otkrivena verovatno zato što upravljački programi za karticu nisu instalirani. Moraćete ručno da instalirate upravljačke programe za karticu. Kako ćete to uraditi zavisi od kartice koju imate.</p>
+
+  <p>Pokrenite naredbu <cmd>lspci</cmd> u terminalu da saznate koju zvučnu karticu imate:</p>
+  <steps>
+    <item>
+      <p>Idite na pregled <gui>Aktivnosti</gui> i otvorite terminal.</p>
+    </item>
+    <item>
+      <p>Pokrenite <cmd>lspci</cmd> kao <link xref="user-admin-explain">administrator</link>; ili ukucajte <cmd>sudo lspci</cmd> a zatim vašu lozinku, ili samo <cmd>su</cmd>, zatim upišite <em>administratorsku</em> lozinku, a nakon toga ukucajte <cmd>lspci</cmd>.</p>
+    </item>
+    <item>
+      <p>Proverite da li na spisku postoji <em>upravljač zvuka</em> ili <em>zvučni uređaj</em>: u tom slučaju trebalo bi da vidite proizvođača broj modela. Takođe, <cmd>lspci -v</cmd> prikazuje spisak sa opširnijim podacima.</p>
+    </item>
+  </steps>
+
+  <p>Možete biti u mogućnosti da pronađete i instalirate upravljačke programe za vašu karticu. Bolje je da pitate na forumima podrške (ili negde drugde) vaše distribucije Linuksa za uputstva.</p>
+
+  <p>Ako ne možete da nabavite upravljačke programe za vašu zvučnu karticu, možda ćete želeti da kupite novu. Možete da nabavite zvučne kartice koje mogu biti instalirane unutar računara i spoljne USB zvučne kartice.</p>
+
+</section>
+
+</page>

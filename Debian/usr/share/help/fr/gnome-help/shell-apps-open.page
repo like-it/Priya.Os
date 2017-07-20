@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-apps-open" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Lancer des applications à partir de la vue d'ensemble des <gui>Activités</gui>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Lancement d'applications</title>
+
+  <p if:test="!platform:gnome-classic">Move your mouse pointer to the
+  <gui>Activities</gui> corner at the top left of the screen to show the
+  <gui xref="shell-introduction#activities">Activities</gui> overview. This is where you
+  can find all of your applications. You can also open the overview by pressing
+  the <key xref="keyboard-key-super">Super</key> key.</p>
+  
+  <p if:test="platform:gnome-classic">You can start applications from the
+  <gui xref="shell-introduction#activities">Applications</gui> menu at the top
+  left of the screen, or you can use the <gui>Activities</gui> overview by
+  pressing the <key xref="keyboard-key-super">Super</key> key.</p>
+
+  <p>Il existe plusieurs manières d'ouvrir une application une fois que vous êtes dans la vue d'ensemble des <gui>Activités</gui> :</p>
+
+  <list>
+    <item>
+      <p>Start typing the name of an application - searching begins instantly.
+      (If this doesn't happen, click the search bar at the top of the screen
+      and start typing.) If you don't know the exact name of an application, try
+      to type an related term. Click the application's icon to start it.</p>
+    </item>
+    <item>
+      <p>Certaines applications possèdent des icônes sur le <em>dash</em>, la bande verticale d'icônes sur le côté gauche de la vue d'ensemble des <gui>Activités</gui>. Cliquez sur l'une d'elles pour lancer l'application correspondante.</p>
+      <p>S'il y a des applications que vous utilisez très fréquemment, vous pouvez <link xref="shell-apps-favorites">les ajouter au dash</link> vous-même.</p>
+    </item>
+    <item>
+      <p>En cliquant sur le bouton en forme de grille au bas du dash, vous verrez s'afficher les applications les plus souvent utilisées. Si vous souhaitez en lancer une nouvelle, appuyez sur le bouton <gui style="button">Toutes</gui> en bas pour les afficher. Cliquez sur celle que vous voulez ouvrir.</p>
+    </item>
+    <item>
+      <p>Vous pouvez lancer une application dans un <link xref="shell-workspaces">espace de travail</link> séparé en déplaçant son icône à partir du dash et en la déposant sur un des espaces de travail sur le côté droit de l'écran. L'application s'ouvre dans l'espace de travail choisi.</p>
+      <p>Vous pouvez lancer une application dans un <em>nouvel</em> espace de travail en glissant son icône dans l'espace libre du dessous, ou entre deux espaces de travail.</p>
+    </item>
+  </list>
+
+  <note style="tip">
+    <title>Lancement rapide d'une commande</title>
+    <p>Une autre façon de lancer une application est d'appuyer sur <keyseq><key>Alt</key><key>F2</key></keyseq>, de saisir son <em>nom de commande</em> puis d'appuyer sur <key>Entrée</key>.</p>
+    <p>Par exemple, pour lancer <app>Rhythmbox</app>, appuyez sur <keyseq><key>Alt</key><key>F2</key></keyseq> et saisissez <cmd>rhythmbox</cmd>. Le nom de l'application est la commande qui lance le programme.</p>
+  </note>
+
+</page>

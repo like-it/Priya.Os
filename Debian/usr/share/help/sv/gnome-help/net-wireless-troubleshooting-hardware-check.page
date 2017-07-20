@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="sv">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Medarbetare för Ubuntu dokumentations-wikin</name>
+    </credit>
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Även om din trådlösa adapter är ansluten så kanske den inte har känts igen ordentligt av datorn.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Felsökningsguiden för trådlösa anslutningar</title>
+  <subtitle>Kontrollera att den trådlösa adaptern kändes igen</subtitle>
+
+  <p>Även om den trådlösa adapter är ansluten till datorn så kanske den inte har känts igen som en nätverksenhet av datorn. I detta steget kommer du att kontrollera huruvida enheten kändes igen korrekt.</p>
+
+  <steps>
+    <item>
+      <p>Öppna ett Terminal-fönster, skriv <cmd>lshw -C network</cmd> och tryck <key>Retur</key>. Om detta ger ett felmeddelande, kan du behöva installera programmet <app>lshw</app> på din dator.</p>
+    </item>
+    <item>
+      <p>Titta genom informationen som visades och leta upp avsnitt <em>Trådlösa gränssnitt</em>. Om din trådlösa adapter detekterades ordentligt, bör du se något i stil (men inte identiskt) med detta:</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>Om en trådlös enhet är listad, fortsätt till <link xref="net-wireless-troubleshooting-device-drivers">steget enhetsdrivrutin</link>.</p>
+      <p>Om en trådlös enhet <em>inte</em> finns listad, så kommer nästa steg du ta att bero på vilken typ av enhet du använder. Läs det avsnitt nedan som är relevant för typen av trådlös adapter som din dator har (<link xref="#pci">internal PCI</link>, <link xref="#usb">USB</link> eller <link xref="#pcmcia">PCMCIA</link>).</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>PCI (intern) trådlös adapter</title>
+
+  <p>Interna PCI-adaptrar är det vanligaste och finns i de flesta bärbara datorer tillverkade de senaste åren. För att kontrollera om din trådlösa PCI-adapter kändes igen:</p>
+
+  <steps>
+    <item>
+      <p>Öppna en Terminal, skriv <cmd>lspci</cmd> och tryck <key>Retur</key>.</p>
+    </item>
+    <item>
+      <p>Titta genom listan av enheter som visas och leta efter någon som är markerad <code>Network controller</code> eller <code>Ethernet controller</code>. Flera enheter kan finnas markerade på detta sättet; den som motsvarar din trådlösa adapter kan innehålla ord som <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> eller <code>802.11</code>. Här följer ett exempel på hur en post kan se ut:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Om du hittar din trådlösa adapter i listan, fortsätt till <link xref="net-wireless-troubleshooting-device-drivers">steget enhetsdrivrutin</link>. Om du inte hittar något relaterat till din trådlösa adapter, se <link xref="#not-recognized">instruktionerna nedan</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>Trådlös USB-adapter</title>
+
+  <p>Trådlösa adaptrar som ansluts via en USB-kontakt på din dator är mindre vanliga. De kan anslutas direkt till en USB-kontakt eller anslutas via en USB-kabel. 3G/mobilt bredbands-adaptrar ser likadana ut som trådlösa (wifi) adaptrar, så om du tror att du har en trådlös USB-adapter, dubbelkolla att det inte är en 3G-adapter. För att kontrollera om din trådlösa USB-adapter kändes igen:</p>
+
+  <steps>
+    <item>
+      <p>Öppna en Terminal, skriv <cmd>lsusb</cmd> och tryck <key>Retur</key>.</p>
+    </item>
+    <item>
+      <p>Titta genom listan över enheter som visas och leta efter någon som ser ut som om den refererar till trådlösa eller nätverksenheter. Den som motsvarar din trådlösa adapter kan innehålla ord som <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> eller <code>802.11</code>. Här följer ett exempel på hur en post kan se ut:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>Om du hittar din trådlösa adapter i listan, fortsätt till <link xref="net-wireless-troubleshooting-device-drivers">steget enhetsdrivrutin</link>. Om du inte hittar något relaterat till din trådlösa adapter, se <link xref="#not-recognized">instruktionerna nedan</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Kontrollera en PCMCIA-enhet</title>
+
+  <p>Trådlösa PCMCIA-adaptrar är vanligtvis rektangulära kort som skjuts in på sidan av din bärbara dator. De är vanligast i äldre datorer. För att kontrollera om din PCMCIA-adapter kändes igen:</p>
+
+  <steps>
+    <item>
+      <p>Starta din dator <em>utan</em> den trådlösa adaptern isatt.</p>
+    </item>
+    <item>
+      <p>Öppna en Terminal, skriv följande och tryck sedan <key>Retur</key>:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>Detta kommer att visa en lista över meddelanden relaterade till dators hårdvara och kommer automatiskt uppdateras om någonting ändras med din hårdvara.</p>
+    </item>
+    <item>
+      <p>Sätt i din trådlösa adapter i PCMCIA-luckan och se vad som ändras i terminalfönstret. Ändringarna bör inkludera någon information om din trådlösa adapter. Leta genom dem och se om du kan identifiera den.</p>
+    </item>
+    <item>
+      <p>För att stoppa kommandot från att köra i terminalen, tryck <keyseq><key>Ctrl</key><key>C</key></keyseq>. Efter att du har gjort det kan du stänga Terminalen om du vill.</p>
+    </item>
+    <item>
+      <p>Om du hittade någon information om din trådlösa adapter, fortsätt till <link xref="net-wireless-troubleshooting-device-drivers">steget enhetsdrivrutin</link>. Om du inte hittade någonting relaterat till din trådlösa adapter, se <link xref="#not-recognized">instruktionerna nedan</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>Trådlös adapter kändes inte igen</title>
+
+  <p>Om din trådlösa adapter inte kändes igen, så kanske den inte fungerar ordentligt eller så är de korrekta drivrutinerna för den inte installerade. Hur du kontrollerar om det finns några drivrutiner du kan installera beror på vilken Linux-distribution du använder (exempelvis Ubuntu, Arch, Fedora eller openSUSE).</p>
+
+  <p>För att få specifik hjälp, titta på supportalternativen på din distributions webbplats. Dessa kan till exempel inkludera sändlistor och webbchattar där du kan fråga om din trådlösa adapter.</p>
+
+</section>
+
+</page>

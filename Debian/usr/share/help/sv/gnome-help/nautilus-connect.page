@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Titta på och redigera filer på en annan dator över FTP, SSH, Windows-utdelningar eller WebDAV.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Bläddra genom filer på en server eller nätverksutdelning</title>
+
+<p>Du kan ansluta till en server eller nätverksutdelning för att bläddra genom och titta på filer på den servern, precis som om de fanns på din egen dator. Detta är ett bekvämt sätt att hämta ner eller skicka upp filer på internet eller att dela filer med andra personer på ditt lokala nätverk.</p>
+
+<p>För att bläddra genom filer över nätverket öppna programmet <app>Filer</app> från översiktsvyn <gui>Aktiviteter</gui> och klicka på <gui>Andra platser</gui> i sidopanelen. Filhanteraren kommer att hitta datorer i ditt lokala nätverk som utannonserar möjligheten att erbjuda filer. Om du vill ansluta till en server på internet eller om du inte ser datorn som du letar efter kan du manuellt ansluta till en server genom att skriva in dess internet-/nätverksadress.</p>
+
+<steps>
+  <title>Anslut till en filserver</title>
+  <item><p>I filhanteraren, klicka på <gui>Andra platser</gui> i sidopanelen.</p>
+  </item>
+  <item><p>I <gui>Anslut till server</gui>, mata in serverns adress, på formen av en <link xref="#urls">URL</link>. Detaljer om vilka URL:er som stöds finns <link xref="#types">listade nedan</link>.</p>
+  <note>
+    <p>Om du har anslutit till servern tidigare kan du klicka på den i listan <gui>Senast använda servrar</gui>.</p>
+  </note>
+  </item>
+  <item>
+    <p>Klicka på <gui>Anslut</gui>. Filerna på servern kommer att visas. Du kan bläddra genom filerna precis som du hade gjort för dem på din egen dator. Servern kommer också att läggas till i sidopanelen så att du kan nå den snabbt i framtiden.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>Skriva URL:er</title>
+
+<p>En <em>URL</em>, eller <em>uniform resource locator</em>, är ett slags adress som refererar till en plats eller en fil på ett nätverk. Adressen är formaterad så här:</p>
+  <example>
+    <p><sys>schema://servernamn.example.com/mapp</sys></p>
+  </example>
+<p><em>Schema</em> anger protokollet eller typen av server. <em>example.com</em>-delen av adressen kallas <em>domännamn</em>. Om en användare krävs så infogas den före servernamnet:</p>
+  <example>
+    <p><sys>schema://användarnamn@servernamn.example.com/mapp</sys></p>
+  </example>
+<p>Vissa scheman kräver att portnumret anges. Infoga det efter domännamnet:</p>
+  <example>
+    <p><sys>schema://servernamn.example.com:port/mapp</sys></p>
+  </example>
+<p>Nedan finns exempel för de olika servertyperna som stöds.</p>
+</section>
+
+<section id="types">
+ <title>Typ av servrar</title>
+
+<p>Du kan ansluta till olika typer av servrar. Vissa servrar är publika och låter vem som helst ansluta. Andra servrar kräver att du loggar in med ett användarnamn och lösenord.</p>
+<p>Du kanske inte har behörighet att utföra vissa åtgärder på filer på en server. Till exempel på publika FTP-platser kommer du troligtvis inte att kunna ta bort filer.</p>
+<p>URL:en du matar in beror på vilket protokoll servern använder som exporterar dina filutdelningar.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>Om du har ett <em>säkert skal</em>-konto på en server, kan du ansluta via denna metod. Många webbvärdar tillhandahåller SSH-konton till sina medlemmar så att de kan skicka upp filer säkert. SSH-servrar kräver alltid att du loggar in.</p>
+  <p>En typisk SSH-URL ser ut så här:</p>
+  <example>
+    <p><sys>ssh://användarnamn@servernamn.example.com/mapp</sys></p>
+  </example>
+
+  <p>När du använder SSH, kommer all data du skickar (inklusive lösenordet) att krypteras så att andra användare på ditt nätverk inte kan se det.</p>
+</item>
+<item>
+  <title>FTP (med inloggning)</title>
+  <p>FTP är ett populärt sätt att utbyta filer på internet. Eftersom data inte krypteras över FTP erbjuder många servrar numera åtkomst genom SSH. Vissa servrar tillåter dock fortfarande eller kräver att du använder FTP för att skicka upp eller hämta ner filer. FTP-platser med inloggning låter dig vanligtvis ta bort och skicka upp filer.</p>
+  <p>En typisk FTP-URL ser ut så här:</p>
+  <example>
+    <p><sys>ftp://användarnamn@ftp.example.com/sökväg/</sys></p>
+  </example>
+</item>
+<item>
+  <title>Publik FTP</title>
+  <p>Platser som låter dig hämta ner filer erbjuder ibland publik eller anonym FTP-åtkomst. Dessa servrar kräver inte ett användarnamn och lösenord och kommer vanligtvis inte att låta dig ta bort eller skicka upp filer.</p>
+  <p>En typisk URL för anonym FTP ser ut så här:</p>
+  <example>
+    <p><sys>ftp://ftp.example.com/sökväg/</sys></p>
+  </example>
+  <p>Vissa anonyma FTP-platser kräver att du logga in med ett publikt användarnamn och lösenord, eller med ett publikt användarnamn med din e-postadress som lösenord. För dessa servrar använd metoden <gui>FTP (med inloggning)</gui>, och använd inloggningsuppgifterna angivna av FTP-platsen.</p>
+</item>
+<item>
+  <title>Windows-utdelning</title>
+  <p>Windows datorer använder ett proprietärt protokoll för att dela ut filer över ett lokalt nätverk. Datorer på ett Windows-nätverk grupperas ibland i <em>domäner</em> för organisering och bättre styra åtkomst. Om du har rätt behörigheter på fjärrdatorn kan du ansluta till en Windows-utdelning från filhanteraren.</p>
+  <p>En typisk URL för Windows-utdelning ser ut så här:</p>
+  <example>
+    <p><sys>smb://servernamn/Utdelning</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV och Secure WebDAV</title>
+  <p>WebDAV, baserat på HTTP-protokollet som används på nätet, används ibland för att dela filer på ett lokalt nätverk och att lagra filer på internet. Om servern du ansluter till har stöd för säkra anslutningar bör du välja detta alternativ. Secure WebDAV använder stark SSL-kryptering så andra användare inte kan se ditt lösenord.</p>
+  <p>En WebDAV-URL ser ut så här:</p>
+  <example>
+    <p><sys>dav://exempel.värdnamn.com/sökväg</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS-utdelning</title>
+  <p>UNIX-datorer använder traditionellt Network File System-protokollet för att dela filer över ett lokalt nätverk. Med NFS baseras säkerhet på UID för användaren som kommer åt utdelningen, så inga autentiseringsuppgifter krävs vid anslutning.</p>
+  <p>En typisk URL för NFS-utdelning ser ut så här:</p>
+  <example>
+    <p><sys>smb://servernamn/sökväg</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

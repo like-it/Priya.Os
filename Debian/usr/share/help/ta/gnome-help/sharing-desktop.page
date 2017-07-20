@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-desktop" xml:lang="ta">
+
+  <info>
+    <link type="guide" xref="sharing"/>
+    <link type="guide" xref="prefs-sharing"/>
+
+    <revision pkgversion="3.14" date="2015-01-25" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>எக்காட்டெரினா ஜெராசிமோவா</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>மைக்கேல் ஹில்</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>ஜிம் காம்ப்பெல்</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>VNC ஐப் பயன்படுத்தி மற்றவர்கள் உங்கள் பணிமேசையைப் பார்க்க மற்றும் தொடர்புகொள்ளச் செய்தல்.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>உங்கள் பணிமேசையைப் பகிர்தல்</title>
+
+  <p>மற்றவர்கள் ஒரு பணிமேசை காணும் பயன்பாட்டின் மூலம் உங்கள் பணிமேசையைக் காணவும் கட்டுப்படுத்தவும் நீங்கள் அனுமதிக்க முடியும். மற்றவர்கள் உங்கள் பணிமேசையை அணுகவும் பாதுகாப்பு முன்னுரிமைகளையும் அமைக்க அனுமதிக்க <gui>திரைப் பகிர்தல்</gui> ஐ அமைவாக்கம் செய்யவும்.</p>
+
+  <note style="info package">
+    <p><gui>திரைப் பகிர்தல்</gui> புலப்பட <app>Vino</app> தொகுப்பு நிறுவப்பட்டிருக்க வேண்டும்.</p>
+
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+        <p><link action="install:vino" style="button">Vino ஐ நிறுவுக</link></p>
+      </if:when>
+    </if:choose>
+  </note>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Sharing</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Sharing</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p><gui>பகிர்தல்</gui> <gui>ஆஃப்</gui> என அமைக்கப்பட்டிருந்தால், அதை <gui>ஆன்</gui> என அமைக்கவும்.</p>
+
+      <note style="info"><p>If the text below <gui>Computer Name</gui> allows
+      you to edit it, you can <link xref="sharing-displayname">change</link>
+      the name your computer displays on the network.</p></note>
+    </item>
+    <item>
+      <p><gui>திரைப் பகிர்தல்</gui> ஐ தேர்ந்தெடுக்கவும்.</p>
+    </item>
+    <item>
+      <p>To let others view your desktop, switch <gui>Screen Sharing</gui> to
+      <gui>ON</gui>. This means that other people will be able to attempt to
+      connect to your computer and view what's on your screen.</p>
+    </item>
+    <item>
+      <p>To let others interact with your desktop, switch
+      <gui>Allow Remote Control</gui> to <gui>ON</gui>. This may allow the
+      other person to move your mouse, run applications, and browse files on
+      your computer, depending on the security settings which you are currently
+      using.</p>
+
+      <note style="tip">
+        <p>This option is enabled by default when <gui>Screen Sharing</gui> is
+        <gui>ON</gui>.</p>
+      </note>
+
+    </item>
+  </steps>
+
+  <section id="security">
+  <title>பாதுகாப்பு</title>
+
+  <p>பாதுகாப்பு விருப்பங்களை மாற்றும் முன் அதன் முழு பொருளைப் புரிந்துகொண்டு செயல்படுவது முக்கியம்.</p>
+
+  <terms>
+    <item>
+      <title>புதிய இணைப்புகள் அணுகலைக் கோர வேண்டும்</title>
+      <p>If you want to be able to choose whether to allow someone to access
+      your desktop, enable <gui>New connections must ask for access</gui>.  If
+      you disable this option, you will not be asked whether you want to allow
+      someone to connect to your computer.</p>
+      <note style="tip">
+        <p>இந்த விருப்பம் முன்னிருப்பாக செயல்படுத்தப்பட்டிருக்கும்.</p>
+      </note>
+    </item>
+    <item>
+      <title>கடவுச்சொல் தேவை</title>
+      <p>To require other people to use a password when connecting to your
+      desktop, enable <gui>Require a Password</gui>. If you do not use this
+      option, anyone can attempt to view your desktop.</p>
+      <note style="tip">
+        <p>முன்னிருப்பாக இந்த விருப்பம் முடக்கப்பட்டிருக்கும், ஆனால் நீங்கள் அதை செயல்படுத்தி பாதுகாப்பான ஒரு கடவுச்சொல்லை அமைக்க வேண்டும்.</p>
+      </note>
+    </item>
+<!-- TODO: check whether this option exists.
+    <item>
+      <title>Allow access to your desktop over the Internet</title>
+      <p>If your router supports UPnP Internet Gateway Device Protocol and it
+      is enabled, you can allow other people who are not on your local network
+      to view your desktop. To allow this, select <gui>Automatically configure
+      UPnP router to open and forward ports</gui>. Alternatively, you can
+      configure your router manually.</p>
+      <note style="tip">
+        <p>This option is disabled by default.</p>
+      </note>
+    </item>
+-->
+  </terms>
+  </section>
+
+  <section id="networks">
+  <title>Networks</title>
+
+  <p>The <gui>Networks</gui> section lists the networks to which you are
+  currently connected. Use the <gui>ON | OFF</gui> switch next to each to
+  choose where your desktop can be shared.</p>
+  </section>
+
+  <section id="notification-icon">
+  <title>Stop sharing your desktop</title>
+
+  <p>You can disconnect someone who is viewing your desktop using the
+  <gui>notification icon</gui> in the message Tray. To do so:</p>
+    <steps>
+      <item><p>Open the message tray by pressing
+      <keyseq><key>Super</key><key>M</key></keyseq>, or by moving your mouse
+      pointer to the very bottom of your screen.</p></item>
+      <item><p>Click on the <gui>Desktop</gui> icon in the
+      <gui>Message Tray</gui>. This will open the <app>Sharing</app> panel.</p>
+      </item>
+      <item><p><gui>திரைப் பகிர்தல்</gui> ஐ தேர்ந்தெடுக்கவும்.</p></item>
+      <item><p>Toggle the <gui>Screen Sharing</gui> slider to <gui>Off</gui>.
+      </p></item>
+    </steps>
+
+  </section>
+
+
+</page>

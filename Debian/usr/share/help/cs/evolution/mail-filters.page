@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters" xml:lang="cs">
+
+  <info>
+    <desc>Jak použít filtrační pravidla pro automatické roztřídění vaší pošty do složek.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+
+    <revision pkgversion="3.0.2" version="0.6" date="2012-02-19" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-filters.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiří Eischmann</mal:name>
+      <mal:email>jiri@eischmann.cz</mal:email>
+      <mal:years>2008, 2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Používání filtrů</title>
+
+<p>Filtry zpráv používají činnosti vůči zprávám na základě podmínek, které si určíte. Filtry můžete definovat jak pro příchozí, tak pro odchozí poštu.</p>
+
+<p>Filtry budou automaticky použity na příchozí zprávy u místních účtů (jako je POP). Poštovní servery u vzdálených účtů (jako je IMAP) často filtrují poštu přímo na serveru, protože je to rychlejší. V případě, že chcete použít filtry aplikace <app>Evolution</app> i na vzdálené účty, můžete to povolit v <guiseq><gui>Upravit</gui> <gui>Předvolby</gui> <gui>Poštovní účty</gui> <gui style="button">Upravit</gui> <gui>Volby příjmu</gui> <gui>Volby</gui> <gui>Použít filtry na nové zprávy v Přijaté poště na tomto serveru</gui></guiseq>.</p>
+
+<p>Pro ruční použití filtru na zprávy ve složce vyberte zprávu a klikněte na <guiseq><gui>Zpráva</gui> <gui>Použít filtry</gui></guiseq> nebo zmáčkněte <keyseq><key>Ctrl</key><key>Y</key></keyseq>.</p>
+<p>Všechny zprávy ve složce můžete vybrat kliknutím na <guiseq><gui>Upravit</gui> <gui>Vybrat vše</gui></guiseq> nebo zmáčknutím <keyseq><key>Ctrl</key> <key>A</key></keyseq>.</p>
+
+<section id="adding">
+<title>Vytváření filtrů</title>
+
+<steps>
+<item><p>Klikněte na <guiseq><gui>Upravit</gui> <gui>Filtry zpráv</gui></guiseq> nebo klikněte na <guiseq><gui>Zpráva</gui> <gui>Vytvořit pravidlo</gui></guiseq> a vyberte kritérium, ze kterého bude filtr vycházet.</p></item>
+<item><p>Klikněte na <gui style="button">Přidat</gui>.</p></item>
+<item><p>Zadejte název do pole <gui>Název pravidla</gui>.</p></item>
+<item><p>Nadefinujte podmínky pro pravidlo. Pro každou podmínku nejprve vyberte, která část zprávy se má kontrolovat a pak zadejte porovnávání.</p><p>Více informací o dostupných podmínkách najdete pod <link xref="mail-filters-conditions">Dostupné podmínky filtrů</link>.</p></item>
+<item><p>Pokud chcete definovat více podmínek, určete v <gui>Hledat položky</gui>, jestli se mohou použít jen některé podmínky nebo se musí použít všechny, a klikněte na <gui style="button">Přidat podmínku</gui> a zopakujte předchozí krok.</p></item>
+<item>
+<p>Vyberte činnosti pro filtr v části <gui>Potom</gui>.</p><p>Více informací o dostupných akcích viz <link xref="mail-filters-actions">Dostupné činnosti filtrů</link>.</p>
+
+<note style="warning"><p>U filtru je důležité i pořadí. Filtry se na originalní zprávu použijí postupně v předepsaném pořadí.</p>
+<p>Když je v prvním filtru pravidlo <gui>Zastavit zpracování</gui>, pak se u všech zpráv, které vyhovují tomuto filtru, budou ignorovat všechny následující filtry.</p>
+<p>Když přesouváte zprávu do jiné složky, znamená „přesun“ ve skutečnosti vytvoření kopie zprávy v cílové složce a označení původní zprávy ke smazání. Takže některá pravidla v průběhu zpracování budou použita na původní zprávu, která je teď označena ke smazání. Proto by se přesun zprávy měl v pravidlech filtru použít až jako poslední.</p></note>
+
+</item>
+<item><p>Pokud chcete definovat více činností, klikněte na <gui style="button">Přidat činnost</gui> a opakujte předchozí krok. Například, když chcete, aby se nepoužil žádný další existující filtr, zvolte jako další akci v seznamu <gui>Zastavit zpracování</gui>.</p></item>
+<item><p>Klikněte na <gui style="button">Budiž</gui>.</p></item>
+</steps>
+
+</section>
+
+<section id="editing">
+<title>Úprava filtrů</title>
+<steps>
+<item><p>Klikněte na <guiseq><gui>Upravit</gui> <gui>Filtry zpráv</gui></guiseq>.</p></item>
+<item><p>Vyberte filtr.</p></item>
+<item><p>Klikněte na <gui style="button">Upravit</gui>.</p></item>
+<item><p>Proveďte požadované opravy a klikněte dvakrát na <gui style="button">Budiž</gui>.</p></item>
+</steps>
+</section>
+
+<section id="deleting">
+<title>Odstranění filtrů</title>
+<steps>
+<item><p>Klikněte na <guiseq><gui>Upravit</gui> <gui>Filtry zpráv</gui></guiseq>.</p></item>
+<item><p>Vyberte filtr.</p></item>
+<item><p>Klikněte na <gui style="button">Odstranit</gui>.</p></item>
+<item><p>Klikněte na <gui style="button">Budiž</gui>.</p></item>
+</steps>
+</section>
+
+
+
+
+	
+</page>

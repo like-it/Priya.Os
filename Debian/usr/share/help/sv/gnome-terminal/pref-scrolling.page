@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="pref-scrolling" xml:lang="sv">
+
+  <info>
+    <revision pkgversion="3.8" date="2013-02-25" status="draft"/>
+    <revision pkgversion="3.12" date="2014-09-08" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+    <link type="guide" xref="profile"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013–2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ändra beteende för rullningsutdata och rullningslist.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015, 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Inställningar för rullningslist</title>
+
+  <p>Då mycket utdata skrivs ut på din terminalskärm kan det underlätta att din terminal beter sig på ett specifikt sätt så att den är lättare att arbeta med.</p>
+
+  <section id="visibility">
+    <title>Synlighet för rullningslist</title>
+
+    <p>Du kan inaktivera rullningslisten:</p>
+
+    <steps>
+      <item>
+        <p>Välj <guiseq><gui style="menu">Redigera</gui><gui style="menuitem">Profilinställningar</gui><gui style="tab">Rullning</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Avmarkera <gui>Visa rullningslist</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Din inställning sparas omedelbart.</p>
+
+  </section>
+
+  <section id="on-output">
+    <title>Rulla vid utdata</title>
+
+    <p>Du kan låsa rullning för att alltid visa nyaste utdata då ett kommando körs.</p>
+
+    <steps>
+      <item>
+        <p>Välj <guiseq><gui style="menu">Redigera</gui><gui style="menuitem">Profilinställningar</gui><gui style="tab">Rullning</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Kryssa i <gui style="checkbox">Rulla vid utdata</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="on-keystroke">
+    <title>Rulla vid inmatning</title>
+
+    <p>Du kan ställa in terminalen att automatiskt rulla längst ner i fönstret när du matar in text i prompten.</p>
+
+    <steps>
+      <item>
+        <p>Välj <guiseq><gui style="menu">Redigera</gui><gui style="menuitem">Profilinställningar</gui><gui style="tab">Rullning</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Kryssa i <gui style="checkbox">Rulla vid tangentnedtryckning</gui>.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="lines">
+    <title>Rader i rullningshistorik</title>
+
+    <p>Du kan begränsa antalet rader rullningshistorik som lagras i minnet. Du kan vilja göra detta om du sällan startar om din terminal så att det finns en gräns på hur mycket minne som rullningshistoriken kan använda.</p>
+
+    <steps>
+      <item>
+        <p>Välj <guiseq><gui style="menu">Redigera</gui><gui style="menuitem">Profilinställningar</gui><gui style="tab">Rullning</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Kryssa i <gui>Begränsa rullningshistorik till</gui> och ange ett antal rader som är större än 0 för att begränsa rullningshistoriken.</p>
+      </item>
+      <item>
+        <p>Valfritt kan du klicka på <gui style="button">+</gui> för att öka och <gui style="button">-</gui> för att minska antalet rader.</p>
+      </item>
+    </steps>
+
+    <note style="warning">
+      <p>Att använda obegränsad rullningshistorik kan göra <app>Terminal</app> trög vid rullning!</p>
+    </note>
+
+  </section>
+
+</page>

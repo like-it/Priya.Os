@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="es">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Pruebe su disco duro para buscar problemas y asegurarse de que está sano.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Comprobar los problemas del disco duro</title>
+
+<section id="disk-status">
+ <title>Comprobar el disco duro</title>
+  <p>Los discos duros disponen de un verificador interno de salud denominado <em>SMART</em> (Tecnología de automonitorización, análisis e informe, «Self-Monitoring, Analysis, and Reporting Technology»), el cual está continuamente buscando posibles problemas y puede avisarle cuando el disco esté a punto de fallar. Esto resulta útil para evitar futuras pérdidas de datos importantes.</p>
+
+  <p>Aunque SMART se ejecuta automáticamente, también puede comprobar la salud de su disco ejecutando la aplicación <app>Discos</app>:</p>
+
+<steps>
+ <title>Compruebe la salud de su disco usando la aplicación Discos</title>
+
+  <item>
+    <p>Abra <app>Discos</app> desde la vista de <gui>Actividades</gui>.</p>
+  </item>
+  <item>
+    <p>Seleccione el disco duro que quiere comprobar en la lista de dispositivos de almacenamiento de la izquierda. Se mostrará la información sobre el disco y su estado.</p>
+  </item>
+  <item>
+    <p>Pulse el icono de la rueda dentada y elija <gui>Datos SMART y autocomprobación…</gui>. La <gui>Estimación general</gui> debería decir «El disco está correcto».</p>
+  </item>
+  <item>
+    <p>Consulte más información en <gui>Atributos SMART</gui>, o pulse el botón <gui style="button">Iniciar autocomprobación</gui> para ejecutar este tipo de prueba.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>¿Qué pasa si el disco no está sano?</title>
+
+  <p>Incluso aunque el <gui>Estado general</gui> indique que el disco <em>no está</em> sano, no tiene por qué ser motivo de alarma. No obstante, es mejor estar preparado con una <link xref="backup-why">copia de seguridad</link> para prevenir la pérdida de datos.</p>
+
+  <p>Si el estado dice «Pre-fail», el disco está razonablemente sano pero se han detectado signos de desgaste, lo que significa que podría fallar en un futuro cercano. Si su disco duro (o equipo) tiene unos cuantos años de antigüedad, es probable que vea este mensaje en algunas de las comprobaciones de salud. Debería <link xref="backup-how">hacer una copia de seguridad de sus archivos importantes con regularidad</link> y comprobar periódicamente el estado del disco para ver si empeora.</p>
+
+  <p>Si va a peor, puede querer llevar el equipo o el disco duro a un profesional para un mejor análisis o reparación.</p>
+
+</section>
+
+</page>

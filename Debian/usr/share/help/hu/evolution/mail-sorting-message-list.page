@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-sorting-message-list" xml:lang="hu">
+
+  <info>
+    <desc>Levélmappa üzenetlistájának rendezése.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+    <link type="guide" xref="mail-layout-changing"/>
+
+    <revision pkgversion="3.3.91" version="0.7" date="2012-03-07" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-columns.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bence Lukács</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Kelemen</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nagy Zoltán</mal:name>
+      <mal:email>dzodzie at gmail dot com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>urbalazs at gmail dot com</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Üzenetlista rendezése</title>
+  
+<p>Az <app>Evolution</app> lehetővé teszi e-mailjeinek rendszerezését a levelek rendezésével az <link xref="intro-main-window#e-mail">üzenetlistában</link>.</p>
+
+<section id="email-threads">
+<title>Levelek e-mail szálakba rendezése</title>
+<p>Az e-mailek rendezésére használhat egy szálakra bontott levélnézetet. Ezen szolgáltatás engedélyezéséhez válassza a <guiseq><gui>Nézet</gui><gui>Csoportosítás szálak szerint</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>T</key></keyseq> kombinációt.</p>
+<p>Ez a szolgáltatás a válaszokat csoportosítja az eredeti e-maillel, és lehetővé teszi az üzenetváltás követését az egyik levélről a másikra.</p>
+<p>Új levél érkezésekor az a szülőlevél alatt jelenik meg. A szálak a legutóbb érkezett levél dátuma szerint kerülnek rendezésre és megjelenítésre.</p>
+<note style="tip"><p>Gyakorlott felhasználóknak: az e-mail szálak összecsukott és kibontott állapota között egy GSettings kulcs használatával válthat. Alapesetben az összecsukott állapot van engedélyezve, ez módosítható a <app>Terminálban</app> kiadott <cmd>gsettings set org.gnome.evolution.mail thread-expand true</cmd> parancs használatával.</p>
+<list>
+<item><p>Nyissa meg a <app>Terminál</app> alkalmazást.</p></item>
+<item><p>Futtassa a következő parancsot: <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd></p></item>
+</list>
+</note>
+</section>
+
+<section id="column-headers">
+<title>Levelek rendezése oszlopfejlécekkel</title>
+<p>A levéllista oszlopai jelzik, hogy a levél el lett-e olvasva, vannak-e mellékletei, hogy mennyire fontos, valamint a feladót, a dátumot és a tárgyat. A levéllistában használt oszlopok módosításához a következőket teheti:</p>
+<list>
+<item><p>Fogd és vidd módszerrel átrendezheti az oszlopfejléceket</p></item>
+<item><p>Kattintson a jobb egérgombbal a fejlécre.</p></item>
+<item><p>Válassza ki az <gui>Oszlop eltávolítása</gui> vagy <gui>Oszlop hozzáadása</gui> menüpontot.</p></item>
+</list>
+
+<p>Az <app>Evolution</app> lehetővé teszi a levelek rendezését az oszlopok használatával. Kattintson az oszlopcímkére az e-mailek rendezéséhez. A címke melletti nyíl jelzi a rendezés irányát.</p>
+</section>
+
+<section id="sort-options">
+<title>Más rendezési beállítások használata</title>
+<p>Az <app>Evolution</app> más módszereket is biztosít az e-mailek rendezésére. Használhatja a Rendezés, Növekvő sorrend, Csökkenő sorrend vagy a Sorrend visszaállítása menüpontokat is.</p>
+	<section id="sort-options-by">
+	<title>Rendezés</title>
+		<p>Az e-maileket a <gui>Rendezés</gui> lista segítségével is rendezheti.</p>
+		<steps>
+		<item><p>Kattintson a levéllista egyik oszlopfejlécére a jobb egérgombbal.</p></item>
+		<item><p>Válassza a <gui>Rendezés</gui> menüpontot.</p><p>Ez megjeleníti az e-mailek rendezésére használható feltételek listáját:</p>
+			<list>
+			<item><p>Tárgy - Csonkítva</p></item>
+			<item><p>Címkék</p></item>
+			<item><p>Címzettek</p></item>
+			<item><p>Feladó</p></item>
+			<item><p>Hely</p></item>
+			<item><p>Esedékes</p></item>
+			<item><p><link xref="mail-follow-up-flag">Nyomonkövetés-jelölő</link></p></item>
+			<item><p>Jelölő állapota</p></item>
+			<item><p>Méret</p></item>
+			<item><p>Címzett</p></item>
+			<item><p>Érkezett</p></item>
+			<item><p>Dátum</p></item>
+			<item><p>Tárgy</p></item>
+			<item><p>Feladó</p></item>
+			<item><p>Melléklet</p></item>
+			<item><p>Megjelölve</p></item>
+			<item><p>Állapot</p></item>
+			<item><p>Egyéni</p></item>
+			</list>
+		</item>
+		<item><p>Válassza ki az e-mailek rendezésére használni kívánt feltételt.</p></item>
+		</steps>
+	</section>
+
+	<section id="sort-options-ascending">
+	<title>Növekvő sorrend</title>
+		<steps>
+		<item><p>Kattintson a levéllista egyik oszlopfejlécére a jobb egérgombbal.</p></item>
+		<item><p>Válassza a <gui>Növekvő sorrend</gui> menüpontot.</p></item>
+		</steps>
+		<p>Az üzenetek megjelenítésekor a legújabb kerül alulra.</p>
+	</section>
+
+	<section id="sort-options-descending">
+	<title>Csökkenő sorrend</title>
+		<steps>
+		<item><p>Kattintson a levéllista egyik oszlopfejlécére a jobb egérgombbal.</p></item>
+		<item><p>Válassza a <gui>Csökkenő sorrend</gui> menüpontot.</p></item>
+		</steps>
+		<p>Az üzenetek megjelenítésekor a legújabb kerül felülre.</p>
+	</section>
+
+	<section id="sort-options-unsort">
+	<title>Sorrend visszaállítása</title>
+		<steps>
+		<item><p>Kattintson a levéllista egyik oszlopfejlécére a jobb egérgombbal.</p></item>
+		<item><p>Válassza a <gui>Sorrend visszaállítása</gui> menüpontot.</p></item>
+		</steps>
+		<p>Ez megszünteti az oszlop rendezését, a levelek sorrendje azok mappához adásának sorrendje lesz.</p>
+	</section>
+</section>
+
+</page>

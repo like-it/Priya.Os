@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="vi">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Công tác viên wiki tài liệu Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Dự án tài liệu GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Mặc dù đã kết nối, máy tính có thể không nhận ra bộ điều hợp không dây.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
+      <mal:email>pclouds@gmail.com</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Chẩn đoán kết nối không dây</title>
+  <subtitle>Check that the wireless adapter was recognized</subtitle>
+
+  <p>Even though the wireless adapter is connected to the computer, it may not
+  have been recognized as a network device by the computer. In this step, you
+  will check whether the device was recognized properly.</p>
+
+  <steps>
+    <item>
+      <p>Mở cửa sổ dòng lệnh, nhập <cmd>lshw -C network</cmd> và nhấn <cmd>Enter</cmd>. Nếu nó in thông báo lỗi, bạn có thể cần cài đặt chương trình <app>lshw</app> lên máy.</p>
+    </item>
+    <item>
+      <p>Đọc kết quả dòng lệnh và kiểm tra phần <em>Wireless interface</em> (Giao tiếp không dây). Nếu cạc không dây được nhận ra, kết quả sẽ trông giống thế này (nhưng không giống y chang):</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>Nếu thiết bị không dây được liệt kê, tiếp tục sang trang <link xref="net-wireless-troubleshooting-device-drivers">trình điều khiển thiết bị</link>.</p>
+      <p>Nết thiết bị không dây <em>không</em> được liệt kê, những bước kế tiếp phụ thuộc vào loại phần cứng bạn dùng. Xem đoạn mô tả loại phần cứng không dây bạn dùng: <link xref="#pci">PCI nội bộ</link>, <link xref="#usb">USB</link> hoặc <link xref="#pcmcia">PCMCIA</link>.</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>Bộ điều hợp không dây PCI (nội bộ)</title>
+
+  <p>Cạc PCI nội bộ phổ biến nhất, có thể gặp trên laptop sản xuất những năm gần đây. Để kiểm tra xem máy bạn có nhận ra bộ điều hợp PCI không dây không.</p>
+
+  <steps>
+    <item>
+      <p>Mở cửa sổ dòng lệnh, gõ <cmd>lspci</cmd> và nhấn <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Look through the list of devices that is shown and find any that are
+      marked <code>Network controller</code> or <code>Ethernet
+      controller</code>. Several devices may be marked in this way; the one
+      corresponding to your wireless adapter might include words like
+      <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> or
+      <code>802.11</code>. Here is an example of what the entry might look
+      like:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Nếu bạn tìm được thiết bị không dây của mình trong danh sách, tiếp tục với trang <link xref="net-wireless-troubleshooting-device-drivers">trình điều khiển thiết bị</link>. Nếu không, xem <link xref="#not-recognized">chỉ dẫn bên dưới</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>Bộ điều hợp USB không dây</title>
+
+  <p>Wireless adapters that plug into a USB port on your computer are less
+  common. They can plug directly into a USB port, or may be connected by a USB
+  cable. 3G/mobile broadband adapters look quite similar to wireless (wifi)
+  adapters, so if you think you have a USB wireless adapter, double-check that
+  it is not actually a 3G adapter. To check if your USB wireless adapter was
+  recognized:</p>
+
+  <steps>
+    <item>
+      <p>Mở cửa sổ dòng lệnh, gõ <cmd>lsusb</cmd> và nhấn <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Look through the list of devices that is shown and find any that seem
+      to refer to a wireless or network device. The one corresponding to your
+      wireless adapter might include words like <code>wireless</code>,
+      <code>WLAN</code>, <code>wifi</code> or <code>802.11</code>. Here is an
+      example of what the entry might look like:</p>
+      <code><![CDATA[Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card]]></code>
+    </item>
+    <item>
+      <p>Nếu bạn tìm được thiết bị không dây của mình trong danh sách, tiếp tục với trang <link xref="net-wireless-troubleshooting-device-drivers">trình điều khiển thiết bị</link>. Nếu không, xem <link xref="#not-recognized">chỉ dẫn bên dưới</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Kiểm tra thiết bị PCMCIA</title>
+
+  <p>PCMCIA wireless adapters are typically rectangular cards which slot into
+  the side of your laptop. They are more commonly found in older computers. To
+  check if your PCMCIA adapter was recognized:</p>
+
+  <steps>
+    <item>
+      <p>Khởi động máy tính <em>không gắn</em> cạc không dây.</p>
+    </item>
+    <item>
+      <p>Mở cửa sổ dòng lệnh, nhập lệnh sau và nhấn <key>Enter</key>:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>This will display a list of messages related to your computer's
+      hardware, and will automatically update if anything to do with your
+      hardware changes.</p>
+    </item>
+    <item>
+      <p>Insert your wireless adapter into the PCMCIA slot and see what
+      changes in the Terminal window. The changes should include some
+      information about your wireless adapter. Look through them and see if you
+      can identify it.</p>
+    </item>
+    <item>
+      <p>To stop the command from running in the Terminal, press
+      <keyseq><key>Ctrl</key><key>C</key></keyseq>. After you have done that,
+      you can close the Terminal if you like.</p>
+    </item>
+    <item>
+      <p>Nếu bạn tìm được thông tin về bộ điều hợp không dây, đến bước <link xref="net-wireless-troubleshooting-device-drivers">trình điều khiển thiết bị</link>. Nếu bạn không tìm được, xem <link xref="#not-recognized">chỉ dẫn bên dưới</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>Wireless adapter was not recognized</title>
+
+  <p>If your wireless adapter was not recognized, it might not be working
+  properly or the correct drivers may not be installed for it. How you check to
+  see if there are any drivers you can install will depend on which Linux
+  distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
+
+  <p>To get specific help, look at the support options on your distribution's
+  website. These might include mailing lists and web chats where you can ask
+  about your wireless adapter, for example.</p>
+
+</section>
+
+</page>

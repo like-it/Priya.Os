@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Projeto de documentação do GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>Entenda o que são volumes e partições e use o utilitário de unidades para gerenciá-los.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>João Santana</mal:name>
+      <mal:email>joaosantana@outlook.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>Gerenciando volumes e partições</title>
+
+  <p>A palavra <em>volume</em> é usada para descrever um dispositivo de armazenamento, como um disco rígido. Ela também pode se referir a uma <em>parte</em> do armazenamento desse dispositivo, porque você pode dividi-lo em pedaços. O computador torna esse armazenamento acessível via seus sistema de arquivos em um processo referenciado como <em>montagem</em>. Volumes montados podem ser discos rígidos, pendrives USB, DVD-RW, cartões SD e outras mídias. Se um volume está montado atualmente, você pode ler (e possivelmente gravar) arquivos nele contidos.</p>
+
+  <p>Frequentemente, um volume montado é chamado de <em>partição</em>, embora eles não sejam exatamente a mesma coisa. Uma "partição" se refere a uma área <em>física</em> de armazenamento em um único disco rígido. Uma vez que uma partição esteja montada, ela pode ser referida como volume, porque você pode acessar os arquivos nela contidos. Você pode pensar em volumes como sendo "vitrines", acessíveis e rotuladas, para os "depósitos" de partições e unidades.</p>
+
+<section id="manage">
+ <title>Ver e gerenciar volumes e partições usando o utilitário de unidades</title>
+
+  <p>Você pode verificar e modificar os volumes de armazenamento do seu computador com o utilitário de unidades.</p>
+
+<steps>
+  <item>
+    <p>Abra o panorama de <gui>Atividades</gui> e inicie o <app>Discos</app>.</p>
+  </item>
+  <item>
+    <p>Na lista de dispositivos armazenados à esquerda, você encontrará discos rígidos, unidades de CD/DVD e outros dispositivos físicos. Clique naquele que deseja inspecionar.</p>
+  </item>
+  <item>
+    <p>No painel à direita fornece uma análise visual dos volumes e partições presentes no dispositivo selecionado. Ela também contém uma variedade de ferramentas usadas para gerenciar esses volumes.</p>
+    <p>Tenha cuidado: é possível apagar completamente os dados do seu disco com esses utilitários.</p>
+  </item>
+</steps>
+
+  <p>Seu computador muito provavelmente terá pelo menos uma partição <em>primária</em> e uma única partição de área de <em>swap</em>. Uma partição de swap é usada pelo sistema operacional para gerenciamento da memória, e é raramente montada. A partição primária contém seu sistema operacional, seus aplicativos, suas configurações e seus arquivos pessoais. Esses arquivos também podem estar distribuídos em múltiplas partições por questões de segurança ou de conveniência.</p>
+
+  <p>Uma partição primária deve conter informações que o seu computador usa para iniciar, ou para dar <em>boot</em>. Por essa razão, é às vezes chamada de partição (ou volume) de boot. Para determinar se um volume é inicializável, selecione a partição e clique no ícone de menu na barra de ferramentas sob a lista de partições. Então, clique em <gui>Editar partição…</gui> e veja seus <gui>Sinalizadores</gui>. Mídias externas como unidades USB e CDs também podem conter um volume inicializável.</p>
+
+</section>
+
+</page>

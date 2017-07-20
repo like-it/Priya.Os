@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="question" version="1.0 if/1.0" id="gnome-classic" xml:lang="ta">
+
+  <info>
+<!--    <link type="guide" xref="shell-overview#desktop" />-->
+
+    <revision pkgversion="3.10.1" date="2013-10-28" status="review"/>
+
+    <credit type="author">
+      <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>பேட்ர் கோவார்</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>அதிக பாரம்பரிய டெஸ்க்டாப் அனுபவத்தை விரும்பினால் GNOME கிளாசிக்கிற்கு மாறுக.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Shantha kumar,</mal:name>
+      <mal:email>shkumar@redhat.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+<title>GNOME கிளாசிக் என்றால் என்ன?</title>
+
+<if:choose>
+  <if:when test="!platform:gnome-classic">
+  <p><em>GNOME கிளாசிக்</em> என்பது ஒரு பாரம்பரிய டெஸ்க்டாப் அனுபவத்தை விரும்பும் பயனர்களுக்காக வழங்கப்படும் ஒரு அம்சம். <em>GNOME கிளாசிக்</em> <em>GNOME 3</em> தொழில்நுட்பங்களை அடிப்படையாகக் கொண்டது, அது மேல் பட்டியில் <gui>பயன்பாடுகள்</gui> மற்றும் <gui>இடங்கள்</gui> மற்றும் திரையின் கீழே ஒரு சாளரப் பட்டியல் போன்ற பல பயனர் இடைமுக மாற்றங்களை வழங்குகிறது.</p>
+  </if:when>
+  <if:when test="platform:gnome-classic">
+<p><em>GNOME Classic</em> is a feature for users who prefer a more traditional
+  desktop experience. While <em>GNOME Classic</em> is based on <em>GNOME 3</em>
+  technologies, it provides a number of changes to the user interface, such as
+  the <gui xref="shell-introduction#activities">Applications</gui> and
+  <gui>Places</gui> menus on the top bar, and a window
+  list at the bottom of the screen.</p>
+  </if:when>
+</if:choose>
+
+<p>You can use the <gui>Applications</gui> menu on the top bar to launch
+ applications. The <gui xref="shell-introduction#activities">Activities</gui>
+ overview is available by selecting the <gui>Activities
+ Overview</gui> item from the menu.</p>
+
+<p>நீங்கள் <key xref="keyboard-key-super">Super</key> விசையை அழுத்தியும் <em><gui>செயல்பாடுகள் மேலோட்டம்</gui></em> ஐ அணுக முடியும்.</p>
+
+<section id="gnome-classic-window-list">
+<title>சாளர பட்டியல்</title>
+
+<p>திரையின் கீழே உள்ள சாளர பட்டியலில் திறந்துள்ள உங்கள் சாளரங்கள் மற்றும் பயன்பாடுகள் அனைத்துக்கும் அணுகலை வழங்கும், இதைக் கொண்டு நீங்கள் அவற்றை விரைவில் சிறிதாக்கவும் மீட்டமைக்கவும் முடியும்.</p>
+
+<p>சாளரப் பட்டியலின் வலது புறம், GNOME தற்போதைய பணியிடத்தைக் குறிக்கும் வகையில் ஒரு சிறு காட்டியைக் காண்பிக்கும். எடுத்துக்காட்டாக முதல் (மேல்) பணியிடத்திற்கு <gui>1</gui> காண்பிக்கப்படும். கூடுதலாக, அந்தக் காட்டியானது கிடைக்கக்கூடிய பணியிடங்களின் மொத்த எண்ணிக்கையையும் காட்டும். வேறு பணியிடத்திற்கு மாற, காட்டியை சொடுக்கி அந்த மெனுவில் இருந்து நீங்கள் செல்ல விரும்பும் பணியிடத்தைத் தேர்ந்தெடுக்க முடியும்.</p>
+
+<p>ஒரு பயன்பாடு அல்லது ஒரு கணினி கூறு உங்கள் கவனத்தைப் பெற விரும்பினால், அது சாளரப் பட்டியலின் வலது பக்கத்தில் ஒரு நீல நிற சின்னத்தைக் காண்பிக்கும். நீல சின்னத்தை சொடுக்கினால் <link xref="shell-notifications">செய்தித் தட்டு</link> காண்பிக்கப்படும், அதில் நீங்கள் உங்கள் அனைத்து அறிவிப்புகளையும் அணுக முடியும்.</p>
+
+</section>
+
+<section id="gnome-classic-switch">
+<title>GNOME கிளாசிக்கிற்கும் அதிலிருந்து பழைய முறைக்கும் மாறுதல்</title>
+
+<note if:test="!platform:gnome-classic" style="important">
+<p>குறிப்பிட்ட GNOME ஷெல் நீட்சிகள் நிறுவப்பட்ட கணினிகளில் மட்டுமே GNOME கிளாசிக் கிடைக்கும். சில Linux விநியோகங்களில் இந்த நீட்சிகள் இருக்காது அல்லது முன்னிருப்பாக நிறுவப்பட்டிருக்காது.</p>
+</note>
+
+  <steps>
+    <title><em>GNOME</em> இல் இருந்து <em>GNOME கிளாசிக்கிற்கு</em> மாற:</title>
+    <item>
+      <p>Save any open work, and then log out. Click the system menu on the right
+      side of the top bar, click your name and then choose the right option.</p>
+    </item>
+    <item>
+      <p>ஒரு உறுதிப்படுத்தல் செய்தி தோன்றும். அதில் உறுதிப்படுத்த <gui>விடுபதிகை</gui> ஐத் தேர்ந்தெடுக்கவும்.</p>
+    </item>
+    <item>
+      <p>புகுபதிவு திரையில், பட்டியலில் இருந்து உங்கள் பெயரைத் தேர்ந்தெடுக்கவும்.</p>
+    </item>
+    <item>
+      <p>கடவுச்சொல் உள்ளீட்டுப் பெட்டியில் உங்கள் கடவுச்சொல்லை உள்ளிடவும்.</p>
+    </item>
+    <item>
+      <p>Click the options icon, which is displayed to the left of the <gui>Sign
+      In</gui> button, and select <gui>GNOME Classic</gui>.</p>
+    </item>
+    <item>
+      <p><gui>ஒட்டு விசைகளை</gui> இயக்கு.</p>
+    </item>
+  </steps>
+
+  <steps>
+    <title><em>GNOME கிளாஸிக்கில்</em> இருந்து <em>GNOME</em> க்கு மாற:</title>
+    <item>
+      <p>Save any open work, and then log out. Click the system menu on the right
+      side of the top bar, click your name and then choose the right option.</p>
+    </item>
+    <item>
+      <p>ஒரு உறுதிப்படுத்தல் செய்தி தோன்றும். அதில் உறுதிப்படுத்த <gui>விடுபதிகை</gui> ஐத் தேர்ந்தெடுக்கவும்.</p>
+    </item>
+    <item>
+      <p>புகுபதிவு திரையில், பட்டியலில் இருந்து உங்கள் பெயரைத் தேர்ந்தெடுக்கவும்.</p>
+    </item>
+    <item>
+      <p>கடவுச்சொல் உள்ளீட்டுப் பெட்டியில் உங்கள் கடவுச்சொல்லை உள்ளிடவும்.</p>
+    </item>
+    <item>
+      <p>Click the options icon, which is displayed to the left of the <gui>Sign
+      In</gui> button, and select <gui>GNOME</gui>.</p>
+    </item>
+    <item>
+      <p><gui>ஒட்டு விசைகளை</gui> இயக்கு.</p>
+    </item>
+  </steps>
+  
+</section>
+
+</page>

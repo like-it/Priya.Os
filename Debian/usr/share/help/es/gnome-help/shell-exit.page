@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="power"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name>Alexandre Franke</name>
+      <email>afranke@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Aprender cómo salir de su cuenta de usuario, cerrando la sesión, cambiando de usuario, etc.</desc>
+    <!-- Should this be a guide which links to other topics? -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Cerrar la sesión, apagar o cambiar de usuario</title>
+
+  <p>Cuando haya terminado de usar su equipo, puede apagarlo, suspenderlo (para ahorrar energía), o dejarlo encendido y cerrar la sesión.</p>
+
+<section id="logout">
+  <title>Cerrar la sesión o cambiar de usuario</title>
+
+  <p>Para permitir que otros usuarios usen su equipo, puede salir de la sesión, o seguir conectado y simplemente cambiar de usuario. Si cambia de usuario, todas las aplicaciones seguirán funcionando y todo estará donde lo dejó cuando vuelva a iniciar sesión.</p>
+
+  <p>Para <gui>Salir de la sesión</gui> o <gui>Cambiar de usuario</gui>, pulse sobre en el <link xref="shell-introduction#yourname">menú del sistema</link> en la parte derecha de la barra superior, pulse sobre su nombre y seleccione la opción apropiada.</p>
+
+  <note if:test="!platform:gnome-classic">
+    <p>Las opciones <gui>Salir de la sesión</gui> y <gui>Cambiar de usuario</gui>, sólo aparecen en el menú si tiene más de una cuenta de usuario en su sistema.</p>
+  </note>
+
+  <note if:test="platform:gnome-classic">
+    <p>La opción <gui>Cambiar de usuario</gui>, sólo aparece en el menú si tiene más de una cuenta de usuario en su sistema.</p>
+  </note>
+
+</section>
+
+<section id="lock-screen">
+  <info>
+    <link type="seealso" xref="session-screenlocks"/>
+  </info>
+
+  <title>Bloquear la pantalla</title>
+
+  <p>Si deja su equipo durante un breve periodo de tiempo, debe bloquear la pantalla para evitar que otras personas tengan acceso a sus archivos o ejecuten aplicaciones. Cuando vuelva, suba el panel <link xref="shell-lockscreen">bloquear pantalla</link> e introduzca su contraseña para volver a iniciar la sesión. Si no bloquea su pantalla, se bloqueará automáticamente después de cierto tiempo.</p>
+
+  <p>Para bloquear la pantalla, pulse en el menú del sistema en la parte derecha de la barra superior y pulse el botón de bloqueo en la parte inferior del menú.</p>
+
+  <p>Cuando su pantalla está bloqueada otros usuarios pueden iniciar sesión en sus propias cuentas pulsando <gui>Iniciar sesión como otro usuario</gui> en la pantalla de contraseña. Puede volver a su escritorio cuando hayan terminado.</p>
+
+</section>
+
+<section id="suspend">
+  <info>
+    <link type="seealso" xref="power-suspend"/>
+  </info>
+
+  <title>Suspender</title>
+
+  <p>Para ahorrar energía, suspenda su equipo cuando no lo esté usando. Si usa un equipo portátil, GNOME suspende su equipo automáticamente cuando cierra su tapa. Esto guarda su estado en la memoria de su equipo y apaga la mayor parte de las funciones de su equipo. Durante la suspensión se sigue usando una cantidad muy pequeña de energía.</p>
+
+  <p>Para suspender el equipo manualmente, pulse en el menú del sistema en la parte derecha de la barra superior y mantenga pulsada la tecla <key>Alt</key>. La opción de apagar cambiará a «Suspender». Pulse el botón.</p>
+
+</section>
+
+<section id="shutdown">
+<!--<info>
+  <link type="seealso" xref="power-off"/>
+</info>-->
+
+  <title>Apagar o reiniciar</title>
+
+  <p>Si quiere apagar su equipo por completo o hacer un reinicio total, pulse sobre en el menú del sistema en la parte derecha de la barra superior y pulse el botón de apagar en la parte inferior del menú. Aparecerá un diálogo ofreciéndole <gui>Reiniciar</gui> o <gui>Apagar</gui>.</p>
+
+  <p>Si hay otros usuarios conectados, no podrá apagar o reiniciar el equipo, porque esto cerraría sus sesiones. Si es un usuario administrador, se le pedirá su contraseña para apagar.</p>
+
+  <note style="tip">
+    <p>Puede querer apagar el equipo si quiere moverlo y no tiene una batería, o si su batería está baja o no se carga bien. Un equipo apagado también usa <link xref="power-batterylife">menos energía</link> que uno que está suspendido.</p>
+  </note>
+
+</section>
+
+</page>

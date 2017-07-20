@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tips-specialchars" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="seealso" xref="keyboard-layouts"/>
+
+    <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak napsat znaky, které nenajdete na klávesnici, včetně cizích abeced, matematických symbolů a ornamentů.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Zadávání speciálních znaků</title>
+
+  <p>Můžete zadávat a zobrazovat tisíce znaků z většiny světových písem, i když je nemáte na klávesnici. Tato stránka popisuje různé způsoby, jak zadávat speciální znaky.</p>
+
+  <links type="section">
+    <title>Způsoby vkládání znaků</title>
+  </links>
+
+  <section id="charmap">
+    <title>Mapa znaků</title>
+    <p>GNOME přichází s aplikací <app>Mapa znaků</app>, která umožňuje procházet všechny znaky Unikódu. Můžete ji použít k vyhledání požadovaného znaku, a k jeho případnému zkopírování a vložení.</p>
+
+    <p><app>Mapu znaků</app> najdete v přehledu <gui>Činností</gui>. Více informací o ní najdete v <link href="help:gucharmap">příručce k Mapě znaků</link>.</p>
+
+  </section>
+
+  <section id="characters">
+    <title>Znaky</title>
+    <p>Další užitečnou aplikací dodávanou s GNOME jsou <app>Znaky</app>. Méně běžné znaky v ní najdete roztříděné do kategorií nebo je můžete vyhledávat podle klíčkových slov.</p>
+
+    <p><app>Znaky</app> spustíte z přehledu <gui>Činností</gui>. Více informací o této aplikaci najdete v <link href="help:gnome-characters">příručce ke Znakům</link>.</p>
+
+  </section>
+
+  <section id="compose">
+    <title>Klávesa Compose</title>
+    <p>Klávesa <key>Compose</key> je speciální klávesa, která umožňuje zmáčknout více kláves po sobě, abyste získali speciální znak. Například pro napsání dlouhého <em>é</em> zmáčkněte <key>Compose</key>, pak <key>'</key> a pak <key>e</key>.</p>
+    <p>Drtivá většina klávesnic nemá zvlášť klávesu <key>Compose</key>. Můžete si ji ale namapovat na některou jinou existující klávesu na své klávesnici.</p>
+
+    <steps>
+      <title>Nadefinování klávesy Compose</title>
+      <item>
+        <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Klávesnice</gui>.</p>
+      </item>
+      <item>
+        <p>Kliknutím na <gui>Klávesnice</gui> otevřete příslušný panel.</p>
+      </item>
+      <item><p>Vyberte kartu <gui>Zkratky</gui> a klikněte na <gui>Psaní</gui>.</p></item>
+      <item><p>Klikněte v pravém panelu na <gui>Klávesa Compose</gui>.</p></item>
+      <item><p>Klikněte na <gui>Vypnuto</gui> a v rozbalovací nabídce vyberte klávesu, kterou si přejete, aby se chovala, jako klávesa Compose. Můžete volit z kláves <key>Ctrl</key>, pravé klávesy <key>Alt</key>, pravé klávesy <key>Win</key> nebo <key xref="keyboard-key-super">Super</key> (pokud jednu z nich máte), klávesy <key xref="keyboard-key-menu">Menu</key> a klávesy <key>Caps Lock</key>. Klávesa, kterou vyberete bude nadále fungovat jen jako klávesa Compose a ke svému původnímu účelu již sloužit nebude.</p></item>
+    </steps>
+    <p>Pomocí klávesy <key>Compose</key> můžete psát řadu běžných znaků, například:</p>
+    <list>
+      <item><p>Zmáčkněte <key>Compose</key>, pak <key>'</key> a pak písmeno, nad které se přidá čárka, jako třeba <em>é</em>.</p></item>
+      <item><p>Zmáčkněte <key>Compose</key>, pak <key>`</key> a pak písmeno, nad které se přidá obrácená čárka (těžký akcent), jako třeba <em>è</em>.</p></item>
+      <item><p>Zmáčkněte <key>Compose</key>, pak <key>"</key> a pak písmeno, nad které se přidá přehláska, jako třeba <em>ë</em>.</p></item>
+      <item><p>Zmáčkněte <key>Compose</key>, pak <key>-</key> a pak písmeno, nad které se přidá vodorovná čárka, jako třeba <em>ē</em>.</p></item>
+    </list>
+    <p>Na další možnosti kombinací s klávesou <key>Compose</key> se podívejte na <link href="http://cs.wikipedia.org/wiki/Compose##Nejb.C4.9B.C5.BEn.C4.9Bj.C5.A1.C3.AD_kombinace">Wikipedii na stránku o klávese compose</link>.</p>
+  </section>
+
+<section id="ctrlshiftu">
+  <title>Kódy znaků</title>
+
+  <p>Znaky Unikódu můžete zadávat čistě pomocí klávesnice použitím číselného kódu znaku. Každý znak je představován čtyřmístným kódem znaku v šestnáctkové soustavě. Když si chcete tento kód zjistit, najděte si znak v mapě znaků a podívejte se na stavovou lištu nebo na kartu <gui>Informace o znaku</gui>. Jde o čtyři znaky (šestnáctkové číslice) za <gui>U+</gui>.</p>
+
+  <p>Když chcete zadat znak pomocí jeho kódu, podržte zmáčknuté klávesy <key>Ctrl</key> a <key>Shift</key>, napište <key>U</key> následované čtyřmi znaky kódu a pak <key>Ctrl</key> a <key>Shift</key> pusťte. Pokud často používáte nějaké znaky, které nejsou snadno dostupné jinými metodami, může stát za to, naučit se zpaměti kódy těchto znaků, abyste je mohli rychle zadávat.</p>
+
+</section>
+
+  <section id="layout">
+    <title>Rozložení klávesnice</title>
+    <p>Můžete přimět svoji klávesnici, aby se chovala jako klávesnice pro jiný jazyk, než pro který má na klávesách popisky. Mezi různými rozvrženími klávesnice se můžete přepínat pomocí ikony na horní liště. Jak na to viz <link xref="keyboard-layouts"/>.</p>
+  </section>
+
+<section id="im">
+  <title>Vstupní metody</title>
+
+  <p>Vstupní metody rozšiřují předchozí metody pomocí vkládání znaků i pomocí jiných vstupních zařízení, než jen klávesnice. Například můžete zadávat znaky pomocí myši s využitím gest nebo zadávat japonské znaky pomocí klávesnice s latinkou.</p>
+
+  <p>Pro výběr vstupní metody klikněte pravým tlačítkem na textový widget a v nabídce <gui>Vstupní metoda</gui> vyberte tu, kterou chcete používat. Není poskytována žádná výchozí, takže se podívejte do dokumentace ke vstupním metodám, jak se používají.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="net-proxy" xml:lang="el">
+
+  <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="net-general"/>
+
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ένας διαμεσολαβητής είναι μια ενδιάμεση υπηρεσία υπεύθυνη για την κυκλοφορία του Ιστού, μπορεί να χρησιμοποιηθεί για ανώνυμη πρόσβαση, για έλεγχο ή για λόγους ασφάλειας.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:email>ftsamis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ορισμός ρυθμίσεων διαμεσολαβητή</title>
+
+<section id="what">
+  <title>Τι είναι ο διαμεσολαβητής;</title>
+
+  <p>Ο <em>διαμεσολαβητής διαδικτύου</em> φιλτράρει τις ιστοσελίδες που επισκέπτεστε, δέχεται αιτήματα από τον περιηγητή για να ανακτήσει ιστοσελίδες και τα στοιχεία τους ακολουθώντας μια πολιτική που αποφασίζει ποια θα εμφανιστούν. Χρησιμοποιούνται συνήθως σε επαγγελματικά και σε δημόσια ασύρματα σημεία δικτύωσης για να ελέγξουν τους ιστότοπους που θέλετε να επισκεφθείτε, σας αποτρέπουν από το να σθνδεθείτε στο διαδίκτυο χωρίς να συνδεθείτε, ή για να κάνετε ελέγχους ασφάλειας σε ιστοσελίδες.</p>
+
+</section>
+
+<section id="change">
+  <title>Αλλαγή μεθόδου διαμεσολαβητή</title>
+
+  <steps>
+    <item>
+      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Δίκτυο</gui>.</p>
+    </item>
+    <item>
+      <p>Κάντε κλικ στο <gui>Δίκτυο</gui> για να ανοίξετε τον πίνακα.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε <gui>Διαμεσολαβητής δικτύου</gui> από τον κατάλογο στα αριστερά.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε ποια μέθοδο διαμεσολαβητή θέλετε να χρησιμοποιήσετε από:</p>
+      <terms>
+        <item>
+          <title><gui itst:context="proxy">Καμία</gui></title>
+          <p>Οι εφαρμογές θα χρησιμοποιήσουν μια άμεση σύνδεση για να προσκομίσουν το περιεχόμενο από τον ιστό.</p>
+        </item>
+        <item>
+          <title><gui>Χειροκίνητα</gui></title>
+          <p>Για κάθε πρωτόκολλο διαμεσολαβητή, ορίστε τη διεύθυνση ενός διαμεσολαβητή και θύρα για τα πρωτόκολλα. Τα πρωτόκολλα είναι <gui>HTTP</gui>, <gui>HTTPS</gui>, <gui>FTP</gui> και <gui>SOCKS</gui>.</p>
+        </item>
+        <item>
+          <title><gui>Αυτόματα</gui></title>
+          <p>Μία διεύθυνση δείχνει σε έναν πόρο, που περιέχει την κατάλληλη διαμόρφωση για το σύστημά σας.</p>
+        </item>
+      </terms>
+    </item>
+  </steps>
+
+  <p>Οι εφαρμογές που χρησιμοποιούν τη σύνδεση δικτύου θα χρησιμοποιήσουν τις συγκεκριμένες ρυθμίσεις διαμεσολαβητή.</p>
+
+</section>
+
+</page>

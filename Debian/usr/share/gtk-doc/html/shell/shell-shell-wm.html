@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>shell-wm: Shell Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Shell Reference Manual">
+<link rel="up" href="ch06.html" title="Integration helpers and utilities">
+<link rel="prev" href="shell-shell-action-modes.html" title="shell-action-modes">
+<link rel="next" href="shell-shell-util.html" title="shell-util">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#shell-shell-wm.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#shell-shell-wm.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#shell-shell-wm.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch06.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="shell-shell-action-modes.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="shell-shell-util.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="shell-shell-wm"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="shell-shell-wm.top_of_page"></a>shell-wm</span></h2>
+<p>shell-wm</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="shell-shell-wm.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="shell-shell-wm.html#ShellWM"><span class="returnvalue">ShellWM</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="shell-shell-wm.html#shell-wm-new" title="shell_wm_new ()">shell_wm_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="shell-shell-wm.html#shell-wm-completed-minimize" title="shell_wm_completed_minimize ()">shell_wm_completed_minimize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="shell-shell-wm.html#shell-wm-completed-unminimize" title="shell_wm_completed_unminimize ()">shell_wm_completed_unminimize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="shell-shell-wm.html#shell-wm-completed-size-change" title="shell_wm_completed_size_change ()">shell_wm_completed_size_change</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="shell-shell-wm.html#shell-wm-completed-map" title="shell_wm_completed_map ()">shell_wm_completed_map</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="shell-shell-wm.html#shell-wm-completed-destroy" title="shell_wm_completed_destroy ()">shell_wm_completed_destroy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="shell-shell-wm.html#shell-wm-completed-switch-workspace" title="shell_wm_completed_switch_workspace ()">shell_wm_completed_switch_workspace</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="shell-shell-wm.html#shell-wm-complete-display-change" title="shell_wm_complete_display_change ()">shell_wm_complete_display_change</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="shell-shell-wm.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="shell-shell-wm.html#ShellWM-confirm-display-change" title="The “confirm-display-change” signal">confirm-display-change</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="shell-shell-wm.html#ShellWM-destroy" title="The “destroy” signal">destroy</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">gboolean</span></td>
+<td class="signal_name"><a class="link" href="shell-shell-wm.html#ShellWM-filter-keybinding" title="The “filter-keybinding” signal">filter-keybinding</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="shell-shell-wm.html#ShellWM-hide-tile-preview" title="The “hide-tile-preview” signal">hide-tile-preview</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="shell-shell-wm.html#ShellWM-kill-switch-workspace" title="The “kill-switch-workspace” signal">kill-switch-workspace</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="shell-shell-wm.html#ShellWM-kill-window-effects" title="The “kill-window-effects” signal">kill-window-effects</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="shell-shell-wm.html#ShellWM-map" title="The “map” signal">map</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="shell-shell-wm.html#ShellWM-minimize" title="The “minimize” signal">minimize</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="shell-shell-wm.html#ShellWM-show-tile-preview" title="The “show-tile-preview” signal">show-tile-preview</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="shell-shell-wm.html#ShellWM-show-window-menu" title="The “show-window-menu” signal">show-window-menu</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="shell-shell-wm.html#ShellWM-size-change" title="The “size-change” signal">size-change</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="shell-shell-wm.html#ShellWM-switch-workspace" title="The “switch-workspace” signal">switch-workspace</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="shell-shell-wm.html#ShellWM-unminimize" title="The “unminimize” signal">unminimize</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="ShellWM"></a><div class="refsect1">
+<a name="shell-shell-wm.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="shell-shell-wm.html#SHELL-TYPE-WM:CAPS" title="SHELL_TYPE_WM">SHELL_TYPE_WM</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="shell-shell-wm.html#ShellWM-struct" title="ShellWM">ShellWM</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="shell-shell-wm.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> ShellWM
+</pre>
+</div>
+<div class="refsect1">
+<a name="shell-shell-wm.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="shell-shell-wm.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="shell-wm-new"></a><h3>shell_wm_new ()</h3>
+<pre class="programlisting"><a class="link" href="shell-shell-wm.html#ShellWM"><span class="returnvalue">ShellWM</span></a> *
+shell_wm_new (<em class="parameter"><code><span class="type">MetaPlugin</span> *plugin</code></em>);</pre>
+<p>Creates a new window management interface by hooking into <em class="parameter"><code>plugin</code></em>
+.</p>
+<div class="refsect3">
+<a name="shell-wm-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>plugin</p></td>
+<td class="parameter_description"><p>the <span class="type">MetaPlugin</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="shell-wm-new.returns"></a><h4>Returns</h4>
+<p> the new window-management interface</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="shell-wm-completed-minimize"></a><h3>shell_wm_completed_minimize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+shell_wm_completed_minimize (<em class="parameter"><code><a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a> *wm</code></em>,
+                             <em class="parameter"><code><span class="type">MetaWindowActor</span> *actor</code></em>);</pre>
+<p>The plugin must call this when it has completed a window minimize effect.</p>
+<div class="refsect3">
+<a name="shell-wm-completed-minimize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>wm</p></td>
+<td class="parameter_description"><p>the ShellWM</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>actor</p></td>
+<td class="parameter_description"><p>the MetaWindowActor actor</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="shell-wm-completed-unminimize"></a><h3>shell_wm_completed_unminimize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+shell_wm_completed_unminimize (<em class="parameter"><code><a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a> *wm</code></em>,
+                               <em class="parameter"><code><span class="type">MetaWindowActor</span> *actor</code></em>);</pre>
+<p>The plugin must call this when it has completed a window unminimize effect.</p>
+<div class="refsect3">
+<a name="shell-wm-completed-unminimize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>wm</p></td>
+<td class="parameter_description"><p>the ShellWM</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>actor</p></td>
+<td class="parameter_description"><p>the MetaWindowActor actor</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="shell-wm-completed-size-change"></a><h3>shell_wm_completed_size_change ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+shell_wm_completed_size_change (<em class="parameter"><code><a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a> *wm</code></em>,
+                                <em class="parameter"><code><span class="type">MetaWindowActor</span> *actor</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="shell-wm-completed-map"></a><h3>shell_wm_completed_map ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+shell_wm_completed_map (<em class="parameter"><code><a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a> *wm</code></em>,
+                        <em class="parameter"><code><span class="type">MetaWindowActor</span> *actor</code></em>);</pre>
+<p>The plugin must call this when it has completed a window map effect.</p>
+<div class="refsect3">
+<a name="shell-wm-completed-map.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>wm</p></td>
+<td class="parameter_description"><p>the ShellWM</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>actor</p></td>
+<td class="parameter_description"><p>the MetaWindowActor actor</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="shell-wm-completed-destroy"></a><h3>shell_wm_completed_destroy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+shell_wm_completed_destroy (<em class="parameter"><code><a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a> *wm</code></em>,
+                            <em class="parameter"><code><span class="type">MetaWindowActor</span> *actor</code></em>);</pre>
+<p>The plugin must call this when it has completed a window destroy effect.</p>
+<div class="refsect3">
+<a name="shell-wm-completed-destroy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>wm</p></td>
+<td class="parameter_description"><p>the ShellWM</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>actor</p></td>
+<td class="parameter_description"><p>the MetaWindowActor actor</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="shell-wm-completed-switch-workspace"></a><h3>shell_wm_completed_switch_workspace ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+shell_wm_completed_switch_workspace (<em class="parameter"><code><a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a> *wm</code></em>);</pre>
+<p>The plugin must call this when it has finished switching the
+workspace.</p>
+<div class="refsect3">
+<a name="shell-wm-completed-switch-workspace.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>wm</p></td>
+<td class="parameter_description"><p>the ShellWM</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="shell-wm-complete-display-change"></a><h3>shell_wm_complete_display_change ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+shell_wm_complete_display_change (<em class="parameter"><code><a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a> *wm</code></em>,
+                                  <em class="parameter"><code><span class="type">gboolean</span> ok</code></em>);</pre>
+<p>The plugin must call this after the user responded to the confirmation dialog.</p>
+<div class="refsect3">
+<a name="shell-wm-complete-display-change.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>wm</p></td>
+<td class="parameter_description"><p>the ShellWM</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ok</p></td>
+<td class="parameter_description"><p>if the new configuration was OK</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="shell-shell-wm.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="SHELL-TYPE-WM:CAPS"></a><h3>SHELL_TYPE_WM</h3>
+<pre class="programlisting">#define SHELL_TYPE_WM (shell_wm_get_type ())
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ShellWM-struct"></a><h3>ShellWM</h3>
+<pre class="programlisting">typedef struct _ShellWM ShellWM;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="shell-shell-wm.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ShellWM-confirm-display-change"></a><h3>The <code class="literal">“confirm-display-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a> *shellwm,
+               <span class="type">gpointer</span> user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ShellWM-destroy"></a><h3>The <code class="literal">“destroy”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a>         *shellwm,
+               <span class="type">MetaWindowActor</span> *arg1,
+               <span class="type">gpointer</span>         user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ShellWM-filter-keybinding"></a><h3>The <code class="literal">“filter-keybinding”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+user_function (<a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a>        *shellwm,
+               <span class="type">MetaKeyBinding</span> *arg1,
+               <span class="type">gpointer</span>        user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ShellWM-hide-tile-preview"></a><h3>The <code class="literal">“hide-tile-preview”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a> *shellwm,
+               <span class="type">gpointer</span> user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ShellWM-kill-switch-workspace"></a><h3>The <code class="literal">“kill-switch-workspace”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a> *shellwm,
+               <span class="type">gpointer</span> user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ShellWM-kill-window-effects"></a><h3>The <code class="literal">“kill-window-effects”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a>         *shellwm,
+               <span class="type">MetaWindowActor</span> *arg1,
+               <span class="type">gpointer</span>         user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ShellWM-map"></a><h3>The <code class="literal">“map”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a>         *shellwm,
+               <span class="type">MetaWindowActor</span> *arg1,
+               <span class="type">gpointer</span>         user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ShellWM-minimize"></a><h3>The <code class="literal">“minimize”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a>         *shellwm,
+               <span class="type">MetaWindowActor</span> *arg1,
+               <span class="type">gpointer</span>         user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ShellWM-show-tile-preview"></a><h3>The <code class="literal">“show-tile-preview”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a>       *shellwm,
+               <span class="type">MetaWindow</span>    *arg1,
+               <span class="type">MetaRectangle</span> *arg2,
+               <span class="type">gint</span>           arg3,
+               <span class="type">gpointer</span>       user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ShellWM-show-window-menu"></a><h3>The <code class="literal">“show-window-menu”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a>       *shellwm,
+               <span class="type">MetaWindow</span>    *arg1,
+               <span class="type">gint</span>           arg2,
+               <span class="type">MetaRectangle</span> *arg3,
+               <span class="type">gpointer</span>       user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ShellWM-size-change"></a><h3>The <code class="literal">“size-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a>         *shellwm,
+               <span class="type">MetaWindowActor</span> *arg1,
+               <span class="type">MetaSizeChange</span>   arg2,
+               <span class="type">MetaRectangle</span>   *arg3,
+               <span class="type">MetaRectangle</span>   *arg4,
+               <span class="type">gpointer</span>         user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ShellWM-switch-workspace"></a><h3>The <code class="literal">“switch-workspace”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a> *shellwm,
+               <span class="type">gint</span>     arg1,
+               <span class="type">gint</span>     arg2,
+               <span class="type">gint</span>     arg3,
+               <span class="type">gpointer</span> user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ShellWM-unminimize"></a><h3>The <code class="literal">“unminimize”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="shell-shell-wm.html#ShellWM"><span class="type">ShellWM</span></a>         *shellwm,
+               <span class="type">MetaWindowActor</span> *arg1,
+               <span class="type">gpointer</span>         user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25.1</div>
+</body>
+</html>

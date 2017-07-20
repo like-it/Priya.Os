@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pgp-userid-add" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="pgp-userid#add-remove"/>
+
+    <revision version="0.1" date="2011-10-23" status="stub"/>
+    <revision pkgversion="3.9" version="0.1" date="2013-06-27" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author copyright">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Tener varios ID de usuario le ayuda a usar la misma clave para comunicarse con diferentes personas.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2014 - 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Añadir ID de usuario adicionales a una clave.</title>
+
+  <p>Una clave puede tener varios ID de usuario. Esto es útil cuando usa la misma clave para comunicarse con diferentes personas y una de ellas no reconoce, por ejemplo, la dirección de correo de su ID de usuario. Esta persona puede no querer importar su clave pública, ya que contiene información que no conoce. En estas situaciones, si no quiere crear una clave nueva con un ID de usuario diferente, puede adjuntar un ID de usuario nuevo a la clave.</p>
+
+  <steps>
+    <title>Para añadir un ID de usuario adicional:</title>
+    <item>
+      <p>Seleccione el depósito <gui>claves GnuPG</gui> en el panel lateral izquierdo.</p>
+    </item>
+    <item>
+      <p>En la lista, seleccione la <gui>clave PGP personal</gui> que quiera.</p>
+    </item>
+    <item>
+      <p>Pulse con el botón derecho sobre la clave y elija <guiseq><gui>Propiedades</gui> <gui>Nombres y firmas</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Pulse el botón <gui style="button">Añadir nombre</gui> para añadir un ID de usuario nuevo.</p>
+    </item>
+    <item>
+      <p>En el nuevo diálogo, rellene los detalles <gui>Nombre completo</gui>, <gui>Dirección de correo-e</gui> y <gui>Comentarios de la clave</gui> para el neuvo ID de usuario.</p>
+    </item>
+    <item>
+      <p>Introduzca la contraseña correcta y pulse <gui style="button">Aceptar</gui> para terminar.</p>
+    </item>
+  </steps>
+
+  <p>Su nuevo ID de usuario se listará debajo del panel <gui>Nombres y firmas</gui>.</p>
+
+  <note style="tip">
+    <p>Si su clave se ha publicado en un servidor de claves, <link xref="pgp-sync">sincronícela</link> después de añadir nuevos ID de usuario para actualizar la copia remota de la clave.</p>
+  </note>
+
+</page>

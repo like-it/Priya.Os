@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="ssh-create" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys" group="first"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="incomplete"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author">
+      <name>Hashem Nasarat</name>
+      <email its:translate="no">hashem@riseup.net</email>
+      <years>2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>SSH-kulcsok létrehozása távoli számítógépekre való bejelentkezéshez.</desc>
+  </info>
+
+  <title>Új SSH-kulcs létrehozása</title>
+
+  <p>Az SSH-kulcs segíti a számítógépek közötti biztonságos kapcsolatok létrehozását. Egy SSH-kulcs létrehozásakor egy <em>nyilvános</em> és egy <em>személyes</em> kulcs jön létre. Így hozható létre egy új kulcs:</p>
+
+    <steps>
+      <item><p>Kattintson a <guiseq><gui>Fájl</gui><gui>Új…</gui></guiseq> menüpontra.</p></item>
+      <item><p>Válassza az <gui>SSH-kulcs</gui> bejegyzést, és kattintson a <gui style="button">Folytatás</gui> gombra.</p></item>
+      <item><p>Adja meg a kulcs leírását. A kulcs leírása a kulcs későbbi azonosítását segíti. Itt megadhatja a létrehozás dátumát, a kulcs használatával kapcsolatos információkat, vagy a kiszolgáló nevét, amelyre a kulccsal be szeretne jelentkezni. Ez a mező opcionális, tartalma teljesen Öntől függ.</p></item>
+      <item><p>A kulcs alapértelmezett beállításait (titkosítási mód és a kulcs erőssége) a <gui>Speciális kulcsbeállítások</gui> elemre kattintva változtathatja meg.</p></item>
+    </steps>
+
+  <p>Ekkor lehetséges a kulcs puszta létrehozása, vagy ezen kívül a távoli számítógépen jelszómentes bejelentkezéshez való beállítása is.</p>
+
+  <section id="ssh-just-create-key" ui:expanded="false">
+    <title>Kulcs létrehozása a jelszómentes bejelentkezés beállítása nélkül.</title>
+    <p>Az SSH-kulcs létrehozható a bejelentkezés beállítása nélkül is.</p>
+
+    <steps>
+      <item>
+	<p>Ehhez kattintson a <gui style="button">Csak létrehozás</gui> gombra.</p>
+      </item>
+      <item>
+	<p>Írja be az SSH-kulcs jelmondatát, majd kattintson az <gui style="button">OK</gui> gombra.</p>
+      </item>
+      <item>
+	<p>Erősítse meg a megadott jelmondatot, majd a befejezéshez kattintson az <gui style="button">OK</gui> gombra.</p>
+      </item>
+    </steps>
+
+    <p>Az új SSH-kulcs ezután az <gui>OpenSSH-kulcsok</gui> kulcstartón jelenik meg.</p>
+
+    <note style="tip">
+      <p>Az SSH-kulcs használatakor az operációs rendszer bekéri a létrehozáskor megadott jelmondatot. A jelmondat nélkül az SSH-kulcs használhatatlan, még abban az esetben is, ha valakinek sikerülne hozzáférni ahhoz.</p>
+    </note>
+
+  </section>
+
+  <section id="ssh-create-key-and-set-up" ui:expanded="false">
+    <title>Kulcs létrehozása és beállítása egy távoli számítógépen</title>
+    <p>Az SSH-kulcs egyik leghasznosabb tulajdonsága az, hogy telepíteni tudja a nyilvános kulcsot egy távoli számítógépen. Így az SSH használatával be tud jelentkezni a távoli gépre a jelszó ismételt megadása nélkül is.</p>
+
+    <steps>
+      <item>
+	<p>Ehhez nyomja meg a <gui style="button">Létrehozás és beállítás</gui> gombot, majd adja meg a jelmondatot a fentebb leírtak szerint.</p>
+      </item>
+      <item>
+	<p>A megjelenő ablakban adja meg a <gui>Kiszolgáló címét</gui>, amelyre SSH segítségével szokott bejelentkezni.</p>
+      </item>
+      <item>
+	<p>Bizonyosodjon meg a <gui>Bejelentkezési név</gui> helyességéről, majd kattintson a <gui style="button">Beállítás</gui> gombra.</p>
+      </item>
+      <item>
+	<p>Az alkalmazás megpróbál csatlakozni a <gui>Kiszolgáló címéhez</gui>, a megadott <gui>Bejelentkezési név</gui> segítségével. Ha bármilyen gond adódik a távoli számítógép elérésével, egy felugró ablak tájékoztatja a problémáról, és újból próbálkozhat. Bizonyosodjon meg arról, hogy rendelkezik működő internetkapcsolattal, és hogy a távoli számítógép elérhető.</p>
+      </item>
+      <item>
+	<p>Ha sikerült kapcsolódni a távoli számítógéphez, egy ablak bekéri a bejelentkezéshez szükséges <gui>Jelszót</gui>. Adja meg jelszavát, majd kattintson az <gui style="button">OK</gui> gombra.</p>
+      </item>
+    </steps>
+
+    <p>Az alkalmazás telepíti a kiválasztott SSH-kulcs nyilvános részét a távoli számítógépen, és beállítja a jelszómentes SSH-bejelentkezést. Ezt követőn képes lesz SSH segítségével jelszó megadása nélkül is bejelentkezni a távoli számítógépre.</p>
+
+    <note style="tip">
+      <p>Ha az SSH-kulcsos hitelesítés meghiúsul, és nem tudja a jelszavas hitelesítést használni, akkor további segítségért keresse meg a szolgáltatás adminisztrátorát.</p>
+    </note>
+  </section>
+</page>

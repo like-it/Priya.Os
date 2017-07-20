@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="ssh-connect-remote" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#ssh-keys"/>
+
+    <revision pkgversion="3.14" date="2014-10-06" status="review"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Aruna Sankaranarayanan</name>
+      <email its:translate="no">aruna.evam@gmail.com</email>
+    </credit>
+
+    <desc>Utiliser des clés SSH pour se connecter à un autre ordinateur sans avoir besoin de saisir un mot de passe.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Myriam Economou</mal:name>
+      <mal:email>myriam.economou@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Connexion à d'autres ordinateurs</title>
+
+  <p>Vous pouvez utiliser <app>Mots de passe et Clés</app> pour installer votre clé SSH sur un ordinateur distant qui peut exécuter un serveur SSH. Vous pouvez aussi <link xref="ssh-create#ssh-create-key-and-set-up">configurer votre clé SSH pour la connexion distante lors de la création de la clé</link>.</p>
+
+  <steps>
+    <item>
+      <p>Faites un clic droit sur la <gui>clé SSH</gui> et sélectionnez <gui>Configurer la clé pour un shell sécurisé…</gui>.</p>
+    </item>
+    <item>
+      <p>Dans la fenêtre de dialogue qui s'ouvre, saisissez l'<gui>adresse du serveur</gui> que vous utilisez habituellement pour vous connecter à l'ordinateur distant via SSH, et cliquez sur <gui>Configurer</gui>.</p>
+    </item>
+    <item>
+      <p>Le programme tente alors de se connecter à l'<gui>adresse du serveur</gui> spécifiée avec l'<gui>identifiant de connexion</gui> saisi. Si un problème survient lors de la connexion à l'ordinateur distant, une fenêtre d'avertissement vous expose le problème, et vous pouvez recommencer. Assurez vous que vous êtes bien connecté au réseau et que l'ordinateur distant est actif et accessible.</p>
+    </item>
+    <item>
+      <p>Si la connexion à l'ordinateur distant réussit, une boîte de dialogue s'affiche, vous demandant le <gui>mot de passe</gui> que vous utilisez pour la connexion à cet ordinateur. Saisissez le mot de passe, et cliquez sur <gui style="button">Valider</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Vous devriez être maintenant capable de vous connecter à l'ordinateur distant sans mot de passe.</p>
+
+</page>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters" xml:lang="fr">
+
+  <info>
+    <desc>Utiliser des règles de filtres pour trier vos courriels automatiquement dans des dossiers.</desc>
+
+    <link type="guide" xref="mail-organizing"/>
+
+    <revision pkgversion="3.0.2" version="0.6" date="2012-02-19" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-filters.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013-2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Utilisation des filtres</title>
+
+<p>Les filtres de message appliquent des actions sur les messages basées sur des conditions que vous avez définies. Vous pouvez définir des filtres pour les courriels entrants et sortants.</p>
+
+<p>Filters will be automatically applied to incoming messages for local accounts (such as POP). Mail servers for remote accounts (such as IMAP) often already filter mail directly on the server as this is faster. If you want to apply your <app>Evolution</app> filters to remote accounts, you can enable this under <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Mail Accounts</gui><gui style="button">Edit</gui><gui>Receiving Options</gui><gui>Options</gui><gui>Apply filters to new messages in Inbox on this server</gui></guiseq>.</p>
+
+<p>Pour appliquer manuellement les filtres sur les messages d'un dossier, sélectionnez les messages et cliquez sur <guiseq><gui>Message</gui><gui>Appliquer les filtres</gui></guiseq> ou pressez <keyseq><key>Ctrl</key><key>Y</key></keyseq>.</p>
+<p>Pour sélectionner tous les messages d'un dossier, cliquez sur <guiseq><gui>Édition</gui><gui>Tout sélectionner</gui></guiseq> ou pressez <keyseq><key>Ctrl</key><key>A</key></keyseq>.</p>
+
+<section id="adding">
+<title>Création d'un filtre</title>
+
+<steps>
+<item><p>Click <guiseq><gui>Edit</gui><gui>Message Filters</gui></guiseq>, or click <guiseq><gui>Message</gui><gui>Create</gui></guiseq> and select the criterion the filter will be based on.</p></item>
+<item><p>Cliquez sur <gui style="button">Ajouter</gui>.</p></item>
+<item><p>Saisissez un nom dans le champ <gui>Nom de la règle</gui>.</p></item>
+<item><p>Définissez les conditions de la règle. Pour chaque condition, sélectionnez d'abord la partie du message qui sera contrôlée puis définissez la règle de comparaison.</p><p>Pour plus d'informations sur les conditions disponibles, consultez <link xref="mail-filters-actions">Conditions de filtre disponibles</link>.</p></item>
+<item><p>Si vous voulez définir plusieurs conditions, définissez sous <gui>Trouver les éléments</gui> si une seule condition ou toutes doivent être remplies et cliquez sur <gui style="button">Ajouter une condition</gui> et répétez les étapes précédentes.</p></item>
+<item>
+<p>Sélectionnez les actions du filtre dans la section <gui>Alors</gui>.</p><p>Pour plus d'informations sur les actions disponibles, consultez <link xref="mail-filters-actions">Actions de filtre disponibles</link>.</p>
+
+<note style="warning"><p>L'ordre des filtres est important. Ils sont appliqués au message d'origine dans l'ordre, comme une recette.</p>
+<p>Si votre premier filtre possède la règle <gui>Arrêter le traitement</gui> alors tous les messages qui correspondent à ce filtre ignoreront tous les filtres suivants.</p>
+<p>Lorsque vous déplacez un message vers un autre dossier, le « déplacement » signifie en réalité, l'ajout d'une copie du message dans le dossier de destination et le marquage du message d'origine pour suppression. Ainsi toutes les règles de filtre ultérieures s'appliqueront au message d'origine qui est maintenant marqué pour suppression. Par conséquent, le déplacement d'un message devrait apparaître en dernier dans une séquence de règles de filtre.</p></note>
+
+</item>
+<item><p>Si vous voulez définir plusieurs actions, cliquez sur <gui style="button">Ajouter une action</gui> et répétez l'étape précédente. Par exemple, si vous voulez qu'aucun autre filtre existant ne s'applique, choisissez <gui>Arrêter le traitement</gui> comme deuxième action dans la liste.</p></item>
+<item><p>Cliquez sur <gui style="button">Valider</gui>.</p></item>
+</steps>
+
+</section>
+
+<section id="editing">
+<title>Édition des filtres</title>
+<steps>
+<item><p>Cliquez sur <guiseq><gui>Édition</gui><gui>Filtres de message</gui></guiseq>.</p></item>
+<item><p>Sélectionnez le filtre.</p></item>
+<item><p>Cliquez sur <gui style="button">Édition</gui>.</p></item>
+<item><p>Effectuez les corrections souhaitées, puis cliquez deux fois sur <gui style="button">Valider</gui>.</p></item>
+</steps>
+</section>
+
+<section id="deleting">
+<title>Suppression de filtres</title>
+<steps>
+<item><p>Cliquez sur <guiseq><gui>Édition</gui><gui>Filtres de message</gui></guiseq>.</p></item>
+<item><p>Sélectionnez le filtre.</p></item>
+<item><p>Cliquez sur <gui style="button">Enlever</gui>.</p></item>
+<item><p>Cliquez sur <gui style="button">Valider</gui>.</p></item>
+</steps>
+</section>
+
+
+
+
+	
+</page>

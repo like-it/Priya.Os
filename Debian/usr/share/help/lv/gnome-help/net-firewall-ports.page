@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jums vajag norādīt pareizo portu, lai ieslēgtu/atslēgtu tīkla pieeju programmai ar jūsu ugunsmūri.</desc>
+  </info>
+
+  <title>Biežāk lietotie tīkla porti</title>
+
+  <p>Šis ir saraksts ar biežāk izmantotajiem tīkla pakalpojumu lietotņu, tādiem kā datņu koplietošana, attālinātas darbvirsmas pārlūkošana, portiem. Jūs varat mainīt savas sistēmas ugunsmūri, lai  tas <link xref="net-firewall-on-off">bloķē vai atļauj pieeju</link> šīm lietotnēm. Lietošanā ir tūkstošiem portu, tāpēc šis saraksts nav pilnīgs.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>Porti</p>
+	</td>
+	<td>
+	  <p>Nosaukums</p>
+	</td>
+	<td>
+	  <p>Apraksts</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/udp</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>Atļauj sistēmai atrast vienai otru, un aprakstīt, kuru pakalpojumu tie piedāvā, bez vajadzības to iestatīt pašrocīgi.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/udp</p>
+	</td>
+	<td>
+	  <p>Drukāšana</p>
+	</td>
+	<td>
+	  <p>Atļauj sūtīt drukājamus darbus uz printeri caur tīklu.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/tcp</p>
+	</td>
+	<td>
+	  <p>Drukāšana</p>
+	</td>
+	<td>
+	  <p>Ļauj koplietot printeri ar citiem cilvēkiem tīklā.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/tcp</p>
+	</td>
+	<td>
+	  <p>Klātbūtne</p>
+	</td>
+	<td>
+	  <p>Ļauj parādīt savu tūlītējās ziņojumapmaiņas statusu citiem cilvēkiem tīklā, piemēram, "tiešsaistē" vai "aizņemts".</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/tcp</p>
+	</td>
+	<td>
+	  <p>Attālinātā darbvirsma</p>
+	</td>
+	<td>
+	  <p>Ļauj koplietot darbvirsmu, tā ka citi cilvēki to var aplūkot vai attālināti palīdzēt.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/tcp</p>
+	</td>
+	<td>
+	  <p>Mūzikas koplietošana (DAAP)</p>
+	</td>
+	<td>
+	  <p>Ļauj dalīties ar mūzikas bibliotēku ar citiem jūsu tīklā.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

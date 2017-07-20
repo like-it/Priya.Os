@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:ui="http://projectmallard.org/experimental/ui/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="gs-browse-web" version="1.0 if/1.0" xml:lang="sk">
+
+  <info>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="gs-legal.xml"/>
+    <credit type="author">
+      <name>Jakub Steiner</name>
+    </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+    </credit>
+    <link type="guide" xref="getting-started" group="tasks"/>
+    <title role="trail" type="link">Prehliadanie webu</title>
+    <link type="seealso" xref="net-browser"/>
+    <title role="seealso" type="link">A tutorial on browsing the web</title>
+    <link type="next" xref="gs-connect-online-accounts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Richard Stanislavský</mal:name>
+      <mal:email>kenny.vv@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Prehliadanie webu</title>
+
+<if:choose>
+<if:when test="platform:gnome-classic">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox-classic.svg" width="100%"/>
+
+    <steps>
+      <item><p>Klikneme na ponuku <gui>Aplikácie</gui> v ľavom hornom rohu obrazovky.</p></item>
+      <item><p>Z ponuky vyberieme <guiseq><gui>Internet</gui><gui>Firefox</gui> </guiseq>.</p></item>
+    </steps>
+
+</if:when>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:when test="platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1-firefox.svg" width="100%"/>
+
+    <steps>
+      <item><p>Presunieme kurzor myši na <gui>Aktivity</gui> do ľavého horného rohu obrazovky, čím zobrazíme <gui>Prehľad aktivít</gui>.</p></item>
+      <item><p>Vyberieme ikonu prehliadača <app>Firefox</app> z panelu na ľavej strane obrazovky</p></item>
+    </steps>
+
+    <note><p>Prehliadač Firefox môžeme spustiť aj <link xref="gs-use-system-search">začatím písania</link> <em>Firefox</em> do vyhľadávača v <gui>Prehľade aktivít</gui>.</p></note>
+
+</if:when>
+<if:when test="platform:gnome-3">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser1.svg" width="100%"/>
+
+    <steps>
+      <item><p>Presunieme kurzor myši na <gui>Aktivity</gui> do ľavého horného rohu obrazovky, čím zobrazíme <gui>Prehľad aktivít</gui>.</p></item>
+      <item><p>Vyberieme ikonu prehliadača <app>Web</app> z panelu na ľavej strane obrazovky.</p></item>
+    </steps>
+
+    <note><p>Internetový prehliadač môžeme spustiť aj <link xref="gs-use-system-search">začatím písania</link> <em>web</em> do vyhľadávača v <gui>Prehľade aktivít</gui>.</p></note>
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2.svg" width="100%"/>
+
+</if:when>
+</if:choose>
+
+<!--Distributors might want to add their distro here if they ship Firefox by default.-->
+<if:if test="platform:gnome-classic, platform:centos, platform:debian, platform:fedora, platform:rhel, platform:ubuntu, platform:opensuse, platform:sled, platform:sles">
+
+    <media its:translate="no" type="image" mime="image/svg" src="gs-web-browser2-firefox.svg" width="100%"/>
+
+</if:if>
+
+    <steps style="continues">
+      <item><p>Klikneme na panel adresy v hornej časti prehliadača a začneme písať adresu webovej stránky, ktorú chceme navštíviť.</p></item>
+      <item><p>Písaním adresy webovej stránky začne prehliadač hľadať stránku v histórii a záložkách, takže nie je potrebné si adresu presne pamätať.</p>
+        <p>Ak sa webová stránka nájde v histórii alebo záložkách, pod panelom adresy sa zobrazí rozbaľovací zoznam.</p></item>
+      <item><p>Z rozbaľovacieho zoznamu si môžeme rýchlo vybrať internetovú stránku pomocou šípok.</p>
+      </item>
+      <item><p>Vybranú stránku navštívime stlačením klávesu <key>Enter</key>.</p>
+      </item>
+    </steps>
+
+</page>

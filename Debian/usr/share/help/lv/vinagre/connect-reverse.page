@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="connect-reverse" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#connections"/>
+    <link type="seealso" xref="connect"/>
+    <title type="sort">3</title>
+
+    <revision pkgversion="3.8" date="2013-03-23" status="final"/>
+    <revision pkgversion="3.12" date="2014-03-05" status="final"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@googlemail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Savienoties ar datoriem kas neatrodas jūsu lokālajā tīklā un apiet ugunsmūra ierobežojumus uz attālinātā datora.</desc>
+  </info>
+
+  <title><gui>Apgrieztie savienojumi…</gui></title>
+
+  <p>Apgrieztais savienojums parasti tiek izmantots, lai apietu ugunsmūra ierobežojumus uz atvērtajiem portiem. Ugunsmūris parasti bloķē atvērtos portus, taču ne izejošo datu plūsmu. Normālā savienojumā klients savienojas ar atvērtu portu uz servera, bet apgrieztā savienojuma gadījumā klients atver portu, ar kuru savienojas serveris.</p>
+
+  <section id="enable-reverse-connections">
+    <title>Apgriezto savienojumu aktivizēšana</title>
+
+    <steps>
+      <item>
+        <p>Izvēlieties <guiseq><gui style="menu">Attālināts</gui> <gui style="menuitem">Apgrieztie savienojumi…</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Atzīmējiet <gui>Aktivēt apgrieztos savienojumus</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="accessing-behind-firewall">
+    <title>Piekļūšana datoram aiz ugunsmūra</title>
+
+    <p>Attālinātajam datoram nepieciešams savienoties ar jūsu datoru izmantojot jūsu <em>IP adresi</em> un porta numuru, kurus var atrast <gui>Apgrieztie savienojumi...</gui> dialoglodziņā, <gui>Connectivity</gui> daļā.</p>
+
+    <note>
+      <p>Šobrīd <app>Vino</app>, GNOME VNC serveris, neatbalsta apgrieztos savienojumus (zināmus arī kā "klausīšanās režīms"). Dažas citas lietotnes, tādas kā <app>UltraVNC</app>, <app>RealVNC</app> un <app>TightVNC</app>, atbalsta apgrieztos savienojumus.</p>
+    </note>
+
+    <p>Tiklīdz attālinātais dators savienosies ar jūsu sistēmu, <app>Attālinātais darbvirsmas pārlūks</app> izveidos apgrieztu savienojumu.</p>
+
+    <p>Savienojoties ar datoru kas nav jūsu lokālajā tīklā, jums būs nepieciešams nodrošināt jūsu ārējo IP adresi un porta numuru attālinātajam serverim.</p>
+
+  </section>
+
+</page>

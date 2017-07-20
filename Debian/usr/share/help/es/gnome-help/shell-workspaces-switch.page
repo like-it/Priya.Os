@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-workspaces-switch" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces"/>
+    <link type="seealso" xref="shell-workspaces"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Usar el selector de áreas de trabajo.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+ <title>Cambie entre las áreas de trabajo</title>
+
+ <steps>  
+ <title>Usando el ratón:</title>
+ <item>
+    <p if:test="!platform:gnome-classic">Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui>.</p>
+  <p if:test="platform:gnome-classic">En la parte superior izquierda de la pantalla, pulse en el menú <gui xref="shell-introduction#activities">Aplicaciones</gui> y elija <gui>Vista de actividades</gui>.</p>
+ </item>
+ <item>
+  <p>Pulse en una área de trabajo en el <link xref="shell-workspaces">selector de áreas de trabajo</link> en la derecha de la pantalla para ver las ventanas abiertas en ese área de trabajo.</p>
+ </item>
+ <item>
+  <p>Pulse en cualquier miniatura de una ventana para activar el área de trabajo.</p>
+ </item>
+ </steps>
+ 
+  <p if:test="platform:gnome-classic">Alternativamente, puede cambiar entre áreas de trabajo pulsando en el identificador del área de trabajo en la parte derecha de la lista de ventanas en la barra inferior y eligiendo en el menú el área de trabajo que quiere usar.</p>
+
+ <list>
+ <title>Usando el teclado:</title>  
+  <item>
+    <p>Pulse <keyseq><key xref="keyboard-key-super">Super</key><key>Re Pág</key></keyseq> para moverse a un área de trabajo que esté encima del área de trabajo actual en el selector de áreas de trabajo.</p>
+  </item>
+  <item>
+    <p>Pulse <keyseq><key>Super</key><key>Av Pag</key></keyseq> para mover a un área de trabajo que está debajo del área de trabajo actual en el selector de áreas de trabajo.</p>
+  </item>
+ </list>
+
+
+</page>

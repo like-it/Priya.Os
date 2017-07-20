@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="task" id="txt-search" xml:lang="sv">
+
+  <info>
+    <revision version="0.1" date="2013-03-03" status="candidate"/>
+    <link type="guide" xref="index#textoutput"/>
+
+    <credit type="author copyright">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Sök i <app>Terminal</app>-utdata.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015, 2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Använda <gui style="menuitem">Sök</gui></title>
+
+  <p>Du kan söka efter text i <app>Terminal</app>-utdata:</p>
+
+  <steps>
+    <item>
+      <p>Välj <guiseq><gui style="menu">Sök</gui> <gui style="menuitem">Sök…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Skriv in sökordet och tryck <gui style="button">Sök</gui>. För att avbryta, tryck <gui style="button">Stäng</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Du kan söka med följande alternativ för att begränsa dina resultat:</p>
+
+  <terms>
+    <item>
+      <title><gui style="checkbox">Gör skillnad på gemener/VERSALER</gui></title>
+      <p>Gör sökningen skiftlägeskänslig: detta begränsar resultaten till endast de som har samma skiftläge som ditt sökord.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Sök endast hela ord</gui></title>
+      <p><app>Terminal</app> kommer söka efter hela nyckelordet och kommer ignorera resultat som delvis matchar ditt sökord. Om du till exempel har sökt efter ”gnome” kommer <app>Terminal</app> bara att visa resultat som matchar detta nyckelord exakt och utesluta resultat som ”gnome-terminal”.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Matcha som reguljärt uttryck</gui></title>
+      <p>Du kan använda reguljära uttrycksmönster, också kända som regex-mönster, i dina sökord. <app>Terminal</app> kommer att vissa resultaten som matchar dessa sökvillkor.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Sök baklänges</gui></title>
+      <p><app>Terminal</app> kommer söka efter nyckelordet i senaste utdata och fortsätta sökningen uppåt. Detta alternativ rekommenderas då du söker efter ett nyckelord som kan ha förekommit nyligen, vilket skulle möjliggöra att du hittar nyckelordet snabbt.</p>
+    </item>
+    <item>
+      <title><gui style="checkbox">Börja om från början</gui></title>
+      <p><app>Terminal</app> söker från din aktuella position i rullningshistoriken till slutet på tillgängliga terminalutdata och börjar sedan om sökningen från början.</p>
+    </item>
+  </terms>
+
+  <note style="tip">
+    <p>Om du tror att du kommer arbeta med mycket <app>Terminal</app>-utdata, öka <link xref="pref-scrolling#lines">rullningshistoriken</link> till en högre gräns för att låta <app>Terminal</app> söka längre bakåt.</p>
+  </note>
+
+</page>

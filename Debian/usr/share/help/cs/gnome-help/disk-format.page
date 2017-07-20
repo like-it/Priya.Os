@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="cs">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Jak odstranit všechny soubory a složky z externího pevného disku nebo flashdisku jeho naformátováním.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adam Matoušek</mal:name>
+      <mal:email>adamatousek@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2014, 2015</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Úplně vymazání výměnného média</title>
+
+  <p>Když máte výměnný disk, jako je flasdisk nebo externí pevný disk, můžete si někdy přát na něm smazat úplně všechny soubory a složky. Můžete to provést pomocí <em>formátování</em> disku – tím se na něm smažou všechny soubory a zůstane prázdný.</p>
+
+<steps>
+  <title>Formátování výměnného disku</title>
+  <item>
+    <p>Z přehledu <gui>Činnosti</gui> otevřete <app>Disky</app>.</p>
+  </item>
+  <item>
+    <p>V seznamu úložných zařízení na levé straně vyberte disk, který chcete vymazat.</p>
+
+    <note style="warning">
+      <p>Zkontrolujte si, že jste vybrali správný disk! Pokud vyberete nesprávný, vymažete si na něm svoje data!</p>
+    </note>
+  </item>
+  <item>
+    <p>Na nástrojové liště pod částí <gui>Svazky</gui> klikněte na nabídkové tlačítko. Pak klikněte na <gui>Formátovat…</gui>.</p>
+  </item>
+  <item>
+    <p>V dialogovém okně, které se objeví, vyberte pro disk <gui>Typ</gui> souborového systému.</p>
+   <p>Pokud budete disk používat mimo Linuxu i na počítačích s Windows a Mac OS, zvolte <gui>FAT</gui>. Pokud jej budete používat jen pod Windows, může být lepší volbou <gui>NTFS</gui>. Ve stručném popisu vám bude přiblíženo zaměření daného <gui>typu souborového systému</gui>.</p>
+  </item>
+  <item>
+    <p>Přidělte disku název a klikněte na <gui>Formátovat…</gui>. Zobrazí se okno s žádostí o potvrzení. Údaje podrobně zkontrolujte a kliknutím na <gui>Formátovat</gui> pak disk vymažete.</p>
+  </item>
+  <item>
+    <p>Až formátování skončí, klikněte na ikonu pro vysunutí, aby se disk bezpečně odebral. Nyní je prázdný a připravený k dalšímu použití.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Po zformátování disku nejsou soubory bezpečně odstraněné</title>
+  <p>Formátování disku není stoprocentně bezpečný způsob, jak z disku vymazat data. Čerstvě naformátovaný disk se sice tváří, že na něm nejsou žádné soubory, ale speciálním softwarem je z něj lze získat. Pokud potřebujete soubory vymazat opravdu nevratně, musíte použít nějaký specializovaný nástroj, například <app>shred</app> v příkazovém řádku.</p>
+</note>
+
+</page>

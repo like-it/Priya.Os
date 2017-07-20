@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="user-admin-explain" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Projek Dokumentasi GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>You need administrative privileges to change important parts of your
+    system.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Bagaimana privilese administratif bekerja?</title>
+
+  <p>As well as the files that <em>you</em> create, your computer has a number
+  of files which are needed by the system for it to work properly. If these
+  important <em>system files</em> are changed incorrectly they can cause
+  various things to break, so they are protected from changes by default.
+  Certain applications also modify important parts of the system, and so are
+  also protected.</p>
+
+  <p>The way that they are protected is by only allowing users with
+  <em>administrative privileges</em> to change the files or use the
+  applications. In day-to-day use, you will not need to change any system files
+  or use these applications, so by default you do not have administrative
+  privileges.</p>
+
+  <p>Terkadang Anda perlu memakai aplikasi-aplikasi ini, sehingga Anda dapat memperoleh privilese administratif secara sementara untuk mengizinkan Anda membuat perubahan. Bila sebuah aplikasi memerlukan privilese administratif, itu akan meminta sandi Anda. Sebagai contoh, bila Anda ingin memasang beberapa perangkat lunak baru, pemasang perangkat lunak (manajer paket) akan meminta sandi administrator Anda sehingga mereka dapat menambahkan aplikasi baru ke sistem. Setelah mereka selesai, privilese administratif Anda akan dicabut lagi.</p>
+
+  <p>Administrative privileges are associated with your user account.
+  <gui>Administrator</gui> users are allowed to have these privileges while
+  <gui>Standard</gui> users are not. Without administrative privileges you will
+  not be able to install software. Some user accounts (for example, the "root"
+  account) have permanent administrative privileges. You should not use
+  administrative privileges all of the time, because you might accidentally
+  change something you did not intend to (like delete a needed system file, for
+  example).</p>
+
+  <p>Ringkasnya, privilese administratif mengizinkan Anda mengubah bagian-bagian penting dari sistem Anda ketika diperlukan, tapi mencegah Anda melakukannya secara tak sengaja.</p>
+
+  <note>
+    <title>Apa arti "super user" (pengguna super)?</title>
+    <p>Seorang pengguna dengan hak akses admin kadang disebut <em>super user</em>. Hal ini hanya karena pengguna yang memiliki hak lebih dari pengguna biasa. Anda mungkin melihat orang-orang membicarakan hal-hal seperti <cmd>su</cmd> dan <cmd>sudo</cmd>, ini adalah program yang untuk sementara memberikan Anda hak "super user " (admin).</p>
+  </note>
+
+<section id="advantages">
+  <title>Mengapa privilese adminisitratif itu berguna?</title>
+
+  <p>Mempersyaratkan pengguna untuk memiliki privilese administratif sebelum perubahan-perubahan sistem yang penting dilakukan berguna karena itu membantu mencegah sistem Anda rusak, secara disengaja maupun tidak.</p>
+
+  <p>If you had administrative privileges all of the time, you might
+  accidentally change an important file, or run an application which changes
+  something important by mistake. Only getting administrative privileges
+  temporarily, when you need them, reduces the risk of these mistakes
+  happening.</p>
+
+  <p>Only certain trusted users should be allowed to have administrative
+  privileges. This prevents other users from messing with the computer and
+  doing things like uninstalling applications that you need, installing
+  applications that you don't want, or changing important files. This is useful
+  from a security standpoint.</p>
+
+</section>
+
+</page>

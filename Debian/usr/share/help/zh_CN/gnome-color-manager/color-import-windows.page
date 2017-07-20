@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="color-import-windows" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <link type="seealso" xref="color-gettingprofiles"/>
+    <desc>如何用 Windows 系统导入已有的 ICC 色彩配置文件。</desc>
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Michael Lin</mal:name>
+      <mal:email>linmx0130@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wylmer Wang</mal:name>
+      <mal:email>wantinghard@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>在 Microsoft Windows 系统上安装 ICC 配置文件</title>
+  <p>向设备分配色彩配置文件和使用校准曲线的方法随 Microsoft Windows 的版本而不同。</p>
+  <section id="xp">
+    <title>Windows XP</title>
+    <p>在 Windows 资源管理器中右击配置文件并点击 <gui>安装配置文件</gui>。配置文件会被自动复制到正确的目录。</p>
+    <p>然后打开 <guiseq><gui>控制面板</gui><gui>颜色</gui></guiseq>并将这个配置文件添加给设备。</p>
+    <note style="warning">
+      <p>如果您希望在 Windows XP 中替换一个配置文件，上述简便方法不可行。配置文件必须被手动复制到 <file>C:\Windows\system32\spool\drivers\color</file>来替换掉原始配置文件。</p>
+    </note>
+    <p>Windows XP 需要一个程序在开机时将配置文件检准曲线复制到显卡中。这可以用<app>Adobe Gamma</app>，<app>LUT Loader</app> 或免费的<app href="https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=12714">Microsoft Color Control Panel Applet</app> 实现。用后者会给控制面板添加一个新的<gui>颜色</gui>项并可以方便的让默认配置文件的校准曲线在每次开机时设置。</p>
+  </section>
+
+  <section id="vista">
+    <title>Windows Vista</title>
+    <p>Microsoft Windows Vista 在登录后、挂起后或 UAC 屏幕出现时会错误地从显卡中删除校准曲线。这意味着您可能要手动重新加载 ICC 配置文件校准曲线。如果您正在使用嵌入了校准曲线的配置文件，必须小心留意校准状态是否被清除。</p>
+  </section>
+
+  <section id="7">
+    <title>Windows 7</title>
+    <p>Windows 7 支持与 Linux 相似的方案，即配置文件可以安装到全系统或者特定用户。然而它们存储在同一个位置。在 Windows 资源管理器中右击配置文件并单击<gui>安装配置文件</gui>或者将 .icc 配置文件复制到 <file>C:\Windows\system32\spool\drivers\color</file>。</p>
+    <p>打开 <guiseq><gui>控制面板</gui><gui>颜色管理</gui></guiseq> 并且通过点击 <gui>添加</gui> 按钮向系统添加配置文件。点击 <gui>高级</gui>选项卡并且寻找<gui>显示器校准</gui>。勾选<gui>使用 Windows 显示器校准</gui>复选框启用校准曲线，但复选框是不可用的。可通过点击 <gui>更改系统默认值</gui> 启用它并返回 <gui>高级</gui> 选项卡点击复选框。</p>
+    <p>关闭对话窗口并点击 <gui>重新加载当前校准</gui>以设置 gamma 通道。这些配置文件校准曲线应该会在每次开机时设置。</p>
+  </section>
+
+</page>

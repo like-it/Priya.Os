@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-composer-message-templates-variables" xml:lang="zh-CN">
+
+  <info>
+   <desc>Configure variables in templates and reuse items from the message you reply to</desc>
+   
+   <link type="guide" xref="mail-composer-message-templates#options"/>
+
+ <revision pkgversion="3.5.90" version="0.3" date="2012-08-17" status="draft"/>
+ <credit type="author">
+   <name its:translate="no">Andre Klapper</name>
+   <email its:translate="no">ak-47@gmx.net</email>
+ </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/b1dlaazl.html.en -->
+ </credit>
+ 
+ <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+     
+
+  </info>
+
+<title>Using Variables in Templates</title>
+
+<section id="configure">	
+<title>Configuring Variables for Message Templates</title>
+<steps>
+<item><p>Select <guiseq><gui>Edit</gui><gui>Plugins</gui></guiseq>.</p></item>
+<item><p>Click <gui>Templates</gui>.</p></item>
+<item><p>Click the <gui>Configuration</gui> tab.</p></item>
+<item><p>You can add, edit or remove the key-value pairs. You can specify any number of key-value pairs.</p></item>
+</steps>
+ <p>在任何模板中，所有出现关键字的地方会被它所对应的值代替。例如，如果您在设置了关键字为“经理”，值为“哈里”，那么邮件中所有出现“经理”的地方都会被“哈里”代替。</p>
+ <p>Assume that you have 1000 message templates with your current manager's name in them. When the current manager is replaced by a new one, it is not easy for you to manually replace the manager's name in all the 1000 messages. If the messages have a $Manager key value, you can reset the value in the Configuration tab of this plugin.</p>
+ <p>默认情况下，整个环境变量会被作为一个关键字-值对来对待。每出现一个环境变量就会被它所对应的值所代替。例如，模板中有$PATH时，当使用模板时就会被它的值代替。</p>
+ <p>关键字-值的替换过程根据下列优先级进行：</p>
+ <steps>
+  <item>
+<p>关键字会被它在模板插件中配置的值所替换。</p>
+  </item>
+  <item>
+<p>如果该关键字在配置中找不到，则会被环境变量所对应的值替换。</p>
+  </item>
+  <item>
+<p>如果该关键字既不是环境变量，也没有进行配置，则不会发生任何替换。</p>
+  </item>
+ </steps>
+</section>
+
+<!-- as per https://bugzilla.gnome.org/show_bug.cgi?id=641845 - available since 3.2-->
+<section id="reply-variables">
+<title>Using Elements From a Message in a Template When Replying</title>
+<p>Templates can contain more than just the predefined set of <link xref="#configure">key-value pairs</link>. You can also get any message header values from the email that you are applying the template on, plus the complete message body.</p>
+
+<!-- TRANSLATORS: Do NOT translate "$ORIG[subject]" and "$ORIG[body]" in this sentence. -->
+<p its:locNote="TO TRANSLATORS: Do NOT translate $ORIG[subject] and $ORIG[body] in this sentence!">In order to do this, use the format <code>$ORIG[header_name]</code> and replace the variable <code>header_name</code> by the actual header. For example, if you would like to insert the subject line of the message that you reply to, use <code>$ORIG[subject]</code>. To insert the complete body, use <code>$ORIG[body]</code>.</p>
+
+<!-- TRANSLATORS: Do NOT translate "$ORIG[body]" and "$ORIG[reply-to]" in this sentence. -->
+<p its:locNote="TO TRANSLATORS: Do NOT translate $ORIG[body] and $ORIG[reply-to] in this sentence!">If no replacement for a variable is found, the variable is not removed (except for <code>$ORIG[body]</code>) but left in place so that you see that something went wrong. This could happen when trying to use headers that are not necessarily always available in the original message (for example <code>$ORIG[reply-to]</code>).</p>
+</section>
+
+</page>
